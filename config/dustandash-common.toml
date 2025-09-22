@@ -1,0 +1,111 @@
+
+#Config for Dust and Ash
+[Machines]
+	#
+	#The chance of active a dust generating cycle per tick. Range[0, 1] Default: 0.3
+	#Range: 0.0 ~ 1.0
+	dustSourceChancePerTick = 0.4
+	#
+	#The chance of generate a dust per block. Range[0, 1] Default: 0.4
+	#Range: 0.0 ~ 1.0
+	dustSourceChancePerBlock = 0.4
+	#
+	#The distance of checking below the Dust Source. Range[1, 20] Default: 5
+	#Range: 1 ~ 20
+	dustSourceHeight = 5
+	#
+	#The radius of checking below the Dust Source. Range[1, 20] Default: 3
+	#Range: 1 ~ 20
+	dustSourceRadius = 3
+	#
+	#The chance of getting an ash in every working tick. Range(0, 1] Default: 0.004
+	#Range: 0.0 ~ 1.0
+	ashCollectorChancePerWorkingTick = 0.004
+	#
+	#The progress added per random tick. Range[0, 100] Default: 4
+	#Range: 0 ~ 100
+	centrifugeProgressPerTick = 4
+	#
+	#The progress added per random tick. Range[0, 100] Default: 1
+	#Range: 0.0 ~ 100.0
+	ionizerProgressPerTick = 1.0
+
+	#Fission Reactor related configs
+	[Machines."Fission Reactor"]
+		#
+		#The Minimum Efficiency of Fission Reactor. Range[0.1, 1000000] Default: 1
+		#Range: 0.1 ~ 1000000.0
+		fissionReactorMinEfficiency = 1.0
+		#
+		#The Maximum Efficiency of Fission Reactor. Range[0.1, 1000000] Default: 14
+		#Range: 0.1 ~ 1000000.0
+		fissionReactorMaxEfficiency = 14.0
+		#
+		#The Efficiency Multiplayer of Fission Reactor. Range[0.1, 1000000] Default: 10
+		#Range: 0.1 ~ 1000000.0
+		fissionReactorEfficiencyMultiplayer = 10.0
+		#
+		#The Neutron To EnergyRatio of Fission Reactor. Range[0.1, 1000000] Default: 75
+		#Range: 0.1 ~ 1000000.0
+		fissionReactorNeutronToEnergyRatio = 75.0
+		#
+		#The Ideal Heat Rate of Fission Reactor. Range[0.1, 2] Default: 0.75
+		#Range: 0.1 ~ 2.0
+		fissionReactorIdealHeatRate = 0.75
+
+#Tools & Weapons
+["Tools & Weapons"]
+	#
+	#The chance of success per use. Range[0, 1] Default: 0.55
+	#Range: 0.0 ~ 1.0
+	handVacuumSuccessRate = 0.55
+	#
+	#The chance of consume a fuel per use. Range[0, 1] Default: 0.35
+	#Range: 0.0 ~ 1.0
+	ironVacuumConsumeRate = 0.35
+	#
+	#The Radius of Lord Of Blood. Range[1, 10] Default: 1.25
+	#Range: 1.0 ~ 10.0
+	galeOtaijutsuDamageRate = 1.25
+	#
+	#The Radius of Lord Of Blood. Range[4, 32] Default: 12
+	#Range: 4 ~ 32
+	lordOfBloodRadius = 12
+	#
+	#Enable attack cd check of Lord Of Blood.
+	lordOfBloodCDCheck = true
+	#
+	#The Extra Percentage Damage of 疾風迅雷. Range[0, 10.0] Default: 0.08
+	#Range: 0.0 ~ 10.0
+	whiteLightningExtraPercentage = 0.08
+	#
+	#The Extra Damage of 疾風迅雷. Range[0, MAX_FLOAT] Default: 2
+	#Range: 0.0 ~ 3.4028234663852886E38
+	whiteLightningExtraDamage = 2.0
+	#
+	#Enable attack cd check of 疾風迅雷.
+	whiteLightningCDCheck = true
+	#
+	#The Extra Damage of Rotten Blade. Range[0, MAX_FLOAT] Default: 5
+	#Range: 0.0 ~ 3.4028234663852886E38
+	rottenBladeExtraDamage = 5.0
+	#
+	#The Radius of Rotten Blade. Range[0, 32] Default: 9
+	#Range: 0 ~ 32
+	rottenBladeRadius = 9
+	#
+	#The Height of Rotten Blade. Range[0, 32] Default: 5
+	#Range: 0 ~ 32
+	rottenBladeHeight = 5
+	#
+	#Enable attack cd check of Rotten Blade.
+	rottenBladeCDCheck = true
+	#
+	#The Cool Down of Rock Solid in Tick. Range[0, 10000] Default: 300
+	#Range: 0 ~ 10000
+	rockSolidCD = 300
+	#
+	#The Cool Down of IndestructibleCD in Tick. Range[0, 10000] Default: 300
+	#Range: 0 ~ 10000
+	indestructibleCD = 300
+
