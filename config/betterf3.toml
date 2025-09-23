@@ -11,7 +11,7 @@
 	hide_debug_crosshair = false
 	hide_sidebar = true
 	hide_bossbar = true
-	always_show_profiler = false
+	always_show_profiler = true
 	always_show_tps = false
 
 [[modules_left]]
@@ -131,10 +131,6 @@
 		water_creature = true
 		water_ambient = true
 		misc = true
-		aether_surface_monster = true
-		aether_darkness_monster = true
-		aether_sky_monster = true
-		aether_aerwhale = true
 
 [[modules_left]]
 	name = "sound"

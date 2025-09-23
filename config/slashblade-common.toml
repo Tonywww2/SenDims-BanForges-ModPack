@@ -6,7 +6,7 @@
 	max_proudsoul_drop = 10
 	#Determining the count for enchanted proud soul when blade be broken.
 	#Range: 1 ~ 64
-	max_enchanted_proudsoul_drop = 10
+	max_enchanted_proudsoul_drop = 2
 	#Determining the spawn chance of sabigatana.
 	#Range: 0.0 ~ 1.0
 	sabigatana_spawn_chance = 0.05
