@@ -67,5 +67,7 @@
   "minecraft:total_enchantment_power": null,
   "minecraft:villager_profession": null,
   "minecraft:waxed": null,
-  "minecraft:zombie_villager": null
+  "minecraft:zombie_villager": null,
+  "storagedrawers:main": null,
+  "twilightforest:quest_ram_wool": null
 }

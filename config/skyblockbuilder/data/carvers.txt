@@ -1,5 +1,4 @@
 ad_astra:moon_crater
-biomesoplenty:origin_cave
 blue_skies:everbright_canyon_carver
 blue_skies:everbright_cave_carver
 blue_skies:everbright_noise_carver
@@ -10,5 +9,6 @@ minecraft:canyon
 minecraft:cave
 minecraft:cave_extra_underground
 minecraft:nether_cave
-terralith:deep_ravine
+twilightforest:highland_caves
+twilightforest:tf_caves
 undergarden:undergarden_cave

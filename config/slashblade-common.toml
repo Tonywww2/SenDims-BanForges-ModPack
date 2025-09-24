@@ -21,7 +21,7 @@
 	pvp_enable = false
 	#Determines whether to enable slashblade's friendly fire.
 	#If enable, player can attack friendly entity with SlashBlade.
-	friendly_enable = false
+	friendly_enable = true
 	#Determining the level cost for refine a slashblade.
 	#Range: > 1
 	refine_level_cost = 1
