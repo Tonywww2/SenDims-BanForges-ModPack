@@ -1,7 +1,7 @@
 #耀魂喷泉模块开关
 enableSoulTrapezoid = true
 #下界之星增强面板模块开关
-enableNetherStarUpgrade = true
+enableNetherStarUpgrade = false
 #耀魂喷泉门槛
 #Range: 100 ~ 10000
 soulCost = 1000
@@ -26,7 +26,7 @@ refinedFactor = 0.05
 attackModifierFactor = 0.1
 #刀光倍率模块基础攻击修正系数
 #Range: > 0
-attackModifierFactor_slash_effect = 1
+attackModifierFactor_slash_effect = 0
 #伤害浮动化
 damage_random = false
 #瞬步扣血开关

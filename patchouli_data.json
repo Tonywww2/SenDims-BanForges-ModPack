@@ -1,5 +1,13 @@
 {
   "bookGuiScale": 0,
   "clickedVisualize": false,
-  "bookData": {}
+  "bookData": {
+    "last_smith:smith_guide": {
+      "viewedEntries": [
+        "last_smith:category_1/page_4"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    }
+  }
 }
