@@ -1,0 +1,25 @@
+{
+	autofocus_id: "445FD4B516827881"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1BC47B7ADF8AF6BB"
+	group: "2D698D2001694314"
+	icon: "ad_astra:mercury_globe"
+	id: "1BC47B7ADF8AF6BB"
+	order_index: 3
+	quest_links: [ ]
+	quests: [{
+		id: "445FD4B516827881"
+		size: 2.0d
+		tasks: [{
+			dimension: "ad_astra:mercury"
+			icon: "ad_astra:mercury_globe"
+			id: "1FB87F96AC68A1C2"
+			title: "水星"
+			type: "dimension"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "水星"
+}

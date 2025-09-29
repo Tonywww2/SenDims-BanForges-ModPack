@@ -1,0 +1,26 @@
+{
+	autofocus_id: "3C1CB82ADF4FBBC1"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "33C0F33A1D4678D5"
+	group: "49FC4157519361C1"
+	icon: "twilightforest:twilight_portal_miniature_structure"
+	id: "33C0F33A1D4678D5"
+	order_index: 1
+	quest_links: [ ]
+	quests: [{
+		icon: "twilightforest:twilight_portal_miniature_structure"
+		id: "3C1CB82ADF4FBBC1"
+		size: 2.0d
+		tasks: [{
+			dimension: "twilightforest:twilight_forest"
+			icon: "twilightforest:twilight_portal_miniature_structure"
+			id: "4E1F6F5E13FD9E4E"
+			title: "暮色森林"
+			type: "dimension"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "暮色森林"
+}

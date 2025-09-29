@@ -1,0 +1,26 @@
+{
+	autofocus_id: "54D4F0FC37152215"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "4E41B199DB0E722F"
+	group: "6900D4BA6E5FB142"
+	icon: "blue_skies:everbright_portal"
+	id: "4E41B199DB0E722F"
+	order_index: 1
+	quest_links: [ ]
+	quests: [{
+		icon: "blue_skies:turquoise_grass_block"
+		id: "54D4F0FC37152215"
+		size: 2.0d
+		tasks: [{
+			dimension: "blue_skies:everbright"
+			icon: "blue_skies:everbright_portal"
+			id: "025BA92A8E6C9501"
+			title: "永昼"
+			type: "dimension"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "永昼"
+}

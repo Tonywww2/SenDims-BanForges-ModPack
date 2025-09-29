@@ -1,0 +1,25 @@
+{
+	autofocus_id: "51A9FF63F9F3E125"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "347A923727781B42"
+	group: "2D698D2001694314"
+	icon: "ad_astra:venus_globe"
+	id: "347A923727781B42"
+	order_index: 2
+	quest_links: [ ]
+	quests: [{
+		id: "51A9FF63F9F3E125"
+		size: 2.0d
+		tasks: [{
+			dimension: "ad_astra:venus"
+			icon: "ad_astra:venus_globe"
+			id: "02B03BDFF5448248"
+			title: "金星"
+			type: "dimension"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "金星"
+}

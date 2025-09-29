@@ -1,0 +1,25 @@
+{
+	autofocus_id: "35A8F36675442F8B"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1F2DBD95DF48A8E6"
+	group: "2D698D2001694314"
+	icon: "undergarden:catalyst"
+	id: "1F2DBD95DF48A8E6"
+	order_index: 4
+	quest_links: [ ]
+	quests: [{
+		id: "35A8F36675442F8B"
+		size: 2.0d
+		tasks: [{
+			dimension: "undergarden:undergarden"
+			icon: "undergarden:catalyst"
+			id: "314D511B11F18B38"
+			title: "深园"
+			type: "dimension"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "深园"
+}

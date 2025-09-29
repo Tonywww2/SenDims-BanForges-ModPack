@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "5C91D6143A935C11"
+	group: "2D698D2001694314"
+	id: "5C91D6143A935C11"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "深境三层"
+}

@@ -1,0 +1,25 @@
+{
+	autofocus_id: "2E150AF7AD2E748B"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "30913047B0C6C1E2"
+	group: "72FC493D243DC969"
+	icon: "ad_astra:glacio_globe"
+	id: "30913047B0C6C1E2"
+	order_index: 2
+	quest_links: [ ]
+	quests: [{
+		id: "2E150AF7AD2E748B"
+		size: 2.0d
+		tasks: [{
+			dimension: "ad_astra:glacio"
+			icon: "ad_astra:glacio_globe"
+			id: "46A2396E54BAE6E0"
+			title: "霜原星"
+			type: "dimension"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "霜原星"
+}

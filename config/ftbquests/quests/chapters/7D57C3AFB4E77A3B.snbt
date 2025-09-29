@@ -1,0 +1,43 @@
+{
+	autofocus_id: "6FD736B74327F2AF"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "7D57C3AFB4E77A3B"
+	group: "0937198EE94F2B97"
+	id: "7D57C3AFB4E77A3B"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "6FD736B74327F2AF"
+			size: 2.0d
+			tasks: [{
+				id: "0E127B58C8B636DA"
+				item: {
+					Count: 1
+					id: "minecraft:wooden_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6FD736B74327F2AF"]
+			icon: "umapyoi:large_energy_drink"
+			id: "2EA1B384A87A94DA"
+			subtitle: "重要"
+			tasks: [{
+				id: "1AA47343764D4E7C"
+				type: "checkmark"
+			}]
+			title: "行动力"
+			x: 4.0d
+			y: 0.0d
+		}
+	]
+	title: "拔刀剑"
+}

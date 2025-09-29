@@ -1,0 +1,172 @@
+{
+	autofocus_id: "62C0631125654B3D"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1"
+	group: "6900D4BA6E5FB142"
+	icon: "minecraft:flowering_azalea"
+	id: "4A8CA01794599D76"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			icon: "minecraft:moss_block"
+			id: "62C0631125654B3D"
+			rewards: [
+				{
+					auto: "enabled"
+					id: "7BE3F3AD0264C266"
+					item: "ftbquests:book"
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					id: "41FBB7B18647F051"
+					item: "akashictome:tome"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "62A75E5AB59CE8B4"
+				type: "dimension"
+			}]
+			title: "起点"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["62C0631125654B3D"]
+			id: "36DD50AE28ECF216"
+			tasks: [{
+				icon: "minecraft:flowering_azalea"
+				id: "10E7C6C12548EB7E"
+				observe_type: 1
+				timer: 0L
+				title: "杜鹃花丛"
+				to_observe: "minecraft:saplings"
+				type: "observation"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["36DD50AE28ECF216"]
+			id: "6D9B8C4828EA43E3"
+			tasks: [{
+				id: "1C63B7D4449A68A0"
+				item: "minecraft:bone_meal"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6D9B8C4828EA43E3"]
+			id: "0C7B137A72152B01"
+			tasks: [{
+				icon: "quark:azalea_log"
+				id: "2CD15D73D94EA289"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				title: "原木"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0C7B137A72152B01"]
+			id: "5748351A76910019"
+			tasks: [{
+				id: "12D3150C72E4E216"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5748351A76910019"]
+			id: "630C033031F00877"
+			tasks: [{
+				id: "41693CC2217DDFF4"
+				item: {
+					Count: 1
+					id: "minecraft:wooden_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["630C033031F00877"]
+			id: "21E65C4EA8B74115"
+			tasks: [{
+				id: "5E4FF0B108A509C7"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["21E65C4EA8B74115"]
+			id: "02003846DA642A0D"
+			tasks: [{
+				id: "267A381BC07330A6"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["62C0631125654B3D"]
+			id: "512345CC8BC8CD7D"
+			tasks: [{
+				id: "4CB62675166B0BE1"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"512345CC8BC8CD7D"
+				"02003846DA642A0D"
+			]
+			id: "5A6129A375A1B07E"
+			tasks: [{
+				id: "4C384E9DE553D818"
+				item: "dustandash:sharpen_flint"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["5A6129A375A1B07E"]
+			id: "13B6F6AC7608F794"
+			tasks: [{
+				id: "3F68576B8CE2A39A"
+				item: "dustandash:bloody_flint"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -8.0d
+		}
+	]
+	title: "空岛"
+}

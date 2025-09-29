@@ -1,0 +1,26 @@
+{
+	autofocus_id: "691992D003BDAF5F"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "158B0C981624D99B"
+	group: "6900D4BA6E5FB142"
+	icon: "blue_skies:everdawn_portal"
+	id: "158B0C981624D99B"
+	order_index: 2
+	quest_links: [ ]
+	quests: [{
+		icon: "blue_skies:lunar_grass_block"
+		id: "691992D003BDAF5F"
+		size: 2.0d
+		tasks: [{
+			dimension: "blue_skies:everdawn"
+			icon: "blue_skies:everdawn_portal"
+			id: "27FF272DCB923DAD"
+			title: "恒晓"
+			type: "dimension"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "恒晓"
+}

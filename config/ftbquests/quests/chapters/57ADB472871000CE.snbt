@@ -1,0 +1,25 @@
+{
+	autofocus_id: "0F8DC1AEBBC762C1"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "57ADB472871000CE"
+	group: "49FC4157519361C1"
+	icon: "aether:cold_aercloud"
+	id: "57ADB472871000CE"
+	order_index: 2
+	quest_links: [ ]
+	quests: [{
+		id: "0F8DC1AEBBC762C1"
+		size: 2.0d
+		tasks: [{
+			dimension: "aether:the_aether"
+			icon: "aether:cold_aercloud"
+			id: "355E773D4FC133FD"
+			title: "天境"
+			type: "dimension"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "天境"
+}

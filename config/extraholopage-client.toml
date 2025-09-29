@@ -13,7 +13,7 @@ modify_improvement_spacing = 28
 
 [Tooltip]
 	#是否启用添加材料Tooltip-修改此配置需重启生效
-	enableMaterialTooltip = false
+	enableMaterialTooltip = true
 	#是否需要在打开高级物品提示的时候才显示tooltip-修改此配置需重启生效
 	showNeedAdvancedTooltip = true
 	#是否在tooltip里面提示需求工具等级

@@ -1,0 +1,25 @@
+{
+	autofocus_id: "0A68F5EE8F25F036"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "20367AAD44F57688"
+	group: "2D698D2001694314"
+	icon: "minecraft:end_stone"
+	id: "20367AAD44F57688"
+	order_index: 5
+	quest_links: [ ]
+	quests: [{
+		id: "0A68F5EE8F25F036"
+		size: 2.0d
+		tasks: [{
+			dimension: "minecraft:the_end"
+			icon: "minecraft:end_stone"
+			id: "17A6BE0AC45FB95F"
+			title: "末地"
+			type: "dimension"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "末地"
+}

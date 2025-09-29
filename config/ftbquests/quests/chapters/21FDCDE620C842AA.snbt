@@ -1,0 +1,25 @@
+{
+	autofocus_id: "5251AFEDB9C97974"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "21FDCDE620C842AA"
+	group: "49FC4157519361C1"
+	icon: "minecraft:netherrack"
+	id: "21FDCDE620C842AA"
+	order_index: 4
+	quest_links: [ ]
+	quests: [{
+		id: "5251AFEDB9C97974"
+		size: 2.0d
+		tasks: [{
+			dimension: "minecraft:the_nether"
+			icon: "minecraft:netherrack"
+			id: "0676BA676B9646D4"
+			title: "下界"
+			type: "dimension"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "下界"
+}
