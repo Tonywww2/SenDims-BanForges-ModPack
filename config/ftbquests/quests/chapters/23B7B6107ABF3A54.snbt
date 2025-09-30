@@ -1,0 +1,21 @@
+{
+	autofocus_id: "2C21F5DDCC8B3890"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "23B7B6107ABF3A54"
+	group: "0937198EE94F2B97"
+	id: "23B7B6107ABF3A54"
+	order_index: 1
+	quest_links: [ ]
+	quests: [{
+		icon: "umapyoi:jewel"
+		id: "2C21F5DDCC8B3890"
+		tasks: [{
+			id: "59C9B5F9F034211B"
+			type: "checkmark"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "马娘之魂"
+}

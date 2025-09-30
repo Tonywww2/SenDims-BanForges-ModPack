@@ -572,6 +572,17 @@
         "value": 1024
       }
     },
+    "slashblade_sendims:ap_gain_amount": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 512,
+        "value": 512
+      }
+    },
     "attributeslib:current_hp_damage": {
       "enabled": false,
       "min": {
@@ -680,6 +691,17 @@
       "max": {
         "default": 1,
         "value": 1
+      }
+    },
+    "slashblade_sendims:ap_reduce_amount": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 512,
+        "value": 512
       }
     },
     "attributeslib:life_steal": {

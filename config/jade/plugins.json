@@ -60,6 +60,11 @@
   "jadeaddons.mcjtylib": {
     "jadeaddons": true
   },
+  "easy_villagers": {
+    "villager": true,
+    "converter": true,
+    "breeder": true
+  },
   "twilightforest": {
     "quest_ram_wool": true
   },
@@ -75,6 +80,9 @@
     "adventure": true,
     "ench": true,
     "spawner": true
+  },
+  "gravestone": {
+    "grave": true
   },
   "balm": {
     "jade": true

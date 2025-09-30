@@ -15,6 +15,8 @@
     "info.kubejs.material.lowbook": "[道具][训练书][一阶]",
     "info.kubejs.material.midbook": "[道具][训练书][二阶]",
     "info.kubejs.material.highbook": "[道具][训练书][三阶]",
+
+    "info.kubejs.faill_spawn_structure": "结构召唤失败！",
     
     "sidebar_button.ftblibrary.home": "回家",
     "sidebar_button.ftblibrary.back": "返回上个传送点"

@@ -7,8 +7,14 @@
 	icon: "blue_skies:everdawn_portal"
 	id: "158B0C981624D99B"
 	order_index: 2
-	quest_links: [ ]
+	quest_links: [{
+		id: "35EA0F478B221A03"
+		linked_quest: "678FFBDAB1765D0A"
+		x: 0.0d
+		y: -4.0d
+	}]
 	quests: [{
+		dependencies: ["32FD6CCDEA8B1420"]
 		icon: "blue_skies:lunar_grass_block"
 		id: "691992D003BDAF5F"
 		size: 2.0d

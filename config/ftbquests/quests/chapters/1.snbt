@@ -7,7 +7,28 @@
 	icon: "minecraft:flowering_azalea"
 	id: "4A8CA01794599D76"
 	order_index: 0
-	quest_links: [ ]
+	quest_links: [
+		{
+			id: "191A7A00BE47F04B"
+			linked_quest: "54D4F0FC37152215"
+			shape: "hexagon"
+			x: -8.0d
+			y: -4.0d
+		}
+		{
+			id: "37C5D696A743C544"
+			linked_quest: "691992D003BDAF5F"
+			shape: "hexagon"
+			x: -12.0d
+			y: -8.0d
+		}
+		{
+			id: "7379FE5C64FC6241"
+			linked_quest: "6FD736B74327F2AF"
+			x: -4.0d
+			y: 8.0d
+		}
+	]
 	quests: [
 		{
 			icon: "minecraft:moss_block"
@@ -147,6 +168,7 @@
 				"512345CC8BC8CD7D"
 				"02003846DA642A0D"
 			]
+			description: ["提示：手持锋利的燧石片右键"]
 			id: "5A6129A375A1B07E"
 			tasks: [{
 				id: "4C384E9DE553D818"
@@ -158,6 +180,7 @@
 		}
 		{
 			dependencies: ["5A6129A375A1B07E"]
+			description: ["提示：手持锋利的燧石片右键"]
 			id: "13B6F6AC7608F794"
 			tasks: [{
 				id: "3F68576B8CE2A39A"
@@ -166,6 +189,147 @@
 			}]
 			x: -4.0d
 			y: -8.0d
+		}
+		{
+			dependencies: ["13B6F6AC7608F794"]
+			description: ["不需要守门人了！"]
+			id: "32FD6CCDEA8B1420"
+			rewards: [{
+				id: "5A8DEA411E7CC772"
+				item: "blue_skies:blue_journal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "265736FD5CFDC9C0"
+				item: {
+					Count: 1
+					id: "blue_skies:zeal_lighter"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -8.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"54D4F0FC37152215"
+				"691992D003BDAF5F"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"...不知从何而来的灵感，混入了你的思绪。"
+				"在你将手中的一些珍惜材料组合后，你的手不自觉的动了起来..."
+				""
+				"这些材料以一种无法理解的方式组合在了一起，而你又仿佛从一开始就理解这件物品："
+				""
+				"&d深境证章&r"
+				""
+				"一丝仿佛被无限弯曲的细语在引诱着你，迈入深境..."
+				""
+				"迈入深境..."
+				"迈入深境......"
+			]
+			id: "52726CE2A2740BF7"
+			shape: "hexagon"
+			subtitle: "重要"
+			tasks: [{
+				id: "2A02FB0F98EFCFAB"
+				item: {
+					Count: 1
+					id: "slashblade_sendims:deeprealm_certificate"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -12.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["52726CE2A2740BF7"]
+			description: [
+				"&d深境证章&r是前往&d深境&r的门票，他也可以为你提供大量的常驻属性。"
+				""
+				"你可以消耗一些&b稀有材料&r，填充/填补&d深境证章&r，提高提供的属性。"
+				"当你填充/填补了一定数量的&b稀有材料&r之后，你将暂时无法继续填充/填补&d深境证章&r，直到你使用一些更为珍贵的&b突破材料&r突破当前的上限。"
+				"每一次突破，都会提高&d深境证章&r的填充/填补上限，并给予一些额外的特殊属性。"
+				""
+				"用对应的材料材料右键&d深境证章&r吧。"
+				""
+				"探索世界，慢慢填补&d深境证章&r吧......"
+			]
+			icon: {
+				Count: 1
+				id: "slashblade_sendims:deeprealm_certificate"
+				tag: {
+					deeprealm: {
+						damage_rate_progress: 0
+						health_progress: 0
+						rank: 0
+					}
+				}
+			}
+			id: "71F1943E6E3FCA17"
+			subtitle: "重要"
+			tasks: [{
+				id: "21031CE0DA554B68"
+				type: "checkmark"
+			}]
+			title: "深境证章的信息"
+			x: -16.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["71F1943E6E3FCA17"]
+			id: "4493C85E7045BD4E"
+			tasks: [{
+				id: "3D787EE52A133ADF"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "slashblade_sendims:drc_damage_material_0"
+					}
+				}
+				title: "阶级-无-伤害强化材料"
+				type: "item"
+			}]
+			title: "阶级-无-伤害强化材料"
+			x: -16.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["71F1943E6E3FCA17"]
+			id: "15C68C343213D8FC"
+			tasks: [{
+				id: "6BF0A9CEC0C54BA8"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "slashblade_sendims:drc_health_material_0"
+					}
+				}
+				title: "阶级-无-生命强化材料"
+				type: "item"
+			}]
+			title: "阶级-无-生命强化材料"
+			x: -16.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["71F1943E6E3FCA17"]
+			id: "421132E2C3F4644D"
+			tasks: [{
+				id: "2B83D5F8CD4C8EEC"
+				item: "minecraft:bedrock"
+				type: "item"
+			}]
+			title: "阶级-无-突破"
+			x: -20.0d
+			y: -4.0d
 		}
 	]
 	title: "空岛"

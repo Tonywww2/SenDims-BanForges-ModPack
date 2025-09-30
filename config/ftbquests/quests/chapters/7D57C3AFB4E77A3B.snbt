@@ -4,13 +4,22 @@
 	default_quest_shape: ""
 	filename: "7D57C3AFB4E77A3B"
 	group: "0937198EE94F2B97"
+	icon: {
+		Count: 1
+		id: "minecraft:wooden_sword"
+		tag: {
+			Damage: 0
+		}
+	}
 	id: "7D57C3AFB4E77A3B"
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["5748351A76910019"]
 			id: "6FD736B74327F2AF"
 			size: 2.0d
+			subtitle: "重要"
 			tasks: [{
 				id: "0E127B58C8B636DA"
 				item: {
@@ -27,8 +36,72 @@
 		}
 		{
 			dependencies: ["6FD736B74327F2AF"]
+			description: [
+				"&l与其他&m世界&r的拔刀剑不同，这个&m世界&r中的拔刀剑拥有一些特性："
+				"&r-&b特殊行动&r拥有一定的冷却时间；"
+				"-&bSA&r与部分可以&b招架&r的&b剑技&r拥有&b行动力&r需求；"
+				"-&b特殊行动&r闪避成功可以恢复中等量的&b行动力&r；"
+				"-成功&b招架&r首领的&b特殊攻击&r可以使首领&b失衡&r，大幅提高首领受到的伤害，并恢复一定血量；"
+				""
+				"&lTL;DR"
+				"&r&c没有马娘之魂为你提供行动力你将寸步难行！&r"
+				"这个任务的奖励包含一个基础的马娘之魂。"
+			]
 			icon: "umapyoi:large_energy_drink"
 			id: "2EA1B384A87A94DA"
+			rewards: [
+				{
+					id: "0050AA51A7CEE6E9"
+					item: {
+						Count: 1
+						id: "umapyoi:uma_soul"
+						tag: {
+							actionPoint: 2672
+							extraProperty: [I;
+								0
+								4
+								5
+								1400
+							]
+							growth: "retired"
+							maxProperty: [I;
+								18
+								18
+								18
+								18
+								18
+							]
+							motivation: "perfect"
+							name: "umapyoi:happy_meek"
+							property: [I;
+								4
+								1
+								1
+								1
+								6
+							]
+							propertyRate: [I;
+								6
+								6
+								6
+								6
+								6
+							]
+							ranking: "sr"
+							resultRanking: 4
+							skills: ["umapyoi:top_umamusme"]
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "6A90060AAA4344F6"
+					item: "umapyoi:small_energy_drink"
+					type: "item"
+				}
+			]
+			shape: "gear"
 			subtitle: "重要"
 			tasks: [{
 				id: "1AA47343764D4E7C"
@@ -37,6 +110,52 @@
 			title: "行动力"
 			x: 4.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["2EA1B384A87A94DA"]
+			description: [
+				"除了一般的&m杂鱼&r小怪，一些怪群中会偶尔出现一些更加强大的个体——&b首领&r。"
+				""
+				"&b首领&r拥有更高的属性，并且会使用&b特殊攻击&r。拥有红色特效的&b特殊攻击&r可以被一些特殊的&b剑技&r招架。&b首领&r拥有一些独特的掉落物。"
+			]
+			icon: "minecraft:zombie_head"
+			id: "57C686A75E491E21"
+			shape: "gear"
+			subtitle: "重要"
+			tasks: [{
+				id: "6AAD8007FDF21E89"
+				type: "checkmark"
+			}]
+			title: "首领"
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["57C686A75E491E21"]
+			description: [
+				"当&b首领&r出现红色特效时，你可以通过使用一些特殊的&b剑技&r招架接下来的特殊攻击。"
+				""
+				"可&b招架&r的&b剑技&r："
+				"-上斩;"
+				"-迅冲斩；"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:shield"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "52998D003D502A8A"
+			shape: "gear"
+			subtitle: "重要"
+			tasks: [{
+				id: "11473901D6849291"
+				type: "checkmark"
+			}]
+			title: "招架"
+			x: 0.0d
+			y: -4.0d
 		}
 	]
 	title: "拔刀剑"

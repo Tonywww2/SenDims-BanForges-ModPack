@@ -10,11 +10,11 @@
 	umasoul_speed_percent_enable = true
 	#Determines whether to add strength bouns as a percentage.
 	#If enable, the bonus will be calculated as a percentage.
-	umasoul_strength_percent_enable = true
+	umasoul_strength_percent_enable = false
 	#Determining the max attack of umamusume soul.
 	#Set to 0 will not add any attack.
 	#Range: 0.0 ~ 1.7976931348623157E308
-	umasoul_max_strength_attack = 2.0
+	umasoul_max_strength_attack = 16.0
 	#Determines whether to add stamina bouns as a percentage.
 	#If enable, the bonus will be calculated as a percentage.
 	umasoul_stamina_percent_enable = false
@@ -28,7 +28,7 @@
 	#Determining the max armor of umamusume soul.
 	#Set to 0 will not add any health.
 	#Range: 0.0 ~ 1.7976931348623157E308
-	umasoul_max_guts_armor = 5.0
+	umasoul_max_guts_armor = 10.0
 	#Determining the max armor toughness of umamusume soul.
 	#Set to 0 will not add any health.
 	#Range: 0.0 ~ 1.7976931348623157E308
@@ -36,11 +36,11 @@
 	#Determining the chance that damage will effect motivation.
 	#Set to 0 to turn off.
 	#Range: 0.0 ~ 1.0
-	chance_motivation_effect = 0.5
+	chance_motivation_effect = 0.2
 	#Determining the damage that will effect motivation.
 	#Set to 0 to turn off.
 	#Range: 0.0 ~ 1.7976931348623157E308
-	damage_motivation_effect = 4.0
+	damage_motivation_effect = 40.0
 	#Determining the sum of gacha probabilities.
 	#If the sum of the three gacha probabilities does not equal the expected sum, follow the default configuration.
 	#Range: > 3
@@ -48,20 +48,20 @@
 	#Determining the R ranking probability of gacha probabilities.
 	#If the sum of the three gacha probabilities does not equal the expected sum, follow the default configuration.
 	#Range: > 1
-	gacha_probability_r = 70
+	gacha_probability_r = 50
 	#Determining the SR ranking probability of gacha probabilities.
 	#If the sum of the three gacha probabilities does not equal the expected sum, follow the default configuration.
 	#Range: > 1
-	gacha_probability_sr = 20
+	gacha_probability_sr = 30
 	#Determining the SSR ranking probability of gacha probabilities.
 	#If the sum of the three gacha probabilities does not equal the expected sum, follow the default configuration.
 	#Range: > 1
-	gacha_probability_ssr = 10
+	gacha_probability_ssr = 20
 	#Determines the threshold for all base stat values.
 	#If the threshold value is exceeded, the attribute effect will be reduced according to stat_limit_reduction.
 	#Some attribute effects no longer increase after exceeding the threshold
 	#Range: > 18
-	stat_limit_value = 18
+	stat_limit_value = 20
 	#Determines the reduction for all base stat values.
 	#If the threshold value is exceeded, the attribute effect will be reduced according to this value.
 	#Range: 0.0 ~ 1.0

@@ -9,6 +9,7 @@
 	order_index: 1
 	quest_links: [ ]
 	quests: [{
+		dependencies: ["6AE2EFEC0F3BE4BE"]
 		icon: "twilightforest:twilight_portal_miniature_structure"
 		id: "3C1CB82ADF4FBBC1"
 		size: 2.0d

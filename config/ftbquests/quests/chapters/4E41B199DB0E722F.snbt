@@ -8,19 +8,151 @@
 	id: "4E41B199DB0E722F"
 	order_index: 1
 	quest_links: [ ]
-	quests: [{
-		icon: "blue_skies:turquoise_grass_block"
-		id: "54D4F0FC37152215"
-		size: 2.0d
-		tasks: [{
-			dimension: "blue_skies:everbright"
-			icon: "blue_skies:everbright_portal"
-			id: "025BA92A8E6C9501"
-			title: "永昼"
-			type: "dimension"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			dependencies: ["32FD6CCDEA8B1420"]
+			icon: "blue_skies:turquoise_grass_block"
+			id: "54D4F0FC37152215"
+			size: 2.0d
+			tasks: [{
+				dimension: "blue_skies:everbright"
+				icon: "blue_skies:everbright_portal"
+				id: "025BA92A8E6C9501"
+				title: "永昼"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"54D4F0FC37152215"
+				"691992D003BDAF5F"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"在蔚蓝晧空的维度中，你的防具/武器将不会被削弱！"
+				"你也可以使用特殊的仪式召唤主要的BOSS结构。"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:diamond_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "678FFBDAB1765D0A"
+			shape: "gear"
+			subtitle: "重要"
+			tasks: [{
+				id: "606F4807EC71738E"
+				type: "checkmark"
+			}]
+			title: "再见，无尽的跑图与装备削弱"
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["54D4F0FC37152215"]
+			id: "1ACB7A52473B61AA"
+			tasks: [{
+				id: "205BD19D2722A352"
+				item: "blue_skies:carabeef"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["54D4F0FC37152215"]
+			id: "28762F38A93FF413"
+			tasks: [{
+				id: "3FC17DDC978F5A0F"
+				item: "blue_skies:pyrope_gem"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["54D4F0FC37152215"]
+			icon: "blue_skies:turquoise_stonebrick"
+			id: "0D8B20F936EC2AF3"
+			shape: "hexagon"
+			tasks: [{
+				id: "767FAB6B4752ACE8"
+				type: "checkmark"
+			}]
+			title: "永昼之地祸乱高塔"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0D8B20F936EC2AF3"]
+			id: "27CF9620A515822A"
+			tasks: [{
+				id: "445BE79C9DAB7150"
+				item: {
+					Count: 1
+					id: "blue_skies:loot_bag_summoner"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0D8B20F936EC2AF3"]
+			id: "6590A625F7AB4CB2"
+			tasks: [{
+				id: "0B947EC53E91D5E3"
+				item: {
+					Count: 1
+					id: "blue_skies:soulbound_spear"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6590A625F7AB4CB2"]
+			description: [
+				"别担心！我们修改了&b星荧粉碎者&r的部分机制："
+				""
+				"-你可以使用任何的&b魔法伤害&r击破树墙；"
+				"-不过你依旧需要使用&b缚魂之矛&r眩晕&b星荧粉碎者&r；"
+			]
+			icon: "blue_skies:glowing_nature_stonebrick"
+			id: "2089FC681557670B"
+			shape: "hexagon"
+			tasks: [{
+				id: "245D7F2AA98CE1D4"
+				type: "checkmark"
+			}]
+			title: "自然城堡"
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["2089FC681557670B"]
+			id: "0FE9208CF1906248"
+			tasks: [{
+				id: "6CBD4528201F2765"
+				item: {
+					Count: 1
+					id: "blue_skies:loot_bag_starlit_crusher"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 12.0d
+		}
+	]
 	title: "永昼"
 }
