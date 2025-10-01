@@ -1,0 +1,75 @@
+{
+	"weight": 5,
+	"quality": 1.5,
+	"dimensions": ["minecraft:overworld"],
+	"unique": true,
+	"min_rarity": "rare",
+	"bonuses": [{
+			"type": "apotheosis:all_stats",
+			"gem_class": {
+				"key": "helmet",
+				"types": [
+					"helmet"
+				]
+			},
+			"operation": "multiply_total",
+			"values": {
+				"rare": 0.025,
+				"epic": 0.05,
+				"mythic": 0.075,
+				"ancient": 0.10
+			},
+            "attributes": [
+                "minecraft:generic.max_health",
+                "minecraft:generic.knockback_resistance",
+                "minecraft:generic.movement_speed",
+                "minecraft:generic.attack_damage",
+                "minecraft:generic.attack_knockback",
+                "minecraft:generic.attack_speed",
+                "minecraft:generic.luck",
+                "attributeslib:armor_pierce",
+                "attributeslib:armor_shred",
+                "attributeslib:arrow_damage",
+                "attributeslib:arrow_velocity",
+                "attributeslib:cold_damage",
+                "attributeslib:crit_chance",
+                "attributeslib:crit_damage",
+                "attributeslib:current_hp_damage",
+                "attributeslib:dodge_chance",
+                "attributeslib:draw_speed",
+                "attributeslib:experience_gained",
+                "attributeslib:fire_damage",
+                "attributeslib:ghost_health",
+                "attributeslib:mining_speed",
+                "attributeslib:prot_pierce",
+                "attributeslib:prot_shred",
+                "forge:swim_speed",
+                "forge:block_reach",
+                "forge:step_height_addition"
+            ]
+		},
+		{
+			"type": "apotheosis:drop_transform",
+			"gem_class": {
+				"key": "pickaxe",
+				"types": [
+					"pickaxe"
+				]
+			},
+			"blocks": "forge:ores/copper",
+			"inputs": {
+				"tag": "forge:raw_materials/copper"
+			},
+			"output": {
+				"item": "minecraft:raw_gold"
+			},
+			"values": {
+				"rare": 0.15,
+				"epic": 0.20,
+				"mythic": 0.25,
+				"ancient": 0.40
+			},
+			"desc": "gem.apotheosis:overworld/royalty.bonus.pickaxe"
+		}
+	]
+}

@@ -1,10 +1,4 @@
 ad_astra:moon_crater
-blue_skies:everbright_canyon_carver
-blue_skies:everbright_cave_carver
-blue_skies:everbright_noise_carver
-blue_skies:sky_canyon_carver
-blue_skies:sky_cave_carver
-blue_skies:sky_noise_carver
 minecraft:canyon
 minecraft:cave
 minecraft:cave_extra_underground

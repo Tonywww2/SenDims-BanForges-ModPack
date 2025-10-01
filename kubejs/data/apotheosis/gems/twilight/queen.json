@@ -1,0 +1,58 @@
+{
+	"conditions": [{
+		"type": "forge:mod_loaded",
+		"modid": "twilightforest"
+	}],
+	"weight": 5,
+	"quality": 1.5,
+	"dimensions": [
+		"twilightforest:twilight_forest"
+	],
+	"unique": true,
+	"min_rarity": "rare",
+	"bonuses": [{
+			"type": "apotheosis:twilight_fortification",
+			"gem_class": {
+				"key": "chestplate",
+				"types": [
+					"chestplate"
+				]
+			},
+			"values": {
+				"rare": {
+					"chance": 0.05,
+					"cooldown": 6000
+				},
+				"epic": {
+					"chance": 0.10,
+					"cooldown": 5400
+				},
+				"mythic": {
+					"chance": 0.125,
+					"cooldown": 5100
+				},
+				"ancient": {
+					"chance": 0.15,
+					"cooldown": 4800
+				}
+			}
+		},
+		{
+			"type": "apotheosis:attribute",
+			"gem_class": {
+				"key": "helmet",
+				"types": [
+					"helmet"
+				]
+			},
+			"attribute": "attributeslib:cold_damage",
+			"operation": "MULTIPLY_TOTAL",
+			"values": {
+				"rare": 0.10,
+				"epic": 0.20,
+				"mythic": 0.35,
+				"ancient": 0.50
+			}
+		}
+	]
+}

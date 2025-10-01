@@ -1,0 +1,48 @@
+{
+	"variant": "guardian",
+	"weight": 10,
+	"quality": 0,
+	"dimensions": [
+	],
+	"bonuses": [{
+			"type": "apotheosis:attribute",
+			"gem_class": {
+				"key": "core_armor",
+				"types": [
+					"chestplate",
+					"leggings"
+				]
+			},
+			"attribute": "minecraft:generic.armor",
+			"operation": "ADDITION",
+			"values": {
+				"common": 0.5,
+				"uncommon": 1,
+				"rare": 1.5,
+				"epic": 2,
+				"mythic": 3,
+				"ancient": 4
+			}
+		},
+		{
+			"type": "apotheosis:attribute",
+			"gem_class": {
+				"key": "light_weapon",
+				"types": [
+					"sword",
+					"trident"
+				]
+			},
+			"attribute": "attributeslib:life_steal",
+			"operation": "ADDITION",
+			"values": {
+				"common": 0.0025,
+				"uncommon": 0.005,
+				"rare": 0.0075,
+				"epic": 0.01,
+				"mythic": 0.015,
+				"ancient": 0.02
+			}
+		}
+	]
+}

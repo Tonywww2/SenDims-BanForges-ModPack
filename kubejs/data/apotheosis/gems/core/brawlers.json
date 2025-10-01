@@ -1,0 +1,48 @@
+{
+	"variant": "brawlers",
+	"weight": 10,
+	"quality": 0,
+	"dimensions": [
+	],
+	"bonuses": [{
+			"type": "apotheosis:attribute",
+			"gem_class": {
+				"key": "light_weapon",
+				"types": [
+					"sword",
+					"trident"
+				]
+			},
+			"attribute": "slashblade_sendims:ap_gain_amount",
+			"operation": "ADDITION",
+			"values": {
+				"common": 0.15,
+				"uncommon": 0.20,
+				"rare": 0.25,
+				"epic": 0.30,
+				"mythic": 0.40,
+				"ancient": 0.60
+			}
+		},
+		{
+			"type": "apotheosis:attribute",
+			"gem_class": {
+				"key": "core_armor",
+				"types": [
+					"leggings",
+					"chestplate"
+				]
+			},
+			"attribute": "minecraft:generic.max_health",
+			"operation": "ADDITION",
+			"values": {
+				"common": 1,
+				"uncommon": 2,
+				"rare": 4,
+				"epic": 6,
+				"mythic": 8,
+				"ancient": 10
+			}
+		}
+	]
+}
