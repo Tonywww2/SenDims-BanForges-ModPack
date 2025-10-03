@@ -8,20 +8,77 @@
 	id: "33C0F33A1D4678D5"
 	order_index: 1
 	quest_links: [ ]
-	quests: [{
-		dependencies: ["6AE2EFEC0F3BE4BE"]
-		icon: "twilightforest:twilight_portal_miniature_structure"
-		id: "3C1CB82ADF4FBBC1"
-		size: 2.0d
-		tasks: [{
-			dimension: "twilightforest:twilight_forest"
+	quests: [
+		{
+			dependencies: ["6AE2EFEC0F3BE4BE"]
 			icon: "twilightforest:twilight_portal_miniature_structure"
-			id: "4E1F6F5E13FD9E4E"
-			title: "暮色森林"
-			type: "dimension"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+			id: "3C1CB82ADF4FBBC1"
+			rewards: [{
+				id: "4DD3ED97C6B15E37"
+				item: "twilightforest:raven_feather"
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [{
+				dimension: "twilightforest:twilight_forest"
+				icon: "twilightforest:twilight_portal_miniature_structure"
+				id: "4E1F6F5E13FD9E4E"
+				title: "暮色森林"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3C1CB82ADF4FBBC1"
+				"222D394D6FDDC479"
+			]
+			id: "14E282F8699E935B"
+			tasks: [{
+				id: "23FC31CDC20AE7E5"
+				item: "twilightforest:magic_map"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3C1CB82ADF4FBBC1"]
+			id: "222D394D6FDDC479"
+			tasks: [{
+				advancement: "twilightforest:twilight_hunter"
+				criterion: ""
+				id: "47E44D45FB41E26E"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["222D394D6FDDC479"]
+			id: "20FDE881446DF8AF"
+			tasks: [{
+				advancement: "twilightforest:progress_naga"
+				criterion: ""
+				id: "0E52B292979BE956"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["20FDE881446DF8AF"]
+			id: "3AA758300110DA33"
+			tasks: [{
+				advancement: "twilightforest:progress_lich"
+				criterion: ""
+				id: "5D17AD0A33BFFB4F"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 12.0d
+		}
+	]
 	title: "暮色森林"
 }

@@ -20,25 +20,25 @@
       "key": "tsuba/",
       "extract": {
         "primaryAttributes": {
-          "generic.attack_damage": -0.4
+          "generic.attack_damage": -0.5
         },
         "secondaryAttributes": {
-          "generic.attack_damage": 0.3
+          "generic.attack_damage": 0.5
         },
         "tertiaryAttributes": {
-          "generic.attack_damage":0.4
+          "generic.attack_damage":0.5
         },
         "primaryEffects": {
-          "RefineStrengthening": 0.4
+          "RefineStrengthening": 0.5
         },
         "secondaryEffects":{
-          "RefineStrengthening": -0.2
+          "RefineStrengthening": -0.5
         },
         "tertiaryEffects": {
-          "RefineStrengthening":2
+          "RefineStrengthening":1.5
         },
         "durability": 0.5,
-        "magicCapacity": 4.3,
+        "magicCapacity": 4,
         "glyph": {
           "textureX": 48,
           "textureY": 0,

@@ -22,7 +22,7 @@
       "key": "scabbard/",
       "extract": {
         "primaryAttributes": {
-          "generic.attack_damage": 2.1
+          "generic.attack_damage": 2
         },
         "secondaryAttributes": {
           "generic.attack_damage": 0
@@ -34,13 +34,13 @@
           "RefineStrengthening": 0
         },
         "secondaryEffects":{
-          "RefineStrengthening": -0.3
+          "RefineStrengthening": -0.5
         },
         "tertiaryEffects": {
-          "RefineStrengthening": 1.3
+          "RefineStrengthening": 1.5
         },
         "durability": 0.5,
-        "magicCapacity": 4.3,
+        "magicCapacity": 4.5,
         "glyph": {
           "textureX": 80,
           "textureY": 0,

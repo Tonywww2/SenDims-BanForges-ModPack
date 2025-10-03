@@ -1,0 +1,23 @@
+{
+  "conditions": [{
+    "type": "forge:mod_loaded",
+    "modid": "twilightforest"
+  }],
+  "weight": 100,
+  "quality": 1,
+  "stack": {
+    "type": "slashblade:blade",
+    "item": "slashblade:slashblade",
+    "request": {
+      "name": "slashblade:sabigatana",
+      "sword_type": [
+        "broken"
+      ]
+    }
+  },
+  "dimensions": [
+    "twilightforest:twilight_forest"
+  ],
+  "min_rarity": "apotheosis:uncommon",
+  "max_rarity": "apotheosis:epic"
+}

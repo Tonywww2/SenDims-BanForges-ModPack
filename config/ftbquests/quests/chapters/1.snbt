@@ -7,28 +7,12 @@
 	icon: "minecraft:flowering_azalea"
 	id: "4A8CA01794599D76"
 	order_index: 0
-	quest_links: [
-		{
-			id: "191A7A00BE47F04B"
-			linked_quest: "54D4F0FC37152215"
-			shape: "hexagon"
-			x: -8.0d
-			y: -4.0d
-		}
-		{
-			id: "37C5D696A743C544"
-			linked_quest: "691992D003BDAF5F"
-			shape: "hexagon"
-			x: -12.0d
-			y: -8.0d
-		}
-		{
-			id: "7379FE5C64FC6241"
-			linked_quest: "6FD736B74327F2AF"
-			x: -4.0d
-			y: 8.0d
-		}
-	]
+	quest_links: [{
+		id: "7379FE5C64FC6241"
+		linked_quest: "6FD736B74327F2AF"
+		x: -4.0d
+		y: 8.0d
+	}]
 	quests: [
 		{
 			icon: "minecraft:moss_block"
@@ -191,33 +175,6 @@
 			y: -8.0d
 		}
 		{
-			dependencies: ["13B6F6AC7608F794"]
-			description: ["不需要守门人了！"]
-			id: "32FD6CCDEA8B1420"
-			rewards: [{
-				id: "5A8DEA411E7CC772"
-				item: "blue_skies:blue_journal"
-				type: "item"
-			}]
-			tasks: [{
-				id: "265736FD5CFDC9C0"
-				item: {
-					Count: 1
-					id: "blue_skies:zeal_lighter"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: -8.0d
-			y: -8.0d
-		}
-		{
-			dependencies: [
-				"54D4F0FC37152215"
-				"691992D003BDAF5F"
-			]
 			dependency_requirement: "one_completed"
 			description: [
 				"...不知从何而来的灵感，混入了你的思绪。"

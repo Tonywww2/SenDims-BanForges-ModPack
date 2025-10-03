@@ -28,22 +28,22 @@
           "generic.attack_damage": 2
         },
         "secondaryAttributes": {
-          "generic.attack_damage": 0.3
+          "generic.attack_damage": 1
         },
         "tertiaryAttributes": {
-          "generic.attack_damage": -0.4
+          "generic.attack_damage": -1
         },
         "primaryEffects": {
-          "RefineStrengthening": -0.7
+          "RefineStrengthening": -1
         },
         "secondaryEffects":{
-          "RefineStrengthening": 1.2
+          "RefineStrengthening": 1
         },
         "tertiaryEffects": {
-          "RefineStrengthening": 3.1
+          "RefineStrengthening": 4
         },
         "durability": 0.5,
-        "magicCapacity": 4.3,
+        "magicCapacity": 6,
         "glyph": {
           "textureX": 16,
           "textureY": 0,

@@ -10,7 +10,7 @@
     {
       "key": "sa/slashblade:sakura_end",
       "attributes": {
-        "forge:entity_reach": 3
+        "forge:entity_reach": 1
       },
       "effects": {
         "RefineStrengthening": 16

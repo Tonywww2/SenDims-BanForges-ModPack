@@ -22,6 +22,17 @@
         "value": 512
       }
     },
+    "umapyoi:sprint_speed": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "attributeslib:ghost_health": {
       "enabled": false,
       "min": {

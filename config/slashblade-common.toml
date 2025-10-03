@@ -51,7 +51,7 @@
 	slashblade_damage_multiplier = 1.0
 	#S-Rank Refine Bonus: Each Refine × Multiplier'value Damage.[Default: 1.D]
 	#Range: 0.0 ~ 1024.0
-	refine_damage_multiplier = 1.0
+	refine_damage_multiplier = 0.75
 	#The maximum number of refine of Trapezohedron.[Default: 2147483647(infinity)]
 	#Range: > 200
 	trapezohedron_max_refine = 2147483647
