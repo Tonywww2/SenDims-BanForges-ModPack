@@ -175,6 +175,7 @@
 			y: -8.0d
 		}
 		{
+			dependencies: ["0B0F1D8BE89F8980"]
 			dependency_requirement: "one_completed"
 			description: [
 				"...不知从何而来的灵感，混入了你的思绪。"
@@ -191,7 +192,7 @@
 			]
 			id: "52726CE2A2740BF7"
 			shape: "hexagon"
-			subtitle: "重要"
+			subtitle: "重要|深境"
 			tasks: [{
 				id: "2A02FB0F98EFCFAB"
 				item: {
@@ -287,6 +288,41 @@
 			title: "阶级-无-突破"
 			x: -20.0d
 			y: -4.0d
+		}
+		{
+			dependencies: ["13B6F6AC7608F794"]
+			id: "0B0F1D8BE89F8980"
+			tasks: [{
+				id: "072B46CCA9F00419"
+				type: "checkmark"
+			}]
+			title: " 花园"
+			x: -8.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["0B0F1D8BE89F8980"]
+			id: "5BDFD8CB35D8AFC6"
+			subtitle: "暮色森林"
+			tasks: [{
+				id: "45606D4C476146B3"
+				item: "cataclysm:obsidian_bricks"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0B0F1D8BE89F8980"]
+			id: "71B535DCE4CFEF8F"
+			subtitle: "天境"
+			tasks: [{
+				id: "5B26A03993FA7CF2"
+				item: "minecraft:glowstone"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 0.0d
 		}
 	]
 	title: "空岛"

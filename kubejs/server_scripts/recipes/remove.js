@@ -30,7 +30,8 @@ const toRemoveID = new Set([
     "apotheosis:filtering_shelf",
     "apotheosis:treasure_shelf",
     "apotheosis:library",
-    "apotheosis:enchanting/ender_library"
+    "apotheosis:enchanting/ender_library",
+    "dustandash:crafting/sharpen_flint"
 ]);
 
 ServerEvents.recipes(event => {

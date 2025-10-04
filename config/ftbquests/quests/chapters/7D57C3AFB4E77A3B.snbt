@@ -157,6 +157,72 @@
 			x: 0.0d
 			y: -4.0d
 		}
+		{
+			dependencies: ["6FD736B74327F2AF"]
+			id: "1CFE15E293B7087E"
+			tasks: [{
+				id: "5A558140E19A5184"
+				type: "checkmark"
+			}]
+			title: "剑技"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1CFE15E293B7087E"]
+			id: "487B3101C7F7A60E"
+			tasks: [{
+				id: "325B865AB4CF9FB7"
+				type: "checkmark"
+			}]
+			title: "连击A"
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["487B3101C7F7A60E"]
+			id: "350841513657EC3F"
+			tasks: [{
+				id: "0BFF12331D1D2F93"
+				type: "checkmark"
+			}]
+			title: "连击B"
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["487B3101C7F7A60E"]
+			id: "7AF2201386C6149A"
+			tasks: [{
+				id: "5DFD0E0112C750E8"
+				type: "checkmark"
+			}]
+			title: "连击C"
+			x: -4.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["1CFE15E293B7087E"]
+			id: "68657E0627F9AD24"
+			tasks: [{
+				id: "4AEBDD7CE41330DC"
+				type: "checkmark"
+			}]
+			title: "特殊行动"
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1CFE15E293B7087E"]
+			id: "6336CB1635142B6B"
+			tasks: [{
+				id: "54F36C86AC779973"
+				type: "checkmark"
+			}]
+			title: "SA与SE"
+			x: 4.0d
+			y: 4.0d
+		}
 	]
 	title: "拔刀剑"
 }

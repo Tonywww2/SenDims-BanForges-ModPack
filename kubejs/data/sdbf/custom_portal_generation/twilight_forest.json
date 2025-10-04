@@ -1,0 +1,21 @@
+{
+  "schema_version": "imm_ptl:v1",
+  "from": [
+    "minecraft:overworld"
+  ],
+  "to": "twilightforest:twilight_forest",
+  "form": {
+    "type": "imm_ptl:flipping_floor_square",
+    "length": 2,
+    "frame_block": "cataclysm:obsidian_bricks",
+    "area_block": "minecraft:water",
+    "bottom_block": "forge:obsidian"
+  },
+  "trigger": {
+    "type": "imm_ptl:throw_item",
+    "item": "minecraft:diamond"
+  },
+  "post_invoke_commands": [
+    "/summon minecraft:lightning_bolt ~ ~ ~"
+  ]
+}

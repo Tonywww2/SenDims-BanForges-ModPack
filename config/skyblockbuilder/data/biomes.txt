@@ -13,6 +13,11 @@ aether:skyroot_forest
 aether:skyroot_grove
 aether:skyroot_meadow
 aether:skyroot_woodland
+darkerdepths:glowshroom_forest
+darkerdepths:molten_cavern
+darkerdepths:sandy_catacombs
+eco:floating_river
+feur_dimensional_skyland:skyland
 integrateddynamics:meneglin
 lionfishapi:original_source_marker
 minecraft:badlands
@@ -190,3 +195,5 @@ undergarden:smog_spires
 undergarden:smogstem_forest
 undergarden:veil_mushroom_bog
 undergarden:wigglewood_forest
+yungscavebiomes:frosted_caves
+yungscavebiomes:lost_caves

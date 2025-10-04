@@ -10,7 +10,11 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["6AE2EFEC0F3BE4BE"]
+			dependencies: [
+				"6AE2EFEC0F3BE4BE"
+				"5BDFD8CB35D8AFC6"
+			]
+			description: ["注：原始风格的暮色森林传送门需要在原始的门框中投入下界之星"]
 			icon: "twilightforest:twilight_portal_miniature_structure"
 			id: "3C1CB82ADF4FBBC1"
 			rewards: [{
