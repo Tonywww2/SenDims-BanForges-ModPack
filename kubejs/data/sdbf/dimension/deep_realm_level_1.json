@@ -1,0 +1,267 @@
+{
+	"type": "sdbf:deeprealm",
+	"generator": {
+		"type": "minecraft:noise",
+		"settings": "infinity_cave:deeprealm",
+		"biome_source": {
+			"type": "minecraft:multi_noise",
+			"biomes": [
+				{
+					"biome": "infinity_cave:amethyst_caves",
+					"parameters": {
+						"temperature": -0.3,
+						"humidity": -0.3,
+						"depth": [
+							1.2,
+							2
+						],
+						"erosion": 0,
+						"continentalness": 0,
+						"weirdness": 0,
+						"offset": 0.2
+					}
+				},
+				{
+					"biome": "cavernous:crystal_caves",
+					"parameters": {
+						"temperature": -0.3,
+						"humidity": -0.3,
+						"depth": [
+							0.2,
+							0.8
+						],
+						"erosion": 0,
+						"continentalness": 0,
+						"weirdness": 0,
+						"offset": 0.2
+					}
+				},
+				{
+					"biome": "cavernous:tropical_caves",
+					"parameters": {
+						"temperature": 0.1,
+						"humidity": 0.4,
+						"depth": [
+							0.2,
+							0.8
+						],
+						"erosion": 0,
+						"continentalness": 0,
+						"weirdness": 0,
+						"offset": 0
+					}
+				},
+				{
+					"biome": "darkerdepths:sandy_catacombs",
+					"parameters": {
+						"temperature": 0.3,
+						"humidity": -0.7,
+						"depth": [
+							0.5,
+							1.6
+						],
+						"erosion": 0,
+						"continentalness": 0,
+						"weirdness": 0,
+						"offset": 0
+					}
+				},
+				{
+					"biome": "cavernous:painted_caves",
+					"parameters": {
+						"temperature": 0.3,
+						"humidity": -0.5,
+						"depth": [
+							0.2,
+							0.8
+						],
+						"erosion": 0,
+						"continentalness": 0,
+						"weirdness": 0,
+						"offset": 0
+					}
+				},
+				{
+					"biome": "cavernous:marble_caves",
+					"parameters": {
+						"temperature": -0.1,
+						"humidity": 0.3,
+						"depth": [
+							0.2,
+							0.8
+						],
+						"erosion": 0,
+						"continentalness": 0,
+						"weirdness": 0,
+						"offset": 0
+					}
+				},
+				{
+					"biome": "cavernous:desert_caves",
+					"parameters": {
+						"temperature": -0.1,
+						"humidity": -0.6,
+						"depth": [
+							0.2,
+							0.8
+						],
+						"erosion": 0,
+						"continentalness": 0,
+						"weirdness": 0,
+						"offset": 0
+					}
+				},
+				{
+					"biome": "yungscavebiomes:frosted_caves",
+					"parameters": {
+						"temperature": -0.5,
+						"humidity": 0,
+						"depth": [
+							1.2,
+							2
+						],
+						"erosion": 0,
+						"continentalness": 0,
+						"weirdness": 0,
+						"offset": 0
+					}
+				},
+				{
+					"biome": "cavernous:icy_caves",
+					"parameters": {
+						"temperature": -0.5,
+						"humidity": 0,
+						"depth": [
+							0.2,
+							0.8
+						],
+						"erosion": 0,
+						"continentalness": 0,
+						"weirdness": 0,
+						"offset": 0
+					}
+				},
+				{
+					"biome": "regions_unexplored:ancient_delta",
+					"parameters": {
+						"temperature": 0.1,
+						"humidity": 0.5,
+						"depth": [
+							1.2,
+							2
+						],
+						"erosion": 0,
+						"continentalness": 0,
+						"weirdness": 0,
+						"offset": 0
+					}
+				},
+				{
+					"biome": "cavernous:marshy_caves",
+					"parameters": {
+						"temperature": 0.2,
+						"humidity": 0.4,
+						"depth": [
+							0.2,
+							0.8
+						],
+						"erosion": 0,
+						"continentalness": 0,
+						"weirdness": 0,
+						"offset": 0
+					}
+				},
+				{
+					"biome": "infinity_cave:molten_caves",
+					"parameters": {
+						"temperature": 0.6,
+						"humidity": -0.5,
+						"depth": [
+							0.8,
+							1.6
+						],
+						"erosion": 0,
+						"continentalness": 0,
+						"weirdness": 0,
+						"offset": 0
+					}
+				},
+				{
+					"biome": "cavernous:volcanic_caves",
+					"parameters": {
+						"temperature": 0.4,
+						"humidity": -0.5,
+						"depth": [
+							0.2,
+							0.8
+						],
+						"erosion": 0,
+						"continentalness": 0,
+						"weirdness": 0,
+						"offset": 0
+					}
+				},
+				{
+					"biome": "infinity_cave:sulfide_caves",
+					"parameters": {
+						"temperature": 0,
+						"humidity": 0.5,
+						"depth": [
+							1.2,
+							2
+						],
+						"erosion": 0,
+						"continentalness": 0,
+						"weirdness": 0,
+						"offset": 0.2
+					}
+				},
+				{
+					"biome": "minecraft:lush_caves",
+					"parameters": {
+						"temperature": 0.1,
+						"humidity": 0.4,
+						"depth": [
+							0.7,
+							1.5
+						],
+						"erosion": 0,
+						"continentalness": 0,
+						"weirdness": 0,
+						"offset": 0.2
+					}
+				},
+				{
+					"biome": "infinity_cave:deeprock_caverns",
+					"parameters": {
+						"temperature": 0,
+						"humidity": 0,
+						"depth": [
+							1.2,
+							2
+						],
+						"erosion": 0,
+						"continentalness": 0,
+						"weirdness": 0,
+						"offset": 0
+					}
+				},
+				{
+					"biome": "minecraft:deep_dark",
+					"parameters": {
+						"temperature": 0.2,
+						"humidity": -0.1,
+						"depth": [
+							1.6,
+							2
+						],
+						"erosion": 0,
+						"continentalness": 0,
+						"weirdness": 0,
+						"offset": 0.3
+					}
+				}
+			]
+		}
+	}
+}
