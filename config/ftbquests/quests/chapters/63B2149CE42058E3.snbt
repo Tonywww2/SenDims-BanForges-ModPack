@@ -1,0 +1,273 @@
+{
+	autofocus_id: "514CF1593551F00F"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "63B2149CE42058E3"
+	group: "0937198EE94F2B97"
+	icon: {
+		Count: 1
+		id: "tetra:modular_double"
+		tag: {
+			Damage: 0
+			"double/basic_hammer_left_material": "basic_hammer/oak"
+			"double/basic_hammer_right_material": "basic_hammer/oak"
+			"double/basic_handle_material": "basic_handle/stick"
+			"double/handle": "double/basic_handle"
+			"double/head_left": "double/basic_hammer_left"
+			"double/head_right": "double/basic_hammer_right"
+			id: "9a72c58b-f86c-4735-a11c-3369aad1be58"
+		}
+	}
+	id: "6BA2CF0F8D4C2574"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				Count: 1
+				id: "tetra:modular_double"
+				tag: {
+					Damage: 0
+					"double/basic_hammer_left_material": "basic_hammer/oak"
+					"double/basic_hammer_right_material": "basic_hammer/oak"
+					"double/basic_handle_material": "basic_handle/stick"
+					"double/handle": "double/basic_handle"
+					"double/head_left": "double/basic_hammer_left"
+					"double/head_right": "double/basic_hammer_right"
+					id: "9a72c58b-f86c-4735-a11c-3369aad1be58"
+				}
+			}
+			id: "5CF7002B5FAD7860"
+			size: 2.0d
+			tasks: [{
+				id: "3952391F2CE1E116"
+				type: "checkmark"
+			}]
+			title: "锻造"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["514CF1593551F00F"]
+			description: [
+				"在主世界消亡之前"
+				"古老的锻造师们预感到了这一天"
+				"于是迁往了&e月球"
+				"可最终..."
+			]
+			icon: "tetra:seeping_bedrock"
+			id: "1AFA2C1B66F61014"
+			subtitle: "&7前往月球探索锻造遗迹"
+			tasks: [{
+				id: "0BF9F509E5784D5F"
+				title: "我已知晓"
+				type: "checkmark"
+			}]
+			title: "关于遗迹"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["514CF1593551F00F"]
+			description: [
+				"在此整合包内，你的物品上的附魔不再与模块相关"
+				"&m妈妈再也不用担心我手滑替换模块导致附魔全无了"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:enchanted_book"
+				tag: {
+					StoredEnchantments: [{
+						id: "minecraft:protection"
+						lvl: 6s
+					}]
+				}
+			}
+			id: "121C3C5261159396"
+			subtitle: "优秀的机制"
+			tasks: [{
+				id: "4A852C202AF8B256"
+				title: "我已知晓"
+				type: "checkmark"
+			}]
+			title: "附魔"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["514CF1593551F00F"]
+			description: [
+				"用四个线合成"
+				"可以当作背包"
+				"加工站可以使用存储在腰带里面的工具进行加工"
+			]
+			icon: {
+				Count: 1
+				id: "tetra:modular_toolbelt"
+				tag: {
+					id: "1faca155-6c9d-4994-bbd7-99e3926376cb"
+					"toolbelt/belt": "toolbelt/belt"
+					"toolbelt/belt_material": "belt/inlaid"
+					"toolbelt/slot1": "toolbelt/strap_slot1"
+					"toolbelt/strap_slot1_material": "strap1/leather"
+				}
+			}
+			id: "3DE4FC5065F0318E"
+			subtitle: "妙妙小工具"
+			tasks: [{
+				id: "55E23810B5954B4D"
+				title: "我已知晓"
+				type: "checkmark"
+			}]
+			title: "腰带"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["51E136B4E1C27308"]
+			description: [
+				"历经无数的战斗"
+				"你手中的刀似乎更加的具有了灵性"
+				"或许可以将技艺传授予他"
+				"&7具有一千杀敌数的妖刀可以解锁刀魂槽位"
+				"&7使用4个相同的SA宝珠可以合成刀魂"
+			]
+			icon: "slashblade:proudsoul_trapezohedron"
+			id: "032E7BFC9D0BA6DA"
+			subtitle: "以艺铸魂"
+			tasks: [{
+				id: "638C2FEEE9D7E461"
+				title: "我已知晓"
+				type: "checkmark"
+			}]
+			title: "刀魂"
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["514CF1593551F00F"]
+			description: [
+				"将你的拔刀置于加工台之上"
+				"展现你的技艺的时候到了！"
+				"&7tip:过于基础的拔刀并不能进行改造"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						AttackAmplifier: 0.0f
+						ComboRoot: "slashblade:standby"
+						Damage: 0
+						RepairCounter: 0
+						SpecialAttackType: "slashblade:judgement_cut"
+						StandbyRenderType: 0b
+						SummonedSwordColor: -13421569
+						SummonedSwordColorInverse: 0b
+						TargetEntity: 0
+						_onClick: 0b
+						adjustXYZ: [
+							0.0d
+							0.0d
+							0.0d
+						]
+						baseAttackModifier: 4.0f
+						currentCombo: "slashblade:none"
+						fallDecreaseRate: 0.0f
+						isBroken: 0b
+						isDefaultBewitched: 0b
+						isSealed: 0b
+						killCount: 0
+						lastActionTime: 0L
+						maxDamage: 40
+						proudSoul: 0
+						translationKey: ""
+					}
+				}
+				id: "slashbladetetra:slashblade"
+				tag: {
+					bladeState: {
+						AttackAmplifier: 0.0f
+						ComboRoot: "slashblade:standby"
+						Damage: 0
+						RepairCounter: 0
+						SpecialAttackType: "slashblade:judgement_cut"
+						StandbyRenderType: 0b
+						SummonedSwordColor: -13421569
+						SummonedSwordColorInverse: 0b
+						TargetEntity: 0
+						_onClick: 0b
+						adjustXYZ: [
+							0.0d
+							0.0d
+							0.0d
+						]
+						baseAttackModifier: 4.0f
+						currentCombo: "slashblade:none"
+						fallDecreaseRate: 0.0f
+						isBroken: 0b
+						isDefaultBewitched: 0b
+						isSealed: 0b
+						killCount: 0
+						lastActionTime: 0L
+						maxDamage: 40
+						proudSoul: 0
+						translationKey: ""
+					}
+					id: "DefaultInstance"
+					"slashblade/blade": "slashblade/blade/blade"
+					"slashblade/blade/blade_material": "blade/unnamed"
+					"slashblade/handle": "slashblade/handle/handle"
+					"slashblade/handle/handle_material": "handle/unnamed"
+					"slashblade/scabbard": "slashblade/scabbard/scabbard"
+					"slashblade/scabbard/scabbard_material": "scabbard/unnamed"
+					"slashblade/tsuba": "slashblade/tsuba/tsuba"
+					"slashblade/tsuba/tsuba_material": "tsuba/unnamed"
+				}
+			}
+			id: "2366337DEBD0775A"
+			subtitle: "更多的抛瓦"
+			tasks: [{
+				id: "0E8B3BE7D3CD3B51"
+				title: "我已知晓"
+				type: "checkmark"
+			}]
+			title: "模块化拔刀"
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["514CF1593551F00F"]
+			description: [
+				"将护甲放入加工站"
+				"开始改造"
+			]
+			icon: {
+				Count: 1
+				id: "geotetraarmor:chest"
+				tag: {
+					Damage: 0
+					HideFlags: 1
+					"armor/chest/base/vanilla_material": "vanilla_chest_base/string"
+					"armor/chest/left/vanilla_material": "vanilla_chest_left/copper"
+					"armor/chest/right/vanilla_material": "vanilla_chest_right/ferrum"
+					"chest/base": "armor/chest/base/vanilla"
+					"chest/left": "armor/chest/left/vanilla"
+					"chest/right": "armor/chest/right/vanilla"
+					honing_progress: 447
+					id: "594ec1b9-cf03-48a1-b3b1-58c6be4f7bea"
+					repairCount: 2
+				}
+			}
+			id: "0A839B56F757071E"
+			tasks: [{
+				id: "536CBC80397F3325"
+				title: "我已知晓"
+				type: "checkmark"
+			}]
+			title: "模块化护甲"
+			x: 2.5d
+			y: -2.5d
+		}
+	]
+	title: "锻造"
+}

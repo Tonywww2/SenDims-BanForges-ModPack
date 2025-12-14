@@ -125,6 +125,7 @@
 		}
 		{
 			dependencies: ["5F5FBCD93EB0B99C"]
+			description: ["获取马娘魂，以及提供属性加成"]
 			id: "3B260E8BEBD4BE0D"
 			tasks: [{
 				id: "1BB686A5DA4C9362"
@@ -147,6 +148,7 @@
 		}
 		{
 			dependencies: ["3B260E8BEBD4BE0D"]
+			description: ["获取马蹄铁和水晶的途径"]
 			id: "291BE5789CE1F72C"
 			tasks: [{
 				id: "74D62E1AF947B41C"

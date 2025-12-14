@@ -18,9 +18,15 @@
 			]
 			hide_until_deps_complete: true
 			id: "5BB642BD0BE40541"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6D4AF77DC54D55DB"
+				table_id: 7269548285138339695L
+				type: "choice"
+			}]
 			size: 2.0d
 			tasks: [{
-				dimension: "infinity_cave:deep_realm_level_1"
+				dimension: "sdbf:deep_realm_level_1"
 				icon: "minecraft:deepslate"
 				id: "68FCAFE4D18A139C"
 				title: "深境一层"
@@ -33,6 +39,12 @@
 		{
 			dependencies: ["5BB642BD0BE40541"]
 			id: "6AE2EFEC0F3BE4BE"
+			rewards: [{
+				count: 2
+				id: "6D8F9FA127D484A8"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5EA9F027884A6755"
 				item: "minecraft:diamond"
@@ -261,8 +273,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: 2.5d
+			x: 2.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["5BB642BD0BE40541"]
@@ -509,6 +521,83 @@
 			}]
 			x: -5.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["5BB642BD0BE40541"]
+			description: [
+				"结构羽毛笔是一种十分实用的道具，它可以帮助你快速定位到一些关键的建筑。"
+				""
+				"大多数结构羽毛笔都需要使用空地图合成；深境一层的结构羽毛笔只需要使用纸。"
+				""
+				"提示：在拔刀剑章节可以获取制作纸的原料。"
+			]
+			icon: "slashblade_sendims:structure_quill"
+			id: "64D03E66319AF253"
+			rewards: [{
+				count: 8
+				id: "5133BF3158156832"
+				item: "minecraft:paper"
+				type: "item"
+			}]
+			tasks: [{
+				id: "30945BE4A7EAAD44"
+				type: "checkmark"
+			}]
+			title: "结构羽毛笔"
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["64D03E66319AF253"]
+			description: ["泥土+纸可以制作泥砖村庄的结构羽毛笔。"]
+			id: "008A8F19BD6601FB"
+			tasks: [{
+				id: "2BCC5A9FE7BDB50B"
+				item: "minecraft:dirt"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["64D03E66319AF253"]
+			description: ["圆石+纸可以制作石头村庄的结构羽毛笔。"]
+			id: "22FB062F79308882"
+			tasks: [{
+				id: "1B464B79387B1728"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5BB642BD0BE40541"]
+			id: "6F5F0042273408D7"
+			tasks: [{
+				id: "4B8CCE8AC6B8E1FB"
+				item: "terra_entity:cthulhu_eye_spawn_egg"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1DE54DDD04540738"]
+			description: [
+				"千百年之前，一个拥有着发达机械技术的古代文明曾活跃在深境之中，他们留下来的一些痕迹或许能帮助到你......"
+				""
+				"提示：你可以使用铁锭+地图制作实验室的结构羽毛笔。"
+			]
+			id: "6F117E817FAB60B3"
+			subtitle: "注意"
+			tasks: [{
+				id: "0DB7BB56F0144985"
+				item: "ae2:certus_quartz_crystal"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.5d
 		}
 	]
 	title: "深境：深邃洞穴"

@@ -1,0 +1,67 @@
+{
+	icon: {
+		Count: 1
+		id: "minecraft:iron_sword"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "641F3405D35900A5"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{
+			item: {
+				Count: 1
+				id: "minecraft:enchanted_book"
+				tag: {
+					StoredEnchantments: [{
+						id: "minecraft:power"
+						lvl: 2s
+					}]
+				}
+			}
+			title: "力量II"
+		}
+		{
+			item: {
+				Count: 1
+				id: "minecraft:enchanted_book"
+				tag: {
+					StoredEnchantments: [{
+						id: "minecraft:sharpness"
+						lvl: 2s
+					}]
+				}
+			}
+			title: "锋利II"
+		}
+		{
+			item: {
+				Count: 1
+				id: "minecraft:enchanted_book"
+				tag: {
+					StoredEnchantments: [{
+						id: "minecraft:looting"
+						lvl: 2s
+					}]
+				}
+			}
+			title: "抢夺II"
+		}
+		{
+			item: {
+				Count: 1
+				id: "minecraft:enchanted_book"
+				tag: {
+					StoredEnchantments: [{
+						id: "enderio:xp_boost"
+						lvl: 2s
+					}]
+				}
+			}
+			title: "经验汲取II"
+		}
+	]
+	title: "附魔书-战斗-1"
+}

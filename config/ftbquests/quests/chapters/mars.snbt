@@ -1,11 +1,12 @@
 {
+	autofocus_id: "3F43656AE6F116CB"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "mars"
 	group: "49FC4157519361C1"
 	icon: "ad_astra:mars_globe"
 	id: "2C322B5F848C22C7"
-	order_index: 6
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
@@ -70,10 +71,7 @@
 			y: -5.0d
 		}
 		{
-			dependencies: [
-				"260A17885336B776"
-				"5D3B1F040BBB2AF2"
-			]
+			dependencies: ["260A17885336B776"]
 			id: "203E60FD1465EC35"
 			tasks: [{
 				id: "1E8CDCAA7EB560FF"
@@ -175,10 +173,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"61EE699FD8BD171A"
-				"5D3B1F040BBB2AF2"
-			]
+			dependencies: ["61EE699FD8BD171A"]
 			id: "5A68773BADBCBBD3"
 			tasks: [{
 				id: "342CB47F2A652D8F"

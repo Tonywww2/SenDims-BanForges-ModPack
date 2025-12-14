@@ -30,6 +30,12 @@
 					item: "akashictome:tome"
 					type: "item"
 				}
+				{
+					count: 32
+					id: "2C862CB6AB76E5EB"
+					item: "minecraft:torch"
+					type: "item"
+				}
 			]
 			size: 2.0d
 			tasks: [{
@@ -45,6 +51,7 @@
 		}
 		{
 			dependencies: ["62C0631125654B3D"]
+			description: ["催熟收获你的第一颗树"]
 			id: "36DD50AE28ECF216"
 			tasks: [{
 				icon: "minecraft:flowering_azalea"
@@ -72,6 +79,12 @@
 		{
 			dependencies: ["6D9B8C4828EA43E3"]
 			id: "0C7B137A72152B01"
+			rewards: [{
+				count: 4
+				id: "0DB66087BFEF6781"
+				item: "minecraft:bread"
+				type: "item"
+			}]
 			tasks: [{
 				icon: "quark:azalea_log"
 				id: "2CD15D73D94EA289"
@@ -89,8 +102,78 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["0C7B137A72152B01"]
+			dependencies: [
+				"0C7B137A72152B01"
+				"514CF1593551F00F"
+			]
 			id: "5748351A76910019"
+			rewards: [{
+				count: 2
+				id: "75146667B8144E92"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:judgement_cut"
+							StandbyRenderType: 0b
+							SummonedSwordColor: -13421569
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							proudSoul: 0
+						}
+					}
+					id: "slashblade:slashblade_wood"
+					tag: {
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade:model/blade.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:judgement_cut"
+							StandbyRenderType: 0b
+							SummonedSwordColor: -13421569
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "slashblade:model/wood.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 2.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 0b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 60
+							proudSoul: 0
+							translationKey: ""
+						}
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "12D3150C72E4E216"
 				item: "minecraft:crafting_table"
@@ -102,6 +185,12 @@
 		{
 			dependencies: ["5748351A76910019"]
 			id: "630C033031F00877"
+			rewards: [{
+				count: 4
+				id: "2B7316A56A7C2A5D"
+				item: "minecraft:bread"
+				type: "item"
+			}]
 			tasks: [{
 				id: "41693CC2217DDFF4"
 				item: {
@@ -130,6 +219,12 @@
 		{
 			dependencies: ["21E65C4EA8B74115"]
 			id: "02003846DA642A0D"
+			rewards: [{
+				count: 4
+				id: "5B3F235A628D9A3B"
+				item: "minecraft:bread"
+				type: "item"
+			}]
 			tasks: [{
 				id: "267A381BC07330A6"
 				item: "minecraft:furnace"
@@ -248,7 +343,7 @@
 		{
 			dependencies: ["71F1943E6E3FCA17"]
 			description: ["提示：你可以点击任务的需求查看所有可用的材料。"]
-			icon: "thermal_shock:phobotite"
+			icon: "minecraft:gold_ingot"
 			id: "4493C85E7045BD4E"
 			tasks: [{
 				id: "3D787EE52A133ADF"
@@ -269,7 +364,7 @@
 		{
 			dependencies: ["71F1943E6E3FCA17"]
 			description: ["提示：你可以点击任务的需求查看所有可用的材料。"]
-			icon: "deep_aether:skyjade"
+			icon: "minecraft:iron_ingot"
 			id: "15C68C343213D8FC"
 			tasks: [{
 				id: "6BF0A9CEC0C54BA8"
@@ -290,7 +385,7 @@
 		{
 			dependencies: ["71F1943E6E3FCA17"]
 			description: ["提示：你可以点击任务的需求查看所有可用的材料。"]
-			icon: "minecraft:nether_star"
+			icon: "minecraft:diamond_block"
 			id: "421132E2C3F4644D"
 			shape: "hexagon"
 			tasks: [{
@@ -362,6 +457,12 @@
 					item: "slashblade_sendims:estus_flask_0"
 					type: "item"
 				}
+				{
+					exclude_from_claim_all: true
+					id: "2F85290B29E42327"
+					table_id: 7214542327696130213L
+					type: "choice"
+				}
 			]
 			subtitle: "永恒花园"
 			tasks: [{
@@ -402,6 +503,7 @@
 				"52726CE2A2740BF7"
 			]
 			dependency_requirement: "one_completed"
+			description: ["提示：推荐在深境一层挖掘铁矿。"]
 			id: "73531FB69122489F"
 			subtitle: "原始工业"
 			tasks: [{
@@ -415,7 +517,7 @@
 		{
 			dependencies: ["421132E2C3F4644D"]
 			description: ["提示：你可以点击任务的需求查看所有可用的材料。"]
-			icon: "quark:blaze_lantern"
+			icon: "twilightforest:steeleaf_ingot"
 			id: "65E69FE440848B78"
 			tasks: [{
 				id: "0F7B2AA9BA10E65E"
@@ -436,7 +538,7 @@
 		{
 			dependencies: ["421132E2C3F4644D"]
 			description: ["提示：你可以点击任务的需求查看所有可用的材料。"]
-			icon: "minecraft:netherite_ingot"
+			icon: "minecraft:diamond"
 			id: "18416B89AC3BF527"
 			tasks: [{
 				id: "4E3DC197D895BEB5"
@@ -481,6 +583,7 @@
 		}
 		{
 			dependencies: ["4563BE3E3110A2C9"]
+			description: ["自动化必备"]
 			id: "291CCB69D170B168"
 			tasks: [{
 				id: "54191DED99AAB54B"
@@ -492,10 +595,19 @@
 		}
 		{
 			dependencies: ["421132E2C3F4644D"]
+			icon: "minecraft:nether_star"
 			id: "047BB42636510BA1"
+			shape: "hexagon"
 			tasks: [{
-				id: "44587C197CF4592F"
-				item: "minecraft:bedrock"
+				id: "6E9B36DC97B9E52B"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "slashblade_sendims:drc_rank_material_2"
+					}
+				}
+				title: "阶级-1-突破材料"
 				type: "item"
 			}]
 			title: "阶级-1-突破材料"
@@ -545,6 +657,95 @@
 			}]
 			x: -7.5d
 			y: -7.5d
+		}
+		{
+			dependencies: ["047BB42636510BA1"]
+			description: ["提示：你可以点击任务的需求查看所有可用的材料。"]
+			icon: "minecraft:netherite_ingot"
+			id: "30685C1409FDBDFF"
+			tasks: [{
+				id: "35A2551107F0DDD7"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "slashblade_sendims:drc_damage_material_2"
+					}
+				}
+				title: "阶级-2-伤害强化材料"
+				type: "item"
+			}]
+			title: "阶级-2-伤害强化材料"
+			x: -15.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["047BB42636510BA1"]
+			description: ["提示：你可以点击任务的需求查看所有可用的材料。"]
+			icon: "ftbquests:barrier"
+			id: "75381D6628B9BB4F"
+			tasks: [{
+				id: "4F755AC7EB6141ED"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "slashblade_sendims:drc_health_material_2"
+					}
+				}
+				title: "阶级-2-生命强化材料"
+				type: "item"
+			}]
+			title: "阶级-2-生命强化材料"
+			x: -15.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6FD736B74327F2AF"]
+			hide_until_deps_complete: true
+			icon: "terra_entity:demon_eye_spawn_egg"
+			id: "07353FCC58BFF967"
+			tasks: [{
+				entity: "terra_entity:demon_eye"
+				id: "4FB7BBDF618AB180"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["07353FCC58BFF967"]
+			id: "1FB3D934BD1CBA55"
+			tasks: [{
+				id: "3FCAE47EC5D4B816"
+				item: "terra_entity:cthulhu_eye_spawn_egg"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1FB3D934BD1CBA55"]
+			id: "3CF816E3E0B2977A"
+			tasks: [{
+				id: "72FF249DA096FDD6"
+				item: "terra_entity:brain_of_cthulhu_spawn_egg"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1FB3D934BD1CBA55"]
+			id: "6A37B43AC63E9375"
+			tasks: [{
+				id: "744C5CC9553E1F89"
+				item: "terra_entity:eater_of_world_spawn_egg"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 7.5d
 		}
 	]
 	title: "起始之空岛"

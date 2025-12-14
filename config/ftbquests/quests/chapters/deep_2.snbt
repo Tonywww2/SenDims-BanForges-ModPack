@@ -4,6 +4,7 @@
 	default_quest_shape: ""
 	filename: "deep_2"
 	group: "2D698D2001694314"
+	icon: "thermal:sulfur"
 	id: "6405180EFADACC88"
 	order_index: 0
 	quest_links: [ ]
@@ -21,10 +22,10 @@
 		}
 		{
 			dependencies: ["3DA6E818573A9A69"]
-			id: "00082004ADE05B89"
+			id: "34E2C69E62618843"
 			tasks: [{
-				id: "03FC17BB9D811477"
-				item: "enderio:grains_of_infinity"
+				id: "285BE6DAF4E6C77D"
+				item: "kubejs:gamma_dust"
 				type: "item"
 			}]
 			x: 0.0d

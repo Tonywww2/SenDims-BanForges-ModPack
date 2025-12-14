@@ -5,6 +5,10 @@
     "item.deep_aether.squall_plate": "风锻板",
     "item.deep_aether.metal_mixture": "天晶混合锭",
 
+    "item.kubejs.virtual_gold_ingot": "§a虚金锭",
+    "item.kubejs.trinity_alloy_ingot": "§m§d三项合金锭",
+    "item.kubejs.beryllium_bronze_alloy_ingot": "§e铍青铜合金锭",
+
     "item.kubejs.alpha_dust": "§aα 尘",
     "item.kubejs.beta_dust": "§bβ 尘",
     "item.kubejs.gamma_dust": "§cγ 尘",

@@ -34,6 +34,7 @@
 		{
 			dependencies: ["26B66FFB1E5C691C"]
 			dependency_requirement: "one_completed"
+			description: ["[ \"获取详情见 \", { \"text\": \" 此章节 \", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"6F117E817FAB60B3\" } } ]"]
 			id: "6130B752208314B7"
 			rewards: [
 				{
@@ -89,6 +90,12 @@
 		{
 			dependencies: ["6130B752208314B7"]
 			id: "2C5FD8E929D9EFE2"
+			rewards: [{
+				count: 8
+				id: "239BEF33797F999E"
+				item: "ae2:certus_quartz_crystal"
+				type: "item"
+			}]
 			tasks: [{
 				id: "524BB7E9FB2B6DD3"
 				item: "ae2:inscriber"
@@ -254,6 +261,12 @@
 		{
 			dependencies: ["1A673E1DCFA4F798"]
 			id: "5CD1E75078A2B2D3"
+			rewards: [{
+				count: 8
+				id: "1DC2872DF151B98C"
+				item: "ae2:certus_quartz_crystal"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3270B85C9EBF67D7"
 				item: "ae2:printed_silicon"

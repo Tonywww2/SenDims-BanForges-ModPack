@@ -16,7 +16,7 @@ StartupEvents.postInit(e => {
     $CustomPortalBuilder.beginPortal()
     ["frameBlock(net.minecraft.world.level.block.Block)"]
         (Block.getBlock('biomemakeover:cracked_bricks'))
-        .destDimID('infinity_cave:deep_realm_level_1')
+        .destDimID('sdbf:deep_realm_level_1')
         .lightWithItem(Item.getItem('slashblade_sendims:deeprealm_certificate'))
         .tintColor(200, 200, 200)
         .onlyLightInOverworld()

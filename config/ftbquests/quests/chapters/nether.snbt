@@ -6,7 +6,7 @@
 	group: "49FC4157519361C1"
 	icon: "minecraft:netherrack"
 	id: "21FDCDE620C842AA"
-	order_index: 5
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
@@ -758,6 +758,95 @@
 			}]
 			x: 5.0d
 			y: 7.5d
+		}
+		{
+			dependencies: ["74CCF300B72CB6EE"]
+			id: "1F5434696DE4B67B"
+			tasks: [{
+				id: "00F805D032B1ABB7"
+				item: "apotheosis:library"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["18E165437CBA9864"]
+			id: "482EE0B9BBA0E5D3"
+			tasks: [{
+				id: "5A3D4360A44896EE"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade:model/named/sange/sange.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:void_slash"
+							StandbyRenderType: 2b
+							SummonedSwordColor: -13421569
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "slashblade:model/named/sange/sange.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 6.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 70
+							proudSoul: 0
+							translationKey: "item.slashblade.sange"
+						}
+					}
+					id: "slashblade:slashblade"
+					tag: {
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade:model/named/sange/sange.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:void_slash"
+							StandbyRenderType: 2b
+							SummonedSwordColor: -13421569
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "slashblade:model/named/sange/sange.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 6.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 70
+							proudSoul: 0
+							translationKey: "item.slashblade.sange"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.5d
 		}
 	]
 	title: "入地狱"

@@ -395,6 +395,12 @@
 		{
 			dependencies: ["65E2433B2D35FACA"]
 			id: "733A23B4A4EF2379"
+			rewards: [{
+				count: 4
+				id: "787AFC7D22541DA1"
+				item: "minecraft:egg"
+				type: "item"
+			}]
 			tasks: [{
 				id: "455F4652EA515C87"
 				item: {
@@ -830,6 +836,7 @@
 		}
 		{
 			dependencies: ["371880BF8A2A75FC"]
+			description: ["无名拥有大量的分支，你可以通过各各章节的任务或者JEI查询。"]
 			icon: {
 				Count: 1
 				id: "minecraft:iron_sword"

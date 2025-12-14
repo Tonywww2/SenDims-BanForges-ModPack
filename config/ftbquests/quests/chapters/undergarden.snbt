@@ -6,20 +6,187 @@
 	group: "2D698D2001694314"
 	icon: "undergarden:catalyst"
 	id: "1F2DBD95DF48A8E6"
-	order_index: 4
+	order_index: 3
 	quest_links: [ ]
-	quests: [{
-		id: "35A8F36675442F8B"
-		size: 2.0d
-		tasks: [{
-			dimension: "undergarden:undergarden"
-			icon: "undergarden:catalyst"
-			id: "314D511B11F18B38"
-			title: "深园"
-			type: "dimension"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			dependencies: ["6E39BB8C6B65D2B6"]
+			id: "35A8F36675442F8B"
+			size: 2.0d
+			tasks: [{
+				dimension: "undergarden:undergarden"
+				icon: "undergarden:catalyst"
+				id: "314D511B11F18B38"
+				title: "深园"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["35A8F36675442F8B"]
+			id: "4384A4237A88E317"
+			tasks: [{
+				id: "4CE9DBEAE4482AD0"
+				item: "undergarden:froststeel_ingot"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["35A8F36675442F8B"]
+			id: "2DFEC40399DF07EC"
+			tasks: [{
+				id: "5C7DB4BD2247C237"
+				item: "undergarden:cloggrum_ingot"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["35A8F36675442F8B"]
+			id: "26FBCD46CCE1BABC"
+			tasks: [{
+				id: "6009C7E454748B4B"
+				item: "undergarden:ditchbulb"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["35A8F36675442F8B"]
+			id: "0565456A2B5996BE"
+			tasks: [{
+				id: "340DA4A317ADC543"
+				structure: "undergarden:forgotten_vestige"
+				type: "structure"
+			}]
+			title: "下僻巢穴"
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0565456A2B5996BE"]
+			id: "6974BDB798A698A6"
+			tasks: [{
+				id: "094C699E53FE59F3"
+				item: "undergarden:forgotten_nugget"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["35A8F36675442F8B"]
+			id: "0E91C06A8EFE1362"
+			tasks: [{
+				id: "3538620077AE1F7F"
+				item: "undergarden:blood_mushroom"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["35A8F36675442F8B"]
+			icon: "nuclearcraft:wasteland_earth"
+			id: "368D4A353C73D192"
+			size: 2.0d
+			tasks: [{
+				id: "7FFED1C4FECDE7A0"
+				observe_type: 0
+				timer: 0L
+				to_observe: "nuclearcraft:wasteland_earth"
+				type: "observation"
+			}]
+			title: "深园地表"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["368D4A353C73D192"]
+			id: "6833F2ACD3A596D8"
+			tasks: [{
+				id: "070DC3839A0AD7C8"
+				item: "nuclearcraft:glowing_mushroom"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["35A8F36675442F8B"]
+			id: "4FDDFCD61DCA1D6D"
+			tasks: [{
+				id: "39274E3D794273E8"
+				item: "undergarden:utherium_crystal"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["35A8F36675442F8B"]
+			id: "77521D83617F9CBA"
+			tasks: [{
+				id: "5BB2F030C78BE7D9"
+				item: "undergarden:regalium_crystal"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["368D4A353C73D192"]
+			id: "2F67DCF5EC57FDC2"
+			tasks: [{
+				id: "6A26E2944D65221E"
+				item: "nuclearcraft:xenorium_298"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"6833F2ACD3A596D8"
+				"368D4A353C73D192"
+			]
+			dependency_requirement: "one_completed"
+			id: "196B8B560D6681EC"
+			tasks: [{
+				id: "0377923A378B6B09"
+				item: "nuclearcraft:radaway"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["368D4A353C73D192"]
+			id: "63D819D3AE3B317D"
+			tasks: [{
+				id: "706DEA5749CFCFB0"
+				item: "nuclearcraft:extreme_ingot"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["368D4A353C73D192"]
+			id: "1C86F9100F42642A"
+			tasks: [{
+				id: "3F7DBC7076849C73"
+				item: "nuclearcraft:neutronium_ingot"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.5d
+		}
+	]
 	title: "深园与废土"
 }

@@ -200,6 +200,7 @@ regions_unexplored:towering_cliffs
 regions_unexplored:tropical_river
 regions_unexplored:tropics
 regions_unexplored:willow_forest
+sdbf:asteroid_belt/asteroid_belt
 sdbf:dune_sea
 sdbf:eroded_plains
 sdbf:hydrogen_basin

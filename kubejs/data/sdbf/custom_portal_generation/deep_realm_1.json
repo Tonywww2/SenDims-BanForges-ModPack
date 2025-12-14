@@ -1,6 +1,6 @@
 {
   "schema_version": "imm_ptl:v1",
-  "from": ["minecraft:overworld"], "to": "infinity_cave:deep_realm_level_1",
+  "from": ["minecraft:overworld"], "to": "sdbf:deep_realm_level_1",
   "form": {
     "type": "imm_ptl:heterogeneous", "frame_block": "thermal_shock:phobotite_block",
     "area_block": "minecraft:air", "generate_frame_if_not_found": true

@@ -8,18 +8,101 @@
 	id: "347A923727781B42"
 	order_index: 2
 	quest_links: [ ]
-	quests: [{
-		id: "51A9FF63F9F3E125"
-		size: 2.0d
-		tasks: [{
-			dimension: "ad_astra:venus"
-			icon: "ad_astra:venus_globe"
-			id: "02B03BDFF5448248"
-			title: "金星"
-			type: "dimension"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
-	title: "金星"
+	quests: [
+		{
+			dependencies: ["78BE62D2851798DD"]
+			id: "51A9FF63F9F3E125"
+			size: 2.0d
+			tasks: [{
+				dimension: "ad_astra:venus"
+				icon: "ad_astra:venus_globe"
+				id: "02B03BDFF5448248"
+				title: "金星"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["51A9FF63F9F3E125"]
+			id: "7D98EABF3232321E"
+			tasks: [{
+				id: "78BECCEFC7D3C955"
+				item: "ad_astra:calorite_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7D98EABF3232321E"]
+			id: "31341BED5E582FBF"
+			subtitle: "重要"
+			tasks: [{
+				id: "1C707DBA32C20F07"
+				item: {
+					Count: 1
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "ad_astra_giselle_addon:space_fire_proof"
+							lvl: 1
+						}]
+					}
+				}
+				type: "item"
+			}]
+			title: "太空耐火"
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["31341BED5E582FBF"]
+			icon: "ad_astra:mercury_globe"
+			id: "2C6833FA2E31DFF1"
+			size: 2.0d
+			tasks: [{
+				dimension: "ad_astra:mercury"
+				id: "28811AB008BC00A2"
+				title: "水星"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["2C6833FA2E31DFF1"]
+			id: "5FDD83613CC8DBB5"
+			tasks: [{
+				id: "3607D328676AE6AF"
+				item: "ad_astra:mercury_stone"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["51A9FF63F9F3E125"]
+			id: "61C43936D3898BEC"
+			tasks: [{
+				id: "2EF085A4ED3C78A1"
+				item: "ad_astra:venus_sand"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["51A9FF63F9F3E125"]
+			id: "39B7DC65434E8CC1"
+			tasks: [{
+				id: "778E3E0EB4A7F037"
+				item: "ad_astra:infernal_spire_block"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+	]
+	title: "金星与水星"
 }

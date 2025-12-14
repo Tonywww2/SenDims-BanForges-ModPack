@@ -5,63 +5,11 @@
       "name": "Tonywww",
       "uniqueId": "f6089ffd-51ed-41f5-b7fc-60062f9e317d"
     },
-    "time": 1760349665612,
-    "type": "Profiler",
-    "data": {
-      "type": "url",
-      "value": "https://spark.lucko.me/meZRH8Q7yH"
-    }
-  },
-  {
-    "user": {
-      "type": "player",
-      "name": "Tonywww",
-      "uniqueId": "f6089ffd-51ed-41f5-b7fc-60062f9e317d"
-    },
-    "time": 1760349595619,
-    "type": "Profiler",
-    "data": {
-      "type": "url",
-      "value": "https://spark.lucko.me/1UfmQARnZI"
-    }
-  },
-  {
-    "user": {
-      "type": "player",
-      "name": "Tonywww",
-      "uniqueId": "f6089ffd-51ed-41f5-b7fc-60062f9e317d"
-    },
-    "time": 1760348340870,
-    "type": "Profiler",
-    "data": {
-      "type": "url",
-      "value": "https://spark.lucko.me/oTJ2OZDky2"
-    }
-  },
-  {
-    "user": {
-      "type": "player",
-      "name": "Tonywww",
-      "uniqueId": "f6089ffd-51ed-41f5-b7fc-60062f9e317d"
-    },
     "time": 1760348201396,
     "type": "Profiler",
     "data": {
       "type": "file",
       "value": "D:\\PCL\\.minecraft\\versions\\SenDims_BanForges\\config\\spark\\profile-2025-10-13_17.36.41.sparkprofile"
-    }
-  },
-  {
-    "user": {
-      "type": "player",
-      "name": "Tonywww",
-      "uniqueId": "f6089ffd-51ed-41f5-b7fc-60062f9e317d"
-    },
-    "time": 1760343907000,
-    "type": "Profiler",
-    "data": {
-      "type": "url",
-      "value": "https://spark.lucko.me/BTnSFozLcA"
     }
   }
 ]

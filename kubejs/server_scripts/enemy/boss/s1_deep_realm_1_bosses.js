@@ -3,7 +3,7 @@ ServerEvents.highPriorityData(event => {
     const deepRealm1Boss = (id) => {
         let boss = bossMaterialBuilder(event, id, "deep_realm_1")
             .setWeight(75).setQuality(2).setSize(1, 1)
-            .addValidGearSet("#none").addDimension("infinity_cave:deep_realm_level_1")
+            .addValidGearSet("#none").addDimension("sdbf:deep_realm_level_1")
             .setMinRarity("uncommon").setMaxRarity("epic");
         boss.forRarity("uncommon")
             .setEnchantChance(0.25)

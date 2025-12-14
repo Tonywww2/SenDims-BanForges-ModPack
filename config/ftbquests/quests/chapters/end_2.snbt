@@ -6,10 +6,16 @@
 	group: "2D698D2001694314"
 	icon: "minecraft:end_stone"
 	id: "20367AAD44F57688"
-	order_index: 5
-	quest_links: [ ]
+	order_index: 4
+	quest_links: [{
+		id: "679A5B8038C308A9"
+		linked_quest: "52EC914C3873AF88"
+		x: 2.5d
+		y: 0.0d
+	}]
 	quests: [
 		{
+			dependencies: ["13BDDC49C990C82D"]
 			id: "0A68F5EE8F25F036"
 			size: 2.0d
 			tasks: [{
@@ -122,6 +128,40 @@
 			}]
 			x: 2.5d
 			y: 2.5d
+		}
+		{
+			dependencies: ["0A68F5EE8F25F036"]
+			id: "0D69B0100D962B3B"
+			tasks: [{
+				id: "61E7B00BFA19A989"
+				structure: "cataclysm:ruined_citadel"
+				type: "structure"
+			}]
+			title: "废弃堡垒"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0D69B0100D962B3B"]
+			id: "7174346AD8DCFBEC"
+			tasks: [{
+				id: "0DDD6923E5D889D8"
+				item: "cataclysm:void_core"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0A68F5EE8F25F036"]
+			id: "17234BADC5181DFE"
+			tasks: [{
+				id: "7A0940A2A3F73F69"
+				item: "minecraft:chorus_fruit"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
 		}
 	]
 	title: "末地"

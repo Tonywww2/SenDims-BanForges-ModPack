@@ -66,7 +66,21 @@ global.materialReplaceRules.set('minecraft:cobblestone', {
         'minecraft:cobbled_deepslate',
         'minecraft:smooth_basalt',
         'minecraft:calcite',
-        'minecraft:tuff'
+        'minecraft:tuff',
+        'twilightforest:etched_nagastone',
+        'twilightforest:cracked_etched_nagastone',
+        'twilightforest:mossy_etched_nagastone',
+        'twilightforest:nagastone_pillar',
+        'twilightforest:cracked_nagastone_pillar',
+        'twilightforest:mossy_nagastone_pillar',
+        'twilightforest:nagastone_stairs_left',
+        'twilightforest:cracked_nagastone_stairs_left',
+        'twilightforest:mossy_nagastone_stairs_left',
+        'twilightforest:nagastone_stairs_right',
+        'twilightforest:cracked_nagastone_stairs_right',
+        'twilightforest:mossy_nagastone_stairs_right',
+        'twilightforest:nagastone_head',
+        'twilightforest:nagastone'
     ]
 });
 

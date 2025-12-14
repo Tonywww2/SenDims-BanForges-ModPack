@@ -7,7 +7,26 @@
 	icon: "thermal:steel_ingot"
 	id: "524CE9039C21DC97"
 	order_index: 0
-	quest_links: [ ]
+	quest_links: [
+		{
+			id: "4BB9EA6F2880C79F"
+			linked_quest: "73531FB69122489F"
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			id: "27118AC70BA3FD60"
+			linked_quest: "34E2C69E62618843"
+			x: 2.5d
+			y: 22.5d
+		}
+		{
+			id: "313960DD88A9C973"
+			linked_quest: "58F48888F1039B24"
+			x: -2.5d
+			y: 22.5d
+		}
+	]
 	quests: [
 		{
 			dependencies: ["73531FB69122489F"]
@@ -54,7 +73,10 @@
 			y: 7.5d
 		}
 		{
-			dependencies: ["3FA025D25ADB8411"]
+			dependencies: [
+				"3FA025D25ADB8411"
+				"1620FC37BD64FA7E"
+			]
 			id: "606961105725FF7C"
 			tasks: [{
 				id: "17D328BF95540F6A"
@@ -66,17 +88,18 @@
 		}
 		{
 			dependencies: ["3FA025D25ADB8411"]
+			description: ["穿戴拥有此附魔的头盔，可以使用氧气罐在太空呼吸"]
 			id: "293BC8386BEEE985"
 			subtitle: "附魔：太空呼吸"
 			tasks: [{
-				id: "381B68006962F21D"
+				id: "7D1AC51A92DCEED8"
 				item: {
 					Count: 1
 					id: "minecraft:enchanted_book"
 					tag: {
 						StoredEnchantments: [{
 							id: "ad_astra_giselle_addon:space_breathing"
-							lvl: 1s
+							lvl: 1
 						}]
 					}
 				}
@@ -91,17 +114,25 @@
 				"293BC8386BEEE985"
 				"47C442362B73368D"
 			]
+			description: ["&4记得检查氧气是否充足"]
 			id: "750B557031EFBBEE"
 			subtitle: "月球"
-			tasks: [{
-				id: "0701A767BCB667FD"
-				item: {
-					Count: 1
-					id: "ad_astra:tier_1_rocket"
-					tag: { }
+			tasks: [
+				{
+					id: "0701A767BCB667FD"
+					item: {
+						Count: 1
+						id: "ad_astra:tier_1_rocket"
+						tag: { }
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "6D2F0E803C8C7B9B"
+					item: "ad_astra:launch_pad"
+					type: "item"
+				}
+			]
 			x: 0.0d
 			y: 10.0d
 		}
@@ -149,6 +180,15 @@
 		{
 			dependencies: ["66C1156C17F399C9"]
 			id: "03405BC60C3EFA99"
+			rewards: [{
+				id: "767E7FE92C055F17"
+				item: {
+					Count: 1
+					id: "thermal:wrench"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "124E52EE0ACCEC94"
 				item: "thermal:machine_frame"
@@ -297,6 +337,7 @@
 		}
 		{
 			dependencies: ["2F9AAEA563550E3F"]
+			description: ["&m正常来说，ae实验室会有一个"]
 			id: "3FA025D25ADB8411"
 			tasks: [{
 				id: "16088E4EA1B2A84C"
@@ -342,6 +383,475 @@
 			x: 20.0d
 			y: 17.5d
 		}
+		{
+			dependencies: ["73531FB69122489F"]
+			id: "0A6BF4C8A75EF242"
+			tasks: [{
+				id: "30294753B72371D0"
+				item: "minecraft:ender_pearl"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0A6BF4C8A75EF242"]
+			id: "4A6CCBA361F14167"
+			tasks: [{
+				id: "26B50A157C0E6145"
+				item: {
+					Count: 1
+					id: "wormhole:portal_stabilizer"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4A6CCBA361F14167"]
+			id: "3A897B2A72ABC032"
+			tasks: [{
+				id: "0BE1AF7DF8DA19AF"
+				item: {
+					Count: 1
+					id: "wormhole:target_device"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4A6CCBA361F14167"]
+			id: "32B566DB7BFEDCA5"
+			tasks: [{
+				id: "71FACE5483131D64"
+				item: "wormhole:basic_target_cell"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4A6CCBA361F14167"]
+			id: "2718DE33391A2093"
+			tasks: [{
+				id: "6706B66C36FDA292"
+				item: "wormhole:coal_generator"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["73531FB69122489F"]
+			id: "69C5C12E7CCD2120"
+			tasks: [{
+				id: "57E3F4500FE027BE"
+				item: "easy_villagers:trader"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["73531FB69122489F"]
+			id: "48041C5E490FA4C6"
+			tasks: [{
+				id: "05AE515DC4F5CC17"
+				item: "easy_villagers:breeder"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["73531FB69122489F"]
+			id: "6966F258DE827796"
+			tasks: [{
+				id: "0D3F9E307FDE3F24"
+				item: "easy_villagers:incubator"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["73531FB69122489F"]
+			id: "3BA3C4A36599BD29"
+			tasks: [{
+				id: "237C62226D563B49"
+				item: "ad_astra:coal_generator"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["293BC8386BEEE985"]
+			description: ["氧气罐，用来装氧气，在太空呼吸"]
+			id: "316871EADE2FF219"
+			tasks: [{
+				id: "7984DC6D1A068095"
+				item: {
+					Count: 1
+					id: "ad_astra_giselle_addon:oxygen_can"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["7A770E44047C47F7"]
+			id: "1202BBA3EB29DB70"
+			tasks: [{
+				id: "75617B809E6D90B1"
+				item: "ad_astra:ostrum_engine"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 25.0d
+		}
+		{
+			dependencies: ["1202BBA3EB29DB70"]
+			id: "78BE62D2851798DD"
+			tasks: [{
+				id: "7656CC2E5965FAA5"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_3_rocket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 32.5d
+		}
+		{
+			dependencies: ["316871EADE2FF219"]
+			description: ["将水转换成氧气，维持你在太空的呼吸"]
+			id: "7FDE4062BD2DC285"
+			tasks: [{
+				id: "7F1118D783BC3394"
+				item: "ad_astra:oxygen_loader"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["67B5D127C0D00507"]
+			id: "1620FC37BD64FA7E"
+			tasks: [{
+				id: "613FCF1F9F909EFE"
+				item: "ad_astra:oil_bucket"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["3FA025D25ADB8411"]
+			description: ["在压缩机制作石油"]
+			id: "67B5D127C0D00507"
+			tasks: [{
+				id: "0BA5FB2505556034"
+				item: "minecraft:lava_bucket"
+				type: "item"
+			}]
+			title: "石油获取[暂时]"
+			x: -2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"7FDE4062BD2DC285"
+				"1D74838411B96ABC"
+			]
+			description: ["你也不想一桶水一桶水搬吧"]
+			id: "69049A89D4FB5D07"
+			tasks: [{
+				id: "08A2049A526ABC2D"
+				item: "ad_astra:water_pump"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["66C1156C17F399C9"]
+			description: ["绿色能源"]
+			id: "470B2FD5F0F053F1"
+			tasks: [{
+				id: "1B913A2E96BF1B13"
+				item: "ad_astra:solar_panel"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["78BE62D2851798DD"]
+			id: "31801D73AF59C8CB"
+			tasks: [{
+				id: "77327F46C48E2846"
+				item: "ad_astra:calorite_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 35.0d
+		}
+		{
+			dependencies: [
+				"34E2C69E62618843"
+				"03405BC60C3EFA99"
+				"7AA05C224646E255"
+			]
+			id: "0516786C011E5581"
+			tasks: [{
+				id: "4020F0BC717BEE2D"
+				item: "enderio:void_chassis"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 22.5d
+		}
+		{
+			dependencies: ["49ED2F0850A4FCDE"]
+			id: "1AFA1F8F4A3B7215"
+			tasks: [{
+				id: "2DC96D198546537B"
+				item: "enderio:alloy_smelter"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 25.0d
+		}
+		{
+			dependencies: ["1AFA1F8F4A3B7215"]
+			id: "04EDD18FC8E8BFE0"
+			tasks: [{
+				id: "3CFCF23F4C217381"
+				item: "enderio:dark_steel_ingot"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 25.0d
+		}
+		{
+			dependencies: ["04EDD18FC8E8BFE0"]
+			id: "6B58A84D915027E2"
+			tasks: [{
+				id: "25DB7B006C34C6DE"
+				item: "enderio:sag_mill"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 25.0d
+		}
+		{
+			dependencies: ["6B6F5BCF33D5E1D3"]
+			id: "2875154D938C8757"
+			tasks: [{
+				id: "702E77C62692137D"
+				item: "enderio:ensouled_chassis"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 30.0d
+		}
+		{
+			dependencies: ["2875154D938C8757"]
+			id: "4A74F228501A94DD"
+			tasks: [{
+				id: "26C6AAC484B41AB2"
+				item: "enderio:xp_obelisk"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 32.5d
+		}
+		{
+			dependencies: ["2875154D938C8757"]
+			id: "1EC2AEB9FD4352CA"
+			tasks: [{
+				id: "6B567B1533AEF65D"
+				item: "enderio:slice_and_splice"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 30.0d
+		}
+		{
+			dependencies: ["1AFA1F8F4A3B7215"]
+			id: "6B6F5BCF33D5E1D3"
+			tasks: [{
+				id: "0C3D5BE71FC38E4A"
+				item: "enderio:soularium_ingot"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 27.5d
+		}
+		{
+			dependencies: ["6B6F5BCF33D5E1D3"]
+			id: "26332DF54DB6D983"
+			tasks: [{
+				id: "04A3E4E47E77D705"
+				item: "enderio:empty_soul_vial"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 27.5d
+		}
+		{
+			dependencies: ["1EC2AEB9FD4352CA"]
+			id: "6DF360C55C775A02"
+			tasks: [{
+				id: "1788F76FD759D346"
+				item: "enderio:soul_binder"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 30.0d
+		}
+		{
+			dependencies: ["6DF360C55C775A02"]
+			id: "268C45A2BAE10D86"
+			tasks: [{
+				id: "58D907A0BD83B93A"
+				item: {
+					Count: 1
+					id: "enderio:powered_spawner"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 15.0d
+			y: 30.0d
+		}
+		{
+			dependencies: ["0516786C011E5581"]
+			id: "49ED2F0850A4FCDE"
+			tasks: [{
+				id: "59AC1FBF178D16C2"
+				item: "enderio:primitive_alloy_smelter"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 22.5d
+		}
+		{
+			dependencies: [
+				"73531FB69122489F"
+				"34E2C69E62618843"
+			]
+			hide_dependency_lines: true
+			id: "7AA05C224646E255"
+			tasks: [{
+				id: "78E4EF6FD724F9F0"
+				item: "enderio:grains_of_infinity"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 20.0d
+		}
+		{
+			dependencies: ["49ED2F0850A4FCDE"]
+			id: "2C1BF95188C3BEDF"
+			tasks: [{
+				id: "00A1BB9ADB93A206"
+				item: "enderio:energetic_alloy_ingot"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 22.5d
+		}
+		{
+			dependencies: ["1AFA1F8F4A3B7215"]
+			id: "433F8E70DDAB5F6C"
+			tasks: [{
+				id: "3989DE5760E7B3CF"
+				item: "enderio:vibrant_alloy_ingot"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 25.0d
+		}
+		{
+			dependencies: ["1AFA1F8F4A3B7215"]
+			id: "1B3FA12BA9FF9086"
+			tasks: [{
+				id: "5B81D5FEEDC4E196"
+				item: "enderio:pulsating_alloy_ingot"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 27.5d
+		}
+		{
+			dependencies: [
+				"1AFA1F8F4A3B7215"
+				"0A68F5EE8F25F036"
+			]
+			id: "52EC914C3873AF88"
+			tasks: [{
+				id: "0841F9F1200E7557"
+				item: "enderio:end_steel_ingot"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 25.0d
+		}
+		{
+			dependencies: ["2C1BF95188C3BEDF"]
+			id: "2E71DEA2A630DA18"
+			tasks: [{
+				id: "654FBB2882382399"
+				item: "enderio:basic_capacitor"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 22.5d
+		}
+		{
+			dependencies: ["2E71DEA2A630DA18"]
+			id: "3A9B56840D108088"
+			tasks: [{
+				id: "5F3CF70191963F88"
+				item: "enderio:double_layer_capacitor"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 22.5d
+		}
+		{
+			dependencies: ["3A9B56840D108088"]
+			id: "73C4DB8C4CFCC581"
+			tasks: [{
+				id: "4F367650CFAB774B"
+				item: "enderio:octadic_capacitor"
+				type: "item"
+			}]
+			x: 17.5d
+			y: 22.5d
+		}
+		{
+			dependencies: ["58F48888F1039B24"]
+			id: "74388B1FF26F530C"
+			tasks: [{
+				id: "686BDE0F00B1B014"
+				item: "nuclearcraft:plate_basic"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 22.5d
+		}
 	]
-	title: "原始工业"
+	title: "工业"
 }

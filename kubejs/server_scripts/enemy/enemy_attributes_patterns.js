@@ -343,7 +343,7 @@ const armorFloat = 0.1;
 const dimensionStages = {
     "thermal_shock:loqendia": "0_1",
 
-    "infinity_cave:deep_realm_level_1": "1_1",
+    "sdbf:deep_realm_level_1": "1_1",
 
     "twilightforest:twilight_forest": "1_2",
     "aether:the_aether": "1_2",
