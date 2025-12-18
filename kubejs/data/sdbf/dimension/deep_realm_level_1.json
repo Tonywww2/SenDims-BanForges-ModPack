@@ -1,8 +1,8 @@
 {
-	"type": "sdbf:deeprealm",
+	"type": "sdbf:deep_realm_level_1",
 	"generator": {
 		"type": "minecraft:noise",
-		"settings": "infinity_cave:deeprealm",
+		"settings": "sdbf:deep_realm_level_1",
 		"biome_source": {
 			"type": "minecraft:multi_noise",
 			"biomes": [
