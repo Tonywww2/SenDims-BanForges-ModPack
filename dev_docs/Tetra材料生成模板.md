@@ -53,11 +53,13 @@ tetraMaterialBuilder(event, "material_id")
   - 金属：通常使用`metal` + `heavy`/`default`
   - 宝石：通常使用`shiny` + `crude`
   - 木材：通常使用`wooden` + `crude`
+  - 不用严格遵守`通常使用的纹理`
 
 ### 7. 材料来源
 - `addItemMaterial('物品ID')` - 材料物品
-  - 使用完整的物品ID
-  - 可以是原版或模组物品
+- `setTagMaterial('物品标签')` - 材料标签
+  - 使用完整的物品ID或者物品标签
+  - 如果id由`#`开头，那么这个id是一个材料标签（注意，生成时需要去除`#`）
   - 如果没有提供来源的id，则填入一个注释：addItemMaterial(/** 材料ID */)
 
 ### 8. 工具要求
@@ -75,7 +77,7 @@ tetraMaterialBuilder(event, "material_id")
 
 ## 完整生成模板
 ```javascript
-// [材料名称]材料
+// [材料名称]
 tetraMaterialBuilder(event, "[material_id]").setCategory("[category]")
     .setPrimary([primary]).setSecondary([secondary]).setTertiary([tertiary])
     .setDurability([durability]).setIntegrityCost([cost]).setIntegrityGain([gain])
