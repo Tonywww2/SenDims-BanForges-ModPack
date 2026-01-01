@@ -1,7 +1,7 @@
 {
     "aquifers_enabled": false,
     "default_block": {
-        "Name": "minecraft:stone"
+        "Name": "minecraft:deepslate"
     },
     "default_fluid": {
         "Name": "minecraft:air"
@@ -11,8 +11,8 @@
     "noise": {
         "height": 256,
         "min_y": 0,
-        "size_horizontal": 1,
-        "size_vertical": 1
+        "size_horizontal": 2,
+        "size_vertical": 2
     },
     "noise_router": {
         "barrier": 0,
@@ -35,17 +35,37 @@
                         "type": "minecraft:blend_density",
                         "argument": {
                             "type": "minecraft:add",
-                            "argument1": 0.5,
+                            "argument1": -0.5,
                             "argument2": {
-                                "type": "minecraft:add",
-                                "argument1": -1.25,
+                                "type": "minecraft:mul",
+                                "argument1": {
+                                    "type": "minecraft:y_clamped_gradient",
+                                    "from_value": 0,
+                                    "from_y": 0,
+                                    "to_value": 1,
+                                    "to_y": 16
+                                },
                                 "argument2": {
-                                    "type": "minecraft:old_blended_noise",
-                                    "xz_scale": 1,
-                                    "y_scale": 1,
-                                    "xz_factor": 1,
-                                    "y_factor": 1,
-                                    "smear_scale_multiplier": 1
+                                    "type": "minecraft:add",
+                                    "argument1": 0.15,
+                                    "argument2": {
+                                        "type": "minecraft:mul",
+                                        "argument1": {
+                                            "type": "minecraft:y_clamped_gradient",
+                                            "from_value": 1,
+                                            "from_y": 240,
+                                            "to_value": 0,
+                                            "to_y": 256
+                                        },
+                                        "argument2": {
+                                            "type": "minecraft:old_blended_noise",
+                                            "xz_scale": 16,
+                                            "y_scale": 8,
+                                            "xz_factor": 80,
+                                            "y_factor": 80,
+                                            "smear_scale_multiplier": 1
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -70,7 +90,7 @@
     "surface_rule": {
         "type": "minecraft:block",
         "result_state": {
-            "Name": "minecraft:stone"
+            "Name": "minecraft:deepslate"
         }
     }
 }

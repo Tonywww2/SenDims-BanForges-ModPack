@@ -1,5 +1,5 @@
 {
-    "sea_level": -20,
+    "sea_level": -32,
     "disable_mob_generation": false,
     "aquifers_enabled": true,
     "ore_veins_enabled": true,
@@ -23,18 +23,8 @@
             "xz_scale": 1,
             "y_scale": 0.5
         },
-        "fluid_level_floodedness": {
-            "type": "minecraft:noise",
-            "noise": "minecraft:aquifer_fluid_level_floodedness",
-            "xz_scale": 1,
-            "y_scale": 0.67
-        },
-        "fluid_level_spread": {
-            "type": "minecraft:noise",
-            "noise": "minecraft:aquifer_fluid_level_spread",
-            "xz_scale": 1,
-            "y_scale": 0.7142857142857143
-        },
+        "fluid_level_floodedness":  0,
+        "fluid_level_spread":  0,
         "lava": 0,
         "temperature": {
             "type": "minecraft:shifted_noise",

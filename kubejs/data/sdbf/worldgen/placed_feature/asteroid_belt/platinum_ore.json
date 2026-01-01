@@ -1,13 +1,9 @@
 {
-    "feature": "sdbf:asteroid_belt/coal_ore",
+    "feature": "sdbf:asteroid_belt/platinum_ore",
     "placement": [
         {
             "type": "minecraft:count",
-            "count": 1
-        },
-        {
-            "type": "minecraft:rarity_filter",
-            "chance": 3
+            "count": 20
         },
         {
             "type": "minecraft:in_square"

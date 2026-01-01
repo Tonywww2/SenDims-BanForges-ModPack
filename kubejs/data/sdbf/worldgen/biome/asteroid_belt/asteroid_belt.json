@@ -22,7 +22,17 @@
         [],
         [],
         [
-            "sdbf:asteroid_belt/coal_ore"
+            "sdbf:asteroid_belt/coal_ore",
+            "sdbf:asteroid_belt/iron_ore",
+            "sdbf:asteroid_belt/diamond_ore",
+            "sdbf:asteroid_belt/nickel_ore",
+            "sdbf:asteroid_belt/lithium_ore",
+            "sdbf:asteroid_belt/cobalt_ore",
+            "sdbf:asteroid_belt/platinum_ore",
+            "sdbf:asteroid_belt/boron_ore",
+            "sdbf:asteroid_belt/uranium_ore",
+            "sdbf:asteroid_belt/thorium_ore",
+            "sdbf:asteroid_belt/magnesium_ore"
         ],
         [],
         []
