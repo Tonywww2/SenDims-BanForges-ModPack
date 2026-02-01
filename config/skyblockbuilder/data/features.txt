@@ -1038,7 +1038,17 @@ sakura:maple_red
 sakura:maple_yellow
 sakura:patch_bambooshoot
 sakura:sakura
+sdbf:asteroid_belt/boron_ore
 sdbf:asteroid_belt/coal_ore
+sdbf:asteroid_belt/cobalt_ore
+sdbf:asteroid_belt/diamond_ore
+sdbf:asteroid_belt/iron_ore
+sdbf:asteroid_belt/lithium_ore
+sdbf:asteroid_belt/magnesium_ore
+sdbf:asteroid_belt/nickel_ore
+sdbf:asteroid_belt/platinum_ore
+sdbf:asteroid_belt/thorium_ore
+sdbf:asteroid_belt/uranium_ore
 sdbf:hydrogen_lake
 slashblade_useful_addon:deep_proud_soul_ore
 slashblade_useful_addon:proud_soul_ore
@@ -1131,6 +1141,9 @@ thermal_and_space:space_sulfur
 thermal_and_space:space_tin
 thermal_shock:angler_bulb_feature
 thermal_shock:barbubble
+thermal_shock:bismuth_generation
+thermal_shock:bismuth_geode
+thermal_shock:bismuth_outcrop_generation
 thermal_shock:blazerock_gen
 thermal_shock:blood_mantle_generation
 thermal_shock:blood_ore_generation
@@ -1164,6 +1177,7 @@ thermal_shock:loque_bush_feature
 thermal_shock:loque_grass
 thermal_shock:lunalemon_tree
 thermal_shock:malachite_generation
+thermal_shock:malachite_geode
 thermal_shock:malachite_outcrop_generation
 thermal_shock:mantlestone_patch
 thermal_shock:monolith_spire

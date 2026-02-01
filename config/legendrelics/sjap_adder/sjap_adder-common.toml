@@ -1,0 +1,158 @@
+#Count of Judgement cuts summoned by the SA Burning Dance.
+#SA灼热次元舞召唤的次元斩数量
+#Range: > 0
+countBurningDanceJudgementCut = 12
+#Count of Judgement cuts summoned by the SA Dark Cut.
+#SA暗轮召唤的次元斩数量
+#Range: > 0
+countDarkCutJudgementCut = 25
+#Count of Judgement-Cut-EXs summoned by the SA Dark Cut.
+#SA暗轮破斩召唤的次元斩EX数量
+#Range: > 0
+countDarkCutJudgementCutEx = 25
+#The damage ratio of DriveSum
+#SA噬魂幻影刃的总倍率
+#Range: 0.0 ~ 100.0
+driveSumRatio = 7.5
+#The damage ratio of Queen Slash of DriveSum
+#SA冰刃女皇斩的总倍率
+#Range: 0.0 ~ 100.0
+driveSumQueenRatio = 14.0
+#The damage ratio of Shadow of Revenant
+#SE魂灵祭影的总倍率
+#Range: 0.0 ~ 100.0
+shadowOfRevenantRatio = 0.35
+#The main damage ratio of Explosive Dawn
+#SA剑技·黑明的总倍率
+#Range: 0.0 ~ 100.0
+explosiveDawnMainRatio = 5.0
+#The big explosion damage ratio of Explosive Dawn
+#剑技·黑明的大爆炸伤害比例
+#Range: 0.0 ~ 100.0
+explosiveDawnBigExplosionRatio = 1.0
+#The small explosion damage ratio of Explosive Dawn
+#剑技·黑明的小爆炸伤害比例
+#Range: 0.0 ~ 100.0
+explosiveDawnSmallExplosionRatio = 0.1
+#The damage dealt by Judgement Cut of Fire Dance
+#幻魔炼金舞次元斩的伤害值
+#Range: 0.0 ~ 1.7976931348623157E308
+fireDanceJudgementCutDamage = 10.0
+#The damage dealt by Circle Drive of Fire Dance
+#幻魔炼金舞圆形斩击的伤害值
+#Range: 0.0 ~ 1.7976931348623157E308
+fireDanceCircleSlashDamage = 0.3
+#Count of Slash of the SA Nightingales.
+#SA时序惊蛰的幻影剑数量
+#Range: > 0
+countNightingalesSlash = 4
+#Count of Judgement Cuts of the SA SuperBloodCut.
+#SA血狱·桑轮斩的次元斩数量
+#Range: > 0
+countSuperBloodCut = 25
+#Base count of Slash (before boosted by BoostTrigger) of the SA Wave Edge Super.
+#SA八岐·狂岚的基础幻影刃数量（在狂气提升前）
+#Range: > 0
+countWaveEdgeSuperBase = 25
+#Cost this many BoostTrigger and increase the same count of Slash dealt by the SA Wave Edge Super.
+#Set to 0 will disable the boosting.
+#消耗多少狂气来提升八八岐·狂岚的幻影刃数量
+#Range: > 0
+costWaveEdgeSuperBoost = 8
+#The damage dealt by Circle Drive of Wave Edge Super.
+#八岐·狂岚每圈的总倍率
+#Range: 0.0 ~ 1.7976931348623157E308
+waveEdgeSuperDriveDamage = 10.0
+#The damage of XrossThunder.
+#蓝梦一闪的总倍率
+#Range: 0.0 ~ 1.7976931348623157E308
+xrossThunderDamage = 4.0
+#The Combo Ratio of FireDance
+#幻魔炼金舞的刀光倍率
+#Range: 0.0 ~ 100.0
+fireDanceComboRatio = 0.1
+#The Combo Ratio of BurningDance
+#灼热次元舞的刀光倍率
+#Range: 0.0 ~ 100.0
+burningDanceComboRatio = 0.1
+#The Combo Ratio of ColdDrive
+#冰刃女皇斩的刀光倍率
+#Range: 0.0 ~ 100.0
+coldDriveComboRatio = 0.1
+#The Combo Ratio of SakuraWaveEdgeLeft
+#终焉龙胆樱的刀光倍率（左）
+#Range: 0.0 ~ 100.0
+sakuraWaveEdgeLeftComboRatio = 1.2
+#The Combo Ratio of SakuraWaveEdgeRight
+#终焉龙胆樱的刀光倍率（右）
+#Range: 0.0 ~ 100.0
+sakuraWaveEdgeRightComboRatio = 1.5
+#The Combo Ratio of TerrifyingWaves
+#惊涛潮涌的刀光倍率
+#Range: 0.0 ~ 100.0
+terrifyingWavesComboRatio = 0.1
+#The Combo Ratio of LightingSwordsex
+#时序惊蛰的刀光倍率
+#Range: 0.0 ~ 100.0
+lightingSwordsexComboRatio = 0.1
+#The Combo Ratio of ForLife
+#颂生者的刀光倍率
+#Range: 0.0 ~ 100.0
+forLifeComboRatio = 0.1
+#The Combo Ratio of ForLifeDive
+#段生铸念的刀光倍率
+#Range: 0.0 ~ 100.0
+forLifeDiveComboRatio = 0.1
+#The Combo Ratio of IllusionDrive
+#噬咬幻影刃的刀光倍率
+#Range: 0.0 ~ 100.0
+illusionDriveComboRatio = 0.1
+#The Combo Ratio of RainbowDrive
+#虹刃斩月的刀光倍率
+#Range: 0.0 ~ 100.0
+rainbowDriveComboRatio = 0.1
+#The Combo Ratio of WaveEdgeSuper
+#惊涛潮涌的刀光倍率
+#Range: 0.0 ~ 100.0
+waveEdgeSuperComboRatio = 0.1
+#The Combo Ratio of SakuraDriveLeft
+#幻影刃结月重的刀光倍率（左）
+#Range: 0.0 ~ 100.0
+sakuraDriveLeftComboRatio = 1.2
+#The Combo Ratio of SakuraDriveRight
+#幻影刃结月重的刀光倍率（右）
+#Range: 0.0 ~ 100.0
+sakuraDriveRightComboRatio = 1.5
+#The Combo Ratio of XrossThunder
+#蓝梦一闪的刀光倍率（左）
+#Range: 0.0 ~ 100.0
+xrossThunderComboRatio = 1.2
+#The Combo Ratio of XrossThunder2
+#蓝梦一闪的刀光倍率（右）
+#Range: 0.0 ~ 100.0
+xrossThunder2ComboRatio = 1.5
+#Stack maximum of ColdGuardian
+#凛冬护盾的最大堆叠数
+#Range: > 0
+coldGuardianMaxStack = 300
+#Stack maximum of BoostTrigger
+#狂气的最大堆叠数
+#Range: > 0
+boostTriggerMaxStack = 8
+#Stack maximum of ClearMindCd
+#明心的冷却（以游戏刻计）
+#Range: > 0
+clearMindCdMaxStack = 3600
+#Stack maximum of BlueDreamCombo
+#蓝破的最大堆叠数
+#Range: > 0
+blueDreamComboMaxStack = 6
+#Stack maximum of BlueDreamCharger
+#蓝速的最大堆叠数
+#Range: > 0
+blueDreamChargerMaxStack = 4
+#Stack maximum of BlueDreamChargerSuper
+#蓝心的最大堆叠数
+#Range: > 0
+blueDreamChargerSuperMaxStack = 2
+

@@ -75,14 +75,6 @@ biomemakeover:ghost_town
 biomemakeover:mansion
 biomemakeover:mushroom_house
 biomemakeover:sunken_ruin
-cataclysm:acropolis
-cataclysm:ancient_factory
-cataclysm:burning_arena
-cataclysm:cursed_pyramid
-cataclysm:frosted_prison
-cataclysm:ruined_citadel
-cataclysm:soul_black_smith
-cataclysm:sunken_city
 cavernous:dungeon
 cavernous:exit_portal
 cavernous:final_arena
@@ -298,10 +290,12 @@ thermal_shock:benzor_home
 thermal_shock:blizzard_outpost
 thermal_shock:blizzard_tower
 thermal_shock:cathedral
+thermal_shock:junkyard
 thermal_shock:keystone_chamber
 thermal_shock:large_campsite
 thermal_shock:medium_campsite
 thermal_shock:pylon
+thermal_shock:pyrogenic_pylon
 thermal_shock:shalespring_grove
 thermal_shock:small_campsite
 thermal_shock:test_jigsaw
