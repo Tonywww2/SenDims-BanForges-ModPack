@@ -8,18 +8,738 @@
 	id: "30913047B0C6C1E2"
 	order_index: 2
 	quest_links: [ ]
-	quests: [{
-		id: "2E150AF7AD2E748B"
-		size: 2.0d
-		tasks: [{
-			dimension: "ad_astra:glacio"
-			icon: "ad_astra:glacio_globe"
-			id: "46A2396E54BAE6E0"
-			title: "霜原星"
-			type: "dimension"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			id: "2E150AF7AD2E748B"
+			size: 2.0d
+			tasks: [{
+				dimension: "ad_astra:glacio"
+				icon: "ad_astra:glacio_globe"
+				id: "46A2396E54BAE6E0"
+				title: "霜原星"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2E150AF7AD2E748B"]
+			icon: {
+				Count: 1
+				id: "enderio:filled_soul_vial"
+				tag: {
+					BlockEntityTag: {
+						EntityStorage: {
+							Entity: {
+								id: "ad_astra:glacian_ram"
+							}
+						}
+					}
+				}
+			}
+			id: "53D8B3248F215A27"
+			subtitle: "猎巫"
+			tasks: [{
+				id: "7F146C7344B5BB90"
+				item: {
+					Count: 1
+					id: "enderio:filled_soul_vial"
+					tag: {
+						BlockEntityTag: {
+							EntityStorage: {
+								Entity: {
+									id: "ad_astra:glacian_ram"
+								}
+							}
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "灵魂瓶：霜原羊"
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2E150AF7AD2E748B"]
+			id: "5740D7EB5FC2CCB5"
+			tasks: [{
+				id: "23571A67B137B3BF"
+				item: "ad_astra:permafrost"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2E150AF7AD2E748B"]
+			id: "727A3BB85C431A51"
+			tasks: [{
+				id: "3E46B9EA6F8AA2B2"
+				item: "ad_astra:glacio_stone"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2E150AF7AD2E748B"]
+			id: "0026560C056CC8EB"
+			tasks: [{
+				id: "5E8CE162C317F532"
+				item: "minecraft:bedrock"
+				type: "item"
+			}]
+			title: "占位：不融冰"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["53D8B3248F215A27"]
+			id: "10A1CF5158B36704"
+			tasks: [{
+				id: "4E98672377B64675"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade_addon:model/nihil/nihil.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:wave_edge"
+							SpecialEffects: ["last_smith:extra_sharpness"]
+							StandbyRenderType: 4b
+							SummonedSwordColor: -13421569
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "slashblade_addon:model/nihil/nihilul.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 12.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 70
+							proudSoul: 0
+							translationKey: "item.slashblade_addon.nihilul"
+						}
+					}
+					id: "slashblade:slashblade"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:unbreaking"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:sharpness"
+								lvl: 5s
+							}
+							{
+								id: "minecraft:smite"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:bane_of_arthropods"
+								lvl: 2s
+							}
+							{
+								id: "minecraft:fire_aspect"
+								lvl: 2s
+							}
+							{
+								id: "minecraft:looting"
+								lvl: 3s
+							}
+						]
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade_addon:model/nihil/nihil.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:wave_edge"
+							SpecialEffects: ["last_smith:extra_sharpness"]
+							StandbyRenderType: 4b
+							SummonedSwordColor: -13421569
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "slashblade_addon:model/nihil/nihilul.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 12.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 70
+							proudSoul: 0
+							translationKey: "item.slashblade_addon.nihilul"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5740D7EB5FC2CCB5"]
+			id: "1DBA0EC591BD808A"
+			tasks: [{
+				id: "6875EA67D3D8D38F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade_addon:model/nihil/nihil.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:wave_edge"
+							SpecialEffects: [
+								"last_smith:extra_sharpness"
+								"sjap_adder:wave_edge_rise_up"
+							]
+							StandbyRenderType: 1b
+							SummonedSwordColor: -589569
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "sjap_adder:model/nihill/nihilul.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 16.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 300
+							proudSoul: 0
+							translationKey: "item.sjap_adder.nihilulex"
+						}
+					}
+					id: "slashblade:slashblade"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:unbreaking"
+								lvl: 5s
+							}
+							{
+								id: "minecraft:smite"
+								lvl: 10s
+							}
+							{
+								id: "minecraft:looting"
+								lvl: 5s
+							}
+						]
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade_addon:model/nihil/nihil.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:wave_edge"
+							SpecialEffects: [
+								"last_smith:extra_sharpness"
+								"sjap_adder:wave_edge_rise_up"
+							]
+							StandbyRenderType: 1b
+							SummonedSwordColor: -589569
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "sjap_adder:model/nihill/nihilul.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 16.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 300
+							proudSoul: 0
+							translationKey: "item.sjap_adder.nihilulex"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0026560C056CC8EB"]
+			id: "4D98986E6269C950"
+			tasks: [{
+				id: "7AFA32C410C27BC6"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade_addon:model/nihil/nihil.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:sakura_end"
+							SpecialEffects: [
+								"last_smith:smite_se"
+								"sjap_adder:end_sakura_rise_up"
+							]
+							StandbyRenderType: 1b
+							SummonedSwordColor: -65536
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "sjap_adder:model/nihill/crimsoncherry.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 16.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 300
+							proudSoul: 0
+							translationKey: "item.sjap_adder.crimsoncherryex"
+						}
+					}
+					id: "slashblade:slashblade"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:unbreaking"
+								lvl: 10s
+							}
+							{
+								id: "minecraft:smite"
+								lvl: 5s
+							}
+							{
+								id: "minecraft:fire_aspect"
+								lvl: 5s
+							}
+						]
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade_addon:model/nihil/nihil.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:sakura_end"
+							SpecialEffects: [
+								"last_smith:smite_se"
+								"sjap_adder:end_sakura_rise_up"
+							]
+							StandbyRenderType: 1b
+							SummonedSwordColor: -65536
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "sjap_adder:model/nihill/crimsoncherry.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 16.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 300
+							proudSoul: 0
+							translationKey: "item.sjap_adder.crimsoncherryex"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["727A3BB85C431A51"]
+			id: "7EF49AEDF9227ABA"
+			tasks: [{
+				id: "19EB97BCE8CD415C"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade_addon:model/nihil/nihil.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:sakura_end"
+							SpecialEffects: [
+								"last_smith:extra_sharpness"
+								"last_smith:smite_se"
+								"last_smith:extra_power"
+								"slashblade:wither_edge"
+							]
+							StandbyRenderType: 4b
+							SummonedSwordColor: -13421569
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "slashblade_addon:model/nihil/nihil_bx.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 14.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 240
+							proudSoul: 0
+							translationKey: "item.slashblade_addon.nihilbx"
+						}
+					}
+					id: "slashblade:slashblade"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:unbreaking"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:sharpness"
+								lvl: 5s
+							}
+							{
+								id: "minecraft:power"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:smite"
+								lvl: 5s
+							}
+							{
+								id: "minecraft:bane_of_arthropods"
+								lvl: 5s
+							}
+							{
+								id: "minecraft:fire_aspect"
+								lvl: 2s
+							}
+						]
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade_addon:model/nihil/nihil.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:sakura_end"
+							SpecialEffects: [
+								"last_smith:extra_sharpness"
+								"last_smith:smite_se"
+								"last_smith:extra_power"
+								"slashblade:wither_edge"
+							]
+							StandbyRenderType: 4b
+							SummonedSwordColor: -13421569
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "slashblade_addon:model/nihil/nihil_bx.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 14.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 240
+							proudSoul: 0
+							translationKey: "item.slashblade_addon.nihilbx"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"7EF49AEDF9227ABA"
+				"10A1CF5158B36704"
+				"1DBA0EC591BD808A"
+				"4D98986E6269C950"
+			]
+			hide_dependency_lines: true
+			id: "4FB4B07E9F4377DC"
+			shape: "diamond"
+			size: 1.0d
+			tasks: [{
+				id: "2D2EE4B7805F663A"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade_addon:model/nihil/nihil.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:sakura_end"
+							SpecialEffects: [
+								"last_smith:extra_sharpness"
+								"last_smith:smite_se"
+								"last_smith:extra_power"
+								"slashblade:wither_edge"
+							]
+							StandbyRenderType: 4b
+							SummonedSwordColor: -13421569
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "slashblade_addon:model/nihil/nihil_bx.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 14.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 240
+							proudSoul: 0
+							translationKey: "item.slashblade_addon.nihilbx"
+						}
+					}
+					id: "slashblade:slashblade"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:unbreaking"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:sharpness"
+								lvl: 5s
+							}
+							{
+								id: "minecraft:power"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:smite"
+								lvl: 5s
+							}
+							{
+								id: "minecraft:bane_of_arthropods"
+								lvl: 5s
+							}
+							{
+								id: "minecraft:fire_aspect"
+								lvl: 2s
+							}
+						]
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade_addon:model/nihil/nihil.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:sakura_end"
+							SpecialEffects: [
+								"last_smith:extra_sharpness"
+								"last_smith:smite_se"
+								"last_smith:extra_power"
+								"slashblade:wither_edge"
+							]
+							StandbyRenderType: 4b
+							SummonedSwordColor: -13421569
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "slashblade_addon:model/nihil/nihil_bx.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 14.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 240
+							proudSoul: 0
+							translationKey: "item.slashblade_addon.nihilbx"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0026560C056CC8EB"]
+			id: "2949701D5493DFD0"
+			tasks: [{
+				id: "6D3D5859B067E23C"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "sjap_adder:model/icf/icfex/model.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:wave_edge"
+							SpecialEffects: [
+								"sjap_adder:dragon_ice"
+								"sjap_adder:armor_break"
+							]
+							StandbyRenderType: 1b
+							SummonedSwordColor: -16731137
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "sjap_adder:model/icf/icfex/ice.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 27.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 800
+							proudSoul: 0
+							translationKey: "item.sjap_adder.dragon_steel_ice"
+						}
+					}
+					id: "slashblade:slashblade"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:unbreaking"
+								lvl: 10s
+							}
+							{
+								id: "minecraft:sharpness"
+								lvl: 5s
+							}
+							{
+								id: "minecraft:smite"
+								lvl: 10s
+							}
+						]
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "sjap_adder:model/icf/icfex/model.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:wave_edge"
+							SpecialEffects: [
+								"sjap_adder:dragon_ice"
+								"sjap_adder:armor_break"
+							]
+							StandbyRenderType: 1b
+							SummonedSwordColor: -16731137
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "sjap_adder:model/icf/icfex/ice.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 27.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 800
+							proudSoul: 0
+							translationKey: "item.sjap_adder.dragon_steel_ice"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+	]
 	title: "霜原星"
 }
