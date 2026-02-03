@@ -635,96 +635,6 @@
 		}
 		{
 			dependencies: ["128DAE63591990BF"]
-			id: "6FAF151D0CDC3928"
-			tasks: [{
-				id: "096281CD50E2D986"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade_addon:model/kirisaya/kirisaya.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:drive_horizontal"
-							SpecialEffects: ["slashblade_addon:burst_drive"]
-							StandbyRenderType: 4b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "slashblade_addon:model/kirisaya/kirisaya.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 3.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 11
-							proudSoul: 0
-							translationKey: "item.slashblade_addon.kirisaya"
-						}
-					}
-					id: "slashblade:slashblade"
-					tag: {
-						Enchantments: [
-							{
-								id: "minecraft:unbreaking"
-								lvl: 3s
-							}
-							{
-								id: "minecraft:power"
-								lvl: 5s
-							}
-						]
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade_addon:model/kirisaya/kirisaya.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:drive_horizontal"
-							SpecialEffects: ["slashblade_addon:burst_drive"]
-							StandbyRenderType: 4b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "slashblade_addon:model/kirisaya/kirisaya.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 3.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 11
-							proudSoul: 0
-							translationKey: "item.slashblade_addon.kirisaya"
-						}
-					}
-				}
-				type: "item"
-			}]
-			x: -2.5d
-			y: 15.0d
-		}
-		{
-			dependencies: ["128DAE63591990BF"]
 			id: "244DE4322B5B3EA5"
 			tasks: [{
 				id: "3943BE10BEE3BB77"
@@ -906,7 +816,7 @@
 				type: "item"
 			}]
 			x: 10.0d
-			y: 7.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["36E1D57516888F2E"]
@@ -1048,102 +958,7 @@
 			y: 15.0d
 		}
 		{
-			dependencies: [
-				"675F33EF4E067029"
-				"39D12DC4BDAF5AB7"
-			]
-			id: "7A59A895D1D7B608"
-			tasks: [{
-				id: "08BC32E7B1DBBD5F"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "last_smith:model/named/sagequoia/model.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:wave_edge"
-							StandbyRenderType: 1b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "last_smith:model/named/sagequoia/texture.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 6.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 113
-							proudSoul: 0
-							translationKey: "item.last_smith.sagequoia"
-						}
-					}
-					id: "slashblade:slashblade"
-					tag: {
-						Enchantments: [
-							{
-								id: "minecraft:smite"
-								lvl: 3s
-							}
-							{
-								id: "minecraft:sharpness"
-								lvl: 3s
-							}
-							{
-								id: "minecraft:unbreaking"
-								lvl: 3s
-							}
-						]
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "last_smith:model/named/sagequoia/model.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:wave_edge"
-							StandbyRenderType: 1b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "last_smith:model/named/sagequoia/texture.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 6.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 113
-							proudSoul: 0
-							translationKey: "item.last_smith.sagequoia"
-						}
-					}
-				}
-				type: "item"
-			}]
-			x: -7.5d
-			y: 17.5d
-		}
-		{
-			dependencies: ["4A57E4499E188BD7"]
+			dependencies: ["121941C1A0E09C09"]
 			hide_dependency_lines: true
 			id: "39D12DC4BDAF5AB7"
 			tasks: [{
@@ -1228,7 +1043,7 @@
 				}
 				type: "item"
 			}]
-			x: -5.0d
+			x: 2.5d
 			y: 15.0d
 		}
 		{
@@ -1474,7 +1289,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 17.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["6FD736B74327F2AF"]
@@ -1588,6 +1403,100 @@
 			}]
 			x: -12.5d
 			y: 5.0d
+		}
+		{
+			dependencies: [
+				"1FC6DCA09DEC558F"
+				"5FFEB598BE2CB116"
+				"1A385F668652DB17"
+			]
+			dependency_requirement: "one_completed"
+			id: "00880D674BE17F9A"
+			tasks: [{
+				id: "7D5E7F7557B98741"
+				item: "last_smith:scroll_exorcism"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["371880BF8A2A75FC"]
+			id: "1FA5AD3F1FEE5F26"
+			tasks: [{
+				id: "5ADED9329C6E99A8"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "last_smith:model/named/sekiro/kusabimaru.obj"
+							RepairCounter: 0
+							SpecialAttackType: "last_smith:iai_cross"
+							StandbyRenderType: 4b
+							SummonedSwordColor: -4144960
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "last_smith:model/named/sekiro/kusabimaru.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 5.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 0b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 70
+							proudSoul: 0
+							translationKey: "item.last_smith.kusabimaru"
+						}
+					}
+					id: "slashblade:slashblade"
+					tag: {
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "last_smith:model/named/sekiro/kusabimaru.obj"
+							RepairCounter: 0
+							SpecialAttackType: "last_smith:iai_cross"
+							StandbyRenderType: 4b
+							SummonedSwordColor: -4144960
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "last_smith:model/named/sekiro/kusabimaru.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 5.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 0b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 70
+							proudSoul: 0
+							translationKey: "item.last_smith.kusabimaru"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 15.0d
 		}
 	]
 	title: "拔刀剑"

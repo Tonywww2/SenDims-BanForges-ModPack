@@ -7,7 +7,50 @@
 	icon: "ad_astra:venus_globe"
 	id: "347A923727781B42"
 	order_index: 2
-	quest_links: [ ]
+	quest_links: [
+		{
+			id: "1B8F90321548AB37"
+			linked_quest: "3ECBD24ACD336B6C"
+			x: -2.5d
+			y: -7.5d
+		}
+		{
+			id: "6C77B05C2A0E37DE"
+			linked_quest: "02533C5844FD4D67"
+			x: 2.5d
+			y: -7.5d
+		}
+		{
+			id: "47A66EE8F01E43AB"
+			linked_quest: "32A264F98A0C9140"
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			id: "1D745BADE26DF6FF"
+			linked_quest: "2E2F1882E71FE497"
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			id: "1ECD856795D3AEC4"
+			linked_quest: "00880D674BE17F9A"
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			id: "4F958F806247E9F3"
+			linked_quest: "40DEC594EA4037DF"
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			id: "2A4C4DE687954449"
+			linked_quest: "4125D318FED9C668"
+			x: 2.5d
+			y: 2.5d
+		}
+	]
 	quests: [
 		{
 			dependencies: ["78BE62D2851798DD"]
@@ -100,8 +143,397 @@
 				item: "ad_astra:infernal_spire_block"
 				type: "item"
 			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"02533C5844FD4D67"
+				"2E2F1882E71FE497"
+				"32A264F98A0C9140"
+				"39B7DC65434E8CC1"
+				"3ECBD24ACD336B6C"
+			]
+			id: "6477045E03EE3F9E"
+			tasks: [{
+				id: "313114262A5190A8"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "sjap_adder:model/tw/agito_ex_true.obj"
+							RepairCounter: 0
+							SpecialAttackType: "sjap_adder:wave_edge_supers"
+							SpecialEffects: ["sjap_adder:agitos_ex"]
+							StandbyRenderType: 1b
+							SummonedSwordColor: -65536
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "sjap_adder:model/tw/agito_ex_true.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 9.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 110
+							proudSoul: 0
+							translationKey: "item.sjap_adder.agito_true_ex"
+						}
+					}
+					id: "slashblade:slashblade"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:power"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:unbreaking"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:smite"
+								lvl: 3s
+							}
+						]
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "sjap_adder:model/tw/agito_ex_true.obj"
+							RepairCounter: 0
+							SpecialAttackType: "sjap_adder:wave_edge_supers"
+							SpecialEffects: ["sjap_adder:agitos_ex"]
+							StandbyRenderType: 1b
+							SummonedSwordColor: -65536
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "sjap_adder:model/tw/agito_ex_true.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 9.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 110
+							proudSoul: 0
+							translationKey: "item.sjap_adder.agito_true_ex"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"2E2F1882E71FE497"
+				"00880D674BE17F9A"
+				"7D98EABF3232321E"
+			]
+			id: "65379794AA782C5B"
+			tasks: [{
+				id: "5F9A1FBD514FF3D1"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "last_smith:model/named/roukan/model.obj"
+							RepairCounter: 0
+							SpecialAttackType: "last_smith:transmigration_slash"
+							SpecialEffects: ["last_smith:extra_sharpness"]
+							StandbyRenderType: 5b
+							SummonedSwordColor: -18491
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "last_smith:model/named/roukan/texture.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 11.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 70
+							proudSoul: 0
+							translationKey: "item.last_smith.roukanken"
+						}
+					}
+					id: "slashblade:slashblade"
+					tag: {
+						Enchantments: [{
+							id: "minecraft:sharpness"
+							lvl: 3s
+						}]
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "last_smith:model/named/roukan/model.obj"
+							RepairCounter: 0
+							SpecialAttackType: "last_smith:transmigration_slash"
+							SpecialEffects: ["last_smith:extra_sharpness"]
+							StandbyRenderType: 5b
+							SummonedSwordColor: -18491
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "last_smith:model/named/roukan/texture.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 11.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 70
+							proudSoul: 0
+							translationKey: "item.last_smith.roukanken"
+						}
+					}
+				}
+				type: "item"
+			}]
 			x: -2.5d
 			y: 0.0d
+		}
+		{
+			dependencies: [
+				"61C43936D3898BEC"
+				"32A264F98A0C9140"
+				"40DEC594EA4037DF"
+			]
+			id: "63D9F90A01E19D8A"
+			tasks: [{
+				id: "4431E428787A143C"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade:model/named/roze/roze.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:ice_thunder_sword"
+							StandbyRenderType: 2b
+							SummonedSwordColor: -16777216
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "slashblade:model/named/roze/roze.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 7.5f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 465
+							proudSoul: 0
+							translationKey: "item.slashblade.ssa_roze"
+						}
+					}
+					id: "slashblade:slashblade"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:unbreaking"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:bane_of_arthropods"
+								lvl: 3s
+							}
+						]
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade:model/named/roze/roze.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:ice_thunder_sword"
+							StandbyRenderType: 2b
+							SummonedSwordColor: -16777216
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "slashblade:model/named/roze/roze.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 7.5f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 465
+							proudSoul: 0
+							translationKey: "item.slashblade.ssa_roze"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4125D318FED9C668"
+				"7D98EABF3232321E"
+			]
+			id: "4138021AE4A37632"
+			tasks: [{
+				id: "477E7B93AC8021D3"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "foxextra:model/foxex/model.obj"
+							RepairCounter: 0
+							SpecialAttackType: "foxextra:void_slash_plus"
+							SpecialEffects: ["foxextra:foxbling"]
+							StandbyRenderType: 1b
+							SummonedSwordColor: -589569
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "foxextra:model/foxex/texture.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 13.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 2000
+							proudSoul: 0
+							translationKey: "item.foxextra.foxex_white"
+						}
+					}
+					id: "slashblade:slashblade"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:smite"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:bane_of_arthropods"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:sharpness"
+								lvl: 7s
+							}
+							{
+								id: "minecraft:fire_aspect"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:unbreaking"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:power"
+								lvl: 3s
+							}
+						]
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "foxextra:model/foxex/model.obj"
+							RepairCounter: 0
+							SpecialAttackType: "foxextra:void_slash_plus"
+							SpecialEffects: ["foxextra:foxbling"]
+							StandbyRenderType: 1b
+							SummonedSwordColor: -589569
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "foxextra:model/foxex/texture.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 13.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 2000
+							proudSoul: 0
+							translationKey: "item.foxextra.foxex_white"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.5d
 		}
 	]
 	title: "金星与水星"

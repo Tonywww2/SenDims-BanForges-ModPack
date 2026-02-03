@@ -7,12 +7,20 @@
 	icon: "minecraft:flowering_azalea"
 	id: "4A8CA01794599D76"
 	order_index: 0
-	quest_links: [{
-		id: "7379FE5C64FC6241"
-		linked_quest: "6FD736B74327F2AF"
-		x: -2.5d
-		y: 5.0d
-	}]
+	quest_links: [
+		{
+			id: "7379FE5C64FC6241"
+			linked_quest: "6FD736B74327F2AF"
+			x: -2.5d
+			y: 5.0d
+		}
+		{
+			id: "40D3BA256430AF4B"
+			linked_quest: "4A57E4499E188BD7"
+			x: -5.0d
+			y: 5.0d
+		}
+	]
 	quests: [
 		{
 			icon: "minecraft:moss_block"

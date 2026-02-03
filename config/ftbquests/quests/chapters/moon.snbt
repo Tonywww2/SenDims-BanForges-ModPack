@@ -7,7 +7,20 @@
 	icon: "ad_astra:cheese"
 	id: "05ABDD9D79EF355A"
 	order_index: 3
-	quest_links: [ ]
+	quest_links: [
+		{
+			id: "01B4F097A532DC0D"
+			linked_quest: "5D3B1F040BBB2AF2"
+			x: 2.5d
+			y: -5.0d
+		}
+		{
+			id: "444DB13B54242513"
+			linked_quest: "7DC441AFE269F697"
+			x: 10.0d
+			y: 0.0d
+		}
+	]
 	quests: [
 		{
 			dependencies: ["750B557031EFBBEE"]
@@ -81,6 +94,7 @@
 		{
 			dependencies: ["5D5BA71C5348297D"]
 			hide_until_deps_complete: true
+			icon: "ad_astra:lunarian_spawn_egg"
 			id: "1C5BA781B3774E75"
 			tasks: [{
 				id: "099CD6B012FFCFA6"
@@ -400,6 +414,289 @@
 			}]
 			x: 5.0d
 			y: -2.5d
+		}
+		{
+			dependencies: ["4BBDBE99D484D70B"]
+			id: "41DA5EE0AEF41A8A"
+			tasks: [{
+				id: "535495410C422B28"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "pseudoedge_break_dawn:model/pseudo/named/pseudosword/sword/sword.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:wave_edge"
+							StandbyRenderType: 1b
+							SummonedSwordColor: -16777216
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "pseudoedge_break_dawn:model/pseudo/named/pseudosword/sword/pseudosword.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 30.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 300
+							proudSoul: 0
+							translationKey: "item.pseudoedge_break_dawn.pseudosword"
+						}
+					}
+					id: "slashblade:slashblade"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:sharpness"
+								lvl: 5s
+							}
+							{
+								id: "minecraft:smite"
+								lvl: 5s
+							}
+							{
+								id: "minecraft:fire_aspect"
+								lvl: 2s
+							}
+						]
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "pseudoedge_break_dawn:model/pseudo/named/pseudosword/sword/sword.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:wave_edge"
+							StandbyRenderType: 1b
+							SummonedSwordColor: -16777216
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "pseudoedge_break_dawn:model/pseudo/named/pseudosword/sword/pseudosword.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 30.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 300
+							proudSoul: 0
+							translationKey: "item.pseudoedge_break_dawn.pseudosword"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"41DA5EE0AEF41A8A"
+				"7DC441AFE269F697"
+			]
+			id: "53FAFE12DC339859"
+			tasks: [{
+				id: "568AE79924E11C32"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade:model/named/sange/sange.obj"
+							RepairCounter: 0
+							SpecialAttackType: "pseudoedge_break_dawn:black_hole"
+							StandbyRenderType: 1b
+							SummonedSwordColor: -16777216
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "pseudoedge_break_dawn:model/pseudo/named/pseudosword/blackpixie/blackpixie.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 35.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 300
+							proudSoul: 0
+							translationKey: "item.pseudoedge_break_dawn.blackpixie"
+						}
+					}
+					id: "slashblade:slashblade"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:sharpness"
+								lvl: 5s
+							}
+							{
+								id: "minecraft:unbreaking"
+								lvl: 5s
+							}
+							{
+								id: "minecraft:fire_aspect"
+								lvl: 5s
+							}
+							{
+								id: "minecraft:looting"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:knockback"
+								lvl: 2s
+							}
+						]
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade:model/named/sange/sange.obj"
+							RepairCounter: 0
+							SpecialAttackType: "pseudoedge_break_dawn:black_hole"
+							StandbyRenderType: 1b
+							SummonedSwordColor: -16777216
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "pseudoedge_break_dawn:model/pseudo/named/pseudosword/blackpixie/blackpixie.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 35.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 300
+							proudSoul: 0
+							translationKey: "item.pseudoedge_break_dawn.blackpixie"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["53FAFE12DC339859"]
+			id: "4A5FF776DD643D73"
+			tasks: [{
+				id: "607C85B124F2C9FA"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "pseudoedge_break_dawn:model/pseudo/named/pseudosword/emptyblade/emptyblade.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:judgement_cut"
+							StandbyRenderType: 1b
+							SummonedSwordColor: -16777216
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "pseudoedge_break_dawn:model/pseudo/named/pseudosword/latent/latent.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 25.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 300
+							proudSoul: 0
+							translationKey: "item.pseudoedge_break_dawn.latent"
+						}
+					}
+					id: "slashblade:slashblade"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:sharpness"
+								lvl: 5s
+							}
+							{
+								id: "minecraft:fire_aspect"
+								lvl: 3s
+							}
+						]
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "pseudoedge_break_dawn:model/pseudo/named/pseudosword/emptyblade/emptyblade.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:judgement_cut"
+							StandbyRenderType: 1b
+							SummonedSwordColor: -16777216
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "pseudoedge_break_dawn:model/pseudo/named/pseudosword/latent/latent.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 25.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 300
+							proudSoul: 0
+							translationKey: "item.pseudoedge_break_dawn.latent"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 12.5d
+			y: 2.5d
 		}
 	]
 	title: "畸变的月球"

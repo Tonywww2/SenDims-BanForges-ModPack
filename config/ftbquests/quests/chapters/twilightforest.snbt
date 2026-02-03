@@ -7,7 +7,20 @@
 	icon: "twilightforest:twilight_portal_miniature_structure"
 	id: "33C0F33A1D4678D5"
 	order_index: 1
-	quest_links: [ ]
+	quest_links: [
+		{
+			id: "70B49C8B011567BB"
+			linked_quest: "00880D674BE17F9A"
+			x: 7.5d
+			y: -2.5d
+		}
+		{
+			id: "3E4DB58BE9914AC8"
+			linked_quest: "244DE4322B5B3EA5"
+			x: 7.5d
+			y: 0.0d
+		}
+	]
 	quests: [
 		{
 			dependencies: ["6AE2EFEC0F3BE4BE"]
@@ -1051,104 +1064,6 @@
 			y: 7.5d
 		}
 		{
-			dependencies: [
-				"02533C5844FD4D67"
-				"2E2F1882E71FE497"
-				"32A264F98A0C9140"
-			]
-			id: "69AC145E36033068"
-			tasks: [{
-				id: "005C54E7CEA94AE3"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "sjap_adder:model/tw/agito_ex_true.obj"
-							RepairCounter: 0
-							SpecialAttackType: "sjap_adder:wave_edge_supers"
-							SpecialEffects: ["sjap_adder:agitos_ex"]
-							StandbyRenderType: 1b
-							SummonedSwordColor: -65536
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "sjap_adder:model/tw/agito_ex_true.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 18.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 300
-							proudSoul: 0
-							translationKey: "item.sjap_adder.agito_true_ex"
-						}
-					}
-					id: "slashblade:slashblade"
-					tag: {
-						Enchantments: [
-							{
-								id: "minecraft:power"
-								lvl: 5s
-							}
-							{
-								id: "minecraft:unbreaking"
-								lvl: 5s
-							}
-							{
-								id: "minecraft:smite"
-								lvl: 5s
-							}
-						]
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "sjap_adder:model/tw/agito_ex_true.obj"
-							RepairCounter: 0
-							SpecialAttackType: "sjap_adder:wave_edge_supers"
-							SpecialEffects: ["sjap_adder:agitos_ex"]
-							StandbyRenderType: 1b
-							SummonedSwordColor: -65536
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "sjap_adder:model/tw/agito_ex_true.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 18.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 300
-							proudSoul: 0
-							translationKey: "item.sjap_adder.agito_true_ex"
-						}
-					}
-				}
-				type: "item"
-			}]
-			x: 10.0d
-			y: 10.0d
-		}
-		{
 			dependencies: ["4B5C544E097417A0"]
 			id: "2E2F1882E71FE497"
 			tasks: [{
@@ -1227,7 +1142,7 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
+			x: 5.0d
 			y: 12.5d
 		}
 		{
@@ -1309,18 +1224,10 @@
 			y: 10.0d
 		}
 		{
-			dependencies: ["064234E17AB63222"]
-			id: "1EE19D7935A8FF59"
-			tasks: [{
-				id: "0285A669F6CF2E5A"
-				item: "last_smith:scroll_named"
-				type: "item"
-			}]
-			x: 5.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["1EE19D7935A8FF59"]
+			dependencies: [
+				"244DE4322B5B3EA5"
+				"064234E17AB63222"
+			]
 			id: "5FFEB598BE2CB116"
 			tasks: [{
 				id: "372840A63504F3CC"
@@ -1400,19 +1307,7 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
-			y: -2.5d
-		}
-		{
-			dependencies: ["5FFEB598BE2CB116"]
-			dependency_requirement: "one_completed"
-			id: "5A3AAB199381EF42"
-			tasks: [{
-				id: "5DC9523B6D97B281"
-				item: "last_smith:scroll_exorcism"
-				type: "item"
-			}]
-			x: 10.0d
+			x: 5.0d
 			y: -2.5d
 		}
 		{

@@ -7,7 +7,32 @@
 	icon: "ad_astra:mars_globe"
 	id: "2C322B5F848C22C7"
 	order_index: 5
-	quest_links: [ ]
+	quest_links: [
+		{
+			id: "1417CEC02167B90B"
+			linked_quest: "5D3B1F040BBB2AF2"
+			x: -5.0d
+			y: -5.0d
+		}
+		{
+			id: "70119C30CBF0090C"
+			linked_quest: "5FFEB598BE2CB116"
+			x: 2.5d
+			y: -5.0d
+		}
+		{
+			id: "347FE8795E1B1889"
+			linked_quest: "1A385F668652DB17"
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			id: "6CAE3A1F6918691C"
+			linked_quest: "1FC6DCA09DEC558F"
+			x: 5.0d
+			y: -7.5d
+		}
+	]
 	quests: [
 		{
 			dependencies: ["40B4C6CD28E7DF19"]
@@ -71,7 +96,10 @@
 			y: -5.0d
 		}
 		{
-			dependencies: ["260A17885336B776"]
+			dependencies: [
+				"260A17885336B776"
+				"5D3B1F040BBB2AF2"
+			]
 			id: "203E60FD1465EC35"
 			tasks: [{
 				id: "1E8CDCAA7EB560FF"
@@ -157,8 +185,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
-			y: -2.5d
+			x: -2.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["3F43656AE6F116CB"]
@@ -251,7 +279,10 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["260A17885336B776"]
+			dependencies: [
+				"260A17885336B776"
+				"051641EF8104FA8F"
+			]
 			id: "20C5B7CCF681A814"
 			tasks: [{
 				id: "3C8CEEDCB21244B2"
@@ -325,22 +356,16 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
-			y: -5.0d
+			x: -5.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["260A17885336B776"]
-			id: "3503F0D0BC7C1823"
-			tasks: [{
-				id: "283C1CEE3A38266B"
-				item: "last_smith:scroll_exorcism"
-				type: "item"
-			}]
-			x: 2.5d
-			y: -7.5d
-		}
-		{
-			dependencies: ["3503F0D0BC7C1823"]
+			dependencies: [
+				"260A17885336B776"
+				"1FC6DCA09DEC558F"
+				"1A385F668652DB17"
+				"5FFEB598BE2CB116"
+			]
 			id: "154580144376D976"
 			tasks: [{
 				id: "149B65DE39E1422C"
@@ -426,7 +451,7 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
+			x: 2.5d
 			y: -7.5d
 		}
 		{
@@ -437,8 +462,381 @@
 				item: "last_smith:scroll_muramasa"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -5.0d
+			x: -7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["203E60FD1465EC35"]
+			id: "500ED712AFE54466"
+			tasks: [{
+				id: "04E7FDF0D9064986"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade_addon:model/kirisaya/kirisaya.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:drive_horizontal"
+							SpecialEffects: ["slashblade_addon:burst_drive"]
+							StandbyRenderType: 4b
+							SummonedSwordColor: -13421569
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "slashblade_addon:model/kirisaya/kirisaya.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 3.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 11
+							proudSoul: 0
+							translationKey: "item.slashblade_addon.kirisaya"
+						}
+					}
+					id: "slashblade:slashblade"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:unbreaking"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:power"
+								lvl: 5s
+							}
+						]
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade_addon:model/kirisaya/kirisaya.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:drive_horizontal"
+							SpecialEffects: ["slashblade_addon:burst_drive"]
+							StandbyRenderType: 4b
+							SummonedSwordColor: -13421569
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "slashblade_addon:model/kirisaya/kirisaya.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 3.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 11
+							proudSoul: 0
+							translationKey: "item.slashblade_addon.kirisaya"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["3F43656AE6F116CB"]
+			id: "051641EF8104FA8F"
+			subtitle: "狩猎"
+			tasks: [{
+				id: "45A9A44E12CDB276"
+				item: {
+					Count: 1
+					id: "enderio:filled_soul_vial"
+					tag: {
+						BlockEntityTag: {
+							EntityStorage: {
+								Entity: {
+									id: "ad_astra:martian_raptor"
+								}
+							}
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "灵魂瓶：火星迅猛龙"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["20C5B7CCF681A814"]
+			id: "3348C0AE18D2FCE3"
+			tasks: [{
+				id: "78D9D83B24B5FD01"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade_addon:model/blademaster/blademaster.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade_addon:spiral_edge"
+							StandbyRenderType: 2b
+							SummonedSwordColor: -13421569
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "slashblade_addon:model/blademaster/aquablaze.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 7.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 60
+							proudSoul: 0
+							translationKey: "item.slashblade_addon.aquablaze"
+						}
+					}
+					id: "slashblade:slashblade"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:fire_aspect"
+								lvl: 2s
+							}
+							{
+								id: "minecraft:fire_protection"
+								lvl: 1s
+							}
+						]
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade_addon:model/blademaster/blademaster.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade_addon:spiral_edge"
+							StandbyRenderType: 2b
+							SummonedSwordColor: -13421569
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "slashblade_addon:model/blademaster/aquablaze.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 7.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 60
+							proudSoul: 0
+							translationKey: "item.slashblade_addon.aquablaze"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -7.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3348C0AE18D2FCE3"]
+			id: "24BDD9F44F3AC6D6"
+			tasks: [{
+				id: "56CD585340E2E3C0"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade:model/named/ruined_sword/ruined_sword.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:heavens_thirteen_slashes"
+							StandbyRenderType: 2b
+							SummonedSwordColor: -2327323
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "slashblade:model/named/ruined_sword/ruined_sword.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 10.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 265
+							proudSoul: 0
+							translationKey: "item.slashblade.ruined_sword"
+						}
+					}
+					id: "slashblade:slashblade"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:smite"
+								lvl: 8s
+							}
+							{
+								id: "minecraft:fire_aspect"
+								lvl: 3s
+							}
+						]
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade:model/named/ruined_sword/ruined_sword.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:heavens_thirteen_slashes"
+							StandbyRenderType: 2b
+							SummonedSwordColor: -2327323
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "slashblade:model/named/ruined_sword/ruined_sword.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 10.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 265
+							proudSoul: 0
+							translationKey: "item.slashblade.ruined_sword"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -10.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["20C5B7CCF681A814"]
+			id: "4467B681A766AFAC"
+			tasks: [{
+				id: "7EAB4C4F0E0D234B"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade_addon:model/laemmle/blade.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:judgement_cut"
+							StandbyRenderType: 2b
+							SummonedSwordColor: -13421569
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "slashblade_addon:model/laemmle/lem.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 7.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 0b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 80
+							proudSoul: 0
+							translationKey: "item.slashblade_addon.laemmle"
+						}
+					}
+					id: "slashblade:slashblade"
+					tag: {
+						Enchantments: [{
+							id: "minecraft:sharpness"
+							lvl: 3s
+						}]
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade_addon:model/laemmle/blade.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:judgement_cut"
+							StandbyRenderType: 2b
+							SummonedSwordColor: -13421569
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "slashblade_addon:model/laemmle/lem.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 7.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 0b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 80
+							proudSoul: 0
+							translationKey: "item.slashblade_addon.laemmle"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -7.5d
+			y: 2.5d
 		}
 	]
 	title: "赤红色的星球"
