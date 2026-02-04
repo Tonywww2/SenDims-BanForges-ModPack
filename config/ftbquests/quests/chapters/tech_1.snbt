@@ -26,6 +26,12 @@
 			x: -2.5d
 			y: 22.5d
 		}
+		{
+			id: "4664F67660800902"
+			linked_quest: "14D5D5ADCDC5B859"
+			x: 0.0d
+			y: 40.0d
+		}
 	]
 	quests: [
 		{
@@ -598,13 +604,14 @@
 		{
 			dependencies: ["78BE62D2851798DD"]
 			id: "31801D73AF59C8CB"
+			subtitle: "魔力，是炽热的"
 			tasks: [{
 				id: "77327F46C48E2846"
 				item: "ad_astra:calorite_ingot"
 				type: "item"
 			}]
 			x: 0.0d
-			y: 35.0d
+			y: 37.5d
 		}
 		{
 			dependencies: [
@@ -851,6 +858,75 @@
 			}]
 			x: -5.0d
 			y: 22.5d
+		}
+		{
+			dependencies: ["31801D73AF59C8CB"]
+			id: "6EA0FF1CC5982E8F"
+			tasks: [{
+				id: "5E0DEE1DA271B95A"
+				item: "botania:apothecary_default"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 35.0d
+		}
+		{
+			dependencies: ["6EA0FF1CC5982E8F"]
+			id: "1D29CD35F0ACC56B"
+			tasks: [{
+				id: "0AED0AE66BD44808"
+				item: "botania:pure_daisy"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 37.5d
+		}
+		{
+			dependencies: [
+				"31801D73AF59C8CB"
+				"1D29CD35F0ACC56B"
+			]
+			id: "771356D4D0ACE1DF"
+			tasks: [{
+				id: "70EAA1387CE9B295"
+				item: "botania:livingrock"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 37.5d
+		}
+		{
+			dependencies: ["771356D4D0ACE1DF"]
+			id: "79B89622E21E230D"
+			tasks: [{
+				id: "23C99E99670EA455"
+				item: "botania:runic_altar"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 37.5d
+		}
+		{
+			dependencies: ["14D5D5ADCDC5B859"]
+			id: "2B520DD47D46DDEB"
+			tasks: [{
+				id: "7F7AA0FEAFFB4039"
+				item: "botania:terra_plate"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 40.0d
+		}
+		{
+			dependencies: ["2B520DD47D46DDEB"]
+			id: "04B20E40DAED373B"
+			tasks: [{
+				id: "04BE4C78FD1CDF62"
+				item: "botania:terrasteel_ingot"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 40.0d
 		}
 	]
 	title: "工业"

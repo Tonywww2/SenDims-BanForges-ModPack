@@ -1,4 +1,5 @@
 {
+	autofocus_id: "77DC6770CC08AEF6"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "asteroid_belt"
@@ -6,7 +7,470 @@
 	icon: "ae2:sky_stone_block"
 	id: "1D84C9620E8EC0D9"
 	order_index: 0
-	quest_links: [ ]
-	quests: [ ]
+	quest_links: [
+		{
+			id: "483B45EA2E61B422"
+			linked_quest: "295C7AEDBFF7EE12"
+			x: 7.5d
+			y: -2.5d
+		}
+		{
+			id: "603F776C084BEFED"
+			linked_quest: "65379794AA782C5B"
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			id: "3F493FD22A4788BE"
+			linked_quest: "63D9F90A01E19D8A"
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			id: "7BA8FD5C8D5FCDA8"
+			linked_quest: "161E8BD488E58BEC"
+			x: 7.5d
+			y: 2.5d
+		}
+		{
+			id: "2181DCF0E8764700"
+			linked_quest: "2354F158B208830E"
+			x: -5.0d
+			y: -2.5d
+		}
+		{
+			id: "7815200B932B052C"
+			linked_quest: "539653ADBDDDE965"
+			x: -7.5d
+			y: 2.5d
+		}
+		{
+			id: "64320D5C761B13BD"
+			linked_quest: "3AA2BC619D04E949"
+			x: -7.5d
+			y: -2.5d
+		}
+		{
+			id: "491685FD44B684B6"
+			linked_quest: "3C0882022833F540"
+			x: -5.0d
+			y: 2.5d
+		}
+		{
+			id: "640B49985101D0EE"
+			linked_quest: "04B20E40DAED373B"
+			x: 0.0d
+			y: 5.0d
+		}
+	]
+	quests: [
+		{
+			id: "77DC6770CC08AEF6"
+			size: 2.0d
+			tasks: [{
+				dimension: "sdbf:asteroid_belt"
+				id: "60D672CC7D27CAB3"
+				title: "小行星带"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["77DC6770CC08AEF6"]
+			id: "21EA0520FC403E65"
+			tasks: [{
+				id: "786D7F442E8A6E2B"
+				item: "minecraft:bedrock"
+				type: "item"
+			}]
+			title: "占位符：小行星岩"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["77DC6770CC08AEF6"]
+			id: "0A2EC0BAE83D0D59"
+			tasks: [{
+				id: "201425C33023CA30"
+				item: "nuclearcraft:cobalt_ingot"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["77DC6770CC08AEF6"]
+			id: "7B68236BA19FE0EE"
+			tasks: [{
+				id: "04157D32C1E4F89B"
+				item: "nuclearcraft:lithium_ingot"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["77DC6770CC08AEF6"]
+			id: "0326C6376D5E34FF"
+			tasks: [{
+				id: "398DC37E91DDC578"
+				item: "nuclearcraft:thorium_ingot"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["77DC6770CC08AEF6"]
+			id: "1A4E1AA0588E71E2"
+			tasks: [{
+				id: "590B6C4E87F4D182"
+				item: "nuclearcraft:magnesium_ingot"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["21EA0520FC403E65"]
+			id: "14D5D5ADCDC5B859"
+			tasks: [{
+				id: "274CE87722444530"
+				item: "minecraft:bedrock"
+				type: "item"
+			}]
+			title: "占位符：暗物质尘埃"
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"0A2EC0BAE83D0D59"
+				"14D5D5ADCDC5B859"
+			]
+			id: "690B503CC20750EE"
+			tasks: [{
+				id: "01705BEAC893FF77"
+				item: "kubejs:delta_dust"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"690B503CC20750EE"
+				"295C7AEDBFF7EE12"
+				"65379794AA782C5B"
+				"63D9F90A01E19D8A"
+				"161E8BD488E58BEC"
+			]
+			id: "399F39F1E6D8F717"
+			tasks: [{
+				id: "5B242DFED58C18BA"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							Energy: {
+								Capacity: 2000000
+								Energy: 0
+								EnergyDurability: 0b
+								MaxExtract: 20000
+								MaxReceive: 20000
+								PowerupExtract: 1000
+								StandbyExtract: 100
+								isPowered: 0b
+							}
+							ModelName: "last_smith:model/named/rf_roukan/model.obj"
+							RepairCounter: 0
+							SpecialAttackType: "last_smith:transmigration_slash"
+							SpecialEffects: ["last_smith:extra_sharpness"]
+							StandbyRenderType: 1b
+							SummonedSwordColor: -18491
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "last_smith:model/named/rf_roukan/texture.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 6.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 70
+							proudSoul: 0
+							translationKey: "item.last_smith.bunshi"
+						}
+					}
+					id: "energyblade:forge_energy_blade"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:sharpness"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:unbreaking"
+								lvl: 2s
+							}
+							{
+								id: "minecraft:soul_speed"
+								lvl: 2s
+							}
+						]
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "last_smith:model/named/rf_roukan/model.obj"
+							RepairCounter: 0
+							SpecialAttackType: "last_smith:transmigration_slash"
+							SpecialEffects: ["last_smith:extra_sharpness"]
+							StandbyRenderType: 1b
+							SummonedSwordColor: -18491
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "last_smith:model/named/rf_roukan/texture.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 6.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 70
+							proudSoul: 0
+							translationKey: "item.last_smith.bunshi"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0326C6376D5E34FF"]
+			id: "49271C4646459DEE"
+			tasks: [{
+				id: "7AD907DFE17F6C05"
+				item: "nuclearcraft:compact_helium_collector"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"49271C4646459DEE"
+				"2354F158B208830E"
+				"539653ADBDDDE965"
+				"3AA2BC619D04E949"
+				"3C0882022833F540"
+			]
+			id: "2A648235D6DA1509"
+			tasks: [{
+				id: "0060DDFA043583C8"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade_addon:model/kamuy/kamuy.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade_addon:fire_spiral"
+							StandbyRenderType: 2b
+							SummonedSwordColor: -1169920
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "slashblade_addon:model/kamuy/fire.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 7.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 40
+							proudSoul: 0
+							translationKey: "item.slashblade_addon.kamuy_fire"
+						}
+					}
+					id: "slashblade:slashblade"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:unbreaking"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:bane_of_arthropods"
+								lvl: 2s
+							}
+							{
+								id: "minecraft:fire_protection"
+								lvl: 1s
+							}
+							{
+								id: "minecraft:fire_aspect"
+								lvl: 1s
+							}
+						]
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade_addon:model/kamuy/kamuy.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade_addon:fire_spiral"
+							StandbyRenderType: 2b
+							SummonedSwordColor: -1169920
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "slashblade_addon:model/kamuy/fire.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 7.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 40
+							proudSoul: 0
+							translationKey: "item.slashblade_addon.kamuy_fire"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["04B20E40DAED373B"]
+			id: "1498BB469C25AD67"
+			tasks: [{
+				id: "1E11F9D6960449E1"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade_addon:model/terra/terra.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade_addon:blistering_terra_swords"
+							SpecialEffects: [
+								"slashblade_addon:mana_repair"
+								"slashblade_addon:mana_burst"
+							]
+							StandbyRenderType: 5b
+							SummonedSwordColor: -13253103
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "slashblade_addon:model/terra/terra.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 6.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 60
+							proudSoul: 0
+							translationKey: "item.slashblade_addon.terra_blade"
+						}
+					}
+					id: "slashblade:slashblade"
+					tag: {
+						Enchantments: [{
+							id: "minecraft:power"
+							lvl: 1s
+						}]
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade_addon:model/terra/terra.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade_addon:blistering_terra_swords"
+							SpecialEffects: [
+								"slashblade_addon:mana_repair"
+								"slashblade_addon:mana_burst"
+							]
+							StandbyRenderType: 5b
+							SummonedSwordColor: -13253103
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "slashblade_addon:model/terra/terra.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 6.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 60
+							proudSoul: 0
+							translationKey: "item.slashblade_addon.terra_blade"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+	]
 	title: "小行星带"
 }

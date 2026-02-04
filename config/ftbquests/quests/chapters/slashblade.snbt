@@ -447,7 +447,7 @@
 				item: "last_smith:blade"
 				type: "item"
 			}]
-			x: 2.5d
+			x: 0.0d
 			y: 7.5d
 		}
 		{
@@ -542,7 +542,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: 10.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["733A23B4A4EF2379"]
@@ -642,7 +642,7 @@
 				type: "item"
 			}]
 			x: -5.0d
-			y: 10.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["0AB0FC7F385062F4"]
@@ -683,7 +683,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: 10.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["6E207921B1E85F6A"]
@@ -694,7 +694,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: 12.5d
+			y: 10.0d
 		}
 		{
 			dependencies: [
@@ -815,8 +815,8 @@
 				item: "last_smith:blade_sakura"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 10.0d
+			x: 12.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["36E1D57516888F2E"]
@@ -826,35 +826,38 @@
 				item: "last_smith:sakura_sphere"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 5.0d
+			x: 10.0d
+			y: 7.5d
 		}
 		{
-			dependencies: ["6F8D5E9ACCBD33C3"]
+			dependencies: ["746E80BAF97822B7"]
 			id: "77180F6F6B90B852"
 			tasks: [{
 				id: "0D1618C8F5B59028"
 				item: "last_smith:scroll_sakura_blade"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 12.5d
 			y: 12.5d
 		}
 		{
-			dependencies: ["41AAF1E0C28F6B57"]
+			dependencies: [
+				"41AAF1E0C28F6B57"
+				"77180F6F6B90B852"
+			]
 			id: "6988EF237AE411F0"
 			tasks: [{
 				id: "32E72C2A7E825A8E"
 				item: "last_smith:scroll_sakura_full"
 				type: "item"
 			}]
-			x: 15.0d
-			y: 5.0d
+			x: 10.0d
+			y: 12.5d
 		}
 		{
 			dependencies: [
-				"77180F6F6B90B852"
 				"6F98D4EDA2697EC1"
+				"6988EF237AE411F0"
 			]
 			id: "635DD69063FA1058"
 			tasks: [{
@@ -1199,8 +1202,8 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
-			y: 10.0d
+			x: 5.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["4A57E4499E188BD7"]
@@ -1289,7 +1292,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 7.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["6FD736B74327F2AF"]
@@ -1418,7 +1421,7 @@
 				type: "item"
 			}]
 			x: 12.5d
-			y: 7.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["371880BF8A2A75FC"]
@@ -1497,6 +1500,260 @@
 			}]
 			x: -2.5d
 			y: 15.0d
+		}
+		{
+			dependencies: [
+				"128DAE63591990BF"
+				"747934E571968BD3"
+			]
+			id: "43FDCFF3F409783D"
+			tasks: [{
+				id: "0DA64BF81742AB6B"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade:model/named/yamato.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:judgement_cut"
+							StandbyRenderType: 1b
+							SummonedSwordColor: -13421569
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "last_smith:model/named/bamboolight/silverbamboo_top.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 5.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 0b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 70
+							proudSoul: 0
+							translationKey: "item.last_smith.silverbamboo_top"
+						}
+					}
+					id: "slashblade:slashblade"
+					tag: {
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade:model/named/yamato.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:judgement_cut"
+							StandbyRenderType: 1b
+							SummonedSwordColor: -13421569
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "last_smith:model/named/bamboolight/silverbamboo_top.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 5.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 0b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 70
+							proudSoul: 0
+							translationKey: "item.last_smith.silverbamboo_top"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: 12.5d
+		}
+		{
+			dependencies: [
+				"39D12DC4BDAF5AB7"
+				"675F33EF4E067029"
+			]
+			id: "508A09AAE14A4DB1"
+			tasks: [{
+				id: "670D1A3F033DE28D"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "last_smith:model/named/sagequoia/model.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:wave_edge"
+							StandbyRenderType: 1b
+							SummonedSwordColor: -13421569
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "last_smith:model/named/sagequoia/texture.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 6.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 113
+							proudSoul: 0
+							translationKey: "item.last_smith.sagequoia"
+						}
+					}
+					id: "slashblade:slashblade"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:smite"
+								lvl: 2s
+							}
+							{
+								id: "minecraft:sharpness"
+								lvl: 1s
+							}
+							{
+								id: "minecraft:unbreaking"
+								lvl: 1s
+							}
+						]
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "last_smith:model/named/sagequoia/model.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:wave_edge"
+							StandbyRenderType: 1b
+							SummonedSwordColor: -13421569
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "last_smith:model/named/sagequoia/texture.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 6.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 113
+							proudSoul: 0
+							translationKey: "item.last_smith.sagequoia"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["6F8D5E9ACCBD33C3"]
+			id: "746E80BAF97822B7"
+			tasks: [{
+				id: "0FB041878671E07C"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "last_smith:model/nagasada/model.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:judgement_cut"
+							StandbyRenderType: 1b
+							SummonedSwordColor: -13421569
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "last_smith:model/nagasada/texture.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 4.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 0b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 100
+							proudSoul: 0
+							translationKey: "item.last_smith.nagasada"
+						}
+					}
+					id: "slashblade:slashblade"
+					tag: {
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "last_smith:model/nagasada/model.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:judgement_cut"
+							StandbyRenderType: 1b
+							SummonedSwordColor: -13421569
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "last_smith:model/nagasada/texture.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 4.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 0b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 100
+							proudSoul: 0
+							translationKey: "item.last_smith.nagasada"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 12.5d
+			y: 7.5d
 		}
 	]
 	title: "拔刀剑"

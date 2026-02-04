@@ -6,6 +6,17 @@
 	id: "6B2AC40697D09CB6"
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		id: "37CF7606A44B5357"
+		size: 2.0d
+		tasks: [{
+			dimension: "sdbf:saturn"
+			id: "0C78498B8E7DA510"
+			title: "土星"
+			type: "dimension"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
 	title: "土星"
 }

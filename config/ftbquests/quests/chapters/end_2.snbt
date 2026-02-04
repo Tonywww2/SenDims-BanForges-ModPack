@@ -7,12 +7,38 @@
 	icon: "minecraft:end_stone"
 	id: "20367AAD44F57688"
 	order_index: 4
-	quest_links: [{
-		id: "679A5B8038C308A9"
-		linked_quest: "52EC914C3873AF88"
-		x: 0.0d
-		y: -2.5d
-	}]
+	quest_links: [
+		{
+			id: "679A5B8038C308A9"
+			linked_quest: "52EC914C3873AF88"
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			id: "43F894E08FA2A0FD"
+			linked_quest: "7465DB175504D0F3"
+			x: 7.5d
+			y: 10.0d
+		}
+		{
+			id: "3BC7208F9814D411"
+			linked_quest: "7FC6F9952EA26493"
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			id: "1ECD856795D3AEC4"
+			linked_quest: "00880D674BE17F9A"
+			x: 7.5d
+			y: 5.0d
+		}
+		{
+			id: "03F4C46665F461F0"
+			linked_quest: "2E2F1882E71FE497"
+			x: 10.0d
+			y: 7.5d
+		}
+	]
 	quests: [
 		{
 			dependencies: ["13BDDC49C990C82D"]
@@ -266,18 +292,10 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["621B7032100D365B"]
-			id: "7465DB175504D0F3"
-			tasks: [{
-				id: "69DF5807233F8FB9"
-				item: "last_smith:scroll_god"
-				type: "item"
-			}]
-			x: 7.5d
-			y: 5.0d
-		}
-		{
-			dependencies: ["5EEA2C8F11FB0470"]
+			dependencies: [
+				"5EEA2C8F11FB0470"
+				"7FC6F9952EA26493"
+			]
 			id: "3AE144DD58D30985"
 			tasks: [{
 				id: "79F66CCF0F276B4C"
@@ -379,7 +397,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 5.0d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -394,104 +412,6 @@
 			}]
 			x: 5.0d
 			y: 10.0d
-		}
-		{
-			dependencies: ["0A68F5EE8F25F036"]
-			id: "621B7032100D365B"
-			tasks: [{
-				id: "12B001BC4A36D8BE"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade:model/named/yamato.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:judgement_cut"
-							SpecialEffects: ["last_smith:extra_power"]
-							StandbyRenderType: 1b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "last_smith:model/named/bamboolight/goldenbamboo.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 6.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 33
-							proudSoul: 0
-							translationKey: "item.last_smith.goldenbamboo"
-						}
-					}
-					id: "slashblade:slashblade"
-					tag: {
-						Enchantments: [
-							{
-								id: "minecraft:soul_speed"
-								lvl: 2s
-							}
-							{
-								id: "minecraft:power"
-								lvl: 1s
-							}
-							{
-								id: "minecraft:unbreaking"
-								lvl: 1s
-							}
-							{
-								id: "minecraft:smite"
-								lvl: 3s
-							}
-						]
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade:model/named/yamato.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:judgement_cut"
-							SpecialEffects: ["last_smith:extra_power"]
-							StandbyRenderType: 1b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "last_smith:model/named/bamboolight/goldenbamboo.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 6.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 33
-							proudSoul: 0
-							translationKey: "item.last_smith.goldenbamboo"
-						}
-					}
-				}
-				type: "item"
-			}]
-			x: 7.5d
-			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -1065,6 +985,116 @@
 			}]
 			x: -5.0d
 			y: 10.0d
+		}
+		{
+			dependencies: ["17234BADC5181DFE"]
+			id: "2B94BC787621CEA1"
+			tasks: [{
+				id: "66A5C5F8F06D27E0"
+				item: "integrateddynamics:crystalized_chorus_chunk"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2B94BC787621CEA1"]
+			id: "0AB0F8AA8EFC1E53"
+			tasks: [{
+				id: "297C964F1F9CF05F"
+				item: "integrateddynamics:logic_director"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2E2F1882E71FE497"
+				"00880D674BE17F9A"
+				"6FC2094BBDF8974D"
+			]
+			id: "65379794AA782C5B"
+			tasks: [{
+				id: "5F9A1FBD514FF3D1"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "last_smith:model/named/roukan/model.obj"
+							RepairCounter: 0
+							SpecialAttackType: "last_smith:transmigration_slash"
+							SpecialEffects: ["last_smith:extra_sharpness"]
+							StandbyRenderType: 5b
+							SummonedSwordColor: -18491
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "last_smith:model/named/roukan/texture.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 11.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 70
+							proudSoul: 0
+							translationKey: "item.last_smith.roukanken"
+						}
+					}
+					id: "slashblade:slashblade"
+					tag: {
+						Enchantments: [{
+							id: "minecraft:sharpness"
+							lvl: 3s
+						}]
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "last_smith:model/named/roukan/model.obj"
+							RepairCounter: 0
+							SpecialAttackType: "last_smith:transmigration_slash"
+							SpecialEffects: ["last_smith:extra_sharpness"]
+							StandbyRenderType: 5b
+							SummonedSwordColor: -18491
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "last_smith:model/named/roukan/texture.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 11.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 70
+							proudSoul: 0
+							translationKey: "item.last_smith.roukanken"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: 7.5d
 		}
 	]
 	title: "末地"
