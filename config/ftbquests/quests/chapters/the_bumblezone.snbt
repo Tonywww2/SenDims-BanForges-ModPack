@@ -17,7 +17,7 @@
 			id: "5AD080B1388450BF"
 			linked_quest: "3F3BE932D1892CC4"
 			x: -5.0d
-			y: -10.0d
+			y: -7.5d
 		}
 		{
 			id: "5192814578B75FC3"
@@ -28,38 +28,26 @@
 		{
 			id: "520D42B149E42C41"
 			linked_quest: "1F6B42B37F50453D"
-			x: 2.5d
+			x: 5.0d
 			y: -7.5d
 		}
 		{
 			id: "343DB20CBCEB1E57"
 			linked_quest: "76BFA745E2BBDC7E"
-			x: -7.5d
+			x: -10.0d
 			y: -7.5d
 		}
 		{
 			id: "49769A7D036D16D9"
 			linked_quest: "0ED8EF9520071AAD"
-			x: -7.5d
-			y: -12.5d
-		}
-		{
-			id: "14CE9ECE2E6D09C3"
-			linked_quest: "4FD299D688A0A92A"
-			x: -5.0d
-			y: -15.0d
-		}
-		{
-			id: "77AC69AA398C5A67"
-			linked_quest: "7D800CACE4E69CFF"
 			x: -2.5d
 			y: -10.0d
 		}
 		{
-			id: "28B8B422E9732D43"
-			linked_quest: "06A34C8A04B2CD83"
+			id: "14CE9ECE2E6D09C3"
+			linked_quest: "4FD299D688A0A92A"
 			x: 0.0d
-			y: -12.5d
+			y: -7.5d
 		}
 	]
 	quests: [
@@ -293,6 +281,7 @@
 				"0ED8EF9520071AAD"
 				"3EA7431F5CEA94F0"
 				"4FD299D688A0A92A"
+				"7FCF3EFF7EF69E4D"
 			]
 			id: "3B3CA7DE9AD5152C"
 			tasks: [{
@@ -383,115 +372,8 @@
 				}
 				type: "item"
 			}]
-			x: -5.0d
-			y: -12.5d
-		}
-		{
-			dependencies: [
-				"7D800CACE4E69CFF"
-				"06A34C8A04B2CD83"
-			]
-			id: "49631F88EAF0261B"
-			tasks: [{
-				id: "500A1511DDEA42F9"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "last_smith:model/named/hakurou/model.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:drive_vertical"
-							SpecialEffects: [
-								"last_smith:extra_smite"
-								"slashblade:wither_edge"
-							]
-							StandbyRenderType: 4b
-							SummonedSwordColor: -855310
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "last_smith:model/named/hakurou/texture_tx.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 4.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 70
-							proudSoul: 0
-							translationKey: "item.last_smith.hakurouken_nether"
-						}
-					}
-					id: "slashblade:slashblade"
-					tag: {
-						Enchantments: [
-							{
-								id: "minecraft:smite"
-								lvl: 4s
-							}
-							{
-								id: "minecraft:power"
-								lvl: 2s
-							}
-							{
-								id: "minecraft:sharpness"
-								lvl: 1s
-							}
-							{
-								id: "minecraft:fire_aspect"
-								lvl: 1s
-							}
-						]
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "last_smith:model/named/hakurou/model.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:drive_vertical"
-							SpecialEffects: [
-								"last_smith:extra_smite"
-								"slashblade:wither_edge"
-							]
-							StandbyRenderType: 4b
-							SummonedSwordColor: -855310
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "last_smith:model/named/hakurou/texture_tx.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 4.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 70
-							proudSoul: 0
-							translationKey: "item.last_smith.hakurouken_nether"
-						}
-					}
-				}
-				type: "item"
-			}]
 			x: -2.5d
-			y: -12.5d
+			y: -7.5d
 		}
 		{
 			dependencies: [
@@ -679,6 +561,7 @@
 				"50810C9710385F58"
 				"2354F158B208830E"
 				"1F6B42B37F50453D"
+				"09E8DC7F68D573E9"
 			]
 			id: "455A8F26E29E7DB0"
 			tasks: [{
@@ -764,10 +647,13 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: -12.5d
+			y: -7.5d
 		}
 		{
-			dependencies: ["505145BA63BA4220"]
+			dependencies: [
+				"505145BA63BA4220"
+				"76BFA745E2BBDC7E"
+			]
 			id: "0DE1DF9046B9CD2E"
 			tasks: [{
 				id: "6924945E575EFDD7"
@@ -862,7 +748,7 @@
 				type: "item"
 			}]
 			x: -7.5d
-			y: -10.0d
+			y: -7.5d
 		}
 	]
 	title: "黄蜂领域"

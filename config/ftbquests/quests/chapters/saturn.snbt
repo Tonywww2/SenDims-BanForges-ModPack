@@ -1,22 +1,530 @@
 {
+	autofocus_id: "37CF7606A44B5357"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "saturn"
 	group: "35DD57C332D61BB0"
 	id: "6B2AC40697D09CB6"
 	order_index: 1
-	quest_links: [ ]
-	quests: [{
-		id: "37CF7606A44B5357"
-		size: 2.0d
-		tasks: [{
-			dimension: "sdbf:saturn"
-			id: "0C78498B8E7DA510"
-			title: "土星"
-			type: "dimension"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+	quest_links: [
+		{
+			id: "19FA4A3ECD3D6F9F"
+			linked_quest: "49631F88EAF0261B"
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			id: "516EB083C5C1D0BB"
+			linked_quest: "59F17F34F831D72E"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			id: "2B18C5CF30F480DA"
+			linked_quest: "1FC1A62930B9D276"
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			id: "12547F2CF6098E1B"
+			linked_quest: "0DE1DF9046B9CD2E"
+			x: -5.0d
+			y: -2.5d
+		}
+		{
+			id: "4DD4C559A7AE2A29"
+			linked_quest: "2E2F1882E71FE497"
+			x: -5.0d
+			y: 2.5d
+		}
+		{
+			id: "51DFCEE6B9A0EF14"
+			linked_quest: "65C573EE97C5117F"
+			x: -7.5d
+			y: 0.0d
+		}
+		{
+			id: "09C0A53AA02060C2"
+			linked_quest: "6120DF977C2DFEA2"
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			id: "33149137F32629D6"
+			linked_quest: "2354F158B208830E"
+			x: -2.5d
+			y: -5.0d
+		}
+		{
+			id: "6A3E54CA87D3C784"
+			linked_quest: "2F9648A58EC0C636"
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			id: "03F65790DAEBCBA1"
+			linked_quest: "3FBD9DC1E1BB24E1"
+			x: 2.5d
+			y: -5.0d
+		}
+	]
+	quests: [
+		{
+			id: "37CF7606A44B5357"
+			size: 2.0d
+			tasks: [{
+				dimension: "sdbf:saturn"
+				id: "0C78498B8E7DA510"
+				title: "土星"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["37CF7606A44B5357"]
+			id: "2E3E9722D50C0D8A"
+			tasks: [{
+				id: "1B0DE1FD7E96DC36"
+				item: "minecraft:bedrock"
+				type: "item"
+			}]
+			title: "占位符：土星材料"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"49631F88EAF0261B"
+				"59F17F34F831D72E"
+				"1FC1A62930B9D276"
+				"2E3E9722D50C0D8A"
+			]
+			id: "245C93D5DC91D776"
+			tasks: [{
+				id: "5D9792A64F68E887"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade_addon:model/nihil/nihil.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:sakura_end"
+							SpecialEffects: [
+								"last_smith:extra_sharpness"
+								"last_smith:smite_se"
+								"last_smith:extra_power"
+								"slashblade:wither_edge"
+							]
+							StandbyRenderType: 4b
+							SummonedSwordColor: -13421569
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "slashblade_addon:model/nihil/nihil_bx.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 14.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 240
+							proudSoul: 0
+							translationKey: "item.slashblade_addon.nihilbx"
+						}
+					}
+					id: "slashblade:slashblade"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:unbreaking"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:sharpness"
+								lvl: 5s
+							}
+							{
+								id: "minecraft:power"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:smite"
+								lvl: 5s
+							}
+							{
+								id: "minecraft:bane_of_arthropods"
+								lvl: 5s
+							}
+							{
+								id: "minecraft:fire_aspect"
+								lvl: 2s
+							}
+						]
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade_addon:model/nihil/nihil.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:sakura_end"
+							SpecialEffects: [
+								"last_smith:extra_sharpness"
+								"last_smith:smite_se"
+								"last_smith:extra_power"
+								"slashblade:wither_edge"
+							]
+							StandbyRenderType: 4b
+							SummonedSwordColor: -13421569
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "slashblade_addon:model/nihil/nihil_bx.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 14.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 240
+							proudSoul: 0
+							translationKey: "item.slashblade_addon.nihilbx"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			id: "59F17F34F831D72E"
+			tasks: [{
+				id: "30724A016AAD4521"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "last_smith:model/named/roukan/model.obj"
+							RepairCounter: 0
+							SpecialAttackType: "last_smith:transmigration_slash"
+							SpecialEffects: [
+								"last_smith:extreme_sharpness"
+								"slashblade:wither_edge"
+							]
+							StandbyRenderType: 5b
+							SummonedSwordColor: -18491
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "last_smith:model/named/roukan/texture_tx.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 13.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 70
+							proudSoul: 0
+							translationKey: "item.last_smith.roukanken_nether"
+						}
+					}
+					id: "slashblade:slashblade"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:sharpness"
+								lvl: 4s
+							}
+							{
+								id: "minecraft:power"
+								lvl: 2s
+							}
+							{
+								id: "minecraft:fire_aspect"
+								lvl: 1s
+							}
+						]
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "last_smith:model/named/roukan/model.obj"
+							RepairCounter: 0
+							SpecialAttackType: "last_smith:transmigration_slash"
+							SpecialEffects: [
+								"last_smith:extreme_sharpness"
+								"slashblade:wither_edge"
+							]
+							StandbyRenderType: 5b
+							SummonedSwordColor: -18491
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "last_smith:model/named/roukan/texture_tx.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 13.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 70
+							proudSoul: 0
+							translationKey: "item.last_smith.roukanken_nether"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["37CF7606A44B5357"]
+			id: "7EACD821B5688C4C"
+			tasks: [{
+				id: "35D69385FB24D7BB"
+				item: "minecraft:bedrock"
+				type: "item"
+			}]
+			title: "占位符：土星材料2"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7EACD821B5688C4C"
+				"0DE1DF9046B9CD2E"
+				"2E2F1882E71FE497"
+				"65C573EE97C5117F"
+			]
+			id: "5A155C23C2AB2163"
+			tasks: [{
+				id: "24DEB990C30AF04A"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade_addon:model/nihil/nihil.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:sakura_end"
+							SpecialEffects: [
+								"last_smith:smite_se"
+								"sjap_adder:end_sakura_rise_up"
+							]
+							StandbyRenderType: 1b
+							SummonedSwordColor: -65536
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "sjap_adder:model/nihill/crimsoncherry.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 16.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 300
+							proudSoul: 0
+							translationKey: "item.sjap_adder.crimsoncherryex"
+						}
+					}
+					id: "slashblade:slashblade"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:unbreaking"
+								lvl: 10s
+							}
+							{
+								id: "minecraft:smite"
+								lvl: 5s
+							}
+							{
+								id: "minecraft:fire_aspect"
+								lvl: 5s
+							}
+						]
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade_addon:model/nihil/nihil.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:sakura_end"
+							SpecialEffects: [
+								"last_smith:smite_se"
+								"sjap_adder:end_sakura_rise_up"
+							]
+							StandbyRenderType: 1b
+							SummonedSwordColor: -65536
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "sjap_adder:model/nihill/crimsoncherry.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 16.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 300
+							proudSoul: 0
+							translationKey: "item.sjap_adder.crimsoncherryex"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7EACD821B5688C4C"
+				"2E3E9722D50C0D8A"
+				"6120DF977C2DFEA2"
+				"2354F158B208830E"
+				"2F9648A58EC0C636"
+				"3FBD9DC1E1BB24E1"
+			]
+			id: "63BCA9C495EBC8D8"
+			tasks: [{
+				id: "3A7F30B8E5E16DD7"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade_addon:model/kamuy/kamuy.obj"
+							RepairCounter: 0
+							SpecialAttackType: "sjap_adder:dark_cuts"
+							StandbyRenderType: 1b
+							SummonedSwordColor: -65281
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "sjap_adder:model/kaumyex/dark.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 6.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 300
+							proudSoul: 0
+							translationKey: "item.sjap_adder.kamuy_dark"
+						}
+					}
+					id: "slashblade:slashblade"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:sharpness"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:unbreaking"
+								lvl: 3s
+							}
+						]
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade_addon:model/kamuy/kamuy.obj"
+							RepairCounter: 0
+							SpecialAttackType: "sjap_adder:dark_cuts"
+							StandbyRenderType: 1b
+							SummonedSwordColor: -65281
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "sjap_adder:model/kaumyex/dark.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 6.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 300
+							proudSoul: 0
+							translationKey: "item.sjap_adder.kamuy_dark"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+	]
 	title: "土星"
 }

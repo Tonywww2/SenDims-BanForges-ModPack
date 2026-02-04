@@ -1,11 +1,304 @@
 {
+	autofocus_id: "6035D1A1774B2FAF"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "saturn_ring"
 	group: "35DD57C332D61BB0"
 	id: "390334BC229FB9D8"
 	order_index: 2
-	quest_links: [ ]
-	quests: [ ]
+	quest_links: [
+		{
+			id: "3870EC255CFFBB3F"
+			linked_quest: "35F111CC582779BA"
+			x: -5.0d
+			y: -2.5d
+		}
+		{
+			id: "1C80F7DC6FB83684"
+			linked_quest: "6120DF977C2DFEA2"
+			x: -5.0d
+			y: 2.5d
+		}
+		{
+			id: "586757B864F17CC8"
+			linked_quest: "76BFA745E2BBDC7E"
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			id: "6584AABF3B4B001B"
+			linked_quest: "47820A4E592EE375"
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			id: "77AC69AA398C5A67"
+			linked_quest: "7D800CACE4E69CFF"
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			id: "28B8B422E9732D43"
+			linked_quest: "06A34C8A04B2CD83"
+			x: 5.0d
+			y: 2.5d
+		}
+	]
+	quests: [
+		{
+			dependencies: [
+				"693C912DB9E27674"
+				"35F111CC582779BA"
+				"6120DF977C2DFEA2"
+				"76BFA745E2BBDC7E"
+				"47820A4E592EE375"
+			]
+			id: "1FC1A62930B9D276"
+			tasks: [{
+				id: "1A0CB84360E28FA9"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade_addon:model/nihil/nihil.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:wave_edge"
+							SpecialEffects: ["last_smith:extra_sharpness"]
+							StandbyRenderType: 4b
+							SummonedSwordColor: -13421569
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "slashblade_addon:model/nihil/nihilul.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 12.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 70
+							proudSoul: 0
+							translationKey: "item.slashblade_addon.nihilul"
+						}
+					}
+					id: "slashblade:slashblade"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:unbreaking"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:sharpness"
+								lvl: 5s
+							}
+							{
+								id: "minecraft:smite"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:bane_of_arthropods"
+								lvl: 2s
+							}
+							{
+								id: "minecraft:fire_aspect"
+								lvl: 2s
+							}
+							{
+								id: "minecraft:looting"
+								lvl: 3s
+							}
+						]
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade_addon:model/nihil/nihil.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:wave_edge"
+							SpecialEffects: ["last_smith:extra_sharpness"]
+							StandbyRenderType: 4b
+							SummonedSwordColor: -13421569
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "slashblade_addon:model/nihil/nihilul.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 12.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 70
+							proudSoul: 0
+							translationKey: "item.slashblade_addon.nihilul"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			id: "6035D1A1774B2FAF"
+			size: 2.0d
+			tasks: [{
+				id: "040A5F44C9FBC1F0"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6035D1A1774B2FAF"]
+			id: "07A9736A3BDF80B1"
+			tasks: [{
+				id: "6A8D51A41302C370"
+				item: "minecraft:bedrock"
+				type: "item"
+			}]
+			title: "占位符：探测器金属"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6035D1A1774B2FAF"]
+			id: "693C912DB9E27674"
+			tasks: [{
+				id: "432B64F5B835DEB3"
+				item: "minecraft:bedrock"
+				type: "item"
+			}]
+			title: "占位符：古代灵魂"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7D800CACE4E69CFF"
+				"06A34C8A04B2CD83"
+				"07A9736A3BDF80B1"
+			]
+			id: "49631F88EAF0261B"
+			tasks: [{
+				id: "500A1511DDEA42F9"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "last_smith:model/named/hakurou/model.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:drive_vertical"
+							SpecialEffects: [
+								"last_smith:extra_smite"
+								"slashblade:wither_edge"
+							]
+							StandbyRenderType: 4b
+							SummonedSwordColor: -855310
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "last_smith:model/named/hakurou/texture_tx.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 4.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 70
+							proudSoul: 0
+							translationKey: "item.last_smith.hakurouken_nether"
+						}
+					}
+					id: "slashblade:slashblade"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:smite"
+								lvl: 4s
+							}
+							{
+								id: "minecraft:power"
+								lvl: 2s
+							}
+							{
+								id: "minecraft:sharpness"
+								lvl: 1s
+							}
+							{
+								id: "minecraft:fire_aspect"
+								lvl: 1s
+							}
+						]
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "last_smith:model/named/hakurou/model.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:drive_vertical"
+							SpecialEffects: [
+								"last_smith:extra_smite"
+								"slashblade:wither_edge"
+							]
+							StandbyRenderType: 4b
+							SummonedSwordColor: -855310
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "last_smith:model/named/hakurou/texture_tx.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 4.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 70
+							proudSoul: 0
+							translationKey: "item.last_smith.hakurouken_nether"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+	]
 	title: "土星环"
 }
