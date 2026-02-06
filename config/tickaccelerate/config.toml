@@ -61,7 +61,6 @@
 	#Accelerate random block ticks (e.g., crop growth).
 	random_tick_speed = true
 
-#Miscellaneous adjustments.
 [tweaks]
 	#Disable the vanilla server watchdog to prevent crashes due to low TPS.
 	disable_server_watchdog = true

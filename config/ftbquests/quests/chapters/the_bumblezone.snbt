@@ -750,6 +750,17 @@
 			x: -7.5d
 			y: -7.5d
 		}
+		{
+			dependencies: ["05E54DE8EF83C8EB"]
+			id: "682B4755022DFAD3"
+			tasks: [{
+				id: "2E955366CA52973D"
+				item: "last_smith:scroll_tengu_vol1"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -10.0d
+		}
 	]
 	title: "黄蜂领域"
 }

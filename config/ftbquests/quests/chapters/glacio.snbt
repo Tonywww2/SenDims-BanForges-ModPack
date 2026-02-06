@@ -11,14 +11,20 @@
 		{
 			id: "66DC3C42246FEE07"
 			linked_quest: "245C93D5DC91D776"
-			x: -2.5d
-			y: 5.0d
+			x: 2.5d
+			y: 7.5d
 		}
 		{
 			id: "5917093D24B5C7E6"
 			linked_quest: "5A155C23C2AB2163"
 			x: -2.5d
-			y: 2.5d
+			y: 7.5d
+		}
+		{
+			id: "58019A4B2041C254"
+			linked_quest: "672F4EFC4C5F2A46"
+			x: 0.0d
+			y: 10.0d
 		}
 	]
 	quests: [
@@ -108,109 +114,12 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["5740D7EB5FC2CCB5"]
-			id: "1DBA0EC591BD808A"
-			tasks: [{
-				id: "6875EA67D3D8D38F"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade_addon:model/nihil/nihil.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:wave_edge"
-							SpecialEffects: [
-								"last_smith:extra_sharpness"
-								"sjap_adder:wave_edge_rise_up"
-							]
-							StandbyRenderType: 1b
-							SummonedSwordColor: -589569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "sjap_adder:model/nihill/nihilul.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 16.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 300
-							proudSoul: 0
-							translationKey: "item.sjap_adder.nihilulex"
-						}
-					}
-					id: "slashblade:slashblade"
-					tag: {
-						Enchantments: [
-							{
-								id: "minecraft:unbreaking"
-								lvl: 5s
-							}
-							{
-								id: "minecraft:smite"
-								lvl: 10s
-							}
-							{
-								id: "minecraft:looting"
-								lvl: 5s
-							}
-						]
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade_addon:model/nihil/nihil.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:wave_edge"
-							SpecialEffects: [
-								"last_smith:extra_sharpness"
-								"sjap_adder:wave_edge_rise_up"
-							]
-							StandbyRenderType: 1b
-							SummonedSwordColor: -589569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "sjap_adder:model/nihill/nihilul.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 16.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 300
-							proudSoul: 0
-							translationKey: "item.sjap_adder.nihilulex"
-						}
-					}
-				}
-				type: "item"
-			}]
-			x: 2.5d
-			y: 2.5d
-		}
-		{
 			dependencies: [
-				"1DBA0EC591BD808A"
 				"5A155C23C2AB2163"
+				"672F4EFC4C5F2A46"
+				"245C93D5DC91D776"
+				"1FC1A62930B9D276"
+				"0026560C056CC8EB"
 			]
 			hide_dependency_lines: true
 			id: "4FB4B07E9F4377DC"
