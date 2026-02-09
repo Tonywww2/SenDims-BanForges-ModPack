@@ -1,11 +1,396 @@
 {
+	autofocus_id: "4D7803023F99E6FC"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "pluto"
 	group: "72FC493D243DC969"
 	id: "4CCDABE44AFF54C8"
 	order_index: 1
-	quest_links: [ ]
-	quests: [ ]
+	quest_links: [
+		{
+			id: "43486A184CECC1BF"
+			linked_quest: "2A648235D6DA1509"
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			id: "2FE4A42693CAC28C"
+			linked_quest: "295C7AEDBFF7EE12"
+			x: -5.0d
+			y: -5.0d
+		}
+		{
+			id: "49B06F4755E7B683"
+			linked_quest: "455A8F26E29E7DB0"
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			id: "3255F12E030ADC19"
+			linked_quest: "5A982FFF19EF5289"
+			x: 5.0d
+			y: -5.0d
+		}
+	]
+	quests: [
+		{
+			id: "4D7803023F99E6FC"
+			size: 2.0d
+			tasks: [{
+				id: "2514E740DB4056BC"
+				type: "checkmark"
+			}]
+			title: "冥王星"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4D7803023F99E6FC"]
+			id: "6C2B8E494EB829D2"
+			tasks: [{
+				id: "7EFA71A0FD60C074"
+				item: "minecraft:bedrock"
+				type: "item"
+			}]
+			title: "占位符：冥王星"
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4D7803023F99E6FC"]
+			id: "571763357AAACBEB"
+			tasks: [{
+				id: "6539FCD22378B9BA"
+				item: "minecraft:bedrock"
+				type: "item"
+			}]
+			title: "占位符：冥王星"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"6C2B8E494EB829D2"
+				"2A648235D6DA1509"
+				"295C7AEDBFF7EE12"
+			]
+			id: "559784C97D416A5E"
+			shape: "diamond"
+			tasks: [{
+				id: "71BFE97AB9179240"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "sjap_adder:model/kaumyex/kamuyex.obj"
+							RepairCounter: 0
+							SpecialAttackType: "sjap_adder:burning_dances"
+							SpecialEffects: ["sjap_adder:fire_dance"]
+							StandbyRenderType: 1b
+							SummonedSwordColor: -65536
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "sjap_adder:model/kaumyex/fire.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 12.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 200
+							proudSoul: 0
+							translationKey: "item.sjap_adder.kamuyex_fire"
+						}
+					}
+					id: "slashblade:slashblade"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:sharpness"
+								lvl: 7s
+							}
+							{
+								id: "minecraft:unbreaking"
+								lvl: 7s
+							}
+							{
+								id: "minecraft:smite"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:fire_aspect"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:fire_protection"
+								lvl: 3s
+							}
+						]
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "sjap_adder:model/kaumyex/kamuyex.obj"
+							RepairCounter: 0
+							SpecialAttackType: "sjap_adder:burning_dances"
+							SpecialEffects: ["sjap_adder:fire_dance"]
+							StandbyRenderType: 1b
+							SummonedSwordColor: -65536
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "sjap_adder:model/kaumyex/fire.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 12.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 200
+							proudSoul: 0
+							translationKey: "item.sjap_adder.kamuyex_fire"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"6C2B8E494EB829D2"
+				"455A8F26E29E7DB0"
+				"5A982FFF19EF5289"
+			]
+			id: "13B7F0FAFFABDC4D"
+			shape: "diamond"
+			tasks: [{
+				id: "015B4391F67689C7"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "sjap_adder:model/kaumyex/kamuyex.obj"
+							RepairCounter: 0
+							SpecialAttackType: "sjap_adder:for_life_drive"
+							SpecialEffects: ["sjap_adder:life_for_health"]
+							StandbyRenderType: 1b
+							SummonedSwordColor: -16711917
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "sjap_adder:model/kaumyex/life.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 12.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 300
+							proudSoul: 0
+							translationKey: "item.sjap_adder.kamuyex_life"
+						}
+					}
+					id: "slashblade:slashblade"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:sharpness"
+								lvl: 7s
+							}
+							{
+								id: "minecraft:unbreaking"
+								lvl: 3s
+							}
+						]
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "sjap_adder:model/kaumyex/kamuyex.obj"
+							RepairCounter: 0
+							SpecialAttackType: "sjap_adder:for_life_drive"
+							SpecialEffects: ["sjap_adder:life_for_health"]
+							StandbyRenderType: 1b
+							SummonedSwordColor: -16711917
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "sjap_adder:model/kaumyex/life.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 12.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 300
+							proudSoul: 0
+							translationKey: "item.sjap_adder.kamuyex_life"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"571763357AAACBEB"
+				"0DE1DF9046B9CD2E"
+				"455A8F26E29E7DB0"
+			]
+			id: "1D902621E0CED2EF"
+			shape: "diamond"
+			tasks: [{
+				id: "7BFBCE6D5CC1CD05"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade_addon:model/nihil/nihil.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:sakura_end"
+							SpecialEffects: [
+								"last_smith:smite_se"
+								"sjap_adder:end_sakura_rise_up"
+							]
+							StandbyRenderType: 1b
+							SummonedSwordColor: -65536
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "sjap_adder:model/nihill/crimsoncherry.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 16.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 300
+							proudSoul: 0
+							translationKey: "item.sjap_adder.crimsoncherryex"
+						}
+					}
+					id: "slashblade:slashblade"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:unbreaking"
+								lvl: 10s
+							}
+							{
+								id: "minecraft:smite"
+								lvl: 5s
+							}
+							{
+								id: "minecraft:fire_aspect"
+								lvl: 5s
+							}
+						]
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade_addon:model/nihil/nihil.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:sakura_end"
+							SpecialEffects: [
+								"last_smith:smite_se"
+								"sjap_adder:end_sakura_rise_up"
+							]
+							StandbyRenderType: 1b
+							SummonedSwordColor: -65536
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "sjap_adder:model/nihill/crimsoncherry.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 16.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 300
+							proudSoul: 0
+							translationKey: "item.sjap_adder.crimsoncherryex"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"2A648235D6DA1509"
+				"571763357AAACBEB"
+			]
+			id: "5119007A0128A974"
+			shape: "diamond"
+			tasks: [{
+				id: "143BB6F5111316AE"
+				item: "botania:placeholder"
+				type: "item"
+			}]
+			title: "占位符：永罚大剑"
+			x: -5.0d
+			y: 2.5d
+		}
+	]
 	title: "冥王星"
 }

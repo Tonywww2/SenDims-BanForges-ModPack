@@ -1,11 +1,439 @@
 {
+	autofocus_id: "4239AD35803375DB"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "deep_4"
 	group: "72FC493D243DC969"
 	id: "23CB2F126A6644D7"
 	order_index: 0
-	quest_links: [ ]
-	quests: [ ]
+	quest_links: [
+		{
+			id: "7535F66965759DE1"
+			linked_quest: "295C7AEDBFF7EE12"
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			id: "101BC0FA26B9CC26"
+			linked_quest: "6F63F683A1A658B9"
+			x: -5.0d
+			y: -5.0d
+		}
+		{
+			id: "41D93CCBD150931B"
+			linked_quest: "63BCA9C495EBC8D8"
+			x: 5.0d
+			y: -5.0d
+		}
+		{
+			id: "4F6C85F160E3E1CA"
+			linked_quest: "4E419C4E4744B2C8"
+			x: -5.0d
+			y: 5.0d
+		}
+		{
+			id: "09839711CE5D60FC"
+			linked_quest: "5A982FFF19EF5289"
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			id: "39BF406D157A5FD3"
+			linked_quest: "3B3CA7DE9AD5152C"
+			x: 5.0d
+			y: 5.0d
+		}
+	]
+	quests: [
+		{
+			id: "4239AD35803375DB"
+			size: 2.0d
+			tasks: [{
+				id: "570AC6F1695CF184"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4239AD35803375DB"]
+			id: "4E53C1AEF2A26E2D"
+			tasks: [{
+				id: "1573C8851A9666B4"
+				item: "minecraft:bedrock"
+				type: "item"
+			}]
+			title: "占位符：深境4"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4239AD35803375DB"]
+			id: "5CF439D1069AFCE1"
+			tasks: [{
+				id: "532FB27661B4FFE6"
+				item: "minecraft:bedrock"
+				type: "item"
+			}]
+			title: "占位符：深境4"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4E53C1AEF2A26E2D"
+				"6F63F683A1A658B9"
+				"295C7AEDBFF7EE12"
+				"35EBBCF9D81BDE1F"
+			]
+			id: "4ABDF91E79EC7A9C"
+			shape: "diamond"
+			tasks: [{
+				id: "09E35D7986026932"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "sjap_adder:model/kaumyex/kamuyex.obj"
+							RepairCounter: 0
+							SpecialAttackType: "sjap_adder:lightinggwaves"
+							SpecialEffects: ["sjap_adder:nightingales"]
+							StandbyRenderType: 1b
+							SummonedSwordColor: -10496
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "sjap_adder:model/kaumyex/lightning.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 12.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 300
+							proudSoul: 0
+							translationKey: "item.sjap_adder.kamuyex_ligghtning"
+						}
+					}
+					id: "slashblade:slashblade"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:sharpness"
+								lvl: 15s
+							}
+							{
+								id: "minecraft:unbreaking"
+								lvl: 7s
+							}
+						]
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "sjap_adder:model/kaumyex/kamuyex.obj"
+							RepairCounter: 0
+							SpecialAttackType: "sjap_adder:lightinggwaves"
+							SpecialEffects: ["sjap_adder:nightingales"]
+							StandbyRenderType: 1b
+							SummonedSwordColor: -10496
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "sjap_adder:model/kaumyex/lightning.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 12.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 300
+							proudSoul: 0
+							translationKey: "item.sjap_adder.kamuyex_ligghtning"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"295C7AEDBFF7EE12"
+				"5CF439D1069AFCE1"
+				"63BCA9C495EBC8D8"
+				"4AFA897210B9CF91"
+			]
+			id: "0DFD1BC3ED983292"
+			shape: "diamond"
+			tasks: [{
+				id: "23B4BCEC4F7293EE"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "sjap_adder:model/kaumyex/kamuyex.obj"
+							RepairCounter: 0
+							SpecialAttackType: "sjap_adder:dark_cuts_ex"
+							SpecialEffects: ["sjap_adder:dark_cuter"]
+							StandbyRenderType: 1b
+							SummonedSwordColor: -65281
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "sjap_adder:model/kaumyex/dark.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 12.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 300
+							proudSoul: 0
+							translationKey: "item.sjap_adder.kamuyex_dark"
+						}
+					}
+					id: "slashblade:slashblade"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:sharpness"
+								lvl: 7s
+							}
+							{
+								id: "minecraft:unbreaking"
+								lvl: 3s
+							}
+						]
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "sjap_adder:model/kaumyex/kamuyex.obj"
+							RepairCounter: 0
+							SpecialAttackType: "sjap_adder:dark_cuts_ex"
+							SpecialEffects: ["sjap_adder:dark_cuter"]
+							StandbyRenderType: 1b
+							SummonedSwordColor: -65281
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "sjap_adder:model/kaumyex/dark.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 12.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 300
+							proudSoul: 0
+							translationKey: "item.sjap_adder.kamuyex_dark"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"4E53C1AEF2A26E2D"
+				"4E419C4E4744B2C8"
+				"5A982FFF19EF5289"
+				"1FD888891B094B11"
+			]
+			id: "06498A02440A4B1A"
+			shape: "diamond"
+			tasks: [{
+				id: "4B70A0BA7774768E"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "sjap_adder:model/kaumyex/kamuyex.obj"
+							RepairCounter: 0
+							SpecialAttackType: "sjap_adder:terrifyingwaves"
+							SpecialEffects: ["sjap_adder:terrifyingwaves"]
+							StandbyRenderType: 1b
+							SummonedSwordColor: -16768513
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "sjap_adder:model/kaumyex/water.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 12.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 300
+							proudSoul: 0
+							translationKey: "item.sjap_adder.kamuyex_water"
+						}
+					}
+					id: "slashblade:slashblade"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:sharpness"
+								lvl: 7s
+							}
+							{
+								id: "minecraft:unbreaking"
+								lvl: 7s
+							}
+							{
+								id: "minecraft:bane_of_arthropods"
+								lvl: 5s
+							}
+						]
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "sjap_adder:model/kaumyex/kamuyex.obj"
+							RepairCounter: 0
+							SpecialAttackType: "sjap_adder:terrifyingwaves"
+							SpecialEffects: ["sjap_adder:terrifyingwaves"]
+							StandbyRenderType: 1b
+							SummonedSwordColor: -16768513
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "sjap_adder:model/kaumyex/water.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 12.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 300
+							proudSoul: 0
+							translationKey: "item.sjap_adder.kamuyex_water"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"5A982FFF19EF5289"
+				"5CF439D1069AFCE1"
+				"3B3CA7DE9AD5152C"
+				"22A8EAC386D949EA"
+			]
+			id: "0B3581AB347DA3D0"
+			tasks: [{
+				id: "7E276789A4EE6049"
+				item: "botania:placeholder"
+				type: "item"
+			}]
+			title: "占位符：疾风迅雷"
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			id: "22A8EAC386D949EA"
+			tasks: [{
+				id: "4F374C0B93235970"
+				item: {
+					Count: 1
+					id: "dustandash:white_lightning"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: 7.5d
+		}
+		{
+			id: "1FD888891B094B11"
+			tasks: [{
+				id: "6F04E16C1FC32F53"
+				item: "minecraft:heart_of_the_sea"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 7.5d
+		}
+		{
+			id: "35EBBCF9D81BDE1F"
+			tasks: [{
+				id: "3DD7D21CC2E537C9"
+				item: "nuclearcraft:californium_rtg"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -7.5d
+		}
+		{
+			id: "4AFA897210B9CF91"
+			tasks: [{
+				id: "2E3F13A3BDFB62A6"
+				item: "enderio:sentient_ender"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -7.5d
+		}
+	]
 	title: "深境：最终极旋涡"
 }
