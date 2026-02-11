@@ -6,10 +6,6 @@ StartupEvents.registry('item', event => {
     event.create('valkyrie_ingot').fireResistant().rarity('rare')
     event.create('phoenix_ingot').fireResistant().rarity('rare')
 
-    event.create('virtual_gold_ingot').fireResistant().rarity('rare')
-	event.create('trinity_alloy_ingot').fireResistant().rarity('rare')
-    event.create('beryllium_bronze_alloy_ingot').fireResistant().rarity('rare').glow(true)
-
     event.create('alpha_dust').fireResistant()
     event.create('beta_dust').fireResistant().rarity('rare')
     event.create('gamma_dust').fireResistant().rarity('rare')
@@ -18,6 +14,32 @@ StartupEvents.registry('item', event => {
     
     event.create('garden_lighter').fireResistant().rarity('rare')
     event.create('bedrock_breaker').fireResistant().rarity('rare').maxStackSize(16)
+
+    event.create('scoria_ingot').fireResistant().rarity('rare')
+    event.create('mysterious_alkali_crystal').fireResistant().rarity('rare')
+    event.create('menril-silicon_sic_sic_cmc_ingot').fireResistant().rarity('epic')
+    event.create('mercury_refractory_structural_component').fireResistant().rarity('epic')
+    event.create('coil_of_sorrow').fireResistant().rarity('rare')
+    event.create('chorus_logic_composite_plate').fireResistant().rarity('rare')
+    
+    event.create('galatic_cycle_component').fireResistant().rarity('epic')
+    event.create('bizarre_matter_dust').fireResistant().rarity('rare')
+    event.create('storm_hydrogen_crystal').fireResistant().rarity('rare')
+    event.create('celestial_filling_alloy_ingot').fireResistant().rarity('rare')
+    event.create('ancient_soul').fireResistant().rarity('rare')
+    event.create('titan-ii_composite_ingot').fireResistant().rarity('rare')
+    event.create('multifaceted_ambrosia').fireResistant().rarity('rare')
+    event.create('anchor_shard').fireResistant().rarity('epic')
+
+    event.create('ml_computing_ingot').fireResistant().rarity('epic')
+    event.create('cognitio').fireResistant().rarity('rare')
+    event.create('chaotic_truth').fireResistant().rarity('rare')
+    event.create('radiation_components').fireResistant().rarity('rare')
+
+    event.create('basepoint_alloy').fireResistant().rarity('epic')
+    event.create('virtual_gold_ingot').fireResistant().rarity('rare')
+	event.create('trinity_alloy_ingot').fireResistant().rarity('rare')
+	event.create('rainbowshift_entropy').fireResistant().rarity('rare')
     
 
 })

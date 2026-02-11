@@ -473,7 +473,7 @@
 			y: -7.5d
 		}
 		{
-			dependencies: ["67CEA0F546DE635F"]
+			dependencies: ["7830BE2BDC13CC00"]
 			id: "6D6FC1765F6AAA8B"
 			tasks: [{
 				id: "16B065909DBD63AF"
@@ -554,7 +554,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 5.0d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -760,6 +760,17 @@
 			}]
 			x: 7.5d
 			y: -10.0d
+		}
+		{
+			dependencies: ["67CEA0F546DE635F"]
+			id: "7830BE2BDC13CC00"
+			tasks: [{
+				id: "4FC07A806ADE2316"
+				item: "minecraft:bedrock"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
 		}
 	]
 	title: "黄蜂领域"

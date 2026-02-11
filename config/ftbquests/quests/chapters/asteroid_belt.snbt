@@ -270,12 +270,8 @@
 		}
 		{
 			dependencies: ["0326C6376D5E34FF"]
+			description: ["需要使用 压缩氦收集器制作"]
 			id: "49271C4646459DEE"
-			tasks: [{
-				id: "7AD907DFE17F6C05"
-				item: "nuclearcraft:compact_helium_collector"
-				type: "item"
-			}]
 			x: -5.0d
 			y: 0.0d
 		}

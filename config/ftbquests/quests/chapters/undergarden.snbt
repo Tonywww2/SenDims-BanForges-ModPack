@@ -11,7 +11,7 @@
 		{
 			id: "4F2B627A4486B945"
 			linked_quest: "549AFEC23C09BA81"
-			x: 5.0d
+			x: 7.5d
 			y: -2.5d
 		}
 		{
@@ -190,7 +190,7 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["2DFEC40399DF07EC"]
+			dependencies: ["3434AD43BC82144D"]
 			id: "3ED64EBDF663056D"
 			tasks: [{
 				id: "35233790D7363271"
@@ -264,7 +264,7 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
+			x: 7.5d
 			y: 0.0d
 		}
 		{
@@ -345,7 +345,7 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
+			x: 10.0d
 			y: 0.0d
 		}
 		{
@@ -532,6 +532,17 @@
 			}]
 			x: 5.0d
 			y: 5.0d
+		}
+		{
+			dependencies: ["2DFEC40399DF07EC"]
+			id: "3434AD43BC82144D"
+			tasks: [{
+				id: "08BF10CC1A82E226"
+				item: "minecraft:bedrock"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
 		}
 	]
 	title: "深园与废土"

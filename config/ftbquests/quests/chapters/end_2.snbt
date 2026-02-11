@@ -23,7 +23,7 @@
 		{
 			id: "3BC7208F9814D411"
 			linked_quest: "7FC6F9952EA26493"
-			x: 2.5d
+			x: 7.5d
 			y: 2.5d
 		}
 		{
@@ -272,29 +272,15 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["17234BADC5181DFE"]
+			dependencies: ["0AB0F8AA8EFC1E53"]
 			id: "74C39C2A8B73986F"
-			tasks: [{
-				id: "1EAD08E0409CAFCA"
-				item: {
-					Count: 1
-					id: "thermal:florb"
-					tag: {
-						Fluid: {
-							Amount: 1000
-							FluidName: "integrateddynamics:liquid_chorus"
-						}
-					}
-				}
-				type: "item"
-			}]
 			x: 2.5d
 			y: 5.0d
 		}
 		{
 			dependencies: [
-				"5EEA2C8F11FB0470"
 				"7FC6F9952EA26493"
+				"74C39C2A8B73986F"
 			]
 			id: "3AE144DD58D30985"
 			tasks: [{
@@ -386,7 +372,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 2.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["3AE144DD58D30985"]
@@ -1005,8 +991,8 @@
 				item: "integrateddynamics:logic_director"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 0.0d
+			x: 5.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [

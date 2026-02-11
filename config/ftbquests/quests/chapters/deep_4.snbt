@@ -59,11 +59,10 @@
 			dependencies: ["4239AD35803375DB"]
 			id: "4E53C1AEF2A26E2D"
 			tasks: [{
-				id: "1573C8851A9666B4"
-				item: "minecraft:bedrock"
+				id: "0F11D5FE79F624AC"
+				item: "kubejs:epsilon_dust"
 				type: "item"
 			}]
-			title: "占位符：深境4"
 			x: -2.5d
 			y: 0.0d
 		}

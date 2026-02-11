@@ -5,10 +5,6 @@
     "item.deep_aether.squall_plate": "风锻板",
     "item.deep_aether.metal_mixture": "天晶混合锭",
 
-    "item.kubejs.virtual_gold_ingot": "§a虚金锭",
-    "item.kubejs.trinity_alloy_ingot": "§m§d三项合金锭",
-    "item.kubejs.beryllium_bronze_alloy_ingot": "§e铍青铜合金锭",
-
     "item.kubejs.alpha_dust": "§aα 尘",
     "item.kubejs.beta_dust": "§bβ 尘",
     "item.kubejs.gamma_dust": "§cγ 尘",
@@ -17,6 +13,30 @@
 
     "item.kubejs.garden_lighter": "花园火石",
     "item.kubejs.bedrock_breaker": "基岩破坏者",
+
+    "item.kubejs.scoria_ingot": "熔渣锭",
+    "item.kubejs.mysterious_alkali_crystal": "神秘碱晶",
+    "item.kubejs.menril-silicon_sic_sic_cmc_ingot": "门瑞欧镀层-碳化硅陶瓷复合材料锭",
+    "item.kubejs.mercury_refractory_structural_component": "墨丘利耐火结构组件",
+    "item.kubejs.coil_of_sorrow": "悲哀线圈",
+    "item.kubejs.chorus_logic_composite_plate": "紫颂逻辑复合板",
+
+    "item.kubejs.galatic_cycle_component": "星空循环组件",
+    "item.kubejs.bizarre_matter_dust": "奇异物质尘",
+    "item.kubejs.storm_hydrogen_crystal": "风暴氢晶",
+    "item.kubejs.celestial_filling_alloy_ingot": "补天合金锭",
+    "item.kubejs.ancient_soul": "古代灵魂",
+    "item.kubejs.titan-ii_composite_ingot": "泰坦II复合锭",
+    "item.kubejs.multifaceted_ambrosia": "多面仙馔密酒",
+    "item.kubejs.anchor_shard": "锚之碎片",
+    "item.kubejs.ml_computing_ingot": "ML计算锭",
+    "item.kubejs.cognitio": "理智",
+    "item.kubejs.chaotic_truth": "混沌真理",
+    "item.kubejs.radiation_components": "辐射零件组",
+    "item.kubejs.basepoint_alloy": "奇点合金",
+    "item.kubejs.virtual_gold_ingot": "§a虚金锭",
+    "item.kubejs.trinity_alloy_ingot": "§m§d三项合金锭",
+    "item.kubejs.rainbowshift_entropy": "虹移之熵",
 
     "block.nuclearcraft.sulfuric_acid_fluid_block": "硫酸",
 
