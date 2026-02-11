@@ -391,11 +391,10 @@
 			dependencies: ["1BF032EC08E31ABB"]
 			id: "2C52C219DD799030"
 			tasks: [{
-				id: "28EA0302C7344C55"
-				item: "minecraft:bedrock"
+				id: "1ABE5628C6FBC7C4"
+				item: "kubejs:radiation_components"
 				type: "item"
 			}]
-			title: "占位符：末地里2"
 			x: 2.5d
 			y: 0.0d
 		}
@@ -403,11 +402,10 @@
 			dependencies: ["1BF032EC08E31ABB"]
 			id: "70B3048A22DE8391"
 			tasks: [{
-				id: "117CF794ECEFA42D"
-				item: "minecraft:bedrock"
+				id: "389702B54452C5DF"
+				item: "kubejs:chaotic_truth"
 				type: "item"
 			}]
-			title: "占位符：末地里1"
 			x: -2.5d
 			y: 0.0d
 		}
@@ -679,11 +677,10 @@
 			dependencies: ["1BF032EC08E31ABB"]
 			id: "0774BE522111CF90"
 			tasks: [{
-				id: "65AA9E94C1EC9C27"
-				item: "minecraft:bedrock"
+				id: "73C9754C41A5F1FB"
+				item: "kubejs:basepoint_alloy"
 				type: "item"
 			}]
-			title: "占位符：末地里3"
 			x: 0.0d
 			y: 2.5d
 		}

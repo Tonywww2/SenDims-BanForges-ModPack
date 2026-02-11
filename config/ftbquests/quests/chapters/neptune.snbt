@@ -83,11 +83,10 @@
 			dependencies: ["713CA11C25A8A2E2"]
 			id: "07AEFF9468658A0C"
 			tasks: [{
-				id: "1F353B54D88EF0BD"
-				item: "minecraft:bedrock"
+				id: "1DB3014F496DB10E"
+				item: "kubejs:anchor_shard"
 				type: "item"
 			}]
-			title: "占位符：海王星材料2"
 			x: 0.0d
 			y: 2.5d
 		}
@@ -95,11 +94,10 @@
 			dependencies: ["713CA11C25A8A2E2"]
 			id: "641BAE5B4E3ED25C"
 			tasks: [{
-				id: "47ED5CB4EB13D877"
-				item: "minecraft:bedrock"
+				id: "5322BC1F7194E0F5"
+				item: "kubejs:ml_computing_ingot"
 				type: "item"
 			}]
-			title: "占位符：海王星材料1"
 			x: 0.0d
 			y: -2.5d
 		}

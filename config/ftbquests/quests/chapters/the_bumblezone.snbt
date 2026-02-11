@@ -765,8 +765,8 @@
 			dependencies: ["67CEA0F546DE635F"]
 			id: "7830BE2BDC13CC00"
 			tasks: [{
-				id: "4FC07A806ADE2316"
-				item: "minecraft:bedrock"
+				id: "2F6517B240C0B836"
+				item: "kubejs:multifaceted_ambrosia"
 				type: "item"
 			}]
 			x: 0.0d

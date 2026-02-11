@@ -60,11 +60,10 @@
 			dependencies: ["3DA6E818573A9A69"]
 			id: "26527CD8C76043BE"
 			tasks: [{
-				id: "606372A9B26D36BC"
-				item: "minecraft:bedrock"
+				id: "3F3B03EF0C3DC72A"
+				item: "kubejs:scoria_ingot"
 				type: "item"
 			}]
-			title: "占位符：熔渣锭"
 			x: 2.5d
 			y: 0.0d
 		}
@@ -72,11 +71,10 @@
 			dependencies: ["3DA6E818573A9A69"]
 			id: "078E92000B6E3912"
 			tasks: [{
-				id: "6AEE6BD202B95CA5"
-				item: "minecraft:bedrock"
+				id: "2003919EAE0BFA16"
+				item: "kubejs:mysterious_alkali_crystal"
 				type: "item"
 			}]
-			title: "占位符：神秘碱晶"
 			x: -2.5d
 			y: 0.0d
 		}

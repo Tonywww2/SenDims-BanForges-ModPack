@@ -48,11 +48,10 @@
 			dependencies: ["4D7803023F99E6FC"]
 			id: "6C2B8E494EB829D2"
 			tasks: [{
-				id: "7EFA71A0FD60C074"
-				item: "minecraft:bedrock"
+				id: "65F0157DA4C648CA"
+				item: "kubejs:trinity_alloy_ingot"
 				type: "item"
 			}]
-			title: "占位符：冥王星"
 			x: 0.0d
 			y: -2.5d
 		}
@@ -60,11 +59,10 @@
 			dependencies: ["4D7803023F99E6FC"]
 			id: "571763357AAACBEB"
 			tasks: [{
-				id: "6539FCD22378B9BA"
-				item: "minecraft:bedrock"
+				id: "356AA7E29CF79F21"
+				item: "kubejs:virtual_gold_ingot"
 				type: "item"
 			}]
-			title: "占位符：冥王星"
 			x: 0.0d
 			y: 2.5d
 		}

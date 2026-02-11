@@ -20,7 +20,7 @@ StartupEvents.registry('item', event => {
     event.create('menril-silicon_sic_sic_cmc_ingot').fireResistant().rarity('epic')
     event.create('mercury_refractory_structural_component').fireResistant().rarity('epic')
     event.create('coil_of_sorrow').fireResistant().rarity('rare')
-    event.create('chorus_logic_composite_plate').fireResistant().rarity('rare')
+    event.create('chorus_logic_composite_coil').fireResistant().rarity('rare')
     
     event.create('galatic_cycle_component').fireResistant().rarity('epic')
     event.create('bizarre_matter_dust').fireResistant().rarity('rare')

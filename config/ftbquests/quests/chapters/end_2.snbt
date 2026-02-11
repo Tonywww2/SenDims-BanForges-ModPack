@@ -274,6 +274,11 @@
 		{
 			dependencies: ["0AB0F8AA8EFC1E53"]
 			id: "74C39C2A8B73986F"
+			tasks: [{
+				id: "40B5CC92E7B206B1"
+				item: "kubejs:chorus_logic_composite_coil"
+				type: "item"
+			}]
 			x: 2.5d
 			y: 5.0d
 		}

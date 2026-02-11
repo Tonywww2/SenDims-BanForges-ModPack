@@ -537,8 +537,8 @@
 			dependencies: ["2DFEC40399DF07EC"]
 			id: "3434AD43BC82144D"
 			tasks: [{
-				id: "08BF10CC1A82E226"
-				item: "minecraft:bedrock"
+				id: "157C7D1414337A47"
+				item: "kubejs:coil_of_sorrow"
 				type: "item"
 			}]
 			x: 5.0d

@@ -136,11 +136,10 @@
 			dependencies: ["21EA0520FC403E65"]
 			id: "14D5D5ADCDC5B859"
 			tasks: [{
-				id: "274CE87722444530"
-				item: "minecraft:bedrock"
+				id: "566D0CE17A04E535"
+				item: "kubejs:bizarre_matter_dust"
 				type: "item"
 			}]
-			title: "占位符：暗物质尘埃"
 			x: 2.5d
 			y: 2.5d
 		}
@@ -272,6 +271,11 @@
 			dependencies: ["0326C6376D5E34FF"]
 			description: ["需要使用 压缩氦收集器制作"]
 			id: "49271C4646459DEE"
+			tasks: [{
+				id: "0F54D2C5081A1D62"
+				item: "kubejs:galatic_cycle_component"
+				type: "item"
+			}]
 			x: -5.0d
 			y: 0.0d
 		}

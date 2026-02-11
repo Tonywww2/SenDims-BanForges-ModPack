@@ -487,11 +487,10 @@
 			dependencies: ["5FDD83613CC8DBB5"]
 			id: "2B1F98A770D77E12"
 			tasks: [{
-				id: "4546EF85F303A21B"
-				item: "minecraft:bedrock"
+				id: "1BAB274E278E2343"
+				item: "kubejs:mercury_refractory_structural_component"
 				type: "item"
 			}]
-			title: "占位符：墨丘利耐火陶瓷砖"
 			x: 0.0d
 			y: 12.5d
 		}

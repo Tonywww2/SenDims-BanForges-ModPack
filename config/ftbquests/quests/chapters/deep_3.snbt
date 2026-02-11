@@ -95,11 +95,10 @@
 			dependencies: ["58F48888F1039B24"]
 			id: "52755126FB29CFEF"
 			tasks: [{
-				id: "6B3D16B9B9D6D826"
-				item: "minecraft:bedrock"
+				id: "34E8EB29C4F84E26"
+				item: "kubejs:menril-silicon_sic_sic_cmc_ingot"
 				type: "item"
 			}]
-			title: "占位符：门瑞欧镀层-碳化硅陶瓷复合材料锭"
 			x: 5.0d
 			y: 0.0d
 		}

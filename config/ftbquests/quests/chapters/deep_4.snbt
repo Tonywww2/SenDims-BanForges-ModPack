@@ -70,11 +70,10 @@
 			dependencies: ["4239AD35803375DB"]
 			id: "5CF439D1069AFCE1"
 			tasks: [{
-				id: "532FB27661B4FFE6"
-				item: "minecraft:bedrock"
+				id: "5F639F4C279EBF6F"
+				item: "kubejs:rainbowshift_entropy"
 				type: "item"
 			}]
-			title: "占位符：深境4"
 			x: 2.5d
 			y: 0.0d
 		}

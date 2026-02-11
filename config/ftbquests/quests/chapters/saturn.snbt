@@ -85,11 +85,10 @@
 			dependencies: ["37CF7606A44B5357"]
 			id: "2E3E9722D50C0D8A"
 			tasks: [{
-				id: "1B0DE1FD7E96DC36"
-				item: "minecraft:bedrock"
+				id: "01850F23C2794B71"
+				item: "kubejs:celestial_filling_alloy_ingot"
 				type: "item"
 			}]
-			title: "占位符：土星材料"
 			x: 2.5d
 			y: 0.0d
 		}
@@ -218,11 +217,10 @@
 			dependencies: ["37CF7606A44B5357"]
 			id: "7EACD821B5688C4C"
 			tasks: [{
-				id: "35D69385FB24D7BB"
-				item: "minecraft:bedrock"
+				id: "77E0EE783E6D868D"
+				item: "kubejs:storm_hydrogen_crystal"
 				type: "item"
 			}]
-			title: "占位符：土星材料2"
 			x: -2.5d
 			y: 0.0d
 		}
