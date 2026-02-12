@@ -58,6 +58,8 @@ const toRemoveID = new Set([
     "pseudoedge_break_dawn:xblades",
     "enderio:void_chassis",
 
+    "slashblade:ruined_sword",
+
     // 临时
     "apotheosis:hellshelf",
     "apotheosis:enchanting/infused_hellshelf",

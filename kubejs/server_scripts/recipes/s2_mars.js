@@ -93,4 +93,26 @@ ServerEvents.recipes(event => {
     }, "slashblade_addon:frosty_cherry")
         .id('sdbf:frosty_cherry_s2')
 
+    event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
+        "ABC",
+        "BDB",
+        "EBA"
+    ], {
+        "A": 'apotheosis:rare_material',
+        "B": "slashblade:proudsoul_ingot",
+        "C": "minecraft:diamond",
+        "D": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("slashblade_addon:aquablaze")
+                .killCount(200)
+                .proudSoul(10000)
+                .refineCount(5)
+                .addEnchantment(SBEnchantmentDefinition.of("minecraft:smite", 2))
+                .addEnchantment(SBEnchantmentDefinition.of("minecraft:fire_aspect", 2))
+                .build()
+        ),
+        "E": '#forge:storage_blocks/ostrum'
+    }, "slashblade:ruined_sword")
+        .id('sdbf:ruined_sword_s2')
+
 })
