@@ -1,40 +1,44 @@
 {
-  "creativeGroup": "pseudoedge_break_dawn:pseudoedge_break_dawn_slashblade",
-  "enchantments": [
+    "creativeGroup": "pseudoedge_break_dawn:pseudoedge_break_dawn_slashblade",
+    "enchantments":
+    [
+        {
+            "id": "minecraft:sharpness",
+            "lvl": 2
+        },
+        {
+            "id": "minecraft:unbreaking",
+            "lvl": 3
+        },
+        {
+            "id": "minecraft:fire_aspect",
+            "lvl": 1
+        },
+        {
+            "id": "minecraft:looting",
+            "lvl": 3
+        },
+        {
+            "id": "minecraft:knockback",
+            "lvl": 1
+        }
+    ],
+    "name": "pseudoedge_break_dawn:blackpixie",
+    "properties":
     {
-      "id": "minecraft:sharpness",
-      "lvl": 5
+        "attack_base": 8.0,
+        "max_damage": 75,
+        "slash_art": "pseudoedge_break_dawn:black_hole",
+        "sword_type":
+        [
+            "bewitched"
+        ]
     },
+    "render":
     {
-      "id": "minecraft:unbreaking",
-      "lvl": 5
-    },
-    {
-      "id": "minecraft:fire_aspect",
-      "lvl": 5
-    },
-    {
-      "id": "minecraft:looting",
-      "lvl": 3
-    },
-    {
-      "id": "minecraft:knockback",
-      "lvl": 2
+        "carry_type": "default",
+        "model": "slashblade:model/named/sange/sange.obj",
+        "summon_sword_color": 0,
+        "texture": "pseudoedge_break_dawn:model/pseudo/named/pseudosword/blackpixie/blackpixie.png"
     }
-  ],
-  "name": "pseudoedge_break_dawn:blackpixie",
-  "properties": {
-    "attack_base": 35.0,
-    "max_damage": 300,
-    "slash_art": "pseudoedge_break_dawn:black_hole",
-    "sword_type": [
-      "bewitched"
-    ]
-  },
-  "render": {
-    "carry_type": "default",
-    "model": "slashblade:model/named/sange/sange.obj",
-    "summon_sword_color": 0,
-    "texture": "pseudoedge_break_dawn:model/pseudo/named/pseudosword/blackpixie/blackpixie.png"
-  }
 }

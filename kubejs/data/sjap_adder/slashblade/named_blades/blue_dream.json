@@ -1,34 +1,39 @@
 {
-  "enchantments": [
-    {
-      "id": "minecraft:sharpness",
-      "lvl": 5
-    },
-    {
-      "id": "minecraft:unbreaking",
-      "lvl": 5
-    },
-    {
-      "id": "minecraft:knockback",
-      "lvl": 3
-    }
-  ],
-  "name": "sjap_adder:blue_dream",
-  "properties": {
-    "attack_base": 15.0,
-    "max_damage": 300,
-    "slash_art": "sjap_adder:xross_thunder",
-    "special_effects": [
-      "sjap_adder:the_blue_dreams"
+    "enchantments":
+    [
+        {
+            "id": "minecraft:sharpness",
+            "lvl": 5
+        },
+        {
+            "id": "minecraft:unbreaking",
+            "lvl": 5
+        },
+        {
+            "id": "minecraft:knockback",
+            "lvl": 3
+        }
     ],
-    "sword_type": [
-      "bewitched"
-    ]
-  },
-  "render": {
-    "carry_type": "default",
-    "model": "sjap_adder:model/tw/frostbane_moonveil.obj",
-    "summon_sword_color": -16776961,
-    "texture": "sjap_adder:model/other/blue_dream.png"
-  }
+    "name": "sjap_adder:blue_dream",
+    "properties":
+    {
+        "attack_base": 47.5,
+        "max_damage": 300,
+        "slash_art": "sjap_adder:xross_thunder",
+        "special_effects":
+        [
+            "sjap_adder:the_blue_dreams"
+        ],
+        "sword_type":
+        [
+            "bewitched"
+        ]
+    },
+    "render":
+    {
+        "carry_type": "default",
+        "model": "sjap_adder:model/tw/frostbane_moonveil.obj",
+        "summon_sword_color": -16776961,
+        "texture": "sjap_adder:model/other/blue_dream.png"
+    }
 }

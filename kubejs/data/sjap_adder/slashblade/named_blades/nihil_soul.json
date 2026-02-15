@@ -1,31 +1,35 @@
 {
-  "enchantments": [
+    "enchantments":
+    [
+        {
+            "id": "minecraft:power",
+            "lvl": 5
+        },
+        {
+            "id": "minecraft:unbreaking",
+            "lvl": 5
+        },
+        {
+            "id": "minecraft:sharpness",
+            "lvl": 5
+        }
+    ],
+    "name": "sjap_adder:nihil_soul",
+    "properties":
     {
-      "id": "minecraft:power",
-      "lvl": 5
+        "attack_base": 27.0,
+        "max_damage": 100,
+        "slash_art": "sjap_adder:super_blood_cuts",
+        "sword_type":
+        [
+            "bewitched"
+        ]
     },
+    "render":
     {
-      "id": "minecraft:unbreaking",
-      "lvl": 5
-    },
-    {
-      "id": "minecraft:sharpness",
-      "lvl": 5
+        "carry_type": "default",
+        "model": "sjap_adder:model/tw/frostbane_moonveil.obj",
+        "summon_sword_color": -65536,
+        "texture": "sjap_adder:model/other/nihil_soul.png"
     }
-  ],
-  "name": "sjap_adder:nihil_soul",
-  "properties": {
-    "attack_base": 15.0,
-    "max_damage": 300,
-    "slash_art": "sjap_adder:super_blood_cuts",
-    "sword_type": [
-      "bewitched"
-    ]
-  },
-  "render": {
-    "carry_type": "default",
-    "model": "sjap_adder:model/tw/frostbane_moonveil.obj",
-    "summon_sword_color": -65536,
-    "texture": "sjap_adder:model/other/nihil_soul.png"
-  }
 }

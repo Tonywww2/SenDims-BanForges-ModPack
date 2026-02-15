@@ -1,0 +1,26 @@
+{
+    "enchantments":
+    [
+        {
+            "id": "minecraft:smite",
+            "lvl": 4
+        }
+    ],
+    "name": "slashblade:egg_lan",
+    "properties":
+    {
+        "attack_base": 5.0,
+        "max_damage": 75,
+        "slash_art": "slashblade:ground_pound",
+        "sword_type":
+        [
+            "bewitched"
+        ]
+    },
+    "render":
+    {
+        "model": "slashblade:model/named/egg_lan/egg_lan.obj",
+        "summon_sword_color": 15362013,
+        "texture": "slashblade:model/named/egg_lan/egg_lan.png"
+    }
+}

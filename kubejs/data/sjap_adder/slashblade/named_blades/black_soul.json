@@ -1,34 +1,39 @@
 {
-  "enchantments": [
-    {
-      "id": "minecraft:sharpness",
-      "lvl": 5
-    },
-    {
-      "id": "minecraft:power",
-      "lvl": 5
-    },
-    {
-      "id": "minecraft:thorns",
-      "lvl": 5
-    }
-  ],
-  "name": "sjap_adder:black_soul",
-  "properties": {
-    "attack_base": 12.0,
-    "max_damage": 60,
-    "slash_art": "sjap_adder:explosive_dawn",
-    "special_effects": [
-      "sjap_adder:shadow_of_revenant"
+    "enchantments":
+    [
+        {
+            "id": "minecraft:sharpness",
+            "lvl": 5
+        },
+        {
+            "id": "minecraft:power",
+            "lvl": 5
+        },
+        {
+            "id": "minecraft:thorns",
+            "lvl": 5
+        }
     ],
-    "sword_type": [
-      "bewitched"
-    ]
-  },
-  "render": {
-    "carry_type": "default",
-    "model": "slashblade:model/named/muramasa/muramasa.obj",
-    "summon_sword_color": -1,
-    "texture": "sjap_adder:model/master_sword/black.png"
-  }
+    "name": "sjap_adder:black_soul",
+    "properties":
+    {
+        "attack_base": 29.5,
+        "max_damage": 90,
+        "slash_art": "sjap_adder:explosive_dawn",
+        "special_effects":
+        [
+            "sjap_adder:shadow_of_revenant"
+        ],
+        "sword_type":
+        [
+            "bewitched"
+        ]
+    },
+    "render":
+    {
+        "carry_type": "default",
+        "model": "slashblade:model/named/muramasa/muramasa.obj",
+        "summon_sword_color": -1,
+        "texture": "sjap_adder:model/master_sword/black.png"
+    }
 }

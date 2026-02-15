@@ -1,0 +1,19 @@
+{
+    "name": "slashblade_addon:wanderer",
+    "properties":
+    {
+        "attack_base": 5.0,
+        "max_damage": 60,
+        "slash_art": "slashblade_addon:rapid_blistering_swords",
+        "sword_type":
+        [
+            "bewitched"
+        ]
+    },
+    "render":
+    {
+        "carry_type": "ninja",
+        "model": "slashblade_addon:model/wanderer/wanderer.obj",
+        "texture": "slashblade_addon:model/wanderer/wanderer.png"
+    }
+}

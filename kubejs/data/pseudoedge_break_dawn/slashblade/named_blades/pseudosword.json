@@ -1,32 +1,32 @@
 {
-  "creativeGroup": "pseudoedge_break_dawn:pseudoedge_break_dawn_slashblade",
-  "enchantments": [
+    "creativeGroup": "pseudoedge_break_dawn:pseudoedge_break_dawn_slashblade",
+    "enchantments":
+    [
+        {
+            "id": "minecraft:sharpness",
+            "lvl": 2
+        },
+        {
+            "id": "minecraft:smite",
+            "lvl": 2
+        }
+    ],
+    "name": "pseudoedge_break_dawn:pseudosword",
+    "properties":
     {
-      "id": "minecraft:sharpness",
-      "lvl": 5
+        "attack_base": 7.5,
+        "max_damage": 40,
+        "slash_art": "slashblade:wave_edge",
+        "sword_type":
+        [
+            "bewitched"
+        ]
     },
+    "render":
     {
-      "id": "minecraft:smite",
-      "lvl": 5
-    },
-    {
-      "id": "minecraft:fire_aspect",
-      "lvl": 2
+        "carry_type": "default",
+        "model": "pseudoedge_break_dawn:model/pseudo/named/pseudosword/sword/sword.obj",
+        "summon_sword_color": 0,
+        "texture": "pseudoedge_break_dawn:model/pseudo/named/pseudosword/sword/pseudosword.png"
     }
-  ],
-  "name": "pseudoedge_break_dawn:pseudosword",
-  "properties": {
-    "attack_base": 30.0,
-    "max_damage": 300,
-    "slash_art": "slashblade:wave_edge",
-    "sword_type": [
-      "bewitched"
-    ]
-  },
-  "render": {
-    "carry_type": "default",
-    "model": "pseudoedge_break_dawn:model/pseudo/named/pseudosword/sword/sword.obj",
-    "summon_sword_color": 0,
-    "texture": "pseudoedge_break_dawn:model/pseudo/named/pseudosword/sword/pseudosword.png"
-  }
 }

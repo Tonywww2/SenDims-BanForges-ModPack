@@ -1,35 +1,40 @@
 {
-  "enchantments": [
-    {
-      "id": "minecraft:unbreaking",
-      "lvl": 5
-    },
-    {
-      "id": "minecraft:smite",
-      "lvl": 10
-    },
-    {
-      "id": "minecraft:looting",
-      "lvl": 5
-    }
-  ],
-  "name": "sjap_adder:nihilulex",
-  "properties": {
-    "attack_base": 16.0,
-    "max_damage": 300,
-    "slash_art": "slashblade:wave_edge",
-    "special_effects": [
-      "sjap_adder:wave_edge_rise_up",
-      "last_smith:extra_sharpness"
+    "enchantments":
+    [
+        {
+            "id": "minecraft:unbreaking",
+            "lvl": 5
+        },
+        {
+            "id": "minecraft:smite",
+            "lvl": 10
+        },
+        {
+            "id": "minecraft:looting",
+            "lvl": 5
+        }
     ],
-    "sword_type": [
-      "bewitched"
-    ]
-  },
-  "render": {
-    "carry_type": "default",
-    "model": "slashblade_addon:model/nihil/nihil.obj",
-    "summon_sword_color": 16187647,
-    "texture": "sjap_adder:model/nihill/nihilul.png"
-  }
+    "name": "sjap_adder:nihilulex",
+    "properties":
+    {
+        "attack_base": 63.0,
+        "max_damage": 120,
+        "slash_art": "slashblade:wave_edge",
+        "special_effects":
+        [
+            "sjap_adder:wave_edge_rise_up",
+            "last_smith:extra_sharpness"
+        ],
+        "sword_type":
+        [
+            "bewitched"
+        ]
+    },
+    "render":
+    {
+        "carry_type": "default",
+        "model": "slashblade_addon:model/nihil/nihil.obj",
+        "summon_sword_color": 16187647,
+        "texture": "sjap_adder:model/nihill/nihilul.png"
+    }
 }

@@ -1,0 +1,18 @@
+{
+    "name": "slashblade:kanze_masamune",
+    "properties":
+    {
+        "attack_base": 9.5,
+        "max_damage": 55,
+        "sword_type":
+        [
+            "none"
+        ]
+    },
+    "render":
+    {
+        "model": "slashblade:model/named/kanze_masamune/kanze_masamune.obj",
+        "summon_sword_color": 2576817,
+        "texture": "slashblade:model/named/kanze_masamune/kanze_masamune.png"
+    }
+}

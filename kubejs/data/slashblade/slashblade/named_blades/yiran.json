@@ -1,0 +1,15 @@
+{
+  "name": "slashblade:yiran",
+  "properties": {
+    "attack_base": 15.0,
+    "max_damage": 1536,
+    "sword_type": [
+      "NONE"
+    ]
+  },
+  "render": {
+    "model": "slashblade:model/named/ranbao/yiran_sword.obj",
+    "summon_sword_color": 15048128,
+    "texture": "slashblade:model/named/ranbao/yiran_sword.png"
+  }
+}

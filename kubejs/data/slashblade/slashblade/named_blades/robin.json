@@ -1,0 +1,15 @@
+{
+  "name": "slashblade:robin",
+  "properties": {
+    "attack_base": 10.0,
+    "max_damage": 222,
+    "sword_type": [
+      "NONE"
+    ]
+  },
+  "render": {
+    "model": "slashblade:model/named/robin/robin.obj",
+    "summon_sword_color": 10772709,
+    "texture": "slashblade:model/named/robin/robin.png"
+  }
+}

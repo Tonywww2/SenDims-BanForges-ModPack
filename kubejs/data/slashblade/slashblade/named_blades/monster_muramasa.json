@@ -1,0 +1,26 @@
+{
+  "enchantments": [
+    {
+      "id": "minecraft:fire_aspect",
+      "lvl": 2
+    },
+    {
+      "id": "minecraft:knockback",
+      "lvl": 2
+    }
+  ],
+  "name": "slashblade:monster_muramasa",
+  "properties": {
+    "attack_base": 6.5,
+    "max_damage": 85,
+    "slash_art": "slashblade:drive_horizontal",
+    "sword_type": [
+      "bewitched"
+    ]
+  },
+  "render": {
+    "model": "slashblade:model/named/kanze_masamune/kanze_masamune.obj",
+    "summon_sword_color": 2988209,
+    "texture": "slashblade:model/named/kanze_masamune/monster_muramasa.png"
+  }
+}

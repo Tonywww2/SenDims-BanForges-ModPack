@@ -1,0 +1,17 @@
+{
+  "creativeGroup": "sjap_adder:sjap_adder_slashblade_tf",
+  "name": "sjap_adder:rodai_glaze",
+  "properties": {
+    "attack_base": 40.0,
+    "max_damage": 1,
+    "slash_art": "slashblade:drive_vertical",
+    "special_effects": [
+      "sjap_adder:glaze"
+    ]
+  },
+  "render": {
+    "carry_type": "default",
+    "summon_sword_color": 46079,
+    "texture": "sjap_adder:model/rodai/rodai_glaze.png"
+  }
+}

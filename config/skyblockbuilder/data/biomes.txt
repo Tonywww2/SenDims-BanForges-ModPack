@@ -128,6 +128,9 @@ minecraft:windswept_hills
 minecraft:windswept_savanna
 minecraft:wooded_badlands
 nuclearcraft:wasteland
+nullscape:crystal_peaks
+nullscape:shadowlands
+nullscape:void_barrens
 quark:glimmering_weald
 regions_unexplored:alpha_grove
 regions_unexplored:ancient_delta

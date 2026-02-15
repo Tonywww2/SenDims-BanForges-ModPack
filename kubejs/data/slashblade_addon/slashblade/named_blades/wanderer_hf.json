@@ -1,0 +1,27 @@
+{
+    "forge:conditions":
+    [
+        {
+            "type": "forge:item_exists",
+            "item": "energyblade:forge_energy_blade"
+        }
+    ],
+    "item": "energyblade:forge_energy_blade",
+    "name": "slashblade_addon:wanderer_hf",
+    "properties":
+    {
+        "attack_base": 6.0,
+        "max_damage": 70,
+        "slash_art": "slashblade_addon:rapid_blistering_swords",
+        "sword_type":
+        [
+            "bewitched"
+        ]
+    },
+    "render":
+    {
+        "carry_type": "ninja",
+        "model": "slashblade_addon:model/wanderer/wanderer.obj",
+        "texture": "slashblade_addon:model/wanderer/wanderer.png"
+    }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "slashblade:witch_broom",
+  "properties": {
+    "attack_base": 8.5,
+    "max_damage": 148,
+    "sword_type": [
+      "NONE"
+    ]
+  },
+  "render": {
+    "model": "slashblade:model/named/witch_broom/witch_broom.obj",
+    "summon_sword_color": 10772709,
+    "texture": "slashblade:model/named/witch_broom/witch_broom.png"
+  }
+}

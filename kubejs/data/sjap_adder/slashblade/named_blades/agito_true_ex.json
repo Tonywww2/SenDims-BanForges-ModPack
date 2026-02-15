@@ -1,34 +1,39 @@
 {
-  "enchantments": [
-    {
-      "id": "minecraft:power",
-      "lvl": 3
-    },
-    {
-      "id": "minecraft:unbreaking",
-      "lvl": 3
-    },
-    {
-      "id": "minecraft:smite",
-      "lvl": 3
-    }
-  ],
-  "name": "sjap_adder:agito_true_ex",
-  "properties": {
-    "attack_base": 9.0,
-    "max_damage": 110,
-    "slash_art": "sjap_adder:wave_edge_supers",
-    "special_effects": [
-      "sjap_adder:agitos_ex"
+    "enchantments":
+    [
+        {
+            "id": "minecraft:power",
+            "lvl": 3
+        },
+        {
+            "id": "minecraft:unbreaking",
+            "lvl": 3
+        },
+        {
+            "id": "minecraft:smite",
+            "lvl": 3
+        }
     ],
-    "sword_type": [
-      "bewitched"
-    ]
-  },
-  "render": {
-    "carry_type": "default",
-    "model": "sjap_adder:model/tw/agito_ex_true.obj",
-    "summon_sword_color": -65536,
-    "texture": "sjap_adder:model/tw/agito_ex_true.png"
-  }
+    "name": "sjap_adder:agito_true_ex",
+    "properties":
+    {
+        "attack_base": 21.0,
+        "max_damage": 110,
+        "slash_art": "sjap_adder:wave_edge_supers",
+        "special_effects":
+        [
+            "sjap_adder:agitos_ex"
+        ],
+        "sword_type":
+        [
+            "bewitched"
+        ]
+    },
+    "render":
+    {
+        "carry_type": "default",
+        "model": "sjap_adder:model/tw/agito_ex_true.obj",
+        "summon_sword_color": -65536,
+        "texture": "sjap_adder:model/tw/agito_ex_true.png"
+    }
 }

@@ -1,0 +1,40 @@
+{
+    "creativeGroup": "redtassel:redtassel_slashblade",
+    "enchantments":
+    [
+        {
+            "id": "minecraft:thorns",
+            "lvl": 5
+        },
+        {
+            "id": "minecraft:power",
+            "lvl": 10
+        },
+        {
+            "id": "minecraft:fire_aspect",
+            "lvl": 5
+        },
+        {
+            "id": "minecraft:punch",
+            "lvl": 5
+        }
+    ],
+    "name": "redtassel:redtassel_slashblade",
+    "properties":
+    {
+        "attack_base": 82.0,
+        "max_damage": 80,
+        "slash_art": "redtassel:that_go_go_go",
+        "sword_type":
+        [
+            "bewitched"
+        ]
+    },
+    "render":
+    {
+        "carry_type": "ninja",
+        "model": "redtassel:model/katana/redtassel_blade.obj",
+        "summon_sword_color": 16711680,
+        "texture": "redtassel:model/katana/redtassel_blade.png"
+    }
+}

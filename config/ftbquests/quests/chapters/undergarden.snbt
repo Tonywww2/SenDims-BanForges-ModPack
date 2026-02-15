@@ -11,14 +11,14 @@
 		{
 			id: "4F2B627A4486B945"
 			linked_quest: "549AFEC23C09BA81"
-			x: 7.5d
-			y: -2.5d
+			x: 10.0d
+			y: 2.5d
 		}
 		{
 			id: "2667AD0A67076B5A"
 			linked_quest: "00880D674BE17F9A"
 			x: 5.0d
-			y: 2.5d
+			y: 7.5d
 		}
 	]
 	quests: [
@@ -345,8 +345,8 @@
 				}
 				type: "item"
 			}]
-			x: 10.0d
-			y: 0.0d
+			x: 7.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -443,7 +443,7 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
+			x: 5.0d
 			y: 2.5d
 		}
 		{
@@ -530,8 +530,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: 5.0d
+			x: 2.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["2DFEC40399DF07EC"]

@@ -1,45 +1,50 @@
 {
-  "enchantments": [
-    {
-      "id": "minecraft:unbreaking",
-      "lvl": 10
-    },
-    {
-      "id": "minecraft:smite",
-      "lvl": 10
-    },
-    {
-      "id": "minecraft:looting",
-      "lvl": 10
-    },
-    {
-      "id": "minecraft:fire_aspect",
-      "lvl": 10
-    },
-    {
-      "id": "minecraft:mending",
-      "lvl": 10
-    }
-  ],
-  "name": "sjap_adder:nihilbxex",
-  "properties": {
-    "attack_base": 25.0,
-    "max_damage": 600,
-    "slash_art": "sjap_adder:sakura_wave_edge",
-    "special_effects": [
-      "sjap_adder:wave_edge_rise_up",
-      "sjap_adder:end_sakura_rise_up",
-      "last_smith:extra_sharpness",
-      "last_smith:smite_se",
-      "last_smith:extra_power"
+    "enchantments":
+    [
+        {
+            "id": "minecraft:unbreaking",
+            "lvl": 10
+        },
+        {
+            "id": "minecraft:smite",
+            "lvl": 10
+        },
+        {
+            "id": "minecraft:looting",
+            "lvl": 10
+        },
+        {
+            "id": "minecraft:fire_aspect",
+            "lvl": 10
+        },
+        {
+            "id": "minecraft:mending",
+            "lvl": 10
+        }
     ],
-    "sword_type": [
-      "bewitched"
-    ]
-  },
-  "render": {
-    "carry_type": "default",
-    "model": "slashblade_addon:model/nihil/nihil.obj",
-    "texture": "sjap_adder:model/nihill/nihilbx.png"
-  }
+    "name": "sjap_adder:nihilbxex",
+    "properties":
+    {
+        "attack_base": 81.25,
+        "max_damage": 600,
+        "slash_art": "sjap_adder:sakura_wave_edge",
+        "special_effects":
+        [
+            "sjap_adder:wave_edge_rise_up",
+            "sjap_adder:end_sakura_rise_up",
+            "last_smith:extra_sharpness",
+            "last_smith:smite_se",
+            "last_smith:extra_power"
+        ],
+        "sword_type":
+        [
+            "bewitched"
+        ]
+    },
+    "render":
+    {
+        "carry_type": "default",
+        "model": "slashblade_addon:model/nihil/nihil.obj",
+        "texture": "sjap_adder:model/nihill/nihilbx.png"
+    }
 }

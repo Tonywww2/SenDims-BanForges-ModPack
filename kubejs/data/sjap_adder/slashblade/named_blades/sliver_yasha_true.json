@@ -1,0 +1,14 @@
+{
+  "creativeGroup": "sjap_adder:sjap_adder_slashblade_tf",
+  "name": "sjap_adder:sliver_yasha_true",
+  "properties": {
+    "attack_base": 13.0,
+    "max_damage": 200,
+    "slash_art": "slashblade:circle_slash"
+  },
+  "render": {
+    "model": "slashblade:model/named/yasha/yasha_true.obj",
+    "summon_sword_color": 16777215,
+    "texture": "sjap_adder:model/tw/sliver_yasha.png"
+  }
+}

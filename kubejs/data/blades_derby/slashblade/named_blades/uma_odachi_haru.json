@@ -1,0 +1,26 @@
+{
+  "enchantments": [
+    {
+      "id": "minecraft:smite"
+    },
+    {
+      "id": "minecraft:looting"
+    }
+  ],
+  "name": "blades_derby:uma_odachi_haru",
+  "properties": {
+    "attack_base": 9.0,
+    "max_damage": 45,
+    "slash_art": "slashblade:sakura_end",
+    "special_effects": [
+      "blades_derby:uma_special"
+    ],
+    "sword_type": [
+      "bewitched"
+    ]
+  },
+  "render": {
+    "model": "blades_derby:model/uma_odachi_haru.obj",
+    "texture": "blades_derby:model/uma_odachi_haru.png"
+  }
+}

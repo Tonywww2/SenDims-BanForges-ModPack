@@ -1,47 +1,52 @@
 {
-  "creativeGroup": "foxextra:foxextra_slashblade",
-  "enchantments": [
-    {
-      "id": "minecraft:smite",
-      "lvl": 3
-    },
-    {
-      "id": "minecraft:bane_of_arthropods",
-      "lvl": 3
-    },
-    {
-      "id": "minecraft:sharpness",
-      "lvl": 2
-    },
-    {
-      "id": "minecraft:fire_aspect",
-      "lvl": 3
-    },
-    {
-      "id": "minecraft:unbreaking",
-      "lvl": 3
-    },
-    {
-      "id": "minecraft:power",
-      "lvl": 3
-    }
-  ],
-  "name": "foxextra:foxex_white",
-  "properties": {
-    "attack_base": 10.0,
-    "max_damage": 90,
-    "slash_art": "foxextra:void_slash_plus",
-    "special_effects": [
-      "foxextra:foxbling"
+    "creativeGroup": "foxextra:foxextra_slashblade",
+    "enchantments":
+    [
+        {
+            "id": "minecraft:smite",
+            "lvl": 3
+        },
+        {
+            "id": "minecraft:bane_of_arthropods",
+            "lvl": 3
+        },
+        {
+            "id": "minecraft:sharpness",
+            "lvl": 2
+        },
+        {
+            "id": "minecraft:fire_aspect",
+            "lvl": 3
+        },
+        {
+            "id": "minecraft:unbreaking",
+            "lvl": 3
+        },
+        {
+            "id": "minecraft:power",
+            "lvl": 3
+        }
     ],
-    "sword_type": [
-      "bewitched"
-    ]
-  },
-  "render": {
-    "carry_type": "default",
-    "model": "foxextra:model/foxex/model.obj",
-    "summon_sword_color": 16187647,
-    "texture": "foxextra:model/foxex/texture.png"
-  }
+    "name": "foxextra:foxex_white",
+    "properties":
+    {
+        "attack_base": 19.0,
+        "max_damage": 90,
+        "slash_art": "foxextra:void_slash_plus",
+        "special_effects":
+        [
+            "foxextra:foxbling"
+        ],
+        "sword_type":
+        [
+            "bewitched"
+        ]
+    },
+    "render":
+    {
+        "carry_type": "default",
+        "model": "foxextra:model/foxex/model.obj",
+        "summon_sword_color": 16187647,
+        "texture": "foxextra:model/foxex/texture.png"
+    }
 }

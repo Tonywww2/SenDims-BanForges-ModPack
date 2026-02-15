@@ -1,31 +1,36 @@
 {
-  "enchantments": [
-    {
-      "id": "minecraft:sharpness",
-      "lvl": 3
-    },
-    {
-      "id": "minecraft:unbreaking",
-      "lvl": 3
-    }
-  ],
-  "name": "sjap_adder:toyoko",
-  "properties": {
-    "attack_base": 15.0,
-    "max_damage": 300,
-    "slash_art": "sjap_adder:sakura_drive",
-    "special_effects": [
-      "sjap_adder:fate_bond",
-      "sjap_adder:clear_mind"
+    "enchantments":
+    [
+        {
+            "id": "minecraft:sharpness",
+            "lvl": 3
+        },
+        {
+            "id": "minecraft:unbreaking",
+            "lvl": 3
+        }
     ],
-    "sword_type": [
-      "bewitched"
-    ]
-  },
-  "render": {
-    "carry_type": "default",
-    "model": "sjap_adder:model/tw/agito_ex.obj",
-    "summon_sword_color": -65281,
-    "texture": "slashblade:model/named/a_tukumo.png"
-  }
+    "name": "sjap_adder:toyoko",
+    "properties":
+    {
+        "attack_base": 29.5,
+        "max_damage": 90,
+        "slash_art": "sjap_adder:sakura_drive",
+        "special_effects":
+        [
+            "sjap_adder:fate_bond",
+            "sjap_adder:clear_mind"
+        ],
+        "sword_type":
+        [
+            "bewitched"
+        ]
+    },
+    "render":
+    {
+        "carry_type": "default",
+        "model": "sjap_adder:model/tw/agito_ex.obj",
+        "summon_sword_color": -65281,
+        "texture": "slashblade:model/named/a_tukumo.png"
+    }
 }

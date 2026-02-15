@@ -277,7 +277,7 @@
 			id: "1D902621E0CED2EF"
 			shape: "diamond"
 			tasks: [{
-				id: "7BFBCE6D5CC1CD05"
+				id: "7FB321C6D5467BC6"
 				item: {
 					Count: 1
 					ForgeCaps: {
@@ -285,25 +285,21 @@
 							AttackAmplifier: 0.0f
 							ComboRoot: "slashblade:standby"
 							Damage: 0
-							ModelName: "slashblade_addon:model/nihil/nihil.obj"
+							ModelName: "redtassel:model/katana/redtassel_blade.obj"
 							RepairCounter: 0
-							SpecialAttackType: "slashblade:sakura_end"
-							SpecialEffects: [
-								"last_smith:smite_se"
-								"sjap_adder:end_sakura_rise_up"
-							]
-							StandbyRenderType: 1b
+							SpecialAttackType: "redtassel:that_go_go_go"
+							StandbyRenderType: 3b
 							SummonedSwordColor: -65536
 							SummonedSwordColorInverse: 0b
 							TargetEntity: 0
-							TextureName: "sjap_adder:model/nihill/crimsoncherry.png"
+							TextureName: "redtassel:model/katana/redtassel_blade.png"
 							_onClick: 0b
 							adjustXYZ: [
 								0.0d
 								0.0d
 								0.0d
 							]
-							baseAttackModifier: 16.0f
+							baseAttackModifier: 30.0f
 							currentCombo: "slashblade:none"
 							fallDecreaseRate: 0.0f
 							isBroken: 0b
@@ -311,24 +307,28 @@
 							isSealed: 0b
 							killCount: 0
 							lastActionTime: 0L
-							maxDamage: 300
+							maxDamage: 2000
 							proudSoul: 0
-							translationKey: "item.sjap_adder.crimsoncherryex"
+							translationKey: "item.redtassel.redtassel_slashblade"
 						}
 					}
 					id: "slashblade:slashblade"
 					tag: {
 						Enchantments: [
 							{
-								id: "minecraft:unbreaking"
-								lvl: 10s
-							}
-							{
-								id: "minecraft:smite"
+								id: "minecraft:thorns"
 								lvl: 5s
 							}
 							{
+								id: "minecraft:power"
+								lvl: 10s
+							}
+							{
 								id: "minecraft:fire_aspect"
+								lvl: 5s
+							}
+							{
+								id: "minecraft:punch"
 								lvl: 5s
 							}
 						]
@@ -336,25 +336,21 @@
 							AttackAmplifier: 0.0f
 							ComboRoot: "slashblade:standby"
 							Damage: 0
-							ModelName: "slashblade_addon:model/nihil/nihil.obj"
+							ModelName: "redtassel:model/katana/redtassel_blade.obj"
 							RepairCounter: 0
-							SpecialAttackType: "slashblade:sakura_end"
-							SpecialEffects: [
-								"last_smith:smite_se"
-								"sjap_adder:end_sakura_rise_up"
-							]
-							StandbyRenderType: 1b
+							SpecialAttackType: "redtassel:that_go_go_go"
+							StandbyRenderType: 3b
 							SummonedSwordColor: -65536
 							SummonedSwordColorInverse: 0b
 							TargetEntity: 0
-							TextureName: "sjap_adder:model/nihill/crimsoncherry.png"
+							TextureName: "redtassel:model/katana/redtassel_blade.png"
 							_onClick: 0b
 							adjustXYZ: [
 								0.0d
 								0.0d
 								0.0d
 							]
-							baseAttackModifier: 16.0f
+							baseAttackModifier: 30.0f
 							currentCombo: "slashblade:none"
 							fallDecreaseRate: 0.0f
 							isBroken: 0b
@@ -362,9 +358,9 @@
 							isSealed: 0b
 							killCount: 0
 							lastActionTime: 0L
-							maxDamage: 300
+							maxDamage: 2000
 							proudSoul: 0
-							translationKey: "item.sjap_adder.crimsoncherryex"
+							translationKey: "item.redtassel.redtassel_slashblade"
 						}
 					}
 				}

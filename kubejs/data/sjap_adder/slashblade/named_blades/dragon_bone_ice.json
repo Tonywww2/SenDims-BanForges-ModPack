@@ -1,0 +1,32 @@
+{
+    "creativeGroup": "sjap_adder:sjap_adder_slashblade_icf",
+    "enchantments":
+    [
+        {
+            "id": "minecraft:unbreaking",
+            "lvl": 10
+        }
+    ],
+    "name": "sjap_adder:dragon_bone_ice",
+    "properties":
+    {
+        "attack_base": 40.0,
+        "max_damage": 200,
+        "slash_art": "slashblade:wave_edge",
+        "special_effects":
+        [
+            "sjap_adder:dragon_ice"
+        ],
+        "sword_type":
+        [
+            "bewitched"
+        ]
+    },
+    "render":
+    {
+        "carry_type": "default",
+        "model": "sjap_adder:model/icf/icf/model.obj",
+        "summon_sword_color": 46079,
+        "texture": "sjap_adder:model/icf/icf/ice.png"
+    }
+}

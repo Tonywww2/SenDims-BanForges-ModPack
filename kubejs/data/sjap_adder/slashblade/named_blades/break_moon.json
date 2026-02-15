@@ -1,27 +1,31 @@
 {
-  "enchantments": [
+    "enchantments":
+    [
+        {
+            "id": "minecraft:sharpness",
+            "lvl": 1
+        },
+        {
+            "id": "minecraft:unbreaking",
+            "lvl": 2
+        }
+    ],
+    "name": "sjap_adder:break_moon",
+    "properties":
     {
-      "id": "minecraft:sharpness",
-      "lvl": 3
+        "attack_base": 3.0,
+        "max_damage": 100,
+        "slash_art": "slashblade:wave_edge",
+        "sword_type":
+        [
+            "bewitched"
+        ]
     },
+    "render":
     {
-      "id": "minecraft:unbreaking",
-      "lvl": 3
+        "carry_type": "default",
+        "model": "slashblade:model/named/dios/dios.obj",
+        "summon_sword_color": -16711936,
+        "texture": "sjap_adder:model/break_moon/break_moon.png"
     }
-  ],
-  "name": "sjap_adder:break_moon",
-  "properties": {
-    "attack_base": 12.0,
-    "max_damage": 300,
-    "slash_art": "slashblade:wave_edge",
-    "sword_type": [
-      "bewitched"
-    ]
-  },
-  "render": {
-    "carry_type": "default",
-    "model": "slashblade:model/named/dios/dios.obj",
-    "summon_sword_color": -16711936,
-    "texture": "sjap_adder:model/break_moon/break_moon.png"
-  }
 }

@@ -1,15 +1,18 @@
 {
-  "name": "slashblade_addon:frosty_cherry",
-  "properties": {
-    "attack_base": 9.0,
-    "max_damage": 100,
-    "slash_art": "slashblade_addon:rapid_blistering_swords",
-    "sword_type": [
-      "bewitched"
-    ]
-  },
-  "render": {
-    "model": "slashblade_addon:model/frostwolf/frosty_cherry.obj",
-    "texture": "slashblade_addon:model/frostwolf/frosty_cherry.png"
-  }
+    "name": "slashblade_addon:frosty_cherry",
+    "properties":
+    {
+        "attack_base": 23.0,
+        "max_damage": 100,
+        "slash_art": "slashblade_addon:rapid_blistering_swords",
+        "sword_type":
+        [
+            "bewitched"
+        ]
+    },
+    "render":
+    {
+        "model": "slashblade_addon:model/frostwolf/frosty_cherry.obj",
+        "texture": "slashblade_addon:model/frostwolf/frosty_cherry.png"
+    }
 }

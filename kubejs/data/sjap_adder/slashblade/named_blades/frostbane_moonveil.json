@@ -1,30 +1,35 @@
 {
-  "enchantments": [
-    {
-      "id": "minecraft:sharpness",
-      "lvl": 3
-    },
-    {
-      "id": "minecraft:unbreaking",
-      "lvl": 3
-    }
-  ],
-  "name": "sjap_adder:frostbane_moonveil",
-  "properties": {
-    "attack_base": 9.5,
-    "max_damage": 300,
-    "slash_art": "sjap_adder:cold_drive",
-    "special_effects": [
-      "sjap_adder:cold_guardian"
+    "enchantments":
+    [
+        {
+            "id": "minecraft:sharpness",
+            "lvl": 1
+        },
+        {
+            "id": "minecraft:unbreaking",
+            "lvl": 2
+        }
     ],
-    "sword_type": [
-      "bewitched"
-    ]
-  },
-  "render": {
-    "carry_type": "default",
-    "model": "sjap_adder:model/tw/frostbane_moonveil.obj",
-    "summon_sword_color": 8703,
-    "texture": "sjap_adder:model/tw/frostbane_moonveil.png"
-  }
+    "name": "sjap_adder:frostbane_moonveil",
+    "properties":
+    {
+        "attack_base": 5.5,
+        "max_damage": 100,
+        "slash_art": "sjap_adder:cold_drive",
+        "special_effects":
+        [
+            "sjap_adder:cold_guardian"
+        ],
+        "sword_type":
+        [
+            "bewitched"
+        ]
+    },
+    "render":
+    {
+        "carry_type": "default",
+        "model": "sjap_adder:model/tw/frostbane_moonveil.obj",
+        "summon_sword_color": 8703,
+        "texture": "sjap_adder:model/tw/frostbane_moonveil.png"
+    }
 }

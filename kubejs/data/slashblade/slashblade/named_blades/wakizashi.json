@@ -1,0 +1,30 @@
+{
+    "enchantments":
+    [
+        {
+            "id": "minecraft:unbreaking",
+            "lvl": 3
+        }
+    ],
+    "name": "slashblade:wakizashi",
+    "properties":
+    {
+        "attack_base": 42.5,
+        "max_damage": 25,
+        "slash_art": "slashblade:seppuku",
+        "special_effects":
+        [
+            "slashblade:dual_blade_off"
+        ],
+        "sword_type":
+        [
+            "bewitched"
+        ]
+    },
+    "render":
+    {
+        "model": "slashblade:model/named/wakizashi/wakizashi.obj",
+        "summon_sword_color": 15000804,
+        "texture": "slashblade:model/named/wakizashi/wakizashi.png"
+    }
+}

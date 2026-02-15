@@ -1,0 +1,16 @@
+{
+  "name": "slashblade:diamond_sword",
+  "properties": {
+    "attack_base": 7.0,
+    "max_damage": 1536,
+    "slash_art": "slashblade:law_of_regression",
+    "sword_type": [
+      "BEWITCHED"
+    ]
+  },
+  "render": {
+    "model": "slashblade:model/named/diamond_sword/diamond_sword.obj",
+    "summon_sword_color": 15065111,
+    "texture": "slashblade:model/named/diamond_sword/diamond_sword.png"
+  }
+}

@@ -1,0 +1,26 @@
+{
+    "enchantments":
+    [
+        {
+            "id": "minecraft:power",
+            "lvl": 2
+        }
+    ],
+    "name": "slashblade:dojikiri_yasutsuna",
+    "properties":
+    {
+        "attack_base": 13.5,
+        "max_damage": 147,
+        "slash_art": "slashblade:corpse_piler",
+        "sword_type":
+        [
+            "bewitched"
+        ]
+    },
+    "render":
+    {
+        "model": "slashblade:model/named/dojikiri_yasutsuna/dojikiri_yasutsuna.obj",
+        "summon_sword_color": 7005669,
+        "texture": "slashblade:model/named/dojikiri_yasutsuna/dojikiri_yasutsuna.png"
+    }
+}

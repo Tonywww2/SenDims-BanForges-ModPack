@@ -1,0 +1,42 @@
+{
+    "enchantments":
+    [
+        {
+            "id": "minecraft:unbreaking",
+            "lvl": 3
+        },
+        {
+            "id": "minecraft:sharpness",
+            "lvl": 5
+        },
+        {
+            "id": "minecraft:smite",
+            "lvl": 5
+        },
+        {
+            "id": "minecraft:bane_of_arthropods",
+            "lvl": 5
+        },
+        {
+            "id": "minecraft:fire_aspect",
+            "lvl": 2
+        }
+    ],
+    "name": "slashblade_addon:nihilbx",
+    "properties":
+    {
+        "attack_base": 67.0,
+        "max_damage": 240,
+        "slash_art": "slashblade:sakura_end",
+        "sword_type":
+        [
+            "bewitched"
+        ]
+    },
+    "render":
+    {
+        "carry_type": "katana",
+        "model": "slashblade_addon:model/nihil/nihil.obj",
+        "texture": "slashblade_addon:model/nihil/nihil_bx.png"
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "enchantments":
+    [
+        {
+            "id": "minecraft:power",
+            "lvl": 2
+        }
+    ],
+    "name": "slashblade:winchester",
+    "properties":
+    {
+        "attack_base": 12.5,
+        "max_damage": 333,
+        "slash_art": "slashblade:quick_draw",
+        "sword_type":
+        [
+            "bewitched"
+        ]
+    },
+    "render":
+    {
+        "model": "slashblade:model/named/winchester/winchester.obj",
+        "summon_sword_color": 15065111,
+        "texture": "slashblade:model/named/winchester/winchester.png"
+    }
+}

@@ -1,27 +1,31 @@
 {
-  "enchantments": [
+    "enchantments":
+    [
+        {
+            "id": "minecraft:sharpness",
+            "lvl": 3
+        },
+        {
+            "id": "minecraft:unbreaking",
+            "lvl": 3
+        }
+    ],
+    "name": "sjap_adder:kamuy_dark",
+    "properties":
     {
-      "id": "minecraft:sharpness",
-      "lvl": 3
+        "attack_base": 49.0,
+        "max_damage": 150,
+        "slash_art": "sjap_adder:dark_cuts",
+        "sword_type":
+        [
+            "bewitched"
+        ]
     },
+    "render":
     {
-      "id": "minecraft:unbreaking",
-      "lvl": 3
+        "carry_type": "default",
+        "model": "slashblade_addon:model/kamuy/kamuy.obj",
+        "summon_sword_color": -65281,
+        "texture": "sjap_adder:model/kaumyex/dark.png"
     }
-  ],
-  "name": "sjap_adder:kamuy_dark",
-  "properties": {
-    "attack_base": 6.0,
-    "max_damage": 300,
-    "slash_art": "sjap_adder:dark_cuts",
-    "sword_type": [
-      "bewitched"
-    ]
-  },
-  "render": {
-    "carry_type": "default",
-    "model": "slashblade_addon:model/kamuy/kamuy.obj",
-    "summon_sword_color": -65281,
-    "texture": "sjap_adder:model/kaumyex/dark.png"
-  }
 }
