@@ -174,7 +174,7 @@
 			description: ["拔刀剑拥有一套类似于鬼泣的出招表，玩家可以通过操作打出不同的招式。"]
 			icon: {
 				Count: 1
-				id: "thermal_shock:bloodstone_sword"
+				id: "ae2:fluix_sword"
 				tag: {
 					Damage: 0
 				}

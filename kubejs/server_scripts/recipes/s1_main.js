@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
     ], {
         A: 'kubejs:garden_lighter',
         B: 'slashblade:proudsoul_tiny',
-        C: '#minecraft:dirt'
+        C: 'tofucraft:tofu_core'
     }).id('sdbf:deeprealm_certificate_s1')
 
     event.shaped('kubejs:garden_lighter', [

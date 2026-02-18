@@ -1,0 +1,253 @@
+{
+	autofocus_id: "6140B0BCEB7F9D64"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tofu"
+	group: "6900D4BA6E5FB142"
+	icon: "tofucraft:tofugrilled"
+	id: "5EBAE200287C397B"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0B0F1D8BE89F8980"]
+			description: [
+				"IMMPT：用苔藓复合原石构筑门槛，并使用花园火石点亮......"
+				""
+				"原始：用苔石构筑门槛，并使用花园火石点亮......"
+			]
+			hide_until_deps_complete: true
+			icon: "tofucraft:blocktofuishi"
+			id: "6140B0BCEB7F9D64"
+			size: 2.0d
+			tasks: [{
+				dimension: "tofucraft:tofu_world"
+				icon: {
+					Count: 1
+					id: "tofucraft:tofustick"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "603D3E735EDE35F5"
+				title: "永恒花园"
+				type: "dimension"
+			}]
+			title: "豆腐世界"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"290B1AB065F93570"
+				"3376AE50BC0EB9A5"
+			]
+			dependency_requirement: "one_completed"
+			id: "765A0F0A66F45570"
+			tasks: [{
+				id: "239CEA85A90F0B89"
+				item: "tofucraft:tofu_core"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6140B0BCEB7F9D64"]
+			id: "64402F8CC5046FCE"
+			tasks: [{
+				id: "21B737B28E0E9683"
+				item: "tofucraft:blocktofuishi"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6140B0BCEB7F9D64"]
+			id: "488010DD10E094D8"
+			tasks: [{
+				id: "166EA93277DB8E5C"
+				item: "tofucraft:leek"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["64402F8CC5046FCE"]
+			dependency_requirement: "one_completed"
+			id: "290B1AB065F93570"
+			tasks: [{
+				id: "6388047F0D66AF24"
+				item: "tofucraft:tofugem"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["64402F8CC5046FCE"]
+			dependency_requirement: "one_completed"
+			id: "3376AE50BC0EB9A5"
+			tasks: [{
+				id: "026CD9BC87E8B3B0"
+				item: "tofucraft:tofumetal"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6140B0BCEB7F9D64"]
+			id: "2529CD2EF2A8961B"
+			tasks: [{
+				id: "46FB5CE37741B158"
+				item: "tofucraft:tofudiamond"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6140B0BCEB7F9D64"]
+			id: "7FC06C85BBD5D061"
+			rewards: [{
+				id: "7DDF4C5543E337B2"
+				item: "tofucraft:tofu_terrain"
+				type: "item"
+			}]
+			tasks: [{
+				id: "70F734848045B8E9"
+				item: "tofucraft:tofu_terrain"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["64402F8CC5046FCE"]
+			id: "4EF8B289BDF7CCB3"
+			tasks: [{
+				id: "2BCB67F0216161BE"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:judgement_cut"
+							StandbyRenderType: 0b
+							SummonedSwordColor: -13421569
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							proudSoul: 0
+						}
+					}
+					id: "slashblade_addon:slashblade_tofu_ishi"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3376AE50BC0EB9A5"]
+			id: "5F7850D2932BFCBF"
+			tasks: [{
+				id: "053EA927325A1143"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:judgement_cut"
+							StandbyRenderType: 0b
+							SummonedSwordColor: -13421569
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							proudSoul: 0
+						}
+					}
+					id: "slashblade_addon:slashblade_tofu_metal"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2529CD2EF2A8961B"]
+			id: "4023DE67F5B0579E"
+			tasks: [{
+				id: "103FC8EDEB8609A1"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:judgement_cut"
+							StandbyRenderType: 0b
+							SummonedSwordColor: -13421569
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							proudSoul: 0
+						}
+					}
+					id: "slashblade_addon:slashblade_tofu_diamond"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 5.0d
+		}
+	]
+	title: "世界是豆腐做的"
+}

@@ -2,7 +2,7 @@
   "schema_version": "imm_ptl:v1",
   "from": ["minecraft:overworld"], "to": "sdbf:deep_realm_level_1",
   "form": {
-    "type": "imm_ptl:heterogeneous", "frame_block": "thermal_shock:phobotite_block",
+    "type": "imm_ptl:heterogeneous", "frame_block": "minecraft:bricks",
     "area_block": "minecraft:air", "generate_frame_if_not_found": true
   },
   "trigger": { "type": "imm_ptl:use_item","item": "slashblade_sendims:deeprealm_certificate" }

@@ -20,6 +20,12 @@
 			x: -5.0d
 			y: 5.0d
 		}
+		{
+			id: "37F9308A7B690DE9"
+			linked_quest: "765A0F0A66F45570"
+			x: -7.5d
+			y: -7.5d
+		}
 	]
 	quests: [
 		{
@@ -414,6 +420,10 @@
 		}
 		{
 			dependencies: ["13B6F6AC7608F794"]
+			description: [
+				"苔藓蕴含着可能性，而祂们又无法观测自身。"
+				"你打开了第一扇传送门。"
+			]
 			id: "0B0F1D8BE89F8980"
 			rewards: [
 				{
@@ -472,7 +482,7 @@
 					type: "choice"
 				}
 			]
-			subtitle: "永恒花园"
+			subtitle: "相交的碎片"
 			tasks: [{
 				id: "4ABE72912DE0F08B"
 				item: "kubejs:garden_lighter"
@@ -663,7 +673,7 @@
 				item: "slashblade_sendims:estus_flask_0"
 				type: "item"
 			}]
-			x: -7.5d
+			x: -2.5d
 			y: -7.5d
 		}
 		{
