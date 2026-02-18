@@ -341,7 +341,7 @@ const armorFloat = 0.1;
  * 维度对应的难度等级
  */
 const dimensionStages = {
-    "thermal_shock:loqendia": "0_1",
+    "tofucraft:tofu_world": "0_1",
 
     "sdbf:deep_realm_level_1": "1_1",
 

@@ -22,6 +22,9 @@ nullscape:strip
 nullscape:strip2
 nullscape:strip3
 nullscape:strip4
+tofucraft:tofu_canyon
+tofucraft:tofu_cave
+tofucraft:tofu_cave_extra_underground
 twilightforest:highland_caves
 twilightforest:tf_caves
 undergarden:undergarden_cave

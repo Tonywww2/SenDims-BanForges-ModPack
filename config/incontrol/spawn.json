@@ -1,12 +1,5 @@
 [
   {
-    "dimension": "thermal_shock:loqendia",
-    "mincount": {
-      "amount": 150
-    },
-    "result": "deny"
-  },
-  {
     "dimension": "minecraft:overworld",
     "hostile": true,
     "when": "onjoin",

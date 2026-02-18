@@ -4,7 +4,7 @@
 	default_quest_shape: ""
 	filename: "garden"
 	group: "6900D4BA6E5FB142"
-	icon: "thermal_shock:keystone"
+	icon: "tofucraft:tofugrilled"
 	id: "5EBAE200287C397B"
 	order_index: 1
 	quest_links: [ ]
@@ -19,23 +19,18 @@
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
-				id: "thermal_shock:loqendia"
+				id: "tofucraft:tofustick"
 				tag: {
 					Damage: 0
 				}
 			}
 			id: "6140B0BCEB7F9D64"
-			rewards: [{
-				id: "474251C1BC649B0C"
-				item: "thermal_shock:frigid_altar_key"
-				type: "item"
-			}]
 			size: 2.0d
 			tasks: [{
-				dimension: "thermal_shock:loqendia"
+				dimension: "tofucraft:tofu_world"
 				icon: {
 					Count: 1
-					id: "thermal_shock:loqendia"
+					id: "tofucraft:tofustick"
 					tag: {
 						Damage: 0
 					}
@@ -44,7 +39,7 @@
 				title: "永恒花园"
 				type: "dimension"
 			}]
-			title: "永恒花园"
+			title: "豆腐世界"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -171,5 +166,5 @@
 			y: -5.0d
 		}
 	]
-	title: "永恒的冰冻花园"
+	title: "世界是豆腐做的"
 }

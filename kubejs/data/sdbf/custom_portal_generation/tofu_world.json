@@ -1,0 +1,9 @@
+{
+  "schema_version": "imm_ptl:v1",
+  "from": ["minecraft:overworld"], "to": "tofucraft:tofu_world",
+  "form": {
+    "type": "imm_ptl:heterogeneous", "frame_block": "dustandash:cobblestone_with_moss",
+    "area_block": "minecraft:air", "generate_frame_if_not_found": true
+  },
+  "trigger": { "type": "imm_ptl:use_item","item": "kubejs:garden_lighter" }
+}

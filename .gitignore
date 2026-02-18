@@ -69,3 +69,4 @@ mods/L_Enders_Cataclysm-3.16.jar
 .probe/*
 !.probe/probe-settings.json
 config/aether_redux_client.toml
+/mods/.index
