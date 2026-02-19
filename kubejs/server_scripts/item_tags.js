@@ -6,19 +6,19 @@ ServerEvents.tags("item", event => {
     // )
 
     // TODO 证章强化材料
-
+    // 阶段0
     event.add("slashblade_sendims:drc_health_material_0", [
         '#forge:ingots/iron',
-        
+        'tofucraft:tofugem'
 
     ])
 
     event.add("slashblade_sendims:drc_damage_material_0", [
         '#forge:ingots/gold',
-        'thermal:ruby'
+        'tofucraft:tofudiamondnugget'
 
     ])
-
+    // 阶段1
     event.add('slashblade_sendims:drc_rank_material_1',
         'minecraft:diamond_block'
 
@@ -38,13 +38,12 @@ ServerEvents.tags("item", event => {
         'ad_astra:desh_sliding_door',
 
     ])
-
+    // 阶段2
     event.add('slashblade_sendims:drc_rank_material_2',
         'deep_aether:stratus_ingot',
         'minecraft:nether_star',
 
     )
-
 
     event.add("slashblade_sendims:drc_health_material_2", [
         // 'quark:blaze_lantern',
@@ -57,5 +56,7 @@ ServerEvents.tags("item", event => {
         'minecraft:netherite_ingot'
 
     ])
+    // 阶段3
+    
 
 })

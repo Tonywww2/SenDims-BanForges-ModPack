@@ -30,6 +30,13 @@ ServerEvents.highPriorityData(event => {
         boss.build();
     };
 
-    // loqendiaBoss("thermal_shock:willograde");
+    tofuBoss('tofucraft:tofuspider');
+    tofuBoss('tofucraft:shudofuspider');
+    tofuBoss('tofucraft:fukumame_thower');
+    tofuBoss('tofucraft:zundamite');
+    tofuBoss('tofucraft:tofu_gandlem');
+    tofuBoss('tofucraft:tofuslime');
+    tofuBoss('tofucraft:tofucreeper');
+
 
 })

@@ -9,6 +9,24 @@ ServerEvents.recipes(event => {
         B: 'minecraft:map'
     }).id('sdbf:ae_lab_s2')
 
+    event.shaped($StructureQuill.forStructure("cavernous:lush_village"), [
+        'AAA',
+        'ABA',
+        'AAA'
+    ], {
+        A: 'minecraft:paper',
+        B: '#minecraft:dirt'
+    }).id('sdbf:sq_lush_village_s1');
+
+    event.shaped($StructureQuill.forStructure("cavernous:stone_village"), [
+        'AAA',
+        'ABA',
+        'AAA'
+    ], {
+        A: 'minecraft:paper',
+        B: '#forge:cobblestone'
+    }).id('sdbf:sq_stone_village_s1');
+
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
         "ESD",
         "RBL",

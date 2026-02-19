@@ -1,96 +1,96 @@
 // priority: 100
 ServerEvents.highPriorityData(event => {
-    // // 源质渣材料
-    // tetraMaterialBuilder(event, "helion_slag").setCategory("misc")
-    //     .setPrimary(1.3).setSecondary(1.3).setTertiary(0.8)
-    //     .setDurability(120).setIntegrityCost(1).setIntegrityGain(1)
-    //     .setMagicCapacity(60).setToolLevel(3).setToolEfficiency(4)
-    //     .addAttributes("attributeslib:fire_damage", 0.15)
-    //     .setTints("8b4513", "a0522d")
-    //     .addTexture("crude").addTexture("grainy")
-    //     .addItemMaterial('thermal_shock:helion_slag')
-    //     .setRequiredTool("hammer_dig", 1)
-    //     .build();
+    // 石豆腐
+    tetraMaterialBuilder(event, "tofuishi").setCategory("stone")
+        .setPrimary(1.3).setSecondary(1.3).setTertiary(0.8)
+        .setDurability(120).setIntegrityCost(1).setIntegrityGain(1)
+        .setMagicCapacity(60).setToolLevel(3).setToolEfficiency(4)
+        .addAttributes("minecraft:generic.attack_damage", 0.15)
+        .setTints("f5f5dc", "fff8dc")  // 豆腐白色调
+        .addTexture("crude").addTexture("grainy")
+        .addItemMaterial('tofucraft:tofuishi')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
 
-    // // 苏生石锭材料
-    // tetraMaterialBuilder(event, "ferrum").setCategory("metal")
-    //     .setPrimary(1.4).setSecondary(1.3).setTertiary(0.9)
-    //     .setDurability(180).setIntegrityCost(1).setIntegrityGain(3)
-    //     .setMagicCapacity(70).setToolLevel(5).setToolEfficiency(5)
-    //     .setTints("808080", "a0a0a0")
-    //     .addTexture("metal").addTexture("default")
-    //     .addItemMaterial('thermal_shock:ferrum_ingot')
-    //     .setRequiredTool("hammer_dig", 1)
-    //     .build();
+    // 深层豆腐岩
+    tetraMaterialBuilder(event, "tofuslate").setCategory("stone")
+        .setPrimary(1.4).setSecondary(1.3).setTertiary(0.9)
+        .setDurability(180).setIntegrityCost(1).setIntegrityGain(3)
+        .setMagicCapacity(70).setToolLevel(5).setToolEfficiency(5)
+        .setTints("2f4f4f", "708090")  // 深灰色
+        .addTexture("grainy").addTexture("crude")
+        .addItemMaterial('tofucraft:tofuslate')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
 
-    // // 亚铁锭材料
-    // tetraMaterialBuilder(event, "corrial").setCategory("metal")
-    //     .setPrimary(1.4).setSecondary(1.4).setTertiary(1.1)
-    //     .setDurability(200).setIntegrityCost(1).setIntegrityGain(2)
-    //     .setMagicCapacity(65).setToolLevel(5).setToolEfficiency(5)
-    //     .setTints("696969", "8c8c8c")
-    //     .addTexture("metal").addTexture("crude")
-    //     .addItemMaterial('thermal_shock:corrial_ingot')
-    //     .setRequiredTool("hammer_dig", 1)
-    //     .build();
+    // 钢豆腐
+    tetraMaterialBuilder(event, "tofumetal").setCategory("metal")
+        .setPrimary(1.4).setSecondary(1.4).setTertiary(1.1)
+        .setDurability(200).setIntegrityCost(1).setIntegrityGain(2)
+        .setMagicCapacity(65).setToolLevel(5).setToolEfficiency(5)
+        .setTints("c0c0c0", "d3d3d3")  // 银白金属色
+        .addTexture("metal").addTexture("default")
+        .addItemMaterial('tofucraft:tofumetal')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
 
-    // // 星莹钢材料
-    // tetraMaterialBuilder(event, "phobotite").setCategory("metal")
-    //     .setPrimary(1.4).setSecondary(1.5).setTertiary(1.2)
-    //     .setDurability(220).setIntegrityCost(1).setIntegrityGain(2)
-    //     .setMagicCapacity(75).setToolLevel(5).setToolEfficiency(6)
-    //     .setTints("b0c4de", "d1e0e0")
-    //     .addTexture("metal").addTexture("default")
-    //     .addItemMaterial('thermal_shock:phobotite')
-    //     .setRequiredTool("hammer_dig", 1)
-    //     .build();
+    // 毛豆豆腐
+    tetraMaterialBuilder(event, "tofuzunda").setCategory("skin")
+        .setPrimary(1.4).setSecondary(1.5).setTertiary(1.2)
+        .setDurability(220).setIntegrityCost(1).setIntegrityGain(2)
+        .setMagicCapacity(75).setToolLevel(5).setToolEfficiency(6)
+        .setTints("9acd32", "adff2f")  // 淡绿色
+        .addTexture("metal").addTexture("default")
+        .addItemMaterial('tofucraft:tofuzunda')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
 
-    // // 海玻璃材料
-    // tetraMaterialBuilder(event, "seaglass").setCategory("gem")
-    //     .setPrimary(1.8).setSecondary(1.5).setTertiary(1.2)
-    //     .setDurability(250).setIntegrityCost(1).setIntegrityGain(2)
-    //     .setMagicCapacity(90).setToolLevel(3).setToolEfficiency(5)
-    //     .addAttributes("minecraft:generic.max_health", 1.0)
-    //     .setTints("afeeee", "b0e0e6")
-    //     .addTexture("shiny").addTexture("crude")
-    //     .addItemMaterial('thermal_shock:seaglass_block')
-    //     .setRequiredTool("hammer_dig", 1)
-    //     .build();
+    // 豆腐宝石
+    tetraMaterialBuilder(event, "tofugem").setCategory("gem")
+        .setPrimary(1.8).setSecondary(1.5).setTertiary(1.2)
+        .setDurability(250).setIntegrityCost(1).setIntegrityGain(2)
+        .setMagicCapacity(90).setToolLevel(3).setToolEfficiency(5)
+        .addAttributes("minecraft:generic.max_health", 1.0)
+        .setTints("87ceeb", "b0e0e6")  // 天蓝色宝石
+        .addTexture("shiny").addTexture("crude")
+        .addItemMaterial('tofucraft:tofugem')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
 
-    // // 霜寒合金材料
-    // tetraMaterialBuilder(event, "cryonic_alloy").setCategory("metal")
-    //     .setPrimary(2.0).setSecondary(2.0).setTertiary(1.3)
-    //     .setDurability(300).setIntegrityCost(1).setIntegrityGain(3)
-    //     .setMagicCapacity(100).setToolLevel(5).setToolEfficiency(6)
-    //     .addAttributes("attributeslib:cold_damage", 0.15)
-    //     .setTints("add8e6", "c6e2ff")
-    //     .addTexture("metal").addTexture("heavy")
-    //     .addItemMaterial('thermal_shock:cryonic_alloy')
-    //     .setRequiredTool("hammer_dig", 1)
-    //     .build();
+    // 钻石豆腐
+    tetraMaterialBuilder(event, "tofudiamond").setCategory("gem")
+        .setPrimary(2.6).setSecondary(2.2).setTertiary(1.5)
+        .setDurability(300).setIntegrityCost(1).setIntegrityGain(3)
+        .setMagicCapacity(100).setToolLevel(5).setToolEfficiency(6)
+        .addAttributes("attributeslib:cold_damage", 0.15)
+        .setTints("e0ffff", "f0ffff")  // 钻石豆腐的冰蓝色
+        .addTexture("shiny").addTexture("heavy")
+        .addItemMaterial('tofucraft:tofudiamond')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
 
-    // // 平流银材料
-    // tetraMaterialBuilder(event, "stratosilver").setCategory("metal")
-    //     .setPrimary(2.3).setSecondary(2.2).setTertiary(1.4)
-    //     .setDurability(350).setIntegrityCost(1).setIntegrityGain(3)
-    //     .setMagicCapacity(110).setToolLevel(4).setToolEfficiency(7)
-    //     .setTints("e6e6fa", "f0f0ff")
-    //     .addTexture("shiny").addTexture("metal")
-    //     .addItemMaterial('thermal_shock:stratosilver')
-    //     .setRequiredTool("hammer_dig", 1)
-    //     .build();
+    // 豆腐电路板
+    tetraMaterialBuilder(event, "tf_circuit").setCategory("metal")
+        .setPrimary(2.3).setSecondary(2.2).setTertiary(1.4)
+        .setDurability(350).setIntegrityCost(1).setIntegrityGain(3)
+        .setMagicCapacity(110).setToolLevel(4).setToolEfficiency(7)
+        .setTints("32cd32", "90ee90")  // 电路绿色
+        .addTexture("shiny").addTexture("metal")
+        .addItemMaterial('tofucraft:tf_circuit')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
 
-    // // 星云合金材料
-    // tetraMaterialBuilder(event, "stratus_alloy").setCategory("metal")
-    //     .setPrimary(2.6).setSecondary(2.5).setTertiary(1.6)
-    //     .setDurability(400).setIntegrityCost(1).setIntegrityGain(3)
-    //     .setMagicCapacity(130).setToolLevel(5).setToolEfficiency(8)
-    //     .addAttributes("attributeslib:cold_damage", 0.25)
-    //     .setTints("483d8b", "6a5acd")
-    //     .addTexture("shiny").addTexture("heavy")
-    //     .addItemMaterial('thermal_shock:stratus_alloy')
-    //     .setRequiredTool("hammer_dig", 1)
-    //     .build();
+    // 豆腐核心
+    tetraMaterialBuilder(event, "tofu_core").setCategory("gem")
+        .setPrimary(2.6).setSecondary(2.5).setTertiary(1.6)
+        .setDurability(400).setIntegrityCost(1).setIntegrityGain(3)
+        .setMagicCapacity(130).setToolLevel(5).setToolEfficiency(8)
+        .addAttributes("attributeslib:cold_damage", 0.25)
+        .setTints("8a2be2", "9370db")  // 紫色核心
+        .addTexture("shiny").addTexture("heavy")
+        .addItemMaterial('tofucraft:tofu_core')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
 
     // 铜材料
     tetraMaterialBuilder(event, "copper").setCategory("metal")

@@ -179,6 +179,7 @@
 			dependencies: [
 				"43FDCFF3F409783D"
 				"078E92000B6E3912"
+				"00C6734E62C48C2D"
 			]
 			id: "6367E660F1CE8B30"
 			tasks: [{
@@ -273,8 +274,8 @@
 				}
 				type: "item"
 			}]
-			x: -5.0d
-			y: 2.5d
+			x: -7.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6367E660F1CE8B30"]

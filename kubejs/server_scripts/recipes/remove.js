@@ -59,6 +59,8 @@ const toRemoveID = new Set([
     "enderio:void_chassis",
 
     "slashblade:ruined_sword",
+    "last_smith:bloodybamboo",
+    "last_smith:goldenbamboo",
 
     // 临时
     "apotheosis:hellshelf",

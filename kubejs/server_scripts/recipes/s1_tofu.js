@@ -20,23 +20,14 @@ ServerEvents.recipes(event => {
     }, "pseudoedge_break_dawn:kumasakura")
         .id("sdbf:kumasakura_s1");
 
-    event.shaped($StructureQuill.forStructure("cavernous:lush_village"), [
+    event.shaped($StructureQuill.forStructure("tofucraft:tofu_castle"), [
         'AAA',
         'ABA',
         'AAA'
     ], {
         A: 'minecraft:paper',
-        B: '#minecraft:dirt'
-    }).id('sdbf:sq_lush_village_s1');
-
-    event.shaped($StructureQuill.forStructure("cavernous:stone_village"), [
-        'AAA',
-        'ABA',
-        'AAA'
-    ], {
-        A: 'minecraft:paper',
-        B: '#forge:cobblestone'
-    }).id('sdbf:sq_stone_village_s1');
+        B: 'tofucraft:tofugem'
+    }).id('sdbf:sq_tofu_castle_s1');
 
     event.custom({
         "type": "minecraft:smithing_transform",

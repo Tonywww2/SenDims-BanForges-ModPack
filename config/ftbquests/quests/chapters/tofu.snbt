@@ -49,8 +49,8 @@
 				item: "tofucraft:tofu_core"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 0.0d
+			x: 5.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["6140B0BCEB7F9D64"]
@@ -84,7 +84,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: -2.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["64402F8CC5046FCE"]
@@ -95,8 +95,8 @@
 				item: "tofucraft:tofumetal"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 0.0d
+			x: 2.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["6140B0BCEB7F9D64"]
@@ -106,7 +106,7 @@
 				item: "tofucraft:tofudiamond"
 				type: "item"
 			}]
-			x: 2.5d
+			x: 0.0d
 			y: 2.5d
 		}
 		{
@@ -204,11 +204,14 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: 2.5d
+			x: 2.5d
+			y: 5.0d
 		}
 		{
-			dependencies: ["2529CD2EF2A8961B"]
+			dependencies: [
+				"2529CD2EF2A8961B"
+				"5F7850D2932BFCBF"
+			]
 			id: "4023DE67F5B0579E"
 			tasks: [{
 				id: "103FC8EDEB8609A1"
@@ -245,8 +248,24 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
+			x: 0.0d
 			y: 5.0d
+		}
+		{
+			dependencies: [
+				"290B1AB065F93570"
+				"6140B0BCEB7F9D64"
+			]
+			dependency_requirement: "one_completed"
+			id: "5D34C0BD08F21024"
+			tasks: [{
+				id: "333A10973EBC12B3"
+				structure: "tofucraft:tofu_castle"
+				type: "structure"
+			}]
+			title: "豆腐城堡"
+			x: 7.5d
+			y: 0.0d
 		}
 	]
 	title: "世界是豆腐做的"
