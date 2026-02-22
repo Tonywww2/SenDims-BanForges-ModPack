@@ -22,5 +22,6 @@ ServerEvents.tags("entity_type", event => {
     };
 
     addSpaceEntity("minecraft:stray");
+    addSpaceEntity("powerful_dummy:test_dummy");
 
 })

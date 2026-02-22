@@ -38,7 +38,7 @@ const toRemoveID = new Set([
     "pseudoedge_break_dawn:kingblade",
     "slashblade_addon:nihil",
     "pseudoedge_break_dawn:kumasakura",
-    "foxextra:foxex_black",
+
     "foxextra:foxex_white",
     "pseudoedge_break_dawn:vitex",
     "slashblade:material/ingot",
@@ -58,9 +58,19 @@ const toRemoveID = new Set([
     "pseudoedge_break_dawn:xblades",
     "enderio:void_chassis",
 
+    // s3
     "slashblade:ruined_sword",
     "last_smith:bloodybamboo",
     "last_smith:goldenbamboo",
+    "slashblade:air_sword",
+    "foxextra:foxex_black",
+    "slashblade:kanze_masamune",
+    "slashblade:moonveil",
+    "slashblade:bizen_osafune_nagamitsu",
+    "energyblade:hf_blade",
+    "slashblade:dissociator",
+
+    "slashblade:rivers_of_blood",
 
     // 临时
     "apotheosis:hellshelf",

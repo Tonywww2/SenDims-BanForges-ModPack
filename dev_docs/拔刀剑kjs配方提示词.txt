@@ -34,9 +34,13 @@ event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
 
   }, "slashblade:fox_white"/* Resulting blade ID */)
 
+.id("sdbf:fox_white_s0")
 
 
-以上是kubejs格式的拔刀剑的配方，帮我把下面这个数据包格式的拔刀剑配方转换为kubejs格式：
+
+以上是kubejs格式的拔刀剑的配方，请学习并记住它的格式。
+
+一下是数据包格式的拔刀剑配方：
 
 {
 
@@ -102,4 +106,4 @@ event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
 
 }
 
-注意：刀的id为"slashblade_addon:wanderer"
+其中输出刀的id为"slashblade_addon:wanderer"，原料B的刀name为"slashblade:doutanuki"
