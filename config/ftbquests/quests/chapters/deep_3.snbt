@@ -35,7 +35,7 @@
 		{
 			id: "120D4CA11EF27859"
 			linked_quest: "572B2824EF41A64D"
-			x: 5.0d
+			x: 10.0d
 			y: 2.5d
 		}
 		{
@@ -105,6 +105,7 @@
 		{
 			dependencies: ["2E482B871B147DC6"]
 			id: "570094989A9F5456"
+			subtitle: "TODO: 怪物掉落"
 			tasks: [{
 				id: "78944C4C6CF1A7C8"
 				item: {
@@ -453,7 +454,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 5.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -645,12 +646,13 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
+			x: 10.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["2E482B871B147DC6"]
 			id: "447935D2ECCBD5D0"
+			subtitle: "TODO: 怪物掉落"
 			tasks: [{
 				id: "13D1AC3185B03046"
 				item: {

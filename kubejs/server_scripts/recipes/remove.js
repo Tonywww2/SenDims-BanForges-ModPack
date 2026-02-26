@@ -71,6 +71,13 @@ const toRemoveID = new Set([
     "slashblade:dissociator",
 
     "slashblade:rivers_of_blood",
+    "slashblade:clothesline",
+    "slashblade_addon:moonlight_cherry",
+    "slashblade_addon:green_mist",
+    "slashblade:hand_of_malenia",
+    "slashblade:ssa_kagari",
+    "slashblade:ssa_hayate",
+    "sjap_adder:toyoko",
 
     // 临时
     "apotheosis:hellshelf",
