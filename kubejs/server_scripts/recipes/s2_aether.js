@@ -67,24 +67,6 @@ ServerEvents.recipes(event => {
         .id("sdbf:purplesblade_s2")
 
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
-        "ABA",
-        "CDC",
-        "ACA"
-    ], {
-        "A": "minecraft:glowstone",
-        "B": ["minecraft:nether_star", 'deep_aether:stratus_ingot'],
-        "C": "minecraft:diamond_block",
-        "D": SlashBladeIngredient.of(
-            SlashBladeRequestDefinition.newInstance().name("slashblade:fox_white")
-                .killCount(1500)
-                .proudSoul(12000)
-                .refineCount(6)
-                .build()
-        )
-    }, "foxextra:foxex_white")
-        .id("sdbf:foxex_white_s2")
-
-    event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
         "ABC",
         "BDB",
         "CBC"

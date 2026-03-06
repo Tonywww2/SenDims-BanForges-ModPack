@@ -79,6 +79,9 @@ const toRemoveID = new Set([
     "slashblade:ssa_hayate",
     "sjap_adder:toyoko",
 
+    "sjap_adder:agito_true_ex",
+    "slashblade:ssa_roze",
+
     // 临时
     "apotheosis:hellshelf",
     "apotheosis:enchanting/infused_hellshelf",

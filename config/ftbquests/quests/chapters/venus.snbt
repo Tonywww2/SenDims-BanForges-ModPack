@@ -41,7 +41,7 @@
 		{
 			id: "2A4C4DE687954449"
 			linked_quest: "4125D318FED9C668"
-			x: 2.5d
+			x: 5.0d
 			y: 2.5d
 		}
 		{
@@ -136,12 +136,17 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["31341BED5E582FBF"]
+			dependencies: [
+				"31341BED5E582FBF"
+				"7D98EABF3232321E"
+			]
+			dependency_requirement: "one_completed"
 			icon: "ad_astra:mercury_globe"
 			id: "2C6833FA2E31DFF1"
 			size: 2.0d
 			tasks: [{
 				dimension: "ad_astra:mercury"
+				icon: "ad_astra:mercury_globe"
 				id: "28811AB008BC00A2"
 				title: "水星"
 				type: "dimension"
@@ -480,7 +485,7 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
+			x: 2.5d
 			y: 2.5d
 		}
 		{
