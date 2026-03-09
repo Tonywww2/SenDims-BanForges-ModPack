@@ -74,26 +74,6 @@ ServerEvents.recipes(event => {
         .id('sdbf:exorcism_ginkgo_s2')
 
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
-        " ID",
-        "SP ",
-        "BQ "
-    ], {
-        "B": SlashBladeIngredient.of(
-            SlashBladeRequestDefinition.newInstance()
-                .name("slashblade:doutanuki")
-                .refineCount(10)
-                .addEnchantment(SBEnchantmentDefinition.of("minecraft:fire_protection", 1))
-                .build()
-        ),
-        "D": 'ad_astra:mars_sand',
-        "I": 'ad_astra:conglomerate',
-        "P": "slashblade:proudsoul",
-        "Q": 'minecraft:packed_ice',
-        "S": "minecraft:snow_block"
-    }, "slashblade_addon:frosty_cherry")
-        .id('sdbf:frosty_cherry_s2')
-
-    event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
         "ABC",
         "BDB",
         "EBA"

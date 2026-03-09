@@ -81,6 +81,9 @@ const toRemoveID = new Set([
 
     "sjap_adder:agito_true_ex",
     "slashblade:ssa_roze",
+    "slashblade:ssa_raye",
+    "last_smith:evil_shura",
+    "sjap_adder:nihil_soul",
 
     // 临时
     "apotheosis:hellshelf",
