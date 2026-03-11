@@ -58,6 +58,18 @@ const toRemoveID = new Set([
     "pseudoedge_break_dawn:xblades",
     "enderio:void_chassis",
 
+    "pseudoedge_break_dawn:pseudosword",
+    "pseudoedge_break_dawn:blackpixie",
+    "pseudoedge_break_dawn:latent",
+
+    "slashblade_addon:yukari",
+    
+    "blades_derby:uma_odachi_haru",
+    "blades_derby:uma_odachi_halo",
+    "slashblade:egg_lan",
+
+    "slashblade_addon:kirisaya",
+
     // s3
     "slashblade:ruined_sword",
     "last_smith:bloodybamboo",
@@ -84,6 +96,16 @@ const toRemoveID = new Set([
     "slashblade:ssa_raye",
     "last_smith:evil_shura",
     "sjap_adder:nihil_soul",
+
+    "last_smith:nameless_odachi",
+    "last_smith:muramasa_kagura",
+    "sjap_adder:black_soul",
+    "last_smith:hakurouken",
+
+    "slashblade_addon:kamuy_none",
+    "last_smith:oboro_muramasa",
+    "last_smith:roukanken",
+    "pseudoedge_break_dawn:dragonblade",
 
     // 临时
     "apotheosis:hellshelf",

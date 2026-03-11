@@ -499,17 +499,6 @@
 		}
 		{
 			dependencies: ["5BB642BD0BE40541"]
-			id: "377759DBC15115C1"
-			tasks: [{
-				id: "22B60CC9AABD204F"
-				item: "minecraft:torchflower"
-				type: "item"
-			}]
-			x: -5.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["5BB642BD0BE40541"]
 			id: "3C8A6884B30E7AE7"
 			tasks: [{
 				id: "33FEE8AA231C94B7"

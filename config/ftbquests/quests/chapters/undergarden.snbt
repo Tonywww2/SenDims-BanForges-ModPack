@@ -20,6 +20,18 @@
 			x: 5.0d
 			y: 7.5d
 		}
+		{
+			id: "3C59F3E6932EAE66"
+			linked_quest: "4A5FF776DD643D73"
+			x: 10.0d
+			y: -2.5d
+		}
+		{
+			id: "7CE0B2E1492A6DB1"
+			linked_quest: "6988EF237AE411F0"
+			x: 2.5d
+			y: 10.0d
+		}
 	]
 	quests: [
 		{
@@ -44,8 +56,8 @@
 				item: "undergarden:froststeel_ingot"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 0.0d
+			x: 2.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["35A8F36675442F8B"]
@@ -89,7 +101,7 @@
 				item: "undergarden:forgotten_nugget"
 				type: "item"
 			}]
-			x: 0.0d
+			x: 2.5d
 			y: -5.0d
 		}
 		{
@@ -127,8 +139,8 @@
 				item: "undergarden:utherium_crystal"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -2.5d
+			x: -2.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["35A8F36675442F8B"]
@@ -138,7 +150,7 @@
 				item: "undergarden:regalium_crystal"
 				type: "item"
 			}]
-			x: -5.0d
+			x: 5.0d
 			y: 0.0d
 		}
 		{
@@ -164,8 +176,8 @@
 				item: "nuclearcraft:radaway"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 5.0d
+			x: 0.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["368D4A353C73D192"]
@@ -190,7 +202,10 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["3434AD43BC82144D"]
+			dependencies: [
+				"3434AD43BC82144D"
+				"4A5FF776DD643D73"
+			]
 			id: "3ED64EBDF663056D"
 			tasks: [{
 				id: "35233790D7363271"
@@ -265,12 +280,13 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: 0.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
 				"549AFEC23C09BA81"
 				"3ED64EBDF663056D"
+				"77521D83617F9CBA"
 			]
 			id: "7FC6F9952EA26493"
 			tasks: [{
@@ -450,6 +466,8 @@
 			dependencies: [
 				"00880D674BE17F9A"
 				"2F67DCF5EC57FDC2"
+				"196B8B560D6681EC"
+				"6988EF237AE411F0"
 			]
 			id: "7D800CACE4E69CFF"
 			tasks: [{
@@ -534,7 +552,11 @@
 			y: 7.5d
 		}
 		{
-			dependencies: ["2DFEC40399DF07EC"]
+			dependencies: [
+				"2DFEC40399DF07EC"
+				"6974BDB798A698A6"
+				"4384A4237A88E317"
+			]
 			id: "3434AD43BC82144D"
 			tasks: [{
 				id: "157C7D1414337A47"
@@ -542,7 +564,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 0.0d
+			y: -2.5d
 		}
 	]
 	title: "深园与废土"

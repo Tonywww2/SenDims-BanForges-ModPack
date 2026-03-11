@@ -91,7 +91,7 @@ ServerEvents.recipes(event => {
     ], {
         "B": "minecraft:blaze_powder",
         "C": SlashBladeIngredient.of(
-            SlashBladeRequestDefinition.newInstance().name("slashblade:ruby")
+            SlashBladeRequestDefinition.newInstance().name("blades_derby:uma_odachi_haru")
                 .addEnchantment(SBEnchantmentDefinition.of("minecraft:looting", 1))
                 .build()
         ),
@@ -110,7 +110,7 @@ ServerEvents.recipes(event => {
     ], {
         "B": "minecraft:blaze_powder",
         "C": SlashBladeIngredient.of(
-            SlashBladeRequestDefinition.newInstance().name("slashblade:ruby")
+            SlashBladeRequestDefinition.newInstance().name("blades_derby:uma_odachi_halo")
                 .addEnchantment(SBEnchantmentDefinition.of("minecraft:smite", 1))
                 .build()
         ),
@@ -121,6 +121,75 @@ ServerEvents.recipes(event => {
         "W": "#forge:crops/wheat"
     }, "slashblade:fox_black")
         .id("sdbf:fox_black_s2")
+
+    event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
+        " JS",
+        "JSW",
+        "BWG"
+    ], {
+        "J": "umapyoi:jewel",
+        "S": "slashblade:proudsoul_ingot",
+        "G": 'aether:ambrosium_shard',
+        "W": "#forge:dyes/white",        // 使用 Tag (Using Tag)
+        "B": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("slashblade:ruby")
+                .killCount(113)
+                .proudSoul(113)
+                .refineCount(10)            // 要求：10 锻造 (Refine Count)
+                .addEnchantment(SBEnchantmentDefinition.of("minecraft:smite", 1))
+                .build()
+        )
+    }, "blades_derby:uma_odachi_haru")
+        .id("sdbf:uma_odachi_haru_s2")
+
+    event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
+        " JS",
+        "JSW",
+        "BWG"
+    ], {
+        "J": "umapyoi:jewel",
+        "S": 'aether:ambrosium_shard',
+        "W": "#forge:dyes/white",      // 使用 Tag (Using Tag)
+        "G": "slashblade:proudsoul",   // 注意：此处为耀魂 (Proudsoul)
+        "B": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("slashblade:ruby")
+                .refineCount(10)          // 要求：10 锻造 (Refine Count)
+                .addEnchantment(SBEnchantmentDefinition.of("minecraft:smite", 1))
+                .build()
+        )
+    }, "blades_derby:uma_odachi_halo")
+        .id("sdbf:uma_odachi_halo_s2")
+
+    event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
+        "ABC",
+        "BDB",
+        "GBF"
+    ], {
+        "A": '#c:dyed/blue',
+        "B": 'deep_aether:metal_mixture',
+        "C": 'framedblocks:framed_blueprint',
+        "F": 'quark:light_blue_framed_glass',
+        "D": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("sjap_adder:break_moon")
+                .killCount(77)
+                .proudSoul(17777)
+                .refineCount(7)
+                .addEnchantment(SBEnchantmentDefinition.of("minecraft:smite", 4)) // 亡灵杀手 IV
+                .build()
+        ),
+        "G": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("blades_derby:uma_odachi_haru")
+                .killCount(114)
+                .proudSoul(114)
+                .addEnchantment(SBEnchantmentDefinition.of("minecraft:sharpness", 4))
+                .build()
+        )
+    }, "slashblade:egg_lan")
+        .id("kubejs:slashblade/egg_lan")
 
     event.custom({
         "type": "slashblade:slashblade_smithing",

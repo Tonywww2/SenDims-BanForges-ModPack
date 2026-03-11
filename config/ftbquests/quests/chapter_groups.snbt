@@ -4,8 +4,8 @@
 		{ id: "0937198EE94F2B97", title: "战斗技巧" }
 		{ id: "70C8850B64AECE42", title: "后勤准备" }
 		{ id: "49FC4157519361C1", title: "2. 探窟" }
-		{ id: "2D698D2001694314", title: "3. 世界的历史[WIP]" }
-		{ id: "35DD57C332D61BB0", title: "4. 迈向星海[WIP]" }
-		{ id: "72FC493D243DC969", title: "5. 最终极旋涡[WIP]" }
+		{ id: "2D698D2001694314", title: "3. 世界" }
+		{ id: "35DD57C332D61BB0", title: "4. 星海[WIP]" }
+		{ id: "72FC493D243DC969", title: "5. 终极[WIP]" }
 	]
 }

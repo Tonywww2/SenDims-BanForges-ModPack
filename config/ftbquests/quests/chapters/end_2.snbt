@@ -190,7 +190,10 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["5EEA2C8F11FB0470"]
+			dependencies: [
+				"5EEA2C8F11FB0470"
+				"7174346AD8DCFBEC"
+			]
 			id: "2354F158B208830E"
 			tasks: [{
 				id: "10B2409D30863409"
@@ -867,6 +870,7 @@
 			dependencies: [
 				"7EBECD450AEF2EEC"
 				"6120DF977C2DFEA2"
+				"29D461E6CF745312"
 			]
 			id: "1152A96652FA7C8F"
 			tasks: [{
@@ -1086,6 +1090,17 @@
 			}]
 			x: 7.5d
 			y: 7.5d
+		}
+		{
+			dependencies: ["76C5347D28B53D00"]
+			id: "29D461E6CF745312"
+			tasks: [{
+				id: "588F981E6B346D5C"
+				item: "slashblade:proudsoul_sphere"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 5.0d
 		}
 	]
 	title: "末地"
