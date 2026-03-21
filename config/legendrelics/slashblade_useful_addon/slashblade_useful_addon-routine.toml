@@ -33,4 +33,7 @@ damage_random = false
 let_go = false
 #瞬步扣血开启后是否是sst模式，需开启瞬步扣血后才生效
 let_go_sst = false
+#快刀无感模块缓慢等级
+#Range: 1 ~ 255
+movement_slowdown_level = 3
 

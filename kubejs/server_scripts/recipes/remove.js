@@ -23,6 +23,9 @@ const toRemoveID = new Set([
     "thermal:machine_frame",
     "thermal:rf_coil",
     "ad_astra:desh_engine",
+    "nuclearcraft:plate_basic2",
+    "nuclearcraft:plate_basic",
+
     "slashblade_addon:wanderer",
     "cialloblade:ciallo",
     "slashblade:muramasa",

@@ -6,9 +6,7 @@
   "biomes": {
     "minecraft:overworld": {
       "allow_list": false,
-      "elements": [
-        "minecraft:*ocean*"
-      ]
+      "elements": []
     },
     "minecraft:the_nether": {
       "allow_list": false,
@@ -43,7 +41,7 @@
   // 
   // The offset from 0, 0 to generate the islands
   // Can be used to generate them in the middle of .mca files
-  "offset": 0,
+  "offset": 128,
   
   // Prevent scheduled ticks after generating the island
   "preventScheduledTicks": true,

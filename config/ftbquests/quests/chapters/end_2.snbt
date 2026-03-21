@@ -38,6 +38,12 @@
 			x: 10.0d
 			y: 7.5d
 		}
+		{
+			id: "6698CEA2581A5D1B"
+			linked_quest: "69997238A9B0874C"
+			x: -7.5d
+			y: 2.5d
+		}
 	]
 	quests: [
 		{
@@ -1092,7 +1098,10 @@
 			y: 7.5d
 		}
 		{
-			dependencies: ["76C5347D28B53D00"]
+			dependencies: [
+				"76C5347D28B53D00"
+				"69997238A9B0874C"
+			]
 			id: "29D461E6CF745312"
 			tasks: [{
 				id: "588F981E6B346D5C"

@@ -19,12 +19,13 @@ ServerEvents.recipes(event => {
         '3x minecraft:blaze_powder'
     ]).id('sdbf:proudsoul_ingot')
 
-    // TODO 替换基岩为真正的材料
     event.recipes.slashblade.proudsoul_shapeless_recipe('slashblade:proudsoul_sphere', [
+        '2x integrateddynamics:proto_chorus',
         '3x slashblade:proudsoul_ingot',
-        'minecraft:bedrock'
+        '4x nuclearcraft:borax_dust'
     ]).id("sdbf:proudsoul_sphere")
 
+    // TODO 替换基岩为真正的材料
     event.recipes.slashblade.proudsoul_shapeless_recipe('slashblade:proudsoul_crystal', [
         '3x slashblade:proudsoul_sphere',
         'minecraft:bedrock'
@@ -36,8 +37,9 @@ ServerEvents.recipes(event => {
     ]).id("sdbf:proudsoul_trapezohedron")
 
     event.recipes.thermal.smelter('slashblade:proudsoul_sphere', [
+        'integrateddynamics:proto_chorus',
         '2x slashblade:proudsoul_ingot',
-        'minecraft:bedrock'
+        '3x nuclearcraft:borax_dust'
     ])
         .energy(8192)
         .id("sdbf:proudsoul_sphere_acc")

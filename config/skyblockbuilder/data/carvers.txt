@@ -22,6 +22,7 @@ nullscape:strip
 nullscape:strip2
 nullscape:strip3
 nullscape:strip4
+terralith:deep_ravine
 tofucraft:tofu_canyon
 tofucraft:tofu_cave
 tofucraft:tofu_cave_extra_underground

@@ -36,7 +36,7 @@
   
   // If set to true, the first island will not be generated at 0 ~ 0, but start with the next coordinate.
   // Useful if end dimension is used for spawns.
-  "skipCenterIslandCreation": false,
+  "skipCenterIslandCreation": true,
   
   // A list of event types which will be prevented:
   //    interact_entities = Interacting with entities, e.g. riding a pig
@@ -63,7 +63,7 @@
   ],
   
   // The radius of chunks where to apply spawn protection. In this area, only op players can avoid this.
-  "spawnProtectionRadius": 0,
+  "spawnProtectionRadius": 1,
   
   "Height": {
   
@@ -74,7 +74,7 @@
     // You can set a range from minY to maxY. minY is the bottom spawn position. maxY is the top spawn dimension.
     // If you set the spawn height type to "set", the bottom value will be used for a set height. Otherwise, the height will be calculated.
     "range": {
-      "bottom": 64,
+      "bottom": 300,
       "top": 319
     },
     

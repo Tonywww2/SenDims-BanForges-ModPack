@@ -1,0 +1,429 @@
+{
+	autofocus_id: "713CA11C25A8A2E2"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "overworld"
+	group: "35DD57C332D61BB0"
+	icon: "minecraft:grass_block"
+	id: "0C53D6BD3F0492CE"
+	order_index: 4
+	quest_links: [
+		{
+			id: "37B254058A5A03A9"
+			linked_quest: "4138021AE4A37632"
+			x: -2.5d
+			y: -5.0d
+		}
+		{
+			id: "4790F3EABEF4816F"
+			linked_quest: "6F69543F135C4821"
+			x: 2.5d
+			y: -5.0d
+		}
+		{
+			id: "747EC02DCCCE8B6B"
+			linked_quest: "76BFA745E2BBDC7E"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			id: "2F8163CAF3CA88B7"
+			linked_quest: "49631F88EAF0261B"
+			x: -7.5d
+			y: 0.0d
+		}
+		{
+			id: "5A61B70E0AFC739F"
+			linked_quest: "59F17F34F831D72E"
+			x: -2.5d
+			y: 5.0d
+		}
+		{
+			id: "4BB71D858C20E13C"
+			linked_quest: "35F111CC582779BA"
+			x: -7.5d
+			y: 5.0d
+		}
+		{
+			id: "70BFABDE8B32AB32"
+			linked_quest: "3AE144DD58D30985"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			id: "1D781396B27D637E"
+			linked_quest: "2354F158B208830E"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			id: "45BFC3AC6BDCC003"
+			linked_quest: "65379794AA782C5B"
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			id: "3A1C36690AE2AFBE"
+			linked_quest: "4FD299D688A0A92A"
+			x: 7.5d
+			y: 5.0d
+		}
+	]
+	quests: [
+		{
+			dependencies: ["07AEFF9468658A0C"]
+			description: ["现在你可以突破世界力场了"]
+			id: "713CA11C25A8A2E2"
+			size: 2.0d
+			tasks: [{
+				id: "78BD4E045EB397EB"
+				type: "checkmark"
+			}]
+			title: "着陆"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "07AEFF9468658A0C"
+			tasks: [{
+				id: "1DB3014F496DB10E"
+				item: "kubejs:anchor_shard"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["713CA11C25A8A2E2"]
+			id: "641BAE5B4E3ED25C"
+			tasks: [{
+				id: "5322BC1F7194E0F5"
+				item: "kubejs:ml_computing_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"641BAE5B4E3ED25C"
+				"4138021AE4A37632"
+				"6F69543F135C4821"
+			]
+			id: "093A3A5A5BBB3A44"
+			tasks: [{
+				id: "7EC52EDE3BF9C786"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "foxextra:model/foxex/model2.obj"
+							RepairCounter: 0
+							SpecialAttackType: "foxextra:sakura_endex"
+							SpecialEffects: [
+								"foxextra:summonsword"
+								"foxextra:foxbling"
+							]
+							StandbyRenderType: 1b
+							SummonedSwordColor: -589569
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "foxextra:model/foxex/texture3.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 25.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 2000
+							proudSoul: 0
+							translationKey: "item.foxextra.foxexfinal"
+						}
+					}
+					id: "slashblade:slashblade"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:smite"
+								lvl: 10s
+							}
+							{
+								id: "minecraft:bane_of_arthropods"
+								lvl: 10s
+							}
+							{
+								id: "minecraft:sharpness"
+								lvl: 10s
+							}
+							{
+								id: "minecraft:fire_aspect"
+								lvl: 5s
+							}
+							{
+								id: "minecraft:unbreaking"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:power"
+								lvl: 5s
+							}
+						]
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "foxextra:model/foxex/model2.obj"
+							RepairCounter: 0
+							SpecialAttackType: "foxextra:sakura_endex"
+							SpecialEffects: [
+								"foxextra:summonsword"
+								"foxextra:foxbling"
+							]
+							StandbyRenderType: 1b
+							SummonedSwordColor: -589569
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "foxextra:model/foxex/texture3.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 25.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 2000
+							proudSoul: 0
+							translationKey: "item.foxextra.foxexfinal"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"07AEFF9468658A0C"
+				"76BFA745E2BBDC7E"
+				"49631F88EAF0261B"
+				"59F17F34F831D72E"
+				"35F111CC582779BA"
+			]
+			id: "672F4EFC4C5F2A46"
+			tasks: [{
+				id: "727948017514565E"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade_addon:model/nihil/nihil.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:wave_edge"
+							SpecialEffects: [
+								"last_smith:extra_sharpness"
+								"sjap_adder:wave_edge_rise_up"
+							]
+							StandbyRenderType: 1b
+							SummonedSwordColor: -589569
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "sjap_adder:model/nihill/nihilul.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 16.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 300
+							proudSoul: 0
+							translationKey: "item.sjap_adder.nihilulex"
+						}
+					}
+					id: "slashblade:slashblade"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:unbreaking"
+								lvl: 5s
+							}
+							{
+								id: "minecraft:smite"
+								lvl: 10s
+							}
+							{
+								id: "minecraft:looting"
+								lvl: 5s
+							}
+						]
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade_addon:model/nihil/nihil.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:wave_edge"
+							SpecialEffects: [
+								"last_smith:extra_sharpness"
+								"sjap_adder:wave_edge_rise_up"
+							]
+							StandbyRenderType: 1b
+							SummonedSwordColor: -589569
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "sjap_adder:model/nihill/nihilul.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 16.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 300
+							proudSoul: 0
+							translationKey: "item.sjap_adder.nihilulex"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"07AEFF9468658A0C"
+				"3AE144DD58D30985"
+				"2354F158B208830E"
+				"65379794AA782C5B"
+				"4FD299D688A0A92A"
+			]
+			id: "6F63F683A1A658B9"
+			tasks: [{
+				id: "5EB7F85396EFDBD8"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade_addon:model/kamuy/kamuy.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade_addon:lighting_swords"
+							StandbyRenderType: 2b
+							SummonedSwordColor: -333568
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "slashblade_addon:model/kamuy/lightning.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 7.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 50
+							proudSoul: 0
+							translationKey: "item.slashblade_addon.kamuy_lightning"
+						}
+					}
+					id: "slashblade:slashblade"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:unbreaking"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:smite"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:feather_falling"
+								lvl: 1s
+							}
+						]
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade_addon:model/kamuy/kamuy.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade_addon:lighting_swords"
+							StandbyRenderType: 2b
+							SummonedSwordColor: -333568
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "slashblade_addon:model/kamuy/lightning.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 7.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 50
+							proudSoul: 0
+							translationKey: "item.slashblade_addon.kamuy_lightning"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.5d
+		}
+	]
+	title: "空岛之下"
+}
