@@ -4,6 +4,8 @@
  * 生物对应的模板
  */
 const mobTypes = {
+    'productivebees:configurable_bee': type0,
+
     'tofucraft:shudofuspider': typeB,
     'tofucraft:fukumame_thower': typeA,
     'tofucraft:zundamite': typeB,
@@ -22,6 +24,12 @@ const mobTypes = {
     "minecraft:enderman": typeC,
     "minecraft:iron_golem": typeC,
     "minecraft:warden": typeCEX2,
+
+    "species:wicked": typeC,
+    "species:cliff_hanger": typeB,
+    "species:limpet": typeA,
+    "species:quake": typeD,
+    "minecraft:villager": typeA,
 
     "twilightforest:towerwood_borer": typeB,
     "twilightforest:carminite_broodling": typeB,
@@ -185,10 +193,17 @@ const mobTypes = {
     "minecraft:hoglin": typeC,
     "minecraft:zoglin": typeC,
     "minecraft:magma_cube": typeSlime,
+    "minecraft:strider": type0,
+    "quark:foxhound": typeB,
+    "thermal:basalz": typeA,
 
     "cataclysm:netherite_monstrosity": bossType2,
 
     "ad_astra:martian_raptor": typeC,
+
+    "minecraft:phantom": typeB,
+    "minecraft:evoker": typeA,
+    "minecraft:vex": typeSlime,
 
     "minecraft:ender_dragon": bossType2,
 
@@ -198,8 +213,25 @@ const mobTypes = {
     "ad_astra:zombified_mogler": typeC,
 
     "nuclearcraft:feral_ghoul": typeA,
+    "undergarden:rotbeast": typeC,
+    "undergarden:rotling": typeB,
+    "undergarden:rotwalker": typeA,
+    "undergarden:forgotten": typeD,
+    "undergarden:minion": typeD,
+    "undergarden:sploogie": typeSlime,
+    "undergarden:nargoyle": typeB,
+    "undergarden:muncher": typeA,
+    
+    "undergarden:brute": type0,
+    "undergarden:scintling": typeSlime,
+    "undergarden:gwib": type0,
+    "undergarden:gwibling": type0,
+    "undergarden:stoneborn": typeA,
+    "undergarden:mog": type0,
+    "undergarden:dweller": type0,
 
-    "nuclearcraft:feral_ghoul_boss": bossType1
+    "undergarden:forgotten_guardian": bossType1,
+    "nuclearcraft:feral_ghoul_boss": bossType2
 
 };
 /**

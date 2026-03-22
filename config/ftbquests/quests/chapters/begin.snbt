@@ -26,6 +26,12 @@
 			x: -7.5d
 			y: -7.5d
 		}
+		{
+			id: "4413A8820A84AB93"
+			linked_quest: "71F1943E6E3FCA17"
+			x: -10.0d
+			y: -5.0d
+		}
 	]
 	quests: [
 		{
@@ -320,105 +326,6 @@
 			y: -5.0d
 		}
 		{
-			dependencies: ["52726CE2A2740BF7"]
-			description: [
-				"&d深境证章&r是前往&d深境&r的门票，他也可以为你提供大量的常驻属性。"
-				""
-				"你可以消耗一些&b稀有材料&r，填充/填补&d深境证章&r，提高提供的属性。"
-				"当你填充/填补了一定数量的&b稀有材料&r之后，你将暂时无法继续填充/填补&d深境证章&r，直到你使用一些更为珍贵的&b突破材料&r突破当前的上限。"
-				"每一次突破，都会提高&d深境证章&r的填充/填补上限，并给予一些额外的特殊属性。"
-				""
-				"用对应的材料材料右键&d深境证章&r吧。"
-				""
-				"探索世界，慢慢填补&d深境证章&r吧......"
-			]
-			icon: {
-				Count: 1
-				id: "slashblade_sendims:deeprealm_certificate"
-				tag: {
-					deeprealm: {
-						damage_rate_progress: 0
-						health_progress: 0
-						rank: 0
-					}
-				}
-			}
-			id: "71F1943E6E3FCA17"
-			shape: "hexagon"
-			subtitle: "重要"
-			tasks: [{
-				id: "21031CE0DA554B68"
-				type: "checkmark"
-			}]
-			title: "深境证章的信息"
-			x: -10.0d
-			y: -5.0d
-		}
-		{
-			dependencies: ["71F1943E6E3FCA17"]
-			description: ["提示：你可以点击任务的需求查看所有可用的材料。"]
-			icon: "minecraft:gold_ingot"
-			id: "4493C85E7045BD4E"
-			tasks: [{
-				id: "3D787EE52A133ADF"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "slashblade_sendims:drc_damage_material_0"
-					}
-				}
-				title: "阶级-无-伤害强化材料"
-				type: "item"
-			}]
-			title: "阶级-无-伤害强化材料"
-			x: -10.0d
-			y: -7.5d
-		}
-		{
-			dependencies: ["71F1943E6E3FCA17"]
-			description: ["提示：你可以点击任务的需求查看所有可用的材料。"]
-			icon: "minecraft:iron_ingot"
-			id: "15C68C343213D8FC"
-			tasks: [{
-				id: "6BF0A9CEC0C54BA8"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "slashblade_sendims:drc_health_material_0"
-					}
-				}
-				title: "阶级-无-生命强化材料"
-				type: "item"
-			}]
-			title: "阶级-无-生命强化材料"
-			x: -10.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["71F1943E6E3FCA17"]
-			description: ["提示：你可以点击任务的需求查看所有可用的材料。"]
-			icon: "minecraft:diamond_block"
-			id: "421132E2C3F4644D"
-			shape: "hexagon"
-			tasks: [{
-				id: "272F9248D3005FF7"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "slashblade_sendims:drc_rank_material_1"
-					}
-				}
-				title: "阶级-无-突破材料"
-				type: "item"
-			}]
-			title: "阶级-无-突破材料"
-			x: -12.5d
-			y: -5.0d
-		}
-		{
 			dependencies: ["13B6F6AC7608F794"]
 			description: [
 				"苔藓蕴含着可能性，而祂们又无法观测自身。"
@@ -516,10 +423,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"5BDFD8CB35D8AFC6"
-				"52726CE2A2740BF7"
-			]
+			dependencies: ["52726CE2A2740BF7"]
 			dependency_requirement: "one_completed"
 			description: ["提示：推荐在深境一层挖掘铁矿。"]
 			id: "73531FB69122489F"
@@ -531,48 +435,6 @@
 			}]
 			x: -7.5d
 			y: -2.5d
-		}
-		{
-			dependencies: ["421132E2C3F4644D"]
-			description: ["提示：你可以点击任务的需求查看所有可用的材料。"]
-			icon: "twilightforest:steeleaf_ingot"
-			id: "65E69FE440848B78"
-			tasks: [{
-				id: "0F7B2AA9BA10E65E"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "slashblade_sendims:drc_health_material_1"
-					}
-				}
-				title: "阶级-1-生命强化材料"
-				type: "item"
-			}]
-			title: "阶级-1-生命强化材料"
-			x: -12.5d
-			y: -2.5d
-		}
-		{
-			dependencies: ["421132E2C3F4644D"]
-			description: ["提示：你可以点击任务的需求查看所有可用的材料。"]
-			icon: "minecraft:diamond"
-			id: "18416B89AC3BF527"
-			tasks: [{
-				id: "4E3DC197D895BEB5"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "slashblade_sendims:drc_damage_material_1"
-					}
-				}
-				title: "阶级-1-伤害强化材料"
-				type: "item"
-			}]
-			title: "阶级-1-伤害强化材料"
-			x: -12.5d
-			y: -7.5d
 		}
 		{
 			dependencies: ["62C0631125654B3D"]
@@ -610,27 +472,6 @@
 			}]
 			x: 7.5d
 			y: -2.5d
-		}
-		{
-			dependencies: ["421132E2C3F4644D"]
-			icon: "minecraft:nether_star"
-			id: "047BB42636510BA1"
-			shape: "hexagon"
-			tasks: [{
-				id: "6E9B36DC97B9E52B"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "slashblade_sendims:drc_rank_material_2"
-					}
-				}
-				title: "阶级-1-突破材料"
-				type: "item"
-			}]
-			title: "阶级-1-突破材料"
-			x: -15.0d
-			y: -5.0d
 		}
 		{
 			dependencies: ["0B0F1D8BE89F8980"]
@@ -675,48 +516,6 @@
 			}]
 			x: -2.5d
 			y: -7.5d
-		}
-		{
-			dependencies: ["047BB42636510BA1"]
-			description: ["提示：你可以点击任务的需求查看所有可用的材料。"]
-			icon: "minecraft:netherite_ingot"
-			id: "30685C1409FDBDFF"
-			tasks: [{
-				id: "35A2551107F0DDD7"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "slashblade_sendims:drc_damage_material_2"
-					}
-				}
-				title: "阶级-2-伤害强化材料"
-				type: "item"
-			}]
-			title: "阶级-2-伤害强化材料"
-			x: -15.0d
-			y: -7.5d
-		}
-		{
-			dependencies: ["047BB42636510BA1"]
-			description: ["提示：你可以点击任务的需求查看所有可用的材料。"]
-			icon: "ftbquests:barrier"
-			id: "75381D6628B9BB4F"
-			tasks: [{
-				id: "4F755AC7EB6141ED"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "slashblade_sendims:drc_health_material_2"
-					}
-				}
-				title: "阶级-2-生命强化材料"
-				type: "item"
-			}]
-			title: "阶级-2-生命强化材料"
-			x: -15.0d
-			y: -2.5d
 		}
 		{
 			dependencies: ["6FD736B74327F2AF"]

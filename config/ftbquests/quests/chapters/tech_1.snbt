@@ -838,14 +838,14 @@
 			y: 22.5d
 		}
 		{
-			dependencies: ["58F48888F1039B24"]
+			dependencies: ["088AF6E3F4AA7E3B"]
 			id: "74388B1FF26F530C"
 			tasks: [{
 				id: "686BDE0F00B1B014"
 				item: "nuclearcraft:plate_basic"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -5.0d
 			y: 25.0d
 		}
 		{
@@ -925,7 +925,7 @@
 				item: "nuclearcraft:alloy_smelter"
 				type: "item"
 			}]
-			x: -5.0d
+			x: -7.5d
 			y: 25.0d
 		}
 		{
@@ -936,7 +936,7 @@
 				item: "nuclearcraft:tough_alloy_ingot"
 				type: "item"
 			}]
-			x: -7.5d
+			x: -10.0d
 			y: 25.0d
 		}
 		{
@@ -947,7 +947,7 @@
 				item: "nuclearcraft:plate_advanced"
 				type: "item"
 			}]
-			x: -10.0d
+			x: -12.5d
 			y: 25.0d
 		}
 		{
@@ -958,7 +958,7 @@
 				item: "nuclearcraft:chassis"
 				type: "item"
 			}]
-			x: -7.5d
+			x: -10.0d
 			y: 22.5d
 		}
 		{
@@ -972,8 +972,19 @@
 				item: "nuclearcraft:rock_crusher"
 				type: "item"
 			}]
-			x: -10.0d
+			x: -12.5d
 			y: 22.5d
+		}
+		{
+			dependencies: ["58F48888F1039B24"]
+			id: "088AF6E3F4AA7E3B"
+			tasks: [{
+				id: "3EA1E706616DEC28"
+				item: "nuclearcraft:manufactory"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 25.0d
 		}
 	]
 	title: "工业"

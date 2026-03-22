@@ -1,4 +1,15 @@
 ServerEvents.recipes(event => {
+    
+    event.shaped('kubejs:mercury_refractory_structural_component', [
+        'ABA',
+        'BCB',
+        'ADA'
+    ], {
+        A: 'ad_astra:mercury_stone',
+        B: 'nuclearcraft:target_chamber_casing',
+        C: 'ad_astra:calorite_tank',
+        D: 'ad_astra:calorite_engine'
+    }).id('sdbf:mercury_refractory_structural_component_s3')
 
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
         "ABD",

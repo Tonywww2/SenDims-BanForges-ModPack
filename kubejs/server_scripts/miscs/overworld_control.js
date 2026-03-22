@@ -79,7 +79,10 @@ PlayerEvents.tick(event => {
 
     if (player.getBlockY() < 280) {
         player.teleportTo(TARGET_DIM, SPAWN_X + 0.5, PLAYER_Y, SPAWN_Z + 0.5, 0, 0);
-
+        
+        player.potionEffects.add('minecraft:wither', 200, 0);
+        player.potionEffects.add('minecraft:blindness', 200, 0);
+        player.potionEffects.add('minecraft:nausea', 200, 0);
         player.tell('You are forbided, wait for the future task. ');
     }
 

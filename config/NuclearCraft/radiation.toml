@@ -27,7 +27,7 @@
 	biome_radiation = ["nuclearcraft:wasteland|40000", "minecraft:nether_wastes|10000"]
 	#Natural radiation per dimension: uRad
 	#Format: dim_id|radiation
-	dimension_radiation = ["nuclearcraft:wasteland|50000", "minecraft:the_nether|5000"]
+	dimension_radiation = ["nuclearcraft:wasteland|50000", "minecraft:the_nether|5000", "undergarden:undergarden|50000"]
 	#Interval between radiation updates in ticks. 20 ticks = 1 second.
 	#Bigger interval - less lag, but less accurate radiation decay.
 	#Range: 2 ~ 1000

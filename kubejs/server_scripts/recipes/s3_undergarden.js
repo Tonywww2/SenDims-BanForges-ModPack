@@ -11,6 +11,24 @@ ServerEvents.recipes(event => {
     }).keepIngredient('twilightforest:lamp_of_cinders')
         .id('sdbf:catalyst_s3')
 
+    event.shaped('kubejs:coil_of_sorrow', [
+        'CBA',
+        'B B',
+        'ABC'
+    ], {
+        A: '#forge:ingots/froststeel',
+        B: '#forge:ingots/cloggrum',
+        C: '#forge:nuggets/forgotten_metal'
+    }).id('sdbf:coil_of_sorrow_s3')
+
+    event.recipes.thermal.smelter('kubejs:coil_of_sorrow', [
+        '27x #forge:nuggets/cloggrum',
+        '18x #forge:nuggets/froststeel',
+        '#forge:nuggets/forgotten_metal'
+    ])
+        .energy(8192)
+        .id("sdbf:coil_of_sorrow_s3_acc")
+
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
         "GAB",
         "CDC",

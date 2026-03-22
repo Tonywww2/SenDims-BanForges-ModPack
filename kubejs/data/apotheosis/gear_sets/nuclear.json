@@ -1,0 +1,74 @@
+{
+    "weight": 100,
+    "mainhands":
+    [
+        {
+            "weight": 2,
+            "stack":
+            {
+                "item": "minecraft:iron_pickaxe"
+            }
+        },
+        {
+            "weight": 2,
+            "stack":
+            {
+                "item": "nuclearcraft:spaxelhoe_thorium"
+            }
+        }
+    ],
+    "offhands":
+    [
+        {
+            "weight": 1,
+            "stack":
+            {
+                "item": "nuclearcraft:geiger_counter"
+            }
+        }
+    ],
+    "boots":
+    [
+        {
+            "weight": 1,
+            "stack":
+            {
+                "item": "nuclearcraft:hazmat_boots"
+            }
+        }
+    ],
+    "leggings":
+    [
+        {
+            "weight": 1,
+            "stack":
+            {
+                "item": "nuclearcraft:hazmat_pants"
+            }
+        }
+    ],
+    "chestplates":
+    [
+        {
+            "weight": 1,
+            "stack":
+            {
+                "item": "nuclearcraft:hazmat_chest"
+            }
+        }
+    ],
+    "helmets":
+    [
+        {
+            "weight": 1,
+            "stack":
+            {
+                "item": "nuclearcraft:hazmat_mask"
+            }
+        }
+    ],
+    "tags":
+    [
+        "nuclear"
+    ]
+}

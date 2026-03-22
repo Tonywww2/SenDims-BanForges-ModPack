@@ -22,7 +22,10 @@ EntityEvents.spawned(event => {
     entity.forgePersistentData.putString('sbsd.diff', dimStage);
     // console.log(name)
     let mobType = mobTypes[name];
-    if (!mobType) mobType = type0;
+    if (!mobType) {
+        mobType = type0;
+        console.log(name + " does not have a mobtype!")
+    }
     let mobValues = mobType[dimStage];
     if (!mobValues) mobValues = mobType["0_1"];
     let additionalScale = additionalStageScale[dimStage];

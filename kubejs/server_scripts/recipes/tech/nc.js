@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
 
-    event.shaped('nuclearcraft:plate_basic', [
+    event.shaped('3x nuclearcraft:plate_basic', [
         'ABA',
         'BCB',
         'ABA'

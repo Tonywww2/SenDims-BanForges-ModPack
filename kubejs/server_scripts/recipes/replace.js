@@ -34,6 +34,11 @@ ServerEvents.recipes(event => {
         '#forge:gems/certus_quartz'
     );
     
+    event.replaceInput({id : 'nuclearcraft:manufactory'}, 
+        "minecraft:redstone",
+        'integrateddynamics:energy_battery'
+    );
+    
     event.replaceInput({}, 
         'minecraft:enchanting_table',
         'ad_astra:moon_globe'

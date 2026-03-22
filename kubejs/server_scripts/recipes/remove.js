@@ -25,6 +25,7 @@ const toRemoveID = new Set([
     "ad_astra:desh_engine",
     "nuclearcraft:plate_basic2",
     "nuclearcraft:plate_basic",
+    "ancient_aether:enchanting_table_from_gravitite",
 
     "slashblade_addon:wanderer",
     "cialloblade:ciallo",
