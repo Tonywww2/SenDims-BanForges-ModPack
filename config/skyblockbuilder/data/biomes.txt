@@ -207,6 +207,7 @@ sdbf:asteroid_belt/asteroid_belt
 sdbf:dune_sea
 sdbf:eroded_plains
 sdbf:hydrogen_basin
+sdbf:sacred_rubber_canopy
 sdbf:storm_basin
 sdbf:yardang_ridges
 terrablender:deferred_placeholder

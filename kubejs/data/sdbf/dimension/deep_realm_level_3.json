@@ -1,0 +1,12 @@
+{
+  "type": "sdbf:deep_realm_level_3",
+  "generator": {
+    "type": "minecraft:noise",
+    "seed": 0,
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "sdbf:sacred_rubber_canopy"
+    },
+    "settings": "sdbf:deep_realm_trees"
+  }
+}
