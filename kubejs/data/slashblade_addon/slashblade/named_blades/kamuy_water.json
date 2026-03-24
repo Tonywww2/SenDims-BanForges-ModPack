@@ -23,6 +23,11 @@
         "attack_base": 62.0,
         "max_damage": 50,
         "slash_art": "slashblade_addon:water_drive",
+        "special_effects":
+        [
+            "slashblade_addon:burst_drive",
+            "slashblade:aeonia"
+        ],
         "sword_type":
         [
             "bewitched"

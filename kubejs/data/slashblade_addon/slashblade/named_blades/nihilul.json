@@ -32,6 +32,11 @@
         "attack_base": 55.0,
         "max_damage": 70,
         "slash_art": "slashblade:wave_edge",
+        "special_effects":
+        [
+            "last_smith:extra_power",
+            "last_smith:extra_sharpness"
+        ],
         "sword_type":
         [
             "bewitched"

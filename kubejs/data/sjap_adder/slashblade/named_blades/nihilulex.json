@@ -22,6 +22,8 @@
         "slash_art": "slashblade:wave_edge",
         "special_effects":
         [
+            "last_smith:extra_smite",
+            "last_smith:extreme_sharpness",
             "sjap_adder:wave_edge_rise_up",
             "last_smith:extra_sharpness"
         ],

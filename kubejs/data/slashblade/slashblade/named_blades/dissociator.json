@@ -10,6 +10,7 @@
             "lvl": 3
         }
     ],
+    "item": "energyblade:forge_energy_blade",
     "name": "slashblade:dissociator",
     "properties":
     {

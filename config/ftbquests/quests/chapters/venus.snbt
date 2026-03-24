@@ -77,8 +77,8 @@
 		{
 			id: "704C89D06DCAB08E"
 			linked_quest: "482EE0B9BBA0E5D3"
-			x: -2.5d
-			y: 12.5d
+			x: -5.0d
+			y: 15.0d
 		}
 		{
 			id: "4BB16861B9EC22B9"
@@ -91,6 +91,12 @@
 			linked_quest: "0EFAC7AECCFDD801"
 			x: -2.5d
 			y: 17.5d
+		}
+		{
+			id: "1111946D7D8ACB54"
+			linked_quest: "319D8C539D81926B"
+			x: -2.5d
+			y: 12.5d
 		}
 	]
 	quests: [

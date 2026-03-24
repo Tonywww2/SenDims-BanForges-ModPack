@@ -10,6 +10,19 @@ ServerEvents.recipes(event => {
         C: 'ad_astra:calorite_tank',
         D: 'ad_astra:calorite_engine'
     }).id('sdbf:mercury_refractory_structural_component_s3')
+    
+    event.shaped('confluence:workshop', [
+        'ABA',
+        'CDC',
+        'EFE'
+    ], {
+        A: 'thermal:red_rockwool',
+        B: 'kubejs:scoria_ingot',
+        C: 'kubejs:mercury_refractory_structural_component',
+        D: 'thermal:tinker_bench',
+        E: 'minecraft:lectern',
+        F: 'integrateddynamics:logic_programmer',
+    }).id('sdbf:workshopt_s3')
 
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
         "ABD",

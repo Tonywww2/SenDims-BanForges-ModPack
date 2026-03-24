@@ -1,28 +1,36 @@
 {
-  "creativeGroup": "pseudoedge_break_dawn:pseudoedge_break_dawn_slashblade",
-  "enchantments": [
+    "creativeGroup": "pseudoedge_break_dawn:pseudoedge_break_dawn_slashblade",
+    "enchantments":
+    [
+        {
+            "id": "minecraft:unbreaking",
+            "lvl": 2
+        },
+        {
+            "id": "minecraft:thorns",
+            "lvl": 3
+        }
+    ],
+    "name": "pseudoedge_break_dawn:vitex",
+    "properties":
     {
-      "id": "minecraft:unbreaking",
-      "lvl": 2
+        "attack_base": 9.5,
+        "max_damage": 110,
+        "slash_art": "pseudoedge_break_dawn:thrust_slash_ex",
+        "special_effects":
+        [
+            "blades_derby:uma_special"
+        ],
+        "sword_type":
+        [
+            "bewitched"
+        ]
     },
+    "render":
     {
-      "id": "minecraft:thorns",
-      "lvl": 3
+        "carry_type": "default",
+        "model": "pseudoedge_break_dawn:model/pseudo/named/pseudosword/vitex/vitex.obj",
+        "summon_sword_color": 9765119,
+        "texture": "pseudoedge_break_dawn:model/pseudo/named/pseudosword/vitex/vitex.png"
     }
-  ],
-  "name": "pseudoedge_break_dawn:vitex",
-  "properties": {
-    "attack_base": 9.5,
-    "max_damage": 110,
-    "slash_art": "pseudoedge_break_dawn:thrust_slash_ex",
-    "sword_type": [
-      "bewitched"
-    ]
-  },
-  "render": {
-    "carry_type": "default",
-    "model": "pseudoedge_break_dawn:model/pseudo/named/pseudosword/vitex/vitex.obj",
-    "summon_sword_color": 9765119,
-    "texture": "pseudoedge_break_dawn:model/pseudo/named/pseudosword/vitex/vitex.png"
-  }
 }

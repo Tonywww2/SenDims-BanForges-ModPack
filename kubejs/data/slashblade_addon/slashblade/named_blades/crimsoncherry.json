@@ -24,6 +24,10 @@
         "attack_base": 50.0,
         "max_damage": 65,
         "slash_art": "slashblade:sakura_end",
+        "special_effects":
+        [
+            "last_smith:smite_se"
+        ],
         "sword_type":
         [
             "bewitched"

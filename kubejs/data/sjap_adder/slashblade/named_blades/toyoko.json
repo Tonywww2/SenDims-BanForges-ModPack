@@ -18,6 +18,7 @@
         "slash_art": "sjap_adder:sakura_drive",
         "special_effects":
         [
+            "slashblade_addon:burst_drive",
             "sjap_adder:fate_bond",
             "sjap_adder:clear_mind"
         ],

@@ -63,7 +63,7 @@
 				item: "apotheosis:uncommon_material"
 				type: "item"
 			}]
-			x: 2.5d
+			x: -2.5d
 			y: 0.0d
 		}
 		{
@@ -74,8 +74,8 @@
 				item: "apotheosis:rare_material"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 0.0d
+			x: -2.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["3C14A2F8BA3C3DA6"]
@@ -85,7 +85,7 @@
 				item: "apotheosis:epic_material"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 2.5d
 			y: 0.0d
 		}
 		{
@@ -96,7 +96,7 @@
 				item: "apotheosis:mythic_material"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 5.0d
 			y: 0.0d
 		}
 		{
@@ -107,24 +107,24 @@
 				item: "apotheosis:gem_cutting_table"
 				type: "item"
 			}]
-			x: 2.5d
+			x: -2.5d
 			y: 5.0d
 		}
 		{
-			dependencies: ["1B7066E3776A8879"]
+			dependencies: ["278A39AEC26ACC1A"]
 			id: "419F370B5BCD93CF"
 			tasks: [{
 				id: "23BBE71F75826062"
 				item: "apotheosis:simple_reforging_table"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 2.5d
 			y: 2.5d
 		}
 		{
 			dependencies: [
 				"419F370B5BCD93CF"
-				"278A39AEC26ACC1A"
+				"3864617F2C8F7BE0"
 			]
 			id: "03D989C2ED12227E"
 			tasks: [{
@@ -132,22 +132,19 @@
 				item: "apotheosis:reforging_table"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 5.0d
 			y: 2.5d
 		}
 		{
-			dependencies: [
-				"3864617F2C8F7BE0"
-				"03D989C2ED12227E"
-			]
+			dependencies: ["03D989C2ED12227E"]
 			id: "5BB2FE532C00131E"
 			tasks: [{
 				id: "418D0C2FFF6F4F4E"
 				item: "apotheosis:augmenting_table"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 2.5d
+			x: 5.0d
+			y: 5.0d
 		}
 		{
 			description: [
@@ -175,14 +172,15 @@
 			icon: "ae2:fluix_pearl"
 			id: "034D47E905861E48"
 			shape: "hexagon"
+			size: 2.0d
 			subtitle: "重要"
 			tasks: [{
 				id: "2377C119A89E61F6"
 				type: "checkmark"
 			}]
 			title: "结构召唤仪式"
-			x: -2.5d
-			y: 0.0d
+			x: 0.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["77ABEFEE93012F0A"]
@@ -194,7 +192,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: 2.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["77693A4D5EF97A31"]
@@ -205,7 +203,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 12.5d
+			y: 10.0d
 		}
 		{
 			description: ["跑图工具，byd帕克"]
@@ -218,7 +216,7 @@
 			}]
 			title: "跑图工具"
 			x: 0.0d
-			y: 10.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["00C3C00C3688CEA7"]
@@ -229,7 +227,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: 12.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["00C3C00C3688CEA7"]
@@ -240,7 +238,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 15.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["6D19670214234AFA"]
@@ -251,7 +249,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: 15.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["6D19670214234AFA"]
@@ -262,7 +260,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: 15.0d
+			y: 12.5d
 		}
 		{
 			description: [
@@ -279,139 +277,150 @@
 			}]
 			title: "神化刷怪笼"
 			x: 10.0d
-			y: 10.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
 			description: ["减小最小刷怪延迟（初始200t），每个减少 10t，最少 20t"]
 			id: "0B7DEE9793E3BBBB"
+			subtitle: "最小刷怪延迟-"
 			tasks: [{
 				id: "6BE0EC3EAD280CA8"
 				item: "minecraft:sugar"
 				type: "item"
 			}]
 			x: 12.5d
-			y: 10.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
 			description: ["减少最大刷怪延迟（初始800t），每个减少 10t，最少 20t"]
 			id: "555AB70BA3BCA2F1"
+			subtitle: "最大刷怪延迟-"
 			tasks: [{
 				id: "2E02E73AEE043CBB"
 				item: "minecraft:clock"
 				type: "item"
 			}]
 			x: 10.0d
-			y: 7.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
 			description: ["增加刷怪数量（初始4只），每个增加 1 只，上限为 16 只"]
 			id: "2AD0D82E0283578A"
+			subtitle: "刷怪数+"
 			tasks: [{
 				id: "4DAACED2EB7A847F"
 				item: "minecraft:fermented_spider_eye"
 				type: "item"
 			}]
 			x: 12.5d
-			y: 7.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
 			description: ["提升最大实体数量（初始6只），每个增加 2 只，上限为 32 只"]
 			id: "3728E5DD86D1B747"
+			subtitle: "刷怪上限+"
 			tasks: [{
 				id: "3E33FBF91D1F2649"
 				item: "minecraft:ghast_tear"
 				type: "item"
 			}]
 			x: 7.5d
-			y: 7.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
 			description: ["增加激活范围（初始半径16格），每个增加 2 格，上限为 48 格"]
 			id: "22658556FB03270A"
+			subtitle: "激活范围+"
 			tasks: [{
 				id: "3FAB12FEB5C1A698"
 				item: "minecraft:prismarine_crystals"
 				type: "item"
 			}]
 			x: 7.5d
-			y: 12.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
 			description: ["增加刷怪范围（初始半径4格），每个增加 1 格，上限为 32 格"]
 			id: "5DD1E74736BC24C3"
+			subtitle: "刷怪范围+"
 			tasks: [{
 				id: "266874CBB872776D"
 				item: "minecraft:blaze_rod"
 				type: "item"
 			}]
 			x: 12.5d
-			y: 12.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
 			description: ["忽略生物群系"]
 			id: "40F9A99C4643C0CA"
+			subtitle: "忽略生物群系"
 			tasks: [{
 				id: "040609F3AB2BBCCE"
 				item: "minecraft:dragon_egg"
 				type: "item"
 			}]
 			x: 15.0d
-			y: 10.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
 			description: ["使刷怪笼刷出的生物没有任何行为（无AI）"]
 			id: "35A8E66C90CC1FAB"
+			subtitle: "无AI"
 			tasks: [{
 				id: "2214C6D25D6202F0"
 				item: "minecraft:chorus_fruit"
 				type: "item"
 			}]
 			x: 7.5d
-			y: 10.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
 			description: ["允许刷怪笼在附近没有玩家的情况下刷怪"]
 			id: "039E61CF4B810E24"
+			subtitle: "无玩家"
 			tasks: [{
 				id: "6EC5B669432428FF"
 				item: "minecraft:nether_star"
 				type: "item"
 			}]
 			x: 5.0d
-			y: 10.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
 			description: ["允许玩家使用红石控制刷怪笼开关"]
 			id: "53C4817DB9BBA4DF"
+			subtitle: "红石控制"
 			tasks: [{
 				id: "42FEC9EE6885F836"
 				item: "minecraft:comparator"
 				type: "item"
 			}]
 			x: 10.0d
-			y: 12.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
 			description: ["允许刷怪笼无视光照刷怪"]
 			id: "1742E9CEF5B616F5"
+			subtitle: "无视光照"
 			tasks: [{
 				id: "27D6CD46E3CDDCAE"
 				item: "minecraft:soul_lantern"
 				type: "item"
 			}]
 			x: 10.0d
-			y: 15.0d
+			y: 12.5d
 		}
 		{
 			description: ["前面的区域以后再来探索吧"]
@@ -440,7 +449,7 @@
 			}]
 			title: "简易村民"
 			x: -8.5d
-			y: 10.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["6E4D6662243ED7F6"]
@@ -456,7 +465,7 @@
 				type: "item"
 			}]
 			x: -8.5d
-			y: 12.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["03324A922C738F3E"]
@@ -467,7 +476,7 @@
 				type: "item"
 			}]
 			x: -8.5d
-			y: 15.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["6E4D6662243ED7F6"]
@@ -478,7 +487,7 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: 10.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["6E4D6662243ED7F6"]
@@ -489,7 +498,7 @@
 				type: "item"
 			}]
 			x: -11.0d
-			y: 10.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["71F1943E6E3FCA17"]
@@ -510,7 +519,7 @@
 			}]
 			title: "阶级-无-生命强化材料"
 			x: -2.5d
-			y: -2.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["52726CE2A2740BF7"]
@@ -547,7 +556,7 @@
 			}]
 			title: "深境证章的信息"
 			x: 0.0d
-			y: -2.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["71F1943E6E3FCA17"]
@@ -568,7 +577,7 @@
 			}]
 			title: "阶级-无-伤害强化材料"
 			x: 2.5d
-			y: -2.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["421132E2C3F4644D"]
@@ -589,7 +598,7 @@
 			}]
 			title: "阶级-1-伤害强化材料"
 			x: 2.5d
-			y: -5.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["71F1943E6E3FCA17"]
@@ -611,7 +620,7 @@
 			}]
 			title: "阶级-无-突破材料"
 			x: 0.0d
-			y: -5.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["421132E2C3F4644D"]
@@ -632,7 +641,7 @@
 			}]
 			title: "阶级-1-生命强化材料"
 			x: -2.5d
-			y: -5.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["047BB42636510BA1"]
@@ -653,7 +662,7 @@
 			}]
 			title: "阶级-2-生命强化材料"
 			x: -2.5d
-			y: -7.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["421132E2C3F4644D"]
@@ -674,7 +683,7 @@
 			}]
 			title: "阶级-1-突破材料"
 			x: 0.0d
-			y: -7.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["047BB42636510BA1"]
@@ -695,7 +704,19 @@
 			}]
 			title: "阶级-2-伤害强化材料"
 			x: 2.5d
-			y: -7.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["2B1F98A770D77E12"]
+			id: "319D8C539D81926B"
+			size: 2.0d
+			tasks: [{
+				id: "42582B51016851A2"
+				item: "confluence:workshop"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
 		}
 	]
 	title: "战斗辅助"

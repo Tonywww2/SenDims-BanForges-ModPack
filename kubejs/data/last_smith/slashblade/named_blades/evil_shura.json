@@ -22,6 +22,7 @@
         "slash_art": "slashblade:wave_edge",
         "special_effects":
         [
+            "last_smith:smite_se",
             "last_smith:extra_power"
         ],
         "sword_type":

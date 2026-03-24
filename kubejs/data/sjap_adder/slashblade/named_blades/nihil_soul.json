@@ -20,6 +20,10 @@
         "attack_base": 27.0,
         "max_damage": 100,
         "slash_art": "sjap_adder:super_blood_cuts",
+        "special_effects":
+        [
+            "sjap_adder:cold_guardian"
+        ],
         "sword_type":
         [
             "bewitched"

@@ -24,6 +24,7 @@
         "slash_art": "last_smith:transmigration_slash",
         "special_effects":
         [
+            "last_smith:bewitched_power",
             "last_smith:extra_sharpness"
         ],
         "sword_type":

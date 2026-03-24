@@ -22,6 +22,7 @@
         "slash_art": "sjap_adder:wave_edge_supers",
         "special_effects":
         [
+            "slashblade:wither_edge",
             "sjap_adder:agitos_ex"
         ],
         "sword_type":

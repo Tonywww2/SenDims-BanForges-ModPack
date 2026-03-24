@@ -26,6 +26,7 @@
         "slash_art": "last_smith:fushigiri",
         "special_effects":
         [
+            "last_smith:extra_power",
             "last_smith:fushigiri_se"
         ],
         "sword_type":

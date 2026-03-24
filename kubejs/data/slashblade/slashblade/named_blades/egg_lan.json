@@ -12,6 +12,10 @@
         "attack_base": 5.0,
         "max_damage": 75,
         "slash_art": "slashblade:ground_pound",
+        "special_effects":
+        [
+            "blades_derby:uma_special"
+        ],
         "sword_type":
         [
             "bewitched"

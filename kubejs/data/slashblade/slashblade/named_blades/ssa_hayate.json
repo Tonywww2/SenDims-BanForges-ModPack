@@ -16,6 +16,10 @@
         "attack_base": 24.5,
         "max_damage": 130,
         "slash_art": "slashblade:storm_bias",
+        "special_effects":
+        [
+            "slashblade_addon:burst_drive"
+        ],
         "sword_type":
         [
             "bewitched"

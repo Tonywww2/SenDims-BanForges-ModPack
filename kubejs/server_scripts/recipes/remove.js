@@ -26,6 +26,7 @@ const toRemoveID = new Set([
     "nuclearcraft:plate_basic2",
     "nuclearcraft:plate_basic",
     "ancient_aether:enchanting_table_from_gravitite",
+    "confluence:workshop",
 
     "slashblade_addon:wanderer",
     "cialloblade:ciallo",

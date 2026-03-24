@@ -15,6 +15,7 @@
         "slash_art": "slashblade:drive_vertical",
         "special_effects":
         [
+            "last_smith:bewitched_power",
             "last_smith:extra_smite"
         ],
         "sword_type":

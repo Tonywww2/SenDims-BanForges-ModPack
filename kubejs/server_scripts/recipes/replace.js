@@ -39,6 +39,21 @@ ServerEvents.recipes(event => {
         'integrateddynamics:energy_battery'
     );
     
+    event.replaceInput({id : 'apotheosis:simple_reforging_table'}, 
+        'apotheosis:gem_dust',
+        'apotheosis:epic_material'
+    );
+    
+    event.replaceInput({id : 'apotheosis:reforging_table'}, 
+        'apotheosis:epic_material',
+        'apotheosis:mythic_material'
+    );
+    // TODO 替换为最终材料
+    event.replaceInput({id : 'apotheosis:augmenting_table'}, 
+        'apotheosis:mythic_material',
+        "minecraft:bedrock"
+    );
+    
     event.replaceInput({}, 
         'minecraft:enchanting_table',
         'ad_astra:moon_globe'

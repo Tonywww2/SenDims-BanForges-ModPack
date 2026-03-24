@@ -35,6 +35,7 @@
         "slash_art": "foxextra:void_slash_plus",
         "special_effects":
         [
+            "blades_derby:uma_special",
             "foxextra:foxbling"
         ],
         "sword_type":

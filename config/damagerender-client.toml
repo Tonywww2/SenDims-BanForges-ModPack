@@ -1,0 +1,5 @@
+#最远的渲染距离，超出此半径的不渲染
+showDistance = 64
+#最多渲染的数字量
+maxShowRender = 128
+

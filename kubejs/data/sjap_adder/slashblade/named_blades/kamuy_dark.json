@@ -16,6 +16,10 @@
         "attack_base": 49.0,
         "max_damage": 150,
         "slash_art": "sjap_adder:dark_cuts",
+        "special_effects":
+        [
+            "slashblade:aeonia"
+        ],
         "sword_type":
         [
             "bewitched"

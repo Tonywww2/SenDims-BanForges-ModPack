@@ -47,7 +47,7 @@ ServerEvents.highPriorityData(event => {
     undergardenBoss("undergarden:rotling", "#the_nether");
     undergardenBoss("undergarden:rotwalker", "#the_nether");
     undergardenBoss("undergarden:forgotten", "#the_nether");
-    undergardenBoss("undergarden:minion", "#the_nether");
+    // undergardenBoss("undergarden:minion", "#the_nether");
     undergardenBoss("undergarden:sploogie", "#the_nether");
     undergardenBoss("undergarden:nargoyle", "#the_nether");
     undergardenBoss("undergarden:muncher", "#the_nether");

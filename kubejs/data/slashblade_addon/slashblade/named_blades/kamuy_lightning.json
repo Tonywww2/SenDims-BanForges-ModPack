@@ -19,6 +19,11 @@
         "attack_base": 65.0,
         "max_damage": 50,
         "slash_art": "slashblade_addon:lighting_swords",
+        "special_effects":
+        [
+            "last_smith:bewitched_power",
+            "last_smith:extra_sharpness"
+        ],
         "sword_type":
         [
             "bewitched"

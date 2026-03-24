@@ -5,6 +5,10 @@
         "attack_base": 23.0,
         "max_damage": 100,
         "slash_art": "slashblade_addon:rapid_blistering_swords",
+        "special_effects":
+        [
+            "sjap_adder:cold_guardian"
+        ],
         "sword_type":
         [
             "bewitched"
