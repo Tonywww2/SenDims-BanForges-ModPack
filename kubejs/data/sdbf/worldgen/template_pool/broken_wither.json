@@ -1,0 +1,15 @@
+{
+    "name": "sdbf:broken_wither",
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "minecraft:empty",
+                "location": "sdbf:broken_wither"
+            },
+            "weight": 1
+        }
+    ]
+}

@@ -30,6 +30,9 @@ const mobTypes = {
     "species:limpet": typeA,
     "species:quake": typeD,
     "minecraft:villager": typeA,
+    "minecraft:bat": type0,
+
+    "yungscavebiomes:ice_cube": typeSlime,
 
     "twilightforest:towerwood_borer": typeB,
     "twilightforest:carminite_broodling": typeB,

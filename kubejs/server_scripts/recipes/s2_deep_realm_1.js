@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
 
-    event.shaped($StructureQuill.forStructure("gods_ember:ae_lab"), [
+    event.shaped($StructureQuill.forStructure("sdbf:ae_lab"), [
         'AAA',
         'ABA',
         'AAA'

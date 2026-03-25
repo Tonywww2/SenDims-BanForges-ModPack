@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:jigsaw",
+  "start_pool": "sdbf:broken_wither",
+  "size": 1,
+  "max_distance_from_center": 64,
+  "spawn_overrides": {},
+  "step": "top_layer_modification",
+  "terrain_adaptation": "beard_box",
+  "start_height": {
+    "type": "minecraft:uniform",
+    "min_inclusive": {
+      "absolute": 200
+    },
+    "max_inclusive": {
+      "absolute": 240
+    }
+  },
+  "project_start_to_heightmap": "WORLD_SURFACE_WG",
+  "biomes": [
+    "infinity_cave:amethyst_caves",
+    "cavernous:crystal_caves",
+    "cavernous:tropical_caves",
+    "darkerdepths:sandy_catacombs",
+    "cavernous:painted_caves",
+    "cavernous:marble_caves",
+    "cavernous:desert_caves",
+    "yungscavebiomes:frosted_caves",
+    "cavernous:icy_caves",
+    "regions_unexplored:ancient_delta",
+    "cavernous:marshy_caves",
+    "infinity_cave:molten_caves",
+    "cavernous:volcanic_caves",
+    "infinity_cave:sulfide_caves",
+    "minecraft:lush_caves",
+    "infinity_cave:deeprock_caverns",
+    "minecraft:deep_dark"
+  ],
+  "use_expansion_hack": false
+}

@@ -4,7 +4,7 @@
       {
         "type": "minecraft:height_range",
         "height": {
-          "absolute": -48
+          "absolute": 201
         }
       }
     ]

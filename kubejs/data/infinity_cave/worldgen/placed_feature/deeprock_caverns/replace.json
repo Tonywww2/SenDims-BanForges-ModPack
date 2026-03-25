@@ -15,14 +15,14 @@
       {
         "type": "minecraft:height_range",
         "height": {
-          "type": "minecraft:uniform",
-          "min_inclusive": {
-            "above_bottom": -128
-          },
-          "max_inclusive": {
-            "absolute": -50
-          }
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "above_bottom": 100
+        },
+        "max_inclusive": {
+          "absolute": 280
         }
+      }
       },
       {
         "type": "minecraft:biome"

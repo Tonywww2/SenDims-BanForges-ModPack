@@ -1,0 +1,13 @@
+{
+  "structures": [
+    {
+      "structure": "sdbf:ae_lab",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 43,
+    "separation": 18,
+    "salt": 410622209}
+}

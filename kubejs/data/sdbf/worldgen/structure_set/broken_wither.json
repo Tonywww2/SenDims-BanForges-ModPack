@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "sdbf:broken_wither",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 15,
+    "separation": 6,
+    "salt": 11022213
+  }
+}
