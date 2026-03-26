@@ -1,0 +1,27 @@
+{
+    "uma_skill.umapyoi.adv_low_health_buff.desc": "在较长时间内，大幅降低附近敌人受到的治疗量，同时提升干劲并移除焦躁，在低血量时提升效果。",
+    "uma_skill.umapyoi.adv_low_health_heal.desc": "在一段时间内，大幅提升速度，同时提高受到的治疗量并移除焦躁。",
+    "uma_skill.umapyoi.basic_pace.desc": "在长时间内，小幅提升速度。",
+    "uma_skill.umapyoi.big_eater.desc": "在极短时间内，恢复大量饱食度。",
+    "uma_skill.umapyoi.cooldown.desc": "在一段时间内，持续恢复生命值，效果根据血量上限增加。",
+    "uma_skill.umapyoi.deep_breaths.desc": "在一段时间内，持续恢复生命值，持续时间根据血量上限增加。",
+    "uma_skill.umapyoi.dig_speed.desc": "提升挖掘速度。",
+    "uma_skill.umapyoi.dirt_runner.desc": "提升在泥地时的速度。",
+    "uma_skill.umapyoi.divine_speed.desc": "在一段时间内，大幅提升速度和力量。",
+    "uma_skill.umapyoi.dominator.desc": "在一段时间内，小幅降低周围敌人的速度和伤害。",
+    "uma_skill.umapyoi.heart_and_soul.desc": "在一段时间内，大幅提升速度，并增加附近敌人受到的伤害，力量超群时提升效果。",
+    "uma_skill.umapyoi.inquisitive_mind.desc": "提升攻击速度，智力超群时提升更多。",
+    "uma_skill.umapyoi.last_leg.desc": "在短时间内，大幅提升速度。",
+    "uma_skill.umapyoi.low_health_buff.desc": "在一段时间内，略微降低附近敌人受到的治疗量，同时提升干劲并移除焦躁。",
+    "uma_skill.umapyoi.low_health_heal.desc": "在一段时间内，略微提升速度，同时提高受到的治疗量并移除焦躁。",
+    "uma_skill.umapyoi.mountain_climber.desc": "提升步高。",
+    "uma_skill.umapyoi.nutritional_supplements.desc": "在极短时间内，恢复饱食度。",
+    "uma_skill.umapyoi.rapid.desc": "在短时间内，略微提升速度和力量。",
+    "uma_skill.umapyoi.serene.desc": "在一段时间内，持续恢复少量生命值，同时提高获得的经验量并消除焦躁。",
+    "uma_skill.umapyoi.snow_runner.desc": "提升在雪地时的速度。",
+    "uma_skill.umapyoi.steel_will.desc": "在一段时间内，持续恢复少量生命值，吸收少量伤害，提升干劲，同时提高获得的经验量并消除焦躁。",
+    "uma_skill.umapyoi.tether.desc": "在一段时间内，小幅降低周围敌人的速度。",
+    "uma_skill.umapyoi.top_umamusme.desc": "在短时间内，小幅提升速度，同时提升干劲并恢复一定百分比的生命值。",
+    "uma_skill.umapyoi.turf_runner.desc": "提升在草地时的速度。"
+    
+}
