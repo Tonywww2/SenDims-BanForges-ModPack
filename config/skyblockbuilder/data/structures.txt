@@ -83,14 +83,6 @@ biomemakeover:ghost_town
 biomemakeover:mansion
 biomemakeover:mushroom_house
 biomemakeover:sunken_ruin
-cataclysm:acropolis
-cataclysm:ancient_factory
-cataclysm:burning_arena
-cataclysm:cursed_pyramid
-cataclysm:frosted_prison
-cataclysm:ruined_citadel
-cataclysm:soul_black_smith
-cataclysm:sunken_city
 cavernous:dungeon
 cavernous:exit_portal
 cavernous:final_arena
