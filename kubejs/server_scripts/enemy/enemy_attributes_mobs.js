@@ -18,6 +18,7 @@ const mobTypes = {
     'tofucraft:tofu_gandlem': bossType1,
 
     "minecraft:zombie": typeA,
+    "minecraft:zombie_villager": typeA,
     "minecraft:skeleton": typeA,
     "minecraft:spider": typeB,
     "minecraft:creeper": typeB,
@@ -31,6 +32,11 @@ const mobTypes = {
     "species:quake": typeD,
     "minecraft:villager": typeA,
     "minecraft:bat": type0,
+    "minecraft:tropical_fish": type0,
+    "minecraft:glow_squid": type0,
+    "minecraft:pig": type0,
+    "minecraft:sheep": type0,
+    "minecraft:cow": type0,
 
     "yungscavebiomes:ice_cube": typeSlime,
 
@@ -183,7 +189,8 @@ const mobTypes = {
     "terra_entity:queen_bee": bossType1,
     "terra_entity:skeletron": bossType1,
     "terra_entity:dungeon_guardian": bossType2EX2,
-    "terra_entity:wall_of_flesh": bossType1EX1,
+    "terra_entity:wall_of_flesh": bossType2,
+    "terra_entity:hill_of_flesh": bossType2,
 
     "minecraft:wither": bossType2,
 
@@ -199,6 +206,9 @@ const mobTypes = {
     "minecraft:strider": type0,
     "quark:foxhound": typeB,
     "thermal:basalz": typeA,
+    "terra_entity:the_hungry": typeB,
+    "terra_entity:hill_hungry": typeB,
+    "terra_entity:leech": typeC,
 
     "cataclysm:netherite_monstrosity": bossType2,
 

@@ -287,7 +287,7 @@ ServerEvents.highPriorityData(event => {
         .setPrimary(5.5).setSecondary(1.0).setTertiary(2.4)
         .setDurability(300).setIntegrityCost(2).setIntegrityGain(2)
         .setMagicCapacity(100).setToolLevel(4).setToolEfficiency(6)
-        .addAttributes("护甲", 0.5)
+        .addAttributes("minecraft:generic.armor", 0.5)
         .setTints("7f7f7f", "a0a0a0")
         .addTexture("grainy").addTexture("crude")
         .addItemMaterial('thermal:basalz_rod')

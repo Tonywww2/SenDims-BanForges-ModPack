@@ -11,6 +11,17 @@
         "value": 10
       }
     },
+    "terra_curio:aggro": {
+      "enabled": false,
+      "min": {
+        "default": -10000,
+        "value": -10000
+      },
+      "max": {
+        "default": 10000,
+        "value": 10000
+      }
+    },
     "forge:step_height_addition": {
       "enabled": false,
       "min": {
@@ -64,6 +75,28 @@
       "max": {
         "default": 2048,
         "value": 2048
+      }
+    },
+    "terra_curio:dodge_chance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
+    "terra_curio:ranged_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
       }
     },
     "attributeslib:prot_shred": {
@@ -132,6 +165,17 @@
         "value": 8
       }
     },
+    "terra_curio:crit_chance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
+      }
+    },
     "tetra:ability_damage": {
       "enabled": false,
       "min": {
@@ -198,7 +242,7 @@
         "value": 1024
       }
     },
-    "confluence:mining_speed": {
+    "terra_curio:magic_damage": {
       "enabled": false,
       "min": {
         "default": 0,
@@ -209,7 +253,7 @@
         "value": 10
       }
     },
-    "confluence:ranged_damage": {
+    "confluence:mining_speed": {
       "enabled": false,
       "min": {
         "default": 0,
@@ -229,6 +273,17 @@
       "max": {
         "default": 1024,
         "value": 1024
+      }
+    },
+    "confluence:ranged_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
       }
     },
     "confluence:pickup_range": {
@@ -275,6 +330,17 @@
         "value": 64
       }
     },
+    "dungeons_content_two:attack": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
     "slashblade_sendims:sprint_cd_return": {
       "enabled": false,
       "min": {
@@ -319,17 +385,6 @@
         "value": 1
       }
     },
-    "confluence:aggro": {
-      "enabled": false,
-      "min": {
-        "default": -10000,
-        "value": -10000
-      },
-      "max": {
-        "default": 10000,
-        "value": 10000
-      }
-    },
     "slashblade_sendims:frenzy_resistance": {
       "enabled": false,
       "min": {
@@ -339,6 +394,17 @@
       "max": {
         "default": 1,
         "value": 1
+      }
+    },
+    "confluence:aggro": {
+      "enabled": false,
+      "min": {
+        "default": -10000,
+        "value": -10000
+      },
+      "max": {
+        "default": 10000,
+        "value": 10000
       }
     },
     "minecraft:zombie.spawn_reinforcements": {
@@ -451,6 +517,17 @@
         "value": 2048
       }
     },
+    "terra_curio:armor_pass": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10000,
+        "value": 10000
+      }
+    },
     "attributeslib:crit_damage": {
       "enabled": false,
       "min": {
@@ -460,17 +537,6 @@
       "max": {
         "default": 100,
         "value": 100
-      }
-    },
-    "confluence:magic_damage": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
       }
     },
     "forge:nametag_distance": {
@@ -484,6 +550,17 @@
         "value": 64
       }
     },
+    "confluence:magic_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
+      }
+    },
     "terra_entity:player.summon_damage": {
       "enabled": false,
       "min": {
@@ -493,6 +570,17 @@
       "max": {
         "default": 2048,
         "value": 2048
+      }
+    },
+    "terra_curio:mining_speed": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
       }
     },
     "forge:block_reach": {
@@ -517,6 +605,17 @@
         "value": 128
       }
     },
+    "cataclysm:additional_critical_damage": {
+      "enabled": false,
+      "min": {
+        "default": -512,
+        "value": -512
+      },
+      "max": {
+        "default": 512,
+        "value": 512
+      }
+    },
     "biomemakeover:projectile_resistance": {
       "enabled": false,
       "min": {
@@ -526,6 +625,17 @@
       "max": {
         "default": 30,
         "value": 30
+      }
+    },
+    "terra_curio:pickup_range": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 64,
+        "value": 64
       }
     },
     "minecraft:generic.attack_speed": {
@@ -581,6 +691,17 @@
       "max": {
         "default": 200,
         "value": 1000000
+      }
+    },
+    "cataclysm:eat_speed": {
+      "enabled": false,
+      "min": {
+        "default": -100,
+        "value": -100
+      },
+      "max": {
+        "default": 100,
+        "value": 100
       }
     },
     "slashblade_sendims:sprint_cd": {
@@ -704,6 +825,17 @@
         "value": 1
       }
     },
+    "cataclysm:charge_time": {
+      "enabled": false,
+      "min": {
+        "default": -100,
+        "value": -100
+      },
+      "max": {
+        "default": 512,
+        "value": 512
+      }
+    },
     "botania:pixie_spawn_chance": {
       "enabled": false,
       "min": {
@@ -748,6 +880,17 @@
         "value": 2
       }
     },
+    "terra_curio:ranged_velocity": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
+      }
+    },
     "attributeslib:arrow_velocity": {
       "enabled": false,
       "min": {
@@ -779,6 +922,17 @@
       "max": {
         "default": 512,
         "value": 512
+      }
+    },
+    "cataclysm:nature_heal": {
+      "enabled": false,
+      "min": {
+        "default": -256,
+        "value": -256
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "attributeslib:life_steal": {

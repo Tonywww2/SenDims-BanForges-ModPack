@@ -426,6 +426,11 @@ deep_aether:sunroot_tree
 deep_aether:virulent_quicksand_patch
 deep_aether:yagroot_and_cruderoot_trees_placement
 deep_aether:yagroot_tree
+dungeons_content_two:deepdarkdirt
+dungeons_content_two:deepdarkdirtpath
+dungeons_content_two:sculkdeepslate
+dungeons_content_two:sculkdirtpath
+dungeons_content_two:sculkstone
 feur_dimensional_skyland:skyland_tree
 infinity_cave:amethyst_caves/calcite_rim
 infinity_cave:amethyst_caves/hanging_crystals

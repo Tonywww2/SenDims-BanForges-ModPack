@@ -95,7 +95,7 @@ ServerEvents.recipes(event => {
         .id("sdbf:xblades_s2");
 
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
-        "ABB",
+        "ABF",
         "BCB",
         "DBE"
     ], {
@@ -110,7 +110,8 @@ ServerEvents.recipes(event => {
                 .build()
         ),
         "D": "minecraft:obsidian",
-        "E": "slashblade:proudsoul"
+        "E": "slashblade:proudsoul",
+        "F": 'terra_entity:flamarang'
     }, "pseudoedge_break_dawn:magicblade")
         .id("sdbf:magicblade_s2");
 

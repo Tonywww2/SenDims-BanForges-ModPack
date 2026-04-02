@@ -36,7 +36,7 @@
 				item: "minecraft:netherrack"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -2.5d
 			y: 2.5d
 		}
 		{
@@ -82,7 +82,7 @@
 				item: "minecraft:nether_bricks"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -2.5d
 			y: 5.0d
 		}
 		{
@@ -99,7 +99,7 @@
 				type: "structure"
 			}]
 			title: "下界堡垒"
-			x: 0.0d
+			x: -2.5d
 			y: 7.5d
 		}
 		{
@@ -155,23 +155,23 @@
 			icon: "terra_entity:demon_spawn_egg"
 			id: "7A229A04D3AFE10F"
 			tasks: [{
-				entity: "terra_entity:demon"
+				entity: "terra_entity:voodoo_demon"
 				id: "7D2C93540271C005"
 				type: "kill"
 				value: 1L
 			}]
-			x: -2.5d
+			x: 0.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["7A229A04D3AFE10F"]
 			id: "32F557E18C00B7A1"
 			tasks: [{
-				id: "4F8C81C88CB8F81F"
-				item: "terra_entity:wall_of_flesh_spawn_egg"
+				id: "233D0CA45FEB90D8"
+				item: "terra_entity:guide_voodoo_doll_hill"
 				type: "item"
 			}]
-			x: -2.5d
+			x: 0.0d
 			y: 5.0d
 		}
 		{
@@ -668,7 +668,10 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["6ED32EAF0CA23ECC"]
+			dependencies: [
+				"6ED32EAF0CA23ECC"
+				"1821196043044105"
+			]
 			id: "28F13DDE71732A6F"
 			tasks: [{
 				id: "0F4499B79A94E5C5"
@@ -757,7 +760,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: 5.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["74CCF300B72CB6EE"]
@@ -931,6 +934,25 @@
 			}]
 			x: 5.0d
 			y: 5.0d
+		}
+		{
+			dependencies: ["32F557E18C00B7A1"]
+			id: "1821196043044105"
+			tasks: [{
+				id: "60D88E6F31C221C6"
+				item: {
+					Count: 1
+					id: "terra_entity:flamarang"
+					tag: {
+						Damage: 0
+						"cafelib:boolean": "true"
+						"terra_entity:effect_strategy": "[{\"amplifier_min\":0,\"amplifier_max\":0,\"possibility\":1.0,\"name\":\"hell_fire_5_sec\",\"effect\":\"terra_entity:hellfire\",\"duration\":100,\"type\":\"terra_entity:time_possibility_amplifier_effect\"},{\"name\":\"set_fire_5_sec\",\"effect\":\"terra_entity:set_fire_5_sec\",\"type\":\"terra_entity:prefab_effect\"}]"
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.5d
 		}
 	]
 	title: "入地狱"

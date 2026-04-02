@@ -131,28 +131,4 @@ xrossThunderComboRatio = 1.2
 #蓝梦一闪的刀光倍率（右）
 #Range: 0.0 ~ 100.0
 xrossThunder2ComboRatio = 1.5
-#Stack maximum of ColdGuardian
-#凛冬护盾的最大堆叠数
-#Range: > 0
-coldGuardianMaxStack = 300
-#Stack maximum of BoostTrigger
-#狂气的最大堆叠数
-#Range: > 0
-boostTriggerMaxStack = 8
-#Stack maximum of ClearMindCd
-#明心的冷却（以游戏刻计）
-#Range: > 0
-clearMindCdMaxStack = 3600
-#Stack maximum of BlueDreamCombo
-#蓝破的最大堆叠数
-#Range: > 0
-blueDreamComboMaxStack = 6
-#Stack maximum of BlueDreamCharger
-#蓝速的最大堆叠数
-#Range: > 0
-blueDreamChargerMaxStack = 4
-#Stack maximum of BlueDreamChargerSuper
-#蓝心的最大堆叠数
-#Range: > 0
-blueDreamChargerSuperMaxStack = 2
 
