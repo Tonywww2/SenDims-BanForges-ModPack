@@ -26,7 +26,7 @@ const toRemoveID = new Set([
     "nuclearcraft:plate_basic2",
     "nuclearcraft:plate_basic",
     "ancient_aether:enchanting_table_from_gravitite",
-    "confluence:workshop",
+    "terra_curio:workshop",
 
     "slashblade_addon:wanderer",
     "cialloblade:ciallo",
@@ -68,7 +68,7 @@ const toRemoveID = new Set([
     "pseudoedge_break_dawn:latent",
 
     "slashblade_addon:yukari",
-    
+
     "blades_derby:uma_odachi_haru",
     "blades_derby:uma_odachi_halo",
     "slashblade:egg_lan",

@@ -44,6 +44,12 @@
 			x: -7.5d
 			y: 2.5d
 		}
+		{
+			id: "151A5801B890C6EC"
+			linked_quest: "28F13DDE71732A6F"
+			x: 2.5d
+			y: 7.5d
+		}
 	]
 	quests: [
 		{
@@ -416,8 +422,8 @@
 		{
 			dependencies: [
 				"6120DF977C2DFEA2"
-				"64E3EECF59EDE67F"
 				"74C39C2A8B73986F"
+				"28F13DDE71732A6F"
 			]
 			id: "1F6B42B37F50453D"
 			tasks: [{
@@ -768,98 +774,6 @@
 			}]
 			x: -2.5d
 			y: 10.0d
-		}
-		{
-			dependencies: ["28F13DDE71732A6F"]
-			id: "64E3EECF59EDE67F"
-			tasks: [{
-				id: "066FABE3AE457476"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "pseudoedge_break_dawn:model/pseudo/named/pseudosword/magicblade/magicblade.obj"
-							RepairCounter: 0
-							SpecialAttackType: "pseudoedge_break_dawn:blackslash"
-							StandbyRenderType: 1b
-							SummonedSwordColor: -16777216
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "pseudoedge_break_dawn:model/pseudo/named/pseudosword/magicblade/magicblade.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 11.5f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 65
-							proudSoul: 0
-							translationKey: "item.pseudoedge_break_dawn.magicblade"
-						}
-					}
-					id: "slashblade:slashblade"
-					tag: {
-						Enchantments: [
-							{
-								id: "minecraft:sharpness"
-								lvl: 3s
-							}
-							{
-								id: "minecraft:smite"
-								lvl: 2s
-							}
-							{
-								id: "minecraft:unbreaking"
-								lvl: 2s
-							}
-						]
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "pseudoedge_break_dawn:model/pseudo/named/pseudosword/magicblade/magicblade.obj"
-							RepairCounter: 0
-							SpecialAttackType: "pseudoedge_break_dawn:blackslash"
-							StandbyRenderType: 1b
-							SummonedSwordColor: -16777216
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "pseudoedge_break_dawn:model/pseudo/named/pseudosword/magicblade/magicblade.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 11.5f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 65
-							proudSoul: 0
-							translationKey: "item.pseudoedge_break_dawn.magicblade"
-						}
-					}
-				}
-				type: "item"
-			}]
-			x: 2.5d
-			y: 7.5d
 		}
 		{
 			dependencies: ["5EEA2C8F11FB0470"]

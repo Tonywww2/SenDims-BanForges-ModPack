@@ -58,6 +58,7 @@
 			tasks: [{
 				dimension: "the_bumblezone:the_bumblezone"
 				id: "670A7B9BE6DBB1FA"
+				title: "黄蜂领域"
 				type: "dimension"
 			}]
 			title: "黄蜂领域"

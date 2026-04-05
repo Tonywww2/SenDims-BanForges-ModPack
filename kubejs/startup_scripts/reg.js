@@ -11,7 +11,7 @@ StartupEvents.registry('item', event => {
     event.create('gamma_dust').fireResistant().rarity('rare')
     event.create('delta_dust').fireResistant().rarity('epic')
     event.create('epsilon_dust').fireResistant().rarity('epic')
-    
+
     event.create('garden_lighter').fireResistant().rarity('rare')
     event.create('bedrock_breaker').fireResistant().rarity('rare').maxStackSize(16)
 
@@ -21,7 +21,7 @@ StartupEvents.registry('item', event => {
     event.create('mercury_refractory_structural_component').fireResistant().rarity('epic')
     event.create('coil_of_sorrow').fireResistant().rarity('rare')
     event.create('chorus_logic_composite_coil').fireResistant().rarity('rare')
-    
+
     event.create('galatic_cycle_component').fireResistant().rarity('epic')
     event.create('bizarre_matter_dust').fireResistant().rarity('rare')
     event.create('storm_hydrogen_crystal').fireResistant().rarity('rare')
@@ -38,8 +38,17 @@ StartupEvents.registry('item', event => {
 
     event.create('basepoint_alloy').fireResistant().rarity('epic')
     event.create('virtual_gold_ingot').fireResistant().rarity('rare')
-	event.create('trinity_alloy_ingot').fireResistant().rarity('rare')
-	event.create('rainbowshift_entropy').fireResistant().rarity('rare')
-    
+    event.create('trinity_alloy_ingot').fireResistant().rarity('rare')
+    event.create('rainbowshift_entropy').fireResistant().rarity('rare')
+
+
+})
+
+StartupEvents.registry('block', event => {
+    event.create('carbon_rich_asteroid_rock').soundType('stone').hardness(2.0).resistance(6.0).requiresTool(true)
+        .tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:mineable/hoe')
+        
+    event.create('silica_rich_asteroid_rock').soundType('stone').hardness(2.0).resistance(6.0).requiresTool(true)
+        .tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:mineable/hoe')
 
 })

@@ -38,6 +38,9 @@
     "item.kubejs.trinity_alloy_ingot": "§m§d三项合金锭",
     "item.kubejs.rainbowshift_entropy": "虹移之熵",
 
+    "block.kubejs.carbon_rich_asteroid_rock": "富碳小行星岩",
+    "block.kubejs.silica_rich_asteroid_rock": "富硅小行星岩",
+
     "block.nuclearcraft.sulfuric_acid_fluid_block": "硫酸",
 
     "info.kubejs.material.money.1": "[货币][一阶]",

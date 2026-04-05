@@ -73,6 +73,7 @@
 		{
 			dependencies: ["07AEFF9468658A0C"]
 			description: ["现在你可以突破世界力场了"]
+			icon: "minecraft:grass_block"
 			id: "713CA11C25A8A2E2"
 			size: 2.0d
 			tasks: [{

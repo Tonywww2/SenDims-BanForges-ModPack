@@ -539,7 +539,11 @@
 			y: 32.5d
 		}
 		{
-			dependencies: ["316871EADE2FF219"]
+			dependencies: [
+				"316871EADE2FF219"
+				"69049A89D4FB5D07"
+			]
+			dependency_requirement: "one_completed"
 			description: ["将水转换成氧气，维持你在太空的呼吸"]
 			id: "7FDE4062BD2DC285"
 			tasks: [{
@@ -575,10 +579,7 @@
 			y: 5.0d
 		}
 		{
-			dependencies: [
-				"7FDE4062BD2DC285"
-				"1D74838411B96ABC"
-			]
+			dependencies: ["1D74838411B96ABC"]
 			description: ["你也不想一桶水一桶水搬吧"]
 			id: "69049A89D4FB5D07"
 			tasks: [{

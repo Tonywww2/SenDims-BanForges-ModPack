@@ -23,33 +23,6 @@
 	]
 	quests: [
 		{
-			dependencies: ["71F1943E6E3FCA17"]
-			description: [
-				"IMMPT：用红砖块构筑门槛，并使用深境证章点亮......"
-				""
-				"原始：用裂纹砖块构筑门槛，并使用深境证章点亮......"
-			]
-			hide_until_deps_complete: true
-			id: "5BB642BD0BE40541"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "6D4AF77DC54D55DB"
-				table_id: 7269548285138339695L
-				type: "choice"
-			}]
-			size: 2.0d
-			tasks: [{
-				dimension: "sdbf:deep_realm_level_1"
-				icon: "minecraft:deepslate"
-				id: "68FCAFE4D18A139C"
-				title: "深境一层"
-				type: "dimension"
-			}]
-			title: "深境一层"
-			x: 0.0d
-			y: 0.0d
-		}
-		{
 			dependencies: ["5BB642BD0BE40541"]
 			id: "6AE2EFEC0F3BE4BE"
 			rewards: [{
@@ -750,6 +723,33 @@
 			}]
 			x: 5.0d
 			y: -2.5d
+		}
+		{
+			dependencies: ["71F1943E6E3FCA17"]
+			description: [
+				"IMMPT：用红砖块构筑门槛，并使用深境证章点亮......"
+				""
+				"原始：用裂纹砖块构筑门槛，并使用深境证章点亮......"
+			]
+			hide_until_deps_complete: true
+			id: "5BB642BD0BE40541"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6D4AF77DC54D55DB"
+				table_id: 7269548285138339695L
+				type: "choice"
+			}]
+			size: 2.0d
+			tasks: [{
+				dimension: "sdbf:deep_realm_level_1"
+				icon: "minecraft:deepslate"
+				id: "68FCAFE4D18A139C"
+				title: "深境一层"
+				type: "dimension"
+			}]
+			title: "深境一层"
+			x: 0.0d
+			y: 0.0d
 		}
 	]
 	title: "深境：深邃洞穴"

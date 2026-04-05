@@ -1,0 +1,228 @@
+{
+	autofocus_id: "7092B1DCAD1988CE"
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	default_quest_size: 2.0d
+	filename: "index"
+	group: ""
+	icon: "botania:cosmetic_questgiver_mark"
+	id: "4D30F8D525811915"
+	images: [{
+		height: 25.0d
+		image: "sdbf:textures/gui/task_index.png"
+		rotation: 0.0d
+		width: 75.0d
+		x: 5.0d
+		y: 0.27d
+	}]
+	order_index: 0
+	quest_links: [
+		{
+			id: "7092B1DCAD1988CE"
+			linked_quest: "62C0631125654B3D"
+			shape: "square"
+			size: 2.0d
+			x: -22.0d
+			y: 5.0d
+		}
+		{
+			id: "0DD649A29C741F4D"
+			linked_quest: "6140B0BCEB7F9D64"
+			size: 2.0d
+			x: -16.0d
+			y: 5.0d
+		}
+		{
+			id: "0B35AD6B916F145E"
+			linked_quest: "5BB642BD0BE40541"
+			size: 2.0d
+			x: -10.0d
+			y: 5.0d
+		}
+		{
+			id: "4F0063BA516E69E6"
+			linked_quest: "3C1CB82ADF4FBBC1"
+			size: 2.0d
+			x: -4.0d
+			y: 5.0d
+		}
+		{
+			id: "1A0C30BE0996DD28"
+			linked_quest: "0F8DC1AEBBC762C1"
+			size: 2.0d
+			x: -10.0d
+			y: 2.0d
+		}
+		{
+			id: "5402403B552A8D4D"
+			linked_quest: "5D5BA71C5348297D"
+			size: 2.0d
+			x: -7.0d
+			y: -1.0d
+		}
+		{
+			id: "6943A36C9B726F47"
+			linked_quest: "5251AFEDB9C97974"
+			size: 2.0d
+			x: -4.0d
+			y: -4.0d
+		}
+		{
+			id: "64DF3F9FCAB26C79"
+			linked_quest: "3F43656AE6F116CB"
+			size: 2.0d
+			x: -4.0d
+			y: -1.0d
+		}
+		{
+			id: "5A79F45F14E6FD1F"
+			linked_quest: "3DA6E818573A9A69"
+			size: 2.0d
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			id: "79491289E6A3843B"
+			linked_quest: "2E482B871B147DC6"
+			size: 2.0d
+			x: 5.0d
+			y: 5.0d
+		}
+		{
+			id: "1192F70EB2D730D8"
+			linked_quest: "51A9FF63F9F3E125"
+			size: 2.0d
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			id: "7B89B8A2C4382412"
+			linked_quest: "2C6833FA2E31DFF1"
+			size: 2.0d
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			id: "69DA6025FDF424E2"
+			linked_quest: "0A68F5EE8F25F036"
+			size: 2.0d
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			id: "1572A906C283821F"
+			linked_quest: "35A8F36675442F8B"
+			size: 2.0d
+			x: 8.0d
+			y: 5.0d
+		}
+		{
+			id: "6F5CE9AD5FA5B38D"
+			linked_quest: "77DC6770CC08AEF6"
+			size: 2.0d
+			x: 14.0d
+			y: -1.0d
+		}
+		{
+			id: "5825F03B6CB9E2EB"
+			linked_quest: "37CF7606A44B5357"
+			size: 2.0d
+			x: 14.0d
+			y: -4.0d
+		}
+		{
+			id: "1CB534867E8049BE"
+			linked_quest: "6035D1A1774B2FAF"
+			size: 2.0d
+			x: 20.0d
+			y: -4.0d
+		}
+		{
+			id: "50B962F0F3CAAF88"
+			linked_quest: "220AEBF0A8A46F7C"
+			size: 2.0d
+			x: 14.0d
+			y: 2.0d
+		}
+		{
+			icon: "minecraft:grass_block"
+			id: "5FB15CF7BC54A15A"
+			linked_quest: "713CA11C25A8A2E2"
+			size: 2.0d
+			x: 14.0d
+			y: 5.0d
+		}
+		{
+			id: "131AB37C3867336C"
+			linked_quest: "1BF032EC08E31ABB"
+			size: 2.0d
+			x: 20.0d
+			y: 5.0d
+		}
+		{
+			id: "52704AD20F8923CA"
+			linked_quest: "4239AD35803375DB"
+			size: 2.0d
+			x: 26.0d
+			y: 5.0d
+		}
+		{
+			id: "43BC79D1308552B1"
+			linked_quest: "4D7803023F99E6FC"
+			size: 2.0d
+			x: 26.0d
+			y: -1.0d
+		}
+		{
+			id: "4FFF7163DE2E3EDF"
+			linked_quest: "2E150AF7AD2E748B"
+			size: 2.0d
+			x: 26.0d
+			y: -4.0d
+		}
+		{
+			id: "35ED110B4C7A5457"
+			linked_quest: "15D102DE2394A495"
+			size: 2.0d
+			x: -10.0d
+			y: 9.0d
+		}
+		{
+			id: "3AC37E174511CDC8"
+			linked_quest: "6130B752208314B7"
+			size: 2.0d
+			x: -10.0d
+			y: 12.0d
+		}
+		{
+			id: "239829C80DB6329A"
+			linked_quest: "03405BC60C3EFA99"
+			size: 2.0d
+			x: -7.0d
+			y: 12.0d
+		}
+		{
+			id: "40E1D781D2682768"
+			linked_quest: "0516786C011E5581"
+			size: 2.0d
+			x: 2.0d
+			y: 12.0d
+		}
+		{
+			id: "66CA3E3122FBCB05"
+			linked_quest: "6EA0FF1CC5982E8F"
+			size: 2.0d
+			x: 2.0d
+			y: 9.0d
+		}
+		{
+			id: "0149070C9EA25467"
+			linked_quest: "2B520DD47D46DDEB"
+			size: 2.0d
+			x: 14.0d
+			y: 9.0d
+		}
+	]
+	quests: [ ]
+	title: "快速索引"
+}
