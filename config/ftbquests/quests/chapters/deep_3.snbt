@@ -4,7 +4,7 @@
 	default_quest_shape: ""
 	filename: "deep_3"
 	group: "2D698D2001694314"
-	icon: "integrateddynamics:menril_sapling"
+	icon: "midnight:rift_placer"
 	id: "5C91D6143A935C11"
 	order_index: 1
 	quest_links: [
@@ -62,8 +62,11 @@
 			id: "2E482B871B147DC6"
 			size: 2.0d
 			tasks: [{
-				id: "3808BD4DED700D07"
-				type: "checkmark"
+				dimension: "midnight:the_midnight"
+				icon: "midnight:rift_placer"
+				id: "204FCA811D61078B"
+				title: "午夜"
+				type: "dimension"
 			}]
 			title: "深境三层"
 			x: 0.0d
@@ -1004,6 +1007,17 @@
 			x: 2.5d
 			y: -2.5d
 		}
+		{
+			dependencies: ["2E482B871B147DC6"]
+			id: "40570CBD9A0E5C38"
+			tasks: [{
+				id: "115E1307A878DD34"
+				item: "midnight:crystalotus"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
 	]
-	title: "深境：午夜森林"
+	title: "深境：午夜"
 }

@@ -1,3 +1,4 @@
+// priority: 100
 let TARGET_DIM = 'minecraft:overworld';
 
 let PLATFORM_Y = 300;
@@ -12,7 +13,7 @@ let SPAWN_X = 8;
 let SPAWN_Z = 8;
 
 let PLAYER_INIT_KEY = 'sdbf.linit';
-let PLAYER_OVERWORLD_LOCK_KEY = 'sdbf.world_lock';
+let OVERWORLD_STAGE = 'sdbf.world_lock';
 
 const buildBedrockPlatform = (level) => {
     for (let x = X_MIN; x <= X_MAX; x++) {
@@ -69,21 +70,24 @@ PlayerEvents.loggedIn(event => {
     player.tell('Wellcome! ');
 });
 
+const punishPlayer = (player) => {
+    player.teleportTo(TARGET_DIM, SPAWN_X + 0.5, PLAYER_Y, SPAWN_Z + 0.5, 0, 0);
+
+    player.potionEffects.add('minecraft:wither', 200, 0);
+    player.potionEffects.add('minecraft:blindness', 200, 0);
+    player.potionEffects.add('minecraft:nausea', 200, 0);
+};
+
 PlayerEvents.tick(event => {
     let player = event.player;
     if (!player || player.isFake && player.isFake()) return;
 
     if (player.level.dimensionKey != TARGET_DIM) return;
 
-    if (player.stages.has(PLAYER_OVERWORLD_LOCK_KEY)) return;
+    if (player.stages.has(OVERWORLD_STAGE)) return;
 
     if (player.getBlockY() < 280) {
-        player.teleportTo(TARGET_DIM, SPAWN_X + 0.5, PLAYER_Y, SPAWN_Z + 0.5, 0, 0);
-        
-        player.potionEffects.add('minecraft:wither', 200, 0);
-        player.potionEffects.add('minecraft:blindness', 200, 0);
-        player.potionEffects.add('minecraft:nausea', 200, 0);
+        punishPlayer(player);
         player.tell('You are forbided, wait for the future task. ');
     }
-
 })

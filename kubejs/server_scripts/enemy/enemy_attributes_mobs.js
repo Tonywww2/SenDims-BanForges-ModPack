@@ -5,6 +5,8 @@
  */
 const mobTypes = {
     'productivebees:configurable_bee': type0,
+    'productivebees:sweat_bee': type0,
+    'productivebees:digger_bee': type0,
 
     'tofucraft:shudofuspider': typeB,
     'tofucraft:fukumame_thower': typeA,
@@ -25,6 +27,8 @@ const mobTypes = {
     "minecraft:enderman": typeC,
     "minecraft:iron_golem": typeC,
     "minecraft:warden": typeCEX2,
+    "artifacts:mimic": typeAEX1,
+    "minecraft:illusioner": typeA,
 
     "species:wicked": typeC,
     "species:cliff_hanger": typeB,
@@ -37,6 +41,8 @@ const mobTypes = {
     "minecraft:pig": type0,
     "minecraft:sheep": type0,
     "minecraft:cow": type0,
+    "quark:shiba": type0,
+    "minecraft:goat": type0,
 
     "yungscavebiomes:ice_cube": typeSlime,
 
@@ -206,6 +212,7 @@ const mobTypes = {
     "minecraft:strider": type0,
     "quark:foxhound": typeB,
     "thermal:basalz": typeA,
+    "thermal:blizz": typeA,
     "terra_entity:the_hungry": typeB,
     "terra_entity:hill_hungry": typeB,
     "terra_entity:leech": typeC,
@@ -244,7 +251,13 @@ const mobTypes = {
     "undergarden:dweller": type0,
 
     "undergarden:forgotten_guardian": bossType1,
-    "nuclearcraft:feral_ghoul_boss": bossType2
+    "nuclearcraft:feral_ghoul_boss": bossType2,
+
+    "midnight:rifter": typeA,
+    "midnight:nightshade": typeC,
+    "midnight:slink": typeD,
+    "midnight:nightstag": typeD,
+    "midnight:nova": typeB,
 
 };
 /**
