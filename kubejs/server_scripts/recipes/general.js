@@ -13,6 +13,16 @@ ServerEvents.recipes(event => {
         })
         .id("sdbf:jade_to_soul")
 
+    event.shaped('integrateddynamics:logic_director', [
+        'ACA',
+        'ABA',
+        'ACA'
+    ], {
+        A: 'integrateddynamics:crystalized_chorus_chunk',
+        B: '#forge:gems/diamond',
+        C: 'integrateddynamics:crystalized_menril_chunk'
+    }).id('sdbf:logic_director')
+
     event.recipes.slashblade.proudsoul_shapeless_recipe('slashblade:proudsoul_ingot', [
         '#forge:ingots/steel',
         '3x slashblade:proudsoul',

@@ -6,6 +6,29 @@ ServerEvents.recipes(event => {
         'aether:ambrosium_shard'
     ]).id("sdbf:ender_eye_s3")
 
+    event.shaped('kubejs:chorus_logic_composite_coil', [
+        'ACB',
+        'CAC',
+        'BCA'
+    ], {
+        A: 'integrateddynamics:logic_director',
+        B: 'thermal:rf_coil',
+        C: 'nuclearcraft:coil_copper'
+    }).id('sdbf:chorus_logic_composite_coil_s3')
+
+    event.custom({
+        "type": "nuclearcraft:assembler",
+        "input": [
+            Item.of('thermal:rf_coil', 1).toJson(),
+            Item.of('integrateddynamics:logic_director', 2).toJson(),
+            Item.of('nuclearcraft:coil_copper', 3).toJson(),
+        ],
+        "output": [Item.of('kubejs:chorus_logic_composite_coil', 1).toJson()],
+        "powerModifier": 2.0,
+        "radiation": 1.0,
+        "timeModifier": 1.0
+    }).id('sdbf:chorus_logic_composite_coil_acc_s3')
+
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
         "SNS",
         "IBI",

@@ -711,8 +711,8 @@
 			id: "319D8C539D81926B"
 			size: 2.0d
 			tasks: [{
-				id: "42582B51016851A2"
-				item: "confluence:workshop"
+				id: "4187A868570E962D"
+				item: "terra_curio:workshop"
 				type: "item"
 			}]
 			x: 10.0d

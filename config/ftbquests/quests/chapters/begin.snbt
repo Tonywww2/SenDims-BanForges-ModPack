@@ -51,7 +51,7 @@
 					type: "item"
 				}
 				{
-					count: 32
+					count: 16
 					id: "2C862CB6AB76E5EB"
 					item: "minecraft:torch"
 					type: "item"

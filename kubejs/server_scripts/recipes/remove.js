@@ -27,6 +27,14 @@ const toRemoveID = new Set([
     "nuclearcraft:plate_basic",
     "ancient_aether:enchanting_table_from_gravitite",
     "terra_curio:workshop",
+    "integrateddynamics:crafting/logic_director",
+
+    "sjap_adder:dragon_fire",
+    "sjap_adder:dragon_ice",
+    "sjap_adder:dragon_lightning",
+    "sjap_adder:dragon_steel_fire",
+    "sjap_adder:dragon_steel_ice",
+    "sjap_adder:dragon_steel_lightning",
 
     "slashblade_addon:wanderer",
     "cialloblade:ciallo",

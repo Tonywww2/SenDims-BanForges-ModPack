@@ -235,6 +235,9 @@ feur_dimensional_skyland:small_villager_airship
 feur_dimensional_skyland:small_villager_airship_2
 feur_dimensional_skyland:villager_airship
 feur_dimensional_skyland:villager_balloon
+hearths:crimson_tower
+hearths:netherrack_spiral
+hearths:warped_tower
 infinity_cave:amethyst_altar
 infinity_cave:amethyst_geode
 infinity_cave:deep_dark_temple
@@ -268,6 +271,7 @@ mes:phantom_citadel
 mes:placid_prairie
 mes:ruined_pillar
 mes:starlight_voyager
+midnight:forgotten_library
 minecraft:ancient_city
 minecraft:bastion_remnant
 minecraft:buried_treasure
