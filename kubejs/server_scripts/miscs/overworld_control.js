@@ -12,6 +12,8 @@ let Z_MAX = 15;
 let SPAWN_X = 8;
 let SPAWN_Z = 8;
 
+let MIN_Y_LEVEL = 280;
+
 let PLAYER_INIT_KEY = 'sdbf.linit';
 let OVERWORLD_STAGE = 'sdbf.world_lock';
 
@@ -86,7 +88,7 @@ PlayerEvents.tick(event => {
 
     if (player.stages.has(OVERWORLD_STAGE)) return;
 
-    if (player.getBlockY() < 280) {
+    if (player.getBlockY() < MIN_Y_LEVEL) {
         punishPlayer(player);
         player.tell('You are forbided, wait for the future task. ');
     }

@@ -87,7 +87,7 @@ ServerEvents.highPriorityData(event => {
         .build();
 
     // 8. 墨丘利耐火结构组件 (新加)
-    tetraMaterialBuilder(event, "mercury_refractory").setCategory("misc")
+    tetraMaterialBuilder(event, "mercury_refractory").setCategory("metal")
         .setPrimary(18).setSecondary(8).setTertiary(8)
         .setDurability(260).setIntegrityCost(4).setIntegrityGain(6)
         .setMagicCapacity(130).setToolLevel(3).setToolEfficiency(7)
@@ -100,14 +100,14 @@ ServerEvents.highPriorityData(event => {
         .setRequiredTool("hammer_dig", 1)
         .build();
 
-    // 9. 逻辑导向零件 (无需修改)
+    // 9. 逻辑导向零件 (修改颜色)
     tetraMaterialBuilder(event, "logic_director").setCategory("metal")
         .setPrimary(14).setSecondary(6).setTertiary(7)
         .setDurability(240).setIntegrityCost(6).setIntegrityGain(5)
         .setMagicCapacity(130).setToolLevel(3).setToolEfficiency(6.5)
         .addAttributes("slashblade_sendims:ap_gain_percentage", 0.1)
         .addAttributes("attributeslib:experience_gained", 0.1)
-        .setTints("3498db", "21618c") 
+        .setTints("8e44ad", "2e113d") 
         .addTexture("metal").addTexture("default")
         .addItemMaterial('integrateddynamics:logic_director')
         .setRequiredTool("hammer_dig", 1)
@@ -173,7 +173,7 @@ ServerEvents.highPriorityData(event => {
         .addAttributes("attributeslib:cold_damage", 6.0)
         .setTints("85c1e9", "2e86c1") 
         .addTexture("metal").addTexture("heavy")
-        .setTagMaterial('forge:ingots/extreme') 
+        .setTagMaterial('forge:ingots/froststeel') 
         .setRequiredTool("hammer_dig", 1)
         .build();
 
@@ -244,7 +244,7 @@ ServerEvents.highPriorityData(event => {
         .build();
 
     // 20. 悲哀线圈 (新加)
-    tetraMaterialBuilder(event, "coil_of_sorrow").setCategory("misc")
+    tetraMaterialBuilder(event, "coil_of_sorrow").setCategory("metal")
         .setPrimary(25).setSecondary(8).setTertiary(11.6)
         .setDurability(280).setIntegrityCost(7).setIntegrityGain(9)
         .setMagicCapacity(150).setToolLevel(4).setToolEfficiency(7)
@@ -258,7 +258,7 @@ ServerEvents.highPriorityData(event => {
         .build();
 
     // 21. Xenorium 298 (新加)
-    tetraMaterialBuilder(event, "xenorium_298").setCategory("misc")
+    tetraMaterialBuilder(event, "xenorium_298").setCategory("metal")
         .setPrimary(20).setSecondary(23).setTertiary(11)
         .setDurability(300).setIntegrityCost(6).setIntegrityGain(6)
         .setMagicCapacity(160).setToolLevel(4).setToolEfficiency(8)
@@ -299,7 +299,7 @@ ServerEvents.highPriorityData(event => {
         .build();
 
     // 24. 虚空核心 (新加)
-    tetraMaterialBuilder(event, "void_core").setCategory("misc")
+    tetraMaterialBuilder(event, "void_core").setCategory("gem")
         .setPrimary(10).setSecondary(35).setTertiary(10.5)
         .setDurability(250).setIntegrityCost(6).setIntegrityGain(8)
         .setMagicCapacity(160).setToolLevel(4).setToolEfficiency(8)
@@ -349,7 +349,7 @@ ServerEvents.highPriorityData(event => {
         .build();
 
     // 28. 紫菘逻辑线圈 (新加)
-    tetraMaterialBuilder(event, "chorus_logic_composite_coil").setCategory("misc")
+    tetraMaterialBuilder(event, "chorus_logic_composite_coil").setCategory("metal")
         .setPrimary(25).setSecondary(10).setTertiary(12)
         .setDurability(280).setIntegrityCost(8).setIntegrityGain(12)
         .setMagicCapacity(160).setToolLevel(4).setToolEfficiency(8)

@@ -431,7 +431,7 @@
 				item: "minecraft:enchanting_table"
 				type: "item"
 			}]
-			x: -9.0d
+			x: -10.0d
 			y: 0.0d
 		}
 		{
@@ -448,7 +448,7 @@
 				type: "item"
 			}]
 			title: "简易村民"
-			x: -8.5d
+			x: -10.0d
 			y: 7.5d
 		}
 		{
@@ -464,7 +464,7 @@
 				item: "easy_villagers:trader"
 				type: "item"
 			}]
-			x: -8.5d
+			x: -10.0d
 			y: 10.0d
 		}
 		{
@@ -475,7 +475,7 @@
 				item: "easy_villagers:auto_trader"
 				type: "item"
 			}]
-			x: -8.5d
+			x: -10.0d
 			y: 12.5d
 		}
 		{
@@ -486,7 +486,7 @@
 				item: "easy_villagers:breeder"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -7.5d
 			y: 7.5d
 		}
 		{
@@ -497,7 +497,7 @@
 				item: "easy_villagers:incubator"
 				type: "item"
 			}]
-			x: -11.0d
+			x: -12.5d
 			y: 7.5d
 		}
 		{

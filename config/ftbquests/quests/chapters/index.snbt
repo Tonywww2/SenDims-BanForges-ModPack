@@ -222,6 +222,50 @@
 			x: 14.0d
 			y: 9.0d
 		}
+		{
+			id: "6876A7C0D1EE58C6"
+			linked_quest: "16583AEF17DC8460"
+			shape: "gear"
+			size: 2.0d
+			x: -22.0d
+			y: 12.0d
+		}
+		{
+			id: "168E0929112AD60F"
+			linked_quest: "6FD736B74327F2AF"
+			size: 2.0d
+			x: -22.0d
+			y: 9.0d
+		}
+		{
+			id: "28A3CADE3E64B9A1"
+			linked_quest: "2EA1B384A87A94DA"
+			shape: "gear"
+			size: 2.0d
+			x: -19.0d
+			y: 12.0d
+		}
+		{
+			id: "6BBAFBDA4043244F"
+			linked_quest: "514CF1593551F00F"
+			size: 2.0d
+			x: -19.0d
+			y: 9.0d
+		}
+		{
+			id: "662759AFEBDD0AA3"
+			linked_quest: "51E136B4E1C27308"
+			size: 2.0d
+			x: -16.0d
+			y: 9.0d
+		}
+		{
+			id: "3D797BDA8AEB9E1D"
+			linked_quest: "034D47E905861E48"
+			size: 2.0d
+			x: -13.0d
+			y: 9.0d
+		}
 	]
 	quests: [ ]
 	title: "快速索引"

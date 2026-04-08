@@ -312,6 +312,7 @@
 			]
 			icon: "last_smith:sakura"
 			id: "6336CB1635142B6B"
+			shape: "gear"
 			tasks: [{
 				id: "54F36C86AC779973"
 				type: "checkmark"
@@ -1317,6 +1318,7 @@
 				}
 			}
 			id: "16583AEF17DC8460"
+			shape: "gear"
 			tasks: [{
 				id: "61781893C311D4E6"
 				type: "checkmark"
@@ -1588,6 +1590,7 @@
 				"675F33EF4E067029"
 			]
 			id: "508A09AAE14A4DB1"
+			shape: "diamond"
 			tasks: [{
 				id: "670D1A3F033DE28D"
 				item: {
@@ -1754,6 +1757,50 @@
 			}]
 			x: 12.5d
 			y: 7.5d
+		}
+		{
+			dependencies: ["11728C2FAEFCBBAD"]
+			description: [
+				"复制一把&b拔刀剑&r的&bSA&r："
+				"1. 获得一个拥有&d附魔&r的&b耀魂宝珠&r"
+				"2. 确保拥有你希望复制的&bSA&r的&b拔刀剑&r拥有该&d附魔&r，并且该&d附魔&r至少达到原版等级上限"
+				"3. 将这把&b拔刀剑&r放置于任意的&b刀挂台&r上"
+				"4. 使用这个&b耀魂宝珠&r左键&b刀挂台&r"
+				""
+				"注意：确保你使用的是耀魂宝珠，而不是耀魂铁锭"
+			]
+			id: "4110B5547F5D8BD8"
+			shape: "gear"
+			tasks: [{
+				id: "5295EDA4237D1E8B"
+				type: "checkmark"
+			}]
+			title: "SA复制"
+			x: -10.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4D0F49CE2720FBCD"]
+			id: "606C920FEB477498"
+			tasks: [{
+				id: "5BD5BAD2F4D50E3E"
+				item: "slashblade:proudsoul_trapezohedron"
+				type: "item"
+			}]
+			x: -15.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4D0F49CE2720FBCD"]
+			id: "28AE103E3489DC0A"
+			shape: "gear"
+			tasks: [{
+				id: "5B04EE553769F239"
+				type: "checkmark"
+			}]
+			title: "SE复制"
+			x: -12.5d
+			y: 2.5d
 		}
 	]
 	title: "拔刀剑"
