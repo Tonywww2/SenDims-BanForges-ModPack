@@ -67,7 +67,7 @@ tetraMaterialBuilder(event, "material_id")
 
 ### 9. 特殊属性
 - addAttributes("属性ID", 数值)
-- 你不知道每个特殊属性对应的ID，所以不需要完整的调用addAttributes
+- 你不知道每个特殊属性对应的ID，所以不需要完整的调用addAttributes，只需要把属性ID的对应描述填入
 - "+"类属性直接由ID开头，"%"类属性需要在ID前加上"**"，并将数字转化为小数格式
 - 例：攻击伤害+0.25 addAttributes("攻击伤害", 0.25)
 - 例：移动速度-10% addAttributes("**移动速度", -0.1)

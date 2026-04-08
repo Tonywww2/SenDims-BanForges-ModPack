@@ -1,54 +1,66 @@
 ServerEvents.highPriorityData(event => {
 
-    // 1. 炎狱尖塔块
+    // 1. 金星石 (新加)
+    tetraMaterialBuilder(event, "venus_stone").setCategory("stone")
+        .setPrimary(8).setSecondary(6).setTertiary(3.5)
+        .setDurability(130).setIntegrityCost(3).setIntegrityGain(3)
+        .setMagicCapacity(70).setToolLevel(2).setToolEfficiency(5)
+        .addAttributes("**attributeslib:fire_damage", 0.10)
+        .setTints("d35400", "e67e22") 
+        .addTexture("grainy").addTexture("crude")
+        .addItemMaterial('ad_astra:venus_stone')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
+    // 2. 炎狱尖塔块 (已修正)
     tetraMaterialBuilder(event, "infernal_spire_block").setCategory("stone")
-        .setPrimary(9).setSecondary(6).setTertiary(4)
+        .setPrimary(9).setSecondary(4).setTertiary(4) // 次要属性设为4
         .setDurability(140).setIntegrityCost(4).setIntegrityGain(4)
         .setMagicCapacity(80).setToolLevel(5).setToolEfficiency(8)
-        .addAttributes("attributeslib:fire_damage", 1.5)
+        .addAttributes("attributeslib:fire_damage", 2.0) // 火焰伤害改为+2
         .setTints("b03a2e", "78281f")
         .addTexture("grainy").addTexture("crude").addTexture("default")
         .addItemMaterial('ad_astra:infernal_spire_block')
         .setRequiredTool("hammer_dig", 1)
         .build();
 
-    // 2. 震动合金
+    // 3. 震动合金 (无需修改)
     tetraMaterialBuilder(event, "vibrant_alloy_ingot").setCategory("metal")
         .setPrimary(9.6).setSecondary(7).setTertiary(4.8)
         .setDurability(220).setIntegrityCost(5).setIntegrityGain(4)
         .setMagicCapacity(90).setToolLevel(3).setToolEfficiency(5.5)
         .addAttributes("minecraft:generic.armor", 1.0)
-        .setTints("a3fb66", "7dbd4a") // 经典的震动合金亮绿色
+        .setTints("a3fb66", "7dbd4a") 
         .addTexture("metal").addTexture("shiny")
         .addItemMaterial('enderio:vibrant_alloy_ingot')
         .setRequiredTool("hammer_dig", 1)
         .build();
 
-    // 3. 门瑞欧结晶
+    // 4. 门瑞欧结晶 (无需修改)
     tetraMaterialBuilder(event, "crystalized_menril_chunk").setCategory("gem")
         .setPrimary(8).setSecondary(12).setTertiary(4)
         .setDurability(200).setIntegrityCost(5).setIntegrityGain(4)
         .setMagicCapacity(100).setToolLevel(2).setToolEfficiency(6)
         .addAttributes("minecraft:generic.armor_toughness", 0.75)
-        .setTints("1abc9c", "d1f2eb") // 青绿色调
+        .setTints("1abc9c", "d1f2eb") 
         .addTexture("shiny").addTexture("crude")
         .addItemMaterial('integrateddynamics:crystalized_menril_chunk')
         .setRequiredTool("hammer_dig", 1)
         .build();
 
-    // 4. 爆裂紫颂果
+    // 5. 爆裂紫颂果 (已修正说明)
     tetraMaterialBuilder(event, "popped_chorus_fruit").setCategory("misc")
         .setPrimary(9).setSecondary(12).setTertiary(6)
         .setDurability(120).setIntegrityCost(4).setIntegrityGain(5)
         .setMagicCapacity(110).setToolLevel(2).setToolEfficiency(4.5)
-        .addAttributes("attributeslib:armor_shred", 2.0)
-        .setTints("8e44ad", "2e113d") // 紫色
+        .addAttributes("attributeslib:armor_pierce", 2.0) // 修改为护甲穿透
+        .setTints("8e44ad", "2e113d") 
         .addTexture("crude").addTexture("default")
         .addItemMaterial('minecraft:popped_chorus_fruit')
         .setRequiredTool("hammer_dig", 1)
         .build();
 
-    // 5. 耐热金属 (Calorite)
+    // 6. 耐热金属 (无需修改)
     tetraMaterialBuilder(event, "calorite").setCategory("metal")
         .setPrimary(12).setSecondary(5).setTertiary(6.5)
         .setDurability(260).setIntegrityCost(4).setIntegrityGain(5)
@@ -56,192 +68,298 @@ ServerEvents.highPriorityData(event => {
         .addAttributes("slashblade_sendims:frenzy_resistance", 0.05)
         .addAttributes("slashblade_sendims:frenzy_damage", 0.05)
         .addAttributes("minecraft:generic.max_health", 4.0)
-        .setTints("e74c3c", "922b21") // 鲜红/金属红
+        .setTints("e74c3c", "922b21") 
         .addTexture("metal").addTexture("heavy")
         .setTagMaterial('forge:ingots/calorite')
         .setRequiredTool("hammer_dig", 1)
         .build();
 
-    // 6. 逻辑导向零件
+    // 7. 水星石 (新加)
+    tetraMaterialBuilder(event, "mercury_stone").setCategory("stone")
+        .setPrimary(10).setSecondary(5).setTertiary(6)
+        .setDurability(130).setIntegrityCost(4).setIntegrityGain(4)
+        .setMagicCapacity(80).setToolLevel(2).setToolEfficiency(5)
+        .addAttributes("**attributeslib:cold_damage", 0.10)
+        .setTints("85929e", "5d6d7e") 
+        .addTexture("grainy").addTexture("crude")
+        .addItemMaterial('ad_astra:mercury_stone')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
+    // 8. 墨丘利耐火结构组件 (新加)
+    tetraMaterialBuilder(event, "mercury_refractory").setCategory("misc")
+        .setPrimary(18).setSecondary(8).setTertiary(8)
+        .setDurability(260).setIntegrityCost(4).setIntegrityGain(6)
+        .setMagicCapacity(130).setToolLevel(3).setToolEfficiency(7)
+        .addAttributes("attributeslib:fire_damage", 4.0)
+        .addAttributes("slashblade_sendims:frenzy_resistance", 0.1)
+        .addAttributes("minecraft:generic.armor_toughness", 0.5)
+        .setTints("d35400", "873600") 
+        .addTexture("metal").addTexture("heavy")
+        .addItemMaterial('kubejs:mercury_refractory_structural_component')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
+    // 9. 逻辑导向零件 (无需修改)
     tetraMaterialBuilder(event, "logic_director").setCategory("metal")
         .setPrimary(14).setSecondary(6).setTertiary(7)
         .setDurability(240).setIntegrityCost(6).setIntegrityGain(5)
         .setMagicCapacity(130).setToolLevel(3).setToolEfficiency(6.5)
         .addAttributes("slashblade_sendims:ap_gain_percentage", 0.1)
         .addAttributes("attributeslib:experience_gained", 0.1)
-        .setTints("3498db", "21618c") // 科技蓝
+        .setTints("3498db", "21618c") 
         .addTexture("metal").addTexture("default")
         .addItemMaterial('integrateddynamics:logic_director')
         .setRequiredTool("hammer_dig", 1)
         .build();
 
-    // 7. 紫菘玻璃
+    // 10. 紫菘玻璃 (无需修改)
     tetraMaterialBuilder(event, "chorus_glass").setCategory("gem")
         .setPrimary(17).setSecondary(2).setTertiary(7)
         .setDurability(180).setIntegrityCost(6).setIntegrityGain(6)
         .setMagicCapacity(115).setToolLevel(3).setToolEfficiency(8)
         .addAttributes("slashblade_sendims:ap_reduce_amount", 10.0)
         .addAttributes("attributeslib:armor_pierce", 2.0)
-        .setTints("d7bde2", "633974") // 浅紫透明色调
+        .setTints("d7bde2", "633974") 
         .addTexture("shiny").addTexture("crude")
         .addItemMaterial('integratedterminals:chorus_glass')
         .setRequiredTool("hammer_dig", 1)
         .build();
 
-    // 8. 虚金
+    // 11. 虚金 (无需修改)
     tetraMaterialBuilder(event, "virtual_gold_ingot").setCategory("metal")
         .setPrimary(15.5).setSecondary(6).setTertiary(8)
         .setDurability(200).setIntegrityCost(6).setIntegrityGain(6)
         .setMagicCapacity(140).setToolLevel(3).setToolEfficiency(7.5)
         .addAttributes("attributeslib:crit_chance", 0.05)
         .addAttributes("minecraft:generic.knockback_resistance", 0.1)
-        .setTints("f1c40f", "d4ac0d") // 金色调
+        .setTints("f1c40f", "d4ac0d") 
         .addTexture("metal").addTexture("shiny")
         .addItemMaterial('kubejs:virtual_gold_ingot')
         .setRequiredTool("hammer_dig", 1)
         .build();
 
-    // 9. 御腐 (Utherium)
+    // 12. 扼塞 (新加)
+    tetraMaterialBuilder(event, "cloggrum").setCategory("metal")
+        .setPrimary(13).setSecondary(5).setTertiary(7)
+        .setDurability(180).setIntegrityCost(5).setIntegrityGain(5)
+        .setMagicCapacity(100).setToolLevel(2).setToolEfficiency(6)
+        .addAttributes("attributeslib:crit_chance", -0.05)
+        .addAttributes("**minecraft:generic.attack_damage", 0.05)
+        .setTints("5d6d7e", "34495e") 
+        .addTexture("metal").addTexture("crude")
+        .addItemMaterial('undergarden:cloggrum_ingot')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
+    // 13. 御腐 (Utherium - 已修正)
     tetraMaterialBuilder(event, "utherium").setCategory("metal")
         .setPrimary(14).setSecondary(5).setTertiary(7.5)
         .setDurability(250).setIntegrityCost(6).setIntegrityGain(7)
         .setMagicCapacity(100).setToolLevel(3).setToolEfficiency(6.5)
-        .setTints("1e8449", "145a32") // 墨绿色
+        .addAttributes("attributeslib:crit_damage", -0.05)
+        .addAttributes("minecraft:generic.attack_damage", 1.5)
+        .setTints("1e8449", "145a32") 
         .addTexture("metal").addTexture("heavy")
         .setTagMaterial('forge:ingots/utherium')
         .setRequiredTool("hammer_dig", 1)
         .build();
 
-    // 10. 霜钢 (Frost Steel)
+    // 14. 霜钢 (已修正)
     tetraMaterialBuilder(event, "frost_steel").setCategory("metal")
-        .setPrimary(17).setSecondary(7).setTertiary(9.5)
+        .setPrimary(15).setSecondary(7).setTertiary(9.5) // 修正主属性为 15
         .setDurability(280).setIntegrityCost(7).setIntegrityGain(7)
         .setMagicCapacity(140).setToolLevel(4).setToolEfficiency(7.5)
         .addAttributes("attributeslib:cold_damage", 6.0)
-        .setTints("85c1e9", "2e86c1") // 冰蓝色
+        .setTints("85c1e9", "2e86c1") 
         .addTexture("metal").addTexture("heavy")
-        .setTagMaterial('forge:ingots/extreme') // 注意：此处对应表中ID
+        .setTagMaterial('forge:ingots/extreme') 
         .setRequiredTool("hammer_dig", 1)
         .build();
 
-    // 11. 极限合金
+    // 15. 极限合金 (已修正)
     tetraMaterialBuilder(event, "extreme_alloy").setCategory("metal")
-        .setPrimary(18).setSecondary(10).setTertiary(9.8)
+        .setPrimary(16).setSecondary(10).setTertiary(9.8) // 修正主属性为 16
         .setDurability(300).setIntegrityCost(7).setIntegrityGain(7)
         .setMagicCapacity(150).setToolLevel(4).setToolEfficiency(8)
-        .addAttributes("attributeslib:armor_shred", 0.05)
-        .addAttributes("minecraft:generic.armor_toughness", 0.25)
-        .setTints("566573", "2c3e50") // 深钢灰色
+        .addAttributes("attributeslib:armor_shred", 0.025) // 修正为 2.5% 盔甲撕裂
+        .addAttributes("minecraft:generic.armor_toughness", 0.5) // 新增韧性+0.5
+        .setTints("566573", "2c3e50") 
         .addTexture("metal").addTexture("heavy")
         .setTagMaterial('forge:ingots/extreme')
         .setRequiredTool("hammer_dig", 1)
         .build();
 
-    // 12. 贵豪 (Regalium)
+    // 16. 贵豪 (无需修改)
     tetraMaterialBuilder(event, "regalium").setCategory("metal")
         .setPrimary(20).setSecondary(10).setTertiary(10)
         .setDurability(290).setIntegrityCost(8).setIntegrityGain(8)
         .setMagicCapacity(160).setToolLevel(4).setToolEfficiency(7.5)
         .addAttributes("attributeslib:experience_gained", 0.15)
         .addAttributes("attributeslib:crit_damage", 0.05)
-        .setTints("f39c12", "e67e22") // 橙金/高贵色调
+        .setTints("f39c12", "e67e22") 
         .addTexture("metal").addTexture("shiny")
         .setTagMaterial('forge:ingots/regalium')
         .setRequiredTool("hammer_dig", 1)
         .build();
 
-    // 13. 遗忆 (Forgotten Metal)
+    // 17. 遗忆 (无需修改)
     tetraMaterialBuilder(event, "forgotten").setCategory("metal")
         .setPrimary(23).setSecondary(8).setTertiary(11)
         .setDurability(300).setIntegrityCost(8).setIntegrityGain(8)
         .setMagicCapacity(140).setToolLevel(4).setToolEfficiency(8)
         .addAttributes("minecraft:generic.armor", 1.0)
         .addAttributes("attributeslib:armor_pierce", 1.0)
-        .setTints("d5dbdb", "808b96") // 古旧的银灰色
+        .setTints("d5dbdb", "808b96") 
         .addTexture("metal").addTexture("crude")
         .setTagMaterial('forge:ingots/forgotten_metal')
         .setRequiredTool("hammer_dig", 1)
         .build();
 
-    // 14. 中子 (Neutronium)
+    // 18. 中子 (Neutronium - 原有修复)
     tetraMaterialBuilder(event, "neutronium").setCategory("metal")
         .setPrimary(17).setSecondary(18).setTertiary(10)
         .setDurability(300).setIntegrityCost(8).setIntegrityGain(8)
         .setMagicCapacity(160).setToolLevel(4).setToolEfficiency(5)
         .addAttributes("**minecraft:generic.movement_speed", -0.05)
-        .addAttributes("**minecraft:generic.attack_damage", 0.03)
-        .setTints("17202a", "000000") // 极深黑色
+        .addAttributes("minecraft:generic.attack_damage", 2.0)
+        .setTints("17202a", "000000") 
         .addTexture("metal").addTexture("heavy")
         .setTagMaterial('forge:ingots/neutronium')
         .setRequiredTool("hammer_dig", 1)
         .build();
 
-    // 15. 三项合金
+    // 19. 三项合金 (已修正)
     tetraMaterialBuilder(event, "trinity_alloy").setCategory("metal")
         .setPrimary(25).setSecondary(9).setTertiary(11.5)
         .setDurability(300).setIntegrityCost(8).setIntegrityGain(9)
         .setMagicCapacity(160).setToolLevel(4).setToolEfficiency(8)
-        .addAttributes("**minecraft:generic.max_health", 0.03)
-        .addAttributes("attributeslib:armor_shred", 0.03)
-        .addAttributes("slashblade_sendims:parry_heal_amount", 333)
-        .setTints("ecf0f1", "95a5a6") // 亮合金色
+        .addAttributes("**minecraft:generic.max_health", 0.03) // 最大生命值+3%
+        .addAttributes("attributeslib:fire_damage", 3.0)
+        .addAttributes("attributeslib:cold_damage", 3.0)
+        .setTints("ecf0f1", "95a5a6") 
         .addTexture("metal").addTexture("shiny").addTexture("heavy")
         .addItemMaterial('kubejs:trinity_alloy_ingot')
         .setRequiredTool("hammer_dig", 1)
         .build();
 
-    // 16. 铍青铜合金
-    tetraMaterialBuilder(event, "beryllium_bronze_alloy").setCategory("metal")
+    // 20. 悲哀线圈 (新加)
+    tetraMaterialBuilder(event, "coil_of_sorrow").setCategory("misc")
+        .setPrimary(25).setSecondary(8).setTertiary(11.6)
+        .setDurability(280).setIntegrityCost(7).setIntegrityGain(9)
+        .setMagicCapacity(150).setToolLevel(4).setToolEfficiency(7)
+        .addAttributes("attributeslib:armor_pierce", 1.5)
+        .addAttributes("slashblade_sendims:frenzy_damage", 0.05)
+        .addAttributes("minecraft:generic.max_health", 4.0)
+        .setTints("7b241c", "4a2311") 
+        .addTexture("metal").addTexture("shiny")
+        .addItemMaterial('kubejs:coil_of_sorrow')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
+    // 21. Xenorium 298 (新加)
+    tetraMaterialBuilder(event, "xenorium_298").setCategory("misc")
+        .setPrimary(20).setSecondary(23).setTertiary(11)
+        .setDurability(300).setIntegrityCost(6).setIntegrityGain(6)
+        .setMagicCapacity(160).setToolLevel(4).setToolEfficiency(8)
+        .addAttributes("slashblade_sendims:frenzy_damage", 0.1)
+        .addAttributes("slashblade_sendims:hate", 1.0)
+        .addAttributes("minecraft:generic.max_health", 4.0)
+        .setTints("5b2c6f", "21043f") 
+        .addTexture("metal").addTexture("shiny")
+        .addItemMaterial('nuclearcraft:xenorium_298')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
+    // 22. 铍青铜复合材料 (替换原铍青铜)
+    tetraMaterialBuilder(event, "menril-silicon_sic_sic_cmc").setCategory("metal")
         .setPrimary(27).setSecondary(14).setTertiary(12)
         .setDurability(300).setIntegrityCost(8).setIntegrityGain(9)
         .setMagicCapacity(150).setToolLevel(4).setToolEfficiency(8)
         .addAttributes("minecraft:generic.armor_toughness", 1.0)
-        .addAttributes("slashblade_sendims:frenzy_resistance", 0.1)
-        .addAttributes("slashblade_sendims:madness_reduce", 1.0)
-        .addAttributes("attributeslib:crit_chance", 0.035)
-        .setTints("d35400", "a04000") // 青铜/深橙色
+        .addAttributes("slashblade_sendims:frenzy_resistance", 0.15)
+        .addAttributes("attributeslib:crit_chance", 0.06)
+        .setTints("d35400", "a04000") 
         .addTexture("metal").addTexture("heavy")
-        .addItemMaterial('kubejs:beryllium_bronze_alloy_ingot')
+        .addItemMaterial('kubejs:menril-silicon_sic_sic_cmc_ingot')
         .setRequiredTool("hammer_dig", 1)
         .build();
 
-    // 17. 幻境石水晶
+    // 23. 虚空石 (新加)
+    tetraMaterialBuilder(event, "void_stone").setCategory("stone")
+        .setPrimary(11).setSecondary(28).setTertiary(10)
+        .setDurability(200).setIntegrityCost(6).setIntegrityGain(6)
+        .setMagicCapacity(130).setToolLevel(4).setToolEfficiency(8)
+        .addAttributes("terra_curio:aggro", -30)
+        .addAttributes("attributeslib:armor_pierce", 1.5)
+        .setTints("17202a", "000000") 
+        .addTexture("grainy").addTexture("heavy")
+        .addItemMaterial('cataclysm:void_stone')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
+    // 24. 虚空核心 (新加)
+    tetraMaterialBuilder(event, "void_core").setCategory("misc")
+        .setPrimary(10).setSecondary(35).setTertiary(10.5)
+        .setDurability(250).setIntegrityCost(6).setIntegrityGain(8)
+        .setMagicCapacity(160).setToolLevel(4).setToolEfficiency(8)
+        .addAttributes("attributeslib:armor_shred", 0.03)
+        .setTints("512e5f", "150a21") 
+        .addTexture("metal").addTexture("shiny")
+        .addItemMaterial('cataclysm:void_core')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
+    // 25. 幻境石水晶 (无需修改)
     tetraMaterialBuilder(event, "myalite_crystal").setCategory("gem")
         .setPrimary(12).setSecondary(30).setTertiary(10.5)
         .setDurability(280).setIntegrityCost(9).setIntegrityGain(9)
         .setMagicCapacity(160).setToolLevel(4).setToolEfficiency(7)
-        .setTints("d2b4de", "7d3c98") // 梦幻紫
+        .addAttributes("attributeslib:crit_damage", 0.05)
+        .setTints("d2b4de", "7d3c98") 
         .addTexture("shiny").addTexture("default")
         .addItemMaterial('quark:myalite_crystal')
         .setRequiredTool("hammer_dig", 1)
         .build();
 
-    // 18. 紫颂果结晶
+    // 26. 紫颂果结晶 (已修正)
     tetraMaterialBuilder(event, "crystalized_chorus").setCategory("gem")
         .setPrimary(10).setSecondary(15).setTertiary(7)
         .setDurability(220).setIntegrityCost(9).setIntegrityGain(10)
         .setMagicCapacity(140).setToolLevel(3).setToolEfficiency(6)
-        .addAttributes("attributeslib:cold_damage", 3.0)
-        .addAttributes("attributeslib:fire_damage", 3.0)
-        .setTints("bb8fce", "5b2c6f") // 结晶紫
+        .addAttributes("attributeslib:cold_damage", 7.5) // 修正为由之前火冰均属性修改为仅仅冰霜伤害+7.5
+        .setTints("bb8fce", "5b2c6f") 
         .addTexture("shiny").addTexture("crude")
         .addItemMaterial('integrateddynamics:crystalized_chorus_chunk')
         .setRequiredTool("hammer_dig", 1)
         .build();
 
-    // 19. 末地钢锭
+    // 27. 末地钢锭 (已修正)
     tetraMaterialBuilder(event, "end_steel").setCategory("metal")
         .setPrimary(25).setSecondary(13).setTertiary(12.7)
         .setDurability(300).setIntegrityCost(9).setIntegrityGain(10)
         .setMagicCapacity(160).setToolLevel(4).setToolEfficiency(8)
         .addAttributes("slashblade_sendims:sprint_cd", 0.05)
-        .addAttributes("slashblade_sendims:ap_reduce_amount", 8.0)
+        .addAttributes("slashblade_sendims:ap_reduce_amount", 10.0) // 修改为+10
         .addAttributes("minecraft:generic.attack_damage", 1.0)
-        .setTints("273746", "1d8348") // 末地风格的黑绿色
+        .setTints("273746", "1d8348") 
         .addTexture("metal").addTexture("heavy").addTexture("shiny")
         .addItemMaterial('enderio:end_steel_ingot')
         .setRequiredTool("hammer_dig", 1)
         .build();
 
+    // 28. 紫菘逻辑线圈 (新加)
+    tetraMaterialBuilder(event, "chorus_logic_composite_coil").setCategory("misc")
+        .setPrimary(25).setSecondary(10).setTertiary(12)
+        .setDurability(280).setIntegrityCost(8).setIntegrityGain(12)
+        .setMagicCapacity(160).setToolLevel(4).setToolEfficiency(8)
+        .addAttributes("attributeslib:experience_gained", 0.1)
+        .addAttributes("attributeslib:cold_damage", 10.0)
+        .addAttributes("minecraft:generic.attack_damage", -2.5)
+        .setTints("8e44ad", "2e113d") 
+        .addTexture("metal").addTexture("shiny")
+        .addItemMaterial('kubejs:chorus_logic_composite_coil')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
 
 })
