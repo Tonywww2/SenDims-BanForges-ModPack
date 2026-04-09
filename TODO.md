@@ -58,6 +58,9 @@
 - Tetra挖掘等级设计
 - 拔刀剑SA宝珠的Tetra强化设计
 - 天境新boss和相关内容
+- 维度boss
+- 灾厄boss
+- boss添加癫火抗性
 
 ### FTB任务
 
