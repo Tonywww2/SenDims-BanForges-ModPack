@@ -1,18 +1,18 @@
-let someArgs={
-    path :"slashblade/blade",
-    texturePath:"slashbladetetra:textures/gui/texture.png"
+let someArgs = {
+    path: "slashblade/blade",
+    texturePath: "slashbladetetra:textures/gui/texture.png"
 }
-ServerEvents.highPriorityData(event=>{
-    event.addJson(`tetra:improvements/${someArgs.path}/test.json`,[
+ServerEvents.highPriorityData(event => {
+    event.addJson(`tetra:improvements/${someArgs.path}/test.json`, [
         {
             "key": "zzz",
             "level": 1,
             "effects": {
-                "RefineStrengthening":1
+                "RefineStrengthening": 1
             }
         }
     ])
-    event.addJson(`tetra:schematics/${someArgs.path}/test.json`,{
+    event.addJson(`tetra:schematics/${someArgs.path}/test.json`, {
         "replace": true,
         "slots": [
             someArgs.path
@@ -23,7 +23,7 @@ ServerEvents.highPriorityData(event=>{
         "glyph": {
             "textureX": 16,
             "textureY": 0,
-            "textureLocation":  someArgs.texturePath
+            "textureLocation": someArgs.texturePath
         },
         "requirement": {
             "type": "tetra:and",
