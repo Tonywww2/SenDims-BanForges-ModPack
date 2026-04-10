@@ -33,15 +33,15 @@
 					"trident"
 				]
 			},
-			"attribute": "attributeslib:life_steal",
+			"attribute": "minecraft:generic.luck",
 			"operation": "ADDITION",
 			"values": {
-				"common": 0.0025,
-				"uncommon": 0.005,
-				"rare": 0.0075,
-				"epic": 0.01,
-				"mythic": 0.015,
-				"ancient": 0.02
+				"common": 0.25,
+				"uncommon": 0.5,
+				"rare": 0.75,
+				"epic": 1,
+				"mythic": 1.5,
+				"ancient": 2
 			}
 		}
 	]

@@ -1,12 +1,14 @@
 {
-	"type": "apotheosis:attribute",
-	"attribute": "attributeslib:elytra_flight",
-	"operation": "ADDITION",
-	"values": {
-		"mythic": 1,
-		"ancient": 1
-	},
-	"types": [
-		"chestplate"
-	]
+    "type": "apotheosis:attribute",
+    "attribute": "forge:entity_gravity",
+    "operation": "ADDITION",
+    "values":
+    {
+        "mythic": -0.005,
+        "ancient": -0.01
+    },
+    "types":
+    [
+        "chestplate"
+    ]
 }

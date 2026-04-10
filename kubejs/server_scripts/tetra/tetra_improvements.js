@@ -85,19 +85,11 @@ const ImprovementBuilder = function (scrollKey) {
         // Client.tell(outcome)
         event.addJson(`tetra:schematics/${someArgs.path}/${this.key.replace(":", "_")}.json`, result)
     }
-    /**
-     * modifier: 0 = +, 1 = *, 2 = **
-     */
-    this.addAttribute = (attributeName, modifier, value) => {
+    this.addAttribute = (attributeName, prefix, value) => {
         if (this.attributes == null) {
             this.attributes = {};
         }
-        if (modifier === 1) {
-            attributeName = "*" + attributeName;
-        }
-        if (modifier === 2) {
-            attributeName = "**" + attributeName;
-        }
+        attributeName = prefix + attributeName;
         this.attributes[attributeName] = value;
         return this;
     }
@@ -176,9 +168,74 @@ const ImprovementBuilder = function (scrollKey) {
 
 ServerEvents.highPriorityData(event => {
     new ImprovementBuilder("tetra:warforge/axe")
-        .addAttribute("attributeslib:armor_pierce", 0, 100)
-        .addEffect("RefineStrengthening", 1000)
-        .setMaterial("minecraft:jungle_planks", 35)
-        .setExperienceCost(5)
+        .addAttribute("minecraft:generic.max_health", "**", -0.2)
+        .addAttribute("minecraft:generic.attack_damage", "**", 0.25)
+        // .addEffect("RefineStrengthening", 1000)
+        .setMaterial('slashblade:proudsoul_tiny', 16)
+        .setExperienceCost(20)
         .build(event)
+
+    new ImprovementBuilder("tetra:warforge/hammer")
+        .addAttribute("minecraft:generic.max_health", "**", -0.1)
+        .addAttribute("minecraft:generic.armor", "**", 0.15)
+        .setMaterial('slashblade:proudsoul_tiny', 8)
+        .setExperienceCost(10)
+        .build(event)
+
+    new ImprovementBuilder("tetra:warforge/pickaxe")
+        .addAttribute("minecraft:generic.max_health", "**", 0.1)
+        .addAttribute("minecraft:generic.armor", "**", 0.1)
+        .addAttribute("minecraft:generic.attack_damage", "**", -0.1)
+        .setMaterial('slashblade:proudsoul_tiny', 8)
+        .setExperienceCost(10)
+        .build(event)
+
+    new ImprovementBuilder("tetra:warforge/butt")
+        .addAttribute("minecraft:generic.knockback_resistance", "", 0.25)
+        .addAttribute("minecraft:generic.attack_damage", "**", -0.05)
+        .setMaterial('slashblade:proudsoul_tiny', 8)
+        .setExperienceCost(10)
+        .build(event)
+
+    new ImprovementBuilder("tetra:warforge/claw")
+        .addAttribute("attributeslib:fire_damage", "**", 0.2)
+        .addAttribute("attributeslib:cold_damage", "**", 0.2)
+        .setMaterial('slashblade:proudsoul_tiny', 16)
+        .setExperienceCost(20)
+        .build(event)
+
+    new ImprovementBuilder("tetra:warforge/hoe")
+        .addAttribute("attributeslib:cold_damage", "**", 1.0)
+        .addAttribute("minecraft:generic.attack_damage", "**", -0.75)
+        .setMaterial('slashblade:proudsoul_tiny', 16)
+        .setExperienceCost(20)
+        .build(event)
+
+    new ImprovementBuilder("tetra:warforge/sickle")
+        .addAttribute("attributeslib:fire_damage", "**", 1.0)
+        .addAttribute("minecraft:generic.attack_damage", "**", -0.75)
+        .setMaterial('slashblade:proudsoul_tiny', 16)
+        .setExperienceCost(20)
+        .build(event)
+
+    new ImprovementBuilder("tetra:sword/sturdy_guard")
+        .addAttribute("attributeslib:life_steal", "", 0.05)
+        .addAttribute("minecraft:generic.max_health", "**", -0.5)
+        .setMaterial('slashblade:proudsoul_tiny', 16)
+        .setExperienceCost(20)
+        .build(event)
+
+    new ImprovementBuilder("tetra:sword/howling")
+        .addAttribute("attributeslib:armor_shred", "", 0.05)
+        .setMaterial('slashblade:proudsoul_tiny', 16)
+        .setExperienceCost(20)
+        .build(event)
+
+    new ImprovementBuilder("tetra:sword/throwing_knife")
+        .addAttribute("terra_curio:magic_damage", "", 0.1)
+        .addAttribute("minecraft:generic.attack_damage", "**", -0.05)
+        .setMaterial('slashblade:proudsoul_tiny', 16)
+        .setExperienceCost(20)
+        .build(event)
+
 })

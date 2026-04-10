@@ -1,0 +1,20 @@
+[
+    {
+        "key": "quality",
+        "level": 1,
+        "attributes":
+        {
+            "minecraft:generic.armor": 1,
+            "minecraft:generic.armor_toughness": 1
+        }
+    },
+    {
+        "key": "quality",
+        "level": 2,
+        "attributes":
+        {
+            "minecraft:generic.armor": 2,
+            "minecraft:generic.armor_toughness": 2
+        }
+    }
+]

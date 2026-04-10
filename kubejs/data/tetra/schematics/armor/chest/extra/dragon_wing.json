@@ -1,0 +1,30 @@
+{
+    "replace": true,
+    "slots":
+    [
+        "chest/extra"
+    ],
+    "materialSlotCount": 1,
+    "displayType": "major",
+    "glyph":
+    {
+        "textureLocation": "geotetraarmor:textures/gui/gui_gta.png",
+        "textureX": 48,
+        "textureY": 0
+    },
+    "outcomes":
+    [
+        {
+            "material":
+            {
+                "items":
+                [
+                    "minecraft:bedrock"
+                ],
+                "count": 4
+            },
+            "moduleKey": "armor/chest/extra/dragon_wing",
+            "moduleVariant": "extra_wing_dragon/common"
+        }
+    ]
+}
