@@ -19,12 +19,12 @@
 			"attribute": "attributeslib:crit_chance",
 			"operation": "ADDITION",
 			"values": {
-				"common": 0.05,
-				"uncommon": 0.10,
-				"rare": 0.15,
-				"epic": 0.20,
-				"mythic": 0.25,
-				"ancient": 0.30
+				"common": 0.075,
+				"uncommon": 0.1,
+				"rare": 0.125,
+				"epic": 0.15,
+				"mythic": 0.175,
+				"ancient": 0.20
 			}
 		},
 		{
