@@ -12,7 +12,7 @@ const ImprovementBuilder = function (scrollKey) {
     this.textureX = 16;
     this.textureY = 0;
     this.textureLocation = someArgs.texturePath;
-    this.antiImprovement = null;
+    this.antiImprovement = [];
     this.requiredTools = null;
     this.experienceCost = null;
     this.material = null;
@@ -39,18 +39,17 @@ const ImprovementBuilder = function (scrollKey) {
             "type": "tetra:locked",
             "key": this.key
         });
-        if (this.antiImprovement != null) {
-            this.antiImprovement.forEach((improvement) => {
-                requirements.push(
-                    {
-                        "type": "tetra:not",
-                        "requirement": {
-                            "type": "tetra:improvement",
-                            "improvement": improvement
-                        }
-                    });
-            })
-        }
+        this.antiImprovement.push(this.improvementName);
+        this.antiImprovement.forEach((improvement) => {
+            requirements.push(
+                {
+                    "type": "tetra:not",
+                    "requirement": {
+                        "type": "tetra:improvement",
+                        "improvement": improvement
+                    }
+                });
+        })
         let result = {
             "replace": true,
             "slots": [
