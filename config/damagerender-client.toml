@@ -2,4 +2,6 @@
 showDistance = 64
 #最多渲染的数字量
 maxShowRender = 128
+#启用渲染的最小数值
+minValueDisplay = 0.5
 
