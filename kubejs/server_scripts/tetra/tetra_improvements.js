@@ -16,6 +16,7 @@ const ImprovementBuilder = function (scrollKey) {
     this.requiredTools = null;
     this.experienceCost = null;
     this.material = null;
+    this.group = null;
     this.build = (event) => {
         this.buildImprovement(event);
         this.buildSchematics(event);
@@ -75,6 +76,9 @@ const ImprovementBuilder = function (scrollKey) {
             outcome.material = this.material;
             result.materialSlotCount = 1;
         }
+        if (this.group != null) {
+            result.group = this.group;
+        }
         if (this.requiredTools != null) {
             outcome.requiredTools = this.requiredTools;
         }
@@ -98,6 +102,10 @@ const ImprovementBuilder = function (scrollKey) {
             this.antiImprovement = [];
         }
         this.antiImprovement.push(antiImprovement);
+        return this;
+    }
+    this.addGroup = (group) => {
+        this.group = group;
         return this;
     }
     this.setHone = () => {
@@ -168,6 +176,7 @@ const ImprovementBuilder = function (scrollKey) {
 
 ServerEvents.highPriorityData(event => {
     new ImprovementBuilder("tetra:warforge/axe")
+        .addGroup("slashblade_warforge")
         .addAttribute("minecraft:generic.max_health", "**", -0.2)
         .addAttribute("minecraft:generic.attack_damage", "**", 0.25)
         // .addEffect("RefineStrengthening", 1000)
@@ -176,6 +185,7 @@ ServerEvents.highPriorityData(event => {
         .build(event)
 
     new ImprovementBuilder("tetra:warforge/hammer")
+        .addGroup("slashblade_warforge")
         .addAttribute("minecraft:generic.max_health", "**", -0.1)
         .addAttribute("minecraft:generic.armor", "**", 0.15)
         .setMaterial('slashblade:proudsoul_tiny', 8)
@@ -183,6 +193,7 @@ ServerEvents.highPriorityData(event => {
         .build(event)
 
     new ImprovementBuilder("tetra:warforge/pickaxe")
+        .addGroup("slashblade_warforge")
         .addAttribute("minecraft:generic.max_health", "**", 0.1)
         .addAttribute("minecraft:generic.armor", "**", 0.1)
         .addAttribute("minecraft:generic.attack_damage", "**", -0.1)
@@ -191,6 +202,7 @@ ServerEvents.highPriorityData(event => {
         .build(event)
 
     new ImprovementBuilder("tetra:warforge/butt")
+        .addGroup("slashblade_warforge")
         .addAttribute("minecraft:generic.knockback_resistance", "", 0.25)
         .addAttribute("minecraft:generic.attack_damage", "**", -0.05)
         .setMaterial('slashblade:proudsoul_tiny', 8)
@@ -198,6 +210,7 @@ ServerEvents.highPriorityData(event => {
         .build(event)
 
     new ImprovementBuilder("tetra:warforge/claw")
+        .addGroup("slashblade_warforge")
         .addAttribute("attributeslib:fire_damage", "**", 0.2)
         .addAttribute("attributeslib:cold_damage", "**", 0.2)
         .setMaterial('slashblade:proudsoul_tiny', 16)
@@ -205,6 +218,7 @@ ServerEvents.highPriorityData(event => {
         .build(event)
 
     new ImprovementBuilder("tetra:warforge/hoe")
+        .addGroup("slashblade_warforge")
         .addAttribute("attributeslib:cold_damage", "**", 1.0)
         .addAttribute("minecraft:generic.attack_damage", "**", -0.75)
         .setMaterial('slashblade:proudsoul_tiny', 16)
@@ -212,6 +226,7 @@ ServerEvents.highPriorityData(event => {
         .build(event)
 
     new ImprovementBuilder("tetra:warforge/sickle")
+        .addGroup("slashblade_warforge")
         .addAttribute("attributeslib:fire_damage", "**", 1.0)
         .addAttribute("minecraft:generic.attack_damage", "**", -0.75)
         .setMaterial('slashblade:proudsoul_tiny', 16)
@@ -219,6 +234,7 @@ ServerEvents.highPriorityData(event => {
         .build(event)
 
     new ImprovementBuilder("tetra:sword/sturdy_guard")
+        .addGroup("slashblade_warforge")
         .addAttribute("attributeslib:life_steal", "", 0.05)
         .addAttribute("minecraft:generic.max_health", "**", -0.5)
         .setMaterial('slashblade:proudsoul_tiny', 16)
@@ -226,12 +242,14 @@ ServerEvents.highPriorityData(event => {
         .build(event)
 
     new ImprovementBuilder("tetra:sword/howling")
+        .addGroup("slashblade_warforge")
         .addAttribute("attributeslib:armor_shred", "", 0.05)
         .setMaterial('slashblade:proudsoul_tiny', 16)
         .setExperienceCost(20)
         .build(event)
 
     new ImprovementBuilder("tetra:sword/throwing_knife")
+        .addGroup("slashblade_warforge")
         .addAttribute("terra_curio:magic_damage", "", 0.1)
         .addAttribute("minecraft:generic.attack_damage", "**", -0.05)
         .setMaterial('slashblade:proudsoul_tiny', 16)

@@ -34,6 +34,7 @@
 	#Enable automatic update checks.
 	automatic-updater = true
 
+#Enable or disable specific acceleration features.
 [acceleration_modules]
 	#Accelerate block entities (e.g., furnaces, hoppers). Can cause issues.
 	block_entity = false
@@ -60,6 +61,7 @@
 	#Accelerate random block ticks (e.g., crop growth).
 	random_tick_speed = true
 
+#Miscellaneous adjustments.
 [tweaks]
 	#Disable the vanilla server watchdog to prevent crashes due to low TPS.
 	disable_server_watchdog = true
