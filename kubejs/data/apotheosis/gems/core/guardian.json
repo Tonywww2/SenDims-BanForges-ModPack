@@ -16,12 +16,12 @@
 			"attribute": "minecraft:generic.armor",
 			"operation": "ADDITION",
 			"values": {
-				"common": 0.5,
-				"uncommon": 1,
-				"rare": 1.5,
-				"epic": 2,
-				"mythic": 3,
-				"ancient": 4
+				"common": 1,
+				"uncommon": 2,
+				"rare": 3,
+				"epic": 4,
+				"mythic": 7,
+				"ancient": 10
 			}
 		},
 		{
