@@ -34,14 +34,14 @@
 				]
 			},
 			"attribute": "minecraft:generic.max_health",
-			"operation": "ADDITION",
+			"operation": "MULTIPLY_TOTAL",
 			"values": {
-				"common": 1,
-				"uncommon": 2,
-				"rare": 4,
-				"epic": 6,
-				"mythic": 8,
-				"ancient": 10
+				"common": 0.025,
+				"uncommon": 0.035,
+				"rare": 0.045,
+				"epic": 0.065,
+				"mythic": 0.01,
+				"ancient": 0.15
 			}
 		}
 	]
