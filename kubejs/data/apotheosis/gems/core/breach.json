@@ -16,12 +16,12 @@
 			"attribute": "attributeslib:armor_pierce",
 			"operation": "ADDITION",
 			"values": {
-				"common": 0.5,
-				"uncommon": 1,
-				"rare": 2,
-				"epic": 2.75,
-				"mythic": 3.5,
-				"ancient": 5.5
+				"common": 1,
+				"uncommon": 2,
+				"rare": 3,
+				"epic": 4,
+				"mythic": 7,
+				"ancient": 10
 			}
 		},
 		{
