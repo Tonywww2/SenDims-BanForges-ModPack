@@ -17,11 +17,11 @@
 			"operation": "ADDITION",
 			"values": {
 				"common": 1,
-				"uncommon": 1.5,
-				"rare": 2.5,
-				"epic": 4,
-				"mythic": 6,
-				"ancient": 8
+				"uncommon": 2,
+				"rare": 3,
+				"epic": 5,
+				"mythic": 8,
+				"ancient": 12
 			}
 		},
 		{
@@ -35,12 +35,12 @@
 			"attribute": "forge:entity_gravity",
 			"operation": "MULTIPLY_TOTAL",
 			"values": {
-				"common": 0.10,
-				"uncommon": 0.25,
-				"rare": 0.45,
-				"epic": 0.65,
-				"mythic": 0.85,
-				"ancient": 1.04
+				"common": 0.01,
+				"uncommon": 0.025,
+				"rare": 0.045,
+				"epic": 0.065,
+				"mythic": 0.085,
+				"ancient": 0.01
 			}
 		},
 		{
