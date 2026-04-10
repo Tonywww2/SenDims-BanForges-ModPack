@@ -26,11 +26,14 @@ const ImprovementBuilder = function (scrollKey) {
             "key": this.improvementName,
             "level": 0
         }
+        if (this.group != null) {
+            result.group = this.group;
+        }
         if (this.effects != null) {
-            result["effects"] = this.effects;
+            result.effects = this.effects;
         }
         if (this.attributes != null) {
-            result["attributes"] = this.attributes;
+            result.attributes = this.attributes;
         }
         event.addJson(`tetra:improvements/${someArgs.path}/${this.key.replace(":", "_")}.json`, [result])
     }
@@ -75,9 +78,6 @@ const ImprovementBuilder = function (scrollKey) {
         if (this.material != null) {
             outcome.material = this.material;
             result.materialSlotCount = 1;
-        }
-        if (this.group != null) {
-            result.group = this.group;
         }
         if (this.requiredTools != null) {
             outcome.requiredTools = this.requiredTools;
