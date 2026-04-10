@@ -95,10 +95,10 @@
 			"attribute": "attributeslib:fire_damage",
 			"operation": "MULTIPLY_TOTAL",
 			"values": {
-				"rare": 0.50,
-				"epic": 0.625,
-				"mythic": 0.75,
-				"ancient": 0.90
+				"rare": 0.10,
+				"epic": 0.20,
+				"mythic": 0.30,
+				"ancient": 0.50
 			}
 		}
 	]
