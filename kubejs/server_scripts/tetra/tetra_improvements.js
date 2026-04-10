@@ -3,7 +3,7 @@ let someArgs = {
     texturePath: "slashbladetetra:textures/gui/texture.png"
 }
 
-function ImprovementBuilder(scrollKey) {
+const ImprovementBuilder = function (scrollKey) {
     this.key = scrollKey;
     this.attributes = null;
     this.effects = null;
@@ -16,11 +16,11 @@ function ImprovementBuilder(scrollKey) {
     this.requiredTools = null;
     this.experienceCost = null;
     this.material = null;
-    this.build = function (event) {
+    this.build = (event) => {
         this.buildImprovement(event);
         this.buildSchematics(event);
     }
-    this.buildImprovement = function (event) {
+    this.buildImprovement = (event) => {
         let result = {
             "key": this.improvementName,
             "level": 0
@@ -33,7 +33,7 @@ function ImprovementBuilder(scrollKey) {
         }
         event.addJson(`tetra:improvements/${someArgs.path}/${this.key.replace(":", "_")}.json`, [result])
     }
-    this.buildSchematics = function (event) {
+    this.buildSchematics = (event) => {
         let requirements = []
         requirements.push({
             "type": "tetra:locked",
@@ -83,10 +83,13 @@ function ImprovementBuilder(scrollKey) {
             outcome.experienceCost = this.experienceCost;
         }
         result.outcomes = [outcome]
-        Client.tell(outcome)
+        // Client.tell(outcome)
         event.addJson(`tetra:schematics/${someArgs.path}/${this.key.replace(":", "_")}.json`, result)
     }
-    this.addAttribute = function (attributeName, modifier, value) {
+    /**
+     * modifier: 0 = +, 1 = *, 2 = **
+     */
+    this.addAttribute = (attributeName, modifier, value) => {
         if (this.attributes == null) {
             this.attributes = {};
         }
@@ -99,24 +102,24 @@ function ImprovementBuilder(scrollKey) {
         this.attributes[attributeName] = value;
         return this;
     }
-    this.addAntiImprovement = function (antiImprovement) {
+    this.addAntiImprovement = (antiImprovement) => {
         if (this.antiImprovement == null) {
             this.antiImprovement = [];
         }
         this.antiImprovement.push(antiImprovement);
         return this;
     }
-    this.setHone = function () {
+    this.setHone = () => {
         this.isHone = true;
         return this;
     }
-    this.setGlyph = function (location, x, y) {
+    this.setGlyph = (location, x, y) => {
         this.textureLocation = location;
         this.textureX = x;
         this.textureY = y;
         return this;
     }
-    this.addRequireTool = function (tool, level, efficiency) {
+    this.addRequireTool = (tool, level, efficiency) => {
         if (this.requiredTools != null) {
             this.requiredTools = {};
         }
@@ -127,7 +130,7 @@ function ImprovementBuilder(scrollKey) {
         }
         return this;
     }
-    this.addEffect = function (effect, level, efficiency) {
+    this.addEffect = (effect, level, efficiency) => {
         if (this.effects == null) {
             this.effects = {};
         }
@@ -138,29 +141,29 @@ function ImprovementBuilder(scrollKey) {
         }
         return this;
     }
-    this.setImprovementName = function (improvementName) {
+    this.setImprovementName = (improvementName) => {
         this.improvementName = improvementName;
         return this;
     }
-    this.setExperienceCost = function (experienceCost) {
+    this.setExperienceCost = (experienceCost) => {
         this.experienceCost = experienceCost;
         return this;
     }
-    this.setMaterial = function (item, count) {
+    this.setMaterial = (item, count) => {
         this.material = {
-            "item": item,
+            "items": [item],
             "count": count
         }
         return this;
     }
-    this.setMaterialList = function (items, count) {
+    this.setMaterialList = (items, count) => {
         this.material = {
             "items": items,
             "count": count
         }
         return this;
     }
-    this.setMaterialTag = function (tag, count) {
+    this.setMaterialTag = (tag, count) => {
         if (tag.startsWith("#")) {
             tag = tag.substring(1);
         }
