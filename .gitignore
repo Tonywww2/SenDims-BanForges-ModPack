@@ -75,3 +75,6 @@ config/aether_redux_client.toml
 config/skyblockbuilder/data/dimensions.txt
 config/jei/recipe-category-sort-order.ini
 config/aether_redux_client.toml
+SenDims-BanForges.jar
+SenDims_BanForges.jar
+SenDims_BanForges.json
