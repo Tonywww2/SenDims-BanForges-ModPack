@@ -78,3 +78,5 @@ config/aether_redux_client.toml
 SenDims-BanForges.jar
 SenDims_BanForges.jar
 SenDims_BanForges.json
+/SDBF-natives
+SDBF.json
