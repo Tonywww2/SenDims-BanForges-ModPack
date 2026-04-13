@@ -274,10 +274,12 @@ const mobTypes = {
     "cataclysm:the_prowler": typeAE,
     "cataclysm:clawdian": typeAE,
     "cataclysm:kobolediator": typeAE,
+    "cataclysm:ignited_revenant": typeAE,
 
     "cataclysm:scylla": bossType1,
     "cataclysm:the_harbinger": bossType1,
     "cataclysm:ancient_remnant": bossType1,
+    "cataclysm:ignis": bossType1,
 
 };
 

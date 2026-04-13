@@ -999,6 +999,85 @@
 			x: 10.0d
 			y: 12.5d
 		}
+		{
+			dependencies: ["51A9FF63F9F3E125"]
+			id: "31EA9A38D8474C88"
+			tasks: [{
+				id: "0B56ACB1B67B0400"
+				item: "cataclysm:desert_eye"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2C6833FA2E31DFF1"]
+			id: "5F0FC78E11482861"
+			tasks: [{
+				id: "0AFB184273ABD527"
+				item: "cataclysm:flame_eye"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["5F0FC78E11482861"]
+			id: "71B22CE8B354DA88"
+			tasks: [{
+				id: "176383DEE3C9E53D"
+				structure: "cataclysm:burning_arena"
+				type: "structure"
+			}]
+			title: "烈焰竞技场"
+			x: -5.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["31EA9A38D8474C88"]
+			id: "68BD750B0FD3AB6D"
+			tasks: [{
+				id: "7A9A6C21178BC65A"
+				structure: "cataclysm:cursed_pyramid"
+				type: "structure"
+			}]
+			title: "诅咒金字塔"
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["71B22CE8B354DA88"]
+			id: "73EC367B170C5EF6"
+			tasks: [{
+				id: "1822FDFDA43DE743"
+				item: "cataclysm:ignitium_ingot"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["68BD750B0FD3AB6D"]
+			id: "044E03F057C715B8"
+			tasks: [{
+				id: "6672D956707459C7"
+				item: "cataclysm:ancient_metal_ingot"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["68BD750B0FD3AB6D"]
+			id: "12D9DA1E0735EFDD"
+			tasks: [{
+				id: "68A78B63F70F4F71"
+				item: "cataclysm:koboleton_bone"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 2.5d
+		}
 	]
 	title: "金星与水星"
 }

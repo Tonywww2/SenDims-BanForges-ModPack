@@ -36,5 +36,7 @@ ServerEvents.tags("entity_type", event => {
     addSpaceEntity("cataclysm:wadjet");
     addSpaceEntity("cataclysm:kobolediator");
     addSpaceEntity("cataclysm:ancient_remnant");
+    addSpaceEntity("cataclysm:ignited_revenant");
+    addSpaceEntity("cataclysm:ignis");
 
 })
