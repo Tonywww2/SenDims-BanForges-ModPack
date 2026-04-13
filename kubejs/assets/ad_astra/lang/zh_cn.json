@@ -1,6 +1,6 @@
 {
     "block.ad_astra.ostrum_block": "紫金块",
-
+    
     "planet.ad_astra.earth_orbit": "地球轨道",
     "planet.ad_astra.glacio": "霜原星",
     "planet.ad_astra.glacio_orbit": "霜原星轨道",
@@ -13,25 +13,11 @@
     "planet.ad_astra.venus": "§e金星",
     "planet.ad_astra.venus_orbit": "§e金星轨道",
     "planet.minecraft.overworld": "地球",
-
-    "planet.undergarden.undergarden": "§2深暗之园",
-    "planet.undergarden.undergarden_orbit": "§2深暗之园轨道",
-    "planet.the_bumblezone.the_bumblezone": "§6黄蜂领域",
-    "planet.the_bumblezone.the_bumblezone_orbit": "§6黄蜂领域轨道",
-
-    "planet.minecraft.the_nether": "§c下界",
-    "planet.minecraft.the_nether_orbit": "§c下界轨道",
-    "planet.twilightforest.twilight_forest": "§2暮色森林",
-    "planet.twilightforest.twilight_forest_orbit": "§2暮色森林轨道",
-    "planet.oceanworld.deepsea": "§1深海",
-    "planet.oceanworld.deepsea_orbit": "§1深海轨道",
-
+    "planet.asteroid_belt.asteroid_belt": "小行星带",
+    "planet.asteroid_belt.asteroid_belt_orbit": "小行星带轨道",
     "planet.minecraft.the_end": "§d末地",
     "planet.minecraft.the_end_orbit": "§d末地轨道",
-
+    
     "solar_system.ad_astra.proxima_centauri": "§b比邻星",
-    "solar_system.ad_astra.solar_system": "太阳系",
-    "solar_system.ad_astra.outer_solar_system": "§5太阳系-界外",
-    "solar_system.ad_astra.void_system": "§d虚空"
-
+    "solar_system.ad_astra.solar_system": "太阳系"
 }

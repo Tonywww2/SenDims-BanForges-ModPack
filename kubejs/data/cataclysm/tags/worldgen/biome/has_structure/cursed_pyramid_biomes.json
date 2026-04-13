@@ -1,6 +1,6 @@
 {
-  "replace": false,
+  "replace": true,
   "values": [
-    "minecraft:desert"
+    "ad_astra:martian_wastelands"
   ]
 }

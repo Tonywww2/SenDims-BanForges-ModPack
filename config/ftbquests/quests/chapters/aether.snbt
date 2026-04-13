@@ -838,47 +838,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"3E8E74B1D1E90894"
-				"034D47E905861E48"
-			]
-			description: [
-				"A：神能晶块"
-				"B：云母钢块"
-				"C：石砖"
-				"激活物品：末影之眼"
-				""
-				"[ \"提示：如果你不知道这是什么意思，请查看\", { \"text\": \"前置任务\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"034D47E905861E48\" } }, \"。\" ]"
-			]
-			icon: "minecraft:end_portal_frame"
-			id: "13BDDC49C990C82D"
-			tasks: [
-				{
-					id: "0E3C41C2C64CE80C"
-					item: "aether:ambrosium_block"
-					type: "item"
-				}
-				{
-					id: "6AE08601998B52A2"
-					item: "deep_aether:stratus_block"
-					type: "item"
-				}
-				{
-					id: "0FD57F3F499A358E"
-					item: "minecraft:stone_bricks"
-					type: "item"
-				}
-				{
-					id: "53F63B4D751CE1B2"
-					item: "minecraft:ender_eye"
-					type: "item"
-				}
-			]
-			title: "结构召唤仪式：末地要塞"
-			x: 0.0d
-			y: -12.5d
-		}
-		{
 			dependencies: ["7C6B82665A7EBFB4"]
 			id: "5881B5670577E8D0"
 			tasks: [{

@@ -193,6 +193,30 @@ const typeAEX2 = {
     "4_2": [1350, 84000, 175]
 };
 
+/**
+ * 精英怪模板
+ */
+const typeAE = {
+    isBoss: false,
+    "0_1": [5, 40, 2],
+
+    "1_1": [12, 110, 4],
+    "1_2": [25, 220, 6],
+    "1_3": [45, 420, 8],
+    "1_4": [65, 900, 10],
+
+    "2_1": [130, 1440, 20],
+    "2_2": [185, 2500, 30],
+    "2_3": [250, 4400, 40],
+
+    "3_1": [380, 6800, 55],
+    "3_2": [490, 10400, 70],
+    "3_3": [650, 14800, 85],
+
+    "4_1": [850, 28000, 105],
+    "4_2": [1250, 42000, 125]
+};
+
 /**·
  * 血牛模板 EX2
  */
@@ -353,16 +377,16 @@ const dimensionStages = {
 
     "ad_astra:mars": "1_4",
 
-    "infinity_cave:deep_realm_level_3": "2_1",
+    "midnight:the_midnight": "2_1",
     "ad_astra:venus": "2_1",
     "ad_astra:mercury": "2_1",
 
-    "infinity_cave:deep_realm_level_3": "2_2",
+    "sdbf:deep_realm_level_3": "2_2",
     "undergarden:undergarden": "2_2",
 
     "minecraft:the_end": "2_3",
 
-    "kubejs:asteroid_belt": "3_1",
+    "sdbf:asteroid_belt": "3_1",
 
     "kubejs:saturn": "3_2",
     "the_bumblezone:the_bumblezone": "3_2",

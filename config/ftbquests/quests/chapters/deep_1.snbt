@@ -431,7 +431,7 @@
 			dependencies: ["5BB642BD0BE40541"]
 			description: [
 				"深境的第一层是一套复杂的洞穴系统："
-				"·上层：高密度的岩石层，夹杂着一部分小型洞穴，安全又贫瘠；"
+				"·上层：高密度的岩石层，夹杂着一部分小型洞穴，安全又贫瘠。&m除了...&r；"
 				"·中层：更加多样化的岩石层，拥有着大量的大型洞穴，各种前文明的结构，以及一些在此定居的主世界土著，充满着冒险与机遇；"
 				"·下层：在最底层，洞穴......；"
 				""
@@ -463,8 +463,8 @@
 			dependencies: ["5BB642BD0BE40541"]
 			id: "6005126CA254EC52"
 			tasks: [{
-				id: "7FEEEE88ECBC5795"
-				item: "minecraft:pitcher_plant"
+				id: "15CEF9F2A96CEB19"
+				item: "cataclysm:mech_eye"
 				type: "item"
 			}]
 			x: -2.5d
@@ -750,6 +750,40 @@
 			title: "深境一层"
 			x: 0.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["64D03E66319AF253"]
+			description: ["要塞"]
+			id: "4A7A22C5F8893EB8"
+			tasks: [{
+				id: "679F289DA1698790"
+				item: "minecraft:ender_eye"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["4A7A22C5F8893EB8"]
+			id: "28CAD1DD57B60440"
+			tasks: [{
+				id: "608BA6EF39CEA986"
+				type: "checkmark"
+			}]
+			title: "末地锁"
+			x: 2.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["6005126CA254EC52"]
+			id: "09282B67B7D8CF17"
+			tasks: [{
+				id: "2AEEF4187226FAED"
+				item: "cataclysm:witherite_ingot"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -5.0d
 		}
 	]
 	title: "深境：深邃洞穴"

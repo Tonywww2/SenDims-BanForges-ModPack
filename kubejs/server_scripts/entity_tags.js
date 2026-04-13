@@ -22,6 +22,19 @@ ServerEvents.tags("entity_type", event => {
     };
 
     addSpaceEntity("minecraft:stray");
+    addSpaceEntity("minecraft:armor_stand");
     addSpaceEntity("powerful_dummy:test_dummy");
+
+    addSpaceEntity("cataclysm:urchinkin");
+    addSpaceEntity("cataclysm:drowned_host");
+    addSpaceEntity("cataclysm:symbiocto");
+    addSpaceEntity("cataclysm:hippocamtus");
+    addSpaceEntity("cataclysm:cindaria");
+    addSpaceEntity("cataclysm:scylla");
+    addSpaceEntity("cataclysm:clawdian");
+    addSpaceEntity("cataclysm:koboleton");
+    addSpaceEntity("cataclysm:wadjet");
+    addSpaceEntity("cataclysm:kobolediator");
+    addSpaceEntity("cataclysm:ancient_remnant");
 
 })

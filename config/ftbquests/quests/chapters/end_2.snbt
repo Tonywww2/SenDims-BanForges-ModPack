@@ -11,7 +11,7 @@
 		{
 			id: "679A5B8038C308A9"
 			linked_quest: "52EC914C3873AF88"
-			x: 0.0d
+			x: 2.5d
 			y: -2.5d
 		}
 		{
@@ -50,10 +50,16 @@
 			x: 2.5d
 			y: 7.5d
 		}
+		{
+			id: "4614C32155EBEA48"
+			linked_quest: "28CAD1DD57B60440"
+			x: 0.0d
+			y: -2.5d
+		}
 	]
 	quests: [
 		{
-			dependencies: ["13BDDC49C990C82D"]
+			dependencies: ["28CAD1DD57B60440"]
 			id: "0A68F5EE8F25F036"
 			size: 2.0d
 			tasks: [{

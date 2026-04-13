@@ -43,6 +43,7 @@ const mobTypes = {
     "minecraft:cow": type0,
     "quark:shiba": type0,
     "minecraft:goat": type0,
+    "minecraft:armor_stand": type0,
 
     "yungscavebiomes:ice_cube": typeSlime,
 
@@ -230,6 +231,7 @@ const mobTypes = {
     "ad_astra:pygro": typeA,
     "ad_astra:pygro_brute": typeAEX1,
     "ad_astra:zombified_pygro": typeA,
+    "ad_astra:mogler": typeA,
     "ad_astra:zombified_mogler": typeC,
 
     "nuclearcraft:feral_ghoul": typeA,
@@ -259,7 +261,26 @@ const mobTypes = {
     "midnight:nightstag": typeD,
     "midnight:nova": typeB,
 
+    "cataclysm:urchinkin": type0,
+    "cataclysm:drowned_host": typeA,
+    "cataclysm:symbiocto": typeB,
+    "cataclysm:hippocamtus": typeD,
+    "cataclysm:cindaria": typeC,
+    "cataclysm:koboleton": typeC,
+    "cataclysm:wadjet": typeA,
+
+    "cataclysm:the_watcher": type0,
+
+    "cataclysm:the_prowler": typeAE,
+    "cataclysm:clawdian": typeAE,
+    "cataclysm:kobolediator": typeAE,
+
+    "cataclysm:scylla": bossType1,
+    "cataclysm:the_harbinger": bossType1,
+    "cataclysm:ancient_remnant": bossType1,
+
 };
+
 /**
  * 黑名单
  */

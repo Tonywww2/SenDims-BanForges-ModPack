@@ -146,21 +146,6 @@ registerBossStructure({
     structureName: "platinum_dungeon"
 });
 
-registerBossStructure({
-    activateItem: 'minecraft:ender_eye',
-    blockMapping: {
-        'A': 'aether:ambrosium_block',
-        'B': 'deep_aether:stratus_block',
-        'C': 'minecraft:stone_bricks'
-    },
-    destroyAfterSpawn: true,
-    executeCommands: (level, centerPos, player) => {
-        player.tell(Text.of("TungTungTung").obfuscated())
-        level.runCommandSilent(`execute at ${player.name.string} run place structure minecraft:stronghold`);
-    },
-    structureName: "stronghold"
-});
-
 BlockEvents.rightClicked(event => {
     let { block, level, player, hand } = event;
 
