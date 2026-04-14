@@ -16,19 +16,24 @@ const mobTypes = {
     'tofucraft:tofuslime': typeSlime,
     'tofucraft:tofucreeper': typeB,
     'tofucraft:tofuspider': typeB,
+    'minecraft:polar_bear': typeC,
+    'minecraft:rabbit': type0,
 
     'tofucraft:tofu_gandlem': bossType1,
 
     "minecraft:zombie": typeA,
+    "minecraft:drowned": typeA,
     "minecraft:zombie_villager": typeA,
     "minecraft:skeleton": typeA,
     "minecraft:spider": typeB,
+    "minecraft:cave_spider": typeB,
     "minecraft:creeper": typeB,
     "minecraft:enderman": typeC,
     "minecraft:iron_golem": typeC,
     "minecraft:warden": typeCEX2,
     "artifacts:mimic": typeAEX1,
     "minecraft:illusioner": typeA,
+    "minecraft:witch": typeA,
 
     "species:wicked": typeC,
     "species:cliff_hanger": typeB,
@@ -44,6 +49,7 @@ const mobTypes = {
     "quark:shiba": type0,
     "minecraft:goat": type0,
     "minecraft:armor_stand": type0,
+    "biomemakeover:mushroom_trader": type0,
 
     "yungscavebiomes:ice_cube": typeSlime,
 
@@ -268,6 +274,7 @@ const mobTypes = {
     "cataclysm:cindaria": typeC,
     "cataclysm:koboleton": typeC,
     "cataclysm:wadjet": typeA,
+    "cataclysm:endermaptera": typeB,
 
     "cataclysm:the_watcher": type0,
 
@@ -275,11 +282,14 @@ const mobTypes = {
     "cataclysm:clawdian": typeAE,
     "cataclysm:kobolediator": typeAE,
     "cataclysm:ignited_revenant": typeAE,
+    "cataclysm:ender_golem": typeAE,
 
     "cataclysm:scylla": bossType1,
     "cataclysm:the_harbinger": bossType1,
     "cataclysm:ancient_remnant": bossType1,
     "cataclysm:ignis": bossType1,
+
+    "minecraft:shulker": typeD,
 
 };
 

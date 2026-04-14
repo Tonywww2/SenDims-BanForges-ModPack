@@ -82,6 +82,13 @@ EntityEvents.spawned(event => {
         // console.log(val);
     }
 
+    if (entity.attributes.hasAttribute(magic_resist)) {
+        let val = mobValues[3];
+        val *= additionalScale[3];
+        entity.setAttributeBaseValue(magic_resist, val);
+        // console.log(val);
+    }
+
     // console.log(`[EA] Spawned ${name} in ${dim}.`)
 
 })

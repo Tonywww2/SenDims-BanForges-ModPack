@@ -461,6 +461,7 @@
 		}
 		{
 			dependencies: ["5BB642BD0BE40541"]
+			description: ["先驱者可以使用钻石激活"]
 			id: "6005126CA254EC52"
 			tasks: [{
 				id: "15CEF9F2A96CEB19"

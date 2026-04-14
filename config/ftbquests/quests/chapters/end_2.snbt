@@ -56,6 +56,12 @@
 			x: 0.0d
 			y: -2.5d
 		}
+		{
+			id: "2A636189FAB953F7"
+			linked_quest: "1F5434696DE4B67B"
+			x: 2.5d
+			y: -5.0d
+		}
 	]
 	quests: [
 		{
@@ -1030,6 +1036,20 @@
 			}]
 			x: -5.0d
 			y: 5.0d
+		}
+		{
+			dependencies: [
+				"1F5434696DE4B67B"
+				"52EC914C3873AF88"
+			]
+			id: "16EC7C595EDEA0AD"
+			tasks: [{
+				id: "13F750AA178D9740"
+				item: "apotheosis:ender_library"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.5d
 		}
 	]
 	title: "末地"

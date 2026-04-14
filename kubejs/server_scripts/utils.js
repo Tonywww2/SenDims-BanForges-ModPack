@@ -11,6 +11,8 @@ const $Registries = Java.loadClass('net.minecraft.core.registries.Registries');
 // const $ForgeRegistries = Java.loadClass('net.minecraftforge.registries.ForgeRegistries');
 const $SpawnEggItem = Java.loadClass('net.minecraft.world.item.SpawnEggItem');
 
+const print = any=> console.log(any)
+
 const numToInt = (num) => {
     return new $Double(num).intValue();
 }
