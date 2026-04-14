@@ -182,6 +182,9 @@
 						proudSoul: 0
 						translationKey: ""
 					}
+					"fluxoftetra:fe": {
+						"FOT$energy114": 0
+					}
 				}
 				id: "slashbladetetra:slashblade"
 				tag: {

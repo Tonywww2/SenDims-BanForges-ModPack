@@ -1,0 +1,4 @@
+#电量抵扣耐久的比例
+#default : 320
+ForgeEnergy2Durability = 320
+
