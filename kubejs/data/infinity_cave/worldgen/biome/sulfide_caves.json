@@ -152,6 +152,30 @@
         "minCount": 1,
         "maxCount": 4,
         "weight": 10
+      },
+      {
+        "type": "terra_entity:hornet",
+        "minCount": 1,
+        "maxCount": 4,
+        "weight": 20
+      },
+      {
+        "type": "terra_entity:giant_antlion",
+        "minCount": 1,
+        "maxCount": 4,
+        "weight": 20
+      },
+      {
+        "type": "terra_entity:antlion_swarmer",
+        "minCount": 1,
+        "maxCount": 4,
+        "weight": 25
+      },
+      {
+        "type": "terra_entity:tomb_crawler",
+        "minCount": 1,
+        "maxCount": 4,
+        "weight": 15
       }
     ],
     "underground_water_creature": [],

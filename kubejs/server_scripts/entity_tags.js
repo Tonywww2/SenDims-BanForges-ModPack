@@ -38,5 +38,7 @@ ServerEvents.tags("entity_type", event => {
     addSpaceEntity("cataclysm:ancient_remnant");
     addSpaceEntity("cataclysm:ignited_revenant");
     addSpaceEntity("cataclysm:ignis");
+    
+    addSpaceEntity("terra_entity:king_slime");
 
 })

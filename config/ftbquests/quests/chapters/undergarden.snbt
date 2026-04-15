@@ -566,6 +566,64 @@
 			x: 5.0d
 			y: -2.5d
 		}
+		{
+			dependencies: ["35A8F36675442F8B"]
+			id: "3C9875B4348ADAAA"
+			tasks: [{
+				id: "49F715D0AC9F2591"
+				item: "undergarden:virulent_mix_bucket"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3CEF98F6DE8C6375"]
+			id: "7CF8D7EE360EE8FD"
+			tasks: [{
+				entity: "final_samurai:samurai"
+				id: "2D364A2BA3E98F75"
+				type: "kill"
+				value: 1L
+			}]
+			title: "武士X"
+			x: -10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3C9875B4348ADAAA"
+				"4FDDFCD61DCA1D6D"
+			]
+			description: [
+				"A：灵魂土"
+				"B：御腐块"
+				"C：致毒混合物"
+				"{\"text\":\"激活物品 : \",\"extra\":[{\"type\":\"translatable\",\"translate\":\"item.undergarden.utherium_crystal\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_item\",\"contents\":\"undergarden:utherium_crystal\"}}]} "
+				""
+				"[ \"提示：如果你不知道这是什么意思，请查看\", { \"text\": \"前置任务\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"034D47E905861E48\" } }, \"。\" ]"
+			]
+			icon: "slashblade:proudsoul_tiny"
+			id: "3CEF98F6DE8C6375"
+			tasks: [{
+				id: "07459F21EA4F40E1"
+				type: "checkmark"
+			}]
+			title: "结构召唤仪式：武士X"
+			x: -7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7CF8D7EE360EE8FD"]
+			id: "051BA6257FF77056"
+			tasks: [{
+				id: "190986061E2CBA32"
+				item: "slashblade_useful_addon:proud_soul_sampling"
+				type: "item"
+			}]
+			x: -12.5d
+			y: 0.0d
+		}
 	]
 	title: "深园与废土"
 }

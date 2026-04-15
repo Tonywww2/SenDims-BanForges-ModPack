@@ -49,6 +49,16 @@ ServerEvents.recipes(event => {
         E: 'thermal:enderium_gear'
     }).id('sdbf:desh_engine_2_s2')
 
+    event.shaped('terra_entity:slime_crown', [
+        'A A',
+        'AAA',
+        'BCB'
+    ], {
+        A: '#forge:ingots/desh',
+        B: 'minecraft:slime_ball',
+        C: 'kubejs:bedrock_breaker'
+    }).id('sdbf:slime_crown_s2')
+
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
         "  I",
         "QI ",
@@ -134,35 +144,22 @@ ServerEvents.recipes(event => {
     }, "pseudoedge_break_dawn:latent")
         .id("sdbf:latent_s2")
 
-    event.shaped($StructureQuill.forStructure("ad_astra:moon_dungeon"), [
-        'AAA',
-        'ABA',
-        'AAA'
-    ], {
-        A: 'ad_astra:moon_stone',
-        B: 'minecraft:map'
-    }).id('sdbf:sq_moon_dungeon_s2')
+    sqRecipe(event, 
+        "ad_astra:moon_dungeon",
+        "ad_astra:moon_stone",
+        1,
+        's2');
 
-    event.shaped($StructureQuill.forStructure("tetra:regular_ruin"), [
-        'AAA',
-        'ABA',
-        'AAA'
-    ], {
-        A: "ad_astra:desh_ingot",
-        B: 'minecraft:map'
-    }).id('sdbf:sq_regular_ruin_s2')
+    sqRecipe(event, 
+        "tetra:regular_ruin",
+        "ad_astra:desh_ingot",
+        1,
+        's2');
 
-    event.custom({
-        "type": "ad_astra:compressing",
-        "cookingtime": 4000,
-        "energy": 100,
-        "ingredient": {
-            "item": 'minecraft:lava_bucket'
-        },
-        "result": {
-            "count": 1,
-            "id": 'ad_astra:oil_bucket'
-        }
-    }).id('sdbf:oil_bucket_s2')
+    event.smithing('ad_astra:oil_bucket',
+        'nuclearcraft:sulfuric_acid_bucket',
+        'minecraft:lava_bucket',
+        'tofucraft:tofudiamond'
+    ).id('sdbf:oil_bucket_s2')
 
 })

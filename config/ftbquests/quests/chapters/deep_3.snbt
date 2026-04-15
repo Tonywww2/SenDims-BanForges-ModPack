@@ -56,14 +56,22 @@
 			x: 5.0d
 			y: -2.5d
 		}
+		{
+			id: "40149DB62657166B"
+			linked_quest: "7267904F019CEFD6"
+			x: -2.5d
+			y: 0.0d
+		}
 	]
 	quests: [
 		{
+			dependencies: ["7267904F019CEFD6"]
+			icon: "midnight:shadowroot_leaves"
 			id: "2E482B871B147DC6"
 			size: 2.0d
 			tasks: [{
 				dimension: "midnight:the_midnight"
-				icon: "midnight:rift_placer"
+				icon: "midnight:shadowroot_leaves"
 				id: "204FCA811D61078B"
 				title: "午夜"
 				type: "dimension"
@@ -653,9 +661,8 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["2E482B871B147DC6"]
+			dependencies: ["5D12434757A0C28F"]
 			id: "447935D2ECCBD5D0"
-			subtitle: "TODO: 怪物掉落"
 			tasks: [{
 				id: "13D1AC3185B03046"
 				item: {
@@ -732,8 +739,8 @@
 				}
 				type: "item"
 			}]
-			x: -2.5d
-			y: 0.0d
+			x: 0.0d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -1017,6 +1024,21 @@
 			}]
 			x: -2.5d
 			y: 2.5d
+		}
+		{
+			dependencies: [
+				"4A962D0462EBA5FF"
+				"2E482B871B147DC6"
+			]
+			id: "5D12434757A0C28F"
+			tasks: [{
+				id: "206675173F455AAB"
+				structure: "midnight:forgotten_library"
+				type: "structure"
+			}]
+			title: "被遗忘的图书馆"
+			x: 0.0d
+			y: 5.0d
 		}
 	]
 	title: "深境：午夜"

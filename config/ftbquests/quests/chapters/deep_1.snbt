@@ -40,17 +40,6 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["5BB642BD0BE40541"]
-			id: "1525C465363807AE"
-			tasks: [{
-				id: "02F16B5C53EAEB97"
-				item: "terra_entity:skeletron_spawn_egg"
-				type: "item"
-			}]
-			x: -2.5d
-			y: 2.5d
-		}
-		{
 			dependencies: ["1DE54DDD04540738"]
 			id: "59C711671F81AB45"
 			tasks: [{
@@ -532,17 +521,6 @@
 			y: -5.0d
 		}
 		{
-			dependencies: ["5BB642BD0BE40541"]
-			id: "6F5F0042273408D7"
-			tasks: [{
-				id: "4B8CCE8AC6B8E1FB"
-				item: "terra_entity:cthulhu_eye_spawn_egg"
-				type: "item"
-			}]
-			x: -5.0d
-			y: 2.5d
-		}
-		{
 			dependencies: ["1DE54DDD04540738"]
 			description: [
 				"千百年之前，一个拥有着发达机械技术的古代文明曾活跃在深境之中，他们留下来的一些痕迹或许能帮助到你......"
@@ -785,6 +763,50 @@
 			}]
 			x: -2.5d
 			y: -5.0d
+		}
+		{
+			dependencies: ["6AE2EFEC0F3BE4BE"]
+			id: "76CFDB7C2E7B3AA4"
+			tasks: [{
+				id: "6330235EB52B8EAB"
+				item: "yungscavebiomes:rare_ice"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5BB642BD0BE40541"]
+			id: "561241B6C33A3DCD"
+			tasks: [{
+				id: "17C92236443D20D4"
+				item: "terra_entity:abeemination"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5BB642BD0BE40541"]
+			id: "5CCEAB83DF5ACE81"
+			tasks: [{
+				id: "4B7399053F683820"
+				item: "terra_entity:clothier_voodoo_doll"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5CCEAB83DF5ACE81"]
+			id: "7267904F019CEFD6"
+			tasks: [{
+				id: "215EAC577594DE3E"
+				item: "midnight:rift_placer"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 5.0d
 		}
 	]
 	title: "深境：深邃洞穴"

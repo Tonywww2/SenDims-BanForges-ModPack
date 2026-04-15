@@ -50,6 +50,8 @@ const mobTypes = new Map([
     ["minecraft:goat", type0],
     ["minecraft:armor_stand", type0],
     ["biomemakeover:mushroom_trader", type0],
+    ["minecraft:axolotl", type0],
+    ["minecraft:chicken", type0],
 
     ["yungscavebiomes:ice_cube", typeSlime],
 
@@ -204,6 +206,7 @@ const mobTypes = new Map([
     ["terra_entity:dungeon_guardian", bossType2EX2],
     ["terra_entity:wall_of_flesh", bossType2],
     ["terra_entity:hill_of_flesh", bossType2],
+    ["terra_entity:deerclops", bossType2],
 
     ["minecraft:wither", bossType2],
 
@@ -259,13 +262,15 @@ const mobTypes = new Map([
     ["undergarden:dweller", type0],
 
     ["undergarden:forgotten_guardian", bossType1],
-    ["nuclearcraft:feral_ghoul_boss", bossType2],
+    ["nuclearcraft:feral_ghoul_boss", typeAE],
+    ["final_samurai:samurai", bossType1EX1],
 
     ["midnight:rifter", typeA],
     ["midnight:nightshade", typeC],
     ["midnight:slink", typeD],
     ["midnight:nightstag", typeD],
     ["midnight:nova", typeB],
+    ["midnight:stinger", typeB],
 
     ["cataclysm:urchinkin", type0],
     ["cataclysm:drowned_host", typeA],

@@ -7,15 +7,173 @@
 	id: "6A4583769220C94C"
 	order_index: 0
 	quest_links: [ ]
-	quests: [{
-		id: "1C7A16CB4CD91DA5"
-		size: 2.0d
-		tasks: [{
-			id: "732B2B3C53DD5572"
-			type: "checkmark"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			hide_dependent_lines: true
+			id: "1C7A16CB4CD91DA5"
+			size: 2.0d
+			tasks: [{
+				id: "732B2B3C53DD5572"
+				type: "checkmark"
+			}]
+			title: "成就"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["209DCA9549099A3E"]
+			description: [
+				"在任何时间："
+				"·完全按照&e[正道路线]&r探索"
+				"·在完成对应维度章节的&e[正道目标]&r之后，才能进入下一个维度"
+				"·不使用任何游戏漏洞"
+				""
+				"&e[正道路线]&r为此成就的前置任务，请自行查看。"
+			]
+			id: "2527C72C7EB0BB94"
+			shape: "hexagon"
+			tasks: [{
+				id: "332F385DC62B9DFD"
+				item: "minecraft:bedrock"
+				type: "item"
+			}]
+			title: "循序渐进"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1C7A16CB4CD91DA5"]
+			description: [
+				"在任何时间："
+				"·不能使用任何生命偷取相关的物品"
+			]
+			id: "3F9B9616695DC5DB"
+			shape: "hexagon"
+			tasks: [{
+				id: "4C8B6CEAB93270F5"
+				item: "minecraft:bedrock"
+				type: "item"
+			}]
+			title: "反吸血鬼"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1C7A16CB4CD91DA5"]
+			description: [
+				"&e[正道路线-P1]&r"
+				"注意：同行的维度代表不分先后顺序，可以自由选择顺序"
+				"1. 初始空岛"
+				"2. 豆腐世界"
+			]
+			icon: "botania:pattern_1_1"
+			id: "03418D8807CA304E"
+			tasks: [{
+				id: "47582669D4773A94"
+				type: "checkmark"
+			}]
+			title: "正道路线1"
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["03418D8807CA304E"]
+			description: [
+				"&e[正道路线-P2]&r"
+				"注意：同行的维度代表不分先后顺序，可以自由选择顺序"
+				"3. 深境1层"
+				"4. 暮色森林"
+				"5. 月球/天境"
+				"6. 下界/火星"
+			]
+			icon: "botania:pattern_2_2"
+			id: "1DE4F154E834ECB4"
+			tasks: [{
+				id: "62B5D215CAE3F5F2"
+				type: "checkmark"
+			}]
+			title: "正道路线2"
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1DE4F154E834ECB4"]
+			description: [
+				"&e[正道路线-P3]&r"
+				"注意：同行的维度代表不分先后顺序，可以自由选择顺序"
+				"7. 深境2层/深境3层"
+				"8. 金星"
+				"9. 水星"
+				"10. 深园"
+				"11. 废土"
+				"12. 末地"
+			]
+			icon: "botania:pattern_1_2"
+			id: "6AD2A2B0F9302187"
+			tasks: [{
+				id: "00AE16456007DAC1"
+				type: "checkmark"
+			}]
+			title: "正道路线3"
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["6AD2A2B0F9302187"]
+			description: [
+				"&e[正道路线-P4]&r"
+				"注意：同行的维度代表不分先后顺序，可以自由选择顺序"
+				"13. 小行星带/土星"
+				"14. 土星环"
+				"15. 黄蜂领域/空岛之下"
+				"16. 末地内在"
+			]
+			icon: "botania:pattern_2_1"
+			id: "512402242AB442EF"
+			tasks: [{
+				id: "671D67DEF9CC3C36"
+				type: "checkmark"
+			}]
+			title: "正道路线4"
+			x: 0.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["512402242AB442EF"]
+			description: [
+				"&e[正道路线-P5]&r"
+				"注意：同行的维度代表不分先后顺序，可以自由选择顺序"
+				"17. 深境4层"
+				"18. 冥王星/霜原星"
+			]
+			icon: "botania:pattern_1_3"
+			id: "209DCA9549099A3E"
+			tasks: [{
+				id: "1D91E245D9488381"
+				type: "checkmark"
+			}]
+			title: "正道路线5"
+			x: 0.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["1C7A16CB4CD91DA5"]
+			description: [
+				"在某一刻："
+				"·使一把拔刀剑的精炼数到达1000"
+				"·使一把拔刀剑的杀敌数到达10000"
+			]
+			id: "7311991EFC1D027A"
+			shape: "hexagon"
+			tasks: [{
+				id: "1FCBB03EAA4DF5E7"
+				item: "minecraft:bedrock"
+				type: "item"
+			}]
+			title: "千锻万界"
+			x: -2.5d
+			y: 0.0d
+		}
+	]
 	title: "成就"
 }

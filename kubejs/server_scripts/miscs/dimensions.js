@@ -24,3 +24,17 @@ NativeEvents.onEvent($EntityTravelToDimensionEvent, /** @param {Internal.EntityT
     }
 
 })
+
+BlockEvents.rightClicked(event => {
+    if (event.item == 'midnight:rift_placer') {
+        let player = event.player;
+        player.stages.add(MIDNIGHT_STAGE);
+        event.server.scheduleInTicks(1, callback => {
+            player.addItemCooldown('midnight:rift_placer', 200);
+        });
+    }
+
+
+})
+
+

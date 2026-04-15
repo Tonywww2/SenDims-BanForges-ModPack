@@ -555,7 +555,11 @@
 			y: 10.0d
 		}
 		{
-			dependencies: ["67B5D127C0D00507"]
+			dependencies: [
+				"590D7D0D241DD369"
+				"58392C23DFA54B7F"
+				"3729969E7821EBB6"
+			]
 			id: "1620FC37BD64FA7E"
 			tasks: [{
 				id: "613FCF1F9F909EFE"
@@ -564,19 +568,6 @@
 			}]
 			x: -5.0d
 			y: 7.5d
-		}
-		{
-			dependencies: ["3FA025D25ADB8411"]
-			description: ["在压缩机制作石油"]
-			id: "67B5D127C0D00507"
-			tasks: [{
-				id: "0BA5FB2505556034"
-				item: "minecraft:lava_bucket"
-				type: "item"
-			}]
-			title: "石油获取[暂时]"
-			x: -2.5d
-			y: 5.0d
 		}
 		{
 			dependencies: ["1D74838411B96ABC"]
@@ -948,8 +939,8 @@
 				item: "nuclearcraft:plate_advanced"
 				type: "item"
 			}]
-			x: -12.5d
-			y: 25.0d
+			x: -10.0d
+			y: 22.5d
 		}
 		{
 			dependencies: ["41D60AA656791D52"]
@@ -959,8 +950,8 @@
 				item: "nuclearcraft:chassis"
 				type: "item"
 			}]
-			x: -10.0d
-			y: 22.5d
+			x: -12.5d
+			y: 25.0d
 		}
 		{
 			dependencies: [
@@ -986,6 +977,282 @@
 			}]
 			x: -2.5d
 			y: 25.0d
+		}
+		{
+			dependencies: ["41D60AA656791D52"]
+			id: "64C25CA419A29B0E"
+			tasks: [{
+				id: "43534A3AF2764AE7"
+				item: "nuclearcraft:decay_hastener"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 27.5d
+		}
+		{
+			dependencies: ["01E82FD52A60F607"]
+			id: "01F659A566282F90"
+			tasks: [{
+				id: "7DBA23401817BBB6"
+				item: "nuclearcraft:assembler"
+				type: "item"
+			}]
+			x: -12.5d
+			y: 27.5d
+		}
+		{
+			dependencies: [
+				"64C25CA419A29B0E"
+				"01F659A566282F90"
+			]
+			id: "0BD7C25BE393E906"
+			tasks: [{
+				id: "54E913EACAEC6DB6"
+				item: "nuclearcraft:fission_reactor_controller"
+				type: "item"
+			}]
+			x: -15.0d
+			y: 27.5d
+		}
+		{
+			dependencies: ["0BD7C25BE393E906"]
+			id: "69A40782E4BC7364"
+			tasks: [{
+				id: "7BBEDA4F7BE90DCA"
+				item: "nuclearcraft:irradiator"
+				type: "item"
+			}]
+			x: -15.0d
+			y: 30.0d
+		}
+		{
+			dependencies: [
+				"14D5D5ADCDC5B859"
+				"69A40782E4BC7364"
+			]
+			id: "7EEE08CB9B8DE8A1"
+			tasks: [{
+				id: "609A46D86906F55C"
+				item: "nuclearcraft:fusion_core"
+				type: "item"
+			}]
+			x: -15.0d
+			y: 40.0d
+		}
+		{
+			dependencies: ["7EEE08CB9B8DE8A1"]
+			id: "3F80E02789D4FF32"
+			tasks: [{
+				id: "3017A2C2A39F37C7"
+				item: "nuclearcraft:fusion_reactor_casing"
+				type: "item"
+			}]
+			x: -15.0d
+			y: 42.5d
+		}
+		{
+			dependencies: ["04B20E40DAED373B"]
+			id: "52DEB335E97C57C9"
+			tasks: [{
+				id: "5D4E6A00E9B33348"
+				item: "botania:alfheim_portal"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 42.5d
+		}
+		{
+			dependencies: ["52DEB335E97C57C9"]
+			id: "5E2FB0326E11216D"
+			tasks: [{
+				id: "4461E26B58E50F02"
+				item: "botania:elementium_ingot"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 42.5d
+		}
+		{
+			dependencies: ["2529CD2EF2A8961B"]
+			id: "590D7D0D241DD369"
+			tasks: [{
+				id: "0C7B3C69B8080E8A"
+				item: "tofucraft:blocktofudiamond"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"5BB642BD0BE40541"
+				"6140B0BCEB7F9D64"
+			]
+			id: "3729969E7821EBB6"
+			tasks: [{
+				id: "47EFD2E81A6EE542"
+				item: "minecraft:lava_bucket"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5BB642BD0BE40541"]
+			id: "58392C23DFA54B7F"
+			tasks: [{
+				id: "05703322306712EB"
+				item: "nuclearcraft:sulfuric_acid_bucket"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0BD7C25BE393E906"]
+			id: "20176FB7F40AAC39"
+			tasks: [{
+				id: "5E3AC9A44C4C454F"
+				item: "nuclearcraft:empty_heat_sink"
+				type: "item"
+			}]
+			x: -17.5d
+			y: 27.5d
+		}
+		{
+			dependencies: ["0BD7C25BE393E906"]
+			id: "35E71A01873D5625"
+			tasks: [{
+				id: "25FAA282CF78C52D"
+				item: "nuclearcraft:graphite_block"
+				type: "item"
+			}]
+			x: -15.0d
+			y: 25.0d
+		}
+		{
+			dependencies: [
+				"3F80E02789D4FF32"
+				"7EEE08CB9B8DE8A1"
+			]
+			id: "58D13182036C82A2"
+			tasks: [{
+				id: "30D97353024D01B4"
+				item: "nuclearcraft:helium_3_bucket"
+				type: "item"
+			}]
+			x: -15.0d
+			y: 45.0d
+		}
+		{
+			dependencies: ["69A40782E4BC7364"]
+			id: "21D04373148F93B1"
+			tasks: [{
+				id: "7082F69C0CCAA342"
+				item: "nuclearcraft:polonium_dust"
+				type: "item"
+			}]
+			x: -17.5d
+			y: 30.0d
+		}
+		{
+			id: "1AE8A922F19B8BC0"
+			tasks: [{
+				id: "1C22090E54DA8EBD"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 50.0d
+		}
+		{
+			dependencies: ["52DEB335E97C57C9"]
+			id: "0B3D8A74AF2B4345"
+			tasks: [{
+				id: "6171921E5D11B817"
+				item: "botania:pixie_dust"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 45.0d
+		}
+		{
+			dependencies: [
+				"5E2FB0326E11216D"
+				"0B3D8A74AF2B4345"
+			]
+			id: "1355B5FEA170DF1D"
+			tasks: [{
+				id: "18485281BBB0964F"
+				item: "botania:gaia_pylon"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 45.0d
+		}
+		{
+			dependencies: ["1355B5FEA170DF1D"]
+			id: "42C9B0A729486047"
+			tasks: [{
+				id: "58E3C4738C5A2384"
+				item: "botania:life_essence"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 45.0d
+		}
+		{
+			dependencies: ["42C9B0A729486047"]
+			id: "0B6AD8414CAC84E2"
+			tasks: [{
+				id: "1BF9CDC991446408"
+				item: {
+					Count: 1
+					id: "botania:flight_tiara"
+					tag: {
+						variant: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 17.5d
+			y: 45.0d
+		}
+		{
+			dependencies: ["79B89622E21E230D"]
+			id: "78A9384D5951B1FB"
+			tasks: [{
+				id: "010AE6B81F8FBFEF"
+				item: "botania:travel_belt"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 37.5d
+		}
+		{
+			dependencies: [
+				"42C9B0A729486047"
+				"5E2FB0326E11216D"
+				"78A9384D5951B1FB"
+			]
+			id: "40FB5B54BCDCC269"
+			tasks: [{
+				id: "22C44D679350F5A7"
+				item: "botania:super_travel_belt"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 42.5d
+		}
+		{
+			dependencies: ["42C9B0A729486047"]
+			id: "3F74C682423956CE"
+			tasks: [{
+				id: "3A23E15B71E6B7F9"
+				item: "appbot:mana_cell_housing"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 47.5d
 		}
 	]
 	title: "工业"

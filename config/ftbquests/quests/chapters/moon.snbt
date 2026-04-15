@@ -209,43 +209,6 @@
 			y: 10.0d
 		}
 		{
-			dependencies: ["0936AB2DCC0172A8"]
-			description: [
-				"如果你没有启用沉浸式传送门，请无视这个任务！"
-				""
-				"如果在破坏基岩之后，月球的基岩层下没有出现下界的话，可以通过完成（创造模式/编辑模式）该任务修复这个问题（一般不会发生）。"
-			]
-			icon: "minecraft:structure_void"
-			id: "27E4EB6E9AA5BAD2"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/portal global connect_ceil minecraft:the_nether ad_astra:moon"
-					elevate_perms: true
-					id: "1EBF7F3F8E059801"
-					title: "下界月球"
-					type: "command"
-				}
-				{
-					auto: "enabled"
-					command: "/portal global connect_floor ad_astra:moon minecraft:the_nether"
-					elevate_perms: true
-					id: "497718A804444E99"
-					title: "月球下界"
-					type: "command"
-				}
-			]
-			subtitle: "BUG保险"
-			tasks: [{
-				id: "6801BE704DDFD49B"
-				item: "ftbquests:barrier"
-				type: "item"
-			}]
-			title: "保险：月球下界"
-			x: 7.5d
-			y: 5.0d
-		}
-		{
 			dependencies: [
 				"6EA2DE0DEBD7A693"
 				"5D3B1F040BBB2AF2"
@@ -697,6 +660,17 @@
 			}]
 			x: 12.5d
 			y: 2.5d
+		}
+		{
+			dependencies: ["0936AB2DCC0172A8"]
+			id: "58D261B5FA944C08"
+			tasks: [{
+				id: "18D89B6DFB9924A5"
+				item: "terra_entity:slime_crown"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 5.0d
 		}
 	]
 	title: "畸变的月球"

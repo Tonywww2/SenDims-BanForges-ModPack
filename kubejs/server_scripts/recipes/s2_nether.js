@@ -115,8 +115,11 @@ ServerEvents.recipes(event => {
     }, "pseudoedge_break_dawn:magicblade")
         .id("sdbf:magicblade_s2");
 
-    event.shapeless($StructureQuill.forStructure("cataclysm:soul_black_smith"), ['minecraft:map', 'cataclysm:monstrous_eye'])
-        .id("sdbf:sq_soul_black_smith_s2");
+    sqRecipe(event, 
+        "cataclysm:soul_black_smith",
+        "cataclysm:monstrous_eye",
+        0,
+        "s2");
 
 
 })

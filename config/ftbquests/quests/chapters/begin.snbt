@@ -520,50 +520,36 @@
 		}
 		{
 			dependencies: ["6FD736B74327F2AF"]
-			hide_until_deps_complete: true
-			icon: "terra_entity:demon_eye_spawn_egg"
-			id: "07353FCC58BFF967"
+			id: "76DEBD32F9E5F5C5"
 			tasks: [{
-				entity: "terra_entity:demon_eye"
-				id: "4FB7BBDF618AB180"
-				type: "kill"
-				value: 1L
+				id: "7E904C356AA48F12"
+				item: "terra_entity:suspicious_looking_eye"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["76DEBD32F9E5F5C5"]
+			id: "09B678C6BEF83927"
+			tasks: [{
+				id: "6F14B2787D30781F"
+				item: "terra_entity:worm_food"
+				type: "item"
 			}]
 			x: 0.0d
-			y: 5.0d
-		}
-		{
-			dependencies: ["07353FCC58BFF967"]
-			id: "1FB3D934BD1CBA55"
-			tasks: [{
-				id: "3FCAE47EC5D4B816"
-				item: "terra_entity:cthulhu_eye_spawn_egg"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 5.0d
-		}
-		{
-			dependencies: ["1FB3D934BD1CBA55"]
-			id: "3CF816E3E0B2977A"
-			tasks: [{
-				id: "72FF249DA096FDD6"
-				item: "terra_entity:brain_of_cthulhu_spawn_egg"
-				type: "item"
-			}]
-			x: 5.0d
-			y: 5.0d
-		}
-		{
-			dependencies: ["1FB3D934BD1CBA55"]
-			id: "6A37B43AC63E9375"
-			tasks: [{
-				id: "744C5CC9553E1F89"
-				item: "terra_entity:eater_of_world_spawn_egg"
-				type: "item"
-			}]
-			x: 2.5d
 			y: 7.5d
+		}
+		{
+			dependencies: ["76DEBD32F9E5F5C5"]
+			id: "5F7A0D774548009B"
+			tasks: [{
+				id: "28FFCC6F4F856826"
+				item: "terra_entity:bloody_spine"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.0d
 		}
 	]
 	title: "起始之空岛"
