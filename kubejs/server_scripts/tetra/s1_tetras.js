@@ -272,4 +272,16 @@ ServerEvents.highPriorityData(event => {
         .setRequiredTool("hammer_dig", 1)
         .build();
 
+    tetraMaterialBuilder(event, "witherite_ingot").setCategory("metal")
+        .setPrimary(7).setSecondary(8).setTertiary(2.9)
+        .setDurability(600).setIntegrityCost(2).setIntegrityGain(4)
+        .setMagicCapacity(100).setToolLevel(5).setToolEfficiency(9)
+        .addAttributes("minecraft:generic.knockback_resistance", 0.05)
+        .addAttributes("slashblade_sendims:magic_resistance", 2)
+        .setTints("4a4a4a", "1a1a1a")
+        .addTexture("heavy").addTexture("metal")
+        .addItemMaterial('cataclysm:witherite_ingot')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
 })

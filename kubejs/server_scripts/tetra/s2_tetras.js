@@ -331,4 +331,28 @@ ServerEvents.highPriorityData(event => {
         .setRequiredTool("hammer_dig", 3)
         .build();
 
+    tetraMaterialBuilder(event, "ancient_metal_ingot").setCategory("metal")
+        .setPrimary(15).setSecondary(20).setTertiary(9)
+        .setDurability(800).setIntegrityCost(6).setIntegrityGain(8)
+        .setMagicCapacity(150).setToolLevel(6).setToolEfficiency(10)
+        .addAttributes("slashblade_sendims:frenzy_resistance", 0.05)
+        .addAttributes("slashblade_sendims:madness_reduce", 5)
+        .setTints("d4af37", "c5a017")
+        .addTexture("heavy").addTexture("metal")
+        .addItemMaterial('cataclysm:ancient_metal_ingot')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
+    tetraMaterialBuilder(event, "ignitium_ingot").setCategory("metal")
+        .setPrimary(21).setSecondary(20).setTertiary(10)
+        .setDurability(1000).setIntegrityCost(6).setIntegrityGain(8)
+        .setMagicCapacity(160).setToolLevel(6).setToolEfficiency(12)
+        .addAttributes("slashblade_sendims:magic_penetration", 1.5)
+        .addAttributes("attributeslib:fire_damage", 4)
+        .setTints("ff4500", "cc3700")
+        .addTexture("heavy").addTexture("metal").addTexture("shiny")
+        .addItemMaterial('cataclysm:ignitium_ingot')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
 })

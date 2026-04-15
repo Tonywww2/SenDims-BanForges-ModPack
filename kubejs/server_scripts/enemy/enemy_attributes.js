@@ -21,7 +21,7 @@ EntityEvents.spawned(event => {
     if (!dimStage) dimStage = "0_1";
     entity.forgePersistentData.putString('sbsd.diff', dimStage);
     // console.log(name)
-    let mobType = mobTypes[name];
+    let mobType = mobTypes.get(name);
     if (!mobType) {
         mobType = type0;
         console.log(name + " does not have a mobtype!")
@@ -87,6 +87,11 @@ EntityEvents.spawned(event => {
         val *= additionalScale[3];
         entity.setAttributeBaseValue(magic_resist, val);
         // console.log(val);
+    }
+
+    if (mobType.isBoss && entity.attributes.hasAttribute(magic_resist)) {
+        let val = mobValues[3] * 0.006;
+        entity.setAttributeBaseValue(frenzy_resistance, val);
     }
 
     // console.log(`[EA] Spawned ${name} in ${dim}.`)
