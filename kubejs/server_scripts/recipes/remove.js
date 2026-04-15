@@ -28,6 +28,7 @@ const toRemoveID = new Set([
     "ancient_aether:enchanting_table_from_gravitite",
     "terra_curio:workshop",
     "integrateddynamics:crafting/logic_director",
+    "botania:brew/resistance",
 
     "sjap_adder:dragon_fire",
     "sjap_adder:dragon_ice",

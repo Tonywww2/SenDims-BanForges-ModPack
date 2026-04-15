@@ -57,6 +57,8 @@
     "info.kubejs.faill_spawn_structure": "结构召唤失败！",
     "info.kubejs.the_midnight_disallowed": "你进入了一个异界，但是一股力量拒绝你进入这个世界。",
 
+    "item.sdbf.greatsword_of_damnation": "伪物「永罚」",
+
     "tetra/schematic/slashblade/blade/tetra_warforge/axe.name": "仿铸：战斧",
     "tetra.improvement.tetra:warforge/axe.name": "仿铸：战斧",
     "tetra/schematic/slashblade/blade/tetra_warforge/axe.description": "提升总攻击力，降低最大生命值",
