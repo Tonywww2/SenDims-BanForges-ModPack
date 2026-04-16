@@ -754,10 +754,19 @@
 			dependencies: ["4A7A22C5F8893EB8"]
 			id: "28CAD1DD57B60440"
 			tasks: [{
-				id: "608BA6EF39CEA986"
-				type: "checkmark"
+				id: "54507E443D0F2512"
+				item: {
+					Count: 1
+					id: "slashblade_sendims:blessing_petals"
+					tag: {
+						blessing_petals: {
+							item_counts: 0
+							item_list: [ ]
+						}
+					}
+				}
+				type: "item"
 			}]
-			title: "末地锁"
 			x: 0.0d
 			y: -10.0d
 		}
