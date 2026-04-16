@@ -5,6 +5,11 @@ ServerEvents.tags("item", event => {
     //     'minecraft:nether_star'
     // )
 
+    event.add("slashblade_sendims:blessing_petals_items", [
+        '#minecraft:music_discs'
+
+    ])
+
     // TODO 证章强化材料
     // 阶段0
     event.add("slashblade_sendims:drc_health_material_0", [
