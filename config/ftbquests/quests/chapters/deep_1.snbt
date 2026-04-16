@@ -20,6 +20,12 @@
 			x: 7.5d
 			y: 0.0d
 		}
+		{
+			id: "48E82D2A6108C479"
+			linked_quest: "71F1943E6E3FCA17"
+			x: -2.5d
+			y: 0.0d
+		}
 	]
 	quests: [
 		{
@@ -446,8 +452,8 @@
 				item: "yungscavebiomes:frost_lily"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 0.0d
+			x: -5.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["2EADF063117EE157"]

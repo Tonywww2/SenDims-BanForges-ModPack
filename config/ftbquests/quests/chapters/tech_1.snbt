@@ -121,6 +121,11 @@
 				"47C442362B73368D"
 			]
 			description: ["&4记得检查氧气是否充足"]
+			icon: {
+				Count: 1
+				id: "ad_astra:tier_1_rocket"
+				tag: { }
+			}
 			id: "750B557031EFBBEE"
 			subtitle: "月球"
 			tasks: [

@@ -32,6 +32,12 @@
 			x: 2.5d
 			y: 10.0d
 		}
+		{
+			id: "62E370CF7E37D7D1"
+			linked_quest: "6E39BB8C6B65D2B6"
+			x: 0.0d
+			y: -2.5d
+		}
 	]
 	quests: [
 		{
@@ -92,7 +98,7 @@
 			}]
 			title: "下僻巢穴"
 			x: 0.0d
-			y: -2.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["0565456A2B5996BE"]

@@ -32,6 +32,12 @@
 			x: 5.0d
 			y: -7.5d
 		}
+		{
+			id: "4FEAB9C1DEE7D47E"
+			linked_quest: "40B4C6CD28E7DF19"
+			x: 2.5d
+			y: 0.0d
+		}
 	]
 	quests: [
 		{
@@ -188,18 +194,6 @@
 			}]
 			x: -2.5d
 			y: -5.0d
-		}
-		{
-			dependencies: ["3F43656AE6F116CB"]
-			hide_until_deps_complete: true
-			id: "61EE699FD8BD171A"
-			tasks: [{
-				id: "554FCC0B5CAFCC89"
-				item: "ad_astra:conglomerate"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 0.0d
 		}
 		{
 			dependencies: [

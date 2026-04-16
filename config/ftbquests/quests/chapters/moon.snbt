@@ -20,6 +20,12 @@
 			x: 10.0d
 			y: 0.0d
 		}
+		{
+			id: "28BF7753DDD0C872"
+			linked_quest: "750B557031EFBBEE"
+			x: -2.5d
+			y: 0.0d
+		}
 	]
 	quests: [
 		{
@@ -105,8 +111,8 @@
 				type: "observation"
 			}]
 			title: "月球村民"
-			x: -2.5d
-			y: 0.0d
+			x: 2.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["5D5BA71C5348297D"]
