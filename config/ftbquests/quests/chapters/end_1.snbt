@@ -271,6 +271,7 @@
 			y: -2.5d
 		}
 		{
+			hide_dependent_lines: true
 			id: "1BF032EC08E31ABB"
 			size: 2.0d
 			tasks: [{

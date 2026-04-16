@@ -70,6 +70,7 @@
 	]
 	quests: [
 		{
+			hide_dependent_lines: true
 			id: "37CF7606A44B5357"
 			size: 2.0d
 			tasks: [{

@@ -1,7 +1,7 @@
 {
   "name": "slashblade:diamond_sword",
   "properties": {
-    "attack_base": 7.0,
+    "attack_base": 4.5,
     "max_damage": 1536,
     "slash_art": "slashblade:law_of_regression",
     "sword_type": [

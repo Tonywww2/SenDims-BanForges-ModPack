@@ -35,6 +35,7 @@
 	]
 	quests: [
 		{
+			hide_dependent_lines: true
 			id: "3DA6E818573A9A69"
 			size: 2.0d
 			tasks: [{

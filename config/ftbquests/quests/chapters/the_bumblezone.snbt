@@ -52,6 +52,7 @@
 	]
 	quests: [
 		{
+			hide_dependent_lines: true
 			icon: "the_bumblezone:beehive_beeswax"
 			id: "220AEBF0A8A46F7C"
 			size: 2.0d

@@ -4,7 +4,7 @@
 	default_quest_shape: ""
 	filename: "asteroid_belt"
 	group: "35DD57C332D61BB0"
-	icon: "ae2:sky_stone_block"
+	icon: "kubejs:carbon_rich_asteroid_rock"
 	id: "1D84C9620E8EC0D9"
 	order_index: 0
 	quest_links: [
@@ -65,6 +65,8 @@
 	]
 	quests: [
 		{
+			hide_dependent_lines: true
+			icon: "kubejs:carbon_rich_asteroid_rock"
 			id: "77DC6770CC08AEF6"
 			size: 2.0d
 			tasks: [{

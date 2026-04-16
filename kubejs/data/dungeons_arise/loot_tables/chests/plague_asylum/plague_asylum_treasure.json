@@ -8,15 +8,14 @@
       },
       "entries": [
         {
-          "type": "minecraft:tag",
-          "name": "minecraft:arrows",
-          "expand": true,
+          "type": "minecraft:item",
+          "name": "ae2:cell_component_1k",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 8,
-                "max": 16
+                "min": 0,
+                "max": 1
               }
             }
           ]

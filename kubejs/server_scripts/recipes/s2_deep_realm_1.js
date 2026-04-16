@@ -1,31 +1,9 @@
 ServerEvents.recipes(event => {
 
-    event.shaped($StructureQuill.forStructure("sdbf:ae_lab"), [
-        'AAA',
-        'ABA',
-        'AAA'
-    ], {
-        A: '#forge:ingots/iron',
-        B: 'minecraft:map'
-    }).id('sdbf:ae_lab_s2')
-
-    event.shaped($StructureQuill.forStructure("cavernous:lush_village"), [
-        'AAA',
-        'ABA',
-        'AAA'
-    ], {
-        A: 'minecraft:paper',
-        B: '#minecraft:dirt'
-    }).id('sdbf:sq_lush_village_s1');
-
-    event.shaped($StructureQuill.forStructure("cavernous:stone_village"), [
-        'AAA',
-        'ABA',
-        'AAA'
-    ], {
-        A: 'minecraft:paper',
-        B: '#forge:cobblestone'
-    }).id('sdbf:sq_stone_village_s1');
+    sqRecipe(event, "sdbf:ae_lab", '#forge:ingots/iron', 0, "s2");
+    sqRecipe(event, "cavernous:lush_village", '#minecraft:dirt', 0, "s2");
+    sqRecipe(event, "cavernous:stone_village", '#forge:cobblestone', 0, "s2");
+    sqRecipe(event, "dungeons_arise:plague_asylum", 'ad_astra:etrionic_capacitor', 0, "s2");
 
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
         "ESD",

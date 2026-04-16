@@ -1,6 +1,7 @@
 {
-  "replace": false,
+  "replace": true,
   "values": [
-    "#minecraft:is_forest"
+    "#cavernous:lush",
+    "#cavernous:stone"
   ]
 }

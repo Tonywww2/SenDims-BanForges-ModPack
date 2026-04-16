@@ -19,6 +19,7 @@
 				"36E8BDF00D6B600E"
 				"0AC8512136285C3E"
 			]
+			hide_dependent_lines: true
 			hide_until_deps_complete: true
 			id: "5251AFEDB9C97974"
 			size: 2.0d

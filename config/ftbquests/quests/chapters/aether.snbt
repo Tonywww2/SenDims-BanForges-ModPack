@@ -37,6 +37,7 @@
 				""
 				"备注：Dent Glowstone需要使用凿子（Chisel）加工萤石制作"
 			]
+			hide_dependent_lines: true
 			hide_until_deps_complete: true
 			id: "0F8DC1AEBBC762C1"
 			size: 2.0d

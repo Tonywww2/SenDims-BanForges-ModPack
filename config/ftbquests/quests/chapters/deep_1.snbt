@@ -52,6 +52,7 @@
 		}
 		{
 			dependencies: ["5BB642BD0BE40541"]
+			description: ["可以制作古代实验室的结构羽毛笔。"]
 			id: "1DE54DDD04540738"
 			tasks: [{
 				id: "0015D0CF74D0EC69"
@@ -449,7 +450,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["5BB642BD0BE40541"]
+			dependencies: ["2EADF063117EE157"]
 			description: ["先驱者可以使用钻石激活"]
 			id: "6005126CA254EC52"
 			tasks: [{
@@ -458,7 +459,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: -2.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["5BB642BD0BE40541"]
@@ -493,32 +494,32 @@
 				type: "checkmark"
 			}]
 			title: "结构羽毛笔"
-			x: 2.5d
-			y: -2.5d
+			x: 0.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["64D03E66319AF253"]
-			description: ["泥土+纸可以制作泥砖村庄的结构羽毛笔。"]
+			description: ["可以制作泥砖村庄的结构羽毛笔。"]
 			id: "008A8F19BD6601FB"
 			tasks: [{
 				id: "2BCC5A9FE7BDB50B"
 				item: "minecraft:dirt"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -5.0d
+			x: 2.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["64D03E66319AF253"]
-			description: ["圆石+纸可以制作石头村庄的结构羽毛笔。"]
+			description: ["可以制作石头村庄的结构羽毛笔。"]
 			id: "22FB062F79308882"
 			tasks: [{
 				id: "1B464B79387B1728"
 				item: "minecraft:cobblestone"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -5.0d
+			x: -2.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["1DE54DDD04540738"]
@@ -710,6 +711,7 @@
 				""
 				"原始：用裂纹砖块构筑门槛，并使用深境证章点亮......"
 			]
+			hide_dependent_lines: true
 			hide_until_deps_complete: true
 			id: "5BB642BD0BE40541"
 			rewards: [{
@@ -739,8 +741,8 @@
 				item: "minecraft:ender_eye"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -5.0d
+			x: 0.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["4A7A22C5F8893EB8"]
@@ -750,18 +752,22 @@
 				type: "checkmark"
 			}]
 			title: "末地锁"
-			x: 2.5d
-			y: -7.5d
+			x: 0.0d
+			y: -10.0d
 		}
 		{
-			dependencies: ["6005126CA254EC52"]
+			dependencies: [
+				"6005126CA254EC52"
+				"5BB642BD0BE40541"
+			]
+			dependency_requirement: "one_completed"
 			id: "09282B67B7D8CF17"
 			tasks: [{
 				id: "2AEEF4187226FAED"
 				item: "cataclysm:witherite_ingot"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -5.0d
 			y: -5.0d
 		}
 		{
@@ -807,6 +813,170 @@
 			}]
 			x: -5.0d
 			y: 5.0d
+		}
+		{
+			dependencies: ["2EADF063117EE157"]
+			description: ["可以制作瘟疫疯人院的结构羽毛笔。"]
+			id: "219853BE75550919"
+			tasks: [{
+				id: "61C99F0E0B975C4D"
+				item: {
+					Count: 1
+					id: "ad_astra:etrionic_capacitor"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"219853BE75550919"
+				"5BB642BD0BE40541"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"瘟疫疯人院，它们曾经是某个古文明的复古式疗养院。"
+				"而现在，它们拥有了新的主人。"
+				""
+				"注意：瘟疫疯人院内的敌人十分强大，他们拥有比常规敌人更优质的装备，请做好充足的准备。"
+			]
+			id: "69856593B46ECD9E"
+			subtitle: "警告：高难"
+			tasks: [{
+				id: "04B2EB5A3186D705"
+				structure: "dungeons_arise:plague_asylum"
+				type: "structure"
+			}]
+			title: "瘟疫疯人院"
+			x: 5.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"008A8F19BD6601FB"
+				"5BB642BD0BE40541"
+			]
+			dependency_requirement: "one_completed"
+			id: "3C4875514F38F6E4"
+			tasks: [{
+				id: "384686EA62407ED2"
+				structure: "cavernous:lush_village"
+				type: "structure"
+			}]
+			title: "泥砖村庄"
+			x: 5.0d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"22FB062F79308882"
+				"5BB642BD0BE40541"
+			]
+			dependency_requirement: "one_completed"
+			id: "0E88B89884D28C35"
+			tasks: [{
+				id: "736F0EADAA2A1694"
+				structure: "cavernous:stone_village"
+				type: "structure"
+			}]
+			title: "石头村庄"
+			x: -5.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["69856593B46ECD9E"]
+			id: "619E1D88F9CF6F9B"
+			tasks: [{
+				id: "43F42BB309FB31CB"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade:model/named/diamond_sword/diamond_sword.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:law_of_regression"
+							StandbyRenderType: 2b
+							SummonedSwordColor: -1712105
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "slashblade:model/named/diamond_sword/diamond_sword.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 7.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 1536
+							proudSoul: 0
+							translationKey: "item.slashblade.diamond_sword"
+						}
+					}
+					id: "slashblade:slashblade"
+					tag: {
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade:model/named/diamond_sword/diamond_sword.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:law_of_regression"
+							StandbyRenderType: 2b
+							SummonedSwordColor: -1712105
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "slashblade:model/named/diamond_sword/diamond_sword.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 7.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 1536
+							proudSoul: 0
+							translationKey: "item.slashblade.diamond_sword"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"1DE54DDD04540738"
+				"2EADF063117EE157"
+			]
+			id: "4F316EFF191CEBF5"
+			tasks: [{
+				id: "7805EBED20BB258D"
+				structure: "sdbf:ae_lab"
+				type: "structure"
+			}]
+			title: "古代实验室"
+			x: 2.5d
+			y: -2.5d
 		}
 	]
 	title: "深境：深邃洞穴"

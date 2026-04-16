@@ -188,10 +188,10 @@ global.materialRemoveRule = ItemFilter.and(
 
 
 LootJS.modifiers((event) => {
-    const entityModifier = event.addLootTypeModifier(LootType.ENTITY);
-    const blockModifier = event.addLootTypeModifier(LootType.BLOCK);
-    const fishingModifier = event.addLootTypeModifier(LootType.FISHING);
-    const chestModifier = event.addLootTypeModifier(LootType.CHEST);
+    let entityModifier = event.addLootTypeModifier(LootType.ENTITY);
+    let blockModifier = event.addLootTypeModifier(LootType.BLOCK);
+    let fishingModifier = event.addLootTypeModifier(LootType.FISHING);
+    let chestModifier = event.addLootTypeModifier(LootType.CHEST);
 
     for (const to of global.materialReplaceRules.keys()) {
         global.materialReplaceRules.get(to).list.forEach(from => {
