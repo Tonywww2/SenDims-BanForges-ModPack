@@ -54,6 +54,7 @@ const mobTypes = new Map([
     ["minecraft:chicken", type0],
 
     ["yungscavebiomes:ice_cube", typeSlime],
+    ["terra_entity:spiked_slime", typeSlime],
 
     ["twilightforest:towerwood_borer", typeB],
     ["twilightforest:carminite_broodling", typeB],

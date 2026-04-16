@@ -70,7 +70,7 @@ ServerEvents.recipes(event => {
         "addition": { "item": 'kubejs:coil_of_sorrow' },
         "base": {
             "type": "slashblade:blade", "item": "slashblade:slashblade",
-            "request": { "name": "pseudoedge_break_dawn:latent", "proud_soul": 50000, "refine": 50 }
+            "request": { "name": "pseudoedge_break_dawn:latent", "proud_soul": 50000, "refine": 25 }
         },
         "blade": "last_smith:nameless_odachi",
         "template": { "item": "last_smith:scroll_odachi" }
@@ -81,7 +81,7 @@ ServerEvents.recipes(event => {
         "addition": { "tag": 'forge:storage_blocks/regalium' },
         "base": {
             "type": "slashblade:blade", "item": "slashblade:slashblade",
-            "request": { "name": "last_smith:nameless_odachi", "proud_soul": 100000, "refine": 100 }
+            "request": { "name": "last_smith:nameless_odachi", "proud_soul": 100000, "refine": 25 }
         },
         "blade": "last_smith:muramasa_kagura",
         "template": { "item": "last_smith:scroll_muramasa" }

@@ -1,0 +1,32 @@
+{
+    "enchantments":
+    [
+        {
+            "id": "minecraft:power",
+            "lvl": 1
+        }
+    ],
+    "item": "slashblade:slashblade",
+    "name": "slashblade:greatsword_of_damnation",
+    "properties":
+    {
+        "attack_base": 8.0,
+        "max_damage": 70,
+        "slash_art": "slashblade_sendims:golden_crux",
+        "special_effects":
+        [
+            "slashblade_sendims:frenzied_flame"
+        ],
+        "sword_type":
+        [
+            "bewitched"
+        ]
+    },
+    "render":
+    {
+        "carry_type": "ninja",
+        "model": "slashblade:model/named/dios/dios.obj",
+        "summon_sword_color": 16744448,
+        "texture": "slashblade:model/greatsword_of_damnation/greatsword_of_damnation.png"
+    }
+}

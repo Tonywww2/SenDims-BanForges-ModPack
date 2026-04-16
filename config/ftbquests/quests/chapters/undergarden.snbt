@@ -624,6 +624,99 @@
 			x: -12.5d
 			y: 0.0d
 		}
+		{
+			dependencies: [
+				"77521D83617F9CBA"
+				"7FC6F9952EA26493"
+			]
+			id: "651A03F2219EBCDE"
+			tasks: [{
+				id: "1E3C1762375F7DBE"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade:model/named/dios/dios.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade_sendims:golden_crux"
+							SpecialEffects: [
+								"slashblade_sendims:arcane_a"
+								"slashblade_sendims:frenzied_flame"
+							]
+							StandbyRenderType: 3b
+							SummonedSwordColor: -32768
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "slashblade:model/greatsword_of_damnation/greatsword_of_damnation_plus.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 5.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 70
+							proudSoul: 0
+							translationKey: "item.slashblade.greatsword_of_damnation_plus"
+						}
+					}
+					id: "slashblade:slashblade"
+					tag: {
+						Enchantments: [{
+							id: "minecraft:power"
+							lvl: 2s
+						}]
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade:model/named/dios/dios.obj"
+							RepairCounter: 0
+							SpecialAttackType: "slashblade_sendims:golden_crux"
+							SpecialEffects: [
+								"slashblade_sendims:arcane_a"
+								"slashblade_sendims:frenzied_flame"
+							]
+							StandbyRenderType: 3b
+							SummonedSwordColor: -32768
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							TextureName: "slashblade:model/greatsword_of_damnation/greatsword_of_damnation_plus.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 5.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 70
+							proudSoul: 0
+							translationKey: "item.slashblade.greatsword_of_damnation_plus"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
 	]
 	title: "深园与废土"
 }

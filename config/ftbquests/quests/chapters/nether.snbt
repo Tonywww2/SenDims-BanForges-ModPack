@@ -7,7 +7,12 @@
 	icon: "minecraft:netherrack"
 	id: "21FDCDE620C842AA"
 	order_index: 4
-	quest_links: [ ]
+	quest_links: [{
+		id: "79A0E49E36559BB1"
+		linked_quest: "41B8D629DFAC4BB8"
+		x: 2.5d
+		y: -5.0d
+	}]
 	quests: [
 		{
 			dependencies: [
@@ -953,6 +958,17 @@
 			}]
 			x: 0.0d
 			y: 7.5d
+		}
+		{
+			dependencies: ["5251AFEDB9C97974"]
+			id: "0432A2E8EC151B87"
+			tasks: [{
+				id: "4A4319772FB062AA"
+				item: "minecraft:blaze_rod"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.5d
 		}
 	]
 	title: "入地狱"

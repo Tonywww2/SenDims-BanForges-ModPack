@@ -1,0 +1,6 @@
+{
+    "blade": "slashblade:greatsword_of_damnation",
+    "drop_rate": 0.5,
+    "entity_type": "terra_entity:king_slime",
+    "request_slashblade": false
+}

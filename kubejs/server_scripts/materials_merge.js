@@ -174,7 +174,11 @@ global.materialRemoveRule = ItemFilter.and(
         'terra_entity:snow_flinx_staff',
         'terra_entity:imp_staff',
         'terra_entity:sculk_wisp_staff',
-        'terra_entity:iron_golem_staff'
+        'terra_entity:iron_golem_staff',
+
+        'terra_entity:swamp_whip',
+
+        'terra_entity:slimy_saddle'
     )
 );
 

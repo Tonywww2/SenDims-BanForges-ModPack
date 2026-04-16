@@ -16,6 +16,7 @@ LootJS.modifiers(event => {
         .modifyLoot('minecraft:structure_block', (stack) => {
             return getBladeStack(Utils.server.registryAccess(), "slashblade:winchester")
         });
-        
+
+
 });
 
