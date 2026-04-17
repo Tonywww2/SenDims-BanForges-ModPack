@@ -13,10 +13,8 @@
     "planet.ad_astra.venus": "§e金星",
     "planet.ad_astra.venus_orbit": "§e金星轨道",
     "planet.minecraft.overworld": "地球",
-    "planet.asteroid_belt.asteroid_belt": "小行星带",
-    "planet.asteroid_belt.asteroid_belt_orbit": "小行星带轨道",
-    "planet.minecraft.the_end": "§d末地",
-    "planet.minecraft.the_end_orbit": "§d末地轨道",
+    "planet.sdbf.asteroid_belt": "小行星带",
+    "planet.sdbf.asteroid_belt_orbit": "小行星带轨道",
     
     "solar_system.ad_astra.proxima_centauri": "§b比邻星",
     "solar_system.ad_astra.solar_system": "太阳系"

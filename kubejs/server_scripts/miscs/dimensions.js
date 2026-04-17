@@ -26,8 +26,15 @@ NativeEvents.onEvent($EntityTravelToDimensionEvent, /** @param {Internal.EntityT
 })
 
 BlockEvents.rightClicked(event => {
-    if (event.item == 'midnight:rift_placer') {
+    let item = event.item
+    if (item == 'midnight:rift_placer') {
         let player = event.player;
+        if (!item.hasNBT() || !item.nbt.getBoolean(MIDNIGHT_STAGE)) {
+            player.tell(Text.translatable("info.kubejs.item_unactivated"))
+            event.cancel()
+            return
+        }
+        
         player.stages.add(MIDNIGHT_STAGE);
         event.server.scheduleInTicks(1, callback => {
             player.addItemCooldown('midnight:rift_placer', 200);

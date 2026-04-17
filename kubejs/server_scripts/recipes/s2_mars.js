@@ -116,4 +116,16 @@ ServerEvents.recipes(event => {
     }, "slashblade_addon:kirisaya")
         .id("sdbf:kirisaya_s2")
 
+    sqRecipe(event,
+        "dungeons_arise:coliseum",
+        "ad_astra:conglomerate",
+        1,
+        's2');
+
+    sqRecipe(event,
+        "dungeons_arise:heavenly_rider",
+        "ad_astra:mars_stone",
+        1,
+        's2');
+
 })

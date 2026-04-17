@@ -526,8 +526,8 @@
 				item: "terra_entity:suspicious_looking_eye"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 7.5d
+			x: 0.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["76DEBD32F9E5F5C5"]
@@ -537,8 +537,8 @@
 				item: "terra_entity:worm_food"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 7.5d
+			x: 2.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["76DEBD32F9E5F5C5"]
@@ -548,8 +548,8 @@
 				item: "terra_entity:bloody_spine"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 10.0d
+			x: 2.5d
+			y: 7.5d
 		}
 	]
 	title: "起始之空岛"

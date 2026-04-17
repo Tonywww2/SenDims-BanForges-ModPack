@@ -52,6 +52,7 @@ const mobTypes = new Map([
     ["biomemakeover:mushroom_trader", type0],
     ["minecraft:axolotl", type0],
     ["minecraft:chicken", type0],
+    ["minecraft:camel", typeC],
 
     ["yungscavebiomes:ice_cube", typeSlime],
     ["terra_entity:spiked_slime", typeSlime],

@@ -1,7 +1,7 @@
 {
-  "replace": false,
+  "replace": true,
   "values": [
-    "minecraft:desert",
-    "#minecraft:has_structure/desert_pyramid"
+    "ad_astra:martian_wastelands",
+    "ad_astra:martian_canyon_creek"
   ]
 }

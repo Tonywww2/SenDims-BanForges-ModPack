@@ -5,6 +5,20 @@ ServerEvents.recipes(event => {
     sqRecipe(event, "cavernous:stone_village", '#forge:cobblestone', 0, "s2");
     sqRecipe(event, "dungeons_arise:plague_asylum", 'ad_astra:etrionic_capacitor', 0, "s2");
 
+    
+    event.shaped(Item.of('midnight:rift_placer', `{${MIDNIGHT_STAGE}: true}`), [
+        'ABA',
+        'CDE',
+        'AFA'
+    ], {
+        A: 'slashblade:proudsoul',
+        B: 'twilightforest:knightmetal_ring',
+        C: ['kubejs:neptune_ingot', 'kubejs:phoenix_ingot', 'kubejs:valkyrie_ingot', 'deep_aether:stratus_ingot'],
+        D: 'midnight:rift_placer',
+        E: ['#forge:ingots/netherite', 'ad_astra:ostrum_engine'],
+        F: 'nuclearcraft:sulfuric_acid_bucket'
+    }).id('sdbf:rift_placer_s1')
+
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
         "ESD",
         "RBL",

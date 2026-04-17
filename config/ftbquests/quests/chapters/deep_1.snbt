@@ -804,7 +804,7 @@
 				item: "terra_entity:abeemination"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -7.5d
 			y: 2.5d
 		}
 		{
@@ -820,6 +820,7 @@
 		}
 		{
 			dependencies: ["5CCEAB83DF5ACE81"]
+			description: ["这是通往另一个维度的钥匙，不过你还需要激活它。"]
 			id: "7267904F019CEFD6"
 			tasks: [{
 				id: "215EAC577594DE3E"

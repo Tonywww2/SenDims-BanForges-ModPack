@@ -65,7 +65,7 @@
 				item: "ad_astra:mars_sand"
 				type: "item"
 			}]
-			x: 0.0d
+			x: 2.5d
 			y: 2.5d
 		}
 		{
@@ -76,7 +76,7 @@
 				type: "checkmark"
 			}]
 			title: "火星地牢"
-			x: 0.0d
+			x: 2.5d
 			y: 5.0d
 		}
 		{
@@ -754,6 +754,55 @@
 			}]
 			x: -7.5d
 			y: 2.5d
+		}
+		{
+			dependencies: ["3F43656AE6F116CB"]
+			description: ["可以制作斗兽场的结构羽毛笔。"]
+			id: "08AFB6C900A95C4B"
+			tasks: [{
+				id: "790BAE7DFFB611ED"
+				item: "ad_astra:conglomerate"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["08AFB6C900A95C4B"]
+			id: "1922B02256A88B09"
+			tasks: [{
+				id: "5C5D0F7E7C34E473"
+				structure: "dungeons_arise:coliseum"
+				type: "structure"
+			}]
+			title: "斗兽场"
+			x: -2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["3F43656AE6F116CB"]
+			description: ["可以制作天际骑士团战舰的结构羽毛笔。"]
+			id: "2BD02CD617E0BB89"
+			tasks: [{
+				id: "6CBCDBEC16441E36"
+				item: "ad_astra:mars_stone"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2BD02CD617E0BB89"]
+			description: ["他们是怎么到这的？"]
+			id: "1D327A774EA080AA"
+			tasks: [{
+				id: "56BBDCBD8DBF5D09"
+				structure: "dungeons_arise:heavenly_rider"
+				type: "structure"
+			}]
+			title: "天际骑士团战舰"
+			x: 0.0d
+			y: 5.0d
 		}
 	]
 	title: "赤红色的星球"

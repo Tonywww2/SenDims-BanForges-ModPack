@@ -40,5 +40,13 @@ ServerEvents.tags("entity_type", event => {
     addSpaceEntity("cataclysm:ignis");
     
     addSpaceEntity("terra_entity:king_slime");
+    addSpaceEntity("minecraft:villager");
+    addSpaceEntity("minecraft:camel");
+    addSpaceEntity("minecraft:skeleton");
+    addSpaceEntity("minecraft:phantom");
+    addSpaceEntity("minecraft:wither_skeleton");
+    addSpaceEntity("minecraft:husk");
+    addSpaceEntity("minecraft:hoglin");
+    addSpaceEntity("minecraft:zoglin");
 
 })

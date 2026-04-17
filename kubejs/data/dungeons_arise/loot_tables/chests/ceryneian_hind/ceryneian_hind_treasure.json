@@ -10,27 +10,13 @@
         {
           "type": "minecraft:item",
           "weight": 8,
-          "name": "minecraft:bow",
+          "name": "slashblade:proudsoul_ingot",
           "functions": [
             {
               "function": "minecraft:enchant_with_levels",
               "levels": {
-                "min": 4,
-                "max": 16
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 8,
-          "name": "minecraft:iron_sword",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "min": 8,
-                "max": 16
+                "min": 1,
+                "max": 2
               }
             }
           ]
@@ -38,41 +24,13 @@
         {
           "type": "minecraft:item",
           "weight": 10,
-          "name": "minecraft:iron_helmet",
+          "name": "slashblade:proudsoul_ingot",
           "functions": [
             {
               "function": "minecraft:enchant_with_levels",
               "levels": {
-                "min": 15,
-                "max": 30
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 10,
-          "name": "minecraft:iron_chestplate",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "min": 15,
-                "max": 30
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 10,
-          "name": "minecraft:iron_leggings",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "min": 15,
-                "max": 30
+                "min": 2,
+                "max": 4
               }
             }
           ]
@@ -93,23 +51,15 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:diamond_helmet"
+          "name": "minecraft:diamond_block"
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:iron_chestplate"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:diamond_leggings"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:diamond_boots"
+          "name": "minecraft:diamond"
         },
         {
           "type": "minecraft:empty",
-          "weight": 20
+          "weight": 30
         },
         {
           "type": "minecraft:item",
@@ -135,7 +85,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:gold_block",
+          "name": "ad_astra:ostrum_block",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -147,15 +97,15 @@
           ]
         },
         {
-          "type": "minecraft:item",
+          "type": "minecraft:tag",
           "weight": 24,
-          "name": "minecraft:iron_ingot",
+          "name": "#forge:ingots/steel",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 4,
-                "max": 24
+                "min": 2,
+                "max": 8
               }
             }
           ]
@@ -163,13 +113,13 @@
         {
           "type": "minecraft:item",
           "weight": 32,
-          "name": "minecraft:gold_ingot",
+          "name": "ad_astra:ostrum_ingot",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
                 "min": 1,
-                "max": 16
+                "max": 6
               }
             }
           ]
@@ -177,13 +127,13 @@
         {
           "type": "minecraft:item",
           "weight": 8,
-          "name": "minecraft:gold_nugget",
+          "name": "ad_astra:ostrum_nugget",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
                 "min": 8,
-                "max": 64
+                "max": 16
               }
             }
           ]
@@ -222,13 +172,13 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:cobweb",
+          "name": "ad_astra:oil_bucket",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
                 "min": 1,
-                "max": 3
+                "max": 1
               }
             }
           ]

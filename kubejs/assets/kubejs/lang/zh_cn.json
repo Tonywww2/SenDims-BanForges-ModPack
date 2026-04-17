@@ -56,6 +56,7 @@
 
     "info.kubejs.faill_spawn_structure": "结构召唤失败！",
     "info.kubejs.the_midnight_disallowed": "你进入了一个异界，但是一股力量拒绝你进入这个世界。",
+    "info.kubejs.item_unactivated": "这个物品还未被激活",
 
     "item.slashblade.greatsword_of_damnation": "伪物「永罚」",
     "item.slashblade.greatsword_of_damnation_plus": "无铭「永罚」",

@@ -13,6 +13,9 @@ LootJS.modifiers(event => {
             p.addLoot(LootEntry.of('slashblade_useful_addon:proud_soul_sampling').limitCount([0, 1]));
         });
 
+    event.addEntityLootModifier("terra_entity:skeletron")
+        .addLoot('midnight:rift_placer')
+
     event.addLootTableModifier('dungeons_arise:chests/plague_asylum/plague_asylum_treasure')
         .randomChance(0.5)
         .addLoot('minecraft:structure_block')

@@ -88,7 +88,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:chorus_fruit",
+          "name": "slashblade:proudsoul",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -107,13 +107,13 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:pumpkin",
+          "name": "slashblade:proudsoul_tiny",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 12,
-                "max": 16
+                "min": 2,
+                "max": 4
               }
             }
           ]

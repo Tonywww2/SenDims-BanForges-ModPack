@@ -1,8 +1,7 @@
 {
-  "replace": false,
+  "replace": true,
   "values": [
-    "minecraft:plains",
-    "minecraft:meadow",
-    "minecraft:sunflower_plains"
+    "ad_astra:martian_wastelands",
+    "ad_astra:martian_canyon_creek"
   ]
 }
