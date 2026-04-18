@@ -33,4 +33,15 @@ JEIEvents.hideItems(event => {
     event.hide('artifacts:vampiric_glove');
     event.hide('confluence:brain_of_confusion');
     
+    event.hide('sophisticatedbackpacks:feeding_upgrade');
+    event.hide('sophisticatedbackpacks:advanced_feeding_upgrade');
+    event.hide('sophisticatedbackpacks:pump_upgrade');
+    event.hide('sophisticatedbackpacks:advanced_pump_upgrade');
+    event.hide('sophisticatedbackpacks:xp_pump_upgrade');
+    event.hide('sophisticatedbackpacks:alchemy_upgrade');
+    event.hide('sophisticatedbackpacks:advanced_alchemy_upgrade');
+    event.hide('sophisticatedbackpacks:survival_infinity_upgrade');
+    event.hide('sophisticatedbackpacks:infinity_upgrade');
+    event.hide('sophisticatedbackpacks:stack_upgrade_omega_tier');
+    event.hide('sophisticatedbackpacks:stack_upgrade_tier_4');
 })
