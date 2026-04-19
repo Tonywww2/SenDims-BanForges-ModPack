@@ -229,20 +229,6 @@ ServerEvents.highPriorityData(event => {
         .setRequiredTool("hammer_dig", 1)
         .build();
 
-    // 19. 三项合金 (已修正)
-    tetraMaterialBuilder(event, "trinity_alloy").setCategory("metal")
-        .setPrimary(25).setSecondary(9).setTertiary(11.5)
-        .setDurability(300).setIntegrityCost(8).setIntegrityGain(9)
-        .setMagicCapacity(160).setToolLevel(4).setToolEfficiency(8)
-        .addAttributes("**minecraft:generic.max_health", 0.03) // 最大生命值+3%
-        .addAttributes("attributeslib:fire_damage", 3.0)
-        .addAttributes("attributeslib:cold_damage", 3.0)
-        .setTints("ecf0f1", "95a5a6") 
-        .addTexture("metal").addTexture("shiny").addTexture("heavy")
-        .addItemMaterial('kubejs:trinity_alloy_ingot')
-        .setRequiredTool("hammer_dig", 1)
-        .build();
-
     // 20. 悲哀线圈 (新加)
     tetraMaterialBuilder(event, "coil_of_sorrow").setCategory("metal")
         .setPrimary(25).setSecondary(8).setTertiary(11.6)

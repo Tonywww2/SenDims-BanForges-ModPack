@@ -83,8 +83,8 @@
 		{
 			id: "4BB16861B9EC22B9"
 			linked_quest: "154580144376D976"
-			x: 2.5d
-			y: 15.0d
+			x: -2.5d
+			y: 10.0d
 		}
 		{
 			id: "0C97D4568A8E09E3"
@@ -95,7 +95,7 @@
 		{
 			id: "1111946D7D8ACB54"
 			linked_quest: "319D8C539D81926B"
-			x: -2.5d
+			x: 2.5d
 			y: 12.5d
 		}
 		{
@@ -883,7 +883,7 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
+			x: -2.5d
 			y: 12.5d
 		}
 		{
@@ -894,11 +894,14 @@
 				item: "last_smith:scroll_shura"
 				type: "item"
 			}]
-			x: 5.0d
+			x: -5.0d
 			y: 12.5d
 		}
 		{
-			dependencies: ["0506CD90BA40D331"]
+			dependencies: [
+				"0506CD90BA40D331"
+				"73EC367B170C5EF6"
+			]
 			id: "2E9AD291D5058BFF"
 			tasks: [{
 				id: "6CDCFE1B395BCB8D"
@@ -992,7 +995,7 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
+			x: -7.5d
 			y: 12.5d
 		}
 		{
@@ -1003,7 +1006,7 @@
 				item: "last_smith:scroll_mortal"
 				type: "item"
 			}]
-			x: 10.0d
+			x: -10.0d
 			y: 12.5d
 		}
 		{

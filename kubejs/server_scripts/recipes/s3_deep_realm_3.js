@@ -1,4 +1,39 @@
 ServerEvents.recipes(event => {
+    
+    event.shapeless('nuclearcraft:carbon_manganese_ingot', [
+        '#forge:ingots/manganese',
+        'minecraft:sugar'
+    ]).id("sdbf:carbon_manganese_ingot_s3")
+
+    event.shapeless('nuclearcraft:sic_sic_cmc_ingot', [
+        'minecraft:ancient_debris',
+        'nuclearcraft:carbon_manganese_ingot',
+        '3x minecraft:fire_charge'
+    ]).id("sdbf:sic_sic_cmc_ingot_s3")
+
+    event.shapeless('kubejs:menril-silicon_sic_sic_cmc_ingot', [
+        'integrateddynamics:crystalized_menril_block',
+        'nuclearcraft:bronze_ingot',
+        'nuclearcraft:sic_sic_cmc_ingot',
+        '3x minecraft:fire_charge',
+        '3x minecraft:andesite'
+    ]).id("sdbf:menril-silicon_sic_sic_cmc_ingot_s3")
+
+    event.custom({
+        "type": "nuclearcraft:assembler",
+        "input": [
+            Item.of('integrateddynamics:crystalized_menril_block').toJson(),
+            Item.of('nuclearcraft:sic_sic_cmc_ingot').toJson(),
+            Item.of('nuclearcraft:bronze_ingot').toJson(),
+            Item.of('nuclearcraft:bronze_ingot').toJson(),
+            Item.of('nuclearcraft:beryllium_dust').toJson(),
+            Item.of('nuclearcraft:beryllium_dust').toJson()
+        ],
+        "output": [
+            Item.of('2x kubejs:menril-silicon_sic_sic_cmc_ingot').toJson()
+        ],
+        "powerModifier": 2.0, "radiation": 1.0, "timeModifier": 2.0
+    }).id("sdbf:menril-silicon_sic_sic_cmc_ingot_acc_s3")
 
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
         "ASE",
@@ -27,7 +62,7 @@ ServerEvents.recipes(event => {
         ),
         "E": "minecraft:bone_block",
         "F": "minecraft:rotten_flesh",
-        "K": 'terra_entity:artery'
+        "K": 'midnight:nagrilite_ingot'
     }, "slashblade:rivers_of_blood")
         .id("sdbf:rivers_of_blood_s3")
 
@@ -37,7 +72,7 @@ ServerEvents.recipes(event => {
         "EB "
     ], {
         "B": "slashblade:proudsoul_ingot",
-        "E": 'integrateddynamics:crystalized_menril_brick',
+        "E": 'midnight:tenebrum_ingot',
         "D": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("slashblade:kanze_masamune") // 对应 request.name
@@ -57,7 +92,7 @@ ServerEvents.recipes(event => {
     ], {
         "P": 'slashblade:proudsoul_ingot',
         "R": "minecraft:redstone_block",
-        "Q": 'integrateddynamics:crystalized_menril_brick',
+        "Q": 'midnight:corrupted_pearl',
         "L": 'integrateddynamics:portable_logic_programmer',
         "G": "minecraft:gold_block",
         "C": "minecraft:cherry_leaves",
@@ -100,7 +135,7 @@ ServerEvents.recipes(event => {
         "CDE",
         "GGG"
     ], {
-        "A": 'kubejs:menril-silicon_sic_sic_cmc_ingot',
+        "A": 'midnight:crystalotus',
         "C": "minecraft:ender_eye",
         "E": "minecraft:axolotl_bucket",
         "G": 'slashblade:proudsoul_ingot',

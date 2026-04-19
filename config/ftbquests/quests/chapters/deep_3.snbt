@@ -12,7 +12,7 @@
 			id: "05BA6F8A4B57F6F2"
 			linked_quest: "482EE0B9BBA0E5D3"
 			x: -2.5d
-			y: -2.5d
+			y: -5.0d
 		}
 		{
 			id: "6D18CADF2689CA3C"
@@ -105,6 +105,7 @@
 		}
 		{
 			dependencies: ["58F48888F1039B24"]
+			description: ["多么美妙的材料！它拥有着两条加工路线，可以自行选择！"]
 			id: "52755126FB29CFEF"
 			tasks: [{
 				id: "34E8EB29C4F84E26"
@@ -117,7 +118,6 @@
 		{
 			dependencies: ["2E482B871B147DC6"]
 			id: "570094989A9F5456"
-			subtitle: "TODO: 怪物掉落"
 			tasks: [{
 				id: "78944C4C6CF1A7C8"
 				item: {
@@ -194,13 +194,14 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
+			x: -2.5d
 			y: -2.5d
 		}
 		{
 			dependencies: [
 				"482EE0B9BBA0E5D3"
 				"570094989A9F5456"
+				"3B09B339407ADF03"
 			]
 			id: "35F111CC582779BA"
 			tasks: [{
@@ -383,8 +384,8 @@
 		}
 		{
 			dependencies: [
-				"52755126FB29CFEF"
 				"5F25788D537A03BC"
+				"40570CBD9A0E5C38"
 			]
 			id: "3FBD9DC1E1BB24E1"
 			tasks: [{
@@ -465,8 +466,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: 2.5d
+			x: -2.5d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -746,7 +747,7 @@
 		{
 			dependencies: [
 				"5F25788D537A03BC"
-				"58F48888F1039B24"
+				"3787442E50D08560"
 			]
 			id: "3C0882022833F540"
 			tasks: [{
@@ -833,8 +834,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
-			y: 2.5d
+			x: 5.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["0EFAC7AECCFDD801"]
@@ -922,12 +923,12 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: -5.0d
+			y: -7.5d
 		}
 		{
 			dependencies: [
 				"20C5B7CCF681A814"
-				"58F48888F1039B24"
+				"6955A276B25D3A29"
 			]
 			id: "0EFAC7AECCFDD801"
 			tasks: [{
@@ -1013,7 +1014,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: -2.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["2E482B871B147DC6"]
@@ -1040,6 +1041,72 @@
 			title: "被遗忘的图书馆"
 			x: 0.0d
 			y: 5.0d
+		}
+		{
+			dependencies: ["2E482B871B147DC6"]
+			id: "6955A276B25D3A29"
+			tasks: [{
+				id: "3A2C936FE1C40480"
+				item: "midnight:corrupted_pearl"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2E482B871B147DC6"]
+			id: "3787442E50D08560"
+			tasks: [{
+				id: "36147AEE895422E7"
+				item: "midnight:tenebrum_ingot"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2E482B871B147DC6"]
+			id: "3B09B339407ADF03"
+			tasks: [{
+				id: "11817A7FBA3A5AD0"
+				item: "midnight:nagrilite_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2E482B871B147DC6"]
+			id: "5945B33D973DD2A5"
+			tasks: [{
+				id: "1261ADE69D350F81"
+				item: "midnight:virilux"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2E482B871B147DC6"]
+			id: "1A8ED47E4400DEA8"
+			tasks: [{
+				id: "2FAAB9BAB5DC42F8"
+				item: "midnight:dark_pearl"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2E482B871B147DC6"]
+			id: "0D47BA9BE246F22B"
+			tasks: [{
+				id: "23C93A33FD31DBD8"
+				item: "midnight:ebonite"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 2.5d
 		}
 	]
 	title: "深境：午夜"

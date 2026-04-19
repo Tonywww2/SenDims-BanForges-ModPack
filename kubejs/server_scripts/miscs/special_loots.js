@@ -30,6 +30,13 @@ LootJS.modifiers(event => {
             return getBladeStack(Utils.server.registryAccess(), "slashblade:winchester")
         });
 
+    event.addLootTableModifier('midnight:chests/wetland_ruin_chest')
+        .randomChance(0.5)
+        .addLoot('minecraft:structure_block')
+        .modifyLoot('minecraft:structure_block', (stack) => {
+            return getBladeStack(Utils.server.registryAccess(), "slashblade:dojikiri_yasutsuna")
+        });
+
     chestModifier.replaceLoot("#forge:seeds", 'slashblade:proudsoul_tiny', true);
 
 

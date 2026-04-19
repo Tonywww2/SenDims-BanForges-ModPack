@@ -1,5 +1,4 @@
 ServerEvents.recipes(event => {
-
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
         "EBE",
         "BDB",

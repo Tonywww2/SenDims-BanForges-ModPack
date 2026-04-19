@@ -9,7 +9,7 @@
     "name": "slashblade:dojikiri_yasutsuna",
     "properties":
     {
-        "attack_base": 13.5,
+        "attack_base": 11.0,
         "max_damage": 147,
         "slash_art": "slashblade:corpse_piler",
         "sword_type":

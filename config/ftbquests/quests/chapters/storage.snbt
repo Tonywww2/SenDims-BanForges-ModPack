@@ -116,7 +116,10 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["26B66FFB1E5C691C"]
+			dependencies: [
+				"26B66FFB1E5C691C"
+				"332DA24A75E89AB3"
+			]
 			id: "2270E6360EAB923F"
 			tasks: [{
 				id: "4E24BF6E94668E01"
@@ -442,6 +445,53 @@
 			}]
 			x: -20.0d
 			y: -2.5d
+		}
+		{
+			dependencies: [
+				"7EE0F0E7324E3356"
+				"184DD4D014074A2E"
+			]
+			id: "29BDBE467B479C35"
+			tasks: [{
+				id: "4A80A9CC3DF29B3D"
+				item: "sophisticatedbackpacks:backpack"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["26B66FFB1E5C691C"]
+			id: "332DA24A75E89AB3"
+			tasks: [{
+				id: "5BFE0E63BE37A228"
+				item: "integrateddynamics:drying_basin"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["332DA24A75E89AB3"]
+			id: "184DD4D014074A2E"
+			tasks: [{
+				id: "33A56EB1207CDA8B"
+				item: "minecraft:leather"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["29BDBE467B479C35"]
+			id: "6FF53F6F54AD8231"
+			tasks: [{
+				id: "2F834CA7EC0612EE"
+				item: "sophisticatedbackpacks:copper_backpack"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
 		}
 	]
 	title: "库存管理"

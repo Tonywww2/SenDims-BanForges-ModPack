@@ -30,6 +30,16 @@ const toRemoveID = new Set([
     "integrateddynamics:crafting/logic_director",
     "botania:brew/resistance",
 
+    "sophisticatedbackpacks:backpack",
+    // "sophisticatedbackpacks:copper_backpack",
+    "sophisticatedbackpacks:iron_backpack",
+    "sophisticatedbackpacks:iron_backpack_from_copper",
+    "sophisticatedbackpacks:gold_backpack",
+    "sophisticatedbackpacks:diamond_backpack",
+    "sophisticatedbackpacks:netherite_backpack",
+
+    "cataclysm:blazing_grips",
+
     "sjap_adder:dragon_fire",
     "sjap_adder:dragon_ice",
     "sjap_adder:dragon_lightning",
@@ -120,6 +130,8 @@ const toRemoveID = new Set([
     "last_smith:oboro_muramasa",
     "last_smith:roukanken",
     "pseudoedge_break_dawn:dragonblade",
+
+    "last_smith:fushigiri",
 
     // 临时
     "apotheosis:hellshelf",

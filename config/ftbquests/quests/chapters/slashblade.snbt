@@ -1401,7 +1401,10 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["11728C2FAEFCBBAD"]
+			dependencies: [
+				"11728C2FAEFCBBAD"
+				"0774BE522111CF90"
+			]
 			id: "4D0F49CE2720FBCD"
 			rewards: [{
 				id: "2D281A74E45E5EB6"
@@ -1787,7 +1790,10 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["4D0F49CE2720FBCD"]
+			dependencies: [
+				"4D0F49CE2720FBCD"
+				"6C2B8E494EB829D2"
+			]
 			id: "606C920FEB477498"
 			tasks: [{
 				id: "5BD5BAD2F4D50E3E"

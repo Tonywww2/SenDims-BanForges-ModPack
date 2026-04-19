@@ -23,6 +23,138 @@ ServerEvents.recipes(event => {
         C: 'integrateddynamics:crystalized_menril_chunk'
     }).id('sdbf:logic_director')
 
+    event.custom({
+        "type": "sophisticatedbackpacks:basic_backpack",
+        "conditions": [
+            {
+                "type": "sophisticatedcore:item_enabled",
+                "itemRegistryName": "sophisticatedbackpacks:backpack"
+            }
+        ],
+        "key": {
+            "C": {
+                "item": "quark:crate"
+            },
+            "L": {
+                "tag": "forge:leather"
+            },
+            "S": {
+                "tag": "forge:string"
+            }
+        },
+        "pattern": [
+            "SLS",
+            "SCS",
+            "LLL"
+        ],
+        "result": {
+            "item": "sophisticatedbackpacks:backpack"
+        }
+    }).id("sdbf:basic_backpack")
+
+    event.custom({
+        "type": "sophisticatedbackpacks:backpack_upgrade",
+        "conditions": [
+            {
+                "type": "sophisticatedcore:item_enabled",
+                "itemRegistryName": "sophisticatedbackpacks:iron_backpack"
+            }
+        ],
+        "key": {
+            "B": {
+                "item": "sophisticatedbackpacks:copper_backpack"
+            },
+            "I": {
+                "item": 'slashblade:proudsoul_ingot'
+            },
+            "S": {
+                "tag": 'forge:ingots/steel'
+            }
+        },
+        "pattern": [
+            "SIS",
+            "IBI",
+            "SIS"
+        ],
+        "result": {
+            "item": "sophisticatedbackpacks:iron_backpack"
+        }
+    }).id("sdbf:backpack_c_i")
+
+    event.custom({
+        "type": "sophisticatedbackpacks:backpack_upgrade",
+        "conditions": [
+            {
+                "type": "sophisticatedcore:item_enabled",
+                "itemRegistryName": "sophisticatedbackpacks:gold_backpack"
+            }
+        ],
+        "key": {
+            "B": {
+                "item": "sophisticatedbackpacks:iron_backpack"
+            },
+            "G": {
+                "tag": 'forge:storage_blocks/gold'
+            },
+            "S": {
+                "item": 'slashblade:proudsoul_sphere'
+            }
+        },
+        "pattern": [
+            "GSG",
+            "SBS",
+            "GSG"
+        ],
+        "result": {
+            "item": "sophisticatedbackpacks:gold_backpack"
+        }
+    }).id("sdbf:backpack_i_g")
+
+    event.custom({
+        "type": "sophisticatedbackpacks:backpack_upgrade",
+        "conditions": [
+            {
+                "type": "sophisticatedcore:item_enabled",
+                "itemRegistryName": "sophisticatedbackpacks:diamond_backpack"
+            }
+        ],
+        "key": {
+            "B": {
+                "item": "sophisticatedbackpacks:gold_backpack"
+            },
+            "D": {
+                "tag": 'forge:storage_blocks/diamond'
+            },
+            "S": {
+                "item": 'slashblade:proudsoul_crystal'
+            }
+        },
+        "pattern": [
+            "DSD",
+            "SBS",
+            "DSD"
+        ],
+        "result": {
+            "item": "sophisticatedbackpacks:diamond_backpack"
+        }
+    }).id("sdbf:backpack_g_d")
+
+    event.custom({
+        "type": "sophisticatedbackpacks:smithing_backpack_upgrade",
+        "addition": {
+            "item": 'slashblade:proudsoul_trapezohedron'
+        },
+        "base": {
+            "item": "sophisticatedbackpacks:diamond_backpack"
+        },
+        "result": {
+            "item": "sophisticatedbackpacks:netherite_backpack"
+        },
+        "template": {
+            "item": "minecraft:netherite_upgrade_smithing_template"
+        }
+    }).id("sdbf:backpack_d_n")
+
     event.recipes.slashblade.proudsoul_shapeless_recipe('slashblade:proudsoul_ingot', [
         '#forge:ingots/steel',
         '3x slashblade:proudsoul',
@@ -61,7 +193,7 @@ ServerEvents.recipes(event => {
         .energy(16384)
         .id("sdbf:proudsoul_crystal_acc")
 
-    event.recipes.thermal.smelter('2x slashblade:proudsoul_trapezohedron', [
+    event.recipes.thermal.smelter('slashblade:proudsoul_trapezohedron', [
         '2x slashblade:proudsoul_crystal',
         'slashblade_useful_addon:soul_crystal',
         'minecraft:bedrock'

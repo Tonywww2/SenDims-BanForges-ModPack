@@ -44,4 +44,6 @@ JEIEvents.hideItems(event => {
     event.hide('sophisticatedbackpacks:infinity_upgrade');
     event.hide('sophisticatedbackpacks:stack_upgrade_omega_tier');
     event.hide('sophisticatedbackpacks:stack_upgrade_tier_4');
+
+    event.hide('cataclysm:blazing_grips');
 })

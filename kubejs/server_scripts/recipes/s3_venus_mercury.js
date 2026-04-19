@@ -233,4 +233,16 @@ ServerEvents.recipes(event => {
         "template": { "item": "last_smith:scroll_sakura_full" }
     }).id("sdbf:evil_shura_s3")
 
+    event.custom({
+        "type":"slashblade:slashblade_smithing",
+        "addition":{"item":'cataclysm:ignitium_ingot'},
+        "base":{
+            "type":"slashblade:blade",
+            "item":"slashblade:slashblade",
+            "request":{"enchantments":[{"id":"minecraft:sharpness"},{"id":"minecraft:sweeping"}],"kill":1000,"name":"last_smith:nameless_odachi","refine":10}
+        },
+        "blade":"last_smith:fushigiri",
+        "template":{"item":"last_smith:scroll_shura"}
+    }).id("sdbf:fushigiri_s3")
+
 })
