@@ -52,6 +52,8 @@ const mobTypes = new Map([
     ["biomemakeover:mushroom_trader", type0],
     ["minecraft:axolotl", type0],
     ["minecraft:chicken", type0],
+    ["minecraft:salmon", type0],
+    ["minecraft:squid", type0],
     ["minecraft:camel", typeC],
 
     ["yungscavebiomes:ice_cube", typeSlime],
@@ -297,6 +299,18 @@ const mobTypes = new Map([
     ["cataclysm:ignis", bossType1],
 
     ["minecraft:shulker", typeD],
+
+    ["cataclysm:lionfish", type0],
+    ["cataclysm:deepling_angler", typeB],
+    ["cataclysm:deepling", typeA],
+    ["cataclysm:deepling_brute", typeD],
+
+    ["cataclysm:coralssus", typeAE],
+
+    ["cataclysm:the_leviathan", bossType2],
+    ["cataclysm:the_leviathan", bossType2],
+
+    ["cataclysm:the_baby_leviathan", typeA],
 
 ]);
 
