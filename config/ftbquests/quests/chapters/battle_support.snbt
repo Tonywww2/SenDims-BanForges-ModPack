@@ -718,6 +718,48 @@
 			x: 10.0d
 			y: 0.0d
 		}
+		{
+			dependencies: ["047BB42636510BA1"]
+			icon: "minecraft:nether_star"
+			id: "2C6FA7648669E74E"
+			shape: "hexagon"
+			tasks: [{
+				id: "4735FC1E33EA3BB0"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "slashblade_sendims:drc_rank_material_3"
+					}
+				}
+				title: "阶级-2-突破材料"
+				type: "item"
+			}]
+			title: "阶级-2-突破材料"
+			x: 0.0d
+			y: -12.5d
+		}
+		{
+			dependencies: ["2C6FA7648669E74E"]
+			icon: "minecraft:nether_star"
+			id: "5BA4948A347E7BE6"
+			shape: "hexagon"
+			tasks: [{
+				id: "33238216B11FFB1D"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "slashblade_sendims:drc_rank_material_4"
+					}
+				}
+				title: "阶级-3-突破材料"
+				type: "item"
+			}]
+			title: "阶级-3-突破材料"
+			x: 0.0d
+			y: -15.0d
+		}
 	]
 	title: "战斗辅助"
 }

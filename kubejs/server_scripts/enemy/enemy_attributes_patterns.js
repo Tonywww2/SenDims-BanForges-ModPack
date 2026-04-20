@@ -366,40 +366,49 @@ const armorFloat = 0.1;
 /**
  * 维度对应的难度等级
  */
-const dimensionStages = {
-    "tofucraft:tofu_world": "0_1",
+const dimensionStages = new Map([
+    ["tofucraft:tofu_world", "0_1"],
 
-    "sdbf:deep_realm_level_1": "1_1",
+    ["sdbf:deep_realm_level_1", "1_1"],
 
-    "twilightforest:twilight_forest": "1_2",
-    "aether:the_aether": "1_2",
-    "ad_astra:moon": "1_2",
+    ["twilightforest:twilight_forest", "1_2"],
+    ["aether:the_aether", "1_2"],
+    ["ad_astra:moon", "1_2"],
 
-    "minecraft:the_nether": "1_3",
+    ["minecraft:the_nether", "1_3"],
 
-    "ad_astra:mars": "1_4",
+    ["ad_astra:mars", "1_4"],
 
-    "midnight:the_midnight": "2_1",
-    "ad_astra:venus": "2_1",
-    "ad_astra:mercury": "2_1",
+    ["midnight:the_midnight", "2_1"],
+    ["ad_astra:venus", "2_1"],
+    ["ad_astra:mercury", "2_1"],
 
-    "sdbf:deep_realm_level_3": "2_2",
-    "undergarden:undergarden": "2_2",
+    ["sdbf:deep_realm_level_3", "2_2"],
+    ["undergarden:undergarden", "2_2"],
 
-    "minecraft:the_end": "2_3",
+    ["minecraft:the_end", "2_3"],
 
-    "sdbf:asteroid_belt": "3_1",
+    ["sdbf:asteroid_belt", "3_1"],
 
-    "kubejs:saturn": "3_2",
-    "the_bumblezone:the_bumblezone": "3_2",
+    ["kubejs:saturn", "3_2"],
+    ["the_bumblezone:the_bumblezone", "3_2"],
 
-    "sdbf:saturn_orbit": "3_3",
-    "sdbf:inside_the_end": "3_3",
+    ["sdbf:saturn_orbit", "3_3"],
+    ["sdbf:inside_the_end", "3_3"],
+    ["minecraft:overworld", "0_1"],
 
-    "kubejs:pluto": "4_1",
-    "ad_astra:glacio": "4_1",
+    ["kubejs:pluto", "4_1"],
+    ["ad_astra:glacio", "4_1"],
 
-    "infinity_cave:deep_realm_level_4": "4_2"
+    ["infinity_cave:deep_realm_level_4", "4_2"]
 
-};
+]);
+
+const dimensionSpecialRule = new Map([
+    ["minecraft:overworld", {
+        stageID: OVERWORLD_STAGE,
+        normalDifficulty: "0_1",
+        activateDifficulty: "3_3"
+    }]
+]);
 

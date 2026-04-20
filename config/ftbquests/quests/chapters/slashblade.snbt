@@ -1815,6 +1815,26 @@
 			x: -12.5d
 			y: 2.5d
 		}
+		{
+			dependencies: ["6988EF237AE411F0"]
+			id: "65B006E14075F1AE"
+			tasks: [{
+				id: "1F7D3ADA248DAE07"
+				item: {
+					Count: 1
+					id: "slashblade_sendims:principle_of_sword_arts"
+					tag: {
+						principle_of_sword_arts: {
+							item_counts: 0
+							item_list: [ ]
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 15.0d
+		}
 	]
 	title: "拔刀剑"
 }

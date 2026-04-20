@@ -1,4 +1,4 @@
-// priority: 100
+// priority: 300
 let TARGET_DIM = 'minecraft:overworld';
 
 let PLATFORM_Y = 300;
@@ -90,6 +90,6 @@ PlayerEvents.tick(event => {
 
     if (player.getBlockY() < MIN_Y_LEVEL) {
         punishPlayer(player);
-        player.tell('You are forbided, wait for the future task. ');
+        player.tell(Text.translatable('info.kubejs.overworld_disallowed').darkPurple())
     }
 })

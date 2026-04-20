@@ -53,11 +53,15 @@
     "info.kubejs.material.lowbook": "[道具][训练书][一阶]",
     "info.kubejs.material.midbook": "[道具][训练书][二阶]",
     "info.kubejs.material.highbook": "[道具][训练书][三阶]",
+
     "info.kubejs.slashblade.can_copy_sa": "可用于复制SA",
     "info.kubejs.slashblade.can_copy_se": "可用于复制SE",
+    "info.kubejs.blessing_petals": "可以吸收不同的§b音乐唱片§r，提升属性加成",
+    "info.kubejs.principle_of_sword_arts": "可以吸收不同的带有SA的§b耀魂宝珠§r，提升属性加成",
 
     "info.kubejs.faill_spawn_structure": "结构召唤失败！",
     "info.kubejs.the_midnight_disallowed": "你进入了一个异界，但是一股力量拒绝你进入这个世界。",
+    "info.kubejs.overworld_disallowed": "你离开了天空，试图重新踏上主世界的大地。但是一股力量令你昏迷了过去，你又回到了天空之中。",
     "info.kubejs.item_unactivated": "这个物品还未被激活",
 
     "item.slashblade.greatsword_of_damnation": "伪物「永罚」",

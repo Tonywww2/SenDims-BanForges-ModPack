@@ -5,7 +5,7 @@
 	filename: "pluto"
 	group: "72FC493D243DC969"
 	id: "4CCDABE44AFF54C8"
-	order_index: 1
+	order_index: 0
 	quest_links: [
 		{
 			id: "43486A184CECC1BF"

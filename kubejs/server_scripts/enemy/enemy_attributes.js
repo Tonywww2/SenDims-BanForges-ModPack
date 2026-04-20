@@ -16,9 +16,27 @@ EntityEvents.spawned(event => {
     if (entity.forgePersistentData.contains('dimension_difficulty')) return;
     entity.forgePersistentData.putBoolean('dimension_difficulty', true);
 
-    let dim = event.level.dimension.toString();
-    let dimStage = dimensionStages[dim];
-    if (!dimStage) dimStage = "0_1";
+    let dim = String(event.level.dimension.toString());
+    let player = entity.getLevel().getNearestPlayer(entity, 240);
+    let dimStage = null;
+    if (dimensionSpecialRule.has(dim) && player) {
+        // Special Rule
+        let dimInfo = dimensionSpecialRule.get(dim);
+        if (player.stages.has(dimInfo.stageID)) {
+            dimStage = dimInfo.activateDifficulty;
+        } else {
+            dimStage = dimInfo.normalDifficulty;
+        }
+
+
+
+    } else {
+        // Normal Rule
+        dimStage = dimensionStages.get(dim);
+        if (!dimStage) dimStage = "0_1";
+
+    }
+
     entity.forgePersistentData.putString('sbsd.diff', dimStage);
     // console.log(name)
     let mobType = mobTypes.get(name);
@@ -34,7 +52,7 @@ EntityEvents.spawned(event => {
     /**
      * @type {Internal.Player}
      */
-    // let player = entity.getLevel().getNearestPlayer(entity, 240);
+    // 
     // let diffNum = -1;
 
     // if (player) {
