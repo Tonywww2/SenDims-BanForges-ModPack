@@ -23,6 +23,19 @@ ServerEvents.recipes(event => {
         C: 'integrateddynamics:crystalized_menril_chunk'
     }).id('sdbf:logic_director')
 
+    event.shaped('slashblade_sendims:principle_of_sword_arts', [
+        'ABE',
+        'ACF',
+        'ADE'
+    ], {
+        A: 'akashictome:tome',
+        B: 'last_smith:scroll_sakura',
+        C: 'last_smith:scroll_blade',
+        D: 'last_smith:scroll_basic',
+        E: 'last_smith:sakura_sphere',
+        F: Item.of('patchouli:guide_book', '{"patchouli:book":"last_smith:smith_guide"}').weakNBT()
+    }).id('sdbf:principle_of_sword_arts')
+
     event.custom({
         "type": "sophisticatedbackpacks:basic_backpack",
         "conditions": [

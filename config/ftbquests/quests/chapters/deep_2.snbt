@@ -4,15 +4,15 @@
 	default_quest_shape: ""
 	filename: "deep_2"
 	group: "2D698D2001694314"
-	icon: "thermal:sulfur"
+	icon: "integrateddynamics:menril_sapling"
 	id: "6405180EFADACC88"
 	order_index: 0
 	quest_links: [
 		{
 			id: "62F806DB7833CF4A"
 			linked_quest: "43FDCFF3F409783D"
-			x: -5.0d
-			y: 0.0d
+			x: -2.5d
+			y: -2.5d
 		}
 		{
 			id: "01B84CDA6F197091"
@@ -47,42 +47,9 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["3DA6E818573A9A69"]
-			id: "34E2C69E62618843"
-			tasks: [{
-				id: "285BE6DAF4E6C77D"
-				item: "kubejs:gamma_dust"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 2.5d
-		}
-		{
-			dependencies: ["3DA6E818573A9A69"]
-			id: "26527CD8C76043BE"
-			tasks: [{
-				id: "3F3B03EF0C3DC72A"
-				item: "kubejs:scoria_ingot"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["3DA6E818573A9A69"]
-			id: "078E92000B6E3912"
-			tasks: [{
-				id: "2003919EAE0BFA16"
-				item: "kubejs:mysterious_alkali_crystal"
-				type: "item"
-			}]
-			x: -2.5d
-			y: 0.0d
-		}
-		{
 			dependencies: [
 				"43FDCFF3F409783D"
-				"078E92000B6E3912"
+				"52755126FB29CFEF"
 			]
 			id: "47820A4E592EE375"
 			tasks: [{
@@ -173,14 +140,14 @@
 				}
 				type: "item"
 			}]
-			x: -5.0d
-			y: -2.5d
+			x: -2.5d
+			y: -5.0d
 		}
 		{
 			dependencies: [
 				"43FDCFF3F409783D"
-				"078E92000B6E3912"
 				"00C6734E62C48C2D"
+				"52755126FB29CFEF"
 			]
 			id: "6367E660F1CE8B30"
 			tasks: [{
@@ -275,8 +242,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.5d
-			y: 0.0d
+			x: -2.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["6367E660F1CE8B30"]
@@ -286,8 +253,8 @@
 				item: "last_smith:scroll_god"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 2.5d
+			x: -2.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["47820A4E592EE375"]
@@ -297,8 +264,8 @@
 				item: "last_smith:scroll_blood"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -2.5d
+			x: -5.0d
+			y: -7.5d
 		}
 		{
 			dependencies: [
@@ -413,6 +380,7 @@
 			dependencies: [
 				"7DC441AFE269F697"
 				"5F25788D537A03BC"
+				"078E92000B6E3912"
 			]
 			id: "416CF285388AC45E"
 			tasks: [{
@@ -835,6 +803,7 @@
 				"26527CD8C76043BE"
 				"416CF285388AC45E"
 				"24BDD9F44F3AC6D6"
+				"52755126FB29CFEF"
 			]
 			id: "161E8BD488E58BEC"
 			tasks: [{
@@ -920,8 +889,91 @@
 				type: "item"
 			}]
 			x: 5.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["3DA6E818573A9A69"]
+			id: "4A962D0462EBA5FF"
+			tasks: [{
+				id: "5C5BC841DA1957AB"
+				item: "integrateddynamics:menril_log"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3DA6E818573A9A69"]
+			id: "58F48888F1039B24"
+			tasks: [{
+				id: "1CFB90B804E1B158"
+				item: "integrateddynamics:crystalized_menril_chunk"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["58F48888F1039B24"]
+			description: ["多么美妙的材料！它拥有着两条加工路线，可以自行选择！"]
+			id: "52755126FB29CFEF"
+			tasks: [{
+				id: "34E8EB29C4F84E26"
+				item: "kubejs:menril-silicon_sic_sic_cmc_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["3DA6E818573A9A69"]
+			id: "34E2C69E62618843"
+			tasks: [{
+				id: "285BE6DAF4E6C77D"
+				item: "kubejs:gamma_dust"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3DA6E818573A9A69"]
+			id: "078E92000B6E3912"
+			tasks: [{
+				id: "2003919EAE0BFA16"
+				item: "kubejs:mysterious_alkali_crystal"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4A962D0462EBA5FF"
+				"3DA6E818573A9A69"
+			]
+			dependency_requirement: "one_completed"
+			id: "20D8DB313AF6ED7F"
+			tasks: [{
+				id: "6550BFE2C3F6FE83"
+				structure: "cataclysm:sunken_city"
+				type: "structure"
+			}]
+			title: "沉没之城"
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["20D8DB313AF6ED7F"]
+			id: "27D7689ADCE678E0"
+			tasks: [{
+				id: "4C5CDD801EABEAE1"
+				item: "cataclysm:abyssal_sacrifice"
+				type: "item"
+			}]
+			x: -7.5d
 			y: 0.0d
 		}
 	]
-	title: "深境：硫磺之海"
+	title: "深境：巨树之海"
 }

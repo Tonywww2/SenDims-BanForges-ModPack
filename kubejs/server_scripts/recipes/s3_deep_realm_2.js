@@ -1,4 +1,40 @@
 ServerEvents.recipes(event => {
+
+    event.shapeless('nuclearcraft:carbon_manganese_ingot', [
+        '#forge:ingots/manganese',
+        'minecraft:sugar'
+    ]).id("sdbf:carbon_manganese_ingot_s3")
+
+    event.shapeless('nuclearcraft:sic_sic_cmc_ingot', [
+        'minecraft:ancient_debris',
+        'nuclearcraft:carbon_manganese_ingot',
+        '3x minecraft:fire_charge'
+    ]).id("sdbf:sic_sic_cmc_ingot_s3")
+
+    event.shapeless('kubejs:menril-silicon_sic_sic_cmc_ingot', [
+        'integrateddynamics:crystalized_menril_block',
+        'nuclearcraft:bronze_ingot',
+        'nuclearcraft:sic_sic_cmc_ingot',
+        '3x minecraft:fire_charge',
+        '3x minecraft:andesite'
+    ]).id("sdbf:menril-silicon_sic_sic_cmc_ingot_s3")
+
+    event.custom({
+        "type": "nuclearcraft:assembler",
+        "input": [
+            Item.of('integrateddynamics:crystalized_menril_block').toJson(),
+            Item.of('nuclearcraft:sic_sic_cmc_ingot').toJson(),
+            Item.of('nuclearcraft:bronze_ingot').toJson(),
+            Item.of('nuclearcraft:bronze_ingot').toJson(),
+            Item.of('nuclearcraft:beryllium_dust').toJson(),
+            Item.of('nuclearcraft:beryllium_dust').toJson()
+        ],
+        "output": [
+            Item.of('2x kubejs:menril-silicon_sic_sic_cmc_ingot').toJson()
+        ],
+        "powerModifier": 2.0, "radiation": 1.0, "timeModifier": 2.0
+    }).id("sdbf:menril-silicon_sic_sic_cmc_ingot_acc_s3")
+
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
         "EBE",
         "BDB",
@@ -95,7 +131,7 @@ ServerEvents.recipes(event => {
         "LBL",
         "JAS"
     ], {
-        "S": "slashblade:proudsoul_sphere",
+        "S": 'kubejs:mysterious_alkali_crystal',
         "L": "#forge:storage_blocks/iron",     // 铁块标签 / Iron block tag
         "J": "#forge:storage_blocks/redstone", // 红石块标签 / Redstone block tag
         "B": SlashBladeIngredient.of(
@@ -120,7 +156,7 @@ ServerEvents.recipes(event => {
         "ABE"
     ], {
         "B": "slashblade:proudsoul_ingot",
-        "E": 'kubejs:scoria_ingot',
+        "E": "kubejs:menril-silicon_sic_sic_cmc_ingot",
         "D": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance().name("energyblade:hf_blade") // 前置：观世正宗
                 .killCount(750)         // 杀敌数 / Kill count
@@ -147,7 +183,7 @@ ServerEvents.recipes(event => {
     event.custom({
         "type": "slashblade:slashblade_smithing",
         "addition": {
-            "item": 'kubejs:mysterious_alkali_crystal'
+            "item": "kubejs:menril-silicon_sic_sic_cmc_ingot"
         },
         "base": {
             "type": "slashblade:blade",
@@ -172,7 +208,7 @@ ServerEvents.recipes(event => {
     event.custom({
         "type": "slashblade:slashblade_smithing",
         "addition": {
-            "item": 'kubejs:mysterious_alkali_crystal'
+            "item": "kubejs:menril-silicon_sic_sic_cmc_ingot"
         },
         "base": {
             "type": "slashblade:blade",

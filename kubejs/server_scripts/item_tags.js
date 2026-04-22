@@ -11,13 +11,30 @@ ServerEvents.tags("item", event => {
     ])
 
     // TODO 证章强化材料
+    // 0-1
     event.add('slashblade_sendims:drc_rank_material_1',
         'minecraft:diamond_block'
 
     )
+    // 1-2
     event.add('slashblade_sendims:drc_rank_material_2',
         'deep_aether:stratus_ingot',
         'minecraft:nether_star',
+
+    )
+    // 2-3
+    event.add('slashblade_sendims:drc_rank_material_3',
+        
+
+    )
+    // 3-4
+    event.add('slashblade_sendims:drc_rank_material_4',
+        
+
+    )
+    // 4-5
+    event.add('slashblade_sendims:drc_rank_material_5',
+        
 
     )
 
@@ -30,7 +47,7 @@ ServerEvents.tags("item", event => {
         'twilightforest:cooked_meef',       // 牛头人肉排 (熟)
         'cataclysm:ancient_metal_nugget',   // 远古金属粒
         'ae2:calculation_processor',        // 运算处理器
-        'ae2:fluix_dust',                   // 天晶混合 (通常指福鲁伊克斯粉/混合材料)
+        "",                   // 天晶混合
         'twilightforest:carminite'          // 砷铅铁 (砷铅铁矿石)
     ])
     event.add("slashblade_sendims:drc_damage_material_0", [
@@ -72,16 +89,45 @@ ServerEvents.tags("item", event => {
 
     // 阶段2
     event.add("slashblade_sendims:drc_health_material_2", [
-        // 'quark:blaze_lantern',
-        // 'apotheosis:epic_material'
-        // "minecraft:bedrock"
-
+        "nuclearcraft:magnesium_ingot",                 // 镁锭
+        "kubejs:bizarre_matter_dust",                   // 奇异物质尘
+        "the_bumblezone:redstone_honey_web",            // 红石蜜蜂网
+        "nuclearcraft:empty_sink",                      // 空散热器
+        "enderio:end_steel_ingot",                      // 末地钢
+        "kubejs:delta_dust",                            // 德尔塔尘
+        "kubejs:multifaceted_ambrosia",                 // 多面蜜酒
+        "undergarden:forgotten_ingot"                   // 遗忆锭
     ])
     event.add("slashblade_sendims:drc_damage_material_2", [
-        // 'minecraft:netherite_ingot'
-
+        "nuclearcraft:thorium_ingot",              // 钍锭
+        "nuclearcraft:lithium_ingot",              // 锂锭
+        "undergarden:regalium_crystal",            // 贵豪
+        "integrateddynamics:logic_director",       // 逻辑导向
+        "kubejs:alpha_dust",                       // alpha
     ])
+
     // 阶段3
+    event.add("slashblade_sendims:drc_health_material_3", [
+        "kubejs:ml_computing_ingot",               // ML计算锭
+        "kubejs:chaotic_truth",                    // 混沌真理
+        "kubejs:galatic_cycle_component"           // 星空循环组件
+    ])
+    event.add("slashblade_sendims:drc_damage_material_3", [
+        "cataclysm:essence_of_the_storm",          // 风暴精华
+        "kubejs:titan-ii_composite_ingot",         // 泰坦II复合锭
+        "kubejs:ancient_soul",                     // 古代灵魂
+        "kubejs:epsilon_dust"                      // 艾普塞隆尘
+    ])
+
+    // 阶段4
+    event.add("slashblade_sendims:drc_health_material_4", [
+        "kubejs:virtual_gold_ingot",               // 虚金
+        "kubejs:rainbowshift_entropy"              // 虹移之熵
+    ])
+    event.add("slashblade_sendims:drc_damage_material_4", [
+        "kubejs:basepoint_alloy",                  // 奇点合金
+        "kubejs:radiation_components"              // 辐射零件组
+    ])
 
 
 })

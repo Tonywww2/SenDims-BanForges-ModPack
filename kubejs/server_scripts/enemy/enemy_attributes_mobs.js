@@ -304,6 +304,8 @@ const mobTypes = new Map([
     ["cataclysm:deepling_angler", typeB],
     ["cataclysm:deepling", typeA],
     ["cataclysm:deepling_brute", typeD],
+    ["cataclysm:deepling_priest", typeA],
+    ["cataclysm:deepling_warlock", typeA],
 
     ["cataclysm:coralssus", typeAE],
 
@@ -311,6 +313,10 @@ const mobTypes = new Map([
     ["cataclysm:the_leviathan", bossType2],
 
     ["cataclysm:the_baby_leviathan", typeA],
+
+    ["terra_entity:arapaima", typeC],
+    ["terra_entity:shark", typeA],
+    ["terra_entity:granite_elemental", typeD],
 
 ]);
 

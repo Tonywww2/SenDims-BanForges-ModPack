@@ -618,7 +618,7 @@
 				title: "阶级-无-突破材料"
 				type: "item"
 			}]
-			title: "阶级-无-突破材料"
+			title: "阶级一突破材料"
 			x: 0.0d
 			y: -7.5d
 		}
@@ -646,7 +646,7 @@
 		{
 			dependencies: ["047BB42636510BA1"]
 			description: ["提示：你可以点击任务的需求查看所有可用的材料。"]
-			icon: "ftbquests:barrier"
+			icon: "undergarden:forgotten_ingot"
 			id: "75381D6628B9BB4F"
 			tasks: [{
 				id: "4F755AC7EB6141ED"
@@ -681,14 +681,14 @@
 				title: "阶级-1-突破材料"
 				type: "item"
 			}]
-			title: "阶级-1-突破材料"
+			title: "阶级二突破材料"
 			x: 0.0d
 			y: -10.0d
 		}
 		{
 			dependencies: ["047BB42636510BA1"]
 			description: ["提示：你可以点击任务的需求查看所有可用的材料。"]
-			icon: "minecraft:netherite_ingot"
+			icon: "undergarden:regalium_crystal"
 			id: "30685C1409FDBDFF"
 			tasks: [{
 				id: "35A2551107F0DDD7"
@@ -732,10 +732,10 @@
 						value: "slashblade_sendims:drc_rank_material_3"
 					}
 				}
-				title: "阶级-2-突破材料"
+				title: "阶级-3-突破材料"
 				type: "item"
 			}]
-			title: "阶级-2-突破材料"
+			title: "阶级三突破材料"
 			x: 0.0d
 			y: -12.5d
 		}
@@ -753,11 +753,95 @@
 						value: "slashblade_sendims:drc_rank_material_4"
 					}
 				}
-				title: "阶级-3-突破材料"
+				title: "阶级-4-突破材料"
 				type: "item"
 			}]
-			title: "阶级-3-突破材料"
+			title: "阶级四突破材料"
 			x: 0.0d
+			y: -15.0d
+		}
+		{
+			dependencies: ["2C6FA7648669E74E"]
+			description: ["提示：你可以点击任务的需求查看所有可用的材料。"]
+			icon: "kubejs:ml_computing_ingot"
+			id: "561C1F6FDFB493F8"
+			tasks: [{
+				id: "3EACD1A53D356693"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "slashblade_sendims:drc_health_material_3"
+					}
+				}
+				title: "阶级-3-生命强化材料"
+				type: "item"
+			}]
+			title: "阶级-3-生命强化材料"
+			x: -2.5d
+			y: -12.5d
+		}
+		{
+			dependencies: ["5BA4948A347E7BE6"]
+			description: ["提示：你可以点击任务的需求查看所有可用的材料。"]
+			icon: "kubejs:virtual_gold_ingot"
+			id: "442CC8EC603410AB"
+			tasks: [{
+				id: "44EEA72A133B9311"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "slashblade_sendims:drc_health_material_4"
+					}
+				}
+				title: "阶级-4-生命强化材料"
+				type: "item"
+			}]
+			title: "阶级-4-生命强化材料"
+			x: -2.5d
+			y: -15.0d
+		}
+		{
+			dependencies: ["2C6FA7648669E74E"]
+			description: ["提示：你可以点击任务的需求查看所有可用的材料。"]
+			icon: "kubejs:titan-ii_composite_ingot"
+			id: "7B68240CD80F492C"
+			tasks: [{
+				id: "3FA62E08E0015A58"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "slashblade_sendims:drc_damage_material_3"
+					}
+				}
+				title: "阶级-3-伤害强化材料"
+				type: "item"
+			}]
+			title: "阶级-3-伤害强化材料"
+			x: 2.5d
+			y: -12.5d
+		}
+		{
+			dependencies: ["5BA4948A347E7BE6"]
+			description: ["提示：你可以点击任务的需求查看所有可用的材料。"]
+			icon: "kubejs:basepoint_alloy"
+			id: "64E89DB4179E3C4C"
+			tasks: [{
+				id: "3F7922F389D4C60B"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "slashblade_sendims:drc_damage_material_4"
+					}
+				}
+				title: "阶级-4-伤害强化材料"
+				type: "item"
+			}]
+			title: "阶级-4-伤害强化材料"
+			x: 2.5d
 			y: -15.0d
 		}
 	]

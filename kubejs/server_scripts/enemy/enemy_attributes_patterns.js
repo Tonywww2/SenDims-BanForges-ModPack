@@ -379,11 +379,11 @@ const dimensionStages = new Map([
 
     ["ad_astra:mars", "1_4"],
 
-    ["midnight:the_midnight", "2_1"],
+    ["sdbf:deep_realm_level_2", "2_1"],
     ["ad_astra:venus", "2_1"],
     ["ad_astra:mercury", "2_1"],
 
-    ["sdbf:deep_realm_level_3", "2_2"],
+    ["midnight:the_midnight", "2_2"],
     ["undergarden:undergarden", "2_2"],
 
     ["minecraft:the_end", "2_3"],
@@ -397,10 +397,10 @@ const dimensionStages = new Map([
     ["sdbf:inside_the_end", "3_3"],
     ["minecraft:overworld", "0_1"],
 
-    ["kubejs:pluto", "4_1"],
+    ["sdbf:pluto", "4_1"],
     ["ad_astra:glacio", "4_1"],
 
-    ["infinity_cave:deep_realm_level_4", "4_2"]
+    ["sdbf:deep_realm_level_4", "4_2"]
 
 ]);
 

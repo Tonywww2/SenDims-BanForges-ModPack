@@ -348,4 +348,64 @@ ServerEvents.highPriorityData(event => {
         .setRequiredTool("hammer_dig", 1)
         .build();
 
+    // 30. 夜冥
+    tetraMaterialBuilder(event, "nagrilite").setCategory("metal")
+        .setPrimary(13).setSecondary(7).setTertiary(8)
+        .setDurability(220).setIntegrityCost(3).setIntegrityGain(5)
+        .setMagicCapacity(100).setToolLevel(3).setToolEfficiency(6)
+        .addAttributes("minecraft:generic.armor", 1.0)
+        .setTints("5b2c6f", "2e113d")
+        .addTexture("metal").addTexture("heavy")
+        .addItemMaterial('midnight:nagrilite_ingot')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
+    // 31. 黯铁
+    tetraMaterialBuilder(event, "ebonite").setCategory("fibre")
+        .setPrimary(9).setSecondary(18).setTertiary(9)
+        .setDurability(240).setIntegrityCost(3).setIntegrityGain(5)
+        .setMagicCapacity(110).setToolLevel(3).setToolEfficiency(6.5)
+        .addAttributes("**minecraft:generic.movement_speed", 0.05)
+        .setTints("1a1520", "0d0a0f")
+        .addTexture("metal").addTexture("shiny")
+        .addItemMaterial('midnight:ebonite')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
+    // 32. 幽光
+    tetraMaterialBuilder(event, "virilux").setCategory("gem")
+        .setPrimary(21).setSecondary(0).setTertiary(10)
+        .setDurability(270).setIntegrityCost(3).setIntegrityGain(6)
+        .setMagicCapacity(140).setToolLevel(4).setToolEfficiency(7.5)
+        .addAttributes("attributeslib:armor_pierce", 3.0)
+        .setTints("d4a5ff", "7d3c98")
+        .addTexture("metal").addTexture("shiny")
+        .addItemMaterial('midnight:virilux')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
+    // 33. 铼碎片
+    tetraMaterialBuilder(event, "rendium").setCategory("bone")
+        .setPrimary(10).setSecondary(1).setTertiary(10)
+        .setDurability(220).setIntegrityCost(4).setIntegrityGain(6)
+        .setMagicCapacity(130).setToolLevel(3).setToolEfficiency(6)
+        .addAttributes("attributeslib:cold_damage", 14.0)
+        .setTints("5dade2", "1f618d")
+        .addTexture("metal").addTexture("crude")
+        .addItemMaterial('midnight:rendium_shard')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
+    // 34. 熔渣锭
+    tetraMaterialBuilder(event, "scoria").setCategory("metal")
+        .setPrimary(14).setSecondary(37).setTertiary(11)
+        .setDurability(280).setIntegrityCost(4).setIntegrityGain(4)
+        .setMagicCapacity(150).setToolLevel(4).setToolEfficiency(7.5)
+        .addAttributes("attributeslib:fire_damage", 6.0)
+        .setTints("e74c3c", "922b21")
+        .addTexture("metal").addTexture("heavy")
+        .addItemMaterial('kubejs:scoria_ingot')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
 })

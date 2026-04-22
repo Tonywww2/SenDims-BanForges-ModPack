@@ -1,39 +1,23 @@
 ServerEvents.recipes(event => {
-    
-    event.shapeless('nuclearcraft:carbon_manganese_ingot', [
-        '#forge:ingots/manganese',
-        'minecraft:sugar'
-    ]).id("sdbf:carbon_manganese_ingot_s3")
 
-    event.shapeless('nuclearcraft:sic_sic_cmc_ingot', [
-        'minecraft:ancient_debris',
-        'nuclearcraft:carbon_manganese_ingot',
-        '3x minecraft:fire_charge'
-    ]).id("sdbf:sic_sic_cmc_ingot_s3")
+    event.shaped('kubejs:scoria_ingot', [
+        'DBA',
+        'BCB',
+        'ABD'
+    ], {
+        A: 'midnight:dark_pearl',
+        B: 'midnight:tenebrum_ingot',
+        C: 'midnight:virilux',
+        D: 'minecraft:lava_bucket'
+    }).id('sdbf:scoria_ingot_s3')
 
-    event.shapeless('kubejs:menril-silicon_sic_sic_cmc_ingot', [
-        'integrateddynamics:crystalized_menril_block',
-        'nuclearcraft:bronze_ingot',
-        'nuclearcraft:sic_sic_cmc_ingot',
-        '3x minecraft:fire_charge',
-        '3x minecraft:andesite'
-    ]).id("sdbf:menril-silicon_sic_sic_cmc_ingot_s3")
-
-    event.custom({
-        "type": "nuclearcraft:assembler",
-        "input": [
-            Item.of('integrateddynamics:crystalized_menril_block').toJson(),
-            Item.of('nuclearcraft:sic_sic_cmc_ingot').toJson(),
-            Item.of('nuclearcraft:bronze_ingot').toJson(),
-            Item.of('nuclearcraft:bronze_ingot').toJson(),
-            Item.of('nuclearcraft:beryllium_dust').toJson(),
-            Item.of('nuclearcraft:beryllium_dust').toJson()
-        ],
-        "output": [
-            Item.of('2x kubejs:menril-silicon_sic_sic_cmc_ingot').toJson()
-        ],
-        "powerModifier": 2.0, "radiation": 1.0, "timeModifier": 2.0
-    }).id("sdbf:menril-silicon_sic_sic_cmc_ingot_acc_s3")
+    event.recipes.thermal.smelter('kubejs:scoria_ingot', [
+        'midnight:virilux',
+        '2x midnight:dark_pearl',
+        '3x midnight:tenebrum_ingot'
+    ])
+        .energy(10240)
+        .id("sdbf:scoria_ingot_s3_acce")
 
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
         "ASE",
@@ -114,10 +98,10 @@ ServerEvents.recipes(event => {
         "BGC"
     ], {
         "P": 'slashblade:proudsoul_ingot',
-        "R": 'integratedterminals:menril_glass',
+        "R": 'kubejs:mysterious_alkali_crystal',
         "E": "minecraft:emerald_block",
         "G": "minecraft:gold_block",
-        "C": 'integrateddynamics:menril_leaves',
+        "C": 'kubejs:gamma_dust',
         "B": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("slashblade_addon:moonlight_cherry")
@@ -158,7 +142,7 @@ ServerEvents.recipes(event => {
     ], {
         "A": "minecraft:blaze_rod",
         "B": "slashblade:proudsoul_ingot",
-        "C": 'kubejs:menril-silicon_sic_sic_cmc_ingot',
+        "C": 'kubejs:scoria_ingot',
         "D": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("pseudoedge_break_dawn:kingblade")
@@ -178,7 +162,7 @@ ServerEvents.recipes(event => {
         "BEB",
         "DBA"
     ], {
-        "A": 'kubejs:menril-silicon_sic_sic_cmc_ingot',
+        "A": 'kubejs:scoria_ingot',
         "B": "slashblade:proudsoul_ingot",
         "E": "minecraft:apple",
         "D": SlashBladeIngredient.of(
