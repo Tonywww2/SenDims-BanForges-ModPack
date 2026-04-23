@@ -23,8 +23,7 @@
         "slash_art": "slashblade:wave_edge",
         "special_effects":
         [
-            "sjap_adder:dragon_lightning",
-            "sjap_adder:armor_break"
+            "sjap_adder:dragon_lightning"
         ],
         "sword_type":
         [
