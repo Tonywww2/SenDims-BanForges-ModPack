@@ -712,11 +712,7 @@
 		}
 		{
 			dependencies: ["71F1943E6E3FCA17"]
-			description: [
-				"IMMPT：用红砖块构筑门槛，并使用深境证章点亮......"
-				""
-				"原始：用裂纹砖块构筑门槛，并使用深境证章点亮......"
-			]
+			description: ["使用裂纹砖块构筑门槛，并使用深境证章点亮......"]
 			hide_dependent_lines: true
 			hide_until_deps_complete: true
 			id: "5BB642BD0BE40541"
@@ -993,6 +989,17 @@
 			title: "古代实验室"
 			x: 2.5d
 			y: -2.5d
+		}
+		{
+			dependencies: ["561241B6C33A3DCD"]
+			id: "5455473B5A1E65AF"
+			tasks: [{
+				id: "308FCC8294F7423B"
+				item: "terra_entity:honeyed_goggles"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 5.0d
 		}
 	]
 	title: "深境：深邃洞穴"

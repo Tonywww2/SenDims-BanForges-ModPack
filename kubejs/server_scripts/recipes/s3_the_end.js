@@ -6,6 +6,16 @@ ServerEvents.recipes(event => {
         'aether:ambrosium_shard'
     ]).id("sdbf:ender_eye_s3")
 
+    event.shaped('apotheosis:ender_library', [
+        'ACA',
+        'CBC',
+        'ACA'
+    ], {
+        A: '#forge:ingots/end_steel',
+        B: 'ae2:controller',
+        C: 'apotheosis:library'
+    }).id('sdbf:ender_library_s3')
+
     event.shaped('kubejs:chorus_logic_composite_coil', [
         'ACB',
         'CAC',

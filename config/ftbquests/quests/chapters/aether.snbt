@@ -36,13 +36,7 @@
 	quests: [
 		{
 			dependencies: ["71B535DCE4CFEF8F"]
-			description: [
-				"IMMPT：用Dent Glowstone作为门框材料，并用水桶点亮......"
-				""
-				"原始：默认；用萤石作为门框材料，并用水桶点亮......"
-				""
-				"备注：Dent Glowstone需要使用凿子（Chisel）加工萤石制作"
-			]
+			description: ["使用萤石作为门框材料，并用水桶点亮......"]
 			hide_dependent_lines: true
 			hide_until_deps_complete: true
 			id: "0F8DC1AEBBC762C1"

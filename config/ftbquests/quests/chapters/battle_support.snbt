@@ -603,7 +603,7 @@
 		{
 			dependencies: ["71F1943E6E3FCA17"]
 			description: ["提示：你可以点击任务的需求查看所有可用的材料。"]
-			icon: "minecraft:diamond_block"
+			icon: "cataclysm:witherite_ingot"
 			id: "421132E2C3F4644D"
 			shape: "hexagon"
 			tasks: [{
@@ -666,7 +666,11 @@
 		}
 		{
 			dependencies: ["421132E2C3F4644D"]
-			icon: "minecraft:nether_star"
+			icon: {
+				Count: 1
+				id: "ad_astra:energizer"
+				tag: { }
+			}
 			id: "047BB42636510BA1"
 			shape: "hexagon"
 			tasks: [{
@@ -720,7 +724,7 @@
 		}
 		{
 			dependencies: ["047BB42636510BA1"]
-			icon: "minecraft:nether_star"
+			icon: "cataclysm:void_core"
 			id: "2C6FA7648669E74E"
 			shape: "hexagon"
 			tasks: [{
@@ -741,7 +745,7 @@
 		}
 		{
 			dependencies: ["2C6FA7648669E74E"]
-			icon: "minecraft:nether_star"
+			icon: "minecraft:bedrock"
 			id: "5BA4948A347E7BE6"
 			shape: "hexagon"
 			tasks: [{

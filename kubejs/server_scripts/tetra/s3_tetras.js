@@ -113,6 +113,19 @@ ServerEvents.highPriorityData(event => {
         .setRequiredTool("hammer_dig", 1)
         .build();
 
+    tetraMaterialBuilder(event, "manasteel").setCategory("metal")
+        .setPrimary(14).setSecondary(5).setTertiary(7.5)
+        .setDurability(280).setIntegrityCost(6).setIntegrityGain(6)
+        .setMagicCapacity(230).setToolLevel(3).setToolEfficiency(7.5)
+        .addAttributes("slashblade_sendims:magic_penetration", 1)
+        .setTints("0066ff", "0099ff") 
+        .addTexture("metal").addTexture("default")
+        .addItemMaterial("botania:manasteel_ingot")
+        .setRequiredTool("hammer_dig", 1)
+        .addImprovements("mana_repair", 1)
+        .addImprovements("mana_resonance", 1)
+        .build();
+
     // 10. 紫菘玻璃 (无需修改)
     tetraMaterialBuilder(event, "chorus_glass").setCategory("gem")
         .setPrimary(17).setSecondary(2).setTertiary(7)
@@ -332,6 +345,7 @@ ServerEvents.highPriorityData(event => {
         .addTexture("metal").addTexture("heavy").addTexture("shiny")
         .addItemMaterial('enderio:end_steel_ingot')
         .setRequiredTool("hammer_dig", 1)
+        .addImprovements("mana_resonance", 1)
         .build();
 
     // 28. 紫菘逻辑线圈 (新加)

@@ -13,18 +13,24 @@ ServerEvents.tags("item", event => {
     // TODO 证章强化材料
     // 0-1
     event.add('slashblade_sendims:drc_rank_material_1',
-        'minecraft:diamond_block'
+        "cataclysm:witherite_ingot",
+        "twilightforest:naga_scale",
+        "deep_aether:skyjade",
+        "ad_astra:solar_panel"
 
     )
     // 1-2
     event.add('slashblade_sendims:drc_rank_material_2',
-        'deep_aether:stratus_ingot',
-        'minecraft:nether_star',
+        "ad_astra:energizer",
+        "twilightforest:giant_obsidian",
+        "integrateddynamics:delay",
+        "ad_astra:calorite_sliding_door"
 
     )
     // 2-3
     event.add('slashblade_sendims:drc_rank_material_3',
-        
+        "cataclysm:void_core",
+        "botania:terrasteel_ingot"
 
     )
     // 3-4

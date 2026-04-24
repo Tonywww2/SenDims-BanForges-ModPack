@@ -37,3 +37,17 @@ const sqRecipe = (event, structure, material, type, stage) => {
 
 const getBladeStack = (registryAccess, bladeKey) => $SDUtils.getBladeItemStack(registryAccess, bladeKey)
 
+const hasCurios = (player, id) => {
+    let curiosAll = $CuriosHelper.getEquippedCurios(player).resolve().get()
+    // player.tell(curiosAll)
+    for (let i = 0; i < curiosAll.getSlots(); i++) {
+        let curiosItem = curiosAll.getStackInSlot(i);
+        if (!curiosItem.isEmpty()) {
+            if (curiosItem.getItem().id === id) {
+                return true
+            }
+        }
+    }
+    return false
+}
+

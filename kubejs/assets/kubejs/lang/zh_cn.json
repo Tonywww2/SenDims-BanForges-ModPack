@@ -61,6 +61,7 @@
 
     "info.kubejs.faill_spawn_structure": "结构召唤失败！",
     "info.kubejs.the_midnight_disallowed": "你进入了一个异界，但是一股力量拒绝你进入这个世界。",
+    "info.kubejs.the_end_disallowed": "你迈入了通往终末的传送门，但是一股力量将你推出了那个世界。",
     "info.kubejs.overworld_disallowed": "你离开了天空，试图重新踏上主世界的大地。但是一股力量令你昏迷了过去，你又回到了天空之中。",
     "info.kubejs.item_unactivated": "这个物品还未被激活",
 

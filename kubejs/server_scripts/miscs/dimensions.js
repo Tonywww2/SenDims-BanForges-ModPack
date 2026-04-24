@@ -19,6 +19,14 @@ NativeEvents.onEvent($EntityTravelToDimensionEvent, /** @param {Internal.EntityT
                 }
                 break
 
+            case 'minecraft:the_end':
+                if (!hasCurios(player, 'slashblade_sendims:blessing_petals')) {
+                    event.setCanceled(true)
+                    player.tell(Text.translatable('info.kubejs.the_end_disallowed').darkPurple())
+                    punishPlayer(player)
+                }
+                break
+
         }
 
     }

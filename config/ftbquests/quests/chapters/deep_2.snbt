@@ -36,11 +36,15 @@
 	quests: [
 		{
 			hide_dependent_lines: true
+			icon: "integrateddynamics:menril_sapling"
 			id: "3DA6E818573A9A69"
 			size: 2.0d
 			tasks: [{
-				id: "51F8305513949303"
-				type: "checkmark"
+				dimension: "sdbf:deep_realm_level_2"
+				icon: "integrateddynamics:menril_sapling"
+				id: "06627B84E2D2AFE0"
+				title: "深境二层"
+				type: "dimension"
 			}]
 			title: "深境二层"
 			x: 0.0d
