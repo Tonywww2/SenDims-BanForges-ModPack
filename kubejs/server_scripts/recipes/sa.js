@@ -16,4 +16,3 @@ ServerEvents.highPriorityData(event => {
         })
     }
 })
-console.log(Item.of('slashblade:proudsoul_tiny').enchant('enderio:shimmer', 1).toJson().toString())
