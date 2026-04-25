@@ -1,12 +1,4 @@
-ForgeEvents.onEvent("net.minecraftforge.event.entity.living.LivingHurtEvent", event => {
-    global.hurtEvent(event)
-
-})
-
-/**
- * @param {Internal.LivingHurtEvent} event 
- */
-global.hurtEvent = function (event) {
+NativeEvents.onEvent($LivingHurtEvent, event => {
     /**
      * @type {Internal.LivingEntity}
      */
@@ -25,4 +17,6 @@ global.hurtEvent = function (event) {
         event.setAmount(damage);
 
     }
-};
+
+})
+
