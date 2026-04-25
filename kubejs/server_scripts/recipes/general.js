@@ -13,6 +13,20 @@ ServerEvents.recipes(event => {
         })
         .id("sdbf:jade_to_soul")
 
+    event.shapeless('slashblade:proudsoul_sphere',
+        ['slashblade_sendims:principle_of_sword_arts', 'slashblade:proudsoul_sphere'])
+        .keepIngredient('slashblade_sendims:principle_of_sword_arts')
+        .modifyResult((grid, result) => {
+            let principle = grid.find('slashblade_sendims:principle_of_sword_arts');
+            if (principle && principle.nbt &&
+                principle.nbt.principle_of_sword_arts && principle.nbt.principle_of_sword_arts.item_list) {
+                result.getOrCreateTag().item_list = principle.nbt.principle_of_sword_arts.item_list;
+            }
+
+            return result;
+        })
+        .id("sdbf:principle_of_sword_arts_copy_sas")
+
     event.shaped('integrateddynamics:logic_director', [
         'ACA',
         'ABA',

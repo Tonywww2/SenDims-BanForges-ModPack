@@ -10,14 +10,13 @@
     "name": "slashblade:greatsword_of_damnation_plus",
     "properties":
     {
-        "attack_base": 25.0,
+        "attack_base": 31.0,
         "max_damage": 70,
         "slash_art": "slashblade_sendims:golden_crux",
         "special_effects":
         [
             "slashblade_sendims:frenzied_flame",
             "slashblade_sendims:arcane_a"
-
         ],
         "sword_type":
         [

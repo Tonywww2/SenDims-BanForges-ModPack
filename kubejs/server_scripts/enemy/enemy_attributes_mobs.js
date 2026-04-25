@@ -317,6 +317,12 @@ const mobTypes = new Map([
     ["terra_entity:arapaima", typeC],
     ["terra_entity:shark", typeA],
     ["terra_entity:granite_elemental", typeD],
+    ["terra_entity:flying_fish", typeSlime],
+    ["terra_entity:green_jellyfish", typeSlime],
+    ["terra_entity:blue_jellyfish", typeSlime],
+    ["terra_entity:pink_jellyfish", typeA],
+    ["terra_entity:pixie", typeB],
+    ["terra_entity:piranha", typeB],
 
 ]);
 

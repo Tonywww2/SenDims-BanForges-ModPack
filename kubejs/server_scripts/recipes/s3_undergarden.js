@@ -51,6 +51,36 @@ ServerEvents.recipes(event => {
         .id("sdbf:black_soul_s3")
 
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
+        "BFB",
+        "ADE",
+        "BCB"
+    ], {
+        "A": 'botania:exoflame',
+        "B": 'undergarden:regalium_crystal',
+        "E": 'kubejs:mercury_refractory_structural_component',
+        "C": 'last_smith:sakura_sphere',
+        "D": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("last_smith:muramasa_kagura")
+                .killCount(500)                      // 要求：1000 击杀 (Kill Count)
+                .proudSoul(3000)                       // 要求：3000 耀魂 (Proud Soul)
+                .refineCount(10)                       // 要求：10 锻造 (Refine Count)
+                .addEnchantment(SBEnchantmentDefinition.of("minecraft:fire_aspect", 5))
+                .build()
+        ),
+        "F": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("slashblade:greatsword_of_damnation")
+                .killCount(750)                      // 要求：1000 击杀 (Kill Count)
+                .proudSoul(3000)                       // 要求：3000 耀魂 (Proud Soul)
+                .refineCount(10)                       // 要求：10 锻造 (Refine Count)
+                .addEnchantment(SBEnchantmentDefinition.of("minecraft:fire_aspect", 5))
+                .build()
+        )
+    }, "slashblade:greatsword_of_damnation_plus")
+        .id("sdbf:greatsword_of_damnation_plus_s3")
+
+    event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
         "FEF",
         "CAD",
         "GBG"
