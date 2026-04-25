@@ -426,6 +426,20 @@
 			x: 5.0d
 			y: 2.5d
 		}
+		{
+			dependencies: [
+				"651A03F2219EBCDE"
+				"713CA11C25A8A2E2"
+			]
+			id: "56C9FAAD7AD47F1A"
+			tasks: [{
+				id: "1286FFAED44ABD3D"
+				structure: "darkerdepths:catacombs"
+				type: "structure"
+			}]
+			x: 2.5d
+			y: -2.5d
+		}
 	]
 	title: "空岛之下"
 }

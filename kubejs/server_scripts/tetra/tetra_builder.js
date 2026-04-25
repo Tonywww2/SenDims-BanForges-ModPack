@@ -54,7 +54,7 @@ const tetraMaterialBuilder = (event, id) => {
         setReplace(bool) { replace = bool; return builder; },
         setHidden(bool) { hidden = bool; return builder; },
         setHiddenOutcomes(bool) { hiddenOutcomes = bool; return builder; },
-        addEffects(eff, int) { effects[eff] = int; return builder; },
+        addEffects(eff, lst) { effects[eff] = lst; return builder; },
         addAttributes(att, num) { attributes[att] = num; return builder; },
         addImprovements(str, any) { improvements[str] = any; return builder; },
         setExperienceCost(num) { experienceCost = num; return builder; },

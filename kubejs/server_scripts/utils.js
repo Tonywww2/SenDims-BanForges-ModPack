@@ -13,6 +13,11 @@ const $Registries = Java.loadClass('net.minecraft.core.registries.Registries');
 const $SpawnEggItem = Java.loadClass('net.minecraft.world.item.SpawnEggItem');
 const $SlashBladeDefinition = Java.loadClass('mods.flammpfeil.slashblade.registry.slashblade.SlashBladeDefinition');
 
+const $ModularArmorItem = Java.loadClass("ovo.yiran.geotetraarmor.items.ModularArmorItem");
+
+const $ModularItemDamageEvent = Java.loadClass("se.mickelus.tetra.event.ModularItemDamageEvent");
+const $LivingHurtEvent = Java.loadClass("net.minecraftforge.event.entity.living.LivingHurtEvent");
+
 const print = any => console.log(any)
 
 const numToInt = (num) => {

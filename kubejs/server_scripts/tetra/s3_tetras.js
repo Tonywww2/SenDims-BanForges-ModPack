@@ -118,12 +118,12 @@ ServerEvents.highPriorityData(event => {
         .setDurability(280).setIntegrityCost(6).setIntegrityGain(6)
         .setMagicCapacity(230).setToolLevel(3).setToolEfficiency(7.5)
         .addAttributes("slashblade_sendims:magic_penetration", 1)
-        .setTints("0066ff", "0099ff") 
-        .addTexture("metal").addTexture("default")
+        .setTints("6ea8f1", "0e60e5") 
+        .addTexture("shiny").addTexture("metal")
         .addItemMaterial("botania:manasteel_ingot")
         .setRequiredTool("hammer_dig", 1)
         .addImprovements("mana_repair", 1)
-        .addImprovements("mana_resonance", 1)
+        .addEffects("mana_resonance", [1, 0])
         .build();
 
     // 10. 紫菘玻璃 (无需修改)
@@ -345,7 +345,7 @@ ServerEvents.highPriorityData(event => {
         .addTexture("metal").addTexture("heavy").addTexture("shiny")
         .addItemMaterial('enderio:end_steel_ingot')
         .setRequiredTool("hammer_dig", 1)
-        .addImprovements("mana_resonance", 1)
+        .addEffects("mana_resonance", [1, 0])
         .build();
 
     // 28. 紫菘逻辑线圈 (新加)
