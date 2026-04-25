@@ -4,6 +4,10 @@ ServerEvents.commandRegistry(event => {
         event.commands.literal("debugTool")
             .then(
                 event.commands.literal("genSlashbladeFilter")
+                    //权限等级检测
+                    .requires(ctx=>{
+                        return ctx.hasPermission(2)
+                    })
                     .executes(/**@param {$CommandContext<$CommandSourceStack>} ctx */ctx => {
                         let item = ctx.source.player.mainHandItem
                         if (item.item instanceof $ItemSlashBlade) {
