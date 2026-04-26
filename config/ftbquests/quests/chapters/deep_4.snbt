@@ -92,82 +92,12 @@
 				id: "09E35D7986026932"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "sjap_adder:model/kaumyex/kamuyex.obj"
-							RepairCounter: 0
-							SpecialAttackType: "sjap_adder:lightinggwaves"
-							SpecialEffects: ["sjap_adder:nightingales"]
-							StandbyRenderType: 1b
-							SummonedSwordColor: -10496
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "sjap_adder:model/kaumyex/lightning.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 12.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 300
-							proudSoul: 0
-							translationKey: "item.sjap_adder.kamuyex_ligghtning"
-						}
-					}
-					id: "slashblade:slashblade"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						Enchantments: [
-							{
-								id: "minecraft:sharpness"
-								lvl: 15s
-							}
-							{
-								id: "minecraft:unbreaking"
-								lvl: 7s
-							}
-						]
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "sjap_adder:model/kaumyex/kamuyex.obj"
-							RepairCounter: 0
-							SpecialAttackType: "sjap_adder:lightinggwaves"
-							SpecialEffects: ["sjap_adder:nightingales"]
-							StandbyRenderType: 1b
-							SummonedSwordColor: -10496
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "sjap_adder:model/kaumyex/lightning.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 12.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 300
-							proudSoul: 0
-							translationKey: "item.sjap_adder.kamuyex_ligghtning"
+						display: {
+							Name: "{\"translate\":\"item.sjap_adder.kamuyex_ligghtning\"}"
 						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.sjap_adder.kamuyex_ligghtning\"}})"
 					}
 				}
 				type: "item"
@@ -188,82 +118,12 @@
 				id: "23B4BCEC4F7293EE"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "sjap_adder:model/kaumyex/kamuyex.obj"
-							RepairCounter: 0
-							SpecialAttackType: "sjap_adder:dark_cuts_ex"
-							SpecialEffects: ["sjap_adder:dark_cuter"]
-							StandbyRenderType: 1b
-							SummonedSwordColor: -65281
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "sjap_adder:model/kaumyex/dark.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 12.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 300
-							proudSoul: 0
-							translationKey: "item.sjap_adder.kamuyex_dark"
-						}
-					}
-					id: "slashblade:slashblade"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						Enchantments: [
-							{
-								id: "minecraft:sharpness"
-								lvl: 7s
-							}
-							{
-								id: "minecraft:unbreaking"
-								lvl: 3s
-							}
-						]
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "sjap_adder:model/kaumyex/kamuyex.obj"
-							RepairCounter: 0
-							SpecialAttackType: "sjap_adder:dark_cuts_ex"
-							SpecialEffects: ["sjap_adder:dark_cuter"]
-							StandbyRenderType: 1b
-							SummonedSwordColor: -65281
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "sjap_adder:model/kaumyex/dark.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 12.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 300
-							proudSoul: 0
-							translationKey: "item.sjap_adder.kamuyex_dark"
+						display: {
+							Name: "{\"translate\":\"item.sjap_adder.kamuyex_dark\"}"
 						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.sjap_adder.kamuyex_dark\"}})"
 					}
 				}
 				type: "item"
@@ -284,86 +144,12 @@
 				id: "4B70A0BA7774768E"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "sjap_adder:model/kaumyex/kamuyex.obj"
-							RepairCounter: 0
-							SpecialAttackType: "sjap_adder:terrifyingwaves"
-							SpecialEffects: ["sjap_adder:terrifyingwaves"]
-							StandbyRenderType: 1b
-							SummonedSwordColor: -16768513
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "sjap_adder:model/kaumyex/water.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 12.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 300
-							proudSoul: 0
-							translationKey: "item.sjap_adder.kamuyex_water"
-						}
-					}
-					id: "slashblade:slashblade"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						Enchantments: [
-							{
-								id: "minecraft:sharpness"
-								lvl: 7s
-							}
-							{
-								id: "minecraft:unbreaking"
-								lvl: 7s
-							}
-							{
-								id: "minecraft:bane_of_arthropods"
-								lvl: 5s
-							}
-						]
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "sjap_adder:model/kaumyex/kamuyex.obj"
-							RepairCounter: 0
-							SpecialAttackType: "sjap_adder:terrifyingwaves"
-							SpecialEffects: ["sjap_adder:terrifyingwaves"]
-							StandbyRenderType: 1b
-							SummonedSwordColor: -16768513
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "sjap_adder:model/kaumyex/water.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 12.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 300
-							proudSoul: 0
-							translationKey: "item.sjap_adder.kamuyex_water"
+						display: {
+							Name: "{\"translate\":\"item.sjap_adder.kamuyex_water\"}"
 						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.sjap_adder.kamuyex_water\"}})"
 					}
 				}
 				type: "item"

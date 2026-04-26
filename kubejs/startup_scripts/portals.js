@@ -1,7 +1,7 @@
 const $CustomPortalBuilder = Java.loadClass("net.kyrptonaught.customportalapi.api.CustomPortalBuilder")
 const $BuiltinDimensionTypes = Java.loadClass("net.minecraft.world.level.dimension.BuiltinDimensionTypes")
 
-StartupEvents.postInit(e => {
+StartupEvents.postInit(event => {
     // 豆腐
     $CustomPortalBuilder.beginPortal()
     ["frameBlock(net.minecraft.world.level.block.Block)"]
@@ -22,14 +22,14 @@ StartupEvents.postInit(e => {
         .onlyLightInOverworld()
         .registerPortal();
 
-    // // 天境
-    // $CustomPortalBuilder.beginPortal()
-    // ["frameBlock(net.minecraft.world.level.block.Block)"]
-    //     (Block.getBlock('chisel:dent/glowstone'))
-    //     .destDimID('aether:the_aether')
-    //     .lightWithWater()
-    //     .tintColor(204, 255, 255)
-    //     .onlyLightInOverworld()
-    //     .registerPortal();
+    // 深境2
+    $CustomPortalBuilder.beginPortal()
+    ["frameBlock(net.minecraft.world.level.block.Block)"]
+        (Block.getBlock('aether:sentry_stone'))
+        .destDimID('sdbf:deep_realm_level_2')
+        .lightWithItem(Item.getItem('integrateddynamics:variable'))
+        .tintColor(204, 255, 255)
+        .onlyLightInOverworld()
+        .registerPortal();
 
 })

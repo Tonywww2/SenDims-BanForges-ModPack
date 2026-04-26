@@ -231,70 +231,12 @@
 				id: "35233790D7363271"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "last_smith:model/named/odachi/model.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:judgement_cut"
-							StandbyRenderType: 3b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "last_smith:model/named/odachi/odachi.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 5.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 0b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 70
-							proudSoul: 0
-							translationKey: "item.last_smith.nameless_odachi"
-						}
-					}
-					id: "slashblade:slashblade"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "last_smith:model/named/odachi/model.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:judgement_cut"
-							StandbyRenderType: 3b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "last_smith:model/named/odachi/odachi.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 5.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 0b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 70
-							proudSoul: 0
-							translationKey: "item.last_smith.nameless_odachi"
+						display: {
+							Name: "{\"translate\":\"item.last_smith.nameless_odachi\"}"
 						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.last_smith.nameless_odachi\"}})"
 					}
 				}
 				type: "item"
@@ -313,70 +255,12 @@
 				id: "1222A2E6A4AB1327"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "last_smith:model/named/odachi/model.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:drive_horizontal"
-							StandbyRenderType: 2b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "last_smith:model/named/odachi/murasama_kagura.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 8.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 70
-							proudSoul: 0
-							translationKey: "item.last_smith.muramasa_kagura"
-						}
-					}
-					id: "slashblade:slashblade"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "last_smith:model/named/odachi/model.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:drive_horizontal"
-							StandbyRenderType: 2b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "last_smith:model/named/odachi/murasama_kagura.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 8.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 70
-							proudSoul: 0
-							translationKey: "item.last_smith.muramasa_kagura"
+						display: {
+							Name: "{\"translate\":\"item.last_smith.muramasa_kagura\"}"
 						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.last_smith.muramasa_kagura\"}})"
 					}
 				}
 				type: "item"
@@ -395,86 +279,12 @@
 				id: "4DFC78D00A0F15F3"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade:model/named/muramasa/muramasa.obj"
-							RepairCounter: 0
-							SpecialAttackType: "sjap_adder:explosive_dawn"
-							SpecialEffects: ["sjap_adder:shadow_of_revenant"]
-							StandbyRenderType: 1b
-							SummonedSwordColor: -1
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "sjap_adder:model/master_sword/black.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 12.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 60
-							proudSoul: 0
-							translationKey: "item.sjap_adder.black_soul"
-						}
-					}
-					id: "slashblade:slashblade"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						Enchantments: [
-							{
-								id: "minecraft:sharpness"
-								lvl: 5s
-							}
-							{
-								id: "minecraft:power"
-								lvl: 5s
-							}
-							{
-								id: "minecraft:thorns"
-								lvl: 5s
-							}
-						]
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade:model/named/muramasa/muramasa.obj"
-							RepairCounter: 0
-							SpecialAttackType: "sjap_adder:explosive_dawn"
-							SpecialEffects: ["sjap_adder:shadow_of_revenant"]
-							StandbyRenderType: 1b
-							SummonedSwordColor: -1
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "sjap_adder:model/master_sword/black.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 12.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 60
-							proudSoul: 0
-							translationKey: "item.sjap_adder.black_soul"
+						display: {
+							Name: "{\"translate\":\"item.sjap_adder.black_soul\"}"
 						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.sjap_adder.black_soul\"}})"
 					}
 				}
 				type: "item"
@@ -494,76 +304,12 @@
 				id: "101ED209AA3E6995"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "last_smith:model/named/hakurou/model.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:drive_vertical"
-							SpecialEffects: ["last_smith:extra_smite"]
-							StandbyRenderType: 4b
-							SummonedSwordColor: -855310
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "last_smith:model/named/hakurou/texture.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 3.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 70
-							proudSoul: 0
-							translationKey: "item.last_smith.hakurouken"
-						}
-					}
-					id: "slashblade:slashblade"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						Enchantments: [{
-							id: "minecraft:smite"
-							lvl: 3s
-						}]
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "last_smith:model/named/hakurou/model.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:drive_vertical"
-							SpecialEffects: ["last_smith:extra_smite"]
-							StandbyRenderType: 4b
-							SummonedSwordColor: -855310
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "last_smith:model/named/hakurou/texture.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 3.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 70
-							proudSoul: 0
-							translationKey: "item.last_smith.hakurouken"
+						display: {
+							Name: "{\"translate\":\"item.last_smith.hakurouken\"}"
 						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.last_smith.hakurouken\"}})"
 					}
 				}
 				type: "item"
@@ -656,82 +402,12 @@
 				id: "1E3C1762375F7DBE"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade:model/named/dios/dios.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade_sendims:golden_crux"
-							SpecialEffects: [
-								"slashblade_sendims:arcane_a"
-								"slashblade_sendims:frenzied_flame"
-							]
-							StandbyRenderType: 3b
-							SummonedSwordColor: -32768
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "slashblade:model/greatsword_of_damnation/greatsword_of_damnation_plus.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 5.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 70
-							proudSoul: 0
-							translationKey: "item.slashblade.greatsword_of_damnation_plus"
-						}
-					}
-					id: "slashblade:slashblade"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						Enchantments: [{
-							id: "minecraft:power"
-							lvl: 2s
-						}]
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade:model/named/dios/dios.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade_sendims:golden_crux"
-							SpecialEffects: [
-								"slashblade_sendims:arcane_a"
-								"slashblade_sendims:frenzied_flame"
-							]
-							StandbyRenderType: 3b
-							SummonedSwordColor: -32768
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "slashblade:model/greatsword_of_damnation/greatsword_of_damnation_plus.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 5.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 70
-							proudSoul: 0
-							translationKey: "item.slashblade.greatsword_of_damnation_plus"
+						display: {
+							Name: "{\"translate\":\"item.slashblade.greatsword_of_damnation_plus\"}"
 						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade.greatsword_of_damnation_plus\"}})"
 					}
 				}
 				type: "item"

@@ -83,92 +83,12 @@
 				id: "025503F8EDD7FEB2"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "sjap_adder:model/icf/icfex/model.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:wave_edge"
-							SpecialEffects: [
-								"sjap_adder:armor_break"
-								"sjap_adder:dragon_fire"
-							]
-							StandbyRenderType: 1b
-							SummonedSwordColor: -299505
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "sjap_adder:model/icf/icfex/fire.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 27.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 800
-							proudSoul: 0
-							translationKey: "item.sjap_adder.dragon_steel_fire"
-						}
-					}
-					id: "slashblade:slashblade"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						Enchantments: [
-							{
-								id: "minecraft:unbreaking"
-								lvl: 10s
-							}
-							{
-								id: "minecraft:sharpness"
-								lvl: 5s
-							}
-							{
-								id: "minecraft:smite"
-								lvl: 10s
-							}
-						]
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "sjap_adder:model/icf/icfex/model.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:wave_edge"
-							SpecialEffects: [
-								"sjap_adder:armor_break"
-								"sjap_adder:dragon_fire"
-							]
-							StandbyRenderType: 1b
-							SummonedSwordColor: -299505
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "sjap_adder:model/icf/icfex/fire.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 27.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 800
-							proudSoul: 0
-							translationKey: "item.sjap_adder.dragon_steel_fire"
+						display: {
+							Name: "{\"translate\":\"item.sjap_adder.dragon_steel_fire\"}"
 						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.sjap_adder.dragon_steel_fire\"}})"
 					}
 				}
 				type: "item"
@@ -183,92 +103,12 @@
 				id: "6BD3784AD81DD679"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "sjap_adder:model/icf/icfex/model.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:wave_edge"
-							SpecialEffects: [
-								"sjap_adder:armor_break"
-								"sjap_adder:dragon_lightning"
-							]
-							StandbyRenderType: 1b
-							SummonedSwordColor: -7929601
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "sjap_adder:model/icf/icfex/lightning.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 27.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 800
-							proudSoul: 0
-							translationKey: "item.sjap_adder.dragon_steel_lightning"
-						}
-					}
-					id: "slashblade:slashblade"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						Enchantments: [
-							{
-								id: "minecraft:unbreaking"
-								lvl: 10s
-							}
-							{
-								id: "minecraft:sharpness"
-								lvl: 5s
-							}
-							{
-								id: "minecraft:smite"
-								lvl: 10s
-							}
-						]
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "sjap_adder:model/icf/icfex/model.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:wave_edge"
-							SpecialEffects: [
-								"sjap_adder:armor_break"
-								"sjap_adder:dragon_lightning"
-							]
-							StandbyRenderType: 1b
-							SummonedSwordColor: -7929601
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "sjap_adder:model/icf/icfex/lightning.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 27.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 800
-							proudSoul: 0
-							translationKey: "item.sjap_adder.dragon_steel_lightning"
+						display: {
+							Name: "{\"translate\":\"item.sjap_adder.dragon_steel_lightning\"}"
 						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.sjap_adder.dragon_steel_lightning\"}})"
 					}
 				}
 				type: "item"
@@ -303,92 +143,12 @@
 				id: "30724A016AAD4521"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "last_smith:model/named/roukan/model.obj"
-							RepairCounter: 0
-							SpecialAttackType: "last_smith:transmigration_slash"
-							SpecialEffects: [
-								"last_smith:extreme_sharpness"
-								"slashblade:wither_edge"
-							]
-							StandbyRenderType: 5b
-							SummonedSwordColor: -18491
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "last_smith:model/named/roukan/texture_tx.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 13.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 70
-							proudSoul: 0
-							translationKey: "item.last_smith.roukanken_nether"
-						}
-					}
-					id: "slashblade:slashblade"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						Enchantments: [
-							{
-								id: "minecraft:sharpness"
-								lvl: 4s
-							}
-							{
-								id: "minecraft:power"
-								lvl: 2s
-							}
-							{
-								id: "minecraft:fire_aspect"
-								lvl: 1s
-							}
-						]
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "last_smith:model/named/roukan/model.obj"
-							RepairCounter: 0
-							SpecialAttackType: "last_smith:transmigration_slash"
-							SpecialEffects: [
-								"last_smith:extreme_sharpness"
-								"slashblade:wither_edge"
-							]
-							StandbyRenderType: 5b
-							SummonedSwordColor: -18491
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "last_smith:model/named/roukan/texture_tx.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 13.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 70
-							proudSoul: 0
-							translationKey: "item.last_smith.roukanken_nether"
+						display: {
+							Name: "{\"translate\":\"item.last_smith.roukanken_nether\"}"
 						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.last_smith.roukanken_nether\"}})"
 					}
 				}
 				type: "item"
@@ -450,86 +210,12 @@
 				id: "1FA575084C4312E2"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade:model/named/agito.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:wave_edge"
-							SpecialEffects: ["last_smith:bewitched_power"]
-							StandbyRenderType: 1b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "last_smith:model/named/smith/texture_cloud.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 10.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 70
-							proudSoul: 0
-							translationKey: "item.last_smith.amagumo_kumo"
-						}
-					}
-					id: "slashblade:slashblade"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						Enchantments: [
-							{
-								id: "minecraft:sharpness"
-								lvl: 1s
-							}
-							{
-								id: "minecraft:power"
-								lvl: 3s
-							}
-							{
-								id: "minecraft:sweeping"
-								lvl: 1s
-							}
-						]
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade:model/named/agito.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:wave_edge"
-							SpecialEffects: ["last_smith:bewitched_power"]
-							StandbyRenderType: 1b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "last_smith:model/named/smith/texture_cloud.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 10.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 70
-							proudSoul: 0
-							translationKey: "item.last_smith.amagumo_kumo"
+						display: {
+							Name: "{\"translate\":\"item.last_smith.amagumo_kumo\"}"
 						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.last_smith.amagumo_kumo\"}})"
 					}
 				}
 				type: "item"
@@ -573,108 +259,12 @@
 				id: "728312CE0CDC700D"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "last_smith:model/named/smith/model.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:void_slash"
-							SpecialEffects: [
-								"last_smith:extreme_sharpness"
-								"last_smith:bewitched_power"
-								"last_smith:extra_smite"
-								"slashblade:wither_edge"
-							]
-							StandbyRenderType: 1b
-							SummonedSwordColor: -61167
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "last_smith:model/named/smith/texture_final.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 17.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 100
-							proudSoul: 0
-							translationKey: "item.last_smith.amagumo_munin"
-						}
-					}
-					id: "slashblade:slashblade"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						Enchantments: [
-							{
-								id: "minecraft:sharpness"
-								lvl: 5s
-							}
-							{
-								id: "minecraft:soul_speed"
-								lvl: 2s
-							}
-							{
-								id: "minecraft:unbreaking"
-								lvl: 3s
-							}
-							{
-								id: "minecraft:power"
-								lvl: 5s
-							}
-							{
-								id: "minecraft:feather_falling"
-								lvl: 4s
-							}
-							{
-								id: "minecraft:sweeping"
-								lvl: 3s
-							}
-						]
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "last_smith:model/named/smith/model.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:void_slash"
-							SpecialEffects: [
-								"last_smith:extreme_sharpness"
-								"last_smith:bewitched_power"
-								"last_smith:extra_smite"
-								"slashblade:wither_edge"
-							]
-							StandbyRenderType: 1b
-							SummonedSwordColor: -61167
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "last_smith:model/named/smith/texture_final.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 17.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 100
-							proudSoul: 0
-							translationKey: "item.last_smith.amagumo_munin"
+						display: {
+							Name: "{\"translate\":\"item.last_smith.amagumo_munin\"}"
 						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.last_smith.amagumo_munin\"}})"
 					}
 				}
 				type: "item"
@@ -706,88 +296,12 @@
 				id: "5E6F8540E3DEDBED"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade_addon:model/kamuy/kamuy.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade_addon:water_drive"
-							StandbyRenderType: 2b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "slashblade_addon:model/kamuy/water.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 7.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 50
-							proudSoul: 0
-							translationKey: "item.slashblade_addon.kamuy_water"
-						}
-					}
-					id: "slashblade:slashblade"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						Enchantments: [
-							{
-								id: "minecraft:unbreaking"
-								lvl: 3s
-							}
-							{
-								id: "minecraft:knockback"
-								lvl: 2s
-							}
-							{
-								id: "minecraft:looting"
-								lvl: 3s
-							}
-							{
-								id: "minecraft:fire_protection"
-								lvl: 1s
-							}
-						]
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade_addon:model/kamuy/kamuy.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade_addon:water_drive"
-							StandbyRenderType: 2b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "slashblade_addon:model/kamuy/water.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 7.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 50
-							proudSoul: 0
-							translationKey: "item.slashblade_addon.kamuy_water"
+						display: {
+							Name: "{\"translate\":\"item.slashblade_addon.kamuy_water\"}"
 						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade_addon.kamuy_water\"}})"
 					}
 				}
 				type: "item"

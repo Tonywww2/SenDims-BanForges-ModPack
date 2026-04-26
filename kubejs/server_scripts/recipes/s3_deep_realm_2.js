@@ -19,6 +19,26 @@ ServerEvents.recipes(event => {
         '3x minecraft:andesite'
     ]).id("sdbf:menril-silicon_sic_sic_cmc_ingot_s3")
 
+    event.shaped(Item.of(
+        'integrateddynamics:variable',
+        16,
+        '{AttributeModifiers:[{Amount:0.1d,AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Operation:2,Slot:"mainhand",UUID:[I;909331771,1706297431,1562908780,610199584]}],HideFlags:3}'
+    ).enchant('minecraft:protection', 1)
+        ,
+        [
+            'ABA',
+            'CDE',
+            'AFA'
+        ], {
+        A: '#forge:gems/lapis',
+        B: 'kubejs:neptune_ingot',
+        C: 'kubejs:valkyrie_ingot',
+        D: '#forge:paper',
+        E: 'kubejs:phoenix_ingot',
+        F: 'deep_aether:stratus_ingot'
+    }).id('sdbf:variable_s3')
+
+
     event.custom({
         "type": "nuclearcraft:assembler",
         "input": [

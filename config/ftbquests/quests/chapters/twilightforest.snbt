@@ -183,45 +183,12 @@
 				id: "7D51326A9C211610"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade:model/named/agito.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:judgement_cut"
-							StandbyRenderType: 2b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "slashblade:model/named/agito_rust.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 3.0f
-							currentCombo: "slashblade:standby"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 0b
-							isSealed: 1b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 60
-							proudSoul: 0
-							translationKey: "item.slashblade.agito_rust"
-						}
-					}
-					id: "slashblade:slashblade"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						bladeState: {
-							ModelName: "slashblade:model/named/agito.obj"
-							TextureName: "slashblade:model/named/agito_rust.png"
-							translationKey: "item.slashblade.agito_rust"
+						display: {
+							Name: "{\"translate\":\"item.slashblade.agito_rust\"}"
 						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade.agito_rust\"}})"
 					}
 				}
 				type: "item"
@@ -236,45 +203,12 @@
 				id: "58E3FA612362DF04"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade:model/named/agito.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:wave_edge"
-							StandbyRenderType: 2b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "slashblade:model/named/agito_false.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 5.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 0b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 60
-							proudSoul: 0
-							translationKey: "item.slashblade.agito"
-						}
-					}
-					id: "slashblade:slashblade"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						bladeState: {
-							ModelName: "slashblade:model/named/agito.obj"
-							extureName: "slashblade:model/named/agito_false.png"
-							translationKey: "item.slashblade.agito"
+						display: {
+							Name: "{\"translate\":\"item.slashblade.agito\"}"
 						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade.agito\"}})"
 					}
 				}
 				type: "item"
@@ -289,86 +223,12 @@
 				id: "158E51512D530CEB"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "sjap_adder:model/tw/agito_ex.obj"
-							RepairCounter: 0
-							SpecialAttackType: "sjap_adder:illusion_drive"
-							SpecialEffects: ["sjap_adder:agitos"]
-							StandbyRenderType: 1b
-							SummonedSwordColor: -1751
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "sjap_adder:model/tw/agito_ex_false.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 13.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 300
-							proudSoul: 0
-							translationKey: "item.sjap_adder.agito_ex"
-						}
-					}
-					id: "slashblade:slashblade"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						Enchantments: [
-							{
-								id: "minecraft:power"
-								lvl: 5s
-							}
-							{
-								id: "minecraft:unbreaking"
-								lvl: 3s
-							}
-							{
-								id: "minecraft:smite"
-								lvl: 3s
-							}
-						]
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "sjap_adder:model/tw/agito_ex.obj"
-							RepairCounter: 0
-							SpecialAttackType: "sjap_adder:illusion_drive"
-							SpecialEffects: ["sjap_adder:agitos"]
-							StandbyRenderType: 1b
-							SummonedSwordColor: -1751
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "sjap_adder:model/tw/agito_ex_false.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 13.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 300
-							proudSoul: 0
-							translationKey: "item.sjap_adder.agito_ex"
+						display: {
+							Name: "{\"translate\":\"item.sjap_adder.agito_ex\"}"
 						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.sjap_adder.agito_ex\"}})"
 					}
 				}
 				type: "item"
@@ -383,82 +243,12 @@
 				id: "2CB5F6B84039B548"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "sjap_adder:model/tw/frostbane_moonveil.obj"
-							RepairCounter: 0
-							SpecialAttackType: "sjap_adder:cold_drive"
-							SpecialEffects: ["sjap_adder:cold_guardian"]
-							StandbyRenderType: 1b
-							SummonedSwordColor: -16768513
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "sjap_adder:model/tw/frostbane_moonveil.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 15.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 300
-							proudSoul: 0
-							translationKey: "item.sjap_adder.frostbane_moonveil"
-						}
-					}
-					id: "slashblade:slashblade"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						Enchantments: [
-							{
-								id: "minecraft:sharpness"
-								lvl: 10s
-							}
-							{
-								id: "minecraft:unbreaking"
-								lvl: 3s
-							}
-						]
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "sjap_adder:model/tw/frostbane_moonveil.obj"
-							RepairCounter: 0
-							SpecialAttackType: "sjap_adder:cold_drive"
-							SpecialEffects: ["sjap_adder:cold_guardian"]
-							StandbyRenderType: 1b
-							SummonedSwordColor: -16768513
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "sjap_adder:model/tw/frostbane_moonveil.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 15.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 300
-							proudSoul: 0
-							translationKey: "item.sjap_adder.frostbane_moonveil"
+						display: {
+							Name: "{\"translate\":\"item.sjap_adder.frostbane_moonveil\"}"
 						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.sjap_adder.frostbane_moonveil\"}})"
 					}
 				}
 				type: "item"
@@ -529,70 +319,12 @@
 				id: "1F2EA1B3DDABEBE5"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade:model/named/yasha/yasha.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:sakura_end"
-							StandbyRenderType: 2b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "slashblade:model/named/yasha/yasha.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 6.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 0b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 70
-							proudSoul: 0
-							translationKey: "item.slashblade.yasha"
-						}
-					}
-					id: "slashblade:slashblade"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade:model/named/yasha/yasha.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:sakura_end"
-							StandbyRenderType: 2b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "slashblade:model/named/yasha/yasha.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 6.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 0b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 70
-							proudSoul: 0
-							translationKey: "item.slashblade.yasha"
+						display: {
+							Name: "{\"translate\":\"item.slashblade.yasha\"}"
 						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade.yasha\"}})"
 					}
 				}
 				type: "item"
@@ -607,70 +339,12 @@
 				id: "49B7701860E69ABF"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade_addon:model/darkraven/dark_raven.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:wave_edge"
-							StandbyRenderType: 2b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "slashblade_addon:model/darkraven/dark_raven.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 7.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 0b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 80
-							proudSoul: 0
-							translationKey: "item.slashblade_addon.dark_raven"
-						}
-					}
-					id: "slashblade:slashblade"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade_addon:model/darkraven/dark_raven.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:wave_edge"
-							StandbyRenderType: 2b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "slashblade_addon:model/darkraven/dark_raven.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 7.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 0b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 80
-							proudSoul: 0
-							translationKey: "item.slashblade_addon.dark_raven"
+						display: {
+							Name: "{\"translate\":\"item.slashblade_addon.dark_raven\"}"
 						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade_addon.dark_raven\"}})"
 					}
 				}
 				type: "item"
@@ -757,70 +431,12 @@
 				id: "24634126873F413C"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade:model/named/muramasa/muramasa.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:judgement_cut"
-							StandbyRenderType: 2b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "slashblade:model/named/muramasa/sabigatana.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 3.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 0b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 40
-							proudSoul: 0
-							translationKey: "item.slashblade.sabigatana"
-						}
-					}
-					id: "slashblade:slashblade"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade:model/named/muramasa/muramasa.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:judgement_cut"
-							StandbyRenderType: 2b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "slashblade:model/named/muramasa/sabigatana.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 3.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 0b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 40
-							proudSoul: 0
-							translationKey: "item.slashblade.sabigatana"
+						display: {
+							Name: "{\"translate\":\"item.slashblade.sabigatana\"}"
 						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade.sabigatana\"}})"
 					}
 				}
 				type: "item"
@@ -835,70 +451,12 @@
 				id: "19AA987128FF3389"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade:model/named/muramasa/muramasa.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:circle_slash"
-							StandbyRenderType: 2b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "slashblade:model/named/muramasa/doutanuki.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 5.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 60
-							proudSoul: 0
-							translationKey: "item.slashblade.doutanuki"
-						}
-					}
-					id: "slashblade:slashblade"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade:model/named/muramasa/muramasa.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:circle_slash"
-							StandbyRenderType: 2b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "slashblade:model/named/muramasa/doutanuki.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 5.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 60
-							proudSoul: 0
-							translationKey: "item.slashblade.doutanuki"
+						display: {
+							Name: "{\"translate\":\"item.slashblade.doutanuki\"}"
 						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade.doutanuki\"}})"
 					}
 				}
 				type: "item"
@@ -913,70 +471,12 @@
 				id: "1DAECC240584B1D7"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade_addon:model/darkraven/snow_crow.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:judgement_cut"
-							StandbyRenderType: 2b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "slashblade_addon:model/darkraven/snow_crow.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 6.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 0b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 60
-							proudSoul: 0
-							translationKey: "item.slashblade_addon.snow_crow"
-						}
-					}
-					id: "slashblade:slashblade"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade_addon:model/darkraven/snow_crow.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:judgement_cut"
-							StandbyRenderType: 2b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "slashblade_addon:model/darkraven/snow_crow.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 6.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 0b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 60
-							proudSoul: 0
-							translationKey: "item.slashblade_addon.snow_crow"
+						display: {
+							Name: "{\"translate\":\"item.slashblade_addon.snow_crow\"}"
 						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade_addon.snow_crow\"}})"
 					}
 				}
 				type: "item"
@@ -991,70 +491,12 @@
 				id: "0F23BE952EDE0212"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade:model/named/agito.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:wave_edge"
-							StandbyRenderType: 2b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "slashblade:model/named/orotiagito.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 7.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 60
-							proudSoul: 0
-							translationKey: "item.slashblade.orotiagito"
-						}
-					}
-					id: "slashblade:slashblade"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade:model/named/agito.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:wave_edge"
-							StandbyRenderType: 2b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "slashblade:model/named/orotiagito.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 7.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 60
-							proudSoul: 0
-							translationKey: "item.slashblade.orotiagito"
+						display: {
+							Name: "{\"translate\":\"item.slashblade.orotiagito\"}"
 						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade.orotiagito\"}})"
 					}
 				}
 				type: "item"
@@ -1069,74 +511,12 @@
 				id: "0F385CEE3E3E938F"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade_addon:model/murakumo/model.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:sakura_end"
-							StandbyRenderType: 2b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "slashblade_addon:model/murakumo/texture.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 9.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 80
-							proudSoul: 0
-							translationKey: "item.slashblade_addon.murakumo"
-						}
-					}
-					id: "slashblade:slashblade"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						Enchantments: [{
-							id: "minecraft:smite"
-							lvl: 1s
-						}]
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade_addon:model/murakumo/model.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:sakura_end"
-							StandbyRenderType: 2b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "slashblade_addon:model/murakumo/texture.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 9.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 80
-							proudSoul: 0
-							translationKey: "item.slashblade_addon.murakumo"
+						display: {
+							Name: "{\"translate\":\"item.slashblade_addon.murakumo\"}"
 						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade_addon.murakumo\"}})"
 					}
 				}
 				type: "item"
@@ -1151,70 +531,12 @@
 				id: "541550596104D980"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade:model/named/yasha/yasha_true.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:circle_slash"
-							StandbyRenderType: 2b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "slashblade:model/named/yasha/yasha.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 6.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 70
-							proudSoul: 0
-							translationKey: "item.slashblade.yasha_true"
-						}
-					}
-					id: "slashblade:slashblade"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade:model/named/yasha/yasha_true.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:circle_slash"
-							StandbyRenderType: 2b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "slashblade:model/named/yasha/yasha.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 6.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 70
-							proudSoul: 0
-							translationKey: "item.slashblade.yasha_true"
+						display: {
+							Name: "{\"translate\":\"item.slashblade.yasha_true\"}"
 						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade.yasha_true\"}})"
 					}
 				}
 				type: "item"
@@ -1232,76 +554,12 @@
 				id: "372840A63504F3CC"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "last_smith:model/named/sakura/model.obj"
-							RepairCounter: 0
-							SpecialAttackType: "last_smith:sakura_blistering_swords"
-							SpecialEffects: ["last_smith:smite_se"]
-							StandbyRenderType: 3b
-							SummonedSwordColor: -18491
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "last_smith:model/named/sakura/texture.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 5.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 70
-							proudSoul: 0
-							translationKey: "item.last_smith.exorcism_sakura"
-						}
-					}
-					id: "slashblade:slashblade"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						Enchantments: [{
-							id: "minecraft:smite"
-							lvl: 2s
-						}]
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "last_smith:model/named/sakura/model.obj"
-							RepairCounter: 0
-							SpecialAttackType: "last_smith:sakura_blistering_swords"
-							SpecialEffects: ["last_smith:smite_se"]
-							StandbyRenderType: 3b
-							SummonedSwordColor: -18491
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "last_smith:model/named/sakura/texture.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 5.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 70
-							proudSoul: 0
-							translationKey: "item.last_smith.exorcism_sakura"
+						display: {
+							Name: "{\"translate\":\"item.last_smith.exorcism_sakura\"}"
 						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.last_smith.exorcism_sakura\"}})"
 					}
 				}
 				type: "item"
@@ -1321,5 +579,5 @@
 			y: 22.5d
 		}
 	]
-	title: "暮色之中的秘境"
+	title: "暮色秘境"
 }

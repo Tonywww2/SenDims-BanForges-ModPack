@@ -105,108 +105,12 @@
 				id: "5D9792A64F68E887"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade_addon:model/nihil/nihil.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:sakura_end"
-							SpecialEffects: [
-								"last_smith:extra_sharpness"
-								"last_smith:smite_se"
-								"last_smith:extra_power"
-								"slashblade:wither_edge"
-							]
-							StandbyRenderType: 4b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "slashblade_addon:model/nihil/nihil_bx.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 14.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 240
-							proudSoul: 0
-							translationKey: "item.slashblade_addon.nihilbx"
-						}
-					}
-					id: "slashblade:slashblade"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						Enchantments: [
-							{
-								id: "minecraft:unbreaking"
-								lvl: 3s
-							}
-							{
-								id: "minecraft:sharpness"
-								lvl: 5s
-							}
-							{
-								id: "minecraft:power"
-								lvl: 3s
-							}
-							{
-								id: "minecraft:smite"
-								lvl: 5s
-							}
-							{
-								id: "minecraft:bane_of_arthropods"
-								lvl: 5s
-							}
-							{
-								id: "minecraft:fire_aspect"
-								lvl: 2s
-							}
-						]
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade_addon:model/nihil/nihil.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:sakura_end"
-							SpecialEffects: [
-								"last_smith:extra_sharpness"
-								"last_smith:smite_se"
-								"last_smith:extra_power"
-								"slashblade:wither_edge"
-							]
-							StandbyRenderType: 4b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "slashblade_addon:model/nihil/nihil_bx.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 14.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 240
-							proudSoul: 0
-							translationKey: "item.slashblade_addon.nihilbx"
+						display: {
+							Name: "{\"translate\":\"item.slashblade_addon.nihilbx\"}"
 						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade_addon.nihilbx\"}})"
 					}
 				}
 				type: "item"
@@ -237,92 +141,12 @@
 				id: "24DEB990C30AF04A"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade_addon:model/nihil/nihil.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:sakura_end"
-							SpecialEffects: [
-								"last_smith:smite_se"
-								"sjap_adder:end_sakura_rise_up"
-							]
-							StandbyRenderType: 1b
-							SummonedSwordColor: -65536
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "sjap_adder:model/nihill/crimsoncherry.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 16.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 300
-							proudSoul: 0
-							translationKey: "item.sjap_adder.crimsoncherryex"
-						}
-					}
-					id: "slashblade:slashblade"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						Enchantments: [
-							{
-								id: "minecraft:unbreaking"
-								lvl: 10s
-							}
-							{
-								id: "minecraft:smite"
-								lvl: 5s
-							}
-							{
-								id: "minecraft:fire_aspect"
-								lvl: 5s
-							}
-						]
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade_addon:model/nihil/nihil.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:sakura_end"
-							SpecialEffects: [
-								"last_smith:smite_se"
-								"sjap_adder:end_sakura_rise_up"
-							]
-							StandbyRenderType: 1b
-							SummonedSwordColor: -65536
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "sjap_adder:model/nihill/crimsoncherry.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 16.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 300
-							proudSoul: 0
-							translationKey: "item.sjap_adder.crimsoncherryex"
+						display: {
+							Name: "{\"translate\":\"item.sjap_adder.crimsoncherryex\"}"
 						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.sjap_adder.crimsoncherryex\"}})"
 					}
 				}
 				type: "item"
@@ -344,80 +168,12 @@
 				id: "3A7F30B8E5E16DD7"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade_addon:model/kamuy/kamuy.obj"
-							RepairCounter: 0
-							SpecialAttackType: "sjap_adder:dark_cuts"
-							StandbyRenderType: 1b
-							SummonedSwordColor: -65281
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "sjap_adder:model/kaumyex/dark.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 6.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 300
-							proudSoul: 0
-							translationKey: "item.sjap_adder.kamuy_dark"
-						}
-					}
-					id: "slashblade:slashblade"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						Enchantments: [
-							{
-								id: "minecraft:sharpness"
-								lvl: 3s
-							}
-							{
-								id: "minecraft:unbreaking"
-								lvl: 3s
-							}
-						]
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade_addon:model/kamuy/kamuy.obj"
-							RepairCounter: 0
-							SpecialAttackType: "sjap_adder:dark_cuts"
-							StandbyRenderType: 1b
-							SummonedSwordColor: -65281
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "sjap_adder:model/kaumyex/dark.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 6.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 300
-							proudSoul: 0
-							translationKey: "item.sjap_adder.kamuy_dark"
+						display: {
+							Name: "{\"translate\":\"item.sjap_adder.kamuy_dark\"}"
 						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.sjap_adder.kamuy_dark\"}})"
 					}
 				}
 				type: "item"

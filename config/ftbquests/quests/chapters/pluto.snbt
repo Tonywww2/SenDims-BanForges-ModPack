@@ -85,94 +85,12 @@
 				id: "71BFE97AB9179240"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "sjap_adder:model/kaumyex/kamuyex.obj"
-							RepairCounter: 0
-							SpecialAttackType: "sjap_adder:burning_dances"
-							SpecialEffects: ["sjap_adder:fire_dance"]
-							StandbyRenderType: 1b
-							SummonedSwordColor: -65536
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "sjap_adder:model/kaumyex/fire.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 12.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 200
-							proudSoul: 0
-							translationKey: "item.sjap_adder.kamuyex_fire"
-						}
-					}
-					id: "slashblade:slashblade"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						Enchantments: [
-							{
-								id: "minecraft:sharpness"
-								lvl: 7s
-							}
-							{
-								id: "minecraft:unbreaking"
-								lvl: 7s
-							}
-							{
-								id: "minecraft:smite"
-								lvl: 3s
-							}
-							{
-								id: "minecraft:fire_aspect"
-								lvl: 3s
-							}
-							{
-								id: "minecraft:fire_protection"
-								lvl: 3s
-							}
-						]
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "sjap_adder:model/kaumyex/kamuyex.obj"
-							RepairCounter: 0
-							SpecialAttackType: "sjap_adder:burning_dances"
-							SpecialEffects: ["sjap_adder:fire_dance"]
-							StandbyRenderType: 1b
-							SummonedSwordColor: -65536
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "sjap_adder:model/kaumyex/fire.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 12.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 200
-							proudSoul: 0
-							translationKey: "item.sjap_adder.kamuyex_fire"
+						display: {
+							Name: "{\"translate\":\"item.sjap_adder.kamuyex_fire\"}"
 						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.sjap_adder.kamuyex_fire\"}})"
 					}
 				}
 				type: "item"
@@ -192,82 +110,12 @@
 				id: "015B4391F67689C7"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "sjap_adder:model/kaumyex/kamuyex.obj"
-							RepairCounter: 0
-							SpecialAttackType: "sjap_adder:for_life_drive"
-							SpecialEffects: ["sjap_adder:life_for_health"]
-							StandbyRenderType: 1b
-							SummonedSwordColor: -16711917
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "sjap_adder:model/kaumyex/life.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 12.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 300
-							proudSoul: 0
-							translationKey: "item.sjap_adder.kamuyex_life"
-						}
-					}
-					id: "slashblade:slashblade"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						Enchantments: [
-							{
-								id: "minecraft:sharpness"
-								lvl: 7s
-							}
-							{
-								id: "minecraft:unbreaking"
-								lvl: 3s
-							}
-						]
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "sjap_adder:model/kaumyex/kamuyex.obj"
-							RepairCounter: 0
-							SpecialAttackType: "sjap_adder:for_life_drive"
-							SpecialEffects: ["sjap_adder:life_for_health"]
-							StandbyRenderType: 1b
-							SummonedSwordColor: -16711917
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "sjap_adder:model/kaumyex/life.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 12.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 300
-							proudSoul: 0
-							translationKey: "item.sjap_adder.kamuyex_life"
+						display: {
+							Name: "{\"translate\":\"item.sjap_adder.kamuyex_life\"}"
 						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.sjap_adder.kamuyex_life\"}})"
 					}
 				}
 				type: "item"
@@ -287,88 +135,12 @@
 				id: "7FB321C6D5467BC6"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "redtassel:model/katana/redtassel_blade.obj"
-							RepairCounter: 0
-							SpecialAttackType: "redtassel:that_go_go_go"
-							StandbyRenderType: 3b
-							SummonedSwordColor: -65536
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "redtassel:model/katana/redtassel_blade.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 30.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 2000
-							proudSoul: 0
-							translationKey: "item.redtassel.redtassel_slashblade"
-						}
-					}
-					id: "slashblade:slashblade"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						Enchantments: [
-							{
-								id: "minecraft:thorns"
-								lvl: 5s
-							}
-							{
-								id: "minecraft:power"
-								lvl: 10s
-							}
-							{
-								id: "minecraft:fire_aspect"
-								lvl: 5s
-							}
-							{
-								id: "minecraft:punch"
-								lvl: 5s
-							}
-						]
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "redtassel:model/katana/redtassel_blade.obj"
-							RepairCounter: 0
-							SpecialAttackType: "redtassel:that_go_go_go"
-							StandbyRenderType: 3b
-							SummonedSwordColor: -65536
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "redtassel:model/katana/redtassel_blade.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 30.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 2000
-							proudSoul: 0
-							translationKey: "item.redtassel.redtassel_slashblade"
+						display: {
+							Name: "{\"translate\":\"item.redtassel.redtassel_slashblade\"}"
 						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.redtassel.redtassel_slashblade\"}})"
 					}
 				}
 				type: "item"

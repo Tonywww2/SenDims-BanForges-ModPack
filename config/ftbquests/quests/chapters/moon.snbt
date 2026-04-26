@@ -226,70 +226,12 @@
 				id: "475BED26ED75FA3C"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade_addon:model/wanderer/wanderer.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade_addon:rapid_blistering_swords"
-							StandbyRenderType: 3b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "slashblade_addon:model/wanderer/wanderer.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 7.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 60
-							proudSoul: 0
-							translationKey: "item.slashblade_addon.wanderer"
-						}
-					}
-					id: "slashblade:slashblade"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade_addon:model/wanderer/wanderer.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade_addon:rapid_blistering_swords"
-							StandbyRenderType: 3b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "slashblade_addon:model/wanderer/wanderer.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 7.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 60
-							proudSoul: 0
-							translationKey: "item.slashblade_addon.wanderer"
+						display: {
+							Name: "{\"translate\":\"item.slashblade_addon.wanderer\"}"
 						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade_addon.wanderer\"}})"
 					}
 				}
 				type: "item"
@@ -304,80 +246,12 @@
 				id: "6065CD78FAAA51B5"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							Energy: {
-								Capacity: 2000000
-								Energy: 0
-								EnergyDurability: 0b
-								MaxExtract: 20000
-								MaxReceive: 20000
-								PowerupExtract: 1000
-								StandbyExtract: 100
-								isPowered: 0b
-							}
-							ModelName: "slashblade_addon:model/wanderer/wanderer.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade_addon:rapid_blistering_swords"
-							StandbyRenderType: 3b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "slashblade_addon:model/wanderer/wanderer.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 7.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 70
-							proudSoul: 0
-							translationKey: "item.slashblade_addon.wanderer_hf"
-						}
-					}
-					id: "energyblade:forge_energy_blade"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade_addon:model/wanderer/wanderer.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade_addon:rapid_blistering_swords"
-							StandbyRenderType: 3b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "slashblade_addon:model/wanderer/wanderer.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 7.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 70
-							proudSoul: 0
-							translationKey: "item.slashblade_addon.wanderer_hf"
+						display: {
+							Name: "{\"translate\":\"item.slashblade_addon.wanderer_hf\"}"
 						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade_addon.wanderer_hf\"}})"
 					}
 				}
 				type: "item"
@@ -392,84 +266,12 @@
 				id: "535495410C422B28"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "pseudoedge_break_dawn:model/pseudo/named/pseudosword/sword/sword.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:wave_edge"
-							StandbyRenderType: 1b
-							SummonedSwordColor: -16777216
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "pseudoedge_break_dawn:model/pseudo/named/pseudosword/sword/pseudosword.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 30.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 300
-							proudSoul: 0
-							translationKey: "item.pseudoedge_break_dawn.pseudosword"
-						}
-					}
-					id: "slashblade:slashblade"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						Enchantments: [
-							{
-								id: "minecraft:sharpness"
-								lvl: 5s
-							}
-							{
-								id: "minecraft:smite"
-								lvl: 5s
-							}
-							{
-								id: "minecraft:fire_aspect"
-								lvl: 2s
-							}
-						]
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "pseudoedge_break_dawn:model/pseudo/named/pseudosword/sword/sword.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:wave_edge"
-							StandbyRenderType: 1b
-							SummonedSwordColor: -16777216
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "pseudoedge_break_dawn:model/pseudo/named/pseudosword/sword/pseudosword.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 30.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 300
-							proudSoul: 0
-							translationKey: "item.pseudoedge_break_dawn.pseudosword"
+						display: {
+							Name: "{\"translate\":\"item.pseudoedge_break_dawn.pseudosword\"}"
 						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.pseudoedge_break_dawn.pseudosword\"}})"
 					}
 				}
 				type: "item"
@@ -487,92 +289,12 @@
 				id: "568AE79924E11C32"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade:model/named/sange/sange.obj"
-							RepairCounter: 0
-							SpecialAttackType: "pseudoedge_break_dawn:black_hole"
-							StandbyRenderType: 1b
-							SummonedSwordColor: -16777216
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "pseudoedge_break_dawn:model/pseudo/named/pseudosword/blackpixie/blackpixie.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 35.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 300
-							proudSoul: 0
-							translationKey: "item.pseudoedge_break_dawn.blackpixie"
-						}
-					}
-					id: "slashblade:slashblade"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						Enchantments: [
-							{
-								id: "minecraft:sharpness"
-								lvl: 5s
-							}
-							{
-								id: "minecraft:unbreaking"
-								lvl: 5s
-							}
-							{
-								id: "minecraft:fire_aspect"
-								lvl: 5s
-							}
-							{
-								id: "minecraft:looting"
-								lvl: 3s
-							}
-							{
-								id: "minecraft:knockback"
-								lvl: 2s
-							}
-						]
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade:model/named/sange/sange.obj"
-							RepairCounter: 0
-							SpecialAttackType: "pseudoedge_break_dawn:black_hole"
-							StandbyRenderType: 1b
-							SummonedSwordColor: -16777216
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "pseudoedge_break_dawn:model/pseudo/named/pseudosword/blackpixie/blackpixie.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 35.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 300
-							proudSoul: 0
-							translationKey: "item.pseudoedge_break_dawn.blackpixie"
+						display: {
+							Name: "{\"translate\":\"item.pseudoedge_break_dawn.blackpixie\"}"
 						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.pseudoedge_break_dawn.blackpixie\"}})"
 					}
 				}
 				type: "item"
@@ -587,80 +309,12 @@
 				id: "607C85B124F2C9FA"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "pseudoedge_break_dawn:model/pseudo/named/pseudosword/emptyblade/emptyblade.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:judgement_cut"
-							StandbyRenderType: 1b
-							SummonedSwordColor: -16777216
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "pseudoedge_break_dawn:model/pseudo/named/pseudosword/latent/latent.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 25.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 300
-							proudSoul: 0
-							translationKey: "item.pseudoedge_break_dawn.latent"
-						}
-					}
-					id: "slashblade:slashblade"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						Enchantments: [
-							{
-								id: "minecraft:sharpness"
-								lvl: 5s
-							}
-							{
-								id: "minecraft:fire_aspect"
-								lvl: 3s
-							}
-						]
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "pseudoedge_break_dawn:model/pseudo/named/pseudosword/emptyblade/emptyblade.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:judgement_cut"
-							StandbyRenderType: 1b
-							SummonedSwordColor: -16777216
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "pseudoedge_break_dawn:model/pseudo/named/pseudosword/latent/latent.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 25.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 300
-							proudSoul: 0
-							translationKey: "item.pseudoedge_break_dawn.latent"
+						display: {
+							Name: "{\"translate\":\"item.pseudoedge_break_dawn.latent\"}"
 						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.pseudoedge_break_dawn.latent\"}})"
 					}
 				}
 				type: "item"
@@ -686,76 +340,12 @@
 				id: "3CE431EC3E281E6D"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade:model/named/dios/dios.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade_sendims:golden_crux"
-							SpecialEffects: ["slashblade_sendims:frenzied_flame"]
-							StandbyRenderType: 3b
-							SummonedSwordColor: -32768
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "slashblade:model/greatsword_of_damnation/greatsword_of_damnation.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 5.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 70
-							proudSoul: 0
-							translationKey: "item.slashblade.greatsword_of_damnation"
-						}
-					}
-					id: "slashblade:slashblade"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						Enchantments: [{
-							id: "minecraft:power"
-							lvl: 2s
-						}]
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade:model/named/dios/dios.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade_sendims:golden_crux"
-							SpecialEffects: ["slashblade_sendims:frenzied_flame"]
-							StandbyRenderType: 3b
-							SummonedSwordColor: -32768
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "slashblade:model/greatsword_of_damnation/greatsword_of_damnation.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 5.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 70
-							proudSoul: 0
-							translationKey: "item.slashblade.greatsword_of_damnation"
+						display: {
+							Name: "{\"translate\":\"item.slashblade.greatsword_of_damnation\"}"
 						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade.greatsword_of_damnation\"}})"
 					}
 				}
 				type: "item"

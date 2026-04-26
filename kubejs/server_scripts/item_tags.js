@@ -5,6 +5,11 @@ ServerEvents.tags("item", event => {
     //     'minecraft:nether_star'
     // )
 
+    event.add("itemfilters:check_nbt", [
+        "slashblade:slashblade"
+
+    ])
+
     event.add("slashblade_sendims:blessing_petals_items", [
         '#minecraft:music_discs'
 

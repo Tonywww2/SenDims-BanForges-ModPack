@@ -130,106 +130,12 @@
 				id: "558309F9D5CEF0E1"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade_addon:model/nihil/nihil.obj"
-							RepairCounter: 0
-							SpecialAttackType: "sjap_adder:sakura_wave_edge"
-							SpecialEffects: [
-								"last_smith:extra_sharpness"
-								"last_smith:smite_se"
-								"last_smith:extra_power"
-								"sjap_adder:wave_edge_rise_up"
-								"sjap_adder:end_sakura_rise_up"
-							]
-							StandbyRenderType: 1b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "sjap_adder:model/nihill/nihilbx.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 25.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 600
-							proudSoul: 0
-							translationKey: "item.sjap_adder.nihilbxex"
-						}
-					}
-					id: "slashblade:slashblade"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						Enchantments: [
-							{
-								id: "minecraft:unbreaking"
-								lvl: 10s
-							}
-							{
-								id: "minecraft:smite"
-								lvl: 10s
-							}
-							{
-								id: "minecraft:looting"
-								lvl: 10s
-							}
-							{
-								id: "minecraft:fire_aspect"
-								lvl: 10s
-							}
-							{
-								id: "minecraft:mending"
-								lvl: 10s
-							}
-						]
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade_addon:model/nihil/nihil.obj"
-							RepairCounter: 0
-							SpecialAttackType: "sjap_adder:sakura_wave_edge"
-							SpecialEffects: [
-								"last_smith:extra_sharpness"
-								"last_smith:smite_se"
-								"last_smith:extra_power"
-								"sjap_adder:wave_edge_rise_up"
-								"sjap_adder:end_sakura_rise_up"
-							]
-							StandbyRenderType: 1b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "sjap_adder:model/nihill/nihilbx.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 25.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 600
-							proudSoul: 0
-							translationKey: "item.sjap_adder.nihilbxex"
+						display: {
+							Name: "{\"translate\":\"item.sjap_adder.nihilbxex\"}"
 						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.sjap_adder.nihilbxex\"}})"
 					}
 				}
 				type: "item"
@@ -244,92 +150,12 @@
 				id: "6D3D5859B067E23C"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "sjap_adder:model/icf/icfex/model.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:wave_edge"
-							SpecialEffects: [
-								"sjap_adder:dragon_ice"
-								"sjap_adder:armor_break"
-							]
-							StandbyRenderType: 1b
-							SummonedSwordColor: -16731137
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "sjap_adder:model/icf/icfex/ice.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 27.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 800
-							proudSoul: 0
-							translationKey: "item.sjap_adder.dragon_steel_ice"
-						}
-					}
-					id: "slashblade:slashblade"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						Enchantments: [
-							{
-								id: "minecraft:unbreaking"
-								lvl: 10s
-							}
-							{
-								id: "minecraft:sharpness"
-								lvl: 5s
-							}
-							{
-								id: "minecraft:smite"
-								lvl: 10s
-							}
-						]
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "sjap_adder:model/icf/icfex/model.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:wave_edge"
-							SpecialEffects: [
-								"sjap_adder:dragon_ice"
-								"sjap_adder:armor_break"
-							]
-							StandbyRenderType: 1b
-							SummonedSwordColor: -16731137
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "sjap_adder:model/icf/icfex/ice.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 27.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 1b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 800
-							proudSoul: 0
-							translationKey: "item.sjap_adder.dragon_steel_ice"
+						display: {
+							Name: "{\"translate\":\"item.sjap_adder.dragon_steel_ice\"}"
 						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.sjap_adder.dragon_steel_ice\"}})"
 					}
 				}
 				type: "item"
