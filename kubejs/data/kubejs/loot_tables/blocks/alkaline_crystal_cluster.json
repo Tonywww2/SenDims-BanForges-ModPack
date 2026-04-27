@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:mysterious_alkali_crystal",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "nuclearcraft:potassium_hydroxide_dust",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "nuclearcraft:carobbiite_dust",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "name": "nuclearcraft:sodium_fluoride_dust",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "nuclearcraft:villiaumite_dust",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "name": "nuclearcraft:potassium_iodide_dust",
+          "weight": 5
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "kubejs:blocks/alkaline_crystal_cluster"
+}

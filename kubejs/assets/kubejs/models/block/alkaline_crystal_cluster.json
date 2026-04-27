@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/amethyst_cluster",
+  "textures": {
+    "cross": "kubejs:block/alkaline_crystal_cluster"
+  }
+}

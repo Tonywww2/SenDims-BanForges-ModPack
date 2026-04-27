@@ -41,14 +41,33 @@ StartupEvents.registry('item', event => {
     event.create('trinity_alloy_ingot').fireResistant().rarity('rare')
     event.create('rainbowshift_entropy').fireResistant().rarity('rare')
 
-
 })
 
 StartupEvents.registry('block', event => {
-    event.create('carbon_rich_asteroid_rock').soundType('stone').hardness(2.0).resistance(6.0).requiresTool(true)
-        .tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:mineable/hoe')
-        
-    event.create('silica_rich_asteroid_rock').soundType('stone').hardness(2.0).resistance(6.0).requiresTool(true)
-        .tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:mineable/hoe')
+    event.create('carbon_rich_asteroid_rock')
+        .soundType('stone')
+        .hardness(2.0)
+        .resistance(6.0)
+        .requiresTool(true)
+        .tagBlock('minecraft:mineable/pickaxe')
+        .tagBlock('minecraft:mineable/hoe')
+
+    event.create('silica_rich_asteroid_rock')
+        .soundType('stone')
+        .hardness(2.0)
+        .resistance(6.0)
+        .requiresTool(true)
+        .tagBlock('minecraft:mineable/pickaxe')
+        .tagBlock('minecraft:mineable/hoe')
+
+    event.create('alkaline_crystal_cluster')
+        .soundType('amethyst_cluster')
+        .noCollision()
+        .hardness(1.5)
+        .resistance(1.5)
+        .requiresTool(true)
+        .waterlogged()
+        .renderType('cutout')
+        .tagBlock('minecraft:mineable/pickaxe')
 
 })
