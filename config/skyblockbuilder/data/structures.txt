@@ -115,6 +115,7 @@ cavernous:the_citadel
 cavernous:the_monolith
 cavernous:thermal_plant
 darkerdepths:catacombs
+darkerdepths:petrified_mineshaft
 darkerdepths:rope_mine_desert
 darkerdepths:rope_mine_forest
 deep_aether:brass_dungeon

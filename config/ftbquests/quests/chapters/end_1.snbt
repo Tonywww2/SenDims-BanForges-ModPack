@@ -77,46 +77,6 @@
 	]
 	quests: [
 		{
-			dependencies: ["70B3048A22DE8391"]
-			id: "60BC7DF019B63722"
-			tasks: [{
-				id: "025503F8EDD7FEB2"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						display: {
-							Name: "{\"translate\":\"item.sjap_adder.dragon_steel_fire\"}"
-						}
-						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.sjap_adder.dragon_steel_fire\"}})"
-					}
-				}
-				type: "item"
-			}]
-			x: -2.5d
-			y: -2.5d
-		}
-		{
-			dependencies: ["2C52C219DD799030"]
-			id: "281BD02608ADF2EE"
-			tasks: [{
-				id: "6BD3784AD81DD679"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						display: {
-							Name: "{\"translate\":\"item.sjap_adder.dragon_steel_lightning\"}"
-						}
-						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.sjap_adder.dragon_steel_lightning\"}})"
-					}
-				}
-				type: "item"
-			}]
-			x: 2.5d
-			y: -2.5d
-		}
-		{
 			hide_dependent_lines: true
 			id: "1BF032EC08E31ABB"
 			size: 2.0d

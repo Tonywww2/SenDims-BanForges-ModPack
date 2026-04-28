@@ -62,7 +62,6 @@ infinity_cave:limestone_grotto
 infinity_cave:molten_caves
 infinity_cave:sulfide_caves
 integrateddynamics:meneglin
-lionfishapi:original_source_marker
 midnight:black_ridge
 midnight:caverns
 midnight:crystal_spires

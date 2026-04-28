@@ -141,4 +141,68 @@ ServerEvents.recipes(event => {
     }, "pseudoedge_break_dawn:dragonblade")
         .id("sdbf:dragonblade_s3")
 
+    event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
+        "ABC",
+        "DED",
+        "CBA"
+    ], {
+        "A": "tofucraft:inferno_nether_fukumame",
+        "B": 'apotheosis:infused_breath',
+        "C": 'slashblade:proudsoul_sphere',
+        "D": 'minecraft:dragon_breath',
+        "E": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("pseudoedge_break_dawn:dragonblade")
+                .killCount(900)               // 要求：100 击杀
+                .refineCount(50)               // 要求：1 锻造
+                .build()
+        )
+    }, "sjap_adder:dragon_bone_fire")
+        .id("sdbf:dragon_bone_fire_s3")
+
+    event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
+        "ABC",
+        "DED",
+        "CBF"
+    ], {
+        "A": 'botania:ender_air_bottle',
+        "B": 'apotheosis:infused_breath',
+        "C": 'slashblade:proudsoul_sphere',
+        "D": 'minecraft:dragon_breath',
+        "F": 'thermal:lightning_charge',
+        "E": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("pseudoedge_break_dawn:dragonblade")
+                .killCount(900)               // 要求：100 击杀
+                .refineCount(50)               // 要求：1 锻造
+                .build()
+        )
+    }, "sjap_adder:dragon_bone_lightning")
+        .id("sdbf:dragon_bone_lightning_s3")
+
+    event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
+        "ABA",
+        "EFG",
+        "ABA"
+    ], {
+        "A": 'apotheosis:draconic_endshelf',
+        "B": 'slashblade:proudsoul_sphere',
+        "F": 'botania:mana_pylon',
+        "E": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("sjap_adder:dragon_bone_fire")
+                .killCount(1500)               // 要求：100 击杀
+                .refineCount(50)               // 要求：1 锻造
+                .build()
+        ),
+        "G": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("sjap_adder:dragon_bone_lightning")
+                .killCount(1500)               // 要求：100 击杀
+                .refineCount(50)               // 要求：1 锻造
+                .build()
+        )
+    }, "sjap_adder:dragon_bone_ice")
+        .id("sdbf:dragon_bone_ice_s3")
+
 })

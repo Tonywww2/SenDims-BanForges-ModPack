@@ -19,7 +19,7 @@
     "name": "last_smith:bunshi",
     "properties":
     {
-        "attack_base": 50.0,
+        "attack_base": 60.0,
         "max_damage": 70,
         "slash_art": "last_smith:transmigration_slash",
         "special_effects":

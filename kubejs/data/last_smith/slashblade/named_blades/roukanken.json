@@ -10,7 +10,7 @@
     "name": "last_smith:roukanken",
     "properties":
     {
-        "attack_base": 42.5,
+        "attack_base": 57.5,
         "max_damage": 70,
         "slash_art": "last_smith:transmigration_slash",
         "special_effects":

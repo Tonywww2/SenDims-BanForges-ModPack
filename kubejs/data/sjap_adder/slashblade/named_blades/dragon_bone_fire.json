@@ -1,27 +1,32 @@
 {
-  "creativeGroup": "sjap_adder:sjap_adder_slashblade_icf",
-  "enchantments": [
-    {
-      "id": "minecraft:unbreaking",
-      "lvl": 10
-    }
-  ],
-  "name": "sjap_adder:dragon_bone_fire",
-  "properties": {
-    "attack_base": 40.0,
-    "max_damage": 200,
-    "slash_art": "slashblade:wave_edge",
-    "special_effects": [
-      "sjap_adder:dragon_fire"
+    "creativeGroup": "sjap_adder:sjap_adder_slashblade_icf",
+    "enchantments":
+    [
+        {
+            "id": "minecraft:unbreaking",
+            "lvl": 10
+        }
     ],
-    "sword_type": [
-      "bewitched"
-    ]
-  },
-  "render": {
-    "carry_type": "default",
-    "model": "sjap_adder:model/icf/icf/model.obj",
-    "summon_sword_color": 16477711,
-    "texture": "sjap_adder:model/icf/icf/fire.png"
-  }
+    "name": "sjap_adder:dragon_bone_fire",
+    "properties":
+    {
+        "attack_base": 40.0,
+        "max_damage": 200,
+        "slash_art": "slashblade_sendims:frenzied_burst",
+        "special_effects":
+        [
+            "sjap_adder:dragon_fire"
+        ],
+        "sword_type":
+        [
+            "bewitched"
+        ]
+    },
+    "render":
+    {
+        "carry_type": "default",
+        "model": "sjap_adder:model/icf/icf/model.obj",
+        "summon_sword_color": 16477711,
+        "texture": "sjap_adder:model/icf/icf/fire.png"
+    }
 }

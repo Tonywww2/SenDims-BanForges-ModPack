@@ -62,6 +62,12 @@
 			x: -2.5d
 			y: 0.0d
 		}
+		{
+			id: "7483981BDC9935E5"
+			linked_quest: "2563ABCEC67C3877"
+			x: 5.0d
+			y: 2.5d
+		}
 	]
 	quests: [
 		{

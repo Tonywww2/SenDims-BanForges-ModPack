@@ -22,9 +22,7 @@
         "max_damage": 300,
         "slash_art": "slashblade:wave_edge",
         "special_effects":
-        [
-            "sjap_adder:dragon_ice"
-        ],
+        [],
         "sword_type":
         [
             "bewitched"

@@ -324,6 +324,7 @@
 		}
 		{
 			dependencies: ["3DA6E818573A9A69"]
+			description: ["深境二层中的一些珍稀生物会掉落这种材料。"]
 			id: "34E2C69E62618843"
 			tasks: [{
 				id: "285BE6DAF4E6C77D"

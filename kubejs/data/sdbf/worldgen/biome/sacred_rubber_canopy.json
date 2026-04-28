@@ -36,26 +36,26 @@
         "maxCount": 2
       },
       {
-        "type": "terra_entity:grantite_elemental",
-        "weight": 20,
-        "minCount": 1,
-        "maxCount": 2
-      },
-      {
         "type": "terra_entity:spore_bat",
         "weight": 15,
         "minCount": 1,
         "maxCount": 2
       },
       {
+        "type": "terra_entity:grantite_elemental",
+        "weight": 6,
+        "minCount": 1,
+        "maxCount": 2
+      },
+      {
         "type": "terra_entity:possess_armor",
-        "weight": 10,
+        "weight": 6,
         "minCount": 1,
         "maxCount": 2
       },
       {
         "type": "terra_entity:pixie",
-        "weight": 12,
+        "weight": 4,
         "minCount": 1,
         "maxCount": 2
       }
@@ -77,31 +77,31 @@
       },
       {
         "type": "terra_entity:piranha",
-        "weight": 25,
+        "weight": 15,
         "minCount": 1,
         "maxCount": 2
       },
       {
         "type": "terra_entity:shark",
-        "weight": 10,
+        "weight": 4,
         "minCount": 1,
         "maxCount": 1
       },
       {
         "type": "terra_entity:green_jellyfish",
-        "weight": 15,
+        "weight": 20,
         "minCount": 1,
         "maxCount": 2
       },
       {
         "type": "terra_entity:pink_jellyfish",
-        "weight": 15,
+        "weight": 4,
         "minCount": 1,
         "maxCount": 1
       },
       {
         "type": "terra_entity:blue_jellyfish",
-        "weight": 15,
+        "weight": 20,
         "minCount": 1,
         "maxCount": 2
       }

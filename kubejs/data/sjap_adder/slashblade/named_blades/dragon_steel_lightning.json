@@ -23,6 +23,9 @@
         "slash_art": "slashblade:wave_edge",
         "special_effects":
         [
+            "slashblade_addon:mana_burst",
+            "slashblade_addon:mana_repair",
+            "slashblade_sendims:invincible_pierce",
             "sjap_adder:dragon_lightning"
         ],
         "sword_type":

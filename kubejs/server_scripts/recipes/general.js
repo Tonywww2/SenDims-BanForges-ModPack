@@ -37,6 +37,18 @@ ServerEvents.recipes(event => {
         C: 'integrateddynamics:crystalized_menril_chunk'
     }).id('sdbf:logic_director')
 
+    event.shaped('minecraft:enchanting_table', [
+        ' A ',
+        'BCB',
+        'DED'
+    ], {
+        A: 'apotheosis:hellshelf',
+        B: 'kubejs:scoria_ingot',
+        C: 'integrateddynamics:logic_programmer',
+        D: 'minecraft:obsidian',
+        E: 'minecraft:crying_obsidian'
+    }).id('sdbf:enchanting_table')
+
     event.shaped('slashblade_sendims:principle_of_sword_arts', [
         'ABE',
         'ACF',
@@ -49,6 +61,40 @@ ServerEvents.recipes(event => {
         E: 'last_smith:sakura_sphere',
         F: Item.of('patchouli:guide_book', '{"patchouli:book":"last_smith:smith_guide"}').weakNBT()
     }).id('sdbf:principle_of_sword_arts')
+
+    event.shaped('apotheosis:dormant_deepshelf', [
+        'ESE',
+        'BBB',
+        'ESE'
+    ], {
+        E: '#apotheosis:deepslate',
+        B: 'minecraft:book',
+        S: 'slashblade:proudsoul'
+    }).id('sdbf:dormant_deepshelf')
+
+    event.shaped('apotheosis:hellshelf', [
+        'ESE',
+        'ABC',
+        'ESE'
+    ], {
+        E: 'minecraft:nether_bricks',
+        B: Item.of('minecraft:potion', '{Potion:"minecraft:regeneration"}'),
+        A: '#forge:rods/blaze',
+        C: Item.of('minecraft:potion', '{Potion:"minecraft:regeneration"}').weakNBT(),
+        S: 'slashblade:proudsoul_ingot'
+    }).id('sdbf:hellshelf')
+
+    event.shaped('apotheosis:endshelf', [
+        'ESE',
+        'IBP',
+        'ESE'
+    ], {
+        E: 'minecraft:end_stone_bricks',
+        I: 'apotheosis:infused_breath',
+        B: '#forge:bookshelves', // 标签使用 # 前缀 / Tags use the # prefix
+        P: 'minecraft:ender_pearl',
+        S: 'slashblade:proudsoul_sphere'
+    }).id('sdbf:endshelf')
 
     event.custom({
         "type": "sophisticatedbackpacks:basic_backpack",

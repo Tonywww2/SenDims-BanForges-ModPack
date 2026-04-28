@@ -10,12 +10,13 @@
     "name": "sjap_adder:dragon_bone_ice",
     "properties":
     {
-        "attack_base": 40.0,
+        "attack_base": 55.0,
         "max_damage": 200,
         "slash_art": "slashblade:wave_edge",
         "special_effects":
         [
-            "sjap_adder:dragon_ice"
+            "sjap_adder:dragon_fire",
+            "sjap_adder:dragon_lightning"
         ],
         "sword_type":
         [

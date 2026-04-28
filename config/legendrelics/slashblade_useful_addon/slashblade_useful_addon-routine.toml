@@ -36,4 +36,6 @@ let_go_sst = false
 #快刀无感模块缓慢等级
 #Range: 1 ~ 255
 movement_slowdown_level = 3
+#是否开启持刀无法交互除刀以外的所有的可交互选项功能的提示gui
+disableOtherInteractions_gui = true
 
