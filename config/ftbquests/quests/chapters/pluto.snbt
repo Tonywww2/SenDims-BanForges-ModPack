@@ -40,6 +40,7 @@
 	]
 	quests: [
 		{
+			dependencies: ["3A267848CC75F232"]
 			hide_dependent_lines: true
 			id: "4D7803023F99E6FC"
 			size: 2.0d

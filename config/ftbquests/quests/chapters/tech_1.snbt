@@ -798,6 +798,7 @@
 				"1AFA1F8F4A3B7215"
 				"0A68F5EE8F25F036"
 			]
+			hide_until_deps_visible: true
 			id: "52EC914C3873AF88"
 			tasks: [{
 				id: "0841F9F1200E7557"
@@ -973,6 +974,7 @@
 				"1EF6714DB8D7D5A4"
 				"01E82FD52A60F607"
 			]
+			hide_until_deps_complete: true
 			id: "69997238A9B0874C"
 			tasks: [{
 				id: "02AB3F8679AFEA6E"

@@ -4,6 +4,7 @@
 	default_quest_shape: ""
 	filename: "saturn_ring"
 	group: "35DD57C332D61BB0"
+	icon: "kubejs:titan-ii_composite_ingot"
 	id: "390334BC229FB9D8"
 	order_index: 2
 	quest_links: [
@@ -72,6 +73,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["3A267848CC75F232"]
 			hide_dependent_lines: true
 			id: "6035D1A1774B2FAF"
 			size: 2.0d

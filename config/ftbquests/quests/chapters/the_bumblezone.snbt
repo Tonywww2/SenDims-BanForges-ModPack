@@ -52,6 +52,7 @@
 	]
 	quests: [
 		{
+			dependencies: ["3A267848CC75F232"]
 			hide_dependent_lines: true
 			icon: "the_bumblezone:beehive_beeswax"
 			id: "220AEBF0A8A46F7C"
@@ -144,6 +145,7 @@
 			y: -5.0d
 		}
 		{
+			dependencies: ["220AEBF0A8A46F7C"]
 			icon: "the_bumblezone:bee_queen_spawn_egg"
 			id: "1425849749F89FA6"
 			tasks: [{

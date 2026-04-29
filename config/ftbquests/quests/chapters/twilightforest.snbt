@@ -30,7 +30,7 @@
 				"警告：相比于永恒花园与深境一层，暮色的难度更高。"
 			]
 			hide_dependent_lines: true
-			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			icon: "twilightforest:twilight_portal_miniature_structure"
 			id: "3C1CB82ADF4FBBC1"
 			rewards: [{
@@ -54,6 +54,7 @@
 				"3C1CB82ADF4FBBC1"
 				"222D394D6FDDC479"
 			]
+			hide_until_deps_complete: true
 			id: "14E282F8699E935B"
 			tasks: [{
 				id: "23FC31CDC20AE7E5"
@@ -370,6 +371,7 @@
 				"5B48DD82CE048231"
 			]
 			dependency_requirement: "one_completed"
+			hide_until_deps_complete: true
 			id: "1E82AFA5EC50F0AC"
 			tasks: [{
 				id: "3DA0B365DC61112D"
@@ -381,6 +383,7 @@
 		}
 		{
 			dependencies: ["3C1CB82ADF4FBBC1"]
+			hide_until_deps_complete: true
 			id: "064234E17AB63222"
 			tasks: [{
 				id: "6FA07963B61D3892"

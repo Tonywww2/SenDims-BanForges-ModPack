@@ -71,3 +71,9 @@ StartupEvents.registry('block', event => {
         .tagBlock('minecraft:mineable/pickaxe')
 
 })
+
+StartupEvents.registry('fluid', event => {
+    event.create('melted_proudsoul')
+        .thickTexture(0x5a30bf)
+        .bucketColor(0x5a30bf)
+})

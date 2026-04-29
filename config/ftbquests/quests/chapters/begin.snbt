@@ -32,6 +32,12 @@
 			x: -10.0d
 			y: -5.0d
 		}
+		{
+			id: "7B526208D694FBFA"
+			linked_quest: "4C56CFEEBC74DE9A"
+			x: -5.0d
+			y: -7.5d
+		}
 	]
 	quests: [
 		{
@@ -473,50 +479,6 @@
 			}]
 			x: 7.5d
 			y: -2.5d
-		}
-		{
-			dependencies: ["0B0F1D8BE89F8980"]
-			description: [
-				"如果安装了可选模组&b沉浸式传送门&r，在创建各各维度的传送门时，可以选择[IMMPT]方案，否则只能选择[原始]方案。"
-				""
-				"比如，以下是前往永恒花园的传送门的构建方法："
-				""
-				"·IMMPT：用苔藓复合原石构筑门槛，并使用花园火石点亮......"
-				""
-				"·原始：用苔石构筑门槛，并使用花园火石点亮......"
-				""
-				"如果安装了&b沉浸式传送门&r，则可以使用苔藓复合原石的方案，否则只能使用苔石的方案。"
-			]
-			icon: "minecraft:birch_door"
-			id: "0E6FB6E780D52320"
-			subtitle: "重要|注意"
-			tasks: [{
-				id: "3A890CCA49342A33"
-				type: "checkmark"
-			}]
-			title: "沉浸式传送门"
-			x: -5.0d
-			y: -7.5d
-		}
-		{
-			dependencies: ["0B0F1D8BE89F8980"]
-			description: [
-				"&b原素瓶&r是一系列的治疗道具，使用之后，可以恢复一定的血量。"
-				""
-				"高级的&b原素瓶&r拥有更高的基础治疗量，更高的已损失生命值百分比治疗量，更快的冷却时间。"
-				""
-				"可以通过合成升级&b原素瓶&r。"
-			]
-			id: "4C56CFEEBC74DE9A"
-			shape: "hexagon"
-			subtitle: "重要|治疗道具"
-			tasks: [{
-				id: "10EC5CAE71EAD313"
-				item: "slashblade_sendims:estus_flask_0"
-				type: "item"
-			}]
-			x: -2.5d
-			y: -7.5d
 		}
 		{
 			dependencies: ["6FD736B74327F2AF"]

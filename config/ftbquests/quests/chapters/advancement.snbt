@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["3A267848CC75F232"]
 			hide_dependent_lines: true
 			id: "1C7A16CB4CD91DA5"
 			size: 2.0d
@@ -173,6 +174,18 @@
 			title: "千锻万界"
 			x: -2.5d
 			y: 0.0d
+		}
+		{
+			id: "3A267848CC75F232"
+			invisible: true
+			tasks: [{
+				id: "584C42C28B1CC8E5"
+				item: "minecraft:barrier"
+				type: "item"
+			}]
+			title: "临时任务锁"
+			x: 0.0d
+			y: -2.5d
 		}
 	]
 	title: "成就"

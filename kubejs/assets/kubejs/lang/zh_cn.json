@@ -270,6 +270,9 @@
     "tetra.material.ignitium_ingot": "腾炎锭",
     "tetra.material.ignitium_ingot.prefix": "腾炎",
     
+    "fluid.kubejs.melted_proudsoul": "熔融耀魂",
+    "item.kubejs.melted_proudsoul_bucket": "熔融耀魂桶",
+
     "sidebar_button.ftblibrary.home": "回家",
     "sidebar_button.ftblibrary.back": "返回上个传送点"
 

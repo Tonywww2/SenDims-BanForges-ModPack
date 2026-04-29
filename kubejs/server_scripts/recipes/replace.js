@@ -108,15 +108,10 @@ ServerEvents.recipes(event => {
         "#botania:petals",
         'ad_astra:calorite_engine'
     );
-    // TODO 替换为最终材料
+
     event.replaceInput({ id: 'apotheosis:augmenting_table' },
         'apotheosis:mythic_material',
-        "minecraft:bedrock"
-    );
-
-    event.replaceInput({},
-        'minecraft:enchanting_table',
-        'ad_astra:moon_globe'
+        'kubejs:ml_computing_ingot'
     );
 
 })

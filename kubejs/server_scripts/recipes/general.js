@@ -62,6 +62,35 @@ ServerEvents.recipes(event => {
         F: Item.of('patchouli:guide_book', '{"patchouli:book":"last_smith:smith_guide"}').weakNBT()
     }).id('sdbf:principle_of_sword_arts')
 
+    // s3
+    // Placbo 硬编码
+    event.shaped('apotheosis:hellshelf', [
+        'ESE',
+        'ABC',
+        'ESE'
+    ], {
+        E: 'minecraft:nether_bricks',
+        B: '#forge:bookshelves',
+        A: '#forge:rods/blaze',
+        C: Item.of('minecraft:potion', '{Potion:"minecraft:regeneration"}').weakNBT(),
+        S: 'slashblade:proudsoul_ingot'
+    }).id('apotheosis:hellshelf')
+
+    // s3-4
+    // Placbo 硬编码
+    event.shaped('apotheosis:seashelf', [
+        'ESE',
+        'ABC',
+        'ESE'
+    ], {
+        E: 'minecraft:prismarine_bricks',
+        B: '#forge:bookshelves',
+        A: 'minecraft:pufferfish',
+        C: 'minecraft:potion',
+        S: 'slashblade:proudsoul_sphere'
+    }).id('apotheosis:seashelf')
+
+    // s4
     event.shaped('apotheosis:dormant_deepshelf', [
         'ESE',
         'BBB',
@@ -69,21 +98,10 @@ ServerEvents.recipes(event => {
     ], {
         E: '#apotheosis:deepslate',
         B: 'minecraft:book',
-        S: 'slashblade:proudsoul'
+        S: 'kubejs:delta_dust'
     }).id('sdbf:dormant_deepshelf')
 
-    event.shaped('apotheosis:hellshelf', [
-        'ESE',
-        'ABC',
-        'ESE'
-    ], {
-        E: 'minecraft:nether_bricks',
-        B: Item.of('minecraft:potion', '{Potion:"minecraft:regeneration"}'),
-        A: '#forge:rods/blaze',
-        C: Item.of('minecraft:potion', '{Potion:"minecraft:regeneration"}').weakNBT(),
-        S: 'slashblade:proudsoul_ingot'
-    }).id('sdbf:hellshelf')
-
+    // s4-5
     event.shaped('apotheosis:endshelf', [
         'ESE',
         'IBP',
@@ -93,8 +111,38 @@ ServerEvents.recipes(event => {
         I: 'apotheosis:infused_breath',
         B: '#forge:bookshelves', // 标签使用 # 前缀 / Tags use the # prefix
         P: 'minecraft:ender_pearl',
-        S: 'slashblade:proudsoul_sphere'
+        S: 'slashblade:proudsoul_crystal'
     }).id('sdbf:endshelf')
+
+    event.shaped('slashblade_sendims:estus_flask_1', [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        A: '#forge:gems/amethyst',
+        B: ['aether:ambrosium_shard', '#forge:ingots/ironwood', '#forge:ingots/desh'],
+        C: 'slashblade_sendims:estus_flask_0'
+    }).id('sdbf:estus_flask_1')
+
+    event.shaped('slashblade_sendims:estus_flask_2', [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'minecraft:netherite_scrap',
+        B: ['#forge:ingots/knightmetal', '#forge:gems/carminite', '#forge:ingots/ostrum'],
+        C: 'slashblade_sendims:estus_flask_1'
+    }).id('sdbf:estus_flask_2')
+
+    event.shaped('slashblade_sendims:estus_flask_3', [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'kubejs:mysterious_alkali_crystal',
+        B: ['kubejs:scoria_ingot', '#forge:ingots/forgotten_metal'],
+        C: 'slashblade_sendims:estus_flask_2'
+    }).id('sdbf:estus_flask_3')
 
     event.custom({
         "type": "sophisticatedbackpacks:basic_backpack",
@@ -228,9 +276,32 @@ ServerEvents.recipes(event => {
         }
     }).id("sdbf:backpack_d_n")
 
+    event.blasting('slashblade:proudsoul_tiny', [
+        'slashblade_useful_addon:proud_soul_log'
+    ], 0, 1200).id("sdbf:proudsoul_tiny_from_log")
+
+    event.recipes.thermal.refinery([
+        'slashblade:proudsoul_tiny',
+        Fluid.of("minecraft:water", 50),
+        Fluid.of("thermal:resin", 50)
+    ],
+        Fluid.of("kubejs:melted_proudsoul", 250)
+    ).id("sdbf:proudsoul_tiny_from_fluid")
+    
+    event.recipes.thermal.smelter([
+        Item.of('slashblade:proudsoul').withChance(1.1),
+        Item.of('slashblade:proudsoul_tiny').withChance(0.25)
+    ], [
+        Item.of('thermal:florb', '{Fluid:{Amount:1000,FluidName:"kubejs:melted_proudsoul"}}').weakNBT(),
+        '#forge:rosin',
+        'nuclearcraft:dimensional_blend_dust'
+    ])
+        .energy(16384)
+        .id("sdbf:proudsoul_from_smelter")
+
     event.recipes.slashblade.proudsoul_shapeless_recipe('slashblade:proudsoul_ingot', [
-        '#forge:ingots/steel',
-        '3x slashblade:proudsoul',
+        '2x #forge:ingots/steel',
+        '4x slashblade:proudsoul',
         '3x minecraft:blaze_powder'
     ]).id('sdbf:proudsoul_ingot')
 
@@ -250,6 +321,14 @@ ServerEvents.recipes(event => {
         '3x slashblade:proudsoul_crystal',
         'minecraft:bedrock'
     ]).id("sdbf:proudsoul_trapezohedron")
+
+    event.recipes.thermal.smelter('slashblade:proudsoul_ingot', [
+        '2x #forge:ingots/steel',
+        '3x slashblade:proudsoul',
+        '3x minecraft:blaze_powder'
+    ])
+        .energy(8192)
+        .id("sdbf:proudsoul_ingot_acc")
 
     event.recipes.thermal.smelter('slashblade:proudsoul_sphere', [
         'integrateddynamics:proto_chorus',

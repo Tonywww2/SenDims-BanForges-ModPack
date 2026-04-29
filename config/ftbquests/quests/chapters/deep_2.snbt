@@ -116,6 +116,7 @@
 		}
 		{
 			dependencies: ["6367E660F1CE8B30"]
+			hide_until_deps_complete: true
 			id: "7465DB175504D0F3"
 			tasks: [{
 				id: "69DF5807233F8FB9"
@@ -127,6 +128,7 @@
 		}
 		{
 			dependencies: ["47820A4E592EE375"]
+			hide_until_deps_complete: true
 			id: "00C6734E62C48C2D"
 			tasks: [{
 				id: "721186BF371EF6DE"

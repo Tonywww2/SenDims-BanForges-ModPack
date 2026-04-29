@@ -83,6 +83,7 @@
 	]
 	quests: [
 		{
+			dependencies: ["3A267848CC75F232"]
 			hide_dependent_lines: true
 			icon: "kubejs:carbon_rich_asteroid_rock"
 			id: "77DC6770CC08AEF6"

@@ -185,7 +185,7 @@ ServerEvents.recipes(event => {
         "EFG",
         "ABA"
     ], {
-        "A": 'apotheosis:draconic_endshelf',
+        "A": 'apotheosis:sightshelf_t2',
         "B": 'slashblade:proudsoul_sphere',
         "F": 'botania:mana_pylon',
         "E": SlashBladeIngredient.of(

@@ -44,7 +44,7 @@
     "render":
     {
         "carry_type": "default",
-        "model": "slashblade_addon:model/nihil/nihil.obj",
+        "model": "sjap_adder:model/nihill/nihil_over_bx.obj",
         "texture": "sjap_adder:model/nihill/nihilbx.png"
     }
 }

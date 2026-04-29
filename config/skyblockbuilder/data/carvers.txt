@@ -4,10 +4,6 @@ cavernous:flat_cave
 cavernous:flat_ravine
 cavernous:sinkhole
 cavernous:snaking_ravine
-darkerdepths:duskrock_carver
-darkerdepths:magma_carver
-darkerdepths:magma_line_carver
-darkerdepths:tuff_carver
 infinity_cave:canyon
 infinity_cave:cave
 infinity_cave:cave_extra_underground

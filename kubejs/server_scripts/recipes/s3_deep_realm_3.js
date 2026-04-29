@@ -1,5 +1,7 @@
 ServerEvents.recipes(event => {
 
+    sqRecipe(event, "midnight:forgotten_library", 'midnight:ebonite', 1, "s3");
+
     event.shaped('kubejs:scoria_ingot', [
         'DBA',
         'BCB',

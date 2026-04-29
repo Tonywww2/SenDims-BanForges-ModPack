@@ -99,6 +99,74 @@
 		}
 		{
 			dependencies: ["5EEA2C8F11FB0470"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						AttackAmplifier: 0.0f
+						ComboRoot: "slashblade:standby"
+						Damage: 39
+						ModelName: "slashblade:model/named/yamato.obj"
+						RepairCounter: 0
+						SpecialAttackType: "slashblade:judgement_cut"
+						StandbyRenderType: 1b
+						SummonedSwordColor: -13421569
+						SummonedSwordColorInverse: 0b
+						TargetEntity: 0
+						TextureName: "slashblade:model/named/yamato.png"
+						_onClick: 0b
+						adjustXYZ: [
+							0.0d
+							0.0d
+							0.0d
+						]
+						baseAttackModifier: 25.0f
+						currentCombo: "slashblade:none"
+						fallDecreaseRate: 0.0f
+						isBroken: 1b
+						isDefaultBewitched: 0b
+						isSealed: 1b
+						killCount: 0
+						lastActionTime: 0L
+						maxDamage: 40
+						proudSoul: 0
+						translationKey: "item.slashblade.yamato"
+					}
+				}
+				id: "slashblade:slashblade"
+				tag: {
+					bladeState: {
+						AttackAmplifier: 0.0f
+						ComboRoot: "slashblade:standby"
+						Damage: 39
+						ModelName: "slashblade:model/named/yamato.obj"
+						RepairCounter: 0
+						SpecialAttackType: "slashblade:judgement_cut"
+						StandbyRenderType: 1b
+						SummonedSwordColor: -13421569
+						SummonedSwordColorInverse: 0b
+						TargetEntity: 0
+						TextureName: "slashblade:model/named/yamato.png"
+						_onClick: 0b
+						adjustXYZ: [
+							0.0d
+							0.0d
+							0.0d
+						]
+						baseAttackModifier: 25.0f
+						currentCombo: "slashblade:none"
+						fallDecreaseRate: 0.0f
+						isBroken: 1b
+						isDefaultBewitched: 0b
+						isSealed: 1b
+						killCount: 0
+						lastActionTime: 0L
+						maxDamage: 40
+						proudSoul: 0
+						translationKey: "item.slashblade.yamato"
+					}
+				}
+			}
 			id: "6120DF977C2DFEA2"
 			tasks: [{
 				id: "7A146CEADA3647B2"
@@ -221,6 +289,7 @@
 		}
 		{
 			dependencies: ["3AE144DD58D30985"]
+			hide_until_deps_complete: true
 			id: "6FC2094BBDF8974D"
 			tasks: [{
 				id: "5F242350A3DC5841"
@@ -294,6 +363,7 @@
 				"5C75E5457757ACDB"
 				"1498BB469C25AD67"
 			]
+			hide_until_deps_complete: true
 			id: "0E848F953EE65A31"
 			tasks: [{
 				id: "33F5247185DCF50F"
@@ -349,6 +419,7 @@
 				"6120DF977C2DFEA2"
 				"11728C2FAEFCBBAD"
 			]
+			hide_until_deps_complete: true
 			id: "1152A96652FA7C8F"
 			tasks: [{
 				id: "5642C1E1168D59CB"

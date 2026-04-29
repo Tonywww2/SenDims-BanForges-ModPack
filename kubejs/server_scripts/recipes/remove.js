@@ -29,9 +29,12 @@ const toRemoveID = new Set([
     "terra_curio:workshop",
     "integrateddynamics:crafting/logic_director",
     "botania:brew/resistance",
+    "slashblade_useful_addon:proud_soul_by_proud_soul_leaves",
+    "slashblade_useful_addon:proud_soul_by_proud_soul_log",
+    "enderio:smelting/slashblade_useful_addon/proud_soul_by_proud_soul_log",
+    "easy_villagers:auto_trader",
 
     "sophisticatedbackpacks:backpack",
-    // "sophisticatedbackpacks:copper_backpack",
     "sophisticatedbackpacks:iron_backpack",
     "sophisticatedbackpacks:iron_backpack_from_copper",
     "sophisticatedbackpacks:gold_backpack",
@@ -134,11 +137,11 @@ const toRemoveID = new Set([
     "last_smith:fushigiri",
 
     // 临时
-    "apotheosis:hellshelf",
+    // "apotheosis:hellshelf",
     // "apotheosis:enchanting/infused_hellshelf",
     // "apotheosis:blazing_hellshelf",
     // "apotheosis:glowing_hellshelf",
-    "apotheosis:seashelf",
+    // "apotheosis:seashelf",
     // "apotheosis:enchanting/infused_seashelf",
     // "apotheosis:crystal_seashelf",
     // "apotheosis:heart_seashelf",

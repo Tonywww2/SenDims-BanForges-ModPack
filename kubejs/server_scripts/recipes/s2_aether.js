@@ -39,16 +39,6 @@ ServerEvents.recipes(event => {
             'lost_aether_content:phoenix_axe',
         ])]).id("sdbf:phoenix_ingot_s2")
 
-    event.shaped('slashblade_sendims:estus_flask_1', [
-        'ABA',
-        'BCB',
-        'ABA'
-    ], {
-        A: '#forge:gems/amethyst',
-        B: 'aether:ambrosium_shard',
-        C: 'slashblade_sendims:estus_flask_0'
-    }).id('sdbf:estus_flask_1_s1')
-
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
         "ABC",
         "BC ",

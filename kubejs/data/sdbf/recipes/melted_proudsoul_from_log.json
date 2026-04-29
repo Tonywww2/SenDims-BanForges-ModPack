@@ -1,0 +1,21 @@
+{
+    "type": "thermal:tree_extractor",
+    "trunk": {
+        "Name": "slashblade_useful_addon:proud_soul_log"
+    },
+    "leaves": {
+        "Name": "slashblade_useful_addon:proud_soul_leaves",
+        "Properties": {
+            "persistent": "false"
+        }
+    },
+    "sapling": "slashblade_useful_addon:proud_soul_sampling",
+    "min_height": 4,
+    "max_height": 10,
+    "min_leaves": 16,
+    "max_leaves": 24,
+    "result": {
+        "fluid": "kubejs:melted_proudsoul",
+        "amount": 5
+    }
+}
