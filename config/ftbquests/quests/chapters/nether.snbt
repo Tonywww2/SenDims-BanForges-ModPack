@@ -176,6 +176,7 @@
 		}
 		{
 			dependencies: ["7A229A04D3AFE10F"]
+			description: ["警告：肉山会破坏大范围的方块，请确保周围半径6的区块内没有重要的东西。"]
 			id: "32F557E18C00B7A1"
 			tasks: [{
 				id: "233D0CA45FEB90D8"

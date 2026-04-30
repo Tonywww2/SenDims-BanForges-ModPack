@@ -23,8 +23,14 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["5748351A76910019"]
 			icon: {
 				Count: 1
+				ForgeCaps: {
+					"fluxoftetra:fe": {
+						"FOT$energy114": 0
+					}
+				}
 				id: "tetra:modular_double"
 				tag: {
 					Damage: 0

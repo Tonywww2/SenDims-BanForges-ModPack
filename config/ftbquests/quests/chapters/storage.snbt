@@ -7,7 +7,32 @@
 	icon: "minecraft:barrel"
 	id: "6E8533DE5023FA36"
 	order_index: 1
-	quest_links: [ ]
+	quest_links: [
+		{
+			id: "1BD6CA98BD597015"
+			linked_quest: "41B8D629DFAC4BB8"
+			x: 10.0d
+			y: -2.5d
+		}
+		{
+			id: "56C579B5526A9E46"
+			linked_quest: "11728C2FAEFCBBAD"
+			x: 12.5d
+			y: -2.5d
+		}
+		{
+			id: "69FFBF241C4C22B9"
+			linked_quest: "4D0F49CE2720FBCD"
+			x: 15.0d
+			y: -2.5d
+		}
+		{
+			id: "79455ADAE6F46CA5"
+			linked_quest: "606C920FEB477498"
+			x: 17.5d
+			y: -2.5d
+		}
+	]
 	quests: [
 		{
 			dependencies: ["5748351A76910019"]
@@ -492,6 +517,95 @@
 			}]
 			x: 7.5d
 			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6FF53F6F54AD8231"
+				"41B8D629DFAC4BB8"
+			]
+			id: "2073258833AA2518"
+			tasks: [{
+				id: "680795C0C6F0E5F6"
+				item: "sophisticatedbackpacks:iron_backpack"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2073258833AA2518"
+				"11728C2FAEFCBBAD"
+			]
+			id: "02532C9DA3A8AE04"
+			tasks: [{
+				id: "75945BF2AF30E65D"
+				item: "sophisticatedbackpacks:gold_backpack"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"02532C9DA3A8AE04"
+				"4D0F49CE2720FBCD"
+			]
+			id: "7086F81A2FED14F3"
+			tasks: [{
+				id: "7D32492D1CA25C1E"
+				item: "sophisticatedbackpacks:diamond_backpack"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7086F81A2FED14F3"
+				"606C920FEB477498"
+			]
+			id: "7AACFAEAB3E4A28F"
+			tasks: [{
+				id: "38B3F2A0EA11F625"
+				item: "sophisticatedbackpacks:netherite_backpack"
+				type: "item"
+			}]
+			x: 17.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["29BDBE467B479C35"]
+			id: "214DE56B137FB46D"
+			tasks: [{
+				id: "34FDEA4736576964"
+				item: "sophisticatedbackpacks:upgrade_base"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["488BA89D6CF595C2"]
+			id: "098FCFD67CC0FEBD"
+			tasks: [{
+				id: "2B00B64A27B315CE"
+				item: "ae2:pattern_encoding_terminal"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["098FCFD67CC0FEBD"]
+			id: "1671926BD9108745"
+			tasks: [{
+				id: "4D08336ECAA5DC46"
+				item: "ae2:pattern_provider"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 15.0d
 		}
 	]
 	title: "库存管理"

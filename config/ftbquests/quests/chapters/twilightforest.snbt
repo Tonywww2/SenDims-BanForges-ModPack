@@ -573,6 +573,7 @@
 		{
 			dependencies: ["6442E0C760FAF02B"]
 			id: "6E39BB8C6B65D2B6"
+			shape: "hexagon"
 			tasks: [{
 				id: "1F8432296BD44C87"
 				item: "undergarden:catalyst"

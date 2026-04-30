@@ -1,4 +1,4 @@
-395 possible biomes found:
+394 possible biomes found:
 - "deep_aether:aerglow_forest"
 - "deep_aether:aerlavender_fields"
 - "regions_unexplored:alpha_grove"
@@ -244,7 +244,6 @@
 - "ad_astra:orbit"
 - "regions_unexplored:orchard"
 - "terralith:orchid_swamp"
-- "lionfishapi:original_source_marker"
 - "regions_unexplored:outback"
 - "cavernous:painted_caves"
 - "terralith:painted_mountains"

@@ -1,8 +1,8 @@
 {
     "home":
     {
-        "group": "ftblibrary:palmon",
-        "icon": "confluence:item/magic_mirror",
+        "group": "ftblibrary:sdbf",
+        "icon": "terra_curio:item/magic_mirror",
         "x": 610,
         "click":
         [
@@ -16,7 +16,7 @@
     },
     "back":
     {
-        "group": "ftblibrary:palmon",
+        "group": "ftblibrary:sdbf",
         "icon": "gravestone:item/obituary",
         "x": 700,
         "click":

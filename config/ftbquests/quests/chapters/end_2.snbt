@@ -53,6 +53,7 @@
 		{
 			id: "4614C32155EBEA48"
 			linked_quest: "28CAD1DD57B60440"
+			shape: "hexagon"
 			x: 0.0d
 			y: -2.5d
 		}
@@ -73,6 +74,7 @@
 		{
 			dependencies: ["28CAD1DD57B60440"]
 			hide_dependent_lines: true
+			hide_until_deps_complete: true
 			id: "0A68F5EE8F25F036"
 			size: 2.0d
 			tasks: [{

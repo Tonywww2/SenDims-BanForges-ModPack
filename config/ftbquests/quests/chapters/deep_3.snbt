@@ -59,6 +59,7 @@
 		{
 			id: "40149DB62657166B"
 			linked_quest: "7267904F019CEFD6"
+			shape: "hexagon"
 			x: -2.5d
 			y: 0.0d
 		}
@@ -73,6 +74,7 @@
 		{
 			dependencies: ["7267904F019CEFD6"]
 			hide_dependent_lines: true
+			hide_until_deps_complete: true
 			icon: "midnight:shadowroot_leaves"
 			id: "2E482B871B147DC6"
 			size: 2.0d

@@ -35,6 +35,7 @@
 		{
 			id: "62E370CF7E37D7D1"
 			linked_quest: "6E39BB8C6B65D2B6"
+			shape: "hexagon"
 			x: 0.0d
 			y: -2.5d
 		}
@@ -55,6 +56,7 @@
 		{
 			dependencies: ["6E39BB8C6B65D2B6"]
 			hide_dependent_lines: true
+			hide_until_deps_complete: true
 			id: "35A8F36675442F8B"
 			size: 2.0d
 			tasks: [{

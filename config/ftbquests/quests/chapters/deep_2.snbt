@@ -35,12 +35,14 @@
 		{
 			id: "4729BB2E2724275D"
 			linked_quest: "5DC17402B959C2E9"
+			shape: "hexagon"
 			x: -2.5d
 			y: 0.0d
 		}
 		{
 			id: "72C7D7E12A49ED57"
 			linked_quest: "0C568583CC58DAA6"
+			shape: "hexagon"
 			x: -5.0d
 			y: 0.0d
 		}
@@ -51,8 +53,10 @@
 				"5DC17402B959C2E9"
 				"0C568583CC58DAA6"
 			]
+			dependency_requirement: "one_completed"
 			description: ["使用岗哨石构筑门框，并使用门瑞欧结晶扳手点亮......"]
 			hide_dependent_lines: true
+			hide_until_deps_complete: true
 			icon: "integrateddynamics:menril_sapling"
 			id: "3DA6E818573A9A69"
 			size: 2.0d

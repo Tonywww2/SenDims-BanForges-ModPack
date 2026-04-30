@@ -138,7 +138,7 @@
         {
           "type": "minecraft:item",
           "weight": 1,
-          "name": "minecraft:flint_and_steel",
+          "name": "integrateddynamics:crystalized_menril_block",
           "functions": [
             {
               "function": "minecraft:set_count",

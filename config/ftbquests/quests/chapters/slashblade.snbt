@@ -987,6 +987,7 @@
 				"418F8A9D369B522C"
 				"0432A2E8EC151B87"
 			]
+			hide_until_deps_complete: true
 			id: "41B8D629DFAC4BB8"
 			rewards: [{
 				id: "5FAFFC3EFEC061EF"
@@ -1007,6 +1008,7 @@
 				"2354F158B208830E"
 				"69997238A9B0874C"
 			]
+			hide_until_deps_complete: true
 			id: "11728C2FAEFCBBAD"
 			rewards: [{
 				id: "6210970389302787"
@@ -1081,7 +1083,10 @@
 			dependencies: [
 				"128DAE63591990BF"
 				"747934E571968BD3"
+				"3DA6E818573A9A69"
 			]
+			dependency_requirement: "one_completed"
+			hide_until_deps_complete: true
 			id: "43FDCFF3F409783D"
 			tasks: [{
 				id: "0DA64BF81742AB6B"

@@ -22,9 +22,13 @@
     "name": "redtassel:redtassel_slashblade",
     "properties":
     {
-        "attack_base": 82.0,
-        "max_damage": 80,
+        "attack_base": 75.5,
+        "max_damage": 140,
         "slash_art": "redtassel:that_go_go_go",
+        "special_effects":
+        [
+            "redtassel:sakura"
+        ],
         "sword_type":
         [
             "bewitched"

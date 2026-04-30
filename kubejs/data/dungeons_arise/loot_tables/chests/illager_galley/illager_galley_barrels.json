@@ -123,7 +123,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:flint_and_steel",
+          "name": "kubejs:gamma_dust",
           "weight": 1,
           "functions": [
             {

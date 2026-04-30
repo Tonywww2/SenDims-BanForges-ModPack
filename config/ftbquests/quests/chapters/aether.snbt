@@ -54,6 +54,7 @@
 		{
 			dependencies: ["0F8DC1AEBBC762C1"]
 			description: ["速沙+空地图可以制作青铜地牢的结构羽毛笔。"]
+			hide_until_deps_complete: true
 			id: "4B49B929B1C14728"
 			tasks: [{
 				id: "6FC07F0B0875BF44"
@@ -321,6 +322,7 @@
 		}
 		{
 			dependencies: ["0F8DC1AEBBC762C1"]
+			hide_until_deps_complete: true
 			id: "465AFA19A305AB81"
 			tasks: [{
 				id: "2C9A88DBC62C82CE"
@@ -402,6 +404,7 @@
 		}
 		{
 			dependencies: ["0F8DC1AEBBC762C1"]
+			hide_until_deps_complete: true
 			id: "6543C211F987A5FF"
 			tasks: [{
 				id: "73F25BB5719ECB82"
@@ -413,6 +416,7 @@
 		}
 		{
 			dependencies: ["0F8DC1AEBBC762C1"]
+			hide_until_deps_complete: true
 			id: "01604A3C5394A6B9"
 			tasks: [{
 				id: "214869CD87398367"
@@ -681,7 +685,9 @@
 		}
 		{
 			dependencies: ["3F0F05D26289CF7B"]
+			hide_until_deps_visible: true
 			id: "5DC17402B959C2E9"
+			shape: "hexagon"
 			tasks: [{
 				id: "1C1A404E421F059B"
 				item: "aether:sentry_stone"
@@ -694,6 +700,7 @@
 			dependencies: ["3E8E74B1D1E90894"]
 			description: ["这些变量卡有些特殊？"]
 			id: "0C568583CC58DAA6"
+			shape: "hexagon"
 			tasks: [{
 				id: "7F7F699FC6682534"
 				item: "integrateddynamics:variable"

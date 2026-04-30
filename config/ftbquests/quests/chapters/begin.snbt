@@ -129,10 +129,7 @@
 			y: 2.5d
 		}
 		{
-			dependencies: [
-				"0C7B137A72152B01"
-				"514CF1593551F00F"
-			]
+			dependencies: ["0C7B137A72152B01"]
 			id: "5748351A76910019"
 			rewards: [{
 				count: 2
@@ -277,6 +274,7 @@
 				"02003846DA642A0D"
 			]
 			description: ["提示：手持锋利的燧石片右键"]
+			hide_until_deps_complete: true
 			id: "5A6129A375A1B07E"
 			tasks: [{
 				id: "4C384E9DE553D818"
@@ -317,6 +315,7 @@
 				"迈入深境..."
 				"迈入深境......"
 			]
+			hide_until_deps_complete: true
 			id: "52726CE2A2740BF7"
 			shape: "hexagon"
 			subtitle: "重要|深境"
@@ -396,6 +395,7 @@
 					type: "choice"
 				}
 			]
+			shape: "hexagon"
 			subtitle: "相交的碎片"
 			tasks: [{
 				id: "4ABE72912DE0F08B"
@@ -418,7 +418,7 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["0B0F1D8BE89F8980"]
+			dependencies: ["5BDFD8CB35D8AFC6"]
 			id: "71B535DCE4CFEF8F"
 			subtitle: "天境"
 			tasks: [{

@@ -80,7 +80,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:book",
+          "name": "integrateddynamics:crystalized_menril_chunk",
           "functions": [
             {
               "function": "minecraft:set_count",

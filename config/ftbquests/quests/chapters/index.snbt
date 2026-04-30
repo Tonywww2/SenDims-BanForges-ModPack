@@ -267,6 +267,24 @@
 			y: 9.0d
 		}
 	]
-	quests: [ ]
+	quests: [{
+		description: [
+			"这个章节是索引章节，可以帮助你快速定位到当前的进度。"
+			""
+			""
+			"{image:sdbf:textures/gui/task_info.png width:195 height:91 align:center}"
+		]
+		icon: "botania:cosmetic_questgiver_mark"
+		id: "222077D4E6F647A3"
+		shape: "gear"
+		subtitle: "重要"
+		tasks: [{
+			id: "683003D90E47A802"
+			type: "checkmark"
+		}]
+		title: "索引章节+任务信息"
+		x: -25.0d
+		y: 5.0d
+	}]
 	title: "快速索引"
 }

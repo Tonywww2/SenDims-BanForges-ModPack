@@ -274,7 +274,7 @@
 			description: [
 				"千百年之前，一个拥有着发达机械技术的古代文明曾活跃在深境之中，他们留下来的一些痕迹或许能帮助到你......"
 				""
-				"提示：你可以使用铁锭+地图制作实验室的结构羽毛笔。"
+				"你可以使用铁锭+地图制作实验室的结构羽毛笔。"
 			]
 			id: "6F117E817FAB60B3"
 			subtitle: "注意"
@@ -364,7 +364,9 @@
 		}
 		{
 			dependencies: ["4A7A22C5F8893EB8"]
+			hide_until_deps_complete: true
 			id: "28CAD1DD57B60440"
+			shape: "hexagon"
 			tasks: [{
 				id: "54507E443D0F2512"
 				item: {
@@ -421,6 +423,7 @@
 		}
 		{
 			dependencies: ["5BB642BD0BE40541"]
+			hide_until_deps_complete: true
 			id: "5CCEAB83DF5ACE81"
 			tasks: [{
 				id: "4B7399053F683820"
@@ -434,6 +437,7 @@
 			dependencies: ["5CCEAB83DF5ACE81"]
 			description: ["这是通往另一个维度的钥匙，不过你还需要激活它。"]
 			id: "7267904F019CEFD6"
+			shape: "hexagon"
 			tasks: [{
 				id: "215EAC577594DE3E"
 				item: "midnight:rift_placer"

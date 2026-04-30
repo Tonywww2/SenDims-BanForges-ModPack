@@ -101,6 +101,7 @@
 		{
 			id: "3ED92FEF92672EE9"
 			linked_quest: "78BE62D2851798DD"
+			shape: "hexagon"
 			x: -2.5d
 			y: 0.0d
 		}
@@ -109,6 +110,7 @@
 		{
 			dependencies: ["78BE62D2851798DD"]
 			hide_dependent_lines: true
+			hide_until_deps_complete: true
 			id: "51A9FF63F9F3E125"
 			size: 2.0d
 			tasks: [{
@@ -175,6 +177,7 @@
 		}
 		{
 			dependencies: ["2C6833FA2E31DFF1"]
+			hide_until_deps_visible: true
 			id: "5FDD83613CC8DBB5"
 			tasks: [{
 				id: "3607D328676AE6AF"
