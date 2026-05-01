@@ -110,6 +110,9 @@
   "jadeaddons": {
     "equipment_requirement": ""
   },
+  "yes_steve_model": {
+    "model_info": true
+  },
   "easy_villagers": {
     "villager": true,
     "converter": true,
