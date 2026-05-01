@@ -441,8 +441,8 @@
 			dependencies: ["7CBB12CD9FDCA6A4"]
 			id: "1FD18D4CCBB63483"
 			tasks: [{
-				id: "4468CE425259C584"
-				item: "kubejs:neptune_ingot"
+				id: "29C546F50B8D311F"
+				item: "aether_treasure_reforging:neptune_mesh"
 				type: "item"
 			}]
 			x: -7.5d
@@ -452,8 +452,8 @@
 			dependencies: ["48E30F8BC43E9AD4"]
 			id: "4B44FD83A325F2F6"
 			tasks: [{
-				id: "5A3E8765588A9BD5"
-				item: "kubejs:valkyrie_ingot"
+				id: "4D9F590C2136B64B"
+				item: "aether_treasure_reforging:valkyrum_ingot"
 				type: "item"
 			}]
 			x: -5.0d
@@ -463,8 +463,8 @@
 			dependencies: ["6B7C4E19A6FD6939"]
 			id: "08F23C4743FA0548"
 			tasks: [{
-				id: "3928CE368308F686"
-				item: "kubejs:phoenix_ingot"
+				id: "397D14A14B621D1E"
+				item: "aether_treasure_reforging:pyral_ingot"
 				type: "item"
 			}]
 			x: 7.5d

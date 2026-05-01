@@ -1,6 +1,7 @@
 {
-  "replace": false,
-  "values": [
-    "nuclearcraft:liquid_hydrogen"
-  ]
+    "replace": false,
+    "values":
+    [
+        "nuclearcraft:hydrogen_fluid_block"
+    ]
 }

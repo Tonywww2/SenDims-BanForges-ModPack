@@ -1,5 +1,8 @@
 ad_astra:moon_crater
 aether_redux:aether_caves
+ancient_aether:aether_cave
+ancient_aether:aether_cave_elevated
+ancient_aether:aether_cave_sakura
 cavernous:flat_cave
 cavernous:flat_ravine
 cavernous:sinkhole

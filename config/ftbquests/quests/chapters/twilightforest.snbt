@@ -27,7 +27,7 @@
 			description: [
 				"建造一个2x2的正方形池塘，在边缘种满花朵，填充清水，最后投入钻石......"
 				""
-				"警告：相比于永恒花园与深境一层，暮色的难度更高。"
+				"警告：暮色的难度相比同阶段的其他维度更高。"
 			]
 			hide_dependent_lines: true
 			hide_until_deps_visible: true

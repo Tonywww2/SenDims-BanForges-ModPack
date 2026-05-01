@@ -1,5 +1,13 @@
 ServerEvents.recipes(event => {
 
+    event.recipes.thermal.smelter('twilightforest:carminite', [
+        '6x #forge:dusts/arsenic',
+        '2x #forge:ingots/lead',
+        '3x #forge:ingots/iron'
+    ])
+        .energy(8192)
+        .id('sdbf:carminite_s2')
+
     event.custom({
         "type": "slashblade:slashblade_smithing",
         "addition": {

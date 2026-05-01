@@ -16,11 +16,7 @@
 	quests: [
 		{
 			dependencies: ["0B0F1D8BE89F8980"]
-			description: [
-				"IMMPT：用苔藓复合原石构筑门槛，并使用花园火石点亮......"
-				""
-				"原始：用苔石构筑门槛，并使用花园火石点亮......"
-			]
+			description: ["用苔石构筑门框，并使用花园火石点亮......"]
 			hide_until_deps_complete: true
 			icon: "tofucraft:blocktofuishi"
 			id: "6140B0BCEB7F9D64"

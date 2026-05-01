@@ -54,7 +54,7 @@
 				"0C568583CC58DAA6"
 			]
 			dependency_requirement: "one_completed"
-			description: ["使用岗哨石构筑门框，并使用门瑞欧结晶扳手点亮......"]
+			description: ["使用岗哨石构筑门框，并使用变量卡点亮......"]
 			hide_dependent_lines: true
 			hide_until_deps_complete: true
 			icon: "integrateddynamics:menril_sapling"

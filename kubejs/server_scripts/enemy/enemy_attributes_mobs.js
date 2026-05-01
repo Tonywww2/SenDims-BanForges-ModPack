@@ -7,6 +7,7 @@ const mobTypes = new Map([
     ['productivebees:configurable_bee', type0],
     ['productivebees:sweat_bee', type0],
     ['productivebees:digger_bee', type0],
+    ['productivebees:mason_bee', type0],
 
     ['tofucraft:shudofuspider', typeB],
     ['tofucraft:fukumame_thower', typeA],
@@ -34,6 +35,8 @@ const mobTypes = new Map([
     ["artifacts:mimic", typeAEX1],
     ["minecraft:illusioner", typeA],
     ["minecraft:witch", typeA],
+    ["minecraft:slime", typeSlime],
+    ["quark:forgotten", typeB],
 
     ["species:wicked", typeC],
     ["species:cliff_hanger", typeB],
@@ -55,6 +58,10 @@ const mobTypes = new Map([
     ["minecraft:salmon", type0],
     ["minecraft:squid", type0],
     ["minecraft:camel", typeC],
+    ["quark:stoneling", type0],
+    ["quark:toretoise", typeD],
+    ["species:ghoul", typeC],
+    ["species:deepfish", type0],
 
     ["yungscavebiomes:ice_cube", typeSlime],
     ["terra_entity:spiked_slime", typeSlime],
@@ -121,6 +128,10 @@ const mobTypes = new Map([
     ["aether:zephyr", typeC],
     ["deep_aether:venomite", typeB],
     ["aether_redux:vanilla_swet", typeSlime],
+
+    ["aether:aerwhale", typeC],
+    ["aether:whirlwind", type0],
+    ["aether:evil_whirlwind", type0],
 
     ["aether:valkyrie_queen", bossType1],
     ["aether:slider", bossType2],

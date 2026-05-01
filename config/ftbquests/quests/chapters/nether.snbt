@@ -24,6 +24,7 @@
 	quests: [
 		{
 			dependencies: ["0936AB2DCC0172A8"]
+			description: ["在月球之下。"]
 			hide_dependent_lines: true
 			hide_until_deps_complete: true
 			id: "5251AFEDB9C97974"

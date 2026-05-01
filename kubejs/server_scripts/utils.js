@@ -18,6 +18,12 @@ const $ModularArmorItem = Java.loadClass("ovo.yiran.geotetraarmor.items.ModularA
 const $ModularItemDamageEvent = Java.loadClass("se.mickelus.tetra.event.ModularItemDamageEvent");
 const $LivingHurtEvent = Java.loadClass("net.minecraftforge.event.entity.living.LivingHurtEvent");
 
+const $UGBlocks = Java.loadClass('quek.undergarden.registry.UGBlocks');
+const $UGSoundEvents = Java.loadClass('quek.undergarden.registry.UGSoundEvents');
+
+const $CuriosApi = Java.loadClass('top.theillusivec4.curios.api.CuriosApi')
+const $CuriosHelper = $CuriosApi.getCuriosHelper()
+
 const print = any => console.log(any)
 
 const numToInt = (num) => {

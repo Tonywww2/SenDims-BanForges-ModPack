@@ -109,6 +109,7 @@
 	quests: [
 		{
 			dependencies: ["78BE62D2851798DD"]
+			description: ["三阶火箭可抵达。"]
 			hide_dependent_lines: true
 			hide_until_deps_complete: true
 			id: "51A9FF63F9F3E125"
@@ -162,6 +163,7 @@
 				"7D98EABF3232321E"
 			]
 			dependency_requirement: "one_completed"
+			description: ["三阶火箭可抵达。"]
 			icon: "ad_astra:mercury_globe"
 			id: "2C6833FA2E31DFF1"
 			size: 2.0d

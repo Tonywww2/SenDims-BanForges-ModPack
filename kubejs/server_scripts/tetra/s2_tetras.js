@@ -209,30 +209,30 @@ ServerEvents.highPriorityData(event => {
         .build();
 
     // 海皇锭材料
-    tetraMaterialBuilder(event, "neptune_ingot").setCategory("metal")
+    tetraMaterialBuilder(event, "neptune").setCategory("metal")
         .setPrimary(4.2).setSecondary(3.0).setTertiary(2.2)
         .setDurability(500).setIntegrityCost(4).setIntegrityGain(5)
         .setMagicCapacity(150).setToolLevel(5).setToolEfficiency(7)
         .addAttributes("attributeslib:cold_damage", 2.0)
         .setTints("4a8bb3", "5a9bc3")
         .addTexture("metal").addTexture("heavy")
-        .addItemMaterial('kubejs:neptune_ingot')
+        .addItemMaterial('aether_treasure_reforging:neptune_mesh')
         .setRequiredTool("hammer_dig", 1)
         .build();
 
     // 武神锭材料
-    tetraMaterialBuilder(event, "valkyrie_ingot").setCategory("metal")
+    tetraMaterialBuilder(event, "valkyrie").setCategory("metal")
         .setPrimary(6.0).setSecondary(3.0).setTertiary(2.6)
         .setDurability(600).setIntegrityCost(4).setIntegrityGain(5)
         .setMagicCapacity(140).setToolLevel(5).setToolEfficiency(8)
         .setTints("f0f0f0", "ffffff")
         .addTexture("shiny").addTexture("metal")
-        .addItemMaterial('kubejs:valkyrie_ingot')
+        .addItemMaterial('aether_treasure_reforging:valkyrum_ingot')
         .setRequiredTool("hammer_dig", 1)
         .build();
 
     // 凤凰锭材料
-    tetraMaterialBuilder(event, "phoenix_ingot").setCategory("metal")
+    tetraMaterialBuilder(event, "phoenix").setCategory("metal")
         .setPrimary(4.2).setSecondary(3.0).setTertiary(2.2)
         .setDurability(500).setIntegrityCost(4).setIntegrityGain(5)
         .setMagicCapacity(160).setToolLevel(5).setToolEfficiency(7)
@@ -240,7 +240,7 @@ ServerEvents.highPriorityData(event => {
         .addAttributes("slashblade_sendims:frenzy_damage", 0.05)
         .setTints("d84315", "ff5722")
         .addTexture("shiny").addTexture("metal")
-        .addItemMaterial('kubejs:phoenix_ingot')
+        .addItemMaterial('aether_treasure_reforging:pyral_ingot')
         .setRequiredTool("hammer_dig", 1)
         .build();
 

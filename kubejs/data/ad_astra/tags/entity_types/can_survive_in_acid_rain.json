@@ -1,0 +1,17 @@
+{
+    "replace": true,
+    "values":
+    [
+        "#ad_astra:can_survive_extreme_heat",
+        "ad_astra:tier_1_rocket",
+        "ad_astra:tier_2_rocket",
+        "ad_astra:tier_3_rocket",
+        "ad_astra:tier_4_rocket",
+        "ad_astra:lander",
+        "minecraft:zombie",
+        "minecraft:spider",
+        "minecraft:stray",
+        "minecraft:evoker",
+        "minecraft:magma_cube"
+    ]
+}

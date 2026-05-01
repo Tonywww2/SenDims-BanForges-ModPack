@@ -42,6 +42,9 @@ const toRemoveID = new Set([
     "sophisticatedbackpacks:netherite_backpack",
 
     "cataclysm:blazing_grips",
+    "aether_treasure_reforging:pyral_ingot_from_smelting",
+    "aether_treasure_reforging:valkyrum_ingot_from_smelting",
+    "aether_treasure_reforging:neptune_mesh_from_smelting",
 
     "sjap_adder:dragon_fire",
     "sjap_adder:dragon_ice",
@@ -65,6 +68,7 @@ const toRemoveID = new Set([
     "pseudoedge_break_dawn:kingblade",
     "slashblade_addon:nihil",
     "pseudoedge_break_dawn:kumasakura",
+    "slashblade:dojikiri_yasutsuna",
 
     "foxextra:foxex_white",
     "pseudoedge_break_dawn:vitex",
@@ -164,6 +168,10 @@ const toRemoveID = new Set([
     // "apotheosis:sightshelf_t2",
     // "apotheosis:filtering_shelf",
     // "apotheosis:treasure_shelf"
+    
+    // 坏配方
+    "bonsaitrees3:sapling/quark/pink_blossom_sapling",
+    "aether_redux:genesis_dark_gummy_swet"
 ]);
 
 ServerEvents.recipes(event => {

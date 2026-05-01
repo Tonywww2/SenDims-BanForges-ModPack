@@ -73,6 +73,7 @@
 	quests: [
 		{
 			dependencies: ["28CAD1DD57B60440"]
+			description: ["需要拥有资格。"]
 			hide_dependent_lines: true
 			hide_until_deps_complete: true
 			id: "0A68F5EE8F25F036"

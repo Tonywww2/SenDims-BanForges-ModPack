@@ -1,7 +1,4 @@
 {
-    "item.kubejs.neptune_ingot": "海皇锭",
-    "item.kubejs.valkyrie_ingot": "武神锭",
-    "item.kubejs.phoenix_ingot": "凤凰锭",
     "item.deep_aether.squall_plate": "风锻板",
     "item.deep_aether.metal_mixture": "天晶混合锭",
 
@@ -173,12 +170,12 @@
     "tetra.material.squall_plate": "风锻板",
     "tetra.material.squall_plate.prefix": "风锻",
 
-    "tetra.material.neptune_ingot": "海皇锭",
-    "tetra.material.neptune_ingot.prefix": "海皇",
-    "tetra.material.valkyrie_ingot": "武神锭",
-    "tetra.material.valkyrie_ingot.prefix": "武神",
-    "tetra.material.phoenix_ingot": "凤凰锭",
-    "tetra.material.phoenix_ingot.prefix": "凤凰",
+    "tetra.material.neptune": "海皇",
+    "tetra.material.neptune.prefix": "海皇",
+    "tetra.material.valkyrie": "武神",
+    "tetra.material.valkyrie.prefix": "武神",
+    "tetra.material.phoenix": "凤凰",
+    "tetra.material.phoenix.prefix": "凤凰",
     "tetra.material.alpha_yeti_fur": "雪怪首领毛皮",
     "tetra.material.alpha_yeti_fur.prefix": "雪怪首领毛皮",
     "tetra.material.fiery_ingot": "炽铁锭",

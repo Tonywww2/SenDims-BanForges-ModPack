@@ -2,9 +2,9 @@
 
 StartupEvents.registry('item', event => {
 
-    event.create('neptune_ingot').fireResistant().rarity('rare')
-    event.create('valkyrie_ingot').fireResistant().rarity('rare')
-    event.create('phoenix_ingot').fireResistant().rarity('rare')
+    // event.create('neptune_ingot').fireResistant().rarity('rare')
+    // event.create('valkyrie_ingot').fireResistant().rarity('rare')
+    // event.create('phoenix_ingot').fireResistant().rarity('rare')
 
     event.create('alpha_dust').fireResistant()
     event.create('beta_dust').fireResistant().rarity('rare')

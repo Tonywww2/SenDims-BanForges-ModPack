@@ -157,6 +157,7 @@
 				"展现你的技艺的时候到了！"
 				"&7tip:过于基础的拔刀并不能进行改造"
 			]
+			hide_until_deps_visible: true
 			icon: {
 				Count: 1
 				ForgeCaps: {

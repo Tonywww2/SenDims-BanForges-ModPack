@@ -1,43 +1,15 @@
 ServerEvents.recipes(event => {
 
-    event.shapeless('3x kubejs:neptune_ingot', [
-        Ingredient.of([
-            'aether:neptune_gloves',
-            'aether:neptune_boots',
-            'aether:neptune_leggings',
-            'aether:neptune_chestplate',
-            'aether:neptune_helmet',
-        ])]).id("sdbf:neptune_ingot_s2")
+    event.smelting('3x aether_treasure_reforging:neptune_mesh',
+        ["aether:neptune_boots", "aether:neptune_leggings", "aether:neptune_chestplate", "aether:neptune_helmet", "aether:neptune_gloves"]
+    ).xp(0.1).id('sdbf:smelting/neptune_mesh_s2')
+    event.smelting('3x aether_treasure_reforging:valkyrum_ingot',
+        ["aether:valkyrie_boots", "aether:valkyrie_leggings", "aether:valkyrie_chestplate", "aether:valkyrie_helmet", "aether:valkyrie_gloves", "aether:valkyrie_lance", "aether:valkyrie_pickaxe", "aether:valkyrie_axe", "aether:valkyrie_shovel", "aether:valkyrie_hoe"]
+    ).xp(0.1).id('sdbf:smelting/valkyrum_ingot_s2')
 
-    event.shapeless('3x kubejs:valkyrie_ingot', [
-        Ingredient.of([
-            'aether:valkyrie_boots',
-            'aether:valkyrie_leggings',
-            'aether:valkyrie_chestplate',
-            'aether:valkyrie_helmet',
-            'aether:valkyrie_hoe',
-            'aether:valkyrie_axe',
-            'aether:valkyrie_pickaxe',
-            'aether:valkyrie_shovel',
-            'aether:valkyrie_lance',
-            'aether:valkyrie_gloves',
-            'aether:valkyrie_cape',
-        ])]).id("sdbf:valkyrie_ingot_s2")
-
-    event.shapeless('3x kubejs:phoenix_ingot', [
-        Ingredient.of([
-            'lost_aether_content:phoenix_hoe',
-            'lost_aether_content:phoenix_pickaxe',
-            'lost_aether_content:phoenix_shovel',
-            'lost_aether_content:phoenix_sword',
-            'aether:phoenix_gloves',
-            'aether:phoenix_boots',
-            'aether:phoenix_leggings',
-            'aether:phoenix_chestplate',
-            'aether:phoenix_helmet',
-            'lost_aether_content:phoenix_cape',
-            'lost_aether_content:phoenix_axe',
-        ])]).id("sdbf:phoenix_ingot_s2")
+    event.smelting('3x aether_treasure_reforging:pyral_ingot',
+        ["aether:phoenix_boots", "aether:phoenix_leggings", "aether:phoenix_chestplate", "aether:phoenix_helmet", "aether:phoenix_gloves"]
+    ).xp(0.1).id('sdbf:smelting/pyral_ingot_s2')
 
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
         "ABC",

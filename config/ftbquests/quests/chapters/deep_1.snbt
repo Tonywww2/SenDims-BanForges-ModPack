@@ -328,7 +328,7 @@
 		}
 		{
 			dependencies: ["71F1943E6E3FCA17"]
-			description: ["使用裂纹砖块构筑门槛，并使用深境证章点亮......"]
+			description: ["使用裂纹砖块构筑门框，并使用深境证章点亮......"]
 			hide_dependent_lines: true
 			hide_until_deps_visible: true
 			id: "5BB642BD0BE40541"

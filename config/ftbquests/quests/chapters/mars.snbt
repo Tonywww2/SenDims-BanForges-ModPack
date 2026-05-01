@@ -42,6 +42,7 @@
 	quests: [
 		{
 			dependencies: ["40B4C6CD28E7DF19"]
+			description: ["二阶火箭可抵达。"]
 			hide_dependent_lines: true
 			hide_until_deps_complete: true
 			id: "3F43656AE6F116CB"
