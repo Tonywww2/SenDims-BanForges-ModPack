@@ -10,7 +10,7 @@ let Z_MIN = 0;
 let Z_MAX = 15;
 
 let WALL_THICKNESS = 1;
-let ROOM_HEIGHT = 3;
+let ROOM_HEIGHT = 5;
 
 let Y_MIN = PLATFORM_Y - 1;
 let Y_MAX = PLAYER_Y + ROOM_HEIGHT + 1;
@@ -46,8 +46,9 @@ const buildBedrockPlatform = (level) => {
                 let isWallX = (x < X_MIN + WALL_THICKNESS) || (x > X_MAX - WALL_THICKNESS);
                 let isWallZ = (z < Z_MIN + WALL_THICKNESS) || (z > Z_MAX - WALL_THICKNESS);
                 let isFloor = (y <= PLATFORM_Y);
+                let isRoof = (y == Y_MAX);
 
-                if (isWallX || isWallZ || isFloor) {
+                if (isWallX || isWallZ || isFloor || isRoof) {
                     level.setBlock(new BlockPos(x, y, z), Blocks.BARRIER.defaultBlockState(), 3);
                 } else {
                     level.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);

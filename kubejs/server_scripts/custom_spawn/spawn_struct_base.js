@@ -1,3 +1,5 @@
+// priority: 100
+
 const BASE_STRUCTURE_PATTERNS = [
     [
         " A ",
@@ -15,6 +17,26 @@ const BASE_STRUCTURE_PATTERNS = [
         "CAC"
     ]
 ];
+
+const RETURN_PORTAL_PATTERN = [
+    [
+        "   ",
+        "   ",
+        "   "
+    ],
+    [
+        "   ",
+        " B ",
+        "   "
+    ],
+    [
+        "AAA",
+        "AAA",
+        "AAA"
+    ]
+];
+
+const registeredStructures = new Map();
 
 /**
  * boss召唤结构
@@ -35,11 +57,13 @@ const createBossStructure = (config) => {
     let failMessage = config.failMessage;
     let patterns = config.patterns;
     let destroyAfterSpawn = config.destroyAfterSpawn;
+    let consumeActivateItem = config.consumeActivateItem;
 
     if (!structureName) structureName = "Boss";
     if (!failMessage) failMessage = Text.translatable("info.kubejs.faill_spawn_structure");
     if (!patterns) patterns = BASE_STRUCTURE_PATTERNS;
     if (destroyAfterSpawn === undefined) destroyAfterSpawn = true;
+    if (consumeActivateItem === undefined) consumeActivateItem = true;
 
     const destroyStructure = (level, centerPos) => {
         for (let layerIndex = 0; layerIndex < patterns.length; layerIndex++) {
@@ -100,7 +124,9 @@ const createBossStructure = (config) => {
             destroyStructure(level, centerPos);
         }
         player.addItemCooldown(event.item, 100);
-        event.item.shrink(1);
+        if (consumeActivateItem) {
+            event.item.shrink(1);
+        }
         // console.log(config)
         executeCommands(level, centerPos, player);
     };
@@ -120,47 +146,79 @@ const createBossStructure = (config) => {
     };
 }
 
-const registeredStructures = new Map();
+
+/**
+ * 注册一个传送结构
+ * @param {Object} config
+ */
+const registerPortal = (config) => {
+    let x = config.x;
+    let y = config.y;
+    let z = config.z;
+    let from = config.from;
+    let toDim = config.to;
+    let clearDestinationBlocks = config.clearDestinationBlocks;
+
+    const executePortalCommands = (level, centerPos, player) => {
+        if (from != null && level.dimensionKey !== from) {
+            player.tell(Text.translatable("info.kubejs.wrong_dimension"));
+            return;
+        }
+
+        let targetX = x != null ? x : centerPos.x;
+        let targetY = y != null ? y : centerPos.y;
+        let targetZ = z != null ? z : centerPos.z;
+
+        player.teleportTo(toDim, targetX + 0.5, targetY + 1, targetZ + 0.5, player.getYaw(), player.getPitch());
+
+        if (clearDestinationBlocks) {
+            let server = level.getServer();
+            let targetLevel = server.getLevel(toDim);
+            if (targetLevel) {
+                let destPos = new BlockPos(targetX, targetY, targetZ);
+                // Clear 5x7x5 area
+                for (let dx = -2; dx <= 2; dx++) {
+                    for (let dy = 0; dy <= 6; dy++) {
+                        for (let dz = -2; dz <= 2; dz++) {
+                            let clearPos = destPos.offset(dx, dy, dz);
+                            targetLevel.setBlock(clearPos, Blocks.AIR.defaultBlockState(), 2);
+                        }
+                    }
+                }
+                // Generate cobblestone ceiling (5x5)
+                for (let dx = -2; dx <= 2; dx++) {
+                    for (let dz = -2; dz <= 2; dz++) {
+                        let ceilPos = destPos.offset(dx, 7, dz);
+                        targetLevel.setBlock(ceilPos, Blocks.COBBLESTONE.defaultBlockState(), 2);
+                    }
+                }
+
+                // Generate return structure at bottom
+                // Base obsidian
+                for (let dx = -1; dx <= 1; dx++) {
+                    for (let dz = -1; dz <= 1; dz++) {
+                        targetLevel.setBlock(destPos.offset(dx, -1, dz), Blocks.OBSIDIAN.defaultBlockState(), 2);
+                    }
+                }
+                // Core crying obsidian
+                targetLevel.setBlock(destPos, Blocks.CRYING_OBSIDIAN.defaultBlockState(), 2);
+            }
+        }
+    };
+
+    let portalConfig = Object.assign({}, config, { executeCommands: executePortalCommands });
+    return registerStructure(portalConfig);
+}
 
 /**
  * 注册一个召唤结构
  * @param {Object} config
  */
-const registerBossStructure = (config) => {
+const registerStructure = (config) => {
     let structure = createBossStructure(config);
     registeredStructures.set(config.activateItem, structure);
     return structure;
 }
-
-registerBossStructure({
-    activateItem: 'aether_redux:golden_swet_ball',
-    blockMapping: {
-        'A': 'aether:cold_aercloud',
-        'B': 'aether:ambrosium_block',
-        'C': 'aether:angelic_stone'
-    },
-    destroyAfterSpawn: true,
-    executeCommands: (level, centerPos, player) => {
-        player.tell(Text.of("TungTungTung").obfuscated())
-        level.runCommandSilent(`execute at ${player.name.string} run place structure lost_aether_content:platinum_dungeon`);
-    },
-    structureName: "platinum_dungeon"
-});
-
-registerBossStructure({
-    activateItem: 'undergarden:utherium_crystal',
-    blockMapping: {
-        'A': 'minecraft:soul_soil',
-        'B': 'undergarden:utherium_block',
-        'C': 'undergarden:virulent_mix'
-    },
-    destroyAfterSpawn: true,
-    executeCommands: (level, centerPos, player) => {
-        player.tell(Text.of("Samurai X").obfuscated())
-        level.runCommandSilent(`execute positioned ${centerPos.x} ${centerPos.y} ${centerPos.z} run summon final_samurai:samurai`);
-    },
-    structureName: "samurai_x"
-});
 
 BlockEvents.rightClicked(event => {
     let { block, level, player, hand } = event;

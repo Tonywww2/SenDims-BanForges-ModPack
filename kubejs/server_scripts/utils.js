@@ -17,6 +17,7 @@ const $ModularArmorItem = Java.loadClass("ovo.yiran.geotetraarmor.items.ModularA
 
 const $ModularItemDamageEvent = Java.loadClass("se.mickelus.tetra.event.ModularItemDamageEvent");
 const $LivingHurtEvent = Java.loadClass("net.minecraftforge.event.entity.living.LivingHurtEvent");
+const $PortalSpawnEvent = Java.loadClass("net.minecraftforge.event.level.BlockEvent$PortalSpawnEvent")
 
 const $UGBlocks = Java.loadClass('quek.undergarden.registry.UGBlocks');
 const $UGSoundEvents = Java.loadClass('quek.undergarden.registry.UGSoundEvents');

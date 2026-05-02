@@ -1,5 +1,9 @@
 [
   {
+    "mob": "terra_entity:harpy",
+    "result": "deny"
+  },
+  {
     "mod": "terra_entity",
     "mincount": {
       "amount": 30,

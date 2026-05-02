@@ -2,8 +2,6 @@ ServerEvents.recipes(event => {
 
     event.smelting('ad_astra:moon_cobblestone', ['dustandash:cobblestone_with_moss'], 0, 200).id("sdbf:moon_cobblestone_s2")
 
-    event.shapeless('slashblade_sendims:estus_flask_2', ['slashblade_sendims:estus_flask_1', "ad_astra:desh_engine"]).id('sdbf:estus_flask_2_s2')
-
     event.shaped('confluence:obsidian_rose', [
         'ADA',
         'BEB',

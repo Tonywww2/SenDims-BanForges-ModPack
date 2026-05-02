@@ -34,7 +34,6 @@ ServerEvents.highPriorityData(event => {
     tofuBoss('tofucraft:shudofuspider');
     tofuBoss('tofucraft:fukumame_thower');
     tofuBoss('tofucraft:zundamite');
-    tofuBoss('tofucraft:tofu_gandlem');
     tofuBoss('tofucraft:tofuslime');
     tofuBoss('tofucraft:tofucreeper');
 

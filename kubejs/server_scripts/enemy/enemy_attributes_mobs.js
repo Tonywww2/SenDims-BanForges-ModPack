@@ -9,7 +9,14 @@ const mobTypes = new Map([
     ['productivebees:digger_bee', type0],
     ['productivebees:mason_bee', type0],
     ['productivebees:green_carpenter_bee', type0],
+    ['productivebees:yellow_black_carpenter_bee', type0],
+    ["minecraft:bee", type0],
+    ["productivebees:bumble_bee", type0],
+    ["productivebees:reed_bee", type0],
 
+    ["terra_entity:blue_jay", type0],
+    ["minecraft:cat", type0],
+    ["terra_entity:bird", type0],
     ['tofucraft:shudofuspider', typeB],
     ['tofucraft:fukumame_thower', typeA],
     ['tofucraft:zundamite', typeB],
@@ -20,6 +27,19 @@ const mobTypes = new Map([
     ['tofucraft:tofuspider', typeB],
     ['minecraft:polar_bear', typeC],
     ['minecraft:rabbit', type0],
+    ['quark:crab', type0],
+    ['biomemakeover:helmit_crab', type0],
+    ['terra_entity:bunny', type0],
+    ['terra_entity:cardinal', type0],
+    ['minecraft:wolf', type0],
+    ['minecraft:horse', typeA],
+    ['terra_entity:duck', typeA],
+    ['terra_entity:jewel_bunny', typeA],
+    ['tofucraft:tofupig', type0],
+    ['tofucraft:tofufish', type0],
+    ['tofucraft:tofucow', type0],
+    ['minecraft:trader_llama', typeA],
+    ['minecraft:wandering_trader', typeA],
 
     ['tofucraft:tofu_gandlem', bossType1],
 
@@ -257,6 +277,7 @@ const mobTypes = new Map([
     ["minecraft:vex", typeSlime],
 
     ["minecraft:ender_dragon", bossType2],
+    ["minecraft:elder_guardian", bossType1],
 
     ["ad_astra:pygro", typeA],
     ["ad_astra:pygro_brute", typeAEX1],
