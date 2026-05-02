@@ -1,0 +1,8 @@
+[
+  {
+    "matchItems": [
+      "nuclearcraft:copper_plate"
+    ],
+    "resultItems": "thermal:copper_plate"
+  }
+]

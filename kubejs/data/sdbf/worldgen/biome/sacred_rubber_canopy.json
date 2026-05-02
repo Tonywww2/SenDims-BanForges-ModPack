@@ -36,26 +36,26 @@
         "maxCount": 2
       },
       {
+        "type": "terra_entity:grantite_elemental",
+        "weight": 20,
+        "minCount": 1,
+        "maxCount": 2
+      },
+      {
         "type": "terra_entity:spore_bat",
         "weight": 15,
         "minCount": 1,
         "maxCount": 2
       },
       {
-        "type": "terra_entity:grantite_elemental",
-        "weight": 6,
-        "minCount": 1,
-        "maxCount": 2
-      },
-      {
         "type": "terra_entity:possess_armor",
-        "weight": 6,
+        "weight": 10,
         "minCount": 1,
         "maxCount": 2
       },
       {
         "type": "terra_entity:pixie",
-        "weight": 4,
+        "weight": 12,
         "minCount": 1,
         "maxCount": 2
       }
@@ -77,31 +77,31 @@
       },
       {
         "type": "terra_entity:piranha",
-        "weight": 15,
+        "weight": 25,
         "minCount": 1,
         "maxCount": 2
       },
       {
         "type": "terra_entity:shark",
-        "weight": 4,
+        "weight": 10,
         "minCount": 1,
         "maxCount": 1
       },
       {
         "type": "terra_entity:green_jellyfish",
-        "weight": 20,
+        "weight": 15,
         "minCount": 1,
         "maxCount": 2
       },
       {
         "type": "terra_entity:pink_jellyfish",
-        "weight": 4,
+        "weight": 15,
         "minCount": 1,
         "maxCount": 1
       },
       {
         "type": "terra_entity:blue_jellyfish",
-        "weight": 20,
+        "weight": 15,
         "minCount": 1,
         "maxCount": 2
       }
@@ -109,5 +109,23 @@
   },
   "spawn_costs": {},
   "carvers": {},
-  "features": []
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "sdbf:crystal_cluster"
+    ],
+    [
+      "sdbf:flowers_meneglin",
+      "sdbf:tree_menril",
+      "sdbf:ocean_vegetation"
+    ],
+    []
+  ]
 }

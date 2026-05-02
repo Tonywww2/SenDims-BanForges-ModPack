@@ -1,0 +1,9 @@
+[
+  {
+    "matchItems": [
+      "enderio:powdered_gold",
+      "nuclearcraft:gold_dust"
+    ],
+    "resultItems": "thermal:gold_dust"
+  }
+]

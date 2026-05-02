@@ -1,0 +1,9 @@
+[
+  {
+    "matchItems": [
+      "ad_astra:steel_block",
+      "nuclearcraft:steel_block"
+    ],
+    "resultItems": "thermal:steel_block"
+  }
+]

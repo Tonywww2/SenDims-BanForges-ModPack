@@ -1,0 +1,64 @@
+{
+  "type": "minecraft:flower",
+  "config": {
+    "feature": {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:noise_provider",
+            "noise": {
+              "amplitudes": [
+                1.0
+              ],
+              "firstOctave": 0
+            },
+            "scale": 0.020833334,
+            "seed": 3456,
+            "states": [
+              {
+                "Name": "regions_unexplored:green_bioshroom"
+              },
+              {
+                "Name": "botania:cyan_mushroom"
+              },
+              {
+                "Name": "minecraft:white_tulip"
+              },
+              {
+                "Name": "minecraft:blue_orchid"
+              },
+              {
+                "Name": "regions_unexplored:hyacinth_flowers"
+              },
+              {
+                "Name": "quark:blue_blossom_sapling"
+              },
+              {
+                "Name": "botania:light_blue_mystical_flower"
+              },
+              {
+                "Name": "regions_unexplored:blue_bioshroom"
+              },
+              {
+                "Name": "minecraft:lily_of_the_valley"
+              }
+            ]
+          }
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_blocks",
+            "blocks": "minecraft:air"
+          }
+        }
+      ]
+    },
+    "tries": 64,
+    "xz_spread": 6,
+    "y_spread": 2
+  }
+}

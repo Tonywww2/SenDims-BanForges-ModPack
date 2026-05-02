@@ -1,0 +1,8 @@
+[
+  {
+    "matchItems": [
+      "nuclearcraft:bronze_block"
+    ],
+    "resultItems": "thermal:bronze_block"
+  }
+]

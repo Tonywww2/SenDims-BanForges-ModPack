@@ -1,0 +1,8 @@
+[
+  {
+    "matchItems": [
+      "nuclearcraft:diamond_dust"
+    ],
+    "resultItems": "thermal:diamond_dust"
+  }
+]

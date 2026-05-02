@@ -1,0 +1,8 @@
+[
+  {
+    "matchItems": [
+      "nuclearcraft:netherite_dust"
+    ],
+    "resultItems": "thermal:netherite_dust"
+  }
+]

@@ -1,0 +1,9 @@
+[
+  {
+    "matchItems": [
+      "enderio:powdered_copper",
+      "nuclearcraft:copper_dust"
+    ],
+    "resultItems": "thermal:copper_dust"
+  }
+]

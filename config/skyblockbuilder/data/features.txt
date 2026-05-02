@@ -1313,6 +1313,7 @@ sdbf:asteroid_belt/nickel_ore
 sdbf:asteroid_belt/platinum_ore
 sdbf:asteroid_belt/thorium_ore
 sdbf:asteroid_belt/uranium_ore
+sdbf:flowers_meneglin
 sdbf:hydrogen_lake
 slashblade_useful_addon:deep_proud_soul_ore
 slashblade_useful_addon:proud_soul_ore

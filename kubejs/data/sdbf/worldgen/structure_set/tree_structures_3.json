@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "sdbf:undead_pirate_ship",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 82311663,
+    "spacing": 60,
+    "separation": 20,
+    "type": "minecraft:random_spread"
+  }
+}

@@ -311,6 +311,9 @@ nullscape:dragon_skeleton
 sdbf:ae_lab
 sdbf:apron_1
 sdbf:broken_wither
+sdbf:illager_corsair
+sdbf:illager_galley
+sdbf:undead_pirate_ship
 species:libra
 species:paleontology_dig_site
 species:spectralibur_chamber

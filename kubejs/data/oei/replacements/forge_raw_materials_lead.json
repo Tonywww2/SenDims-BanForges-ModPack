@@ -1,0 +1,8 @@
+[
+  {
+    "matchItems": [
+      "nuclearcraft:lead_chunk"
+    ],
+    "resultItems": "thermal:raw_lead"
+  }
+]

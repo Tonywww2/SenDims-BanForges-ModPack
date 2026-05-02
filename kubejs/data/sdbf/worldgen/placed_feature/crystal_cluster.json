@@ -1,0 +1,113 @@
+{
+    "feature":
+    {
+        "type": "minecraft:simple_block",
+        "config":
+        {
+            "to_place":
+            {
+                "type": "minecraft:weighted_state_provider",
+                "entries":
+                [
+                    {
+                        "weight": 1,
+                        "data":
+                        {
+                            "Name": "kubejs:alkaline_crystal_cluster",
+                            "Properties":
+                            {
+                                "facing": "up",
+                                "waterlogged": true
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "placement":
+    [
+        {
+            "type": "minecraft:count",
+            "count":
+            {
+                "type": "minecraft:uniform",
+                "value":
+                {
+                    "min_inclusive": 1,
+                    "max_inclusive": 3
+                }
+            }
+        },
+        {
+            "type": "minecraft:in_square"
+        },
+        {
+            "type": "minecraft:height_range",
+            "height":
+            {
+                "type": "minecraft:uniform",
+                "min_inclusive":
+                {
+                    "absolute": 72
+                },
+                "max_inclusive":
+                {
+                    "absolute": 48
+                }
+            }
+        },
+        {
+            "type": "minecraft:environment_scan",
+            "direction_of_search": "down",
+            "max_steps": 24,
+            "target_condition":
+            {
+                "type": "minecraft:all_of",
+                "predicates":
+                [
+                    {
+                        "type": "minecraft:has_sturdy_face",
+                        "direction": "up"
+                    },
+                    {
+                        "type": "minecraft:matching_blocks",
+                        "blocks":
+                        [
+                            "integrateddynamics:menril_wood",
+                            "botania:infused_grass",
+                            "integrateddynamics:menril_log",
+                            "minecraft:tube_coral_block",
+                            "minecraft:horn_coral_block",
+                            "minecraft:fire_coral_block",
+                            "minecraft:brain_coral_block",
+                            "minecraft:bubble_coral_block"
+                        ]
+                    }
+                ]
+            },
+            "allowed_search_condition":
+            {
+                "type": "minecraft:matching_blocks",
+                "blocks":
+                [
+                    "minecraft:air",
+                    "minecraft:water",
+                    "minecraft:bubble_coral_fan",
+                    "minecraft:fire_coral_fan",
+                    "minecraft:horn_coral_fan",
+                    "minecraft:tube_coral_fan",
+                    "minecraft:brain_coral_fan"
+                ]
+            }
+        },
+        {
+            "type": "minecraft:random_offset",
+            "xz_spread": 0,
+            "y_spread": 1
+        },
+        {
+            "type": "minecraft:biome"
+        }
+    ]
+}

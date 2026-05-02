@@ -1,0 +1,8 @@
+[
+  {
+    "matchItems": [
+      "nuclearcraft:tin_block"
+    ],
+    "resultItems": "thermal:tin_block"
+  }
+]

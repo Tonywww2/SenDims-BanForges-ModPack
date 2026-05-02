@@ -1,0 +1,14 @@
+[
+  {
+    "matchItems": [
+      "thermal:tin_ore",
+      "nuclearcraft:tin_ore",
+      "thermal_and_space:glacio_tin_ore",
+      "thermal_and_space:mars_tin_ore",
+      "thermal_and_space:mercury_tin_ore",
+      "thermal_and_space:moon_tin_ore",
+      "thermal_and_space:venus_tin_ore"
+    ],
+    "resultItems": "thermal:deepslate_tin_ore"
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "matchItems": [
+      "minecraft:gold_ore",
+      "minecraft:nether_gold_ore",
+      "ad_astra:venus_gold_ore",
+      "undergarden:depthrock_gold_ore"
+    ],
+    "resultItems": "minecraft:deepslate_gold_ore"
+  }
+]

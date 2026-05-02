@@ -1,0 +1,8 @@
+[
+  {
+    "matchItems": [
+      "nuclearcraft:lithium_ore"
+    ],
+    "resultItems": "nuclearcraft:lithium_deepslate_ore"
+  }
+]

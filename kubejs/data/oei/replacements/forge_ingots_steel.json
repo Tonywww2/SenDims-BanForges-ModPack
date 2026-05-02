@@ -1,0 +1,9 @@
+[
+  {
+    "matchItems": [
+      "ad_astra:steel_ingot",
+      "nuclearcraft:steel_ingot"
+    ],
+    "resultItems": "thermal:steel_ingot"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "matchItems": [
+      "thermal:lead_ore",
+      "nuclearcraft:lead_ore",
+      "thermal_and_space:glacio_lead_ore",
+      "thermal_and_space:mars_lead_ore",
+      "thermal_and_space:mercury_lead_ore",
+      "thermal_and_space:moon_lead_ore",
+      "thermal_and_space:venus_lead_ore"
+    ],
+    "resultItems": "thermal:deepslate_lead_ore"
+  }
+]

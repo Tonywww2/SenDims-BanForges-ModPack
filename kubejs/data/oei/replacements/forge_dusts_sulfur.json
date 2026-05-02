@@ -1,0 +1,8 @@
+[
+  {
+    "matchItems": [
+      "nuclearcraft:sulfur_dust"
+    ],
+    "resultItems": "thermal:sulfur_dust"
+  }
+]

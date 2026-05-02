@@ -1,0 +1,9 @@
+[
+  {
+    "matchItems": [
+      "dustandash:lead_ingot",
+      "nuclearcraft:lead_ingot"
+    ],
+    "resultItems": "thermal:lead_ingot"
+  }
+]

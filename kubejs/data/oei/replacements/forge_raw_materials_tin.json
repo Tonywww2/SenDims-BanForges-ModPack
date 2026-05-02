@@ -1,0 +1,8 @@
+[
+  {
+    "matchItems": [
+      "nuclearcraft:tin_chunk"
+    ],
+    "resultItems": "thermal:raw_tin"
+  }
+]

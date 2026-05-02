@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "sdbf:illager_galley",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 48333112,
+    "spacing": 40,
+    "separation": 20,
+    "type": "minecraft:random_spread"
+  }
+}

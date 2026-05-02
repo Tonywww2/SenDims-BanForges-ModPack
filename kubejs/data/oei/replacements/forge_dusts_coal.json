@@ -1,0 +1,8 @@
+[
+  {
+    "matchItems": [
+      "nuclearcraft:coal_dust"
+    ],
+    "resultItems": "enderio:powdered_coal"
+  }
+]

@@ -1,0 +1,8 @@
+[
+  {
+    "matchItems": [
+      "nuclearcraft:electrum_block"
+    ],
+    "resultItems": "thermal:electrum_block"
+  }
+]

@@ -1,0 +1,9 @@
+[
+  {
+    "matchItems": [
+      "dustandash:tin_ingot",
+      "nuclearcraft:tin_ingot"
+    ],
+    "resultItems": "thermal:tin_ingot"
+  }
+]

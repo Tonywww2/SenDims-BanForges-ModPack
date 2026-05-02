@@ -185,7 +185,7 @@
         "vein_toggle": 0
     },
     "ore_veins_enabled": true,
-    "sea_level": 160,
+    "sea_level": 140,
     "spawn_target": [
         {
             "continentalness": [
@@ -291,6 +291,88 @@
             {
                 "type": "minecraft:condition",
                 "if_true": {
+                    "type": "minecraft:y_above",
+                    "add_stone_depth": false,
+                    "anchor": {
+                        "absolute": 160
+                    },
+                    "surface_depth_multiplier": 1
+                },
+                "then_run": {
+                    "type": "minecraft:condition",
+                    "if_true": {
+                        "type": "minecraft:not",
+                        "invert": {
+                            "type": "minecraft:y_above",
+                            "anchor": {
+                                "absolute": 230
+                            },
+                            "surface_depth_multiplier": 1,
+                            "add_stone_depth": false
+                        }
+                    },
+                    "then_run": {
+                        "type": "minecraft:condition",
+                        "if_true": {
+                            "type": "minecraft:stone_depth",
+                            "offset": 0,
+                            "surface_type": "floor",
+                            "add_surface_depth": false,
+                            "secondary_depth_range": 0
+                        },
+                        "then_run": {
+                            "type": "minecraft:block",
+                            "result_state": {
+                                "Name": "integrateddynamics:menril_wood"
+                            }
+                        }
+                    }
+                }
+            },
+                        {
+                "type": "minecraft:condition",
+                "if_true": {
+                    "type": "minecraft:y_above",
+                    "add_stone_depth": false,
+                    "anchor": {
+                        "absolute": 190
+                    },
+                    "surface_depth_multiplier": 1
+                },
+                "then_run": {
+                    "type": "minecraft:condition",
+                    "if_true": {
+                        "type": "minecraft:not",
+                        "invert": {
+                            "type": "minecraft:y_above",
+                            "anchor": {
+                                "absolute": 240
+                            },
+                            "surface_depth_multiplier": 1,
+                            "add_stone_depth": false
+                        }
+                    },
+                    "then_run": {
+                        "type": "minecraft:condition",
+                        "if_true": {
+                            "type": "minecraft:stone_depth",
+                            "offset": 0,
+                            "surface_type": "ceiling",
+                            "add_surface_depth": false,
+                            "secondary_depth_range": 0
+                        },
+                        "then_run": {
+                            "type": "minecraft:block",
+                            "result_state": {
+                                "Name": "integrateddynamics:menril_wood"
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "type": "minecraft:condition",
+                "if_true": {
                     "type": "minecraft:vertical_gradient",
                     "random_name": "menril_log",
                     "true_at_and_below": {
@@ -313,7 +395,7 @@
                     "type": "minecraft:vertical_gradient",
                     "random_name": "menril_log",
                     "true_at_and_below": {
-                        "absolute": 256
+                        "absolute": 236
                     },
                     "false_at_and_above": {
                         "absolute": 320

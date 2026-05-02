@@ -1,9 +1,11 @@
 [
   {
-    "dimension": "minecraft:overworld",
-    "hostile": true,
-    "when": "onjoin",
-    "spawntype": ["natural", "event"],
+    "mod": "terra_entity",
+    "mincount": {
+      "amount": 30,
+      "mod": "terra_entity",
+      "perplayer": true
+    },
     "result": "deny"
   }
 ]

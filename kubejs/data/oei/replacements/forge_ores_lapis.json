@@ -1,0 +1,9 @@
+[
+  {
+    "matchItems": [
+      "minecraft:lapis_ore",
+      "ad_astra:glacio_lapis_ore"
+    ],
+    "resultItems": "minecraft:deepslate_lapis_ore"
+  }
+]

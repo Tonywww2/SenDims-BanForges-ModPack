@@ -1,0 +1,9 @@
+[
+  {
+    "matchItems": [
+      "ad_astra:steel_nugget",
+      "nuclearcraft:steel_nugget"
+    ],
+    "resultItems": "thermal:steel_nugget"
+  }
+]

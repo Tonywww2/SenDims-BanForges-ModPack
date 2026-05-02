@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "sdbf:illager_corsair",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 18311663,
+    "spacing": 40,
+    "separation": 20,
+    "type": "minecraft:random_spread"
+  }
+}

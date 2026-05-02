@@ -1,0 +1,9 @@
+[
+  {
+    "matchItems": [
+      "enderio:powdered_tin",
+      "nuclearcraft:tin_dust"
+    ],
+    "resultItems": "thermal:tin_dust"
+  }
+]
