@@ -1,4 +1,5 @@
 {
+    "minecraft:player_attack": "#FFFFFF",
     "magic": "#8A2BE2",
     "lightningBolt": "#FFFF00",
     "lava": "#8B0000",
@@ -11,5 +12,5 @@
     "sonic_boom": "#27004B",
     "attributeslib:cold_damage": "#00FFFF",
     "attributeslib:fire_damage": "#8B0000",
-    "heal": "#d9ffdd"
+    "heal": "#94ff6e"
 }

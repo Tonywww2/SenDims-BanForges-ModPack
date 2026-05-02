@@ -190,7 +190,7 @@
 						translationKey: ""
 					}
 					"fluxoftetra:fe": {
-						"FOT$energy114": 0
+						energy: 0
 					}
 				}
 				id: "slashbladetetra:slashblade"

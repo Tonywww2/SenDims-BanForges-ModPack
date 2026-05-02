@@ -115,6 +115,16 @@ ServerEvents.highPriorityData(event => {
         .addItemMaterial('minecraft:bone')
         .setRequiredTool("hammer_dig", 1)
         .build();
+
+    tetraMaterialBuilder(event, "leather").setCategory("skin")
+        .setPrimary(2.5).setSecondary(1.5).setTertiary(0.85)
+        .setDurability(200).setIntegrityCost(1).setIntegrityGain(5)
+        .setMagicCapacity(90).setToolLevel(0).setToolEfficiency(0)
+        .setTints("leather_glyph", "leather")
+        .addTexture("crude").addTexture("default")
+        .addItemMaterial('minecraft:leather')
+        .setRequiredTool("cut", 1)
+        .build();
     // obsidian
     tetraMaterialBuilder(event, "obsidian").setCategory("stone")
         .setPrimary(1.7).setSecondary(0.5).setTertiary(0.95)

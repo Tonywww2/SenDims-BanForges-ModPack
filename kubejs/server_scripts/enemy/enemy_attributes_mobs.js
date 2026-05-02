@@ -40,6 +40,12 @@ const mobTypes = new Map([
     ['tofucraft:tofucow', type0],
     ['minecraft:trader_llama', typeA],
     ['minecraft:wandering_trader', typeA],
+    ['twilightforest:squirrel', type0],
+    ['twilightforest:tiny_bird', type0],
+    ['twilightforest:bighorn_sheep', type0],
+    ['twilightforest:deer', type0],
+    ['twilightforest:dwarf_rabbit', type0],
+    ['twilightforest:boar', type0],
 
     ['tofucraft:tofu_gandlem', bossType1],
 
@@ -58,6 +64,7 @@ const mobTypes = new Map([
     ["minecraft:witch", typeA],
     ["minecraft:slime", typeSlime],
     ["quark:forgotten", typeB],
+    ["minecraft:husk", typeA],
 
     ["species:wicked", typeC],
     ["species:cliff_hanger", typeB],
@@ -88,6 +95,7 @@ const mobTypes = new Map([
     ["species:stackatick", typeA],
     ["minecraft:pillager", typeA],
     ["minecraft:vindicator", typeA],
+    ["darkerdepths:body_snatcher", typeB],
 
     ["yungscavebiomes:ice_cube", typeSlime],
     ["terra_entity:spiked_slime", typeSlime],
@@ -154,6 +162,10 @@ const mobTypes = new Map([
     ["aether:zephyr", typeC],
     ["deep_aether:venomite", typeB],
     ["aether_redux:vanilla_swet", typeSlime],
+    ["aether:sheepuff", type0],
+    ["aether:phyg", type0],
+    ["aether:moa", type0],
+    ["deep_aether:aerglow_fish", type0],
 
     ["aether:aerwhale", typeC],
     ["aether:whirlwind", type0],
