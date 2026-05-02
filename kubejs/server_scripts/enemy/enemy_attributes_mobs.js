@@ -8,6 +8,7 @@ const mobTypes = new Map([
     ['productivebees:sweat_bee', type0],
     ['productivebees:digger_bee', type0],
     ['productivebees:mason_bee', type0],
+    ['productivebees:green_carpenter_bee', type0],
 
     ['tofucraft:shudofuspider', typeB],
     ['tofucraft:fukumame_thower', typeA],
@@ -62,6 +63,11 @@ const mobTypes = new Map([
     ["quark:toretoise", typeD],
     ["species:ghoul", typeC],
     ["species:deepfish", type0],
+    ["minecraft:parrot", type0],
+    ["terra_entity:squirrel", type0],
+    ["species:stackatick", typeA],
+    ["minecraft:pillager", typeA],
+    ["minecraft:vindicator", typeA],
 
     ["yungscavebiomes:ice_cube", typeSlime],
     ["terra_entity:spiked_slime", typeSlime],
