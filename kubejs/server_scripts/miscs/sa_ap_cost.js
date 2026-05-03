@@ -7,6 +7,7 @@ SACostMap.set("slashblade:judgement_cut_slash_air", 400);
 SACostMap.set("slashblade:judgement_cut_slash_just", 600);
 
 SACostMap.set("slashblade:heavens_slash_start", 400);
+SACostMap.set("slashblade:wave_edge_vertical", 400);
 
 let defaultCost = 400;
 
@@ -29,7 +30,7 @@ NativeEvents.onEvent($PerformSlashArtEvent, event => {
     }
 
     if (cost == 0) return;
-    
+
     let attributeInstance = entity.getAttribute("slashblade_sendims:ap_reduce_amount");
     if (attributeInstance) {
         cost = Math.max(0, cost - attributeInstance.getValue());
