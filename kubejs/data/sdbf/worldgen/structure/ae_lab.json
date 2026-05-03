@@ -9,7 +9,6 @@
   "start_height": {
     "absolute": 200
   },
-  "project_start_to_heightmap": "WORLD_SURFACE_WG",
   "biomes": [
     "infinity_cave:amethyst_caves",
     "cavernous:crystal_caves",

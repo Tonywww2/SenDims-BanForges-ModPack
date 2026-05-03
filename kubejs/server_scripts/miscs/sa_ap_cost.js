@@ -3,6 +3,7 @@ let SACostMap = new Map();
 SACostMap.set("slashblade:none", 0);
 
 SACostMap.set("slashblade:judgement_cut", 400);
+SACostMap.set("slashblade:judgement_cut_slash_air", 400);
 SACostMap.set("slashblade:judgement_cut_slash_just", 600);
 
 SACostMap.set("slashblade:heavens_slash_start", 400);
@@ -18,11 +19,17 @@ NativeEvents.onEvent($PerformSlashArtEvent, event => {
 
     if (!SACostMap.has(saId)) {
         console.log(`[SlashBlade] Player ${entity.username} is attempting SA [${saId}] without defined cost!`);
-        entity.tell(`[SlashBlade] Player ${entity.username} is attempting SA [${saId}] without defined cost!`);
+        entity.tell(
+            Text.of(`[SlashBlade] Player ${entity.username} is attempting SA [`)
+                .append(Text.of(saId).underlined().clickCopy(saId))
+                .append(Text.of(`] without defined cost!`))
+        );
     } else {
         cost = SACostMap.get(saId);
     }
 
+    if (cost == 0) return;
+    
     let attributeInstance = entity.getAttribute("slashblade_sendims:ap_reduce_amount");
     if (attributeInstance) {
         cost = Math.max(0, cost - attributeInstance.getValue());
