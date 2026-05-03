@@ -6,13 +6,13 @@ holoShowAllRarity = true
 ignoreHoloItem = true
 #修改全息球显示材料行数
 #midify material line in holo
-holoMaterialLine = 2
+holoMaterialLine = 5
 #修改改进间距。
 #Modify Improvement spacing.
 modify_improvement_spacing = 28
 #修改全息球显示模块行数
 #midify module line in holo
-holoModuleLine = 2
+holoModuleLine = 5
 #在材料页面显示sorter和filter的数量
 showFilterAndSorterElements = 10
 #是否启用statbar显示控制
