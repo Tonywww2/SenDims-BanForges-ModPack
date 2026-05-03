@@ -172,6 +172,7 @@ const mobTypes = new Map([
     ["twilightforest:penguin", type0],
     ["deep_aether:quail", type0],
     ["aether:aerbunny", type0],
+    ["aether:flying_cow", type0],
 
     ["aether:aerwhale", typeC],
     ["aether:whirlwind", type0],

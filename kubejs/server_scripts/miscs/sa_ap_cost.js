@@ -1,22 +1,22 @@
 let SACostMap = new Map();
+// id -> 固定值， 百分比
+SACostMap.set("slashblade:none", (0, 0));
 
-SACostMap.set("slashblade:none", 0);
+SACostMap.set("slashblade:judgement_cut", [200, 0.2]);
+SACostMap.set("slashblade:judgement_cut_slash_air", [200, 0.2]);
+SACostMap.set("slashblade:judgement_cut_slash_just", [400, 0.2]);
 
-SACostMap.set("slashblade:judgement_cut", 400);
-SACostMap.set("slashblade:judgement_cut_slash_air", 400);
-SACostMap.set("slashblade:judgement_cut_slash_just", 600);
+SACostMap.set("slashblade:heavens_slash_start", [200, 0.15]);
+SACostMap.set("slashblade:wave_edge_vertical", [200, 0.15]);
 
-SACostMap.set("slashblade:heavens_slash_start", 400);
-SACostMap.set("slashblade:wave_edge_vertical", 400);
-
-let defaultCost = 400;
+let defaultCost = [200, 0.2];
 
 NativeEvents.onEvent($PerformSlashArtEvent, event => {
     let entity = event.getEntityLiving();
     if (!entity.isPlayer()) return;
 
     let saId = String(event.getComboState());
-    let cost = defaultCost;
+    let costs = defaultCost;
 
     if (!SACostMap.has(saId)) {
         console.log(`[SlashBlade] Player ${entity.username} is attempting SA [${saId}] without defined cost!`);
@@ -26,18 +26,18 @@ NativeEvents.onEvent($PerformSlashArtEvent, event => {
                 .append(Text.of(`] without defined cost!`))
         );
     } else {
-        cost = SACostMap.get(saId);
+        costs = SACostMap.get(saId);
     }
 
-    if (cost == 0) return;
+    let cost = costs[0];
+    let cost_persentage = costs[1];
+    if (cost == 0 && cost_persentage == 0) return;
 
     let attributeInstance = entity.getAttribute("slashblade_sendims:ap_reduce_amount");
     if (attributeInstance) {
         cost = Math.max(0, cost - attributeInstance.getValue());
     }
-
-    // console.log(`[SlashBlade] Player ${entity.username} is attempting SA [${saId}] with AP cost: ${cost}`);
-
+    
     let soul = $UmapyoiAPI.getUmaSoul(entity);
     if (!soul || soul.isEmpty()) {
         entity.tell(Text.translatable("text.slashblade_sendims.no_ap"));
@@ -45,9 +45,12 @@ NativeEvents.onEvent($PerformSlashArtEvent, event => {
     }
 
     let currentAP = $UmaSoulUtils.getActionPoint(soul);
-    let hasEnoughAP = currentAP >= cost;
+    let maxAP = $UmaSoulUtils.getMaxActionPoint(soul);
+    let total_cost = cost + (maxAP * cost_persentage);
 
-    if (!hasEnoughAP && cost > 0) {
+    let hasEnoughAP = currentAP >= total_cost;
+
+    if (!hasEnoughAP && total_cost > 0) {
         let mainHandItem = entity.getMainHandItem();
         if (mainHandItem && !mainHandItem.isEmpty()) {
             entity.addItemCooldown(mainHandItem, 20);
@@ -56,7 +59,7 @@ NativeEvents.onEvent($PerformSlashArtEvent, event => {
         event.setCanceled(true);
 
     } else {
-        $UmaSoulUtils.addActionPoint(soul, -cost);
+        $UmaSoulUtils.addActionPoint(soul, -total_cost);
 
     }
 });
