@@ -2,5 +2,6 @@ ForgeEvents.onEvent("net.minecraftforge.event.entity.EntityAttributeModification
     event.add("minecraft:shulker", "minecraft:generic.attack_damage");
     event.add("undergarden:minion", "minecraft:generic.attack_damage");
     event.add("aether:aechor_plant", "minecraft:generic.attack_damage");
+    event.add("aether:zephyr", "minecraft:generic.attack_damage");
 
 })

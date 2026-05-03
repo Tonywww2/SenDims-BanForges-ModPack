@@ -62,6 +62,18 @@ ServerEvents.recipes(event => {
         F: Item.of('patchouli:guide_book', '{"patchouli:book":"last_smith:smith_guide"}').weakNBT()
     }).id('sdbf:principle_of_sword_arts')
 
+    event.shaped('ae2:mysterious_cube', [
+        'DAD',
+        'BEC',
+        'DAD'
+    ], {
+        A: 'ae2:charged_certus_quartz_crystal',
+        B: 'computercraft:computer_normal',
+        C: 'computercraft:disk_drive',
+        D: '#forge:plates/steel',
+        E: '#forge:obsidian'
+    }).id('sdbf:mysterious_cube')
+
     // s3
     // Placbo 硬编码
     event.shaped('apotheosis:hellshelf', [

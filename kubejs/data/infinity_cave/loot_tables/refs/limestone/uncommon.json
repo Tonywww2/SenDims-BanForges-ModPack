@@ -14,7 +14,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{custom_potion_effects:[{id:\"minecraft:resistance\",amplifier:0b,duration:600,show_particles:1b}],CustomPotionColor:12089121}"
+              "tag": "{custom_potion_effects:[{id:\"minecraft:speed\",amplifier:0b,duration:600,show_particles:1b}],CustomPotionColor:12089121}"
             }
           ],
           "conditions": [

@@ -46,6 +46,7 @@ const mobTypes = new Map([
     ['twilightforest:deer', type0],
     ['twilightforest:dwarf_rabbit', type0],
     ['twilightforest:boar', type0],
+    ['ad_astra:lunarian', type0],
 
     ['tofucraft:tofu_gandlem', bossType1],
 
@@ -107,6 +108,7 @@ const mobTypes = new Map([
     ["twilightforest:pinch_beetle", typeA],
     ["twilightforest:blockchain_goblin", typeA],
     ["twilightforest:lower_goblin_knight", typeD],
+    ["twilightforest:upper_goblin_knight", typeB],
     ["twilightforest:skeleton_druid", typeB],
     ["twilightforest:redcap_sapper", typeA],
     ["twilightforest:redcap", typeA],
@@ -120,6 +122,7 @@ const mobTypes = new Map([
     ["twilightforest:wraith", typeA],
     ["twilightforest:swarm_spider", typeB],
     ["twilightforest:mist_wolf", typeB],
+    ["twilightforest:raven", type0],
 
     ["twilightforest:minotaur", typeAEX2],
     ["twilightforest:maze_slime", typeSlime],
@@ -167,6 +170,8 @@ const mobTypes = new Map([
     ["aether:moa", type0],
     ["deep_aether:aerglow_fish", type0],
     ["twilightforest:penguin", type0],
+    ["deep_aether:quail", type0],
+    ["aether:aerbunny", type0],
 
     ["aether:aerwhale", typeC],
     ["aether:whirlwind", type0],

@@ -37,7 +37,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{custom_potion_effects:[{id:\"minecraft:resistance\",amplifier:2b,duration:450},{id:\"minecraft:jump_boost\",amplifier:5b,duration:450}],CustomPotionColor:6024065}"
+              "tag": "{custom_potion_effects:[{id:\"minecraft:speed\",amplifier:2b,duration:450},{id:\"minecraft:jump_boost\",amplifier:5b,duration:450}],CustomPotionColor:6024065}"
             }
           ]
         },

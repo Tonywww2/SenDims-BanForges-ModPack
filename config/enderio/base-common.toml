@@ -23,8 +23,8 @@
 		minCostPerLevel = 5
 		chanceBase = 0.0
 		chancePerLevel = 0.0
-		rangeBase = 8.0
-		rangePerLevel = 8.0
+		rangeBase = 0.0
+		rangePerLevel = 0.0
 		nonPlayerChance = 0.0
 
 	[enchantments.shimmer]

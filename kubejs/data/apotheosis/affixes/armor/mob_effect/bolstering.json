@@ -19,7 +19,7 @@
 				"step": 20
 			},
 			"amplifier": 0,
-			"cooldown": 260
+			"cooldown": 300
 		},
 		"mythic": {
 			"duration": {
@@ -28,7 +28,7 @@
 				"step": 20
 			},
 			"amplifier": 0,
-			"cooldown": 240
+			"cooldown": 280
 		},
 		"ancient": {
 			"duration": {
@@ -36,8 +36,8 @@
 				"steps": 10,
 				"step": 40
 			},
-			"amplifier": 1,
-			"cooldown": 160
+			"amplifier": 0,
+			"cooldown": 240
 		}
 	},
 	"types": [

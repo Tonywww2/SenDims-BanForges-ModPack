@@ -145,6 +145,8 @@ const toRemoveID = new Set([
     "pseudoedge_break_dawn:blade_netherite",
     "pseudoedge_break_dawn:blade_stone",
     "pseudoedge_break_dawn:blade_wood",
+    "slashblade:wakizashi",
+    "pseudoedge_break_dawn:whitesword",
 
     // 临时
     // "apotheosis:hellshelf",

@@ -1,0 +1,18 @@
+{
+    "creativeGroup": "sjap_adder:sjap_adder_slashblade_tf",
+    "name": "sjap_adder:rodai_green",
+    "properties":
+    {
+        "attack_base": 7.0,
+        "max_damage": 120,
+        "slash_art": "slashblade:drive_vertical",
+        "special_effects":
+        []
+    },
+    "render":
+    {
+        "carry_type": "default",
+        "summon_sword_color": 10942126,
+        "texture": "sjap_adder:model/rodai/rodai_green.png"
+    }
+}
