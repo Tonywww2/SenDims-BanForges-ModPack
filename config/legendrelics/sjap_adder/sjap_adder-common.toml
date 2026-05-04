@@ -106,7 +106,7 @@ forLifeDiveComboRatio = 0.1
 #The Combo Ratio of IllusionDrive
 #噬咬幻影刃的刀光倍率
 #Range: 0.0 ~ 100.0
-illusionDriveComboRatio = 0.1
+illusionDriveComboRatio = 0.04
 #The Combo Ratio of RainbowDrive
 #虹刃斩月的刀光倍率
 #Range: 0.0 ~ 100.0

@@ -33,6 +33,8 @@ const toRemoveID = new Set([
     "slashblade_useful_addon:proud_soul_by_proud_soul_log",
     "enderio:smelting/slashblade_useful_addon/proud_soul_by_proud_soul_log",
     "easy_villagers:auto_trader",
+    "integrateddynamics:squeezer/base/liquid_chorus_proto",
+    "integrateddynamics:mechanical_squeezer/base/liquid_chorus_proto",
 
     "sophisticatedbackpacks:backpack",
     "sophisticatedbackpacks:iron_backpack",

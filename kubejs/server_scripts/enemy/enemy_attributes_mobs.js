@@ -143,7 +143,7 @@ const mobTypes = new Map([
 
     ["twilightforest:naga", bossType1],
     ["twilightforest:lich", bossType2],
-    ["twilightforest:knight_phantom", bossType1],
+    ["twilightforest:knight_phantom", bossType1W],
     ["twilightforest:ur_ghast", bossType1],
     ["twilightforest:minoshroom", bossType1EX1],
     ["twilightforest:hydra", bossType2EX2],

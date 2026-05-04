@@ -32,8 +32,7 @@ ServerEvents.recipes(event => {
     ], {
         A: '#forge:storage_blocks/desh',
         B: 'ad_astra:steel_engine',
-        C: 'ad_astra:fan',
-        E: '#ad_astra:desh_plates'
+        C: 'ad_astra:fan'
     }).id('sdbf:desh_engine_1_s2')
 
     event.shaped('ad_astra:desh_engine', [
