@@ -148,6 +148,7 @@ const toRemoveID = new Set([
     "slashblade:wakizashi",
     "pseudoedge_break_dawn:whitesword",
     "sjap_adder:kamuy_death",
+    "sjap_adder:kamuyex_dark",
 
     // 临时
     // "apotheosis:hellshelf",

@@ -26,9 +26,9 @@ ServerEvents.recipes(event => {
     }).id('sdbf:bedrock_breaker_s2')
 
     event.shaped('ad_astra:desh_engine', [
-        'AEA',
+        'AAA',
         'ABA',
-        ' C '
+        'ACA'
     ], {
         A: '#forge:storage_blocks/desh',
         B: 'ad_astra:steel_engine',
