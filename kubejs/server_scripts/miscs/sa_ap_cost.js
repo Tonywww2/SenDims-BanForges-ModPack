@@ -1,13 +1,16 @@
-let SACostMap = new Map();
+let SACostMap = Utils.newMap();
 // id -> 固定值， 百分比
-SACostMap.set("slashblade:none", (0, 0));
+SACostMap.put("slashblade:none", [0, 0]);
 
-SACostMap.set("slashblade:judgement_cut", [200, 0.2]);
-SACostMap.set("slashblade:judgement_cut_slash_air", [200, 0.2]);
-SACostMap.set("slashblade:judgement_cut_slash_just", [400, 0.2]);
+SACostMap.put("slashblade:judgement_cut", [200, 0.2]);
+SACostMap.put("slashblade:judgement_cut_slash_air", [200, 0.2]);
+SACostMap.put("slashblade:judgement_cut_slash_just", [400, 0.2]);
 
-SACostMap.set("slashblade:heavens_slash_start", [200, 0.15]);
-SACostMap.set("slashblade:wave_edge_vertical", [200, 0.15]);
+SACostMap.put("slashblade:heavens_slash_start", [200, 0.15]);
+
+SACostMap.put("slashblade:wave_edge_vertical", [200, 0.1]);
+
+SACostMap.put("sjap_adder:illusion_drive", [400, 0.2]);
 
 let defaultCost = [200, 0.2];
 
@@ -18,7 +21,7 @@ NativeEvents.onEvent($PerformSlashArtEvent, event => {
     let saId = String(event.getComboState());
     let costs = defaultCost;
 
-    if (!SACostMap.has(saId)) {
+    if (!SACostMap.containsKey(saId)) {
         console.log(`[SlashBlade] Player ${entity.username} is attempting SA [${saId}] without defined cost!`);
         entity.tell(
             Text.of(`[SlashBlade] Player ${entity.username} is attempting SA [`)
@@ -59,6 +62,7 @@ NativeEvents.onEvent($PerformSlashArtEvent, event => {
         event.setCanceled(true);
 
     } else {
+        // entity.tell(total_cost)
         $UmaSoulUtils.addActionPoint(soul, -total_cost);
 
     }

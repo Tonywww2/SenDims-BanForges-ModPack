@@ -1,5 +1,5 @@
-let bbAllowDims = new Map();
-bbAllowDims.set("ad_astra:moon", "minecraft:the_nether");
+let bbAllowDims = Utils.newMap();
+bbAllowDims.put("ad_astra:moon", "minecraft:the_nether");
 // bbAllowDims.add("minecraft:the_nether", "ad_astra:moon");
 
 const moonToNetherKey = "sbdf.moon_to_nether";
@@ -7,7 +7,7 @@ const moonToNetherKey = "sbdf.moon_to_nether";
 BlockEvents.rightClicked("minecraft:bedrock", event => {
     if (event.item == "kubejs:bedrock_breaker") {
         let fromDim = String(event.getLevel().getDimension().toString());
-        if (bbAllowDims.has(fromDim)) {
+        if (bbAllowDims.containsKey(fromDim)) {
             // event.getLevel().removeBlock(event.block.getPos(), true);
             // event.getServer().getAllLevels()
             //     .forEach((lev) => {

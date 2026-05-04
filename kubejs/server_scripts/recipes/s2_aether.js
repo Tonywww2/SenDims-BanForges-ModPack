@@ -129,7 +129,7 @@ ServerEvents.recipes(event => {
         "BDB",
         "GBF"
     ], {
-        "A": '#c:dyed/blue',
+        "A": "minecraft:blue_dye",
         "B": 'deep_aether:metal_mixture',
         "C": 'framedblocks:framed_blueprint',
         "F": 'quark:light_blue_framed_glass',
@@ -151,7 +151,7 @@ ServerEvents.recipes(event => {
                 .build()
         )
     }, "slashblade:egg_lan")
-        .id("kubejs:slashblade/egg_lan")
+        .id("sdbf:egg_lan_s2")
 
     event.custom({
         "type": "slashblade:slashblade_smithing",

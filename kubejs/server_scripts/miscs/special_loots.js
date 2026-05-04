@@ -18,7 +18,7 @@ LootJS.modifiers(event => {
 
     event.addEntityLootModifier("twilightforest:lich")
         .addLoot("minecraft:cherry_sapling")
-        .randomChance(0.5)
+
 
     event.addEntityLootModifier([
         'terra_entity:pixie',

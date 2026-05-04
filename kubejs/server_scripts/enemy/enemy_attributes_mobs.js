@@ -153,6 +153,7 @@ const mobTypes = new Map([
     ["ad_astra:star_crawler", typeA],
     ["ad_astra:corrupted_lunarian", typeC],
     ["minecraft:stray", typeC],
+    ["minecraft:skeleton_horse", typeA],
 
     ["aether:aechor_plant", typeB],
     ["aether:blue_swet", typeSlime],
@@ -286,6 +287,8 @@ const mobTypes = new Map([
     ["terra_entity:the_hungry", typeB],
     ["terra_entity:hill_hungry", typeB],
     ["terra_entity:leech", typeC],
+    ["quark:wraith", typeA],
+    ["twilightforest:mosquito_swarm", typeB],
 
     ["cataclysm:netherite_monstrosity", bossType2],
 

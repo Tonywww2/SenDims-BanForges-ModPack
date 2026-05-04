@@ -36,7 +36,7 @@ const RETURN_PORTAL_PATTERN = [
     ]
 ];
 
-const registeredStructures = new Map();
+const registeredStructures = Utils.newMap();
 
 /**
  * boss召唤结构
@@ -216,7 +216,7 @@ const registerPortal = (config) => {
  */
 const registerStructure = (config) => {
     let structure = createBossStructure(config);
-    registeredStructures.set(config.activateItem, structure);
+    registeredStructures.put(config.activateItem, structure);
     return structure;
 }
 
@@ -227,7 +227,7 @@ BlockEvents.rightClicked(event => {
 
     let centerPos = event.block.pos;
 
-    if (registeredStructures.has(String(event.item.getId()))) {
+    if (registeredStructures.containsKey(String(event.item.getId()))) {
         let structure = registeredStructures.get(String(event.item.getId()));
         if (block.id === structure.blockMapping['B']) {
             if (structure.checkStructure(level, centerPos)) {

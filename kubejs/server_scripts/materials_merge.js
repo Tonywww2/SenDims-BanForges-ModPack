@@ -1,7 +1,7 @@
-global.materialReplaceRules = new Map();
+global.materialReplaceRules = Utils.newMap();
 
 // 箭矢 
-global.materialReplaceRules.set('minecraft:arrow', {
+global.materialReplaceRules.put('minecraft:arrow', {
     exchange: false,
     list: [
         'minecraft:spectral_arrow',
@@ -12,14 +12,14 @@ global.materialReplaceRules.set('minecraft:arrow', {
     ]
 });
 
-global.materialReplaceRules.set('minecraft:book', {
+global.materialReplaceRules.put('minecraft:book', {
     exchange: false,
     list: [
         'minecraft:enchanted_book'
     ]
 });
 
-global.materialReplaceRules.set('umapyoi:speed_low_item', {
+global.materialReplaceRules.put('umapyoi:speed_low_item', {
     exchange: true,
     list: [
         'umapyoi:stamina_low_item',
@@ -29,7 +29,7 @@ global.materialReplaceRules.set('umapyoi:speed_low_item', {
     ]
 });
 
-global.materialReplaceRules.set('umapyoi:speed_mid_item', {
+global.materialReplaceRules.put('umapyoi:speed_mid_item', {
     exchange: true,
     list: [
         'umapyoi:stamina_mid_item',
@@ -40,7 +40,7 @@ global.materialReplaceRules.set('umapyoi:speed_mid_item', {
     ]
 });
 
-global.materialReplaceRules.set('umapyoi:speed_high_item', {
+global.materialReplaceRules.put('umapyoi:speed_high_item', {
     exchange: true,
     list: [
         'umapyoi:stamina_high_item',
@@ -50,14 +50,14 @@ global.materialReplaceRules.set('umapyoi:speed_high_item', {
     ]
 });
 
-global.materialReplaceRules.set('minecraft:potato', {
+global.materialReplaceRules.put('minecraft:potato', {
     exchange: false,
     list: [
         '#c:crops'
     ]
 });
 
-global.materialReplaceRules.set('minecraft:cobblestone', {
+global.materialReplaceRules.put('minecraft:cobblestone', {
     exchange: true,
     list: [
         'minecraft:granite',
@@ -84,7 +84,7 @@ global.materialReplaceRules.set('minecraft:cobblestone', {
     ]
 });
 
-global.materialReplaceRules.set('minecraft:iron_ingot', {
+global.materialReplaceRules.put('minecraft:iron_ingot', {
     exchange: false,
     list: [
         'aether:iron_ring',
@@ -100,42 +100,42 @@ global.materialReplaceRules.set('minecraft:iron_ingot', {
     ]
 });
 
-global.materialReplaceRules.set('minecraft:gold_ingot', {
+global.materialReplaceRules.put('minecraft:gold_ingot', {
     exchange: false,
     list: [
         'aether:golden_ring'
     ]
 });
 
-global.materialReplaceRules.set('aether:zanite_gemstone', {
+global.materialReplaceRules.put('aether:zanite_gemstone', {
     exchange: false,
     list: [
         'aether:zanite_ring'
     ]
 });
 
-global.materialReplaceRules.set('deep_aether:skyjade', {
+global.materialReplaceRules.put('deep_aether:skyjade', {
     exchange: false,
     list: [
         'deep_aether:skyjade_ring'
     ]
 });
 
-global.materialReplaceRules.set('aether_redux:gravitite_ingot', {
+global.materialReplaceRules.put('aether_redux:gravitite_ingot', {
     exchange: false,
     list: [
         'deep_aether:gravitite_ring'
     ]
 });
 
-global.materialReplaceRules.set('deep_aether:stratus_ingot', {
+global.materialReplaceRules.put('deep_aether:stratus_ingot', {
     exchange: false,
     list: [
         'deep_aether:stratus_ring'
     ]
 });
 
-global.materialReplaceRules.set('aether:ambrosium_shard', {
+global.materialReplaceRules.put('aether:ambrosium_shard', {
     exchange: false,
     list: [
         'aether_redux:enchanted_ring'
@@ -194,7 +194,7 @@ LootJS.modifiers((event) => {
     let fishingModifier = event.addLootTypeModifier(LootType.FISHING);
     let chestModifier = event.addLootTypeModifier(LootType.CHEST);
 
-    for (const to of global.materialReplaceRules.keys()) {
+    for (const to of global.materialReplaceRules.keySet()) {
         global.materialReplaceRules.get(to).list.forEach(from => {
             entityModifier.replaceLoot(from, to, true);
             blockModifier.replaceLoot(from, to, true);
@@ -212,7 +212,7 @@ LootJS.modifiers((event) => {
 });
 
 ServerEvents.tags("item", event => {
-    global.materialReplaceRules.forEach((value, key) => {
+    global.materialReplaceRules.forEach((key, value) => {
         const id = "sdbf:" + key.split(":")[1] + "_unified";
         event.add(id, value.list);
         // console.log(id);
@@ -222,7 +222,7 @@ ServerEvents.tags("item", event => {
 })
 
 ServerEvents.recipes(event => {
-    global.materialReplaceRules.forEach((val, key) => {
+    global.materialReplaceRules.forEach((key, val) => {
         let keyName = key.split(":")[1] + "_to_";
         if (val.exchange) {
             val.list.forEach(element => {

@@ -1,13 +1,13 @@
 const $BloodJade = Java.loadClass("com.tonywww.slashblade_sendims.items.BloodJade");
 
-const bossDropReplace = new Map();
+const bossDropReplace = Utils.newMap();
 
-bossDropReplace.set("apotheosis:common", '3x apotheosis:common_material');
-bossDropReplace.set("apotheosis:uncommon", '3x apotheosis:uncommon_material');
-bossDropReplace.set("apotheosis:rare", '2x apotheosis:rare_material');
-bossDropReplace.set("apotheosis:epic", '2x apotheosis:epic_material');
-bossDropReplace.set("apotheosis:mythic", 'apotheosis:mythic_material');
-bossDropReplace.set("apotheosis:ancient", '2x apotheosis:mythic_material');
+bossDropReplace.put("apotheosis:common", '3x apotheosis:common_material');
+bossDropReplace.put("apotheosis:uncommon", '3x apotheosis:uncommon_material');
+bossDropReplace.put("apotheosis:rare", '2x apotheosis:rare_material');
+bossDropReplace.put("apotheosis:epic", '2x apotheosis:epic_material');
+bossDropReplace.put("apotheosis:mythic", 'apotheosis:mythic_material');
+bossDropReplace.put("apotheosis:ancient", '2x apotheosis:mythic_material');
 
 const jadeMap = {
     "apotheosis:common": 10,
