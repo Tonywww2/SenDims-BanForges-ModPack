@@ -214,7 +214,7 @@ const bossTypeHydra = deriveTemplate(typeAEX2,
  */
 const bossTypeAlphaYeti = deriveTemplate(typeAEX2,
     true,
-    [0.8, 7, 1, 1],
+    [0.7, 3, 0.4, 1],
     [0, 0, 0, 20]
 );
 

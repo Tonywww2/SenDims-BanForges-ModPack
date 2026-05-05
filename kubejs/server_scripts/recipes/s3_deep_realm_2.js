@@ -63,7 +63,7 @@ ServerEvents.recipes(event => {
         "E": 'kubejs:gamma_dust',
         "B": "minecraft:cobblestone",
         "D": SlashBladeIngredient.of(
-            SlashBladeRequestDefinition.newInstance().name("slashblade:slashblade")
+            SlashBladeRequestDefinition.newInstance()
                 .killCount(7)      // 杀敌数 / Kill count
                 .proudSoul(7)      // 荣耀魂 / ProudSoul
                 .refineCount(0)    // 锻造数 / Refine count
@@ -97,7 +97,7 @@ ServerEvents.recipes(event => {
     ], {
         "B": "slashblade:proudsoul_ingot",
         "D": SlashBladeIngredient.of(
-            SlashBladeRequestDefinition.newInstance().name("slashblade:slashblade")
+            SlashBladeRequestDefinition.newInstance()
                 .killCount(7)      // 杀敌数 / Kill count
                 .proudSoul(7)      // 荣耀魂 / ProudSoul
                 .refineCount(0)    // 锻造数 / Refine count

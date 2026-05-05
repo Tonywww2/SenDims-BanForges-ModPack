@@ -2,7 +2,7 @@ cantWrapperItems = []
 
 [Schematic]
 	#一次最多掉落的附魔耀魂数量
-	maxEnchantedSoulDrop = 1
+	maxEnchantedSoulDrop = 16
 	#一个附魔耀魂所需杀敌数的量
 	enchantedSoulDropNeeded = 25
 	#一次最多掉落的普通耀魂数量

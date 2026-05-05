@@ -43,7 +43,7 @@ ServerEvents.highPriorityData(event => {
         .setDurability(200).setIntegrityCost(5).setIntegrityGain(4)
         .setMagicCapacity(100).setToolLevel(2).setToolEfficiency(6)
         .addAttributes("minecraft:generic.armor_toughness", 0.75)
-        .setTints("1abc9c", "d1f2eb") 
+        .setTints("25faf3", "428dc7") 
         .addTexture("shiny").addTexture("crude")
         .addItemMaterial('integrateddynamics:crystalized_menril_chunk')
         .setRequiredTool("hammer_dig", 1)

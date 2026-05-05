@@ -114,4 +114,14 @@ ServerEvents.recipes(event => {
         'kubejs:ml_computing_ingot'
     );
 
+    event.replaceInput({ id: 'rehooked:blaze_hook' },
+        "minecraft:glowstone_dust",
+        "slashblade:proudsoul_crystal"
+    );
+
+    event.replaceInput({ id: 'rehooked:ender_hook' },
+        "minecraft:ender_pearl",
+        "slashblade:proudsoul_crystal"
+    );
+
 })

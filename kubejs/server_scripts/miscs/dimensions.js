@@ -72,38 +72,38 @@ NativeEvents.onEvent($PortalSpawnEvent, event => {
     }
 })
 
-// BlockEvents.rightClicked(event => {
-//     let { player, level, block, item } = event;
-//     let dimension = level.dimension.toString();
-//     if (item != 'undergarden:catalyst') return;
+BlockEvents.rightClicked(event => {
+    let { player, level, block, item } = event;
+    let dimension = level.dimension.toString();
+    if (item != 'undergarden:catalyst') return;
 
-//     console.log(`[Undergarden Portal] Catalyst used at ${block.pos} in ${dimension}`);
+    console.log(`[Undergarden Portal] Catalyst used at ${block.pos} in ${dimension}`);
 
-//     if (dimension == 'undergarden:undergarden' || dimension == 'minecraft:overworld') {
-//         let clickedPos = block.pos;
-//         let portalBlock = $UGBlocks.UNDERGARDEN_PORTAL.get();
+    if (dimension == 'undergarden:undergarden' || dimension == 'minecraft:overworld') {
+        let clickedPos = block.pos;
+        let portalBlock = $UGBlocks.UNDERGARDEN_PORTAL.get();
 
-//         let verticalDirections = [Direction.UP, Direction.DOWN];
+        let verticalDirections = [Direction.UP, Direction.DOWN];
 
-//         for (let dir of verticalDirections) {
-//             // console.log(`[Undergarden Portal] Checking direction: ${dir}`);
-//             let framePos = clickedPos.relative(dir);
+        for (let dir of verticalDirections) {
+            // console.log(`[Undergarden Portal] Checking direction: ${dir}`);
+            let framePos = clickedPos.relative(dir);
             
-//             let size = portalBlock.isPortal(level, framePos);
-//             // console.log(`[Undergarden Portal] Dimension check, portal size: ${size != null ? 'valid' : 'null'}`);
+            let size = portalBlock.isPortal(level, framePos);
+            // console.log(`[Undergarden Portal] Dimension check, portal size: ${size != null ? 'valid' : 'null'}`);
             
-//             // if (size != null && !portalBlock.isPortalSpawnCanceled(level, framePos, size)) {
-//             if (size != null) {
-//                 // console.log(`[Undergarden Portal] Spawning portal blocks at ${framePos}`);
-//                 size.createPortalBlocks();
-//                 level.playSound(player, framePos, $UGSoundEvents.UNDERGARDEN_PORTAL_ACTIVATE.get(), "blocks", 1.0, 1.0);
-//                 event.success(); 
-//                 return;
-//             } else {
-//                 // console.log(`[Undergarden Portal] Portal fails to spawn at direction: ${dir}`);
-//                 event.cancel();
-//                 return; 
-//             }
-//         }
-//     }
-// });
+            // if (size != null && !portalBlock.isPortalSpawnCanceled(level, framePos, size)) {
+            if (size != null) {
+                // console.log(`[Undergarden Portal] Spawning portal blocks at ${framePos}`);
+                size.createPortalBlocks();
+                level.playSound(player, framePos, $UGSoundEvents.UNDERGARDEN_PORTAL_ACTIVATE.get(), "blocks", 1.0, 1.0);
+                event.success(); 
+                return;
+            } else {
+                // console.log(`[Undergarden Portal] Portal fails to spawn at direction: ${dir}`);
+                event.cancel();
+                return; 
+            }
+        }
+    }
+});

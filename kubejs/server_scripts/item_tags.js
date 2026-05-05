@@ -40,12 +40,12 @@ ServerEvents.tags("item", event => {
     )
     // 3-4
     event.add('slashblade_sendims:drc_rank_material_4',
-        
+
 
     )
     // 4-5
     event.add('slashblade_sendims:drc_rank_material_5',
-        
+
 
     )
 
@@ -54,26 +54,22 @@ ServerEvents.tags("item", event => {
         '#forge:ingots/desh',               // 戴斯
         '#forge:gems/diamond',              // 钻石
         '#forge:rods/blaze',                // 烈焰棒
-        'twilightforest:raw_meef',          // 牛头人肉 (生)
-        'twilightforest:cooked_meef',       // 牛头人肉排 (熟)
-        'cataclysm:ancient_metal_nugget',   // 远古金属粒
         'ae2:calculation_processor',        // 运算处理器
-        "",                   // 天晶混合
-        'twilightforest:carminite'          // 砷铅铁 (砷铅铁矿石)
+        'deep_aether:metal_mixture',                   // 天晶混合
     ])
     event.add("slashblade_sendims:drc_damage_material_0", [
-        '#forge:ingots/gold',             // 金
         '#forge:gems/ambrosium',          // 神能晶
-        '#forge:ingots/ostrum',           // 紫金
-        '#forge:storage_blocks/sulfur',   // 硫磺块
         'yungscavebiomes:rare_ice',       // 魔幻冰
         '#forge:ingots/ironwood',         // 铁木锭
         'minecraft:ghast_tear',           // 恶魂泪
-        'twilightforest:arctic_fur'       // 极地毛坯
+        "minecraft:wither_skeleton_skull",          // 凋零头
     ])
 
     // 阶段1
     event.add("slashblade_sendims:drc_health_material_1", [
+        "minecraft:netherite_ingot",                // 下界合金锭
+        'ad_astra:cryo_freezer',
+        'twilightforest:alpha_yeti_fur',
         "undergarden:utherium_crystal",                         // 御腐水晶
         "undergarden:cloggrum_ingot",                           // 厄瑟锭
         "enderio:double_layer_capacitor",                       // 双层电容
@@ -82,46 +78,48 @@ ServerEvents.tags("item", event => {
         "undergarden:froststeel_ingot",                         // 霜钢
         "spartanshields:ingot_enderium",                        // 末影锭
         "cyclic:sprout_seed",                                   // 魔豆
-        "kubejs:mercury_refractory_structural_component",       // 墨丘利组件
-        "kubejs:menril-silicon_sic_sic_cmc_ingot"               // menril-silicon_sic_sic_cmc_ingot
+
     ])
     event.add("slashblade_sendims:drc_damage_material_1", [
+        'twilightforest:carminite',          // 砷铅铁 (砷铅铁矿石)
         "midnight:corrupted_pearl",                 // 腐化珍珠
         "midnight:nagrilite_ingot",                 // 夜冥锭
-        "midnight:bloomcrystal",                    // 紫菘结晶
         "kubejs:mysterious_alkali_crystal",         // 神秘碱晶
         "#forge:ingots/calorite",                   // 耐热金属
         "midnight:dark_pearl",                      // 黑暗珍珠
         "midnight:virilux",                         // 幽光
-        "minecraft:netherite_scrap",                // 下界合金碎片
-        "minecraft:wither_skeleton_skull",          // 凋零头
-        "cataclysm:ancient_metal_ingot"             // 远古金属锭
-    ])
+        "forge:ingots/ostrum"
+      ])
 
     // 阶段2
     event.add("slashblade_sendims:drc_health_material_2", [
         "nuclearcraft:magnesium_ingot",                 // 镁锭
         "kubejs:bizarre_matter_dust",                   // 奇异物质尘
         "the_bumblezone:redstone_honey_web",            // 红石蜜蜂网
-        "nuclearcraft:empty_sink",                      // 空散热器
+        "nuclearcraft:empty_heat_sink",                      // 空散热器
         "enderio:end_steel_ingot",                      // 末地钢
         "kubejs:delta_dust",                            // 德尔塔尘
-        "kubejs:multifaceted_ambrosia",                 // 多面蜜酒
-        "undergarden:forgotten_ingot"                   // 遗忆锭
+        "undergarden:forgotten_ingot",                   // 遗忆锭
+        "kubejs:mercury_refractory_structural_component",       // 墨丘利组件
+        "kubejs:menril-silicon_sic_sic_cmc_ingot"               // menril-silicon_sic_sic_cmc_ingot
     ])
     event.add("slashblade_sendims:drc_damage_material_2", [
+        "slashblade:proudsoul_sphere",
+        "cataclysm:ancient_metal_ingot",             // 远古金属锭
         "nuclearcraft:thorium_ingot",              // 钍锭
         "nuclearcraft:lithium_ingot",              // 锂锭
         "undergarden:regalium_crystal",            // 贵豪
         "integrateddynamics:logic_director",       // 逻辑导向
-        "kubejs:alpha_dust",                       // alpha
+
     ])
 
     // 阶段3
     event.add("slashblade_sendims:drc_health_material_3", [
+        "kubejs:multifaceted_ambrosia",                 // 多面蜜酒
         "kubejs:ml_computing_ingot",               // ML计算锭
         "kubejs:chaotic_truth",                    // 混沌真理
-        "kubejs:galatic_cycle_component"           // 星空循环组件
+        "kubejs:galatic_cycle_component",           // 星空循环组件
+        "kubejs:alpha_dust",                       // alpha
     ])
     event.add("slashblade_sendims:drc_damage_material_3", [
         "cataclysm:essence_of_the_storm",          // 风暴精华

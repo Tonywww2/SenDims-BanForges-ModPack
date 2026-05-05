@@ -84,7 +84,7 @@ ServerEvents.recipes(event => {
         "B": "minecraft:nether_brick",
         "C": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
-                .name("slashblade:slashblade")
+
                 .killCount(100)
                 .proudSoul(20000)
                 .refineCount(10)

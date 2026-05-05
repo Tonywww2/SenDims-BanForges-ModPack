@@ -132,7 +132,7 @@ ServerEvents.recipes(event => {
         "F": "minecraft:obsidian",
         "C": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
-                .name("pseudoedge_break_dawn:xblades") // 要求：X-Blades
+                .name("pseudoedge_break_dawn:blackpixie") // 要求：X-Blades
                 .killCount(100)                       // 要求：100 击杀 (Kill Count)
                 .proudSoul(20000)                      // 要求：20000 耀魂 (Proud Soul)
                 .refineCount(10)                       // 要求：10 锻造 (Refine Count)

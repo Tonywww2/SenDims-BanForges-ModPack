@@ -35,6 +35,10 @@ const toRemoveID = new Set([
     "easy_villagers:auto_trader",
     "integrateddynamics:squeezer/base/liquid_chorus_proto",
     "integrateddynamics:mechanical_squeezer/base/liquid_chorus_proto",
+    "nuclearcraft:alloy_smelter/thermal_enderium",
+    "regions_unexplored:raw_redstone_block",
+    "botania:alfheim_portal",
+    "botania:terra_plate",
 
     "sophisticatedbackpacks:backpack",
     "sophisticatedbackpacks:iron_backpack",
