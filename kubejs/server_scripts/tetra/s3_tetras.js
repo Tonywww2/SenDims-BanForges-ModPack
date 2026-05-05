@@ -161,7 +161,7 @@ ServerEvents.highPriorityData(event => {
         .setMagicCapacity(100).setToolLevel(2).setToolEfficiency(6)
         .addAttributes("attributeslib:crit_chance", -0.05)
         .addAttributes("**minecraft:generic.attack_damage", 0.05)
-        .setTints("5d6d7e", "34495e") 
+        .setTints("7d765c", "eddb8c") 
         .addTexture("metal").addTexture("crude")
         .addItemMaterial('undergarden:cloggrum_ingot')
         .setRequiredTool("hammer_dig", 1)

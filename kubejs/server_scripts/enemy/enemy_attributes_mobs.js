@@ -178,6 +178,8 @@ const mobTypes = new Map([
     ["aether:aerwhale", typeC],
     ["aether:whirlwind", type0],
     ["aether:evil_whirlwind", type0],
+    ["species:wraptor", type0],
+    ["terra_entity:goblin_tinkerer", type0],
 
     ["aether:valkyrie_queen", bossType1],
     ["aether:slider", bossType2],

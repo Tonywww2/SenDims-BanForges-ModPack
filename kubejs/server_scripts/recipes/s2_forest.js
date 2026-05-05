@@ -1,5 +1,9 @@
 ServerEvents.recipes(event => {
 
+    event.shapeless("5x twilightforest:alpha_yeti_fur", [
+        "twilightforest:alpha_yeti_trophy"
+    ]).id("sdbf:alpha_yeti_fur_s2")
+
     event.recipes.thermal.smelter('twilightforest:carminite', [
         '6x #forge:dusts/arsenic',
         '2x #forge:ingots/lead',

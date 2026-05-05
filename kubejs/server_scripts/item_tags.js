@@ -20,8 +20,7 @@ ServerEvents.tags("item", event => {
     event.add('slashblade_sendims:drc_rank_material_1',
         "cataclysm:witherite_ingot",
         "twilightforest:naga_scale",
-        "deep_aether:skyjade",
-        "ad_astra:solar_panel"
+        "deep_aether:skyjade"
 
     )
     // 1-2
@@ -29,13 +28,14 @@ ServerEvents.tags("item", event => {
         "ad_astra:energizer",
         "twilightforest:giant_obsidian",
         "integrateddynamics:delay",
-        "ad_astra:calorite_sliding_door"
+        "ad_astra:solar_panel"
 
     )
     // 2-3
     event.add('slashblade_sendims:drc_rank_material_3',
         "cataclysm:void_core",
-        "botania:terrasteel_ingot"
+        "botania:terrasteel_ingot",
+        "ad_astra:calorite_sliding_door"
 
     )
     // 3-4
