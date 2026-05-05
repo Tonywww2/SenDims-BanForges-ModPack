@@ -34,6 +34,7 @@ ServerEvents.highPriorityData(event => {
         .addTexture("metal").addTexture("shiny")
         .addItemMaterial('enderio:vibrant_alloy_ingot')
         .setRequiredTool("hammer_dig", 1)
+        .addEffects("fot:fe_store", 24000)
         .build();
 
     // 4. 门瑞欧结晶 (无需修改)
@@ -72,6 +73,7 @@ ServerEvents.highPriorityData(event => {
         .addTexture("metal").addTexture("heavy")
         .setTagMaterial('forge:ingots/calorite')
         .setRequiredTool("hammer_dig", 1)
+        .addEffects("fot:fe_store", 24000)
         .build();
 
     // 7. 水星石 (新加)
@@ -254,6 +256,7 @@ ServerEvents.highPriorityData(event => {
         .addTexture("metal").addTexture("shiny")
         .addItemMaterial('kubejs:coil_of_sorrow')
         .setRequiredTool("hammer_dig", 1)
+        .addEffects("fot:fe_store", 24000)
         .build();
 
     // 21. Xenorium 298 (新加)
@@ -346,6 +349,7 @@ ServerEvents.highPriorityData(event => {
         .addItemMaterial('enderio:end_steel_ingot')
         .setRequiredTool("hammer_dig", 1)
         .addEffects("mana_resonance", [1, 0])
+        .addEffects("fot:fe_store", 24000)
         .build();
 
     // 28. 紫菘逻辑线圈 (新加)

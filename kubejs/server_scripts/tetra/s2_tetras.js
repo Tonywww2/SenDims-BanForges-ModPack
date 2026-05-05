@@ -145,6 +145,7 @@ ServerEvents.highPriorityData(event => {
         .setTints("FA944B", "CE5600").addTexture("heavy").addTexture("metal")
         .setTagMaterial('forge:ingots/desh')
         .setRequiredTool("hammer_dig", 1)
+        .addEffects("fot:fe_store", 24000)
         .build();
 
     tetraMaterialBuilder(event, "metal_mixture").setCategory("metal")
@@ -328,6 +329,7 @@ ServerEvents.highPriorityData(event => {
         .setTints("9370db", "a987d4")
         .addTexture("shiny").addTexture("metal")
         .setTagMaterial('forge:ingots/ostrum')
+        .addEffects("fot:fe_store", 24000)
         .setRequiredTool("hammer_dig", 3)
         .build();
 

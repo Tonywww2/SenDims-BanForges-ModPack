@@ -3,7 +3,7 @@ ServerEvents.highPriorityData(event => {
     // 石豆腐
     tetraMaterialBuilder(event, "tofuishi").setCategory("stone")
         .setPrimary(1.3).setSecondary(1.3).setTertiary(0.8)
-        .setDurability(120).setIntegrityCost(1).setIntegrityGain(1)
+        .setDurability(130).setIntegrityCost(1).setIntegrityGain(1)
         .setMagicCapacity(60).setToolLevel(3).setToolEfficiency(4)
         .addAttributes("minecraft:generic.attack_damage", 0.15)
         .setTints("f5f5dc", "fff8dc")  // 豆腐白色调
@@ -292,6 +292,27 @@ ServerEvents.highPriorityData(event => {
         .addTexture("heavy").addTexture("metal")
         .addItemMaterial('cataclysm:witherite_ingot')
         .setRequiredTool("hammer_dig", 1)
+        .build();
+
+    tetraMaterialBuilder(event, "bamboo").setCategory("misc")
+        .setPrimary(1).setSecondary(0.6).setTertiary(1)
+        .setDurability(80).setIntegrityCost(1).setIntegrityGain(3)
+        .setMagicCapacity(104).setToolLevel(0).setToolEfficiency(9)
+        .setTints("699022", "5e8a24")
+        .addTexture("crude").addTexture("default")
+        .addImprovements("hollow", 0)
+        .addItemMaterial("minecraft:bamboo")
+        .build();
+
+    tetraMaterialBuilder(event, "hide").setCategory("skin")
+        .setPrimary(1.2).setSecondary(1.2).setTertiary(1.2)
+        .setDurability(200).setIntegrityCost(1).setIntegrityGain(5)
+        .setMagicCapacity(90).setToolLevel(0).setToolEfficiency(0)
+        .addAttributes("minecraft:generic.knockback_resistance", 0.05)
+        .setTints("hide_glyph", "hide")
+        .addTexture("crude").addTexture("default")
+        .addItemMaterial("minecraft:rabbit_hide")
+        .setRequiredTool("cut", 1)
         .build();
 
 })
