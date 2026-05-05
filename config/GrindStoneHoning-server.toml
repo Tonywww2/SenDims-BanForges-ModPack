@@ -1,0 +1,9 @@
+#设置为true来取消耐久附魔对耐久消耗的减免
+#Set to true to cancel the durability consumption reduction of durability enchantment
+#default: false
+ignoreUnbreakingEnchantment = false
+#设置为false，在使用砂轮和迷你砂轮的时候打磨物品不消耗耐久
+#Set to false, grinding items with the grindstone and miniGrindstone will not consume durability
+#default: true
+useDurability = true
+

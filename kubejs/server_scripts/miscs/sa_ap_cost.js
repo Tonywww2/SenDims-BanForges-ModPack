@@ -6,11 +6,15 @@ SACostMap.put("slashblade:judgement_cut", [200, 0.2]);
 SACostMap.put("slashblade:judgement_cut_slash_air", [200, 0.2]);
 SACostMap.put("slashblade:judgement_cut_slash_just", [400, 0.2]);
 
-SACostMap.put("slashblade:heavens_slash_start", [200, 0.15]);
-
 SACostMap.put("slashblade:wave_edge_vertical", [200, 0.1]);
 
+SACostMap.put("slashblade:heavens_slash_start", [200, 0.15]);
+
 SACostMap.put("sjap_adder:illusion_drive", [400, 0.2]);
+
+SACostMap.put("slashblade:sakura_end_left", [400, 0.2]);
+
+SACostMap.put("slashblade_sendims:golden_crux", [400, 0.2]);
 
 let defaultCost = [200, 0.2];
 

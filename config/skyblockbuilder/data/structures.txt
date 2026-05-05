@@ -6,14 +6,6 @@ ad_astra:oil_well
 ad_astra:pygro_tower
 ad_astra:pygro_village
 ad_astra:venus_bullet
-ad_astra_more_structures:abandoned_base
-ad_astra_more_structures:glacio_tower_dungeon
-ad_astra_more_structures:mars_tower_dungeon
-ad_astra_more_structures:mercury_arena_dungeon
-ad_astra_more_structures:moon_tower_dungeon
-ad_astra_more_structures:mystical_tree
-ad_astra_more_structures:rocket_launch_t1
-ad_astra_more_structures:venus_tree_dungeon
 ae2:meteorite
 aether:bronze_dungeon
 aether:gold_dungeon

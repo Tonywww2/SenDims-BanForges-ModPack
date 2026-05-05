@@ -1,2 +1,14 @@
 cantWrapperItems = []
 
+[Schematic]
+	#一次最多掉落的附魔耀魂数量
+	maxEnchantedSoulDrop = 10
+	#一个附魔耀魂所需杀敌数的量
+	enchantedSoulDropNeeded = 15
+	#一次最多掉落的普通耀魂数量
+	maxSoulDrop = 20
+	#一个普通耀魂所需耀魂值的量
+	soulDropNeeded = 88
+	#是否添加ciallo的两个原理图（联动）
+	enableCiallo = true
+
