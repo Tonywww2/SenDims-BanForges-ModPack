@@ -26,17 +26,17 @@ ServerEvents.recipes(event => {
     ).enchant('minecraft:protection', 1)
         ,
         [
-            'ABA',
-            'CDE',
+            'AMA',
+            'EDE',
             'AFA'
         ], {
         A: '#forge:gems/lapis',
-        B: 'kubejs:neptune_ingot',
-        C: 'kubejs:valkyrie_ingot',
         D: '#forge:paper',
-        E: 'kubejs:phoenix_ingot',
-        F: 'deep_aether:stratus_ingot'
-    }).id('sdbf:variable_s3')
+        E: ['aether_treasure_reforging:neptune_mesh', 'aether_treasure_reforging:valkyrum_ingot', 'aether_treasure_reforging:pyral_ingot'],
+        F: 'deep_aether:stratus_ingot',
+        M: 'twilightforest:lamp_of_cinders'
+    }).keepIngredient('twilightforest:lamp_of_cinders')
+        .id('sdbf:variable_s3')
 
 
     event.custom({

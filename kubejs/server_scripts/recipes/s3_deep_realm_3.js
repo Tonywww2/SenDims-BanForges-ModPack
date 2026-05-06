@@ -13,6 +13,29 @@ ServerEvents.recipes(event => {
         D: 'minecraft:lava_bucket'
     }).id('sdbf:scoria_ingot_s3')
 
+    event.shaped('undergarden:catalyst', [
+        'ACA',
+        'CBC',
+        'ACA'
+    ], {
+        A: "kubejs:scoria_ingot",
+        B: 'midnight:rendium_shard',
+        C: "forge:storage_blocks/netherite"
+    }).keepIngredient('twilightforest:lamp_of_cinders')
+        .id('sdbf:catalyst_s3')
+
+    event.shaped("slashblade_sendims:blessing_petals", [
+        'ACA',
+        'EDE',
+        'AFA'
+    ], {
+        A: "slashblade:proudsoul_ingot",
+        D: 'last_smith:sakura',
+        E: ["kubejs:scoria_ingot", 'ad_astra:calorite_tank'],
+        C: 'deep_aether:stratus_ingot',
+        F: 'minecraft:ender_eye'
+    }).id('sdbf:blessing_petals_s3')
+
     event.recipes.thermal.smelter('kubejs:scoria_ingot', [
         'midnight:virilux',
         '2x midnight:dark_pearl',
