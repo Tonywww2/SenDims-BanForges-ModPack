@@ -18,6 +18,17 @@ ServerEvents.recipes(event => {
         '3x minecraft:fire_charge',
         '3x minecraft:andesite'
     ]).id("sdbf:menril-silicon_sic_sic_cmc_ingot_s3")
+        
+    event.shaped(Item.of('midnight:rift_placer', `{${MIDNIGHT_STAGE}: true}`), [
+        'ABA',
+        'BDB',
+        'AFA'
+    ], {
+        A: 'slashblade:proudsoul',
+        B: 'kubejs:mysterious_alkali_crystal',
+        D: 'midnight:rift_placer',
+        F: 'nuclearcraft:sulfuric_acid_bucket'
+    }).id('sdbf:rift_placer_s3')
 
     event.shaped(Item.of(
         'integrateddynamics:variable',
@@ -37,7 +48,6 @@ ServerEvents.recipes(event => {
         M: 'twilightforest:lamp_of_cinders'
     }).keepIngredient('twilightforest:lamp_of_cinders')
         .id('sdbf:variable_s3')
-
 
     event.custom({
         "type": "nuclearcraft:assembler",

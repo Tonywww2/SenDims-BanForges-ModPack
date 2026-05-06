@@ -1,5 +1,9 @@
 ServerEvents.recipes(event => {
 
+    event.shapeless("tofucraft:salt_block", [
+        '9x #forge:salt'
+    ]).id("sdbf:salt_block")
+
     event.shaped('3x nuclearcraft:plate_basic', [
         'ABA',
         'BCB',
@@ -28,13 +32,13 @@ ServerEvents.recipes(event => {
                 "tag": 'forge:ingots/ostrum'
             },
             {
-                "tag": "forge:ingots/lithium"
+                "tag": "forge:ingots/steel"
             }
         ],
         "output": [
             {
                 "count": 2,
-                "item": "nuclearcraft:tough_alloy_ingot"
+                "item": "nuclearcraft:ferroboron_ingot"
             }
         ],
         "powerModifier": 1.5,
