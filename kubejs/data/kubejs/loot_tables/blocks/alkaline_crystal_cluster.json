@@ -12,7 +12,7 @@
         {
           "type": "minecraft:item",
           "name": "kubejs:mysterious_alkali_crystal",
-          "weight": 1,
+          "weight": 2,
           "functions": [
             {
               "function": "minecraft:set_count",

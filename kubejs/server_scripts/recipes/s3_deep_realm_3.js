@@ -13,17 +13,6 @@ ServerEvents.recipes(event => {
         D: 'minecraft:lava_bucket'
     }).id('sdbf:scoria_ingot_s3')
 
-    event.shaped('undergarden:catalyst', [
-        'ACA',
-        'CBC',
-        'ACA'
-    ], {
-        A: "kubejs:scoria_ingot",
-        B: 'midnight:rendium_shard',
-        C: "forge:storage_blocks/netherite"
-    }).keepIngredient('twilightforest:lamp_of_cinders')
-        .id('sdbf:catalyst_s3')
-
     event.shaped("slashblade_sendims:blessing_petals", [
         'ACA',
         'EDE',

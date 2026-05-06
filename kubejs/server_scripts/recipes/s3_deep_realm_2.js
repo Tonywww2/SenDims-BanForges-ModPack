@@ -30,6 +30,17 @@ ServerEvents.recipes(event => {
         F: 'nuclearcraft:sulfuric_acid_bucket'
     }).id('sdbf:rift_placer_s3')
 
+    event.shaped('undergarden:catalyst', [
+        'ACA',
+        'CBC',
+        'ACA'
+    ], {
+        A: "kubejs:scoria_ingot",
+        B: 'midnight:rendium_shard',
+        C: "#forge:ingots/netherite"
+    }).keepIngredient('twilightforest:lamp_of_cinders')
+        .id('sdbf:catalyst_s3')
+
     event.shaped(Item.of(
         'integrateddynamics:variable',
         16,
