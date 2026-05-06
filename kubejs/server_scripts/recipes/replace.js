@@ -124,4 +124,9 @@ ServerEvents.recipes(event => {
         "slashblade:proudsoul_crystal"
     );
 
+    event.replaceInput({ id: 'ad_astra_giselle_addon:crafting/enchanted_book_space_fire_proof' },
+        "ad_astra:mercury_stone",
+        'ad_astra:calorite_ingot'
+    );
+
 })

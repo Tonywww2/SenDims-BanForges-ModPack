@@ -73,7 +73,7 @@ ServerEvents.tags("item", event => {
         "undergarden:utherium_crystal",                         // 御腐水晶
         "undergarden:cloggrum_ingot",                           // 厄瑟锭
         "enderio:double_layer_capacitor",                       // 双层电容
-        "cataclysm:koboleton_bone",                             // 骸龙之骨
+
         "midnight:ebonite",                                     // 黯铁
         "undergarden:froststeel_ingot",                         // 霜钢
         "spartanshields:ingot_enderium",                        // 末影锭
@@ -84,15 +84,16 @@ ServerEvents.tags("item", event => {
         'twilightforest:carminite',          // 砷铅铁 (砷铅铁矿石)
         "midnight:corrupted_pearl",                 // 腐化珍珠
         "midnight:nagrilite_ingot",                 // 夜冥锭
-        "kubejs:mysterious_alkali_crystal",         // 神秘碱晶
         "#forge:ingots/calorite",                   // 耐热金属
         "midnight:dark_pearl",                      // 黑暗珍珠
-        "midnight:virilux",                         // 幽光
         "forge:ingots/ostrum"
       ])
 
     // 阶段2
     event.add("slashblade_sendims:drc_health_material_2", [
+        "cataclysm:koboleton_bone",                             // 骸龙之骨
+        "kubejs:mysterious_alkali_crystal",         // 神秘碱晶
+        "midnight:virilux",                         // 幽光
         "nuclearcraft:magnesium_ingot",                 // 镁锭
         "kubejs:bizarre_matter_dust",                   // 奇异物质尘
         "the_bumblezone:redstone_honey_web",            // 红石蜜蜂网
