@@ -197,17 +197,14 @@ ServerEvents.recipes(event => {
             "B": {
                 "item": "sophisticatedbackpacks:copper_backpack"
             },
-            "I": {
-                "item": 'slashblade:proudsoul_ingot'
-            },
             "S": {
                 "tag": 'forge:ingots/steel'
             }
         },
         "pattern": [
-            "SIS",
-            "IBI",
-            "SIS"
+            "SSS",
+            "SBS",
+            "SSS"
         ],
         "result": {
             "item": "sophisticatedbackpacks:iron_backpack"
@@ -230,7 +227,7 @@ ServerEvents.recipes(event => {
                 "tag": 'forge:storage_blocks/gold'
             },
             "S": {
-                "item": 'slashblade:proudsoul_sphere'
+                "item": 'slashblade:proudsoul_ingot'
             }
         },
         "pattern": [
@@ -259,7 +256,7 @@ ServerEvents.recipes(event => {
                 "tag": 'forge:storage_blocks/diamond'
             },
             "S": {
-                "item": 'slashblade:proudsoul_crystal'
+                "item": 'slashblade:proudsoul_sphere'
             }
         },
         "pattern": [
@@ -275,7 +272,7 @@ ServerEvents.recipes(event => {
     event.custom({
         "type": "sophisticatedbackpacks:smithing_backpack_upgrade",
         "addition": {
-            "item": 'slashblade:proudsoul_trapezohedron'
+            "item": 'slashblade:proudsoul_crystal'
         },
         "base": {
             "item": "sophisticatedbackpacks:diamond_backpack"

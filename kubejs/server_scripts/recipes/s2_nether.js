@@ -115,7 +115,46 @@ ServerEvents.recipes(event => {
     }, "pseudoedge_break_dawn:magicblade")
         .id("sdbf:magicblade_s2");
 
-    sqRecipe(event, 
+    event.custom({
+        "type": "slashblade:shaped_blade",
+        "blade": "slashblade:tagayasan",
+        "category": "equipment",
+        "key": {
+            "B": {
+                "type": "slashblade:blade",
+                "item": "slashblade:slashblade_wood",
+                "request": {
+                    "enchantments": [
+                        {
+                            "id": "minecraft:unbreaking"
+                        }
+                    ],
+                    "proud_soul": 2000,
+                    "refine": 10
+                }
+            },
+            "D": {
+                "item": "minecraft:ender_pearl"
+            },
+            "E": {
+                "item": "minecraft:ender_eye"
+            },
+            "S": {
+                "item": "slashblade:proudsoul_ingot"
+            }
+        },
+        "pattern": [
+            "SES",
+            "DBD",
+            "SES"
+        ],
+        "result": {
+            "item": "slashblade:slashblade"
+        },
+        "show_notification": true
+    }).id("sdbf:tagayasan_s2")
+
+    sqRecipe(event,
         "cataclysm:soul_black_smith",
         "cataclysm:monstrous_eye",
         0,

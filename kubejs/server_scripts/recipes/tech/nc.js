@@ -11,13 +11,34 @@ ServerEvents.recipes(event => {
     }).id('sdbf:plate_basic')
 
     event.custom({
-        "type":"nuclearcraft:manufactory",
-        "input":[
+        "type": "nuclearcraft:manufactory",
+        "input": [
             Item.of('tofucraft:salt_block').toJson()
         ],
-        "output":[
+        "output": [
             Item.of('#forge:ingots/lithium').toJson()
         ],
-        "powerModifier":1.0,"radiation":1.0,"timeModifier":1.0
+        "powerModifier": 1.0, "radiation": 1.0, "timeModifier": 1.0
     }).id("sdbf:salt_lithium")
+
+    event.custom({
+        "type": "nuclearcraft:alloy_smelter",
+        "input": [
+            {
+                "tag": 'forge:ingots/ostrum'
+            },
+            {
+                "tag": "forge:ingots/lithium"
+            }
+        ],
+        "output": [
+            {
+                "count": 2,
+                "item": "nuclearcraft:tough_alloy_ingot"
+            }
+        ],
+        "powerModifier": 1.5,
+        "radiation": 1.0,
+        "timeModifier": 1.7
+    }).id("sdbf:tough_alloy_ingot")
 })

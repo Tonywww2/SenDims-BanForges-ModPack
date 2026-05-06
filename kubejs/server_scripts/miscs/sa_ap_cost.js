@@ -7,6 +7,7 @@ SACostMap.put("slashblade:judgement_cut_slash_air", [200, 0.2]);
 SACostMap.put("slashblade:judgement_cut_slash_just", [400, 0.2]);
 
 SACostMap.put("slashblade:wave_edge_vertical", [200, 0.1]);
+SACostMap.put("slashblade:drive_horizontal", [200, 0.1]);
 
 SACostMap.put("slashblade:heavens_slash_start", [200, 0.15]);
 

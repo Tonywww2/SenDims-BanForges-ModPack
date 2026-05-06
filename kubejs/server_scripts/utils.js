@@ -12,6 +12,7 @@ const $Registries = Java.loadClass('net.minecraft.core.registries.Registries');
 // const $ForgeRegistries = Java.loadClass('net.minecraftforge.registries.ForgeRegistries');
 const $SpawnEggItem = Java.loadClass('net.minecraft.world.item.SpawnEggItem');
 const $SlashBladeDefinition = Java.loadClass('mods.flammpfeil.slashblade.registry.slashblade.SlashBladeDefinition');
+const $ItemSlashBlade = Java.loadClass('mods.flammpfeil.slashblade.item.ItemSlashBlade');
 
 const $ModularArmorItem = Java.loadClass("ovo.yiran.geotetraarmor.items.ModularArmorItem");
 
@@ -19,6 +20,7 @@ const $ModularItemDamageEvent = Java.loadClass("se.mickelus.tetra.event.ModularI
 const $LivingHurtEvent = Java.loadClass("net.minecraftforge.event.entity.living.LivingHurtEvent");
 const $PortalSpawnEvent = Java.loadClass("net.minecraftforge.event.level.BlockEvent$PortalSpawnEvent")
 const $PerformSlashArtEvent = Java.loadClass("mods.flammpfeil.slashblade.event.SlashBladeEvent$PerformSlashArtEvent")
+const $ItemStackedOnOtherEvent = Java.loadClass("net.minecraftforge.event.ItemStackedOnOtherEvent")
 
 const $UmaSoulUtils = Java.loadClass("net.tracen.umapyoi.utils.UmaSoulUtils")
 const $UmapyoiAPI = Java.loadClass("net.tracen.umapyoi.api.UmapyoiAPI")

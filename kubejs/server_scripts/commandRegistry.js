@@ -1,4 +1,3 @@
-let $ItemSlashBlade = Java.loadClass("mods.flammpfeil.slashblade.item.ItemSlashBlade")
 ServerEvents.commandRegistry(event => {
     event.dispatcher.register(
         event.commands.literal("debugTool")

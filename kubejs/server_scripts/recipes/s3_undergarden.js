@@ -117,4 +117,11 @@ ServerEvents.recipes(event => {
         "template": { "item": "last_smith:scroll_muramasa" }
     }).id('sdbf:muramasa_kagura_s3')
 
+    sqRecipe(event,
+        "undergarden:catacombs",
+        'undergarden:ditchbulb',
+        1,
+        "s3"
+    )
+
 })
