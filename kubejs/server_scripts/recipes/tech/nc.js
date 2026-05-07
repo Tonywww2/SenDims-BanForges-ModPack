@@ -25,6 +25,17 @@ ServerEvents.recipes(event => {
         "powerModifier": 1.0, "radiation": 1.0, "timeModifier": 1.0
     }).id("sdbf:salt_lithium")
 
+    event.shaped('nuclearcraft:decay_hastener', [
+        'TBT',
+        'TCT',
+        'TAT'
+    ], {
+        B: '#forge:storage_blocks/tough_alloy',  // 标签使用 # 前缀 / Tags use the # prefix
+        T: '#forge:ingots/tough_alloy',    // 标签使用 # 前缀 / Tags use the # prefix
+        C: '#forge:ingots/tin_silver',     // 标签使用 # 前缀 / Tags use the # prefix
+        A: 'nuclearcraft:actuator'
+    }).id('sdbf:decay_hastener')
+
     event.custom({
         "type": "nuclearcraft:alloy_smelter",
         "input": [

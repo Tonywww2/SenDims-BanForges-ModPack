@@ -22,6 +22,8 @@ SACostMap.put("pseudoedge_break_dawn:black_hole", [300, 0.15]);
 
 SACostMap.put("slashblade:circle_slash", [300, 0.15]);
 
+SACostMap.put("slashblade:storm_bias_start", [400, 0.1]);
+
 let defaultCost = [200, 0.2];
 
 NativeEvents.onEvent($PerformSlashArtEvent, event => {

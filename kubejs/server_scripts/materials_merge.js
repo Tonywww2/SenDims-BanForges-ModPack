@@ -60,13 +60,6 @@ global.materialReplaceRules.put('minecraft:potato', {
 global.materialReplaceRules.put('minecraft:cobblestone', {
     exchange: true,
     list: [
-        'minecraft:granite',
-        'minecraft:diorite',
-        'minecraft:andesite',
-        'minecraft:cobbled_deepslate',
-        'minecraft:smooth_basalt',
-        'minecraft:calcite',
-        'minecraft:tuff',
         'twilightforest:etched_nagastone',
         'twilightforest:cracked_etched_nagastone',
         'twilightforest:mossy_etched_nagastone',
@@ -142,11 +135,39 @@ global.materialReplaceRules.put('aether:ambrosium_shard', {
     ]
 });
 
+
+let removeWhitelist = new Set([
+    'twilightforest:giant_sword',
+    'twilightforest:giant_pickaxe',
+    'aether:phoenix_gloves',
+    'aether:phoenix_boots',
+    'aether:phoenix_leggings',
+    'aether:phoenix_chestplate',
+    'aether:phoenix_helmet',
+    'aether:valkyrie_hoe',
+    'aether:valkyrie_boots',
+    'aether:valkyrie_leggings',
+    'aether:valkyrie_chestplate',
+    'aether:valkyrie_helmet',
+    'aether:valkyrie_gloves',
+    'aether:valkyrie_lance',
+    'aether:valkyrie_pickaxe',
+    'aether:valkyrie_axe',
+    'aether:valkyrie_shovel',
+    'aether:neptune_gloves',
+    'aether:neptune_boots',
+    'aether:neptune_leggings',
+    'aether:neptune_chestplate',
+    'aether:neptune_helmet'
+]);
+
 global.materialRemoveRule = ItemFilter.and(
-    ItemFilter.not(ItemFilter.or(
-        'twilightforest:giant_sword',
-        'twilightforest:giant_pickaxe',
-    )),
+    ItemFilter.not(
+        ItemFilter.custom(stack => {
+            // print(stack)
+            return removeWhitelist.has(String(stack.getId()))
+        })
+    ),
     ItemFilter.or(
         ItemFilter.TOOL,
         ItemFilter.ARMOR,
@@ -178,7 +199,6 @@ global.materialRemoveRule = ItemFilter.and(
         'terra_entity:iron_golem_staff',
 
         'terra_entity:swamp_whip',
-
         'terra_entity:slimy_saddle'
     )
 );

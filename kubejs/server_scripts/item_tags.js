@@ -70,13 +70,13 @@ ServerEvents.tags("item", event => {
         "minecraft:netherite_ingot",                // 下界合金锭
         'ad_astra:cryo_freezer',
         'twilightforest:alpha_yeti_fur',
+        'twilightforest:knightmetal_ring',
         "undergarden:utherium_crystal",                         // 御腐水晶
         "undergarden:cloggrum_ingot",                           // 厄瑟锭
         "enderio:double_layer_capacitor",                       // 双层电容
 
         "midnight:ebonite",                                     // 黯铁
         "undergarden:froststeel_ingot",                         // 霜钢
-        "spartanshields:ingot_enderium",                        // 末影锭
         "cyclic:sprout_seed",                                   // 魔豆
 
     ])
@@ -96,6 +96,7 @@ ServerEvents.tags("item", event => {
         "midnight:virilux",                         // 幽光
         "nuclearcraft:magnesium_ingot",                 // 镁锭
         "kubejs:bizarre_matter_dust",                   // 奇异物质尘
+        "kubejs:gamma_dust",
         "the_bumblezone:redstone_honey_web",            // 红石蜜蜂网
         "nuclearcraft:empty_heat_sink",                      // 空散热器
         "enderio:end_steel_ingot",                      // 末地钢
@@ -121,6 +122,8 @@ ServerEvents.tags("item", event => {
         "kubejs:chaotic_truth",                    // 混沌真理
         "kubejs:galatic_cycle_component",           // 星空循环组件
         "kubejs:alpha_dust",                       // alpha
+        "enderio:end_steel_block",
+        "nuclearcraft:xenorium_298"
     ])
     event.add("slashblade_sendims:drc_damage_material_3", [
         "cataclysm:essence_of_the_storm",          // 风暴精华
