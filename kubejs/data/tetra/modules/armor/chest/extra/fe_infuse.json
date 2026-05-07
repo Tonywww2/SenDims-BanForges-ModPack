@@ -1,0 +1,23 @@
+{
+    "replace": true,
+    "type": "tetra:basic_module",
+    "slots":
+    [
+        "chest/extra"
+    ],
+    "variants":
+    [
+        {
+            "key": "fe_infuse/common",
+            "durability": 5,
+            "contexts":
+            [
+                "wing"
+            ],
+            "effects":
+            {
+                "fot:fe_store": 24000
+            }
+        }
+    ]
+}

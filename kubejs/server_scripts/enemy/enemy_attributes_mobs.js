@@ -160,6 +160,7 @@ const mobTypes = new Map([
     ["aether:cockatrice", typeB],
     ["aether:fire_minion", typeD],
     ["aether:golden_swet", typeSlime],
+    ["ancient_aether:festive_swet", typeSlime],
     ["aether:mimic", typeA],
     ["aether:sentry", typeD],
     ["aether:valkyrie", typeC],
@@ -337,6 +338,7 @@ const mobTypes = new Map([
     ["midnight:nightstag", typeD],
     ["midnight:nova", typeB],
     ["midnight:stinger", typeB],
+    ["midnight:crystal_bug", typeB],
 
     ["cataclysm:urchinkin", type0],
     ["cataclysm:drowned_host", typeA],

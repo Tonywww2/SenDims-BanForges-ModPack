@@ -1,0 +1,30 @@
+{
+    "replace": true,
+    "slots":
+    [
+        "chest/extra"
+    ],
+    "materialSlotCount": 1,
+    "displayType": "major",
+    "glyph":
+    {
+        "textureLocation": "tetra:textures/gui/glyphs.png",
+        "textureX": 112,
+        "textureY": 48
+    },
+    "outcomes":
+    [
+        {
+            "material":
+            {
+                "items":
+                [
+                    "minecraft:redstone_block"
+                ],
+                "count": 8
+            },
+            "moduleKey": "armor/chest/extra/fe_infuse",
+            "moduleVariant": "fe_infuse/common"
+        }
+    ]
+}

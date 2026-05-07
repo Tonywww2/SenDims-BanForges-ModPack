@@ -114,6 +114,11 @@
     "tetra/schematic/slashblade/blade/tetra_sword/throwing_knife.description": "小幅提升魔法伤害，小幅低总攻击力",
     "tetra/schematic/slashblade/blade/tetra_sword/throwing_knife.slot1": "材料",
 
+    "tetra/schematic/armor/chest/extra/fe_infuse.name": "通量注入",
+    "tetra/schematic/armor/chest/extra/fe_infuse.description": "物品可以存储FE能量；可以使用FE能量抵扣耐久消耗",
+    "tetra/schematic/armor/chest/extra/fe_infuse.slot1": "材料",
+    "tetra.variant.fe_infuse/common": "通量注入",
+
     "tetra.material.tofuishi": "石豆腐",
     "tetra.material.tofuishi.prefix": "石豆腐",
     "tetra.material.tofuslate": "天然深层豆腐岩",

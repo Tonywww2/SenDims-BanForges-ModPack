@@ -195,6 +195,9 @@
 				}
 				id: "slashbladetetra:slashblade"
 				tag: {
+					"FOT$energy": {
+						energy: 0
+					}
 					bladeState: {
 						AttackAmplifier: 0.0f
 						ComboRoot: "slashblade:standby"

@@ -43,7 +43,7 @@ BlockEvents.rightClicked(event => {
             event.cancel()
             return
         }
-        
+
         player.stages.add(MIDNIGHT_STAGE);
         event.server.scheduleInTicks(1, callback => {
             player.addItemCooldown('midnight:rift_placer', 200);
@@ -56,17 +56,17 @@ BlockEvents.rightClicked(event => {
 NativeEvents.onEvent($PortalSpawnEvent, event => {
     let pos = event.pos
     let level = event.level
-    
+
     let isObsidian = p => {
         print(level.getBlockState(p).getBlock())
         return level.getBlockState(p).getBlock() == Blocks.OBSIDIAN;
-    } 
+    }
 
-    if (isObsidian(pos.below()) || 
-        isObsidian(pos.above()) || 
-        isObsidian(pos.north()) || 
-        isObsidian(pos.south()) || 
-        isObsidian(pos.east()) || 
+    if (isObsidian(pos.below()) ||
+        isObsidian(pos.above()) ||
+        isObsidian(pos.north()) ||
+        isObsidian(pos.south()) ||
+        isObsidian(pos.east()) ||
         isObsidian(pos.west())) {
         event.setCanceled(true);
     }
@@ -88,21 +88,21 @@ BlockEvents.rightClicked(event => {
         for (let dir of verticalDirections) {
             // console.log(`[Undergarden Portal] Checking direction: ${dir}`);
             let framePos = clickedPos.relative(dir);
-            
+
             let size = portalBlock.isPortal(level, framePos);
             // console.log(`[Undergarden Portal] Dimension check, portal size: ${size != null ? 'valid' : 'null'}`);
-            
+
             // if (size != null && !portalBlock.isPortalSpawnCanceled(level, framePos, size)) {
             if (size != null) {
                 // console.log(`[Undergarden Portal] Spawning portal blocks at ${framePos}`);
                 size.createPortalBlocks();
                 level.playSound(player, framePos, $UGSoundEvents.UNDERGARDEN_PORTAL_ACTIVATE.get(), "blocks", 1.0, 1.0);
-                event.success(); 
+                event.success();
                 return;
             } else {
                 // console.log(`[Undergarden Portal] Portal fails to spawn at direction: ${dir}`);
                 event.cancel();
-                return; 
+                return;
             }
         }
     }
