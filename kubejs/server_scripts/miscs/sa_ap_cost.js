@@ -26,6 +26,10 @@ SACostMap.put("slashblade:storm_bias_start", [400, 0.1]);
 
 SACostMap.put("slashblade:piercing_just", [300, 0.1]);
 
+SACostMap.put("sjap_adder:explosive_dawn", [300, 0.2]);
+
+SACostMap.put("sjap_adder:wave_edge_super", [300, 0.2]);
+
 let defaultCost = [200, 0.2];
 
 NativeEvents.onEvent($PerformSlashArtEvent, event => {

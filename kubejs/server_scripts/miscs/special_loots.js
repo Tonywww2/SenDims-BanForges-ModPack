@@ -19,6 +19,13 @@ LootJS.modifiers(event => {
     event.addEntityLootModifier("twilightforest:lich")
         .addLoot("minecraft:cherry_sapling")
 
+    event.addEntityLootModifier('nuclearcraft:feral_ghoul')
+        .anyDimension(["undergarden:undergarden"])
+        .pool(p => {
+            p.randomChance(0.15);
+            p.addLoot(LootEntry.of('nuclearcraft:uranium_nugget').limitCount([1, 2]));
+        });
+
 
     event.addEntityLootModifier([
         'terra_entity:pixie',
@@ -26,11 +33,11 @@ LootJS.modifiers(event => {
         'terra_entity:grantite_elemental',
         'terra_entity:pink_jellyfish'
     ])
-    .anyDimension(['sdbf:deep_realm_level_2'])
-    .pool(p => {
-        p.rolls(2);
-        p.addLoot('kubejs:gamma_dust').randomChance(0.1);
-    });
+        .anyDimension(['sdbf:deep_realm_level_2'])
+        .pool(p => {
+            p.rolls(2);
+            p.addLoot('kubejs:gamma_dust').randomChance(0.1);
+        });
 
     event.addLootTableModifier('dungeons_arise:chests/plague_asylum/plague_asylum_treasure')
         .randomChance(0.5)
