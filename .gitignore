@@ -92,3 +92,5 @@ config/jei/ingredient-list-mod-sort-order.ini
 mods/ysm-2.6.5-forge+mc1.20.1-release.jar
 /config/tickaccelerate
 config/yes_steve_model-client.toml
+config/jei/recipe-category-sort-order.ini
+config/skyblockbuilder/data/features.txt

@@ -39,6 +39,8 @@ const toRemoveID = new Set([
     "regions_unexplored:raw_redstone_block",
     "botania:alfheim_portal",
     "botania:terra_plate",
+    "nuclearcraft:ingot_former/obsidian",
+    "nuclearcraft:manufactory/ender_pearl",
     "slashblade:tagayasan",
 
     "sophisticatedbackpacks:backpack",

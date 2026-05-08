@@ -14,6 +14,13 @@ ItemEvents.tooltip(event => {
     event.add('#slashblade:can_copy_sa', Text.translatable('info.kubejs.slashblade.can_copy_sa').color(Color.AQUA));
     event.add('#slashblade:can_copy_se', Text.translatable('info.kubejs.slashblade.can_copy_se').color(Color.AQUA));
 
+    event.add([
+        'nuclearcraft:light',
+        'nuclearcraft:medium',
+        'nuclearcraft:heavy',
+        'nuclearcraft:dps'
+    ], Text.translatable('info.kubejs.nuclearcraft.apply_rad_prot').color(Color.AQUA));
+
     event.addAdvanced([
         'slashblade:slashblade',
         'energyblade:forge_energy_blade',

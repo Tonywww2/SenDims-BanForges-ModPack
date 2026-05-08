@@ -71,7 +71,7 @@
 	slow_metabolism_probability = 0.05
 	#Determines how long of sleepless time before Night Owl effect may occur, unit: tick
 	#Range: 0 ~ 9223372036854775807
-	night_owl_threshold = 72000
+	night_owl_threshold = 720000
 	#Determines the probability of motivation down per second
 	#Range: 0.0 ~ 1.0
 	night_owl_probability_down_motivation = 0.01

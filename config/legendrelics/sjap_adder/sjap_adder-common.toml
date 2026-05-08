@@ -78,7 +78,7 @@ burningDanceComboRatio = 0.1
 #The Combo Ratio of ColdDrive
 #冰刃女皇斩的刀光倍率
 #Range: 0.0 ~ 100.0
-coldDriveComboRatio = 0.1
+coldDriveComboRatio = 4.5
 #The Combo Ratio of SakuraWaveEdgeLeft
 #终焉龙胆樱的刀光倍率（左）
 #Range: 0.0 ~ 100.0

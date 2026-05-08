@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
         'TCT',
         'TAT'
     ], {
-        B: '#forge:storage_blocks/tough_alloy',  // 标签使用 # 前缀 / Tags use the # prefix
+        B: '#forge:storage_blocks/diamond',  // 标签使用 # 前缀 / Tags use the # prefix
         T: '#forge:ingots/tough_alloy',    // 标签使用 # 前缀 / Tags use the # prefix
         C: '#forge:ingots/tin_silver',     // 标签使用 # 前缀 / Tags use the # prefix
         A: 'nuclearcraft:actuator'
@@ -56,4 +56,26 @@ ServerEvents.recipes(event => {
         "radiation": 1.0,
         "timeModifier": 1.7
     }).id("sdbf:tough_alloy_ingot")
+
+    event.custom({
+        "type": "nuclearcraft:alloy_smelter",
+        "input": [
+            {
+                "tag": 'forge:storage_blocks/ostrum'
+            },
+            {
+                "tag": 'forge:ingots/extreme'
+            }
+        ],
+        "output": [
+            {
+                "count": 2,
+                "item": 'nuclearcraft:thermoconducting_ingot'
+            }
+        ],
+        "powerModifier": 1.5,
+        "radiation": 1.0,
+        "timeModifier": 1.7
+    }).id("sdbf:thermoconducting_ingot")
+
 })

@@ -205,7 +205,7 @@ ServerEvents.recipes(event => {
         "KES",
         "GHI"
     ], {
-        "A": "minecraft:echo_shard",
+        "A": "midnight:rendium_block",
         "C": "minecraft:beacon",
         "E": "minecraft:wither_rose",
         "G": "minecraft:wither_skeleton_skull",
