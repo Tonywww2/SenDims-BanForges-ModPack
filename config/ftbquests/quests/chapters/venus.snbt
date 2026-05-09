@@ -105,13 +105,22 @@
 			x: -2.5d
 			y: 0.0d
 		}
+		{
+			id: "4D9D79F9D9990672"
+			linked_quest: "28CAD1DD57B60440"
+			x: 5.0d
+			y: 5.0d
+		}
 	]
 	quests: [
 		{
 			dependencies: ["78BE62D2851798DD"]
-			description: ["三阶火箭可抵达。"]
+			description: [
+				"三阶火箭可抵达。"
+				"&c警告：需要太空耐火或者抗火药水效果。&r"
+			]
 			hide_dependent_lines: true
-			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			id: "51A9FF63F9F3E125"
 			size: 2.0d
 			tasks: [{
@@ -138,7 +147,7 @@
 		{
 			dependencies: ["7D98EABF3232321E"]
 			id: "31341BED5E582FBF"
-			subtitle: "重要"
+			subtitle: "需要配合通量注入附件"
 			tasks: [{
 				id: "1C707DBA32C20F07"
 				item: {
@@ -459,7 +468,11 @@
 			y: 7.5d
 		}
 		{
-			dependencies: ["5F0FC78E11482861"]
+			dependencies: [
+				"5F0FC78E11482861"
+				"2C6833FA2E31DFF1"
+			]
+			dependency_requirement: "one_completed"
 			id: "71B22CE8B354DA88"
 			tasks: [{
 				id: "176383DEE3C9E53D"
@@ -471,8 +484,17 @@
 			y: 7.5d
 		}
 		{
-			dependencies: ["31EA9A38D8474C88"]
+			dependencies: [
+				"31EA9A38D8474C88"
+				"51A9FF63F9F3E125"
+			]
+			dependency_requirement: "one_completed"
 			id: "68BD750B0FD3AB6D"
+			rewards: [{
+				id: "6D485908C9721707"
+				item: "cataclysm:sticky_gloves"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7A9A6C21178BC65A"
 				structure: "cataclysm:cursed_pyramid"
@@ -513,6 +535,17 @@
 				type: "item"
 			}]
 			x: -5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7D98EABF3232321E"]
+			id: "363E4E4BD5FC757F"
+			tasks: [{
+				id: "287BD832420F7404"
+				item: "ad_astra:calorite_tank"
+				type: "item"
+			}]
+			x: 2.5d
 			y: 5.0d
 		}
 	]

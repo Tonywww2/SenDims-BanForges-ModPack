@@ -71,7 +71,7 @@
 			id: "64DF3F9FCAB26C79"
 			linked_quest: "3F43656AE6F116CB"
 			size: 2.0d
-			x: -4.0d
+			x: -1.0d
 			y: -1.0d
 		}
 		{
@@ -127,21 +127,21 @@
 			id: "5825F03B6CB9E2EB"
 			linked_quest: "37CF7606A44B5357"
 			size: 2.0d
-			x: 14.0d
-			y: -4.0d
+			x: 26.0d
+			y: -1.0d
 		}
 		{
 			id: "1CB534867E8049BE"
 			linked_quest: "6035D1A1774B2FAF"
 			size: 2.0d
 			x: 20.0d
-			y: -4.0d
+			y: -1.0d
 		}
 		{
 			id: "50B962F0F3CAAF88"
 			linked_quest: "220AEBF0A8A46F7C"
 			size: 2.0d
-			x: 14.0d
+			x: 17.0d
 			y: 2.0d
 		}
 		{
@@ -149,7 +149,7 @@
 			id: "5FB15CF7BC54A15A"
 			linked_quest: "713CA11C25A8A2E2"
 			size: 2.0d
-			x: 14.0d
+			x: 20.0d
 			y: 5.0d
 		}
 		{
@@ -157,21 +157,14 @@
 			linked_quest: "1BF032EC08E31ABB"
 			size: 2.0d
 			x: 20.0d
-			y: 5.0d
+			y: -4.0d
 		}
 		{
 			id: "52704AD20F8923CA"
 			linked_quest: "4239AD35803375DB"
 			size: 2.0d
-			x: 26.0d
+			x: 29.0d
 			y: 5.0d
-		}
-		{
-			id: "43BC79D1308552B1"
-			linked_quest: "4D7803023F99E6FC"
-			size: 2.0d
-			x: 26.0d
-			y: -1.0d
 		}
 		{
 			id: "4FFF7163DE2E3EDF"
@@ -248,6 +241,7 @@
 		{
 			id: "6BBAFBDA4043244F"
 			linked_quest: "514CF1593551F00F"
+			shape: "gear"
 			size: 2.0d
 			x: -19.0d
 			y: 9.0d
@@ -255,15 +249,17 @@
 		{
 			id: "662759AFEBDD0AA3"
 			linked_quest: "51E136B4E1C27308"
+			shape: "gear"
 			size: 2.0d
 			x: -16.0d
-			y: 9.0d
+			y: 12.0d
 		}
 		{
 			id: "3D797BDA8AEB9E1D"
 			linked_quest: "034D47E905861E48"
+			shape: "hexagon"
 			size: 2.0d
-			x: -13.0d
+			x: -16.0d
 			y: 9.0d
 		}
 	]

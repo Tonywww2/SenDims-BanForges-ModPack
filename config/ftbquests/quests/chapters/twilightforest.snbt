@@ -20,6 +20,12 @@
 			x: 7.5d
 			y: 0.0d
 		}
+		{
+			id: "7B2B26C5693D25E5"
+			linked_quest: "0C568583CC58DAA6"
+			x: 0.0d
+			y: 22.5d
+		}
 	]
 	quests: [
 		{
@@ -120,6 +126,31 @@
 		{
 			dependencies: ["3AA758300110DA33"]
 			id: "2EDA6C0823CAF5BE"
+			rewards: [{
+				id: "25D8AAEEF9178DA7"
+				item: {
+					Count: 1
+					id: "twilightforest:mazebreaker_pickaxe"
+					tag: {
+						Damage: 0
+						Enchantments: [
+							{
+								id: "minecraft:efficiency"
+								lvl: 4s
+							}
+							{
+								id: "minecraft:unbreaking"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:fortune"
+								lvl: 2s
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				advancement: "twilightforest:progress_labyrinth"
 				criterion: ""
@@ -571,16 +602,15 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["6442E0C760FAF02B"]
-			id: "6E39BB8C6B65D2B6"
-			shape: "hexagon"
+			dependencies: ["3AA758300110DA33"]
+			id: "2A77F71A98B01A27"
 			tasks: [{
-				id: "1F8432296BD44C87"
-				item: "undergarden:catalyst"
+				id: "3ED57AFE7A23E680"
+				item: "minecraft:cherry_sapling"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 22.5d
+			x: -2.5d
+			y: 5.0d
 		}
 	]
 	title: "暮色秘境"

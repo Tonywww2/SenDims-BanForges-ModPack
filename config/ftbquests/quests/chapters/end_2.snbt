@@ -51,13 +51,6 @@
 			y: 7.5d
 		}
 		{
-			id: "4614C32155EBEA48"
-			linked_quest: "28CAD1DD57B60440"
-			shape: "hexagon"
-			x: 0.0d
-			y: -2.5d
-		}
-		{
 			id: "2A636189FAB953F7"
 			linked_quest: "1F5434696DE4B67B"
 			x: 2.5d
@@ -510,6 +503,32 @@
 				type: "item"
 			}]
 			x: 5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"26527CD8C76043BE"
+				"363E4E4BD5FC757F"
+			]
+			dependency_requirement: "one_completed"
+			hide_until_deps_visible: true
+			id: "28CAD1DD57B60440"
+			shape: "hexagon"
+			tasks: [{
+				id: "54507E443D0F2512"
+				item: {
+					Count: 1
+					id: "slashblade_sendims:blessing_petals"
+					tag: {
+						blessing_petals: {
+							item_counts: 0
+							item_list: [ ]
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
 			y: -2.5d
 		}
 	]

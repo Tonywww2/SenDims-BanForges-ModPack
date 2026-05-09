@@ -6,7 +6,7 @@
 	group: "35DD57C332D61BB0"
 	icon: "kubejs:titan-ii_composite_ingot"
 	id: "390334BC229FB9D8"
-	order_index: 2
+	order_index: 1
 	quest_links: [
 		{
 			id: "3870EC255CFFBB3F"

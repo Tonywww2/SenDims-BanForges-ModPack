@@ -46,27 +46,48 @@
 			x: -5.0d
 			y: 0.0d
 		}
+		{
+			id: "1607CB6CAC7E6B2E"
+			linked_quest: "2E482B871B147DC6"
+			x: 7.5d
+			y: 0.0d
+		}
 	]
 	quests: [
 		{
 			dependencies: [
 				"5DC17402B959C2E9"
 				"0C568583CC58DAA6"
+				"034D47E905861E48"
 			]
-			dependency_requirement: "one_completed"
-			description: ["使用岗哨石构筑门框，并使用变量卡点亮......"]
+			description: [
+				"使用&6岗哨石&r建造3x3平台，在中心放置&6岗哨基石&r"
+				"使用&6变量卡&r右键&6岗哨基石&r激活传送"
+			]
 			hide_dependent_lines: true
 			hide_until_deps_complete: true
 			icon: "integrateddynamics:menril_sapling"
 			id: "3DA6E818573A9A69"
 			size: 2.0d
-			tasks: [{
-				dimension: "sdbf:deep_realm_level_2"
-				icon: "integrateddynamics:menril_sapling"
-				id: "06627B84E2D2AFE0"
-				title: "深境二层"
-				type: "dimension"
-			}]
+			tasks: [
+				{
+					dimension: "sdbf:deep_realm_level_2"
+					icon: "integrateddynamics:menril_sapling"
+					id: "06627B84E2D2AFE0"
+					title: "深境二层"
+					type: "dimension"
+				}
+				{
+					id: "32951DF0C147D5E7"
+					item: "aether:sentry_stone"
+					type: "item"
+				}
+				{
+					id: "5B365CEC5C1DDA4F"
+					item: "aether_redux:sentry_base"
+					type: "item"
+				}
+			]
 			title: "深境二层"
 			x: 0.0d
 			y: 0.0d

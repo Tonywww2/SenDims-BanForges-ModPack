@@ -168,8 +168,27 @@
 				" A  A  A"
 				"空 A 空 "
 				""
+				"传送门结构（从下往上）："
+				"通用结构（从下往上）："
+				"·第一层"
+				"空空空"
+				"空空空"
+				"空空空"
+				""
+				"·第二层"
+				"空空空 "
+				"空 B 空 "
+				"空空空"
+				""
+				"·第三层"
+				" A  A  A"
+				" A  A  A"
+				" A  A  A "
+				""
+				""
 				"最后使用指定的物品点击第二层的\"B\"。"
 			]
+			hide_dependent_lines: true
 			icon: "ae2:fluix_pearl"
 			id: "034D47E905861E48"
 			shape: "hexagon"
@@ -1147,6 +1166,25 @@
 			}]
 			x: 10.0d
 			y: -25.0d
+		}
+		{
+			dependencies: ["034D47E905861E48"]
+			description: [
+				"返回仪式会在传送门仪式的目的地生成。"
+				""
+				"它是由&6黑曜石&r建造的3x3平台，中心为&6哭泣的黑曜石&r"
+				"使用&6木棍&r右键&6哭泣的黑曜石&r激活传送"
+			]
+			icon: "minecraft:grass_block"
+			id: "0191BEFB99BFD5D5"
+			shape: "hexagon"
+			tasks: [{
+				id: "5B3AB99A64A876F0"
+				type: "checkmark"
+			}]
+			title: "返回仪式"
+			x: 0.0d
+			y: -2.5d
 		}
 	]
 	title: "战斗辅助"

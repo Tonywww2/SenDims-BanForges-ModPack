@@ -35,7 +35,7 @@
 		{
 			id: "4FEAB9C1DEE7D47E"
 			linked_quest: "40B4C6CD28E7DF19"
-			x: 2.5d
+			x: -2.5d
 			y: 0.0d
 		}
 	]
@@ -127,10 +127,7 @@
 			y: -5.0d
 		}
 		{
-			dependencies: [
-				"260A17885336B776"
-				"051641EF8104FA8F"
-			]
+			dependencies: ["260A17885336B776"]
 			id: "20C5B7CCF681A814"
 			tasks: [{
 				id: "3C8CEEDCB21244B2"
@@ -224,10 +221,11 @@
 						}
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			title: "灵魂瓶：火星迅猛龙"
-			x: -2.5d
+			x: 2.5d
 			y: 0.0d
 		}
 		{

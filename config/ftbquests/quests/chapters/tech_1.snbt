@@ -42,6 +42,7 @@
 	quests: [
 		{
 			dependencies: ["73531FB69122489F"]
+			hide_dependent_lines: true
 			hide_until_deps_complete: true
 			id: "15D102DE2394A495"
 			size: 2.0d
@@ -127,6 +128,7 @@
 				"47C442362B73368D"
 			]
 			description: ["&4记得检查氧气是否充足"]
+			hide_until_deps_visible: true
 			icon: {
 				Count: 1
 				id: "ad_astra:tier_1_rocket"
@@ -537,6 +539,8 @@
 		}
 		{
 			dependencies: ["1202BBA3EB29DB70"]
+			description: ["&c警告：需要太空耐火或者抗火药水效果。&r"]
+			hide_until_deps_complete: true
 			id: "78BE62D2851798DD"
 			shape: "hexagon"
 			tasks: [{
@@ -637,6 +641,11 @@
 		{
 			dependencies: ["49ED2F0850A4FCDE"]
 			id: "1AFA1F8F4A3B7215"
+			rewards: [{
+				id: "4D737DC5627F2924"
+				item: "enderio:basic_capacitor"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2DC96D198546537B"
 				item: "enderio:alloy_smelter"
@@ -943,6 +952,7 @@
 				"7B68236BA19FE0EE"
 				"0AE9B149F1CB5B66"
 			]
+			dependency_requirement: "one_completed"
 			id: "41D60AA656791D52"
 			tasks: [{
 				id: "3F80E38CC5DC9A3F"
@@ -1102,11 +1112,14 @@
 			y: 45.0d
 		}
 		{
-			dependencies: ["2529CD2EF2A8961B"]
+			dependencies: [
+				"2529CD2EF2A8961B"
+				"15D102DE2394A495"
+			]
 			id: "590D7D0D241DD369"
 			tasks: [{
-				id: "0C7B3C69B8080E8A"
-				item: "tofucraft:blocktofudiamond"
+				id: "5C05E8F1A201F6A6"
+				item: "tofucraft:tofudiamond"
 				type: "item"
 			}]
 			x: -5.0d
@@ -1116,6 +1129,7 @@
 			dependencies: [
 				"5BB642BD0BE40541"
 				"6140B0BCEB7F9D64"
+				"15D102DE2394A495"
 			]
 			id: "3729969E7821EBB6"
 			tasks: [{
@@ -1127,7 +1141,10 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["5BB642BD0BE40541"]
+			dependencies: [
+				"5BB642BD0BE40541"
+				"15D102DE2394A495"
+			]
 			id: "58392C23DFA54B7F"
 			tasks: [{
 				id: "05703322306712EB"
@@ -1326,6 +1343,21 @@
 			}]
 			x: 12.5d
 			y: 50.0d
+		}
+		{
+			dependencies: ["31801D73AF59C8CB"]
+			id: "3B306D3A6682508A"
+			tasks: [{
+				id: "68FF79DAEE8265BB"
+				item: {
+					Count: 1
+					id: "ad_astra_giselle_addon:netherite_oxygen_can"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 37.5d
 		}
 	]
 	title: "工业"

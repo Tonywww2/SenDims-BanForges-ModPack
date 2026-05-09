@@ -683,6 +683,7 @@
 					id: "slashblade:slashblade"
 					tag: { }
 				}
+				match_nbt: false
 				type: "item"
 			}]
 			x: 0.0d
@@ -1199,6 +1200,7 @@
 		{
 			dependencies: ["6988EF237AE411F0"]
 			id: "65B006E14075F1AE"
+			shape: "hexagon"
 			tasks: [{
 				id: "1F7D3ADA248DAE07"
 				item: {

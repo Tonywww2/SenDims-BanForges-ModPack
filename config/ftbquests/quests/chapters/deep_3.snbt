@@ -67,12 +67,22 @@
 			id: "7483981BDC9935E5"
 			linked_quest: "2563ABCEC67C3877"
 			x: 5.0d
+			y: 5.0d
+		}
+		{
+			id: "4614C32155EBEA48"
+			linked_quest: "28CAD1DD57B60440"
+			shape: "hexagon"
+			x: 5.0d
 			y: 2.5d
 		}
 	]
 	quests: [
 		{
-			dependencies: ["7267904F019CEFD6"]
+			dependencies: [
+				"7267904F019CEFD6"
+				"078E92000B6E3912"
+			]
 			description: ["在午夜开启裂缝。"]
 			hide_dependent_lines: true
 			hide_until_deps_complete: true
@@ -186,6 +196,7 @@
 				"21AAA0495A97DD6A"
 				"189D056BF992C545"
 				"295CDAFD4AFD72D7"
+				"5A5D5E71A6C8851E"
 			]
 			id: "15D7D8180F97D356"
 			tasks: [{
@@ -430,8 +441,24 @@
 				item: "midnight:rendium_shard"
 				type: "item"
 			}]
-			x: -5.0d
+			x: 7.5d
 			y: 0.0d
+		}
+		{
+			dependencies: [
+				"26527CD8C76043BE"
+				"5A5D5E71A6C8851E"
+			]
+			hide_until_deps_visible: true
+			id: "6E39BB8C6B65D2B6"
+			shape: "hexagon"
+			tasks: [{
+				id: "1F8432296BD44C87"
+				item: "undergarden:catalyst"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.5d
 		}
 	]
 	title: "深境：午夜"

@@ -697,7 +697,10 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["3E8E74B1D1E90894"]
+			dependencies: [
+				"3E8E74B1D1E90894"
+				"6442E0C760FAF02B"
+			]
 			description: ["这些变量卡有些特殊？"]
 			id: "0C568583CC58DAA6"
 			shape: "hexagon"

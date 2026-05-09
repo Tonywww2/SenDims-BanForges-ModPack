@@ -104,6 +104,7 @@
 		{
 			dependencies: ["26B66FFB1E5C691C"]
 			id: "7EE0F0E7324E3356"
+			subtitle: "不建议使用"
 			tasks: [{
 				id: "04B93ED562C8AFAB"
 				item: "quark:crate"
@@ -276,7 +277,11 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["2C5FD8E929D9EFE2"]
+			dependencies: [
+				"2C5FD8E929D9EFE2"
+				"15BA421AED2C3186"
+			]
+			dependency_requirement: "one_completed"
 			id: "1A673E1DCFA4F798"
 			tasks: [{
 				id: "331F7EED3C649560"
@@ -606,6 +611,28 @@
 			}]
 			x: 5.0d
 			y: 15.0d
+		}
+		{
+			dependencies: ["6130B752208314B7"]
+			id: "71FCA5FAB43DD617"
+			tasks: [{
+				id: "75B74148E2E36AA5"
+				item: "ae2:charger"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["71FCA5FAB43DD617"]
+			id: "15BA421AED2C3186"
+			tasks: [{
+				id: "2A7F81975618BADA"
+				item: "ae2:mysterious_cube"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 7.5d
 		}
 	]
 	title: "库存管理"

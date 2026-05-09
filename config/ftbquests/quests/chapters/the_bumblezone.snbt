@@ -5,7 +5,7 @@
 	group: "35DD57C332D61BB0"
 	icon: "the_bumblezone:beehive_beeswax"
 	id: "22702047F4B6E264"
-	order_index: 3
+	order_index: 2
 	quest_links: [
 		{
 			id: "365AD91D1117D708"

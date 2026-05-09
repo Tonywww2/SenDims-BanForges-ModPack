@@ -93,6 +93,7 @@
 		}
 		{
 			dependencies: ["35A8F36675442F8B"]
+			description: ["可以制作遗忆府邸的结构羽毛笔。"]
 			id: "26FBCD46CCE1BABC"
 			tasks: [{
 				id: "6009C7E454748B4B"
@@ -103,14 +104,18 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["35A8F36675442F8B"]
+			dependencies: [
+				"35A8F36675442F8B"
+				"26FBCD46CCE1BABC"
+			]
+			dependency_requirement: "one_completed"
 			id: "0565456A2B5996BE"
 			tasks: [{
 				id: "340DA4A317ADC543"
-				structure: "undergarden:forgotten_vestige"
+				structure: "undergarden:catacombs"
 				type: "structure"
 			}]
-			title: "下僻巢穴"
+			title: "遗忆府邸"
 			x: 0.0d
 			y: -5.0d
 		}
