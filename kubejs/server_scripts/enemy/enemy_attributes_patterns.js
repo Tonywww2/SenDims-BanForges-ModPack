@@ -225,11 +225,11 @@ const additionalStageScale = {
     "1_1": [1, 1, 1, 1],
     "1_2": [1, 1, 1, 1],
     "1_3": [1, 1, 1, 1],
-    "1_4": [1, 1, 1, 1],
+    "1_4": [1, 0.9, 1, 1], // 乘区饰品余量
 
-    "2_1": [1, 1, 1, 1],
-    "2_2": [1, 1, 1, 1],
-    "2_3": [1, 1, 1, 1],
+    "2_1": [1, 0.8, 1, 1],
+    "2_2": [1, 0.7, 1, 1],
+    "2_3": [1, 0.65, 1, 1], // 乘区饰品余量
 
     "3_1": [1, 1, 1, 1],
     "3_2": [1, 1, 1, 1],
@@ -269,14 +269,13 @@ const dimensionStages = new Map([
 
     ["sdbf:asteroid_belt", "3_1"],
 
-    ["sdbf:saturn", "3_2"],
     ["the_bumblezone:the_bumblezone", "3_2"],
 
     ["sdbf:saturn_orbit", "3_3"],
     ["sdbf:inside_the_end", "3_3"],
-    ["minecraft:overworld", "0_1"],
+    ["minecraft:overworld", "0_1"], // Special
 
-    ["sdbf:pluto", "4_1"],
+    ["sdbf:saturn", "3_2"],
     ["ad_astra:glacio", "4_1"],
 
     ["sdbf:deep_realm_level_4", "4_2"]

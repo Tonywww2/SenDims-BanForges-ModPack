@@ -18,6 +18,7 @@ const $ModularArmorItem = Java.loadClass("ovo.yiran.geotetraarmor.items.ModularA
 
 const $ModularItemDamageEvent = Java.loadClass("se.mickelus.tetra.event.ModularItemDamageEvent");
 const $LivingHurtEvent = Java.loadClass("net.minecraftforge.event.entity.living.LivingHurtEvent");
+const $LivingTickEvent = Java.loadClass('net.minecraftforge.event.entity.living.LivingEvent$LivingTickEvent');
 const $PortalSpawnEvent = Java.loadClass("net.minecraftforge.event.level.BlockEvent$PortalSpawnEvent")
 const $PerformSlashArtEvent = Java.loadClass("mods.flammpfeil.slashblade.event.SlashBladeEvent$PerformSlashArtEvent")
 const $ItemStackedOnOtherEvent = Java.loadClass("net.minecraftforge.event.ItemStackedOnOtherEvent")

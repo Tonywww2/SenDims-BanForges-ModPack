@@ -41,6 +41,8 @@ const toRemoveID = new Set([
     "botania:terra_plate",
     "nuclearcraft:ingot_former/obsidian",
     "nuclearcraft:manufactory/ender_pearl",
+    "nuclearcraft:manufactory/netherite_scrap",
+    "ad_astra:nasa_workbench/tier_4_rocket_from_nasa_workbench",
     "slashblade:tagayasan",
 
     "sophisticatedbackpacks:backpack",

@@ -151,7 +151,7 @@ ServerEvents.recipes(event => {
         'BCB',
         'ABA'
     ], {
-        A: 'kubejs:mysterious_alkali_crystal',
+        A: ['kubejs:mysterious_alkali_crystal', 'enderio:end_steel_ingot'],
         B: ['kubejs:scoria_ingot', '#forge:ingots/forgotten_metal'],
         C: 'slashblade_sendims:estus_flask_2'
     }).id('sdbf:estus_flask_3')

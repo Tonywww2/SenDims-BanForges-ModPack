@@ -301,7 +301,7 @@ const mobTypes = new Map([
     ["minecraft:evoker", typeA],
     ["minecraft:vex", typeSlime],
 
-    ["minecraft:ender_dragon", bossType2],
+    ["minecraft:ender_dragon", bossType1],
     ["minecraft:elder_guardian", bossType1],
 
     ["ad_astra:pygro", typeA],

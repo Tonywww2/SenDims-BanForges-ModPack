@@ -1,4 +1,8 @@
 ServerEvents.recipes(event => {
+
+    event.shapeless('cataclysm:burning_ashes',[
+        'cataclysm:flame_eye'
+    ]).id("sdbf:burning_ashes_s3")
     
     event.shaped('kubejs:mercury_refractory_structural_component', [
         'ABA',
