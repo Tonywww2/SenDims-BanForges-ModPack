@@ -1,41 +1,55 @@
 {
-  "type": "slashbladetetra:blade",
-  "slots": [
-    "slashblade/handle"
-  ],
-  "improvements": [
-    "tetra:slashblade/shared/"
-  ],
-  "variants": [
-    {
-      "materials": [
-        "tetra:metal/",
-        "tetra:wood/",
-        "tetra:bone/",
-        "tetra:rod/"
-      ],
-      "aspects": {
-        "slashblade": 2
-      },
-      "key": "handle/",
-      "extract": {
-        "primaryAttributes": {
-          "generic.attack_damage": 0.5
-        },
-        "primaryEffects": {
-          "RefineStrengthening": 0.5
-        },
-        "secondaryEffects":{
-          "RefineStrengthening": -1
-        },
-        "durability": 0.15,
-        "magicCapacity": 4.5,
-        "glyph": {
-          "textureX": 0,
-          "textureY": 0,
-          "textureLocation": "slashbladetetra:textures/gui/texture.png"
+    "type": "slashbladetetra:blade",
+    "slots":
+    [
+        "slashblade/handle"
+    ],
+    "improvements":
+    [
+        "tetra:slashblade/shared/"
+    ],
+    "variants":
+    [
+        {
+            "materials":
+            [
+                "tetra:metal/",
+                "tetra:wood/",
+                "tetra:bone/",
+                "tetra:rod/"
+            ],
+            "aspects":
+            {
+                "slashblade": 2
+            },
+            "key": "handle/",
+            "extract":
+            {
+                "primaryAttributes":
+                {
+                    "generic.attack_damage": 0.15
+                },
+                "secondaryAttributes":
+                {
+                    "generic.attack_damage": 0.1
+                },
+                "primaryEffects":
+                {
+                    "RefineStrengthening": 0.15
+                },
+                "secondaryEffects":
+                {
+                    "RefineStrengthening": 0.1
+                },
+                "durability": 0.15,
+                "magicCapacity": 4.5,
+                "glyph":
+                {
+                    "textureX": 0,
+                    "textureY": 0,
+                    "textureLocation": "slashbladetetra:textures/gui/texture.png"
+                }
+            }
         }
-      }
-    }
-  ]
+    ]
 }

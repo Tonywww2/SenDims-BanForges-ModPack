@@ -159,6 +159,7 @@ ServerEvents.highPriorityData(event => {
         .addTexture("metal").addTexture("default")
         .setTagMaterial('forge:ingots/iron')
         .setRequiredTool("hammer_dig", 1)
+        .addEnchantment("minecraft:power", 1)
         .build();
 
     // 银材料
@@ -220,6 +221,7 @@ ServerEvents.highPriorityData(event => {
         .addTexture("shiny").addTexture("crude")
         .setTagMaterial('forge:gems/certus_quartz')
         .setRequiredTool("hammer_dig", 1)
+        .addEnchantment("apotheosis:earths_boon", 1)
         .build();
 
     // 紫水晶材料
@@ -268,6 +270,7 @@ ServerEvents.highPriorityData(event => {
         .addTexture("shiny").addTexture("crude")
         .setTagMaterial('forge:gems/diamond')
         .setRequiredTool("hammer_dig", 1)
+        .addEnchantment("minecraft:unbreaking", 1)
         .build();
 
     // 绿宝石材料
@@ -280,6 +283,7 @@ ServerEvents.highPriorityData(event => {
         .addTexture("shiny").addTexture("crude")
         .setTagMaterial('forge:gems/emerald')
         .setRequiredTool("hammer_dig", 1)
+        .addEnchantment("minecraft:fortune", 1)
         .build();
 
     tetraMaterialBuilder(event, "witherite_ingot").setCategory("metal")

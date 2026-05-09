@@ -2,20 +2,20 @@ const $BloodJade = Java.loadClass("com.tonywww.slashblade_sendims.items.BloodJad
 
 const bossDropReplace = Utils.newMap();
 
-bossDropReplace.put("apotheosis:common", '3x apotheosis:common_material');
-bossDropReplace.put("apotheosis:uncommon", '3x apotheosis:uncommon_material');
-bossDropReplace.put("apotheosis:rare", '2x apotheosis:rare_material');
-bossDropReplace.put("apotheosis:epic", '2x apotheosis:epic_material');
+bossDropReplace.put("apotheosis:common", '2x apotheosis:common_material');
+bossDropReplace.put("apotheosis:uncommon", '2x apotheosis:uncommon_material');
+bossDropReplace.put("apotheosis:rare", 'apotheosis:rare_material');
+bossDropReplace.put("apotheosis:epic", 'apotheosis:epic_material');
 bossDropReplace.put("apotheosis:mythic", 'apotheosis:mythic_material');
 bossDropReplace.put("apotheosis:ancient", '2x apotheosis:mythic_material');
 
 const jadeMap = {
-    "apotheosis:common": 10,
-    "apotheosis:uncommon": 10,
-    "apotheosis:rare": 20,
-    "apotheosis:epic": 50,
-    "apotheosis:mythic": 50,
-    "apotheosis:ancient": 100,
+    "apotheosis:common": 20,
+    "apotheosis:uncommon": 20,
+    "apotheosis:rare": 50,
+    "apotheosis:epic": 100,
+    "apotheosis:mythic": 500,
+    "apotheosis:ancient": 1000,
 };
 
 EntityEvents.drops(event => {

@@ -27,6 +27,7 @@ ServerEvents.highPriorityData(event => {
         .setTints("c2d1db", "9eb0bb").addTexture("shiny").addTexture("crude")
         .addItemMaterial('deep_aether:bio_crystal')
         .setRequiredTool("hammer_dig", 1)
+        .addEnchantment("apotheosis:capturing", 1)
         .build();
 
     tetraMaterialBuilder(event, "steeleaf").setCategory("metal")
@@ -37,6 +38,7 @@ ServerEvents.highPriorityData(event => {
         .setTints("27401d", "416230").addTexture("heavy").addTexture("metal")
         .addItemMaterial('twilightforest:steeleaf_ingot')
         .setRequiredTool("hammer_dig", 1)
+        .addEnchantment("minecraft:looting", 1)
         .build();
 
     tetraMaterialBuilder(event, "raven_feather").setCategory("fibre")
@@ -86,6 +88,7 @@ ServerEvents.highPriorityData(event => {
         .setTints("f7f7f7", "a8a8a8").addTexture("heavy").addTexture("metal")
         .addItemMaterial('aether_redux:sentry_chip')
         .setRequiredTool("hammer_dig", 1)
+        .addEnchantment("minecraft:sharpness", 1)
         .build();
 
     tetraMaterialBuilder(event, "lightroot_clump").setCategory("metal")
@@ -106,6 +109,7 @@ ServerEvents.highPriorityData(event => {
         .setTints("f9f882", "d9db30").addTexture("heavy").addTexture("metal")
         .addItemMaterial('aether_redux:refined_sentrite')
         .setRequiredTool("hammer_dig", 1)
+        .addEnchantment("apotheosis:life_mending", 1)
         .build();
 
     tetraMaterialBuilder(event, "naga_scale").setCategory("metal")
@@ -125,6 +129,7 @@ ServerEvents.highPriorityData(event => {
         .setTints("49c2f2", "49b4f2").addTexture("heavy").addTexture("metal")
         .addItemMaterial('aether_redux:veridium_ingot')
         .setRequiredTool("hammer_dig", 1)
+        .addEnchantment("minecraft:silk_touch", 1)
         .build();
 
     tetraMaterialBuilder(event, "mykapod_shell").setCategory("metal")
@@ -165,6 +170,7 @@ ServerEvents.highPriorityData(event => {
         .setTints("b0e564", "759a51").addTexture("heavy").addTexture("metal")
         .addItemMaterial('deep_aether:skyjade')
         .setRequiredTool("hammer_dig", 1)
+        .addEnchantment("last_smith:spirit_absorption", 1)
         .build();
 
     tetraMaterialBuilder(event, "gravitite").setCategory("metal")
@@ -230,6 +236,7 @@ ServerEvents.highPriorityData(event => {
         .addTexture("shiny").addTexture("metal")
         .addItemMaterial('aether_treasure_reforging:valkyrum_ingot')
         .setRequiredTool("hammer_dig", 1)
+        .addEnchantment("minecraft:fortune", 1.5)
         .build();
 
     // 凤凰锭材料
@@ -281,6 +288,7 @@ ServerEvents.highPriorityData(event => {
         .addTexture("shiny").addTexture("metal")
         .addItemMaterial('deep_aether:stratus_ingot')
         .setRequiredTool("hammer_dig", 1)
+        .addEnchantment("last_smith:spirit_slash", 1)
         .build();
 
     // 岩石裂骸材料
@@ -329,8 +337,9 @@ ServerEvents.highPriorityData(event => {
         .setTints("9370db", "a987d4")
         .addTexture("shiny").addTexture("metal")
         .setTagMaterial('forge:ingots/ostrum')
-        .addEffects("fot:fe_store", 24000)
+        .addEffects("fot:fe_store", 12000)
         .setRequiredTool("hammer_dig", 3)
+        .addEnchantment("minecraft:sweeping", 1)
         .build();
 
     tetraMaterialBuilder(event, "ancient_metal_ingot").setCategory("metal")

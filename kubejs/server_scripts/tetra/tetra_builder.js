@@ -33,6 +33,7 @@ const tetraMaterialBuilder = (event, id) => {
     let improvements = {};
     let tags = undefined;
     let features = undefined;
+    let enchantments = {};
     let builder = {
         setCategory(str) { category = str; return builder; },
         setPrimary(num) { primary = num; return builder; },
@@ -60,9 +61,10 @@ const tetraMaterialBuilder = (event, id) => {
         setExperienceCost(num) { experienceCost = num; return builder; },
         setTags(lst) { tags = lst; return builder; },
         setFeatures(lst) { features = lst; return builder; },
+        addEnchantment(id, lvl) { enchantments[id] = lvl; return builder; },
 
         build() {
-            
+
             let json = {
                 key: key,
                 category: category,
@@ -84,9 +86,10 @@ const tetraMaterialBuilder = (event, id) => {
                 material: material,
                 requiredTools: requiredTools,
                 effects: effects,
-                attributes: attributes                
+                attributes: attributes
             };
             if (features) json["features"] = features;
+            if (enchantments) json["enchantments"] = enchantments;
             if (materialItems.length > 0) json["material"]["items"] = materialItems;
             if (improvements != {}) json["improvements"] = improvements;
             if (tags) json["tags"] = tags;

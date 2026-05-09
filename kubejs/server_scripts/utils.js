@@ -9,7 +9,7 @@ const $UUID = Java.loadClass("java.util.UUID");
 
 const $TagKey = Java.loadClass('net.minecraft.tags.TagKey');
 const $Registries = Java.loadClass('net.minecraft.core.registries.Registries');
-// const $ForgeRegistries = Java.loadClass('net.minecraftforge.registries.ForgeRegistries');
+const $ForgeRegistries = Java.loadClass('net.minecraftforge.registries.ForgeRegistries');
 const $SpawnEggItem = Java.loadClass('net.minecraft.world.item.SpawnEggItem');
 const $SlashBladeDefinition = Java.loadClass('mods.flammpfeil.slashblade.registry.slashblade.SlashBladeDefinition');
 const $ItemSlashBlade = Java.loadClass('mods.flammpfeil.slashblade.item.ItemSlashBlade');

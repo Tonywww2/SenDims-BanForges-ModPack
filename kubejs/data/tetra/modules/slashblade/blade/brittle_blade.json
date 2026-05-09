@@ -1,47 +1,55 @@
 {
-  "type": "slashbladetetra:blade",
-  "slots": [
-    "slashblade/blade"
-  ],
-  "improvements": [
-    "tetra:slashblade/blade/"
-  ],
-  "variants": [
-    {
-      "materials": [
-        "tetra:gem/",
-        "tetra:bone/",
-        "tetra:stone/"
-      ],
-      "aspects": {
-        "slashblade": 2
-      },
-      "key": "brittle_blade/",
-      "effects": {
-        "intuit": 1,
-        "bleeding": 1
-      },
-      "attributes": {
-        "forge:entity_reach":2.5
-      },
-      "extract": {
-        "primaryAttributes": {
-          "generic.attack_damage": 1.5
-        },
-        "primaryEffects": {
-          "RefineStrengthening": 1
-        },
-        "secondaryEffects":{
-          "RefineStrengthening": -0.5
-        },
-        "durability": 0.01,
-        "magicCapacity": 3,
-        "glyph": {
-          "textureX": 16,
-          "textureY": 0,
-          "textureLocation": "slashbladetetra:textures/gui/texture.png"
+    "type": "slashbladetetra:blade",
+    "slots":
+    [
+        "slashblade/blade"
+    ],
+    "improvements":
+    [
+        "tetra:slashblade/blade/"
+    ],
+    "variants":
+    [
+        {
+            "materials":
+            [
+                "tetra:gem/",
+                "tetra:bone/",
+                "tetra:stone/"
+            ],
+            "aspects":
+            {
+                "slashblade": 2
+            },
+            "key": "brittle_blade/",
+            "effects":
+            {
+                "intuit": 1,
+                "bleeding": 1
+            },
+            "attributes":
+            {
+                "forge:entity_reach": 2.5
+            },
+            "extract":
+            {
+                "primaryAttributes":
+                {
+                    "generic.attack_damage": 1.25
+                },
+                "secondaryEffects":
+                {
+                    "RefineStrengthening": 0.25
+                },
+                "durability": 0.01,
+                "magicCapacity": 3,
+                "glyph":
+                {
+                    "textureX": 16,
+                    "textureY": 0,
+                    "textureLocation": "slashbladetetra:textures/gui/texture.png"
+                }
+            }
         }
-      }
-    }
-  ]
+    ]
 }

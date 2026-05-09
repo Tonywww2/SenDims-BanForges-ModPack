@@ -47,6 +47,7 @@ ServerEvents.highPriorityData(event => {
         .addTexture("shiny").addTexture("crude")
         .addItemMaterial('integrateddynamics:crystalized_menril_chunk')
         .setRequiredTool("hammer_dig", 1)
+        .addEnchantment("minecraft:efficiency", 1)
         .build();
 
     // 5. 爆裂紫颂果 (已修正说明)
@@ -63,7 +64,7 @@ ServerEvents.highPriorityData(event => {
 
     // 6. 耐热金属 (无需修改)
     tetraMaterialBuilder(event, "calorite").setCategory("metal")
-        .setPrimary(12).setSecondary(5).setTertiary(6.5)
+        .setPrimary(15).setSecondary(3).setTertiary(7.5)
         .setDurability(260).setIntegrityCost(4).setIntegrityGain(5)
         .setMagicCapacity(120).setToolLevel(4).setToolEfficiency(7)
         .addAttributes("slashblade_sendims:frenzy_resistance", 0.05)
@@ -73,7 +74,7 @@ ServerEvents.highPriorityData(event => {
         .addTexture("metal").addTexture("heavy")
         .setTagMaterial('forge:ingots/calorite')
         .setRequiredTool("hammer_dig", 1)
-        .addEffects("fot:fe_store", 24000)
+        .addEffects("fot:fe_store", 18000)
         .build();
 
     // 7. 水星石 (新加)
@@ -90,12 +91,12 @@ ServerEvents.highPriorityData(event => {
 
     // 8. 墨丘利耐火结构组件 (新加)
     tetraMaterialBuilder(event, "mercury_refractory").setCategory("metal")
-        .setPrimary(18).setSecondary(8).setTertiary(8)
+        .setPrimary(22).setSecondary(22).setTertiary(11.5)
         .setDurability(260).setIntegrityCost(4).setIntegrityGain(6)
         .setMagicCapacity(130).setToolLevel(3).setToolEfficiency(7)
-        .addAttributes("attributeslib:fire_damage", 4.0)
-        .addAttributes("slashblade_sendims:frenzy_resistance", 0.1)
-        .addAttributes("minecraft:generic.armor_toughness", 0.5)
+        .addAttributes("**minecraft:generic.attack_damage", 0.02)
+        .addAttributes("slashblade_sendims:frenzy_resistance", 0.05)
+        .addAttributes("minecraft:generic.knockback_resistance", 0.05)
         .setTints("d35400", "873600") 
         .addTexture("metal").addTexture("heavy")
         .addItemMaterial('kubejs:mercury_refractory_structural_component')
@@ -130,7 +131,7 @@ ServerEvents.highPriorityData(event => {
 
     // 10. 紫菘玻璃 (无需修改)
     tetraMaterialBuilder(event, "chorus_glass").setCategory("gem")
-        .setPrimary(17).setSecondary(2).setTertiary(7)
+        .setPrimary(18).setSecondary(4).setTertiary(10)
         .setDurability(180).setIntegrityCost(6).setIntegrityGain(6)
         .setMagicCapacity(115).setToolLevel(3).setToolEfficiency(8)
         .addAttributes("slashblade_sendims:ap_reduce_amount", 10.0)
@@ -156,11 +157,11 @@ ServerEvents.highPriorityData(event => {
 
     // 12. 扼塞 (新加)
     tetraMaterialBuilder(event, "cloggrum").setCategory("metal")
-        .setPrimary(13).setSecondary(5).setTertiary(7)
+        .setPrimary(14).setSecondary(5).setTertiary(6)
         .setDurability(180).setIntegrityCost(5).setIntegrityGain(5)
         .setMagicCapacity(100).setToolLevel(2).setToolEfficiency(6)
-        .addAttributes("attributeslib:crit_chance", -0.05)
-        .addAttributes("**minecraft:generic.attack_damage", 0.05)
+        .addAttributes("attributeslib:crit_chance", -0.03)
+        .addAttributes("**minecraft:generic.attack_damage", 0.03)
         .setTints("7d765c", "eddb8c") 
         .addTexture("metal").addTexture("crude")
         .addItemMaterial('undergarden:cloggrum_ingot')
@@ -182,10 +183,10 @@ ServerEvents.highPriorityData(event => {
 
     // 14. 霜钢 (已修正)
     tetraMaterialBuilder(event, "frost_steel").setCategory("metal")
-        .setPrimary(15).setSecondary(7).setTertiary(9.5) // 修正主属性为 15
+        .setPrimary(15).setSecondary(7).setTertiary(9) // 修正主属性为 15
         .setDurability(280).setIntegrityCost(7).setIntegrityGain(7)
         .setMagicCapacity(140).setToolLevel(4).setToolEfficiency(7.5)
-        .addAttributes("attributeslib:cold_damage", 6.0)
+        .addAttributes("attributeslib:cold_damage", 4.0)
         .setTints("85c1e9", "2e86c1") 
         .addTexture("metal").addTexture("heavy")
         .setTagMaterial('forge:ingots/froststeel') 
@@ -246,7 +247,7 @@ ServerEvents.highPriorityData(event => {
 
     // 20. 悲哀线圈 (新加)
     tetraMaterialBuilder(event, "coil_of_sorrow").setCategory("metal")
-        .setPrimary(25).setSecondary(8).setTertiary(11.6)
+        .setPrimary(25).setSecondary(8).setTertiary(11)
         .setDurability(280).setIntegrityCost(7).setIntegrityGain(9)
         .setMagicCapacity(150).setToolLevel(4).setToolEfficiency(7)
         .addAttributes("attributeslib:armor_pierce", 1.5)
@@ -261,11 +262,11 @@ ServerEvents.highPriorityData(event => {
 
     // 21. Xenorium 298 (新加)
     tetraMaterialBuilder(event, "xenorium_298").setCategory("metal")
-        .setPrimary(20).setSecondary(23).setTertiary(11)
+        .setPrimary(19).setSecondary(23).setTertiary(10)
         .setDurability(300).setIntegrityCost(6).setIntegrityGain(6)
         .setMagicCapacity(160).setToolLevel(4).setToolEfficiency(8)
         .addAttributes("slashblade_sendims:frenzy_damage", 0.1)
-        .addAttributes("slashblade_sendims:hate", 1.0)
+        .addAttributes("attributeslib:fire_damage", 4.0)
         .addAttributes("minecraft:generic.max_health", 4.0)
         .setTints("5b2c6f", "21043f") 
         .addTexture("metal").addTexture("shiny")
@@ -275,7 +276,7 @@ ServerEvents.highPriorityData(event => {
 
     // 22. 铍青铜复合材料 (替换原铍青铜)
     tetraMaterialBuilder(event, "menril-silicon_sic_sic_cmc").setCategory("metal")
-        .setPrimary(27).setSecondary(14).setTertiary(12)
+        .setPrimary(26).setSecondary(19).setTertiary(13)
         .setDurability(300).setIntegrityCost(8).setIntegrityGain(9)
         .setMagicCapacity(150).setToolLevel(4).setToolEfficiency(8)
         .addAttributes("minecraft:generic.armor_toughness", 1.0)
@@ -289,7 +290,7 @@ ServerEvents.highPriorityData(event => {
 
     // 23. 虚空石 (新加)
     tetraMaterialBuilder(event, "void_stone").setCategory("stone")
-        .setPrimary(11).setSecondary(28).setTertiary(10)
+        .setPrimary(19).setSecondary(12).setTertiary(10)
         .setDurability(200).setIntegrityCost(6).setIntegrityGain(6)
         .setMagicCapacity(130).setToolLevel(4).setToolEfficiency(8)
         .addAttributes("terra_curio:aggro", -30)
@@ -302,7 +303,7 @@ ServerEvents.highPriorityData(event => {
 
     // 24. 虚空核心 (新加)
     tetraMaterialBuilder(event, "void_core").setCategory("gem")
-        .setPrimary(10).setSecondary(35).setTertiary(10.5)
+        .setPrimary(18).setSecondary(35).setTertiary(13)
         .setDurability(250).setIntegrityCost(6).setIntegrityGain(8)
         .setMagicCapacity(160).setToolLevel(4).setToolEfficiency(8)
         .addAttributes("attributeslib:armor_shred", 0.03)
@@ -310,11 +311,13 @@ ServerEvents.highPriorityData(event => {
         .addTexture("metal").addTexture("shiny")
         .addItemMaterial('cataclysm:void_core')
         .setRequiredTool("hammer_dig", 1)
+        .addEnchantment("minecraft:power", 1)
+        .addEnchantment("minecraft:sharpness", 1)
         .build();
 
     // 25. 幻境石水晶 (无需修改)
     tetraMaterialBuilder(event, "myalite_crystal").setCategory("gem")
-        .setPrimary(12).setSecondary(30).setTertiary(10.5)
+        .setPrimary(14).setSecondary(25).setTertiary(10)
         .setDurability(280).setIntegrityCost(9).setIntegrityGain(9)
         .setMagicCapacity(160).setToolLevel(4).setToolEfficiency(7)
         .addAttributes("attributeslib:crit_damage", 0.05)
@@ -322,14 +325,16 @@ ServerEvents.highPriorityData(event => {
         .addTexture("shiny").addTexture("default")
         .addItemMaterial('quark:myalite_crystal')
         .setRequiredTool("hammer_dig", 1)
+        .addEnchantment("last_smith:spirit_slash", 1)
+        .addEnchantment("last_smith:spirit_absorption", 1)
         .build();
 
     // 26. 紫颂果结晶 (已修正)
     tetraMaterialBuilder(event, "crystalized_chorus").setCategory("gem")
-        .setPrimary(10).setSecondary(15).setTertiary(7)
+        .setPrimary(13).setSecondary(12).setTertiary(9)
         .setDurability(220).setIntegrityCost(9).setIntegrityGain(10)
         .setMagicCapacity(140).setToolLevel(3).setToolEfficiency(6)
-        .addAttributes("attributeslib:cold_damage", 7.5) // 修正为由之前火冰均属性修改为仅仅冰霜伤害+7.5
+        .addAttributes("attributeslib:cold_damage", 4) // 修正为由之前火冰均属性修改为仅仅冰霜伤害+7.5
         .setTints("bb8fce", "5b2c6f") 
         .addTexture("shiny").addTexture("crude")
         .addItemMaterial('integrateddynamics:crystalized_chorus_chunk')
@@ -338,18 +343,18 @@ ServerEvents.highPriorityData(event => {
 
     // 27. 末地钢锭 (已修正)
     tetraMaterialBuilder(event, "end_steel").setCategory("metal")
-        .setPrimary(25).setSecondary(13).setTertiary(12.7)
+        .setPrimary(25).setSecondary(13).setTertiary(12)
         .setDurability(300).setIntegrityCost(9).setIntegrityGain(10)
         .setMagicCapacity(160).setToolLevel(4).setToolEfficiency(8)
         .addAttributes("slashblade_sendims:sprint_cd", 0.05)
-        .addAttributes("slashblade_sendims:ap_reduce_amount", 10.0) // 修改为+10
+        .addAttributes("slashblade_sendims:ap_reduce_amount", 15.0)
         .addAttributes("minecraft:generic.attack_damage", 1.0)
         .setTints("273746", "1d8348") 
         .addTexture("metal").addTexture("heavy").addTexture("shiny")
         .addItemMaterial('enderio:end_steel_ingot')
         .setRequiredTool("hammer_dig", 1)
         .addEffects("mana_resonance", [1, 0])
-        .addEffects("fot:fe_store", 24000)
+        .addEffects("fot:fe_store", 32000)
         .build();
 
     // 28. 紫菘逻辑线圈 (新加)
@@ -358,7 +363,7 @@ ServerEvents.highPriorityData(event => {
         .setDurability(280).setIntegrityCost(8).setIntegrityGain(12)
         .setMagicCapacity(160).setToolLevel(4).setToolEfficiency(8)
         .addAttributes("attributeslib:experience_gained", 0.1)
-        .addAttributes("attributeslib:cold_damage", 10.0)
+        .addAttributes("attributeslib:cold_damage", 8.0)
         .addAttributes("minecraft:generic.attack_damage", -2.5)
         .setTints("8e44ad", "2e113d") 
         .addTexture("metal").addTexture("shiny")
@@ -376,11 +381,12 @@ ServerEvents.highPriorityData(event => {
         .addTexture("metal").addTexture("heavy")
         .addItemMaterial('midnight:nagrilite_ingot')
         .setRequiredTool("hammer_dig", 1)
+        .addEnchantment("last_smith:spirit_absorption", 1.5)
         .build();
 
     // 31. 黯铁
     tetraMaterialBuilder(event, "ebonite").setCategory("fibre")
-        .setPrimary(9).setSecondary(18).setTertiary(9)
+        .setPrimary(9.5).setSecondary(16).setTertiary(9)
         .setDurability(240).setIntegrityCost(3).setIntegrityGain(5)
         .setMagicCapacity(110).setToolLevel(3).setToolEfficiency(6.5)
         .addAttributes("**minecraft:generic.movement_speed", 0.05)
@@ -388,6 +394,7 @@ ServerEvents.highPriorityData(event => {
         .addTexture("metal").addTexture("shiny")
         .addItemMaterial('midnight:ebonite')
         .setRequiredTool("hammer_dig", 1)
+        .addEnchantment("last_smith:spirit_slash", 1.5)
         .build();
 
     // 32. 幽光
@@ -404,19 +411,20 @@ ServerEvents.highPriorityData(event => {
 
     // 33. 铼碎片
     tetraMaterialBuilder(event, "rendium").setCategory("bone")
-        .setPrimary(10).setSecondary(1).setTertiary(10)
+        .setPrimary(10).setSecondary(1).setTertiary(9)
         .setDurability(220).setIntegrityCost(4).setIntegrityGain(6)
         .setMagicCapacity(130).setToolLevel(3).setToolEfficiency(6)
-        .addAttributes("attributeslib:cold_damage", 14.0)
+        .addAttributes("attributeslib:cold_damage", 8.0)
         .setTints("5dade2", "1f618d")
         .addTexture("metal").addTexture("crude")
         .addItemMaterial('midnight:rendium_shard')
         .setRequiredTool("hammer_dig", 1)
+        .addEnchantment("apotheosis:miners_fervor", 2)
         .build();
 
     // 34. 熔渣锭
     tetraMaterialBuilder(event, "scoria").setCategory("metal")
-        .setPrimary(14).setSecondary(37).setTertiary(11)
+        .setPrimary(13).setSecondary(26).setTertiary(10)
         .setDurability(280).setIntegrityCost(4).setIntegrityGain(4)
         .setMagicCapacity(150).setToolLevel(4).setToolEfficiency(7.5)
         .addAttributes("attributeslib:fire_damage", 6.0)

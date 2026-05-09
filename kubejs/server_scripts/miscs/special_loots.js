@@ -6,7 +6,7 @@ LootJS.modifiers(event => {
             p.addLoot(LootEntry.of('slashblade:proudsoul_ingot').limitCount([2, 4]));
         })
         .pool(p => {
-            p.addLoot(LootEntry.of($BloodJade.withKillCount(64)).limitCount([1, 2]));
+            p.addLoot(LootEntry.of($BloodJade.withKillCount(128)).limitCount([1, 2]));
         })
         .pool(p => {
             p.randomChance(0.3);
