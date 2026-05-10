@@ -50,7 +50,13 @@ ServerEvents.tags("entity_type", event => {
     addSpaceEntity("minecraft:zoglin");
 
     event.add("enderio:soul_vial_blacklist", [
-        "productivebees:solitary_bees"
+        "#productivebees:solitary_bees",
+        "minecraft:warden"
+    ]);
+
+    event.add("enderio:spawner_blacklist", [
+        "#forge:bosses",
+        "#enderio:soul_vial_blacklist"
     ]);
 
 })

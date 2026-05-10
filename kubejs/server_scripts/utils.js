@@ -22,6 +22,7 @@ const $LivingTickEvent = Java.loadClass('net.minecraftforge.event.entity.living.
 const $PortalSpawnEvent = Java.loadClass("net.minecraftforge.event.level.BlockEvent$PortalSpawnEvent")
 const $PerformSlashArtEvent = Java.loadClass("mods.flammpfeil.slashblade.event.SlashBladeEvent$PerformSlashArtEvent")
 const $ItemStackedOnOtherEvent = Java.loadClass("net.minecraftforge.event.ItemStackedOnOtherEvent")
+const $SuperSlashArtsReleaseEvent = Java.loadClass("com.tonywww.slashblade_sendims.events.SuperSlashArtsReleaseEvent")
 
 const $UmaSoulUtils = Java.loadClass("net.tracen.umapyoi.utils.UmaSoulUtils")
 const $UmapyoiAPI = Java.loadClass("net.tracen.umapyoi.api.UmapyoiAPI")

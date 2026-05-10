@@ -123,7 +123,8 @@ ServerEvents.tags("item", event => {
         "kubejs:galatic_cycle_component",           // 星空循环组件
         "kubejs:alpha_dust",                       // alpha
         "enderio:end_steel_block",
-        "nuclearcraft:xenorium_298"
+        "nuclearcraft:xenorium_298",
+        "tetra:dragon_sinew"
     ])
     event.add("slashblade_sendims:drc_damage_material_3", [
         "cataclysm:essence_of_the_storm",          // 风暴精华

@@ -30,7 +30,46 @@ SACostMap.put("sjap_adder:explosive_dawn", [300, 0.2]);
 
 SACostMap.put("sjap_adder:wave_edge_super", [300, 0.2]);
 
+SACostMap.put("slashblade_addon:spiral_edge", [300, 0.15]);
+
 let defaultCost = [200, 0.2];
+let superSlashArtCost = [400, 0.3];
+
+let consumeAPForSA = (entity, event, cost, cost_persentage) => {
+    if (cost == 0 && cost_persentage == 0) return true;
+
+    let attributeInstance = entity.getAttribute("slashblade_sendims:ap_reduce_amount");
+    if (attributeInstance) {
+        cost = Math.max(0, cost - attributeInstance.getValue());
+    }
+
+    let soul = $UmapyoiAPI.getUmaSoul(entity);
+    if (!soul || soul.isEmpty()) {
+        entity.tell(Text.translatable("text.slashblade_sendims.no_ap"));
+        event.setCanceled(true);
+        return false;
+    }
+
+    let currentAP = $UmaSoulUtils.getActionPoint(soul);
+    let maxAP = $UmaSoulUtils.getMaxActionPoint(soul);
+    let total_cost = cost + (maxAP * cost_persentage);
+
+    let hasEnoughAP = currentAP >= total_cost;
+
+    if (!hasEnoughAP && total_cost > 0) {
+        let mainHandItem = entity.getMainHandItem();
+        if (mainHandItem && !mainHandItem.isEmpty()) {
+            entity.addItemCooldown(mainHandItem, 20);
+        }
+        entity.tell(Text.translatable("text.slashblade_sendims.no_ap"));
+        event.setCanceled(true);
+        return false;
+    } else {
+        // entity.tell(total_cost)
+        $UmaSoulUtils.addActionPoint(soul, -total_cost);
+        return true;
+    }
+}
 
 NativeEvents.onEvent($PerformSlashArtEvent, event => {
     let entity = event.getEntityLiving();
@@ -52,36 +91,17 @@ NativeEvents.onEvent($PerformSlashArtEvent, event => {
 
     let cost = costs[0];
     let cost_persentage = costs[1];
-    if (cost == 0 && cost_persentage == 0) return;
 
-    let attributeInstance = entity.getAttribute("slashblade_sendims:ap_reduce_amount");
-    if (attributeInstance) {
-        cost = Math.max(0, cost - attributeInstance.getValue());
-    }
-    
-    let soul = $UmapyoiAPI.getUmaSoul(entity);
-    if (!soul || soul.isEmpty()) {
-        entity.tell(Text.translatable("text.slashblade_sendims.no_ap"));
-        event.setCanceled(true);
-    }
-
-    let currentAP = $UmaSoulUtils.getActionPoint(soul);
-    let maxAP = $UmaSoulUtils.getMaxActionPoint(soul);
-    let total_cost = cost + (maxAP * cost_persentage);
-
-    let hasEnoughAP = currentAP >= total_cost;
-
-    if (!hasEnoughAP && total_cost > 0) {
-        let mainHandItem = entity.getMainHandItem();
-        if (mainHandItem && !mainHandItem.isEmpty()) {
-            entity.addItemCooldown(mainHandItem, 20);
-        }
-        entity.tell(Text.translatable("text.slashblade_sendims.no_ap"));
-        event.setCanceled(true);
-
-    } else {
-        // entity.tell(total_cost)
-        $UmaSoulUtils.addActionPoint(soul, -total_cost);
-
-    }
+    consumeAPForSA(entity, event, cost, cost_persentage);
 });
+
+NativeEvents.onEvent($SuperSlashArtsReleaseEvent, event => {
+    let player = event.getPlayer();
+
+    let cost = superSlashArtCost[0];
+    let cost_persentage = superSlashArtCost[1];
+
+    consumeAPForSA(player, event, cost, cost_persentage);
+
+})
+

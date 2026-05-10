@@ -49,7 +49,7 @@ countNightingalesSlash = 4
 #Count of Judgement Cuts of the SA SuperBloodCut.
 #SA血狱·桑轮斩的次元斩数量
 #Range: > 0
-countSuperBloodCut = 25
+countSuperBloodCut = 6
 #Base count of Slash (before boosted by BoostTrigger) of the SA Wave Edge Super.
 #SA八岐·狂岚的基础幻影刃数量（在狂气提升前）
 #Range: > 0

@@ -6,6 +6,18 @@ ServerEvents.recipes(event => {
         'aether:ambrosium_shard'
     ]).id("sdbf:ender_eye_s3")
 
+    event.shapeless('2x tetra:dragon_sinew', [
+        '2x minecraft:dragon_breath',
+        '2x minecraft:cobweb',
+        'quark:dragon_scale'
+    ]).id("sdbf:dragon_sinew_s3")
+
+    event.shapeless("minecraft:dragon_egg", [
+        '2x minecraft:dragon_breath',
+        '2x tetra:dragon_sinew',
+        "#forge:eggs"
+    ]).id("sdbf:dragon_egg_s3")
+
     event.shaped('apotheosis:ender_library', [
         'ACA',
         'CBC',
