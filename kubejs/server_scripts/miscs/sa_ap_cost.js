@@ -6,15 +6,15 @@ SACostMap.put("slashblade:judgement_cut", [200, 0.2]);
 SACostMap.put("slashblade:judgement_cut_slash_air", [200, 0.2]);
 SACostMap.put("slashblade:judgement_cut_slash_just", [400, 0.2]);
 
-SACostMap.put("slashblade:wave_edge_vertical", [200, 0.1]);
-SACostMap.put("slashblade:drive_horizontal", [200, 0.1]);
+SACostMap.put("slashblade:wave_edge_vertical", [200, 0.05]);
+SACostMap.put("slashblade:drive_horizontal", [200, 0.05]);
 
 SACostMap.put("slashblade:heavens_slash_start", [200, 0.15]);
 
 SACostMap.put("sjap_adder:illusion_drive", [400, 0.2]);
 
-SACostMap.put("slashblade:sakura_end_left", [400, 0.2]);
-SACostMap.put("slashblade:sakura_end_left_air", [400, 0.2]);
+SACostMap.put("slashblade:sakura_end_left", [200, 0.05]);
+SACostMap.put("slashblade:sakura_end_left_air", [200, 0.05]);
 
 SACostMap.put("slashblade_sendims:golden_crux", [400, 0.2]);
 
@@ -24,13 +24,15 @@ SACostMap.put("slashblade:circle_slash", [300, 0.15]);
 
 SACostMap.put("slashblade:storm_bias_start", [400, 0.1]);
 
-SACostMap.put("slashblade:piercing_just", [300, 0.1]);
+SACostMap.put("slashblade:piercing_just", [300, 0.05]);
 
 SACostMap.put("sjap_adder:explosive_dawn", [300, 0.2]);
 
 SACostMap.put("sjap_adder:wave_edge_super", [300, 0.2]);
 
 SACostMap.put("slashblade_addon:spiral_edge", [300, 0.15]);
+
+SACostMap.put("sjap_adder:super_blood_cut", [300, 0.15]);
 
 let defaultCost = [200, 0.2];
 let superSlashArtCost = [400, 0.3];
