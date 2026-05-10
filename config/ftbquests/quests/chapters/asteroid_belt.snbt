@@ -60,25 +60,25 @@
 			id: "640B49985101D0EE"
 			linked_quest: "04B20E40DAED373B"
 			x: 0.0d
-			y: 5.0d
+			y: 7.5d
 		}
 		{
 			id: "68F7F09A6CE7615B"
 			linked_quest: "0E848F953EE65A31"
 			x: 0.0d
-			y: 10.0d
+			y: 12.5d
 		}
 		{
 			id: "093FB38B5E3E7177"
 			linked_quest: "5C75E5457757ACDB"
 			x: 2.5d
-			y: 7.5d
+			y: 10.0d
 		}
 		{
 			id: "3801E5FB5366FE73"
 			linked_quest: "285BBB474F852773"
 			x: -2.5d
-			y: 7.5d
+			y: 10.0d
 		}
 	]
 	quests: [
@@ -101,11 +101,10 @@
 			dependencies: ["77DC6770CC08AEF6"]
 			id: "21EA0520FC403E65"
 			tasks: [{
-				id: "786D7F442E8A6E2B"
-				item: "minecraft:bedrock"
+				id: "1A5862CE08A484D0"
+				item: "kubejs:asteroid_rock"
 				type: "item"
 			}]
-			title: "占位符：小行星岩"
 			x: 0.0d
 			y: 2.5d
 		}
@@ -263,7 +262,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 7.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["3C99585FE904ACDC"]
@@ -328,7 +327,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: 10.0d
+			y: 12.5d
 		}
 		{
 			dependencies: [
@@ -351,7 +350,29 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: 10.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["77DC6770CC08AEF6"]
+			id: "7103DD93D713E528"
+			tasks: [{
+				id: "4E8D90BBF4650B34"
+				item: "kubejs:carbon_rich_asteroid_rock"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["77DC6770CC08AEF6"]
+			id: "615C975CA8999524"
+			tasks: [{
+				id: "3330395C26E9AEFE"
+				item: "kubejs:silica_rich_asteroid_rock"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.0d
 		}
 	]
 	title: "小行星带"

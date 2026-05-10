@@ -1,13 +1,9 @@
 {
-    "feature": "sdbf:asteroid_belt/iron_ore",
+    "feature": "sdbf:asteroid_belt/magnesium_ore_geode",
     "placement": [
         {
-            "type": "minecraft:count",
-            "count": 1
-        },
-        {
             "type": "minecraft:rarity_filter",
-            "chance": 2
+            "chance": 50
         },
         {
             "type": "minecraft:in_square"
@@ -16,16 +12,13 @@
             "type": "minecraft:height_range",
             "height": {
                 "type": "minecraft:uniform",
-                "max_inclusive": {
-                    "below_top": 0
-                },
                 "min_inclusive": {
-                    "above_bottom": 0
+                    "absolute": 60
+                },
+                "max_inclusive": {
+                    "absolute": 180
                 }
             }
-        },
-        {
-            "type": "minecraft:biome"
         }
     ]
 }

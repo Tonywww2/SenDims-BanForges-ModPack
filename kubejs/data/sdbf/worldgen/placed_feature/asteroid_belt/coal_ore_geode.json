@@ -1,9 +1,9 @@
 {
-    "feature": "sdbf:asteroid_belt/platinum_ore",
+    "feature": "sdbf:asteroid_belt/coal_ore_geode",
     "placement": [
         {
-            "type": "minecraft:count",
-            "count": 20
+            "type": "minecraft:rarity_filter",
+            "chance": 30
         },
         {
             "type": "minecraft:in_square"
@@ -12,16 +12,13 @@
             "type": "minecraft:height_range",
             "height": {
                 "type": "minecraft:uniform",
-                "max_inclusive": {
-                    "below_top": 0
-                },
                 "min_inclusive": {
-                    "above_bottom": 0
+                    "absolute": 10
+                },
+                "max_inclusive": {
+                    "absolute": 200
                 }
             }
-        },
-        {
-            "type": "minecraft:biome"
         }
     ]
 }

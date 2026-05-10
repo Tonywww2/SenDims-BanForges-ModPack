@@ -44,13 +44,19 @@ StartupEvents.registry('item', event => {
 })
 
 StartupEvents.registry('block', event => {
+    event.create('asteroid_rock')
+        .soundType('stone')
+        .hardness(2.0)
+        .resistance(6.0)
+        .requiresTool(true)
+        .tagBlock('minecraft:mineable/pickaxe')
+
     event.create('carbon_rich_asteroid_rock')
         .soundType('stone')
         .hardness(2.0)
         .resistance(6.0)
         .requiresTool(true)
         .tagBlock('minecraft:mineable/pickaxe')
-        .tagBlock('minecraft:mineable/hoe')
 
     event.create('silica_rich_asteroid_rock')
         .soundType('stone')
@@ -58,7 +64,6 @@ StartupEvents.registry('block', event => {
         .resistance(6.0)
         .requiresTool(true)
         .tagBlock('minecraft:mineable/pickaxe')
-        .tagBlock('minecraft:mineable/hoe')
 
     event.create('alkaline_crystal_cluster')
         .soundType('amethyst_cluster')
