@@ -57,8 +57,8 @@ ServerEvents.recipes(event => {
     }).id('sdbf:slime_crown_s2')
 
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
-        "  I",
-        "QI ",
+        " II",
+        "QII",
         "BC "
     ], {
         "B": SlashBladeIngredient.of(
@@ -67,7 +67,7 @@ ServerEvents.recipes(event => {
                 .build()
         ),
         "C": "minecraft:clock",
-        "I": "slashblade:proudsoul_ingot",
+        "I": 'slashblade:proudsoul',
         "Q": '#forge:ingots/desh'
     }, "slashblade_addon:wanderer")
         .id('sdbf:wanderer_s2')
@@ -141,13 +141,29 @@ ServerEvents.recipes(event => {
     }, "pseudoedge_break_dawn:latent")
         .id("sdbf:latent_s2")
 
-    sqRecipe(event, 
+    event.recipes.slashblade.slashblade_shaped_recipe("energyblade:forge_energy_blade", [
+        " QI",
+        "QI ",
+        "BC "
+    ], {
+        "I": "#forge:dusts/redstone",             // 红石粉 (Redstone Dust Tag)
+        "Q": 'slashblade:proudsoul',                // 石英 (Quartz Tag)
+        "C": 'ad_astra:desh_tank', // 耀魂偏方三八面体
+        "B": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("slashblade_addon:wanderer")    // 要求：浪人 (Wanderer)
+                .build()
+        )
+    }, "slashblade_addon:wanderer_hf")
+        .id("sdbf:wanderer_hf_s2")
+
+    sqRecipe(event,
         "ad_astra:moon_dungeon",
         "ad_astra:moon_stone",
         1,
         's2');
 
-    sqRecipe(event, 
+    sqRecipe(event,
         "tetra:regular_ruin",
         "ad_astra:desh_ingot",
         1,

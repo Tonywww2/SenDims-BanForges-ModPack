@@ -38,7 +38,7 @@ ServerEvents.tags("entity_type", event => {
     addSpaceEntity("cataclysm:ancient_remnant");
     addSpaceEntity("cataclysm:ignited_revenant");
     addSpaceEntity("cataclysm:ignis");
-    
+
     addSpaceEntity("terra_entity:king_slime");
     addSpaceEntity("minecraft:villager");
     addSpaceEntity("minecraft:camel");
@@ -48,6 +48,18 @@ ServerEvents.tags("entity_type", event => {
     addSpaceEntity("minecraft:husk");
     addSpaceEntity("minecraft:hoglin");
     addSpaceEntity("minecraft:zoglin");
+
+    addSpaceEntity('terra_entity:demon_eye');
+    addSpaceEntity('terra_entity:meteor_head');
+    addSpaceEntity('terra_entity:wandering_eye_fish');
+    addSpaceEntity('terra_entity:wyvern');
+    addSpaceEntity('minecraft:zombie');
+    addSpaceEntity('minecraft:skeleton');
+    addSpaceEntity('minecraft:creeper');
+    addSpaceEntity('ad_astra:sulfur_creeper');
+    addSpaceEntity('minecraft:cave_spider');
+    addSpaceEntity('minecraft:spider');
+
 
     event.add("enderio:soul_vial_blacklist", [
         "#productivebees:solitary_bees",

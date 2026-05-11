@@ -47,6 +47,7 @@ const toRemoveID = new Set([
     "ad_astra_rocketed:nasa_workbench/default/tier_6_rocket_from_nasa_workbench",
     "ad_astra_rocketed:nasa_workbench/default/tier_7_rocket_from_nasa_workbench",
     "terra_entity:malaise",
+    "botania:petal_apothecary/entropinnyum",
     "slashblade:tagayasan",
 
     "sophisticatedbackpacks:backpack",
@@ -164,6 +165,11 @@ const toRemoveID = new Set([
     "pseudoedge_break_dawn:whitesword",
     "sjap_adder:kamuy_death",
     "sjap_adder:kamuyex_dark",
+
+    "slashblade_addon:kamuy_fire",
+    "last_smith:bunshi",
+    "slashblade_addon:murasama_blade",
+    "slashblade_addon:wanderer_hf",
 
     // 临时
     // "apotheosis:hellshelf",

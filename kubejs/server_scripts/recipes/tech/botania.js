@@ -25,5 +25,20 @@ ServerEvents.recipes(event => {
         N: 'nuclearcraft:chassis'
     }).id('sdbf:terra_plate')
 
+    event.custom({
+        "type": "botania:petal_apothecary",
+        "ingredients": [
+            { "tag": "botania:petals/red" },
+            { "tag": "botania:petals/red" },
+            { "tag": "botania:petals/gray" },
+            { "tag": "botania:petals/gray" },
+            { "tag": "botania:petals/white" },
+            { "tag": "botania:petals/white" },
+            { "item": "botania:rune_wrath" },
+            { "item": "botania:rune_fire" }],
+        "output": { "item": "botania:entropinnyum" },
+        "reagent": { "tag": "botania:seed_apothecary_reagent" }
+    }).id('sdbf:entropinnyum')
+
 
 })

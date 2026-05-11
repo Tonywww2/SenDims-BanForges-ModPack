@@ -72,7 +72,7 @@ ServerEvents.recipes(event => {
     }, "sjap_adder:agito_true_ex")
         .id("sdbf:agito_true_ex_s3")
 
-    event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
+    event.recipes.slashblade.slashblade_shaped_recipe("energyblade:forge_energy_blade", [
         "EBC",
         "CDB",
         "GCE"

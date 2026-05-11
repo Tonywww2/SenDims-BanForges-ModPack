@@ -34,6 +34,8 @@ SACostMap.put("slashblade_addon:spiral_edge", [300, 0.15]);
 
 SACostMap.put("sjap_adder:super_blood_cut", [300, 0.15]);
 
+SACostMap.put("slashblade_addon:fire_spiral", [300, 0.1]);
+
 let defaultCost = [200, 0.2];
 let superSlashArtCost = [400, 0.3];
 
