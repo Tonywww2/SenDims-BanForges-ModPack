@@ -11,8 +11,6 @@ ServerEvents.highPriorityData(event => {
             .addEffect("minecraft:fire_resistance", 1.0)
             .addAttributeRange("minecraft:generic.max_health", "MULTIPLY_TOTAL", 0.1,
                 10, 0.015)
-            .addAttributeRange("minecraft:generic.attack_damage", "ADDITION", 1,
-                10, 0.75)
             .addAttributeRange("minecraft:generic.movement_speed", "MULTIPLY_TOTAL", 0.15,
                 10, 0.01)
             .addAttribute("minecraft:generic.knockback_resistance", "ADDITION", 0.85);
@@ -22,8 +20,6 @@ ServerEvents.highPriorityData(event => {
             .addEffect("minecraft:fire_resistance", 1.0)
             .addAttributeRange("minecraft:generic.max_health", "MULTIPLY_TOTAL", 0.2,
                 10, 0.015)
-            .addAttributeRange("minecraft:generic.attack_damage", "ADDITION", 2,
-                10, 0.75)
             .addAttributeRange("minecraft:generic.movement_speed", "MULTIPLY_TOTAL", 0.2,
                 10, 0.015)
             .addAttribute("minecraft:generic.knockback_resistance", "ADDITION", 0.9);
@@ -33,8 +29,6 @@ ServerEvents.highPriorityData(event => {
             .addEffect("minecraft:fire_resistance", 1.0)
             .addAttributeRange("minecraft:generic.max_health", "MULTIPLY_TOTAL", 0.2,
                 10, 0.02)
-            .addAttributeRange("minecraft:generic.attack_damage", "ADDITION", 2,
-                10, 0.75)
             .addAttributeRange("minecraft:generic.movement_speed", "MULTIPLY_TOTAL", 0.2,
                 10, 0.02)
             .addAttribute("minecraft:generic.knockback_resistance", "ADDITION", 0.95);

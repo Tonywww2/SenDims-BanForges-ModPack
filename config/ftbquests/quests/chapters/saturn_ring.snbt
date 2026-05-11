@@ -12,37 +12,61 @@
 			id: "3870EC255CFFBB3F"
 			linked_quest: "35F111CC582779BA"
 			x: -5.0d
-			y: -2.5d
+			y: 5.0d
 		}
 		{
 			id: "1C80F7DC6FB83684"
 			linked_quest: "6120DF977C2DFEA2"
-			x: -5.0d
+			x: 0.0d
 			y: 2.5d
 		}
 		{
 			id: "586757B864F17CC8"
 			linked_quest: "76BFA745E2BBDC7E"
-			x: -2.5d
-			y: 2.5d
+			x: -5.0d
+			y: 0.0d
 		}
 		{
 			id: "6584AABF3B4B001B"
 			linked_quest: "47820A4E592EE375"
-			x: -2.5d
-			y: -2.5d
+			x: -5.0d
+			y: 2.5d
 		}
 		{
 			id: "77AC69AA398C5A67"
 			linked_quest: "7D800CACE4E69CFF"
 			x: 5.0d
-			y: -2.5d
+			y: 2.5d
 		}
 		{
 			id: "28B8B422E9732D43"
 			linked_quest: "06A34C8A04B2CD83"
 			x: 5.0d
-			y: 2.5d
+			y: 0.0d
+		}
+		{
+			id: "516EB083C5C1D0BB"
+			linked_quest: "59F17F34F831D72E"
+			x: -2.5d
+			y: 5.0d
+		}
+		{
+			id: "4DD4C559A7AE2A29"
+			linked_quest: "2E2F1882E71FE497"
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			id: "12547F2CF6098E1B"
+			linked_quest: "0DE1DF9046B9CD2E"
+			x: -5.0d
+			y: -2.5d
+		}
+		{
+			id: "51DFCEE6B9A0EF14"
+			linked_quest: "65C573EE97C5117F"
+			x: -7.5d
+			y: -2.5d
 		}
 	]
 	quests: [
@@ -69,8 +93,8 @@
 				}
 				type: "item"
 			}]
-			x: -5.0d
-			y: 0.0d
+			x: -2.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["3A267848CC75F232"]
@@ -128,8 +152,58 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: 0.0d
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"49631F88EAF0261B"
+				"59F17F34F831D72E"
+				"1FC1A62930B9D276"
+			]
+			id: "245C93D5DC91D776"
+			tasks: [{
+				id: "5D9792A64F68E887"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"translate\":\"item.slashblade_addon.nihilbx\"}"
+						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade_addon.nihilbx\"}})"
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"0DE1DF9046B9CD2E"
+				"2E2F1882E71FE497"
+				"65C573EE97C5117F"
+				"693C912DB9E27674"
+				"07A9736A3BDF80B1"
+			]
+			id: "5A155C23C2AB2163"
+			tasks: [{
+				id: "24DEB990C30AF04A"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"translate\":\"item.sjap_adder.crimsoncherryex\"}"
+						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.sjap_adder.crimsoncherryex\"}})"
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
 		}
 	]
 	title: "土星环"

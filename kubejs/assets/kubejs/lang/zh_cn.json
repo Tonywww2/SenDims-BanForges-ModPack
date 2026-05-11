@@ -78,17 +78,17 @@
 
     "tetra/schematic/slashblade/blade/tetra_warforge/hammer.name": "仿铸：战锤",
     "tetra.improvement.tetra:warforge/hammer.name": "仿铸：战锤",
-    "tetra/schematic/slashblade/blade/tetra_warforge/hammer.description": "小幅提升总护甲，小幅降低最大生命值",
+    "tetra/schematic/slashblade/blade/tetra_warforge/hammer.description": "小幅暴击率，小幅降低总攻击力",
     "tetra/schematic/slashblade/blade/tetra_warforge/hammer.slot1": "材料",
 
     "tetra/schematic/slashblade/blade/tetra_warforge/pickaxe.name": "仿铸：战镐",
     "tetra.improvement.tetra:warforge/pickaxe.name": "仿铸：战镐",
-    "tetra/schematic/slashblade/blade/tetra_warforge/pickaxe.description": "小幅提升最大生命值，小幅提升总护甲，小幅降低总攻击力",
+    "tetra/schematic/slashblade/blade/tetra_warforge/pickaxe.description": "小幅提升击退抗性，小幅提升总护甲，小幅降低总攻击力",
     "tetra/schematic/slashblade/blade/tetra_warforge/pickaxe.slot1": "材料",
 
     "tetra/schematic/slashblade/blade/tetra_warforge/butt.name": "仿铸：钝端",
     "tetra.improvement.tetra:warforge/butt.name": "仿铸：钝端",
-    "tetra/schematic/slashblade/blade/tetra_warforge/butt.description": "提升击退抗性，小幅降低总攻击力",
+    "tetra/schematic/slashblade/blade/tetra_warforge/butt.description": "提升击退抗性，小幅提升暴击伤害，小幅降低总攻击力",
     "tetra/schematic/slashblade/blade/tetra_warforge/butt.slot1": "材料",
 
     "tetra/schematic/slashblade/blade/tetra_warforge/claw.name": "仿铸：战爪",

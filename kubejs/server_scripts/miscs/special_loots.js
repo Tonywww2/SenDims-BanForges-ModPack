@@ -9,8 +9,8 @@ LootJS.modifiers(event => {
             p.addLoot(LootEntry.of($BloodJade.withKillCount(128)).limitCount([1, 2]));
         })
         .pool(p => {
-            p.randomChance(0.3);
-            p.addLoot(LootEntry.of('slashblade_useful_addon:proud_soul_sampling').limitCount([0, 1]));
+            p.randomChance(0.4);
+            p.addLoot(LootEntry.of('slashblade_useful_addon:proud_soul_sampling').limitCount([1, 2]));
         });
 
     event.addEntityLootModifier("terra_entity:skeletron")
@@ -24,6 +24,13 @@ LootJS.modifiers(event => {
         .pool(p => {
             p.randomChance(0.15);
             p.addLoot(LootEntry.of('nuclearcraft:uranium_nugget').limitCount([1, 2]));
+        });
+        
+    event.addEntityLootModifier("minecraft:enderman")
+        .anyDimension(["minecraft:the_end"])
+        .pool(p => {
+            p.randomChance(0.05);
+            p.addLoot(LootEntry.of("minecraft:chorus_fruit").limitCount([1, 2]));
         });
 
 

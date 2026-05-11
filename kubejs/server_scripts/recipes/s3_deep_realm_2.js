@@ -65,10 +65,8 @@ ServerEvents.recipes(event => {
         "input": [
             Item.of('integrateddynamics:crystalized_menril_block').toJson(),
             Item.of('nuclearcraft:sic_sic_cmc_ingot').toJson(),
-            Item.of('nuclearcraft:bronze_ingot').toJson(),
-            Item.of('nuclearcraft:bronze_ingot').toJson(),
-            Item.of('nuclearcraft:beryllium_dust').toJson(),
-            Item.of('nuclearcraft:beryllium_dust').toJson()
+            Item.of('nuclearcraft:bronze_ingot', 2).toJson(),
+            Item.of('nuclearcraft:beryllium_dust', 2).toJson()
         ],
         "output": [
             Item.of('2x kubejs:menril-silicon_sic_sic_cmc_ingot').toJson()

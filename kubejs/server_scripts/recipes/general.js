@@ -156,6 +156,16 @@ ServerEvents.recipes(event => {
         C: 'slashblade_sendims:estus_flask_2'
     }).id('sdbf:estus_flask_3')
 
+    event.shaped('slashblade_sendims:estus_flask_4', [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        A: ["minecraft:dragon_head", "minecraft:bedrock"],
+        B: ['minecraft:elytra'],
+        C: 'slashblade_sendims:estus_flask_3'
+    }).id('sdbf:estus_flask_4')
+
     event.custom({
         "type": "sophisticatedbackpacks:basic_backpack",
         "conditions": [

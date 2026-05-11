@@ -27,16 +27,16 @@
 			y: 22.5d
 		}
 		{
-			id: "4664F67660800902"
-			linked_quest: "14D5D5ADCDC5B859"
-			x: 0.0d
-			y: 40.0d
-		}
-		{
 			id: "6125CC552C522DC0"
 			linked_quest: "641BAE5B4E3ED25C"
 			x: 0.0d
 			y: 45.0d
+		}
+		{
+			id: "299E3B12357B5A3D"
+			linked_quest: "690B503CC20750EE"
+			x: 0.0d
+			y: 40.0d
 		}
 	]
 	quests: [
@@ -101,7 +101,11 @@
 		}
 		{
 			dependencies: ["3FA025D25ADB8411"]
-			description: ["穿戴拥有此附魔的头盔，可以使用氧气罐在太空呼吸"]
+			description: [
+				"穿戴拥有此附魔的头盔，可以使用氧气罐在太空呼吸。"
+				""
+				"月石可以使用熔炉制作。"
+			]
 			id: "293BC8386BEEE985"
 			subtitle: "附魔：太空呼吸"
 			tasks: [{
@@ -914,7 +918,10 @@
 			y: 37.5d
 		}
 		{
-			dependencies: ["14D5D5ADCDC5B859"]
+			dependencies: [
+				"690B503CC20750EE"
+				"731769A82CB760CC"
+			]
 			id: "2B520DD47D46DDEB"
 			tasks: [{
 				id: "7F7AA0FEAFFB4039"
@@ -1060,8 +1067,8 @@
 		}
 		{
 			dependencies: [
-				"14D5D5ADCDC5B859"
 				"69A40782E4BC7364"
+				"690B503CC20750EE"
 			]
 			id: "7EEE08CB9B8DE8A1"
 			tasks: [{

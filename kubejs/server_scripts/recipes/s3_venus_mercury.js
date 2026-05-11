@@ -1,9 +1,9 @@
 ServerEvents.recipes(event => {
 
-    event.shapeless('cataclysm:burning_ashes',[
+    event.shapeless('cataclysm:burning_ashes', [
         'cataclysm:flame_eye'
     ]).id("sdbf:burning_ashes_s3")
-    
+
     event.shaped('kubejs:mercury_refractory_structural_component', [
         'ABA',
         'BCB',
@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
         C: 'ad_astra:calorite_tank',
         D: 'ad_astra:calorite_engine'
     }).id('sdbf:mercury_refractory_structural_component_s3')
-    
+
     event.shaped('terra_curio:workshop', [
         'ABA',
         'CDC',
@@ -238,15 +238,42 @@ ServerEvents.recipes(event => {
     }).id("sdbf:evil_shura_s3")
 
     event.custom({
-        "type":"slashblade:slashblade_smithing",
-        "addition":{"item":'cataclysm:ignitium_ingot'},
-        "base":{
-            "type":"slashblade:blade",
-            "item":"slashblade:slashblade",
-            "request":{"enchantments":[{"id":"minecraft:sharpness"},{"id":"minecraft:sweeping"}],"kill":1000,"name":"last_smith:nameless_odachi","refine":10}
+        "type": "slashblade:slashblade_smithing",
+        "addition": { "item": 'cataclysm:ignitium_ingot' },
+        "base": {
+            "type": "slashblade:blade",
+            "item": "slashblade:slashblade",
+            "request": { "enchantments": [{ "id": "minecraft:sharpness" }, { "id": "minecraft:sweeping" }], "kill": 1000, "name": "last_smith:nameless_odachi", "refine": 10 }
         },
-        "blade":"last_smith:fushigiri",
-        "template":{"item":"last_smith:scroll_shura"}
+        "blade": "last_smith:fushigiri",
+        "template": { "item": "last_smith:scroll_shura" }
     }).id("sdbf:fushigiri_s3")
+
+    event.custom({
+        "type": "ad_astra:nasa_workbench",
+        "ingredients": [
+            Item.of('cataclysm:void_core').toJson(),
+
+            Ingredient.of('#ad_astra:calorite_blocks').toJson(),
+            Ingredient.of('#ad_astra:calorite_blocks').toJson(),
+            Ingredient.of('kubejs:chorus_logic_composite_coil').toJson(),
+            Ingredient.of('kubejs:chorus_logic_composite_coil').toJson(),
+            Ingredient.of('#ad_astra:calorite_blocks').toJson(),
+            Ingredient.of('#ad_astra:calorite_blocks').toJson(),
+
+            Item.of('kubejs:mercury_refractory_structural_component').toJson(),
+            Item.of('ad_astra:calorite_engine').toJson(),
+            Item.of('ad_astra:calorite_engine').toJson(),
+            Item.of('kubejs:mercury_refractory_structural_component').toJson(),
+
+            Item.of('kubejs:mercury_refractory_structural_component').toJson(),
+            Item.of('cataclysm:bulwark_of_the_flame').toJson(),
+            Item.of('kubejs:mercury_refractory_structural_component').toJson()
+        ],
+        "result": {
+            "count": 1,
+            "id": "ad_astra:tier_4_rocket"
+        }
+    }).id("sdbf:tier_4_rocket_s3")
 
 })

@@ -193,7 +193,11 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["0A68F5EE8F25F036"]
+			dependencies: [
+				"0A68F5EE8F25F036"
+				"0DA99D68D7FA3B01"
+			]
+			dependency_requirement: "one_completed"
 			id: "0D69B0100D962B3B"
 			tasks: [{
 				id: "61E7B00BFA19A989"
@@ -201,7 +205,7 @@
 				type: "structure"
 			}]
 			title: "废弃堡垒"
-			x: -2.5d
+			x: -5.0d
 			y: 0.0d
 		}
 		{
@@ -212,7 +216,7 @@
 				item: "cataclysm:void_core"
 				type: "item"
 			}]
-			x: -5.0d
+			x: -7.5d
 			y: 0.0d
 		}
 		{
@@ -530,6 +534,55 @@
 			}]
 			x: 0.0d
 			y: -2.5d
+		}
+		{
+			dependencies: ["0A68F5EE8F25F036"]
+			id: "0DA99D68D7FA3B01"
+			tasks: [{
+				id: "1F16F5DE7B217238"
+				item: "cataclysm:void_eye"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0A68F5EE8F25F036"]
+			id: "75914EDF01311D05"
+			tasks: [{
+				id: "7680E5BBC66BDBF9"
+				item: "minecraft:shulker_shell"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"75914EDF01311D05"
+				"0A68F5EE8F25F036"
+			]
+			dependency_requirement: "one_completed"
+			id: "45B6FCADF2E92076"
+			tasks: [{
+				id: "3098C859E51B15D2"
+				structure: "minecraft:end_city"
+				type: "structure"
+			}]
+			title: "末地城"
+			x: -5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0A68F5EE8F25F036"]
+			id: "2D371FCF84511A05"
+			tasks: [{
+				id: "6394D0203696AB7F"
+				item: "minecraft:dragon_head"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.5d
 		}
 	]
 	title: "末地"

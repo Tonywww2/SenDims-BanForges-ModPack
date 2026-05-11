@@ -46,6 +46,7 @@ const toRemoveID = new Set([
     "ad_astra_rocketed:nasa_workbench/default/tier_5_rocket_from_nasa_workbench",
     "ad_astra_rocketed:nasa_workbench/default/tier_6_rocket_from_nasa_workbench",
     "ad_astra_rocketed:nasa_workbench/default/tier_7_rocket_from_nasa_workbench",
+    "terra_entity:malaise",
     "slashblade:tagayasan",
 
     "sophisticatedbackpacks:backpack",

@@ -548,6 +548,17 @@
 			x: 2.5d
 			y: 5.0d
 		}
+		{
+			dependencies: ["5F0FC78E11482861"]
+			id: "69BF328B79FDFEF9"
+			tasks: [{
+				id: "6E1C2B03D7904399"
+				item: "cataclysm:burning_ashes"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 10.0d
+		}
 	]
 	title: "金星与水星"
 }

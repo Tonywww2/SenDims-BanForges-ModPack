@@ -292,6 +292,28 @@
 			x: 0.0d
 			y: 2.5d
 		}
+		{
+			dependencies: ["291BE5789CE1F72C"]
+			id: "124327202B8781FC"
+			tasks: [{
+				id: "67B374C3F632E3D3"
+				item: "umapyoi:factor_decompose_table"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -15.0d
+		}
+		{
+			dependencies: ["291BE5789CE1F72C"]
+			id: "22D747A4B54ACF00"
+			tasks: [{
+				id: "57590F05E6F98C64"
+				item: "umapyoi:factor_research_table"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -17.5d
+		}
 	]
 	title: "马娘之魂"
 }

@@ -54,7 +54,7 @@
 			id: "1D781396B27D637E"
 			linked_quest: "2354F158B208830E"
 			x: 7.5d
-			y: 0.0d
+			y: 5.0d
 		}
 		{
 			id: "45BFC3AC6BDCC003"
@@ -66,7 +66,25 @@
 			id: "3A1C36690AE2AFBE"
 			linked_quest: "4FD299D688A0A92A"
 			x: 7.5d
-			y: 5.0d
+			y: 0.0d
+		}
+		{
+			id: "09C0A53AA02060C2"
+			linked_quest: "6120DF977C2DFEA2"
+			x: 7.5d
+			y: 10.0d
+		}
+		{
+			id: "6A3E54CA87D3C784"
+			linked_quest: "2F9648A58EC0C636"
+			x: 10.0d
+			y: 7.5d
+		}
+		{
+			id: "03F65790DAEBCBA1"
+			linked_quest: "3FBD9DC1E1BB24E1"
+			x: 5.0d
+			y: 7.5d
 		}
 	]
 	quests: [
@@ -207,6 +225,31 @@
 			}]
 			x: -2.5d
 			y: -2.5d
+		}
+		{
+			dependencies: [
+				"6120DF977C2DFEA2"
+				"2354F158B208830E"
+				"2F9648A58EC0C636"
+				"3FBD9DC1E1BB24E1"
+			]
+			id: "63BCA9C495EBC8D8"
+			tasks: [{
+				id: "3A7F30B8E5E16DD7"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"translate\":\"item.sjap_adder.kamuy_dark\"}"
+						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.sjap_adder.kamuy_dark\"}})"
+					}
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: 7.5d
 		}
 	]
 	title: "空岛之下"

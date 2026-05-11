@@ -129,4 +129,9 @@ ServerEvents.recipes(event => {
         'ad_astra:calorite_ingot'
     );
 
+    event.replaceInput({ id: 'nuclearcraft:fusion_core' },
+        'nuclearcraft:chassis',
+        'kubejs:delta_dust'
+    );
+
 })

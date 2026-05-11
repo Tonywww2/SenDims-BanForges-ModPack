@@ -1,5 +1,7 @@
 ServerEvents.recipes(event => {
 
+    sqRecipe(event, "minecraft:end_city", 'minecraft:shulker_shell', 1, "s3");
+
     event.shapeless("minecraft:ender_eye", [
         "minecraft:ender_pearl",
         '#forge:dusts/glowstone',
@@ -99,7 +101,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
         "FDF",
-        "CGU",
+        "GCG",
         "FSF"
     ], {
         "D": 'last_smith:scroll_causality',
@@ -108,19 +110,10 @@ ServerEvents.recipes(event => {
         "S": "last_smith:scroll_exorcism",
         "C": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
-                .name("last_smith:nameless_odachi")
+                .name("slashblade_addon:murakumo")
                 .killCount(1500)
                 .proudSoul(5000)
                 .refineCount(25)
-                .build()
-        ),
-        "U": SlashBladeIngredient.of(
-            SlashBladeRequestDefinition.newInstance()
-                .name("last_smith:nameless_odachi")
-                .killCount(1500)
-                .proudSoul(5000)
-                .refineCount(25)
-                .addEnchantment(SBEnchantmentDefinition.of("minecraft:sharpness", 6))
                 .build()
         )
     }, "last_smith:roukanken")

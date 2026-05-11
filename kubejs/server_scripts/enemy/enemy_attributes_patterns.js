@@ -210,13 +210,34 @@ const bossTypeHydra = deriveTemplate(typeAEX2,
     [0, 0, 0, 20]
 );
 /**
- * BOSS 九头蛇
+ * BOSS 雪怪王
  */
 const bossTypeAlphaYeti = deriveTemplate(typeAEX2,
     true,
     [0.7, 3, 0.4, 1],
     [0, 0, 0, 20]
 );
+/**
+ * BOSS2 末影龙
+ */
+const bossTypeDragon = deriveTemplate(bossType2,
+    true,
+    [1, 1, 0.1, 1],
+    [0, 0, 0, 0]
+);
+
+/**·
+ * 末影人模板
+ */
+const typeEnderman = deriveTemplate(typeC,
+    false,
+    [1.0, 1.0, 1.0, 1.0],
+    [0, 0, 0, 0]
+);
+
+typeEnderman["2_3"][0] = typeEnderman["2_3"][0] * 0.9
+typeEnderman["2_3"][2] = typeEnderman["2_3"][2] * 0.5
+
 
 // 攻击， 生命， 护甲，魔抗
 const additionalStageScale = {
@@ -229,7 +250,7 @@ const additionalStageScale = {
 
     "2_1": [1, 0.8, 1, 1],
     "2_2": [1, 0.7, 1, 1],
-    "2_3": [1, 0.65, 1, 1], // 乘区饰品余量
+    "2_3": [0.9, 0.65, 1, 1], // 乘区饰品余量
 
     "3_1": [1, 1, 1, 1],
     "3_2": [1, 1, 1, 1],

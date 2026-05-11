@@ -7,68 +7,7 @@
 	icon: "kubejs:celestial_filling_alloy_ingot"
 	id: "6B2AC40697D09CB6"
 	order_index: 1
-	quest_links: [
-		{
-			id: "19FA4A3ECD3D6F9F"
-			linked_quest: "49631F88EAF0261B"
-			x: 5.0d
-			y: 2.5d
-		}
-		{
-			id: "516EB083C5C1D0BB"
-			linked_quest: "59F17F34F831D72E"
-			x: 7.5d
-			y: 0.0d
-		}
-		{
-			id: "2B18C5CF30F480DA"
-			linked_quest: "1FC1A62930B9D276"
-			x: 5.0d
-			y: -2.5d
-		}
-		{
-			id: "12547F2CF6098E1B"
-			linked_quest: "0DE1DF9046B9CD2E"
-			x: -5.0d
-			y: -2.5d
-		}
-		{
-			id: "4DD4C559A7AE2A29"
-			linked_quest: "2E2F1882E71FE497"
-			x: -5.0d
-			y: 2.5d
-		}
-		{
-			id: "51DFCEE6B9A0EF14"
-			linked_quest: "65C573EE97C5117F"
-			x: -7.5d
-			y: 0.0d
-		}
-		{
-			id: "09C0A53AA02060C2"
-			linked_quest: "6120DF977C2DFEA2"
-			x: -2.5d
-			y: -2.5d
-		}
-		{
-			id: "33149137F32629D6"
-			linked_quest: "2354F158B208830E"
-			x: -2.5d
-			y: -5.0d
-		}
-		{
-			id: "6A3E54CA87D3C784"
-			linked_quest: "2F9648A58EC0C636"
-			x: 2.5d
-			y: -2.5d
-		}
-		{
-			id: "03F65790DAEBCBA1"
-			linked_quest: "3FBD9DC1E1BB24E1"
-			x: 2.5d
-			y: -5.0d
-		}
-	]
+	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["3A267848CC75F232"]
@@ -96,31 +35,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"49631F88EAF0261B"
-				"59F17F34F831D72E"
-				"1FC1A62930B9D276"
-				"2E3E9722D50C0D8A"
-			]
-			id: "245C93D5DC91D776"
-			tasks: [{
-				id: "5D9792A64F68E887"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						display: {
-							Name: "{\"translate\":\"item.slashblade_addon.nihilbx\"}"
-						}
-						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade_addon.nihilbx\"}})"
-					}
-				}
-				type: "item"
-			}]
-			x: 5.0d
-			y: 0.0d
-		}
-		{
 			dependencies: ["37CF7606A44B5357"]
 			id: "7EACD821B5688C4C"
 			tasks: [{
@@ -130,58 +44,6 @@
 			}]
 			x: -2.5d
 			y: 0.0d
-		}
-		{
-			dependencies: [
-				"7EACD821B5688C4C"
-				"0DE1DF9046B9CD2E"
-				"2E2F1882E71FE497"
-				"65C573EE97C5117F"
-			]
-			id: "5A155C23C2AB2163"
-			tasks: [{
-				id: "24DEB990C30AF04A"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						display: {
-							Name: "{\"translate\":\"item.sjap_adder.crimsoncherryex\"}"
-						}
-						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.sjap_adder.crimsoncherryex\"}})"
-					}
-				}
-				type: "item"
-			}]
-			x: -5.0d
-			y: 0.0d
-		}
-		{
-			dependencies: [
-				"7EACD821B5688C4C"
-				"2E3E9722D50C0D8A"
-				"6120DF977C2DFEA2"
-				"2354F158B208830E"
-				"2F9648A58EC0C636"
-				"3FBD9DC1E1BB24E1"
-			]
-			id: "63BCA9C495EBC8D8"
-			tasks: [{
-				id: "3A7F30B8E5E16DD7"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						display: {
-							Name: "{\"translate\":\"item.sjap_adder.kamuy_dark\"}"
-						}
-						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.sjap_adder.kamuy_dark\"}})"
-					}
-				}
-				type: "item"
-			}]
-			x: 0.0d
-			y: -2.5d
 		}
 	]
 	title: "土星"
