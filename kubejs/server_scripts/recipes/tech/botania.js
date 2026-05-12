@@ -31,14 +31,36 @@ ServerEvents.recipes(event => {
             { "tag": "botania:petals/red" },
             { "tag": "botania:petals/red" },
             { "tag": "botania:petals/gray" },
-            { "tag": "botania:petals/gray" },
+            { "tag": "forge:ingots/terrasteel" },
             { "tag": "botania:petals/white" },
-            { "tag": "botania:petals/white" },
+            { "item": "botania:spawnermover" },
             { "item": "botania:rune_wrath" },
             { "item": "botania:rune_fire" }],
         "output": { "item": "botania:entropinnyum" },
         "reagent": { "tag": "botania:seed_apothecary_reagent" }
     }).id('sdbf:entropinnyum')
+
+    event.custom({
+        "type": "botania:terra_plate",
+        "ingredients": [
+            {
+                "item": "botania:manasteel_block"
+            },
+            {
+                "item": "botania:mana_pearl"
+            },
+            {
+                "item": "botania:mana_diamond"
+            },
+            {
+                "item": "slashblade:proudsoul_sphere"
+            }
+        ],
+        "mana": 500000,
+        "result": {
+            "item": "botania:terrasteel_ingot"
+        }
+    }).id("sdbf:terrasteel_ingot")
 
 
 })

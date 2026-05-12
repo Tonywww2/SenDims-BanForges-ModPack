@@ -35,11 +35,11 @@
             {
                 "primaryAttributes":
                 {
-                    "generic.attack_damage": 1.25
+                    "generic.attack_damage": 1.35
                 },
                 "secondaryEffects":
                 {
-                    "RefineStrengthening": 0.25
+                    "RefineStrengthening": 0.55
                 },
                 "durability": 0.01,
                 "magicCapacity": 3,

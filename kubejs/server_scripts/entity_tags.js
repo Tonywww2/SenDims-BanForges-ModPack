@@ -3,7 +3,6 @@ ServerEvents.tags("entity_type", event => {
         event.add("ad_astra:can_survive_extreme_cold",
             entity
         )
-
         event.add("ad_astra:can_survive_extreme_heat",
             entity
         )
@@ -21,44 +20,42 @@ ServerEvents.tags("entity_type", event => {
         )
     };
 
-    addSpaceEntity("minecraft:stray");
-    addSpaceEntity("minecraft:armor_stand");
-    addSpaceEntity("powerful_dummy:test_dummy");
-
-    addSpaceEntity("cataclysm:urchinkin");
-    addSpaceEntity("cataclysm:drowned_host");
-    addSpaceEntity("cataclysm:symbiocto");
-    addSpaceEntity("cataclysm:hippocamtus");
-    addSpaceEntity("cataclysm:cindaria");
-    addSpaceEntity("cataclysm:scylla");
-    addSpaceEntity("cataclysm:clawdian");
-    addSpaceEntity("cataclysm:koboleton");
-    addSpaceEntity("cataclysm:wadjet");
-    addSpaceEntity("cataclysm:kobolediator");
-    addSpaceEntity("cataclysm:ancient_remnant");
-    addSpaceEntity("cataclysm:ignited_revenant");
-    addSpaceEntity("cataclysm:ignis");
-
-    addSpaceEntity("terra_entity:king_slime");
-    addSpaceEntity("minecraft:villager");
-    addSpaceEntity("minecraft:camel");
-    addSpaceEntity("minecraft:skeleton");
-    addSpaceEntity("minecraft:phantom");
-    addSpaceEntity("minecraft:wither_skeleton");
-    addSpaceEntity("minecraft:husk");
-    addSpaceEntity("minecraft:hoglin");
-    addSpaceEntity("minecraft:zoglin");
-
-    addSpaceEntity('terra_entity:demon_eye');
-    addSpaceEntity('terra_entity:meteor_head');
-    addSpaceEntity('terra_entity:wandering_eye_fish');
-    addSpaceEntity('terra_entity:wyvern');
-    addSpaceEntity('minecraft:zombie');
-    addSpaceEntity('minecraft:skeleton');
-    addSpaceEntity('minecraft:creeper');
-    addSpaceEntity('ad_astra:sulfur_creeper');
-    addSpaceEntity('minecraft:cave_spider');
-    addSpaceEntity('minecraft:spider');
+    addSpaceEntity([
+        "minecraft:stray",
+        "minecraft:armor_stand",
+        "powerful_dummy:test_dummy",
+        "cataclysm:urchinkin",
+        "cataclysm:drowned_host",
+        "cataclysm:symbiocto",
+        "cataclysm:hippocamtus",
+        "cataclysm:cindaria",
+        "cataclysm:scylla",
+        "cataclysm:clawdian",
+        "cataclysm:koboleton",
+        "cataclysm:wadjet",
+        "cataclysm:kobolediator",
+        "cataclysm:ancient_remnant",
+        "cataclysm:ignited_revenant",
+        "cataclysm:ignis",
+        "terra_entity:king_slime",
+        "minecraft:villager",
+        "minecraft:camel",
+        "minecraft:skeleton",
+        "minecraft:phantom",
+        "minecraft:wither_skeleton",
+        "minecraft:husk",
+        "minecraft:hoglin",
+        "minecraft:zoglin",
+        "terra_entity:demon_eye",
+        "terra_entity:meteor_head",
+        "terra_entity:wandering_eye_fish",
+        "terra_entity:wyvern",
+        "minecraft:zombie",
+        "minecraft:creeper",
+        "ad_astra:sulfur_creeper",
+        "minecraft:cave_spider",
+        "minecraft:spider"
+    ]);
 
 
     event.add("enderio:soul_vial_blacklist", [

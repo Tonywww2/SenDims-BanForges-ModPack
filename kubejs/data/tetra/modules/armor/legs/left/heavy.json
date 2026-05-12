@@ -1,52 +1,76 @@
 {
-  "replace": true,
-  "type": "tetra:basic_major_module",
-  "slots": ["legs/left"],
-  "improvements": [],
-  "variants": [
-    {
-      "materials": [ "tetra:wood/","tetra:gem/", "tetra:metal/", "tetra:bone/" ],
-      "key": "heavy_legs_left/",
-      "aspects": {
-        "armor": 2,
-        "armor_legs": 2,
-        "wearable": 2,
-        "breakable": 2
-      },
-      "durability": 7,
-      "integrity": 1,
-      "attributes": {
-        "**minecraft:generic.movement_speed": -0.05,
-        "slashblade_sendims:ap_reduce_amount": -30
-      },
-      "extract": {
-        "tertiaryAttributes": {
-          "minecraft:generic.armor": 1
-        },
-        "primaryEffects":{},
-        "secondaryEffects": {},
-        "tertiaryEffects": {},
-        "durability": 0.7,
-        "integrity": 1,
-        "magicCapacity": 1,
-        "glyph": {
-          "textureX": 16
-        },
-        "availableTextures": [ "left" ],
-        "models": [
-          {
-            "type": "gecko",
-            "location": "geotetraarmor:item/armor/vanilla/"
-          },
-          {
-            "type": "gecko",
-            "location": "geotetraarmor:item/armor/heavy/"
-          },
-          {
-            "location": "geotetraarmor:item/module/armor/legs/"
-          }
-        ]
-      }
-    }
-  ]
+    "replace": true,
+    "type": "tetra:basic_major_module",
+    "slots":
+    [
+        "legs/left"
+    ],
+    "improvements":
+    [],
+    "variants":
+    [
+        {
+            "materials":
+            [
+                "tetra:wood/",
+                "tetra:gem/",
+                "tetra:metal/",
+                "tetra:bone/"
+            ],
+            "key": "heavy_legs_left/",
+            "aspects":
+            {
+                "armor": 2,
+                "armor_legs": 2,
+                "wearable": 2,
+                "breakable": 2
+            },
+            "durability": 7,
+            "integrity": 1,
+            "attributes":
+            {
+                "**minecraft:generic.movement_speed": -0.07,
+                "slashblade_sendims:ap_reduce_amount": -32
+            },
+            "extract":
+            {
+                "tertiaryAttributes":
+                {
+                    "minecraft:generic.armor": 1,
+                    "minecraft:generic.armor_toughness": 0.1
+                },
+                "primaryEffects":
+                {},
+                "secondaryEffects":
+                {},
+                "tertiaryEffects":
+                {},
+                "durability": 0.7,
+                "integrity": 1,
+                "magicCapacity": 1,
+                "glyph":
+                {
+                    "textureX": 16
+                },
+                "availableTextures":
+                [
+                    "left"
+                ],
+                "models":
+                [
+                    {
+                        "type": "gecko",
+                        "location": "geotetraarmor:item/armor/vanilla/"
+                    },
+                    {
+                        "type": "gecko",
+                        "location": "geotetraarmor:item/armor/heavy/"
+                    },
+                    {
+                        "location": "geotetraarmor:item/module/armor/legs/"
+                    }
+                ]
+            }
+        }
+    ]
 }

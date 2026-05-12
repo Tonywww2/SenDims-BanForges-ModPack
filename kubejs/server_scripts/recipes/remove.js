@@ -170,6 +170,10 @@ const toRemoveID = new Set([
     "last_smith:bunshi",
     "slashblade_addon:murasama_blade",
     "slashblade_addon:wanderer_hf",
+    "botania:terra_plate/terrasteel_ingot",
+    "thermal:enderium_dust_2",
+    "thermal:lumium_dust_4",
+    "thermal:signalum_dust_4",
 
     // 临时
     // "apotheosis:hellshelf",
