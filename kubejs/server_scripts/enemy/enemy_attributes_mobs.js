@@ -223,6 +223,7 @@ const mobTypes = new Map([
     ["terra_entity:spore_zombie", typeA],
     ["terra_entity:hat_spore_zombie", typeA],
     ["terra_entity:decayeder", typeA],
+    ["terra_entity:devourer", typeA],
     
     ["terra_entity:giant_shelly", typeC],
     ["terra_entity:giant_worm", typeD],
@@ -356,6 +357,7 @@ const mobTypes = new Map([
     ["cataclysm:kobolediator", typeAE],
     ["cataclysm:ignited_revenant", typeAE],
     ["cataclysm:ender_golem", typeAE],
+    ["cataclysm:ignited_berserker", typeD],
 
     ["cataclysm:scylla", bossType1],
     ["cataclysm:the_harbinger", bossType1],
@@ -387,6 +389,9 @@ const mobTypes = new Map([
     ["terra_entity:pink_jellyfish", typeA],
     ["terra_entity:pixie", typeB],
     ["terra_entity:piranha", typeB],
+
+    ["terra_entity:meteor_head", typeD],
+    ["ad_astra:sulfur_creeper", typeA],
 
 ]);
 

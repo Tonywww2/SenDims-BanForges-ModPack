@@ -1,0 +1,11 @@
+{
+    "block": "apotheosis:blazing_hellshelf",
+    "stats":
+    {
+        "maxEterna": 40,
+        "eterna": 4,
+        "quanta": 5,
+        "arcana": 0,
+        "clues": -1
+    }
+}

@@ -85,7 +85,7 @@ ServerEvents.recipes(event => {
         "B": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("slashblade_addon:kamuy_none") // 前置刀剑：神威·无
-                .addEnchantment(SBEnchantmentDefinition.of("minecraft:fire_protection", 10))
+                .addEnchantment(SBEnchantmentDefinition.of("minecraft:fire_protection", 7))
                 .killCount(5000)                     // 要求：500 击杀
                 .proudSoul(5000)                    // 要求：5000 耀魂
                 .refineCount(50)                    // 要求：20 锻造
@@ -129,7 +129,7 @@ ServerEvents.recipes(event => {
         "B": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("last_smith:roukanken")
-                .addEnchantment(SBEnchantmentDefinition.of("minecraft:sharpness", 10))
+                .addEnchantment(SBEnchantmentDefinition.of("minecraft:sharpness", 7))
                 .killCount(5000)                     // 要求：500 击杀
                 .proudSoul(5000)                    // 要求：5000 耀魂
                 .refineCount(50)                    // 要求：20 锻造
@@ -167,7 +167,7 @@ ServerEvents.recipes(event => {
         "B": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("slashblade:muramasa")       // 要求：村正 (Muramasa)
-                .addEnchantment(SBEnchantmentDefinition.of("minecraft:unbreaking", 10))
+                .addEnchantment(SBEnchantmentDefinition.of("minecraft:unbreaking", 7))
                 .killCount(2500)
                 .build()
         )

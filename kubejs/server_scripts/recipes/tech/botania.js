@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
         2: 'botania:rune_earth',
         8: 'botania:rune_mana',
         3: 'botania:rune_air',
-        N: 'nuclearcraft:chassis'
+        N: "kubejs:delta_dust"
     }).id('sdbf:terra_plate')
 
     event.custom({
