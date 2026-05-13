@@ -11,8 +11,8 @@
 			"gem_class": {
 				"key": "light_weapon",
 				"types": [
-					"chestplate", 
-					"leggings"
+					"sword", 
+					"trident"
 				]
 			},
 			"attribute": "minecraft:generic.attack_damage",

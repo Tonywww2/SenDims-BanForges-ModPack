@@ -189,6 +189,7 @@ const mobTypes = new Map([
     ["lost_aether_content:aerwhale_king", bossType2],
     ["deep_aether:eots_segment", bossType1],
     ["deep_aether:eots_controller", bossType2],
+    ["ancient_aether:fluffalo", bossType1],
 
     ["terra_entity:blue_slime", typeSlime],
     ["terra_entity:purple_slime", typeSlime],
@@ -224,6 +225,7 @@ const mobTypes = new Map([
     ["terra_entity:hat_spore_zombie", typeA],
     ["terra_entity:decayeder", typeA],
     ["terra_entity:devourer", typeA],
+    ["terra_entity:eater_of_worlds_segment", typeAE],
     
     ["terra_entity:giant_shelly", typeC],
     ["terra_entity:giant_worm", typeD],

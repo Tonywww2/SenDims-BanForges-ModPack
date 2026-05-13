@@ -485,7 +485,6 @@ deep_aether:sunroot_tree
 deep_aether:virulent_quicksand_patch
 deep_aether:yagroot_and_cruderoot_trees_placement
 deep_aether:yagroot_tree
-feur_dimensional_skyland:skyland_tree
 hearths:blackstone_disk
 hearths:enormous_netherrack_pillar
 hearths:large_ceiling_netherrack_pillar

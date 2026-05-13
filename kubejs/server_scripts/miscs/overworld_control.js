@@ -90,20 +90,20 @@ const ensureWorldPlatform = (server) => {
     return level;
 }
 
-PlayerEvents.loggedIn(event => {
-    let player = event.player;
-    if (!player || player.isFake && player.isFake()) return;
+// PlayerEvents.loggedIn(event => {
+//     let player = event.player;
+//     if (!player || player.isFake && player.isFake()) return;
 
-    if (player.stages.has(PLAYER_INIT_KEY)) return;
+//     if (player.stages.has(PLAYER_INIT_KEY)) return;
 
-    let level = ensureWorldPlatform(event.server);
-    if (!level) return;
+//     let level = ensureWorldPlatform(event.server);
+//     if (!level) return;
 
-    player.stages.add(PLAYER_INIT_KEY);
-    player.teleportTo(TARGET_DIM, SPAWN_X + 0.5, PLAYER_Y, SPAWN_Z + 0.5, 0, 0);
+//     player.stages.add(PLAYER_INIT_KEY);
+//     player.teleportTo(TARGET_DIM, SPAWN_X + 0.5, PLAYER_Y, SPAWN_Z + 0.5, 0, 0);
 
-    player.tell('Wellcome! ');
-});
+//     player.tell('Wellcome! ');
+// });
 
 const punishPlayer = (player) => {
     player.teleportTo(TARGET_DIM, SPAWN_X + 0.5, PLAYER_Y, SPAWN_Z + 0.5, 0, 0);
@@ -114,6 +114,7 @@ const punishPlayer = (player) => {
 };
 
 PlayerEvents.tick(event => {
+    if (event.level.isClientSide()) return;
     let player = event.player;
     if (!player || player.isFake && player.isFake()) return;
 

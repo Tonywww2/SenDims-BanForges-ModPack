@@ -10,7 +10,8 @@
 			"gem_class": {
 				"key": "light_weapon",
 				"types": [
-					"sword", "trident"
+					"sword", 
+					"trident"
 				]
 			},
 			"modifiers": [{

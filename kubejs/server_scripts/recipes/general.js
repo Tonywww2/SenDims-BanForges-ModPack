@@ -161,8 +161,8 @@ ServerEvents.recipes(event => {
         'BCB',
         'ABA'
     ], {
-        A: ["minecraft:dragon_head", "minecraft:bedrock"],
-        B: ['minecraft:elytra'],
+        A: ["minecraft:dragon_head", '#forge:ingots/terrasteel'],
+        B: ['minecraft:elytra', '#forge:storage_blocks/platinum'],
         C: 'slashblade_sendims:estus_flask_3'
     }).id('sdbf:estus_flask_4')
 
