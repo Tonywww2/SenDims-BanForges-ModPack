@@ -134,4 +134,9 @@ ServerEvents.recipes(event => {
         'kubejs:delta_dust'
     );
 
+    event.replaceInput({ id: 'minecraft:netherite_upgrade_smithing_template' },
+        'minecraft:netherite_upgrade_smithing_template',
+        '#minecraft:trim_templates'
+    );
+
 })

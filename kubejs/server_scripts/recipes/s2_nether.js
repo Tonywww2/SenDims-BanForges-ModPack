@@ -1,5 +1,8 @@
 ServerEvents.recipes(event => {
 
+        sqRecipe(event, "minecraft:bastion_remnant", '#forge:ingots/gold', 1, "s2");
+        sqRecipe(event, "minecraft:fortress", 'minecraft:nether_bricks', 1, "s2");
+
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
         "SNJ",
         "LBD",

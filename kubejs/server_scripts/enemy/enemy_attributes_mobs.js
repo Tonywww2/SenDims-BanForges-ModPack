@@ -29,6 +29,7 @@ const mobTypes = new Map([
     ['minecraft:rabbit', type0],
     ['quark:crab', type0],
     ['biomemakeover:helmit_crab', type0],
+    ['biomemakeover:scuttler', type0],
     ['terra_entity:bunny', type0],
     ['terra_entity:cardinal', type0],
     ['minecraft:wolf', type0],
