@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
             { "tag": "botania:petals/gray" },
             { "tag": "forge:ingots/terrasteel" },
             { "tag": "botania:petals/white" },
-            { "item": "botania:spawnermover" },
+            { "item": 'botania:spawner_mover' },
             { "item": "botania:rune_wrath" },
             { "item": "botania:rune_fire" }],
         "output": { "item": "botania:entropinnyum" },

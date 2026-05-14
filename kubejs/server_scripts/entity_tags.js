@@ -57,8 +57,13 @@ ServerEvents.tags("entity_type", event => {
         "minecraft:spider"
     ]);
 
+    event.add("forge:bosses", [
+        "terra_entity:eater_of_worlds_segment"
+    ])
+
 
     event.add("enderio:soul_vial_blacklist", [
+        "#forge:bosses",
         "#productivebees:solitary_bees",
         "minecraft:warden"
     ]);

@@ -10,6 +10,17 @@ ServerEvents.tags("item", event => {
 
     ])
 
+    event.add("slashblade_sendims:the_nectar_quest_items", [
+        "the_bumblezone:essence_calming",
+        "the_bumblezone:essence_radiance",
+        "the_bumblezone:essence_continuity",
+        "the_bumblezone:essence_knowing",
+        "the_bumblezone:essence_life",
+        "the_bumblezone:essence_raging",
+        "the_bumblezone:essence_of_the_bees"
+
+    ])
+
     event.add("slashblade_sendims:blessing_petals_items", [
         '#minecraft:music_discs'
 

@@ -96,7 +96,7 @@
 	# Sets maximum tick duration the Paralyzed effect can be on an entity. Actions that reapply Paralyzed can still reset the timer and keep entity stunned.
 	#
 	#Range: 1 ~ 1000000
-	paralyzedMaxTickDuration = 600
+	paralyzedMaxTickDuration = 40
 
 ["General Mechanics Options"]
 	# 
@@ -350,7 +350,7 @@
 	# The list is in order of the effect levels that the player will get as they make highlighted kills.
 	# Adding or removing numbers will change the maximum number of rage tiers too.
 	#
-	ragingEssenceStrengthLevels = [1, 2, 3, 5, 8, 14, 20]
+	ragingEssenceStrengthLevels = [1, 1, 2, 2, 3, 3, 4]
 	# 
 	#-----------------------------------------------------
 	#

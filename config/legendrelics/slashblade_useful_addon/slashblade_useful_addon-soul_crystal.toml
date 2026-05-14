@@ -1,17 +1,17 @@
 #魂缚晶增加的杀敌数
 #Range: 0 ~ 214748364
-soul_crystal_add_killcount = 10
+soul_crystal_add_killcount = 0
 #魂缚晶增加的耀魂数
 #Range: 0 ~ 214748364
-soul_crystal_add_proud_soul = 500
+soul_crystal_add_proud_soul = 0
 #魂缚晶增加的锻造数
 #Range: 0 ~ 214748364
 soul_crystal_add_refine = 0
 #魂缚晶能掉落开关
-soul_crystal_drop = true
+soul_crystal_drop = false
 #魂缚晶最多掉落数
 #Range: 0 ~ 214748364
-soul_crystal_drop_max = 4
+soul_crystal_drop_max = 0
 #魂缚晶额外掉落除数
 #Range: 0 ~ 214748364
 soul_crystal_drop_divisor = 4000
