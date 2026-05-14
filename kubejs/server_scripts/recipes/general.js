@@ -308,8 +308,8 @@ ServerEvents.recipes(event => {
     ).id("sdbf:proudsoul_tiny_from_fluid")
     
     event.recipes.thermal.smelter([
-        Item.of('slashblade:proudsoul').withChance(1.1),
-        Item.of('slashblade:proudsoul_tiny').withChance(0.25)
+        Item.of('2x slashblade:proudsoul').withChance(1.2),
+        Item.of('2x slashblade:proudsoul_tiny').withChance(1.15)
     ], [
         Item.of('thermal:florb', '{Fluid:{Amount:1000,FluidName:"kubejs:melted_proudsoul"}}').weakNBT(),
         '#forge:rosin',
