@@ -127,7 +127,7 @@ ServerEvents.recipes(event => {
         "A": "minecraft:repeater",
         "B": "slashblade:proudsoul_ingot",
         "C": "minecraft:redstone_block",
-        "E": Item.of('minecraft:enchanted_book').enchant('ad_astra_giselle_addon:space_fire_proof', 1).weakNBT(),
+        "E": 'kubejs:mercury_refractory_structural_component',
         "D": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("slashblade:kanze_masamune") // 要求：观世正宗 (Kanze Masamune)

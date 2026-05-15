@@ -51,7 +51,7 @@ ServerEvents.tags("item", event => {
     )
     // 3-4
     event.add('slashblade_sendims:drc_rank_material_4',
-
+        "kubejs:galatic_cycle_component",           // 星空循环组件
 
     )
     // 4-5
@@ -131,7 +131,6 @@ ServerEvents.tags("item", event => {
         "kubejs:multifaceted_ambrosia",                 // 多面蜜酒
         "kubejs:ml_computing_ingot",               // ML计算锭
         "kubejs:chaotic_truth",                    // 混沌真理
-        "kubejs:galatic_cycle_component",           // 星空循环组件
         "kubejs:alpha_dust",                       // alpha
         "enderio:end_steel_block",
         "nuclearcraft:xenorium_298",

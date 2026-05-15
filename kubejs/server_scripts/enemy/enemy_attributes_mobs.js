@@ -368,6 +368,8 @@ const mobTypes = new Map([
     ["cataclysm:ignis", bossType1],
 
     ["minecraft:shulker", typeD],
+    ["minecraft:endermite", typeSlime],
+    ["minecraft:silverfish", typeSlime],
 
     ["cataclysm:lionfish", type0],
     ["cataclysm:deepling_angler", typeB],
@@ -395,6 +397,11 @@ const mobTypes = new Map([
 
     ["terra_entity:meteor_head", typeD],
     ["ad_astra:sulfur_creeper", typeA],
+
+    ["the_bumblezone:rootmin", typeA],
+    ["the_bumblezone:variant_bee", typeA],
+    ["the_bumblezone:honey_slime", typeSlime],
+    ["the_bumblezone:beehemoth", typeC],
 
 ]);
 

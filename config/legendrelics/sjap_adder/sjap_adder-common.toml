@@ -118,11 +118,11 @@ waveEdgeSuperComboRatio = 0.1
 #The Combo Ratio of SakuraDriveLeft
 #幻影刃结月重的刀光倍率（左）
 #Range: 0.0 ~ 100.0
-sakuraDriveLeftComboRatio = 1.2
+sakuraDriveLeftComboRatio = 1.5
 #The Combo Ratio of SakuraDriveRight
 #幻影刃结月重的刀光倍率（右）
 #Range: 0.0 ~ 100.0
-sakuraDriveRightComboRatio = 1.5
+sakuraDriveRightComboRatio = 1.2
 #The Combo Ratio of XrossThunder
 #蓝梦一闪的刀光倍率（左）
 #Range: 0.0 ~ 100.0

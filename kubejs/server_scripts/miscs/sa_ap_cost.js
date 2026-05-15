@@ -2,9 +2,9 @@ let SACostMap = Utils.newMap();
 // id -> 固定值， 百分比
 SACostMap.put("slashblade:none", [0, 0]);
 
-SACostMap.put("slashblade:judgement_cut", [200, 0.2]);
-SACostMap.put("slashblade:judgement_cut_slash_air", [200, 0.2]);
-SACostMap.put("slashblade:judgement_cut_slash_just", [400, 0.2]);
+SACostMap.put("slashblade:judgement_cut", [300, 0.2]);
+SACostMap.put("slashblade:judgement_cut_slash_air", [300, 0.2]);
+SACostMap.put("slashblade:judgement_cut_slash_just", [500, 0.2]);
 
 SACostMap.put("slashblade:wave_edge_vertical", [200, 0.05]);
 SACostMap.put("slashblade:drive_horizontal", [200, 0.05]);
@@ -43,8 +43,18 @@ SACostMap.put("slashblade_sendims:frenzied_burst", [200, 0.15]);
 let defaultCost = [200, 0.2];
 let superSlashArtCost = [400, 0.3];
 
+/**
+ * 
+ * @param {Internal.LivingEntity | Internal.Player} entity 
+ * @param {Internal.LivingEvent} event 
+ * @param {number} cost 
+ * @param {number} cost_persentage 
+ * @returns {boolean}
+ */
 let consumeAPForSA = (entity, event, cost, cost_persentage) => {
     if (cost == 0 && cost_persentage == 0) return true;
+
+    if (entity.isPlayer() && entity.isCreative()) return true;
 
     let attributeInstance = entity.getAttribute("slashblade_sendims:ap_reduce_amount");
     if (attributeInstance) {

@@ -30,12 +30,12 @@ ServerEvents.highPriorityData(event => {
         boss.build();
     };
 
-    tofuBoss('tofucraft:tofuspider');
-    tofuBoss('tofucraft:shudofuspider');
-    tofuBoss('tofucraft:fukumame_thower');
-    tofuBoss('tofucraft:zundamite');
-    tofuBoss('tofucraft:tofuslime');
-    tofuBoss('tofucraft:tofucreeper');
+    // tofuBoss('tofucraft:tofuspider');
+    // tofuBoss('tofucraft:shudofuspider');
+    // tofuBoss('tofucraft:fukumame_thower');
+    // tofuBoss('tofucraft:zundamite');
+    // tofuBoss('tofucraft:tofuslime');
+    // tofuBoss('tofucraft:tofucreeper');
 
 
 })
