@@ -38,6 +38,12 @@ let signs = [
 let PLAYER_INIT_KEY = 'sdbf.linit';
 let OVERWORLD_STAGE = 'sdbf.world_lock';
 
+const getLevelSpawnPoint = (level) => {
+    let data = level.getLevelData();
+
+    return [data.getXSpawn(), data.getYSpawn(), data.getZSpawn()];
+}
+
 const buildBedrockPlatform = (level) => {
 
     for (let x = X_MIN; x <= X_MAX; x++) {
@@ -106,7 +112,9 @@ const ensureWorldPlatform = (server) => {
 // });
 
 const punishPlayer = (player) => {
-    player.teleportTo(TARGET_DIM, SPAWN_X + 0.5, PLAYER_Y, SPAWN_Z + 0.5, 0, 0);
+    // player.teleportTo(TARGET_DIM, SPAWN_X + 0.5, PLAYER_Y, SPAWN_Z + 0.5, 0, 0);
+    let pos = getLevelSpawnPoint(player.level);
+    player.teleportTo(TARGET_DIM, pos[0] + 0.5, pos[1], pos[2] + 0.5, 0, 0);
 
     player.potionEffects.add('minecraft:wither', 100, 0);
     player.potionEffects.add('minecraft:blindness', 100, 0);
