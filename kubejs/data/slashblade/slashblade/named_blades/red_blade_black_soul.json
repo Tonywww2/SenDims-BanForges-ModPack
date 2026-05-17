@@ -1,0 +1,41 @@
+{
+    "enchantments":
+    [
+        {
+            "id": "minecraft:sharpness",
+            "lvl": 7
+        },
+        {
+            "id": "minecraft:power",
+            "lvl": 7
+        },
+        {
+            "id": "minecraft:thorns",
+            "lvl": 5
+        }
+    ],
+    "name": "slashblade:red_blade_black_soul",
+    "properties":
+    {
+        "attack_base": 29.5,
+        "max_damage": 90,
+        "slash_art": "sjap_adder:explosive_dawn",
+        "special_effects":
+        [
+            "sjap_adder:shadow_of_revenant",
+            "slashblade_sendims:aftershock",
+            "last_smith:extreme_sharpness"
+        ],
+        "sword_type":
+        [
+            "bewitched"
+        ]
+    },
+    "render":
+    {
+        "carry_type": "default",
+        "model": "slashblade:model/named/muramasa/muramasa.obj",
+        "summon_sword_color": 7864320,
+        "texture": "slashblade:model/red_blade/red_blade_black_soul.png"
+    }
+}

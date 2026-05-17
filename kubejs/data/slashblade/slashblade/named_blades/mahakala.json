@@ -1,0 +1,35 @@
+{
+    "enchantments":
+    [
+        {
+            "id": "minecraft:unbreaking",
+            "lvl": 3
+        },
+        {
+            "id": "minecraft:power",
+            "lvl": 5
+        }
+    ],
+    "name": "slashblade:mahakala_black",
+    "properties":
+    {
+        "attack_base": 9.0,
+        "max_damage": 11,
+        "slash_art": "slashblade_sendims:mahakala",
+        "special_effects":
+        [
+            "slashblade_sendims:mahakala"
+        ],
+        "sword_type":
+        [
+            "bewitched"
+        ]
+    },
+    "render":
+    {
+        "carry_type": "katana",
+        "model": "slashblade_addon:model/kirisaya/kirisaya.obj",
+        "summon_sword_color": 921104,
+        "texture": "slashblade:model/mahakala/mahakala_black.png"
+    }
+}

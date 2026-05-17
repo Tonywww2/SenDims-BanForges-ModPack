@@ -296,7 +296,7 @@ const dimensionStages = new Map([
     ["sdbf:inside_the_end", "3_3"],
     ["minecraft:overworld", "0_1"], // Special
 
-    ["sdbf:saturn", "3_2"],
+    ["sdbf:saturn", "4_1"],
     ["ad_astra:glacio", "4_1"],
 
     ["sdbf:deep_realm_level_4", "4_2"]
