@@ -47,8 +47,8 @@
 		{
 			id: "309624E5B734CB23"
 			linked_quest: "5F25788D537A03BC"
-			x: 2.5d
-			y: 7.5d
+			x: 5.0d
+			y: 12.5d
 		}
 		{
 			id: "218EB1A0007E0190"
@@ -306,8 +306,8 @@
 		}
 		{
 			dependencies: [
-				"5FDD83613CC8DBB5"
 				"5F25788D537A03BC"
+				"2B1F98A770D77E12"
 			]
 			id: "2F9648A58EC0C636"
 			tasks: [{
@@ -325,7 +325,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: 10.0d
+			y: 15.0d
 		}
 		{
 			dependencies: [

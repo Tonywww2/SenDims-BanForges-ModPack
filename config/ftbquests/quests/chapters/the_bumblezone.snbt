@@ -52,13 +52,18 @@
 	]
 	quests: [
 		{
-			dependencies: ["3A267848CC75F232"]
+			dependencies: [
+				"3A267848CC75F232"
+				"0351BC9DA1C5B4F7"
+			]
+			description: ["&c警告：虽然黄蜂领域的战斗频率不如其他维度，但是依旧建议将自身的数值提升到一定水平后再前往。"]
 			hide_dependent_lines: true
 			icon: "the_bumblezone:beehive_beeswax"
 			id: "220AEBF0A8A46F7C"
 			size: 2.0d
 			tasks: [{
 				dimension: "the_bumblezone:the_bumblezone"
+				icon: "minecraft:bee_nest"
 				id: "670A7B9BE6DBB1FA"
 				title: "黄蜂领域"
 				type: "dimension"
@@ -417,6 +422,31 @@
 			}]
 			x: 0.0d
 			y: 5.0d
+		}
+		{
+			dependencies: [
+				"77521D83617F9CBA"
+				"3434AD43BC82144D"
+				"7174346AD8DCFBEC"
+				"73EC367B170C5EF6"
+			]
+			id: "0351BC9DA1C5B4F7"
+			tasks: [{
+				id: "7994EC18FBD6D59E"
+				item: {
+					Count: 1
+					id: "slashblade_sendims:the_nectar_quest"
+					tag: {
+						the_nectar_quest: {
+							item_counts: 0
+							item_list: [ ]
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.0d
 		}
 	]
 	title: "黄蜂领域"

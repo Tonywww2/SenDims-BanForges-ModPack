@@ -30,13 +30,37 @@
 			id: "6125CC552C522DC0"
 			linked_quest: "641BAE5B4E3ED25C"
 			x: 0.0d
-			y: 45.0d
+			y: 50.0d
 		}
 		{
 			id: "299E3B12357B5A3D"
 			linked_quest: "690B503CC20750EE"
 			x: 0.0d
+			y: 45.0d
+		}
+		{
+			id: "73BA08A257086F53"
+			linked_quest: "74C39C2A8B73986F"
+			x: -2.5d
 			y: 40.0d
+		}
+		{
+			id: "58BCC9A5EA938C64"
+			linked_quest: "2B1F98A770D77E12"
+			x: 2.5d
+			y: 40.0d
+		}
+		{
+			id: "0BD91D4013C520BA"
+			linked_quest: "7174346AD8DCFBEC"
+			x: -2.5d
+			y: 42.5d
+		}
+		{
+			id: "7F4EEE9A0CD93ED6"
+			linked_quest: "73EC367B170C5EF6"
+			x: 2.5d
+			y: 42.5d
 		}
 	]
 	quests: [
@@ -928,8 +952,8 @@
 				item: "botania:terra_plate"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 40.0d
+			x: 2.5d
+			y: 45.0d
 		}
 		{
 			dependencies: ["2B520DD47D46DDEB"]
@@ -939,8 +963,8 @@
 				item: "botania:terrasteel_ingot"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 42.5d
+			x: 2.5d
+			y: 47.5d
 		}
 		{
 			dependencies: ["74388B1FF26F530C"]
@@ -1077,7 +1101,7 @@
 				type: "item"
 			}]
 			x: -15.0d
-			y: 40.0d
+			y: 45.0d
 		}
 		{
 			dependencies: ["7EEE08CB9B8DE8A1"]
@@ -1088,7 +1112,7 @@
 				type: "item"
 			}]
 			x: -15.0d
-			y: 42.5d
+			y: 47.5d
 		}
 		{
 			dependencies: [
@@ -1101,8 +1125,8 @@
 				item: "botania:alfheim_portal"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 45.0d
+			x: 2.5d
+			y: 50.0d
 		}
 		{
 			dependencies: [
@@ -1115,8 +1139,8 @@
 				item: "botania:elementium_ingot"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 45.0d
+			x: 5.0d
+			y: 50.0d
 		}
 		{
 			dependencies: [
@@ -1195,7 +1219,7 @@
 				type: "item"
 			}]
 			x: -15.0d
-			y: 45.0d
+			y: 50.0d
 		}
 		{
 			dependencies: ["69A40782E4BC7364"]
@@ -1215,7 +1239,7 @@
 				type: "checkmark"
 			}]
 			x: 0.0d
-			y: 50.0d
+			y: 52.5d
 		}
 		{
 			dependencies: ["52DEB335E97C57C9"]
@@ -1225,8 +1249,8 @@
 				item: "botania:pixie_dust"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 47.5d
+			x: 2.5d
+			y: 52.5d
 		}
 		{
 			dependencies: [
@@ -1239,8 +1263,8 @@
 				item: "botania:gaia_pylon"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 47.5d
+			x: 5.0d
+			y: 52.5d
 		}
 		{
 			dependencies: ["1355B5FEA170DF1D"]
@@ -1251,7 +1275,7 @@
 				type: "item"
 			}]
 			x: 10.0d
-			y: 47.5d
+			y: 52.5d
 		}
 		{
 			dependencies: ["42C9B0A729486047"]
@@ -1268,7 +1292,7 @@
 				type: "item"
 			}]
 			x: 12.5d
-			y: 47.5d
+			y: 52.5d
 		}
 		{
 			dependencies: ["79B89622E21E230D"]
@@ -1294,7 +1318,7 @@
 				type: "item"
 			}]
 			x: 10.0d
-			y: 45.0d
+			y: 50.0d
 		}
 		{
 			dependencies: ["42C9B0A729486047"]
@@ -1305,7 +1329,7 @@
 				type: "item"
 			}]
 			x: 10.0d
-			y: 50.0d
+			y: 55.0d
 		}
 		{
 			dependencies: ["088AF6E3F4AA7E3B"]
@@ -1337,8 +1361,8 @@
 				item: "botania:manasteel_ingot"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 40.0d
+			x: 5.0d
+			y: 45.0d
 		}
 		{
 			dependencies: ["42C9B0A729486047"]
@@ -1349,7 +1373,7 @@
 				type: "item"
 			}]
 			x: 12.5d
-			y: 50.0d
+			y: 55.0d
 		}
 		{
 			dependencies: ["31801D73AF59C8CB"]
@@ -1365,6 +1389,27 @@
 			}]
 			x: -2.5d
 			y: 37.5d
+		}
+		{
+			dependencies: [
+				"31801D73AF59C8CB"
+				"74C39C2A8B73986F"
+				"7174346AD8DCFBEC"
+				"73EC367B170C5EF6"
+				"2B1F98A770D77E12"
+			]
+			id: "01DBE6D12A9A3CD3"
+			tasks: [{
+				id: "06C7B854B2F0D7E9"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_4_rocket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 42.5d
 		}
 	]
 	title: "工业"

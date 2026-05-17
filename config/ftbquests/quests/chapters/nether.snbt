@@ -420,6 +420,29 @@
 			x: 2.5d
 			y: -2.5d
 		}
+		{
+			dependencies: ["5251AFEDB9C97974"]
+			id: "09B56EAA8E6C1B2E"
+			tasks: [{
+				id: "047C26A7838196D5"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["09B56EAA8E6C1B2E"]
+			id: "4A40F053B5D1B498"
+			tasks: [{
+				id: "65DF4C0E04FD5764"
+				structure: "minecraft:bastion_remnant"
+				type: "structure"
+			}]
+			title: "堡垒遗迹"
+			x: -5.0d
+			y: 5.0d
+		}
 	]
 	title: "入地狱"
 }

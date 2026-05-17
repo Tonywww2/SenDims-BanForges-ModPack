@@ -83,13 +83,14 @@
 	]
 	quests: [
 		{
-			dependencies: ["3A267848CC75F232"]
+			dependencies: ["01DBE6D12A9A3CD3"]
 			hide_dependent_lines: true
-			icon: "kubejs:carbon_rich_asteroid_rock"
+			icon: "kubejs:asteroid_rock"
 			id: "77DC6770CC08AEF6"
 			size: 2.0d
 			tasks: [{
 				dimension: "sdbf:asteroid_belt"
+				icon: "kubejs:asteroid_rock"
 				id: "60D672CC7D27CAB3"
 				title: "小行星带"
 				type: "dimension"
@@ -171,6 +172,7 @@
 				"0A2EC0BAE83D0D59"
 				"14D5D5ADCDC5B859"
 				"2E4AB72EC5D3F108"
+				"01DBE6D12A9A3CD3"
 			]
 			id: "690B503CC20750EE"
 			tasks: [{
@@ -190,6 +192,7 @@
 				"161E8BD488E58BEC"
 			]
 			id: "399F39F1E6D8F717"
+			shape: "diamond"
 			tasks: [{
 				id: "5B242DFED58C18BA"
 				item: {
@@ -311,6 +314,7 @@
 			dependencies: [
 				"0E848F953EE65A31"
 				"285BBB474F852773"
+				"1498BB469C25AD67"
 			]
 			id: "60BC7DF019B63722"
 			tasks: [{
@@ -334,6 +338,7 @@
 			dependencies: [
 				"0E848F953EE65A31"
 				"5C75E5457757ACDB"
+				"1498BB469C25AD67"
 			]
 			id: "281BD02608ADF2EE"
 			tasks: [{

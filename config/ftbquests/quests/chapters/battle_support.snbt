@@ -1186,6 +1186,17 @@
 			x: 0.0d
 			y: -2.5d
 		}
+		{
+			dependencies: ["3864617F2C8F7BE0"]
+			id: "2597F04F3F0DAEB8"
+			tasks: [{
+				id: "1057F43BEB834ADF"
+				item: "apotheosis:ancient_material"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.5d
+		}
 	]
 	title: "战斗辅助"
 }
