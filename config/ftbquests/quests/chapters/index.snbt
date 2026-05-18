@@ -128,14 +128,14 @@
 			linked_quest: "37CF7606A44B5357"
 			size: 2.0d
 			x: 26.0d
-			y: -1.0d
+			y: -4.0d
 		}
 		{
 			id: "1CB534867E8049BE"
 			linked_quest: "6035D1A1774B2FAF"
 			size: 2.0d
 			x: 20.0d
-			y: -1.0d
+			y: -4.0d
 		}
 		{
 			id: "50B962F0F3CAAF88"
@@ -157,7 +157,7 @@
 			linked_quest: "1BF032EC08E31ABB"
 			size: 2.0d
 			x: 20.0d
-			y: -4.0d
+			y: -1.0d
 		}
 		{
 			id: "52704AD20F8923CA"
@@ -171,7 +171,7 @@
 			linked_quest: "2E150AF7AD2E748B"
 			size: 2.0d
 			x: 26.0d
-			y: -4.0d
+			y: -1.0d
 		}
 		{
 			id: "35ED110B4C7A5457"

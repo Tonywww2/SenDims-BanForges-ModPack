@@ -17,8 +17,8 @@
     "name": "slashblade:red_blade_raye",
     "properties":
     {
-        "attack_base": 22.5,
-        "max_damage": 465,
+        "attack_base": 52,
+        "max_damage": 165,
         "slash_art": "slashblade:heavens_thirteen_slashes",
         "special_effects":
         [

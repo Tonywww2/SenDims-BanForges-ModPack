@@ -6,7 +6,7 @@
 	group: "35DD57C332D61BB0"
 	icon: "minecraft:end_crystal"
 	id: "1518056494B23302"
-	order_index: 4
+	order_index: 3
 	quest_links: [
 		{
 			id: "6C588F80FE7B0FFE"
@@ -23,8 +23,8 @@
 		{
 			id: "52DE4DCE7D6E32C8"
 			linked_quest: "35F111CC582779BA"
-			x: 7.5d
-			y: 0.0d
+			x: 2.5d
+			y: -2.5d
 		}
 		{
 			id: "0FED705A23794855"
@@ -74,10 +74,25 @@
 			x: -2.5d
 			y: 5.0d
 		}
+		{
+			id: "1D2C0BA880CC37DD"
+			linked_quest: "5C754EA1BB21D901"
+			x: 10.5d
+			y: -2.5d
+		}
+		{
+			id: "031E980351B20F22"
+			linked_quest: "34C15FC6C1E469E9"
+			x: 0.0d
+			y: -2.5d
+		}
 	]
 	quests: [
 		{
-			dependencies: ["3A267848CC75F232"]
+			dependencies: [
+				"3A267848CC75F232"
+				"34C15FC6C1E469E9"
+			]
 			hide_dependent_lines: true
 			id: "1BF032EC08E31ABB"
 			size: 2.0d
@@ -85,7 +100,7 @@
 				dimension: "sdbf:inside_the_end"
 				icon: "minecraft:end_crystal"
 				id: "02A408D0F6A84381"
-				title: "末地：里"
+				title: "末路之地[?]"
 				type: "dimension"
 			}]
 			x: 0.0d
@@ -281,6 +296,116 @@
 			x: 0.0d
 			y: 2.5d
 		}
+		{
+			dependencies: [
+				"59F17F34F831D72E"
+				"5C754EA1BB21D901"
+			]
+			id: "664C0B9BCAFBC037"
+			tasks: [{
+				id: "3C73A25BB949E9EF"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade:model/named/muramasa/muramasa.obj"
+							RepairCounter: 0
+							SpecialAttackType: "sjap_adder:explosive_dawn"
+							SpecialEffects: [
+								"last_smith:extreme_sharpness"
+								"sjap_adder:shadow_of_revenant"
+								"slashblade_sendims:aftershock"
+							]
+							StandbyRenderType: 1b
+							SummonedSwordColor: -8912896
+							SummonedSwordColorInverse: 0b
+							TargetEntity: -1
+							TextureName: "slashblade:model/red_blade/red_blade_black_soul.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 29.5f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 1.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 1016068L
+							maxDamage: 90
+							proudSoul: 0
+							translationKey: "item.slashblade.red_blade_black_soul"
+						}
+					}
+					id: "slashblade:slashblade"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:sharpness"
+								lvl: 7s
+							}
+							{
+								id: "minecraft:power"
+								lvl: 7s
+							}
+							{
+								id: "minecraft:thorns"
+								lvl: 5s
+							}
+						]
+						bladeState: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							ModelName: "slashblade:model/named/muramasa/muramasa.obj"
+							RepairCounter: 0
+							SpecialAttackType: "sjap_adder:explosive_dawn"
+							SpecialEffects: [
+								"last_smith:extreme_sharpness"
+								"sjap_adder:shadow_of_revenant"
+								"slashblade_sendims:aftershock"
+							]
+							StandbyRenderType: 1b
+							SummonedSwordColor: -8912896
+							SummonedSwordColorInverse: 0b
+							TargetEntity: -1
+							TextureName: "slashblade:model/red_blade/red_blade_black_soul.png"
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 29.5f
+							currentCombo: "sjap_adder:all_reuse"
+							fallDecreaseRate: 1.0f
+							isBroken: 0b
+							isDefaultBewitched: 1b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 1016048L
+							maxDamage: 90
+							proudSoul: 0
+							translationKey: "item.slashblade.red_blade_black_soul"
+						}
+						slashblade_shadow_of_revenant: {
+							revenant_1: 5
+							revenant_2: 5
+							revenant_3: 5
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 10.5d
+			y: 0.0d
+		}
 	]
-	title: "末地内在"
+	title: "末路之地[?]"
 }

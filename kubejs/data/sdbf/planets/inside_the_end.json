@@ -1,0 +1,10 @@
+{
+    "dimension": "sdbf:inside_the_end",
+    "gravity": 9.81,
+    "orbit": "sdbf:inside_the_end_orbit",
+    "oxygen": false,
+    "solar_power": 0,
+    "solar_system": "ad_astra:solar_system",
+    "temperature": 30,
+    "tier": 5
+}

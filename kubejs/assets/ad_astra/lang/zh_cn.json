@@ -15,6 +15,8 @@
     "planet.minecraft.overworld": "地球",
     "planet.sdbf.asteroid_belt": "小行星带",
     "planet.sdbf.asteroid_belt_orbit": "小行星带轨道",
+    "planet.sdbf.inside_the_end": "末路之地[?]",
+    "planet.sdbf.inside_the_end_orbit": "末路之地[?]轨道",
     
     "solar_system.ad_astra.proxima_centauri": "§b比邻星",
     "solar_system.ad_astra.solar_system": "太阳系"

@@ -45,6 +45,26 @@
 			x: -2.5d
 			y: 0.0d
 		}
+		{
+			dependencies: ["2E3E9722D50C0D8A"]
+			id: "2959FDB2F1511378"
+			tasks: [{
+				id: "12278BBC4587261F"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"translate\":\"item.slashblade.mahakala_fortune\"}"
+						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade.mahakala_fortune\"}})"
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
 	]
 	title: "土星"
 }

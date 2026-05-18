@@ -53,6 +53,8 @@ enableStatBarShowControl = false
 	hideMaterialKeys = []
 	#是否启用添加特殊材料Tooltip-修改此配置需重启生效
 	enableSpecialMaterialTooltip = true
+	#是否常驻显示材料属性tooltip
+	enableAllowsShowTooltip = false
 
 	[Tooltip.ProgressBar]
 		#设置进度条的长度

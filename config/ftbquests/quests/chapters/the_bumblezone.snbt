@@ -5,7 +5,7 @@
 	group: "35DD57C332D61BB0"
 	icon: "the_bumblezone:beehive_beeswax"
 	id: "22702047F4B6E264"
-	order_index: 2
+	order_index: 1
 	quest_links: [
 		{
 			id: "365AD91D1117D708"
@@ -48,6 +48,48 @@
 			linked_quest: "4FD299D688A0A92A"
 			x: 0.0d
 			y: -7.5d
+		}
+		{
+			id: "08381271B1AA22A1"
+			linked_quest: "3C0882022833F540"
+			x: 2.5d
+			y: 7.5d
+		}
+		{
+			id: "2E5AE958186B97BC"
+			linked_quest: "1152A96652FA7C8F"
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			id: "4951D20FE45202C5"
+			linked_quest: "0E848F953EE65A31"
+			x: -2.5d
+			y: 10.0d
+		}
+		{
+			id: "77A08580DD701C03"
+			linked_quest: "00880D674BE17F9A"
+			x: 2.5d
+			y: 10.0d
+		}
+		{
+			id: "764E09AF482CAA4B"
+			linked_quest: "07AEFF9468658A0C"
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			id: "2BBE602F9542B3CE"
+			linked_quest: "34C15FC6C1E469E9"
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			id: "4925CD729E9A5550"
+			linked_quest: "4D0F49CE2720FBCD"
+			x: 7.5d
+			y: 2.5d
 		}
 	]
 	quests: [
@@ -350,7 +392,7 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
+			x: -2.5d
 			y: 7.5d
 		}
 		{
@@ -447,6 +489,32 @@
 			}]
 			x: -2.5d
 			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6D6FC1765F6AAA8B"
+				"3C0882022833F540"
+				"1152A96652FA7C8F"
+				"0E848F953EE65A31"
+				"00880D674BE17F9A"
+			]
+			id: "67DC282A5517F481"
+			tasks: [{
+				id: "0D61C581C47CCF10"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"translate\":\"item.slashblade.mahakala_black\"}"
+						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade.mahakala_black\"}})"
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.0d
 		}
 	]
 	title: "黄蜂领域"

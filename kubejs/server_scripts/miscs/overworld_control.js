@@ -124,7 +124,7 @@ const punishPlayer = (player) => {
 PlayerEvents.tick(event => {
     if (event.level.isClientSide()) return;
     let player = event.player;
-    if (!player || player.isFake && player.isFake()) return;
+    if (!player || (player.isFake && player.isFake())) return;
 
     if (player.level.dimensionKey != TARGET_DIM) return;
 
@@ -134,4 +134,26 @@ PlayerEvents.tick(event => {
         punishPlayer(player);
         player.tell(Text.translatable('info.kubejs.overworld_disallowed').darkPurple())
     }
+})
+
+ItemEvents.rightClicked('kubejs:anchor_shard', event => {
+    let player = event.player;
+
+    if (!player || (player.isFake && player.isFake())) return;
+    if (player.getOffHandItem() == 'minecraft:quartz') {
+        player.stages.remove(OVERWORLD_STAGE);
+        player.tell(Text.of("???").obfuscated());
+        return;
+    }
+
+    if (player.stages.has(OVERWORLD_STAGE)) return;
+
+    let item = event.item;
+
+    player.stages.add(OVERWORLD_STAGE);
+    player.cooldowns.addCooldown(item, 20);
+    player.tell(Text.translatable("info.kubejs.overworld_allowed").aqua());
+
+    item.shrink(1);
+
 })

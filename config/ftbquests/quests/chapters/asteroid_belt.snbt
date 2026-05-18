@@ -80,6 +80,18 @@
 			x: -2.5d
 			y: 7.5d
 		}
+		{
+			id: "2C16F13E1219FF7C"
+			linked_quest: "65C573EE97C5117F"
+			x: -2.5d
+			y: -5.0d
+		}
+		{
+			id: "37D87F4FDB9F08E4"
+			linked_quest: "2F9648A58EC0C636"
+			x: 2.5d
+			y: -5.0d
+		}
 	]
 	quests: [
 		{
@@ -291,7 +303,10 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["697FFC9EE89DC1DD"]
+			dependencies: [
+				"697FFC9EE89DC1DD"
+				"65C573EE97C5117F"
+			]
 			id: "45770550FCF01C94"
 			tasks: [{
 				id: "0B19CFF664E318E7"
@@ -368,6 +383,29 @@
 			}]
 			x: 2.5d
 			y: -2.5d
+		}
+		{
+			dependencies: [
+				"45770550FCF01C94"
+				"2F9648A58EC0C636"
+			]
+			id: "33AE46297AC49922"
+			tasks: [{
+				id: "5EB943451BCECBC9"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"translate\":\"item.slashblade.red_blade_raye\"}"
+						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade.red_blade_raye\"}})"
+					}
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: -7.5d
 		}
 	]
 	title: "小行星带"

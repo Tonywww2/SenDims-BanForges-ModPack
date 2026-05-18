@@ -13,13 +13,13 @@
 	#
 	# Allow Bumblezone mod to handle teleporting into the Bumblezone dimension.
 	#
-	enableEntranceTeleportation = false
+	enableEntranceTeleportation = true
 	# 
 	#-----------------------------------------------------
 	#
 	# Allow Bumblezone mod to handle teleporting out of the Bumblezone dimension.
 	#
-	enableExitTeleportation = false
+	enableExitTeleportation = true
 	# 
 	#-----------------------------------------------------
 	#
@@ -43,7 +43,7 @@
 	# Makes throwing Enderpearls at Bee Nests or Hives only 
 	# work in the Overworld. What this means setting this to true makes it 
 	# only possible to enter The Bumblezone dimension from the Overworld
-	onlyOverworldHivesTeleports = false
+	onlyOverworldHivesTeleports = true
 	# 
 	#-----------------------------------------------------
 	#
@@ -60,7 +60,7 @@
 	# Should teleporting to and from The Bumblezone work 
 	# with modded Bee Nests and modded Beehives as well. 
 	#
-	allowTeleportationWithModdedBeehives = false
+	allowTeleportationWithModdedBeehives = true
 	# 
 	#-----------------------------------------------------
 	#

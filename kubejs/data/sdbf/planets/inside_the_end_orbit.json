@@ -1,9 +1,9 @@
 {
-    "dimension": "sdbf:asteroid_belt_orbit",
+    "dimension": "sdbf:inside_the_end_orbit",
     "gravity": 0.0,
     "oxygen": false,
-    "solar_power": 20,
+    "solar_power": 0,
     "solar_system": "ad_astra:solar_system",
     "temperature": -270,
-    "tier": 4
+    "tier": 5
 }

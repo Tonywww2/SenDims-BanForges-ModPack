@@ -46,6 +46,15 @@ LootJS.modifiers(event => {
             p.addLoot('kubejs:gamma_dust').randomChance(0.1);
         });
 
+    event.addEntityLootModifier([
+        "minecraft:enderman"
+    ])
+        .anyDimension(['sdbf:inside_the_end'])
+        .pool(p => {
+            p.rolls(2);
+            p.addLoot('kubejs:alpha_dust').randomChance(0.05);
+        });
+
     event.addLootTableModifier('dungeons_arise:chests/plague_asylum/plague_asylum_treasure')
         .randomChance(0.5)
         .addLoot('minecraft:structure_block')

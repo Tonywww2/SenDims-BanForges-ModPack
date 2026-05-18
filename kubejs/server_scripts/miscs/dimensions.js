@@ -28,6 +28,14 @@ NativeEvents.onEvent($EntityTravelToDimensionEvent, /** @param {Internal.EntityT
                 }
                 break
 
+            case 'the_bumblezone:the_bumblezone':
+                if (!hasCurios(player, 'slashblade_sendims:the_nectar_quest')) {
+                    event.setCanceled(true)
+                    player.tell(Text.translatable('info.kubejs.the_bumblezone_disallowed').darkPurple())
+                    punishPlayer(player)
+                }
+                break
+
         }
 
     }
