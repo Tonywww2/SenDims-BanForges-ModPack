@@ -8,9 +8,7 @@
         "max_damage": 150,
         "slash_art": "slashblade_addon:spiral_edge",
         "special_effects":
-        [
-            "sjap_adder:cold_guardian"
-        ],
+        [],
         "sword_type":
         [
             "bewitched"

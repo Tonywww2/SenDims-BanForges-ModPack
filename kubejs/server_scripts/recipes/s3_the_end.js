@@ -174,7 +174,7 @@ ServerEvents.recipes(event => {
         "B": 'apotheosis:infused_breath',
         "C": 'slashblade:proudsoul_sphere',
         "D": 'minecraft:dragon_breath',
-        "F": 'thermal:lightning_charge',
+        "F": 'enderio:double_layer_capacitor',
         "E": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("pseudoedge_break_dawn:dragonblade")

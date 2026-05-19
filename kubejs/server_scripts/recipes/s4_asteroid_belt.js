@@ -174,4 +174,92 @@ ServerEvents.recipes(event => {
     }, "slashblade_addon:hf_murasama")
         .id("sdbf:hf_murasama_s4")
 
+    event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
+        "ABF",
+        "CDB",
+        "ECA"
+    ], {
+        "A": 'slashblade:proudsoul_sphere',
+        "B": 'cataclysm:ignitium_ingot',
+        "C": 'aether_treasure_reforging:pyral_ingot',
+        "D": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("sjap_adder:dragon_bone_fire")
+                .killCount(4500)               // 要求：100 击杀
+                .refineCount(50)               // 要求：1 锻造
+                .build()
+        ),
+        "E": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("slashblade_addon:terra_blade")
+                .killCount(4500)               // 要求：100 击杀
+                .refineCount(50)               // 要求：1 锻造
+                .build()
+        ),
+        "F": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("sjap_adder:dragon_bone_ice")
+                .killCount(4500)               // 要求：100 击杀
+                .refineCount(50)               // 要求：1 锻造
+                .build()
+        )
+    }, "sjap_adder:dragon_steel_fire")
+        .id("sdbf:dragon_steel_fire_s4")
+
+    event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
+        "ABF",
+        "CDB",
+        "ECA"
+    ], {
+        "A": 'slashblade:proudsoul_sphere',
+        "B": 'aether:lightning_knife',
+        "C": 'enderio:double_layer_capacitor',
+        "D": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("sjap_adder:dragon_bone_lightning")
+                .killCount(4500)               // 要求：100 击杀
+                .refineCount(50)               // 要求：1 锻造
+                .build()
+        ),
+        "E": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("slashblade_addon:terra_blade")
+                .killCount(4500)               // 要求：100 击杀
+                .refineCount(50)               // 要求：1 锻造
+                .build()
+        ),
+        "F": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("sjap_adder:dragon_bone_ice")
+                .killCount(4500)               // 要求：100 击杀
+                .refineCount(50)               // 要求：1 锻造
+                .build()
+        )
+    }, "sjap_adder:dragon_steel_lightning")
+        .id("sdbf:dragon_steel_lightning_s4")
+
+
+    event.recipes.slashblade.slashblade_shaped_recipe("energyblade:forge_energy_blade", [
+        "ABA",
+        "CDC",
+        "AEA"
+    ], {
+        "A": 'slashblade:proudsoul_sphere',
+        "B": 'nuclearcraft:active_enderium_heat_sink',
+        "C": 'nuclearcraft:active_redstone_heat_sink',
+        "D": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("slashblade_addon:hf_murasama")
+                .killCount(4500)
+                .build()
+        ),
+        "E": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("slashblade:ssa_raye")
+                .killCount(4500)
+                .build()
+        )
+    }, "slashblade:red_blade_raye")
+        .id("sdbf:red_blade_raye_s4")
+
 })

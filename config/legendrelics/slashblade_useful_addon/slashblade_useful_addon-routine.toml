@@ -1,5 +1,5 @@
 #耀魂喷泉模块开关
-enableSoulTrapezoid = true
+enableSoulTrapezoid = false
 #下界之星增强面板模块开关
 enableNetherStarUpgrade = false
 #耀魂喷泉门槛

@@ -1,5 +1,4 @@
 {
-	autofocus_id: "6140B0BCEB7F9D64"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "tofu"
@@ -11,14 +10,14 @@
 		{
 			id: "782145F121172E22"
 			linked_quest: "0B0F1D8BE89F8980"
-			x: 0.0d
-			y: 2.5d
+			x: -3.0d
+			y: 0.0d
 		}
 		{
 			id: "7AF774538F76952E"
 			linked_quest: "52726CE2A2740BF7"
 			shape: "hexagon"
-			x: 2.5d
+			x: -3.0d
 			y: 5.0d
 		}
 	]
@@ -35,6 +34,11 @@
 			hide_until_deps_visible: true
 			icon: "tofucraft:blocktofuishi"
 			id: "6140B0BCEB7F9D64"
+			rewards: [{
+				id: "35A4D69A7AC21FB4"
+				type: "xp"
+				xp: 100
+			}]
 			size: 2.0d
 			tasks: [
 				{
@@ -51,6 +55,7 @@
 					type: "dimension"
 				}
 				{
+					count: 9L
 					id: "642B9D2AC45924E7"
 					item: "tofucraft:blocktofugrilled"
 					type: "item"
@@ -78,113 +83,116 @@
 		}
 		{
 			dependencies: [
-				"290B1AB065F93570"
-				"3376AE50BC0EB9A5"
+				"0B0F1D8BE89F8980"
+				"5439AA19094755F7"
 			]
 			dependency_requirement: "one_completed"
+			description: ["在柔然的世界中，也会孕育前往深渊的钥匙"]
 			id: "765A0F0A66F45570"
+			rewards: [{
+				id: "02E5C9B69BDBE013"
+				type: "xp"
+				xp: 100
+			}]
 			tasks: [{
 				id: "239CEA85A90F0B89"
 				item: "tofucraft:tofu_core"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 5.0d
-		}
-		{
-			dependencies: ["6140B0BCEB7F9D64"]
-			id: "64402F8CC5046FCE"
-			tasks: [{
-				id: "21B737B28E0E9683"
-				item: "tofucraft:blocktofuishi"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["6140B0BCEB7F9D64"]
-			id: "488010DD10E094D8"
-			tasks: [{
-				id: "166EA93277DB8E5C"
-				item: "tofucraft:leek"
-				type: "item"
-			}]
-			x: -2.5d
-			y: -2.5d
-		}
-		{
-			dependencies: ["64402F8CC5046FCE"]
-			dependency_requirement: "one_completed"
-			id: "290B1AB065F93570"
-			rewards: [{
-				count: 4
-				id: "3B3D0C1097FE3216"
-				item: "tofucraft:tofukinu"
-				type: "item"
-			}]
-			tasks: [{
-				id: "6388047F0D66AF24"
-				item: "tofucraft:tofugem"
-				type: "item"
-			}]
-			x: 5.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["64402F8CC5046FCE"]
-			dependency_requirement: "one_completed"
-			id: "3376AE50BC0EB9A5"
-			rewards: [{
-				count: 4
-				id: "6B442E8EF4CDC3A2"
-				item: "tofucraft:tofukinu"
-				type: "item"
-			}]
-			tasks: [{
-				id: "026CD9BC87E8B3B0"
-				item: "tofucraft:tofumetal"
-				type: "item"
-			}]
-			x: 2.5d
+			title: "世界核心"
+			x: -3.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["6140B0BCEB7F9D64"]
-			id: "2529CD2EF2A8961B"
+			description: ["好豆腐都是压出来的，你说原材料怎么来？去&a砍豆腐树&r和&a打豆腐史莱姆看&r看？"]
+			icon: "tofucraft:blocktofuishi"
+			id: "64402F8CC5046FCE"
 			rewards: [{
-				count: 4
-				id: "7B3DA63E813111DC"
-				item: "tofucraft:tofukinu"
+				count: 16
+				id: "74D3E5A3D2641BB9"
+				item: "minecraft:cobblestone"
 				type: "item"
 			}]
-			tasks: [{
-				id: "46FB5CE37741B158"
-				item: "tofucraft:tofudiamond"
-				type: "item"
-			}]
-			x: -2.5d
+			tasks: [
+				{
+					count: 8L
+					id: "21B737B28E0E9683"
+					item: "tofucraft:blocktofuishi"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "468EB08C33058C53"
+					item: { Count: 4, id: "tofucraft:tofukinu" }
+					type: "item"
+				}
+			]
+			title: "压制准备"
+			x: 3.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["6140B0BCEB7F9D64"]
-			id: "7FC06C85BBD5D061"
+			dependencies: [
+				"64402F8CC5046FCE"
+				"5D34C0BD08F21024"
+			]
+			dependency_requirement: "one_completed"
+			description: ["豆腐世界地底存在&a豆腐宝石矿石&r与&b豆腐钻石矿石&r，后者较为稀少，或者去&e豆腐城堡&r更划算？"]
+			icon: "tofucraft:tofugem"
+			id: "290B1AB065F93570"
 			rewards: [{
-				id: "7DDF4C5543E337B2"
-				item: "tofucraft:tofu_terrain"
+				id: "36FB9FC93DAB0AF3"
+				item: "tofucraft:tofu_gem_block"
 				type: "item"
 			}]
-			tasks: [{
-				id: "70F734848045B8E9"
-				item: "tofucraft:tofu_terrain"
-				type: "item"
+			tasks: [
+				{
+					id: "6388047F0D66AF24"
+					item: "tofucraft:tofugem"
+					type: "item"
+				}
+				{
+					id: "26DA3C8BF6490421"
+					item: "tofucraft:tofudiamond"
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6BC640F272817733"]
+			dependency_requirement: "one_completed"
+			id: "3376AE50BC0EB9A5"
+			rewards: [{
+				id: "1FF3FE646FBB83F5"
+				type: "xp"
+				xp: 100
 			}]
-			x: 0.0d
-			y: -2.5d
+			tasks: [
+				{
+					id: "026CD9BC87E8B3B0"
+					item: "tofucraft:tofumetal"
+					type: "item"
+				}
+				{
+					id: "37775EC50B59CCE4"
+					item: { Count: 10, id: "tofucraft:tofumomen" }
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["64402F8CC5046FCE"]
 			id: "4EF8B289BDF7CCB3"
+			rewards: [{
+				id: "56879CDB6350CE12"
+				type: "xp"
+				xp: 100
+			}]
 			tasks: [{
 				id: "2BCB67F0216161BE"
 				item: {
@@ -220,16 +228,16 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
+			x: 3.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["3376AE50BC0EB9A5"]
+			description: ["中段的材料与过渡刀"]
 			id: "5F7850D2932BFCBF"
 			rewards: [{
-				count: 4
-				id: "5F02AF4143AA9E85"
-				item: "tofucraft:tofukinu"
+				id: "5105CECB81EA73D5"
+				item: "tofucraft:blocktofumetal"
 				type: "item"
 			}]
 			tasks: [{
@@ -267,71 +275,138 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
+			x: 5.5d
 			y: 5.0d
 		}
 		{
 			dependencies: [
-				"2529CD2EF2A8961B"
 				"5F7850D2932BFCBF"
+				"290B1AB065F93570"
 			]
+			description: ["豆腐世界最终刀"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						AttackAmplifier: 0.0f
+						ComboRoot: "slashblade:standby"
+						Damage: 0
+						RepairCounter: 0
+						SpecialAttackType: "slashblade:judgement_cut"
+						StandbyRenderType: 0b
+						SummonedSwordColor: -13421569
+						SummonedSwordColorInverse: 0b
+						TargetEntity: 0
+						_onClick: 0b
+						adjustXYZ: [
+							0.0d
+							0.0d
+							0.0d
+						]
+						currentCombo: "slashblade:none"
+						fallDecreaseRate: 0.0f
+						isBroken: 0b
+						isSealed: 0b
+						killCount: 0
+						lastActionTime: 0L
+						proudSoul: 0
+					}
+				}
+				id: "slashblade_addon:slashblade_tofu_diamond"
+				tag: {
+					bladeState: {
+						AttackAmplifier: 0.0f
+						ComboRoot: "slashblade:standby"
+						Damage: 0
+						ModelName: "slashblade:model/blade.obj"
+						RepairCounter: 0
+						SpecialAttackType: "slashblade:judgement_cut"
+						StandbyRenderType: 0b
+						SummonedSwordColor: -13421569
+						SummonedSwordColorInverse: 0b
+						TargetEntity: 0
+						TextureName: "slashblade_addon:model/tofudiamond_katana.png"
+						_onClick: 0b
+						adjustXYZ: [
+							0.0d
+							0.0d
+							0.0d
+						]
+						baseAttackModifier: 9.0f
+						currentCombo: "slashblade:none"
+						fallDecreaseRate: 0.0f
+						isBroken: 0b
+						isDefaultBewitched: 0b
+						isSealed: 0b
+						killCount: 0
+						lastActionTime: 0L
+						maxDamage: 1724
+						proudSoul: 0
+						translationKey: ""
+					}
+				}
+			}
 			id: "4023DE67F5B0579E"
 			rewards: [{
-				count: 4
-				id: "732A8125074386E8"
-				item: "tofucraft:tofukinu"
+				id: "31D7A8E9A209DC9C"
+				item: "tofucraft:blocktofudiamond"
 				type: "item"
 			}]
-			tasks: [{
-				id: "103FC8EDEB8609A1"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:judgement_cut"
-							StandbyRenderType: 0b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							proudSoul: 0
+			tasks: [
+				{
+					id: "103FC8EDEB8609A1"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								AttackAmplifier: 0.0f
+								ComboRoot: "slashblade:standby"
+								Damage: 0
+								RepairCounter: 0
+								SpecialAttackType: "slashblade:judgement_cut"
+								StandbyRenderType: 0b
+								SummonedSwordColor: -13421569
+								SummonedSwordColorInverse: 0b
+								TargetEntity: 0
+								_onClick: 0b
+								adjustXYZ: [
+									0.0d
+									0.0d
+									0.0d
+								]
+								currentCombo: "slashblade:none"
+								fallDecreaseRate: 0.0f
+								isBroken: 0b
+								isSealed: 0b
+								killCount: 0
+								lastActionTime: 0L
+								proudSoul: 0
+							}
 						}
+						id: "slashblade_addon:slashblade_tofu_diamond"
+						tag: { }
 					}
-					id: "slashblade_addon:slashblade_tofu_diamond"
-					tag: { }
+					type: "item"
 				}
-				type: "item"
-			}]
-			x: -2.5d
-			y: 5.0d
+				{
+					id: "49430C11A782C489"
+					item: "tofucraft:tofu_upgrade_smithing_template"
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: 2.5d
 		}
 		{
-			dependencies: [
-				"290B1AB065F93570"
-				"6140B0BCEB7F9D64"
-			]
+			dependencies: ["6140B0BCEB7F9D64"]
 			dependency_requirement: "one_completed"
+			description: ["击败城堡的&a豆腐战神&r后获得&b【钻石豆腐升级】锻造模版&r"]
+			hide_dependency_lines: true
 			id: "5D34C0BD08F21024"
 			rewards: [{
-				count: 4
-				id: "1959BE51C2D46661"
-				item: "tofucraft:tofukinu"
-				type: "item"
+				id: "01AB28AC4EBB6770"
+				type: "xp"
+				xp: 100
 			}]
 			tasks: [{
 				id: "333A10973EBC12B3"
@@ -339,8 +414,91 @@
 				type: "structure"
 			}]
 			title: "豆腐城堡"
-			x: 7.5d
-			y: 0.0d
+			x: 5.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["64402F8CC5046FCE"]
+			description: ["放置后直接挖碎即可获得对应的豆腐材料"]
+			icon: "tofucraft:blocktofumetal"
+			id: "6BC640F272817733"
+			rewards: [{
+				id: "784C91949156167D"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					id: "3FE112F6A52E0628"
+					item: "tofucraft:blocktofumetal"
+					type: "item"
+				}
+				{
+					id: "5650DA5ECCE0AC64"
+					item: "tofucraft:blocktofumomen"
+					type: "item"
+				}
+			]
+			title: "两种豆腐块"
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3376AE50BC0EB9A5"]
+			description: ["碾碎豆腐后进一步制作合成材料"]
+			icon: "tofucraft:rollingpin"
+			id: "6650904899D41ACD"
+			rewards: [{
+				count: 4
+				id: "34566B80D39C4426"
+				item: "tofucraft:tofugem"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "7E33633B31692019"
+					item: "tofucraft:rollingpin"
+					type: "item"
+				}
+				{
+					id: "360068C6E2B5877A"
+					item: "tofucraft:tofuminced"
+					type: "item"
+				}
+				{
+					id: "072F60B24DAFF956"
+					item: "tofucraft:tofu_gem_dust"
+					type: "item"
+				}
+			]
+			title: "碾碎豆腐！"
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6650904899D41ACD"]
+			description: ["豆腐电路板也是可锻造的材料之一"]
+			id: "5439AA19094755F7"
+			rewards: [{
+				id: "24BAF60BACA82D3A"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					id: "7E11AB63FFE8BBC0"
+					item: "tofucraft:tf_capacitor"
+					type: "item"
+				}
+				{
+					id: "710B0E7B86F33F91"
+					item: "tofucraft:tf_circuit"
+					type: "item"
+				}
+			]
+			title: "核心材料"
+			x: 0.0d
+			y: 2.5d
 		}
 	]
 	title: "世界是豆腐做的"

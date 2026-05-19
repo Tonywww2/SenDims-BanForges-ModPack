@@ -19,7 +19,7 @@
     {
         "attack_base": 29.5,
         "max_damage": 90,
-        "slash_art": "sjap_adder:explosive_dawn",
+        "slash_art": "slashblade_sendims:explosive_dawn_ammo",
         "special_effects":
         [
             "sjap_adder:shadow_of_revenant",

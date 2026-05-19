@@ -15,6 +15,7 @@
         }
     ],
     "name": "slashblade:red_blade_raye",
+    "item": "energyblade:forge_energy_blade",
     "properties":
     {
         "attack_base": 52,

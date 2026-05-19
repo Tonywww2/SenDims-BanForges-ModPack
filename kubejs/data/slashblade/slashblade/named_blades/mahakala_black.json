@@ -13,7 +13,7 @@
     "name": "slashblade:mahakala_black",
     "properties":
     {
-        "attack_base": 9.0,
+        "attack_base": 52.0,
         "max_damage": 11,
         "slash_art": "slashblade_sendims:mahakala",
         "special_effects":

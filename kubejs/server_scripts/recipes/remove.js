@@ -175,6 +175,11 @@ const toRemoveID = new Set([
     "thermal:lumium_dust_4",
     "thermal:signalum_dust_4",
 
+    "slashblade_addon:crimsoncherry",
+    "sjap_adder:blue_dream",
+    "sjap_adder:kamuy_life",
+    "last_smith:amagumo_kaze",
+
     // 临时
     // "apotheosis:hellshelf",
     // "apotheosis:enchanting/infused_hellshelf",
