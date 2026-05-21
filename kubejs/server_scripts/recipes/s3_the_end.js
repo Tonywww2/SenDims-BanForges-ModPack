@@ -20,6 +20,10 @@ ServerEvents.recipes(event => {
         "#forge:eggs"
     ]).id("sdbf:dragon_egg_s3")
 
+    event.shapeless('nuclearcraft:borax_dust', [
+        '8x #forge:end_stones'
+    ]).id("sdbf:borax_dust_s3")
+
     event.shaped('apotheosis:ender_library', [
         'ACA',
         'CBC',

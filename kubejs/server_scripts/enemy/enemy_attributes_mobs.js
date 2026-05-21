@@ -404,6 +404,10 @@ const mobTypes = new Map([
     ["the_bumblezone:honey_slime", typeSlime],
     ["the_bumblezone:beehemoth", typeC],
 
+    ["terra_entity:wraith", typeB],
+    ["terra_entity:possess_armor", typeC],
+    ["terra_entity:wyvern", typeA],
+
 ]);
 
 /**

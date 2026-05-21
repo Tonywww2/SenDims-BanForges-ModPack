@@ -966,7 +966,7 @@
 				item: "apotheosis:pearl_endshelf"
 				type: "item"
 			}]
-			x: -7.5d
+			x: -5.0d
 			y: 2.5d
 		}
 		{
@@ -1065,6 +1065,39 @@
 			}]
 			x: 5.0d
 			y: -2.5d
+		}
+		{
+			dependencies: ["2563ABCEC67C3877"]
+			id: "6BD8E758F26DBE8F"
+			tasks: [{
+				id: "4A0B4740C1E2F26A"
+				item: "apotheosis:scrap_tome"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6BD8E758F26DBE8F"]
+			id: "7C1FC62A66B05BB4"
+			tasks: [{
+				id: "68998C5197908F4C"
+				item: "apotheosis:improved_scrap_tome"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7C1FC62A66B05BB4"]
+			id: "56F11C76646FF3F3"
+			tasks: [{
+				id: "5CB2F466B95EE6B9"
+				item: "apotheosis:extraction_tome"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 7.5d
 		}
 	]
 	title: "战斗辅助"

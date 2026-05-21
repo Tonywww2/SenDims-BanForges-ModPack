@@ -36,6 +36,9 @@ const $CuriosHelper = $CuriosApi.getCuriosHelper()
 const $ClickEvent = Java.loadClass('net.minecraft.network.chat.ClickEvent');
 const $ClickEventAction = Java.loadClass('net.minecraft.network.chat.ClickEvent$Action');
 
+const $ChiselGroupLookup = Java.loadClass('com.periut.chisel.block.ChiselGroupLookup');
+const $SlashBladeRegistryEvent = Java.loadClass('mods.flammpfeil.slashblade.event.SlashBladeRegistryEvent');
+
 const print = any => console.log(any)
 
 const numToInt = (num) => {

@@ -46,7 +46,6 @@ global.renderDifficulty = function (player) {
     if (currentIndex < 0 || currentIndex >= difficulty_list.length) currentIndex = 0;
 
     player.tell(Text.translatable('kubejs.difficulty.title').color(Color.AQUA));
-    player.tell(" ");
 
     for (let i = 0; i < difficulty_list.length; i++) {
         let diff = difficulty_list[i];
@@ -72,7 +71,6 @@ global.renderDifficulty = function (player) {
 
         player.tell(Text.of('- ').append(text));
     }
-    player.tell(" ");
 };
 
 global.setDifficultyFromCmd = function (c, Commands, Arguments) {
@@ -89,5 +87,10 @@ global.setDifficultyFromCmd = function (c, Commands, Arguments) {
     server.players.forEach(p => {
         p.tell(Text.translatable('kubejs.difficulty.set_success', Text.translatable(`kubejs.difficulty.${difficulty_list[index][0]}`)).color(Color.GREEN));
     });
+
+    if (player) {
+        global.renderDifficulty(player);
+    }
+
     return 1;
 };

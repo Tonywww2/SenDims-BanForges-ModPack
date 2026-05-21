@@ -113,7 +113,7 @@ EntityEvents.spawned(event => {
     }
 
     // Apply difficulty system multipliers
-    let diffData = global.getDifficultyMultipliers(entity.level.server);
+    let diffData = getDifficultyMultipliers(entity.level.server);
     
     if (entity.attributes.hasAttribute(attack)) {
         let currentAtk = entity.attributes.getInstance(attack).getBaseValue();

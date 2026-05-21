@@ -17,14 +17,15 @@
     "name": "slashblade:red_blade_black_soul",
     "properties":
     {
-        "attack_base": 29.5,
+        "attack_base": 63.5,
         "max_damage": 90,
         "slash_art": "slashblade_sendims:explosive_dawn_ammo",
         "special_effects":
         [
             "sjap_adder:shadow_of_revenant",
             "slashblade_sendims:aftershock",
-            "last_smith:extreme_sharpness"
+            "last_smith:extreme_sharpness",
+            "slashblade_sendims:armor_melt"
         ],
         "sword_type":
         [

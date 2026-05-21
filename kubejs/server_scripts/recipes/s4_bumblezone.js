@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
                 .name("slashblade_addon:nihilex")
                 .killCount(7500)
                 .proudSoul(6000)
-                .refineCount(50)
+                .refineCount(75)
                 .build()
         ),
         "E": SlashBladeIngredient.of(
@@ -44,7 +44,7 @@ ServerEvents.recipes(event => {
                 .name("slashblade_addon:nihil")
                 .killCount(1500)
                 .proudSoul(6000)
-                .refineCount(20)
+                .refineCount(25)
                 .build()
         )
     }, "slashblade_addon:crimsoncherry")
@@ -105,7 +105,7 @@ ServerEvents.recipes(event => {
                 .name("slashblade_addon:kamuy_none")
                 .killCount(2000)
                 .proudSoul(50000)
-                .refineCount(50)
+                .refineCount(75)
                 .build()
         ),
         "F": SlashBladeIngredient.of(
@@ -113,7 +113,7 @@ ServerEvents.recipes(event => {
                 .name("pseudoedge_break_dawn:dragonblade")
                 .killCount(4000)
                 .proudSoul(50000)
-                .refineCount(20)
+                .refineCount(25)
                 .build()
         )
     }, "sjap_adder:kamuy_life")
@@ -136,7 +136,7 @@ ServerEvents.recipes(event => {
                 .name("last_smith:nagasada")
                 .killCount(10000)
                 .proudSoul(50000)
-                .refineCount(50)
+                .refineCount(100)
                 .build()
         )
     }, "last_smith:amagumo_kaze")
@@ -148,7 +148,7 @@ ServerEvents.recipes(event => {
         "BDB",
         "EB "
     ], {
-        "B": 'slashblade:proudsoul_sphere',
+        "B": 'slashblade:proudsoul_crystal',
         "E": 'kubejs:multifaceted_ambrosia',
         "D": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
@@ -177,7 +177,7 @@ ServerEvents.recipes(event => {
                 .name("sjap_adder:dragon_bone_ice")
                 .killCount(10000)                    // 对应 request.kill
                 .proudSoul(50000)                   // 对应 request.proud_soul
-                .refineCount(50)                    // 对应 request.refine
+                .refineCount(100)                    // 对应 request.refine
                 .build()
         ),
         "X": SlashBladeIngredient.of(
@@ -185,7 +185,7 @@ ServerEvents.recipes(event => {
                 .name("last_smith:yamato_neo")
                 .killCount(3000)                    // 对应 request.kill
                 .proudSoul(10000)                   // 对应 request.proud_soul
-                .refineCount(50)                    // 对应 request.refine
+                .refineCount(100)                    // 对应 request.refine
                 .build()
         ),
         "Y": SlashBladeIngredient.of(

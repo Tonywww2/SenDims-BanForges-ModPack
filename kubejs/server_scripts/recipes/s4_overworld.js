@@ -3,7 +3,7 @@ ServerEvents.recipes(event => {
     event.shapeless('2x kubejs:ml_computing_ingot', [
         'kubejs:ml_computing_ingot',
         'computercraft:computer_advanced',
-        '3x slashblade:proudsoul_sphere',
+        '3x slashblade:proudsoul_crystal',
         '4x #forge:ingots/enderium'
     ]).id("sdbf:ml_computing_ingot_s4")
 
@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.thermal.smelter('2x kubejs:ml_computing_ingot', [
         'kubejs:ml_computing_ingot',
-        '2x slashblade:proudsoul_sphere',
+        '2x slashblade:proudsoul_crystal',
         '4x #forge:ingots/enderium'
     ])
         .energy(16384)
@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
                 .name("foxextra:foxex_white")
                 .killCount(4500)             // 要求：1000 击杀 (Kill Count)
                 .proudSoul(60000)            // 要求：30000 耀魂 (Proud Soul)
-                .refineCount(50)             // 要求：20 锻造 (Refine Count)
+                .refineCount(75)             // 要求：20 锻造 (Refine Count)
                 .build()
         ),
         "K": SlashBladeIngredient.of(
@@ -50,7 +50,7 @@ ServerEvents.recipes(event => {
                 .name("foxextra:foxex_black")
                 .killCount(4500)             // 要求：1000 击杀 (Kill Count)
                 .proudSoul(60000)            // 要求：30000 耀魂 (Proud Soul)
-                .refineCount(50)             // 要求：20 锻造 (Refine Count)
+                .refineCount(75)             // 要求：20 锻造 (Refine Count)
                 .build()
         )
     }, "foxextra:foxexfinal")
@@ -77,7 +77,7 @@ ServerEvents.recipes(event => {
                 .name("last_smith:hakurouken_nether")
                 .killCount(5000)                        // 要求：3000 击杀 (Kill Count)
                 .proudSoul(60000)                       // 要求：30000 耀魂 (Proud Soul)
-                .refineCount(50)                        // 要求：20 锻造 (Refine Count)
+                .refineCount(75)                        // 要求：20 锻造 (Refine Count)
                 .build()
         ),
         "Y": SlashBladeIngredient.of(
@@ -85,7 +85,7 @@ ServerEvents.recipes(event => {
                 .name("lastsmith:roukanken_nether")
                 .killCount(5000)                        // 要求：3000 击杀 (Kill Count)
                 .proudSoul(60000)                       // 要求：30000 耀魂 (Proud Soul)
-                .refineCount(50)                        // 要求：20 锻造 (Refine Count)
+                .refineCount(75)                        // 要求：20 锻造 (Refine Count)
                 .build()
         ),
         "Z": SlashBladeIngredient.of(
@@ -130,7 +130,7 @@ ServerEvents.recipes(event => {
                 .name("last_smith:oboro_muramasa")
                 .killCount(5000)                     // 要求：500 击杀 (Kill Count)
                 .proudSoul(50000)                    // 要求：5000 耀魂 (Proud Soul)
-                .refineCount(50)                    // 要求：20 锻造 (Refine Count)
+                .refineCount(75)                    // 要求：20 锻造 (Refine Count)
                 .build()
         ),
         "Z": SlashBladeIngredient.of(
@@ -158,7 +158,7 @@ ServerEvents.recipes(event => {
                 .name("slashblade_addon:kamuy_none")
                 .killCount(5000)                           // 要求：500 击杀 (Kill Count)
                 .proudSoul(50000)                          // 要求：5000 耀魂 (Proud Soul)
-                .refineCount(50)                          // 要求：20 锻造 (Refine Count)
+                .refineCount(75)                          // 要求：20 锻造 (Refine Count)
                 .build()
         ),
         "X": SlashBladeIngredient.of(

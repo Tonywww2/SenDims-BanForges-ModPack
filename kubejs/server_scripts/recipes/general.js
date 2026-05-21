@@ -332,8 +332,9 @@ ServerEvents.recipes(event => {
 
     // TODO 替换基岩为真正的材料
     event.recipes.slashblade.proudsoul_shapeless_recipe('slashblade:proudsoul_crystal', [
+        '3x the_bumblezone:glistering_honey_crystal',
         '3x slashblade:proudsoul_sphere',
-        'minecraft:bedrock'
+        '3x productivebees:upgrade_base'
     ]).id("sdbf:proudsoul_crystal")
 
     event.recipes.slashblade.proudsoul_shapeless_recipe('slashblade:proudsoul_trapezohedron', [
@@ -359,7 +360,8 @@ ServerEvents.recipes(event => {
 
     event.recipes.thermal.smelter('2x slashblade:proudsoul_crystal', [
         '5x slashblade:proudsoul_sphere',
-        'minecraft:bedrock'
+        '4x the_bumblezone:glistering_honey_crystal',
+        '3x productivebees:upgrade_base'
     ])
         .energy(16384)
         .id("sdbf:proudsoul_crystal_acc")

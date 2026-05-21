@@ -186,6 +186,11 @@ const toRemoveID = new Set([
     "slashblade_addon:kamuy_lightning",
     "sjap_adder:kamuy_dark",
 
+    "slashblade_addon:kamuy_water",
+    "last_smith:roukanken_inferno",
+    "last_smith:amagumo_munin",
+    "last_smith:amagumo_kumo",
+
     // 临时
     // "apotheosis:hellshelf",
     // "apotheosis:enchanting/infused_hellshelf",
