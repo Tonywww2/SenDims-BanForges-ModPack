@@ -112,6 +112,25 @@ EntityEvents.spawned(event => {
         entity.setAttributeBaseValue(frenzy_resistance, val);
     }
 
+    // Apply difficulty system multipliers
+    let diffData = global.getDifficultyMultipliers(entity.level.server);
+    
+    if (entity.attributes.hasAttribute(attack)) {
+        let currentAtk = entity.attributes.getInstance(attack).getBaseValue();
+        entity.setAttributeBaseValue(attack, currentAtk * diffData[2]);
+    }
+    
+    if (entity.attributes.hasAttribute(health)) {
+        let currentHp = entity.attributes.getInstance(health).getBaseValue();
+        entity.setAttributeBaseValue(health, currentHp * diffData[1]);
+        entity.setHealth(entity.getMaxHealth());
+    }
+    
+    if (entity.attributes.hasAttribute(armor)) {
+        let currentArmor = entity.attributes.getInstance(armor).getBaseValue();
+        entity.setAttributeBaseValue(armor, currentArmor * diffData[3]);
+    }
+
     // console.log(`[EA] Spawned ${name} in ${dim}.`)
 
 })

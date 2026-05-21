@@ -1,7 +1,1 @@
-#Advanced settings for performance and stability.
-performance_tuning = {}
-
-#General settings for the mod.
-[general]
-	enabled = true
 

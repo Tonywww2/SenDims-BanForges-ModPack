@@ -176,6 +176,7 @@ const mobTypes = new Map([
     ["deep_aether:quail", type0],
     ["aether:aerbunny", type0],
     ["aether:flying_cow", type0],
+    ["biomemakeover:glowfish", type0],
 
     ["aether:aerwhale", typeC],
     ["aether:whirlwind", type0],

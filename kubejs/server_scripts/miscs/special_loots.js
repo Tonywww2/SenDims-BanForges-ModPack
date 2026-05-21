@@ -76,8 +76,10 @@ LootJS.modifiers(event => {
             return getBladeStack(Utils.server.registryAccess(), "slashblade:dojikiri_yasutsuna")
         });
 
-    chestModifier.replaceLoot("#forge:seeds", 'slashblade:proudsoul_tiny', true);
+    event.addLootTableModifier('apotheosis:chests/tome_tower')
+        .addLoot('kubejs:ml_computing_ingot');
 
+    chestModifier.replaceLoot("#forge:seeds", 'slashblade:proudsoul_tiny', true);
 
 });
 

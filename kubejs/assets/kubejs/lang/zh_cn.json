@@ -290,6 +290,28 @@
     "item.kubejs.melted_proudsoul_bucket": "熔融耀魂桶",
 
     "sidebar_button.ftblibrary.home": "回家",
-    "sidebar_button.ftblibrary.back": "返回上个传送点"
+    "sidebar_button.ftblibrary.back": "返回上个传送点",
+
+    "kubejs.difficulty.title": "===== 难度选择 =====",
+
+    "kubejs.difficulty.normal": "普通",
+    "kubejs.difficulty.relax": "休闲",
+    "kubejs.difficulty.hard": "困难",
+    "kubejs.difficulty.soul": "[魂]",
+    "kubejs.difficulty.fight": "格斗",
+
+    "kubejs.difficulty.normal.desc": "标准的战斗体验。",
+    "kubejs.difficulty.relax.desc": "近乎割草般的体验。",
+    "kubejs.difficulty.hard.desc": "更加强大的敌人，需要小心了。",
+    "kubejs.difficulty.soul.desc": "敌人可以轻而易举的把你撕碎，需要更加注意闪避与防守。",
+    "kubejs.difficulty.fight.desc": "皮糙肉厚的敌人，战斗时长被大幅延长。",
+
+    "kubejs.difficulty.hp_mult": "最大生命值倍率: %s",
+    "kubejs.difficulty.atk_mult": "攻击力倍率: %s",
+    "kubejs.difficulty.armor_mult": "护甲倍率: %s",
+    "kubejs.difficulty.current": "当前难度",
+    "kubejs.difficulty.click_to_switch": "点击切换",
+    "kubejs.difficulty.invalid_index": "无效的难度序号",
+    "kubejs.difficulty.set_success": "游戏难度已切换至: %s"
 
 }

@@ -179,6 +179,12 @@ const toRemoveID = new Set([
     "sjap_adder:blue_dream",
     "sjap_adder:kamuy_life",
     "last_smith:amagumo_kaze",
+    "foxextra:foxexfinal_2",
+    "foxextra:foxexfinal",
+    "botania:elven_trade/elementium",
+    "sjap_adder:nihilulex",
+    "slashblade_addon:kamuy_lightning",
+    "sjap_adder:kamuy_dark",
 
     // 临时
     // "apotheosis:hellshelf",

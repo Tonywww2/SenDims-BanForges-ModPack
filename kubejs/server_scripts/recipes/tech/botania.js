@@ -63,4 +63,21 @@ ServerEvents.recipes(event => {
     }).id("sdbf:terrasteel_ingot")
 
 
+    event.custom({
+        "type": "botania:elven_trade",
+        "ingredients": [
+            {
+                "tag": 'forge:storage_blocks/manasteel'
+            },
+            {
+                "tag": 'forge:nuggets/terrasteel'
+            }
+        ],
+        "output": [
+            {
+                "item": "botania:elementium_ingot"
+            }
+        ]
+    }).id("sdbf:elementium_ingot")
+
 })

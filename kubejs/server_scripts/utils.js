@@ -33,6 +33,9 @@ const $UGSoundEvents = Java.loadClass('quek.undergarden.registry.UGSoundEvents')
 const $CuriosApi = Java.loadClass('top.theillusivec4.curios.api.CuriosApi')
 const $CuriosHelper = $CuriosApi.getCuriosHelper()
 
+const $ClickEvent = Java.loadClass('net.minecraft.network.chat.ClickEvent');
+const $ClickEventAction = Java.loadClass('net.minecraft.network.chat.ClickEvent$Action');
+
 const print = any => console.log(any)
 
 const numToInt = (num) => {
