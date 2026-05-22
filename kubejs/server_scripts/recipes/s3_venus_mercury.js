@@ -104,11 +104,12 @@ ServerEvents.recipes(event => {
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
         "ABA",
         "CDC",
-        "ACA"
+        "ASA"
     ], {
         "A": '#forge:plates/calorite',
         "B": "minecraft:nether_star",
         "C": "minecraft:diamond_block",
+        "S": 'cataclysm:ancient_spear',
         "D": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance().name("slashblade:fox_white")
                 .killCount(1500)

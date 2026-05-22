@@ -1,3 +1,5 @@
+let GEM_TICKET_DIM_PATH = "sdbf.gt.dim";
+
 
 ItemEvents.tooltip(event => {
 
@@ -32,6 +34,14 @@ ItemEvents.tooltip(event => {
     ], (item, advanced, text) => {
         if (item.nbt && item.nbt.bladeState && item.nbt.bladeState.translationKey) {
             text.add(Text.of(String(item.nbt.bladeState.translationKey).substring(5).replace(".", ":")).color(Color.LIME_DYE));
+        }
+    })
+
+    event.addAdvanced('kubejs:gem_ticket', (item, advanced, text) => {
+        text.add(Text.translatable('info.kubejs.gem_ticket').color(Color.AQUA));
+        if (item.nbt && item.nbt.getString(GEM_TICKET_DIM_PATH)) {
+            text.add(Text.of(item.nbt.getString(GEM_TICKET_DIM_PATH)).color(Color.WHITE));
+
         }
     })
 

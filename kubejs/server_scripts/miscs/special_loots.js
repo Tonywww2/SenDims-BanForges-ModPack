@@ -52,7 +52,7 @@ LootJS.modifiers(event => {
         .anyDimension(['sdbf:inside_the_end'])
         .pool(p => {
             p.rolls(2);
-            p.addLoot('kubejs:alpha_dust').randomChance(0.05);
+            p.addLoot('kubejs:alpha_dust').randomChance(0.02);
         });
 
     event.addLootTableModifier('dungeons_arise:chests/plague_asylum/plague_asylum_treasure')

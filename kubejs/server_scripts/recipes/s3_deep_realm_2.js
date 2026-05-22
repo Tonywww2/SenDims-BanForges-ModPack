@@ -94,11 +94,12 @@ ServerEvents.recipes(event => {
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
         "ABA",
         "CDC",
-        "ACA"
+        "AKA"
     ], {
         "A": 'kubejs:gamma_dust',
         "B": "minecraft:nether_star",
         "C": "minecraft:diamond_block",
+        "K": 'cataclysm:tidal_claws',
         "D": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance().name("slashblade:fox_black")
                 .killCount(1500)
@@ -160,7 +161,7 @@ ServerEvents.recipes(event => {
                 .addEnchantment(SBEnchantmentDefinition.of("minecraft:fire_aspect", 2)) // 火焰附加 II / Fire Aspect II
                 .build()
         ),
-        "E": "minecraft:diamond",
+        "E": 'cataclysm:blessed_amethyst_crab_meat',
         "S": 'last_smith:sakura_full'
     }, "slashblade:bizen_osafune_nagamitsu")
         .id("sdbf:bizen_osafune_nagamitsu_s3")

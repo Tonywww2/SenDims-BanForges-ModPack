@@ -139,4 +139,14 @@ ServerEvents.recipes(event => {
         '#minecraft:trim_templates'
     );
 
+    event.replaceInput({ id: 'nuclearcraft:chamber_terminal' },
+        'nuclearcraft:basic_electric_circuit',
+        'kubejs:basepoint_alloy'
+    );
+
+    event.replaceInput({ id: 'nuclearcraft:neutronium_frame' },
+        '#forge:ingots/platinum',
+        Item.of('thermal:florb', '{Fluid:{Amount:1000,FluidName:"nuclearcraft:helium_3"}}').weakNBT()
+    );
+
 })

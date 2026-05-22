@@ -44,11 +44,13 @@ let applyDrops = (event, extraDrops, configs) => {
 };
 
 EntityEvents.drops(event => {
-    if (event.entity.isPlayer()) return;
+    let entity = event.entity;
+    if (entity.isPlayer()) return;
     // console.log(event.entity)
     // console.log(event.getDrops())
     let extraDrops = [];
     let hasProcessedSpecialDrops = false;
+    let shouldDropGem = false;
 
     for (const i of event.getDrops()) {
         // console.log(i);
@@ -62,7 +64,13 @@ EntityEvents.drops(event => {
                     let rarity = String(affix.getString("rarity"));
                     item = bossDropReplace.get(rarity);
 
-                    extraDrops.push($BloodJade.withKillCount(jadeMap[rarity]));
+                    let killCount = jadeMap[rarity];
+
+                    extraDrops.push($BloodJade.withKillCount(killCount));
+
+                    if (killCount >= 100) {
+                        shouldDropGem = true;
+                    }
 
                     if (!hasProcessedSpecialDrops) {
                         hasProcessedSpecialDrops = true;
@@ -74,7 +82,13 @@ EntityEvents.drops(event => {
             }
             i.setItem(item);
         }
+    }
 
+    if (shouldDropGem) {
+        let nbt = {};
+        nbt[GEM_TICKET_DIM_PATH] = event.level.dimension.toString();
+        print(nbt)
+        extraDrops.push(Item.of("kubejs:gem_ticket", 1, nbt))
     }
 
     extraDrops.forEach(ele => {

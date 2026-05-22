@@ -39,7 +39,13 @@ const $ClickEventAction = Java.loadClass('net.minecraft.network.chat.ClickEvent$
 const $ChiselGroupLookup = Java.loadClass('com.periut.chisel.block.ChiselGroupLookup');
 const $SlashBladeRegistryEvent = Java.loadClass('mods.flammpfeil.slashblade.event.SlashBladeRegistryEvent');
 
+const $GemRegistry = Java.loadClass('dev.shadowsoffire.apotheosis.adventure.socket.gem.GemRegistry');
+const $IDimensional = Java.loadClass('dev.shadowsoffire.placebo.reload.WeightedDynamicRegistry').IDimensional;
+const $IStaged = Java.loadClass('dev.shadowsoffire.apotheosis.adventure.compat.GameStagesCompat').IStaged;
+
 const print = any => console.log(any)
+
+let GEM_TICKET_DIM_PATH = "sdbf.gt.dim";
 
 const numToInt = (num) => {
     return new $Double(num).intValue();

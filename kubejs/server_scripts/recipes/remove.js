@@ -191,7 +191,11 @@ const toRemoveID = new Set([
     "last_smith:amagumo_munin",
     "last_smith:amagumo_kumo",
 
+    "nuclearcraft:kugelblitz_chamber/upgrade_quantum",
+    "cataclysm:the_incinerator",
+
     // 临时
+    "dustandash:crafting/integrated_block",
     // "apotheosis:hellshelf",
     // "apotheosis:enchanting/infused_hellshelf",
     // "apotheosis:blazing_hellshelf",
