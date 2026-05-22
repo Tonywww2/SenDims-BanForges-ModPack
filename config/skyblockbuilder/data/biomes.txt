@@ -245,6 +245,13 @@ sdbf:hydrogen_basin
 sdbf:sacred_rubber_canopy
 sdbf:storm_basin
 sdbf:yardang_ridges
+slashblade_sendims:base_ring
+slashblade_sendims:high_density_ring
+slashblade_sendims:inner_fading_ring
+slashblade_sendims:inner_sparse_ring
+slashblade_sendims:outer_sparse_ring
+slashblade_sendims:transition_wall_ring
+slashblade_sendims:void_ring
 terrablender:deferred_placeholder
 terralith:alpha_islands
 terralith:alpha_islands_winter
