@@ -13,9 +13,9 @@ let jadeMap = {
     "apotheosis:common": 20,
     "apotheosis:uncommon": 20,
     "apotheosis:rare": 50,
-    "apotheosis:epic": 100,
-    "apotheosis:mythic": 500,
-    "apotheosis:ancient": 1000,
+    "apotheosis:epic": 200,
+    "apotheosis:mythic": 1000,
+    "apotheosis:ancient": 2000,
 };
 
 let specialMap = {

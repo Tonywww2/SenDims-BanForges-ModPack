@@ -84,8 +84,7 @@ ServerEvents.recipes(event => {
         "D": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .killCount(7)      // 杀敌数 / Kill count
-                .proudSoul(7)      // 荣耀魂 / ProudSoul
-                .refineCount(0)    // 锻造数 / Refine count
+                .refineCount(5)    // 锻造数 / Refine count
                 .build()
         )
     }, "slashblade:air_sword")
@@ -104,7 +103,7 @@ ServerEvents.recipes(event => {
             SlashBladeRequestDefinition.newInstance().name("slashblade:fox_black")
                 .killCount(1500)
                 .proudSoul(12000)
-                .refineCount(6)
+                .refineCount(10)
                 .build()
         )
     }, "foxextra:foxex_black")
@@ -118,9 +117,8 @@ ServerEvents.recipes(event => {
         "B": "slashblade:proudsoul_ingot",
         "D": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
-                .killCount(7)      // 杀敌数 / Kill count
-                .proudSoul(7)      // 荣耀魂 / ProudSoul
-                .refineCount(0)    // 锻造数 / Refine count
+                .killCount(20)      // 杀敌数 / Kill count
+                .refineCount(10)    // 锻造数 / Refine count
                 .build()
         ),
         "E": 'kubejs:gamma_dust',
@@ -137,9 +135,9 @@ ServerEvents.recipes(event => {
         "B": "slashblade:proudsoul_ingot",
         "D": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance().name("slashblade:air_sword") // 前置：观世正宗
-                .killCount(777)        // 杀敌数 / Kill count
-                .proudSoul(7777)       // 荣耀魂 / ProudSoul
-                .refineCount(7)         // 锻造数 / Refine count
+                .killCount(1000)        // 杀敌数 / Kill count
+                .proudSoul(10000)       // 荣耀魂 / ProudSoul
+                .refineCount(10)         // 锻造数 / Refine count
                 .addEnchantment(SBEnchantmentDefinition.of("minecraft:power", 3)) // 力量 III / Power III
                 .build()
         ),
@@ -155,9 +153,9 @@ ServerEvents.recipes(event => {
         "B": "slashblade:proudsoul_ingot",
         "D": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance().name("slashblade:moonveil")
-                .killCount(1437)          // 杀敌数 / Kill count
-                .proudSoul(77777)         // 荣耀魂 / ProudSoul
-                .refineCount(14)          // 锻造数 / Refine count
+                .killCount(2500)          // 杀敌数 / Kill count
+                .proudSoul(10000)         // 荣耀魂 / ProudSoul
+                .refineCount(25)          // 锻造数 / Refine count
                 .addEnchantment(SBEnchantmentDefinition.of("minecraft:fire_aspect", 2)) // 火焰附加 II / Fire Aspect II
                 .build()
         ),
@@ -176,14 +174,14 @@ ServerEvents.recipes(event => {
         "J": "#forge:storage_blocks/redstone", // 红石块标签 / Redstone block tag
         "B": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance().name("slashblade_addon:tboen")
-                .killCount(150)
-                .refineCount(15)
+                .killCount(1500)
+                .refineCount(25)
                 .build()
         ),
         "A": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance().name("slashblade:kanze_masamune")
-                .killCount(350)
-                .refineCount(15)
+                .killCount(1000)
+                .refineCount(25)
                 .build()
         ),
         "P": 'thermal:rf_potato'
@@ -199,21 +197,21 @@ ServerEvents.recipes(event => {
         "E": "kubejs:menril-silicon_sic_sic_cmc_ingot",
         "D": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance().name("energyblade:hf_blade") // 前置：观世正宗
-                .killCount(750)         // 杀敌数 / Kill count
+                .killCount(4000)         // 杀敌数 / Kill count
                 .proudSoul(15000)        // 荣耀魂 / ProudSoul
-                .refineCount(20)         // 锻造数 / Refine count
+                .refineCount(25)         // 锻造数 / Refine count
                 .addEnchantment(SBEnchantmentDefinition.of("minecraft:unbreaking", 3)) // 耐久 III / Unbreaking III
                 .build()
         ),
         "A": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance().name("slashblade:ruined_sword")
-                .killCount(250)
-                .refineCount(10)
+                .killCount(1000)
+                .refineCount(25)
                 .build()
         ),
         "C": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance().name("slashblade:kanze_masamune")
-                .killCount(250)
+                .killCount(500)
                 .refineCount(10)
                 .build()
         ),

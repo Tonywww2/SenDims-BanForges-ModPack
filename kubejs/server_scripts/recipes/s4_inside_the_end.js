@@ -86,25 +86,25 @@ ServerEvents.recipes(event => {
         "X": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("slashblade:hand_of_malenia")
-                .killCount(2000)                     // 要求：500 击杀 (Kill Count)
-                .proudSoul(10000)                    // 要求：5000 耀魂 (Proud Soul)
-                .refineCount(25)                    // 要求：20 锻造 (Refine Count)
+                .killCount(5000)                     // 要求：500 击杀 (Kill Count)
+                .proudSoul(50000)                    // 要求：5000 耀魂 (Proud Soul)
+                .refineCount(50)                    // 要求：20 锻造 (Refine Count)
                 .build()
         ),
         "Y": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("slashblade:ssa_hayate")
-                .killCount(2000)                     // 要求：500 击杀 (Kill Count)
-                .proudSoul(10000)                    // 要求：5000 耀魂 (Proud Soul)
-                .refineCount(25)                    // 要求：20 锻造 (Refine Count)
+                .killCount(5000)                     // 要求：500 击杀 (Kill Count)
+                .proudSoul(50000)                    // 要求：5000 耀魂 (Proud Soul)
+                .refineCount(50)                    // 要求：20 锻造 (Refine Count)
                 .build()
         ),
         "Z": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("slashblade:bizen_osafune_nagamitsu")
-                .killCount(2000)                     // 要求：500 击杀 (Kill Count)
-                .proudSoul(10000)                    // 要求：5000 耀魂 (Proud Soul)
-                .refineCount(25)                    // 要求：20 锻造 (Refine Count)
+                .killCount(5000)                     // 要求：500 击杀 (Kill Count)
+                .proudSoul(50000)                    // 要求：5000 耀魂 (Proud Soul)
+                .refineCount(50)                    // 要求：20 锻造 (Refine Count)
                 .build()
         ),
     }, "slashblade_addon:kamuy_water")
@@ -123,15 +123,15 @@ ServerEvents.recipes(event => {
             SlashBladeRequestDefinition.newInstance()
                 .name("last_smith:roukanken")
                 .killCount(10000)                     // 要求：500 击杀 (Kill Count)
-                .proudSoul(80000)                    // 要求：5000 耀魂 (Proud Soul)
+                .proudSoul(75000)                    // 要求：5000 耀魂 (Proud Soul)
                 .refineCount(100)                    // 要求：20 锻造 (Refine Count)
                 .build()
         ),
         "Y": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("slashblade:rivers_of_blood")
-                .killCount(4000)                     // 要求：500 击杀 (Kill Count)
-                .proudSoul(20000)                    // 要求：5000 耀魂 (Proud Soul)
+                .killCount(5000)                     // 要求：500 击杀 (Kill Count)
+                .proudSoul(50000)                    // 要求：5000 耀魂 (Proud Soul)
                 .refineCount(50)                    // 要求：20 锻造 (Refine Count)
                 .build()
         )
@@ -170,7 +170,7 @@ ServerEvents.recipes(event => {
         "X": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("last_smith:roukanken_nether")
-                .killCount(20000)                     // 要求：500 击杀 (Kill Count)
+                .killCount(25000)                     // 要求：500 击杀 (Kill Count)
                 .proudSoul(80000)                    // 要求：5000 耀魂 (Proud Soul)
                 .refineCount(100)                    // 要求：20 锻造 (Refine Count)
                 .build()
@@ -178,7 +178,7 @@ ServerEvents.recipes(event => {
         "Y": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("sjap_adder:black_soul")
-                .killCount(10000)                     // 要求：500 击杀 (Kill Count)
+                .killCount(7500)                     // 要求：500 击杀 (Kill Count)
                 .proudSoul(80000)                    // 要求：5000 耀魂 (Proud Soul)
                 .refineCount(100)                    // 要求：20 锻造 (Refine Count)
                 .build()
@@ -186,8 +186,8 @@ ServerEvents.recipes(event => {
         "Z": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("slashblade:red_blade_raye")
-                .killCount(15000)                     // 要求：500 击杀 (Kill Count)
-                .proudSoul(80000)                    // 要求：5000 耀魂 (Proud Soul)
+                .killCount(17500)                     // 要求：500 击杀 (Kill Count)
+                .proudSoul(150000)                    // 要求：5000 耀魂 (Proud Soul)
                 .refineCount(100)                    // 要求：20 锻造 (Refine Count)
                 .build()
         ),

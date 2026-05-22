@@ -34,16 +34,16 @@ ServerEvents.recipes(event => {
         "U": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("slashblade_addon:nihilex")
-                .killCount(7500)
-                .proudSoul(6000)
+                .killCount(5000)
+                .proudSoul(50000)
                 .refineCount(75)
                 .build()
         ),
         "E": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("slashblade_addon:nihil")
-                .killCount(1500)
-                .proudSoul(6000)
+                .killCount(5000)
+                .proudSoul(50000)
                 .refineCount(25)
                 .build()
         )
@@ -64,25 +64,25 @@ ServerEvents.recipes(event => {
         "C": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("blades_derby:uma_hishi")
-                .killCount(2000)
-                .proudSoul(3000)
+                .killCount(2500)
+                .proudSoul(30000)
                 .refineCount(50)
                 .build()
         ),
         "E": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("slashblade_addon:green_mist")
-                .killCount(2000)
-                .proudSoul(3000)
-                .refineCount(50)
+                .killCount(5000)
+                .proudSoul(50000)
+                .refineCount(75)
                 .build()
         ),
         // 核心原料 3：Fluorescent Bar (荧光)
         "F": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("slashblade:egg_lan")
-                .killCount(5000)
-                .proudSoul(3000)
+                .killCount(2500)
+                .proudSoul(30000)
                 .refineCount(50)
                 .build()
         )
@@ -103,17 +103,17 @@ ServerEvents.recipes(event => {
         "K": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("slashblade_addon:kamuy_none")
-                .killCount(2000)
+                .killCount(2500)
                 .proudSoul(50000)
-                .refineCount(75)
+                .refineCount(25)
                 .build()
         ),
         "F": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("pseudoedge_break_dawn:dragonblade")
-                .killCount(4000)
-                .proudSoul(50000)
-                .refineCount(25)
+                .killCount(7500)
+                .proudSoul(80000)
+                .refineCount(75)
                 .build()
         )
     }, "sjap_adder:kamuy_life")
@@ -134,8 +134,8 @@ ServerEvents.recipes(event => {
         "K": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("last_smith:nagasada")
-                .killCount(10000)
-                .proudSoul(50000)
+                .killCount(15000)
+                .proudSoul(150000)
                 .refineCount(100)
                 .build()
         )
@@ -153,9 +153,9 @@ ServerEvents.recipes(event => {
         "D": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("slashblade:kanze_masamune") // 对应 request.name
-                .killCount(2000)                    // 对应 request.kill
-                .proudSoul(10000)                   // 对应 request.proud_soul
-                .refineCount(25)                    // 对应 request.refine
+                .killCount(2500)                    // 对应 request.kill
+                .proudSoul(30000)                   // 对应 request.proud_soul
+                .refineCount(50)                    // 对应 request.refine
                 .addEnchantment(SBEnchantmentDefinition.of("minecraft:power", 5)) // 对应 enchantments
                 .build()
         )
@@ -175,33 +175,33 @@ ServerEvents.recipes(event => {
         "W": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("sjap_adder:dragon_bone_ice")
-                .killCount(10000)                    // 对应 request.kill
-                .proudSoul(50000)                   // 对应 request.proud_soul
+                .killCount(25000)                    // 对应 request.kill
+                .proudSoul(150000)                   // 对应 request.proud_soul
                 .refineCount(100)                    // 对应 request.refine
                 .build()
         ),
         "X": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("last_smith:yamato_neo")
-                .killCount(3000)                    // 对应 request.kill
-                .proudSoul(10000)                   // 对应 request.proud_soul
+                .killCount(5000)                    // 对应 request.kill
+                .proudSoul(50000)                   // 对应 request.proud_soul
                 .refineCount(100)                    // 对应 request.refine
                 .build()
         ),
         "Y": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("slashblade:wakizashi")
-                .killCount(2000)                    // 对应 request.kill
-                .proudSoul(10000)                   // 对应 request.proud_soul
-                .refineCount(30)                    // 对应 request.refine
+                .killCount(5000)                    // 对应 request.kill
+                .proudSoul(30000)                   // 对应 request.proud_soul
+                .refineCount(50)                    // 对应 request.refine
                 .build()
         ),
         "Z": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("slashblade:clothesline")
-                .killCount(2000)                    // 对应 request.kill
-                .proudSoul(10000)                   // 对应 request.proud_soul
-                .refineCount(30)                    // 对应 request.refine
+                .killCount(5000)                    // 对应 request.kill
+                .proudSoul(30000)                   // 对应 request.proud_soul
+                .refineCount(50)                    // 对应 request.refine
                 .build()
         )
     }, "slashblade:mahakala_black")
