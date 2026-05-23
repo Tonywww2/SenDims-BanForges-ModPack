@@ -27,17 +27,6 @@ ServerEvents.highPriorityData(event => {
             .addAttributeRange("minecraft:generic.movement_speed", "MULTIPLY_TOTAL", 0.1,
                 10, 0.01)
             .addAttribute("minecraft:generic.knockback_resistance", "ADDITION", 0.6);
-        boss.forRarity("epic")
-            .setEnchantChance(0.55)
-            .setEnchantmentLevels([0, 0, 0, 0])
-            .addEffect("minecraft:fire_resistance", 1.0)
-            .addAttributeRange("minecraft:generic.max_health", "MULTIPLY_TOTAL", 0.2,
-                10, 0.1)
-            .addAttributeRange("minecraft:generic.attack_damage", "ADDITION", 2,
-                10, 0.1)
-            .addAttributeRange("minecraft:generic.movement_speed", "MULTIPLY_TOTAL", 0.15,
-                10, 0.01)
-            .addAttribute("minecraft:generic.knockback_resistance", "ADDITION", 0.7);
         boss.build();
     };
 

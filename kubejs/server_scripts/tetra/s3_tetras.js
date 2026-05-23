@@ -175,7 +175,7 @@ ServerEvents.highPriorityData(event => {
         .setMagicCapacity(100).setToolLevel(3).setToolEfficiency(6.5)
         .addAttributes("attributeslib:crit_damage", -0.05)
         .addAttributes("minecraft:generic.attack_damage", 1.5)
-        .setTints("1e8449", "145a32") 
+        .setTints("ff7578", "f55659") 
         .addTexture("metal").addTexture("heavy")
         .setTagMaterial('forge:ingots/utherium')
         .setRequiredTool("hammer_dig", 1)

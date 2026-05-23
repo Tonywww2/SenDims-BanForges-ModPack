@@ -1,5 +1,6 @@
 ServerEvents.recipes(event => {
     event.smelting('2x dustandash:sharpen_flint', ['minecraft:flint'], 0, 100).id("sdbf:sharpen_flint_s1")
+    event.smelting("minecraft:diamond", ['yungscavebiomes:rare_ice'], 0, 200).id("sdbf:ice_diamond_s1")
 
     event.shaped('apotheosis:library', [
         'ACA',

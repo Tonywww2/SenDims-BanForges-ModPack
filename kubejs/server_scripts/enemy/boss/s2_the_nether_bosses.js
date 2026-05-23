@@ -4,7 +4,7 @@ ServerEvents.highPriorityData(event => {
         let boss = bossMaterialBuilder(event, id, "the_nether")
             .setWeight(75).setQuality(2).setSize(1, 1)
             .addValidGearSet("#the_nether").addDimension("minecraft:the_nether")
-            .setMinRarity("rare").setMaxRarity("epic");
+            .setMinRarity("rare").setMaxRarity("rare");
         boss.forRarity("rare")
             .setEnchantChance(0.5)
             .setEnchantmentLevels([16, 16, 2, 2])
@@ -16,17 +16,6 @@ ServerEvents.highPriorityData(event => {
             .addAttributeRange("minecraft:generic.movement_speed", "MULTIPLY_TOTAL", is_terra ? 0 : 0.15,
                 is_terra ? 5 : 10, 0.01)
             .addAttribute("minecraft:generic.knockback_resistance", "ADDITION", is_terra ? 0 : 0.8);
-        boss.forRarity("epic")
-            .setEnchantChance(0.7)
-            .setEnchantmentLevels([24, 24, 2, 2])
-            .addEffect("minecraft:fire_resistance", 1.0)
-            .addAttributeRange("minecraft:generic.max_health", "MULTIPLY_TOTAL", is_terra ? 0 : 0.2,
-                is_terra ? 5 : 10, 0.01)
-            .addAttributeRange("minecraft:generic.attack_damage", "ADDITION", is_terra ? 0 : 2,
-                is_terra ? 5 : 10, 0.5)
-            .addAttributeRange("minecraft:generic.movement_speed", "MULTIPLY_TOTAL", is_terra ? 0 : 0.2,
-                is_terra ? 5 : 10, 0.015)
-            .addAttribute("minecraft:generic.knockback_resistance", "ADDITION", is_terra ? 0 : 0.85);
         boss.build();
     };
 

@@ -4,7 +4,7 @@ ServerEvents.highPriorityData(event => {
         let boss = bossMaterialBuilder(event, id, "twilight")
             .setWeight(75).setQuality(2).setSize(1, 1)
             .addValidGearSet(gearSet).addDimension("twilightforest:twilight_forest")
-            .setMinRarity("uncommon").setMaxRarity("epic");
+            .setMinRarity("uncommon").setMaxRarity("rare");
         boss.forRarity("uncommon")
             .setEnchantChance(0.35)
             .setEnchantmentLevels([4, 2, 2, 4])
@@ -27,17 +27,6 @@ ServerEvents.highPriorityData(event => {
             .addAttributeRange("minecraft:generic.movement_speed", "MULTIPLY_TOTAL", 0.15,
                 10, 0.01)
             .addAttribute("minecraft:generic.knockback_resistance", "ADDITION", 0.8);
-        boss.forRarity("epic")
-            .setEnchantChance(0.65)
-            .setEnchantmentLevels([12, 6, 6, 12])
-            .addEffect("minecraft:fire_resistance", 1.0)
-            .addAttributeRange("minecraft:generic.max_health", "MULTIPLY_TOTAL", 0.3,
-                10, 0.1)
-            .addAttributeRange("minecraft:generic.attack_damage", "ADDITION", 3,
-                10, 0.15)
-            .addAttributeRange("minecraft:generic.movement_speed", "MULTIPLY_TOTAL", 0.2,
-                10, 0.015)
-            .addAttribute("minecraft:generic.knockback_resistance", "ADDITION", 0.85);
         boss.build();
     };
 
