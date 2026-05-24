@@ -20,6 +20,10 @@ ServerEvents.recipes(event => {
         "#forge:eggs"
     ]).id("sdbf:dragon_egg_s3")
 
+    event.shapeless('nuclearcraft:borax_dust', [
+        '8x #forge:end_stones'
+    ]).id("sdbf:borax_dust_s3")
+
     event.shaped('apotheosis:ender_library', [
         'ACA',
         'CBC',
@@ -64,7 +68,7 @@ ServerEvents.recipes(event => {
         "D": 'cataclysm:void_core',
         "B": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
-                .killCount(350)               // 要求：100 击杀
+                .killCount(1000)               // 要求：100 击杀
                 .refineCount(50)               // 要求：1 锻造
                 .build()
         )
@@ -83,17 +87,17 @@ ServerEvents.recipes(event => {
         "C": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("last_smith:muramasa_kagura")
-                .killCount(1500)
-                .proudSoul(5000)
-                .refineCount(35)
+                .killCount(2000)
+                .proudSoul(30000)
+                .refineCount(50)
                 .build()
         ),
         "U": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("slashblade:muramasa")
                 .killCount(1500)
-                .proudSoul(5000)
-                .refineCount(35)
+                .proudSoul(20000)
+                .refineCount(25)
                 .build()
         )
     }, "last_smith:oboro_muramasa")
@@ -111,9 +115,9 @@ ServerEvents.recipes(event => {
         "C": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("slashblade_addon:murakumo")
-                .killCount(1500)
-                .proudSoul(5000)
-                .refineCount(25)
+                .killCount(5000)
+                .proudSoul(50000)
+                .refineCount(50)
                 .build()
         )
     }, "last_smith:roukanken")
@@ -132,6 +136,7 @@ ServerEvents.recipes(event => {
         "E": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("slashblade:yamato")
+                .killCount(2000)
                 .refineCount(50)
                 .addSwordType("broken")
                 .build()
@@ -139,7 +144,8 @@ ServerEvents.recipes(event => {
         "I": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("pseudoedge_break_dawn:magicblade")
-                .refineCount(10)
+                .killCount(2000)
+                .refineCount(25)
                 .addSwordType("broken")
                 .build()
         )
@@ -158,7 +164,7 @@ ServerEvents.recipes(event => {
         "E": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("pseudoedge_break_dawn:dragonblade")
-                .killCount(900)               // 要求：100 击杀
+                .killCount(7500)               // 要求：100 击杀
                 .refineCount(50)               // 要求：1 锻造
                 .build()
         )
@@ -174,11 +180,11 @@ ServerEvents.recipes(event => {
         "B": 'apotheosis:infused_breath',
         "C": 'slashblade:proudsoul_sphere',
         "D": 'minecraft:dragon_breath',
-        "F": 'thermal:lightning_charge',
+        "F": 'enderio:double_layer_capacitor',
         "E": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("pseudoedge_break_dawn:dragonblade")
-                .killCount(900)               // 要求：100 击杀
+                .killCount(7500)               // 要求：100 击杀
                 .refineCount(50)               // 要求：1 锻造
                 .build()
         )
@@ -196,14 +202,14 @@ ServerEvents.recipes(event => {
         "E": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("sjap_adder:dragon_bone_fire")
-                .killCount(1500)               // 要求：100 击杀
+                .killCount(10000)               // 要求：100 击杀
                 .refineCount(50)               // 要求：1 锻造
                 .build()
         ),
         "G": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("sjap_adder:dragon_bone_lightning")
-                .killCount(1500)               // 要求：100 击杀
+                .killCount(10000)               // 要求：100 击杀
                 .refineCount(50)               // 要求：1 锻造
                 .build()
         )

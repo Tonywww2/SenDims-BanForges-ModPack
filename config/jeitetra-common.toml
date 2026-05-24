@@ -3,4 +3,6 @@ OutputReplacementItem = true
 ShowAllEffects = true
 ShowAllMaterials = false
 JeiSubtypeModularItem = ["tetra:modular_toolbelt", "tetra:modular_double", "tetra:modular_bow", "tetra:modular_crossbow", "tetra:modular_shield", "tetra:modular_single", "tetra:modular_sword"]
+ShowAllImprovements = false
+FilterEmptyReplacement = true
 

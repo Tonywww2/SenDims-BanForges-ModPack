@@ -52,7 +52,7 @@ LootJS.modifiers(event => {
         .anyDimension(['sdbf:inside_the_end'])
         .pool(p => {
             p.rolls(2);
-            p.addLoot('kubejs:alpha_dust').randomChance(0.05);
+            p.addLoot('kubejs:alpha_dust').randomChance(0.02);
         });
 
     event.addLootTableModifier('dungeons_arise:chests/plague_asylum/plague_asylum_treasure')
@@ -76,8 +76,10 @@ LootJS.modifiers(event => {
             return getBladeStack(Utils.server.registryAccess(), "slashblade:dojikiri_yasutsuna")
         });
 
-    chestModifier.replaceLoot("#forge:seeds", 'slashblade:proudsoul_tiny', true);
+    event.addLootTableModifier('apotheosis:chests/tome_tower')
+        .addLoot('kubejs:ml_computing_ingot');
 
+    chestModifier.replaceLoot("#forge:seeds", 'slashblade:proudsoul_tiny', true);
 
 });
 

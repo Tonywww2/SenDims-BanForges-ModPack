@@ -41,8 +41,8 @@
 		{
 			id: "2A4C4DE687954449"
 			linked_quest: "4125D318FED9C668"
-			x: 5.0d
-			y: 2.5d
+			x: 2.5d
+			y: 7.5d
 		}
 		{
 			id: "309624E5B734CB23"
@@ -108,8 +108,8 @@
 		{
 			id: "4D9D79F9D9990672"
 			linked_quest: "28CAD1DD57B60440"
-			x: 5.0d
-			y: 5.0d
+			x: -5.0d
+			y: 2.5d
 		}
 	]
 	quests: [
@@ -274,6 +274,7 @@
 			dependencies: [
 				"4125D318FED9C668"
 				"7D98EABF3232321E"
+				"044E03F057C715B8"
 			]
 			id: "4138021AE4A37632"
 			tasks: [{
@@ -291,7 +292,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: 2.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["5FDD83613CC8DBB5"]
@@ -453,7 +454,7 @@
 				item: "cataclysm:desert_eye"
 				type: "item"
 			}]
-			x: -2.5d
+			x: 2.5d
 			y: 2.5d
 		}
 		{
@@ -501,7 +502,7 @@
 				type: "structure"
 			}]
 			title: "诅咒金字塔"
-			x: -5.0d
+			x: 5.0d
 			y: 2.5d
 		}
 		{
@@ -523,8 +524,8 @@
 				item: "cataclysm:ancient_metal_ingot"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 2.5d
+			x: 5.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["68BD750B0FD3AB6D"]
@@ -534,8 +535,8 @@
 				item: "cataclysm:koboleton_bone"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 5.0d
+			x: 7.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["7D98EABF3232321E"]
@@ -545,8 +546,8 @@
 				item: "ad_astra:calorite_tank"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 5.0d
+			x: -2.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["5F0FC78E11482861"]

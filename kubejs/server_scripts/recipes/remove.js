@@ -175,7 +175,28 @@ const toRemoveID = new Set([
     "thermal:lumium_dust_4",
     "thermal:signalum_dust_4",
 
+    "slashblade_addon:crimsoncherry",
+    "sjap_adder:blue_dream",
+    "sjap_adder:kamuy_life",
+    "last_smith:amagumo_kaze",
+    "foxextra:foxexfinal_2",
+    "foxextra:foxexfinal",
+    "botania:elven_trade/elementium",
+    "sjap_adder:nihilulex",
+    "slashblade_addon:kamuy_lightning",
+    "sjap_adder:kamuy_dark",
+
+    "slashblade_addon:kamuy_water",
+    "last_smith:roukanken_inferno",
+    "last_smith:amagumo_munin",
+    "last_smith:amagumo_kumo",
+
+    "nuclearcraft:kugelblitz_chamber/upgrade_quantum",
+    "cataclysm:the_incinerator",
+    "nuclearcraft:pump/lava_collector",
+
     // 临时
+    "dustandash:crafting/integrated_block",
     // "apotheosis:hellshelf",
     // "apotheosis:enchanting/infused_hellshelf",
     // "apotheosis:blazing_hellshelf",

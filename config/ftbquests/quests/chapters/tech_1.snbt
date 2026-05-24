@@ -74,6 +74,12 @@
 			x: -2.5d
 			y: 50.0d
 		}
+		{
+			id: "2A8E3A617FBF4EC4"
+			linked_quest: "0774BE522111CF90"
+			x: -2.5d
+			y: 55.0d
+		}
 	]
 	quests: [
 		{
@@ -1152,10 +1158,7 @@
 			y: 50.0d
 		}
 		{
-			dependencies: [
-				"2529CD2EF2A8961B"
-				"15D102DE2394A495"
-			]
+			dependencies: ["15D102DE2394A495"]
 			id: "590D7D0D241DD369"
 			tasks: [{
 				id: "5C05E8F1A201F6A6"
@@ -1442,7 +1445,32 @@
 				type: "item"
 			}]
 			x: 0.0d
+			y: 57.5d
+		}
+		{
+			dependencies: [
+				"58D13182036C82A2"
+				"0774BE522111CF90"
+			]
+			id: "557FEB1D34169026"
+			tasks: [{
+				id: "4FB0FEA558147D50"
+				item: "nuclearcraft:chamber_terminal"
+				type: "item"
+			}]
+			x: -15.0d
 			y: 55.0d
+		}
+		{
+			dependencies: ["557FEB1D34169026"]
+			id: "03642FCF18BB74CA"
+			tasks: [{
+				id: "48A7BBFF1F2B099A"
+				item: "nuclearcraft:upgrade_quantum"
+				type: "item"
+			}]
+			x: -15.0d
+			y: 57.5d
 		}
 	]
 	title: "工业"

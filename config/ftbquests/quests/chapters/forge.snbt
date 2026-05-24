@@ -155,7 +155,8 @@
 			description: [
 				"将你的拔刀置于加工台之上"
 				"展现你的技艺的时候到了！"
-				"&7tip:过于基础的拔刀并不能进行改造"
+				""
+				"&7tip：前期那些过于基础的拔刀并不能进行改造，也就是无铭「无名」后"
 			]
 			hide_until_deps_visible: true
 			icon: {
@@ -240,8 +241,7 @@
 			id: "51E136B4E1C27308"
 			subtitle: "更多的抛瓦"
 			tasks: [{
-				id: "7281924C7C5AA0EA"
-				title: "我已知晓"
+				id: "395DC7082C3FA5E8"
 				type: "checkmark"
 			}]
 			title: "模块化拔刀"

@@ -1,5 +1,5 @@
 {
-	autofocus_id: "62C0631125654B3D"
+	autofocus_id: "4563BE3E3110A2C9"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "begin"
@@ -11,48 +11,49 @@
 		{
 			id: "7379FE5C64FC6241"
 			linked_quest: "6FD736B74327F2AF"
-			x: -2.5d
-			y: 5.0d
+			x: 9.0d
+			y: 3.0d
 		}
 		{
 			id: "40D3BA256430AF4B"
 			linked_quest: "4A57E4499E188BD7"
-			x: -5.0d
-			y: 5.0d
+			x: 6.0d
+			y: 3.0d
 		}
 		{
 			id: "37F9308A7B690DE9"
 			linked_quest: "765A0F0A66F45570"
-			x: -7.5d
-			y: -7.5d
+			x: 9.0d
+			y: -5.5d
 		}
 		{
 			id: "4413A8820A84AB93"
 			linked_quest: "71F1943E6E3FCA17"
-			x: -10.0d
-			y: -5.0d
+			x: 6.0d
+			y: -5.5d
 		}
 		{
 			id: "7B526208D694FBFA"
 			linked_quest: "4C56CFEEBC74DE9A"
-			x: -5.0d
-			y: -7.5d
+			x: 14.5d
+			y: -8.0d
 		}
 		{
 			id: "64467FFD7950DBC7"
 			linked_quest: "5BB642BD0BE40541"
-			x: -10.0d
-			y: -2.5d
+			x: 3.0d
+			y: -5.5d
 		}
 		{
 			id: "0A0F62BCD972F9DF"
 			linked_quest: "3C1CB82ADF4FBBC1"
-			x: -10.0d
-			y: 0.0d
+			x: 0.0d
+			y: -5.5d
 		}
 	]
 	quests: [
 		{
+			description: ["记得先拿好箱子里面的锤子吧"]
 			icon: "minecraft:moss_block"
 			id: "62C0631125654B3D"
 			rewards: [
@@ -77,13 +78,41 @@
 			]
 			size: 2.0d
 			subtitle: "从这里开始"
-			tasks: [{
-				dimension: "minecraft:overworld"
-				icon: "minecraft:moss_block"
-				id: "62A75E5AB59CE8B4"
-				title: "起点"
-				type: "dimension"
-			}]
+			tasks: [
+				{
+					dimension: "minecraft:overworld"
+					icon: "minecraft:moss_block"
+					id: "5BF92BA99335A6F1"
+					title: "主世界"
+					type: "dimension"
+				}
+				{
+					id: "465518229F8C18BF"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"fluxoftetra:fe": {
+								energy: 0
+							}
+						}
+						id: "tetra:modular_double"
+						tag: {
+							Damage: 0
+							"FOT$energy": {
+								energy: 0
+							}
+							"double/basic_hammer_left_material": "basic_hammer/stone"
+							"double/basic_hammer_right_material": "basic_hammer/stone"
+							"double/basic_handle_material": "basic_handle/stick"
+							"double/handle": "double/basic_handle"
+							"double/head_left": "double/basic_hammer_left"
+							"double/head_right": "double/basic_hammer_right"
+							id: "c4fba8e7-d86a-403b-81ec-9d7b65bd8459"
+						}
+					}
+					type: "item"
+				}
+			]
 			title: "起点"
 			x: 0.0d
 			y: 0.0d
@@ -91,32 +120,35 @@
 		{
 			dependencies: ["62C0631125654B3D"]
 			description: ["催熟收获你的第一颗树"]
+			icon: "minecraft:flowering_azalea"
 			id: "36DD50AE28ECF216"
-			tasks: [{
-				icon: "minecraft:flowering_azalea"
-				id: "10E7C6C12548EB7E"
-				observe_type: 1
-				timer: 0L
-				title: "杜鹃花丛"
-				to_observe: "minecraft:saplings"
-				type: "observation"
+			rewards: [{
+				count: 8
+				id: "27EA9C0E2F394549"
+				item: "minecraft:bone_meal"
+				type: "item"
 			}]
-			x: 2.5d
+			tasks: [
+				{
+					icon: "minecraft:flowering_azalea"
+					id: "10E7C6C12548EB7E"
+					observe_type: 1
+					timer: 0L
+					title: "杜鹃花丛"
+					to_observe: "minecraft:saplings"
+					type: "observation"
+				}
+				{
+					id: "38EB002BB38B437E"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
+			]
+			x: 3.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["36DD50AE28ECF216"]
-			id: "6D9B8C4828EA43E3"
-			tasks: [{
-				id: "1C63B7D4449A68A0"
-				item: "minecraft:bone_meal"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["6D9B8C4828EA43E3"]
 			id: "0C7B137A72152B01"
 			rewards: [{
 				count: 4
@@ -137,123 +169,87 @@
 				title: "原木"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 2.5d
+			x: 6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["0C7B137A72152B01"]
 			id: "5748351A76910019"
 			rewards: [{
-				count: 2
-				id: "75146667B8144E92"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:judgement_cut"
-							StandbyRenderType: 0b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							proudSoul: 0
-						}
-					}
-					id: "slashblade:slashblade_wood"
-					tag: {
-						bladeState: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							ModelName: "slashblade:model/blade.obj"
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:judgement_cut"
-							StandbyRenderType: 0b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							TextureName: "slashblade:model/wood.png"
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 2.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 0b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 60
-							proudSoul: 0
-							translationKey: ""
-						}
-					}
-				}
-				type: "item"
+				id: "5281225DE10ED7CD"
+				type: "xp"
+				xp: 100
 			}]
 			tasks: [{
 				id: "12D3150C72E4E216"
 				item: "minecraft:crafting_table"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 2.5d
+			x: 9.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["5748351A76910019"]
+			description: ["这看岛起来有点小，不过还是有少量资源的"]
+			icon: {
+				Count: 1
+				id: "minecraft:wooden_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "630C033031F00877"
 			rewards: [{
-				count: 4
+				count: 8
 				id: "2B7316A56A7C2A5D"
 				item: "minecraft:bread"
 				type: "item"
 			}]
-			tasks: [{
-				id: "41693CC2217DDFF4"
-				item: {
-					Count: 1
-					id: "minecraft:wooden_pickaxe"
-					tag: {
-						Damage: 0
+			tasks: [
+				{
+					id: "41693CC2217DDFF4"
+					item: {
+						Count: 1
+						id: "minecraft:wooden_pickaxe"
+						tag: {
+							Damage: 0
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
-			x: -2.5d
+				{
+					count: 16L
+					id: "381029986CC19AE8"
+					item: "minecraft:cobblestone"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "20561254BCA2CC5B"
+					item: "minecraft:gravel"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "271AB824C9C708AD"
+					item: "minecraft:clay_ball"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "00C37EEE93797597"
+					item: { Count: 8, id: "minecraft:string" }
+					type: "item"
+				}
+			]
+			title: "采集资源"
+			x: 12.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["630C033031F00877"]
-			id: "21E65C4EA8B74115"
-			tasks: [{
-				id: "5E4FF0B108A509C7"
-				item: "minecraft:cobblestone"
-				type: "item"
-			}]
-			x: -2.5d
-			y: -2.5d
-		}
-		{
-			dependencies: ["21E65C4EA8B74115"]
+			description: ["熔炉前期燃烧效率可以堆量解决，后者可以直接磨砂砾出燧石"]
+			icon: "minecraft:furnace"
 			id: "02003846DA642A0D"
 			rewards: [{
 				count: 4
@@ -261,58 +257,60 @@
 				item: "minecraft:bread"
 				type: "item"
 			}]
-			tasks: [{
-				id: "267A381BC07330A6"
-				item: "minecraft:furnace"
-				type: "item"
-			}]
-			x: 0.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["62C0631125654B3D"]
-			id: "512345CC8BC8CD7D"
-			tasks: [{
-				id: "4CB62675166B0BE1"
-				item: "minecraft:gravel"
-				type: "item"
-			}]
-			x: 2.5d
-			y: -2.5d
-		}
-		{
-			dependencies: [
-				"512345CC8BC8CD7D"
-				"02003846DA642A0D"
+			tasks: [
+				{
+					count: 2L
+					id: "267A381BC07330A6"
+					item: "minecraft:furnace"
+					type: "item"
+				}
+				{
+					id: "00D2970BBA100680"
+					item: "sakura:stone_mortar"
+					type: "item"
+				}
 			]
+			title: "工作方块"
+			x: 12.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["02003846DA642A0D"]
 			description: ["提示：手持锋利的燧石片右键"]
 			hide_until_deps_complete: true
 			id: "5A6129A375A1B07E"
+			rewards: [{
+				id: "63C96F981EA62DB3"
+				type: "xp"
+				xp: 100
+			}]
 			tasks: [{
 				id: "4C384E9DE553D818"
 				item: "dustandash:sharpen_flint"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -5.0d
+			x: 14.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["5A6129A375A1B07E"]
 			description: ["提示：手持锋利的燧石片右键"]
 			id: "13B6F6AC7608F794"
+			rewards: [{
+				id: "5CD6027E55A1A4C2"
+				type: "xp"
+				xp: 100
+			}]
 			tasks: [{
 				id: "3F68576B8CE2A39A"
 				item: "dustandash:bloody_flint"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -5.0d
+			x: 14.5d
+			y: -5.5d
 		}
 		{
-			dependencies: [
-				"0B0F1D8BE89F8980"
-				"765A0F0A66F45570"
-			]
+			dependencies: ["765A0F0A66F45570"]
 			dependency_requirement: "one_completed"
 			description: [
 				"...不知从何而来的灵感，混入了你的思绪。"
@@ -329,6 +327,12 @@
 			]
 			hide_until_deps_complete: true
 			id: "52726CE2A2740BF7"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7C2CC2A6EF19C2DD"
+				table_id: 7214542327696130213L
+				type: "choice"
+			}]
 			shape: "hexagon"
 			subtitle: "重要|深境"
 			tasks: [{
@@ -340,15 +344,19 @@
 				}
 				type: "item"
 			}]
-			x: -7.5d
-			y: -5.0d
+			x: 9.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["13B6F6AC7608F794"]
 			description: [
-				"苔藓蕴含着可能性，而祂们又无法观测自身。"
-				"你打开了第一扇传送门。"
+				"苔藓的延展蕴含着许多可能性，而祂们又无法观测自身"
+				""
+				"围绕不同的构筑，你打开了第一扇传送门"
+				""
+				"怎么出发？&b世界目录&r会给予你答案"
 			]
+			icon: "kubejs:garden_lighter"
 			id: "0B0F1D8BE89F8980"
 			rewards: [
 				{
@@ -408,14 +416,22 @@
 				}
 			]
 			shape: "hexagon"
+			size: 1.0d
 			subtitle: "相交的碎片"
-			tasks: [{
-				id: "4ABE72912DE0F08B"
-				item: "kubejs:garden_lighter"
-				type: "item"
-			}]
-			x: -5.0d
-			y: -5.0d
+			tasks: [
+				{
+					id: "4ABE72912DE0F08B"
+					item: "kubejs:garden_lighter"
+					type: "item"
+				}
+				{
+					id: "0C727A6D844E4D37"
+					item: "minecraft:stick"
+					type: "item"
+				}
+			]
+			x: 11.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["3C1CB82ADF4FBBC1"]
@@ -426,13 +442,13 @@
 				item: "minecraft:glowstone"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 0.0d
+			x: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["52726CE2A2740BF7"]
 			dependency_requirement: "one_completed"
-			description: ["提示：推荐在深境一层挖掘铁矿。"]
+			description: ["提示：推荐在深境一层挖掘铁矿"]
 			id: "73531FB69122489F"
 			subtitle: "原始工业"
 			tasks: [{
@@ -440,45 +456,29 @@
 				item: "minecraft:iron_ingot"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -2.5d
+			x: 6.0d
+			y: -8.0d
 		}
 		{
-			dependencies: ["62C0631125654B3D"]
-			id: "240E3007179A90BC"
-			tasks: [{
-				id: "419C639053BC1D79"
+			dependencies: ["02003846DA642A0D"]
+			description: ["多准备一些红砖，穿梭流程会用到"]
+			icon: "minecraft:brick"
+			id: "4563BE3E3110A2C9"
+			rewards: [{
+				count: 32
+				id: "5F74D4CB8C034C81"
 				item: "minecraft:clay_ball"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 0.0d
-		}
-		{
-			dependencies: [
-				"240E3007179A90BC"
-				"02003846DA642A0D"
-			]
-			id: "4563BE3E3110A2C9"
 			tasks: [{
+				count: 32L
 				id: "2886EA7D968B09D5"
 				item: "minecraft:brick"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["4563BE3E3110A2C9"]
-			description: ["自动化必备"]
-			id: "291CCB69D170B168"
-			tasks: [{
-				id: "54191DED99AAB54B"
-				item: "bonsaitrees3:bonsaipot"
-				type: "item"
-			}]
-			x: 7.5d
-			y: -2.5d
+			title: "更长远的准备"
+			x: 9.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["6FD736B74327F2AF"]
@@ -488,8 +488,8 @@
 				item: "terra_entity:suspicious_looking_eye"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 5.0d
+			x: 12.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["76DEBD32F9E5F5C5"]
@@ -499,8 +499,8 @@
 				item: "terra_entity:worm_food"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 5.0d
+			x: 15.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["76DEBD32F9E5F5C5"]
@@ -510,8 +510,239 @@
 				item: "terra_entity:bloody_spine"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 7.5d
+			x: 15.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4563BE3E3110A2C9"]
+			description: ["简单的自动化开端"]
+			id: "5142DCD34AFA1CC0"
+			rewards: [{
+				id: "1F6D3826D67AC854"
+				item: {
+					Count: 1
+					id: "minecraft:stone_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4E54D8AAB7CEB049"
+				item: "bonsaitrees3:bonsaipot"
+				type: "item"
+			}]
+			title: "基础自动化？"
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0B0F1D8BE89F8980"]
+			description: [
+				"将一些方块组合摆成一种特殊的结构，并使用一些特殊的物品激活，可以产生不同的奇妙效果......"
+				"这个过程被称作结构召唤仪式。"
+				""
+				"通用结构（从下往上）："
+				"·第一层"
+				"CAC"
+				"AAA"
+				"CAC"
+				""
+				"·第二层"
+				" A 空 A"
+				"空 B 空 "
+				" A 空 A"
+				""
+				"·第三层"
+				"空 A 空"
+				" A  A  A"
+				"空 A 空 "
+				""
+				"传送门结构（从下往上）："
+				"通用结构（从下往上）："
+				"·第一层"
+				"空空空"
+				"空空空"
+				"空空空"
+				""
+				"·第二层"
+				"空空空 "
+				"空 B 空 "
+				"空空空"
+				""
+				"·第三层"
+				" A  A  A"
+				" A  A  A"
+				" A  A  A "
+				""
+				""
+				"最后使用指定的物品点击第二层的\"B\"。"
+			]
+			hide_dependent_lines: true
+			icon: "ae2:fluix_pearl"
+			id: "034D47E905861E48"
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "重要"
+			tasks: [{
+				id: "2377C119A89E61F6"
+				type: "checkmark"
+			}]
+			title: "结构召唤仪式"
+			x: 11.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["034D47E905861E48"]
+			description: [
+				"返回仪式会在传送门仪式的目的地生成。"
+				""
+				"它是由&6黑曜石&r建造的3x3平台，中心为&6哭泣的黑曜石&r"
+				"使用&6木棍&r右键&6哭泣的黑曜石&r激活传送"
+			]
+			icon: "minecraft:grass_block"
+			id: "0191BEFB99BFD5D5"
+			shape: "hexagon"
+			tasks: [{
+				id: "5B3AB99A64A876F0"
+				type: "checkmark"
+			}]
+			title: "返回仪式"
+			x: 11.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["73531FB69122489F"]
+			description: [
+				"&e&l蹲下身右键村民即可拿起，压榨奸商！&r"
+				""
+				"这是前期获得&a绿宝石&r与&d附魔书&r的最好方法"
+				""
+				"&b绿宝石象征幸运，以其为材料的工具自带时运效果！"
+			]
+			icon: {
+				Count: 1
+				id: "slashblade_sendims:structure_quill"
+				tag: {
+					skipKnown: 1b
+					targetStructure: "cavernous:lush_village"
+				}
+			}
+			id: "6E4D6662243ED7F6"
+			rewards: [{
+				count: 16
+				id: "270FD1BD00F20AF0"
+				item: "minecraft:sand"
+				type: "item"
+			}]
+			size: 1.5d
+			subtitle: "深境一层有少量村庄"
+			tasks: [
+				{
+					id: "684A2AEF710C13B4"
+					item: {
+						Count: 1
+						id: "slashblade_sendims:structure_quill"
+						tag: {
+							skipKnown: 1b
+							targetStructure: "cavernous:stone_village"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "71AE870675AD84BC"
+					item: {
+						Count: 1
+						id: "slashblade_sendims:structure_quill"
+						tag: {
+							skipKnown: 1b
+							targetStructure: "cavernous:lush_village"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3418EA6C9BAACACA"
+					item: "easy_villagers:villager"
+					type: "item"
+				}
+			]
+			title: "简易村民"
+			x: 3.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["6E4D6662243ED7F6"]
+			description: [
+				"C键刷新交易"
+				"制箭师可以木棍换绿宝石"
+				"图书管理员交换附魔书"
+			]
+			icon: "easy_villagers:trader"
+			id: "03324A922C738F3E"
+			rewards: [{
+				id: "2A0DA6B6417FC85D"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					id: "04320E586B55DFDF"
+					item: "easy_villagers:trader"
+					type: "item"
+				}
+				{
+					id: "6B2698DE7AB98BDD"
+					item: "minecraft:fletching_table"
+					type: "item"
+				}
+				{
+					id: "7A5393F2896CC183"
+					item: "minecraft:lectern"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["6E4D6662243ED7F6"]
+			description: [
+				"放入食物后就会开始繁衍村民"
+				""
+				"&m感觉不如直接去拐卖"
+			]
+			id: "6A7DADE65BB55882"
+			rewards: [{
+				id: "723AE5D6C5628130"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "3FA155223F769918"
+				item: "easy_villagers:breeder"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["6E4D6662243ED7F6"]
+			id: "5EA8445369F95C85"
+			rewards: [{
+				id: "323788CF51AE2976"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "554CB40332379159"
+				item: "easy_villagers:incubator"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -11.0d
 		}
 	]
 	title: "起始之空岛"

@@ -1,3 +1,5 @@
+let GEM_TICKET_DIM_PATH = "sdbf.gt.dim";
+
 
 ItemEvents.tooltip(event => {
 
@@ -12,6 +14,7 @@ ItemEvents.tooltip(event => {
     event.add('slashblade_sendims:the_nectar_quest', Text.translatable('info.kubejs.the_nectar_quest'))
 
     event.add('kubejs:anchor_shard', Text.translatable('info.kubejs.anchor_shard').color(Color.AQUA));
+    event.add('kubejs:chaotic_truth', Text.translatable('info.kubejs.chaotic_truth').color(Color.AQUA));
 
     event.add('#slashblade:can_copy_sa', Text.translatable('info.kubejs.slashblade.can_copy_sa').color(Color.AQUA));
     event.add('#slashblade:can_copy_se', Text.translatable('info.kubejs.slashblade.can_copy_se').color(Color.AQUA));
@@ -31,6 +34,14 @@ ItemEvents.tooltip(event => {
     ], (item, advanced, text) => {
         if (item.nbt && item.nbt.bladeState && item.nbt.bladeState.translationKey) {
             text.add(Text.of(String(item.nbt.bladeState.translationKey).substring(5).replace(".", ":")).color(Color.LIME_DYE));
+        }
+    })
+
+    event.addAdvanced('kubejs:gem_ticket', (item, advanced, text) => {
+        text.add(Text.translatable('info.kubejs.gem_ticket').color(Color.AQUA));
+        if (item.nbt && item.nbt.getString(GEM_TICKET_DIM_PATH)) {
+            text.add(Text.of(item.nbt.getString(GEM_TICKET_DIM_PATH)).color(Color.WHITE));
+
         }
     })
 

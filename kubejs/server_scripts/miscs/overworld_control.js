@@ -113,12 +113,18 @@ const ensureWorldPlatform = (server) => {
 
 const punishPlayer = (player) => {
     // player.teleportTo(TARGET_DIM, SPAWN_X + 0.5, PLAYER_Y, SPAWN_Z + 0.5, 0, 0);
+    if (player.tags.contains('teleport_cooldown')) return;
     let pos = getLevelSpawnPoint(player.level);
-    player.teleportTo(TARGET_DIM, pos[0] + 0.5, pos[1], pos[2] + 0.5, 0, 0);
+
+    player.teleportTo(TARGET_DIM, pos[0] + 0.5, PLAYER_Y, pos[2] + 0.5, 0, 0);
 
     player.potionEffects.add('minecraft:wither', 100, 0);
     player.potionEffects.add('minecraft:blindness', 100, 0);
     player.potionEffects.add('minecraft:nausea', 100, 0);
+
+    player.server.scheduleInTicks(10, callback => {
+        player.tags.remove('teleport_cooldown');
+    });
 };
 
 PlayerEvents.tick(event => {
@@ -127,6 +133,8 @@ PlayerEvents.tick(event => {
     if (!player || (player.isFake && player.isFake())) return;
 
     if (player.level.dimensionKey != TARGET_DIM) return;
+
+    if (player.age % 3 != 0) return;
 
     if (player.stages.has(OVERWORLD_STAGE)) return;
 

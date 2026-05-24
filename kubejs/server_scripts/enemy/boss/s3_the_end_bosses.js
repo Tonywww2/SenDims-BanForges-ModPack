@@ -35,7 +35,7 @@ ServerEvents.highPriorityData(event => {
         boss.build();
     };
 
-    endBoss("terra_entity:evil_slime");
+    endBoss("minecraft:husk");
 
 
 })

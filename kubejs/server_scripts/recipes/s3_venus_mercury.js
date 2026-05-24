@@ -40,33 +40,33 @@ ServerEvents.recipes(event => {
         "B": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("slashblade_addon:murakumo")
-                .killCount(500)
-                .proudSoul(5000)
-                .refineCount(10)
+                .killCount(1000)
+                .proudSoul(20000)
+                .refineCount(25)
                 .build()
         ),
         "E": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("slashblade:orotiagito")
-                .killCount(200)
-                .proudSoul(2000)
-                .refineCount(10)
+                .killCount(2000)
+                .proudSoul(20000)
+                .refineCount(25)
                 .build()
         ),
         "G": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("slashblade:yasha_true")
-                .killCount(200)
-                .proudSoul(2000)
-                .refineCount(10)
+                .killCount(1000)
+                .proudSoul(20000)
+                .refineCount(25)
                 .build()
         ),
         "H": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("slashblade:koseki")
-                .killCount(200)
-                .proudSoul(2000)
-                .refineCount(10)
+                .killCount(1000)
+                .proudSoul(20000)
+                .refineCount(25)
                 .build()
         )
     }, "sjap_adder:agito_true_ex")
@@ -83,9 +83,9 @@ ServerEvents.recipes(event => {
         "D": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("slashblade_addon:wanderer_hf")
-                .killCount(1000)                  // 要求：1500 击杀 (Kill Count)
-                .proudSoul(10000)                 // 要求：10000 耀魂 (Proud Soul)
-                .refineCount(10)                  // 要求：10 锻造 (Refine Count)
+                .killCount(1500)                  // 要求：1500 击杀 (Kill Count)
+                .proudSoul(20000)                 // 要求：10000 耀魂 (Proud Soul)
+                .refineCount(25)                  // 要求：10 锻造 (Refine Count)
                 .addEnchantment(SBEnchantmentDefinition.of("minecraft:bane_of_arthropods", 2)) // 节肢杀手 II
                 .addEnchantment(SBEnchantmentDefinition.of("minecraft:unbreaking", 3))         // 耐久 III
                 .build()
@@ -93,9 +93,9 @@ ServerEvents.recipes(event => {
         "G": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("slashblade:yasha_true")
-                .killCount(200)
-                .proudSoul(2000)
-                .refineCount(10)
+                .killCount(1000)
+                .proudSoul(20000)
+                .refineCount(25)
                 .build()
         )
     }, "slashblade:ssa_roze")
@@ -104,16 +104,17 @@ ServerEvents.recipes(event => {
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
         "ABA",
         "CDC",
-        "ACA"
+        "ASA"
     ], {
         "A": '#forge:plates/calorite',
         "B": "minecraft:nether_star",
         "C": "minecraft:diamond_block",
+        "S": 'cataclysm:ancient_spear',
         "D": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance().name("slashblade:fox_white")
-                .killCount(1500)
-                .proudSoul(12000)
-                .refineCount(20)
+                .killCount(2000)
+                .proudSoul(20000)
+                .refineCount(25)
                 .build()
         )
     }, "foxextra:foxex_white")
@@ -131,8 +132,8 @@ ServerEvents.recipes(event => {
         "D": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("slashblade:kanze_masamune") // 要求：观世正宗 (Kanze Masamune)
-                .killCount(1500)                  // 要求：1500 击杀 (Kill Count)
-                .proudSoul(10000)                 // 要求：10000 耀魂 (Proud Soul)
+                .killCount(500)                  // 要求：1500 击杀 (Kill Count)
+                .proudSoul(5000)                 // 要求：10000 耀魂 (Proud Soul)
                 .refineCount(10)                  // 要求：10 锻造 (Refine Count)
                 // 多个附魔要求 (Multiple Enchantments)
                 .addEnchantment(SBEnchantmentDefinition.of("minecraft:smite", 2))      // 亡灵杀手 II
@@ -151,7 +152,7 @@ ServerEvents.recipes(event => {
             SlashBladeRequestDefinition.newInstance()
                 .name("slashblade:sange")
                 .killCount(1000)
-                .refineCount(20)
+                .refineCount(25)
                 .addEnchantment(SBEnchantmentDefinition.of("minecraft:fire_protection", 1))
                 .build()
         ),
@@ -159,7 +160,7 @@ ServerEvents.recipes(event => {
             SlashBladeRequestDefinition.newInstance()
                 .name("sjap_adder:frostbane_moonveil")
                 .killCount(1000)
-                .refineCount(20)
+                .refineCount(25)
                 .addEnchantment(SBEnchantmentDefinition.of("minecraft:fire_protection", 1))
                 .build()
         ),
@@ -183,43 +184,43 @@ ServerEvents.recipes(event => {
                 .name("slashblade_addon:nihilex")
                 .killCount(2000)
                 .proudSoul(15000)
-                .refineCount(20)
+                .refineCount(25)
                 .build()
         ),
         // 核心原料 2：Moonlight Cherry (月光樱)
         "D": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("slashblade_addon:moonlight_cherry")
-                .killCount(2000)
+                .killCount(1000)
                 .proudSoul(15000)
-                .refineCount(20)
+                .refineCount(25)
                 .build()
         ),
         // 核心原料 3：Frosty Cherry (霜樱)
         "E": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("slashblade_addon:frosty_cherry")
-                .killCount(2000)
-                .proudSoul(15000)
-                .refineCount(20)
+                .killCount(3000)
+                .proudSoul(20000)
+                .refineCount(25)
                 .build()
         ),
         // 核心原料 4：Yukari (紫)
         "F": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("slashblade_addon:yukari")
-                .killCount(2000)
+                .killCount(1500)
                 .proudSoul(15000)
-                .refineCount(20)
+                .refineCount(25)
                 .build()
         ),
         // 核心原料 5：Blue (苍蓝)
         "H": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("slashblade_addon:blue")
-                .killCount(2000)
-                .proudSoul(15000)
-                .refineCount(20)
+                .killCount(1000)
+                .proudSoul(10000)
+                .refineCount(10)
                 .build()
         )
     }, "sjap_adder:nihil_soul")
@@ -231,7 +232,7 @@ ServerEvents.recipes(event => {
         "base": {
             "type": "slashblade:blade",
             "item": "slashblade:slashblade",
-            "request": { "enchantments": [{ "id": "minecraft:power" }], "kill": 250, "name": "last_smith:evil_kataware" }
+            "request": { "enchantments": [{ "id": "minecraft:power" }], "kill": 1000, "name": "last_smith:evil_kataware" }
         },
         "blade": "last_smith:evil_shura",
         "template": { "item": "last_smith:scroll_sakura_full" }

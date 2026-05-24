@@ -1,5 +1,5 @@
 #耀魂喷泉模块开关
-enableSoulTrapezoid = true
+enableSoulTrapezoid = false
 #下界之星增强面板模块开关
 enableNetherStarUpgrade = false
 #耀魂喷泉门槛
@@ -23,7 +23,7 @@ disableOtherInteractions = false
 refinedFactor = 0.05
 #幻影剑倍率模块基础攻击修正系数
 #Range: 0.0 ~ 1.7976931348623157E308
-attackModifierFactor = 0.05
+attackModifierFactor = 0.15
 #刀光倍率模块基础攻击修正系数
 #Range: 0.0 ~ 1.7976931348623157E308
 attackModifierFactor_slash_effect = 0.25

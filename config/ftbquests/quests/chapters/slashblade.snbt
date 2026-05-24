@@ -17,18 +17,54 @@
 	quests: [
 		{
 			dependencies: ["5748351A76910019"]
+			description: ["别匆忙，放慢脚步"]
 			id: "6FD736B74327F2AF"
-			rewards: [{
-				id: "36C11E4A8BDAEDC7"
-				item: {
-					Count: 1
-					id: "minecraft:leather_boots"
-					tag: {
-						Damage: 0
+			rewards: [
+				{
+					id: "7F8C7FF90B74ED17"
+					item: {
+						Count: 1
+						id: "minecraft:leather_helmet"
+						tag: {
+							Damage: 0
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "3326E3934D27ECD3"
+					item: {
+						Count: 1
+						id: "minecraft:leather_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4B07502E81E3CD98"
+					item: {
+						Count: 1
+						id: "minecraft:leather_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2FCF6104C226BB0A"
+					item: {
+						Count: 1
+						id: "minecraft:leather_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
 			size: 2.0d
 			subtitle: "重要"
 			tasks: [{
@@ -42,6 +78,7 @@
 				}
 				type: "item"
 			}]
+			title: "村好剑"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -325,7 +362,7 @@
 			dependencies: ["6FD736B74327F2AF"]
 			id: "4A57E4499E188BD7"
 			rewards: [{
-				count: 4
+				count: 8
 				id: "3A24C30968E85C75"
 				item: "minecraft:bamboo"
 				type: "item"
@@ -645,6 +682,7 @@
 				"121941C1A0E09C09"
 				"128DAE63591990BF"
 			]
+			description: ["到这里才是自定义刀剑的开始！"]
 			id: "371880BF8A2A75FC"
 			tasks: [{
 				id: "5EA07B8440874AF4"
@@ -951,6 +989,7 @@
 		}
 		{
 			dependencies: ["4A57E4499E188BD7"]
+			description: [""]
 			id: "4D2B780AFDAB523E"
 			rewards: [{
 				count: 2
@@ -958,6 +997,7 @@
 				item: "slashblade:proudsoul_tiny"
 				type: "item"
 			}]
+			subtitle: "5"
 			tasks: [{
 				id: "7BEDE2630FB6FEE9"
 				item: "slashblade:proudsoul_tiny"
@@ -975,6 +1015,7 @@
 				item: "slashblade:proudsoul"
 				type: "item"
 			}]
+			subtitle: "10"
 			tasks: [{
 				id: "4078BAF11FE973CD"
 				item: "slashblade:proudsoul"
@@ -995,6 +1036,7 @@
 				item: "slashblade:proudsoul_ingot"
 				type: "item"
 			}]
+			subtitle: "25"
 			tasks: [{
 				id: "21B799F1CCBA951E"
 				item: "slashblade:proudsoul_ingot"
@@ -1016,6 +1058,7 @@
 				item: "slashblade:proudsoul_sphere"
 				type: "item"
 			}]
+			subtitle: "50"
 			tasks: [{
 				id: "4FED27BB080A82FA"
 				item: "slashblade:proudsoul_sphere"
@@ -1027,7 +1070,6 @@
 		{
 			dependencies: [
 				"11728C2FAEFCBBAD"
-				"0774BE522111CF90"
 				"3C0F4DC6CA3B4AAD"
 			]
 			id: "4D0F49CE2720FBCD"
@@ -1036,6 +1078,7 @@
 				item: "slashblade:proudsoul_crystal"
 				type: "item"
 			}]
+			subtitle: "100"
 			tasks: [{
 				id: "78C0B6A182DC1C74"
 				item: "slashblade:proudsoul_crystal"

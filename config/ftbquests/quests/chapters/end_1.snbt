@@ -86,6 +86,12 @@
 			x: 0.0d
 			y: -2.5d
 		}
+		{
+			id: "1D44F8CCBF80C106"
+			linked_quest: "33AE46297AC49922"
+			x: 10.5d
+			y: 2.5d
+		}
 	]
 	quests: [
 		{
@@ -133,7 +139,10 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["1BF032EC08E31ABB"]
+			dependencies: [
+				"1BF032EC08E31ABB"
+				"6CD4FEF522C655C7"
+			]
 			id: "2C52C219DD799030"
 			tasks: [{
 				id: "1ABE5628C6FBC7C4"
@@ -180,7 +189,10 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["5A982FFF19EF5289"]
+			dependencies: [
+				"5A982FFF19EF5289"
+				"0774BE522111CF90"
+			]
 			id: "7A33CC727391D187"
 			tasks: [{
 				id: "1FA575084C4312E2"
@@ -300,6 +312,7 @@
 			dependencies: [
 				"59F17F34F831D72E"
 				"5C754EA1BB21D901"
+				"33AE46297AC49922"
 			]
 			id: "664C0B9BCAFBC037"
 			tasks: [{

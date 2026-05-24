@@ -74,7 +74,7 @@ ServerEvents.highPriorityData(event => {
         .setPrimary(2.3).setSecondary(2.2).setTertiary(1.4)
         .setDurability(350).setIntegrityCost(1).setIntegrityGain(3)
         .setMagicCapacity(110).setToolLevel(4).setToolEfficiency(7)
-        .setTints("32cd32", "90ee90")  // 电路绿色
+        .setTints("fffede", "fffeeb")
         .addTexture("shiny").addTexture("metal")
         .addItemMaterial('tofucraft:tf_circuit')
         .setRequiredTool("hammer_dig", 1)
@@ -86,7 +86,7 @@ ServerEvents.highPriorityData(event => {
         .setDurability(400).setIntegrityCost(1).setIntegrityGain(3)
         .setMagicCapacity(130).setToolLevel(5).setToolEfficiency(8)
         .addAttributes("attributeslib:cold_damage", 0.25)
-        .setTints("8a2be2", "9370db")  // 紫色核心
+        .setTints("fffeeb", "f2f2f2")
         .addTexture("shiny").addTexture("heavy")
         .addItemMaterial('tofucraft:tofu_core')
         .setRequiredTool("hammer_dig", 1)

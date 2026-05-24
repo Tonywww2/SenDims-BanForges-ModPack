@@ -8,13 +8,18 @@ SACostMap.put("slashblade:judgement_cut_slash_just", [500, 0.2]);
 
 SACostMap.put("slashblade:wave_edge_vertical", [200, 0.05]);
 SACostMap.put("slashblade:drive_horizontal", [200, 0.05]);
+SACostMap.put("slashblade_sendims:wave_edge_ammo", [400, 0.1]);
 
 SACostMap.put("slashblade:heavens_slash_start", [200, 0.15]);
+
+SACostMap.put("slashblade:void_slash", [200, 0.1]);
+SACostMap.put("slashblade_sendims:void_slash_ammo", [400, 0.15]);
 
 SACostMap.put("sjap_adder:illusion_drive", [400, 0.2]);
 
 SACostMap.put("slashblade:sakura_end_left", [200, 0.05]);
 SACostMap.put("slashblade:sakura_end_left_air", [200, 0.05]);
+SACostMap.put("slashblade_sendims:sakura_end_ammo", [200, 0.05]);
 
 SACostMap.put("slashblade_sendims:golden_crux", [400, 0.2]);
 

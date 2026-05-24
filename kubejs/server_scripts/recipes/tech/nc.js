@@ -78,4 +78,36 @@ ServerEvents.recipes(event => {
         "timeModifier": 1.7
     }).id("sdbf:thermoconducting_ingot")
 
+    event.custom({
+        "type": "nuclearcraft:pump",
+        "input": [
+            {
+                "item": "nuclearcraft:lava_collector"
+            }
+        ],
+        "outputFluids": [
+            {
+                "amount": 1000,
+                "tag": "minecraft:lava"
+            }
+        ],
+        "powerModifier": 8.0,
+        "radiation": 1.0,
+        "timeModifier": 0.5
+    }).id("sdbf:lava_collect")
+
+    event.custom({
+        "type": "nuclearcraft:kugelblitz_chamber",
+        "input": [{ "item": 'nuclearcraft:upgrade_quantum' }],
+        "output": [{ "item": 'nuclearcraft:upgrade_quantum' }],
+        "powerModifier": 1.0, "radiation": 1.0, "timeModifier": 1.0
+    }).id("sdbf:upgrade_quantum")
+
+    event.custom({
+        "type": "nuclearcraft:kugelblitz_chamber",
+        "input": [{ "item": 'slashblade:proudsoul_tiny' }],
+        "output": [{ "item": 'slashblade:proudsoul_tiny' }],
+        "powerModifier": 1.0, "radiation": 1.0, "timeModifier": 1.0
+    }).id("sdbf:proudsoul_tiny_quantum")
+
 })

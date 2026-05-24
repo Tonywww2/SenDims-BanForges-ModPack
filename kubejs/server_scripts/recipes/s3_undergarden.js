@@ -30,9 +30,9 @@ ServerEvents.recipes(event => {
         "D": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("last_smith:muramasa_kagura")
-                .killCount(1000)                      // 要求：1000 击杀 (Kill Count)
-                .proudSoul(3000)                       // 要求：3000 耀魂 (Proud Soul)
-                .refineCount(10)                       // 要求：10 锻造 (Refine Count)
+                .killCount(2000)                      // 要求：1000 击杀 (Kill Count)
+                .proudSoul(40000)                       // 要求：3000 耀魂 (Proud Soul)
+                .refineCount(25)                       // 要求：10 锻造 (Refine Count)
                 .build()
         )
     }, "sjap_adder:black_soul")
@@ -50,18 +50,18 @@ ServerEvents.recipes(event => {
         "D": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("last_smith:muramasa_kagura")
-                .killCount(500)                      // 要求：1000 击杀 (Kill Count)
-                .proudSoul(3000)                       // 要求：3000 耀魂 (Proud Soul)
-                .refineCount(10)                       // 要求：10 锻造 (Refine Count)
+                .killCount(2000)                      // 要求：1000 击杀 (Kill Count)
+                .proudSoul(40000)                       // 要求：3000 耀魂 (Proud Soul)
+                .refineCount(25)                       // 要求：10 锻造 (Refine Count)
                 .addEnchantment(SBEnchantmentDefinition.of("minecraft:fire_aspect", 5))
                 .build()
         ),
         "F": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("slashblade:greatsword_of_damnation")
-                .killCount(750)                      // 要求：1000 击杀 (Kill Count)
-                .proudSoul(3000)                       // 要求：3000 耀魂 (Proud Soul)
-                .refineCount(10)                       // 要求：10 锻造 (Refine Count)
+                .killCount(1500)                      // 要求：1000 击杀 (Kill Count)
+                .proudSoul(30000)                       // 要求：3000 耀魂 (Proud Soul)
+                .refineCount(25)                       // 要求：10 锻造 (Refine Count)
                 .addEnchantment(SBEnchantmentDefinition.of("minecraft:fire_aspect", 5))
                 .build()
         )
@@ -88,7 +88,7 @@ ServerEvents.recipes(event => {
         "addition": { "item": 'kubejs:coil_of_sorrow' },
         "base": {
             "type": "slashblade:blade", "item": "slashblade:slashblade",
-            "request": { "name": "pseudoedge_break_dawn:latent", "proud_soul": 50000, "refine": 25 }
+            "request": { "kill": 500, "name": "pseudoedge_break_dawn:latent", "proud_soul": 10000, "refine": 10 }
         },
         "blade": "last_smith:nameless_odachi",
         "template": { "item": "last_smith:scroll_odachi" }
@@ -99,7 +99,7 @@ ServerEvents.recipes(event => {
         "addition": { "tag": 'forge:storage_blocks/regalium' },
         "base": {
             "type": "slashblade:blade", "item": "slashblade:slashblade",
-            "request": { "name": "last_smith:nameless_odachi", "proud_soul": 100000, "refine": 25 }
+            "request": { "kill": 1000, "name": "last_smith:nameless_odachi", "proud_soul": 30000, "refine": 25 }
         },
         "blade": "last_smith:muramasa_kagura",
         "template": { "item": "last_smith:scroll_muramasa" }

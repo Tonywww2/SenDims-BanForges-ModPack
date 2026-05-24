@@ -328,10 +328,7 @@
 			y: -2.5d
 		}
 		{
-			dependencies: [
-				"71F1943E6E3FCA17"
-				"034D47E905861E48"
-			]
+			dependencies: ["71F1943E6E3FCA17"]
 			description: [
 				"使用&6裂纹砖块&r建造3x3平台，在中心放置&6红砖块&r"
 				"使用&6深渊证章&r右键&6红砖块&r激活传送"
@@ -356,6 +353,7 @@
 					type: "dimension"
 				}
 				{
+					count: 9L
 					id: "2B2B7D79C5161E91"
 					item: "biomemakeover:cracked_bricks"
 					type: "item"

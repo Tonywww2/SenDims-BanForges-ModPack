@@ -15,6 +15,8 @@ StartupEvents.registry('item', event => {
     event.create('garden_lighter').fireResistant().rarity('rare')
     event.create('bedrock_breaker').fireResistant().rarity('rare').maxStackSize(16)
 
+    event.create('gem_ticket').fireResistant().rarity('epic').maxStackSize(8)
+
     event.create('scoria_ingot').fireResistant().rarity('rare')
     event.create('mysterious_alkali_crystal').fireResistant().rarity('rare')
     event.create('menril-silicon_sic_sic_cmc_ingot').fireResistant().rarity('epic')

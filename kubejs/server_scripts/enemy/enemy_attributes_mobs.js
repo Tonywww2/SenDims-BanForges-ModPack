@@ -176,6 +176,7 @@ const mobTypes = new Map([
     ["deep_aether:quail", type0],
     ["aether:aerbunny", type0],
     ["aether:flying_cow", type0],
+    ["biomemakeover:glowfish", type0],
 
     ["aether:aerwhale", typeC],
     ["aether:whirlwind", type0],
@@ -402,6 +403,10 @@ const mobTypes = new Map([
     ["the_bumblezone:variant_bee", typeA],
     ["the_bumblezone:honey_slime", typeSlime],
     ["the_bumblezone:beehemoth", typeC],
+
+    ["terra_entity:wraith", typeB],
+    ["terra_entity:possess_armor", typeC],
+    ["terra_entity:wyvern", typeA],
 
 ]);
 

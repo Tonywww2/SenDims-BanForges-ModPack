@@ -10,6 +10,7 @@
 
     "item.kubejs.garden_lighter": "花园火石",
     "item.kubejs.bedrock_breaker": "基岩破坏者",
+    "item.kubejs.gem_ticket": "宝石劵",
 
     "item.kubejs.scoria_ingot": "熔渣锭",
     "item.kubejs.mysterious_alkali_crystal": "神秘碱晶",
@@ -26,7 +27,7 @@
     "item.kubejs.titan-ii_composite_ingot": "泰坦II复合锭",
     "item.kubejs.multifaceted_ambrosia": "多面仙馔密酒",
     "item.kubejs.anchor_shard": "锚之碎片",
-    "item.kubejs.ml_computing_ingot": "ML计算锭",
+    "item.kubejs.ml_computing_ingot": "算力锭",
     "item.kubejs.cognitio": "理智",
     "item.kubejs.chaotic_truth": "混沌真理",
     "item.kubejs.radiation_components": "辐射零件组",
@@ -34,6 +35,8 @@
     "item.kubejs.virtual_gold_ingot": "§a虚金锭",
     "item.kubejs.trinity_alloy_ingot": "§m§d三项合金锭",
     "item.kubejs.rainbowshift_entropy": "虹移之熵",
+
+    "item.slashbladetetra.slashblade": "无铭 ⌈无名⌋",
 
     "block.kubejs.asteroid_rock": "小行星岩",
     "block.kubejs.carbon_rich_asteroid_rock": "富碳小行星岩",
@@ -61,6 +64,8 @@
     "info.kubejs.the_nectar_quest_2": "可以记录来自黄蜂领域的精华，提升属性加成（不消耗）",
     "info.kubejs.nuclearcraft.apply_rad_prot": "在主手使用后，可以为副手的模块化护甲添加辐射防护",
     "info.kubejs.anchor_shard": "使用后，可以突破主世界天空中的屏障",
+    "info.kubejs.chaotic_truth": "击败特定纬度的神化首领后概率掉落",
+    "info.kubejs.gem_ticket": "使用后，随机获得一个宝石",
 
     "info.kubejs.faill_spawn_structure": "结构召唤失败！",
     "info.kubejs.the_midnight_disallowed": "你进入了一个异界，但是一股力量拒绝你进入这个世界。§m需要使用某件道具§r",
@@ -189,12 +194,12 @@
     "tetra.material.squall_plate": "风锻板",
     "tetra.material.squall_plate.prefix": "风锻",
 
-    "tetra.material.neptune": "海皇",
-    "tetra.material.neptune.prefix": "海皇",
-    "tetra.material.valkyrie": "武神",
+    "tetra.material.neptune": "海神",
+    "tetra.material.neptune.prefix": "海神",
+    "tetra.material.valkyrie": "女武神",
     "tetra.material.valkyrie.prefix": "武神",
-    "tetra.material.phoenix": "凤凰",
-    "tetra.material.phoenix.prefix": "凤凰",
+    "tetra.material.phoenix": "炎阳",
+    "tetra.material.phoenix.prefix": "炎阳",
     "tetra.material.alpha_yeti_fur": "雪怪首领毛皮",
     "tetra.material.alpha_yeti_fur.prefix": "雪怪首领毛皮",
     "tetra.material.fiery_ingot": "炽铁锭",
@@ -285,11 +290,68 @@
     "tetra.material.ancient_metal_ingot.prefix": "远古金属",
     "tetra.material.ignitium_ingot": "腾炎锭",
     "tetra.material.ignitium_ingot.prefix": "腾炎",
-    
+
+    "tetra.material.silica_rich_asteroid_rock": "富硅小行星岩",
+    "tetra.material.silica_rich_asteroid_rock.prefix": "硅行星岩",
+    "tetra.material.bizarre_matter_dust": "奇异物质尘",
+    "tetra.material.bizarre_matter_dust.prefix": "奇异尘",
+    "tetra.material.lacrima": "泪宝石",
+    "tetra.material.lacrima.prefix": "泪石",
+    "tetra.material.glistering_honey_crystal": "闪耀蜜蜂结晶",
+    "tetra.material.glistering_honey_crystal.prefix": "闪耀蜜晶",
+    "tetra.material.redstone_honey_web": "红石蜜蜂网",
+    "tetra.material.redstone_honey_web.prefix": "红石蜜蜂网",
+    "tetra.material.delta_dust": "δ 尘",
+    "tetra.material.delta_dust.prefix": "德尔塔",
+    "tetra.material.essence_of_the_storm": "风暴精华",
+    "tetra.material.essence_of_the_storm.prefix": "风暴精华",
+    "tetra.material.full_blocks": "古蜡砖",
+    "tetra.material.full_blocks.prefix": "古蜡",
+    "tetra.material.galatic_cycle_component": "星空循环组件",
+    "tetra.material.galatic_cycle_component.prefix": "星空循环",
+    "tetra.material.royal_jelly": "蜂王浆",
+    "tetra.material.royal_jelly.prefix": "蜂王",
+    "tetra.material.multifaceted_ambrosia": "多面仙馔密酒",
+    "tetra.material.multifaceted_ambrosia.prefix": "仙馔密酒",
+    "tetra.material.alpha_dust": "α 尘",
+    "tetra.material.alpha_dust.prefix": "阿尔法",
+    "tetra.material.ml_computing_ingot": "算力锭",
+    "tetra.material.ml_computing_ingot.prefix": "ML",
+    "tetra.material.anchor_shard": "锚之碎片",
+    "tetra.material.anchor_shard.prefix": "锚",
+    "tetra.material.basepoint_alloy": "奇点合金",
+    "tetra.material.basepoint_alloy.prefix": "奇点合金",
+    "tetra.material.chaotic_truth": "混沌真理",
+    "tetra.material.chaotic_truth.prefix": "混沌",
+    "tetra.material.radiation_components": "辐射零件组",
+    "tetra.material.radiation_components.prefix": "辐射零件组",
+
     "fluid.kubejs.melted_proudsoul": "熔融耀魂",
     "item.kubejs.melted_proudsoul_bucket": "熔融耀魂桶",
 
     "sidebar_button.ftblibrary.home": "回家",
-    "sidebar_button.ftblibrary.back": "返回上个传送点"
+    "sidebar_button.ftblibrary.back": "返回上个传送点",
+
+    "kubejs.difficulty.title": "===== 难度选择 =====",
+
+    "kubejs.difficulty.normal": "普通",
+    "kubejs.difficulty.relax": "休闲",
+    "kubejs.difficulty.hard": "困难",
+    "kubejs.difficulty.soul": "[魂]",
+    "kubejs.difficulty.fight": "格斗",
+
+    "kubejs.difficulty.normal.desc": "标准的战斗体验。",
+    "kubejs.difficulty.relax.desc": "近乎割草般的体验。",
+    "kubejs.difficulty.hard.desc": "更加强大的敌人，需要小心了。",
+    "kubejs.difficulty.soul.desc": "敌人可以轻而易举的把你撕碎，需要更加注意闪避与防守。",
+    "kubejs.difficulty.fight.desc": "皮糙肉厚的敌人，战斗时长被大幅延长。",
+
+    "kubejs.difficulty.hp_mult": "最大生命值倍率: %s",
+    "kubejs.difficulty.atk_mult": "攻击力倍率: %s",
+    "kubejs.difficulty.armor_mult": "护甲倍率: %s",
+    "kubejs.difficulty.current": "当前难度",
+    "kubejs.difficulty.click_to_switch": "点击切换",
+    "kubejs.difficulty.invalid_index": "无效的难度序号",
+    "kubejs.difficulty.set_success": "游戏难度已切换至: %s"
 
 }

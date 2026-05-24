@@ -9,12 +9,13 @@ NativeEvents.onEvent($LivingHurtEvent,
          * @type {Internal.LivingEntity}
          */
         let entity = event.entity;
+        let source = event.source;
+        let type = source.getType();
+        let damage = event.getAmount();
 
         if (entity.isPlayer()) {
-            let damage = event.getAmount();
-            let source = event.source;
+        
             let actual = event.source.actual;
-            let type = source.getType();
 
             if (damage <= 0 || !type) return;
 
@@ -33,12 +34,17 @@ NativeEvents.onEvent($LivingHurtEvent,
             if (type.includes("explosion")) {
                 damage += entity.getMaxHealth() * 0.25;
             }
-
-            // entity.tell(event.source)
-
-            event.setAmount(damage);
-
+           
         }
+
+        if (type == "starve") {
+            damage += entity.getMaxHealth() * 0.05;
+        }
+
+        event.setAmount(damage);
+
+        // print(entity)
+        // print(event.source)
 
     })
 
