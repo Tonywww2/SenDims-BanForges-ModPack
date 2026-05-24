@@ -1,0 +1,17 @@
+[
+  {
+    "replace": true,
+    "key": "quality",
+    "level": 1,
+    "attributes": {
+      "**generic.attack_damage": 0.01
+    }
+  },
+  {
+    "key": "quality",
+    "level": 2,
+    "attributes": {
+      "**generic.attack_damage": 0.025
+    }
+  }
+]
