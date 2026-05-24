@@ -193,6 +193,7 @@ const toRemoveID = new Set([
 
     "nuclearcraft:kugelblitz_chamber/upgrade_quantum",
     "cataclysm:the_incinerator",
+    "nuclearcraft:pump/lava_collector",
 
     // 临时
     "dustandash:crafting/integrated_block",

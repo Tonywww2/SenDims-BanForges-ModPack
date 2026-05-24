@@ -135,7 +135,7 @@
 	[Recipes.Crucible]
 		#This sets the recipe energy multiplier for the Magma Crucible. This scales all recipe energy requirements.
 		#Range: 0.0625 ~ 16.0
-		"Energy Multiplier" = 16.0
+		"Energy Multiplier" = 5.0
 
 	[Recipes.Chiller]
 		#This sets the recipe energy multiplier for the Blast Chiller. This scales all recipe energy requirements.
