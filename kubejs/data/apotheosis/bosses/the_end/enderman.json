@@ -1,5 +1,5 @@
 {
-    "entity": "minecraft:enderman",
+    "entity": "terra_entity:evil_slime",
     "weight": 80,
     "size":
     {

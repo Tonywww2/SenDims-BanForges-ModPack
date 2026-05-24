@@ -36,8 +36,8 @@ ServerEvents.highPriorityData(event => {
     iEndBoss('minecraft:shulker');
     iEndBoss('minecraft:evoker');
     iEndBoss('minecraft:vindicator');
-    iEndBoss('minecraft:enderman');
-    iEndBoss('minecraft:phantom');
+    // iEndBoss('minecraft:enderman');
+    // iEndBoss('minecraft:phantom');
     iEndBoss('minecraft:endermite');
 
 })
