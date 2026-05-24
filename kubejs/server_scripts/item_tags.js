@@ -52,6 +52,8 @@ ServerEvents.tags("item", event => {
     // 3-4
     event.add('slashblade_sendims:drc_rank_material_4',
         "kubejs:galatic_cycle_component",           // 星空循环组件
+        "kubejs:ml_computing_ingot",
+        "kubejs:radiation_components",
 
     )
     // 4-5

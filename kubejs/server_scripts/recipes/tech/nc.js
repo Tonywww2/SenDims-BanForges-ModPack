@@ -91,7 +91,7 @@ ServerEvents.recipes(event => {
                 "tag": "minecraft:lava"
             }
         ],
-        "powerModifier": 8.0,
+        "powerModifier": 6.0,
         "radiation": 1.0,
         "timeModifier": 0.5
     }).id("sdbf:lava_collect")

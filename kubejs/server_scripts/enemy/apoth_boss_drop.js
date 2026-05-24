@@ -87,7 +87,7 @@ EntityEvents.drops(event => {
     if (shouldDropGem) {
         let nbt = {};
         nbt[GEM_TICKET_DIM_PATH] = event.level.dimension.toString();
-        print(nbt)
+        // print(nbt)
         extraDrops.push(Item.of("kubejs:gem_ticket", 1, nbt))
     }
 

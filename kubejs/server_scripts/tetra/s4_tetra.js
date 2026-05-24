@@ -91,7 +91,7 @@ ServerEvents.highPriorityData(event => {
 
     // 8. 泰拉钢 / Terrasteel
     tetraMaterialBuilder(event, "terrasteel").setCategory("metal")
-        .setPrimary(38).setSecondary(24).setTertiary(23)
+        .setPrimary(50).setSecondary(40).setTertiary(29)
         .setDurability(300).setIntegrityCost(7).setIntegrityGain(13)
         .setMagicCapacity(160).setToolLevel(4).setToolEfficiency(8)
         .addAttributes("slashblade_sendims:madness_reduce", 20)

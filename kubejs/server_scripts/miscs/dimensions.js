@@ -66,7 +66,7 @@ NativeEvents.onEvent($PortalSpawnEvent, event => {
     let level = event.level
 
     let isObsidian = p => {
-        print(level.getBlockState(p).getBlock())
+        // print(level.getBlockState(p).getBlock())
         return level.getBlockState(p).getBlock() == Blocks.OBSIDIAN;
     }
 

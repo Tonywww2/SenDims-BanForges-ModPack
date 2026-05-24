@@ -403,10 +403,14 @@ const mobTypes = new Map([
     ["the_bumblezone:variant_bee", typeA],
     ["the_bumblezone:honey_slime", typeSlime],
     ["the_bumblezone:beehemoth", typeC],
+    ["the_bumblezone:bee_queen", bossType2EX2],
 
     ["terra_entity:wraith", typeB],
     ["terra_entity:possess_armor", typeC],
     ["terra_entity:wyvern", typeA],
+    ["darkerdepths:void_soul", typeA],
+    ["minecraft:guardian", typeA],
+    ["minecraft:ravager", typeC],
 
 ]);
 

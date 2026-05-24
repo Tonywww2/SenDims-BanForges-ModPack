@@ -4,7 +4,7 @@ ServerEvents.highPriorityData(event => {
         let boss = bossMaterialBuilder(event, id, "aether")
             .setWeight(75).setQuality(2).setSize(1, 1)
             .addValidGearSet("#aether").addDimension("aether:the_aether")
-            .setMinRarity("uncommon").setMaxRarity("epic");
+            .setMinRarity("uncommon").setMaxRarity("rare");
         boss.forRarity("uncommon")
             .setEnchantChance(0.55)
             .setEnchantmentLevels([4, 2, 2, 4])
