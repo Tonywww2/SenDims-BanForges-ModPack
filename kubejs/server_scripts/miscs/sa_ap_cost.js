@@ -49,6 +49,8 @@ SACostMap.put("slashblade_sendims:mahakala", [400, 0.2]);
 
 SACostMap.put("pseudoedge_break_dawn:dragon_boost", [300, 0.15]);
 
+SACostMap.put("last_smith:fushigiri_left", [100, 0.15]);
+
 let defaultCost = [200, 0.2];
 let superSlashArtCost = [400, 0.3];
 

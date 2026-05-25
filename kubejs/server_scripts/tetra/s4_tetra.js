@@ -173,7 +173,7 @@ ServerEvents.highPriorityData(event => {
         .setDurability(300).setIntegrityCost(8).setIntegrityGain(14)
         .setMagicCapacity(150).setToolLevel(4).setToolEfficiency(8)
         .addAttributes("attributeslib:armor_pierce", 3).addAttributes("slashblade_sendims:magic_penetration", 2).addAttributes("attributeslib:crit_chance", 0.02)
-        .setTints("00aaaa", "55ffff")
+        .setTints("b30fff", "8e24ff")
         .addTexture("metal").addTexture("heavy")
         .addItemMaterial('kubejs:ml_computing_ingot')
         .setRequiredTool("hammer_dig", 1)

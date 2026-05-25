@@ -1,6 +1,8 @@
 {
     "replace": true,
-    "slots": ["legs/left"],
+    "slots": [
+        "legs/left"
+    ],
     "materialSlotCount": 1,
     "displayType": "major",
     "glyph": {
@@ -10,7 +12,20 @@
     },
     "outcomes": [
         {
-            "materials": ["tetra:wood/","tetra:gem/","tetra:metal/","tetra:bone/","tetra:fabric/","tetra:fibre/","tetra:skin/","tetra:scale/"],
+            "materials": [
+                "tetra:wood/",
+                "tetra:gem/",
+                "tetra:metal/",
+                "tetra:bone/",
+                "tetra:fabric/",
+                "tetra:fibre/",
+                "tetra:skin/",
+                "tetra:scale/",
+                "tetra:misc/",
+                "tetra:rod/",
+                "tetra:socket/",
+                "tetra:stone/"
+            ],
             "moduleKey": "armor/legs/left/vanilla",
             "moduleVariant": "vanilla_legs_left/"
         }

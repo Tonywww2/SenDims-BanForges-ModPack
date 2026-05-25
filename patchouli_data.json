@@ -9,6 +9,26 @@
       "bookmarks": [],
       "completedManualQuests": []
     },
+    "productivebees:guide": {
+      "viewedEntries": [
+        "productivebees:guide/start",
+        "productivebees:blocks/breeding_chamber",
+        "productivebees:misc/performance",
+        "productivebees:items/honey_treat",
+        "productivebees:items/bee_helmet",
+        "productivebees:bees/solitary/blue_banded",
+        "productivebees:hives/nests",
+        "productivebees:bees/worker/collector",
+        "productivebees:items/upgrades",
+        "productivebees:hives/advanced_hives",
+        "productivebees:hives/dragon_egg_hive",
+        "productivebees:blocks/incubator",
+        "productivebees:blocks/feeder",
+        "productivebees:bees/wild/draconic"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    },
     "botania:lexicon": {
       "viewedEntries": [
         "botania:functional_flowers/marimorphosis"

@@ -194,6 +194,8 @@ const toRemoveID = new Set([
     "nuclearcraft:kugelblitz_chamber/upgrade_quantum",
     "cataclysm:the_incinerator",
     "nuclearcraft:pump/lava_collector",
+    "enderio:smelting/slashblade_useful_addon/proud_soul_by_proud_soul_leaves",
+    "botania:elven_trade/elementium_block",
 
     // 临时
     "dustandash:crafting/integrated_block",

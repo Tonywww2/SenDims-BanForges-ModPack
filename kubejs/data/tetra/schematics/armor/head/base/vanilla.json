@@ -20,7 +20,11 @@
                 "tetra:fabric/",
                 "tetra:fibre/",
                 "tetra:skin/",
-                "tetra:scale/"
+                "tetra:scale/",
+                "tetra:misc/",
+                "tetra:rod/",
+                "tetra:socket/",
+                "tetra:stone/"
             ],
             "countFactor": 2,
             "moduleKey": "armor/head/base/vanilla",

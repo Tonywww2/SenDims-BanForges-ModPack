@@ -158,7 +158,8 @@ let removeWhitelist = new Set([
     'aether:neptune_boots',
     'aether:neptune_leggings',
     'aether:neptune_chestplate',
-    'aether:neptune_helmet'
+    'aether:neptune_helmet',
+    'cataclysm:athame'
 ]);
 
 global.materialRemoveRule = ItemFilter.and(

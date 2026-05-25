@@ -1,17 +1,13 @@
 {
     "replace": true,
     "type": "tetra:basic_major_module",
-    "slots":
-    [
+    "slots": [
         "legs/right"
     ],
-    "improvements":
-    [],
-    "variants":
-    [
+    "improvements": [],
+    "variants": [
         {
-            "materials":
-            [
+            "materials": [
                 "tetra:wood/",
                 "tetra:gem/",
                 "tetra:metal/",
@@ -19,11 +15,14 @@
                 "tetra:fabric/",
                 "tetra:fibre/",
                 "tetra:skin/",
-                "tetra:scale/"
+                "tetra:scale/",
+                "tetra:misc/",
+                "tetra:rod/",
+                "tetra:socket/",
+                "tetra:stone/"
             ],
             "key": "vanilla_legs_right/",
-            "aspects":
-            {
+            "aspects": {
                 "armor": 2,
                 "armor_legs": 2,
                 "wearable": 2,
@@ -31,32 +30,24 @@
             },
             "durability": 100,
             "integrity": 1,
-            "extract":
-            {
-                "tertiaryAttributes":
-                {
+            "extract": {
+                "tertiaryAttributes": {
                     "minecraft:generic.armor": 0.75,
                     "minecraft:generic.armor_toughness": 0.15
                 },
-                "primaryEffects":
-                {},
-                "secondaryEffects":
-                {},
-                "tertiaryEffects":
-                {},
+                "primaryEffects": {},
+                "secondaryEffects": {},
+                "tertiaryEffects": {},
                 "durability": 0.4,
                 "integrity": 1,
                 "magicCapacity": 1,
-                "glyph":
-                {
+                "glyph": {
                     "textureX": 16
                 },
-                "availableTextures":
-                [
+                "availableTextures": [
                     "right"
                 ],
-                "models":
-                [
+                "models": [
                     {
                         "type": "gecko",
                         "location": "geotetraarmor:item/armor/vanilla/"

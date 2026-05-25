@@ -12,6 +12,7 @@ NativeEvents.onEvent($LivingHurtEvent,
         let source = event.source;
         let type = source.getType();
         let damage = event.getAmount();
+        // print(damage)
 
         if (entity.isPlayer()) {
         
@@ -20,7 +21,7 @@ NativeEvents.onEvent($LivingHurtEvent,
             if (damage <= 0 || !type) return;
 
             if (event.source.getPlayer() || (actual && actual.isPlayer())) {
-                damage *= 0.8;
+                damage *= 0.6;
             }
 
             if (type == "oxygen") {
@@ -43,7 +44,9 @@ NativeEvents.onEvent($LivingHurtEvent,
 
         event.setAmount(damage);
 
-        // print(entity)
+        // if (entity.isPlayer()) {
+        //     entity.tell(`Entity: ${entity}m Source: ${source}, Damage: ${damage}`)
+        // }
         // print(event.source)
 
     })

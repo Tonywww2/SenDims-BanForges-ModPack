@@ -148,7 +148,9 @@ ServerEvents.tags("item", event => {
     // 阶段4
     event.add("slashblade_sendims:drc_health_material_4", [
         "kubejs:virtual_gold_ingot",               // 虚金
-        "kubejs:rainbowshift_entropy"              // 虹移之熵
+        "kubejs:rainbowshift_entropy",              // 虹移之熵
+        "kubejs:basepoint_alloy",
+        'apotheosis:mythic_material'
     ])
     event.add("slashblade_sendims:drc_damage_material_4", [
         "kubejs:basepoint_alloy",                  // 奇点合金

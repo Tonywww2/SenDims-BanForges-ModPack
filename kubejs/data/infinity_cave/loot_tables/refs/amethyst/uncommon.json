@@ -6,7 +6,7 @@
           {
             "type": "minecraft:item",
             "weight": 2,
-            "name": "minecraft:chorus_fruit",
+            "name": "minecraft:iron_ingot",
             "functions": [
               {
                 "function": "minecraft:set_count",
@@ -34,20 +34,6 @@
                   "max": 12
                 },
                 "treasure": true
-              }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 3,
-            "name": "minecraft:end_stone",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 1,
-                  "max": 4
-                }
               }
             ]
           }

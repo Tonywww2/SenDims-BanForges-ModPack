@@ -13,6 +13,8 @@ const mobTypes = new Map([
     ["minecraft:bee", type0],
     ["productivebees:bumble_bee", type0],
     ["productivebees:reed_bee", type0],
+    ["productivebees:ashy_mining_bee", type0],
+    ["productivebees:chocolate_mining_bee", type0],
 
     ["terra_entity:blue_jay", type0],
     ["minecraft:cat", type0],
@@ -292,6 +294,7 @@ const mobTypes = new Map([
     ["quark:foxhound", typeB],
     ["thermal:basalz", typeA],
     ["thermal:blizz", typeA],
+    ["thermal:blitz", typeA],
     ["terra_entity:the_hungry", typeB],
     ["terra_entity:hill_hungry", typeB],
     ["terra_entity:leech", typeC],
@@ -301,6 +304,7 @@ const mobTypes = new Map([
     ["cataclysm:netherite_monstrosity", bossType2],
 
     ["ad_astra:martian_raptor", typeC],
+    ["species:birt", type0],
 
     ["minecraft:phantom", typeB],
     ["minecraft:evoker", typeA],
@@ -357,6 +361,8 @@ const mobTypes = new Map([
     ["cataclysm:the_watcher", type0],
 
     ["cataclysm:the_prowler", typeAE],
+    ["cataclysm:coral_golem", typeAE],
+    ["cataclysm:amethyst_crab", typeAE],
     ["cataclysm:clawdian", typeAE],
     ["cataclysm:kobolediator", typeAE],
     ["cataclysm:ignited_revenant", typeAE],
@@ -411,6 +417,11 @@ const mobTypes = new Map([
     ["darkerdepths:void_soul", typeA],
     ["minecraft:guardian", typeA],
     ["minecraft:ravager", typeC],
+    
+    ["minecraft:pufferfish", type0],
+    ["minecraft:cod", type0],
+    ["minecraft:turtle", typeD],
+    ["minecraft:dolphin", typeC],
 
 ]);
 

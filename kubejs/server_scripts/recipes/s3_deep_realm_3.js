@@ -247,4 +247,26 @@ ServerEvents.recipes(event => {
     }, "sjap_adder:toyoko")
         .id("sdbf:toyoko_s3")
 
+    event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
+        "ABC",
+        "EDF",
+        "GHI"
+    ], {
+        "D": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .killCount(20)      // 杀敌数 / Kill count
+                .refineCount(25)    // 锻造数 / Refine count
+                .build()
+        ),
+        "A": 'midnight:stinger_egg',
+        "B": 'midnight:tall_mistshroom',
+        "C": 'midnight:mangledrake',
+        "E": 'midnight:bloodstem',
+        "F": 'midnight:ghost_plant',
+        "G": 'midnight:fingered_grass',
+        "H": 'midnight:rockshroom',
+        "I": 'midnight:rifter_flesh'
+    }, "slashblade:dojikiri_yasutsuna")
+        .id("sdbf:dojikiri_yasutsuna_s3")
+
 })

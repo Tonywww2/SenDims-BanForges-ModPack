@@ -51,14 +51,14 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 15,
-          "name": "minecraft:diamond",
+          "weight": 10,
+          "name": "minecraft:heart_of_the_sea",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 2,
-                "max": 3
+                "min": 1,
+                "max": 1
               }
             }
           ]
