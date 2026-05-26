@@ -82,7 +82,7 @@ ServerEvents.recipes(event => {
         ),
         "Y": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
-                .name("lastsmith:roukanken_nether")
+                .name("last_smith:roukanken_nether")
                 .killCount(20000)                        // 要求：3000 击杀 (Kill Count)
                 .proudSoul(150000)                       // 要求：30000 耀魂 (Proud Soul)
                 .refineCount(100)                        // 要求：20 锻造 (Refine Count)

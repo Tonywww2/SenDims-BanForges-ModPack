@@ -218,12 +218,20 @@ const bossTypeAlphaYeti = deriveTemplate(typeAEX2,
     [0, 0, 0, 20]
 );
 /**
- * BOSS2 末影龙
+ * BOSS 末影龙
  */
 const bossTypeDragon = deriveTemplate(bossType2,
     true,
     [1, 1, 0.1, 1],
     [0, 0, 0, 0]
+);
+/**
+ * BOSS 盖亚
+ */
+const bossTypeGaia = deriveTemplate(bossType1,
+    true,
+    [1, 1.8, 1, 1],
+    [0, 0, 0, 10]
 );
 
 /**·
@@ -237,6 +245,23 @@ const typeEnderman = deriveTemplate(typeC,
 
 typeEnderman["2_3"][0] = typeEnderman["2_3"][0] * 0.9
 typeEnderman["2_3"][2] = typeEnderman["2_3"][2] * 0.5
+
+/**·
+ * 鱼雷模板
+ */
+const typeGuardian = deriveTemplate(typeA,
+    false,
+    [0.5, 1.0, 1.0, 1.0],
+    [0, 0, 0, 0]
+);
+/**·
+ * 宇宙水晶模板
+ */
+const typeCosmicCrystal = deriveTemplate(typeA,
+    false,
+    [1.0, 0.1, 0.0, 1.0],
+    [0, 0, 0, 0]
+);
 
 
 // 攻击， 生命， 护甲，魔抗

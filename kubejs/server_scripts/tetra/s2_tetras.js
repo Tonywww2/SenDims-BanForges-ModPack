@@ -101,7 +101,7 @@ ServerEvents.highPriorityData(event => {
         .setRequiredTool("hammer_dig", 1)
         .build();
 
-    tetraMaterialBuilder(event, "refined_sentrite").setCategory("fibre")
+    tetraMaterialBuilder(event, "refined_sentrite").setCategory("stone")
         .setPrimary(3.2).setSecondary(2.9).setTertiary(2.0)
         .setDurability(200).setIntegrityCost(4).setIntegrityGain(6)
         .setMagicCapacity(160).setToolLevel(4).setToolEfficiency(5)

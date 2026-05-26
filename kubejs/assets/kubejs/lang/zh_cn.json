@@ -92,7 +92,7 @@
 
     "tetra/schematic/slashblade/blade/tetra_warforge/hammer.name": "仿铸：战锤",
     "tetra.improvement.tetra:warforge/hammer.name": "仿铸：战锤",
-    "tetra/schematic/slashblade/blade/tetra_warforge/hammer.description": "小幅暴击率，小幅降低总攻击力",
+    "tetra/schematic/slashblade/blade/tetra_warforge/hammer.description": "小幅提升暴击率，小幅降低总攻击力",
     "tetra/schematic/slashblade/blade/tetra_warforge/hammer.slot1": "材料",
 
     "tetra/schematic/slashblade/blade/tetra_warforge/pickaxe.name": "仿铸：战镐",
@@ -325,7 +325,7 @@
     "tetra.material.chaotic_truth.prefix": "混沌",
     "tetra.material.radiation_components": "辐射零件组",
     "tetra.material.radiation_components.prefix": "辐射零件组",
-
+    
     "fluid.kubejs.melted_proudsoul": "熔融耀魂",
     "item.kubejs.melted_proudsoul_bucket": "熔融耀魂桶",
 

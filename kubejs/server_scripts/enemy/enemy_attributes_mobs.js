@@ -415,13 +415,18 @@ const mobTypes = new Map([
     ["terra_entity:possess_armor", typeC],
     ["terra_entity:wyvern", typeA],
     ["darkerdepths:void_soul", typeA],
-    ["minecraft:guardian", typeA],
+    ["minecraft:guardian", typeGuardian],
     ["minecraft:ravager", typeC],
     
     ["minecraft:pufferfish", type0],
     ["minecraft:cod", type0],
     ["minecraft:turtle", typeD],
     ["minecraft:dolphin", typeC],
+    
+    ["botania:pixie", typeA],
+    ["botania:doppleganger", bossTypeGaia],
+
+    ["the_bumblezone:cosmic_crystal_entity", typeCosmicCrystal],
 
 ]);
 

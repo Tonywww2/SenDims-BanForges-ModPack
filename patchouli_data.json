@@ -1,6 +1,6 @@
 {
   "bookGuiScale": 0,
-  "clickedVisualize": false,
+  "clickedVisualize": true,
   "bookData": {
     "last_smith:smith_guide": {
       "viewedEntries": [
@@ -31,7 +31,13 @@
     },
     "botania:lexicon": {
       "viewedEntries": [
-        "botania:functional_flowers/marimorphosis"
+        "botania:functional_flowers/marimorphosis",
+        "botania:alfhomancy/gaia_ritual",
+        "botania:devices/mana_enchanting",
+        "botania:baubles/dodge_ring",
+        "botania:baubles/swap_ring",
+        "botania:baubles/mining_ring",
+        "botania:baubles/aura_ring"
       ],
       "bookmarks": [],
       "completedManualQuests": []

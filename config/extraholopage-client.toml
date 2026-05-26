@@ -17,6 +17,8 @@ holoModuleLine = 5
 showFilterAndSorterElements = 10
 #是否启用statbar显示控制
 enableStatBarShowControl = false
+#在材料页面的材料上显示材料属性的tooltip
+showMaterialDataHolo = true
 
 [Tooltip]
 	#是否启用添加材料Tooltip-修改此配置需重启生效

@@ -250,7 +250,7 @@ ServerEvents.recipes(event => {
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
         "ABC",
         "EDF",
-        "GHI"
+        "GIA"
     ], {
         "D": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
@@ -264,7 +264,6 @@ ServerEvents.recipes(event => {
         "E": 'midnight:bloodstem',
         "F": 'midnight:ghost_plant',
         "G": 'midnight:fingered_grass',
-        "H": 'midnight:rockshroom',
         "I": 'midnight:rifter_flesh'
     }, "slashblade:dojikiri_yasutsuna")
         .id("sdbf:dojikiri_yasutsuna_s3")

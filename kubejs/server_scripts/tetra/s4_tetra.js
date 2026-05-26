@@ -114,7 +114,8 @@ ServerEvents.highPriorityData(event => {
         .addAttributes("minecraft:generic.armor_toughness", 1).addAttributes("slashblade_sendims:magic_resistance", 3).addAttributes("slashblade_sendims:ap_gain_percentage", 0.1)
         .setTints("8b5a2b", "cd853f")
         .addTexture("crude").addTexture("default")
-        .setTagMaterial('the_bumblezone:ancient_wax/full_blocks')
+        // .setTagMaterial('the_bumblezone:ancient_wax/full_blocks')
+        .addItemMaterial('the_bumblezone:ancient_wax_compound_eyes')
         .setRequiredTool("hammer_dig", 1)
         .build();
 

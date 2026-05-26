@@ -40,7 +40,7 @@
 	#Determining the damage that will effect motivation.
 	#Set to 0 to turn off.
 	#Range: 0.0 ~ 1.7976931348623157E308
-	damage_motivation_effect = 40.0
+	damage_motivation_effect = 120.0
 	#Determining the sum of gacha probabilities.
 	#If the sum of the three gacha probabilities does not equal the expected sum, follow the default configuration.
 	#Range: > 3
