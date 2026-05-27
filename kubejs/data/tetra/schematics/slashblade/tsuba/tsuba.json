@@ -16,7 +16,11 @@
                 "tetra:metal/",
                 "tetra:gem/",
                 "tetra:bone/",
-                "tetra:wood/"
+                "tetra:wood/",
+                "tetra:fabric/",
+                "tetra:fibre/",
+                "tetra:skin/",
+                "tetra:scale/"
             ],
             "countOffset" :-1,
             "countFactor" :2.3,
