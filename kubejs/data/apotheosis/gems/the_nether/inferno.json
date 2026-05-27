@@ -13,7 +13,7 @@
         "the_nether"
     ],
     "unique": true,
-    "min_rarity": "rare",
+    "min_rarity": "common",
     "bonuses":
     [
         {
@@ -30,6 +30,8 @@
             "operation": "ADDITION",
             "values":
             {
+                "common": 2,
+                "uncommon": 3,
                 "rare": 5,
                 "epic": 7,
                 "mythic": 9,
@@ -79,6 +81,8 @@
             "operation": "ADDITION",
             "values":
             {
+                "common": 2,
+                "uncommon": 3,
                 "rare": 5,
                 "epic": 7,
                 "mythic": 9,

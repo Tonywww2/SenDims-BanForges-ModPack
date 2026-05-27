@@ -99,7 +99,7 @@ const deriveTemplate = (baseTemplate, isBoss, mults, adds) => {
  */
 const typeB = deriveTemplate(typeA,
     false,
-    [1.2, 0.6, 0.6, 1],
+    [1.2, 0.5, 0.5, 1],
     [0, 0, 0, 10]
 );
 
@@ -228,7 +228,7 @@ const bossTypeDragon = deriveTemplate(bossType2,
 /**
  * BOSS 盖亚
  */
-const bossTypeGaia = deriveTemplate(bossType1,
+const bossTypeGaia = deriveTemplate(bossType2,
     true,
     [1, 1.8, 1, 1],
     [0, 0, 0, 10]

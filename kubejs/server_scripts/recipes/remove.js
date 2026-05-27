@@ -200,6 +200,8 @@ const toRemoveID = new Set([
 
     // 临时
     "dustandash:crafting/integrated_block",
+    "last_smith:hakurouken_inferno",
+    "slashblade_addon:nihilul",
     // "apotheosis:hellshelf",
     // "apotheosis:enchanting/infused_hellshelf",
     // "apotheosis:blazing_hellshelf",

@@ -1,57 +1,77 @@
 {
-	"weight": 5,
-	"quality": 1.5,
-	"dimensions": [ "minecraft:the_nether" ],
-	"unique": true,
-	"min_rarity": "rare",
-	"bonuses": [{
-			"type": "apotheosis:multi_attribute",
-			"desc": "bonus.apotheosis:multi_attr.desc.and",
-			"gem_class": {
-				"key": "light_weapon",
-				"types": [
-					"sword", "trident"
-				]
-			},
-			"modifiers": [{
-					"attribute": "attributeslib:life_steal",
-					"operation": "ADDITION",
-					"values": {
-						"rare": 0.01,
-						"epic": 0.0125,
-						"mythic": 0.015,
-						"ancient": 0.0175
-					}
-				},
-				{
-					"attribute": "minecraft:generic.attack_damage",
-					"operation": "MULTIPLY_TOTAL",
-					"values": {
-						"rare": -0.025,
-						"epic": -0.05,
-						"mythic": -0.075,
-						"ancient": -0.1
-					}
-				}
-			]
-		},
-		{
-			"type": "apotheosis:attribute",
-			"gem_class": {
-				"key": "chestplate",
-				"types": [
-					"chestplate"
-				]
-			},
-			"attribute": "attributeslib:healing_received",
-			"operation": "ADDITION",
-			"values": {
-				"uncommon": 0.05,
-				"rare": 0.10,
-				"epic": 0.15,
-				"mythic": 0.20,
-				"ancient": 0.30
-			}
-		}
-	]
+    "weight": 5,
+    "quality": 1.5,
+    "dimensions":
+    [
+        "minecraft:the_nether"
+    ],
+    "unique": true,
+    "min_rarity": "common",
+    "bonuses":
+    [
+        {
+            "type": "apotheosis:multi_attribute",
+            "desc": "bonus.apotheosis:multi_attr.desc.and",
+            "gem_class":
+            {
+                "key": "light_weapon",
+                "types":
+                [
+                    "sword",
+                    "trident"
+                ]
+            },
+            "modifiers":
+            [
+                {
+                    "attribute": "attributeslib:life_steal",
+                    "operation": "ADDITION",
+                    "values":
+                    {
+                        "common": 0.001,
+                        "uncommon": 0.005,
+                        "rare": 0.01,
+                        "epic": 0.0125,
+                        "mythic": 0.015,
+                        "ancient": 0.0175
+                    }
+                },
+                {
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "MULTIPLY_TOTAL",
+                    "values":
+                    {
+                        "common": -0.025,
+                        "uncommon": -0.025,
+                        "rare": -0.025,
+                        "epic": -0.05,
+                        "mythic": -0.075,
+                        "ancient": -0.1
+                    }
+                }
+            ]
+        },
+        {
+            "type": "apotheosis:attribute",
+            "gem_class":
+            {
+                "key": "chestplate",
+                "types":
+                [
+                    "chestplate"
+                ]
+            },
+            "attribute": "attributeslib:healing_received",
+            "operation": "ADDITION",
+            "values":
+            {
+                "common": 0.025,
+                "uncommon": 0.05,
+                "rare": 0.10,
+                "epic": 0.15,
+                "mythic": 0.20,
+                "ancient": 0.30
+            }
+        }
+    ]
 }

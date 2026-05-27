@@ -19,7 +19,7 @@
     "name": "slashblade_addon:kamuy_fire",
     "properties":
     {
-        "attack_base": 52.5,
+        "attack_base": 72.5,
         "slash_art": "slashblade_addon:fire_spiral",
         "special_effects":
         [

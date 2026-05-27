@@ -1,5 +1,11 @@
-[{
-  "type": "active_water",
-  "heat": 250,
-  "placement_rule": ["fission_reactor_solid_fuel_cell|#nuclearcraft:moderators"]
-}]
+[
+    {
+        "type": "active_water",
+        "heat": 250,
+        "placement_rule":
+        [
+            "fission_reactor_solid_fuel_cell|#nuclearcraft:moderators",
+            "#nuclearcraft:fission_reactor_casing"
+        ]
+    }
+]
