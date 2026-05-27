@@ -428,6 +428,11 @@ const mobTypes = new Map([
 
     ["the_bumblezone:cosmic_crystal_entity", typeCosmicCrystal],
 
+    ["species:leaf_hanger", typeA],
+    ["bagusmob:tengu", typeB],
+    ["bagusmob:ninjar", typeB],
+    ["minecraft:fox", typeA],
+
 ]);
 
 /**

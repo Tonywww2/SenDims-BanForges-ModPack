@@ -149,4 +149,19 @@ ServerEvents.recipes(event => {
         Item.of('thermal:florb', '{Fluid:{Amount:1000,FluidName:"nuclearcraft:helium_3"}}').weakNBT()
     );
 
+    event.replaceInput({ id: 'appflux:1k_core' },
+        '#forge:dusts/certus_quartz',
+        'integrateddynamics:energy_battery'
+    );
+
+    event.replaceInput({ id: 'appflux:1k_core' },
+        '#forge:dusts/certus_quartz',
+        'integrateddynamics:energy_battery'
+    );
+
+    event.replaceInput({ id: 'appflux:4k_core' },
+        '#forge:dusts/certus_quartz',
+        Item.of('integrateddynamics:energy_battery', '{capacity:4000000}').weakNBT()
+    );
+
 })

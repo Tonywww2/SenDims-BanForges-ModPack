@@ -41,6 +41,16 @@
       ],
       "bookmarks": [],
       "completedManualQuests": []
+    },
+    "nuclearcraft:nuclearcraft": {
+      "viewedEntries": [
+        "nuclearcraft:particle_chambers/general",
+        "nuclearcraft:particle_chambers/target_chamber",
+        "nuclearcraft:kugelblitz/general",
+        "nuclearcraft:turbine/general"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
     }
   }
 }
