@@ -37,7 +37,7 @@ LootJS.modifiers(event => {
     event.addEntityLootModifier([
         'terra_entity:pixie',
         'terra_entity:possess_armor',
-        'terra_entity:grantite_elemental',
+        'terra_entity:granite_elemental',
         'terra_entity:pink_jellyfish'
     ])
         .anyDimension(['sdbf:deep_realm_level_2'])

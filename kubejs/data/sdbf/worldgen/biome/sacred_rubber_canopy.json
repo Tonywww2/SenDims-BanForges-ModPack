@@ -36,7 +36,7 @@
         "maxCount": 2
       },
       {
-        "type": "terra_entity:grantite_elemental",
+        "type": "terra_entity:granite_elemental",
         "weight": 20,
         "minCount": 1,
         "maxCount": 2

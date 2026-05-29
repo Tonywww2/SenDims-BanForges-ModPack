@@ -50,12 +50,12 @@ global.materialReplaceRules.put('umapyoi:speed_high_item', {
     ]
 });
 
-global.materialReplaceRules.put('minecraft:potato', {
-    exchange: false,
-    list: [
-        '#c:crops'
-    ]
-});
+// global.materialReplaceRules.put('minecraft:potato', {
+//     exchange: false,
+//     list: [
+//         '#c:crops'
+//     ]
+// });
 
 global.materialReplaceRules.put('minecraft:cobblestone', {
     exchange: true,

@@ -3,7 +3,7 @@ showDistance = 64
 #最多渲染的数字量
 maxShowRender = 128
 #启用渲染的最小数值
-minValueDisplay = 0.5
+minValueDisplay = 2.1
 #是否启用渲染数字合并
 enableCombineString = false
 #合并显示的半径
