@@ -4,6 +4,11 @@ ServerEvents.recipes(event => {
         '9x #forge:salt'
     ]).id("sdbf:salt_block")
 
+    event.shapeless('nuclearcraft:glowing_mushroom', [
+        '#forge:mushrooms',
+        '2x #forge:dusts/glowstone'
+    ]).id("sdbf:glowing_mushroom")
+
     event.shaped('3x nuclearcraft:plate_basic', [
         'ABA',
         'BCB',
