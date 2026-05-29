@@ -52,6 +52,16 @@
                     "textureLocation": "slashbladetetra:textures/gui/texture.png"
                 }
             }
+        },
+        {
+            "key": "tsuba/unnamed",
+            "durability": 50,
+            "glyph":
+            {
+                "textureX": 48,
+                "textureY": 0,
+                "textureLocation": "slashbladetetra:textures/gui/texture.png"
+            }
         }
     ]
 }

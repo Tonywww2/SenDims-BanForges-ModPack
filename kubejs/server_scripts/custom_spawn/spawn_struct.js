@@ -8,7 +8,7 @@ registerStructure({
     destroyAfterSpawn: true,
     executeCommands: (level, centerPos, player) => {
         player.tell(Text.of("TungTungTung").obfuscated())
-        level.runCommandSilent(`execute at ${player.name.string} run place structure lost_aether_content:platinum_dungeon`);
+        player.server.runCommandSilent(`execute at ${player.name.string} run place structure lost_aether_content:platinum_dungeon`);
     },
     structureName: "platinum_dungeon"
 });
@@ -23,7 +23,7 @@ registerStructure({
     destroyAfterSpawn: true,
     executeCommands: (level, centerPos, player) => {
         player.tell(Text.of("Samurai X").obfuscated())
-        level.runCommandSilent(`execute positioned ${centerPos.x} ${centerPos.y} ${centerPos.z} run summon final_samurai:samurai`);
+        player.server.runCommandSilent(`execute in ${level.dimensionKey.location().toString()} positioned ${centerPos.x} ${centerPos.y} ${centerPos.z} run summon final_samurai:samurai`);
     },
     structureName: "samurai_x"
 });

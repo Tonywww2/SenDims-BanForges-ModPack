@@ -10,6 +10,7 @@ const $UUID = Java.loadClass("java.util.UUID");
 const $TagKey = Java.loadClass('net.minecraft.tags.TagKey');
 const $Registries = Java.loadClass('net.minecraft.core.registries.Registries');
 const $ForgeRegistries = Java.loadClass('net.minecraftforge.registries.ForgeRegistries');
+const $RegistryManager = Java.loadClass('net.minecraftforge.registries.RegistryManager');
 const $SpawnEggItem = Java.loadClass('net.minecraft.world.item.SpawnEggItem');
 const $SlashBladeDefinition = Java.loadClass('mods.flammpfeil.slashblade.registry.slashblade.SlashBladeDefinition');
 const $ItemSlashBlade = Java.loadClass('mods.flammpfeil.slashblade.item.ItemSlashBlade');
@@ -54,7 +55,7 @@ const numToInt = (num) => {
 const sqRecipe = (event, structure, material, type, stage) => {
     if (type == 0) {
         event.shapeless($StructureQuill.forStructure(structure), ['minecraft:map', material])
-            .id("sdbf:sq_"+structure.replace(":", "_") + "_" + stage);
+            .id("sdbf:sq_" + structure.replace(":", "_") + "_" + stage);
     } else if (type == 1) {
         event.shaped($StructureQuill.forStructure(structure), [
             'AAA',
@@ -63,7 +64,7 @@ const sqRecipe = (event, structure, material, type, stage) => {
         ], {
             A: material,
             B: 'minecraft:map'
-        }).id("sdbf:sq_"+structure.replace(":", "_") + "_" + stage);
+        }).id("sdbf:sq_" + structure.replace(":", "_") + "_" + stage);
     }
 };
 
@@ -83,3 +84,9 @@ const hasCurios = (player, id) => {
     return false
 }
 
+const executeCommands = (player, command) => {
+    command = command.trim();
+    if (command !== "") {
+        Utils.server.runCommandSilent(`execute as ${player.username} run ${command}`);
+    }
+}
