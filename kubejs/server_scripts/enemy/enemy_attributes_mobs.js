@@ -431,7 +431,12 @@ const mobTypes = new Map([
     ["species:leaf_hanger", typeA],
     ["bagusmob:tengu", typeB],
     ["bagusmob:ninjar", typeB],
-    ["minecraft:fox", typeA],
+    ["minecraft:fox", type0],
+    ["terra_entity:guide", type0],
+    ["terra_entity:traveling_merchant", type0],
+    ["minecraft:donkey", typeA],
+    ["biomemakeover:ghost", typeA],
+    ["minecraft:panda", typeC],
 
 ]);
 

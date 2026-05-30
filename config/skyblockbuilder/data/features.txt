@@ -1815,6 +1815,7 @@ the_bumblezone:buzzier_bees/chiseled_honeycomb_bricks_blob
 the_bumblezone:buzzier_bees/crystalline_honey_surface_blob
 the_bumblezone:buzzier_bees/honeycomb_bricks_blob
 the_bumblezone:buzzier_bees/honeycomb_tiles_blob
+the_bumblezone:carvable_wax_roads
 the_bumblezone:cave_sugar_waterfall
 the_bumblezone:dance_floor_random_music_disc
 the_bumblezone:floaters
@@ -1826,6 +1827,7 @@ the_bumblezone:gazebuzz_cluster_random_music_disc
 the_bumblezone:gear_column_cannon
 the_bumblezone:gear_column_flower_headwear
 the_bumblezone:giant_honey_crystal_feature
+the_bumblezone:glistering_honey_crystal_ceiling_bands
 the_bumblezone:hanging_garden_mob
 the_bumblezone:hive_voyager
 the_bumblezone:honey_crystals_exposed_feature
@@ -1866,6 +1868,7 @@ the_bumblezone:stone_tipped_spikes
 the_bumblezone:sugar_water_spring
 the_bumblezone:tall_cherry_trees
 the_bumblezone:tree_dungeon
+the_bumblezone:wax_and_stone_surface_bands
 the_bumblezone:wax_tipped_spikes
 the_bumblezone:web_ceiling
 the_bumblezone:web_wall

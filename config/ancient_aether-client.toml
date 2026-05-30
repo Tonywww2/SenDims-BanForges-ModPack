@@ -11,11 +11,11 @@
 	#Gives Ancient Aether Bosses custom boss bar designs
 	"Custom Boss Bars" = true
 	#Changes the Title Screen to the Ancient Aether Theme on start-up
-	"Title Screen Override" = true
+	"Title Screen Override" = false
 	#Changes the title in the Ancient Aether Title Screen to: The Aether
 	"The Aether Title" = false
 
 [Modpack]
 	#Allows Ancient Aether to override Config default values, should not be disabled normally
-	"Config Overrides" = true
+	"Config Overrides" = false
 

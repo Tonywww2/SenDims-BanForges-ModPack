@@ -1,0 +1,5 @@
+{
+	"version": 1,
+	"thread_desc": "设定statBar多线程更新的线程数,设置为0关闭多线程优化",
+	"thread": 0
+}

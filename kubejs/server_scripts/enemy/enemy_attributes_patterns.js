@@ -243,8 +243,8 @@ const typeEnderman = deriveTemplate(typeC,
     [0, 0, 0, 0]
 );
 
-typeEnderman["2_3"][0] = typeEnderman["2_3"][0] * 0.9
-typeEnderman["2_3"][2] = typeEnderman["2_3"][2] * 0.5
+typeEnderman["2_3"][0] = typeEnderman["2_3"][0] * 0.95
+typeEnderman["2_3"][2] = typeEnderman["2_3"][2] * 0.75
 
 /**·
  * 鱼雷模板

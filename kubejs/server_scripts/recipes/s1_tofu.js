@@ -13,6 +13,10 @@ ServerEvents.recipes(event => {
         'tofucraft:blocktofugrilled'
     ]).id("sdbf:tofustick_s1")
 
+    event.shapeless('tofucraft:tofumomen', [
+        'tofucraft:tofukinu'
+    ]).id("sdbf:tofumomen_s1")
+
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
         "ABC",
         "DEF",
