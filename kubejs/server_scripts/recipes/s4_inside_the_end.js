@@ -194,6 +194,98 @@ ServerEvents.recipes(event => {
     }, "slashblade:red_blade_black_soul")
         .id("sdbf:red_blade_black_soul_s4")
 
+    event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
+        "AVA",
+        "WXW",
+        "BZB"
+    ], {
+        "A": 'apotheosis:draconic_endshelf',
+        "B": 'kubejs:chaotic_truth',
+        "V": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("slashblade:greatsword_of_damnation")
+                .killCount(2500)
+                .proudSoul(50000)
+                .refineCount(50)
+                .build()
+        ),
+        "W": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("slashblade:ruined_sword")
+                .killCount(2500)
+                .proudSoul(50000)
+                .refineCount(50)
+                .build()
+        ),
+        "X": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("slashblade:greatsword_of_damnation_plus")
+                .killCount(10000)
+                .proudSoul(100000)
+                .refineCount(100)
+                .build()
+        ),
+        "Z": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("pseudoedge_break_dawn:dragonblade")
+                .killCount(10000)                     // 要求：500 击杀 (Kill Count)
+                .proudSoul(100000)                    // 要求：5000 耀魂 (Proud Soul)
+                .refineCount(100)                    // 要求：20 锻造 (Refine Count)
+                .build()
+        ),
+    }, "slashblade:greatsword_of_damnation_full")
+        .id("sdbf:greatsword_of_damnation_full_s4")
+
+    event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
+        "AVA",
+        "WXY",
+        "BZB"
+    ], {
+        "A": 'botania:gaia_ingot',
+        "B": 'kubejs:basepoint_alloy',
+        "V": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("sjap_adder:dragon_steel_lightning")
+                .killCount(22500)
+                .proudSoul(200000)
+                .refineCount(100)
+                .build()
+        ),
+        "W": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("slashblade:ssa_hayate")
+                .killCount(5000)
+                .proudSoul(50000)
+                .refineCount(50)
+                .build()
+        ),
+        "X": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("slashblade_addon:terra_blade")
+                .killCount(2500)
+                .proudSoul(50000)
+                .refineCount(50)
+                .build()
+        ),
+        "Y": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("slashblade_addon:kamuy_water")
+                .killCount(22500)
+                .proudSoul(200000)
+                .refineCount(100)
+                .build()
+        ),
+        "Z": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("sjap_adder:dragon_steel_fire")
+                .killCount(22500)                     // 要求：500 击杀 (Kill Count)
+                .proudSoul(200000)                    // 要求：5000 耀魂 (Proud Soul)
+                .refineCount(100)                    // 要求：20 锻造 (Refine Count)
+                .build()
+        ),
+    }, "sjap_adder:dragon_steel_ice")
+        .id("sdbf:dragon_steel_ice_s4")
+
     event.custom({
         "type": "slashblade:slashblade_smithing",
         "addition": { "item": 'kubejs:basepoint_alloy' },

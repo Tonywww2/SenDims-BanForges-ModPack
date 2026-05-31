@@ -216,4 +216,23 @@ ServerEvents.recipes(event => {
     }, "sjap_adder:dragon_bone_ice")
         .id("sdbf:dragon_bone_ice_s3")
 
+    event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
+        "ZCO",
+        " BG",
+        "Q X"
+    ], {
+        "Z": "botania:vine_ball",          // 藤蔓球
+        "C": "botania:thorn_chakram",      // 带刺环刃
+        "O": "botania:terrasteel_ingot",
+        "G": "slashblade:proudsoul",       // 耀魂值
+        "Q": "botania:terra_sword",        // 泰拉之刃
+        "X": "slashblade:proudsoul_sphere", // 耀魂宝珠
+        "B": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("slashblade:slashblade")
+                .build()
+        )
+    }, "slashblade_addon:terra_blade")
+        .id("sdbf:terra_blade_s3")
+
 })

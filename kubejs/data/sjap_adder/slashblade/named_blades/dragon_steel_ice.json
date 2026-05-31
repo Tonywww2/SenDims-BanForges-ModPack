@@ -18,11 +18,18 @@
     "name": "sjap_adder:dragon_steel_ice",
     "properties":
     {
-        "attack_base": 69.5,
+        "attack_base": 62.5,
         "max_damage": 300,
         "slash_art": "slashblade:wave_edge",
         "special_effects":
-        [],
+        [
+            "slashblade_addon:mana_burst",
+            "slashblade_addon:mana_repair",
+            "slashblade_addon:burst_drive",
+            "slashblade_sendims:invincible_pierce",
+            "slashblade_sendims:mana_detonation",
+            "sjap_adder:dragon_lightning"
+        ],
         "sword_type":
         [
             "bewitched"

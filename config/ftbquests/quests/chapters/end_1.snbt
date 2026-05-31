@@ -53,26 +53,20 @@
 		{
 			id: "48749EB4F4BF03A0"
 			linked_quest: "77725AE40795028C"
-			x: -5.0d
-			y: 2.5d
+			x: -7.5d
+			y: -2.5d
 		}
 		{
 			id: "6662BE542B5B021D"
 			linked_quest: "295CDAFD4AFD72D7"
 			x: -7.5d
-			y: -2.5d
+			y: 2.5d
 		}
 		{
 			id: "747C4E1FE1CD75C8"
 			linked_quest: "3FBD9DC1E1BB24E1"
-			x: -2.5d
-			y: 2.5d
-		}
-		{
-			id: "459CF5829CDD1FB7"
-			linked_quest: "4D0F49CE2720FBCD"
-			x: -2.5d
-			y: 5.0d
+			x: -7.5d
+			y: 0.0d
 		}
 		{
 			id: "1D2C0BA880CC37DD"
@@ -97,6 +91,36 @@
 			linked_quest: "49631F88EAF0261B"
 			x: 5.0d
 			y: 5.0d
+		}
+		{
+			id: "39076D2E03B28215"
+			linked_quest: "24BDD9F44F3AC6D6"
+			x: -5.0d
+			y: -5.0d
+		}
+		{
+			id: "57E79C7EC8E6776E"
+			linked_quest: "651A03F2219EBCDE"
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			id: "56F4A5A81C66C9D2"
+			linked_quest: "1F6B42B37F50453D"
+			x: -2.5d
+			y: -7.5d
+		}
+		{
+			id: "0E9D7FD97AE26209"
+			linked_quest: "60BC7DF019B63722"
+			x: -7.5d
+			y: 7.5d
+		}
+		{
+			id: "4778764C0A5A8281"
+			linked_quest: "281BD02608ADF2EE"
+			x: -2.5d
+			y: 7.5d
 		}
 	]
 	quests: [
@@ -233,7 +257,9 @@
 			dependencies: [
 				"682B4755022DFAD3"
 				"57CC25CACB2BE0BE"
+				"1BF032EC08E31ABB"
 			]
+			hide_until_deps_visible: true
 			id: "53F747AC5A1FA677"
 			tasks: [{
 				id: "1CC52AA34C631509"
@@ -425,6 +451,58 @@
 			}]
 			x: 10.5d
 			y: 0.0d
+		}
+		{
+			dependencies: [
+				"70B3048A22DE8391"
+				"24BDD9F44F3AC6D6"
+				"651A03F2219EBCDE"
+				"1F6B42B37F50453D"
+			]
+			id: "4EC86EB5BB82EBC1"
+			tasks: [{
+				id: "48C8A3F98126F577"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"translate\":\"item.slashblade.greatsword_of_damnation_full\"}"
+						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade.greatsword_of_damnation_full\"}})"
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"0774BE522111CF90"
+				"4E419C4E4744B2C8"
+				"295CDAFD4AFD72D7"
+				"60BC7DF019B63722"
+				"281BD02608ADF2EE"
+			]
+			id: "7FD4F7F2230C1E8C"
+			shape: "diamond"
+			tasks: [{
+				id: "796B5F8EBB01F402"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"translate\":\"item.sjap_adder.dragon_steel_ice\"}"
+						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.sjap_adder.dragon_steel_ice\"}})"
+					}
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: 5.0d
 		}
 	]
 	title: "末路之地[?]"

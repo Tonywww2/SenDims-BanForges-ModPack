@@ -1,0 +1,41 @@
+{
+    "enchantments":
+    [
+        {
+            "id": "minecraft:smite",
+            "lvl": 8
+        },
+        {
+            "id": "minecraft:power",
+            "lvl": 5
+        },
+        {
+            "id": "minecraft:fire_aspect",
+            "lvl": 3
+        }
+    ],
+    "name": "slashblade:greatsword_of_damnation_full",
+    "properties":
+    {
+        "attack_base": 58.0,
+        "max_damage": 165,
+        "slash_art": "slashblade_sendims:golden_crux_ex",
+        "special_effects":
+        [
+            "slashblade_sendims:frenzied_flame",
+            "slashblade_sendims:arcane_a",
+            "slashblade_sendims:three_fingers"
+        ],
+        "sword_type":
+        [
+            "bewitched"
+        ]
+    },
+    "render":
+    {
+        "carry_type": "ninja",
+        "model": "slashblade:model/named/ruined_sword/ruined_sword.obj",
+        "summon_sword_color": 16744448,
+        "texture": "slashblade:model/greatsword_of_damnation/greatsword_of_damnation_full.png"
+    }
+}

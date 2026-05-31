@@ -197,6 +197,7 @@ const toRemoveID = new Set([
     "enderio:smelting/slashblade_useful_addon/proud_soul_by_proud_soul_leaves",
     "botania:elven_trade/elementium_block",
     "appflux:inscriber/energy",
+    "slashblade_addon:terra_blade",
 
     // 临时
     "dustandash:crafting/integrated_block",

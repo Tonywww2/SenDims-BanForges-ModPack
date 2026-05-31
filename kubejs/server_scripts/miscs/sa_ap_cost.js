@@ -53,7 +53,9 @@ SACostMap.put("last_smith:fushigiri_left", [100, 0.15]);
 
 SACostMap.put("last_smith:sakura_blistering_swords", [100, 0.15]);
 
-SACostMap.put("slashblade_sendims:explosive_dawn_ammo", [300, 0.3]);
+SACostMap.put("slashblade_sendims:explosive_dawn_ammo", [600, 0.5]);
+
+SACostMap.put("slashblade_sendims:golden_crux_ex", [1000, 0.5]);
 
 let defaultCost = [200, 0.2];
 let superSlashArtCost = [400, 0.3];
