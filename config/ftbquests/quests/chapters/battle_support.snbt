@@ -1,5 +1,5 @@
 {
-	autofocus_id: "3C14A2F8BA3C3DA6"
+	autofocus_id: "71F1943E6E3FCA17"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "battle_support"
@@ -34,92 +34,93 @@
 			description: [
 				"使用铁砧下落砸碎宝石可获得宝石粉"
 				"使用回收台可以更高效的获取宝石粉"
+				""
+				"&7tip：宝石的获取请查阅拔刀剑篇章的首领部分"
 			]
+			icon: "apotheosis:gem_dust"
 			id: "77ABEFEE93012F0A"
 			tasks: [{
 				id: "225DF5F889219204"
 				item: "apotheosis:gem_dust"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 2.5d
-		}
-		{
-			dependencies: ["77ABEFEE93012F0A"]
-			id: "555957F2FF4AE8AF"
-			tasks: [{
-				id: "49C35E80B7E30960"
-				item: "apotheosis:salvaging_table"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 5.0d
-		}
-		{
-			dependencies: ["3C14A2F8BA3C3DA6"]
-			id: "4188A7E761838045"
-			tasks: [{
-				id: "10440B00D74C91F5"
-				item: "apotheosis:uncommon_material"
-				type: "item"
-			}]
-			x: -2.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["3C14A2F8BA3C3DA6"]
-			id: "389AE3451AB9A022"
-			tasks: [{
-				id: "6AB4B184C21D4F2C"
-				item: "apotheosis:rare_material"
-				type: "item"
-			}]
-			x: -2.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["3C14A2F8BA3C3DA6"]
-			id: "278A39AEC26ACC1A"
-			tasks: [{
-				id: "388068FFCA1A925E"
-				item: "apotheosis:epic_material"
-				type: "item"
-			}]
 			x: 2.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["3C14A2F8BA3C3DA6"]
+			dependency_requirement: "one_completed"
+			icon: "apotheosis:uncommon_material"
+			id: "278A39AEC26ACC1A"
+			tasks: [
+				{
+					id: "35AF37FBB43428D2"
+					item: "apotheosis:common_material"
+					type: "item"
+				}
+				{
+					id: "30E90D278B0C8BED"
+					item: "apotheosis:uncommon_material"
+					type: "item"
+				}
+				{
+					id: "7DF4AF60E487EEC4"
+					item: "apotheosis:rare_material"
+					type: "item"
+				}
+				{
+					id: "388068FFCA1A925E"
+					item: "apotheosis:epic_material"
+					type: "item"
+				}
+			]
+			title: "神话材料"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["278A39AEC26ACC1A"]
 			id: "3864617F2C8F7BE0"
 			tasks: [{
 				id: "3EF599E64D6133BF"
 				item: "apotheosis:mythic_material"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 0.0d
+			x: 2.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["77ABEFEE93012F0A"]
+			icon: "apotheosis:gem_cutting_table"
 			id: "2A958A3CA94287FD"
-			tasks: [{
-				id: "0590DF0F96C421EC"
-				item: "apotheosis:gem_cutting_table"
-				type: "item"
-			}]
-			x: -2.5d
-			y: 5.0d
+			subtitle: "我们俩"
+			tasks: [
+				{
+					id: "0590DF0F96C421EC"
+					item: "apotheosis:gem_cutting_table"
+					type: "item"
+				}
+				{
+					id: "21DC332C95BF1938"
+					item: "apotheosis:salvaging_table"
+					type: "item"
+				}
+			]
+			title: "雕刻与回收"
+			x: 5.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["278A39AEC26ACC1A"]
+			description: ["简易重铸台只能重铸包括&1蓝色珍宝等级&r以下的材料"]
 			id: "419F370B5BCD93CF"
 			tasks: [{
 				id: "23BBE71F75826062"
 				item: "apotheosis:simple_reforging_table"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 2.5d
+			x: 0.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -132,8 +133,8 @@
 				item: "apotheosis:reforging_table"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 2.5d
+			x: 2.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["03D989C2ED12227E"]
@@ -148,15 +149,39 @@
 		}
 		{
 			dependencies: ["77ABEFEE93012F0A"]
-			description: ["重铸所需的材料之一"]
+			description: ["新生符石是重铸所需的材料之一，其他符石各有不同的功能"]
+			icon: "apotheosis:sigil_of_rebirth"
 			id: "1B7066E3776A8879"
-			tasks: [{
-				id: "2C7A237233ADAF33"
-				item: "apotheosis:sigil_of_rebirth"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 5.0d
+			tasks: [
+				{
+					id: "2C7A237233ADAF33"
+					item: "apotheosis:sigil_of_rebirth"
+					type: "item"
+				}
+				{
+					id: "68D18494670D2081"
+					item: "apotheosis:sigil_of_socketing"
+					type: "item"
+				}
+				{
+					id: "44C2F979E5B1EF82"
+					item: "apotheosis:sigil_of_withdrawal"
+					type: "item"
+				}
+				{
+					id: "37866923F3608257"
+					item: "apotheosis:sigil_of_enhancement"
+					type: "item"
+				}
+				{
+					id: "08D514E1E76DA3DD"
+					item: "apotheosis:sigil_of_unnaming"
+					type: "item"
+				}
+			]
+			title: "各种功能符石"
+			x: 5.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["77693A4D5EF97A31"]
@@ -166,8 +191,8 @@
 				item: "rehooked:iron_hook"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 12.5d
+			x: -7.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["5748351A76910019"]
@@ -180,8 +205,8 @@
 				type: "item"
 			}]
 			title: "跑图工具"
-			x: 0.0d
-			y: 10.0d
+			x: -7.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["00C3C00C3688CEA7"]
@@ -191,8 +216,8 @@
 				item: "rehooked:red_hook"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 12.5d
+			x: -10.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["00C3C00C3688CEA7"]
@@ -202,8 +227,8 @@
 				item: "rehooked:diamond_hook"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 15.0d
+			x: -7.5d
+			y: -12.5d
 		}
 		{
 			dependencies: ["6D19670214234AFA"]
@@ -213,8 +238,8 @@
 				item: "rehooked:blaze_hook"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 15.0d
+			x: -5.0d
+			y: -12.5d
 		}
 		{
 			dependencies: ["6D19670214234AFA"]
@@ -224,26 +249,28 @@
 				item: "rehooked:ender_hook"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 15.0d
+			x: -10.0d
+			y: -12.5d
 		}
 		{
-			dependencies: ["5748351A76910019"]
+			dependencies: ["3C14A2F8BA3C3DA6"]
 			description: [
 				"神化刷怪笼，用过了都说好"
 				"可以用&4捕捉附魔&r获取刷怪蛋"
 				"耀魂数upup，杀敌数upup"
 			]
+			hide_dependency_lines: true
 			id: "12CBC73AFDD99F2C"
 			size: 2.0d
+			subtitle: "需要精准采集的镐子"
 			tasks: [{
 				id: "706BD07692AF0B4A"
 				item: "minecraft:spawner"
 				type: "item"
 			}]
 			title: "神化刷怪笼"
-			x: 10.0d
-			y: 10.0d
+			x: -5.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
@@ -255,8 +282,8 @@
 				item: "minecraft:sugar"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 10.0d
+			x: -7.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
@@ -268,8 +295,8 @@
 				item: "minecraft:clock"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 7.5d
+			x: -5.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
@@ -281,8 +308,8 @@
 				item: "minecraft:fermented_spider_eye"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 7.5d
+			x: -2.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
@@ -294,8 +321,8 @@
 				item: "minecraft:ghast_tear"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 7.5d
+			x: -6.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
@@ -307,8 +334,8 @@
 				item: "minecraft:prismarine_crystals"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 12.5d
+			x: -7.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
@@ -320,8 +347,8 @@
 				item: "minecraft:blaze_rod"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 12.5d
+			x: -7.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
@@ -333,8 +360,8 @@
 				item: "minecraft:dragon_egg"
 				type: "item"
 			}]
-			x: 15.0d
-			y: 10.0d
+			x: -4.0d
+			y: 9.5d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
@@ -346,8 +373,8 @@
 				item: "minecraft:chorus_fruit"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 10.0d
+			x: -3.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
@@ -359,8 +386,8 @@
 				item: "minecraft:nether_star"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 10.0d
+			x: -6.0d
+			y: 9.5d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
@@ -372,8 +399,8 @@
 				item: "minecraft:comparator"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 12.5d
+			x: -2.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
@@ -385,11 +412,15 @@
 				item: "minecraft:soul_lantern"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 15.0d
+			x: -2.5d
+			y: 6.5d
 		}
 		{
-			dependencies: ["26527CD8C76043BE"]
+			dependencies: [
+				"26527CD8C76043BE"
+				"71D1A86D601690A9"
+			]
+			description: ["前期弄不来的玩意，去村民吧。"]
 			id: "2563ABCEC67C3877"
 			size: 2.0d
 			tasks: [{
@@ -397,7 +428,7 @@
 				item: "minecraft:enchanting_table"
 				type: "item"
 			}]
-			x: -10.0d
+			x: -7.5d
 			y: 0.0d
 		}
 		{
@@ -449,6 +480,7 @@
 			}
 			id: "71F1943E6E3FCA17"
 			shape: "hexagon"
+			size: 2.0d
 			subtitle: "重要"
 			tasks: [{
 				id: "21031CE0DA554B68"
@@ -749,26 +781,28 @@
 			y: -15.0d
 		}
 		{
-			dependencies: ["2563ABCEC67C3877"]
+			dependencies: ["3C14A2F8BA3C3DA6"]
 			id: "71D1A86D601690A9"
+			size: 1.5d
 			tasks: [{
 				id: "7C9538C827636262"
 				item: "apotheosis:hellshelf"
 				type: "item"
 			}]
-			x: -10.0d
-			y: -2.5d
+			x: -3.75d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2563ABCEC67C3877"]
+			description: ["没啥用的书架，或者可以做一个水之过滤海洋书架？"]
 			id: "04000D795240E2C3"
 			tasks: [{
 				id: "1A572E798A293E37"
 				item: "apotheosis:seashelf"
 				type: "item"
 			}]
-			x: -12.5d
-			y: 0.0d
+			x: -10.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["2563ABCEC67C3877"]
@@ -778,8 +812,8 @@
 				item: "apotheosis:endshelf"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 0.0d
+			x: -10.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["2563ABCEC67C3877"]
@@ -790,7 +824,7 @@
 				type: "item"
 			}]
 			x: -10.0d
-			y: 2.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["71D1A86D601690A9"]
@@ -800,7 +834,7 @@
 				item: "apotheosis:infused_hellshelf"
 				type: "item"
 			}]
-			x: -7.5d
+			x: -5.0d
 			y: -2.5d
 		}
 		{
@@ -822,7 +856,7 @@
 				item: "apotheosis:blazing_hellshelf"
 				type: "item"
 			}]
-			x: -5.0d
+			x: -7.5d
 			y: -2.5d
 		}
 		{
@@ -844,8 +878,8 @@
 				item: "apotheosis:sightshelf_t2"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -7.5d
+			x: -10.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["04000D795240E2C3"]
@@ -866,8 +900,8 @@
 				item: "apotheosis:crystal_seashelf"
 				type: "item"
 			}]
-			x: -10.0d
-			y: -5.0d
+			x: -15.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["1A36C9EDCEF16904"]
@@ -877,7 +911,7 @@
 				item: "apotheosis:heart_seashelf"
 				type: "item"
 			}]
-			x: -12.5d
+			x: -15.0d
 			y: -5.0d
 		}
 		{
@@ -888,8 +922,8 @@
 				item: "apotheosis:filtering_shelf"
 				type: "item"
 			}]
-			x: -15.0d
-			y: -2.5d
+			x: -12.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["5775E3020ACAC66A"]
@@ -900,7 +934,7 @@
 				type: "item"
 			}]
 			x: -12.5d
-			y: 2.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["76D98D4CA2BB39AF"]
@@ -911,7 +945,7 @@
 				type: "item"
 			}]
 			x: -12.5d
-			y: 5.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["76D98D4CA2BB39AF"]
@@ -922,7 +956,7 @@
 				type: "item"
 			}]
 			x: -15.0d
-			y: 2.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["17EDE37B5E5EF5D3"]
@@ -933,7 +967,7 @@
 				type: "item"
 			}]
 			x: -17.5d
-			y: 2.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["76D98D4CA2BB39AF"]
@@ -944,19 +978,20 @@
 				type: "item"
 			}]
 			x: -15.0d
-			y: 0.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["76C5BDB2118AA568"]
 			id: "0423117975E035F4"
 			shape: "diamond"
+			size: 1.5d
 			tasks: [{
 				id: "60F811D7DCADE39F"
 				item: "apotheosis:draconic_endshelf"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 0.0d
+			x: -12.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["76C5BDB2118AA568"]
@@ -966,8 +1001,8 @@
 				item: "apotheosis:pearl_endshelf"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 2.5d
+			x: -10.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["4C56CFEEBC74DE9A"]
@@ -977,7 +1012,7 @@
 				item: "slashblade_sendims:estus_flask_1"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 5.0d
 			y: -7.5d
 		}
 		{
@@ -990,6 +1025,11 @@
 				"可以通过合成升级&b原素瓶&r。"
 			]
 			id: "4C56CFEEBC74DE9A"
+			rewards: [{
+				id: "0A3B0AF9A67AE126"
+				type: "xp"
+				xp: 100
+			}]
 			shape: "hexagon"
 			subtitle: "重要|治疗道具"
 			tasks: [{
@@ -997,7 +1037,7 @@
 				item: "slashblade_sendims:estus_flask_0"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 5.0d
 			y: -5.0d
 		}
 		{
@@ -1008,7 +1048,7 @@
 				item: "slashblade_sendims:estus_flask_2"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 5.0d
 			y: -10.0d
 		}
 		{
@@ -1019,7 +1059,7 @@
 				item: "slashblade_sendims:estus_flask_3"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 5.0d
 			y: -12.5d
 		}
 		{
@@ -1030,7 +1070,7 @@
 				item: "slashblade_sendims:estus_flask_4"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 5.0d
 			y: -15.0d
 		}
 		{
@@ -1041,7 +1081,7 @@
 				item: "slashblade_sendims:estus_flask_5"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 5.0d
 			y: -17.5d
 		}
 		{
@@ -1052,7 +1092,7 @@
 				item: "slashblade_sendims:estus_flask_6"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 5.0d
 			y: -20.0d
 		}
 		{
@@ -1064,7 +1104,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: -2.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["2563ABCEC67C3877"]
@@ -1085,8 +1125,8 @@
 				item: "apotheosis:improved_scrap_tome"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 5.0d
+			x: -5.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["7C1FC62A66B05BB4"]
@@ -1096,8 +1136,8 @@
 				item: "apotheosis:extraction_tome"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 7.5d
+			x: -2.5d
+			y: 2.5d
 		}
 	]
 	title: "战斗辅助"

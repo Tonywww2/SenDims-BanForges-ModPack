@@ -173,6 +173,7 @@
 				"293BC8386BEEE985"
 				"47C442362B73368D"
 			]
+			dependency_requirement: "one_completed"
 			description: ["&4记得检查氧气是否充足"]
 			hide_until_deps_visible: true
 			icon: {
@@ -401,7 +402,11 @@
 			y: 10.0d
 		}
 		{
-			dependencies: ["2F9AAEA563550E3F"]
+			dependencies: [
+				"2F9AAEA563550E3F"
+				"73531FB69122489F"
+			]
+			dependency_requirement: "one_completed"
 			description: ["&m正常来说，ae实验室会有一个"]
 			id: "3FA025D25ADB8411"
 			tasks: [{
@@ -1035,6 +1040,7 @@
 				"1EF6714DB8D7D5A4"
 				"01E82FD52A60F607"
 			]
+			dependency_requirement: "one_completed"
 			hide_until_deps_complete: true
 			id: "69997238A9B0874C"
 			tasks: [{

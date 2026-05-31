@@ -78,6 +78,7 @@
 					type: "dimension"
 				}
 				{
+					count: 9L
 					id: "32951DF0C147D5E7"
 					item: "aether:sentry_stone"
 					type: "item"

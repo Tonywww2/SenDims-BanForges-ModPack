@@ -477,12 +477,32 @@
 				"6543C211F987A5FF"
 			]
 			dependency_requirement: "one_completed"
+			description: [
+				"银青境云在天境维度Y>200少量刷新，且被碰到就转变为其他方块，获取时要注意。"
+				""
+				"也会在云洋群系的大片寒风境云内有零星分布。"
+				""
+				"&m真的非常少"
+			]
+			icon: "deep_aether:stratus_ingot"
 			id: "3E8E74B1D1E90894"
-			tasks: [{
-				id: "45D871BD7E11C60C"
-				item: "deep_aether:stratus_ingot"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "45D871BD7E11C60C"
+					item: "deep_aether:stratus_ingot"
+					type: "item"
+				}
+				{
+					id: "08E1BFFDA6B15D37"
+					item: "deep_aether:sterling_aercloud"
+					type: "item"
+				}
+				{
+					id: "39742AA1588D8E43"
+					item: "deep_aether:chromatic_aercloud"
+					type: "item"
+				}
+			]
 			x: -2.5d
 			y: -7.5d
 		}
@@ -704,6 +724,8 @@
 			description: ["这些变量卡有些特殊？"]
 			id: "0C568583CC58DAA6"
 			shape: "hexagon"
+			size: 2.0d
+			subtitle: "重要"
 			tasks: [{
 				id: "7F7F699FC6682534"
 				item: "integrateddynamics:variable"

@@ -106,10 +106,7 @@
 	]
 	quests: [
 		{
-			dependencies: [
-				"3A267848CC75F232"
-				"0351BC9DA1C5B4F7"
-			]
+			dependencies: ["0351BC9DA1C5B4F7"]
 			description: ["&c警告：虽然黄蜂领域的战斗频率不如其他维度，但是依旧建议将自身的数值提升到一定水平后再前往。"]
 			hide_dependent_lines: true
 			icon: "the_bumblezone:beehive_beeswax"
@@ -179,7 +176,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: 0.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["67CEA0F546DE635F"]
@@ -204,7 +201,11 @@
 			y: -5.0d
 		}
 		{
-			dependencies: ["220AEBF0A8A46F7C"]
+			dependencies: [
+				"220AEBF0A8A46F7C"
+				"19B4A795254F023B"
+			]
+			dependency_requirement: "one_completed"
 			icon: "the_bumblezone:bee_queen_spawn_egg"
 			id: "1425849749F89FA6"
 			tasks: [{
@@ -529,6 +530,46 @@
 			}]
 			x: 0.0d
 			y: 10.0d
+		}
+		{
+			dependencies: ["220AEBF0A8A46F7C"]
+			id: "3BE92E8D1DB90EFC"
+			tasks: [{
+				advancement: "the_bumblezone:effects/getting_protection"
+				criterion: ""
+				id: "7DA2789D20047F85"
+				type: "advancement"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["220AEBF0A8A46F7C"]
+			id: "08CDD7E3B51E31E8"
+			tasks: [{
+				advancement: "the_bumblezone:effects/honey_permission"
+				criterion: ""
+				id: "7051CF2EE2612C28"
+				type: "advancement"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["220AEBF0A8A46F7C"]
+			description: ["可以定位到巢室迷宫，在巢室迷宫中可以找到定位到王座尖柱的指南针。"]
+			id: "19B4A795254F023B"
+			tasks: [{
+				id: "51A1175A89AC86A8"
+				item: {
+					Count: 1
+					id: "the_bumblezone:honey_compass"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.5d
 		}
 	]
 	title: "黄蜂领域"

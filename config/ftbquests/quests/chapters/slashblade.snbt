@@ -1,5 +1,5 @@
 {
-	autofocus_id: "6FD736B74327F2AF"
+	autofocus_id: "65E2433B2D35FACA"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "slashblade"
@@ -151,33 +151,39 @@
 				}
 			]
 			shape: "gear"
+			size: 2.0d
 			subtitle: "重要"
 			tasks: [{
 				id: "1AA47343764D4E7C"
 				type: "checkmark"
 			}]
 			title: "行动力"
-			x: 2.5d
-			y: 0.0d
+			x: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["2EA1B384A87A94DA"]
 			description: [
 				"除了一般的&m杂鱼&r小怪，一些怪群中会偶尔出现一些更加强大的个体——&b首领&r。"
 				""
-				"&b首领&r拥有更高的属性，并且会使用&b特殊攻击&r。拥有红色特效的&b特殊攻击&r可以被一些特殊的&b剑技&r招架。&b首领&r拥有一些独特的掉落物。"
+				"&b首领&r拥有更高的属性，并且会使用&b特殊攻击&r。拥有红色特效的&b特殊攻击&r可以被一些特殊的&b剑技&r招架。"
+				""
+				"&b首领&r拥有一些独特的掉落物，例如&c神话的宝石&r，若&b首领&r等级高的话还会&a额外掉宝石&r。"
+				""
+				"在招架成功后，玩家会恢复大量的生命值，并且&b首领&r会进入硬直状态。&b首领&r在硬直期间受到的伤害&e大幅&r提升。"
 			]
 			icon: "minecraft:zombie_head"
 			id: "57C686A75E491E21"
 			shape: "gear"
+			size: 2.0d
 			subtitle: "重要"
 			tasks: [{
 				id: "6AAD8007FDF21E89"
 				type: "checkmark"
 			}]
 			title: "首领"
-			x: 2.5d
-			y: -2.5d
+			x: 4.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["57C686A75E491E21"]
@@ -187,6 +193,8 @@
 				"可&b招架&r的&b剑技&r："
 				"-上斩;"
 				"-迅冲斩；"
+				""
+				"在招架成功后，玩家会恢复大量的生命值，并且&b首领&r会进入硬直状态。&b首领&r在硬直期间受到的伤害&e大幅&r提升。"
 			]
 			icon: {
 				Count: 1
@@ -197,14 +205,15 @@
 			}
 			id: "52998D003D502A8A"
 			shape: "gear"
+			size: 2.0d
 			subtitle: "重要"
 			tasks: [{
 				id: "11473901D6849291"
 				type: "checkmark"
 			}]
 			title: "招架"
-			x: 0.0d
-			y: -2.5d
+			x: 8.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["6FD736B74327F2AF"]
@@ -350,16 +359,80 @@
 			icon: "last_smith:sakura"
 			id: "6336CB1635142B6B"
 			shape: "gear"
+			size: 2.0d
 			tasks: [{
 				id: "54F36C86AC779973"
 				type: "checkmark"
 			}]
 			title: "SA与SE"
 			x: -2.5d
-			y: -2.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["6FD736B74327F2AF"]
+			description: ["在研究台上不断研发图纸便能进一步合成拔刀剑。"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						AttackAmplifier: 0.0f
+						ComboRoot: "slashblade:standby"
+						Damage: 0
+						RepairCounter: 0
+						SpecialAttackType: "slashblade:judgement_cut"
+						StandbyRenderType: 0b
+						SummonedSwordColor: -13421569
+						SummonedSwordColorInverse: 0b
+						TargetEntity: 0
+						_onClick: 0b
+						adjustXYZ: [
+							0.0d
+							0.0d
+							0.0d
+						]
+						currentCombo: "slashblade:none"
+						fallDecreaseRate: 0.0f
+						isBroken: 0b
+						isSealed: 0b
+						killCount: 0
+						lastActionTime: 0L
+						proudSoul: 0
+					}
+				}
+				id: "slashblade:slashblade_wood"
+				tag: {
+					bladeState: {
+						AttackAmplifier: 0.0f
+						ComboRoot: "slashblade:standby"
+						Damage: 0
+						ModelName: "slashblade:model/blade.obj"
+						RepairCounter: 0
+						SpecialAttackType: "slashblade:judgement_cut"
+						StandbyRenderType: 0b
+						SummonedSwordColor: -13421569
+						SummonedSwordColorInverse: 0b
+						TargetEntity: 0
+						TextureName: "slashblade:model/wood.png"
+						_onClick: 0b
+						adjustXYZ: [
+							0.0d
+							0.0d
+							0.0d
+						]
+						baseAttackModifier: 2.0f
+						currentCombo: "slashblade:none"
+						fallDecreaseRate: 0.0f
+						isBroken: 0b
+						isDefaultBewitched: 0b
+						isSealed: 0b
+						killCount: 0
+						lastActionTime: 0L
+						maxDamage: 60
+						proudSoul: 0
+						translationKey: ""
+					}
+				}
+			}
 			id: "4A57E4499E188BD7"
 			rewards: [{
 				count: 8
@@ -367,61 +440,65 @@
 				item: "minecraft:bamboo"
 				type: "item"
 			}]
-			tasks: [{
-				id: "1A8F2A07FC34EBC5"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:judgement_cut"
-							StandbyRenderType: 0b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							proudSoul: 0
+			tasks: [
+				{
+					id: "1A8F2A07FC34EBC5"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								AttackAmplifier: 0.0f
+								ComboRoot: "slashblade:standby"
+								Damage: 0
+								RepairCounter: 0
+								SpecialAttackType: "slashblade:judgement_cut"
+								StandbyRenderType: 0b
+								SummonedSwordColor: -13421569
+								SummonedSwordColorInverse: 0b
+								TargetEntity: 0
+								_onClick: 0b
+								adjustXYZ: [
+									0.0d
+									0.0d
+									0.0d
+								]
+								currentCombo: "slashblade:none"
+								fallDecreaseRate: 0.0f
+								isBroken: 0b
+								isSealed: 0b
+								killCount: 0
+								lastActionTime: 0L
+								proudSoul: 0
+							}
 						}
+						id: "slashblade:slashblade_wood"
+						tag: { }
 					}
-					id: "slashblade:slashblade_wood"
-					tag: { }
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "50938CC6453D8CE3"
+					item: "last_smith:research_table"
+					type: "item"
+				}
+				{
+					id: "1449D59F516098C2"
+					item: "minecraft:charcoal"
+					type: "item"
+				}
+			]
 			x: 0.0d
 			y: 2.5d
 		}
 		{
-			dependencies: ["6FD736B74327F2AF"]
-			id: "0FB1DB4C541D2D2B"
-			tasks: [{
-				id: "2827DB09990A6B93"
-				item: "last_smith:research_table"
+			dependencies: ["4A57E4499E188BD7"]
+			id: "65E2433B2D35FACA"
+			rewards: [{
+				count: 4
+				id: "150CFA6112DB4971"
+				item: "minecraft:gold_ingot"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 2.5d
-		}
-		{
-			dependencies: [
-				"4A57E4499E188BD7"
-				"0FB1DB4C541D2D2B"
-			]
-			id: "65E2433B2D35FACA"
 			tasks: [{
 				id: "15884F376FF15E95"
 				item: "last_smith:scroll_basic"
@@ -475,7 +552,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: 7.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["65E2433B2D35FACA"]
@@ -495,7 +572,7 @@
 				""
 				"上斩：潜行+后退+攻击，进行一次可以挑飞并&b招架&r敌人的&e中伤害&r斩击，消耗中等量的行动力。在释放后保持攻击键按下一段时间，则可以越向空中。"
 				""
-				"疾走居合：潜行+前进+攻击，向前方突进，并进行若干次可以&b招架&r敌人的&e中伤害&r的斩击，消耗大量行动力。"
+				"迅冲斩：潜行+前进+攻击，向前方突进，并进行若干次可以&b招架&r敌人的&e中伤害&r的斩击，消耗大量行动力。"
 				"升龙斩"
 				""
 				"空坠斩：在空中时，潜行+后退+攻击，进行4次伤害不同的斩击。"
@@ -508,6 +585,8 @@
 				}
 			}
 			id: "2F8D98125FBF6D66"
+			shape: "gear"
+			subtitle: "重要"
 			tasks: [{
 				id: "17B37E5D53EFC782"
 				type: "checkmark"
@@ -580,7 +659,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: 12.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["733A23B4A4EF2379"]
@@ -591,7 +670,7 @@
 				type: "item"
 			}]
 			x: -5.0d
-			y: 7.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["1614BFADEC44E881"]
@@ -611,7 +690,7 @@
 				type: "item"
 			}]
 			x: -7.5d
-			y: 7.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["128DAE63591990BF"]
@@ -622,8 +701,8 @@
 				item: "last_smith:scroll_named"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 12.5d
+			x: -2.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["0AB0FC7F385062F4"]
@@ -684,6 +763,8 @@
 			]
 			description: ["到这里才是自定义刀剑的开始！"]
 			id: "371880BF8A2A75FC"
+			shape: "hexagon"
+			size: 2.0d
 			tasks: [{
 				id: "5EA07B8440874AF4"
 				item: {
@@ -725,7 +806,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 12.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["371880BF8A2A75FC"]
@@ -744,16 +825,31 @@
 			}]
 			title: "无名的分支"
 			x: 0.0d
-			y: 15.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["65E2433B2D35FACA"]
+			description: [
+				"击败首领——暮色森林·巫妖后获得樱花树苗。"
+				""
+				"后续可制作唯一性·成长类道具，建议中期发展展开并完成。"
+				""
+				"&m或者你是欧皇，流浪栓绳也能刷。"
+			]
+			icon: "last_smith:sakura"
 			id: "747934E571968BD3"
-			tasks: [{
-				id: "58994546FE9F176D"
-				item: "last_smith:sakura"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "58994546FE9F176D"
+					item: "last_smith:sakura"
+					type: "item"
+				}
+				{
+					id: "2C816F923281B2F4"
+					item: "minecraft:cherry_sapling"
+					type: "item"
+				}
+			]
 			x: 2.5d
 			y: 5.0d
 		}
@@ -803,7 +899,10 @@
 		}
 		{
 			dependencies: ["36E1D57516888F2E"]
+			description: ["合成&b剑技绝艺总纲&r的材料之一"]
 			id: "41AAF1E0C28F6B57"
+			shape: "circle"
+			size: 1.5d
 			tasks: [{
 				id: "5341B94870727D64"
 				item: "last_smith:sakura_sphere"
@@ -874,7 +973,6 @@
 		}
 		{
 			dependencies: ["121941C1A0E09C09"]
-			hide_dependency_lines: true
 			id: "39D12DC4BDAF5AB7"
 			tasks: [{
 				id: "15E3D4A18B8B3D6C"
@@ -952,8 +1050,8 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
-			y: 10.0d
+			x: -2.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["6FD736B74327F2AF"]
@@ -969,6 +1067,8 @@
 				"·面对低护甲敌人时，哪怕是低伤害倍率的攻击也可以打出较完整的伤害；"
 				"·面对高护甲的敌人时，低伤害的攻击可能会被大量减免，这时使用高伤害倍率的攻击会是更好的选择；"
 				"·当然，你也可以使用幻影剑或者部分SA造成魔法伤害，面对没有魔法抗性的敌人时，这将会是一个比较通用的选择；"
+				""
+				"原版困难模式的50%怪物增伤已被移除。"
 			]
 			icon: {
 				Count: 1
@@ -979,17 +1079,19 @@
 			}
 			id: "16583AEF17DC8460"
 			shape: "gear"
+			size: 2.0d
 			tasks: [{
 				id: "61781893C311D4E6"
 				type: "checkmark"
 			}]
 			title: "护甲与减伤"
-			x: -2.5d
-			y: 2.5d
+			x: 4.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["4A57E4499E188BD7"]
-			description: [""]
+			description: ["在铁砧上，可以将&a不同等级的耀魂&r敲入拔刀剑来提高&e锻造数&r，锻造越高武器伤害越高，每种耀魂的锻造上限也不同。"]
+			icon: "slashblade:proudsoul_tiny"
 			id: "4D2B780AFDAB523E"
 			rewards: [{
 				count: 2
@@ -998,13 +1100,27 @@
 				type: "item"
 			}]
 			subtitle: "5"
-			tasks: [{
-				id: "7BEDE2630FB6FEE9"
-				item: "slashblade:proudsoul_tiny"
-				type: "item"
-			}]
-			x: -2.5d
-			y: 5.0d
+			tasks: [
+				{
+					id: "7BEDE2630FB6FEE9"
+					item: "slashblade:proudsoul_tiny"
+					type: "item"
+				}
+				{
+					id: "6720823C253FB8E8"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:anvil"
+						}
+					}
+					title: "Any #minecraft:anvil"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["4D2B780AFDAB523E"]
@@ -1021,8 +1137,8 @@
 				item: "slashblade:proudsoul"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 5.0d
+			x: 5.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -1042,13 +1158,12 @@
 				item: "slashblade:proudsoul_ingot"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 5.0d
+			x: 7.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
 				"41B8D629DFAC4BB8"
-				"2354F158B208830E"
 				"69997238A9B0874C"
 			]
 			hide_until_deps_complete: true
@@ -1064,8 +1179,8 @@
 				item: "slashblade:proudsoul_sphere"
 				type: "item"
 			}]
-			x: -10.0d
-			y: 5.0d
+			x: 10.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -1084,8 +1199,8 @@
 				item: "slashblade:proudsoul_crystal"
 				type: "item"
 			}]
-			x: -12.5d
-			y: 5.0d
+			x: 12.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -1105,8 +1220,9 @@
 			y: 15.0d
 		}
 		{
-			dependencies: ["371880BF8A2A75FC"]
+			dependencies: ["244DE4322B5B3EA5"]
 			id: "1FA5AD3F1FEE5F26"
+			subtitle: "无名分支"
 			tasks: [{
 				id: "5ADED9329C6E99A8"
 				item: {
@@ -1121,8 +1237,8 @@
 				}
 				type: "item"
 			}]
-			x: -2.5d
-			y: 15.0d
+			x: -5.0d
+			y: 10.0d
 		}
 		{
 			dependencies: [
@@ -1131,6 +1247,7 @@
 				"3DA6E818573A9A69"
 			]
 			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "43FDCFF3F409783D"
 			tasks: [{
@@ -1147,8 +1264,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
-			y: 12.5d
+			x: -5.0d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -1212,8 +1329,8 @@
 				type: "checkmark"
 			}]
 			title: "SA复制"
-			x: -10.0d
-			y: 2.5d
+			x: 10.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -1226,8 +1343,8 @@
 				item: "slashblade:proudsoul_trapezohedron"
 				type: "item"
 			}]
-			x: -15.0d
-			y: 5.0d
+			x: 15.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["4D0F49CE2720FBCD"]
@@ -1238,8 +1355,8 @@
 				type: "checkmark"
 			}]
 			title: "SE复制"
-			x: -12.5d
-			y: 2.5d
+			x: 12.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6988EF237AE411F0"]
@@ -1263,8 +1380,14 @@
 			y: 15.0d
 		}
 		{
-			dependencies: ["11728C2FAEFCBBAD"]
-			description: ["你可以使用&b剑技绝艺总纲&r+&b耀魂宝珠&r制作一个&b特殊的耀魂宝珠&r。将这个&b特殊的耀魂宝珠&r放入切石机内可以制作&b存储SA的耀魂宝珠&r。注意，只能制作&b剑技绝艺总纲&r已经吸收的&bSA&r。"]
+			dependencies: ["65B006E14075F1AE"]
+			description: [
+				"你可以使用&b剑技绝艺总纲&r+&b耀魂宝珠&r制作一个&b特殊的耀魂宝珠&r。"
+				""
+				"将这个&b特殊的耀魂宝珠&r放入切石机内可以制作&b存储SA的耀魂宝珠&r。"
+				""
+				"注意，只能制作&b剑技绝艺总纲&r已经吸收的&bSA&r。"
+			]
 			icon: {
 				Count: 1
 				id: "slashblade_sendims:principle_of_sword_arts"
@@ -1281,8 +1404,8 @@
 				type: "checkmark"
 			}]
 			title: "剑技绝艺总纲：SA复制"
-			x: -10.0d
-			y: 7.5d
+			x: 7.5d
+			y: 15.0d
 		}
 	]
 	title: "拔刀剑"

@@ -185,8 +185,8 @@
 				item: "integratedterminals:part_terminal_storage"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -5.0d
+			x: -2.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["54651F3B69334CF1"]
@@ -196,8 +196,8 @@
 				item: "integratedterminals:terminal_storage_portable"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -5.0d
+			x: -5.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["27FEFCB730786A9B"]
@@ -633,6 +633,39 @@
 			}]
 			x: 2.5d
 			y: 7.5d
+		}
+		{
+			dependencies: ["2270E6360EAB923F"]
+			id: "598F27D3913E3551"
+			tasks: [{
+				id: "3E141EF6948D4362"
+				item: "appflux:core_1k"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["598F27D3913E3551"]
+			id: "502610CD875AF923"
+			tasks: [{
+				id: "7913AE8719D1B0A0"
+				item: "appflux:core_16k"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["502610CD875AF923"]
+			id: "45D61951C69AE3EC"
+			tasks: [{
+				id: "330A45B1FE538CC6"
+				item: "appflux:core_256k"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -5.0d
 		}
 	]
 	title: "库存管理"

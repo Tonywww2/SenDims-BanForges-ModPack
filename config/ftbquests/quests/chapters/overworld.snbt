@@ -119,6 +119,7 @@
 				"713CA11C25A8A2E2"
 				"2B1E25722BDE5592"
 			]
+			dependency_requirement: "one_completed"
 			id: "641BAE5B4E3ED25C"
 			tasks: [{
 				id: "5322BC1F7194E0F5"
@@ -221,6 +222,16 @@
 		{
 			dependencies: ["713CA11C25A8A2E2"]
 			description: ["你可以在神化尖塔的宝箱内发现一些奇特的金属锭。"]
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:common"
+					}
+					gem: "apotheosis:core/slipstream"
+				}
+			}
 			id: "2B1E25722BDE5592"
 			tasks: [{
 				id: "38D7687CBF37F99C"

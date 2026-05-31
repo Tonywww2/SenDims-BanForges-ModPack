@@ -98,7 +98,7 @@
 			}]
 			title: "附魔"
 			x: -2.5d
-			y: 0.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["514CF1593551F00F"]
@@ -156,7 +156,7 @@
 				"将你的拔刀置于加工台之上"
 				"展现你的技艺的时候到了！"
 				""
-				"&7tip：前期那些过于基础的拔刀并不能进行改造，也就是无铭「无名」后"
+				"&7tip：前期那些过于基础的拔刀并不能进行改造，无铭「无名」是第一把可以被改造的拔刀剑。&m或许还有其他的妖刀&r"
 			]
 			hide_until_deps_visible: true
 			icon: {
@@ -291,6 +291,46 @@
 			title: "淬魂"
 			x: -5.0d
 			y: -2.5d
+		}
+		{
+			dependencies: ["514CF1593551F00F"]
+			description: [
+				"副手空空的感觉不舒服？你可以改造一面&e盾牌&r来辅助你战斗！"
+				""
+				"虽然传统的&e防御型的盾牌&r在拔刀剑的战斗中几乎发挥不了任何作用，但是&e小圆盾&r可以被动的为你提供属性加成！"
+			]
+			id: "3194B048417D6C31"
+			tasks: [{
+				id: "5E60D3481208B3B9"
+				item: {
+					Count: 1
+					id: "minecraft:shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "模块化盾牌"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["514CF1593551F00F"]
+			description: [
+				"在满足&e一些条件&r后锻造，可以使拔刀剑的部件获得&e高质量&r效果。"
+				""
+				"&e高质量&r效果可以提供少量的攻击力加成。"
+			]
+			id: "3105255BA64CD95B"
+			tasks: [{
+				id: "6A6137F0651686EE"
+				item: "tetra:planar_stabilizer"
+				type: "item"
+			}]
+			title: "高质量锻造"
+			x: 2.5d
+			y: 2.5d
 		}
 	]
 	title: "锻造"

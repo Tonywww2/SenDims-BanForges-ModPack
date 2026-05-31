@@ -24,31 +24,31 @@
 			id: "37F9308A7B690DE9"
 			linked_quest: "765A0F0A66F45570"
 			x: 9.0d
-			y: -5.5d
+			y: -6.0d
 		}
 		{
 			id: "4413A8820A84AB93"
 			linked_quest: "71F1943E6E3FCA17"
 			x: 6.0d
-			y: -5.5d
+			y: -6.0d
 		}
 		{
 			id: "7B526208D694FBFA"
 			linked_quest: "4C56CFEEBC74DE9A"
-			x: 14.5d
-			y: -8.0d
+			x: 15.0d
+			y: -9.0d
 		}
 		{
 			id: "64467FFD7950DBC7"
 			linked_quest: "5BB642BD0BE40541"
 			x: 3.0d
-			y: -5.5d
+			y: -6.0d
 		}
 		{
 			id: "0A0F62BCD972F9DF"
 			linked_quest: "3C1CB82ADF4FBBC1"
 			x: 0.0d
-			y: -5.5d
+			y: -6.0d
 		}
 	]
 	quests: [
@@ -190,7 +190,11 @@
 		}
 		{
 			dependencies: ["5748351A76910019"]
-			description: ["这看岛起来有点小，不过还是有少量资源的"]
+			description: [
+				"这看岛起来有点小，不过还是有少量资源的"
+				""
+				"竹子可以分解成竹材，但不要一次性用完哦，记得补种！"
+			]
 			icon: {
 				Count: 1
 				id: "minecraft:wooden_pickaxe"
@@ -199,12 +203,20 @@
 				}
 			}
 			id: "630C033031F00877"
-			rewards: [{
-				count: 8
-				id: "2B7316A56A7C2A5D"
-				item: "minecraft:bread"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "2B7316A56A7C2A5D"
+					item: "minecraft:bread"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "642528680FAAB806"
+					item: "minecraft:bamboo"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "41693CC2217DDFF4"
@@ -219,26 +231,8 @@
 				}
 				{
 					count: 16L
-					id: "381029986CC19AE8"
-					item: "minecraft:cobblestone"
-					type: "item"
-				}
-				{
-					count: 8L
-					id: "20561254BCA2CC5B"
-					item: "minecraft:gravel"
-					type: "item"
-				}
-				{
-					count: 8L
-					id: "271AB824C9C708AD"
-					item: "minecraft:clay_ball"
-					type: "item"
-				}
-				{
-					count: 8L
-					id: "00C37EEE93797597"
-					item: { Count: 8, id: "minecraft:string" }
+					id: "748A909512C5BBDC"
+					item: { Count: 16, id: "minecraft:cobblestone" }
 					type: "item"
 				}
 			]
@@ -265,7 +259,7 @@
 					type: "item"
 				}
 				{
-					id: "00D2970BBA100680"
+					id: "292AF9E3067314F6"
 					item: "sakura:stone_mortar"
 					type: "item"
 				}
@@ -289,7 +283,7 @@
 				item: "dustandash:sharpen_flint"
 				type: "item"
 			}]
-			x: 14.5d
+			x: 15.0d
 			y: -3.0d
 		}
 		{
@@ -306,8 +300,8 @@
 				item: "dustandash:bloody_flint"
 				type: "item"
 			}]
-			x: 14.5d
-			y: -5.5d
+			x: 15.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["765A0F0A66F45570"]
@@ -345,7 +339,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: -8.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["13B6F6AC7608F794"]
@@ -430,11 +424,12 @@
 					type: "item"
 				}
 			]
-			x: 11.5d
-			y: -5.5d
+			x: 12.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["3C1CB82ADF4FBBC1"]
+			description: ["或者在茫茫暮色的洞穴中，有这熠熠生辉的石头......"]
 			id: "71B535DCE4CFEF8F"
 			subtitle: "天境"
 			tasks: [{
@@ -457,11 +452,11 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: -8.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["02003846DA642A0D"]
-			description: ["多准备一些红砖，穿梭流程会用到"]
+			description: ["多准备一些红砖，后续会用到的"]
 			icon: "minecraft:brick"
 			id: "4563BE3E3110A2C9"
 			rewards: [{
@@ -471,7 +466,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				count: 32L
+				count: 8L
 				id: "2886EA7D968B09D5"
 				item: "minecraft:brick"
 				type: "item"
@@ -482,36 +477,35 @@
 		}
 		{
 			dependencies: ["6FD736B74327F2AF"]
+			description: ["原始空岛有小概率刷新恶魔眼，获得恶魔眼球并击败该BOSS后才能获得后面的召唤器"]
+			icon: "terra_entity:suspicious_looking_eye"
 			id: "76DEBD32F9E5F5C5"
-			tasks: [{
-				id: "7E904C356AA48F12"
-				item: "terra_entity:suspicious_looking_eye"
+			rewards: [{
+				id: "2E29D37BE4A9DAF4"
+				item: "minecraft:enchanted_golden_apple"
 				type: "item"
 			}]
+			subtitle: "小boss"
+			tasks: [
+				{
+					id: "7E904C356AA48F12"
+					item: "terra_entity:suspicious_looking_eye"
+					type: "item"
+				}
+				{
+					id: "16F8789096D0BDA0"
+					item: "terra_entity:worm_food"
+					type: "item"
+				}
+				{
+					id: "124141045A596872"
+					item: "terra_entity:bloody_spine"
+					type: "item"
+				}
+			]
+			title: "boss召唤器！"
 			x: 12.0d
 			y: 3.0d
-		}
-		{
-			dependencies: ["76DEBD32F9E5F5C5"]
-			id: "09B678C6BEF83927"
-			tasks: [{
-				id: "6F14B2787D30781F"
-				item: "terra_entity:worm_food"
-				type: "item"
-			}]
-			x: 15.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["76DEBD32F9E5F5C5"]
-			id: "5F7A0D774548009B"
-			tasks: [{
-				id: "28FFCC6F4F856826"
-				item: "terra_entity:bloody_spine"
-				type: "item"
-			}]
-			x: 15.0d
-			y: 5.0d
 		}
 		{
 			dependencies: ["4563BE3E3110A2C9"]
@@ -590,8 +584,8 @@
 				type: "checkmark"
 			}]
 			title: "结构召唤仪式"
-			x: 11.5d
-			y: -8.0d
+			x: 12.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["034D47E905861E48"]
@@ -599,18 +593,20 @@
 				"返回仪式会在传送门仪式的目的地生成。"
 				""
 				"它是由&6黑曜石&r建造的3x3平台，中心为&6哭泣的黑曜石&r"
+				""
 				"使用&6木棍&r右键&6哭泣的黑曜石&r激活传送"
 			]
 			icon: "minecraft:grass_block"
 			id: "0191BEFB99BFD5D5"
 			shape: "hexagon"
+			size: 2.0d
 			tasks: [{
 				id: "5B3AB99A64A876F0"
 				type: "checkmark"
 			}]
 			title: "返回仪式"
-			x: 11.5d
-			y: -11.0d
+			x: 12.0d
+			y: -12.0d
 		}
 		{
 			dependencies: ["73531FB69122489F"]
@@ -671,7 +667,7 @@
 			]
 			title: "简易村民"
 			x: 3.0d
-			y: -8.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["6E4D6662243ED7F6"]
@@ -705,7 +701,7 @@
 				}
 			]
 			x: 3.0d
-			y: -11.0d
+			y: -12.0d
 		}
 		{
 			dependencies: ["6E4D6662243ED7F6"]
@@ -726,7 +722,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: -11.0d
+			y: -12.0d
 		}
 		{
 			dependencies: ["6E4D6662243ED7F6"]
@@ -742,7 +738,41 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -11.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["5748351A76910019"]
+			id: "065E8A79D06A17DC"
+			rewards: [{
+				id: "2E8B8D8C82ACAE3F"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				count: 8L
+				id: "4890A55709D764E1"
+				item: { Count: 8, id: "minecraft:gravel" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["630C033031F00877"]
+			id: "72B1E82D385A4650"
+			rewards: [{
+				id: "3F557CDAAD0C86F7"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				count: 8L
+				id: "710F2D8AC3263BA6"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 0.0d
 		}
 	]
 	title: "起始之空岛"

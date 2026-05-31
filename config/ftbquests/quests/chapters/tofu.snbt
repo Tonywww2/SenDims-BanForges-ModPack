@@ -31,6 +31,7 @@
 				"使用&6烤豆腐块&r建造3x3平台，在中心放置&6苔藓块&r"
 				"使用&6豆腐魔杖&r右键&6苔藓块&r激活传送"
 			]
+			hide_dependent_lines: true
 			hide_until_deps_visible: true
 			icon: "tofucraft:blocktofuishi"
 			id: "6140B0BCEB7F9D64"
@@ -162,7 +163,10 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["6BC640F272817733"]
+			dependencies: [
+				"6BC640F272817733"
+				"6140B0BCEB7F9D64"
+			]
 			dependency_requirement: "one_completed"
 			id: "3376AE50BC0EB9A5"
 			rewards: [{
