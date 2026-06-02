@@ -29,6 +29,8 @@
 		{
 			id: "065EAD0B521B1FFA"
 			linked_quest: "71B535DCE4CFEF8F"
+			shape: "hexagon"
+			size: 1.5d
 			x: 0.0d
 			y: 2.5d
 		}
@@ -486,6 +488,12 @@
 			]
 			icon: "deep_aether:stratus_ingot"
 			id: "3E8E74B1D1E90894"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5B8C24D411DB0AE1"
+				table_id: 7269548285138339695L
+				type: "loot"
+			}]
 			tasks: [
 				{
 					id: "45D871BD7E11C60C"

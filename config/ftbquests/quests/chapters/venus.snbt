@@ -102,14 +102,25 @@
 			id: "3ED92FEF92672EE9"
 			linked_quest: "78BE62D2851798DD"
 			shape: "hexagon"
+			size: 1.5d
 			x: -2.5d
 			y: 0.0d
 		}
 		{
 			id: "4D9D79F9D9990672"
 			linked_quest: "28CAD1DD57B60440"
+			shape: "hexagon"
+			size: 1.5d
 			x: -5.0d
 			y: 2.5d
+		}
+		{
+			id: "65F8324FC1CFB518"
+			linked_quest: "0351BC9DA1C5B4F7"
+			shape: "hexagon"
+			size: 1.5d
+			x: -10.0d
+			y: 7.5d
 		}
 	]
 	quests: [

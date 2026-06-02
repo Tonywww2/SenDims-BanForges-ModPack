@@ -76,12 +76,16 @@
 		{
 			id: "764E09AF482CAA4B"
 			linked_quest: "07AEFF9468658A0C"
+			shape: "hexagon"
+			size: 1.5d
 			x: 2.5d
 			y: -2.5d
 		}
 		{
 			id: "2BBE602F9542B3CE"
 			linked_quest: "34C15FC6C1E469E9"
+			shape: "hexagon"
+			size: 1.5d
 			x: 5.0d
 			y: -2.5d
 		}
@@ -489,6 +493,8 @@
 				"73EC367B170C5EF6"
 			]
 			id: "0351BC9DA1C5B4F7"
+			shape: "hexagon"
+			size: 1.5d
 			tasks: [{
 				id: "7994EC18FBD6D59E"
 				item: {

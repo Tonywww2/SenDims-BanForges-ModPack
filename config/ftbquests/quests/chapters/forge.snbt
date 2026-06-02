@@ -44,6 +44,12 @@
 				}
 			}
 			id: "514CF1593551F00F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5BD25B9D9251B727"
+				table_id: 7214542327696130213L
+				type: "loot"
+			}]
 			size: 2.0d
 			tasks: [{
 				id: "18EA69125CB36FC4"

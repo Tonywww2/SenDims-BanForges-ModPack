@@ -198,6 +198,11 @@
 			dependencies: ["5748351A76910019"]
 			description: ["跑图工具，byd帕克"]
 			id: "77693A4D5EF97A31"
+			rewards: [{
+				id: "722E6CAADEB83819"
+				type: "xp"
+				xp: 100
+			}]
 			size: 2.0d
 			tasks: [{
 				id: "1827F027E12F1F7C"
@@ -296,7 +301,7 @@
 				type: "item"
 			}]
 			x: -5.0d
-			y: 8.0d
+			y: 9.5d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
@@ -360,7 +365,7 @@
 				item: "minecraft:dragon_egg"
 				type: "item"
 			}]
-			x: -4.0d
+			x: -3.5d
 			y: 9.5d
 		}
 		{
@@ -386,7 +391,7 @@
 				item: "minecraft:nether_star"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -6.5d
 			y: 9.5d
 		}
 		{
@@ -479,6 +484,19 @@
 				}
 			}
 			id: "71F1943E6E3FCA17"
+			rewards: [
+				{
+					id: "397CB66B2E8FE251"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "346A4919C5BB4841"
+					table_id: 7269548285138339695L
+					type: "choice"
+				}
+			]
 			shape: "hexagon"
 			size: 2.0d
 			subtitle: "重要"
@@ -644,6 +662,7 @@
 		}
 		{
 			dependencies: ["2B1F98A770D77E12"]
+			description: ["&e泰拉饰品正在路上"]
 			id: "319D8C539D81926B"
 			size: 2.0d
 			tasks: [{
@@ -783,13 +802,13 @@
 		{
 			dependencies: ["3C14A2F8BA3C3DA6"]
 			id: "71D1A86D601690A9"
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "7C9538C827636262"
 				item: "apotheosis:hellshelf"
 				type: "item"
 			}]
-			x: -3.75d
+			x: -5.0d
 			y: 0.0d
 		}
 		{

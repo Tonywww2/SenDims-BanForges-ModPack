@@ -62,6 +62,14 @@
 			x: -5.0d
 			y: 5.0d
 		}
+		{
+			id: "5E6898C2E581FC27"
+			linked_quest: "0351BC9DA1C5B4F7"
+			shape: "hexagon"
+			size: 1.5d
+			x: -10.0d
+			y: 0.0d
+		}
 	]
 	quests: [
 		{
@@ -518,6 +526,7 @@
 			hide_until_deps_visible: true
 			id: "28CAD1DD57B60440"
 			shape: "hexagon"
+			size: 1.5d
 			tasks: [{
 				id: "54507E443D0F2512"
 				item: {

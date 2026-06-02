@@ -182,7 +182,7 @@
 				type: "checkmark"
 			}]
 			title: "首领"
-			x: 4.0d
+			x: 5.0d
 			y: -3.0d
 		}
 		{
@@ -212,7 +212,7 @@
 				type: "checkmark"
 			}]
 			title: "招架"
-			x: 8.0d
+			x: 9.0d
 			y: -3.0d
 		}
 		{
@@ -901,8 +901,7 @@
 			dependencies: ["36E1D57516888F2E"]
 			description: ["合成&b剑技绝艺总纲&r的材料之一"]
 			id: "41AAF1E0C28F6B57"
-			shape: "circle"
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "5341B94870727D64"
 				item: "last_smith:sakura_sphere"
@@ -1085,7 +1084,7 @@
 				type: "checkmark"
 			}]
 			title: "护甲与减伤"
-			x: 4.0d
+			x: 5.0d
 			y: 0.0d
 		}
 		{
@@ -1322,6 +1321,7 @@
 				""
 				"注意：确保你使用的是耀魂宝珠，而不是耀魂铁锭"
 			]
+			icon: "slashblade:proudsoul_sphere"
 			id: "4110B5547F5D8BD8"
 			shape: "gear"
 			tasks: [{
@@ -1348,6 +1348,7 @@
 		}
 		{
 			dependencies: ["4D0F49CE2720FBCD"]
+			icon: "slashblade:proudsoul_crystal"
 			id: "28AE103E3489DC0A"
 			shape: "gear"
 			tasks: [{
@@ -1361,6 +1362,12 @@
 		{
 			dependencies: ["6988EF237AE411F0"]
 			id: "65B006E14075F1AE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "68FF1A0B4C8D0658"
+				table_id: 7214542327696130213L
+				type: "choice"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "1F7D3ADA248DAE07"

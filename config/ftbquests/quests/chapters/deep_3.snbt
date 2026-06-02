@@ -60,6 +60,7 @@
 			id: "40149DB62657166B"
 			linked_quest: "7267904F019CEFD6"
 			shape: "hexagon"
+			size: 1.5d
 			x: -2.5d
 			y: 0.0d
 		}
@@ -73,6 +74,7 @@
 			id: "4614C32155EBEA48"
 			linked_quest: "28CAD1DD57B60440"
 			shape: "hexagon"
+			size: 1.5d
 			x: 5.0d
 			y: 2.5d
 		}
@@ -425,6 +427,12 @@
 				"1A8ED47E4400DEA8"
 			]
 			id: "26527CD8C76043BE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5F0C3736384B9DF6"
+				table_id: 7269548285138339695L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "3F3B03EF0C3DC72A"
 				item: "kubejs:scoria_ingot"
@@ -449,6 +457,7 @@
 				"26527CD8C76043BE"
 				"5A5D5E71A6C8851E"
 			]
+			dependency_requirement: "one_completed"
 			hide_until_deps_visible: true
 			id: "6E39BB8C6B65D2B6"
 			shape: "hexagon"

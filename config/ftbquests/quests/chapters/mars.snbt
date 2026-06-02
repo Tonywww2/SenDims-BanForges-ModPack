@@ -35,6 +35,8 @@
 		{
 			id: "4FEAB9C1DEE7D47E"
 			linked_quest: "40B4C6CD28E7DF19"
+			shape: "hexagon"
+			size: 1.5d
 			x: -2.5d
 			y: 0.0d
 		}
@@ -72,6 +74,7 @@
 		{
 			dependencies: ["5252B3E3137F1957"]
 			id: "37CFBBB29EFC0389"
+			subtitle: "未完成"
 			tasks: [{
 				id: "46DEDCD7EDCF3BFE"
 				type: "checkmark"

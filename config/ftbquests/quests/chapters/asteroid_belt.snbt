@@ -92,6 +92,14 @@
 			x: 2.5d
 			y: -5.0d
 		}
+		{
+			id: "73FFE4547DCF0EDD"
+			linked_quest: "01DBE6D12A9A3CD3"
+			shape: "hexagon"
+			size: 1.5d
+			x: -2.5d
+			y: 2.5d
+		}
 	]
 	quests: [
 		{
@@ -133,20 +141,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"77DC6770CC08AEF6"
-				"01779B6E3BCFF74E"
-			]
-			id: "7B68236BA19FE0EE"
-			tasks: [{
-				id: "04157D32C1E4F89B"
-				item: "nuclearcraft:lithium_ingot"
-				type: "item"
-			}]
-			x: -2.5d
-			y: 2.5d
-		}
-		{
 			dependencies: ["77DC6770CC08AEF6"]
 			id: "0326C6376D5E34FF"
 			tasks: [{
@@ -184,7 +178,6 @@
 				"0A2EC0BAE83D0D59"
 				"14D5D5ADCDC5B859"
 				"2E4AB72EC5D3F108"
-				"01DBE6D12A9A3CD3"
 			]
 			id: "690B503CC20750EE"
 			tasks: [{

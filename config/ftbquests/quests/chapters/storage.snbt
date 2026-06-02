@@ -146,6 +146,7 @@
 				"26B66FFB1E5C691C"
 				"332DA24A75E89AB3"
 			]
+			dependency_requirement: "one_completed"
 			id: "2270E6360EAB923F"
 			tasks: [{
 				id: "4E24BF6E94668E01"

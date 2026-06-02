@@ -23,6 +23,8 @@
 		{
 			id: "28BF7753DDD0C872"
 			linked_quest: "750B557031EFBBEE"
+			shape: "hexagon"
+			size: 1.5d
 			x: -2.5d
 			y: 0.0d
 		}
@@ -171,6 +173,7 @@
 		}
 		{
 			dependencies: ["0936AB2DCC0172A8"]
+			description: ["前往月球的地心"]
 			icon: "minecraft:bedrock"
 			id: "3C83ED0BBD919A31"
 			tasks: [{
@@ -187,6 +190,12 @@
 		{
 			dependencies: ["12DB2506A51D2B05"]
 			id: "4BBDBE99D484D70B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3BBBC5DD0B2E582D"
+				table_id: 7214542327696130213L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "421A279F41116BBA"
 				item: "tetra:metal_scrap"
@@ -201,6 +210,8 @@
 				"36E8BDF00D6B600E"
 			]
 			id: "0936AB2DCC0172A8"
+			shape: "hexagon"
+			size: 1.5d
 			tasks: [{
 				id: "10B39805EEEBF4FC"
 				item: "kubejs:bedrock_breaker"

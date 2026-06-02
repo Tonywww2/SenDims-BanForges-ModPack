@@ -10,14 +10,14 @@
 		{
 			id: "782145F121172E22"
 			linked_quest: "0B0F1D8BE89F8980"
-			x: -3.0d
+			x: -2.5d
 			y: 0.0d
 		}
 		{
 			id: "7AF774538F76952E"
 			linked_quest: "52726CE2A2740BF7"
 			shape: "hexagon"
-			x: -3.0d
+			x: -2.5d
 			y: 5.0d
 		}
 	]
@@ -101,7 +101,7 @@
 				type: "item"
 			}]
 			title: "世界核心"
-			x: -3.0d
+			x: -2.5d
 			y: 2.5d
 		}
 		{
@@ -130,7 +130,7 @@
 				}
 			]
 			title: "压制准备"
-			x: 3.0d
+			x: 2.5d
 			y: 0.0d
 		}
 		{
@@ -159,13 +159,13 @@
 					type: "item"
 				}
 			]
-			x: 5.5d
+			x: 5.0d
 			y: 0.0d
 		}
 		{
 			dependencies: [
-				"6BC640F272817733"
 				"6140B0BCEB7F9D64"
+				"64402F8CC5046FCE"
 			]
 			dependency_requirement: "one_completed"
 			id: "3376AE50BC0EB9A5"
@@ -174,19 +174,12 @@
 				type: "xp"
 				xp: 100
 			}]
-			tasks: [
-				{
-					id: "026CD9BC87E8B3B0"
-					item: "tofucraft:tofumetal"
-					type: "item"
-				}
-				{
-					id: "37775EC50B59CCE4"
-					item: { Count: 10, id: "tofucraft:tofumomen" }
-					type: "item"
-				}
-			]
-			x: 3.0d
+			tasks: [{
+				id: "026CD9BC87E8B3B0"
+				item: "tofucraft:tofumetal"
+				type: "item"
+			}]
+			x: 2.5d
 			y: 5.0d
 		}
 		{
@@ -232,7 +225,7 @@
 				}
 				type: "item"
 			}]
-			x: 3.0d
+			x: 2.5d
 			y: -2.5d
 		}
 		{
@@ -279,7 +272,7 @@
 				}
 				type: "item"
 			}]
-			x: 5.5d
+			x: 5.0d
 			y: 5.0d
 		}
 		{
@@ -398,7 +391,7 @@
 					type: "item"
 				}
 			]
-			x: 5.5d
+			x: 5.0d
 			y: 2.5d
 		}
 		{
@@ -418,34 +411,8 @@
 				type: "structure"
 			}]
 			title: "豆腐城堡"
-			x: 5.5d
+			x: 5.0d
 			y: -2.5d
-		}
-		{
-			dependencies: ["64402F8CC5046FCE"]
-			description: ["放置后直接挖碎即可获得对应的豆腐材料"]
-			icon: "tofucraft:blocktofumetal"
-			id: "6BC640F272817733"
-			rewards: [{
-				id: "784C91949156167D"
-				type: "xp"
-				xp: 100
-			}]
-			tasks: [
-				{
-					id: "3FE112F6A52E0628"
-					item: "tofucraft:blocktofumetal"
-					type: "item"
-				}
-				{
-					id: "5650DA5ECCE0AC64"
-					item: "tofucraft:blocktofumomen"
-					type: "item"
-				}
-			]
-			title: "两种豆腐块"
-			x: 3.0d
-			y: 2.5d
 		}
 		{
 			dependencies: ["3376AE50BC0EB9A5"]
