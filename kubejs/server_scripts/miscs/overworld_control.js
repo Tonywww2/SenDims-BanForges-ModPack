@@ -2,7 +2,7 @@
 let TARGET_DIM = 'minecraft:overworld';
 
 let PLATFORM_Y = 300;
-let PLAYER_Y = 301;
+let PLAYER_Y = 310;
 
 let X_MIN = 0;
 let X_MAX = 15;
@@ -96,29 +96,32 @@ const ensureWorldPlatform = (server) => {
     return level;
 }
 
-// PlayerEvents.loggedIn(event => {
-//     let player = event.player;
-//     if (!player || player.isFake && player.isFake()) return;
+PlayerEvents.loggedIn(event => {
+    let player = event.player;
+    if (!player || player.isFake && player.isFake()) return;
 
-//     if (player.stages.has(PLAYER_INIT_KEY)) return;
+    // if (player.stages.has(PLAYER_INIT_KEY)) return;
 
-//     let level = ensureWorldPlatform(event.server);
-//     if (!level) return;
+    // let level = ensureWorldPlatform(event.server);
+    // if (!level) return;
 
-//     player.stages.add(PLAYER_INIT_KEY);
-//     player.teleportTo(TARGET_DIM, SPAWN_X + 0.5, PLAYER_Y, SPAWN_Z + 0.5, 0, 0);
+    // player.stages.add(PLAYER_INIT_KEY);
+    // player.teleportTo(TARGET_DIM, SPAWN_X + 0.5, PLAYER_Y, SPAWN_Z + 0.5, 0, 0);
+    let pos = getLevelSpawnPoint(player.level);
+    SPAWN_X = pos[0];
+    SPAWN_Z = pos[2];
 
-//     player.tell('Wellcome! ');
-// });
+    player.tell('Wellcome! ');
+});
 
 const punishPlayer = (player) => {
     // player.teleportTo(TARGET_DIM, SPAWN_X + 0.5, PLAYER_Y, SPAWN_Z + 0.5, 0, 0);
     if (player.tags.contains('teleport_cooldown')) return;
     let pos = getLevelSpawnPoint(player.level);
 
-    player.teleportTo(TARGET_DIM, pos[0] + 0.5, PLAYER_Y, pos[2] + 0.5, 0, 0);
-
-    player.potionEffects.add('minecraft:wither', 100, 0);
+    // player.teleportTo(TARGET_DIM, pos[0] + 0.5, PLAYER_Y, pos[2] + 0.5, 0, 0);
+    player.server.runCommandSilent(`/execute in ${TARGET_DIM} run tp ${player.name.string} ${pos[0] + 0.5} ${PLAYER_Y} ${pos[2] + 0.5}`);
+    // player.potionEffects.add('minecraft:wither', 100, 0);
     player.potionEffects.add('minecraft:blindness', 100, 0);
     player.potionEffects.add('minecraft:nausea', 100, 0);
 
