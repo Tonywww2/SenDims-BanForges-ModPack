@@ -135,6 +135,20 @@ global.materialReplaceRules.put('aether:ambrosium_shard', {
     ]
 });
 
+global.materialReplaceRules.put("twilightforest:knightmetal_ingot", {
+    exchange: false,
+    list: [
+        'twilightforest:knightmetal_sword',
+        'twilightforest:knightmetal_pickaxe',
+        'twilightforest:knightmetal_axe',
+        'twilightforest:knightmetal_shield',
+        'twilightforest:knightmetal_helmet',
+        'twilightforest:knightmetal_chestplate',
+        'twilightforest:knightmetal_leggings',
+        'twilightforest:knightmetal_boots'
+    ]
+});
+
 
 let removeWhitelist = new Set([
     'twilightforest:giant_sword',

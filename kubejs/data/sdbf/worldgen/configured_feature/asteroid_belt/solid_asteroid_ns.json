@@ -42,8 +42,8 @@
         },
         "layers": {
             "filling": 1.5,
-            "inner_layer": 3.5,
-            "middle_layer": 4.5,
+            "inner_layer": 2.2,
+            "middle_layer": 3.2,
             "outer_layer": 5.5
         },
         "crack": {
@@ -51,7 +51,7 @@
             "base_crack_size": 2,
             "crack_point_offset": 2
         },
-        "noise_multiplier": 0.09,
+        "noise_multiplier": 0.05,
         "use_potential_placements_chance": 0,
         "use_alternate_layer0_chance": 0.1,
         "placements_require_layer0_alternate": false,

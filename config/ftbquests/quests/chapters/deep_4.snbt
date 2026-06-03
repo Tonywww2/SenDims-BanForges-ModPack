@@ -225,6 +225,37 @@
 			x: 2.5d
 			y: -7.5d
 		}
+		{
+			id: "676E2B6B9C84C3D0"
+			size: 2.0d
+			tasks: [{
+				id: "4A87CF2DA9FC1D8A"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -0.5d
+		}
+		{
+			id: "01026E71A5670010"
+			tasks: [{
+				id: "6FC9B62A2B40222C"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			x: 13.0d
+			y: -0.5d
+		}
+		{
+			id: "5717E9C346E5E56E"
+			tasks: [{
+				id: "551DF3E64551DD88"
+				item: "quark:hollow_oak_log"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 2.0d
+		}
 	]
 	title: "深境：最终极旋涡"
 }

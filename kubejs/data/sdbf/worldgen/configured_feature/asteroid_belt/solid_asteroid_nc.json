@@ -44,14 +44,14 @@
             "filling": 1.0,
             "inner_layer": 2.0,
             "middle_layer": 3.0,
-            "outer_layer": 4.0
+            "outer_layer": 5.5
         },
         "crack": {
             "generate_crack_chance": 0,
             "base_crack_size": 2,
             "crack_point_offset": 2
         },
-        "noise_multiplier": 0.09,
+        "noise_multiplier": 0.05,
         "use_potential_placements_chance": 0,
         "use_alternate_layer0_chance": 0.1,
         "placements_require_layer0_alternate": false,

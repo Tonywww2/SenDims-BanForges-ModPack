@@ -56,9 +56,9 @@
         "layers":
         {
             "filling": 1.8,
-            "inner_layer": 3.5,
-            "middle_layer": 3.8,
-            "outer_layer": 4.8
+            "inner_layer": 2.2,
+            "middle_layer": 3.2,
+            "outer_layer": 4.5
         },
         "crack":
         {

@@ -1414,6 +1414,32 @@
 			x: 7.5d
 			y: 15.0d
 		}
+		{
+			dependencies: [
+				"6CCC54D46EB1FD91"
+				"295C7AEDBFF7EE12"
+				"746E80BAF97822B7"
+				"220AEBF0A8A46F7C"
+			]
+			dependency_requirement: "one_completed"
+			id: "05E54DE8EF83C8EB"
+			tasks: [{
+				id: "3118DB02D446FD33"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"translate\":\"item.last_smith.amagumo_kaze\"}"
+						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.last_smith.amagumo_kaze\"}})"
+					}
+				}
+				type: "item"
+			}]
+			x: 15.0d
+			y: 7.5d
+		}
 	]
 	title: "拔刀剑"
 }

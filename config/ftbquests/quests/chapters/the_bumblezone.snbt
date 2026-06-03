@@ -102,10 +102,10 @@
 			y: -7.5d
 		}
 		{
-			id: "2076686ABBECD97C"
-			linked_quest: "746E80BAF97822B7"
-			x: 10.0d
-			y: -7.5d
+			id: "7737F9DD5669DDA8"
+			linked_quest: "05E54DE8EF83C8EB"
+			x: 7.5d
+			y: -10.0d
 		}
 	]
 	quests: [
@@ -370,30 +370,6 @@
 			y: -10.0d
 		}
 		{
-			dependencies: [
-				"6CCC54D46EB1FD91"
-				"295C7AEDBFF7EE12"
-				"746E80BAF97822B7"
-			]
-			id: "05E54DE8EF83C8EB"
-			tasks: [{
-				id: "3118DB02D446FD33"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						display: {
-							Name: "{\"translate\":\"item.last_smith.amagumo_kaze\"}"
-						}
-						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.last_smith.amagumo_kaze\"}})"
-					}
-				}
-				type: "item"
-			}]
-			x: 7.5d
-			y: -10.0d
-		}
-		{
 			dependencies: ["7830BE2BDC13CC00"]
 			id: "6D6FC1765F6AAA8B"
 			tasks: [{
@@ -464,7 +440,7 @@
 		}
 		{
 			dependencies: ["05E54DE8EF83C8EB"]
-			hide_until_deps_visible: true
+			hide_until_deps_complete: true
 			id: "682B4755022DFAD3"
 			tasks: [{
 				id: "2E955366CA52973D"
