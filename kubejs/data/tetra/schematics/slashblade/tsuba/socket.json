@@ -1,0 +1,28 @@
+{
+  "replace": true,
+  "slots": [
+    "slashblade/tsuba"
+  ],
+  "materialSlotCount": 1,
+  "displayType": "improvement",
+  "glyph": {
+    "textureX": 95,
+    "textureY": 32
+  },
+  "outcomes": [
+    {
+      "materials": [
+        "tetra:bone/",
+        "tetra:gem/",
+        "tetra:misc/",
+        "tetra:scale/",
+        "tetra:skin/",
+        "tetra:stone/"
+      ],
+      "experienceFactor": 1,
+      "improvements": {
+        "slashblade/socket/": 0
+      }
+    }
+  ]
+}

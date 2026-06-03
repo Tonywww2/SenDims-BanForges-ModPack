@@ -1,0 +1,15 @@
+[
+  {
+    "materials": [
+      "tetra:bone/",
+      "tetra:gem/",
+      "tetra:misc/",
+      "tetra:scale/",
+      "tetra:skin/",
+      "tetra:stone/"
+    ],
+    "key": "slashblade/socket/",
+    "level": 0,
+    "group": "socket"
+  }
+]
