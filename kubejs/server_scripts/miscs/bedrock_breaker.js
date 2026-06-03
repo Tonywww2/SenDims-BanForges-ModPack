@@ -31,7 +31,8 @@ BlockEvents.rightClicked("minecraft:bedrock", event => {
                 let x = player.x;
                 let y = player.y + 175;
                 let z = player.z;
-                event.player.teleportTo(targetDim, x, y, z, 0, 0);
+                // event.player.teleportTo(targetDim, x, y, z, 0, 0);
+                player.server.runCommandSilent(`/execute in ${targetDim} run tp ${player.name.string} ${x} ${y} ${z}`);
 
                 for (let i = x - 2; i < x + 2; i++) {
                     for (let j = z - 2; j < z + 2; j++) {

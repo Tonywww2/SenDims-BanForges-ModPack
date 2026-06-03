@@ -26,6 +26,14 @@
 			x: 0.0d
 			y: 22.5d
 		}
+		{
+			id: "21E158717848BE90"
+			linked_quest: "6AE2EFEC0F3BE4BE"
+			shape: "hexagon"
+			size: 1.5d
+			x: -2.5d
+			y: 0.0d
+		}
 	]
 	quests: [
 		{
@@ -298,7 +306,7 @@
 				id: "2463B8E591F9350D"
 				type: "advancement"
 			}]
-			x: -2.5d
+			x: -5.0d
 			y: 0.0d
 		}
 		{

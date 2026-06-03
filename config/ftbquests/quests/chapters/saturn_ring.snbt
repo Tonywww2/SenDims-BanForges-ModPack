@@ -71,6 +71,8 @@
 		{
 			id: "3D4D86CF738D4D9D"
 			linked_quest: "27BDBA3EDEB9A04A"
+			shape: "hexagon"
+			size: 1.5d
 			x: 2.5d
 			y: -2.5d
 		}

@@ -43,6 +43,7 @@
 			id: "72C7D7E12A49ED57"
 			linked_quest: "0C568583CC58DAA6"
 			shape: "hexagon"
+			size: 1.5d
 			x: -5.0d
 			y: 0.0d
 		}

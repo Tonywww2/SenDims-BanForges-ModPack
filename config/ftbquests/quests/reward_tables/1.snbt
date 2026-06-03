@@ -62,6 +62,19 @@
 			}
 			title: "经验汲取II"
 		}
+		{
+			item: {
+				Count: 1
+				id: "minecraft:enchanted_book"
+				tag: {
+					StoredEnchantments: [{
+						id: "minecraft:unbreaking"
+						lvl: 2s
+					}]
+				}
+			}
+			title: "耐久II"
+		}
 	]
 	title: "附魔书-战斗-1"
 }

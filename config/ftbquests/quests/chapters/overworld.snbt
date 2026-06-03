@@ -106,6 +106,8 @@
 		{
 			dependencies: ["05F34C96BF68DD64"]
 			id: "07AEFF9468658A0C"
+			shape: "hexagon"
+			size: 1.5d
 			tasks: [{
 				id: "1DB3014F496DB10E"
 				item: "kubejs:anchor_shard"

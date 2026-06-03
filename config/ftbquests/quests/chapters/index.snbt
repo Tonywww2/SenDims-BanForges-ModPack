@@ -263,26 +263,104 @@
 			y: 9.0d
 		}
 	]
-	quests: [{
-		description: [
-			"这个章节是索引章节，可以帮助你快速定位到当前的进度"
-			""
-			""
-			"{image:sdbf:textures/gui/task_info.png width:195 height:91 align:center}"
-		]
-		hide_dependent_lines: true
-		icon: "botania:cosmetic_questgiver_mark"
-		id: "222077D4E6F647A3"
-		shape: "gear"
-		size: 6.0d
-		subtitle: "重要"
-		tasks: [{
-			id: "683003D90E47A802"
-			type: "checkmark"
-		}]
-		title: "索引章节+任务信息"
-		x: -30.0d
-		y: 6.0d
-	}]
+	quests: [
+		{
+			description: [
+				"这个章节是索引章节，可以帮助你快速定位到当前的进度"
+				""
+				""
+				"{image:sdbf:textures/gui/task_info.png width:195 height:91 align:center}"
+			]
+			hide_dependent_lines: true
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "222077D4E6F647A3"
+			rewards: [{
+				id: "021F7321D49AC6E7"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "gear"
+			size: 4.0d
+			subtitle: "重要"
+			tasks: [{
+				id: "683003D90E47A802"
+				type: "checkmark"
+			}]
+			title: "索引章节+任务信息"
+			x: -30.0d
+			y: 5.0d
+		}
+		{
+			description: [
+				"&e本整合包强烈不推荐在常规游玩时使用作弊指令！"
+				"以下的指令都是经过仔细配置的，它们都拥有合理的冷却时间与功能性。&r"
+				""
+				"&d如果你需要传送功能，请使用以下指令：&r"
+				"·/tpa <玩家>： 请求传送到目标玩家。"
+				"·/tpahere <玩家>：请求玩家传送到你的位置。"
+				"·/back: 返回上一个传送点或死亡点。"
+				"·/sethome：设置一个家。"
+				"·/home：返回设置过的家。"
+				"·/skyblock home：返回空岛的出生点。"
+				""
+				"&d本整合包强烈不推荐添加额外的模组/内容，除了：&r"
+				"·YSM"
+				"·DLC和DLC所包含的模组/内容"
+				"·小地图"
+				"·常规资源包"
+				"·常规光影包"
+			]
+			icon: "minecraft:command_block"
+			id: "2AB981A4A033541D"
+			rewards: [{
+				id: "6DF67BCB21CCED07"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "gear"
+			size: 4.0d
+			tasks: [{
+				id: "0359F2FE62FF49C4"
+				type: "checkmark"
+			}]
+			title: "命令和作弊"
+			x: -30.0d
+			y: 9.0d
+		}
+		{
+			description: [
+				"&e首先感谢您的游玩&r！"
+				""
+				"目前整合包还处于测试阶段/公开测试阶段，虽然已经经过了数轮内部测试，但是仍然可能有许多的BUG或平衡性问题。"
+				"如果你遇到了问题，请通过QQ群/MCMOD/CurseForge/Github反馈！"
+				"如果你有任何的改进建议，请通过Github反馈！"
+				""
+				"&e目前内容完成度（85%）：&r"
+				"·主线：阶段1-阶段3全部完成，阶段4剩余土星环未完成，阶段5未完成。"
+				"·探索：深境2，小行星带，末地-里等纬度还有计划中的解构/探索目标未完成。"
+				"·拔刀剑：阶段5的终局拔刀剑还未实装。"
+				"·拔刀剑：无名系列拔刀剑正在设计中。"
+				"·BOSS：一些BOSS会获得他们的专属强化，就像暮色的BOSS那样。"
+				"·Tetra材料：除了主线材料以外，开发者/特别感谢系列的彩蛋材料正在制作中。"
+				"·机制：挖掘等级，目前Tetra的挖掘等级/加工等级并未经过设计。将来会进行详细的设计与配置。"
+				"·任务：任务线还需继续优化，任务隐藏与依赖关系还需继续优化。"
+				"·科技：科技线大后期内容，量子升级/六阶火箭之后的内容。"
+				"·DLC：DLC规范仍在完善，本整合包的DLC系统计划使用CFModPack格式，方便创作者在不分发本体的情况下分发DLC文件，并制作专门的安装器方便玩家使用。"
+			]
+			id: "0CD325E67D4FB42C"
+			rewards: [{
+				id: "254A048012B2741F"
+				type: "xp"
+				xp: 77
+			}]
+			tasks: [{
+				id: "0634B66B3AE0B5BC"
+				type: "checkmark"
+			}]
+			title: "临时公告"
+			x: -30.0d
+			y: 1.0d
+		}
+	]
 	title: "世界目录——快速索引"
 }

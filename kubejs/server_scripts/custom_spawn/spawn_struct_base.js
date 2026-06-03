@@ -152,9 +152,9 @@ const createBossStructure = (config) => {
  * @param {Object} config
  */
 const registerPortal = (config) => {
-    let x = config.x;
-    let y = config.y;
-    let z = config.z;
+    let xf = config.x;
+    let yf = config.y;
+    let zf = config.z;
     let from = config.from;
     let toDim = config.to;
     let clearDestinationBlocks = config.clearDestinationBlocks;
@@ -165,11 +165,17 @@ const registerPortal = (config) => {
             return;
         }
 
+        let x = xf(player);
+        let y = yf(player);
+        let z = zf(player);
+
         let targetX = x != null ? x : centerPos.x;
         let targetY = y != null ? y : centerPos.y;
         let targetZ = z != null ? z : centerPos.z;
 
-        player.teleportTo(toDim, targetX + 0.5, targetY + 1, targetZ + 0.5, player.getYaw(), player.getPitch());
+        // player.teleportTo(toDim, targetX + 0.5, targetY + 1, targetZ + 0.5, player.getYaw(), player.getPitch());
+        player.server.runCommandSilent(`/execute in ${toDim} run tp ${player.name.string} ${targetX + 0.5} ${targetY + 1} ${targetZ + 0.5}`);
+
 
         if (clearDestinationBlocks) {
             let server = level.getServer();

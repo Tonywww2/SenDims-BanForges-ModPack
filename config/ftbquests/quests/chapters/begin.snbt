@@ -24,30 +24,32 @@
 			id: "37F9308A7B690DE9"
 			linked_quest: "765A0F0A66F45570"
 			x: 9.0d
-			y: -6.0d
+			y: -9.0d
 		}
 		{
 			id: "4413A8820A84AB93"
 			linked_quest: "71F1943E6E3FCA17"
-			x: 6.0d
+			shape: "hexagon"
+			size: 1.5d
+			x: 3.0d
 			y: -6.0d
 		}
 		{
 			id: "7B526208D694FBFA"
 			linked_quest: "4C56CFEEBC74DE9A"
 			x: 15.0d
-			y: -9.0d
+			y: -12.0d
 		}
 		{
 			id: "64467FFD7950DBC7"
 			linked_quest: "5BB642BD0BE40541"
-			x: 3.0d
+			x: 0.0d
 			y: -6.0d
 		}
 		{
 			id: "0A0F62BCD972F9DF"
 			linked_quest: "3C1CB82ADF4FBBC1"
-			x: 0.0d
+			x: -3.0d
 			y: -6.0d
 		}
 	]
@@ -217,32 +219,23 @@
 					type: "item"
 				}
 			]
-			tasks: [
-				{
-					id: "41693CC2217DDFF4"
-					item: {
-						Count: 1
-						id: "minecraft:wooden_pickaxe"
-						tag: {
-							Damage: 0
-						}
+			tasks: [{
+				id: "41693CC2217DDFF4"
+				item: {
+					Count: 1
+					id: "minecraft:wooden_pickaxe"
+					tag: {
+						Damage: 0
 					}
-					type: "item"
 				}
-				{
-					count: 16L
-					id: "748A909512C5BBDC"
-					item: { Count: 16, id: "minecraft:cobblestone" }
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			title: "采集资源"
 			x: 12.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["630C033031F00877"]
-			description: ["熔炉前期燃烧效率可以堆量解决，后者可以直接磨砂砾出燧石"]
 			icon: "minecraft:furnace"
 			id: "02003846DA642A0D"
 			rewards: [{
@@ -251,20 +244,11 @@
 				item: "minecraft:bread"
 				type: "item"
 			}]
-			tasks: [
-				{
-					count: 2L
-					id: "267A381BC07330A6"
-					item: "minecraft:furnace"
-					type: "item"
-				}
-				{
-					id: "292AF9E3067314F6"
-					item: "sakura:stone_mortar"
-					type: "item"
-				}
-			]
-			title: "工作方块"
+			tasks: [{
+				id: "267A381BC07330A6"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
 			x: 12.0d
 			y: -3.0d
 		}
@@ -301,7 +285,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: -6.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["765A0F0A66F45570"]
@@ -338,7 +322,7 @@
 				}
 				type: "item"
 			}]
-			x: 9.0d
+			x: 6.0d
 			y: -9.0d
 		}
 		{
@@ -408,24 +392,22 @@
 					table_id: 7214542327696130213L
 					type: "choice"
 				}
-			]
-			shape: "hexagon"
-			size: 1.0d
-			subtitle: "相交的碎片"
-			tasks: [
 				{
-					id: "4ABE72912DE0F08B"
-					item: "kubejs:garden_lighter"
-					type: "item"
-				}
-				{
-					id: "0C727A6D844E4D37"
+					id: "3EC7A9F6D8A874F4"
 					item: "minecraft:stick"
 					type: "item"
 				}
 			]
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "相交的碎片"
+			tasks: [{
+				id: "4ABE72912DE0F08B"
+				item: "kubejs:garden_lighter"
+				type: "item"
+			}]
 			x: 12.0d
-			y: -6.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["3C1CB82ADF4FBBC1"]
@@ -445,13 +427,19 @@
 			dependency_requirement: "one_completed"
 			description: ["提示：推荐在深境一层挖掘铁矿"]
 			id: "73531FB69122489F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4FD200BBE6660319"
+				table_id: 7214542327696130213L
+				type: "loot"
+			}]
 			subtitle: "原始工业"
 			tasks: [{
 				id: "19D50CF451B4F924"
 				item: "minecraft:iron_ingot"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 3.0d
 			y: -9.0d
 		}
 		{
@@ -585,7 +573,7 @@
 			}]
 			title: "结构召唤仪式"
 			x: 12.0d
-			y: -9.0d
+			y: -12.0d
 		}
 		{
 			dependencies: ["034D47E905861E48"]
@@ -606,7 +594,7 @@
 			}]
 			title: "返回仪式"
 			x: 12.0d
-			y: -12.0d
+			y: -15.0d
 		}
 		{
 			dependencies: ["73531FB69122489F"]
@@ -666,7 +654,7 @@
 				}
 			]
 			title: "简易村民"
-			x: 3.0d
+			x: 0.0d
 			y: -9.0d
 		}
 		{
@@ -700,7 +688,7 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
+			x: 0.0d
 			y: -12.0d
 		}
 		{
@@ -721,7 +709,7 @@
 				item: "easy_villagers:breeder"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 3.0d
 			y: -12.0d
 		}
 		{
@@ -737,7 +725,7 @@
 				item: "easy_villagers:incubator"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -3.0d
 			y: -12.0d
 		}
 		{
@@ -751,7 +739,7 @@
 			tasks: [{
 				count: 8L
 				id: "4890A55709D764E1"
-				item: { Count: 8, id: "minecraft:gravel" }
+				item: "minecraft:gravel"
 				type: "item"
 			}]
 			x: 15.0d
@@ -773,6 +761,18 @@
 			}]
 			x: 18.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["630C033031F00877"]
+			description: ["可以用于制作燧石"]
+			id: "3070257ED61256F5"
+			tasks: [{
+				id: "683B8670C9CBE82C"
+				item: "sakura:stone_mortar"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -6.0d
 		}
 	]
 	title: "起始之空岛"

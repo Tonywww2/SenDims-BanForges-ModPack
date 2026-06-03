@@ -14,25 +14,25 @@ NativeEvents.onEvent($EntityTravelToDimensionEvent, /** @param {Internal.EntityT
         switch (key) {
             case 'midnight:the_midnight':
                 if (!player.stages.has(MIDNIGHT_STAGE)) {
-                    event.setCanceled(true)
-                    player.tell(Text.translatable('info.kubejs.the_midnight_disallowed').darkPurple())
-                    punishPlayer(player)
+                    event.setCanceled(true);
+                    player.tell(Text.translatable('info.kubejs.the_midnight_disallowed').darkPurple());
+                    punishPlayer(player);
                 }
                 break
 
             case 'minecraft:the_end':
                 if (!hasCurios(player, 'slashblade_sendims:blessing_petals')) {
-                    event.setCanceled(true)
-                    player.tell(Text.translatable('info.kubejs.the_end_disallowed').darkPurple())
-                    punishPlayer(player)
+                    event.setCanceled(true);
+                    player.tell(Text.translatable('info.kubejs.the_end_disallowed').darkPurple());
+                    punishPlayer(player);
                 }
                 break
 
             case 'the_bumblezone:the_bumblezone':
                 if (!hasCurios(player, 'slashblade_sendims:the_nectar_quest')) {
-                    event.setCanceled(true)
-                    player.tell(Text.translatable('info.kubejs.the_bumblezone_disallowed').darkPurple())
-                    punishPlayer(player)
+                    event.setCanceled(true);
+                    player.tell(Text.translatable('info.kubejs.the_bumblezone_disallowed').darkPurple());
+                    punishPlayer(player);
                 }
                 break
 

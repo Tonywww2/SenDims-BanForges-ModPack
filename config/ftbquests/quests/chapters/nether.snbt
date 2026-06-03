@@ -17,6 +17,8 @@
 		{
 			id: "66E5DF5B4A27573C"
 			linked_quest: "0936AB2DCC0172A8"
+			shape: "hexagon"
+			size: 1.5d
 			x: 0.0d
 			y: -2.5d
 		}
@@ -78,6 +80,12 @@
 		{
 			dependencies: ["1BFFE0DF9A447A4A"]
 			id: "74CCF300B72CB6EE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5CDE7793B1660F91"
+				table_id: 7269548285138339695L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "0848DCCC260DA074"
 				item: "cataclysm:monstrous_horn"

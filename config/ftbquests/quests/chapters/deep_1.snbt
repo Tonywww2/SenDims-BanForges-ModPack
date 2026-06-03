@@ -23,6 +23,8 @@
 		{
 			id: "48E82D2A6108C479"
 			linked_quest: "71F1943E6E3FCA17"
+			shape: "hexagon"
+			size: 1.5d
 			x: -2.5d
 			y: 0.0d
 		}
@@ -41,6 +43,8 @@
 				item: "minecraft:diamond"
 				type: "item"
 			}]
+			shape: "hexagon"
+			size: 1.5d
 			tasks: [{
 				id: "5EA9F027884A6755"
 				item: "minecraft:diamond"
@@ -347,12 +351,6 @@
 			hide_until_deps_visible: true
 			icon: "minecraft:deepslate"
 			id: "5BB642BD0BE40541"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "6D4AF77DC54D55DB"
-				table_id: 7269548285138339695L
-				type: "choice"
-			}]
 			size: 2.0d
 			tasks: [
 				{
@@ -430,6 +428,12 @@
 			dependencies: ["5BB642BD0BE40541"]
 			hide_until_deps_complete: true
 			id: "5CCEAB83DF5ACE81"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2B49BF624FB4A8EE"
+				table_id: 7214542327696130213L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "4B7399053F683820"
 				item: "terra_entity:clothier_voodoo_doll"
@@ -440,7 +444,7 @@
 		}
 		{
 			dependencies: ["5CCEAB83DF5ACE81"]
-			description: ["这是通往另一个维度的钥匙，不过你还需要激活它。"]
+			description: ["这是通往另一个维度的钥匙，不过你还需要&e通过合成&r激活它。"]
 			id: "7267904F019CEFD6"
 			shape: "hexagon"
 			tasks: [{
@@ -480,7 +484,7 @@
 				"注意：瘟疫疯人院内的敌人十分强大，他们拥有比常规敌人更优质的装备，请做好充足的准备。"
 			]
 			id: "69856593B46ECD9E"
-			subtitle: "警告：高难"
+			subtitle: "警告"
 			tasks: [{
 				id: "04B2EB5A3186D705"
 				structure: "dungeons_arise:plague_asylum"
@@ -560,6 +564,7 @@
 		{
 			dependencies: ["561241B6C33A3DCD"]
 			id: "5455473B5A1E65AF"
+			subtitle: "未完成"
 			tasks: [{
 				id: "308FCC8294F7423B"
 				item: "terra_entity:honeyed_goggles"

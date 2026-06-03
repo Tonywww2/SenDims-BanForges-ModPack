@@ -36,6 +36,7 @@
 			id: "62E370CF7E37D7D1"
 			linked_quest: "6E39BB8C6B65D2B6"
 			shape: "hexagon"
+			size: 1.5d
 			x: 0.0d
 			y: -2.5d
 		}
@@ -50,6 +51,14 @@
 			linked_quest: "2B1F98A770D77E12"
 			x: 13.0d
 			y: 0.0d
+		}
+		{
+			id: "5E4F1A89F99A5692"
+			linked_quest: "0351BC9DA1C5B4F7"
+			shape: "hexagon"
+			size: 1.5d
+			x: 5.0d
+			y: -5.0d
 		}
 	]
 	quests: [

@@ -9,9 +9,9 @@ registerPortal({
     patterns: RETURN_PORTAL_PATTERN,
     from: null,
     to: 'minecraft:overworld',
-    x: SPAWN_X,
-    y: PLAYER_Y,
-    z: SPAWN_Z,
+    x: (player) => getLevelSpawnPoint(player.level)[0],
+    y: (player) => PLAYER_Y,
+    z: (player) => getLevelSpawnPoint(player.level)[2],
     clearDestinationBlocks: false,
     structureName: "return_portal"
 });
@@ -27,9 +27,9 @@ registerPortal({
     patterns: RETURN_PORTAL_PATTERN,
     from: 'minecraft:overworld',
     to: 'tofucraft:tofu_world',
-    x: null,
-    y: 64,
-    z: null,
+    x: (player) => null,
+    y: (player) => 64,
+    z: (player) => null,
     clearDestinationBlocks: true,
     structureName: "tofu_portal"
 });
@@ -45,9 +45,9 @@ registerPortal({
     patterns: RETURN_PORTAL_PATTERN,
     from: 'minecraft:overworld',
     to: 'sdbf:deep_realm_level_1',
-    x: null,
-    y: 285,
-    z: null,
+    x: (player) => null,
+    y: (player) => 285,
+    z: (player) => null,
     clearDestinationBlocks: true,
     structureName: "deep_realm_level_1_portal"
 });
@@ -63,9 +63,9 @@ registerPortal({
     patterns: RETURN_PORTAL_PATTERN,
     from: 'minecraft:overworld',
     to: 'sdbf:deep_realm_level_2',
-    x: null,
-    y: 140,
-    z: null,
+    x: (player) => null,
+    y: (player) => 140,
+    z: (player) => null,
     clearDestinationBlocks: true,
     structureName: "deep_realm_level_2_portal"
 });
