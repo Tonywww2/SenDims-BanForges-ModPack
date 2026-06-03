@@ -55,7 +55,7 @@
         },
         "layers":
         {
-            "filling": 1.2,
+            "filling": 0.9,
             "inner_layer": 1.7,
             "middle_layer": 2.7,
             "outer_layer": 4.4
