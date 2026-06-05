@@ -27,13 +27,13 @@ ServerEvents.recipes(event => {
         })
         .id("sdbf:principle_of_sword_arts_copy_sas")
 
-    event.shaped('integrateddynamics:logic_director', [
+    event.shaped('2x integrateddynamics:logic_director', [
         'ACA',
         'ABA',
         'ACA'
     ], {
         A: 'integrateddynamics:crystalized_chorus_chunk',
-        B: '#forge:gems/diamond',
+        B: 'slashblade:proudsoul_sphere',
         C: 'integrateddynamics:crystalized_menril_chunk'
     }).id('sdbf:logic_director')
 

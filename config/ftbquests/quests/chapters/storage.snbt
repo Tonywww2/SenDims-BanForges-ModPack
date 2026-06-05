@@ -668,6 +668,150 @@
 			x: 7.5d
 			y: -5.0d
 		}
+		{
+			dependencies: ["45D61951C69AE3EC"]
+			id: "1B11F5240B2FD26F"
+			tasks: [{
+				id: "1060F5A1217ACF54"
+				item: "aeinfinitybooster:infinity_card"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1B11F5240B2FD26F"]
+			id: "04C441B8E2507B62"
+			tasks: [{
+				id: "37B18F41C45B63BE"
+				item: "aeinfinitybooster:dimension_card"
+				type: "item"
+			}]
+			x: 12.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["71FCA5FAB43DD617"]
+			icon: {
+				Count: 1
+				id: "easy_villagers:villager"
+				tag: {
+					villager: {
+						AbsorptionAmount: 0.0f
+						Age: 12
+						ArmorDropChances: [
+							0.085f
+							0.085f
+							0.085f
+							0.085f
+						]
+						ArmorItems: [
+							{ }
+							{ }
+							{ }
+							{ }
+						]
+						Attributes: [ ]
+						BMLootBlock: 0b
+						BaguData: { }
+						Brain: {
+							memories: { }
+						}
+						CanPickUpLoot: 1b
+						CitadelData: { }
+						DeathTime: 0s
+						FallFlying: 0b
+						FoodLevel: 0b
+						ForcedAge: 0
+						Gossips: [ ]
+						HandDropChances: [
+							0.085f
+							0.085f
+						]
+						HandItems: [
+							{ }
+							{ }
+						]
+						Health: 20.0f
+						HurtByTimestamp: 0
+						HurtTime: 0s
+						Inventory: [ ]
+						LastGossipDecay: 0L
+						LastRestock: 335478L
+						LeftHanded: 0b
+						Offers: {
+							Recipes: [
+								{
+									buy: {
+										Count: 3
+										id: "minecraft:emerald"
+									}
+									buyB: {
+										Count: 1
+										id: "minecraft:air"
+									}
+									demand: -12
+									maxUses: 12
+									priceMultiplier: 0.05f
+									rewardExp: 1b
+									sell: {
+										Count: 4
+										id: "ae2:certus_quartz_crystal"
+									}
+									specialPrice: 0
+									uses: 0
+									xp: 10
+								}
+								{
+									buy: {
+										Count: 2
+										id: "minecraft:emerald"
+									}
+									buyB: {
+										Count: 1
+										id: "minecraft:air"
+									}
+									demand: -12
+									maxUses: 12
+									priceMultiplier: 0.05f
+									rewardExp: 1b
+									sell: {
+										Count: 1
+										id: "ae2:meteorite_compass"
+									}
+									specialPrice: 0
+									uses: 0
+									xp: 5
+								}
+							]
+							"morejs$disabled": [
+								0b
+								0b
+							]
+						}
+						PersistenceRequired: 0b
+						RestocksToday: 1
+						VillagerData: {
+							level: 1
+							profession: "ae2:fluix_researcher"
+							type: "minecraft:plains"
+						}
+						Xp: 0
+						YouthPotion: 0b
+						bm_IsStunted: 0b
+					}
+				}
+			}
+			id: "5D9E583B3AF2CDDE"
+			tasks: [{
+				id: "00520439AC77DB36"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			title: "福鲁伊克斯研究员"
+			x: 5.0d
+			y: 5.0d
+		}
 	]
 	title: "库存管理"
 }

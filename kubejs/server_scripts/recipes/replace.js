@@ -164,4 +164,14 @@ ServerEvents.recipes(event => {
         Item.of('integrateddynamics:energy_battery', '{capacity:4000000}').weakNBT()
     );
 
+    event.replaceInput({ id: 'aeinfinitybooster:infinity_card' },
+        'minecraft:ender_eye',
+        Item.of('integrateddynamics:energy_battery', '{capacity:16000000,energy:16000000}').weakNBT()
+    );
+
+    event.replaceInput({ id: 'aeinfinitybooster:dimension_card' },
+        'minecraft:ender_eye',
+        Item.of('appflux:fe_64k_portable_cell', '{internalCurrentPower:20000.0d,power:1638400000L}').weakNBT()
+    );
+
 })

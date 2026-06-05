@@ -105,12 +105,12 @@
 						Count: 1
 						id: "umapyoi:uma_soul"
 						tag: {
-							actionPoint: 2672
+							actionPoint: 4672
 							extraProperty: [I;
 								0
 								4
 								5
-								1400
+								3400
 							]
 							growth: "retired"
 							maxProperty: [I;
