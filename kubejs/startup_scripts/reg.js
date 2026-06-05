@@ -43,6 +43,12 @@ StartupEvents.registry('item', event => {
     event.create('trinity_alloy_ingot').fireResistant().rarity('rare')
     event.create('rainbowshift_entropy').fireResistant().rarity('rare')
 
+    // Special Materials
+    event.create('sdbf:fantasy_bubble').fireResistant().rarity('epic')
+    event.create('sdbf:chaos_anchor').fireResistant().rarity('epic')
+    event.create('sdbf:dream_cat').fireResistant().rarity('epic')
+    event.create('sdbf:stationary_matter').fireResistant().rarity('epic')
+
 })
 
 StartupEvents.registry('block', event => {

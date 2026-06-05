@@ -11,8 +11,11 @@ ItemEvents.tooltip(event => {
 
     event.add('slashblade_sendims:blessing_petals', Text.translatable('info.kubejs.blessing_petals'))
     event.add('slashblade_sendims:principle_of_sword_arts', Text.translatable('info.kubejs.principle_of_sword_arts'))
+
     event.add('slashblade_sendims:the_nectar_quest', Text.translatable('info.kubejs.the_nectar_quest'))
     event.add('slashblade_sendims:the_nectar_quest', Text.translatable('info.kubejs.the_nectar_quest_2'))
+
+    event.add("powerful_dummy:dummy_stand", Text.translatable('info.kubejs.dummy_stand').color(Color.AQUA))
 
     event.add('kubejs:anchor_shard', Text.translatable('info.kubejs.anchor_shard').color(Color.AQUA));
     event.add('kubejs:chaotic_truth', Text.translatable('info.kubejs.chaotic_truth').color(Color.AQUA));
@@ -51,5 +54,11 @@ ItemEvents.tooltip(event => {
             text.add(Text.of('NBT: ').append(Text.prettyPrintNbt(item.nbt)));
         }
     })
+
+    event.add('sdbf:fantasy_bubble', Text.translatable('info.kubejs.fantasy_bubble').color(Color.GRAY));
+    event.add('sdbf:chaos_anchor', Text.translatable('info.kubejs.chaos_anchor').color(Color.GRAY));
+    event.add('sdbf:dream_cat', Text.translatable('info.kubejs.dream_cat').color(Color.GRAY));
+    event.add('sdbf:dream_cat', Text.translatable('info.kubejs.dream_cat_2').color(Color.GRAY));
+    event.add('sdbf:stationary_matter', Text.translatable('info.kubejs.stationary_matter').color(Color.GRAY));
 
 })

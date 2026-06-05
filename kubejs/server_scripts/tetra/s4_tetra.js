@@ -69,7 +69,7 @@ ServerEvents.highPriorityData(event => {
         .setPrimary(36).setSecondary(30).setTertiary(22.5)
         .setDurability(210).setIntegrityCost(6).setIntegrityGain(9)
         .setMagicCapacity(130).setToolLevel(3).setToolEfficiency(6)
-        .addAttributes("attributeslib:crit_chance", 0.04).addAttributes("attributeslib:crit_damage", 0.04)
+        .addAttributes("attributeslib:crit_chance", 0.02).addAttributes("attributeslib:crit_damage", 0.05)
         .setTints("708090", "4682b4")
         .addTexture("shiny").addTexture("default")
         .addItemMaterial('kubejs:delta_dust')
@@ -124,12 +124,14 @@ ServerEvents.highPriorityData(event => {
         .setPrimary(52).setSecondary(35).setTertiary(29)
         .setDurability(280).setIntegrityCost(4).setIntegrityGain(16)
         .setMagicCapacity(140).setToolLevel(4).setToolEfficiency(7)
-        .addAttributes("attributeslib:crit_chance", 0.07).addAttributes("attributeslib:armor_pierce", 2).addAttributes("minecraft:generic.armor_toughness", 1)
+        .addAttributes("attributeslib:crit_chance", 0.03)
+        .addAttributes("attributeslib:armor_pierce", 2)
+        .addAttributes("minecraft:generic.armor_toughness", 1)
         .setTints("4b4b7a", "1a1a3a")
         .addTexture("metal").addTexture("heavy")
         .addItemMaterial('kubejs:galatic_cycle_component')
         .setRequiredTool("hammer_dig", 1)
-        .addEffects("fot:fe_store", 32000)
+        .addEffects("fot:fe_store", 64000)
         .build();
 
     // 2. 蜂王浆 / Royal Jelly Bottle

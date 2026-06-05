@@ -60,6 +60,7 @@
     "info.kubejs.slashblade.can_copy_se": "可用于复制SE",
     "info.kubejs.blessing_petals": "可以吸收不同的§b音乐唱片§r，提升属性加成",
     "info.kubejs.principle_of_sword_arts": "可以吸收不同的带有SA的§b耀魂宝珠§r，提升属性加成",
+    "info.kubejs.dummy_stand": "只能放置于主世界的291层以上",
     "info.kubejs.the_nectar_quest": "允许切入黄蜂领域",
     "info.kubejs.the_nectar_quest_2": "可以记录来自黄蜂领域的精华，提升属性加成（不消耗）",
     "info.kubejs.nuclearcraft.apply_rad_prot": "在主手使用后，可以为副手的模块化护甲添加辐射防护",
@@ -77,6 +78,26 @@
 
     "info.kubejs.spawner.cannot_modify": "你不能修改此刷怪笼！",
     "info.kubejs.spawner.cannot_insert": "你不能将这种生物放入刷怪笼！",
+
+    "item.sdbf.fantasy_bubble": "幻之泡",
+    "item.sdbf.chaos_anchor": "混沌稳定锚",
+    "item.sdbf.dream_cat": "梦之猫",
+    "item.sdbf.stationary_matter": "稳态物质",
+
+    "info.kubejs.fantasy_bubble": "[ALTNOIR] 会一直守护你的梦幻泡泡。",
+    "info.kubejs.chaos_anchor": "[jean] 击破星俗之未来，滞留于庄严的过去，贤闪一切，尽数毁灭。",
+    "info.kubejs.dream_cat":    "[Piano_kitten] 神秘的困困猫猫\n\t——出场非常神秘而且总是说困，哈吉猫你这家伙！",
+    "info.kubejs.dream_cat_2":  "——出场非常神秘而且总是说困，哈吉猫你这家伙！",
+    "info.kubejs.stationary_matter": "[Tonywww] EQUILIBRIUM.",
+
+    "tetra.material.fantasy_bubble": "幻之泡",
+    "tetra.material.fantasy_bubble.prefix": "幻之泡",
+    "tetra.material.chaos_anchor": "混沌稳定锚",
+    "tetra.material.chaos_anchor.prefix": "混沌稳定锚",
+    "tetra.material.dream_cat": "梦之猫",
+    "tetra.material.dream_cat.prefix": "梦之猫",
+    "tetra.material.stationary_matter": "稳态物质",
+    "tetra.material.stationary_matter.prefix": "稳态物质",
 
     "item.slashblade.greatsword_of_damnation": "伪物「永罚」",
     "item.slashblade.greatsword_of_damnation_plus": "无铭「永罚」",
