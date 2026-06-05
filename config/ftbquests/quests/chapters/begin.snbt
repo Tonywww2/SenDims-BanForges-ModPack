@@ -1,6 +1,6 @@
 {
-	autofocus_id: "4563BE3E3110A2C9"
-	default_hide_dependency_lines: false
+	autofocus_id: "62C0631125654B3D"
+	default_hide_dependency_lines: true
 	default_quest_shape: ""
 	filename: "begin"
 	group: "6900D4BA6E5FB142"
@@ -12,45 +12,45 @@
 			id: "7379FE5C64FC6241"
 			linked_quest: "6FD736B74327F2AF"
 			x: 9.0d
-			y: 3.0d
+			y: -3.0d
 		}
 		{
 			id: "40D3BA256430AF4B"
 			linked_quest: "4A57E4499E188BD7"
-			x: 6.0d
-			y: 3.0d
+			x: 12.0d
+			y: -3.0d
 		}
 		{
 			id: "37F9308A7B690DE9"
 			linked_quest: "765A0F0A66F45570"
-			x: 9.0d
-			y: -9.0d
+			x: 30.0d
+			y: 0.0d
 		}
 		{
 			id: "4413A8820A84AB93"
 			linked_quest: "71F1943E6E3FCA17"
 			shape: "hexagon"
 			size: 1.5d
-			x: 3.0d
-			y: -6.0d
+			x: 36.0d
+			y: 0.0d
 		}
 		{
 			id: "7B526208D694FBFA"
 			linked_quest: "4C56CFEEBC74DE9A"
-			x: 15.0d
-			y: -12.0d
+			x: 24.0d
+			y: -3.0d
 		}
 		{
 			id: "64467FFD7950DBC7"
 			linked_quest: "5BB642BD0BE40541"
-			x: 0.0d
-			y: -6.0d
+			x: 39.0d
+			y: 0.0d
 		}
 		{
 			id: "0A0F62BCD972F9DF"
 			linked_quest: "3C1CB82ADF4FBBC1"
-			x: -3.0d
-			y: -6.0d
+			x: 42.0d
+			y: 0.0d
 		}
 	]
 	quests: [
@@ -249,8 +249,8 @@
 				item: "minecraft:furnace"
 				type: "item"
 			}]
-			x: 12.0d
-			y: -3.0d
+			x: 15.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["02003846DA642A0D"]
@@ -267,8 +267,8 @@
 				item: "dustandash:sharpen_flint"
 				type: "item"
 			}]
-			x: 15.0d
-			y: -3.0d
+			x: 18.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["5A6129A375A1B07E"]
@@ -284,8 +284,8 @@
 				item: "dustandash:bloody_flint"
 				type: "item"
 			}]
-			x: 15.0d
-			y: -9.0d
+			x: 21.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["765A0F0A66F45570"]
@@ -322,8 +322,8 @@
 				}
 				type: "item"
 			}]
-			x: 6.0d
-			y: -9.0d
+			x: 33.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["13B6F6AC7608F794"]
@@ -406,8 +406,8 @@
 				item: "kubejs:garden_lighter"
 				type: "item"
 			}]
-			x: 12.0d
-			y: -9.0d
+			x: 24.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["3C1CB82ADF4FBBC1"]
@@ -419,8 +419,8 @@
 				item: "minecraft:glowstone"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -3.0d
+			x: 45.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["52726CE2A2740BF7"]
@@ -439,8 +439,8 @@
 				item: "minecraft:iron_ingot"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -9.0d
+			x: 33.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["02003846DA642A0D"]
@@ -460,11 +460,11 @@
 				type: "item"
 			}]
 			title: "更长远的准备"
-			x: 9.0d
-			y: -3.0d
+			x: 15.0d
+			y: 3.0d
 		}
 		{
-			dependencies: ["6FD736B74327F2AF"]
+			dependencies: ["5748351A76910019"]
 			description: ["原始空岛有小概率刷新恶魔眼，获得恶魔眼球并击败该BOSS后才能获得后面的召唤器"]
 			icon: "terra_entity:suspicious_looking_eye"
 			id: "76DEBD32F9E5F5C5"
@@ -492,7 +492,7 @@
 				}
 			]
 			title: "boss召唤器！"
-			x: 12.0d
+			x: 9.0d
 			y: 3.0d
 		}
 		{
@@ -516,8 +516,8 @@
 				type: "item"
 			}]
 			title: "基础自动化？"
-			x: 6.0d
-			y: -3.0d
+			x: 18.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["0B0F1D8BE89F8980"]
@@ -572,8 +572,8 @@
 				type: "checkmark"
 			}]
 			title: "结构召唤仪式"
-			x: 12.0d
-			y: -12.0d
+			x: 27.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["034D47E905861E48"]
@@ -593,8 +593,8 @@
 				type: "checkmark"
 			}]
 			title: "返回仪式"
-			x: 12.0d
-			y: -15.0d
+			x: 27.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["73531FB69122489F"]
@@ -654,8 +654,8 @@
 				}
 			]
 			title: "简易村民"
-			x: 0.0d
-			y: -9.0d
+			x: 33.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["6E4D6662243ED7F6"]
@@ -688,8 +688,8 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
-			y: -12.0d
+			x: 36.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["6E4D6662243ED7F6"]
@@ -709,8 +709,8 @@
 				item: "easy_villagers:breeder"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -12.0d
+			x: 36.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["6E4D6662243ED7F6"]
@@ -725,11 +725,11 @@
 				item: "easy_villagers:incubator"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -12.0d
+			x: 36.0d
+			y: 3.0d
 		}
 		{
-			dependencies: ["5748351A76910019"]
+			dependencies: ["62C0631125654B3D"]
 			id: "065E8A79D06A17DC"
 			rewards: [{
 				id: "2E8B8D8C82ACAE3F"
@@ -742,11 +742,11 @@
 				item: "minecraft:gravel"
 				type: "item"
 			}]
-			x: 15.0d
-			y: 0.0d
+			x: 3.0d
+			y: 3.0d
 		}
 		{
-			dependencies: ["630C033031F00877"]
+			dependencies: ["62C0631125654B3D"]
 			id: "72B1E82D385A4650"
 			rewards: [{
 				id: "3F557CDAAD0C86F7"
@@ -759,8 +759,8 @@
 				item: "minecraft:clay_ball"
 				type: "item"
 			}]
-			x: 18.0d
-			y: 0.0d
+			x: 3.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["630C033031F00877"]
@@ -772,7 +772,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: -6.0d
+			y: 3.0d
 		}
 	]
 	title: "起始之空岛"
