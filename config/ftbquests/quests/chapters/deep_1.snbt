@@ -17,15 +17,15 @@
 		{
 			id: "31E8EEA88861BFF2"
 			linked_quest: "244DE4322B5B3EA5"
-			x: 7.5d
-			y: 0.0d
+			x: 11.5d
+			y: 7.0d
 		}
 		{
 			id: "48E82D2A6108C479"
 			linked_quest: "71F1943E6E3FCA17"
 			shape: "hexagon"
 			size: 1.5d
-			x: -2.5d
+			x: -3.0d
 			y: 0.0d
 		}
 	]
@@ -50,8 +50,8 @@
 				item: "minecraft:diamond"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 2.5d
+			x: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1DE54DDD04540738"]
@@ -61,8 +61,8 @@
 				item: "nuclearcraft:sulfuric_acid_bucket"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 0.0d
+			x: 9.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["5BB642BD0BE40541"]
@@ -73,8 +73,8 @@
 				item: "minecraft:iron_ingot"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 0.0d
+			x: 6.5d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -96,8 +96,8 @@
 				}
 				type: "item"
 			}]
-			x: 10.0d
-			y: 0.0d
+			x: 14.0d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -201,7 +201,7 @@
 			}]
 			title: "深境一层的结构"
 			x: 0.0d
-			y: -2.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["5BB642BD0BE40541"]
