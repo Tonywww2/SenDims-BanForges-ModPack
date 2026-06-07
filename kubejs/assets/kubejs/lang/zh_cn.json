@@ -81,7 +81,11 @@
 
     "info.kubejs.dimension_limit": "必须在以下纬度使用：",
 
-    "gateways.sdbf_dr1_g1": "深境一层小型传送门",
+    "gateways.sdbf_dr1_g1": "深境一层怪潮传送门",
+    "gateways.sdbf_dr1_g2": "深境一层机械怪潮传送门",
+    "gateways.sdbf_moon_g1": "月球怪潮传送门",
+    "gateways.sdbf_nether_g1": "下界怪潮传送门",
+    "gateways.sdbf_mars_g1": "火星怪潮传送门",
 
     "info.sdbf.gem.title": "§6[宝石信息]",
     "info.sdbf.gem.affix_label": "词缀",

@@ -1,8 +1,17 @@
 {
+    "conditions":
+    [
+        {
+            "type": "forge:false"
+        }
+    ],
     "size": "large",
     "color": "#CF352E",
-    "waves": [{
-            "entities": [
+    "waves":
+    [
+        {
+            "entities":
+            [
                 {
                     "entity": "minecraft:zombified_piglin",
                     "count": 5
@@ -12,9 +21,10 @@
                     "count": 3
                 }
             ],
-            "modifiers": [
-            ],
-            "rewards": [
+            "modifiers":
+            [],
+            "rewards":
+            [
                 {
                     "type": "gateways:entity_loot",
                     "entity": "minecraft:zombified_piglin",
@@ -30,7 +40,8 @@
             "setup_time": 100
         },
         {
-            "entities": [
+            "entities":
+            [
                 {
                     "entity": "minecraft:zombified_piglin",
                     "count": 8
@@ -44,7 +55,8 @@
                     "count": 3
                 }
             ],
-            "modifiers": [
+            "modifiers":
+            [
                 {
                     "attribute": "generic.max_health",
                     "operation": "MULTIPLY_TOTAL",
@@ -61,7 +73,8 @@
                     "value": 2
                 }
             ],
-            "rewards": [
+            "rewards":
+            [
                 {
                     "type": "gateways:entity_loot",
                     "entity": "minecraft:zombified_piglin",
@@ -82,7 +95,8 @@
             "setup_time": 200
         },
         {
-            "entities": [
+            "entities":
+            [
                 {
                     "entity": "minecraft:zombified_piglin",
                     "count": 8
@@ -94,11 +108,13 @@
                 {
                     "entity": "minecraft:wither_skeleton",
                     "desc": "name.gateways.withered_ranger",
-                    "nbt": {
+                    "nbt":
+                    {
                         "CustomNameVisible": 1,
                         "CustomName": "{\"translate\":\"name.gateways.withered_ranger\",\"color\":\"red\"}"
                     },
-                    "modifiers": [
+                    "modifiers":
+                    [
                         {
                             "type": "gateways:gear_set",
                             "gear_set": "gateways:chain_with_bow"
@@ -117,7 +133,8 @@
                     "count": 3
                 }
             ],
-            "modifiers": [
+            "modifiers":
+            [
                 {
                     "attribute": "generic.max_health",
                     "operation": "MULTIPLY_TOTAL",
@@ -144,7 +161,8 @@
                     "value": 0.10
                 }
             ],
-            "rewards": [
+            "rewards":
+            [
                 {
                     "type": "gateways:entity_loot",
                     "entity": "minecraft:zombified_piglin",
@@ -165,16 +183,19 @@
             "setup_time": 400
         },
         {
-            "entities": [
+            "entities":
+            [
                 {
                     "entity": "minecraft:piglin_brute",
                     "desc": "name.gateways.butcher",
-                    "nbt": {
+                    "nbt":
+                    {
                         "CustomNameVisible": 1,
                         "CustomName": "{\"translate\":\"name.gateways.butcher\",\"color\":\"red\"}",
                         "IsImmuneToZombification": true
                     },
-                    "modifiers": [
+                    "modifiers":
+                    [
                         {
                             "type": "gateways:gear_set",
                             "gear_set": "gateways:gold_with_axe"
@@ -216,11 +237,13 @@
                 {
                     "entity": "minecraft:wither_skeleton",
                     "desc": "name.gateways.withered_ranger",
-                    "nbt": {
+                    "nbt":
+                    {
                         "CustomNameVisible": 1,
                         "CustomName": "{\"translate\":\"name.gateways.withered_ranger\",\"color\":\"red\"}"
                     },
-                    "modifiers": [
+                    "modifiers":
+                    [
                         {
                             "type": "gateways:gear_set",
                             "gear_set": "gateways:chain_with_bow"
@@ -239,7 +262,8 @@
                     "count": 3
                 }
             ],
-            "modifiers": [
+            "modifiers":
+            [
                 {
                     "attribute": "generic.max_health",
                     "operation": "MULTIPLY_TOTAL",
@@ -266,7 +290,8 @@
                     "value": 0.10
                 }
             ],
-            "rewards": [
+            "rewards":
+            [
                 {
                     "type": "gateways:entity_loot",
                     "entity": "minecraft:piglin_brute",
@@ -287,7 +312,8 @@
             "setup_time": 400
         }
     ],
-    "rewards": [
+    "rewards":
+    [
         {
             "type": "gateways:loot_table",
             "loot_table": "minecraft:chests/nether_bridge",
@@ -296,25 +322,32 @@
         },
         {
             "type": "gateways:stack",
-            "stack": {
+            "stack":
+            {
                 "item": "minecraft:spawner",
                 "count": 1,
-                "nbt": {
-                    "BlockEntityTag": {
-                        "SpawnData": {
-                            "entity": {
+                "nbt":
+                {
+                    "BlockEntityTag":
+                    {
+                        "SpawnData":
+                        {
+                            "entity":
+                            {
                                 "id": "minecraft:wither_skeleton"
                             }
                         }
                     },
-                    "display": {
+                    "display":
+                    {
                         "Name": "{\"text\":\"Wither Skeleton Spawner\"}"
                     }
                 }
             }
         }
     ],
-    "failures": [
+    "failures":
+    [
         {
             "type": "gateways:explosion",
             "strength": 4,
@@ -323,7 +356,8 @@
         },
         {
             "type": "gateways:summon",
-            "entity": {
+            "entity":
+            {
                 "entity": "minecraft:blaze",
                 "count": 2
             }

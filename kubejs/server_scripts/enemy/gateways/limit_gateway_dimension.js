@@ -1,6 +1,10 @@
 let dimensionLimitMap = Utils.newMap();
 
-dimensionLimitMap.put("gateways:basic/blaze", "minecraft:the_nether");
+dimensionLimitMap.put("gateways:sdbf_dr1_g1", "sdbf:deep_realm_level_1");
+dimensionLimitMap.put("gateways:sdbf_dr1_g2", "sdbf:deep_realm_level_1");
+dimensionLimitMap.put("gateways:sdbf_moon_g1", "ad_astra:moon");
+dimensionLimitMap.put("gateways:sdbf_nether_g1", "minecraft:the_nether");
+dimensionLimitMap.put("gateways:sdbf_mars_g1", "ad_astra:mars");
 
 BlockEvents.rightClicked(event => {
     let item = event.getItem();

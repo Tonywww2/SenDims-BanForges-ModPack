@@ -1,55 +1,81 @@
 {
+    "conditions":
+    [
+        {
+            "type": "forge:false"
+        }
+    ],
     "type": "gateways:endless",
-	"size": "medium",
-	"color": "#FFFF84",
-	"base_wave": {
-        "entities": [{
-            "entity": "minecraft:blaze",
-            "count": 3
-        }],
-        "rewards": [{
-            "type": "gateways:entity_loot",
-            "entity": "minecraft:blaze",
-            "rolls": 10
-        }],
+    "size": "medium",
+    "color": "#FFFF84",
+    "base_wave":
+    {
+        "entities":
+        [
+            {
+                "entity": "minecraft:blaze",
+                "count": 3
+            }
+        ],
+        "rewards":
+        [
+            {
+                "type": "gateways:entity_loot",
+                "entity": "minecraft:blaze",
+                "rolls": 10
+            }
+        ],
         "max_wave_time": 800,
         "setup_time": 100
     },
-    "modifiers": [
+    "modifiers":
+    [
         {
-            "application_mode": {
+            "application_mode":
+            {
                 "type": "gateways:after_every_n_waves",
                 "waves": 3,
                 "max": 10
             },
-            "entities": [{
-                "entity": "minecraft:blaze",
-                "count": 3
-            }],
-            "rewards": [{
-                "type": "gateways:entity_loot",
-                "entity": "minecraft:blaze",
-                "rolls": 10
-            }],
+            "entities":
+            [
+                {
+                    "entity": "minecraft:blaze",
+                    "count": 3
+                }
+            ],
+            "rewards":
+            [
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:blaze",
+                    "rolls": 10
+                }
+            ],
             "max_wave_time": -40,
             "setup_time": -10
         },
         {
-            "application_mode": {
+            "application_mode":
+            {
                 "type": "gateways:after_every_n_waves",
                 "waves": 5,
                 "max": 3
             },
-            "modifiers": [{
-                "attribute": "generic.max_health",
-                "operation": "multiply_total",
-                "value": 0.15
-            }]
+            "modifiers":
+            [
+                {
+                    "attribute": "generic.max_health",
+                    "operation": "multiply_total",
+                    "value": 0.15
+                }
+            ]
         }
     ],
-    "failures": [
-    ],
-    "boss_event": {
+    "failures":
+    [],
+    "boss_event":
+    {
         "mode": "name_plate"
     },
     "spawn_algorithm": "gateways:inward_spiral"

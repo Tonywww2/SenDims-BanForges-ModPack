@@ -288,7 +288,7 @@ const mobTypes = new Map([
     ["minecraft:blaze", typeA],
     ["minecraft:ghast", typeA],
     ["minecraft:hoglin", typeC],
-    ["minecraft:zoglin", typeC],
+    ["minecraft:zoglin", typeAE],
     ["minecraft:magma_cube", typeSlime],
     ["minecraft:strider", type0],
     ["quark:foxhound", typeB],
@@ -439,6 +439,9 @@ const mobTypes = new Map([
     ["minecraft:panda", typeC],
     
     ["terra_entity:demolitionist", typeA],
+    ["bagusmob:hunter_boar", typeA],
+    ["bagusmob:burner_hog", typeA],
+    ["terra_entity:crimera", typeC],
 
 ]);
 

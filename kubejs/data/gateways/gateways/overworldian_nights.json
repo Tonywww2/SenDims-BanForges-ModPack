@@ -1,4 +1,10 @@
 {
+    "conditions":
+    [
+        {
+            "type": "forge:false"
+        }
+    ],
     "size": "medium",
     "color": "#5C54A4",
     "waves":
