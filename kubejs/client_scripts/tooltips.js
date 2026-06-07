@@ -1,4 +1,5 @@
 let GEM_TICKET_DIM_PATH = "sdbf.gt.dim";
+let LIMIT_DIMENSTION_KEY = "sdbf.use_in";
 
 
 ItemEvents.tooltip(event => {
@@ -50,8 +51,22 @@ ItemEvents.tooltip(event => {
     })
 
     event.addAdvanced(Ingredient.all, (item, advanced, text) => {
+        if (item.nbt && item.nbt.getString(LIMIT_DIMENSTION_KEY)) {
+            text.add(Text.translatable("info.kubejs.dimension_limit").append(
+                Text.of(item.nbt.getString(LIMIT_DIMENSTION_KEY))
+            ).color(Color.WHITE));
+
+        }
+
         if (event.alt && item.nbt) {
             text.add(Text.of('NBT: ').append(Text.prettyPrintNbt(item.nbt)));
+        }
+    })
+
+    event.addAdvanced('#forge:gems', (item, advanced, text) => {
+        let gemInfo = getGemInfo(item);
+        if (gemInfo) {
+            buildGemTooltip(gemInfo).forEach(line => text.add(line));
         }
     })
 

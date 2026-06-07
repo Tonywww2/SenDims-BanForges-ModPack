@@ -437,6 +437,8 @@ const mobTypes = new Map([
     ["minecraft:donkey", typeA],
     ["biomemakeover:ghost", typeA],
     ["minecraft:panda", typeC],
+    
+    ["terra_entity:demolitionist", typeA],
 
 ]);
 

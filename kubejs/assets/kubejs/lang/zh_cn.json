@@ -79,6 +79,30 @@
     "info.kubejs.spawner.cannot_modify": "你不能修改此刷怪笼！",
     "info.kubejs.spawner.cannot_insert": "你不能将这种生物放入刷怪笼！",
 
+    "info.kubejs.dimension_limit": "必须在以下纬度使用：",
+
+    "gateways.sdbf_dr1_g1": "深境一层小型传送门",
+
+    "info.sdbf.gem.title": "§6[宝石信息]",
+    "info.sdbf.gem.affix_label": "词缀",
+    "info.sdbf.gem.scale": "尺度",
+    "info.sdbf.gem.purity": "纯度",
+    "info.sdbf.gem.polish": "抛光",
+
+    "info.sdbf.gem.affix.giant": "巨型",
+    "info.sdbf.gem.affix.brilliant": "辉煌",
+    "info.sdbf.gem.affix.creamy": "凝脂",
+    "info.sdbf.gem.affix.flawless": "无瑕",
+    "info.sdbf.gem.affix.radiant": "光辉",
+    "info.sdbf.gem.affix.lustrous": "光泽",
+    "info.sdbf.gem.affix.pristine": "纯净",
+    "info.sdbf.gem.affix.exquisite": "精美",
+    "info.sdbf.gem.affix.majestic": "雄伟",
+
+    "info.sdbf.gem.affix.cracked": "开裂",
+    "info.sdbf.gem.affix.dull": "暗淡",
+    "info.sdbf.gem.affix.flawed": "有瑕",
+
     "item.sdbf.fantasy_bubble": "幻之泡",
     "item.sdbf.chaos_anchor": "混沌稳定锚",
     "item.sdbf.dream_cat": "梦之猫",
