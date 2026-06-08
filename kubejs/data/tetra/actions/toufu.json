@@ -1,0 +1,17 @@
+[
+    {
+        "key": "break_toufu_action",
+        "requirement":
+        {
+            "items":
+            [
+                "tofucraft:blocktofumomen"
+            ]
+        },
+        "requiredTools":
+        {
+            "hammer_dig": 2
+        },
+        "lootTable": "tetra:actions/toufu"
+    }
+]
