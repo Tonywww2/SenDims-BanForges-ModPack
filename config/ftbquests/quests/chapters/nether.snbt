@@ -11,16 +11,14 @@
 		{
 			id: "79A0E49E36559BB1"
 			linked_quest: "41B8D629DFAC4BB8"
-			x: 2.5d
-			y: -5.0d
+			x: 15.0d
+			y: 3.0d
 		}
 		{
 			id: "66E5DF5B4A27573C"
 			linked_quest: "0936AB2DCC0172A8"
-			shape: "hexagon"
-			size: 1.5d
-			x: 0.0d
-			y: -2.5d
+			x: -3.0d
+			y: 0.0d
 		}
 	]
 	quests: [
@@ -50,11 +48,11 @@
 				item: "minecraft:netherrack"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 2.5d
+			x: 3.0d
+			y: 3.0d
 		}
 		{
-			dependencies: ["5251AFEDB9C97974"]
+			dependencies: ["0F5A08067624B75C"]
 			hide_until_deps_complete: true
 			id: "477A42CD53645E08"
 			tasks: [{
@@ -62,7 +60,7 @@
 				item: "cataclysm:monstrous_eye"
 				type: "item"
 			}]
-			x: -2.5d
+			x: 18.0d
 			y: 0.0d
 		}
 		{
@@ -74,7 +72,7 @@
 				type: "structure"
 			}]
 			title: "灵魂锻造厂"
-			x: -5.0d
+			x: 21.0d
 			y: 0.0d
 		}
 		{
@@ -91,7 +89,7 @@
 				item: "cataclysm:monstrous_horn"
 				type: "item"
 			}]
-			x: -7.5d
+			x: 24.0d
 			y: 0.0d
 		}
 		{
@@ -102,8 +100,8 @@
 				item: "minecraft:nether_bricks"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 5.0d
+			x: 6.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -119,8 +117,8 @@
 				type: "structure"
 			}]
 			title: "下界堡垒"
-			x: -2.5d
-			y: 7.5d
+			x: 9.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["5251AFEDB9C97974"]
@@ -132,8 +130,8 @@
 				id: "01FA29D215FC0CF7"
 				type: "advancement"
 			}]
-			x: -2.5d
-			y: -2.5d
+			x: 0.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["5251AFEDB9C97974"]
@@ -144,30 +142,20 @@
 				item: "minecraft:ancient_debris"
 				type: "item"
 			}]
-			x: 2.5d
+			x: 3.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["0F5A08067624B75C"]
 			id: "0809F64B7A3864AC"
+			shape: "diamond"
 			tasks: [{
 				id: "1CE2DD3E1A345971"
 				item: "minecraft:netherite_ingot"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 12.0d
 			y: 0.0d
-		}
-		{
-			dependencies: ["1BFFE0DF9A447A4A"]
-			id: "33D5A2CD9DD1BA9F"
-			tasks: [{
-				id: "4034617E68E38889"
-				item: "cataclysm:lava_power_cell"
-				type: "item"
-			}]
-			x: -7.5d
-			y: -2.5d
 		}
 		{
 			dependencies: ["5251AFEDB9C97974"]
@@ -180,8 +168,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 0.0d
-			y: 2.5d
+			x: 3.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["7A229A04D3AFE10F"]
@@ -192,8 +180,8 @@
 				item: "terra_entity:guide_voodoo_doll_hill"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 5.0d
+			x: 6.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["5251AFEDB9C97974"]
@@ -204,19 +192,20 @@
 				item: "minecraft:wither_skeleton_skull"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 2.5d
+			x: 12.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["18E165437CBA9864"]
 			id: "59D5F0F6374C1433"
+			shape: "diamond"
 			tasks: [{
 				id: "2C899E96C690C9D9"
 				item: "minecraft:nether_star"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 2.5d
+			x: 15.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["0809F64B7A3864AC"]
@@ -235,8 +224,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: -2.5d
+			x: 12.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["058C32492347BB2C"]
@@ -255,8 +244,8 @@
 				}
 				type: "item"
 			}]
-			x: 10.0d
-			y: 0.0d
+			x: 18.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["0809F64B7A3864AC"]
@@ -275,8 +264,8 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
-			y: 0.0d
+			x: 12.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -298,8 +287,8 @@
 				}
 				type: "item"
 			}]
-			x: 10.0d
-			y: 2.5d
+			x: 18.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -321,8 +310,8 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
-			y: 2.5d
+			x: 15.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -344,18 +333,19 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
-			y: 7.5d
+			x: 18.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["74CCF300B72CB6EE"]
 			id: "1F5434696DE4B67B"
+			shape: "diamond"
 			tasks: [{
 				id: "00F805D032B1ABB7"
 				item: "apotheosis:library"
 				type: "item"
 			}]
-			x: -10.0d
+			x: 27.0d
 			y: 0.0d
 		}
 		{
@@ -375,8 +365,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
-			y: 5.0d
+			x: 12.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["18E165437CBA9864"]
@@ -395,8 +385,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: 5.0d
+			x: 12.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["32F557E18C00B7A1"]
@@ -414,8 +404,8 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
-			y: 7.5d
+			x: 9.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["5251AFEDB9C97974"]
@@ -425,8 +415,8 @@
 				item: "minecraft:blaze_rod"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -2.5d
+			x: 12.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["5251AFEDB9C97974"]
@@ -436,8 +426,8 @@
 				item: "minecraft:gold_ingot"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 2.5d
+			x: 3.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["09B56EAA8E6C1B2E"]
@@ -448,8 +438,8 @@
 				type: "structure"
 			}]
 			title: "堡垒遗迹"
-			x: -5.0d
-			y: 5.0d
+			x: 6.0d
+			y: 6.0d
 		}
 	]
 	title: "入地狱"

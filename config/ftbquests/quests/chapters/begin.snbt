@@ -1,6 +1,6 @@
 {
 	autofocus_id: "62C0631125654B3D"
-	default_hide_dependency_lines: true
+	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "begin"
 	group: "6900D4BA6E5FB142"
@@ -23,40 +23,38 @@
 		{
 			id: "37F9308A7B690DE9"
 			linked_quest: "765A0F0A66F45570"
-			x: 30.0d
+			x: 33.0d
 			y: 0.0d
 		}
 		{
 			id: "4413A8820A84AB93"
 			linked_quest: "71F1943E6E3FCA17"
-			shape: "hexagon"
-			size: 1.5d
-			x: 36.0d
+			shape: "diamond"
+			x: 39.0d
 			y: 0.0d
 		}
 		{
 			id: "7B526208D694FBFA"
 			linked_quest: "4C56CFEEBC74DE9A"
+			shape: "diamond"
 			x: 24.0d
 			y: -3.0d
 		}
 		{
 			id: "64467FFD7950DBC7"
 			linked_quest: "5BB642BD0BE40541"
+			shape: "hexagon"
+			size: 2.0d
 			x: 39.0d
-			y: 0.0d
-		}
-		{
-			id: "0A0F62BCD972F9DF"
-			linked_quest: "3C1CB82ADF4FBBC1"
-			x: 42.0d
-			y: 0.0d
+			y: -3.0d
 		}
 		{
 			id: "167E4C5AEBEF9AD4"
 			linked_quest: "6140B0BCEB7F9D64"
-			x: 27.0d
-			y: 3.0d
+			shape: "hexagon"
+			size: 2.0d
+			x: 30.0d
+			y: 0.0d
 		}
 	]
 	quests: [
@@ -317,7 +315,7 @@
 				table_id: 7214542327696130213L
 				type: "choice"
 			}]
-			shape: "hexagon"
+			shape: "diamond"
 			subtitle: "重要|深境"
 			tasks: [{
 				id: "2A02FB0F98EFCFAB"
@@ -328,7 +326,7 @@
 				}
 				type: "item"
 			}]
-			x: 33.0d
+			x: 36.0d
 			y: 0.0d
 		}
 		{
@@ -404,7 +402,7 @@
 					type: "item"
 				}
 			]
-			shape: "hexagon"
+			shape: "diamond"
 			size: 1.0d
 			subtitle: "相交的碎片"
 			tasks: [{
@@ -413,19 +411,6 @@
 				type: "item"
 			}]
 			x: 24.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["3C1CB82ADF4FBBC1"]
-			description: ["或者在茫茫暮色的洞穴中，有这熠熠生辉的石头......"]
-			id: "71B535DCE4CFEF8F"
-			subtitle: "天境"
-			tasks: [{
-				id: "5B26A03993FA7CF2"
-				item: "minecraft:glowstone"
-				type: "item"
-			}]
-			x: 45.0d
 			y: 0.0d
 		}
 		{
@@ -570,7 +555,7 @@
 			hide_dependent_lines: true
 			icon: "ae2:fluix_pearl"
 			id: "034D47E905861E48"
-			shape: "hexagon"
+			shape: "diamond"
 			size: 2.0d
 			subtitle: "重要"
 			tasks: [{
@@ -592,7 +577,7 @@
 			]
 			icon: "minecraft:grass_block"
 			id: "0191BEFB99BFD5D5"
-			shape: "hexagon"
+			shape: "diamond"
 			size: 2.0d
 			tasks: [{
 				id: "5B3AB99A64A876F0"
@@ -600,7 +585,7 @@
 			}]
 			title: "返回仪式"
 			x: 27.0d
-			y: -3.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["73531FB69122489F"]

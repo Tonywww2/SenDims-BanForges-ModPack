@@ -9,35 +9,47 @@
 	order_index: 5
 	quest_links: [
 		{
-			id: "1417CEC02167B90B"
-			linked_quest: "5D3B1F040BBB2AF2"
-			x: -5.0d
-			y: -5.0d
-		}
-		{
 			id: "70119C30CBF0090C"
 			linked_quest: "5FFEB598BE2CB116"
-			x: 2.5d
-			y: -5.0d
+			x: 3.0d
+			y: 24.0d
 		}
 		{
 			id: "347FE8795E1B1889"
 			linked_quest: "1A385F668652DB17"
-			x: 0.0d
-			y: -7.5d
+			x: 3.0d
+			y: 18.0d
 		}
 		{
 			id: "6CAE3A1F6918691C"
 			linked_quest: "1FC6DCA09DEC558F"
-			x: 5.0d
-			y: -7.5d
+			x: 3.0d
+			y: 21.0d
 		}
 		{
 			id: "4FEAB9C1DEE7D47E"
 			linked_quest: "40B4C6CD28E7DF19"
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			id: "2F44949A84F7B6AE"
+			linked_quest: "78BE62D2851798DD"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			id: "4B9F0A2EF86E7CE5"
+			linked_quest: "1202BBA3EB29DB70"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			id: "68D78F9EF7633EF2"
+			linked_quest: "51A9FF63F9F3E125"
 			shape: "hexagon"
-			size: 1.5d
-			x: -2.5d
+			size: 2.0d
+			x: 15.0d
 			y: 0.0d
 		}
 	]
@@ -68,8 +80,8 @@
 				item: "ad_astra:mars_sand"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 2.5d
+			x: 3.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["5252B3E3137F1957"]
@@ -80,8 +92,8 @@
 				type: "checkmark"
 			}]
 			title: "火星地牢"
-			x: 2.5d
-			y: 5.0d
+			x: 6.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["3F43656AE6F116CB"]
@@ -92,8 +104,8 @@
 				item: "ad_astra:raw_ostrum"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -2.5d
+			x: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2E0B8635A864C99E"]
@@ -103,8 +115,8 @@
 				item: "ad_astra:ostrum_ingot"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -5.0d
+			x: 6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -126,8 +138,8 @@
 				}
 				type: "item"
 			}]
-			x: -2.5d
-			y: -5.0d
+			x: 6.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["260A17885336B776"]
@@ -146,8 +158,8 @@
 				}
 				type: "item"
 			}]
-			x: -5.0d
-			y: 0.0d
+			x: 6.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -171,8 +183,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
-			y: -7.5d
+			x: 6.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["20C5B7CCF681A814"]
@@ -182,8 +194,8 @@
 				item: "last_smith:scroll_muramasa"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 0.0d
+			x: 9.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["203E60FD1465EC35"]
@@ -202,8 +214,8 @@
 				}
 				type: "item"
 			}]
-			x: -2.5d
-			y: -7.5d
+			x: 9.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["3F43656AE6F116CB"]
@@ -228,8 +240,8 @@
 				type: "item"
 			}]
 			title: "灵魂瓶：火星迅猛龙"
-			x: 2.5d
-			y: 0.0d
+			x: 3.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["20C5B7CCF681A814"]
@@ -248,8 +260,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.5d
-			y: -2.5d
+			x: 9.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["3348C0AE18D2FCE3"]
@@ -268,8 +280,8 @@
 				}
 				type: "item"
 			}]
-			x: -10.0d
-			y: -2.5d
+			x: 12.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["20C5B7CCF681A814"]
@@ -288,8 +300,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.5d
-			y: 2.5d
+			x: 9.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["3F43656AE6F116CB"]
@@ -300,8 +312,8 @@
 				item: "ad_astra:conglomerate"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 2.5d
+			x: 3.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["08AFB6C900A95C4B"]
@@ -312,8 +324,8 @@
 				type: "structure"
 			}]
 			title: "斗兽场"
-			x: -2.5d
-			y: 5.0d
+			x: 6.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["3F43656AE6F116CB"]
@@ -324,8 +336,8 @@
 				item: "ad_astra:mars_stone"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 2.5d
+			x: 3.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["2BD02CD617E0BB89"]
@@ -337,8 +349,8 @@
 				type: "structure"
 			}]
 			title: "天际骑士团战舰"
-			x: 0.0d
-			y: 5.0d
+			x: 6.0d
+			y: 6.0d
 		}
 	]
 	title: "赤红色的星球"

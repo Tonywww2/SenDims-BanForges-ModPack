@@ -57,9 +57,16 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["26B66FFB1E5C691C"]
+			dependencies: [
+				"26B66FFB1E5C691C"
+				"5BB642BD0BE40541"
+			]
 			dependency_requirement: "one_completed"
-			description: ["[ \"获取详情见 \", { \"text\": \" 此章节 \", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"6F117E817FAB60B3\" } } ]"]
+			description: [
+				"千百年之前，一个拥有着发达机械技术的古代文明曾活跃在深境之中，他们留下来的一些痕迹或许能帮助到你......"
+				""
+				"你可以使用铁锭+地图制作实验室的结构羽毛笔。"
+			]
 			id: "6130B752208314B7"
 			rewards: [
 				{

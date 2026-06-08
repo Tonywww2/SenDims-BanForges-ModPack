@@ -11,27 +11,27 @@
 		{
 			id: "70B49C8B011567BB"
 			linked_quest: "00880D674BE17F9A"
-			x: 7.5d
-			y: -2.5d
-		}
-		{
-			id: "3E4DB58BE9914AC8"
-			linked_quest: "244DE4322B5B3EA5"
-			x: 7.5d
-			y: 0.0d
+			x: 6.0d
+			y: 9.0d
 		}
 		{
 			id: "7B2B26C5693D25E5"
 			linked_quest: "0C568583CC58DAA6"
-			x: 0.0d
-			y: 22.5d
+			x: 27.0d
+			y: 0.0d
 		}
 		{
 			id: "21E158717848BE90"
 			linked_quest: "6AE2EFEC0F3BE4BE"
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			id: "14DD5F50793297C7"
+			linked_quest: "3DA6E818573A9A69"
 			shape: "hexagon"
-			size: 1.5d
-			x: -2.5d
+			size: 2.0d
+			x: 30.0d
 			y: 0.0d
 		}
 	]
@@ -75,8 +75,8 @@
 				item: "twilightforest:magic_map"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 2.5d
+			x: 3.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["3C1CB82ADF4FBBC1"]
@@ -88,8 +88,8 @@
 				id: "47E44D45FB41E26E"
 				type: "advancement"
 			}]
-			x: 0.0d
-			y: 2.5d
+			x: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["222D394D6FDDC479"]
@@ -102,8 +102,8 @@
 				id: "0E52B292979BE956"
 				type: "advancement"
 			}]
-			x: 0.0d
-			y: 5.0d
+			x: 6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["20FDE881446DF8AF"]
@@ -116,8 +116,8 @@
 				id: "5D17AD0A33BFFB4F"
 				type: "advancement"
 			}]
-			x: 0.0d
-			y: 7.5d
+			x: 9.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["3AA758300110DA33"]
@@ -128,8 +128,8 @@
 				id: "47531649AEE8B3D9"
 				type: "advancement"
 			}]
-			x: 0.0d
-			y: 10.0d
+			x: 12.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["3AA758300110DA33"]
@@ -165,8 +165,8 @@
 				id: "15EA1C2B0855EF75"
 				type: "advancement"
 			}]
-			x: 2.5d
-			y: 7.5d
+			x: 12.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["3AA758300110DA33"]
@@ -177,8 +177,8 @@
 				id: "1B7A740A09BBC79E"
 				type: "advancement"
 			}]
-			x: -2.5d
-			y: 7.5d
+			x: 12.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["6FC69F6C86DA91E0"]
@@ -189,8 +189,8 @@
 				id: "13695AD53F7708EA"
 				type: "advancement"
 			}]
-			x: 0.0d
-			y: 12.5d
+			x: 15.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2EDA6C0823CAF5BE"]
@@ -201,8 +201,8 @@
 				id: "0B0B2970B56803A0"
 				type: "advancement"
 			}]
-			x: 5.0d
-			y: 7.5d
+			x: 15.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["46D7551ADB56C59D"]
@@ -213,8 +213,8 @@
 				id: "74A7EF3FED4DF68D"
 				type: "advancement"
 			}]
-			x: -5.0d
-			y: 7.5d
+			x: 15.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["20FDE881446DF8AF"]
@@ -233,8 +233,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
-			y: 5.0d
+			x: 6.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["6E604BAD9F8D769C"]
@@ -253,8 +253,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: 5.0d
+			x: 9.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["44EB434977E45FFC"]
@@ -273,8 +273,8 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
-			y: 5.0d
+			x: 12.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["3AA48697057EBF80"]
@@ -293,8 +293,8 @@
 				}
 				type: "item"
 			}]
-			x: -5.0d
-			y: 10.0d
+			x: 15.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["3C1CB82ADF4FBBC1"]
@@ -306,8 +306,8 @@
 				id: "2463B8E591F9350D"
 				type: "advancement"
 			}]
-			x: -5.0d
-			y: 0.0d
+			x: 0.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -323,8 +323,8 @@
 				id: "35CB460B37C7E0C8"
 				type: "advancement"
 			}]
-			x: 0.0d
-			y: 15.0d
+			x: 18.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["0631080913A35DC4"]
@@ -335,21 +335,20 @@
 				id: "062614A380FD9033"
 				type: "advancement"
 			}]
-			x: 0.0d
-			y: 17.5d
+			x: 21.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2B54682ADC820C2A"]
 			id: "6442E0C760FAF02B"
-			size: 2.0d
 			tasks: [{
 				advancement: "twilightforest:progress_troll"
 				criterion: ""
 				id: "533B2858172590D0"
 				type: "advancement"
 			}]
-			x: 0.0d
-			y: 20.0d
+			x: 24.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["3AA758300110DA33"]
@@ -369,8 +368,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
-			y: 10.0d
+			x: 9.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["222D394D6FDDC479"]
@@ -389,8 +388,8 @@
 				}
 				type: "item"
 			}]
-			x: -2.5d
-			y: 2.5d
+			x: 3.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["3C1CB82ADF4FBBC1"]
@@ -401,8 +400,8 @@
 				item: "twilightforest:raw_ironwood"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 0.0d
+			x: 0.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -417,8 +416,8 @@
 				item: "twilightforest:ironwood_ingot"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 0.0d
+			x: 3.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["3C1CB82ADF4FBBC1"]
@@ -429,41 +428,8 @@
 				item: "twilightforest:steeleaf_ingot"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -2.5d
-		}
-		{
-			dependencies: ["3AA758300110DA33"]
-			id: "5EE32379CAE405FF"
-			tasks: [{
-				id: "5B37F23AAD649948"
-				item: "twilightforest:arctic_fur"
-				type: "item"
-			}]
-			x: -2.5d
-			y: 10.0d
-		}
-		{
-			dependencies: ["6FC69F6C86DA91E0"]
-			id: "09A44500DF32E36D"
-			tasks: [{
-				id: "0E2DB69E5CE333E6"
-				item: "twilightforest:carminite"
-				type: "item"
-			}]
-			x: -2.5d
-			y: 12.5d
-		}
-		{
-			dependencies: ["6FC69F6C86DA91E0"]
-			id: "56228FA091A53E5A"
-			tasks: [{
-				id: "027FCE49FD875B88"
-				item: "twilightforest:knightmetal_ingot"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 12.5d
+			x: 0.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["3C1CB82ADF4FBBC1"]
@@ -484,7 +450,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -2.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["2D5F554083B41C4E"]
@@ -503,8 +469,8 @@
 				}
 				type: "item"
 			}]
-			x: -2.5d
-			y: -2.5d
+			x: 3.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["5D3B1F040BBB2AF2"]
@@ -523,8 +489,8 @@
 				}
 				type: "item"
 			}]
-			x: -5.0d
-			y: -2.5d
+			x: 6.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["2EDA6C0823CAF5BE"]
@@ -543,8 +509,8 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
-			y: 7.5d
+			x: 12.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["4B5C544E097417A0"]
@@ -563,8 +529,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: 12.5d
+			x: 15.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["2EDA6C0823CAF5BE"]
@@ -583,8 +549,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: 10.0d
+			x: 12.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -606,8 +572,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: -2.5d
+			x: 3.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["3AA758300110DA33"]
@@ -617,8 +583,8 @@
 				item: "minecraft:cherry_sapling"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 5.0d
+			x: 9.0d
+			y: 9.0d
 		}
 	]
 	title: "暮色秘境"

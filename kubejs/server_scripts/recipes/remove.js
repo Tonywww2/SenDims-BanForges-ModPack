@@ -49,6 +49,7 @@ const toRemoveID = new Set([
     "terra_entity:malaise",
     "botania:petal_apothecary/entropinnyum",
     "slashblade:tagayasan",
+    "deep_aether:stratus_ingot",
 
     "sophisticatedbackpacks:backpack",
     "sophisticatedbackpacks:iron_backpack",

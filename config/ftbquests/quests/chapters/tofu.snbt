@@ -1,32 +1,25 @@
 {
-	default_hide_dependency_lines: true
+	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "tofu"
 	group: "6900D4BA6E5FB142"
 	icon: "tofucraft:tofugrilled"
 	id: "5EBAE200287C397B"
 	order_index: 1
-	quest_links: [
-		{
-			id: "782145F121172E22"
-			linked_quest: "0B0F1D8BE89F8980"
-			x: 12.5d
-			y: -2.5d
-		}
-		{
-			id: "7AF774538F76952E"
-			linked_quest: "52726CE2A2740BF7"
-			shape: "hexagon"
-			x: 15.0d
-			y: 0.0d
-		}
-	]
+	quest_links: [{
+		id: "7AF774538F76952E"
+		linked_quest: "52726CE2A2740BF7"
+		shape: "hexagon"
+		x: 15.0d
+		y: -3.0d
+	}]
 	quests: [
 		{
 			dependencies: [
 				"0B0F1D8BE89F8980"
 				"034D47E905861E48"
 			]
+			dependency_requirement: "one_completed"
 			description: [
 				"使用&6烤豆腐块&r建造3x3平台，在中心放置&6苔藓块&r"
 				"使用&6豆腐魔杖&r右键&6苔藓块&r激活传送"
@@ -101,7 +94,7 @@
 				type: "item"
 			}]
 			title: "世界核心"
-			x: 12.5d
+			x: 15.0d
 			y: 0.0d
 		}
 		{
@@ -130,7 +123,7 @@
 				}
 			]
 			title: "压制准备"
-			x: 2.5d
+			x: 3.0d
 			y: 0.0d
 		}
 		{
@@ -159,8 +152,8 @@
 					type: "item"
 				}
 			]
-			x: 2.5d
-			y: 5.0d
+			x: 3.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -179,7 +172,7 @@
 				item: "tofucraft:tofumetal"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 6.0d
 			y: 0.0d
 		}
 		{
@@ -225,8 +218,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
-			y: 2.5d
+			x: 3.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["3376AE50BC0EB9A5"]
@@ -272,8 +265,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: 2.5d
+			x: 6.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -393,8 +386,8 @@
 					type: "item"
 				}
 			]
-			x: 12.5d
-			y: 2.5d
+			x: 15.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["6140B0BCEB7F9D64"]
@@ -413,8 +406,8 @@
 				type: "structure"
 			}]
 			title: "豆腐城堡"
-			x: 2.5d
-			y: 7.5d
+			x: 3.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["3376AE50BC0EB9A5"]
@@ -445,7 +438,7 @@
 				}
 			]
 			title: "碾碎豆腐！"
-			x: 7.5d
+			x: 9.0d
 			y: 0.0d
 		}
 		{
@@ -470,7 +463,7 @@
 				}
 			]
 			title: "核心材料"
-			x: 10.0d
+			x: 12.0d
 			y: 0.0d
 		}
 	]

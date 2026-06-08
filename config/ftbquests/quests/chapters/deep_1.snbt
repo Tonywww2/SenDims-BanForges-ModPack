@@ -11,14 +11,8 @@
 		{
 			id: "20ABFC2B67E2EA9F"
 			linked_quest: "00880D674BE17F9A"
-			x: 10.0d
-			y: -2.5d
-		}
-		{
-			id: "31E8EEA88861BFF2"
-			linked_quest: "244DE4322B5B3EA5"
-			x: 11.5d
-			y: 7.0d
+			x: 15.0d
+			y: 3.0d
 		}
 		{
 			id: "48E82D2A6108C479"
@@ -26,6 +20,74 @@
 			shape: "hexagon"
 			size: 1.5d
 			x: -3.0d
+			y: 0.0d
+		}
+		{
+			id: "58F42E09333C4737"
+			linked_quest: "1620FC37BD64FA7E"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			id: "0891AE0A6109EB9E"
+			linked_quest: "606961105725FF7C"
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			id: "7EC5505981D29EB9"
+			linked_quest: "750B557031EFBBEE"
+			x: 18.0d
+			y: 0.0d
+		}
+		{
+			id: "673407DA84F21B0E"
+			linked_quest: "3C1CB82ADF4FBBC1"
+			shape: "hexagon"
+			size: 2.0d
+			x: 21.0d
+			y: -3.0d
+		}
+		{
+			id: "63FE32795B147CBE"
+			linked_quest: "6130B752208314B7"
+			x: 6.0d
+			y: 9.0d
+		}
+		{
+			id: "05407B7FA2D2C562"
+			linked_quest: "71FCA5FAB43DD617"
+			x: 9.0d
+			y: 9.0d
+		}
+		{
+			id: "596A8AC4B21A5688"
+			linked_quest: "28CAD1DD57B60440"
+			x: 9.0d
+			y: -9.0d
+		}
+		{
+			id: "6A5B8831349DE020"
+			linked_quest: "0A68F5EE8F25F036"
+			shape: "hexagon"
+			size: 2.0d
+			x: 27.0d
+			y: -9.0d
+		}
+		{
+			id: "3B69D0D4C8A0D003"
+			linked_quest: "2E482B871B147DC6"
+			shape: "hexagon"
+			size: 2.0d
+			x: 24.0d
+			y: -6.0d
+		}
+		{
+			id: "1E4F63CDA95B5F48"
+			linked_quest: "5D5BA71C5348297D"
+			shape: "hexagon"
+			size: 2.0d
+			x: 21.0d
 			y: 0.0d
 		}
 	]
@@ -43,15 +105,13 @@
 				item: "minecraft:diamond"
 				type: "item"
 			}]
-			shape: "hexagon"
-			size: 1.5d
 			tasks: [{
 				id: "5EA9F027884A6755"
 				item: "minecraft:diamond"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 0.0d
+			x: 6.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["1DE54DDD04540738"]
@@ -62,7 +122,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 7.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["5BB642BD0BE40541"]
@@ -73,8 +133,8 @@
 				item: "minecraft:iron_ingot"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 7.0d
+			x: 6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -96,8 +156,8 @@
 				}
 				type: "item"
 			}]
-			x: 14.0d
-			y: 7.0d
+			x: 12.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -119,8 +179,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
-			y: 5.0d
+			x: 9.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["5BB642BD0BE40541"]
@@ -130,11 +190,11 @@
 				item: "minecraft:lapis_lazuli"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 2.5d
+			x: 6.0d
+			y: 6.0d
 		}
 		{
-			dependencies: ["6AE2EFEC0F3BE4BE"]
+			dependencies: ["0402AC2E4A8127A4"]
 			id: "21AAA0495A97DD6A"
 			tasks: [{
 				id: "4DF61D9E91839C53"
@@ -150,8 +210,8 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
-			y: 5.0d
+			x: 12.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["21AAA0495A97DD6A"]
@@ -170,8 +230,8 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
-			y: 7.5d
+			x: 15.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["5BB642BD0BE40541"]
@@ -193,38 +253,28 @@
 				item: "minecraft:map"
 				type: "item"
 			}]
-			size: 2.0d
 			subtitle: "信息"
 			tasks: [{
 				id: "7C2857CCF82C28A2"
 				type: "checkmark"
 			}]
 			title: "深境一层的结构"
-			x: 0.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["5BB642BD0BE40541"]
-			id: "33F75375A067D418"
-			tasks: [{
-				id: "2F6FA4D3DC893C82"
-				item: "yungscavebiomes:frost_lily"
-				type: "item"
-			}]
-			x: -5.0d
-			y: -2.5d
+			x: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2EADF063117EE157"]
 			description: ["先驱者可以使用钻石激活"]
 			id: "6005126CA254EC52"
+			shape: "pentagon"
+			size: 2.0d
 			tasks: [{
 				id: "15CEF9F2A96CEB19"
 				item: "cataclysm:mech_eye"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -5.0d
+			x: 18.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["5BB642BD0BE40541"]
@@ -234,15 +284,14 @@
 				item: "minecraft:sculk_catalyst"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 0.0d
+			x: 6.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["5BB642BD0BE40541"]
 			description: [
 				"结构羽毛笔是一种十分实用的道具，它可以帮助你快速定位到一些关键的建筑。"
 				""
-				"提示：在拔刀剑章节可以获取制作纸的原料。"
 			]
 			icon: "slashblade_sendims:structure_quill"
 			id: "64D03E66319AF253"
@@ -257,8 +306,8 @@
 				type: "checkmark"
 			}]
 			title: "结构羽毛笔"
-			x: 0.0d
-			y: -5.0d
+			x: 6.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["64D03E66319AF253"]
@@ -269,8 +318,8 @@
 				item: "minecraft:dirt"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -7.5d
+			x: 9.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["64D03E66319AF253"]
@@ -281,28 +330,15 @@
 				item: "minecraft:cobblestone"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -7.5d
+			x: 9.0d
+			y: 15.0d
 		}
 		{
-			dependencies: ["1DE54DDD04540738"]
-			description: [
-				"千百年之前，一个拥有着发达机械技术的古代文明曾活跃在深境之中，他们留下来的一些痕迹或许能帮助到你......"
-				""
-				"你可以使用铁锭+地图制作实验室的结构羽毛笔。"
+			dependencies: [
+				"3C8A6884B30E7AE7"
+				"5BB642BD0BE40541"
 			]
-			id: "6F117E817FAB60B3"
-			subtitle: "注意"
-			tasks: [{
-				id: "0DB7BB56F0144985"
-				item: "ae2:certus_quartz_crystal"
-				type: "item"
-			}]
-			x: 5.0d
-			y: 2.5d
-		}
-		{
-			dependencies: ["3C8A6884B30E7AE7"]
+			dependency_requirement: "one_completed"
 			id: "1A14AB96A3999453"
 			tasks: [{
 				id: "7AA77D9754E239C3"
@@ -318,8 +354,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.5d
-			y: 0.0d
+			x: 9.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["1DE54DDD04540738"]
@@ -338,8 +374,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: -2.5d
+			x: 9.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["71F1943E6E3FCA17"]
@@ -376,16 +412,16 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["64D03E66319AF253"]
-			description: ["要塞"]
+			dependencies: ["5BB642BD0BE40541"]
+			description: ["深境一层中可以找到要塞，但是一股神秘的力量阻止着你进入末地......"]
 			id: "4A7A22C5F8893EB8"
 			tasks: [{
 				id: "679F289DA1698790"
 				item: "minecraft:ender_eye"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -7.5d
+			x: 6.0d
+			y: -9.0d
 		}
 		{
 			dependencies: [
@@ -399,8 +435,8 @@
 				item: "cataclysm:witherite_ingot"
 				type: "item"
 			}]
-			x: -5.0d
-			y: -5.0d
+			x: 21.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["5BB642BD0BE40541"]
@@ -410,19 +446,8 @@
 				item: "yungscavebiomes:rare_ice"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["5BB642BD0BE40541"]
-			id: "561241B6C33A3DCD"
-			tasks: [{
-				id: "17C92236443D20D4"
-				item: "terra_entity:abeemination"
-				type: "item"
-			}]
-			x: -7.5d
-			y: 2.5d
+			x: 6.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["5BB642BD0BE40541"]
@@ -434,17 +459,23 @@
 				table_id: 7214542327696130213L
 				type: "loot"
 			}]
+			shape: "pentagon"
+			size: 2.0d
 			tasks: [{
 				id: "4B7399053F683820"
 				item: "terra_entity:clothier_voodoo_doll"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 2.5d
+			x: 9.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["5CCEAB83DF5ACE81"]
-			description: ["这是通往另一个维度的钥匙，不过你还需要&e通过合成&r激活它。"]
+			description: [
+				"这是通往另一个维度的钥匙，不过你还需要&e通过合成&r激活它。"
+				""
+				"提示：你需要在后续的世界中发现&e神秘碱晶&r，才能激活这个道具。"
+			]
 			id: "7267904F019CEFD6"
 			shape: "hexagon"
 			tasks: [{
@@ -452,11 +483,15 @@
 				item: "midnight:rift_placer"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 5.0d
+			x: 12.0d
+			y: -6.0d
 		}
 		{
-			dependencies: ["2EADF063117EE157"]
+			dependencies: [
+				"6AE2EFEC0F3BE4BE"
+				"64D03E66319AF253"
+			]
+			dependency_requirement: "one_completed"
 			description: ["可以制作瘟疫疯人院的结构羽毛笔。"]
 			id: "219853BE75550919"
 			tasks: [{
@@ -468,8 +503,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
-			y: -5.0d
+			x: 9.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -491,8 +526,8 @@
 				type: "structure"
 			}]
 			title: "瘟疫疯人院"
-			x: 5.0d
-			y: -5.0d
+			x: 12.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -507,8 +542,8 @@
 				type: "structure"
 			}]
 			title: "泥砖村庄"
-			x: 5.0d
-			y: -7.5d
+			x: 12.0d
+			y: 18.0d
 		}
 		{
 			dependencies: [
@@ -523,8 +558,8 @@
 				type: "structure"
 			}]
 			title: "石头村庄"
-			x: -5.0d
-			y: -7.5d
+			x: 12.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["69856593B46ECD9E"]
@@ -543,8 +578,8 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
-			y: -5.0d
+			x: 15.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -558,20 +593,8 @@
 				type: "structure"
 			}]
 			title: "古代实验室"
-			x: 2.5d
-			y: -2.5d
-		}
-		{
-			dependencies: ["561241B6C33A3DCD"]
-			id: "5455473B5A1E65AF"
-			subtitle: "未完成"
-			tasks: [{
-				id: "308FCC8294F7423B"
-				item: "terra_entity:honeyed_goggles"
-				type: "item"
-			}]
-			x: -7.5d
-			y: 5.0d
+			x: 6.0d
+			y: -6.0d
 		}
 	]
 	title: "深境：深邃洞穴"

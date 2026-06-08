@@ -11,33 +11,20 @@
 		{
 			id: "34204459AAC5D2D2"
 			linked_quest: "00880D674BE17F9A"
-			x: 10.0d
-			y: -5.0d
+			x: 9.0d
+			y: 27.0d
 		}
 		{
-			id: "6190B08FD3F9E304"
-			linked_quest: "1A14AB96A3999453"
-			x: 2.5d
-			y: -12.5d
-		}
-		{
-			id: "7EBDCB5CE4103D22"
-			linked_quest: "244DE4322B5B3EA5"
-			x: 7.5d
-			y: -2.5d
-		}
-		{
-			id: "065EAD0B521B1FFA"
-			linked_quest: "71B535DCE4CFEF8F"
+			id: "60884F4EA4EAF984"
+			linked_quest: "3DA6E818573A9A69"
 			shape: "hexagon"
-			size: 1.5d
-			x: 0.0d
-			y: 2.5d
+			size: 2.0d
+			x: 18.0d
+			y: 0.0d
 		}
 	]
 	quests: [
 		{
-			dependencies: ["71B535DCE4CFEF8F"]
 			description: ["使用萤石作为门框材料，并用水桶点亮......"]
 			hide_dependent_lines: true
 			hide_until_deps_visible: true
@@ -63,8 +50,8 @@
 				item: "aether:quicksoil"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 0.0d
+			x: 3.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["0F8DC1AEBBC762C1"]
@@ -75,8 +62,8 @@
 				item: "aether:holystone"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 2.5d
+			x: 3.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["0F8DC1AEBBC762C1"]
@@ -87,7 +74,7 @@
 				item: "aether:ambrosium_shard"
 				type: "item"
 			}]
-			x: 2.5d
+			x: 3.0d
 			y: 0.0d
 		}
 		{
@@ -103,8 +90,8 @@
 				type: "structure"
 			}]
 			title: "青铜地牢"
-			x: -5.0d
-			y: 0.0d
+			x: 6.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -119,8 +106,8 @@
 				type: "structure"
 			}]
 			title: "白银地牢"
-			x: -2.5d
-			y: 5.0d
+			x: 6.0d
+			y: 15.0d
 		}
 		{
 			dependencies: [
@@ -135,8 +122,8 @@
 				type: "structure"
 			}]
 			title: "黄金地牢"
-			x: 5.0d
-			y: 0.0d
+			x: 6.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -151,56 +138,8 @@
 				type: "structure"
 			}]
 			title: "白金地牢"
-			x: 0.0d
-			y: 7.5d
-		}
-		{
-			dependencies: ["6B7C4E19A6FD6939"]
-			id: "1E6D4424241DF4B8"
-			rewards: [{
-				id: "2D3C8999954110A6"
-				item: "aether:gold_dungeon_key"
-				type: "item"
-			}]
-			tasks: [{
-				id: "7A4CDFFDC79532CE"
-				item: "aether:gold_dungeon_key"
-				type: "item"
-			}]
-			x: 5.0d
-			y: 2.5d
-		}
-		{
-			dependencies: ["48E30F8BC43E9AD4"]
-			id: "4E2F748EC5D3E805"
-			rewards: [{
-				id: "3CD417B7E10EE9AA"
-				item: "aether:silver_dungeon_key"
-				type: "item"
-			}]
-			tasks: [{
-				id: "371DBA6E3CBE6BB9"
-				item: "aether:silver_dungeon_key"
-				type: "item"
-			}]
-			x: -2.5d
-			y: 7.5d
-		}
-		{
-			dependencies: ["7CBB12CD9FDCA6A4"]
-			id: "1F1807D6C5351014"
-			rewards: [{
-				id: "617A29BC1B73B68C"
-				item: "aether:bronze_dungeon_key"
-				type: "item"
-			}]
-			tasks: [{
-				id: "4F03319BB664DEF1"
-				item: "aether:bronze_dungeon_key"
-				type: "item"
-			}]
-			x: -5.0d
-			y: 2.5d
+			x: 6.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -242,8 +181,8 @@
 				}
 			]
 			title: "结构召唤仪式：白金地牢"
-			x: 0.0d
-			y: 5.0d
+			x: 3.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["0F8DC1AEBBC762C1"]
@@ -254,8 +193,8 @@
 				item: "aether:golden_amber"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 2.5d
+			x: 3.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -270,46 +209,8 @@
 				type: "structure"
 			}]
 			title: "黄铜地牢"
-			x: 2.5d
-			y: 5.0d
-		}
-		{
-			dependencies: ["614A7F7B332E03A7"]
-			id: "5F100E53A93E2047"
-			rewards: [{
-				id: "1172037DB968DF55"
-				item: "deep_aether:brass_dungeon_key"
-				type: "item"
-			}]
-			tasks: [{
-				id: "79409AC01C0A9DAD"
-				item: "deep_aether:brass_dungeon_key"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 7.5d
-		}
-		{
-			dependencies: ["6B7C4E19A6FD6939"]
-			id: "21E590C64DC1A908"
-			tasks: [{
-				id: "671D5640972E190A"
-				item: "aether:life_shard"
-				type: "item"
-			}]
-			x: 7.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["48E30F8BC43E9AD4"]
-			id: "4E482FD8B2C2FA93"
-			tasks: [{
-				id: "7A3B9998CB912008"
-				item: "aether:regeneration_stone"
-				type: "item"
-			}]
-			x: -5.0d
-			y: 5.0d
+			x: 6.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["0F8DC1AEBBC762C1"]
@@ -319,8 +220,8 @@
 				item: "deep_aether:bio_crystal"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -2.5d
+			x: 3.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["0F8DC1AEBBC762C1"]
@@ -331,8 +232,8 @@
 				item: "aether:zanite_gemstone"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -5.0d
+			x: 6.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["0F8DC1AEBBC762C1"]
@@ -342,8 +243,8 @@
 				item: "aether_redux:blightbunny_fang"
 				type: "item"
 			}]
-			x: -5.0d
-			y: -2.5d
+			x: 3.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["0F8DC1AEBBC762C1"]
@@ -353,8 +254,8 @@
 				item: "aether_redux:refined_sentrite"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -2.5d
+			x: 3.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["0F8DC1AEBBC762C1"]
@@ -364,8 +265,8 @@
 				item: "aether_redux:lightroot_clump"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -2.5d
+			x: 3.0d
+			y: 24.0d
 		}
 		{
 			dependencies: ["0F8DC1AEBBC762C1"]
@@ -375,8 +276,8 @@
 				item: "aether_redux:veridium_ingot"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -5.0d
+			x: 3.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -390,8 +291,8 @@
 				item: "deep_aether:metal_mixture"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -2.5d
+			x: 6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["0F8DC1AEBBC762C1"]
@@ -401,8 +302,8 @@
 				item: "aether_redux:mykapod_shell_chunk"
 				type: "item"
 			}]
-			x: -5.0d
-			y: -5.0d
+			x: 3.0d
+			y: 27.0d
 		}
 		{
 			dependencies: ["0F8DC1AEBBC762C1"]
@@ -413,8 +314,8 @@
 				item: "deep_aether:skyjade"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -5.0d
+			x: 6.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["0F8DC1AEBBC762C1"]
@@ -425,8 +326,8 @@
 				item: "aether_redux:gravitite_ingot"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -7.5d
+			x: 6.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["614A7F7B332E03A7"]
@@ -436,8 +337,8 @@
 				item: "deep_aether:squall_plate"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 5.0d
+			x: 9.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["7CBB12CD9FDCA6A4"]
@@ -447,8 +348,8 @@
 				item: "aether_treasure_reforging:neptune_mesh"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 0.0d
+			x: 9.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["48E30F8BC43E9AD4"]
@@ -458,8 +359,8 @@
 				item: "aether_treasure_reforging:valkyrum_ingot"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 7.5d
+			x: 9.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["6B7C4E19A6FD6939"]
@@ -469,14 +370,15 @@
 				item: "aether_treasure_reforging:pyral_ingot"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 0.0d
+			x: 9.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
 				"01604A3C5394A6B9"
 				"465AFA19A305AB81"
 				"6543C211F987A5FF"
+				"370F691D89AF5467"
 			]
 			dependency_requirement: "one_completed"
 			description: [
@@ -511,8 +413,8 @@
 					type: "item"
 				}
 			]
-			x: -2.5d
-			y: -7.5d
+			x: 9.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["7CBB12CD9FDCA6A4"]
@@ -522,8 +424,8 @@
 				item: "aether_redux:sentry_chip"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 2.5d
+			x: 12.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["01604A3C5394A6B9"]
@@ -542,8 +444,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
-			y: -7.5d
+			x: 6.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["09C52DB3DF15106A"]
@@ -562,8 +464,8 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
-			y: -7.5d
+			x: 15.0d
+			y: 24.0d
 		}
 		{
 			dependencies: ["7AD098E0E3FE6154"]
@@ -582,8 +484,8 @@
 				}
 				type: "item"
 			}]
-			x: 10.0d
-			y: -7.5d
+			x: 18.0d
+			y: 24.0d
 		}
 		{
 			dependencies: [
@@ -605,8 +507,8 @@
 				}
 				type: "item"
 			}]
-			x: 10.0d
-			y: -2.5d
+			x: 6.0d
+			y: 27.0d
 		}
 		{
 			dependencies: ["7C6B82665A7EBFB4"]
@@ -625,8 +527,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: -10.0d
+			x: 9.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["7C6B82665A7EBFB4"]
@@ -645,8 +547,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: -5.0d
+			x: 9.0d
+			y: 24.0d
 		}
 		{
 			dependencies: ["55FD7C131B160F62"]
@@ -665,8 +567,8 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
-			y: -5.0d
+			x: 12.0d
+			y: 24.0d
 		}
 		{
 			dependencies: ["5881B5670577E8D0"]
@@ -685,8 +587,8 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
-			y: -10.0d
+			x: 12.0d
+			y: 21.0d
 		}
 		{
 			dependencies: [
@@ -708,21 +610,20 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: -12.5d
+			x: 9.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["3F0F05D26289CF7B"]
 			hide_until_deps_visible: true
 			id: "5DC17402B959C2E9"
-			shape: "hexagon"
 			tasks: [{
 				id: "1C1A404E421F059B"
 				item: "aether:sentry_stone"
 				type: "item"
 			}]
-			x: -10.0d
-			y: 2.5d
+			x: 15.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -731,16 +632,14 @@
 			]
 			description: ["这些变量卡有些特殊？"]
 			id: "0C568583CC58DAA6"
-			shape: "hexagon"
-			size: 2.0d
 			subtitle: "重要"
 			tasks: [{
 				id: "7F7F699FC6682534"
 				item: "integrateddynamics:variable"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -10.0d
+			x: 15.0d
+			y: 0.0d
 		}
 	]
 	title: "天上天境"

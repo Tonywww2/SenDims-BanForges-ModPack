@@ -80,6 +80,18 @@
 			x: -2.5d
 			y: 55.0d
 		}
+		{
+			id: "1686B653B6054D4D"
+			linked_quest: "59C711671F81AB45"
+			x: -7.5d
+			y: 5.0d
+		}
+		{
+			id: "4AF0847F2E32C389"
+			linked_quest: "260A17885336B776"
+			x: 0.0d
+			y: 22.5d
+		}
 	]
 	quests: [
 		{
@@ -231,7 +243,10 @@
 			y: 17.5d
 		}
 		{
-			dependencies: ["792DE983634FBDAD"]
+			dependencies: [
+				"792DE983634FBDAD"
+				"6EA2DE0DEBD7A693"
+			]
 			id: "40B4C6CD28E7DF19"
 			shape: "hexagon"
 			size: 1.5d
@@ -438,17 +453,6 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["40B4C6CD28E7DF19"]
-			id: "7A770E44047C47F7"
-			tasks: [{
-				id: "4BDB60C1A2716D03"
-				item: "ad_astra:ostrum_ingot"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 22.5d
-		}
-		{
 			dependencies: ["7AE21FD78902B494"]
 			id: "23DF5636575FFAE2"
 			tasks: [{
@@ -613,7 +617,7 @@
 			y: 7.5d
 		}
 		{
-			dependencies: ["7A770E44047C47F7"]
+			dependencies: ["260A17885336B776"]
 			hide_until_deps_complete: true
 			id: "1202BBA3EB29DB70"
 			tasks: [{
@@ -659,8 +663,8 @@
 		{
 			dependencies: [
 				"590D7D0D241DD369"
-				"58392C23DFA54B7F"
 				"3729969E7821EBB6"
+				"59C711671F81AB45"
 			]
 			id: "1620FC37BD64FA7E"
 			tasks: [{
@@ -1208,20 +1212,6 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: 5.0d
-		}
-		{
-			dependencies: [
-				"5BB642BD0BE40541"
-				"15D102DE2394A495"
-			]
-			id: "58392C23DFA54B7F"
-			tasks: [{
-				id: "05703322306712EB"
-				item: "nuclearcraft:sulfuric_acid_bucket"
-				type: "item"
-			}]
-			x: -7.5d
 			y: 5.0d
 		}
 		{
