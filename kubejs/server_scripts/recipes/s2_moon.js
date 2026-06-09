@@ -15,6 +15,17 @@ ServerEvents.recipes(event => {
     }).keepIngredient('ad_astra:moon_globe')
         .id('sdbf:obsidian_rose_s2')
 
+    event.shaped(Item.of('gateways:gate_pearl', '{gateway:"gateways:sdbf_moon_g1"}'), [
+        'ABA',
+        'BEB',
+        'ABA'
+    ], {
+        A: '#forge:ingots/desh',
+        B: 'ad_astra:moon_stone',
+        E: 'ad_astra:moon_globe',
+    }).keepIngredient('ad_astra:moon_globe')
+        .id('sdbf:sdbf_moon_g1_s2')
+
     event.shaped('2x kubejs:bedrock_breaker', [
         ' BA',
         'BCB',

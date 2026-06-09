@@ -1,33 +1,48 @@
 {
-  "type": "gateways:gate_recipe",
-  "group": "gateways",
-  "pattern": [
-    "DED",
-    "GAG",
-    "BFB"
-  ],
-  "key": {
-    "D": {
-      "item": "minecraft:glowstone_dust"
+    "conditions":
+    [
+        {
+            "type": "forge:false"
+        }
+    ],
+    "type": "gateways:gate_recipe",
+    "group": "gateways",
+    "pattern":
+    [
+        "DED",
+        "GAG",
+        "BFB"
+    ],
+    "key":
+    {
+        "D":
+        {
+            "item": "minecraft:glowstone_dust"
+        },
+        "E":
+        {
+            "item": "minecraft:spider_eye"
+        },
+        "G":
+        {
+            "item": "minecraft:gunpowder"
+        },
+        "A":
+        {
+            "item": "minecraft:ender_eye"
+        },
+        "B":
+        {
+            "item": "minecraft:bone"
+        },
+        "F":
+        {
+            "item": "minecraft:rotten_flesh"
+        }
     },
-	"E": {
-      "item": "minecraft:spider_eye"
+    "result":
+    {
+        "item": "gateways:gate_pearl"
     },
-	"G": {
-      "item": "minecraft:gunpowder"
-    },
-	"A": {
-      "item": "minecraft:ender_eye"
-    },
-	"B": {
-      "item": "minecraft:bone"
-    },
-	"F": {
-      "item": "minecraft:rotten_flesh"
-    }
-  },
-  "result": {
-    "item": "gateways:gate_pearl"
-  },
-  "gateway": "gateways:overworldian_nights"
+    "gateway": "gateways:overworldian_nights"
 }

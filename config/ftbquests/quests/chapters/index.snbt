@@ -262,6 +262,22 @@
 			x: -16.0d
 			y: 9.0d
 		}
+		{
+			id: "2EB422427B4B56AB"
+			linked_quest: "57C686A75E491E21"
+			shape: "gear"
+			size: 2.0d
+			x: -19.0d
+			y: 15.0d
+		}
+		{
+			id: "5EF594FE06D042C8"
+			linked_quest: "52998D003D502A8A"
+			shape: "gear"
+			size: 2.0d
+			x: -19.0d
+			y: 18.0d
+		}
 	]
 	quests: [
 		{

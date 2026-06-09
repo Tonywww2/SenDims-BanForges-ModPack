@@ -361,6 +361,23 @@
 			x: 18.0d
 			y: 3.0d
 		}
+		{
+			dependencies: ["5BD21261CD9F446E"]
+			id: "64C40F337525583E"
+			tasks: [{
+				id: "7E37F135DF4A82EA"
+				item: {
+					Count: 1
+					id: "gateways:gate_pearl"
+					tag: {
+						gateway: "gateways:sdbf_moon_g1"
+					}
+				}
+				type: "item"
+			}]
+			x: 9.0d
+			y: 6.0d
+		}
 	]
 	title: "畸变的月球"
 }

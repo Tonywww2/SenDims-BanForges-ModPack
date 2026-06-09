@@ -50,6 +50,7 @@ const toRemoveID = new Set([
     "botania:petal_apothecary/entropinnyum",
     "slashblade:tagayasan",
     "deep_aether:stratus_ingot",
+    "nuclearcraft:analyzer",
 
     "sophisticatedbackpacks:backpack",
     "sophisticatedbackpacks:iron_backpack",

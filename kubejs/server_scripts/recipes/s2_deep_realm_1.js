@@ -5,6 +5,26 @@ ServerEvents.recipes(event => {
     sqRecipe(event, "cavernous:stone_village", '#forge:cobblestone', 0, "s2");
     sqRecipe(event, "dungeons_arise:plague_asylum", 'ad_astra:etrionic_capacitor', 0, "s2");
 
+    event.shaped(Item.of('gateways:gate_pearl', '{gateway:"gateways:sdbf_dr1_g1"}'), [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'minecraft:bone',
+        B: 'minecraft:rotten_flesh',
+        C: 'ae2:cut_quartz_block'
+    }).id('sdbf:sdbf_dr1_g1_s2')
+
+    event.shaped(Item.of('gateways:gate_pearl', '{gateway:"gateways:sdbf_dr1_g2"}'), [
+        'ADA',
+        'BCB',
+        'ABA'
+    ], {
+        A: '#forge:ingots/iron',
+        B: '#forge:dusts/redstone',
+        C: 'cataclysm:mech_eye',
+        D: 'cataclysm:witherite_ingot'
+    }).id('sdbf:sdbf_dr1_g2_s2')
 
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
         "ESD",

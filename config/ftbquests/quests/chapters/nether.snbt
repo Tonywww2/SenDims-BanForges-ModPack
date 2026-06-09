@@ -439,6 +439,26 @@
 			}]
 			title: "堡垒遗迹"
 			x: 6.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"1F9B9C1CBB5B9659"
+				"09B56EAA8E6C1B2E"
+			]
+			id: "090010A46891A693"
+			tasks: [{
+				id: "209AF9EA43AB07F2"
+				item: {
+					Count: 1
+					id: "gateways:gate_pearl"
+					tag: {
+						gateway: "gateways:sdbf_nether_g1"
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
 			y: 6.0d
 		}
 	]

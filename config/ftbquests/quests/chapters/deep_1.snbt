@@ -621,6 +621,40 @@
 			x: 6.0d
 			y: -9.0d
 		}
+		{
+			dependencies: ["09282B67B7D8CF17"]
+			id: "3B6D18679BD6BD0A"
+			tasks: [{
+				id: "55A003454C9C6931"
+				item: {
+					Count: 1
+					id: "gateways:gate_pearl"
+					tag: {
+						gateway: "gateways:sdbf_dr1_g2"
+					}
+				}
+				type: "item"
+			}]
+			x: 21.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6130B752208314B7"]
+			id: "206536C510BBA790"
+			tasks: [{
+				id: "68E3E6DEB4AFC898"
+				item: {
+					Count: 1
+					id: "gateways:gate_pearl"
+					tag: {
+						gateway: "gateways:sdbf_dr1_g1"
+					}
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: 9.0d
+		}
 	]
 	title: "深境：深邃洞穴"
 }

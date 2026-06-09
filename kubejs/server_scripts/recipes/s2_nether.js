@@ -1,7 +1,17 @@
 ServerEvents.recipes(event => {
 
-        sqRecipe(event, "minecraft:bastion_remnant", '#forge:ingots/gold', 1, "s2");
-        sqRecipe(event, "minecraft:fortress", 'minecraft:nether_bricks', 1, "s2");
+    sqRecipe(event, "minecraft:bastion_remnant", '#forge:ingots/gold', 1, "s2");
+    sqRecipe(event, "minecraft:fortress", 'minecraft:nether_bricks', 1, "s2");
+
+    event.shaped(Item.of('gateways:gate_pearl', '{gateway:"gateways:sdbf_nether_g1"}'), [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'minecraft:nether_bricks',
+        B: '#forge:ingots/gold',
+        C: '#forge:storage_blocks/quartz'
+    }).id('sdbf:sdbf_nether_g1_s2')
 
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
         "SNJ",

@@ -12,6 +12,7 @@
 		{
 			dependencies: ["73531FB69122489F"]
 			id: "3C14A2F8BA3C3DA6"
+			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
 				id: "4FF7F8A5BE4D1636"
@@ -22,12 +23,12 @@
 						value: "minecraft:anvil"
 					}
 				}
-				title: "Any #minecraft:anvil"
+				title: "铁砧"
 				type: "item"
 			}]
 			title: "神化"
-			x: 0.5d
-			y: 10.5d
+			x: 0.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["3C14A2F8BA3C3DA6"]
@@ -45,7 +46,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 10.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["3C14A2F8BA3C3DA6"]
@@ -75,8 +76,8 @@
 				}
 			]
 			title: "神话材料"
-			x: 0.5d
-			y: 13.0d
+			x: 0.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["278A39AEC26ACC1A"]
@@ -87,7 +88,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 13.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["77ABEFEE93012F0A"]
@@ -107,8 +108,8 @@
 				}
 			]
 			title: "雕刻与回收"
-			x: 5.5d
-			y: 8.0d
+			x: 6.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["278A39AEC26ACC1A"]
@@ -119,8 +120,8 @@
 				item: "apotheosis:simple_reforging_table"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 15.5d
+			x: 3.0d
+			y: 18.0d
 		}
 		{
 			dependencies: [
@@ -133,8 +134,8 @@
 				item: "apotheosis:reforging_table"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 15.5d
+			x: 6.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["03D989C2ED12227E"]
@@ -144,8 +145,8 @@
 				item: "apotheosis:augmenting_table"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 15.5d
+			x: 9.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["77ABEFEE93012F0A"]
@@ -180,8 +181,8 @@
 				}
 			]
 			title: "各种功能符石"
-			x: 5.5d
-			y: 10.5d
+			x: 3.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["77693A4D5EF97A31"]
@@ -191,8 +192,8 @@
 				item: "rehooked:iron_hook"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -10.0d
+			x: 3.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["5748351A76910019"]
@@ -203,6 +204,7 @@
 				type: "xp"
 				xp: 100
 			}]
+			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
 				id: "1827F027E12F1F7C"
@@ -210,8 +212,8 @@
 				type: "item"
 			}]
 			title: "跑图工具"
-			x: -7.5d
-			y: -7.5d
+			x: 0.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["00C3C00C3688CEA7"]
@@ -221,8 +223,8 @@
 				item: "rehooked:red_hook"
 				type: "item"
 			}]
-			x: -10.0d
-			y: -10.0d
+			x: 6.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["00C3C00C3688CEA7"]
@@ -232,8 +234,8 @@
 				item: "rehooked:diamond_hook"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -12.5d
+			x: 6.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["6D19670214234AFA"]
@@ -243,8 +245,8 @@
 				item: "rehooked:blaze_hook"
 				type: "item"
 			}]
-			x: -5.0d
-			y: -12.5d
+			x: 9.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["6D19670214234AFA"]
@@ -254,8 +256,8 @@
 				item: "rehooked:ender_hook"
 				type: "item"
 			}]
-			x: -10.0d
-			y: -12.5d
+			x: 9.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["3C14A2F8BA3C3DA6"]
@@ -266,6 +268,7 @@
 			]
 			hide_dependency_lines: true
 			id: "12CBC73AFDD99F2C"
+			shape: "hexagon"
 			size: 2.0d
 			subtitle: "需要精准采集的镐子"
 			tasks: [{
@@ -274,8 +277,8 @@
 				type: "item"
 			}]
 			title: "神化刷怪笼"
-			x: -5.0d
-			y: 5.0d
+			x: 0.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
@@ -287,8 +290,8 @@
 				item: "minecraft:sugar"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 5.0d
+			x: 3.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
@@ -300,8 +303,8 @@
 				item: "minecraft:clock"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 9.5d
+			x: 6.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
@@ -313,8 +316,8 @@
 				item: "minecraft:fermented_spider_eye"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 5.0d
+			x: 9.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
@@ -326,8 +329,8 @@
 				item: "minecraft:ghast_tear"
 				type: "item"
 			}]
-			x: -6.5d
-			y: 8.0d
+			x: 12.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
@@ -339,8 +342,8 @@
 				item: "minecraft:prismarine_crystals"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 8.0d
+			x: 18.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
@@ -352,8 +355,8 @@
 				item: "minecraft:blaze_rod"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 6.5d
+			x: 15.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
@@ -365,8 +368,8 @@
 				item: "minecraft:dragon_egg"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 9.5d
+			x: 30.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
@@ -378,8 +381,8 @@
 				item: "minecraft:chorus_fruit"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 8.0d
+			x: 33.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
@@ -391,8 +394,8 @@
 				item: "minecraft:nether_star"
 				type: "item"
 			}]
-			x: -6.5d
-			y: 9.5d
+			x: 27.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
@@ -404,8 +407,8 @@
 				item: "minecraft:comparator"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 8.0d
+			x: 24.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
@@ -417,8 +420,8 @@
 				item: "minecraft:soul_lantern"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 6.5d
+			x: 21.0d
+			y: 21.0d
 		}
 		{
 			dependencies: [
@@ -427,14 +430,15 @@
 			]
 			description: ["前期弄不来的玩意，去村民吧。"]
 			id: "2563ABCEC67C3877"
+			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
 				id: "3C87525720F53DE7"
 				item: "minecraft:enchanting_table"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 0.0d
+			x: 3.0d
+			y: 24.0d
 		}
 		{
 			dependencies: ["71F1943E6E3FCA17"]
@@ -454,8 +458,8 @@
 				type: "item"
 			}]
 			title: "阶级-无-生命强化材料"
-			x: -2.5d
-			y: -5.0d
+			x: 3.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["52726CE2A2740BF7"]
@@ -506,7 +510,7 @@
 			}]
 			title: "深境证章的信息"
 			x: 0.0d
-			y: -5.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["71F1943E6E3FCA17"]
@@ -526,8 +530,8 @@
 				type: "item"
 			}]
 			title: "阶级-无-伤害强化材料"
-			x: 2.5d
-			y: -5.0d
+			x: 3.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["421132E2C3F4644D"]
@@ -547,8 +551,8 @@
 				type: "item"
 			}]
 			title: "阶级-1-伤害强化材料"
-			x: 2.5d
-			y: -7.5d
+			x: 6.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["71F1943E6E3FCA17"]
@@ -569,8 +573,8 @@
 				type: "item"
 			}]
 			title: "阶级一突破材料"
-			x: 0.0d
-			y: -7.5d
+			x: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["421132E2C3F4644D"]
@@ -590,8 +594,8 @@
 				type: "item"
 			}]
 			title: "阶级-1-生命强化材料"
-			x: -2.5d
-			y: -7.5d
+			x: 6.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["047BB42636510BA1"]
@@ -611,8 +615,8 @@
 				type: "item"
 			}]
 			title: "阶级-2-生命强化材料"
-			x: -2.5d
-			y: -10.0d
+			x: 9.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["421132E2C3F4644D"]
@@ -636,8 +640,8 @@
 				type: "item"
 			}]
 			title: "阶级二突破材料"
-			x: 0.0d
-			y: -10.0d
+			x: 6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["047BB42636510BA1"]
@@ -657,21 +661,22 @@
 				type: "item"
 			}]
 			title: "阶级-2-伤害强化材料"
-			x: 2.5d
-			y: -10.0d
+			x: 9.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["2B1F98A770D77E12"]
 			description: ["&e泰拉饰品正在路上"]
 			id: "319D8C539D81926B"
+			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
 				id: "4187A868570E962D"
 				item: "terra_curio:workshop"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 0.0d
+			x: 0.0d
+			y: 39.0d
 		}
 		{
 			dependencies: ["047BB42636510BA1"]
@@ -691,12 +696,12 @@
 				type: "item"
 			}]
 			title: "阶级三突破材料"
-			x: 0.0d
-			y: -12.5d
+			x: 9.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2C6FA7648669E74E"]
-			icon: "minecraft:bedrock"
+			icon: "kubejs:galatic_cycle_component"
 			id: "5BA4948A347E7BE6"
 			shape: "hexagon"
 			tasks: [{
@@ -712,8 +717,8 @@
 				type: "item"
 			}]
 			title: "阶级四突破材料"
-			x: 0.0d
-			y: -15.0d
+			x: 12.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2C6FA7648669E74E"]
@@ -733,8 +738,8 @@
 				type: "item"
 			}]
 			title: "阶级-3-生命强化材料"
-			x: -2.5d
-			y: -12.5d
+			x: 12.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["5BA4948A347E7BE6"]
@@ -754,8 +759,8 @@
 				type: "item"
 			}]
 			title: "阶级-4-生命强化材料"
-			x: -2.5d
-			y: -15.0d
+			x: 15.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["2C6FA7648669E74E"]
@@ -775,8 +780,8 @@
 				type: "item"
 			}]
 			title: "阶级-3-伤害强化材料"
-			x: 2.5d
-			y: -12.5d
+			x: 12.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["5BA4948A347E7BE6"]
@@ -796,8 +801,8 @@
 				type: "item"
 			}]
 			title: "阶级-4-伤害强化材料"
-			x: 2.5d
-			y: -15.0d
+			x: 15.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["3C14A2F8BA3C3DA6"]
@@ -808,20 +813,24 @@
 				item: "apotheosis:hellshelf"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 0.0d
+			x: 0.0d
+			y: 24.0d
 		}
 		{
 			dependencies: ["2563ABCEC67C3877"]
-			description: ["没啥用的书架，或者可以做一个水之过滤海洋书架？"]
+			description: [
+				"没啥用的书架，或者可以做一个水之过滤海洋书架？"
+				""
+				"提示：想要大量获得海晶类物品，可以使用海晶蜜蜂。"
+			]
 			id: "04000D795240E2C3"
 			tasks: [{
 				id: "1A572E798A293E37"
 				item: "apotheosis:seashelf"
 				type: "item"
 			}]
-			x: -10.0d
-			y: -2.5d
+			x: 6.0d
+			y: 24.0d
 		}
 		{
 			dependencies: ["2563ABCEC67C3877"]
@@ -831,8 +840,8 @@
 				item: "apotheosis:endshelf"
 				type: "item"
 			}]
-			x: -10.0d
-			y: 2.5d
+			x: 18.0d
+			y: 24.0d
 		}
 		{
 			dependencies: ["2563ABCEC67C3877"]
@@ -842,8 +851,8 @@
 				item: "apotheosis:dormant_deepshelf"
 				type: "item"
 			}]
-			x: -10.0d
-			y: 0.0d
+			x: 12.0d
+			y: 24.0d
 		}
 		{
 			dependencies: ["71D1A86D601690A9"]
@@ -853,8 +862,8 @@
 				item: "apotheosis:infused_hellshelf"
 				type: "item"
 			}]
-			x: -5.0d
-			y: -2.5d
+			x: 0.0d
+			y: 27.0d
 		}
 		{
 			dependencies: ["0CE6997123F920F8"]
@@ -864,8 +873,8 @@
 				item: "apotheosis:sightshelf"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -5.0d
+			x: 0.0d
+			y: 30.0d
 		}
 		{
 			dependencies: ["0CE6997123F920F8"]
@@ -875,8 +884,8 @@
 				item: "apotheosis:blazing_hellshelf"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -2.5d
+			x: 3.0d
+			y: 27.0d
 		}
 		{
 			dependencies: ["0CE6997123F920F8"]
@@ -886,8 +895,8 @@
 				item: "apotheosis:glowing_hellshelf"
 				type: "item"
 			}]
-			x: -5.0d
-			y: -5.0d
+			x: 3.0d
+			y: 30.0d
 		}
 		{
 			dependencies: ["106E4F4250B39565"]
@@ -897,8 +906,8 @@
 				item: "apotheosis:sightshelf_t2"
 				type: "item"
 			}]
-			x: -10.0d
-			y: -5.0d
+			x: 0.0d
+			y: 33.0d
 		}
 		{
 			dependencies: ["04000D795240E2C3"]
@@ -908,8 +917,8 @@
 				item: "apotheosis:infused_seashelf"
 				type: "item"
 			}]
-			x: -12.5d
-			y: -2.5d
+			x: 6.0d
+			y: 30.0d
 		}
 		{
 			dependencies: ["1A36C9EDCEF16904"]
@@ -919,8 +928,8 @@
 				item: "apotheosis:crystal_seashelf"
 				type: "item"
 			}]
-			x: -15.0d
-			y: -2.5d
+			x: 9.0d
+			y: 33.0d
 		}
 		{
 			dependencies: ["1A36C9EDCEF16904"]
@@ -930,8 +939,8 @@
 				item: "apotheosis:heart_seashelf"
 				type: "item"
 			}]
-			x: -15.0d
-			y: -5.0d
+			x: 6.0d
+			y: 27.0d
 		}
 		{
 			dependencies: ["1A36C9EDCEF16904"]
@@ -941,8 +950,8 @@
 				item: "apotheosis:filtering_shelf"
 				type: "item"
 			}]
-			x: -12.5d
-			y: -5.0d
+			x: 6.0d
+			y: 33.0d
 		}
 		{
 			dependencies: ["5775E3020ACAC66A"]
@@ -952,8 +961,8 @@
 				item: "apotheosis:deepshelf"
 				type: "item"
 			}]
-			x: -12.5d
-			y: 0.0d
+			x: 12.0d
+			y: 27.0d
 		}
 		{
 			dependencies: ["76D98D4CA2BB39AF"]
@@ -963,8 +972,8 @@
 				item: "apotheosis:treasure_shelf"
 				type: "item"
 			}]
-			x: -12.5d
-			y: 2.5d
+			x: 15.0d
+			y: 30.0d
 		}
 		{
 			dependencies: ["76D98D4CA2BB39AF"]
@@ -974,8 +983,8 @@
 				item: "apotheosis:soul_touched_deepshelf"
 				type: "item"
 			}]
-			x: -15.0d
-			y: 0.0d
+			x: 12.0d
+			y: 30.0d
 		}
 		{
 			dependencies: ["17EDE37B5E5EF5D3"]
@@ -985,8 +994,8 @@
 				item: "apotheosis:soul_touched_sculkshelf"
 				type: "item"
 			}]
-			x: -17.5d
-			y: 0.0d
+			x: 12.0d
+			y: 33.0d
 		}
 		{
 			dependencies: ["76D98D4CA2BB39AF"]
@@ -996,21 +1005,19 @@
 				item: "apotheosis:echoing_sculkshelf"
 				type: "item"
 			}]
-			x: -15.0d
-			y: 2.5d
+			x: 15.0d
+			y: 27.0d
 		}
 		{
 			dependencies: ["76C5BDB2118AA568"]
 			id: "0423117975E035F4"
-			shape: "diamond"
-			size: 1.5d
 			tasks: [{
 				id: "60F811D7DCADE39F"
 				item: "apotheosis:draconic_endshelf"
 				type: "item"
 			}]
-			x: -12.5d
-			y: 5.0d
+			x: 18.0d
+			y: 27.0d
 		}
 		{
 			dependencies: ["76C5BDB2118AA568"]
@@ -1020,8 +1027,8 @@
 				item: "apotheosis:pearl_endshelf"
 				type: "item"
 			}]
-			x: -10.0d
-			y: 5.0d
+			x: 21.0d
+			y: 27.0d
 		}
 		{
 			dependencies: ["4C56CFEEBC74DE9A"]
@@ -1031,8 +1038,8 @@
 				item: "slashblade_sendims:estus_flask_1"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -7.5d
+			x: 3.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["0B0F1D8BE89F8980"]
@@ -1050,14 +1057,15 @@
 				xp: 100
 			}]
 			shape: "hexagon"
+			size: 2.0d
 			subtitle: "重要|治疗道具"
 			tasks: [{
 				id: "10EC5CAE71EAD313"
 				item: "slashblade_sendims:estus_flask_0"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -5.0d
+			x: 0.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["2CBAF8102EEC9481"]
@@ -1067,8 +1075,8 @@
 				item: "slashblade_sendims:estus_flask_2"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -10.0d
+			x: 6.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["4D5070BCCCC63E1C"]
@@ -1078,8 +1086,8 @@
 				item: "slashblade_sendims:estus_flask_3"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -12.5d
+			x: 9.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["360410D05292960E"]
@@ -1089,8 +1097,8 @@
 				item: "slashblade_sendims:estus_flask_4"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -15.0d
+			x: 12.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["7E922C255CA79C9D"]
@@ -1100,8 +1108,8 @@
 				item: "slashblade_sendims:estus_flask_5"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -17.5d
+			x: 15.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["0C38F6DFF2F5A61E"]
@@ -1111,8 +1119,8 @@
 				item: "slashblade_sendims:estus_flask_6"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -20.0d
+			x: 18.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["3864617F2C8F7BE0"]
@@ -1122,8 +1130,8 @@
 				item: "apotheosis:ancient_material"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 13.0d
+			x: 9.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["2563ABCEC67C3877"]
@@ -1133,8 +1141,8 @@
 				item: "apotheosis:scrap_tome"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 2.5d
+			x: 3.0d
+			y: 36.0d
 		}
 		{
 			dependencies: ["6BD8E758F26DBE8F"]
@@ -1144,8 +1152,8 @@
 				item: "apotheosis:improved_scrap_tome"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 2.5d
+			x: 6.0d
+			y: 36.0d
 		}
 		{
 			dependencies: ["7C1FC62A66B05BB4"]
@@ -1155,8 +1163,8 @@
 				item: "apotheosis:extraction_tome"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 2.5d
+			x: 9.0d
+			y: 36.0d
 		}
 	]
 	title: "战斗辅助"

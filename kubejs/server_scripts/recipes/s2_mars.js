@@ -1,4 +1,14 @@
 ServerEvents.recipes(event => {
+    event.shaped(Item.of('gateways:gate_pearl', '{gateway:"gateways:sdbf_mars_g1"}'), [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'ad_astra:mars_sand',
+        B: 'ad_astra:mars_stone',
+        C: Item.of('enderio:filled_soul_vial', '{BlockEntityTag:{EntityStorage:{Entity:{id:"ad_astra:martian_raptor"}}}}').weakNBT(),
+    }).id('sdbf:sdbf_mars_g1_s2')
+
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
         "ABH",
         "DEF",

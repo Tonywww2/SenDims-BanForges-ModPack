@@ -240,8 +240,8 @@
 				type: "item"
 			}]
 			title: "灵魂瓶：火星迅猛龙"
-			x: 3.0d
-			y: 12.0d
+			x: 9.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["20C5B7CCF681A814"]
@@ -351,6 +351,23 @@
 			title: "天际骑士团战舰"
 			x: 6.0d
 			y: 6.0d
+		}
+		{
+			dependencies: ["051641EF8104FA8F"]
+			id: "3D2F6FBFCD40C3F5"
+			tasks: [{
+				id: "4D2578621E51BC39"
+				item: {
+					Count: 1
+					id: "gateways:gate_pearl"
+					tag: {
+						gateway: "gateways:sdbf_mars_g1"
+					}
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: 3.0d
 		}
 	]
 	title: "赤红色的星球"

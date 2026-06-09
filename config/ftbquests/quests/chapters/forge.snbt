@@ -289,14 +289,17 @@
 		}
 		{
 			dependencies: ["0624F14486476EA4"]
+			description: ["拥有刀魂的刀剑"]
+			icon: "slashblade:proudsoul_tiny"
 			id: "16251EC4303A2F66"
+			subtitle: "淬炼耀魂"
 			tasks: [{
 				id: "3E17335C8A4B0652"
 				type: "checkmark"
 			}]
 			title: "淬魂"
-			x: -5.0d
-			y: -2.5d
+			x: -2.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["514CF1593551F00F"]

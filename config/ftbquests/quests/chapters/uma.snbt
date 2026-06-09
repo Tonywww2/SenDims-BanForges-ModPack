@@ -12,6 +12,7 @@
 		{
 			dependencies: ["5748351A76910019"]
 			description: ["马儿马儿蹦跳！"]
+			hide_dependent_lines: true
 			icon: "umapyoi:jewel"
 			id: "2C21F5DDCC8B3890"
 			rewards: [{
@@ -20,6 +21,7 @@
 				item: "quark:carrot_crate"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 2.0d
 			subtitle: "重要支线"
 			tasks: [{
@@ -44,8 +46,8 @@
 				item: "umapyoi:jewel"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -2.5d
+			x: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["5BC9056FBEA395C4"]
@@ -68,8 +70,8 @@
 				item: "umapyoi:silver_uma_pedestal"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -5.0d
+			x: 6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["5BC9056FBEA395C4"]
@@ -81,16 +83,15 @@
 				type: "item"
 			}]
 			tasks: [{
-				count: 2L
 				id: "4087B39B49C04097"
 				item: "umapyoi:blank_ticket"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -5.0d
+			x: 6.0d
+			y: 3.0d
 		}
 		{
-			dependencies: ["4D8FDE5769575B98"]
+			dependencies: ["5BC9056FBEA395C4"]
 			description: [
 				"放入顶端等待一段时间后，获得激活后的马娘之魂。"
 				""
@@ -102,14 +103,13 @@
 				item: "umapyoi:jewel"
 				type: "item"
 			}]
-			size: 2.0d
 			tasks: [{
 				id: "65B9D1874DE55F69"
 				item: "umapyoi:three_goddess"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -10.0d
+			x: 6.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -133,8 +133,8 @@
 				type: "item"
 			}]
 			title: "支援卡"
-			x: 2.5d
-			y: -7.5d
+			x: 9.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -157,8 +157,8 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
-			y: -7.5d
+			x: 9.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -181,8 +181,8 @@
 				item: "umapyoi:training_facility"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -10.0d
+			x: 9.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["5F5FBCD93EB0B99C"]
@@ -191,7 +191,6 @@
 				""
 				"&7tip：本格化后的马娘之魂将无法再通过任何途径提升属性和学习技能！"
 			]
-			hide_dependent_lines: true
 			id: "3B260E8BEBD4BE0D"
 			rewards: [{
 				id: "3722586BA8DF009A"
@@ -204,8 +203,8 @@
 				item: "umapyoi:register_lectern"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -12.5d
+			x: 12.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["5F5FBCD93EB0B99C"]
@@ -221,14 +220,11 @@
 				item: "umapyoi:skill_learning_table"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -10.0d
+			x: 9.0d
+			y: 9.0d
 		}
 		{
-			dependencies: [
-				"3427F0EB26787AD4"
-				"3B260E8BEBD4BE0D"
-			]
+			dependencies: ["3B260E8BEBD4BE0D"]
 			description: ["获取马蹄铁和水晶的途径。"]
 			id: "291BE5789CE1F72C"
 			rewards: [{
@@ -241,11 +237,14 @@
 				item: "umapyoi:disassembly_block"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -5.0d
+			x: 15.0d
+			y: 6.0d
 		}
 		{
-			dependencies: ["7D818AD425FC2A9D"]
+			dependencies: [
+				"7D818AD425FC2A9D"
+				"291BE5789CE1F72C"
+			]
 			id: "44276B696C7522ED"
 			rewards: [{
 				id: "6A7985D1000CCD19"
@@ -257,8 +256,8 @@
 				item: "umapyoi:uma_pedestal"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -5.0d
+			x: 15.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2C21F5DDCC8B3890"]
@@ -274,8 +273,8 @@
 				item: "umapyoi:small_energy_drink"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -2.5d
+			x: 0.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["4C5C0CED4B02CADC"]
@@ -291,8 +290,8 @@
 				item: "umapyoi:medium_energy_drink"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -2.5d
+			x: 3.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["4907E1D813188F04"]
@@ -308,11 +307,15 @@
 				item: "umapyoi:large_energy_drink"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -2.5d
+			x: 6.0d
+			y: 12.0d
 		}
 		{
-			dependencies: ["2C21F5DDCC8B3890"]
+			dependencies: [
+				"2C21F5DDCC8B3890"
+				"560791FD0B56E4DC"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"技能书能让马娘之魂在技能学习台中学习不同技能。"
 				"训练书能在使用后增加马娘之魂的属性。"
@@ -345,8 +348,8 @@
 				}
 			]
 			title: "众多技能书"
-			x: -2.5d
-			y: 0.0d
+			x: 12.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["2C21F5DDCC8B3890"]
@@ -362,8 +365,8 @@
 				item: "umapyoi:hachimi_mid"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 0.0d
+			x: 0.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["2C21F5DDCC8B3890"]
@@ -379,8 +382,8 @@
 				item: "umapyoi:cupcake"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 2.5d
+			x: 0.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["69C0FB78C878A50F"]
@@ -396,8 +399,8 @@
 				item: "umapyoi:sweet_cupcake"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 2.5d
+			x: 3.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["4CB5EB6C0C65AE6E"]
@@ -413,8 +416,8 @@
 				item: "umapyoi:hachimi_big"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 0.0d
+			x: 3.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["5BC9056FBEA395C4"]
@@ -429,8 +432,8 @@
 				item: "umapyoi:uma_select_block"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -2.5d
+			x: 6.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["2C21F5DDCC8B3890"]
@@ -448,7 +451,7 @@
 			}]
 			title: "提示"
 			x: 0.0d
-			y: 2.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["291BE5789CE1F72C"]
@@ -469,8 +472,8 @@
 				item: "umapyoi:factor_decompose_table"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -10.5d
+			x: 21.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["291BE5789CE1F72C"]
@@ -486,8 +489,8 @@
 				item: "umapyoi:factor_research_table"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -7.5d
+			x: 18.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["291BE5789CE1F72C"]
@@ -536,8 +539,8 @@
 				}
 			]
 			title: "马娘水晶与蹄铁"
-			x: 7.5d
-			y: -5.0d
+			x: 18.0d
+			y: 3.0d
 		}
 	]
 	title: "马娘之魂"
