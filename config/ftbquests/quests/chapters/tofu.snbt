@@ -99,7 +99,7 @@
 		}
 		{
 			dependencies: ["6140B0BCEB7F9D64"]
-			description: ["好豆腐都是压出来的，你说原材料怎么来？去&a砍豆腐树&r和&a打豆腐史莱姆看&r看？"]
+			description: ["砍下一颗豆腐树，然后压制石豆腐块。"]
 			icon: "tofucraft:blocktofuishi"
 			id: "64402F8CC5046FCE"
 			rewards: [{
@@ -108,20 +108,11 @@
 				item: "minecraft:cobblestone"
 				type: "item"
 			}]
-			tasks: [
-				{
-					count: 8L
-					id: "21B737B28E0E9683"
-					item: "tofucraft:blocktofuishi"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "468EB08C33058C53"
-					item: { Count: 4, id: "tofucraft:tofukinu" }
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "21B737B28E0E9683"
+				item: "tofucraft:blocktofuishi"
+				type: "item"
+			}]
 			title: "压制准备"
 			x: 3.0d
 			y: 0.0d
@@ -161,6 +152,7 @@
 				"64402F8CC5046FCE"
 			]
 			dependency_requirement: "one_completed"
+			description: ["如果你觉得等待石豆腐块压制成钢豆腐的过程太慢的话，可以将石豆腐块放入&b锻造台&r锻打。"]
 			id: "3376AE50BC0EB9A5"
 			rewards: [{
 				id: "1FF3FE646FBB83F5"
@@ -265,7 +257,7 @@
 				}
 				type: "item"
 			}]
-			x: 6.0d
+			x: 9.0d
 			y: 3.0d
 		}
 		{
@@ -386,8 +378,8 @@
 					type: "item"
 				}
 			]
-			x: 15.0d
-			y: 3.0d
+			x: 12.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["6140B0BCEB7F9D64"]
@@ -406,8 +398,8 @@
 				type: "structure"
 			}]
 			title: "豆腐城堡"
-			x: 3.0d
-			y: 9.0d
+			x: 6.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["3376AE50BC0EB9A5"]
@@ -465,6 +457,18 @@
 			title: "核心材料"
 			x: 12.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["6140B0BCEB7F9D64"]
+			description: ["击杀豆腐史莱姆。"]
+			id: "0491FE569AFF3401"
+			tasks: [{
+				id: "58C2413E54E08AA9"
+				item: "tofucraft:tofukinu"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.0d
 		}
 	]
 	title: "世界是豆腐做的"

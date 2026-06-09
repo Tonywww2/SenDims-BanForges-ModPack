@@ -68,6 +68,8 @@
     "info.kubejs.chaotic_truth": "击败特定纬度的神化首领后概率掉落",
     "info.kubejs.gem_ticket": "使用后，随机获得一个宝石",
 
+    "info.kubejs.banned": "已禁用",
+
     "info.kubejs.faill_spawn_structure": "结构召唤失败！",
     "info.kubejs.the_midnight_disallowed": "你进入了一个异界，但是一股力量拒绝你进入这个世界。§m需要使用某件道具§r",
     "info.kubejs.the_end_disallowed": "你迈入了通往终末的传送门，但是一股力量将你推出了那个世界。§m需要佩戴某件饰品§r",
@@ -375,6 +377,8 @@
     "tetra.material.chaotic_truth.prefix": "混沌",
     "tetra.material.radiation_components": "辐射零件组",
     "tetra.material.radiation_components.prefix": "辐射零件组",
+
+    "tetra.break_toufu_action.label": "手动压制",
     
     "fluid.kubejs.melted_proudsoul": "熔融耀魂",
     "item.kubejs.melted_proudsoul_bucket": "熔融耀魂桶",
