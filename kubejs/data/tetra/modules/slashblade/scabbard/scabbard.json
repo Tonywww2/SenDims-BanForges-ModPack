@@ -31,11 +31,17 @@
             "extract":
             {
                 "primaryAttributes":
-                {},
+                {
+                    "generic.attack_damage": 0.25
+                },
+                "secondaryAttributes":
+                {
+                    "generic.attack_damage": 0.25
+                },
                 "primaryEffects":
-                {},
-                "secondaryEffects":
-                {},
+                {
+                    "RefineStrengthening": 0.25
+                },
                 "durability": 0.1,
                 "magicCapacity": 4.5,
                 "glyph":

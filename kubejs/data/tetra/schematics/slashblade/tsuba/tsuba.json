@@ -1,18 +1,22 @@
 {
     "replace": true,
-    "slots": [
+    "slots":
+    [
         "slashblade/tsuba"
     ],
     "materialSlotCount": 1,
     "displayType": "major",
-    "glyph": {
+    "glyph":
+    {
         "textureX": 48,
         "textureY": 0,
         "textureLocation": "slashbladetetra:textures/gui/texture.png"
     },
-    "outcomes": [
+    "outcomes":
+    [
         {
-            "materials": [
+            "materials":
+            [
                 "tetra:metal/",
                 "tetra:gem/",
                 "tetra:bone/",
@@ -22,8 +26,8 @@
                 "tetra:skin/",
                 "tetra:scale/"
             ],
-            "countOffset" :-1,
-            "countFactor" :2.3,
+            "countOffset": 0,
+            "countFactor": 2,
             "moduleKey": "slashblade/tsuba/tsuba",
             "moduleVariant": "tsuba/"
         }

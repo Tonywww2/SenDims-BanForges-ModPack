@@ -1,24 +1,28 @@
 {
     "replace": true,
-    "slots": [
+    "slots":
+    [
         "slashblade/blade"
     ],
     "materialSlotCount": 1,
     "displayType": "major",
-    "glyph": {
+    "glyph":
+    {
         "textureX": 16,
         "textureY": 0,
         "textureLocation": "slashbladetetra:textures/gui/texture.png"
     },
-    "outcomes": [
+    "outcomes":
+    [
         {
-            "materials": [
+            "materials":
+            [
                 "tetra:metal/",
                 "tetra:wood/",
                 "tetra:bone/"
             ],
-            "countOffset" :-1,
-            "countFactor" :5.4,
+            "countOffset": 0,
+            "countFactor": 5,
             "moduleKey": "slashblade/blade/blade",
             "moduleVariant": "blade/"
         }

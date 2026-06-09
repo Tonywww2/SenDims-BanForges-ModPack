@@ -9,96 +9,22 @@
 	order_index: 0
 	quest_links: [
 		{
-			id: "483B45EA2E61B422"
-			linked_quest: "295C7AEDBFF7EE12"
-			x: 7.5d
-			y: -2.5d
-		}
-		{
-			id: "603F776C084BEFED"
-			linked_quest: "65379794AA782C5B"
-			x: 5.0d
-			y: -2.5d
-		}
-		{
-			id: "3F493FD22A4788BE"
-			linked_quest: "63D9F90A01E19D8A"
-			x: 5.0d
-			y: 2.5d
-		}
-		{
-			id: "7BA8FD5C8D5FCDA8"
-			linked_quest: "161E8BD488E58BEC"
-			x: 7.5d
-			y: 2.5d
-		}
-		{
-			id: "2181DCF0E8764700"
-			linked_quest: "2354F158B208830E"
-			x: -5.0d
-			y: -2.5d
-		}
-		{
-			id: "7815200B932B052C"
-			linked_quest: "539653ADBDDDE965"
-			x: -7.5d
-			y: 2.5d
-		}
-		{
-			id: "64320D5C761B13BD"
-			linked_quest: "3AA2BC619D04E949"
-			x: -7.5d
-			y: -2.5d
-		}
-		{
-			id: "491685FD44B684B6"
-			linked_quest: "3C0882022833F540"
-			x: -5.0d
-			y: 2.5d
-		}
-		{
 			id: "640B49985101D0EE"
 			linked_quest: "04B20E40DAED373B"
-			x: 0.0d
-			y: 5.0d
-		}
-		{
-			id: "68F7F09A6CE7615B"
-			linked_quest: "0E848F953EE65A31"
-			x: 0.0d
-			y: 10.0d
-		}
-		{
-			id: "093FB38B5E3E7177"
-			linked_quest: "5C75E5457757ACDB"
-			x: 2.5d
-			y: 7.5d
-		}
-		{
-			id: "3801E5FB5366FE73"
-			linked_quest: "285BBB474F852773"
-			x: -2.5d
-			y: 7.5d
-		}
-		{
-			id: "2C16F13E1219FF7C"
-			linked_quest: "65C573EE97C5117F"
-			x: -2.5d
-			y: -5.0d
-		}
-		{
-			id: "37D87F4FDB9F08E4"
-			linked_quest: "2F9648A58EC0C636"
-			x: 2.5d
-			y: -5.0d
+			x: 12.0d
+			y: 3.0d
 		}
 		{
 			id: "73FFE4547DCF0EDD"
 			linked_quest: "01DBE6D12A9A3CD3"
-			shape: "hexagon"
-			size: 1.5d
-			x: -2.5d
-			y: 2.5d
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			id: "3681E7753DDB2152"
+			linked_quest: "2B520DD47D46DDEB"
+			x: 9.0d
+			y: 3.0d
 		}
 	]
 	quests: [
@@ -126,8 +52,8 @@
 				item: "kubejs:asteroid_rock"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 2.5d
+			x: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["77DC6770CC08AEF6"]
@@ -137,8 +63,8 @@
 				item: "nuclearcraft:cobalt_ingot"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 0.0d
+			x: 3.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["77DC6770CC08AEF6"]
@@ -148,19 +74,8 @@
 				item: "nuclearcraft:thorium_ingot"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["77DC6770CC08AEF6"]
-			id: "1A4E1AA0588E71E2"
-			tasks: [{
-				id: "590B6C4E87F4D182"
-				item: "nuclearcraft:magnesium_ingot"
-				type: "item"
-			}]
-			x: -2.5d
-			y: -2.5d
+			x: 3.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["21EA0520FC403E65"]
@@ -170,8 +85,8 @@
 				item: "kubejs:bizarre_matter_dust"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 2.5d
+			x: 6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -185,7 +100,7 @@
 				item: "kubejs:delta_dust"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 9.0d
 			y: 0.0d
 		}
 		{
@@ -196,8 +111,12 @@
 				"63D9F90A01E19D8A"
 				"161E8BD488E58BEC"
 			]
+			description: [
+				"文史当前存在一个严重的BUG：进入激活模式后，攻击力会永久下降。"
+				""
+				"该BUG的来源是TLS中的一个设定，文史在激活状态下基础攻击力会修改至13（硬编码），在取消后修改至6（硬编码）。但是由于我们使用数据包将文史的基础攻击力提高到了60，所以产生的问题就显而易见了。 "
+			]
 			id: "399F39F1E6D8F717"
-			shape: "diamond"
 			tasks: [{
 				id: "5B242DFED58C18BA"
 				item: {
@@ -212,7 +131,7 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
+			x: 12.0d
 			y: 0.0d
 		}
 		{
@@ -224,8 +143,8 @@
 				item: "kubejs:galatic_cycle_component"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 0.0d
+			x: 6.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -250,8 +169,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.5d
-			y: 0.0d
+			x: 9.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["04B20E40DAED373B"]
@@ -270,8 +189,8 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
-			y: 7.5d
+			x: 15.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["3C99585FE904ACDC"]
@@ -281,8 +200,8 @@
 				item: "cataclysm:essence_of_the_storm"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -5.0d
+			x: 6.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["77DC6770CC08AEF6"]
@@ -292,8 +211,8 @@
 				item: "cataclysm:storm_eye"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -2.5d
+			x: 3.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -315,8 +234,8 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
-			y: -7.5d
+			x: 9.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -339,8 +258,8 @@
 				}
 				type: "item"
 			}]
-			x: -2.5d
-			y: 10.0d
+			x: 18.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -363,8 +282,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
-			y: 10.0d
+			x: 18.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["77DC6770CC08AEF6"]
@@ -374,8 +293,8 @@
 				item: "nuclearcraft:lead_platinum_ingot"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -2.5d
+			x: 3.0d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -397,8 +316,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
-			y: -7.5d
+			x: 12.0d
+			y: 6.0d
 		}
 	]
 	title: "小行星带"

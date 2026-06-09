@@ -95,8 +95,11 @@
 	]
 	quests: [
 		{
-			dependencies: ["73531FB69122489F"]
-			hide_dependent_lines: true
+			dependencies: [
+				"73531FB69122489F"
+				"1DE54DDD04540738"
+			]
+			dependency_requirement: "one_completed"
 			hide_until_deps_complete: true
 			id: "15D102DE2394A495"
 			size: 2.0d

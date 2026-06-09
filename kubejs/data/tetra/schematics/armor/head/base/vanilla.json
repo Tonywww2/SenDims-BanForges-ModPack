@@ -1,18 +1,22 @@
 {
     "replace": true,
-    "slots": [
+    "slots":
+    [
         "head/base"
     ],
     "materialSlotCount": 1,
     "displayType": "major",
-    "glyph": {
+    "glyph":
+    {
         "textureLocation": "geotetraarmor:textures/gui/gui_gta.png",
         "textureX": 176,
         "textureY": 0
     },
-    "outcomes": [
+    "outcomes":
+    [
         {
-            "materials": [
+            "materials":
+            [
                 "tetra:wood/",
                 "tetra:gem/",
                 "tetra:metal/",
@@ -26,7 +30,7 @@
                 "tetra:socket/",
                 "tetra:stone/"
             ],
-            "countFactor": 2,
+            "countFactor": 3,
             "moduleKey": "armor/head/base/vanilla",
             "moduleVariant": "vanilla_head_base/"
         }

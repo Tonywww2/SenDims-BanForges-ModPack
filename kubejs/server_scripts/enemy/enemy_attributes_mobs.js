@@ -442,6 +442,8 @@ const mobTypes = new Map([
     ["bagusmob:hunter_boar", typeA],
     ["bagusmob:burner_hog", typeA],
     ["terra_entity:crimera", typeC],
+    ["ad_astra:lunarian_wandering_trader", type0],
+    ["darkerdepths:void_soul_knight", typeAE],
 
 ]);
 

@@ -8,104 +8,45 @@
 	order_index: 1
 	quest_links: [
 		{
-			id: "365AD91D1117D708"
-			linked_quest: "295C7AEDBFF7EE12"
-			x: 10.0d
-			y: -10.0d
-		}
-		{
-			id: "5AD080B1388450BF"
-			linked_quest: "3F3BE932D1892CC4"
-			x: -5.0d
-			y: -7.5d
-		}
-		{
-			id: "5192814578B75FC3"
-			linked_quest: "2354F158B208830E"
-			x: 5.0d
-			y: -7.5d
-		}
-		{
-			id: "520D42B149E42C41"
-			linked_quest: "1F6B42B37F50453D"
-			x: 5.0d
-			y: -10.0d
-		}
-		{
-			id: "343DB20CBCEB1E57"
-			linked_quest: "76BFA745E2BBDC7E"
-			x: -10.0d
-			y: -10.0d
-		}
-		{
-			id: "49769A7D036D16D9"
-			linked_quest: "0ED8EF9520071AAD"
-			x: -5.0d
-			y: -10.0d
-		}
-		{
-			id: "14CE9ECE2E6D09C3"
-			linked_quest: "4FD299D688A0A92A"
-			x: 0.0d
-			y: -7.5d
-		}
-		{
-			id: "08381271B1AA22A1"
-			linked_quest: "3C0882022833F540"
-			x: 2.5d
-			y: 7.5d
-		}
-		{
-			id: "2E5AE958186B97BC"
-			linked_quest: "1152A96652FA7C8F"
-			x: 0.0d
-			y: 7.5d
-		}
-		{
-			id: "4951D20FE45202C5"
-			linked_quest: "0E848F953EE65A31"
-			x: -2.5d
-			y: 10.0d
-		}
-		{
-			id: "77A08580DD701C03"
-			linked_quest: "00880D674BE17F9A"
-			x: 2.5d
-			y: 10.0d
-		}
-		{
 			id: "764E09AF482CAA4B"
 			linked_quest: "07AEFF9468658A0C"
-			shape: "hexagon"
-			size: 1.5d
-			x: 2.5d
-			y: -2.5d
+			shape: "diamond"
+			x: 18.0d
+			y: 0.0d
 		}
 		{
 			id: "2BBE602F9542B3CE"
 			linked_quest: "34C15FC6C1E469E9"
-			shape: "hexagon"
-			size: 1.5d
-			x: 5.0d
-			y: -2.5d
+			x: 21.0d
+			y: -3.0d
 		}
 		{
 			id: "4925CD729E9A5550"
 			linked_quest: "4D0F49CE2720FBCD"
-			x: 7.5d
-			y: 2.5d
-		}
-		{
-			id: "5879E65AF0F5A493"
-			linked_quest: "182A2091DC790784"
-			x: -10.0d
-			y: -7.5d
+			x: 9.0d
+			y: 3.0d
 		}
 		{
 			id: "7737F9DD5669DDA8"
 			linked_quest: "05E54DE8EF83C8EB"
-			x: 7.5d
-			y: -10.0d
+			x: 18.0d
+			y: 18.0d
+		}
+		{
+			id: "424B79CF57E7F667"
+			linked_quest: "713CA11C25A8A2E2"
+			shape: "hexagon"
+			size: 2.0d
+			x: 24.0d
+			y: 0.0d
+		}
+		{
+			id: "3DCABD7358728618"
+			linked_quest: "1BF032EC08E31ABB"
+			shape: "hexagon"
+			size: 2.0d
+			x: 24.0d
+			y: -3.0d
 		}
 	]
 	quests: [
@@ -136,7 +77,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 2.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["67CEA0F546DE635F"]
@@ -146,41 +87,20 @@
 				item: "the_bumblezone:pollen_puff"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["67CEA0F546DE635F"]
-			id: "389E8DE81BE0F5E1"
-			tasks: [{
-				id: "2F227E52B83301E0"
-				item: "minecraft:honey_block"
-				type: "item"
-			}]
-			x: -2.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["67CEA0F546DE635F"]
-			id: "50C08AFF05790A20"
-			tasks: [{
-				id: "1301AC10B61C8554"
-				item: "the_bumblezone:porous_honeycomb_block"
-				type: "item"
-			}]
-			x: -5.0d
-			y: 2.5d
+			x: 3.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["220AEBF0A8A46F7C"]
 			id: "5FC15782BFDB913C"
+			shape: "diamond"
 			tasks: [{
 				id: "5322C37AF1717BD4"
 				item: "the_bumblezone:crystalline_flower"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 5.0d
+			x: 3.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["67CEA0F546DE635F"]
@@ -190,19 +110,23 @@
 				item: "the_bumblezone:glistering_honey_crystal"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 2.5d
+			x: 6.0d
+			y: 3.0d
 		}
 		{
-			dependencies: ["220AEBF0A8A46F7C"]
+			dependencies: [
+				"220AEBF0A8A46F7C"
+				"1425849749F89FA6"
+			]
+			dependency_requirement: "one_completed"
 			id: "05F34C96BF68DD64"
 			tasks: [{
 				id: "2E62A8764714D952"
 				item: "the_bumblezone:essence_of_the_bees"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -5.0d
+			x: 12.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -220,8 +144,8 @@
 				type: "observation"
 			}]
 			title: "观察：蜜蜂女王"
-			x: 0.0d
-			y: -2.5d
+			x: 6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["05F34C96BF68DD64"]
@@ -240,8 +164,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
-			y: -5.0d
+			x: 15.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["05F34C96BF68DD64"]
@@ -260,8 +184,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: -5.0d
+			x: 15.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["05F34C96BF68DD64"]
@@ -280,8 +204,8 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
-			y: -5.0d
+			x: 15.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["05F34C96BF68DD64"]
@@ -300,8 +224,8 @@
 				}
 				type: "item"
 			}]
-			x: -2.5d
-			y: -5.0d
+			x: 15.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["05F34C96BF68DD64"]
@@ -320,8 +244,8 @@
 				}
 				type: "item"
 			}]
-			x: -5.0d
-			y: -5.0d
+			x: 15.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["05F34C96BF68DD64"]
@@ -340,8 +264,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.5d
-			y: -5.0d
+			x: 15.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -366,8 +290,8 @@
 				}
 				type: "item"
 			}]
-			x: -2.5d
-			y: -10.0d
+			x: 18.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["7830BE2BDC13CC00"]
@@ -386,8 +310,8 @@
 				}
 				type: "item"
 			}]
-			x: -2.5d
-			y: 7.5d
+			x: 6.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -411,8 +335,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
-			y: -10.0d
+			x: 18.0d
+			y: 15.0d
 		}
 		{
 			dependencies: [
@@ -435,8 +359,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.5d
-			y: -10.0d
+			x: 18.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["05E54DE8EF83C8EB"]
@@ -447,19 +371,19 @@
 				item: "last_smith:scroll_tengu_vol1"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -12.5d
+			x: 21.0d
+			y: 18.0d
 		}
 		{
-			dependencies: ["67CEA0F546DE635F"]
+			dependencies: ["1425849749F89FA6"]
 			id: "7830BE2BDC13CC00"
 			tasks: [{
 				id: "2F6517B240C0B836"
 				item: "kubejs:multifaceted_ambrosia"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 5.0d
+			x: 6.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -469,8 +393,6 @@
 				"73EC367B170C5EF6"
 			]
 			id: "0351BC9DA1C5B4F7"
-			shape: "hexagon"
-			size: 1.5d
 			tasks: [{
 				id: "7994EC18FBD6D59E"
 				item: {
@@ -485,7 +407,7 @@
 				}
 				type: "item"
 			}]
-			x: -2.5d
+			x: -3.0d
 			y: 0.0d
 		}
 		{
@@ -511,8 +433,8 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
-			y: 10.0d
+			x: 12.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["220AEBF0A8A46F7C"]
@@ -523,8 +445,8 @@
 				id: "7DA2789D20047F85"
 				type: "advancement"
 			}]
-			x: 2.5d
-			y: 0.0d
+			x: 3.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["220AEBF0A8A46F7C"]
@@ -535,8 +457,8 @@
 				id: "7051CF2EE2612C28"
 				type: "advancement"
 			}]
-			x: 5.0d
-			y: 0.0d
+			x: 3.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["220AEBF0A8A46F7C"]
@@ -551,8 +473,19 @@
 				}
 				type: "item"
 			}]
-			x: -2.5d
-			y: -2.5d
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["220AEBF0A8A46F7C"]
+			id: "0BE994ED14E4C64D"
+			tasks: [{
+				id: "49CA37A702333E4B"
+				item: "the_bumblezone:ancient_wax_compound_eyes"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
 		}
 	]
 	title: "黄蜂领域"

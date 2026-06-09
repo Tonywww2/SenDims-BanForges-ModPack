@@ -7,86 +7,7 @@
 	icon: "minecraft:grass_block"
 	id: "0C53D6BD3F0492CE"
 	order_index: 2
-	quest_links: [
-		{
-			id: "37B254058A5A03A9"
-			linked_quest: "4138021AE4A37632"
-			x: -2.5d
-			y: -5.0d
-		}
-		{
-			id: "4790F3EABEF4816F"
-			linked_quest: "6F69543F135C4821"
-			x: 2.5d
-			y: -5.0d
-		}
-		{
-			id: "747EC02DCCCE8B6B"
-			linked_quest: "76BFA745E2BBDC7E"
-			x: -2.5d
-			y: 0.0d
-		}
-		{
-			id: "2F8163CAF3CA88B7"
-			linked_quest: "49631F88EAF0261B"
-			x: -7.5d
-			y: 0.0d
-		}
-		{
-			id: "5A61B70E0AFC739F"
-			linked_quest: "59F17F34F831D72E"
-			x: -2.5d
-			y: 5.0d
-		}
-		{
-			id: "4BB71D858C20E13C"
-			linked_quest: "35F111CC582779BA"
-			x: -7.5d
-			y: 5.0d
-		}
-		{
-			id: "70BFABDE8B32AB32"
-			linked_quest: "3AE144DD58D30985"
-			x: 2.5d
-			y: 0.0d
-		}
-		{
-			id: "1D781396B27D637E"
-			linked_quest: "2354F158B208830E"
-			x: 7.5d
-			y: 5.0d
-		}
-		{
-			id: "45BFC3AC6BDCC003"
-			linked_quest: "65379794AA782C5B"
-			x: 2.5d
-			y: 5.0d
-		}
-		{
-			id: "3A1C36690AE2AFBE"
-			linked_quest: "4FD299D688A0A92A"
-			x: 7.5d
-			y: 0.0d
-		}
-		{
-			id: "6A3E54CA87D3C784"
-			linked_quest: "2F9648A58EC0C636"
-			x: 2.5d
-			y: 8.0d
-		}
-		{
-			id: "03F65790DAEBCBA1"
-			linked_quest: "3FBD9DC1E1BB24E1"
-			x: -2.5d
-			y: 8.0d
-		}
-		{
-			id: "5995A3A446F42F6B"
-			linked_quest: "1152A96652FA7C8F"
-			x: 0.0d
-			y: 10.5d
-		}
-	]
+	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["07AEFF9468658A0C"]
@@ -106,15 +27,13 @@
 		{
 			dependencies: ["05F34C96BF68DD64"]
 			id: "07AEFF9468658A0C"
-			shape: "hexagon"
-			size: 1.5d
 			tasks: [{
 				id: "1DB3014F496DB10E"
 				item: "kubejs:anchor_shard"
 				type: "item"
 			}]
 			x: 0.0d
-			y: 2.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -128,8 +47,8 @@
 				item: "kubejs:ml_computing_ingot"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -2.5d
+			x: 6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -152,8 +71,8 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
-			y: -5.0d
+			x: 9.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -178,8 +97,8 @@
 				}
 				type: "item"
 			}]
-			x: -5.0d
-			y: 2.5d
+			x: 6.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -204,8 +123,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: 2.5d
+			x: 6.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -216,10 +135,11 @@
 			tasks: [{
 				id: "1286FFAED44ABD3D"
 				structure: "darkerdepths:catacombs"
+				title: "墓穴"
 				type: "structure"
 			}]
-			x: 2.5d
-			y: -2.5d
+			x: 3.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["713CA11C25A8A2E2"]
@@ -240,8 +160,8 @@
 				type: "checkmark"
 			}]
 			title: "神化尖塔"
-			x: -2.5d
-			y: -2.5d
+			x: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -267,8 +187,19 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
-			y: 8.0d
+			x: 6.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["56C9FAAD7AD47F1A"]
+			id: "77DB6C3E80DEA149"
+			tasks: [{
+				id: "1D1A1940A4607842"
+				item: "darkerdepths:forsaken_bronze_scrap"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.0d
 		}
 	]
 	title: "空岛之下"

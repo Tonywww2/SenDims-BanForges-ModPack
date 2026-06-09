@@ -117,6 +117,7 @@ ServerEvents.highPriorityData(event => {
         // .setTagMaterial('the_bumblezone:ancient_wax/full_blocks')
         .addItemMaterial('the_bumblezone:ancient_wax_compound_eyes')
         .setRequiredTool("hammer_dig", 1)
+        .setCountFactor(4)
         .build();
 
     // 1. 循环框架 / Galactic Cycle Component

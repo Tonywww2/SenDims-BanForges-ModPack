@@ -1,18 +1,22 @@
 {
     "replace": true,
-    "slots": [
+    "slots":
+    [
         "slashblade/scabbard"
     ],
     "materialSlotCount": 1,
     "displayType": "major",
-    "glyph": {
+    "glyph":
+    {
         "textureX": 80,
         "textureY": 0,
         "textureLocation": "slashbladetetra:textures/gui/texture.png"
     },
-    "outcomes": [
+    "outcomes":
+    [
         {
-            "materials": [
+            "materials":
+            [
                 "tetra:fibre/",
                 "tetra:skin/",
                 "tetra:fabric/",
@@ -20,8 +24,8 @@
                 "tetra:wood/",
                 "tetra:scale/"
             ],
-            "countOffset" :1,
-            "countFactor" :2.3,
+            "countOffset": 1,
+            "countFactor": 2,
             "moduleKey": "slashblade/scabbard/scabbard",
             "moduleVariant": "scabbard/"
         }

@@ -282,13 +282,14 @@ ServerEvents.highPriorityData(event => {
         .setPrimary(6.3).setSecondary(6.0).setTertiary(3.2)
         .setDurability(550).setIntegrityCost(4).setIntegrityGain(6)
         .setMagicCapacity(150).setToolLevel(5).setToolEfficiency(8)
-        .addAttributes("**forge:entity_gravity", -0.05)
+        .addAttributes("attributeslib:armor_pierce", 1)
         .addAttributes("forge:entity_reach", 0.05)
         .setTints("87ceeb", "b0e2ff")
         .addTexture("shiny").addTexture("metal")
         .addItemMaterial('deep_aether:stratus_ingot')
         .setRequiredTool("hammer_dig", 1)
         .addEnchantment("last_smith:spirit_slash", 1)
+        .setCountFactor(0.5)
         .build();
 
     // 岩石裂骸材料

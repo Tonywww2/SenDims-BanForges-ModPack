@@ -7,124 +7,12 @@
 	icon: "minecraft:end_crystal"
 	id: "1518056494B23302"
 	order_index: 3
-	quest_links: [
-		{
-			id: "6C588F80FE7B0FFE"
-			linked_quest: "65379794AA782C5B"
-			x: 5.0d
-			y: -2.5d
-		}
-		{
-			id: "21880CB46A4DC961"
-			linked_quest: "2430A8ADE814E85B"
-			x: 7.5d
-			y: -2.5d
-		}
-		{
-			id: "52DE4DCE7D6E32C8"
-			linked_quest: "35F111CC582779BA"
-			x: 2.5d
-			y: -2.5d
-		}
-		{
-			id: "0FED705A23794855"
-			linked_quest: "00C6734E62C48C2D"
-			x: 7.5d
-			y: 2.5d
-		}
-		{
-			id: "36E87A8CFEDBE7C2"
-			linked_quest: "7EBECD450AEF2EEC"
-			x: 2.5d
-			y: 2.5d
-		}
-		{
-			id: "2EA36379011262DB"
-			linked_quest: "682B4755022DFAD3"
-			x: -2.5d
-			y: 10.0d
-		}
-		{
-			id: "2DFC76E6786137B6"
-			linked_quest: "2354F158B208830E"
-			x: -5.0d
-			y: -2.5d
-		}
-		{
-			id: "48749EB4F4BF03A0"
-			linked_quest: "77725AE40795028C"
-			x: -7.5d
-			y: -2.5d
-		}
-		{
-			id: "6662BE542B5B021D"
-			linked_quest: "295CDAFD4AFD72D7"
-			x: -7.5d
-			y: 2.5d
-		}
-		{
-			id: "747C4E1FE1CD75C8"
-			linked_quest: "3FBD9DC1E1BB24E1"
-			x: -7.5d
-			y: 0.0d
-		}
-		{
-			id: "1D2C0BA880CC37DD"
-			linked_quest: "5C754EA1BB21D901"
-			x: 10.5d
-			y: -2.5d
-		}
-		{
-			id: "031E980351B20F22"
-			linked_quest: "34C15FC6C1E469E9"
-			shape: "hexagon"
-			size: 1.5d
-			x: 0.0d
-			y: -2.5d
-		}
-		{
-			id: "1D44F8CCBF80C106"
-			linked_quest: "33AE46297AC49922"
-			x: 10.5d
-			y: 2.5d
-		}
-		{
-			id: "2705F2B6970394F0"
-			linked_quest: "49631F88EAF0261B"
-			x: 5.0d
-			y: 5.0d
-		}
-		{
-			id: "39076D2E03B28215"
-			linked_quest: "24BDD9F44F3AC6D6"
-			x: -5.0d
-			y: -5.0d
-		}
-		{
-			id: "57E79C7EC8E6776E"
-			linked_quest: "651A03F2219EBCDE"
-			x: 0.0d
-			y: -5.0d
-		}
-		{
-			id: "56F4A5A81C66C9D2"
-			linked_quest: "1F6B42B37F50453D"
-			x: -2.5d
-			y: -7.5d
-		}
-		{
-			id: "0E9D7FD97AE26209"
-			linked_quest: "60BC7DF019B63722"
-			x: -7.5d
-			y: 7.5d
-		}
-		{
-			id: "4778764C0A5A8281"
-			linked_quest: "281BD02608ADF2EE"
-			x: -2.5d
-			y: 7.5d
-		}
-	]
+	quest_links: [{
+		id: "031E980351B20F22"
+		linked_quest: "34C15FC6C1E469E9"
+		x: -3.0d
+		y: 0.0d
+	}]
 	quests: [
 		{
 			dependencies: ["34C15FC6C1E469E9"]
@@ -164,7 +52,7 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
+			x: 12.0d
 			y: 0.0d
 		}
 		{
@@ -178,7 +66,7 @@
 				item: "kubejs:radiation_components"
 				type: "item"
 			}]
-			x: 2.5d
+			x: 6.0d
 			y: 0.0d
 		}
 		{
@@ -189,8 +77,8 @@
 				item: "kubejs:chaotic_truth"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 0.0d
+			x: 3.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -204,8 +92,8 @@
 				item: "last_smith:scroll_heil"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 2.5d
+			x: 12.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -218,8 +106,8 @@
 				item: "last_smith:scroll_bewitched"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 5.0d
+			x: 15.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -241,8 +129,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
-			y: 7.5d
+			x: 15.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["7A33CC727391D187"]
@@ -252,8 +140,8 @@
 				item: "last_smith:scroll_tengu_vol2"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 10.0d
+			x: 15.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -268,8 +156,8 @@
 				item: "last_smith:scroll_tengu_full"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 10.0d
+			x: 18.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -292,8 +180,8 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
-			y: 7.5d
+			x: 21.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["6CD4FEF522C655C7"]
@@ -303,8 +191,8 @@
 				item: "kubejs:basepoint_alloy"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 5.0d
+			x: 3.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -329,8 +217,8 @@
 				}
 				type: "item"
 			}]
-			x: -5.0d
-			y: 0.0d
+			x: 6.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["1BF032EC08E31ABB"]
@@ -340,8 +228,8 @@
 				item: "kubejs:alpha_dust"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 2.5d
+			x: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -451,7 +339,7 @@
 				}
 				type: "item"
 			}]
-			x: 10.5d
+			x: 15.0d
 			y: 0.0d
 		}
 		{
@@ -476,8 +364,8 @@
 				}
 				type: "item"
 			}]
-			x: -2.5d
-			y: -5.0d
+			x: 6.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -503,8 +391,8 @@
 				}
 				type: "item"
 			}]
-			x: -5.0d
-			y: 5.0d
+			x: 9.0d
+			y: 6.0d
 		}
 	]
 	title: "末路之地[?]"

@@ -9,74 +9,40 @@
 	order_index: 1
 	quest_links: [
 		{
-			id: "05BA6F8A4B57F6F2"
-			linked_quest: "482EE0B9BBA0E5D3"
-			x: -5.0d
-			y: -2.5d
-		}
-		{
-			id: "6D18CADF2689CA3C"
-			linked_quest: "058C32492347BB2C"
-			x: 5.0d
-			y: -5.0d
-		}
-		{
-			id: "08F2CE020D0BD62A"
-			linked_quest: "21AAA0495A97DD6A"
-			x: 7.5d
-			y: -5.0d
-		}
-		{
-			id: "76FB07DE59157EE0"
-			linked_quest: "189D056BF992C545"
-			x: 10.0d
-			y: -5.0d
-		}
-		{
-			id: "120D4CA11EF27859"
-			linked_quest: "572B2824EF41A64D"
-			x: 10.0d
-			y: 2.5d
-		}
-		{
-			id: "62AF48F5666E1CCD"
-			linked_quest: "500ED712AFE54466"
-			x: 7.5d
-			y: 2.5d
-		}
-		{
-			id: "139C7D4DE2B42B4E"
-			linked_quest: "5F25788D537A03BC"
-			x: -2.5d
-			y: 5.0d
-		}
-		{
-			id: "1C589DE59621156F"
-			linked_quest: "20C5B7CCF681A814"
-			x: 0.0d
-			y: -5.0d
-		}
-		{
 			id: "40149DB62657166B"
 			linked_quest: "7267904F019CEFD6"
-			shape: "hexagon"
-			size: 1.5d
-			x: -2.5d
+			x: -3.0d
 			y: 0.0d
 		}
 		{
 			id: "7483981BDC9935E5"
 			linked_quest: "2563ABCEC67C3877"
-			x: 5.0d
-			y: 5.0d
+			shape: "diamond"
+			x: 9.0d
+			y: 3.0d
 		}
 		{
 			id: "4614C32155EBEA48"
 			linked_quest: "28CAD1DD57B60440"
+			shape: "diamond"
+			x: 9.0d
+			y: -3.0d
+		}
+		{
+			id: "586CF2CA8A6740A2"
+			linked_quest: "0A68F5EE8F25F036"
 			shape: "hexagon"
-			size: 1.5d
-			x: 5.0d
-			y: 2.5d
+			size: 2.0d
+			x: 18.0d
+			y: -3.0d
+		}
+		{
+			id: "457EFFB51D76CA83"
+			linked_quest: "35A8F36675442F8B"
+			shape: "hexagon"
+			size: 2.0d
+			x: 15.0d
+			y: 0.0d
 		}
 	]
 	quests: [
@@ -119,8 +85,8 @@
 				}
 				type: "item"
 			}]
-			x: -2.5d
-			y: -2.5d
+			x: 3.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -143,8 +109,8 @@
 				}
 				type: "item"
 			}]
-			x: -2.5d
-			y: -5.0d
+			x: 6.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -166,8 +132,8 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
-			y: -2.5d
+			x: 9.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -189,8 +155,8 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
-			y: 5.0d
+			x: 6.0d
+			y: 18.0d
 		}
 		{
 			dependencies: [
@@ -215,8 +181,8 @@
 				}
 				type: "item"
 			}]
-			x: 10.0d
-			y: -2.5d
+			x: 12.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -239,8 +205,8 @@
 				}
 				type: "item"
 			}]
-			x: 10.0d
-			y: 0.0d
+			x: 9.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["5D12434757A0C28F"]
@@ -259,8 +225,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.5d
-			y: 2.5d
+			x: 9.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -282,8 +248,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
-			y: 5.0d
+			x: 6.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["0EFAC7AECCFDD801"]
@@ -302,8 +268,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
-			y: -10.0d
+			x: 9.0d
+			y: 15.0d
 		}
 		{
 			dependencies: [
@@ -325,8 +291,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
-			y: -7.5d
+			x: 6.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["2E482B871B147DC6"]
@@ -336,8 +302,8 @@
 				item: "midnight:crystalotus"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 2.5d
+			x: 3.0d
+			y: 18.0d
 		}
 		{
 			dependencies: [
@@ -351,8 +317,8 @@
 				type: "structure"
 			}]
 			title: "被遗忘的图书馆"
-			x: -5.0d
-			y: 2.5d
+			x: 6.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["2E482B871B147DC6"]
@@ -362,8 +328,8 @@
 				item: "midnight:corrupted_pearl"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -5.0d
+			x: 3.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["2E482B871B147DC6"]
@@ -373,8 +339,8 @@
 				item: "midnight:tenebrum_ingot"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 0.0d
+			x: 3.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["2E482B871B147DC6"]
@@ -384,8 +350,8 @@
 				item: "midnight:nagrilite_ingot"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -2.5d
+			x: 3.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["2E482B871B147DC6"]
@@ -395,8 +361,8 @@
 				item: "midnight:virilux"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -2.5d
+			x: 3.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["2E482B871B147DC6"]
@@ -406,8 +372,8 @@
 				item: "midnight:dark_pearl"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 2.5d
+			x: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2E482B871B147DC6"]
@@ -417,8 +383,8 @@
 				item: "midnight:ebonite"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 2.5d
+			x: 3.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -438,7 +404,7 @@
 				item: "kubejs:scoria_ingot"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 6.0d
 			y: 0.0d
 		}
 		{
@@ -449,8 +415,8 @@
 				item: "midnight:rendium_shard"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 0.0d
+			x: 6.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -460,14 +426,13 @@
 			dependency_requirement: "one_completed"
 			hide_until_deps_visible: true
 			id: "6E39BB8C6B65D2B6"
-			shape: "hexagon"
 			tasks: [{
 				id: "1F8432296BD44C87"
 				item: "undergarden:catalyst"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -2.5d
+			x: 9.0d
+			y: 0.0d
 		}
 	]
 	title: "深境：午夜"

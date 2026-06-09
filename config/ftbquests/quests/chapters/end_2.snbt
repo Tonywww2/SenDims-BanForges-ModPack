@@ -11,63 +11,27 @@
 		{
 			id: "679A5B8038C308A9"
 			linked_quest: "52EC914C3873AF88"
-			x: 2.5d
-			y: -2.5d
-		}
-		{
-			id: "43F894E08FA2A0FD"
-			linked_quest: "7465DB175504D0F3"
-			x: 7.5d
-			y: 10.0d
-		}
-		{
-			id: "3BC7208F9814D411"
-			linked_quest: "7FC6F9952EA26493"
-			x: 7.5d
-			y: 2.5d
-		}
-		{
-			id: "1ECD856795D3AEC4"
-			linked_quest: "00880D674BE17F9A"
-			x: 7.5d
-			y: 5.0d
-		}
-		{
-			id: "03F4C46665F461F0"
-			linked_quest: "2E2F1882E71FE497"
-			x: 10.0d
-			y: 7.5d
-		}
-		{
-			id: "6698CEA2581A5D1B"
-			linked_quest: "69997238A9B0874C"
-			x: -7.5d
-			y: 2.5d
-		}
-		{
-			id: "151A5801B890C6EC"
-			linked_quest: "28F13DDE71732A6F"
-			x: 2.5d
-			y: 7.5d
-		}
-		{
-			id: "2A636189FAB953F7"
-			linked_quest: "1F5434696DE4B67B"
-			x: 2.5d
-			y: -5.0d
+			x: 3.0d
+			y: 9.0d
 		}
 		{
 			id: "31372A74FBB37C6B"
 			linked_quest: "11728C2FAEFCBBAD"
-			x: -5.0d
-			y: 5.0d
+			x: 3.0d
+			y: 18.0d
 		}
 		{
 			id: "5E6898C2E581FC27"
 			linked_quest: "0351BC9DA1C5B4F7"
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			id: "3E4750433749C063"
+			linked_quest: "220AEBF0A8A46F7C"
 			shape: "hexagon"
-			size: 1.5d
-			x: -10.0d
+			size: 2.0d
+			x: 21.0d
 			y: 0.0d
 		}
 	]
@@ -99,7 +63,7 @@
 				type: "advancement"
 			}]
 			x: 0.0d
-			y: 2.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["5EEA2C8F11FB0470"]
@@ -187,7 +151,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 5.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["5EEA2C8F11FB0470"]
@@ -197,8 +161,8 @@
 				item: "minecraft:dragon_egg"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 2.5d
+			x: 0.0d
+			y: 21.0d
 		}
 		{
 			dependencies: [
@@ -213,7 +177,7 @@
 				type: "structure"
 			}]
 			title: "废弃堡垒"
-			x: -5.0d
+			x: 6.0d
 			y: 0.0d
 		}
 		{
@@ -224,7 +188,7 @@
 				item: "cataclysm:void_core"
 				type: "item"
 			}]
-			x: -7.5d
+			x: 9.0d
 			y: 0.0d
 		}
 		{
@@ -235,8 +199,8 @@
 				item: "minecraft:chorus_fruit"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 0.0d
+			x: 3.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -259,8 +223,8 @@
 				}
 				type: "item"
 			}]
-			x: -5.0d
-			y: 2.5d
+			x: 9.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["0AB0F8AA8EFC1E53"]
@@ -270,8 +234,8 @@
 				item: "kubejs:chorus_logic_composite_coil"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 5.0d
+			x: 12.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -293,8 +257,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: 5.0d
+			x: 15.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["3AE144DD58D30985"]
@@ -305,8 +269,8 @@
 				item: "last_smith:scroll_causality"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 7.5d
+			x: 15.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -319,8 +283,8 @@
 				item: "last_smith:scroll_sharpness"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 10.0d
+			x: 18.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -343,8 +307,8 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
-			y: 7.5d
+			x: 12.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["1F6B42B37F50453D"]
@@ -363,8 +327,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
-			y: 10.0d
+			x: 12.0d
+			y: 18.0d
 		}
 		{
 			dependencies: [
@@ -387,8 +351,8 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
-			y: 12.5d
+			x: 15.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["1F6B42B37F50453D"]
@@ -407,8 +371,8 @@
 				}
 				type: "item"
 			}]
-			x: -2.5d
-			y: 10.0d
+			x: 12.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["5EEA2C8F11FB0470"]
@@ -418,8 +382,8 @@
 				item: "last_smith:scroll_star"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 5.0d
+			x: 3.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -443,8 +407,8 @@
 				}
 				type: "item"
 			}]
-			x: -2.5d
-			y: 7.5d
+			x: 6.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["1152A96652FA7C8F"]
@@ -454,8 +418,8 @@
 				item: "last_smith:scroll_yamato"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 10.0d
+			x: 9.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["17234BADC5181DFE"]
@@ -465,8 +429,8 @@
 				item: "integrateddynamics:crystalized_chorus_chunk"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 0.0d
+			x: 6.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["2B94BC787621CEA1"]
@@ -476,8 +440,8 @@
 				item: "integrateddynamics:logic_director"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 2.5d
+			x: 9.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -500,8 +464,8 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
-			y: 7.5d
+			x: 15.0d
+			y: 15.0d
 		}
 		{
 			dependencies: [
@@ -509,13 +473,14 @@
 				"52EC914C3873AF88"
 			]
 			id: "16EC7C595EDEA0AD"
+			shape: "diamond"
 			tasks: [{
 				id: "13F750AA178D9740"
 				item: "apotheosis:ender_library"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -2.5d
+			x: 6.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -526,8 +491,7 @@
 			dependency_requirement: "one_completed"
 			hide_until_deps_visible: true
 			id: "28CAD1DD57B60440"
-			shape: "hexagon"
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "54507E443D0F2512"
 				item: {
@@ -542,8 +506,8 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
-			y: -2.5d
+			x: -3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["0A68F5EE8F25F036"]
@@ -553,7 +517,7 @@
 				item: "cataclysm:void_eye"
 				type: "item"
 			}]
-			x: -2.5d
+			x: 3.0d
 			y: 0.0d
 		}
 		{
@@ -564,8 +528,8 @@
 				item: "minecraft:shulker_shell"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -2.5d
+			x: 3.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -580,19 +544,8 @@
 				type: "structure"
 			}]
 			title: "末地城"
-			x: -5.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["0A68F5EE8F25F036"]
-			id: "2D371FCF84511A05"
-			tasks: [{
-				id: "6394D0203696AB7F"
-				item: "minecraft:dragon_head"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 2.5d
+			x: 6.0d
+			y: 3.0d
 		}
 	]
 	title: "末地"
