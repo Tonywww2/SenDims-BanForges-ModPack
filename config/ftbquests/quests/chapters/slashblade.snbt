@@ -505,7 +505,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 5.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["65E2433B2D35FACA"]
@@ -552,7 +552,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: 5.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["65E2433B2D35FACA"]
@@ -563,7 +563,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 7.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["1CFE15E293B7087E"]
@@ -659,7 +659,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: 7.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["733A23B4A4EF2379"]
@@ -670,7 +670,7 @@
 				type: "item"
 			}]
 			x: -5.0d
-			y: 5.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["1614BFADEC44E881"]
@@ -690,7 +690,7 @@
 				type: "item"
 			}]
 			x: -7.5d
-			y: 5.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["128DAE63591990BF"]
@@ -702,7 +702,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: 10.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["0AB0FC7F385062F4"]
@@ -743,7 +743,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: 7.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["6E207921B1E85F6A"]
@@ -754,7 +754,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: 10.0d
+			y: 12.5d
 		}
 		{
 			dependencies: [
@@ -806,7 +806,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 10.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["371880BF8A2A75FC"]
@@ -825,7 +825,7 @@
 			}]
 			title: "无名的分支"
 			x: 0.0d
-			y: 12.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["65E2433B2D35FACA"]
@@ -851,7 +851,7 @@
 				}
 			]
 			x: 2.5d
-			y: 5.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["747934E571968BD3"]
@@ -862,7 +862,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 5.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["4CB6BD1E92147C7A"]
@@ -873,7 +873,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: 5.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["4CEB659877620F0C"]
@@ -884,7 +884,7 @@
 				type: "item"
 			}]
 			x: 10.0d
-			y: 5.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["36E1D57516888F2E"]
@@ -895,7 +895,7 @@
 				type: "item"
 			}]
 			x: 12.5d
-			y: 5.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["36E1D57516888F2E"]
@@ -908,7 +908,7 @@
 				type: "item"
 			}]
 			x: 10.0d
-			y: 7.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["746E80BAF97822B7"]
@@ -919,7 +919,7 @@
 				type: "item"
 			}]
 			x: 12.5d
-			y: 12.5d
+			y: 15.0d
 		}
 		{
 			dependencies: [
@@ -934,7 +934,7 @@
 				type: "item"
 			}]
 			x: 10.0d
-			y: 12.5d
+			y: 15.0d
 		}
 		{
 			dependencies: [
@@ -957,7 +957,7 @@
 				type: "item"
 			}]
 			x: -7.5d
-			y: 12.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["635DD69063FA1058"]
@@ -968,7 +968,7 @@
 				type: "item"
 			}]
 			x: -7.5d
-			y: 15.0d
+			y: 17.5d
 		}
 		{
 			dependencies: ["121941C1A0E09C09"]
@@ -988,7 +988,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: 15.0d
+			y: 17.5d
 		}
 		{
 			dependencies: ["6E207921B1E85F6A"]
@@ -1008,7 +1008,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 10.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["6E207921B1E85F6A"]
@@ -1029,7 +1029,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 7.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["4A57E4499E188BD7"]
@@ -1217,7 +1217,7 @@
 				type: "item"
 			}]
 			x: 12.5d
-			y: 15.0d
+			y: 17.5d
 		}
 		{
 			dependencies: ["244DE4322B5B3EA5"]
@@ -1238,7 +1238,7 @@
 				type: "item"
 			}]
 			x: -5.0d
-			y: 10.0d
+			y: 12.5d
 		}
 		{
 			dependencies: [
@@ -1265,7 +1265,7 @@
 				type: "item"
 			}]
 			x: -5.0d
-			y: 7.5d
+			y: 10.0d
 		}
 		{
 			dependencies: [
@@ -1289,7 +1289,7 @@
 				type: "item"
 			}]
 			x: -5.0d
-			y: 15.0d
+			y: 17.5d
 		}
 		{
 			dependencies: ["6F8D5E9ACCBD33C3"]
@@ -1309,7 +1309,7 @@
 				type: "item"
 			}]
 			x: 12.5d
-			y: 7.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["11728C2FAEFCBBAD"]
@@ -1385,7 +1385,7 @@
 				type: "item"
 			}]
 			x: 10.0d
-			y: 15.0d
+			y: 17.5d
 		}
 		{
 			dependencies: ["65B006E14075F1AE"]
@@ -1413,7 +1413,7 @@
 			}]
 			title: "剑技绝艺总纲：SA复制"
 			x: 7.5d
-			y: 15.0d
+			y: 17.5d
 		}
 		{
 			dependencies: [
@@ -1439,7 +1439,27 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: 7.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["418F8A9D369B522C"]
+			id: "540057998A3DBAFD"
+			tasks: [{
+				id: "08D033DDB93275D1"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"translate\":\"item.slashblade_addon.fluorescent_bar\"}"
+						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade_addon.fluorescent_bar\"}})"
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 5.0d
 		}
 	]
 	title: "拔刀剑"

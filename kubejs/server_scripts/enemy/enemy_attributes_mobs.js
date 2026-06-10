@@ -444,6 +444,7 @@ const mobTypes = new Map([
     ["terra_entity:crimera", typeC],
     ["ad_astra:lunarian_wandering_trader", type0],
     ["darkerdepths:void_soul_knight", typeAE],
+    ["productivebees:resin_bee", type0],
 
 ]);
 

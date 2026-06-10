@@ -57,7 +57,7 @@ const tetraSlashBladeSABuilder = (event) => {
             };
 
             event.addJson('tetra:modules/slashblade/soul/sa.json', json);
-            print(json)
+            // print(json)
             console.log(`[Tetra Wheel Chair] Module "slashblade/soul/sa.json" Build-ed. `);
         }
     };
