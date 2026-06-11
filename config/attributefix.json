@@ -165,17 +165,6 @@
         "value": 1
       }
     },
-    "legendreliclib:final_damage_bonus": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
-      }
-    },
     "slashblade_sendims:sprint_cd_return": {
       "enabled": false,
       "min": {
@@ -185,6 +174,17 @@
       "max": {
         "default": 0.8,
         "value": 0.8
+      }
+    },
+    "legendreliclib:final_damage_bonus": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "terra_entity:player.sentry_capacity": {
@@ -759,17 +759,6 @@
         "value": 1000000
       }
     },
-    "forge:swim_speed": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
-      }
-    },
     "slashblade_sendims:madness_reduce": {
       "enabled": false,
       "min": {
@@ -779,6 +768,17 @@
       "max": {
         "default": 512,
         "value": 512
+      }
+    },
+    "forge:swim_speed": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "tetra:draw_speed": {

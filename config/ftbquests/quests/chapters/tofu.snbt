@@ -37,19 +37,12 @@
 			tasks: [
 				{
 					dimension: "tofucraft:tofu_world"
-					icon: {
-						Count: 1
-						id: "tofucraft:tofustick"
-						tag: {
-							Damage: 0
-						}
-					}
+					icon: "tofucraft:blocktofukinu"
 					id: "603D3E735EDE35F5"
 					title: "豆腐世界"
 					type: "dimension"
 				}
 				{
-					count: 9L
 					id: "642B9D2AC45924E7"
 					item: "tofucraft:blocktofugrilled"
 					type: "item"

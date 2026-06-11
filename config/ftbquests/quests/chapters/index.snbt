@@ -4,7 +4,7 @@
 	default_quest_shape: "square"
 	default_quest_size: 2.0d
 	filename: "index"
-	group: ""
+	group: "6900D4BA6E5FB142"
 	icon: "botania:cosmetic_questgiver_mark"
 	id: "4D30F8D525811915"
 	images: [{
@@ -15,7 +15,7 @@
 		x: 5.0d
 		y: 0.27d
 	}]
-	order_index: 0
+	order_index: 2
 	quest_links: [
 		{
 			id: "7092B1DCAD1988CE"
@@ -378,5 +378,5 @@
 			y: 1.0d
 		}
 	]
-	title: "世界目录——快速索引"
+	title: "世界索引"
 }

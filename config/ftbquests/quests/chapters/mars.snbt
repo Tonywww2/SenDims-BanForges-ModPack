@@ -9,24 +9,6 @@
 	order_index: 5
 	quest_links: [
 		{
-			id: "70119C30CBF0090C"
-			linked_quest: "5FFEB598BE2CB116"
-			x: 3.0d
-			y: 24.0d
-		}
-		{
-			id: "347FE8795E1B1889"
-			linked_quest: "1A385F668652DB17"
-			x: 3.0d
-			y: 18.0d
-		}
-		{
-			id: "6CAE3A1F6918691C"
-			linked_quest: "1FC6DCA09DEC558F"
-			x: 3.0d
-			y: 21.0d
-		}
-		{
 			id: "4FEAB9C1DEE7D47E"
 			linked_quest: "40B4C6CD28E7DF19"
 			x: -3.0d
@@ -168,6 +150,7 @@
 				"1A385F668652DB17"
 				"5FFEB598BE2CB116"
 			]
+			hide_until_deps_visible: true
 			id: "154580144376D976"
 			tasks: [{
 				id: "149B65DE39E1422C"

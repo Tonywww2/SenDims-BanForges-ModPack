@@ -56,6 +56,12 @@
 			x: 30.0d
 			y: 0.0d
 		}
+		{
+			id: "79C94B16167111AE"
+			linked_quest: "222077D4E6F647A3"
+			x: 36.0d
+			y: -3.0d
+		}
 	]
 	quests: [
 		{
@@ -84,41 +90,13 @@
 			]
 			size: 2.0d
 			subtitle: "从这里开始"
-			tasks: [
-				{
-					dimension: "minecraft:overworld"
-					icon: "minecraft:moss_block"
-					id: "5BF92BA99335A6F1"
-					title: "主世界"
-					type: "dimension"
-				}
-				{
-					id: "465518229F8C18BF"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"fluxoftetra:fe": {
-								energy: 0
-							}
-						}
-						id: "tetra:modular_double"
-						tag: {
-							Damage: 0
-							"FOT$energy": {
-								energy: 0
-							}
-							"double/basic_hammer_left_material": "basic_hammer/stone"
-							"double/basic_hammer_right_material": "basic_hammer/stone"
-							"double/basic_handle_material": "basic_handle/stick"
-							"double/handle": "double/basic_handle"
-							"double/head_left": "double/basic_hammer_left"
-							"double/head_right": "double/basic_hammer_right"
-							id: "c4fba8e7-d86a-403b-81ec-9d7b65bd8459"
-						}
-					}
-					type: "item"
-				}
-			]
+			tasks: [{
+				dimension: "minecraft:overworld"
+				icon: "minecraft:moss_block"
+				id: "5BF92BA99335A6F1"
+				title: "主世界"
+				type: "dimension"
+			}]
 			title: "起点"
 			x: 0.0d
 			y: 0.0d
@@ -513,38 +491,37 @@
 		{
 			dependencies: ["0B0F1D8BE89F8980"]
 			description: [
-				"将一些方块组合摆成一种特殊的结构，并使用一些特殊的物品激活，可以产生不同的奇妙效果......"
-				"这个过程被称作结构召唤仪式。"
+				"将一些方块组合摆成一种&b特殊的结构&r，并使用一些&b特殊的物品激活&r，可以产生不同的奇妙效果......"
+				"这个过程被称作&b结构召唤仪式&r。"
 				""
-				"通用结构（从下往上）："
-				"·第一层"
+				"&b通用结构&r（从下往上）："
+				"第一层"
 				"CAC"
 				"AAA"
 				"CAC"
 				""
-				"·第二层"
+				"第二层"
 				" A 空 A"
 				"空 B 空 "
 				" A 空 A"
 				""
-				"·第三层"
+				"第三层"
 				"空 A 空"
 				" A  A  A"
 				"空 A 空 "
 				""
-				"传送门结构（从下往上）："
-				"通用结构（从下往上）："
-				"·第一层"
+				"&b传送门结构&r（从下往上）："
+				"第一层"
 				"空空空"
 				"空空空"
 				"空空空"
 				""
-				"·第二层"
+				"第二层"
 				"空空空 "
 				"空 B 空 "
 				"空空空"
 				""
-				"·第三层"
+				"第三层"
 				" A  A  A"
 				" A  A  A"
 				" A  A  A "

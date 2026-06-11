@@ -110,6 +110,10 @@
   "jadeaddons": {
     "equipment_requirement": ""
   },
+  "exposure": {
+    "lightroom": true,
+    "photograph_frame": true
+  },
   "yes_steve_model": {
     "model_info": true
   },

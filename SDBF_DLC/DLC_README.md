@@ -7,14 +7,13 @@
 #### 1.1.1 标准扩展包结构
 标准的DLC结构：
 
-    new_dlc.zip* - 压缩包，不强制使用扩展包ID
+    new_dlc_1.0.0.zip* - 压缩包，建议使用扩展包ID+版本号
         \new_dlc* - 文件夹
             \config - 包含内容的文件夹1
             \kubejs - kubejs文件夹
-                \server_scripts - 服务端脚本文件夹
-                    \dlc - 统一的dlc文件夹
-                        new_dlc_script_1.js - 扩展包新增的脚本1，命名必须以\[扩展包ID\]开头
-                    block_tags.js - 需要被覆盖的本体脚本，请查阅2.3.2了解更多信息
+                \contentpacks - KubeLoader内容包文件夹
+                    \new_dlc_cp - 扩展包的内容包文件夹，用于存放kubejs脚本，要求以扩展包ID开头，建议以_contentpack或_cp结尾
+                    	\server_scripts - 扩展包的内容包文件夹中的服务端脚本文件夹
             \mods - 包含内容的文件夹2
                 new_mod1.jar - 扩展包新增的模组1
             \SDBF_DLC* - **扩展包信息文件夹**
@@ -30,7 +29,21 @@
 
 #### 1.1.2 CurseForge导入包格式的扩展包结构
 如果你不希望二次分发别人的模组/项目，你应该使用这种格式：
-TBD
+
+    new_dlc_1.0.0.zip* - 压缩包，建议使用扩展包ID+版本号
+        \overrides* - overrides文件夹
+        manifest.json - 导入包格式的清单文件，用于列出需要自动下载的项目，遵循CurseForge格式
+            \config - 包含内容的文件夹1
+            \kubejs - kubejs文件夹
+                \contentpacks - KubeLoader内容包文件夹
+                    \new_dlc_cp - 扩展包的内容包文件夹，用于存放kubejs脚本，要求以扩展包ID开头，建议以_contentpack或_cp结尾
+                    	\server_scripts - 扩展包的内容包文件夹中的服务端脚本文件夹
+            \mods - 包含内容的文件夹2
+                new_mod1.jar - 扩展包新增的模组1
+            \SDBF_DLC* - **扩展包信息文件夹**
+                new_dlc.json* - **扩展包信息文件**，必须使用[扩展包ID]命名，请查阅2.1了解更多信息
+                \DLC_icons - **扩展包图标文件夹**
+                    new_dlc.png - 扩展包的图标，可选，必须使用[扩展包ID]命名，仅支持.png格式
 
 
 
@@ -92,7 +105,7 @@ TBD
         格式： 路径应以整合包的根目录（.minecraft 或实例目录）为起点计算，例如 "mods/new_mod1.jar"。
 
 #### 2.1.2 JSON 文件示例
-假设扩展包ID为new_dlc，那么DLC信息文件的路径应为：`SDBF_DLC/new_dlc.json`
+假设扩展包ID为new_dlc，那么扩展包信息文件的路径应为：`new_dlc/SDBF_DLC/new_dlc.json`或`overrides/SDBF_DLC/new_dlc.json`
 
 ```json
 {
@@ -114,7 +127,7 @@ TBD
   ],
   "files": [
     "config/avaritia.toml",
-    "kubejs/server_scripts/dlc/new_dlc_script_1.js",
+    "kubejs/contentpacks/new_dlc_cp/*",
     "mods/new_mod1.jar",
     "SDBF_DLC/new_dlc.json",
     "SDBF_DLC/DLC_icons/new_dlc.png"
@@ -122,7 +135,7 @@ TBD
 }
 ```
 
-
+注意：`"kubejs/contentpacks/new_dlc_cp/*"`将会标记`new_dlc_cp`文件夹以及其内部的子文件夹。
 
 #### 2.1.3 图标
 
@@ -134,7 +147,9 @@ TBD
 
 ### 2.2 通过扩展包添加模组
 
-TBD
+只建议添加必须添加的模组。
+
+请将这些模组放置于对应格式的`\mods\`文件夹内，或者在导入包格式中使用`manifest.json`来标注需要下载的模组/项目
 
 
 
@@ -149,7 +164,7 @@ https://github.com/WhiseNT/kubeloader/wiki
 
 
 #### 2.3.1 全新脚本
-TBD
+如果你使用了KubeLoader的格式，则对于全新脚本的命名和格式没有特定要求。但仍然建议遵守一定的规范，以便自身或他人能更轻松的理解脚本中的内容。
 
 
 
@@ -197,13 +212,15 @@ ServerEvents.recipes(event => {
 
 
 
-#### 2.3.3 修改整合包本体的脚本
+#### 2.3.3 修改整合包本体的其他脚本
 
 推荐使用KubeLoader的KLM功能实现：https://github.com/WhiseNT/kubeloader/wiki/KLM
 
 
 
 ### 2.4 其他文件
+
+TBD
 
 
 
