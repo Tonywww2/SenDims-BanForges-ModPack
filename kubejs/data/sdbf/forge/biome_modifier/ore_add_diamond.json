@@ -1,0 +1,24 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "infinity_cave:amethyst_caves",
+    "cavernous:crystal_caves",
+    "cavernous:tropical_caves",
+    "darkerdepths:sandy_catacombs",
+    "cavernous:painted_caves",
+    "cavernous:marble_caves",
+    "cavernous:desert_caves",
+    "yungscavebiomes:frosted_caves",
+    "cavernous:icy_caves",
+    "regions_unexplored:ancient_delta",
+    "cavernous:marshy_caves",
+    "infinity_cave:molten_caves",
+    "cavernous:volcanic_caves",
+    "infinity_cave:sulfide_caves",
+    "minecraft:lush_caves",
+    "infinity_cave:deeprock_caverns",
+    "minecraft:deep_dark"
+  ],
+  "features": "sdbf:ores/diamond",
+  "step": "vegetal_decoration"
+}
