@@ -561,6 +561,12 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "3C4875514F38F6E4"
+			rewards: [{
+				count: 2
+				id: "22CF8B925B863481"
+				item: "easy_villagers:villager"
+				type: "item"
+			}]
 			tasks: [{
 				id: "384686EA62407ED2"
 				structure: "cavernous:lush_village"
@@ -577,6 +583,12 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "0E88B89884D28C35"
+			rewards: [{
+				count: 2
+				id: "0F1365798062F3CB"
+				item: "easy_villagers:villager"
+				type: "item"
+			}]
 			tasks: [{
 				id: "736F0EADAA2A1694"
 				structure: "cavernous:stone_village"
