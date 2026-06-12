@@ -27,7 +27,6 @@
                 "tetra:scale/",
                 "tetra:misc/",
                 "tetra:rod/",
-                "tetra:socket/",
                 "tetra:stone/"
             ],
             "countFactor": 2,

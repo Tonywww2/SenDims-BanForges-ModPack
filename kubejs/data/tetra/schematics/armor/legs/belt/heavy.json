@@ -24,7 +24,10 @@
                 "tetra:fabric/",
                 "tetra:fibre/",
                 "tetra:skin/",
-                "tetra:scale/"
+                "tetra:scale/",
+                "tetra:misc/",
+                "tetra:rod/",
+                "tetra:stone/"
             ],
             "countFactor": 3,
             "moduleKey": "armor/legs/belt/heavy",

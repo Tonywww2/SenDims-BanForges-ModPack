@@ -20,7 +20,14 @@
                 "tetra:wood/",
                 "tetra:gem/",
                 "tetra:metal/",
-                "tetra:bone/"
+                "tetra:bone/",
+                "tetra:fabric/",
+                "tetra:fibre/",
+                "tetra:skin/",
+                "tetra:scale/",
+                "tetra:misc/",
+                "tetra:rod/",
+                "tetra:stone/"
             ],
             "countFactor": 3,
             "moduleKey": "armor/feet/left/heavy",
