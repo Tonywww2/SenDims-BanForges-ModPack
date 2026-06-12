@@ -149,6 +149,11 @@ ServerEvents.recipes(event => {
         Item.of('thermal:florb', '{Fluid:{Amount:1000,FluidName:"nuclearcraft:helium_3"}}').weakNBT()
     );
 
+    event.replaceInput({ id: 'umapyoi:factor_decompose_table' },
+        'umapyoi:uma_factor_item',
+        'minecraft:end_crystal'
+    );
+
     event.replaceInput({ id: 'appflux:1k_core' },
         '#forge:dusts/certus_quartz',
         'integrateddynamics:energy_battery'

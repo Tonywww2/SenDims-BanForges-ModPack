@@ -278,6 +278,21 @@
 			x: -19.0d
 			y: 18.0d
 		}
+		{
+			id: "03DECAF1BD871777"
+			linked_quest: "0A6BF4C8A75EF242"
+			size: 2.0d
+			x: -13.0d
+			y: 9.0d
+		}
+		{
+			id: "0BBD22C3616A16A6"
+			linked_quest: "4A6CCBA361F14167"
+			shape: "gear"
+			size: 2.0d
+			x: -13.0d
+			y: 12.0d
+		}
 	]
 	quests: [
 		{

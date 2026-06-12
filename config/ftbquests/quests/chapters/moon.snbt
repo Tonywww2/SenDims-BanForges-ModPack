@@ -36,6 +36,13 @@
 			x: 24.0d
 			y: -3.0d
 		}
+		{
+			id: "66E5DF5B4A27573C"
+			linked_quest: "0936AB2DCC0172A8"
+			shape: "diamond"
+			x: 15.0d
+			y: 0.0d
+		}
 	]
 	quests: [
 		{
@@ -204,20 +211,6 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 0.0d
-		}
-		{
-			dependencies: [
-				"4BBDBE99D484D70B"
-				"36E8BDF00D6B600E"
-			]
-			id: "0936AB2DCC0172A8"
-			tasks: [{
-				id: "10B39805EEEBF4FC"
-				item: "kubejs:bedrock_breaker"
-				type: "item"
-			}]
-			x: 15.0d
 			y: 0.0d
 		}
 		{

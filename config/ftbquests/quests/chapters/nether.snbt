@@ -7,23 +7,16 @@
 	icon: "minecraft:netherrack"
 	id: "21FDCDE620C842AA"
 	order_index: 4
-	quest_links: [
-		{
-			id: "79A0E49E36559BB1"
-			linked_quest: "41B8D629DFAC4BB8"
-			x: 15.0d
-			y: 3.0d
-		}
-		{
-			id: "66E5DF5B4A27573C"
-			linked_quest: "0936AB2DCC0172A8"
-			x: -3.0d
-			y: 0.0d
-		}
-	]
+	quest_links: [{
+		id: "79A0E49E36559BB1"
+		linked_quest: "41B8D629DFAC4BB8"
+		x: 15.0d
+		y: 3.0d
+	}]
 	quests: [
 		{
 			dependencies: ["0936AB2DCC0172A8"]
+			dependency_requirement: "one_completed"
 			description: ["在月球之下。"]
 			hide_dependent_lines: true
 			hide_until_deps_complete: true
@@ -460,6 +453,22 @@
 			}]
 			x: 6.0d
 			y: 6.0d
+		}
+		{
+			dependencies: [
+				"4BBDBE99D484D70B"
+				"36E8BDF00D6B600E"
+				"2B54682ADC820C2A"
+			]
+			dependency_requirement: "one_completed"
+			id: "0936AB2DCC0172A8"
+			tasks: [{
+				id: "10B39805EEEBF4FC"
+				item: "kubejs:bedrock_breaker"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
 		}
 	]
 	title: "入地狱"

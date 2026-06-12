@@ -2,19 +2,6 @@ ServerEvents.recipes(event => {
 
     event.smelting('ad_astra:moon_cobblestone', ['dustandash:cobblestone_with_moss'], 0, 200).id("sdbf:moon_cobblestone_s2")
 
-    event.shaped('confluence:obsidian_rose', [
-        'ADA',
-        'BEB',
-        ' C '
-    ], {
-        A: 'ad_astra:ice_shard',
-        B: 'minecraft:poppy',
-        C: '#forge:obsidian',
-        D: 'minecraft:lava_bucket',
-        E: 'ad_astra:moon_globe',
-    }).keepIngredient('ad_astra:moon_globe')
-        .id('sdbf:obsidian_rose_s2')
-
     event.shaped(Item.of('gateways:gate_pearl', '{gateway:"gateways:sdbf_moon_g1"}'), [
         'ABA',
         'BEB',
@@ -25,16 +12,6 @@ ServerEvents.recipes(event => {
         E: 'ad_astra:moon_globe',
     }).keepIngredient('ad_astra:moon_globe')
         .id('sdbf:sdbf_moon_g1_s2')
-
-    event.shaped('2x kubejs:bedrock_breaker', [
-        ' BA',
-        'BCB',
-        'AB '
-    ], {
-        A: 'tetra:metal_scrap',
-        B: 'ad_astra:ice_shard',
-        C: 'confluence:obsidian_rose'
-    }).id('sdbf:bedrock_breaker_s2')
 
     event.shaped('ad_astra:desh_engine', [
         'AAA',

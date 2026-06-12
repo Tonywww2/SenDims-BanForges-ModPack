@@ -480,7 +480,7 @@
 			dependencies: ["220AEBF0A8A46F7C"]
 			id: "0BE994ED14E4C64D"
 			tasks: [{
-				id: "49CA37A702333E4B"
+				id: "74BC32A78D749F05"
 				item: "the_bumblezone:ancient_wax_compound_eyes"
 				type: "item"
 			}]

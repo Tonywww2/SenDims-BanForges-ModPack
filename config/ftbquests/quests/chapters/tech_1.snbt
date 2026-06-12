@@ -481,17 +481,6 @@
 			y: 17.5d
 		}
 		{
-			dependencies: ["73531FB69122489F"]
-			id: "0A6BF4C8A75EF242"
-			tasks: [{
-				id: "30294753B72371D0"
-				item: "minecraft:ender_pearl"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 0.0d
-		}
-		{
 			dependencies: ["0A6BF4C8A75EF242"]
 			id: "4A6CCBA361F14167"
 			rewards: [{
@@ -499,6 +488,7 @@
 				item: "minecraft:ender_pearl"
 				type: "item"
 			}]
+			subtitle: "重要的传送设备"
 			tasks: [{
 				id: "26B50A157C0E6145"
 				item: {
@@ -1537,6 +1527,17 @@
 				type: "item"
 			}]
 			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["73531FB69122489F"]
+			id: "0A6BF4C8A75EF242"
+			tasks: [{
+				id: "30294753B72371D0"
+				item: "minecraft:ender_pearl"
+				type: "item"
+			}]
+			x: 2.5d
 			y: 0.0d
 		}
 	]

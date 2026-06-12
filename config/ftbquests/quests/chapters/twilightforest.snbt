@@ -34,12 +34,26 @@
 			x: 30.0d
 			y: 0.0d
 		}
+		{
+			id: "0DC715732D0FCBC1"
+			linked_quest: "0936AB2DCC0172A8"
+			x: 21.0d
+			y: -3.0d
+		}
+		{
+			id: "0723C14B1ED8A013"
+			linked_quest: "5251AFEDB9C97974"
+			shape: "hexagon"
+			size: 2.0d
+			x: 24.0d
+			y: -3.0d
+		}
 	]
 	quests: [
 		{
 			dependencies: ["6AE2EFEC0F3BE4BE"]
 			description: [
-				"建造一个2x2的正方形池塘，在边缘种满花朵，填充清水，最后投入钻石......"
+				"建造一个&b2x2的正方形池塘&r，在边缘&b种满花朵&r（最常见的花朵是...），填充清水，最后&b投入钻石&r......"
 				""
 				"警告：暮色的难度相比同阶段的其他维度更高。"
 			]

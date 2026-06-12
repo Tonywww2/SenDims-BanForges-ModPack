@@ -119,7 +119,7 @@ ServerEvents.recipes(event => {
         ),
         "X": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
-                .name("lastsmith:roukanken")
+                .name("last_smith:roukanken")
                 .killCount(10000)                     // 要求：500 击杀 (Kill Count)
                 .proudSoul(80000)                    // 要求：5000 耀魂 (Proud Soul)
                 .refineCount(50)                    // 要求：20 锻造 (Refine Count)
@@ -135,7 +135,7 @@ ServerEvents.recipes(event => {
         ),
         "Z": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
-                .name("slashbladee_addon:green_mist")
+                .name("slashblade_addon:green_mist")
                 .killCount(5000)                     // 要求：500 击杀 (Kill Count)
                 .proudSoul(10000)                    // 要求：5000 耀魂 (Proud Soul)
                 .refineCount(50)                    // 要求：20 锻造 (Refine Count)

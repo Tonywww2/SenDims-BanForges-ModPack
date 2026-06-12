@@ -3,6 +3,29 @@ ServerEvents.recipes(event => {
     sqRecipe(event, "minecraft:bastion_remnant", '#forge:ingots/gold', 1, "s2");
     sqRecipe(event, "minecraft:fortress", 'minecraft:nether_bricks', 1, "s2");
 
+    event.shaped('2x kubejs:bedrock_breaker', [
+        ' BA',
+        'BCB',
+        'AB '
+    ], {
+        A: ['tetra:metal_scrap', 'twilightforest:giant_pickaxe'],
+        B: ['ad_astra:ice_shard', 'twilightforest:giant_cobblestone'],
+        C: 'confluence:obsidian_rose'
+    }).id('sdbf:bedrock_breaker_s2')
+
+    event.shaped('confluence:obsidian_rose', [
+        'ADA',
+        'BEB',
+        ' C '
+    ], {
+        A: ['ad_astra:ice_shard', 'twilightforest:giant_cobblestone'],
+        B: 'minecraft:poppy',
+        C: '#forge:obsidian',
+        D: 'minecraft:lava_bucket',
+        E: ['ad_astra:moon_globe', 'twilightforest:giant_sword'],
+    }).keepIngredient('ad_astra:moon_globe')
+        .id('sdbf:obsidian_rose_s2')
+
     event.shaped(Item.of('gateways:gate_pearl', '{gateway:"gateways:sdbf_nether_g1"}'), [
         'ABA',
         'BCB',
