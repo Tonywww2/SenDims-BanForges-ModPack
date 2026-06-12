@@ -624,6 +624,7 @@
 		{
 			dependencies: ["09282B67B7D8CF17"]
 			id: "3B6D18679BD6BD0A"
+			subtitle: "通过战斗获得资源"
 			tasks: [{
 				id: "55A003454C9C6931"
 				item: {
@@ -641,6 +642,7 @@
 		{
 			dependencies: ["6130B752208314B7"]
 			id: "206536C510BBA790"
+			subtitle: "通过战斗获得资源"
 			tasks: [{
 				id: "68E3E6DEB4AFC898"
 				item: {

@@ -338,6 +338,7 @@
 		{
 			dependencies: ["051641EF8104FA8F"]
 			id: "3D2F6FBFCD40C3F5"
+			subtitle: "通过战斗获得资源"
 			tasks: [{
 				id: "4D2578621E51BC39"
 				item: {

@@ -1,5 +1,6 @@
 let bbAllowDims = Utils.newMap();
 bbAllowDims.put("ad_astra:moon", "minecraft:the_nether");
+bbAllowDims.put("twilightforest:twilight_forest", "minecraft:the_nether");
 // bbAllowDims.add("minecraft:the_nether", "ad_astra:moon");
 
 const moonToNetherKey = "sbdf.moon_to_nether";
@@ -29,7 +30,7 @@ BlockEvents.rightClicked("minecraft:bedrock", event => {
                 let targetLevel = event.getServer().getLevel(targetDim);
                 let player = event.player;
                 let x = player.x;
-                let y = player.y + 175;
+                let y = player.y + 150;
                 let z = player.z;
                 // event.player.teleportTo(targetDim, x, y, z, 0, 0);
                 player.server.runCommandSilent(`/execute in ${targetDim} run tp ${player.name.string} ${x} ${y} ${z}`);
