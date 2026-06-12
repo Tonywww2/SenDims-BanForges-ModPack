@@ -21,8 +21,13 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"使用&6烤豆腐块&r建造3x3平台，在中心放置&6苔藓块&r"
-				"使用&6豆腐魔杖&r右键&6苔藓块&r激活传送"
+				"使用&6烤豆腐块&r建造3x3平台，在中心放置&6苔藓块&r。"
+				"使用&6豆腐魔杖&r右键&6苔藓块&r激活传送。"
+				""
+				""
+				"注意：烤豆腐块可以使用特殊的配方合成。"
+				""
+				"{image:sdbf:textures/gui/tofu_gate.png width:100 height:100 align:center}"
 			]
 			hide_dependent_lines: true
 			hide_until_deps_visible: true

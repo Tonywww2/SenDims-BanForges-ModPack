@@ -23,14 +23,14 @@
 		{
 			id: "37F9308A7B690DE9"
 			linked_quest: "765A0F0A66F45570"
-			x: 33.0d
+			x: 36.0d
 			y: 0.0d
 		}
 		{
 			id: "4413A8820A84AB93"
 			linked_quest: "71F1943E6E3FCA17"
 			shape: "diamond"
-			x: 39.0d
+			x: 42.0d
 			y: 0.0d
 		}
 		{
@@ -45,7 +45,7 @@
 			linked_quest: "5BB642BD0BE40541"
 			shape: "hexagon"
 			size: 2.0d
-			x: 39.0d
+			x: 42.0d
 			y: -3.0d
 		}
 		{
@@ -53,13 +53,13 @@
 			linked_quest: "6140B0BCEB7F9D64"
 			shape: "hexagon"
 			size: 2.0d
-			x: 30.0d
+			x: 33.0d
 			y: 0.0d
 		}
 		{
 			id: "79C94B16167111AE"
 			linked_quest: "222077D4E6F647A3"
-			x: 36.0d
+			x: 39.0d
 			y: -3.0d
 		}
 	]
@@ -304,7 +304,7 @@
 				}
 				type: "item"
 			}]
-			x: 36.0d
+			x: 39.0d
 			y: 0.0d
 		}
 		{
@@ -408,7 +408,7 @@
 				item: "minecraft:iron_ingot"
 				type: "item"
 			}]
-			x: 33.0d
+			x: 36.0d
 			y: 3.0d
 		}
 		{
@@ -540,7 +540,7 @@
 				type: "checkmark"
 			}]
 			title: "结构召唤仪式"
-			x: 27.0d
+			x: 30.0d
 			y: 0.0d
 		}
 		{
@@ -561,7 +561,7 @@
 				type: "checkmark"
 			}]
 			title: "返回仪式"
-			x: 27.0d
+			x: 30.0d
 			y: 3.0d
 		}
 		{
@@ -622,7 +622,7 @@
 				}
 			]
 			title: "简易村民"
-			x: 33.0d
+			x: 36.0d
 			y: 6.0d
 		}
 		{
@@ -656,7 +656,7 @@
 					type: "item"
 				}
 			]
-			x: 36.0d
+			x: 39.0d
 			y: 6.0d
 		}
 		{
@@ -677,7 +677,7 @@
 				item: "easy_villagers:breeder"
 				type: "item"
 			}]
-			x: 36.0d
+			x: 39.0d
 			y: 9.0d
 		}
 		{
@@ -693,7 +693,7 @@
 				item: "easy_villagers:incubator"
 				type: "item"
 			}]
-			x: 36.0d
+			x: 39.0d
 			y: 3.0d
 		}
 		{
@@ -741,6 +741,18 @@
 			}]
 			x: 12.0d
 			y: 3.0d
+		}
+		{
+			dependencies: ["0B0F1D8BE89F8980"]
+			description: ["注意：烤豆腐块可以使用特殊的配方合成。"]
+			id: "1CABE32AC23C7BDE"
+			tasks: [{
+				id: "42B54E335A2A751B"
+				item: "tofucraft:blocktofugrilled"
+				type: "item"
+			}]
+			x: 27.0d
+			y: 0.0d
 		}
 	]
 	title: "起始之空岛"

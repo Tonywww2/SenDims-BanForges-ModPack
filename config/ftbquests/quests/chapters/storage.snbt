@@ -595,8 +595,8 @@
 				item: "sophisticatedbackpacks:upgrade_base"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 2.5d
+			x: 7.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["488BA89D6CF595C2"]
@@ -818,6 +818,18 @@
 			title: "福鲁伊克斯研究员"
 			x: 5.0d
 			y: 5.0d
+		}
+		{
+			dependencies: ["26B66FFB1E5C691C"]
+			id: "19926BF0592FDD52"
+			subtitle: "精妙存储"
+			tasks: [{
+				id: "0A98012184B7D3EB"
+				item: "minecraft:redstone_torch"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.5d
 		}
 	]
 	title: "库存管理"
