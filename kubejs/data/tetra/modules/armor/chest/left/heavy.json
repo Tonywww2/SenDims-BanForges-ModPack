@@ -15,7 +15,14 @@
                 "tetra:wood/",
                 "tetra:gem/",
                 "tetra:metal/",
-                "tetra:bone/"
+                "tetra:bone/",
+                "tetra:fabric/",
+                "tetra:fibre/",
+                "tetra:skin/",
+                "tetra:scale/",
+                "tetra:misc/",
+                "tetra:rod/",
+                "tetra:stone/"
             ],
             "key": "heavy_chest_left/",
             "aspects":

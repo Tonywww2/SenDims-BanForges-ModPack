@@ -229,7 +229,8 @@ ServerEvents.recipes(event => {
         "X": "slashblade:proudsoul_sphere", // 耀魂宝珠
         "B": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
-                .name("slashblade:slashblade")
+                .killCount(100)      // 杀敌数 / Kill count
+                .refineCount(10)    // 锻造数 / Refine count
                 .build()
         )
     }, "slashblade_addon:terra_blade")

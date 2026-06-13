@@ -19,7 +19,10 @@
                 "tetra:fabric/",
                 "tetra:fibre/",
                 "tetra:skin/",
-                "tetra:scale/"
+                "tetra:scale/",
+                "tetra:misc/",
+                "tetra:rod/",
+                "tetra:stone/"
             ],
             "key": "heavy_legs_belt/",
             "aspects":

@@ -5,7 +5,20 @@
   "improvements": [],
   "variants": [
     {
-      "materials": [ "tetra:wood/","tetra:gem/", "tetra:metal/", "tetra:bone/" ],
+            "materials":
+            [
+                "tetra:wood/",
+                "tetra:gem/",
+                "tetra:metal/",
+                "tetra:bone/",
+                "tetra:fabric/",
+                "tetra:fibre/",
+                "tetra:skin/",
+                "tetra:scale/",
+                "tetra:misc/",
+                "tetra:rod/",
+                "tetra:stone/"
+            ],
       "key": "heavy_feet_right/",
       "aspects": {
         "armor": 2,

@@ -7,7 +7,8 @@
     "improvements": [],
     "variants": [
         {
-            "materials": [
+            "materials":
+            [
                 "tetra:wood/",
                 "tetra:gem/",
                 "tetra:metal/",
@@ -18,7 +19,6 @@
                 "tetra:scale/",
                 "tetra:misc/",
                 "tetra:rod/",
-                "tetra:socket/",
                 "tetra:stone/"
             ],
             "key": "vanilla_chest_right/",
