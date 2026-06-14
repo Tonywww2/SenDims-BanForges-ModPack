@@ -59,6 +59,8 @@
 		{
 			id: "79C94B16167111AE"
 			linked_quest: "222077D4E6F647A3"
+			shape: "diamond"
+			size: 2.0d
 			x: 39.0d
 			y: -3.0d
 		}
@@ -752,6 +754,66 @@
 				type: "item"
 			}]
 			x: 27.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["52726CE2A2740BF7"]
+			description: [
+				"TL;DR"
+				""
+				"&b深境证章&r除了用于进入深境一层以外，还是本整合包&b最为重要的饰品&r。"
+				""
+				"通过持续的使用材料强化它，可以为你提供&a巨额的基础生命值&r与大量的拔刀剑增伤。"
+				""
+				"如果你发现怪物的伤害过高了，&a请优先强化深境证章&r。"
+			]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "3CE4450A5B3933BB"
+			rewards: [{
+				id: "15DE28F6E035F007"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "5A8937EB42D47311"
+				type: "checkmark"
+			}]
+			title: "深境证章省流"
+			x: 42.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["71F1943E6E3FCA17"]
+			description: [
+				"对于前期来说，提升战斗力的方式有以下途径（高到低排列）："
+				"·强化&b深境证章&r的生命值：提供大量&b生命值&r"
+				"·使用高级材料替换&bTetra护甲&r的部件：提供大量&b护甲值&r"
+				"·使用高级材料替换&b可以被改造的拔刀剑&r的部件：&b提供大量攻击力&r"
+				"·升级&b原素瓶&r：提供大量&b生命值恢复&r"
+				""
+				"·&b马娘之魂&r育成：提供大量的&b生命值&r、&b攻击力&r、&b护甲值&r，但是&b属性上限有限&r。"
+				""
+				"·使用&b耀魂材料&r在&b铁砧&r内强化&b拔刀剑&r的精炼数：提供少量基础攻击力，SSS评价后会额外提升。"
+				"·附魔：通过村民获取保护、锋利等附魔书，不过较为费时。"
+				"·强化深境证章的伤害加成：虽然前期提升幅度较小，但是后期提升幅度将会非常大。"
+			]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "3FBEE593F7DB4278"
+			rewards: [{
+				id: "2877C80A014D0CBB"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "4FF8F9B531AF83AB"
+				type: "checkmark"
+			}]
+			title: "战斗力提升的方式"
+			x: 45.0d
 			y: 0.0d
 		}
 	]

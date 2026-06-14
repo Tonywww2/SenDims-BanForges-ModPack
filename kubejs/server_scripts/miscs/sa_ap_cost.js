@@ -57,6 +57,8 @@ SACostMap.put("slashblade_sendims:explosive_dawn_ammo", [600, 0.5]);
 
 SACostMap.put("slashblade_sendims:golden_crux_ex", [1000, 0.5]);
 
+SACostMap.put("slashblade_addon:blistering_terra_swords", [600, 0.3]);
+
 let defaultCost = [200, 0.2];
 let superSlashArtCost = [400, 0.3];
 

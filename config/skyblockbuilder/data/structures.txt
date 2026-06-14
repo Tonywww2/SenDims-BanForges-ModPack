@@ -10,6 +10,12 @@ ae2:meteorite
 aether:bronze_dungeon
 aether:gold_dungeon
 aether:large_aercloud
+aether:ruined_portal
+aether:ruined_portal_aether
+aether:ruined_portal_desert
+aether:ruined_portal_jungle
+aether:ruined_portal_mountain
+aether:ruined_portal_swamp
 aether:silver_dungeon
 ancient_aether:ancient_dungeon
 ancient_aether:holystone_ruin

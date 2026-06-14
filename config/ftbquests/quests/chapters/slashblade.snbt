@@ -21,45 +21,107 @@
 			id: "6FD736B74327F2AF"
 			rewards: [
 				{
-					id: "7F8C7FF90B74ED17"
+					id: "1024BCAF17296563"
 					item: {
 						Count: 1
-						id: "minecraft:leather_helmet"
+						ForgeCaps: {
+							"fluxoftetra:fe": {
+								energy: 0
+							}
+						}
+						id: "geotetraarmor:head"
 						tag: {
 							Damage: 0
+							"FOT$energy": {
+								energy: 0
+							}
+							HideFlags: 1
+							"armor/head/base/vanilla_material": "vanilla_head_base/iron"
+							"head/base": "armor/head/base/vanilla"
+							honing_progress: 450
+							id: "83ca0c87-4adc-46b1-98a9-f0c1f2f02d8a"
 						}
 					}
 					type: "item"
 				}
 				{
-					id: "3326E3934D27ECD3"
+					id: "05B475FEFFD07748"
 					item: {
 						Count: 1
-						id: "minecraft:leather_chestplate"
+						ForgeCaps: {
+							"fluxoftetra:fe": {
+								energy: 0
+							}
+						}
+						id: "geotetraarmor:chest"
 						tag: {
 							Damage: 0
+							"FOT$energy": {
+								energy: 0
+							}
+							HideFlags: 1
+							"armor/chest/base/vanilla_material": "vanilla_chest_base/string"
+							"armor/chest/left/vanilla_material": "vanilla_chest_left/leather"
+							"armor/chest/right/vanilla_material": "vanilla_chest_right/leather"
+							"chest/base": "armor/chest/base/vanilla"
+							"chest/left": "armor/chest/left/vanilla"
+							"chest/right": "armor/chest/right/vanilla"
+							honing_progress: 450
+							id: "5122c433-61f3-4463-a688-7afb03da89f9"
 						}
 					}
 					type: "item"
 				}
 				{
-					id: "4B07502E81E3CD98"
+					id: "56A949F4A51E66BD"
 					item: {
 						Count: 1
-						id: "minecraft:leather_leggings"
+						ForgeCaps: {
+							"fluxoftetra:fe": {
+								energy: 0
+							}
+						}
+						id: "geotetraarmor:legs"
 						tag: {
 							Damage: 0
+							"FOT$energy": {
+								energy: 0
+							}
+							HideFlags: 1
+							"armor/legs/belt/vanilla_material": "vanilla_legs_belt/string"
+							"armor/legs/left/vanilla_material": "vanilla_legs_left/leather"
+							"armor/legs/right/vanilla_material": "vanilla_legs_right/leather"
+							honing_progress: 450
+							id: "6ded8c21-c025-48b3-a87c-d2486e54639a"
+							"legs/belt": "armor/legs/belt/vanilla"
+							"legs/left": "armor/legs/left/vanilla"
+							"legs/right": "armor/legs/right/vanilla"
 						}
 					}
 					type: "item"
 				}
 				{
-					id: "2FCF6104C226BB0A"
+					id: "2CA774768E12131F"
 					item: {
 						Count: 1
-						id: "minecraft:leather_boots"
+						ForgeCaps: {
+							"fluxoftetra:fe": {
+								energy: 0
+							}
+						}
+						id: "geotetraarmor:feet"
 						tag: {
 							Damage: 0
+							"FOT$energy": {
+								energy: 0
+							}
+							HideFlags: 1
+							"armor/feet/left/vanilla_material": "vanilla_feet_left/string"
+							"armor/feet/right/vanilla_material": "vanilla_feet_right/string"
+							"feet/left": "armor/feet/left/vanilla"
+							"feet/right": "armor/feet/right/vanilla"
+							honing_progress: 450
+							id: "cbb62ef0-dbcf-4e6c-8254-886445b8ff5f"
 						}
 					}
 					type: "item"

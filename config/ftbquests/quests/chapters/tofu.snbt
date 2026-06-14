@@ -150,7 +150,7 @@
 				"64402F8CC5046FCE"
 			]
 			dependency_requirement: "one_completed"
-			description: ["如果你觉得等待石豆腐块压制成钢豆腐的过程太慢的话，可以将石豆腐块放入&b锻造台&r锻打。"]
+			description: ["如果你觉得等待石豆腐块压制成钢豆腐的过程太慢的话，可以将石豆腐块放入&b加工台&r锻打。"]
 			id: "3376AE50BC0EB9A5"
 			rewards: [{
 				id: "1FF3FE646FBB83F5"
