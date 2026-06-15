@@ -63,6 +63,7 @@
 			hide_until_deps_visible: true
 			id: "51A9FF63F9F3E125"
 			size: 2.0d
+			subtitle: "警告：需要抗火"
 			tasks: [{
 				dimension: "ad_astra:venus"
 				icon: "ad_astra:venus_globe"
@@ -86,9 +87,15 @@
 		}
 		{
 			dependencies: ["7D98EABF3232321E"]
+			description: ["除了使用拥有通量注入效果的材料以外，你也可以在胸甲的附件栏使用红石块为它进行通量注入。"]
 			id: "31341BED5E582FBF"
+			rewards: [{
+				id: "2AEB9AA33591B18D"
+				type: "xp"
+				xp: 100
+			}]
 			shape: "diamond"
-			subtitle: "需要配合通量注入附件"
+			subtitle: "需要胸甲拥有电力"
 			tasks: [{
 				id: "1C707DBA32C20F07"
 				item: {
