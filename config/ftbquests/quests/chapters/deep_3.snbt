@@ -24,7 +24,7 @@
 		{
 			id: "4614C32155EBEA48"
 			linked_quest: "28CAD1DD57B60440"
-			shape: "diamond"
+			shape: "hexagon"
 			x: 9.0d
 			y: -3.0d
 		}
@@ -426,6 +426,7 @@
 			dependency_requirement: "one_completed"
 			hide_until_deps_visible: true
 			id: "6E39BB8C6B65D2B6"
+			shape: "hexagon"
 			tasks: [{
 				id: "1F8432296BD44C87"
 				item: "undergarden:catalyst"

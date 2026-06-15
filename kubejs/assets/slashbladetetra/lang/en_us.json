@@ -1,4 +1,5 @@
 {
     "tetra.module.slashblade/blade/blade.prefix": "%s ",
-    "tetra.module.slashblade/blade/brittle_blade.prefix": "%s "
+    "tetra.module.slashblade/blade/brittle_blade.prefix": "%s ",
+    "tetra/schematic/enchantedsoulextraction.description": "Converts Kill Count into Enchanted Radiant Soul. Up to �e%s�r at a time, each consuming �e%s�r Kill Count.\nKill Count will not drop below �e1,000�r.\nOutput: [ Normal: �e%s�r ]"
 }

@@ -11,4 +11,11 @@ cantWrapperItems = []
 	soulDropNeeded = 150
 	#是否添加ciallo的两个原理图（联动）
 	enableCiallo = true
+	#设定 剑魂映射 中 锻造影响值 的公式
+	#  COMMON : refine -> (18 * refine + 100) / (9 * refine + 1000)
+	#  NONE : refine -> 1
+	#  LOGARITHM : refine -> Math.log((refine + 50) / 50)
+	#  BT : refine -> 0.1 + refine / 25
+	#Allowed Values: COMMON, NONE, LOGARITHM, BT
+	soulBladeMappingRule = "COMMON"
 

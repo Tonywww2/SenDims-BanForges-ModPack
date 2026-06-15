@@ -24,12 +24,14 @@
 		{
 			id: "4D9D79F9D9990672"
 			linked_quest: "28CAD1DD57B60440"
+			shape: "hexagon"
 			x: 12.0d
 			y: 0.0d
 		}
 		{
 			id: "65F8324FC1CFB518"
 			linked_quest: "0351BC9DA1C5B4F7"
+			shape: "hexagon"
 			x: 21.0d
 			y: -3.0d
 		}

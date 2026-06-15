@@ -17,6 +17,7 @@
 		{
 			id: "2BBE602F9542B3CE"
 			linked_quest: "34C15FC6C1E469E9"
+			shape: "hexagon"
 			x: 21.0d
 			y: -3.0d
 		}

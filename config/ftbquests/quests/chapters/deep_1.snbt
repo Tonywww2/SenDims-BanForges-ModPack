@@ -18,7 +18,6 @@
 			id: "48E82D2A6108C479"
 			linked_quest: "71F1943E6E3FCA17"
 			shape: "hexagon"
-			size: 1.5d
 			x: -3.0d
 			y: 0.0d
 		}
@@ -37,6 +36,7 @@
 		{
 			id: "7EC5505981D29EB9"
 			linked_quest: "750B557031EFBBEE"
+			shape: "hexagon"
 			x: 18.0d
 			y: 0.0d
 		}
@@ -63,6 +63,7 @@
 		{
 			id: "596A8AC4B21A5688"
 			linked_quest: "28CAD1DD57B60440"
+			shape: "hexagon"
 			x: 9.0d
 			y: -12.0d
 		}
@@ -130,6 +131,7 @@
 				item: "minecraft:diamond"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "5EA9F027884A6755"
 				item: "minecraft:diamond"

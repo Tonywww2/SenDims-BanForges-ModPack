@@ -25,6 +25,7 @@
 		{
 			id: "527E4EFA96B6E336"
 			linked_quest: "40B4C6CD28E7DF19"
+			shape: "hexagon"
 			x: 6.0d
 			y: -3.0d
 		}
@@ -39,7 +40,7 @@
 		{
 			id: "66E5DF5B4A27573C"
 			linked_quest: "0936AB2DCC0172A8"
-			shape: "diamond"
+			shape: "hexagon"
 			x: 15.0d
 			y: 0.0d
 		}

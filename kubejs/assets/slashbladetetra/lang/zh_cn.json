@@ -1,4 +1,6 @@
 {
     "tetra.module.slashblade/blade/blade.prefix": "%s ",
-    "tetra.module.slashblade/blade/brittle_blade.prefix": "%s "
+    "tetra.module.slashblade/blade/brittle_blade.prefix": "%s ",
+    "tetra/schematic/enchantedsoulextraction.description": "将杀敌数转换成附魔耀魂，一次最多§e%s§r个，每个耀魂消耗§e%s§r杀敌数\n杀敌数不会减少至§e1,000§r以下\n产出 : [ 普通: §e%s§r ]"
+
 }

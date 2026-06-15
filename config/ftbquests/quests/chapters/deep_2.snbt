@@ -30,6 +30,7 @@
 				"0C568583CC58DAA6"
 				"034D47E905861E48"
 			]
+			dependency_requirement: "one_completed"
 			description: [
 				"使用&6岗哨石&r建造3x3平台，在中心放置&6岗哨基石&r"
 				"使用&6变量卡&r右键&6岗哨基石&r激活传送"
@@ -339,6 +340,7 @@
 		{
 			dependencies: ["3DA6E818573A9A69"]
 			id: "078E92000B6E3912"
+			shape: "hexagon"
 			tasks: [{
 				id: "2003919EAE0BFA16"
 				item: "kubejs:mysterious_alkali_crystal"
@@ -354,6 +356,7 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "20D8DB313AF6ED7F"
+			shape: "pentagon"
 			tasks: [{
 				id: "6550BFE2C3F6FE83"
 				structure: "cataclysm:sunken_city"

@@ -51,7 +51,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["0F8DC1AEBBC762C1"]
@@ -75,7 +75,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -91,7 +91,7 @@
 			}]
 			title: "青铜地牢"
 			x: 6.0d
-			y: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -233,7 +233,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: -6.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["0F8DC1AEBBC762C1"]
@@ -255,7 +255,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: -6.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["0F8DC1AEBBC762C1"]
@@ -277,7 +277,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: -3.0d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -292,7 +292,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["0F8DC1AEBBC762C1"]
@@ -315,7 +315,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: -3.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["0F8DC1AEBBC762C1"]
@@ -327,7 +327,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: -9.0d
+			y: -12.0d
 		}
 		{
 			dependencies: ["614A7F7B332E03A7"]
@@ -414,7 +414,7 @@
 				}
 			]
 			x: 9.0d
-			y: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["7CBB12CD9FDCA6A4"]
@@ -425,7 +425,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["01604A3C5394A6B9"]
@@ -617,13 +617,15 @@
 			dependencies: ["3F0F05D26289CF7B"]
 			hide_until_deps_visible: true
 			id: "5DC17402B959C2E9"
+			shape: "hexagon"
+			subtitle: "重要"
 			tasks: [{
 				id: "1C1A404E421F059B"
 				item: "aether:sentry_stone"
 				type: "item"
 			}]
 			x: 15.0d
-			y: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -632,6 +634,7 @@
 			]
 			description: ["这些变量卡有些特殊？"]
 			id: "0C568583CC58DAA6"
+			shape: "hexagon"
 			subtitle: "重要"
 			tasks: [{
 				id: "7F7F699FC6682534"
@@ -639,7 +642,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: 0.0d
+			y: -3.0d
 		}
 	]
 	title: "天上天境"
