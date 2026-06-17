@@ -49,7 +49,7 @@
 						value: "forge:chests"
 					}
 				}
-				title: "Any #forge:chests"
+				title: "箱子"
 				type: "item"
 			}]
 			title: "箱子"
@@ -489,7 +489,9 @@
 				"7EE0F0E7324E3356"
 				"184DD4D014074A2E"
 			]
+			description: ["&m它不是经验泵+高炉+喂食机+工作台+灵魂瓶+抽屉&r"]
 			id: "29BDBE467B479C35"
+			subtitle: "背包，只是背包"
 			tasks: [{
 				id: "4A80A9CC3DF29B3D"
 				item: "sophisticatedbackpacks:backpack"
@@ -699,6 +701,11 @@
 		}
 		{
 			dependencies: ["71FCA5FAB43DD617"]
+			description: [
+				"福鲁伊克斯研究员会售卖许多AE相关的材料！"
+				""
+				"使用绿宝石从他这里购买一些材料在前期是不错的选择。"
+			]
 			icon: {
 				Count: 1
 				id: "easy_villagers:villager"
@@ -810,6 +817,7 @@
 				}
 			}
 			id: "5D9E583B3AF2CDDE"
+			subtitle: "麻烦的母岩"
 			tasks: [{
 				id: "00520439AC77DB36"
 				item: "minecraft:emerald"
@@ -817,19 +825,71 @@
 			}]
 			title: "福鲁伊克斯研究员"
 			x: 5.0d
-			y: 5.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["26B66FFB1E5C691C"]
 			id: "19926BF0592FDD52"
 			subtitle: "精妙存储"
 			tasks: [{
-				id: "0A98012184B7D3EB"
-				item: "minecraft:redstone_torch"
+				id: "5632D25F4ACEC304"
+				item: "minecraft:lever"
 				type: "item"
 			}]
 			x: 2.5d
 			y: 2.5d
+		}
+		{
+			dependencies: ["19926BF0592FDD52"]
+			description: [
+				"&m它不是经验泵+高炉+喂食机+工作台+灵魂瓶+抽屉&r"
+				""
+				"使用红石火把和木桶合成。"
+				""
+				"可以使用铜、铁、金、钻石等材料升级。"
+			]
+			id: "65DE58C03568F5D7"
+			subtitle: "大桶"
+			tasks: [{
+				id: "7EB2EA29858A4534"
+				item: {
+					Count: 1
+					id: "sophisticatedstorage:barrel"
+					tag: {
+						woodType: "spruce"
+					}
+				}
+				type: "item"
+			}]
+			title: "精妙木桶"
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["19926BF0592FDD52"]
+			description: [
+				"&m它不是经验泵+高炉+喂食机+工作台+灵魂瓶+抽屉&r"
+				""
+				"使用红石火把和箱子合成。"
+				""
+				"可以使用铜、铁、金、钻石等材料升级。"
+			]
+			id: "0E2694C5E6E1B504"
+			subtitle: "大箱子"
+			tasks: [{
+				id: "18D99522F36B672A"
+				item: {
+					Count: 1
+					id: "sophisticatedstorage:chest"
+					tag: {
+						woodType: "oak"
+					}
+				}
+				type: "item"
+			}]
+			title: "精妙箱子"
+			x: 5.0d
+			y: 5.0d
 		}
 	]
 	title: "库存管理"

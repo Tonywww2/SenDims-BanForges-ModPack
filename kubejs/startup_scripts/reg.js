@@ -52,6 +52,13 @@ StartupEvents.registry('item', event => {
 })
 
 StartupEvents.registry('block', event => {
+    event.create('moss_stone_tofu')
+        .soundType('stone')
+        .hardness(1.0)
+        .resistance(2.0)
+        .requiresTool(true)
+        .tagBlock('minecraft:mineable/pickaxe')
+
     event.create('asteroid_rock')
         .soundType('stone')
         .hardness(2.0)

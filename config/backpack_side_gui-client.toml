@@ -1,0 +1,23 @@
+
+[side_panel]
+	#Which side of the opened container screen should the Sophisticated Backpack side panel render on.
+	#RIGHT = inventory/container right side, LEFT = inventory/container left side.
+	#侧边背包栏显示方向：RIGHT=物品栏/容器右侧，LEFT=物品栏/容器左侧。
+	#Allowed Values: RIGHT, LEFT
+	panelSide = "RIGHT"
+	#Fine horizontal offset in GUI pixels. Positive moves right, negative moves left. Range expanded so the panel can reach the screen edge.
+	#背包栏横向微调，单位 GUI 像素。正数向右，负数向左。范围已放大，可以拖到屏幕边缘。
+	#Range: -1000 ~ 1000
+	panelXOffset = 5
+	#Fine vertical offset in GUI pixels. Positive moves down, negative moves up.
+	#背包栏纵向微调，单位 GUI 像素。正数向下，负数向上。
+	#Range: -1000 ~ 1000
+	panelYOffset = 36
+	#Visible storage rows in the side panel.
+	#侧边背包栏可见行数。
+	#Range: 2 ~ 12
+	visibleRows = 6
+	#Whether the backpack side panel starts hidden. Buttons remain visible.
+	#侧边背包栏是否默认隐藏。隐藏时仍显示移动/显示按钮。
+	panelHidden = true
+

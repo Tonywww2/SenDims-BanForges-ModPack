@@ -9,7 +9,8 @@
 	quest_links: [{
 		id: "7AF774538F76952E"
 		linked_quest: "52726CE2A2740BF7"
-		shape: "hexagon"
+		shape: "diamond"
+		size: 2.0d
 		x: 15.0d
 		y: -3.0d
 	}]
@@ -167,12 +168,14 @@
 		}
 		{
 			dependencies: ["64402F8CC5046FCE"]
+			description: ["注意：豆腐系列的拔刀剑由于过于脆弱，无法进行&l模块化改造&r！因此，它们只适合作为初期的过渡刀，在进入深境一层之后的维度后，伤害可能会严重不足。"]
 			id: "4EF8B289BDF7CCB3"
 			rewards: [{
 				id: "56879CDB6350CE12"
 				type: "xp"
 				xp: 100
 			}]
+			subtitle: "无法被改造"
 			tasks: [{
 				id: "2BCB67F0216161BE"
 				item: {
@@ -213,13 +216,14 @@
 		}
 		{
 			dependencies: ["3376AE50BC0EB9A5"]
-			description: ["中段的材料与过渡刀"]
+			description: ["注意：豆腐系列的拔刀剑由于过于脆弱，无法进行&l模块化改造&r！因此，它们只适合作为初期的过渡刀，在进入深境一层之后的维度后，伤害可能会严重不足。"]
 			id: "5F7850D2932BFCBF"
 			rewards: [{
 				id: "5105CECB81EA73D5"
 				item: "tofucraft:blocktofumetal"
 				type: "item"
 			}]
+			subtitle: "无法被改造"
 			tasks: [{
 				id: "053EA927325A1143"
 				item: {
@@ -264,7 +268,7 @@
 				"5D34C0BD08F21024"
 			]
 			dependency_requirement: "one_completed"
-			description: ["豆腐世界最终刀"]
+			description: ["注意：豆腐系列的拔刀剑由于过于脆弱，无法进行模块化改造！因此，它们只适合作为初期的过渡刀，在进入深境一层之后的维度后，伤害可能会严重不足。"]
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -333,7 +337,7 @@
 				item: "tofucraft:blocktofudiamond"
 				type: "item"
 			}]
-			shape: "diamond"
+			subtitle: "无法被改造"
 			tasks: [
 				{
 					id: "103FC8EDEB8609A1"
@@ -382,7 +386,7 @@
 		{
 			dependencies: ["6140B0BCEB7F9D64"]
 			dependency_requirement: "one_completed"
-			description: ["击败城堡的&a豆腐战神&r后获得&b【钻石豆腐升级】锻造模版&r"]
+			description: ["击败城堡的&a豆腐战神&r后获得&b 钻石豆腐升级 锻造模版&r"]
 			hide_dependency_lines: true
 			id: "5D34C0BD08F21024"
 			rewards: [{

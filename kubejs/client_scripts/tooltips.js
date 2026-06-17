@@ -24,6 +24,8 @@ ItemEvents.tooltip(event => {
     event.add('#slashblade:can_copy_sa', Text.translatable('info.kubejs.slashblade.can_copy_sa').color(Color.AQUA));
     event.add('#slashblade:can_copy_se', Text.translatable('info.kubejs.slashblade.can_copy_se').color(Color.AQUA));
 
+    event.add('tofucraft:blocktofugrilled', Text.translatable('info.kubejs.blocktofugrilled').color(Color.AQUA));
+
     event.add('nuclearcraft:analyzer', Text.translatable('info.kubejs.banned').color(Color.RED));
 
     event.add([

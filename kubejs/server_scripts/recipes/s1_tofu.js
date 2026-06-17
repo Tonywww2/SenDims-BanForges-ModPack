@@ -3,10 +3,14 @@ ServerEvents.recipes(event => {
     event.smelting('slashblade_sendims:estus_flask_0', ['kubejs:garden_lighter'])
         .id("sdbf:estus_flask_0_s1");
 
-    event.shapeless('tofucraft:blocktofugrilled', [
-        '#forge:cobblestone',
-        'minecraft:moss_block'
-    ]).id("sdbf:blocktofugrilled_s1")
+    event.smelting('tofucraft:blocktofugrilled', ['kubejs:moss_stone_tofu'])
+        .id("sdbf:blocktofugrilled_s1");
+
+    event.shapeless('kubejs:moss_stone_tofu', [
+        '2x #forge:seeds',
+        'minecraft:moss_block',
+        'dustandash:cobblestone_with_moss'
+    ]).id("sdbf:moss_stone_tofu_s1")
 
     event.shapeless('tofucraft:tofustick', [
         'kubejs:garden_lighter',

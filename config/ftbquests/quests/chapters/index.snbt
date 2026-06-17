@@ -297,7 +297,6 @@
 	quests: [
 		{
 			description: [
-				"这个章节是索引章节，可以帮助你快速定位到当前的进度"
 				""
 				""
 				"{image:sdbf:textures/gui/task_info.png width:195 height:91 align:center}"
@@ -317,7 +316,7 @@
 				id: "683003D90E47A802"
 				type: "checkmark"
 			}]
-			title: "索引章节+任务信息"
+			title: "任务信息"
 			x: -30.0d
 			y: 5.0d
 		}

@@ -25,6 +25,7 @@
 	]
 	quests: [
 		{
+			dependencies: ["0364B88DD91B2181"]
 			description: ["使用萤石作为门框材料，并用水桶点亮......"]
 			hide_dependent_lines: true
 			hide_until_deps_visible: true
@@ -632,6 +633,7 @@
 				"3E8E74B1D1E90894"
 				"6442E0C760FAF02B"
 			]
+			dependency_requirement: "one_completed"
 			description: ["这些变量卡有些特殊？"]
 			id: "0C568583CC58DAA6"
 			shape: "hexagon"
@@ -643,6 +645,21 @@
 			}]
 			x: 15.0d
 			y: -3.0d
+		}
+		{
+			dependencies: [
+				"5BB642BD0BE40541"
+				"3C1CB82ADF4FBBC1"
+			]
+			dependency_requirement: "one_completed"
+			id: "0364B88DD91B2181"
+			tasks: [{
+				id: "6D92B4A55FB0F70A"
+				item: "minecraft:glowstone"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
 		}
 	]
 	title: "天上天境"

@@ -24,6 +24,13 @@
 	quests: [
 		{
 			dependencies: ["5748351A76910019"]
+			description: [
+				"使用你的锤子&e右击&r工作台，工作台就会被转化为&b加工台&r。"
+				""
+				"将一些&b可以改造的工具&r置入其中（镐、斧、护甲、符合要求的拔刀剑等），就可以一个个的改造这件工具的&b部件&r。"
+				""
+				"使用更高级的材料可以使你的工具获得更好的属性。"
+			]
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -37,13 +44,13 @@
 					"FOT$energy": {
 						energy: 0
 					}
-					"double/basic_hammer_left_material": "basic_hammer/oak"
-					"double/basic_hammer_right_material": "basic_hammer/oak"
+					"double/basic_hammer_left_material": "basic_hammer/stone"
+					"double/basic_hammer_right_material": "basic_hammer/stone"
 					"double/basic_handle_material": "basic_handle/stick"
 					"double/handle": "double/basic_handle"
 					"double/head_left": "double/basic_hammer_left"
 					"double/head_right": "double/basic_hammer_right"
-					id: "9a72c58b-f86c-4735-a11c-3369aad1be58"
+					id: "dbf7f444-272f-42ae-81c1-ad5f2daeb022"
 				}
 			}
 			id: "514CF1593551F00F"
@@ -56,8 +63,30 @@
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
-				id: "18EA69125CB36FC4"
-				type: "checkmark"
+				id: "6ABC912339657639"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"fluxoftetra:fe": {
+							energy: 0
+						}
+					}
+					id: "tetra:modular_double"
+					tag: {
+						Damage: 0
+						"FOT$energy": {
+							energy: 0
+						}
+						"double/basic_hammer_left_material": "basic_hammer/stone"
+						"double/basic_hammer_right_material": "basic_hammer/stone"
+						"double/basic_handle_material": "basic_handle/stick"
+						"double/handle": "double/basic_handle"
+						"double/head_left": "double/basic_hammer_left"
+						"double/head_right": "double/basic_hammer_right"
+						id: "dbf7f444-272f-42ae-81c1-ad5f2daeb022"
+					}
+				}
+				type: "item"
 			}]
 			title: "锻造"
 			x: 0.0d
@@ -164,10 +193,10 @@
 		{
 			dependencies: ["514CF1593551F00F"]
 			description: [
-				"将你的拔刀置于加工台之上"
-				"展现你的技艺的时候到了！"
+				"将你的拔刀置于&b加工台&r之上，展现你的技艺的时候到了！"
 				""
-				"&7tip：前期那些过于基础的拔刀并不能进行改造，无铭「无名」是第一把可以被改造的拔刀剑。&m或许还有其他的妖刀&r"
+				"注意：前期那些&b过于基础的拔刀剑&r并不能进行改造，无铭「无名」是第一把可以被改造的拔刀剑。"
+				"&m或许还有其他的刀&r"
 			]
 			hide_until_deps_visible: true
 			icon: {
@@ -263,8 +292,9 @@
 		{
 			dependencies: ["514CF1593551F00F"]
 			description: [
-				"将护甲放入加工站"
-				"开始改造"
+				"将护甲放入&b加工台&r中，可以使用更好的材料&e改造&r护甲。"
+				""
+				"护甲对你的抗伤能力十分重要。如果你发现怪物的伤害过高，除了强化&b深境证章的生命值加成&r以外，还需要使用更好的材料&e改造&r护甲。"
 			]
 			icon: {
 				Count: 1
@@ -292,6 +322,11 @@
 				}
 			}
 			id: "3EDB392D42EA5AF0"
+			rewards: [{
+				id: "4D8D2E167B4A447E"
+				type: "xp"
+				xp: 100
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "66D617778BC78EE0"

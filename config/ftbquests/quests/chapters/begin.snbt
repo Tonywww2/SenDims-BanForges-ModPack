@@ -23,14 +23,15 @@
 		{
 			id: "37F9308A7B690DE9"
 			linked_quest: "765A0F0A66F45570"
-			x: 36.0d
+			x: 39.0d
 			y: 0.0d
 		}
 		{
 			id: "4413A8820A84AB93"
 			linked_quest: "71F1943E6E3FCA17"
 			shape: "diamond"
-			x: 42.0d
+			size: 2.0d
+			x: 45.0d
 			y: 0.0d
 		}
 		{
@@ -45,15 +46,15 @@
 			linked_quest: "5BB642BD0BE40541"
 			shape: "hexagon"
 			size: 2.0d
-			x: 42.0d
-			y: -3.0d
+			x: 48.0d
+			y: 0.0d
 		}
 		{
 			id: "167E4C5AEBEF9AD4"
 			linked_quest: "6140B0BCEB7F9D64"
 			shape: "hexagon"
 			size: 2.0d
-			x: 33.0d
+			x: 36.0d
 			y: 0.0d
 		}
 		{
@@ -61,13 +62,117 @@
 			linked_quest: "222077D4E6F647A3"
 			shape: "diamond"
 			size: 2.0d
-			x: 39.0d
+			x: 30.0d
 			y: -3.0d
+		}
+		{
+			id: "0C4CCBAE17D0696D"
+			linked_quest: "514CF1593551F00F"
+			shape: "diamond"
+			size: 2.0d
+			x: 9.0d
+			y: -6.0d
+		}
+		{
+			id: "52C5A4364DA3150F"
+			linked_quest: "51E136B4E1C27308"
+			shape: "diamond"
+			size: 2.0d
+			x: 15.0d
+			y: -6.0d
+		}
+		{
+			id: "38961D4CD9B5434F"
+			linked_quest: "540057998A3DBAFD"
+			x: 12.0d
+			y: -9.0d
+		}
+		{
+			id: "6FE41F8F07813E22"
+			linked_quest: "371880BF8A2A75FC"
+			x: 12.0d
+			y: -6.0d
+		}
+		{
+			id: "1C92B13CE2E3415C"
+			linked_quest: "1379B8D98C84F257"
+			x: 15.0d
+			y: -3.0d
+		}
+		{
+			id: "3123289EAAB1F36F"
+			linked_quest: "3EDB392D42EA5AF0"
+			shape: "diamond"
+			size: 2.0d
+			x: 9.0d
+			y: -9.0d
+		}
+		{
+			id: "4F16C21D034E197B"
+			linked_quest: "6AE2EFEC0F3BE4BE"
+			x: 51.0d
+			y: 0.0d
+		}
+		{
+			id: "2EB080C162AB459A"
+			linked_quest: "3C1CB82ADF4FBBC1"
+			shape: "hexagon"
+			size: 2.0d
+			x: 54.0d
+			y: 0.0d
+		}
+		{
+			id: "2A3209D264A20CD3"
+			linked_quest: "0364B88DD91B2181"
+			x: 51.0d
+			y: -3.0d
+		}
+		{
+			id: "586559DF6AFDAFEB"
+			linked_quest: "0F8DC1AEBBC762C1"
+			shape: "hexagon"
+			size: 2.0d
+			x: 54.0d
+			y: -3.0d
+		}
+		{
+			id: "5525800A67BE1EC7"
+			linked_quest: "750B557031EFBBEE"
+			x: 51.0d
+			y: -6.0d
+		}
+		{
+			id: "1D43057B8DCAD655"
+			linked_quest: "5D5BA71C5348297D"
+			shape: "hexagon"
+			size: 2.0d
+			x: 54.0d
+			y: -6.0d
+		}
+		{
+			id: "72A801C267A1D0EF"
+			linked_quest: "26B66FFB1E5C691C"
+			x: 9.0d
+			y: 6.0d
+		}
+		{
+			id: "63777C0D8711BC79"
+			linked_quest: "7EE0F0E7324E3356"
+			x: 12.0d
+			y: 6.0d
+		}
+		{
+			id: "15CBFCFDA2B50623"
+			linked_quest: "29BDBE467B479C35"
+			shape: "diamond"
+			x: 15.0d
+			y: 6.0d
 		}
 	]
 	quests: [
 		{
 			description: ["记得先拿好箱子里面的锤子吧"]
+			hide_dependent_lines: true
 			icon: "minecraft:moss_block"
 			id: "62C0631125654B3D"
 			rewards: [
@@ -296,6 +401,7 @@
 				type: "choice"
 			}]
 			shape: "diamond"
+			size: 2.0d
 			subtitle: "重要|深境"
 			tasks: [{
 				id: "2A02FB0F98EFCFAB"
@@ -306,7 +412,7 @@
 				}
 				type: "item"
 			}]
-			x: 39.0d
+			x: 42.0d
 			y: 0.0d
 		}
 		{
@@ -316,7 +422,7 @@
 				""
 				"围绕不同的构筑，你打开了第一扇传送门"
 				""
-				"怎么出发？&b世界目录&r会给予你答案"
+				"怎么出发？&b后续的任务&r和&b世界索引&r会给予你答案"
 			]
 			icon: "kubejs:garden_lighter"
 			id: "0B0F1D8BE89F8980"
@@ -394,9 +500,8 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["52726CE2A2740BF7"]
+			dependencies: ["5BB642BD0BE40541"]
 			dependency_requirement: "one_completed"
-			description: ["提示：推荐在深境一层挖掘铁矿"]
 			id: "73531FB69122489F"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -404,13 +509,12 @@
 				table_id: 7214542327696130213L
 				type: "loot"
 			}]
-			subtitle: "原始工业"
 			tasks: [{
 				id: "19D50CF451B4F924"
 				item: "minecraft:iron_ingot"
 				type: "item"
 			}]
-			x: 36.0d
+			x: 51.0d
 			y: 3.0d
 		}
 		{
@@ -436,7 +540,7 @@
 		}
 		{
 			dependencies: ["5748351A76910019"]
-			description: ["原始空岛有小概率刷新恶魔眼，获得恶魔眼球并击败该BOSS后才能获得后面的召唤器"]
+			description: ["原始空岛有极小概率刷新恶魔眼。"]
 			icon: "terra_entity:suspicious_looking_eye"
 			id: "76DEBD32F9E5F5C5"
 			rewards: [{
@@ -542,7 +646,7 @@
 				type: "checkmark"
 			}]
 			title: "结构召唤仪式"
-			x: 30.0d
+			x: 33.0d
 			y: 0.0d
 		}
 		{
@@ -563,8 +667,8 @@
 				type: "checkmark"
 			}]
 			title: "返回仪式"
-			x: 30.0d
-			y: 3.0d
+			x: 33.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["73531FB69122489F"]
@@ -624,7 +728,7 @@
 				}
 			]
 			title: "简易村民"
-			x: 36.0d
+			x: 51.0d
 			y: 6.0d
 		}
 		{
@@ -658,7 +762,7 @@
 					type: "item"
 				}
 			]
-			x: 39.0d
+			x: 54.0d
 			y: 6.0d
 		}
 		{
@@ -679,7 +783,7 @@
 				item: "easy_villagers:breeder"
 				type: "item"
 			}]
-			x: 39.0d
+			x: 54.0d
 			y: 9.0d
 		}
 		{
@@ -695,7 +799,7 @@
 				item: "easy_villagers:incubator"
 				type: "item"
 			}]
-			x: 39.0d
+			x: 54.0d
 			y: 3.0d
 		}
 		{
@@ -745,15 +849,21 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["0B0F1D8BE89F8980"]
-			description: ["注意：烤豆腐块可以使用特殊的配方合成。"]
+			dependencies: ["032BDE012A2E0222"]
+			dependency_requirement: "one_completed"
+			description: [
+				"使用两个任意的种子、一个苔藓块、一个苔藓复合圆石，可以制作一块苔藓毛豆石豆腐块。"
+				""
+				"可以在熔炉内将苔藓毛豆石豆腐块烧制成烤豆腐块。"
+			]
 			id: "1CABE32AC23C7BDE"
+			subtitle: "烧制！"
 			tasks: [{
 				id: "42B54E335A2A751B"
 				item: "tofucraft:blocktofugrilled"
 				type: "item"
 			}]
-			x: 27.0d
+			x: 30.0d
 			y: 0.0d
 		}
 		{
@@ -775,14 +885,13 @@
 				xp: 100
 			}]
 			shape: "diamond"
-			size: 2.0d
 			tasks: [{
 				id: "5A8937EB42D47311"
 				type: "checkmark"
 			}]
 			title: "深境证章省流"
 			x: 42.0d
-			y: 3.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["71F1943E6E3FCA17"]
@@ -807,13 +916,48 @@
 				xp: 100
 			}]
 			shape: "diamond"
-			size: 2.0d
 			tasks: [{
 				id: "4FF8F9B531AF83AB"
 				type: "checkmark"
 			}]
 			title: "战斗力提升的方式"
 			x: 45.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["62C0631125654B3D"]
+			description: [
+				"对一个物品按R键，可以查看它的制作配方/来源。"
+				""
+				"对一个物品按U键，可以查看它作为合成原料的成品/用途。"
+				""
+				"大多数物品通常都有多种来源/用途，可以在顶部的标签页切换配方类型显示。"
+			]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "0A8EC9EE7934E1C0"
+			tasks: [{
+				id: "0029C2D3937207AD"
+				type: "checkmark"
+			}]
+			title: "JEI的简单说明"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0B0F1D8BE89F8980"]
+			description: [
+				"使用两个任意的种子、一个苔藓块、一个苔藓复合圆石，可以制作一块苔藓毛豆石豆腐块。"
+				""
+				"可以在熔炉内将苔藓毛豆石豆腐块烧制成烤豆腐块。"
+			]
+			id: "032BDE012A2E0222"
+			subtitle: "这还能吃吗？"
+			tasks: [{
+				id: "13C9DD3D22F40A11"
+				item: "kubejs:moss_stone_tofu"
+				type: "item"
+			}]
+			x: 27.0d
 			y: 0.0d
 		}
 	]

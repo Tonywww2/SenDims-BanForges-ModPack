@@ -279,15 +279,33 @@
 		{
 			dependencies: ["66C1156C17F399C9"]
 			id: "03405BC60C3EFA99"
-			rewards: [{
-				id: "767E7FE92C055F17"
-				item: {
-					Count: 1
-					id: "thermal:wrench"
-					tag: { }
+			rewards: [
+				{
+					id: "767E7FE92C055F17"
+					item: {
+						Count: 1
+						id: "thermal:wrench"
+						tag: { }
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "14BA50FA22774774"
+					item: {
+						Count: 1
+						id: "thermal:energy_cell"
+						tag: {
+							BlockEntityTag: {
+								Energy: 0
+								EnergyMax: 1000000
+								EnergyRecv: 1000
+								EnergySend: 1000
+							}
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "124E52EE0ACCEC94"
 				item: "thermal:machine_frame"
@@ -1539,6 +1557,17 @@
 			}]
 			x: 2.5d
 			y: 0.0d
+		}
+		{
+			dependencies: ["03405BC60C3EFA99"]
+			id: "34CE572668632D8E"
+			tasks: [{
+				id: "5560574D72EBCDE6"
+				item: "thermal:energy_duct"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 15.0d
 		}
 	]
 	title: "工业"

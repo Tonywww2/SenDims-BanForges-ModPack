@@ -2,11 +2,11 @@
     "item.deep_aether.squall_plate": "风锻板",
     "item.deep_aether.metal_mixture": "天晶混合锭",
 
-    "item.kubejs.alpha_dust": "§aα 尘",
-    "item.kubejs.beta_dust": "§bβ 尘",
-    "item.kubejs.gamma_dust": "§cγ 尘",
-    "item.kubejs.delta_dust": "§dδ 尘",
-    "item.kubejs.epsilon_dust": "§eε 尘",
+    "item.kubejs.alpha_dust": "§aα 尘§r",
+    "item.kubejs.beta_dust": "§bβ 尘§r",
+    "item.kubejs.gamma_dust": "§cγ 尘§r",
+    "item.kubejs.delta_dust": "§dδ 尘§r",
+    "item.kubejs.epsilon_dust": "§eε 尘§r",
 
     "item.kubejs.garden_lighter": "花园火石",
     "item.kubejs.bedrock_breaker": "基岩破坏者",
@@ -32,12 +32,13 @@
     "item.kubejs.chaotic_truth": "混沌真理",
     "item.kubejs.radiation_components": "辐射零件组",
     "item.kubejs.basepoint_alloy": "奇点合金",
-    "item.kubejs.virtual_gold_ingot": "§a虚金锭",
-    "item.kubejs.trinity_alloy_ingot": "§m§d三项合金锭",
+    "item.kubejs.virtual_gold_ingot": "§a虚金锭§r",
+    "item.kubejs.trinity_alloy_ingot": "§m§d三项合金锭§r",
     "item.kubejs.rainbowshift_entropy": "虹移之熵",
 
     "item.slashbladetetra.slashblade": "无铭 ⌈无名⌋",
 
+    "block.kubejs.moss_stone_tofu": "苔藓毛豆石豆腐块",
     "block.kubejs.asteroid_rock": "小行星岩",
     "block.kubejs.carbon_rich_asteroid_rock": "富碳小行星岩",
     "block.kubejs.silica_rich_asteroid_rock": "富硅小行星岩",
@@ -67,6 +68,7 @@
     "info.kubejs.anchor_shard": "使用后，可以突破主世界天空中的屏障",
     "info.kubejs.chaotic_truth": "击败特定纬度的神化首领后概率掉落",
     "info.kubejs.gem_ticket": "使用后，随机获得一个宝石",
+    "info.kubejs.blocktofugrilled": "烧制一些种类的豆腐块后获得",
 
     "info.kubejs.banned": "已禁用",
 

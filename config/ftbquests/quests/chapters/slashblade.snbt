@@ -502,6 +502,7 @@
 				item: "minecraft:bamboo"
 				type: "item"
 			}]
+			subtitle: "无法被改造"
 			tasks: [
 				{
 					id: "1A8F2A07FC34EBC5"
@@ -825,8 +826,9 @@
 			]
 			description: ["到这里才是自定义刀剑的开始！"]
 			id: "371880BF8A2A75FC"
-			shape: "hexagon"
+			shape: "diamond"
 			size: 2.0d
+			subtitle: "自定义刀剑的开始"
 			tasks: [{
 				id: "5EA07B8440874AF4"
 				item: {
@@ -1095,8 +1097,8 @@
 		}
 		{
 			dependencies: ["4A57E4499E188BD7"]
-			hide_dependency_lines: true
 			id: "1379B8D98C84F257"
+			subtitle: "可被改造"
 			tasks: [{
 				id: "245523A0A191D2F2"
 				item: {
@@ -1112,7 +1114,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: 2.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["6FD736B74327F2AF"]
@@ -1506,6 +1508,7 @@
 		{
 			dependencies: ["418F8A9D369B522C"]
 			id: "540057998A3DBAFD"
+			subtitle: "可被改造"
 			tasks: [{
 				id: "08D033DDB93275D1"
 				item: {
