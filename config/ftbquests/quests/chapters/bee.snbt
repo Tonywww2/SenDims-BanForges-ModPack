@@ -1,5 +1,5 @@
 {
-	autofocus_id: "30DE16501355251E"
+	autofocus_id: "30B600C449451F58"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "bee"
@@ -8,17 +8,81 @@
 	id: "68C9AE33C87E79A6"
 	order_index: 2
 	quest_links: [ ]
-	quests: [{
-		dependencies: ["3A267848CC75F232"]
-		id: "30DE16501355251E"
-		subtitle: "TBD"
-		tasks: [{
-			id: "7CC0C8C8F29ADC25"
-			item: "minecraft:beehive"
-			type: "item"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			dependencies: ["30B600C449451F58"]
+			id: "30DE16501355251E"
+			tasks: [{
+				id: "7CC0C8C8F29ADC25"
+				item: "minecraft:beehive"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			description: ["可以通过在鲜花旁边催熟特定种类的树苗（橡树、白桦、樱花）概率获得。"]
+			hide_dependent_lines: true
+			id: "30B600C449451F58"
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "植树节！"
+			tasks: [{
+				icon: "minecraft:bee_nest"
+				id: "55F7F48DC87C1D4D"
+				observe_type: 0
+				timer: 0L
+				to_observe: "minecraft:bee_nest"
+				type: "observation"
+			}]
+			title: "观察：蜂巢"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["30B600C449451F58"]
+			id: "471452080B232F27"
+			tasks: [{
+				id: "09369BC3A9532561"
+				item: "productivebees:upgrade_base"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["471452080B232F27"]
+			id: "5CBF48D154C47731"
+			tasks: [{
+				id: "4CE79029046F9544"
+				item: "productivebees:breeding_chamber"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["30B600C449451F58"]
+			id: "6EAEAA3BBD93B53E"
+			tasks: [{
+				id: "1E56B3DD469E0159"
+				item: "productivebees:incubator"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["30B600C449451F58"]
+			id: "30DBB9DFC29AC961"
+			tasks: [{
+				id: "50A584592DE05E92"
+				item: "productivebees:centrifuge"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.0d
+		}
+	]
 	title: "蜜蜂养殖"
 }

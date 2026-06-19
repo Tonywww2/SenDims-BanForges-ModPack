@@ -51,6 +51,7 @@ const toRemoveID = new Set([
     "slashblade:tagayasan",
     "deep_aether:stratus_ingot",
     "nuclearcraft:analyzer",
+    "the_bumblezone:sticky_honey_residue/from_smelting_honey_block",
 
     "sophisticatedbackpacks:backpack",
     "sophisticatedbackpacks:iron_backpack",

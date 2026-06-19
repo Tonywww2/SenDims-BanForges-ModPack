@@ -39,7 +39,11 @@
 	quests: [
 		{
 			dependencies: ["28CAD1DD57B60440"]
-			description: ["需要佩戴一个&b特殊的饰品&r（请查看前置任务）。"]
+			description: [
+				"在深境一层使用&b末影之眼&r寻找要塞。"
+				""
+				"需要佩戴一个&b特殊的饰品&r（请查看前置任务）。"
+			]
 			hide_dependent_lines: true
 			hide_until_deps_complete: true
 			id: "0A68F5EE8F25F036"

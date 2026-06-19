@@ -1,0 +1,28 @@
+{
+    "pools":
+    [
+        {
+            "name": "drop_tofu_ishi",
+            "rolls": 1,
+            "entries":
+            [
+                {
+                    "type": "minecraft:item",
+                    "name": "tofucraft:blocktofuishi",
+                    "functions":
+                    [
+                        {
+                            "function": "minecraft:set_count",
+                            "count":
+                            {
+                                "type": "minecraft:uniform",
+                                "min": 1,
+                                "max": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -118,7 +118,7 @@
 			linked_quest: "3C1CB82ADF4FBBC1"
 			shape: "hexagon"
 			size: 2.0d
-			x: 54.0d
+			x: 60.0d
 			y: 0.0d
 		}
 		{
@@ -132,7 +132,7 @@
 			linked_quest: "0F8DC1AEBBC762C1"
 			shape: "hexagon"
 			size: 2.0d
-			x: 54.0d
+			x: 60.0d
 			y: -3.0d
 		}
 		{
@@ -146,7 +146,7 @@
 			linked_quest: "5D5BA71C5348297D"
 			shape: "hexagon"
 			size: 2.0d
-			x: 54.0d
+			x: 60.0d
 			y: -6.0d
 		}
 		{
@@ -167,6 +167,28 @@
 			shape: "diamond"
 			x: 15.0d
 			y: 6.0d
+		}
+		{
+			id: "0D09F404AEF7B769"
+			linked_quest: "0A6BF4C8A75EF242"
+			x: 54.0d
+			y: 3.0d
+		}
+		{
+			id: "383B751440AD9984"
+			linked_quest: "4A6CCBA361F14167"
+			shape: "diamond"
+			size: 2.0d
+			x: 57.0d
+			y: 3.0d
+		}
+		{
+			id: "304B55FB32102ECA"
+			linked_quest: "3A897B2A72ABC032"
+			shape: "diamond"
+			size: 2.0d
+			x: 60.0d
+			y: 3.0d
 		}
 	]
 	quests: [
@@ -763,7 +785,7 @@
 				}
 			]
 			x: 54.0d
-			y: 6.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["6E4D6662243ED7F6"]
@@ -784,7 +806,7 @@
 				type: "item"
 			}]
 			x: 54.0d
-			y: 9.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["6E4D6662243ED7F6"]
@@ -800,7 +822,7 @@
 				type: "item"
 			}]
 			x: 54.0d
-			y: 3.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["62C0631125654B3D"]
@@ -959,6 +981,22 @@
 			}]
 			x: 27.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["62C0631125654B3D"]
+			description: [
+				"圆角方形：普通任务、普通节点。"
+				"菱形：重要任务，通常包含重要的信息，或者任务道具本身十分重要。"
+			]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "1A6C2C2203C27C5F"
+			tasks: [{
+				id: "4ACE8AB0BB6A60A6"
+				type: "checkmark"
+			}]
+			title: "任务形状的含义"
+			x: 3.0d
+			y: -3.0d
 		}
 	]
 	title: "起始之空岛"

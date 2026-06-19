@@ -12,29 +12,29 @@
 	#If true, will add fixed-height maps to the game, craftable with a normal map and an iron nugget.
 	#These maps always use the configurable fixed heights.
 	#If false, the maps will still be craftable, but will not work. Default: false
-	"Enable Fixed Maps" = false
+	"Enable Fixed Maps" = true
 	#Add dimensions' fixed scan heights.
 	#Note that in the Nether, values under 22 allow for Ancient Debris cheese.
 	#Example: ["minecraft:the_nether,70","undergarden:undergarden,120"]
-	"dimension list" = ["minecraft:the_nether,70"]
+	"dimension list" = ["minecraft:the_nether,70", "sdbf:deep_realm_level_1,150"]
 
 ["Snap-Height Map Settings"]
 	#If true, will add snap-height maps to the game, craftable with a normal map and redstone.
 	#These maps always use the configurable snap heights.
 	#If false, the maps will still be craftable, but will not work. Default: false
-	"Enable Snap Maps" = false
+	"Enable Snap Maps" = true
 	#Add dimensions' snap scan heights.
 	#You can specify multiple heights per dimension.
 	#This is good for mapping a dimension in multiple fixed layers.
 	#Note that in the Nether, values under 22 allow for Ancient Debris cheese.
 	#Example: ["minecraft:the_nether,40,70,100","undergarden:undergarden,60,120,180"]
-	"dimension list" = ["minecraft:the_nether,40,70,100"]
+	"dimension list" = ["minecraft:the_nether,40,70,100", "sdbf:deep_realm_level_1,11,150,250"]
 
 ["Variable-Height Map Settings"]
 	#If true, will add variable-height maps to the game, craftable with a normal map and lapis.
 	#These maps always use the height they are created at.
 	#If false, the maps will still be craftable, but will not work. Default: false
-	"Enable Variable Maps" = false
+	"Enable Variable Maps" = true
 	#Add minimum allowed y-values for variable-height maps.
 	#It is recommended to set this to at least 22 in the Nether to avoid Ancient Debris cheese.
 	#Minima can never be less than -64.

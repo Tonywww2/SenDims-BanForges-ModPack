@@ -49,3 +49,8 @@ JEIEvents.hideItems(event => {
 
     event.hide('cataclysm:blazing_grips');
 })
+
+JEIEvents.removeCategories(event => {
+    // console.log(event.categoryIds) //log a list of all category ids to logs/kubejs/client.txt
+    event.remove('tofucraft:harden')
+})

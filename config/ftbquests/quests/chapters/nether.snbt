@@ -461,6 +461,7 @@
 				"2B54682ADC820C2A"
 			]
 			dependency_requirement: "one_completed"
+			description: ["前往这个世界的基岩层......"]
 			id: "0936AB2DCC0172A8"
 			tasks: [{
 				id: "10B39805EEEBF4FC"
@@ -469,6 +470,67 @@
 			}]
 			x: -3.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["5251AFEDB9C97974"]
+			id: "5189F5C67CC54B72"
+			tasks: [{
+				id: "2906976E31321A38"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["5189F5C67CC54B72"]
+			id: "1AD9019A80B12C4E"
+			shape: "diamond"
+			subtitle: "扫描周围的物体"
+			tasks: [{
+				id: "3F71B13F44B4C5B4"
+				item: {
+					Count: 1
+					id: "scannable:scanner"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["1AD9019A80B12C4E"]
+			id: "1B19EF873F542451"
+			tasks: [{
+				id: "288471730FC37F6E"
+				item: "scannable:block_module"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["1AD9019A80B12C4E"]
+			id: "0C7050A9FB048DBC"
+			tasks: [{
+				id: "1E7F7EFD38FCA754"
+				item: "scannable:range_module"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["1AD9019A80B12C4E"]
+			id: "78371E638426F18C"
+			tasks: [{
+				id: "5EC5B8E578E142E5"
+				item: "scannable:chest_module"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 21.0d
 		}
 	]
 	title: "入地狱"

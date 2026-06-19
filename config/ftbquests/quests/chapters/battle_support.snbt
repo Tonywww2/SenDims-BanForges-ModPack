@@ -1125,12 +1125,13 @@
 		{
 			dependencies: ["3864617F2C8F7BE0"]
 			id: "2597F04F3F0DAEB8"
+			subtitle: "TBD"
 			tasks: [{
 				id: "1057F43BEB834ADF"
 				item: "apotheosis:ancient_material"
 				type: "item"
 			}]
-			x: 9.0d
+			x: 18.0d
 			y: 15.0d
 		}
 		{

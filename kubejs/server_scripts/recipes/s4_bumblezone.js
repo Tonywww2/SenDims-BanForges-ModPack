@@ -1,5 +1,7 @@
 ServerEvents.recipes(event => {
 
+    sqRecipe(event, "the_bumblezone:throne_pillar", 'the_bumblezone:honey_compass', 0, "s4");
+
     event.shaped('slashblade_sendims:the_nectar_quest', [
         'ABA',
         'CDC',

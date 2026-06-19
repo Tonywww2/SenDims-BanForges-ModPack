@@ -1,6 +1,6 @@
 [
     {
-        "key": "break_toufu_action",
+        "key": "break_tofuishi_action",
         "requirement":
         {
             "items":
@@ -13,5 +13,35 @@
             "hammer_dig": 2
         },
         "lootTable": "tetra:actions/toufu"
+    },
+    {
+        "key": "break_tofukinu_action",
+        "requirement":
+        {
+            "items":
+            [
+                "tofucraft:blocktofukinu"
+            ]
+        },
+        "requiredTools":
+        {
+            "hammer_dig": 2
+        },
+        "lootTable": "tetra:actions/toufu_shi"
+    },
+    {
+        "key": "break_tofumomen_action",
+        "requirement":
+        {
+            "items":
+            [
+                "tofucraft:blocktofumomen"
+            ]
+        },
+        "requiredTools":
+        {
+            "hammer_dig": 2
+        },
+        "lootTable": "tetra:actions/toufu_shi"
     }
 ]

@@ -1,0 +1,63 @@
+{
+  "replace": true,
+  "type": "deep_aether:aether_dungeon_loot",
+    "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "aether:chests/dungeon/silver/silver_dungeon_reward"
+    }
+  ],
+  "chanceToSpawn": 0.0,
+  "items": [
+    {
+      "data": {
+        "Count": 2,
+        "id": "deep_aether:skyjade"
+      },
+      "weight": 45
+    },
+    {
+      "data": {
+        "Count": 1,
+        "id": "deep_aether:stratus_ingot"
+      },
+      "weight": 10
+    },
+    {
+      "data": {
+        "Count": 1,
+        "id": "deep_aether:sterling_aercloud"
+      },
+      "weight": 15
+    },
+    {
+      "data": {
+        "Count": 1,
+        "id": "deep_aether:stratus_smithing_template"
+      },
+      "weight": 25
+    },
+    {
+      "data": {
+        "Count": 1,
+        "id": "deep_aether:music_disc_faent"
+      },
+      "weight": 40
+    },
+    {
+      "data": {
+        "Count": 1,
+        "id": "ancient_aether:valkyrum"
+      },
+      "weight": 60
+    },
+    {
+      "data": {
+        "Count": 3,
+        "id": "aether_treasure_reforging:valkyrum_ingot"
+      },
+      "weight": 60
+    }
+  ],
+  "totalWeight": 20
+}

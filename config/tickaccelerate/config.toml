@@ -7,4 +7,10 @@ performance_tuning = {}
 	enabled = true
 	#Show a warning when using the mod in singleplayer.
 	singleplayer-warning = true
+	#Enable automatic update checks.
+	automatic-updater = true
+
+#Enable or disable specific acceleration features.
+[acceleration_modules]
+	block_entity = false
 

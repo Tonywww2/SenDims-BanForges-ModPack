@@ -18,14 +18,14 @@
 			id: "7483981BDC9935E5"
 			linked_quest: "2563ABCEC67C3877"
 			shape: "diamond"
-			x: 9.0d
+			x: 15.0d
 			y: 3.0d
 		}
 		{
 			id: "4614C32155EBEA48"
 			linked_quest: "28CAD1DD57B60440"
 			shape: "hexagon"
-			x: 9.0d
+			x: 15.0d
 			y: -3.0d
 		}
 		{
@@ -33,7 +33,7 @@
 			linked_quest: "0A68F5EE8F25F036"
 			shape: "hexagon"
 			size: 2.0d
-			x: 18.0d
+			x: 21.0d
 			y: -3.0d
 		}
 		{
@@ -41,7 +41,7 @@
 			linked_quest: "35A8F36675442F8B"
 			shape: "hexagon"
 			size: 2.0d
-			x: 15.0d
+			x: 18.0d
 			y: 0.0d
 		}
 	]
@@ -86,7 +86,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 12.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -110,7 +110,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 9.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -133,7 +133,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 9.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -182,7 +182,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 9.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -206,7 +206,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 12.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["5D12434757A0C28F"]
@@ -226,7 +226,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 6.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -248,7 +248,7 @@
 				}
 				type: "item"
 			}]
-			x: 6.0d
+			x: 3.0d
 			y: 12.0d
 		}
 		{
@@ -318,7 +318,7 @@
 			}]
 			title: "被遗忘的图书馆"
 			x: 6.0d
-			y: 6.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["2E482B871B147DC6"]
@@ -351,7 +351,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 9.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["2E482B871B147DC6"]
@@ -384,7 +384,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 6.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -404,7 +404,7 @@
 				item: "kubejs:scoria_ingot"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 9.0d
 			y: 0.0d
 		}
 		{
@@ -415,8 +415,8 @@
 				item: "midnight:rendium_shard"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 3.0d
+			x: 12.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -432,7 +432,7 @@
 				item: "undergarden:catalyst"
 				type: "item"
 			}]
-			x: 9.0d
+			x: 15.0d
 			y: 0.0d
 		}
 	]

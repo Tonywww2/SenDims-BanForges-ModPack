@@ -380,13 +380,18 @@
     "tetra.material.radiation_components": "辐射零件组",
     "tetra.material.radiation_components.prefix": "辐射零件组",
 
-    "tetra.break_toufu_action.label": "手动压制",
+    "tetra.break_tofuishi_action.label": "手动压制",
+    "tetra.break_tofumomen_action.label": "手动压制",
+    "tetra.break_tofukinu_action.label": "手动压制",
     
     "fluid.kubejs.melted_proudsoul": "熔融耀魂",
     "item.kubejs.melted_proudsoul_bucket": "熔融耀魂桶",
 
     "sidebar_button.ftblibrary.home": "回家",
     "sidebar_button.ftblibrary.back": "返回上个传送点",
+
+    "attribute.name.sbsd.magic_resistance.desc": "百分比降低受到的魔法伤害。",
+    "attribute.name.sbsd.magic_penetration.desc": "对目标的魔法抗性进行固定的穿透。",
 
     "kubejs.difficulty.title": "===== 难度选择 =====",
 

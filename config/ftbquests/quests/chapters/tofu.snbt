@@ -98,7 +98,11 @@
 		}
 		{
 			dependencies: ["6140B0BCEB7F9D64"]
-			description: ["砍下一颗豆腐树，然后压制石豆腐块。"]
+			description: [
+				"砍下一颗豆腐树，然后压制石豆腐块。"
+				""
+				"如果你找不到&b石豆腐块&r，可以将&b嫩豆腐块&r或者&b豆腐块&r放入&b加工台&r锻打。"
+			]
 			icon: "tofucraft:blocktofuishi"
 			id: "64402F8CC5046FCE"
 			rewards: [{
@@ -151,7 +155,7 @@
 				"64402F8CC5046FCE"
 			]
 			dependency_requirement: "one_completed"
-			description: ["如果你觉得等待石豆腐块压制成钢豆腐的过程太慢的话，可以将石豆腐块放入&b加工台&r锻打。"]
+			description: ["将&b石豆腐块&r放入&b加工台&r锻打。"]
 			id: "3376AE50BC0EB9A5"
 			rewards: [{
 				id: "1FF3FE646FBB83F5"

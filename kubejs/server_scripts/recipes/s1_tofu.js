@@ -6,6 +6,9 @@ ServerEvents.recipes(event => {
     event.smelting('tofucraft:blocktofugrilled', ['kubejs:moss_stone_tofu'])
         .id("sdbf:blocktofugrilled_s1");
 
+    event.smelting('tofucraft:blocktofumomen', ['tofucraft:tofu_terrain', 'tofucraft:blocktofuzunda'])
+        .id("sdbf:blocktofumomen_s1");
+
     event.shapeless('kubejs:moss_stone_tofu', [
         '2x #forge:seeds',
         'minecraft:moss_block',
