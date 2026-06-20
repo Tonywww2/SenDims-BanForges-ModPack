@@ -502,6 +502,7 @@
 			dependencies: ["0A6BF4C8A75EF242"]
 			id: "4A6CCBA361F14167"
 			rewards: [{
+				count: 2
 				id: "0CFD7A0DFA646C0D"
 				item: "minecraft:ender_pearl"
 				type: "item"
@@ -524,9 +525,10 @@
 			dependencies: ["4A6CCBA361F14167"]
 			id: "3A897B2A72ABC032"
 			rewards: [{
-				id: "1C6723E6220CB21C"
-				type: "xp"
-				xp: 100
+				exclude_from_claim_all: true
+				id: "5BE5A66535640846"
+				table_id: 2163174655912441002L
+				type: "choice"
 			}]
 			shape: "diamond"
 			tasks: [{
@@ -1552,6 +1554,12 @@
 		{
 			dependencies: ["73531FB69122489F"]
 			id: "0A6BF4C8A75EF242"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "59CBB642687C34C5"
+				table_id: 2163174655912441002L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "30294753B72371D0"
 				item: "minecraft:ender_pearl"

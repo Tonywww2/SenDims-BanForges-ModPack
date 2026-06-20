@@ -34,11 +34,6 @@
 			hide_until_deps_visible: true
 			icon: "tofucraft:blocktofuishi"
 			id: "6140B0BCEB7F9D64"
-			rewards: [{
-				id: "35A4D69A7AC21FB4"
-				type: "xp"
-				xp: 100
-			}]
 			size: 2.0d
 			tasks: [
 				{

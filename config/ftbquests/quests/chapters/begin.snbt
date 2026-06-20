@@ -11,13 +11,13 @@
 		{
 			id: "7379FE5C64FC6241"
 			linked_quest: "6FD736B74327F2AF"
-			x: 9.0d
+			x: 12.0d
 			y: -3.0d
 		}
 		{
 			id: "40D3BA256430AF4B"
 			linked_quest: "4A57E4499E188BD7"
-			x: 12.0d
+			x: 15.0d
 			y: -3.0d
 		}
 		{
@@ -78,25 +78,25 @@
 			linked_quest: "51E136B4E1C27308"
 			shape: "diamond"
 			size: 2.0d
-			x: 15.0d
+			x: 18.0d
 			y: -6.0d
 		}
 		{
 			id: "38961D4CD9B5434F"
 			linked_quest: "540057998A3DBAFD"
-			x: 12.0d
+			x: 15.0d
 			y: -9.0d
 		}
 		{
 			id: "6FE41F8F07813E22"
 			linked_quest: "371880BF8A2A75FC"
-			x: 12.0d
+			x: 15.0d
 			y: -6.0d
 		}
 		{
 			id: "1C92B13CE2E3415C"
 			linked_quest: "1379B8D98C84F257"
-			x: 15.0d
+			x: 18.0d
 			y: -3.0d
 		}
 		{
@@ -189,6 +189,14 @@
 			size: 2.0d
 			x: 60.0d
 			y: 3.0d
+		}
+		{
+			id: "56C9A6736855924D"
+			linked_quest: "06BB0C2EB2A5B5A1"
+			shape: "diamond"
+			size: 2.0d
+			x: 9.0d
+			y: -3.0d
 		}
 	]
 	quests: [
@@ -418,8 +426,8 @@
 			id: "52726CE2A2740BF7"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "7C2CC2A6EF19C2DD"
-				table_id: 7214542327696130213L
+				id: "2CC03E7E229C6BE2"
+				table_id: 2163174655912441002L
 				type: "choice"
 			}]
 			shape: "diamond"
@@ -660,6 +668,12 @@
 			hide_dependent_lines: true
 			icon: "ae2:fluix_pearl"
 			id: "034D47E905861E48"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2E7747E71CC14DC1"
+				table_id: 2163174655912441002L
+				type: "choice"
+			}]
 			shape: "diamond"
 			size: 2.0d
 			subtitle: "重要"
@@ -682,6 +696,12 @@
 			]
 			icon: "minecraft:grass_block"
 			id: "0191BEFB99BFD5D5"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3D6585D9C8DC3764"
+				table_id: 2163174655912441002L
+				type: "choice"
+			}]
 			shape: "diamond"
 			size: 2.0d
 			tasks: [{

@@ -64,6 +64,7 @@ const toRemoveID = new Set([
     "aether_treasure_reforging:pyral_ingot_from_smelting",
     "aether_treasure_reforging:valkyrum_ingot_from_smelting",
     "aether_treasure_reforging:neptune_mesh_from_smelting",
+    "slashblade_addon:aquablaze",
 
     "sjap_adder:dragon_fire",
     "sjap_adder:dragon_ice",

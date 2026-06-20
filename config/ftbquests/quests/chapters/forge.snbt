@@ -279,11 +279,70 @@
 				}
 			}
 			id: "51E136B4E1C27308"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4173E4BB81ED901C"
+				table_id: 2163174655912441002L
+				type: "choice"
+			}]
 			shape: "diamond"
 			subtitle: "更多的抛瓦"
 			tasks: [{
-				id: "395DC7082C3FA5E8"
-				type: "checkmark"
+				id: "7338C37DD3F57008"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							AttackAmplifier: 0.0f
+							ComboRoot: "slashblade:standby"
+							Damage: 0
+							RepairCounter: 0
+							SpecialAttackType: "slashblade:judgement_cut"
+							StandbyRenderType: 0b
+							SummonedSwordColor: -13421569
+							SummonedSwordColorInverse: 0b
+							TargetEntity: 0
+							_onClick: 0b
+							adjustXYZ: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							baseAttackModifier: 4.0f
+							currentCombo: "slashblade:none"
+							fallDecreaseRate: 0.0f
+							isBroken: 0b
+							isDefaultBewitched: 0b
+							isSealed: 0b
+							killCount: 0
+							lastActionTime: 0L
+							maxDamage: 40
+							proudSoul: 0
+							translationKey: ""
+						}
+						"fluxoftetra:fe": {
+							energy: 0
+						}
+					}
+					id: "slashbladetetra:slashblade"
+					tag: {
+						"FOT$energy": {
+							energy: 0
+						}
+						bladeState: { }
+						id: "DefaultInstance"
+						"slashblade/blade": "slashblade/blade/blade"
+						"slashblade/blade/blade_material": "blade/unnamed"
+						"slashblade/handle": "slashblade/handle/handle"
+						"slashblade/handle/handle_material": "handle/unnamed"
+						"slashblade/scabbard": "slashblade/scabbard/scabbard"
+						"slashblade/scabbard/scabbard_material": "scabbard/unnamed"
+						"slashblade/tsuba": "slashblade/tsuba/tsuba"
+						"slashblade/tsuba/tsuba_material": "tsuba/unnamed"
+					}
+				}
+				match_nbt: false
+				type: "item"
 			}]
 			title: "模块化拔刀"
 			x: 3.0d
@@ -397,6 +456,65 @@
 			title: "高质量锻造"
 			x: 0.0d
 			y: -3.0d
+		}
+		{
+			dependencies: [
+				"5748351A76910019"
+				"514CF1593551F00F"
+			]
+			description: [
+				"全息球可以帮助你快速的查询所有可用的材料！"
+				""
+				"以胸甲举例，如果想知道什么材料能制作&b护甲值&r最高的胸甲，首先需要切换到全息球的&bADDON&r标签页。"
+				""
+				"然后在其中找到&b胸甲分类&r，选择底甲部件，然后选择任意一种盔甲类型（香草/重型）。"
+				""
+				"接下来，你可以点击下图红框中的按钮："
+				""
+				"{image:sdbf:textures/gui/task_holo.png width:172 height:36 align:center}"
+				""
+				"选择按照护甲值（盔甲）排序。"
+				""
+				"对于拔刀剑同理。"
+				""
+				"&7除了基础属性以外，大多数的材料还拥有不同的材料特性。这些材料特性也会影响你的构筑风格。&r"
+			]
+			id: "06BB0C2EB2A5B5A1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "333FF88873C80E30"
+				table_id: 2163174655912441002L
+				type: "choice"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "52B239E2ED627A97"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"fluxoftetra:fe": {
+							energy: 0
+						}
+					}
+					id: "tetra:holo"
+					tag: {
+						"FOT$energy": {
+							energy: 0
+						}
+						"holo/core": "holo/core"
+						"holo/core_material": "frame/dim"
+						"holo/frame": "holo/frame"
+						"holo/frame_material": "core/ancient"
+						"holo/repo": "holo/repo"
+						"holo/repo_material": "repo/default"
+						"holo/scanner": "holo/scanner"
+						"holo/scanner_material": "scanner/default"
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
 		}
 	]
 	title: "锻造"

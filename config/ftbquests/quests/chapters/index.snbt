@@ -305,9 +305,10 @@
 			icon: "botania:cosmetic_questgiver_mark"
 			id: "222077D4E6F647A3"
 			rewards: [{
-				id: "021F7321D49AC6E7"
-				type: "xp"
-				xp: 100
+				exclude_from_claim_all: true
+				id: "71D96E75D08EC925"
+				table_id: 2163174655912441002L
+				type: "choice"
 			}]
 			shape: "gear"
 			size: 4.0d

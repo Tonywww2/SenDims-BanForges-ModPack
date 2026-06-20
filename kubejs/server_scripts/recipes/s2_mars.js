@@ -10,6 +10,29 @@ ServerEvents.recipes(event => {
     }).id('sdbf:sdbf_mars_g1_s2')
 
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
+        "PRW",
+        "RL ",
+        "BGC"
+    ], {
+        "B": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("slashblade:muramasa")
+                .killCount(1000)
+                .proudSoul(10000)
+                .refineCount(25)
+                .addEnchantment(SBEnchantmentDefinition.of("minecraft:fire_protection", 1))
+                .build()
+        ),
+        "C": '#forge:storage_blocks/ostrum',
+        "G": "minecraft:gold_block",
+        "L": "minecraft:lava_bucket",
+        "P": "slashblade:proudsoul_ingot",
+        "R": '#forge:storage_blocks/raw_desh',
+        "W": "minecraft:water_bucket"
+    }, "slashblade_addon:aquablaze")
+        .id('sdbf:aquablaze_s2')
+
+    event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
         "ABH",
         "DEF",
         "CGK"

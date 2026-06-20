@@ -1,0 +1,12 @@
+{
+	icon: "slashblade:proudsoul_tiny"
+	id: "1E0523E378C9F4AA"
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{ count: 4, item: "slashblade:proudsoul_tiny" }
+		{ item: "slashblade:proudsoul" }
+		{ count: 2, item: "minecraft:experience_bottle" }
+	]
+	title: "耀魂-1"
+}
