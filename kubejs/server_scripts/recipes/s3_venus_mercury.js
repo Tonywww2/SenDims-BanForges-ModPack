@@ -153,7 +153,7 @@ ServerEvents.recipes(event => {
                 .name("slashblade:sange")
                 .killCount(1000)
                 .refineCount(25)
-                .addEnchantment(SBEnchantmentDefinition.of("minecraft:fire_protection", 1))
+                .addEnchantment(SBEnchantmentDefinition.of("apotheosis:scavenger", 1))
                 .build()
         ),
         "P": SlashBladeIngredient.of(
@@ -161,7 +161,7 @@ ServerEvents.recipes(event => {
                 .name("sjap_adder:frostbane_moonveil")
                 .killCount(1000)
                 .refineCount(25)
-                .addEnchantment(SBEnchantmentDefinition.of("minecraft:fire_protection", 1))
+                .addEnchantment(SBEnchantmentDefinition.of("apotheosis:scavenger", 1))
                 .build()
         ),
         "D": 'kubejs:mercury_refractory_structural_component',

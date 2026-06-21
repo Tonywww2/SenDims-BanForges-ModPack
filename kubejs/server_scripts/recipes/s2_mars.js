@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {
                 .killCount(1000)
                 .proudSoul(10000)
                 .refineCount(25)
-                .addEnchantment(SBEnchantmentDefinition.of("minecraft:fire_protection", 1))
+                .addEnchantment(SBEnchantmentDefinition.of("apotheosis:scavenger", 1))
                 .build()
         ),
         "C": '#forge:storage_blocks/ostrum',

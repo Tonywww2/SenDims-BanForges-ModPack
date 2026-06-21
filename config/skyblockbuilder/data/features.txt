@@ -1325,7 +1325,6 @@ sdbf:asteroid_belt/thorium_ore_geode
 sdbf:asteroid_belt/tin_ore_geode
 sdbf:asteroid_belt/uranium_ore_geode
 sdbf:flowers_meneglin
-sdbf:hydrogen_lake
 slashblade_useful_addon:deep_proud_soul_ore
 slashblade_useful_addon:proud_soul_ore
 slashblade_useful_addon:proud_soul_tree

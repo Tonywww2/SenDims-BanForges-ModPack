@@ -85,7 +85,7 @@ ServerEvents.recipes(event => {
         "B": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("slashblade_addon:kamuy_none") // 前置刀剑：神威·无
-                .addEnchantment(SBEnchantmentDefinition.of("minecraft:fire_protection", 7))
+                .addEnchantment(SBEnchantmentDefinition.of('apotheosis:bane_of_illagers', 10))
                 .killCount(5000)                     // 要求：500 击杀
                 .proudSoul(5000)                    // 要求：5000 耀魂
                 .refineCount(50)                    // 要求：20 锻造

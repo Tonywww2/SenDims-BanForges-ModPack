@@ -224,6 +224,14 @@
 					item: "minecraft:torch"
 					type: "item"
 				}
+				{
+					auto: "enabled"
+					command: "/gamerule keepInventory true"
+					elevate_perms: true
+					id: "2FF697EF38A9BDDB"
+					title: "死亡不掉落"
+					type: "command"
+				}
 			]
 			size: 2.0d
 			subtitle: "从这里开始"
@@ -1017,6 +1025,26 @@
 			title: "任务形状的含义"
 			x: 3.0d
 			y: -3.0d
+		}
+		{
+			dependencies: ["62C0631125654B3D"]
+			description: [
+				"本整合包默认开启死亡不掉落。"
+				""
+				"如果你希望挑战自己，可以通过指令/gamerule keepInventory false关闭死亡不掉落（需要权限/作弊模式）。"
+				""
+				"在关闭死亡不掉落后，玩家死亡后会留下一个墓碑。"
+			]
+			icon: "minecraft:command_block"
+			id: "7C3E3A6A00EA3031"
+			subtitle: "可选"
+			tasks: [{
+				id: "26B0EE6FA99DA3C1"
+				type: "checkmark"
+			}]
+			title: "关闭死亡不掉落"
+			x: -3.0d
+			y: 0.0d
 		}
 	]
 	title: "起始之空岛"

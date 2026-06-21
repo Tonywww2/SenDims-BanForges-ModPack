@@ -69,6 +69,7 @@
     "info.kubejs.chaotic_truth": "击败特定纬度的神化首领后概率掉落",
     "info.kubejs.gem_ticket": "使用后，随机获得一个宝石",
     "info.kubejs.blocktofugrilled": "烧制一些种类的豆腐块后获得",
+    "info.kubejs.forge_energy_blade": "电力拔刀剑作为合成原料时可能会失效，在加工台中进行任意的改造后可以修复",
 
     "info.kubejs.banned": "已禁用",
 

@@ -2,7 +2,7 @@
 	autofocus_id: "37CF7606A44B5357"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "saturn"
+	filename: "titan"
 	group: "72FC493D243DC969"
 	icon: "kubejs:celestial_filling_alloy_ingot"
 	id: "6B2AC40697D09CB6"
@@ -14,12 +14,7 @@
 			hide_dependent_lines: true
 			id: "37CF7606A44B5357"
 			size: 2.0d
-			tasks: [{
-				dimension: "sdbf:saturn"
-				id: "0C78498B8E7DA510"
-				title: "土星"
-				type: "dimension"
-			}]
+			title: "土卫六"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -66,5 +61,5 @@
 			y: 0.0d
 		}
 	]
-	title: "土星"
+	title: "土卫六"
 }
