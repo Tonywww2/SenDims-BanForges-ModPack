@@ -1,6 +1,7 @@
 ServerEvents.recipes(event => {
 
     sqRecipe(event, "midnight:forgotten_library", 'midnight:ebonite', 1, "s3");
+    sqRecipe(event, "block_factorys_bosses:dragon_tower", 'midnight:tenebrum_ingot', 1, "s3");
 
     event.shaped('kubejs:scoria_ingot', [
         'DBA',
@@ -18,9 +19,9 @@ ServerEvents.recipes(event => {
         'EDE',
         'AFA'
     ], {
-        A: "slashblade:proudsoul_ingot",
-        D: 'last_smith:sakura',
-        E: ["kubejs:scoria_ingot", 'ad_astra:calorite_tank'],
+        A: 'last_smith:sakura',
+        D: 'block_factorys_bosses:dragon_bone',
+        E: ["kubejs:scoria_ingot", 'cataclysm:ignitium_ingot'],
         C: 'deep_aether:stratus_ingot',
         F: 'minecraft:ender_eye'
     }).id('sdbf:blessing_petals_s3')

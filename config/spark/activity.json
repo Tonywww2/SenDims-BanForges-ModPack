@@ -5,6 +5,19 @@
       "name": "Tonywww",
       "uniqueId": "f6089ffd-51ed-41f5-b7fc-60062f9e317d"
     },
+    "time": 1782045439508,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/EqGBdk14yp"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Tonywww",
+      "uniqueId": "f6089ffd-51ed-41f5-b7fc-60062f9e317d"
+    },
     "time": 1780457299665,
     "type": "Profiler",
     "data": {

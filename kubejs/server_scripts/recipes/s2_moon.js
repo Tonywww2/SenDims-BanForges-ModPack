@@ -14,23 +14,14 @@ ServerEvents.recipes(event => {
         .id('sdbf:sdbf_moon_g1_s2')
 
     event.shaped('ad_astra:desh_engine', [
-        'AAA',
-        'ABA',
-        'ACA'
-    ], {
-        A: '#forge:storage_blocks/desh',
-        B: 'ad_astra:steel_engine',
-        C: 'ad_astra:fan'
-    }).id('sdbf:desh_engine_1_s2')
-
-    event.shaped('ad_astra:desh_engine', [
         'AEA',
         'ABA',
-        ' C '
+        'DCD'
     ], {
-        A: '#ad_astra:desh_plates',
+        A: 'ad_astra:photovoltaic_etrium_cell',
         B: 'ad_astra:steel_engine',
-        C: 'ad_astra:fan',
+        C: 'thermal:dynamo_magmatic',
+        D: 'minecraft:nether_star',
         E: 'thermal:enderium_gear'
     }).id('sdbf:desh_engine_2_s2')
 

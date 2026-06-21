@@ -58,6 +58,15 @@ ItemEvents.tooltip(event => {
         }
     })
 
+    event.addAdvanced('midnight:rift_placer', (item, advanced, text) => {
+        if (!item.nbt || !item.nbt.getBoolean("sdbf.midnight")) {
+            text.add(Text.translatable('info.kubejs.item_unactivated').color(Color.RED));
+
+        } else {
+            text.add(Text.translatable('info.kubejs.rift_placer_activated').color(Color.AQUA));
+        }
+    })
+
     event.addAdvanced(Ingredient.all, (item, advanced, text) => {
         if (item.nbt && item.nbt.getString(LIMIT_DIMENSTION_KEY)) {
             text.add(Text.translatable("info.kubejs.dimension_limit").append(

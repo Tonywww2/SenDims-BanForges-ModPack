@@ -13,7 +13,7 @@
 			linked_quest: "319D8C539D81926B"
 			shape: "diamond"
 			x: 18.0d
-			y: 3.0d
+			y: 6.0d
 		}
 		{
 			id: "3ED92FEF92672EE9"
@@ -25,7 +25,7 @@
 			id: "4D9D79F9D9990672"
 			linked_quest: "28CAD1DD57B60440"
 			shape: "hexagon"
-			x: 12.0d
+			x: 21.0d
 			y: 0.0d
 		}
 		{
@@ -40,7 +40,7 @@
 			linked_quest: "220AEBF0A8A46F7C"
 			shape: "hexagon"
 			size: 2.0d
-			x: 24.0d
+			x: 27.0d
 			y: -3.0d
 		}
 		{
@@ -48,7 +48,7 @@
 			linked_quest: "0A68F5EE8F25F036"
 			shape: "hexagon"
 			size: 2.0d
-			x: 15.0d
+			x: 24.0d
 			y: 0.0d
 		}
 	]
@@ -83,7 +83,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 0.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["7D98EABF3232321E"]
@@ -112,7 +112,7 @@
 			}]
 			title: "太空耐火"
 			x: 6.0d
-			y: -3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -132,7 +132,7 @@
 				type: "dimension"
 			}]
 			x: 9.0d
-			y: -3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2C6833FA2E31DFF1"]
@@ -166,7 +166,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 9.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -192,7 +192,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 9.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -216,7 +216,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 12.0d
+			y: 15.0d
 		}
 		{
 			dependencies: [
@@ -240,10 +240,13 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 6.0d
+			y: 9.0d
 		}
 		{
-			dependencies: ["5FDD83613CC8DBB5"]
+			dependencies: [
+				"5FDD83613CC8DBB5"
+				"363E4E4BD5FC757F"
+			]
 			id: "2B1F98A770D77E12"
 			tasks: [{
 				id: "1BAB274E278E2343"
@@ -251,7 +254,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: 3.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -274,7 +277,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: 6.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -300,7 +303,7 @@
 				type: "item"
 			}]
 			x: 21.0d
-			y: 9.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -324,7 +327,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: 9.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -347,7 +350,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: 12.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["489E7D6A94278610"]
@@ -358,7 +361,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: 15.0d
+			y: 18.0d
 		}
 		{
 			dependencies: [
@@ -381,7 +384,7 @@
 				type: "item"
 			}]
 			x: 18.0d
-			y: 15.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["2E9AD291D5058BFF"]
@@ -392,7 +395,7 @@
 				type: "item"
 			}]
 			x: 21.0d
-			y: 15.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["51A9FF63F9F3E125"]
@@ -403,7 +406,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 3.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["2C6833FA2E31DFF1"]
@@ -414,7 +417,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: -3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -430,7 +433,7 @@
 			}]
 			title: "烈焰竞技场"
 			x: 15.0d
-			y: -3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -451,7 +454,7 @@
 			}]
 			title: "诅咒金字塔"
 			x: 6.0d
-			y: 3.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["71B22CE8B354DA88"]
@@ -462,7 +465,7 @@
 				type: "item"
 			}]
 			x: 18.0d
-			y: -3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["68BD750B0FD3AB6D"]
@@ -473,7 +476,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 3.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["68BD750B0FD3AB6D"]
@@ -484,7 +487,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 6.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["7D98EABF3232321E"]
@@ -494,8 +497,8 @@
 				item: "ad_astra:calorite_tank"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 0.0d
+			x: 12.0d
+			y: 6.0d
 		}
 	]
 	title: "金星与水星"

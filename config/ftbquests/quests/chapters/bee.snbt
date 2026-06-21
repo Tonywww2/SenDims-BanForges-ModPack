@@ -21,6 +21,7 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["1DE54DDD04540738"]
 			description: ["可以通过在鲜花旁边催熟特定种类的树苗（橡树、白桦、樱花）概率获得。"]
 			hide_dependent_lines: true
 			id: "30B600C449451F58"
@@ -69,8 +70,8 @@
 				item: "productivebees:incubator"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 3.0d
+			x: 9.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["30B600C449451F58"]
@@ -80,8 +81,162 @@
 				item: "productivebees:centrifuge"
 				type: "item"
 			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["30DBB9DFC29AC961"]
+			id: "52FC2C9B566FF04C"
+			tasks: [{
+				id: "1AD41E6E2164264E"
+				item: "productivebees:powered_centrifuge"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["52FC2C9B566FF04C"]
+			id: "40144BC98FFB3D11"
+			tasks: [{
+				id: "32AAB5648588654D"
+				item: "productivebees:heated_centrifuge"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["30DE16501355251E"]
+			description: ["需要使用非原版的蜂箱作为职业方块。"]
+			icon: {
+				Count: 1
+				id: "easy_villagers:villager"
+				tag: {
+					villager: {
+						AbsorptionAmount: 0.0f
+						Age: 15
+						ArmorDropChances: [
+							0.085f
+							0.085f
+							0.085f
+							0.085f
+						]
+						ArmorItems: [
+							{ }
+							{ }
+							{ }
+							{ }
+						]
+						Attributes: [ ]
+						BMLootBlock: 0b
+						BaguData: { }
+						Brain: {
+							memories: { }
+						}
+						CanPickUpLoot: 1b
+						CitadelData: { }
+						DeathTime: 0s
+						EntityJSData: { }
+						FallFlying: 0b
+						FoodLevel: 0b
+						ForcedAge: 0
+						Gossips: [ ]
+						HandDropChances: [
+							0.085f
+							0.085f
+						]
+						HandItems: [
+							{ }
+							{ }
+						]
+						Health: 20.0f
+						HurtByTimestamp: 0
+						HurtTime: 0s
+						Inventory: [ ]
+						LastGossipDecay: 0L
+						LastRestock: 810788L
+						LeftHanded: 0b
+						Offers: {
+							Recipes: [
+								{
+									buy: {
+										Count: 1
+										id: "minecraft:emerald"
+									}
+									buyB: {
+										Count: 0
+										id: "minecraft:air"
+										tag: {
+											Charged: 0b
+										}
+									}
+									demand: -30
+									maxUses: 32
+									priceMultiplier: 0.2f
+									rewardExp: 1b
+									sell: {
+										Count: 4
+										id: "minecraft:glass_bottle"
+									}
+									specialPrice: 0
+									uses: 0
+									xp: 3
+								}
+								{
+									buy: {
+										Count: 3
+										id: "minecraft:emerald"
+									}
+									buyB: {
+										Count: 0
+										id: "minecraft:air"
+										tag: {
+											Charged: 0b
+										}
+									}
+									demand: -6
+									maxUses: 12
+									priceMultiplier: 0.2f
+									rewardExp: 1b
+									sell: {
+										Count: 1
+										id: "minecraft:shears"
+										tag: {
+											Damage: 0
+										}
+									}
+									specialPrice: 0
+									uses: 0
+									xp: 3
+								}
+							]
+							"morejs$disabled": [
+								0b
+								0b
+							]
+						}
+						PersistenceRequired: 0b
+						RestocksToday: 1
+						VillagerData: {
+							level: 1
+							profession: "productivebees:beekeeper"
+							type: "minecraft:plains"
+						}
+						Xp: 0
+						YouthPotion: 0b
+						bm_IsStunted: 0b
+					}
+				}
+			}
+			id: "0471C784F0100AC6"
+			tasks: [{
+				id: "40C63142A29E7113"
+				type: "checkmark"
+			}]
+			title: "养蜂人"
 			x: 6.0d
-			y: 6.0d
+			y: 3.0d
 		}
 	]
 	title: "蜜蜂养殖"

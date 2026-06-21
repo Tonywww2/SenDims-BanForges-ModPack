@@ -19,6 +19,12 @@ LootJS.modifiers(event => {
     event.addEntityLootModifier("twilightforest:lich")
         .addLoot("minecraft:cherry_sapling")
 
+    event.addEntityLootModifier("block_factorys_bosses:underworld_knight")
+        .addLoot('block_factorys_bosses:underworld_arena_door')
+
+    event.addEntityLootModifier("block_factorys_bosses:kraken")
+        .addLoot('3x kubejs:mysterious_alkali_crystal')
+
     event.addEntityLootModifier('nuclearcraft:feral_ghoul')
         .anyDimension(["undergarden:undergarden"])
         .pool(p => {

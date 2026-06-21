@@ -1,4 +1,10 @@
 ServerEvents.recipes(event => {
+    
+    sqRecipe(event,
+        "block_factorys_bosses:kraken_ship",
+        'integrateddynamics:crystalized_menril_chunk',
+        1,
+        's3');
 
     event.shapeless('nuclearcraft:carbon_manganese_ingot', [
         '#forge:ingots/manganese',
@@ -22,12 +28,13 @@ ServerEvents.recipes(event => {
     event.shaped(Item.of('midnight:rift_placer', `{${MIDNIGHT_STAGE}: true}`), [
         'ABA',
         'BDB',
-        'AFA'
+        'FGF'
     ], {
-        A: 'slashblade:proudsoul',
+        A: 'terra_curio:demon_heart',
         B: 'kubejs:mysterious_alkali_crystal',
         D: 'midnight:rift_placer',
-        F: 'nuclearcraft:sulfuric_acid_bucket'
+        F: 'nuclearcraft:sulfuric_acid_bucket',
+        G: 'kubejs:menril-silicon_sic_sic_cmc_ingot'
     }).id('sdbf:rift_placer_s3')
 
     event.shaped('undergarden:catalyst', [
@@ -170,7 +177,7 @@ ServerEvents.recipes(event => {
         "JAS"
     ], {
         "S": 'kubejs:mysterious_alkali_crystal',
-        "L": "#forge:storage_blocks/iron",     // 铁块标签 / Iron block tag
+        "L": 'block_factorys_bosses:kraken_tooth',
         "J": "#forge:storage_blocks/redstone", // 红石块标签 / Redstone block tag
         "B": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance().name("slashblade_addon:tboen")

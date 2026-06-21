@@ -45,7 +45,7 @@ ServerEvents.recipes(event => {
                 .build()
         ),
         "A": "minecraft:beetroot_soup",
-        "B": ["minecraft:heart_of_the_sea", 'ad_astra:energizer'],
+        "B": 'block_factorys_bosses:underworld_arena_door',
         "C": "minecraft:beetroot_soup",
         "D": "minecraft:rabbit_stew",
         "F": 'ad_astra:desh_tank',
@@ -158,6 +158,12 @@ ServerEvents.recipes(event => {
     sqRecipe(event,
         "dungeons_arise:heavenly_rider",
         "ad_astra:mars_stone",
+        1,
+        's2');
+
+    sqRecipe(event,
+        "block_factorys_bosses:underworld_arena",
+        '#forge:ingots/ostrum',
         1,
         's2');
 

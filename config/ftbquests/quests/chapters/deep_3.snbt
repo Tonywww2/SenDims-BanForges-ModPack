@@ -50,7 +50,9 @@
 			dependencies: [
 				"7267904F019CEFD6"
 				"078E92000B6E3912"
+				"52755126FB29CFEF"
 			]
+			dependency_requirement: "one_completed"
 			description: ["需要使用激活的&b裂隙放置器&r（请查看合成配方）。"]
 			hide_dependent_lines: true
 			hide_until_deps_complete: true
@@ -156,7 +158,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 18.0d
+			y: 14.5d
 		}
 		{
 			dependencies: [
@@ -252,49 +254,6 @@
 			y: 12.0d
 		}
 		{
-			dependencies: ["0EFAC7AECCFDD801"]
-			id: "4FD299D688A0A92A"
-			tasks: [{
-				id: "038232275CAD0AB4"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						display: {
-							Name: "{\"translate\":\"item.slashblade_addon.green_mist\"}"
-						}
-						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade_addon.green_mist\"}})"
-					}
-				}
-				type: "item"
-			}]
-			x: 9.0d
-			y: 15.0d
-		}
-		{
-			dependencies: [
-				"20C5B7CCF681A814"
-				"6955A276B25D3A29"
-			]
-			id: "0EFAC7AECCFDD801"
-			tasks: [{
-				id: "1FFA66B89495F145"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						display: {
-							Name: "{\"translate\":\"item.slashblade_addon.moonlight_cherry\"}"
-						}
-						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade_addon.moonlight_cherry\"}})"
-					}
-				}
-				type: "item"
-			}]
-			x: 6.0d
-			y: 15.0d
-		}
-		{
 			dependencies: ["2E482B871B147DC6"]
 			id: "40570CBD9A0E5C38"
 			tasks: [{
@@ -303,7 +262,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 18.0d
+			y: 14.5d
 		}
 		{
 			dependencies: [
@@ -319,17 +278,6 @@
 			title: "被遗忘的图书馆"
 			x: 6.0d
 			y: 3.0d
-		}
-		{
-			dependencies: ["2E482B871B147DC6"]
-			id: "6955A276B25D3A29"
-			tasks: [{
-				id: "3A2C936FE1C40480"
-				item: "midnight:corrupted_pearl"
-				type: "item"
-			}]
-			x: 3.0d
-			y: 15.0d
 		}
 		{
 			dependencies: ["2E482B871B147DC6"]
@@ -416,7 +364,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: -3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -434,6 +382,45 @@
 			}]
 			x: 15.0d
 			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3787442E50D08560"
+				"2E482B871B147DC6"
+			]
+			dependency_requirement: "one_completed"
+			id: "22A314B00893C4D7"
+			tasks: [{
+				id: "38FEABCB408C4175"
+				structure: "block_factorys_bosses:dragon_tower"
+				type: "structure"
+			}]
+			title: "龙之塔"
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["22A314B00893C4D7"]
+			id: "363048E664F173C2"
+			tasks: [{
+				advancement: "block_factorys_bosses:kill_dragon"
+				criterion: ""
+				id: "57948DDC2071EB9C"
+				type: "advancement"
+			}]
+			x: 9.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["363048E664F173C2"]
+			id: "5326175477B9A513"
+			tasks: [{
+				id: "6301376B9D629D49"
+				item: "block_factorys_bosses:dragon_bone"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -3.0d
 		}
 	]
 	title: "深境：午夜"

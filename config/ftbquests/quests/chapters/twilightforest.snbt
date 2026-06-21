@@ -109,6 +109,11 @@
 		}
 		{
 			dependencies: ["222D394D6FDDC479"]
+			description: [
+				"娜迦在蓄力时可以被招架。如果你不知道招架是是什么，请仔细阅读拔刀剑章节！"
+				""
+				"娜迦在蓄力后会释放两道幻影刃。"
+			]
 			hide_until_deps_complete: true
 			id: "20FDE881446DF8AF"
 			subtitle: "娜迦"
@@ -123,6 +128,13 @@
 		}
 		{
 			dependencies: ["20FDE881446DF8AF"]
+			description: [
+				"巫妖掌握了耀魂之力！现在它拥有更多的魔法护盾了！"
+				""
+				"你可以使用任意的&b魔法伤害&r破除巫妖的护盾（反射宝珠、幻影剑、SA等），但是每次破除之后，都需要隔一段时间才能再次破除！"
+				""
+				"在破除护盾后的等待时间内对巫妖造成魔法伤害，会不断的缩短这个时间。"
+			]
 			hide_until_deps_complete: true
 			id: "3AA758300110DA33"
 			subtitle: "巫妖"
@@ -137,6 +149,7 @@
 		}
 		{
 			dependencies: ["3AA758300110DA33"]
+			description: ["每一个幻影骑士都会被视作首领！但是他们的攻击力和生命值远不如普通的野生首领。"]
 			id: "6FC69F6C86DA91E0"
 			tasks: [{
 				advancement: "twilightforest:progress_knights"
@@ -149,6 +162,7 @@
 		}
 		{
 			dependencies: ["3AA758300110DA33"]
+			description: ["米诺菇会被视作首领！"]
 			id: "2EDA6C0823CAF5BE"
 			rewards: [{
 				id: "25D8AAEEF9178DA7"
@@ -186,6 +200,7 @@
 		}
 		{
 			dependencies: ["3AA758300110DA33"]
+			description: ["雪怪王会被视作首领！但是它的护甲值比一般的野生首领低。"]
 			id: "46D7551ADB56C59D"
 			tasks: [{
 				advancement: "twilightforest:progress_yeti"

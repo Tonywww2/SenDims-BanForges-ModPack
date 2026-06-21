@@ -80,6 +80,7 @@
     "info.kubejs.overworld_disallowed": "你离开了天空，试图重新踏上主世界的大地。但是一股力量令你昏迷了过去，你又回到了天空之中。§m需要使用某件道具§r",
     "info.kubejs.overworld_allowed": "你感受到与自身相关的“某件东西”变得更加沉重了，沉重到足以突破那一直阻拦你踏上大地的力量。",
     "info.kubejs.item_unactivated": "这个物品还未被激活§m需要与一些材料合成§r",
+    "info.kubejs.rift_placer_activated": "已激活",
 
     "info.kubejs.spawner.cannot_modify": "你不能修改此刷怪笼！",
     "info.kubejs.spawner.cannot_insert": "你不能将这种生物放入刷怪笼！",

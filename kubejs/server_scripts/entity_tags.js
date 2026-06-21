@@ -63,6 +63,17 @@ ServerEvents.tags("entity_type", event => {
         "twilightforest:helmet_crab",
         "twilightforest:blockchain_goblin",
         "twilightforest:knight_phantom",
+        "block_factorys_bosses:crossbow_pirate",
+        "block_factorys_bosses:pirate_rook",
+        "block_factorys_bosses:pirate_captain",
+        "block_factorys_bosses:soul_knight_wither_skeleton",
+        "block_factorys_bosses:soul_skeleton",
+        "block_factorys_bosses:pile_of_bones",
+        "block_factorys_bosses:kraken_tentacle",
+        "block_factorys_bosses:kraken",
+        "block_factorys_bosses:yeti",
+        "block_factorys_bosses:underworld_knight",
+        "block_factorys_bosses:sandworm",
     ]);
 
     event.add("forge:bosses", [

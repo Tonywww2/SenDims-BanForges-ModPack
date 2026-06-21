@@ -253,6 +253,51 @@
 			x: 5.0d
 			y: 5.0d
 		}
+		{
+			dependencies: ["6035D1A1774B2FAF"]
+			id: "41F7CE2B7D83F4BE"
+			tasks: [{
+				id: "62652E1A4729A65A"
+				structure: "block_factorys_bosses:sandworm_nest"
+				type: "structure"
+			}]
+			title: "沙虫巢穴"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["41F7CE2B7D83F4BE"]
+			id: "5BBD689230D7E397"
+			tasks: [{
+				advancement: "block_factorys_bosses:kill_sandworm"
+				criterion: ""
+				id: "78EAF15D62C89C71"
+				type: "advancement"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5BBD689230D7E397"
+				"41F7CE2B7D83F4BE"
+			]
+			dependency_requirement: "one_completed"
+			id: "47F0BD0DE4FBB853"
+			tasks: [{
+				id: "1B6AD12647678D56"
+				item: {
+					Count: 1
+					id: "block_factorys_bosses:sandworm_gauntlet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 12.5d
+			y: 0.0d
+		}
 	]
 	title: "土星环"
 }

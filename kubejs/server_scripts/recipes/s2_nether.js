@@ -3,6 +3,16 @@ ServerEvents.recipes(event => {
     sqRecipe(event, "minecraft:bastion_remnant", '#forge:ingots/gold', 1, "s2");
     sqRecipe(event, "minecraft:fortress", 'minecraft:nether_bricks', 1, "s2");
 
+    event.shaped('ad_astra:desh_engine', [
+        'AAA',
+        'ABA',
+        'DCD'
+    ], {
+        A: '#ad_astra:ostrum_plates',
+        B: 'ad_astra:desh_engine',
+        C: 'apotheosis:library'
+    }).id('sdbf:desh_engine_s2')
+
     event.shaped('2x kubejs:bedrock_breaker', [
         ' BA',
         'BCB',

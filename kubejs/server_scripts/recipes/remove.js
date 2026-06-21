@@ -201,6 +201,7 @@ const toRemoveID = new Set([
     "botania:elven_trade/elementium_block",
     "appflux:inscriber/energy",
     "slashblade_addon:terra_blade",
+    "ad_astra:desh_engine",
 
     // s5
     "sjap_adder:kamuyex_fire",

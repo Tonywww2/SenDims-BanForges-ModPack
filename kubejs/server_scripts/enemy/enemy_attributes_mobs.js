@@ -446,6 +446,26 @@ const mobTypes = new Map([
     ["darkerdepths:void_soul_knight", typeAE],
     ["productivebees:resin_bee", type0],
 
+    ["terra_entity:giant_antlion_swarmer", typeAE],
+
+    ["block_factorys_bosses:crossbow_pirate", typeB],
+    ["block_factorys_bosses:pirate_rook", typeA],
+    ["block_factorys_bosses:pirate_captain", typeC],
+    ["block_factorys_bosses:soul_knight_wither_skeleton", typeD],
+    ["block_factorys_bosses:soul_skeleton", typeA],
+    ["block_factorys_bosses:pile_of_bones", typeD],
+    ["block_factorys_bosses:flaming_skeleton_guard_sword", typeA],
+    ["block_factorys_bosses:dragon_guard_sword", typeA],
+    ["block_factorys_bosses:flaming_skeleton_guard_fireball", typeB],
+
+    ["cataclysm:netherite_ministrosity", typeAE],
+    ["block_factorys_bosses:kraken_tentacle", typeAE],
+    ["block_factorys_bosses:kraken", bossType1],
+    ["block_factorys_bosses:yeti", bossType1],
+    ["block_factorys_bosses:underworld_knight", bossType2],
+    ["block_factorys_bosses:sandworm", bossType2],
+    ["block_factorys_bosses:infernal_dragon", bossType1],
+
 ]);
 
 /**

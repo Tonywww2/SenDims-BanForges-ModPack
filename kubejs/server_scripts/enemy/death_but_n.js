@@ -6,7 +6,7 @@ let defaultMaxDeath = 1;
 // 定义重写规则列表（黑名单/覆写列表），不在列表中的实体默认 1 次击杀回满血
 let OVERRIDE_LIMITS = Utils.newMap();
 
-// OVERRIDE_LIMITS.put('cataclysm:ignis', 3);
+OVERRIDE_LIMITS.put('block_factorys_bosses:infernal_dragon', 2);
 // OVERRIDE_LIMITS.put('minecraft:ender_dragon', 3);
 
 

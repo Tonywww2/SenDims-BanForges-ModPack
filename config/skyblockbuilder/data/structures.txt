@@ -89,6 +89,11 @@ biomemakeover:ghost_town
 biomemakeover:mansion
 biomemakeover:mushroom_house
 biomemakeover:sunken_ruin
+block_factorys_bosses:dragon_tower
+block_factorys_bosses:kraken_ship
+block_factorys_bosses:sandworm_nest
+block_factorys_bosses:underworld_arena
+block_factorys_bosses:yeti_hideout
 cataclysm:abandoned_spire
 cataclysm:abandoned_temple
 cataclysm:abandoned_village
