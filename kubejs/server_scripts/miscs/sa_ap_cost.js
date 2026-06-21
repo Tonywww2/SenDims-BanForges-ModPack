@@ -61,6 +61,10 @@ SACostMap.put("slashblade_addon:blistering_terra_swords", [600, 0.3]);
 
 SACostMap.put("sjap_adder:cold_drive", [300, 0.2]);
 
+SACostMap.put("sjap_adder:burning_dance", [600, 0.2]);
+
+SACostMap.put("slashblade_addon:lighting_swords", [400, 0.2]);
+
 let defaultCost = [200, 0.2];
 let superSlashArtCost = [400, 0.3];
 

@@ -1,8 +1,8 @@
 {
     "key": "blackstone",
     "category": "stone",
-    "primary": 2.5,
-    "secondary": 2.5,
+    "primary": 1.8,
+    "secondary": 1.8,
     "tertiary": 0,
     "durability": 500,
     "integrityCost": 1,

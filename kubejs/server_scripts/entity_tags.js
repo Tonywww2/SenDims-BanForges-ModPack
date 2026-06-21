@@ -54,7 +54,15 @@ ServerEvents.tags("entity_type", event => {
         "minecraft:creeper",
         "ad_astra:sulfur_creeper",
         "minecraft:cave_spider",
-        "minecraft:spider"
+        "minecraft:spider",
+        "twilightforest:yeti",
+        "twilightforest:alpha_yeti",
+        "twilightforest:lower_goblin_knight",
+        "twilightforest:upper_goblin_knight",
+        "twilightforest:pinch_beetle",
+        "twilightforest:helmet_crab",
+        "twilightforest:blockchain_goblin",
+        "twilightforest:knight_phantom",
     ]);
 
     event.add("forge:bosses", [

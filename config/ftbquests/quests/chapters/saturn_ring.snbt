@@ -113,8 +113,11 @@
 			id: "6035D1A1774B2FAF"
 			size: 2.0d
 			tasks: [{
-				id: "040A5F44C9FBC1F0"
-				type: "checkmark"
+				dimension: "slashblade_sendims:saturn_ring"
+				icon: "slashblade_sendims:saturn_cobblestone"
+				id: "0DDAF2D7A388505D"
+				title: "土星环"
+				type: "dimension"
 			}]
 			title: "土星环"
 			x: 0.0d
@@ -215,6 +218,40 @@
 			}]
 			x: 0.0d
 			y: -2.5d
+		}
+		{
+			dependencies: ["6035D1A1774B2FAF"]
+			id: "2C06C05377A55E40"
+			tasks: [{
+				id: "6A9B36A4909E3FC2"
+				item: {
+					Count: 1
+					id: "gateways:gate_pearl"
+					tag: {
+						gateway: "gateways:sdbf_sr_ayeti"
+					}
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6035D1A1774B2FAF"]
+			id: "6899831613AC8F4B"
+			tasks: [{
+				id: "74FF83F16F7D2259"
+				item: {
+					Count: 1
+					id: "gateways:gate_pearl"
+					tag: {
+						gateway: "gateways:sdbf_sr_kp"
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 5.0d
 		}
 	]
 	title: "土星环"

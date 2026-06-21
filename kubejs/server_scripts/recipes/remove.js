@@ -168,7 +168,6 @@ const toRemoveID = new Set([
     "slashblade:wakizashi",
     "pseudoedge_break_dawn:whitesword",
     "sjap_adder:kamuy_death",
-    "sjap_adder:kamuyex_dark",
 
     "slashblade_addon:kamuy_fire",
     "last_smith:bunshi",
@@ -202,6 +201,14 @@ const toRemoveID = new Set([
     "botania:elven_trade/elementium_block",
     "appflux:inscriber/energy",
     "slashblade_addon:terra_blade",
+
+    // s5
+    "sjap_adder:kamuyex_fire",
+    "sjap_adder:kamuyex_life",
+    "sjap_adder:nihilbxex",
+    "sjap_adder:kamuyex_ligghtning",
+    "sjap_adder:kamuyex_water",
+    "sjap_adder:kamuyex_dark",
 
     // 临时
     "dustandash:crafting/integrated_block",

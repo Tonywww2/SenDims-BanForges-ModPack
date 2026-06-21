@@ -1,8 +1,8 @@
 {
     "key": "obsidian",
     "category": "stone",
-    "primary": 2.5,
-    "secondary": 2.5,
+    "primary": 2.2,
+    "secondary": 2.2,
     "tertiary": 0,
     "durability": 580,
     "integrityCost": 3,

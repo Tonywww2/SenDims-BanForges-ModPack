@@ -317,7 +317,7 @@ const dimensionStages = new Map([
 
     ["the_bumblezone:the_bumblezone", "3_2"],
 
-    ["sdbf:saturn_orbit", "3_3"],
+    ["slashblade_sendims:saturn_ring", "3_3"],
     ["sdbf:inside_the_end", "3_3"],
     ["minecraft:overworld", "0_1"], // Special
 

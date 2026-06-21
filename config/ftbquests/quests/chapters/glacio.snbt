@@ -6,7 +6,7 @@
 	group: "72FC493D243DC969"
 	icon: "ad_astra:glacio_globe"
 	id: "30913047B0C6C1E2"
-	order_index: 2
+	order_index: 1
 	quest_links: [
 		{
 			id: "66DC3C42246FEE07"
@@ -143,26 +143,6 @@
 			}]
 			x: 0.0d
 			y: 7.5d
-		}
-		{
-			dependencies: ["0026560C056CC8EB"]
-			id: "2949701D5493DFD0"
-			tasks: [{
-				id: "6D3D5859B067E23C"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						display: {
-							Name: "{\"translate\":\"item.sjap_adder.dragon_steel_ice\"}"
-						}
-						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.sjap_adder.dragon_steel_ice\"}})"
-					}
-				}
-				type: "item"
-			}]
-			x: 0.0d
-			y: 5.0d
 		}
 	]
 	title: "霜原星"

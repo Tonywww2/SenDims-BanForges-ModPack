@@ -5,7 +5,7 @@
 	filename: "pluto"
 	group: "72FC493D243DC969"
 	id: "4CCDABE44AFF54C8"
-	order_index: 0
+	order_index: 3
 	quest_links: [
 		{
 			id: "43486A184CECC1BF"
@@ -48,7 +48,7 @@
 				id: "2514E740DB4056BC"
 				type: "checkmark"
 			}]
-			title: "冥王星"
+			title: "比邻星-B"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -186,5 +186,5 @@
 			y: -7.5d
 		}
 	]
-	title: "冥王星"
+	title: "比邻星-B"
 }

@@ -86,11 +86,13 @@
 
     "info.kubejs.dimension_limit": "必须在以下纬度使用：",
 
-    "gateways.sdbf_dr1_g1": "深境一层怪潮传送门",
-    "gateways.sdbf_dr1_g2": "深境一层机械怪潮传送门",
-    "gateways.sdbf_moon_g1": "月球怪潮传送门",
-    "gateways.sdbf_nether_g1": "下界怪潮传送门",
-    "gateways.sdbf_mars_g1": "火星怪潮传送门",
+    "gateways.sdbf_dr1_g1": "深境一层 怪潮 传送门",
+    "gateways.sdbf_dr1_g2": "深境一层 [机械] 怪潮传送门",
+    "gateways.sdbf_moon_g1": "月球 怪潮 传送门",
+    "gateways.sdbf_nether_g1": "下界 怪潮 传送门",
+    "gateways.sdbf_mars_g1": "火星 怪潮 传送门",
+    "gateways.sdbf_sr_ayeti": "土星环 [全力] 雪怪首领 传送门",
+    "gateways.sdbf_sr_kp": "土星环 [全力] 幻影骑士 传送门",
 
     "info.sdbf.gem.title": "§6[宝石信息]",
     "info.sdbf.gem.affix_label": "词缀",
@@ -111,6 +113,14 @@
     "info.sdbf.gem.affix.cracked": "开裂",
     "info.sdbf.gem.affix.dull": "暗淡",
     "info.sdbf.gem.affix.flawed": "有瑕",
+
+    "biome.slashblade_sendims.outer_sparse_ring": "土星环过渡外环带",
+    "biome.slashblade_sendims.transition_wall_ting": "土星环过渡环带",
+    "biome.slashblade_sendims.base_ring": "土星环中环带",
+    "biome.slashblade_sendims.high_density_ring": "土星环高密度中环带",
+    "biome.slashblade_sendims.inner_sparse_ring": "土星环过渡内环带",
+    "biome.slashblade_sendims.inner_fading_ring": "土星环稀疏内环带",
+    "biome.slashblade_sendims.void_ring": "土星环虚空环带",
 
     "item.sdbf.fantasy_bubble": "幻之泡",
     "item.sdbf.chaos_anchor": "混沌稳定锚",

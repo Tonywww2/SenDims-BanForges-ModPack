@@ -1,8 +1,8 @@
 {
     "key": "stone",
     "category": "stone",
-    "primary": 2,
-    "secondary": 2,
+    "primary": 1.4,
+    "secondary": 1.2,
     "tertiary": 0,
     "durability": 131,
     "integrityCost": 1,

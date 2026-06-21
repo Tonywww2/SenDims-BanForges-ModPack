@@ -1,8 +1,8 @@
 {
     "key": "flint",
     "category": "stone",
-    "primary": 2.2,
-    "secondary": 2.3,
+    "primary": 1.7,
+    "secondary": 1.2,
     "tertiary": 0,
     "durability": 131,
     "integrityCost": 1,

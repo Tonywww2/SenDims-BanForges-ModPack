@@ -6,7 +6,7 @@
 	group: "72FC493D243DC969"
 	icon: "kubejs:celestial_filling_alloy_ingot"
 	id: "6B2AC40697D09CB6"
-	order_index: 1
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{

@@ -1,6 +1,6 @@
 {
     "dimension": "slashblade_sendims:saturn_ring",
-    "gravity": 0.0,
+    "gravity": 3.25,
     "orbit": "sdbf:saturn_ring_orbit",
     "oxygen": false,
     "solar_power": 20,

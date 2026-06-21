@@ -1,8 +1,8 @@
 {
     "key": "granite",
     "category": "stone",
-    "primary": 2,
-    "secondary": 2.5,
+    "primary": 1.2,
+    "secondary": 1.6,
     "tertiary": 0,
     "durability": 180,
     "integrityCost": 1,
