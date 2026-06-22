@@ -11,5 +11,12 @@
       "perplayer": true
     },
     "result": "deny"
+  },
+    {
+    "mob": ["minecraft:skeleton","minecraft:zombie", "minecraft:creeper", "minecraft:cave_spider", "minecraft:spider"],
+    "dimension": "sdbf:asteroid_belt",
+    "when": "finalize",
+    "result": "allow",
+    "armorhelmet": ["ad_astra:space_helmet"]
   }
 ]

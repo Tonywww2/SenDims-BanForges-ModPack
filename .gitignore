@@ -96,3 +96,8 @@ config/jei/recipe-category-sort-order.ini
 config/skyblockbuilder/data/features.txt
 config/shouldersurfing-client.toml
 /lightspeed-cache
+mods/Essential_1-4-0-2_forge_1-20-1.jar
+mods/reforgedplaymod-1.20.1-0.3.1.jar
+/essential
+mods/reforgedplaymod-1.20.1-0.3.1.jar.disabled
+servers.essential.dat

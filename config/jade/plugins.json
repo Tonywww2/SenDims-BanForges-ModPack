@@ -114,6 +114,9 @@
     "lightroom": true,
     "photograph_frame": true
   },
+  "yes_steve_model": {
+    "model_info": true
+  },
   "easy_villagers": {
     "villager": true,
     "converter": true,
