@@ -40,7 +40,7 @@
 				"uncommon": 0.035,
 				"rare": 0.045,
 				"epic": 0.065,
-				"mythic": 0.01,
+				"mythic": 0.1,
 				"ancient": 0.15
 			}
 		}

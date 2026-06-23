@@ -11,6 +11,7 @@ ServerEvents.highPriorityData(event => {
         .addItemMaterial('kubejs:silica_rich_asteroid_rock')
         .setRequiredTool("hammer_dig", 1)
         .addEnchantment("minecraft:fortune", 1)
+        .setCountFactor(4)
         .build();
 
     // 2. 奇异尘 / Bizarre Matter Dust
@@ -50,6 +51,7 @@ ServerEvents.highPriorityData(event => {
         .addItemMaterial('the_bumblezone:glistering_honey_crystal')
         .setRequiredTool("hammer_dig", 1)
         .addEffects("mana_resonance", [1, 0])
+        .setCountFactor(4)
         .build();
 
     // 5. 红石蜜蜂网 / Redstone Honey Web
@@ -62,6 +64,7 @@ ServerEvents.highPriorityData(event => {
         .addTexture("crude").addTexture("default")
         .addItemMaterial('the_bumblezone:redstone_honey_web')
         .setRequiredTool("hammer_dig", 1)
+        .setCountFactor(4)
         .build();
 
     // 6. delta尘 / Delta Dust
@@ -75,6 +78,7 @@ ServerEvents.highPriorityData(event => {
         .addItemMaterial('kubejs:delta_dust')
         .setRequiredTool("hammer_dig", 1)
         .addEnchantment("minecraft:power", 1)
+        .setCountFactor(0.7)
         .build();
 
     // 7. 风暴精华 / Essence of the Storm
@@ -87,6 +91,7 @@ ServerEvents.highPriorityData(event => {
         .addTexture("shiny").addTexture("default")
         .addItemMaterial('cataclysm:essence_of_the_storm')
         .setRequiredTool("hammer_dig", 1)
+        .setCountFactor(0.5)
         .build();
 
     // 8. 泰拉钢 / Terrasteel
@@ -133,6 +138,7 @@ ServerEvents.highPriorityData(event => {
         .addItemMaterial('kubejs:galatic_cycle_component')
         .setRequiredTool("hammer_dig", 1)
         .addEffects("fot:fe_store", 64000)
+        .setCountFactor(0.5)
         .build();
 
     // 2. 蜂王浆 / Royal Jelly Bottle
@@ -157,6 +163,7 @@ ServerEvents.highPriorityData(event => {
         .addTexture("shiny")
         .addItemMaterial('kubejs:multifaceted_ambrosia')
         .setRequiredTool("hammer_dig", 1)
+        .setCountFactor(0.5)
         .build();
 
     // 4. 阿尔法尘 / Alpha Dust
@@ -169,6 +176,7 @@ ServerEvents.highPriorityData(event => {
         .addTexture("crude")
         .addItemMaterial('kubejs:alpha_dust')
         .setRequiredTool("hammer_dig", 1)
+        .setCountFactor(4)
         .build();
 
     // 5. ML锭 / ML Computing Ingot
@@ -211,6 +219,7 @@ ServerEvents.highPriorityData(event => {
         .addItemMaterial('kubejs:basepoint_alloy')
         .setRequiredTool("hammer_dig", 1)
         .addEnchantment("minecraft:protection", 1)
+        .setCountFactor(0.7)
         .build();
 
     // 8. 混沌真理 / Chaotic Truth
@@ -223,6 +232,7 @@ ServerEvents.highPriorityData(event => {
         .addTexture("shiny")
         .addItemMaterial('kubejs:chaotic_truth')
         .setRequiredTool("hammer_dig", 1)
+        .setCountFactor(2)
         .build();
 
     // 9. 辐射零件 / Radiation Components
@@ -235,6 +245,7 @@ ServerEvents.highPriorityData(event => {
         .addTexture("metal")
         .addItemMaterial('kubejs:radiation_components')
         .setRequiredTool("hammer_dig", 1)
+        .setCountFactor(0.6)
         .build();
 
 })

@@ -1,0 +1,7 @@
+{
+  "replace": true,
+  "values": [
+    "#is_forest",
+    "#forge:is_plains"
+  ]
+}
