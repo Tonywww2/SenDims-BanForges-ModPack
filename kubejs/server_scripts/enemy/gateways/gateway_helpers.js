@@ -110,7 +110,7 @@ function createMythicGateway(id, color, o) {
         .size(o.size || "medium").color(color)
         .spawnRange(16).leashRange(48)
         .allowDiscarding(false).allowDimChange(false).playerDamageOnly(false)
-        .removeMobsOnFailure(true).failOnOutOfBounds(true)
+        .removeMobsOnFailure(true).failOnOutOfBounds(false)
         .spacing(16).followRangeBoost(32).defaultDropChance(0);
 
     // ── 波次1：HP×1.5  ATK+2 ──
@@ -229,7 +229,7 @@ function createBossGateway(id, color, o) {
         .size(o.size || "medium").color(color)
         .spawnRange(16).leashRange(48)
         .allowDiscarding(false).allowDimChange(false).playerDamageOnly(false)
-        .removeMobsOnFailure(true).failOnOutOfBounds(true)
+        .removeMobsOnFailure(true).failOnOutOfBounds(false)
         .spacing(16).followRangeBoost(32).defaultDropChance(0);
 
     // ── 波次1-4 ──

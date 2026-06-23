@@ -428,7 +428,7 @@ ServerEvents.highPriorityData(event => {
         .allowDimChange(false)
         .playerDamageOnly(false)
         .removeMobsOnFailure(true)
-        .failOnOutOfBounds(true)
+        .failOnOutOfBounds(false)
         .spacing(16)
         .followRangeBoost(32)
         .defaultDropChance(0)
