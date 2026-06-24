@@ -20,6 +20,7 @@ ServerEvents.highPriorityData(event => {
         .spacing(16)
         .followRangeBoost(32)
         .defaultDropChance(0)
+        .addAttribute("minecraft:generic.knockback_resistance", 0.9)
         .addWave(wave => {
             wave.addEntity("twilightforest:yeti", 5);
             wave.addAttribute("minecraft:generic.max_health", -0.5, "multiply_total");
@@ -77,6 +78,7 @@ ServerEvents.highPriorityData(event => {
         .spacing(16)
         .followRangeBoost(32)
         .defaultDropChance(0)
+        .addAttribute("minecraft:generic.knockback_resistance", 0.9)
         .addWave(wave => {
             wave.addEntity("twilightforest:lower_goblin_knight", 5);
             wave.addEntity("twilightforest:pinch_beetle", 3);

@@ -111,7 +111,8 @@ function createMythicGateway(id, color, o) {
         .spawnRange(16).leashRange(48)
         .allowDiscarding(false).allowDimChange(false).playerDamageOnly(false)
         .removeMobsOnFailure(true).failOnOutOfBounds(false)
-        .spacing(16).followRangeBoost(32).defaultDropChance(0);
+        .spacing(16).followRangeBoost(32).defaultDropChance(0)
+        .addAttribute("minecraft:generic.knockback_resistance", 0.9);
 
     // ── 波次1：HP×1.5  ATK+2 ──
     b.addWave(w => {
@@ -230,7 +231,8 @@ function createBossGateway(id, color, o) {
         .spawnRange(16).leashRange(48)
         .allowDiscarding(false).allowDimChange(false).playerDamageOnly(false)
         .removeMobsOnFailure(true).failOnOutOfBounds(false)
-        .spacing(16).followRangeBoost(32).defaultDropChance(0);
+        .spacing(16).followRangeBoost(32).defaultDropChance(0)
+        .addAttribute("minecraft:generic.knockback_resistance", 0.9);
 
     // ── 波次1-4 ──
     for (let wi = 0; wi < 4; wi++) {
