@@ -10,12 +10,12 @@ bossDropReplace.put("apotheosis:mythic", 'apotheosis:mythic_material');
 bossDropReplace.put("apotheosis:ancient", '2x apotheosis:mythic_material');
 
 let jadeMap = {
-    "apotheosis:common": 20,
-    "apotheosis:uncommon": 20,
-    "apotheosis:rare": 50,
-    "apotheosis:epic": 200,
-    "apotheosis:mythic": 1000,
-    "apotheosis:ancient": 2000,
+    "apotheosis:common": 25,
+    "apotheosis:uncommon": 50,
+    "apotheosis:rare": 75,
+    "apotheosis:epic": 250,
+    "apotheosis:mythic": 500,
+    "apotheosis:ancient": 1000,
 };
 
 let specialMap = {

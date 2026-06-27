@@ -4,8 +4,8 @@ ServerEvents.recipes(event => {
         .modifyResult((grid, result) => {
             let bloodJade = grid.find('slashblade_sendims:blood_jade');
             if (bloodJade && bloodJade.nbt) {
-                let count = Math.floor(bloodJade.nbt.getInt('sbsd.bj.kill_count') / 10);
-                count = Math.max(1, Math.min(64, count));
+                let count = Math.floor(bloodJade.nbt.getInt('sbsd.bj.kill_count') / 15);
+                count = Math.max(1, Math.min(56));
                 return Item.of('slashblade:proudsoul_tiny', count);
             }
 
@@ -26,6 +26,10 @@ ServerEvents.recipes(event => {
             return result;
         })
         .id("sdbf:principle_of_sword_arts_copy_sas")
+
+    event.shapeless('slashbladeskin:sheath_design_drawing',
+        ['last_smith:scroll_basic', 'minecraft:writable_book', 'slashblade:proudsoul'])
+        .id("sdbf:sheath_design_drawing")
 
     event.shaped('2x integrateddynamics:logic_director', [
         'ACA',
@@ -306,7 +310,7 @@ ServerEvents.recipes(event => {
     ],
         Fluid.of("kubejs:melted_proudsoul", 250)
     ).id("sdbf:proudsoul_tiny_from_fluid")
-    
+
     event.recipes.thermal.smelter([
         Item.of('2x slashblade:proudsoul').withChance(1.2),
         Item.of('2x slashblade:proudsoul_tiny').withChance(1.15)
@@ -338,7 +342,7 @@ ServerEvents.recipes(event => {
     ]).id("sdbf:proudsoul_crystal")
 
     event.recipes.slashblade.proudsoul_shapeless_recipe('slashblade:proudsoul_trapezohedron', [
-        '3x slashblade:proudsoul_crystal',
+        '6x slashblade:proudsoul_crystal',
         'minecraft:bedrock'
     ]).id("sdbf:proudsoul_trapezohedron")
 
@@ -367,7 +371,7 @@ ServerEvents.recipes(event => {
         .id("sdbf:proudsoul_crystal_acc")
 
     event.recipes.thermal.smelter('slashblade:proudsoul_trapezohedron', [
-        '2x slashblade:proudsoul_crystal',
+        '5x slashblade:proudsoul_crystal',
         'slashblade_useful_addon:soul_crystal',
         'minecraft:bedrock'
     ])

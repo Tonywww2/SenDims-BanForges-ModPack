@@ -36,7 +36,7 @@
 				"使用&6变量卡&r右键&6岗哨基石&r激活传送"
 			]
 			hide_dependent_lines: true
-			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			icon: "integrateddynamics:menril_sapling"
 			id: "3DA6E818573A9A69"
 			size: 2.0d

@@ -616,7 +616,6 @@
 		}
 		{
 			dependencies: ["3F0F05D26289CF7B"]
-			hide_until_deps_visible: true
 			id: "5DC17402B959C2E9"
 			shape: "hexagon"
 			subtitle: "重要"

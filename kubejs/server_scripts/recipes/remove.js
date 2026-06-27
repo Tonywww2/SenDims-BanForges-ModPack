@@ -203,6 +203,7 @@ const toRemoveID = new Set([
     "slashblade_addon:terra_blade",
     "ad_astra:desh_engine",
     "enderio:smelting/the_bumblezone/sticky_honey_residue/from_smelting_honey_block",
+    "biomemakeover:altar",
 
     // s5
     "sjap_adder:kamuyex_fire",

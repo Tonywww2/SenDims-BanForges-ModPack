@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-    
+
     event.shaped('#forge:gears/copper', [
         ' A ',
         'ABA',
@@ -55,5 +55,13 @@ ServerEvents.recipes(event => {
         B: '#forge:storage_blocks/redstone',
         C: '#forge:ingots/gold'
     }).id('sdbf:thermal_rf_coil')
+
+
+    event.recipes.thermal.smelter('thermal:rich_slag', [
+        '6x thermal:slag',
+        '3x ae2:certus_quartz_dust',
+        '2x thermal:niter'])
+        .energy(8192)
+        .id("sdbf:rich_slag")
 
 })

@@ -48,6 +48,7 @@ JEIEvents.hideItems(event => {
     event.hide('sophisticatedbackpacks:stack_upgrade_tier_4');
 
     event.hide('cataclysm:blazing_grips');
+    event.hide('biomemakeover:altar');
 })
 
 JEIEvents.removeCategories(event => {

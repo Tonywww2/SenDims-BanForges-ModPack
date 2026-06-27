@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "slashbladeskin:item/sheath_design_drawing"
+  }
+}

@@ -14,6 +14,16 @@ NativeEvents.onEvent($LivingHurtEvent,
         let damage = event.getAmount();
         // print(damage)
 
+        if (entity.type == "minecraft:phantom") {
+            if (type == "onFire" && 
+                entity.level.dimensionKey == "minecraft:overworld" &&
+                entity.level.dayTime() > 0 && entity.level.dayTime() < 12000
+            ) {
+                entity.discard();
+                return;
+            }
+        }
+
         if (entity.isPlayer()) {
         
             let actual = event.source.actual;

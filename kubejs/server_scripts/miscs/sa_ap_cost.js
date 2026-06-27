@@ -6,6 +6,8 @@ SACostMap.put("slashblade:judgement_cut", [300, 0.2]);
 SACostMap.put("slashblade:judgement_cut_slash_air", [300, 0.2]);
 SACostMap.put("slashblade:judgement_cut_slash_just", [500, 0.2]);
 
+SACostMap.put("foxextra:voidslashplus", [500, 0.2]);
+
 SACostMap.put("slashblade:wave_edge_vertical", [200, 0.05]);
 SACostMap.put("slashblade:drive_horizontal", [200, 0.05]);
 SACostMap.put("slashblade_sendims:wave_edge_ammo", [400, 0.1]);
@@ -64,6 +66,8 @@ SACostMap.put("sjap_adder:cold_drive", [300, 0.2]);
 SACostMap.put("sjap_adder:burning_dance", [600, 0.2]);
 
 SACostMap.put("slashblade_addon:lighting_swords", [400, 0.2]);
+
+SACostMap.put("foxextra:thrust_ex", [200, 0.05]);
 
 let defaultCost = [200, 0.2];
 let superSlashArtCost = [400, 0.3];
