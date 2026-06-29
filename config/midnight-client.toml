@@ -1,5 +1,5 @@
 #Limits gamma/brightness in The Midnight by 50%.
-limitBrightness = true
+limitBrightness = false
 #Adds reverb to sounds in the Midnight.
 enableReverb = true
 

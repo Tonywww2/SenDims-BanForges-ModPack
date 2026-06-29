@@ -100,6 +100,13 @@
 				"1DE54DDD04540738"
 			]
 			dependency_requirement: "one_completed"
+			description: [
+				"简易的炼钢方式！"
+				""
+				"只需要把铁锭与木炭/煤炭一同放入电力高炉的输入栏内，就可以加工得到钢锭了。"
+				""
+				"别忘了给它供电，最简易的发电机是燃煤发电机。"
+			]
 			hide_until_deps_complete: true
 			id: "15D102DE2394A495"
 			size: 2.0d
@@ -113,6 +120,13 @@
 		}
 		{
 			dependencies: ["15D102DE2394A495"]
+			description: [
+				"钢锭是基础的工业材料，可以用于制作后续许多的工业品。"
+				""
+				"钢锭本身也很适合用于制作前期的盔甲和武器。"
+				""
+				"建议多准备一些。"
+			]
 			icon: "thermal:steel_ingot"
 			id: "2F9AAEA563550E3F"
 			rewards: [{
@@ -120,6 +134,7 @@
 				type: "xp"
 				xp: 100
 			}]
+			subtitle: "基础的工业材料"
 			tasks: [{
 				id: "55B23C823EC66270"
 				item: {
@@ -138,6 +153,7 @@
 		}
 		{
 			dependencies: ["3FA025D25ADB8411"]
+			description: ["特殊的工作台？"]
 			id: "47C442362B73368D"
 			tasks: [{
 				id: "4C9F346FB46259B1"
@@ -151,6 +167,11 @@
 			dependencies: [
 				"3FA025D25ADB8411"
 				"1620FC37BD64FA7E"
+			]
+			description: [
+				"可以将石油加工成火箭燃料。"
+				""
+				"不能被主动输入流体/物品，只能在机器中&b手动配置&r自动抽入。"
 			]
 			id: "606961105725FF7C"
 			tasks: [{
@@ -166,9 +187,10 @@
 			description: [
 				"穿戴拥有此附魔的头盔，可以使用氧气罐在太空呼吸。"
 				""
-				"月石可以使用熔炉制作。"
+				"&b月石&r可以使用熔炉制作。"
 			]
 			id: "293BC8386BEEE985"
+			shape: "diamond"
 			subtitle: "附魔：太空呼吸"
 			tasks: [{
 				id: "7D1AC51A92DCEED8"
@@ -563,6 +585,7 @@
 		{
 			dependencies: ["4A6CCBA361F14167"]
 			id: "2718DE33391A2093"
+			subtitle: "简易的发电机·2"
 			tasks: [{
 				id: "6706B66C36FDA292"
 				item: "wormhole:coal_generator"
@@ -607,6 +630,7 @@
 		{
 			dependencies: ["73531FB69122489F"]
 			id: "3BA3C4A36599BD29"
+			subtitle: "简易的发电机"
 			tasks: [{
 				id: "237C62226D563B49"
 				item: "ad_astra:coal_generator"
@@ -619,6 +643,8 @@
 			dependencies: ["293BC8386BEEE985"]
 			description: ["氧气罐，用来装氧气，在太空呼吸"]
 			id: "316871EADE2FF219"
+			shape: "diamond"
+			subtitle: "带在身上"
 			tasks: [{
 				id: "7984DC6D1A068095"
 				item: {
@@ -645,11 +671,12 @@
 		}
 		{
 			dependencies: ["1202BBA3EB29DB70"]
-			description: ["&c警告：需要太空耐火或者抗火药水效果。&r"]
+			description: ["&c警告：需要太空耐火附魔或者抗火药水效果。&r"]
 			hide_until_deps_complete: true
 			id: "78BE62D2851798DD"
 			shape: "hexagon"
 			size: 1.5d
+			subtitle: "警告：需要火焰防护"
 			tasks: [{
 				id: "7656CC2E5965FAA5"
 				item: {
@@ -665,8 +692,13 @@
 		{
 			dependencies: ["316871EADE2FF219"]
 			dependency_requirement: "one_completed"
-			description: ["将水转换成氧气，维持你在太空的呼吸"]
+			description: [
+				"将水转换成氧气，维持你在太空的呼吸。"
+				""
+				"不能被主动输入流体/物品，只能在机器中&b手动配置&r自动抽入。"
+			]
 			id: "7FDE4062BD2DC285"
+			subtitle: "装填氧气"
 			tasks: [{
 				id: "7F1118D783BC3394"
 				item: "ad_astra:oxygen_loader"
@@ -681,7 +713,13 @@
 				"3729969E7821EBB6"
 				"59C711671F81AB45"
 			]
+			description: [
+				"将钻石豆腐、硫酸桶、熔岩桶在锻造台上加工，可以制成石油桶。&m&7多么奇幻的加工方式啊！&r&r"
+				""
+				"你一共需要三桶才能制作发射一次的燃料。"
+			]
 			id: "1620FC37BD64FA7E"
+			subtitle: "奇异的加工方式"
 			tasks: [{
 				id: "613FCF1F9F909EFE"
 				item: "ad_astra:oil_bucket"
@@ -1578,6 +1616,31 @@
 			}]
 			x: 5.0d
 			y: 15.0d
+		}
+		{
+			dependencies: ["1EF6714DB8D7D5A4"]
+			id: "20D1C03A85A8326E"
+			shape: "diamond"
+			subtitle: "处理世界中的辐射"
+			tasks: [{
+				id: "04199716ACF26C30"
+				item: "nuclearcraft:gas_scrubber"
+				type: "item"
+			}]
+			x: -15.0d
+			y: 22.5d
+		}
+		{
+			dependencies: ["03642FCF18BB74CA"]
+			id: "6AAA96CEB00F318B"
+			subtitle: "TBD"
+			tasks: [{
+				id: "22B17DFC8B56F97B"
+				item: "apotheosis:mythic_material"
+				type: "item"
+			}]
+			x: -15.0d
+			y: 60.0d
 		}
 	]
 	title: "工业"

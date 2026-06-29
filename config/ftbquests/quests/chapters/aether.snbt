@@ -149,8 +149,8 @@
 			]
 			description: [
 				"A：寒风境云"
-				"B：天灵石"
-				"C：神能晶块"
+				"B：神能晶块"
+				"C：天灵石"
 				"{\"text\":\"激活物品 : \",\"extra\":[{\"type\":\"translatable\",\"translate\":\"item.aether_redux.golden_swet_ball\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_item\",\"contents\":\"aether_redux:golden_swet_ball\"}}]} "
 				""
 				"[ \"提示：如果你不知道这是什么意思，请查看\", { \"text\": \"前置任务\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"034D47E905861E48\" } }, \"。\" ]"

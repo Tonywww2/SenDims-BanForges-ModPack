@@ -238,8 +238,8 @@
         "value": 0
       },
       "max": {
-        "default": 10,
-        "value": 10
+        "default": 0.9999,
+        "value": 0.9999
       }
     },
     "minecraft:generic.armor_toughness": {

@@ -182,7 +182,7 @@
 				item: "integratedtunnels:part_interface_item"
 				type: "item"
 			}]
-			x: 0.0d
+			x: 2.5d
 			y: -7.5d
 		}
 		{
@@ -890,6 +890,30 @@
 			title: "精妙箱子"
 			x: 5.0d
 			y: 5.0d
+		}
+		{
+			dependencies: ["2270E6360EAB923F"]
+			description: [
+				"能量单元除了可以放置在世界中存取能量以外，还可以将其放置于背包中充能护甲与手中的物品！"
+				""
+				"手持能量单元对着空气潜行+右键就可以切换模式。"
+			]
+			id: "4DD041FA7A7FC14D"
+			subtitle: "简易的能量存储"
+			tasks: [{
+				id: "527CD21D59453775"
+				item: {
+					Count: 1
+					id: "integrateddynamics:energy_battery"
+					tag: {
+						energy: 0
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: -7.5d
 		}
 	]
 	title: "库存管理"
