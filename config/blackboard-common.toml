@@ -1,0 +1,18 @@
+
+[debug]
+	#Debug: sneak (shift) right-click a blackboard to have it tell you the current question's text component.
+	tellQuestionOnShiftClick = false
+
+[question]
+	#Base question difficulty (0 = easiest, higher = harder). Per-blackboard-type modifiers add to this; the total is clamped to 0..10.
+	#Range: -8 ~ 8
+	difficultyBase = 0
+
+[pool]
+	#Whether calculus question generators are also added to the default blackboard pool, so ordinary blackboards can show calculus questions. Applied on server start / /blackboard reload.
+	calculusInDefaultPool = false
+	#Whether boolean-logic question generators are also added to the default blackboard pool, so ordinary blackboards can show logic questions. Applied on server start / /blackboard reload.
+	logicInDefaultPool = false
+	#Whether the linear-algebra question generators (dot product, transpose, matrix-vector product, inverse) are also added to the default blackboard pool, so ordinary blackboards can show linear-algebra questions. Applied on server start / /blackboard reload.
+	linearAlgebraInDefaultPool = false
+

@@ -253,12 +253,10 @@
 			y: 10.0d
 		}
 		{
-			dependencies: [
-				"1D74838411B96ABC"
-				"23DF5636575FFAE2"
-			]
+			dependencies: ["1D74838411B96ABC"]
 			dependency_requirement: "one_completed"
 			id: "792DE983634FBDAD"
+			subtitle: "部分材料可以替换"
 			tasks: [{
 				id: "32476A20069F04A8"
 				item: "ad_astra:desh_engine"

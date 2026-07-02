@@ -241,6 +241,7 @@ biomemakeover:swamp/swamp_cypress
 biomemakeover:swamp/swamp_cypress_trees
 biomemakeover:swamp/willow
 biomemakeover:swamp/willow_trees
+blackboard:blackboard
 botania:black_mystical_flower_patch
 botania:blue_mystical_flower_patch
 botania:brown_mystical_flower_patch

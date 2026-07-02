@@ -14,15 +14,16 @@ ServerEvents.recipes(event => {
         .id('sdbf:sdbf_moon_g1_s2')
 
     event.shaped('ad_astra:desh_engine', [
-        'AEA',
-        'ABA',
-        'DCD'
+        'ADA',
+        'TBT',
+        'ECE'
     ], {
         A: 'ad_astra:photovoltaic_etrium_cell',
         B: 'ad_astra:steel_engine',
-        C: 'thermal:dynamo_magmatic',
+        C: ['thermal:dynamo_magmatic', '#forge:storage_blocks/netherite'],
         D: 'minecraft:nether_star',
-        E: 'thermal:enderium_gear'
+        E: ['#forge:gears/signalum', '#forge:ingots/netherite'],
+        T: 'ad_astra:desh_tank'
     }).id('sdbf:desh_engine_2_s2')
 
     event.shaped('terra_entity:slime_crown', [
