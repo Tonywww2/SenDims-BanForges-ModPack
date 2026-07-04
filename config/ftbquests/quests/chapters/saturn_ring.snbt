@@ -7,76 +7,12 @@
 	icon: "kubejs:titan-ii_composite_ingot"
 	id: "390334BC229FB9D8"
 	order_index: 4
-	quest_links: [
-		{
-			id: "3870EC255CFFBB3F"
-			linked_quest: "35F111CC582779BA"
-			x: -5.0d
-			y: 5.0d
-		}
-		{
-			id: "1C80F7DC6FB83684"
-			linked_quest: "6120DF977C2DFEA2"
-			x: 0.0d
-			y: 2.5d
-		}
-		{
-			id: "586757B864F17CC8"
-			linked_quest: "76BFA745E2BBDC7E"
-			x: -5.0d
-			y: 0.0d
-		}
-		{
-			id: "6584AABF3B4B001B"
-			linked_quest: "47820A4E592EE375"
-			x: -5.0d
-			y: 2.5d
-		}
-		{
-			id: "77AC69AA398C5A67"
-			linked_quest: "7D800CACE4E69CFF"
-			x: 5.0d
-			y: 2.5d
-		}
-		{
-			id: "28B8B422E9732D43"
-			linked_quest: "06A34C8A04B2CD83"
-			x: 5.0d
-			y: 0.0d
-		}
-		{
-			id: "516EB083C5C1D0BB"
-			linked_quest: "59F17F34F831D72E"
-			x: -2.5d
-			y: 5.0d
-		}
-		{
-			id: "4DD4C559A7AE2A29"
-			linked_quest: "2E2F1882E71FE497"
-			x: 0.0d
-			y: -5.0d
-		}
-		{
-			id: "12547F2CF6098E1B"
-			linked_quest: "0DE1DF9046B9CD2E"
-			x: -5.0d
-			y: -2.5d
-		}
-		{
-			id: "51DFCEE6B9A0EF14"
-			linked_quest: "65C573EE97C5117F"
-			x: -7.5d
-			y: -2.5d
-		}
-		{
-			id: "3D4D86CF738D4D9D"
-			linked_quest: "27BDBA3EDEB9A04A"
-			shape: "hexagon"
-			size: 1.5d
-			x: 2.5d
-			y: -2.5d
-		}
-	]
+	quest_links: [{
+		id: "3D4D86CF738D4D9D"
+		linked_quest: "27BDBA3EDEB9A04A"
+		x: -3.0d
+		y: 0.0d
+	}]
 	quests: [
 		{
 			dependencies: [
@@ -101,13 +37,18 @@
 				}
 				type: "item"
 			}]
-			x: -2.5d
-			y: 2.5d
+			x: 12.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
 				"3A267848CC75F232"
 				"27BDBA3EDEB9A04A"
+			]
+			description: [
+				"土星环并未完全完成，当前只完成了入口与材料的基础获得方法，其余的内容设计与流程设计并未完成。"
+				""
+				"如果你希望进行流程投稿，请联系制作组。"
 			]
 			hide_dependent_lines: true
 			id: "6035D1A1774B2FAF"
@@ -124,15 +65,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["6035D1A1774B2FAF"]
+			dependencies: ["363BE015B9EDE34B"]
 			id: "07A9736A3BDF80B1"
 			tasks: [{
-				id: "244FDA8A209D1FCD"
-				item: "kubejs:titan-ii_composite_ingot"
+				id: "526E4885B7C3FE58"
+				item: "kubejs:celestial_filling_alloy_ingot"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 0.0d
+			x: 12.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["6035D1A1774B2FAF"]
@@ -142,7 +83,7 @@
 				item: "kubejs:ancient_soul"
 				type: "item"
 			}]
-			x: -2.5d
+			x: 12.0d
 			y: 0.0d
 		}
 		{
@@ -166,8 +107,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
-			y: 2.5d
+			x: 12.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -190,8 +131,8 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
-			y: 5.0d
+			x: 15.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -216,8 +157,8 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
-			y: -2.5d
+			x: 15.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["6035D1A1774B2FAF"]
@@ -233,8 +174,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
-			y: 5.0d
+			x: 3.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["6035D1A1774B2FAF"]
@@ -250,8 +191,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: 5.0d
+			x: 3.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["6035D1A1774B2FAF"]
@@ -262,7 +203,7 @@
 				type: "structure"
 			}]
 			title: "沙虫巢穴"
-			x: 7.5d
+			x: 3.0d
 			y: 0.0d
 		}
 		{
@@ -274,7 +215,7 @@
 				id: "78EAF15D62C89C71"
 				type: "advancement"
 			}]
-			x: 10.0d
+			x: 6.0d
 			y: 0.0d
 		}
 		{
@@ -295,8 +236,58 @@
 				}
 				type: "item"
 			}]
-			x: 12.5d
+			x: 9.0d
 			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5ED601006671E6C2"
+				"69A40782E4BC7364"
+			]
+			id: "61B796D6D2E64C88"
+			tasks: [{
+				id: "66FC0FBD20FC0F86"
+				item: "kubejs:irradiated_saturn_dust"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6035D1A1774B2FAF"]
+			id: "5ED601006671E6C2"
+			tasks: [{
+				id: "352AE3FAF830AB3A"
+				item: "kubejs:saturn_regolith"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"61B796D6D2E64C88"
+				"14D5D5ADCDC5B859"
+			]
+			id: "363BE015B9EDE34B"
+			tasks: [{
+				id: "4EE1CF11C4350CE0"
+				item: "kubejs:saturn_ring_alloy_ingot"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["363BE015B9EDE34B"]
+			id: "0DD91FAA270A0E24"
+			tasks: [{
+				id: "68E8A3CF5A33E25C"
+				item: "slashblade_sendims:integral_component_5"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 6.0d
 		}
 	]
 	title: "土星环"

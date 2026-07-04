@@ -1,10 +1,10 @@
 {
   "modpackMode": false,
-  "fullScreen": "FULLSCREEN",
-  "fpsDisplayMode": "OFF",
+  "fullScreen": "WINDOWED",
+  "fpsDisplayMode": "ADVANCED",
   "fpsDisplayAlign": "LEFT",
   "fpsDisplayVAlign": "TOP",
-  "fpsDisplaySystemMode": "OFF",
+  "fpsDisplaySystemMode": "ALL",
   "fpsDisplayMargin": 12,
   "fpsDisplayVMargin": 12,
   "fpsDisplayShadow": true,

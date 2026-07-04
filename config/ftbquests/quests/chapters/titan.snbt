@@ -22,8 +22,8 @@
 			dependencies: ["37CF7606A44B5357"]
 			id: "2E3E9722D50C0D8A"
 			tasks: [{
-				id: "01850F23C2794B71"
-				item: "kubejs:celestial_filling_alloy_ingot"
+				id: "4454609790D7CF17"
+				item: "kubejs:storm_hydrogen_crystal"
 				type: "item"
 			}]
 			x: 2.5d
@@ -33,8 +33,8 @@
 			dependencies: ["37CF7606A44B5357"]
 			id: "7EACD821B5688C4C"
 			tasks: [{
-				id: "77E0EE783E6D868D"
-				item: "kubejs:storm_hydrogen_crystal"
+				id: "1DEBEE68E755899D"
+				item: "kubejs:titan-ii_composite_ingot"
 				type: "item"
 			}]
 			x: -2.5d

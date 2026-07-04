@@ -144,6 +144,17 @@
 			x: 0.0d
 			y: 7.5d
 		}
+		{
+			dependencies: ["0026560C056CC8EB"]
+			id: "78F7666CEE16B22C"
+			tasks: [{
+				id: "1D14F0A79963D089"
+				item: "slashblade_sendims:integral_component_6"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.5d
+		}
 	]
 	title: "霜原星"
 }

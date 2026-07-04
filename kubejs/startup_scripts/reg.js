@@ -28,6 +28,10 @@ StartupEvents.registry('item', event => {
     event.create('bizarre_matter_dust').fireResistant().rarity('rare')
     event.create('storm_hydrogen_crystal').fireResistant().rarity('rare')
     event.create('celestial_filling_alloy_ingot').fireResistant().rarity('rare')
+    // 土星环加工线中间产物 / Saturn ring processing intermediates
+    event.create('saturn_regolith').fireResistant()
+    event.create('irradiated_saturn_dust').fireResistant().rarity('rare')
+    event.create('saturn_ring_alloy_ingot').fireResistant().rarity('rare')
     event.create('ancient_soul').fireResistant().rarity('rare')
     event.create('titan-ii_composite_ingot').fireResistant().rarity('rare')
     event.create('multifaceted_ambrosia').fireResistant().rarity('rare')
