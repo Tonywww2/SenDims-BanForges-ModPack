@@ -160,10 +160,7 @@
 			y: 9.0d
 		}
 		{
-			dependencies: [
-				"53F747AC5A1FA677"
-				"0774BE522111CF90"
-			]
+			dependencies: ["53F747AC5A1FA677"]
 			id: "39FFBF8B4A64A561"
 			shape: "diamond"
 			tasks: [{
@@ -350,6 +347,7 @@
 				"1F6B42B37F50453D"
 			]
 			id: "4EC86EB5BB82EBC1"
+			shape: "diamond"
 			tasks: [{
 				id: "48C8A3F98126F577"
 				item: {

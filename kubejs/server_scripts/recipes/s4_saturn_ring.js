@@ -10,9 +10,9 @@ ServerEvents.recipes(event => {
 
     // ---- 便捷别名 / shortcuts -------------------------------------------------
     const REGOLITH = 'kubejs:saturn_regolith'               // 土星风化砂 (新增)
-    const IRRAD    = 'kubejs:irradiated_saturn_dust'        // 辐照土星砂 (新增)
-    const CORE     = 'kubejs:saturn_ring_alloy_ingot'       // 土星环合金锭 (新增)
-    const RESULT   = 'kubejs:celestial_filling_alloy_ingot' // 补天合金锭 (已注册)
+    const IRRAD = 'kubejs:irradiated_saturn_dust'        // 辐照土星砂 (新增)
+    const CORE = 'kubejs:saturn_ring_alloy_ingot'       // 土星环合金锭 (新增)
+    const RESULT = 'kubejs:celestial_filling_alloy_ingot' // 补天合金锭 (已注册)
 
     // ==========================================================================
     // T1 · 破碎：土星地表方块 → 土星风化砂
@@ -125,5 +125,17 @@ ServerEvents.recipes(event => {
         "mana": 1000000,
         "result": { "item": RESULT }
     }).id('sdbf:celestial_filling_alloy_ingot_s4')
+
+
+    event.shaped('slashblade_sendims:integral_component_5', [
+        'ABA',
+        'DCD',
+        'ABA'
+    ], {
+        A: CORE,
+        B: 'ae2:singularity',
+        C: 'kubejs:basepoint_alloy',
+        D: 'thermal:upgrade_augment_3'
+    }).id('sdbf:integral_component_5_s4')
 
 })

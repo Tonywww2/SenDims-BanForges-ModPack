@@ -11,86 +11,98 @@
 		{
 			id: "4BB9EA6F2880C79F"
 			linked_quest: "73531FB69122489F"
-			x: 0.0d
-			y: -2.5d
+			x: -3.0d
+			y: 0.0d
 		}
 		{
 			id: "27118AC70BA3FD60"
 			linked_quest: "34E2C69E62618843"
-			x: 2.5d
-			y: 22.5d
+			x: 48.0d
+			y: 0.0d
 		}
 		{
 			id: "313960DD88A9C973"
 			linked_quest: "58F48888F1039B24"
-			x: -2.5d
-			y: 22.5d
+			x: 45.0d
+			y: 0.0d
 		}
 		{
 			id: "6125CC552C522DC0"
 			linked_quest: "641BAE5B4E3ED25C"
-			x: 2.5d
-			y: 50.0d
+			x: 84.0d
+			y: 6.0d
 		}
 		{
 			id: "299E3B12357B5A3D"
 			linked_quest: "690B503CC20750EE"
-			x: 0.0d
-			y: 45.0d
+			x: 78.0d
+			y: 0.0d
 		}
 		{
 			id: "73BA08A257086F53"
 			linked_quest: "74C39C2A8B73986F"
-			x: -2.5d
-			y: 40.0d
+			x: 72.0d
+			y: 3.0d
 		}
 		{
 			id: "58BCC9A5EA938C64"
 			linked_quest: "2B1F98A770D77E12"
-			x: 2.5d
-			y: 40.0d
+			x: 75.0d
+			y: -2.5d
 		}
 		{
 			id: "0BD91D4013C520BA"
 			linked_quest: "7174346AD8DCFBEC"
-			x: -2.5d
-			y: 42.5d
+			x: 72.0d
+			y: -2.5d
 		}
 		{
 			id: "7F4EEE9A0CD93ED6"
 			linked_quest: "73EC367B170C5EF6"
-			x: 2.5d
-			y: 42.5d
+			x: 75.0d
+			y: 3.0d
 		}
 		{
 			id: "2C58153C3C8B3A97"
 			linked_quest: "05F34C96BF68DD64"
-			x: -2.5d
-			y: 47.5d
+			x: 81.0d
+			y: 0.0d
 		}
 		{
 			id: "141281C4DDE3D635"
 			linked_quest: "07AEFF9468658A0C"
-			x: -2.5d
-			y: 50.0d
+			x: 84.0d
+			y: 0.0d
 		}
 		{
 			id: "2A8E3A617FBF4EC4"
 			linked_quest: "0774BE522111CF90"
-			x: -2.5d
-			y: 55.0d
+			x: 90.0d
+			y: -15.0d
 		}
 		{
 			id: "1686B653B6054D4D"
 			linked_quest: "59C711671F81AB45"
-			x: -7.5d
-			y: 5.0d
+			x: 3.0d
+			y: -6.0d
 		}
 		{
 			id: "4AF0847F2E32C389"
 			linked_quest: "260A17885336B776"
-			x: 0.0d
-			y: 22.5d
+			x: 33.0d
+			y: 0.0d
+		}
+		{
+			id: "6750EB0CCBB84019"
+			linked_quest: "363BE015B9EDE34B"
+			x: 93.0d
+			y: -3.0d
+		}
+		{
+			id: "1D6635504027CFAD"
+			linked_quest: "07A9736A3BDF80B1"
+			x: 96.0d
+			y: -3.0d
 		}
 	]
 	quests: [
@@ -148,8 +160,8 @@
 				type: "item"
 			}]
 			title: "钢锭"
-			x: 0.0d
-			y: 2.5d
+			x: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["3FA025D25ADB8411"]
@@ -160,8 +172,8 @@
 				item: "ad_astra:nasa_workbench"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 7.5d
+			x: 9.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -179,8 +191,8 @@
 				item: "ad_astra:fuel_refinery"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 7.5d
+			x: 9.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["3FA025D25ADB8411"]
@@ -206,8 +218,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
-			y: 7.5d
+			x: 15.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -249,8 +261,8 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
-			y: 10.0d
+			x: 12.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1D74838411B96ABC"]
@@ -262,8 +274,8 @@
 				item: "ad_astra:desh_engine"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 17.5d
+			x: 27.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -282,8 +294,8 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
-			y: 20.0d
+			x: 30.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["750B557031EFBBEE"]
@@ -293,8 +305,8 @@
 				item: "ad_astra:desh_ingot"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 12.5d
+			x: 24.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["66C1156C17F399C9"]
@@ -331,8 +343,8 @@
 				item: "thermal:machine_frame"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 12.5d
+			x: 27.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["03405BC60C3EFA99"]
@@ -342,8 +354,8 @@
 				item: "thermal:machine_pulverizer"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 12.5d
+			x: 30.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["03405BC60C3EFA99"]
@@ -353,8 +365,8 @@
 				item: "thermal:machine_furnace"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 15.0d
+			x: 30.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["4A2D947949B03EB5"]
@@ -364,8 +376,8 @@
 				item: "thermal:machine_smelter"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 12.5d
+			x: 36.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["6CF1E5C2D33B8465"]
@@ -375,8 +387,8 @@
 				item: "thermal:invar_dust"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 12.5d
+			x: 33.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["7AE21FD78902B494"]
@@ -386,8 +398,8 @@
 				item: "thermal:constantan_ingot"
 				type: "item"
 			}]
-			x: 15.0d
-			y: 12.5d
+			x: 39.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["7F97EF10FCEAA6D0"]
@@ -397,8 +409,8 @@
 				item: "thermal:machine_press"
 				type: "item"
 			}]
-			x: 17.5d
-			y: 12.5d
+			x: 42.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["1D74838411B96ABC"]
@@ -408,8 +420,8 @@
 				item: "ad_astra:photovoltaic_etrium_cell"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 12.5d
+			x: 24.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["34173BFDB4914CA8"]
@@ -419,8 +431,8 @@
 				item: "thermal:gold_gear"
 				type: "item"
 			}]
-			x: 17.5d
-			y: 15.0d
+			x: 45.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["0E09FA650560F98B"]
@@ -430,8 +442,8 @@
 				item: "thermal:upgrade_augment_1"
 				type: "item"
 			}]
-			x: 20.0d
-			y: 15.0d
+			x: 48.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["7AE21FD78902B494"]
@@ -441,8 +453,8 @@
 				item: "thermal:signalum_ingot"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 10.0d
+			x: 36.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -455,8 +467,8 @@
 				item: "thermal:signalum_gear"
 				type: "item"
 			}]
-			x: 17.5d
-			y: 10.0d
+			x: 42.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -469,8 +481,8 @@
 				item: "thermal:upgrade_augment_2"
 				type: "item"
 			}]
-			x: 20.0d
-			y: 10.0d
+			x: 48.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -490,8 +502,8 @@
 				item: "ad_astra:compressor"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 5.0d
+			x: 6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["7AE21FD78902B494"]
@@ -501,8 +513,8 @@
 				item: "thermal:enderium_ingot"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 17.5d
+			x: 36.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -515,8 +527,8 @@
 				item: "thermal:upgrade_augment_3"
 				type: "item"
 			}]
-			x: 20.0d
-			y: 17.5d
+			x: 48.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["0A6BF4C8A75EF242"]
@@ -538,8 +550,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: 0.0d
+			x: 6.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["4A6CCBA361F14167"]
@@ -560,8 +572,8 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
-			y: 0.0d
+			x: 9.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["4A6CCBA361F14167"]
@@ -577,8 +589,8 @@
 				item: "wormhole:basic_target_cell"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -2.5d
+			x: 9.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["4A6CCBA361F14167"]
@@ -589,41 +601,8 @@
 				item: "wormhole:coal_generator"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["73531FB69122489F"]
-			id: "69C5C12E7CCD2120"
-			tasks: [{
-				id: "57E3F4500FE027BE"
-				item: "easy_villagers:trader"
-				type: "item"
-			}]
-			x: -2.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["73531FB69122489F"]
-			id: "48041C5E490FA4C6"
-			tasks: [{
-				id: "05AE515DC4F5CC17"
-				item: "easy_villagers:breeder"
-				type: "item"
-			}]
-			x: -2.5d
-			y: -2.5d
-		}
-		{
-			dependencies: ["73531FB69122489F"]
-			id: "6966F258DE827796"
-			tasks: [{
-				id: "0D3F9E307FDE3F24"
-				item: "easy_villagers:incubator"
-				type: "item"
-			}]
-			x: -2.5d
-			y: -5.0d
+			x: 6.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["73531FB69122489F"]
@@ -634,8 +613,8 @@
 				item: "ad_astra:coal_generator"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -2.5d
+			x: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["293BC8386BEEE985"]
@@ -652,8 +631,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: 7.5d
+			x: 18.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["260A17885336B776"]
@@ -664,8 +643,8 @@
 				item: "ad_astra:ostrum_engine"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 25.0d
+			x: 36.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1202BBA3EB29DB70"]
@@ -684,8 +663,8 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
-			y: 32.5d
+			x: 39.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["316871EADE2FF219"]
@@ -702,13 +681,12 @@
 				item: "ad_astra:oxygen_loader"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 10.0d
+			x: 21.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
 				"590D7D0D241DD369"
-				"3729969E7821EBB6"
 				"59C711671F81AB45"
 			]
 			description: [
@@ -723,8 +701,8 @@
 				item: "ad_astra:oil_bucket"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 7.5d
+			x: 6.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["66C1156C17F399C9"]
@@ -735,8 +713,8 @@
 				item: "ad_astra:solar_panel"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 15.0d
+			x: 24.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["78BE62D2851798DD"]
@@ -747,14 +725,13 @@
 				item: "ad_astra:calorite_ingot"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 37.5d
+			x: 66.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
 				"34E2C69E62618843"
 				"03405BC60C3EFA99"
-				"7AA05C224646E255"
 			]
 			hide_until_deps_visible: true
 			id: "0516786C011E5581"
@@ -763,8 +740,8 @@
 				item: "enderio:void_chassis"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 22.5d
+			x: 48.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["49ED2F0850A4FCDE"]
@@ -779,8 +756,8 @@
 				item: "enderio:alloy_smelter"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 25.0d
+			x: 54.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["1AFA1F8F4A3B7215"]
@@ -790,8 +767,8 @@
 				item: "enderio:dark_steel_ingot"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 25.0d
+			x: 57.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["04EDD18FC8E8BFE0"]
@@ -801,8 +778,8 @@
 				item: "enderio:sag_mill"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 25.0d
+			x: 60.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["6B6F5BCF33D5E1D3"]
@@ -812,8 +789,8 @@
 				item: "enderio:ensouled_chassis"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 30.0d
+			x: 54.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["2875154D938C8757"]
@@ -823,8 +800,8 @@
 				item: "enderio:xp_obelisk"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 32.5d
+			x: 54.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["2875154D938C8757"]
@@ -834,8 +811,8 @@
 				item: "enderio:slice_and_splice"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 30.0d
+			x: 57.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["1AFA1F8F4A3B7215"]
@@ -846,8 +823,8 @@
 				item: "enderio:soularium_ingot"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 27.5d
+			x: 54.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["6B6F5BCF33D5E1D3"]
@@ -857,8 +834,8 @@
 				item: "enderio:empty_soul_vial"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 27.5d
+			x: 57.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["1EC2AEB9FD4352CA"]
@@ -868,8 +845,8 @@
 				item: "enderio:soul_binder"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 30.0d
+			x: 60.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["6DF360C55C775A02"]
@@ -883,8 +860,8 @@
 				}
 				type: "item"
 			}]
-			x: 15.0d
-			y: 30.0d
+			x: 63.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["0516786C011E5581"]
@@ -894,24 +871,8 @@
 				item: "enderio:primitive_alloy_smelter"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 22.5d
-		}
-		{
-			dependencies: [
-				"34E2C69E62618843"
-				"5BB642BD0BE40541"
-			]
-			hide_dependency_lines: true
-			hide_until_deps_visible: true
-			id: "7AA05C224646E255"
-			tasks: [{
-				id: "78E4EF6FD724F9F0"
-				item: "enderio:grains_of_infinity"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 20.0d
+			x: 51.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["49ED2F0850A4FCDE"]
@@ -921,8 +882,8 @@
 				item: "enderio:energetic_alloy_ingot"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 22.5d
+			x: 51.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["1AFA1F8F4A3B7215"]
@@ -932,8 +893,8 @@
 				item: "enderio:pulsating_alloy_ingot"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 27.5d
+			x: 54.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -947,8 +908,8 @@
 				item: "enderio:end_steel_ingot"
 				type: "item"
 			}]
-			x: 15.0d
-			y: 25.0d
+			x: 57.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["2C1BF95188C3BEDF"]
@@ -958,8 +919,8 @@
 				item: "enderio:basic_capacitor"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 22.5d
+			x: 54.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["2E71DEA2A630DA18"]
@@ -969,8 +930,8 @@
 				item: "enderio:double_layer_capacitor"
 				type: "item"
 			}]
-			x: 15.0d
-			y: 22.5d
+			x: 57.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["3A9B56840D108088"]
@@ -980,8 +941,8 @@
 				item: "enderio:octadic_capacitor"
 				type: "item"
 			}]
-			x: 17.5d
-			y: 22.5d
+			x: 60.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["088AF6E3F4AA7E3B"]
@@ -991,8 +952,8 @@
 				item: "nuclearcraft:plate_basic"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 25.0d
+			x: 48.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["31801D73AF59C8CB"]
@@ -1002,8 +963,8 @@
 				item: "botania:apothecary_default"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 37.5d
+			x: 66.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["6EA0FF1CC5982E8F"]
@@ -1013,8 +974,8 @@
 				item: "botania:pure_daisy"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 37.5d
+			x: 69.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["1D29CD35F0ACC56B"]
@@ -1024,8 +985,8 @@
 				item: "botania:livingrock"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 37.5d
+			x: 72.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["771356D4D0ACE1DF"]
@@ -1035,8 +996,8 @@
 				item: "botania:runic_altar"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 37.5d
+			x: 72.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -1049,8 +1010,8 @@
 				item: "botania:terra_plate"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 45.0d
+			x: 78.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["2B520DD47D46DDEB"]
@@ -1060,8 +1021,8 @@
 				item: "botania:terrasteel_ingot"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 47.5d
+			x: 81.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["74388B1FF26F530C"]
@@ -1071,8 +1032,8 @@
 				item: "nuclearcraft:alloy_smelter"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 25.0d
+			x: 51.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -1086,8 +1047,8 @@
 				item: "nuclearcraft:tough_alloy_ingot"
 				type: "item"
 			}]
-			x: -10.0d
-			y: 25.0d
+			x: 51.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["41D60AA656791D52"]
@@ -1097,8 +1058,8 @@
 				item: "nuclearcraft:plate_advanced"
 				type: "item"
 			}]
-			x: -10.0d
-			y: 22.5d
+			x: 54.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["41D60AA656791D52"]
@@ -1108,8 +1069,8 @@
 				item: "nuclearcraft:chassis"
 				type: "item"
 			}]
-			x: -12.5d
-			y: 25.0d
+			x: 54.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -1124,8 +1085,8 @@
 				item: "nuclearcraft:rock_crusher"
 				type: "item"
 			}]
-			x: -12.5d
-			y: 22.5d
+			x: 57.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["58F48888F1039B24"]
@@ -1136,8 +1097,8 @@
 				item: "nuclearcraft:manufactory"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 25.0d
+			x: 45.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["41D60AA656791D52"]
@@ -1147,8 +1108,8 @@
 				item: "nuclearcraft:decay_hastener"
 				type: "item"
 			}]
-			x: -10.0d
-			y: 27.5d
+			x: 51.0d
+			y: -12.0d
 		}
 		{
 			dependencies: ["01E82FD52A60F607"]
@@ -1158,8 +1119,8 @@
 				item: "nuclearcraft:assembler"
 				type: "item"
 			}]
-			x: -12.5d
-			y: 27.5d
+			x: 57.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -1172,8 +1133,8 @@
 				item: "nuclearcraft:fission_reactor_controller"
 				type: "item"
 			}]
-			x: -15.0d
-			y: 27.5d
+			x: 57.0d
+			y: -12.0d
 		}
 		{
 			dependencies: ["0BD7C25BE393E906"]
@@ -1183,8 +1144,8 @@
 				item: "nuclearcraft:irradiator"
 				type: "item"
 			}]
-			x: -15.0d
-			y: 30.0d
+			x: 60.0d
+			y: -12.0d
 		}
 		{
 			dependencies: [
@@ -1197,8 +1158,8 @@
 				item: "nuclearcraft:fusion_core"
 				type: "item"
 			}]
-			x: -15.0d
-			y: 45.0d
+			x: 78.0d
+			y: -12.0d
 		}
 		{
 			dependencies: ["7EEE08CB9B8DE8A1"]
@@ -1208,8 +1169,8 @@
 				item: "nuclearcraft:fusion_reactor_casing"
 				type: "item"
 			}]
-			x: -15.0d
-			y: 47.5d
+			x: 81.0d
+			y: -12.0d
 		}
 		{
 			dependencies: [
@@ -1222,8 +1183,8 @@
 				item: "botania:alfheim_portal"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 50.0d
+			x: 84.0d
+			y: 15.0d
 		}
 		{
 			dependencies: [
@@ -1236,8 +1197,8 @@
 				item: "botania:elementium_ingot"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 50.0d
+			x: 87.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["15D102DE2394A495"]
@@ -1247,23 +1208,8 @@
 				item: "tofucraft:tofudiamond"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 5.0d
-		}
-		{
-			dependencies: [
-				"5BB642BD0BE40541"
-				"6140B0BCEB7F9D64"
-				"15D102DE2394A495"
-			]
-			id: "3729969E7821EBB6"
-			tasks: [{
-				id: "47EFD2E81A6EE542"
-				item: "minecraft:lava_bucket"
-				type: "item"
-			}]
-			x: -2.5d
-			y: 5.0d
+			x: 3.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["0BD7C25BE393E906"]
@@ -1273,8 +1219,8 @@
 				item: "nuclearcraft:empty_heat_sink"
 				type: "item"
 			}]
-			x: -17.5d
-			y: 27.5d
+			x: 57.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["0BD7C25BE393E906"]
@@ -1284,8 +1230,8 @@
 				item: "nuclearcraft:graphite_block"
 				type: "item"
 			}]
-			x: -15.0d
-			y: 25.0d
+			x: 60.0d
+			y: -9.0d
 		}
 		{
 			dependencies: [
@@ -1298,8 +1244,8 @@
 				item: "nuclearcraft:helium_3_bucket"
 				type: "item"
 			}]
-			x: -15.0d
-			y: 50.0d
+			x: 84.0d
+			y: -12.0d
 		}
 		{
 			dependencies: ["69A40782E4BC7364"]
@@ -1309,8 +1255,8 @@
 				item: "nuclearcraft:polonium_dust"
 				type: "item"
 			}]
-			x: -17.5d
-			y: 30.0d
+			x: 63.0d
+			y: -12.0d
 		}
 		{
 			dependencies: ["52DEB335E97C57C9"]
@@ -1320,8 +1266,8 @@
 				item: "botania:pixie_dust"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 52.5d
+			x: 87.0d
+			y: 18.0d
 		}
 		{
 			dependencies: [
@@ -1334,8 +1280,8 @@
 				item: "botania:gaia_pylon"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 52.5d
+			x: 90.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["1355B5FEA170DF1D"]
@@ -1345,8 +1291,8 @@
 				item: "botania:life_essence"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 52.5d
+			x: 93.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["42C9B0A729486047"]
@@ -1362,8 +1308,8 @@
 				}
 				type: "item"
 			}]
-			x: 15.0d
-			y: 52.5d
+			x: 96.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["79B89622E21E230D"]
@@ -1373,13 +1319,12 @@
 				item: "botania:travel_belt"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 37.5d
+			x: 72.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
 				"42C9B0A729486047"
-				"5E2FB0326E11216D"
 				"78A9384D5951B1FB"
 			]
 			id: "40FB5B54BCDCC269"
@@ -1388,8 +1333,8 @@
 				item: "botania:super_travel_belt"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 50.0d
+			x: 93.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["42C9B0A729486047"]
@@ -1399,8 +1344,8 @@
 				item: "appbot:mana_cell_housing"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 55.0d
+			x: 96.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["088AF6E3F4AA7E3B"]
@@ -1410,8 +1355,8 @@
 				item: "tofucraft:salt_block"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 22.5d
+			x: 45.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["01779B6E3BCFF74E"]
@@ -1421,8 +1366,8 @@
 				item: "nuclearcraft:lithium_ingot"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 22.5d
+			x: 48.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["771356D4D0ACE1DF"]
@@ -1432,8 +1377,8 @@
 				item: "botania:manasteel_ingot"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 42.5d
+			x: 72.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["42C9B0A729486047"]
@@ -1443,8 +1388,8 @@
 				item: "botania:gaia_ingot"
 				type: "item"
 			}]
-			x: 15.0d
-			y: 55.0d
+			x: 93.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["31801D73AF59C8CB"]
@@ -1458,8 +1403,8 @@
 				}
 				type: "item"
 			}]
-			x: -2.5d
-			y: 37.5d
+			x: 69.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -1487,8 +1432,8 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
-			y: 42.5d
+			x: 75.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -1507,23 +1452,8 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
-			y: 50.0d
-		}
-		{
-			dependencies: ["34C15FC6C1E469E9"]
-			id: "27BDBA3EDEB9A04A"
-			tasks: [{
-				id: "40874160EE5A1BBC"
-				item: {
-					Count: 1
-					id: "ad_astra_rocketed:tier_6_rocket"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 0.0d
-			y: 57.5d
+			x: 93.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -1536,8 +1466,8 @@
 				item: "nuclearcraft:chamber_terminal"
 				type: "item"
 			}]
-			x: -15.0d
-			y: 55.0d
+			x: 87.0d
+			y: -12.0d
 		}
 		{
 			dependencies: ["557FEB1D34169026"]
@@ -1547,8 +1477,8 @@
 				item: "nuclearcraft:upgrade_quantum"
 				type: "item"
 			}]
-			x: -15.0d
-			y: 57.5d
+			x: 90.0d
+			y: -12.0d
 		}
 		{
 			dependencies: ["32B566DB7BFEDCA5"]
@@ -1564,8 +1494,8 @@
 				item: "wormhole:advanced_target_cell"
 				type: "item"
 			}]
-			x: 10.0d
-			y: -2.5d
+			x: 12.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["3A897B2A72ABC032"]
@@ -1584,11 +1514,11 @@
 				}
 				type: "item"
 			}]
-			x: 10.0d
-			y: 0.0d
+			x: 12.0d
+			y: 3.0d
 		}
 		{
-			dependencies: ["73531FB69122489F"]
+			dependencies: ["5BB642BD0BE40541"]
 			id: "0A6BF4C8A75EF242"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1601,8 +1531,8 @@
 				item: "minecraft:ender_pearl"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 0.0d
+			x: 3.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["03405BC60C3EFA99"]
@@ -1612,8 +1542,8 @@
 				item: "thermal:energy_duct"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 15.0d
+			x: 27.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["1EF6714DB8D7D5A4"]
@@ -1625,8 +1555,8 @@
 				item: "nuclearcraft:gas_scrubber"
 				type: "item"
 			}]
-			x: -15.0d
-			y: 22.5d
+			x: 54.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["03642FCF18BB74CA"]
@@ -1637,8 +1567,19 @@
 				item: "apotheosis:mythic_material"
 				type: "item"
 			}]
-			x: -15.0d
-			y: 60.0d
+			x: 90.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["363BE015B9EDE34B"]
+			id: "197050BCE3FA744A"
+			tasks: [{
+				id: "798BAD330F4126F3"
+				item: "slashblade_sendims:integral_component_5"
+				type: "item"
+			}]
+			x: 93.0d
+			y: -6.0d
 		}
 	]
 	title: "工业"
