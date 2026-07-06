@@ -77,7 +77,7 @@
 		{
 			id: "2A8E3A617FBF4EC4"
 			linked_quest: "0774BE522111CF90"
-			x: 90.0d
+			x: 93.0d
 			y: -15.0d
 		}
 		{
@@ -1466,7 +1466,7 @@
 				item: "nuclearcraft:chamber_terminal"
 				type: "item"
 			}]
-			x: 87.0d
+			x: 93.0d
 			y: -12.0d
 		}
 		{
@@ -1477,7 +1477,7 @@
 				item: "nuclearcraft:upgrade_quantum"
 				type: "item"
 			}]
-			x: 90.0d
+			x: 96.0d
 			y: -12.0d
 		}
 		{
@@ -1567,8 +1567,8 @@
 				item: "apotheosis:mythic_material"
 				type: "item"
 			}]
-			x: 90.0d
-			y: -9.0d
+			x: 99.0d
+			y: -12.0d
 		}
 		{
 			dependencies: ["363BE015B9EDE34B"]
@@ -1580,6 +1580,23 @@
 			}]
 			x: 93.0d
 			y: -6.0d
+		}
+		{
+			dependencies: ["34C15FC6C1E469E9"]
+			id: "397C4E18445F7165"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "713BBD62C4A33039"
+				item: {
+					Count: 1
+					id: "ad_astra_rocketed:tier_6_rocket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 102.0d
+			y: 0.0d
 		}
 	]
 	title: "工业"

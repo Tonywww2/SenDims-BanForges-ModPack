@@ -138,4 +138,24 @@ ServerEvents.recipes(event => {
         D: 'thermal:upgrade_augment_3'
     }).id('sdbf:integral_component_5_s4')
 
+    event.shaped(Item.of('gateways:gate_pearl', '{gateway:"gateways:sdbf_sr_ayeti"}'), [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'kubejs:saturn_regolith',
+        B: 'apotheosis:epic_material',
+        C: 'slashblade:proudsoul_sphere',
+    }).id('sdbf:sdbf_sr_ayeti_s4')
+
+    event.shaped(Item.of('gateways:gate_pearl', '{gateway:"gateways:sdbf_sr_kp"}'), [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'kubejs:irradiated_saturn_dust',
+        B: 'apotheosis:epic_material',
+        C: 'slashblade:proudsoul_sphere',
+    }).id('sdbf:sdbf_sr_kp_s4')
+
 })

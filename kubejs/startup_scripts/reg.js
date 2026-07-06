@@ -94,6 +94,15 @@ StartupEvents.registry('block', event => {
         .renderType('cutout')
         .tagBlock('minecraft:mineable/pickaxe')
 
+    // event.create('soul_crystal_cluster')
+    //     .soundType('amethyst_cluster')
+    //     .noCollision()
+    //     .hardness(12.0)
+    //     .resistance(12.0)
+    //     .requiresTool(true)
+    //     .renderType('cutout')
+    //     .tagBlock('minecraft:mineable/pickaxe')
+
 })
 
 StartupEvents.registry('fluid', event => {

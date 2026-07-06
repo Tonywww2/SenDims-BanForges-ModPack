@@ -1,6 +1,6 @@
 {
     "dimension": "sdbf:asteroid_belt",
-    "gravity": 0.37,
+    "gravity": 0.17,
     "orbit": "sdbf:asteroid_belt_orbit",
     "oxygen": false,
     "solar_power": 20,

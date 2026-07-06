@@ -30,6 +30,7 @@ ServerEvents.highPriorityData(event => {
             wave.setupTime(60);
             wave["addStackListReward(java.util.List)"]([jade]);
             wave.addReward('tetra:geode', 12);
+            wave.addReward('apotheosis:epic_material', 1);
         })
         .addWave(wave => {
             wave.addEntity("twilightforest:yeti", 12);
@@ -40,6 +41,8 @@ ServerEvents.highPriorityData(event => {
             wave.setupTime(20);
             wave["addStackListReward(java.util.List)"]([jade2]);
             wave.addReward('tetra:geode', 24);
+            wave.addReward('apotheosis:epic_material', 2);
+            wave.addReward('apotheosis:mythic_material', 1);
         })
         .addWave(wave => {
             wave.addEntity("twilightforest:alpha_yeti", 1);
@@ -50,6 +53,8 @@ ServerEvents.highPriorityData(event => {
             wave.setupTime(20);
             wave["addStackListReward(java.util.List)"]([jade4]);
             wave.addReward('tetra:geode', 36);
+            wave.addReward('apotheosis:epic_material', 3);
+            wave.addReward('apotheosis:mythic_material', 2);
         })
         .addWave(wave => {
             wave.addEntity("twilightforest:alpha_yeti", 1);
@@ -60,6 +65,8 @@ ServerEvents.highPriorityData(event => {
             wave.setupTime(60);
             wave["addStackListReward(java.util.List)"]([jade8]);
             wave.addReward('tetra:geode', 36);
+            wave.addReward('apotheosis:epic_material', 4);
+            wave.addReward('apotheosis:mythic_material', 4);
         })
         // ── 完成奖励 ──
         .addReward("slashblade:proudsoul", 24)
@@ -67,7 +74,7 @@ ServerEvents.highPriorityData(event => {
 
     Gateway.customBuilder("gateways:sdbf_sr_kp")
         .size("large")
-        .color(0xCFCFCF)
+        .color(0x878A81)
         .spawnRange(16)
         .leashRange(64)
         .allowDiscarding(false)
@@ -89,6 +96,7 @@ ServerEvents.highPriorityData(event => {
             wave.setupTime(60);
             wave["addStackListReward(java.util.List)"]([jade]);
             wave.addReward('tetra:geode', 12);
+            wave.addReward('apotheosis:epic_material', 1);
         })
         .addWave(wave => {
             wave.addEntity("twilightforest:lower_goblin_knight", 6);
@@ -102,6 +110,8 @@ ServerEvents.highPriorityData(event => {
             wave.setupTime(20);
             wave["addStackListReward(java.util.List)"]([jade2]);
             wave.addReward('tetra:geode', 24);
+            wave.addReward('apotheosis:epic_material', 2);
+            wave.addReward('apotheosis:mythic_material', 1);
         })
         .addWave(wave => {
             wave.addEntity("twilightforest:knight_phantom", 3);
@@ -112,6 +122,8 @@ ServerEvents.highPriorityData(event => {
             wave.setupTime(20);
             wave["addStackListReward(java.util.List)"]([jade4]);
             wave.addReward('tetra:geode', 36);
+            wave.addReward('apotheosis:epic_material', 3);
+            wave.addReward('apotheosis:mythic_material', 2);
         })
         .addWave(wave => {
             wave.addEntity("twilightforest:knight_phantom", 6);
@@ -122,6 +134,8 @@ ServerEvents.highPriorityData(event => {
             wave.setupTime(60);
             wave["addStackListReward(java.util.List)"]([jade8]);
             wave.addReward('tetra:geode', 36);
+            wave.addReward('apotheosis:epic_material', 4);
+            wave.addReward('apotheosis:mythic_material', 4);
         })
         // ── 完成奖励 ──
         .addReward("slashblade:proudsoul", 24)

@@ -7,12 +7,21 @@
 	icon: "kubejs:titan-ii_composite_ingot"
 	id: "390334BC229FB9D8"
 	order_index: 4
-	quest_links: [{
-		id: "70F662E3FBA7E7DD"
-		linked_quest: "34C15FC6C1E469E9"
-		x: -3.0d
-		y: 0.0d
-	}]
+	quest_links: [
+		{
+			id: "70F662E3FBA7E7DD"
+			linked_quest: "34C15FC6C1E469E9"
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			id: "4E904CCF8202B42C"
+			linked_quest: "397C4E18445F7165"
+			shape: "hexagon"
+			x: 18.0d
+			y: 0.0d
+		}
+	]
 	quests: [
 		{
 			dependencies: [
@@ -158,7 +167,10 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["6035D1A1774B2FAF"]
+			dependencies: [
+				"6035D1A1774B2FAF"
+				"5ED601006671E6C2"
+			]
 			id: "2C06C05377A55E40"
 			tasks: [{
 				id: "6A9B36A4909E3FC2"
@@ -175,7 +187,10 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["6035D1A1774B2FAF"]
+			dependencies: [
+				"6035D1A1774B2FAF"
+				"61B796D6D2E64C88"
+			]
 			id: "6899831613AC8F4B"
 			tasks: [{
 				id: "74FF83F16F7D2259"
@@ -188,8 +203,8 @@
 				}
 				type: "item"
 			}]
-			x: 3.0d
-			y: 9.0d
+			x: 6.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["6035D1A1774B2FAF"]
@@ -242,6 +257,7 @@
 				"69A40782E4BC7364"
 			]
 			id: "61B796D6D2E64C88"
+			subtitle: "警告：此配方会产生巨量的辐射"
 			tasks: [{
 				id: "66FC0FBD20FC0F86"
 				item: "kubejs:irradiated_saturn_dust"

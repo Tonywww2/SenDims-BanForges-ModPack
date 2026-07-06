@@ -26,10 +26,19 @@
 			x: 0.0d
 			y: 10.0d
 		}
+		{
+			id: "2DC35CB3E6D3B03B"
+			linked_quest: "397C4E18445F7165"
+			x: -2.5d
+			y: -2.5d
+		}
 	]
 	quests: [
 		{
-			dependencies: ["3A267848CC75F232"]
+			dependencies: [
+				"3A267848CC75F232"
+				"397C4E18445F7165"
+			]
 			hide_dependent_lines: true
 			id: "2E150AF7AD2E748B"
 			size: 2.0d

@@ -126,11 +126,11 @@ NativeEvents.onEvent($PerformSlashArtEvent, event => {
     let costs = defaultCost;
 
     if (!SACostMap.containsKey(saId)) {
-        console.log(`[SlashBlade] Player ${entity.username} is attempting SA [${saId}] without defined cost!`);
+        console.log(`玩家 ${entity.username} 正在释放的 SA [${saId}] 没有被配置消耗！请向制作组反馈这个SA！`);
         entity.tell(
-            Text.of(`[SlashBlade] Player ${entity.username} is attempting SA [`)
+            Text.of(`玩家 ${entity.username} 正在释放的 SA [`)
                 .append(Text.of(saId).underlined().clickCopy(saId))
-                .append(Text.of(`] without defined cost!`))
+                .append(Text.of(`] 没有被配置消耗！请向制作组反馈这个SA！`))
         );
     } else {
         costs = SACostMap.get(saId);
