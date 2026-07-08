@@ -466,6 +466,13 @@ const mobTypes = new Map([
     ["block_factorys_bosses:sandworm", bossType2],
     ["block_factorys_bosses:infernal_dragon", bossType1],
 
+    ["ad_astra:glacian_ram", type0],
+    ["cataclysm:draugr", typeA],
+    ["cataclysm:royal_draugr", typeB],
+    ["cataclysm:elite_draugr", typeC],
+
+    ["cataclysm:aptrgangr", typeAE],
+
 ]);
 
 /**

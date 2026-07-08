@@ -6,6 +6,106 @@
 	group: "6900D4BA6E5FB142"
 	icon: "minecraft:flowering_azalea"
 	id: "4A8CA01794599D76"
+	images: [
+		{
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			dependency: "5748351A76910019"
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 16.5d
+			y: -0.5d
+		}
+		{
+			dependency: "02003846DA642A0D"
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 22.5d
+			y: -0.5d
+		}
+		{
+			dependency: "5748351A76910019"
+			height: 0.5d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: -90.0d
+			width: 1.0d
+			x: 8.5d
+			y: -1.5d
+		}
+		{
+			dependency: "5748351A76910019"
+			height: 0.5d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: -90.0d
+			width: 1.0d
+			x: 8.5d
+			y: -4.5d
+		}
+		{
+			dependency: "5748351A76910019"
+			height: 0.5d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: -90.0d
+			width: 1.0d
+			x: 8.5d
+			y: -7.5d
+		}
+		{
+			dependency: "5748351A76910019"
+			height: 0.5d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 13.5d
+			y: -3.5d
+		}
+		{
+			dependency: "13B6F6AC7608F794"
+			height: 0.5d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 31.5d
+			y: -0.5d
+		}
+		{
+			dependency: "13B6F6AC7608F794"
+			height: 0.5d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 34.5d
+			y: -0.5d
+		}
+		{
+			dependency: "6140B0BCEB7F9D64"
+			height: 0.5d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 40.5d
+			y: -0.5d
+		}
+		{
+			dependency: "52726CE2A2740BF7"
+			height: 0.5d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 46.5d
+			y: -0.5d
+		}
+	]
 	order_index: 0
 	quest_links: [
 		{
@@ -234,7 +334,7 @@
 				}
 			]
 			size: 2.0d
-			subtitle: "从这里开始"
+			subtitle: "从这里开始|第零个世界"
 			tasks: [{
 				dimension: "minecraft:overworld"
 				icon: "minecraft:moss_block"
@@ -425,10 +525,13 @@
 				""
 				"&d深境证章&r"
 				""
-				"一丝仿佛被无限弯曲的细语在引诱着你，迈入深境..."
+				"一丝仿佛被无限弯曲的细语在引诱着你，"
 				""
-				"迈入深境..."
-				"迈入深境......"
+				"&7迈入深境...&r"
+				"&7迈入深境...&r"
+				"&8迈入深境...&r"
+				"&8迈入深境...&r"
+				"&0迈入深境......&r"
 			]
 			hide_until_deps_complete: true
 			id: "52726CE2A2740BF7"
@@ -606,7 +709,7 @@
 			]
 			title: "boss召唤器！"
 			x: 9.0d
-			y: 3.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["4563BE3E3110A2C9"]
@@ -1046,6 +1149,39 @@
 			x: -3.0d
 			y: 0.0d
 		}
+		{
+			dependencies: ["52726CE2A2740BF7"]
+			description: [
+				"哪怕有建筑手杖，扩建空岛还是太慢太累了。"
+				"现在，你可以使用&b工业平台&r方块来快速扩建！"
+				""
+				"你可以使用一个破碎的耀魂兑换一个样品。"
+				""
+				"将&b工业平台&r方块放置在地上，然后使用&b木棍&r或&b扳手&r右击/潜行右击调整模式，最后使用&b石头类&r方块右击它，就可以快速的构建平台了！"
+				""
+				"&c注意：平台会生成在工业方块同一平面上，被替换的方块将会被破坏！"
+				"&c棋盘格平台的厚度只有一层，而工业平台的厚度有六层，可以根据自己的喜好选择。&r"
+				"&c平台自带的光照可能不充足，请小心刷怪！&r"
+			]
+			icon: "industrial_platform:industrial_platform"
+			id: "2BF3D5C780608F8D"
+			rewards: [{
+				id: "70C07170D1A3398D"
+				item: "industrial_platform:industrial_platform"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "快速扩建"
+			tasks: [{
+				consume_items: true
+				id: "1EE579514A1BD0F8"
+				item: "slashblade:proudsoul_tiny"
+				type: "item"
+			}]
+			title: "工业平台"
+			x: 42.0d
+			y: 3.0d
+		}
 	]
-	title: "起始之空岛"
+	title: "起始空岛"
 }

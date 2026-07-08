@@ -101,7 +101,7 @@
 		{
 			id: "1D6635504027CFAD"
 			linked_quest: "07A9736A3BDF80B1"
-			x: 96.0d
+			x: 99.0d
 			y: -3.0d
 		}
 	]
@@ -1582,7 +1582,12 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["34C15FC6C1E469E9"]
+			dependencies: [
+				"34C15FC6C1E469E9"
+				"2C52C219DD799030"
+				"07A9736A3BDF80B1"
+			]
+			dependency_requirement: "one_completed"
 			id: "397C4E18445F7165"
 			shape: "hexagon"
 			size: 1.5d

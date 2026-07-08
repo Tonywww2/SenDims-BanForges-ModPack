@@ -38,6 +38,11 @@ LootJS.modifiers(event => {
             p.randomChance(0.05);
             p.addLoot(LootEntry.of("minecraft:chorus_fruit").limitCount([1, 2]));
         });
+        
+    event.addEntityLootModifier("block_factorys_bosses:sandworm")
+        .pool(p => {
+            p.addLoot(LootEntry.of('kubejs:ancient_soul').limitCount([1, 2]));
+        });
 
 
     event.addEntityLootModifier([

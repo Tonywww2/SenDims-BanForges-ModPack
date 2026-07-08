@@ -1,0 +1,54 @@
+[api]
+apiEnabled = false
+apiPort = 10086
+apiToken = ""
+
+[paths]
+dlcRoot = "SDBF_DLC"
+taczRoot = "SDBF_DLC_tacz"
+resourcepackRoot = "resourcepacks"
+datapackRoot = "datapacks"
+
+[ui]
+isEnableAllButtonShown = true
+isConfigButtonShown = false
+isUButtomShown = false
+isUpdateManagerOn = false
+isSelfUpdateAutoCheckOn = false
+isPresetFuncOn = true
+isPackFuncOn = true
+isPButtomShown = true
+ShowOnFirstRun = false
+WaitingTime = 0
+serverSupport = true
+titleAnchor = "top_right"
+titleOffsetX = -50
+titleOffsetY = 4
+titleUpdateAnchor = "auto"
+titleUpdateOffsetX = 0
+titleUpdateOffsetY = 0
+noticeDisplayMode = "manager_button"
+noticeButtonAnchor = "bottom_right"
+noticeButtonOffsetX = 0
+noticeButtonOffsetY = 0
+noticePanelAnchor = "top_left"
+noticePanelOffsetX = 0
+noticePanelOffsetY = 0
+noticePanelWidth = 0
+noticePanelHeight = 0
+
+[downloads]
+maxConcurrentDownloads = 5
+maxSegmentsPerFile = 4
+minSegmentMB = 20
+maxRetryCount = 2
+connectTimeoutSeconds = 5
+taskTimeoutSeconds = 60
+downloadMirrorMode = "smart_precheck"
+downloadMirrorProbeCount = 3
+downloadMirrorProbeStrategy = "single"
+
+[modpack]
+modpack = "sdbf"
+modpackUrl = ""
+updateGitRepo = ""

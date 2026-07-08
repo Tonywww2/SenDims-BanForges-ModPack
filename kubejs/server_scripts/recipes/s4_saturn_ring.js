@@ -158,4 +158,149 @@ ServerEvents.recipes(event => {
         C: 'slashblade:proudsoul_sphere',
     }).id('sdbf:sdbf_sr_kp_s4')
 
+    // 狱界剑 白楼剑: 白楼剑 + 斩断不死之录 + 补天合金锭
+    event.custom({
+        "type": "slashblade:slashblade_smithing",
+        "addition": { "item": 'kubejs:celestial_filling_alloy_ingot' },
+        "base": {
+            "type": "slashblade:blade",
+            "item": "slashblade:slashblade",
+            "request": {
+                "kill": 3000,
+                "name": "last_smith:hakurouken",
+                "proud_soul": 30000,
+                "refine": 100
+            }
+        },
+        "blade": "last_smith:hakurouken_nether",
+        "template": { "item": "last_smith:scroll_mortal" }
+    }).id("sdbf:hakurouken_nether_s4")
+
+    // 狱刀 似蛭: 五把材料刀 + 古代灵魂 + 土星环合金锭
+    event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
+        "AYA",
+        "RNS",
+        "BYB"
+    ], {
+        "A": 'kubejs:ancient_soul',
+        "B": CORE,
+        "Y": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("slashblade:yamato")
+                .killCount(3000)
+                .proudSoul(30000)
+                .refineCount(50)
+                .build()
+        ),
+        "R": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("slashblade:rivers_of_blood")
+                .killCount(4500)
+                .proudSoul(50000)
+                .refineCount(75)
+                .build()
+        ),
+        "N": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("slashblade_addon:nihilex")
+                .killCount(4000)
+                .proudSoul(30100)
+                .refineCount(100)
+                .build()
+        ),
+        "S": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("last_smith:silverbamboo_blood")
+                .killCount(4000)
+                .proudSoul(30000)
+                .refineCount(75)
+                .build()
+        )
+    }, "slashblade_addon:nihilul")
+        .id("sdbf:nihilul_s4")
+
+    // 炼狱刀 死念: 狱界双剑 + 狱刀 似蛭
+    event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
+        "SGS",
+        "HNR",
+        "MGM"
+    ], {
+        "G": 'ad_astra:gravity_normalizer',
+        "M": '#forge:storage_blocks/mana_diamond',
+        "S": 'last_smith:sakura_sphere',
+        "H": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("last_smith:hakurouken_nether")
+                .killCount(6000)
+                .proudSoul(60000)
+                .refineCount(100)
+                .build()
+        ),
+        "N": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("slashblade_addon:nihilul")
+                .killCount(21500)
+                .proudSoul(200100)
+                .refineCount(100)
+                .build()
+        ),
+        "R": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("last_smith:roukanken_nether")
+                .killCount(18000)
+                .proudSoul(155000)
+                .refineCount(100)
+                .build()
+        )
+    }, "slashblade_addon:nihilbx")
+        .id("sdbf:nihilbx_s4")
+
+    // ========================================================================
+    //  crimsoncherryex  炼狱刀 血雨红樱  -- 血樱刀系列 S4 究极进化
+    //  合成前体:
+    //    slashblade_addon:crimsoncherry   妖刀 红樱        (同名直接前体, 次核心)
+    //    slashblade_addon:murakumo        神剑 天丛云       (次核心)
+    //    sjap_adder:nihil_soul            妖刀 血桑轮结月    (S3 五刀合成产物, 主核心)
+    //  数值设计: 材料刀的材料门槛总和 + 3000 kill / 30000 proud soul.
+    //    crimsoncherry = (nihilex 5000/50000 + nihil 5000/50000) + 3000/30000.
+    //    nihil_soul = (2000+1000+3000+1500+1000) / (15000+15000+20000+15000+10000) + 3000/30000.
+    //    murakumo is an entity-drop blade (ur-ghast), so it keeps the original 3000/30000 gate.
+    //  辅材: 古魂四角 + 补天合金锭上下.
+    // ========================================================================
+    event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
+        "PJP",
+        "RNM",
+        "PJP"
+    ], {
+        "P": "kubejs:ancient_soul",
+        "J": "kubejs:celestial_filling_alloy_ingot",
+        "N": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("sjap_adder:nihil_soul")
+                .killCount(11500)
+                .proudSoul(105000)
+                .refineCount(100)
+                .build()
+        ),
+        // 次核心: 妖刀 红樱 -- 同名直接前体
+        "R": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("slashblade_addon:crimsoncherry")
+                .killCount(13000)
+                .proudSoul(130000)
+                .refineCount(100)
+                .build()
+        ),
+        // 次核心: 神剑 天丛云
+        "M": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("slashblade_addon:murakumo")
+                .killCount(3000)
+                .proudSoul(30000)
+                .refineCount(50)
+                .build()
+        )
+    }, "sjap_adder:crimsoncherryex")
+        .id("sdbf:crimsoncherryex_s4")
+
 })

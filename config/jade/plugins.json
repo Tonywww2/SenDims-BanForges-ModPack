@@ -131,6 +131,9 @@
   "gravestone": {
     "grave": true
   },
+  "industrial_platform": {
+    "common": true
+  },
   "storagedrawers": {
     "display.stacklimit": true,
     "main": true,

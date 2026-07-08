@@ -57,16 +57,14 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"26B66FFB1E5C691C"
-				"5BB642BD0BE40541"
-			]
+			dependencies: ["5BB642BD0BE40541"]
 			dependency_requirement: "one_completed"
 			description: [
 				"千百年之前，一个拥有着发达机械技术的古代文明曾活跃在深境之中，他们留下来的一些痕迹或许能帮助到你......"
 				""
 				"你可以使用铁锭+地图制作实验室的结构羽毛笔。"
 			]
+			hide_until_deps_complete: true
 			id: "6130B752208314B7"
 			rewards: [
 				{
@@ -86,7 +84,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 2.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["26B66FFB1E5C691C"]
@@ -135,7 +133,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 5.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["6B3D579B97B1A48A"]
@@ -297,7 +295,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 7.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["1A673E1DCFA4F798"]
@@ -314,7 +312,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 10.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["5CD1E75078A2B2D3"]
@@ -325,7 +323,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 12.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["5CD1E75078A2B2D3"]
@@ -336,7 +334,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: 12.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["5CD1E75078A2B2D3"]
@@ -347,7 +345,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: 12.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["488BA89D6CF595C2"]
@@ -358,7 +356,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 12.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["286353DF1716B4D6"]
@@ -369,7 +367,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: 15.0d
+			y: 17.5d
 		}
 		{
 			dependencies: ["286353DF1716B4D6"]
@@ -380,7 +378,7 @@
 				type: "item"
 			}]
 			x: -5.0d
-			y: 12.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["37F1B3C1D1D0190B"]
@@ -391,7 +389,7 @@
 				type: "item"
 			}]
 			x: -7.5d
-			y: 12.5d
+			y: 15.0d
 		}
 		{
 			dependencies: [
@@ -405,7 +403,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 15.0d
+			y: 17.5d
 		}
 		{
 			dependencies: ["49F9A5BA316F6A3B"]
@@ -416,7 +414,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: 17.5d
+			y: 20.0d
 		}
 		{
 			dependencies: ["2E0180CC89BF8F88"]
@@ -609,7 +607,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: 15.0d
+			y: 17.5d
 		}
 		{
 			dependencies: ["098FCFD67CC0FEBD"]
@@ -620,7 +618,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 15.0d
+			y: 17.5d
 		}
 		{
 			dependencies: ["6130B752208314B7"]
@@ -631,7 +629,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: 5.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["71FCA5FAB43DD617"]
@@ -642,7 +640,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: 7.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["2270E6360EAB923F"]
@@ -825,7 +823,7 @@
 			}]
 			title: "福鲁伊克斯研究员"
 			x: 5.0d
-			y: 7.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["26B66FFB1E5C691C"]

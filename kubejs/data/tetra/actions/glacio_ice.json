@@ -1,0 +1,17 @@
+[
+    {
+        "key": "break_glacio_ice_action",
+        "requirement":
+        {
+            "items":
+            [
+                "ad_astra:permafrost"
+            ]
+        },
+        "requiredTools":
+        {
+            "hammer_dig": 2
+        },
+        "lootTable": "tetra:actions/glacio_ice"
+    }
+]

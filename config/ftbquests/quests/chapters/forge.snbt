@@ -62,6 +62,7 @@
 			}]
 			shape: "hexagon"
 			size: 2.0d
+			subtitle: "重要"
 			tasks: [{
 				id: "6ABC912339657639"
 				item: {
@@ -387,6 +388,7 @@
 				xp: 100
 			}]
 			shape: "diamond"
+			subtitle: "重要"
 			tasks: [{
 				id: "66D617778BC78EE0"
 				title: "我已知晓"
@@ -487,6 +489,7 @@
 				type: "choice"
 			}]
 			shape: "diamond"
+			subtitle: "重要"
 			tasks: [{
 				id: "52B239E2ED627A97"
 				item: {

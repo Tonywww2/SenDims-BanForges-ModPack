@@ -415,6 +415,7 @@
 			icon: "minecraft:deepslate"
 			id: "5BB642BD0BE40541"
 			size: 2.0d
+			subtitle: "第二个世界"
 			tasks: [
 				{
 					dimension: "sdbf:deep_realm_level_1"

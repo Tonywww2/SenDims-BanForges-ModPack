@@ -12,5 +12,28 @@ performance_tuning = {}
 
 #Enable or disable specific acceleration features.
 [acceleration_modules]
+	#Accelerate block entities (e.g., furnaces, hoppers). Can cause issues.
 	block_entity = false
+	#Accelerate block breaking.
+	block_breaking = true
+	#Accelerate potion effect timers.
+	potion_effect = true
+	#Accelerate fluid flow.
+	fluid = true
+	#Accelerate item pickup delay.
+	item_pickup = true
+	#Accelerate eating and drinking animations.
+	eating = true
+	#Accelerate nether portal teleportation time.
+	nether_portal = true
+	#Accelerate time to pass the night when sleeping.
+	sleeping = true
+	#Accelerate the day-night cycle.
+	time = true
+	#Accelerate bow drawing speed.
+	bow = true
+	#Accelerate crossbow loading speed.
+	crossbow = true
+	#Accelerate random block ticks (e.g., crop growth).
+	random_tick_speed = true
 

@@ -1,0 +1,28 @@
+{
+    "pools":
+    [
+        {
+            "name": "drop_steel_tofu",
+            "rolls": 1,
+            "entries":
+            [
+                {
+                    "type": "minecraft:item",
+                    "name": "ad_astra:ice_shard",
+                    "functions":
+                    [
+                        {
+                            "function": "minecraft:set_count",
+                            "count":
+                            {
+                                "type": "minecraft:uniform",
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,5 @@
+#True POWER Optimization client settings
+#Size of SlashBlade Item Icon. (default: 512)
+#Range: > 16
+icon_size = 512
+
