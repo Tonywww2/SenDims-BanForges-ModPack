@@ -6,8 +6,9 @@ maxShowRender = 128
 minValueDisplay = 2.1
 #是否启用渲染数字合并
 enableCombineString = false
-#合并显示的半径
-mergeDistanceSQ = 1.5
 #合并生成在多少tick以内的文字
 mergeMaxAge = 40.0
+#伤害数字存活时间（tick）
+#Range: 5 ~ 600
+damageStringLife = 30
 

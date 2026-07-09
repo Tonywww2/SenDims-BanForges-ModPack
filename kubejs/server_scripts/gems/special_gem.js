@@ -1,6 +1,43 @@
 // priority: 1
 // 宝石服务端代码：数据生成
 
+let ALL_GEMS = [
+  "tetra:pristine_emerald",
+  "tetra:pristine_lapis",
+  "tetra:pristine_diamond",
+  "minecraft:quartz",
+  "tetra:pristine_amethyst",
+  "minecraft:prismarine_crystals",
+  "ae2:charged_certus_quartz_crystal",
+  "ae2:fluix_crystal",
+  "botania:mana_diamond",
+  "botania:dragonstone",
+  "deep_aether:skyjade",
+  "enderio:pulsating_crystal",
+  "enderio:vibrant_crystal",
+  "enderio:ender_crystal",
+  "enderio:enticing_crystal",
+  "enderio:weather_crystal",
+  "enderio:prescient_crystal",
+  "nuclearcraft:boron_arsenide_gem",
+  "nuclearcraft:carobbiite_gem",
+  "nuclearcraft:villiaumite_gem",
+  "nuclearcraft:fluorite_gem",
+  "nuclearcraft:rhodochrosite_gem",
+  "nuclearcraft:boron_nitride_gem",
+  "aether:zanite_gemstone",
+  "twilightforest:carminite",
+  "thermal:apatite",
+  "thermal:cinnabar",
+  "thermal:niter",
+  "thermal:ruby",
+  "thermal:sapphire",
+  "appflux:charged_redstone",
+  "tofucraft:tofugem",
+  "tofucraft:zundaruby",
+  "cataclysm:lacrima"
+];
+
 let GEM_TIER_TO_VAL_RANGE = [
     // 初始大小，大小成长范围，初始纯度，纯度成长范围，初始抛光，抛光成长范围
     [1, 99, 1, 75, 1, 99],

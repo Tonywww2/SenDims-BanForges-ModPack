@@ -130,12 +130,14 @@
     "item.sdbf.chaos_anchor": "混沌稳定锚",
     "item.sdbf.dream_cat": "梦之猫",
     "item.sdbf.stationary_matter": "稳态物质",
+    "item.sdbf.flammable_ingot": "易燃锭",
 
     "info.kubejs.fantasy_bubble": "[ALTNOIR] 会一直守护你的梦幻泡泡。",
     "info.kubejs.chaos_anchor": "[jean] 击破星俗之未来，滞留于庄严的过去，贤闪一切，尽数毁灭。",
     "info.kubejs.dream_cat":    "[Piano_kitten] 神秘的困困猫猫\n\t——出场非常神秘而且总是说困，哈吉猫你这家伙！",
     "info.kubejs.dream_cat_2":  "——出场非常神秘而且总是说困，哈吉猫你这家伙！",
     "info.kubejs.stationary_matter": "[Tonywww] EQUILIBRIUM.",
+    "info.kubejs.flammable_ingot": "[yi_ran]",
 
     "tetra.material.fantasy_bubble": "幻之泡",
     "tetra.material.fantasy_bubble.prefix": "幻之泡",

@@ -75,4 +75,16 @@ ServerEvents.highPriorityData(event => {
         .setRequiredTool("hammer_dig", 1)
         .build();
 
+    tetraMaterialBuilder(event, "flammable_ingot").setCategory("metal")
+        .setPrimary(14).setSecondary(13).setTertiary(9.5)
+        .setDurability(41).setIntegrityCost(1).setIntegrityGain(1)
+        .setMagicCapacity(116).setToolLevel(3).setToolEfficiency(9)
+        .addAttributes("attributeslib:fire_damage", 4)
+        .addEnchantment("minecraft:fire_aspect", 1)
+        .addEnchantment("minecraft:fire_protection", 1)
+        .setTints("FFE7E3", "E0E0E0") 
+        .addTexture("metal")
+        .addItemMaterial('sdbf:flammable_ingot')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
 })
