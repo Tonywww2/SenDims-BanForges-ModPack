@@ -22,10 +22,6 @@
 	#- ENABLED: Translucent RenderType will still be rendered in accelerated pipeline even if the pipeline does not support translucent sorting unless mods explicitly disable force translucent acceleration temporarily when rendering their own geometries.
 	#Allowed Values: DISABLED, ENABLED
 	force_translucent_acceleration = "ENABLED"
-	#- DISABLED: Poses with identical transform matrix and normal matrix that used to transform vertices will not be cached in buffer which slightly decreases CPU pressure but increase VRAM usage unless mods explicitly disable it when rendering.
-	#- ENABLED: Poses with identical transform matrix and normal matrix that used to transform vertices will be cached in buffer which save VRAM but slightly increase CPU pressure unless mods explicitly disable it when rendering.
-	#Allowed Values: DISABLED, ENABLED
-	cache_identical_pose = "ENABLED"
 	#- SIMPLE: The most basic implementation of cache. Usually used for testing if other cache types are working correctly.
 	#- HANDLE: Faster implementation of cache using VarHandle and flatten values to improve performance on read/write operations.
 	#- UNSAFE: Fastest implementation of cache using unsafe memory operations that skip multiple safety checks to read/write.
@@ -35,10 +31,6 @@
 	#- SEPARATED: The visually-precise implementation of batching layer storage that separates opaque and translucent geometries into two rendering stages to prevent visual glitches, slightly slower than basic implementation.
 	#Allowed Values: SORTED, SEPARATED
 	layer_storage_type = "SEPARATED"
-	#- DISABLED: Meshes that is going to be accelerated will be collected and uploaded together at the end for choosing better uploading method and increasing memory access efficiency to reach the best performance. Also this method allows mesh cache with bigger capacity (up to VRAM limit), but it may not follow the correct draw order.
-	#- ENABLED: Meshes that is going to be accelerated will be uploaded immediately after the draw command. It is less efficient and only have about 2GB mesh cache (generally enough) but will follow the original draw order to get the most compatibility.
-	#Allowed Values: DISABLED, ENABLED
-	upload_mesh_immediately = "DISABLED"
 	#Resolution of UV scrolling in caching dynamic render types.
 	#Changing this value may affects your visual effects and VRAM usage. Smaller value means lower resolution in UV scrolling and less cached render types, while larger means higher resolution and more cached render types. Higher resolution means smoother animations on charged creepers and breezes but more VRAM usage.
 	#Range: > 1
@@ -299,19 +291,6 @@
 	#Curios item filter will use this list and the filter type to determine if a curios item can pass the filter.
 	item_filter_values = []
 
-#Immpt Compatibility Settings
-[immpt_compatibility]
-	#- DISABLED: Accelerated Rendering will not compact with Immersive Portal.
-	#- ENABLED: Accelerated Rendering will try to compact with Immersive Portals.
-	#Allowed Values: DISABLED, ENABLED
-	feature_status = "DISABLED"
-	#Allowed Values: DISABLED, ENABLED
-	compact_entity = "ENABLED"
-	#Allowed Values: DISABLED, ENABLED
-	compact_item = "DISABLED"
-	#Allowed Values: DISABLED, ENABLED
-	compact_text = "DISABLED"
-
 #Miscellaneous Mods Compatibility Settings
 #Miscellaneous Mod Compatibility Settings allows Accelerated Rendering to prevent negative optimization on specific mods by controlling whether Accelerated Rendering should accelerate the rendering of the corresponding mod.
 [mods_compatibility]
@@ -351,4 +330,8 @@
 	#- ENABLED: Accelerations of UI driven by Sophisticated Core will be enabled.
 	#Allowed Values: DISABLED, ENABLED
 	sophisticated_feature_status = "ENABLED"
+	#- DISABLED: Accelerations of text driven by ModernUI's modern text engine will be disabled.
+	#- ENABLED: Accelerations of text driven by by ModernUI's modern text engine will be enabled.
+	#Allowed Values: DISABLED, ENABLED
+	modernui_feature_status = "ENABLED"
 

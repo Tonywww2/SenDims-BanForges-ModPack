@@ -11,4 +11,10 @@ mergeMaxAge = 40.0
 #伤害数字存活时间（tick）
 #Range: 5 ~ 600
 damageStringLife = 30
+#是否显示治疗数字
+showHealNumbers = true
+#伤害数字使用的纹理资源路径（namespace:path 格式，如 damagerender:textures/damagefont/number.png）
+#纹理需为 0-9 与 '.' 共 11 个字符的水平图集，每字符 6×9 像素
+#切换后立即生效，无需重启游戏
+texture = "damagerender:textures/damagefont/number_tnr.png"
 
