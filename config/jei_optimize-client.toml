@@ -57,8 +57,8 @@
 [jeiContent]
 	#Hide JEI's generated anvil repair recipes (repairing an item with its crafting material).
 	#Also skips generating them during startup, which saves time. Default false.
-	disableAnvilRepairRecipes = false
+	disableAnvilRepairRecipes = true
 	#Hide JEI's generated anvil enchanting recipes (combining enchanted books on an anvil).
 	#Also skips generating them during startup, which saves time. Default false.
-	disableAnvilEnchantRecipes = false
+	disableAnvilEnchantRecipes = true
 
