@@ -20,8 +20,14 @@
 	delayCompact = true
 
 [async]
-	#Enable async search prefix index preheat.
-	searchPreheat = true
+	#Async search prefix index preheat. Default OFF (disabled).
+	#Reason: this builds a separate, approximate search index that can override JEI's
+	#own results for prefixed queries (@ mod, # tooltip, $ tag, % tab, ^ color, & id).
+	#It is redundant with asyncIngredientFilter, which already rebuilds JEI's real
+	#ElementSearch off-thread; the shadow index can return incomplete results and may
+	#block the render thread if a prefixed search runs before it finishes building.
+	#Enable only if you specifically need it and accept these trade-offs.
+	searchPreheat = false
 	#Enable client-tick chunked snapshot extraction.
 	snapshotChunking = true
 	#Enable async sort computation.
