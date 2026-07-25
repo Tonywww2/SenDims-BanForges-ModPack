@@ -260,6 +260,17 @@ minecraft:village_plains
 minecraft:village_savanna
 minecraft:village_snowy
 minecraft:village_taiga
+netherman:believer_house
+netherman:eye_columns
+netherman:gast_chamber
+netherman:gehen_statue
+netherman:head_altar
+netherman:mansion_nether
+netherman:maze
+netherman:monument
+netherman:nether_geyser
+netherman:pipes
+netherman:trap
 nullscape:dragon_skeleton
 sdbf:ae_lab
 sdbf:apron_1

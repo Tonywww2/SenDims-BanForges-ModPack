@@ -401,6 +401,65 @@
 			x: 9.0d
 			y: 9.0d
 		}
+		{
+			dependencies: ["1BF032EC08E31ABB"]
+			id: "48D574981922729D"
+			tasks: [{
+				id: "6CF884F8824A5A73"
+				item: "draconicevolution:draconium_ingot"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["48D574981922729D"]
+			id: "09D56D99EF168D61"
+			tasks: [{
+				id: "7CFB76116454F9D2"
+				item: "draconicevolution:draconium_core"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["09D56D99EF168D61"]
+			id: "28F6E3162345CE5F"
+			tasks: [{
+				id: "1A8C802A0543984B"
+				item: "draconicevolution:crafting_core"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["1BF032EC08E31ABB"]
+			id: "10FB1898FA8701EE"
+			tasks: [{
+				icon: "draconicevolution:infused_obsidian"
+				id: "1D623A277268287A"
+				observe_type: 5
+				timer: 0L
+				title: "观察：混沌守卫"
+				to_observe: "draconicevolution:draconic_guardian"
+				type: "observation"
+			}]
+			x: 12.0d
+			y: 21.0d
+		}
+		{
+			dependencies: ["10FB1898FA8701EE"]
+			id: "4624724C7ED9D97D"
+			tasks: [{
+				id: "4925417908597E82"
+				item: "draconicevolution:medium_chaos_frag"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 21.0d
+		}
 	]
 	title: "末路之地[?]"
 }

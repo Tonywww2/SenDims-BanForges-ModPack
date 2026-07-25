@@ -303,6 +303,50 @@
 			x: 9.0d
 			y: 6.0d
 		}
+		{
+			dependencies: ["6035D1A1774B2FAF"]
+			id: "6E5EFB146C17C916"
+			tasks: [{
+				id: "4528F17A58379590"
+				item: "pneumaticcraft:ingot_iron_compressed"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["6E5EFB146C17C916"]
+			id: "41B3FA768C85DAEC"
+			tasks: [{
+				id: "499A176C8F80F2BA"
+				item: "pneumaticcraft:reinforced_stone"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["41B3FA768C85DAEC"]
+			id: "234E07699A873B66"
+			tasks: [{
+				id: "66DA9EAFABFA1581"
+				item: "pneumaticcraft:pressure_chamber_wall"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["41B3FA768C85DAEC"]
+			id: "52A0DDA2744E3CCA"
+			tasks: [{
+				id: "19E51435669B897A"
+				item: "pneumaticcraft:air_compressor"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 15.0d
+		}
 	]
 	title: "土星环"
 }

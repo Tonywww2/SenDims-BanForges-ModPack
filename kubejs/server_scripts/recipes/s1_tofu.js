@@ -66,4 +66,18 @@ ServerEvents.recipes(event => {
         "template": { "item": "last_smith:scroll_sakura" }
     }).id("sdbf:sakura_steel_ingot_s1")
 
+    event.custom({
+        "type": "slashblade:slashblade_smithing",
+        "addition": {
+            "item": 'last_smith:yakibatsuchi'
+        },
+        "base": {
+            "item": 'slashblade_addon:slashblade_tofu_diamond',
+        },
+        "blade": "slashblade:tofu_diamond_plus",
+        "template": {
+            "item": "last_smith:scroll_basic"
+        }
+    }).id("sdbf:tofu_diamond_plus_s1")
+
 })

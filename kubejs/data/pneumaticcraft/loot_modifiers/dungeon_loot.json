@@ -1,0 +1,10 @@
+{
+  "replace": true,
+  "type": "pneumaticcraft:dungeon_loot",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": []
+    }
+  ]
+}

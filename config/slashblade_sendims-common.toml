@@ -1,0 +1,6 @@
+
+[draconicEvolution]
+	#The only dimension where Draconic Evolution chaos islands may affect world generation.
+	#Changing this value requires a server restart.
+	targetDimension = "sdbf:inside_the_end"
+

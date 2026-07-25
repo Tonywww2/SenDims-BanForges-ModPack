@@ -206,6 +206,11 @@ const toRemoveID = new Set([
     "enderio:smelting/the_bumblezone/sticky_honey_residue/from_smelting_honey_block",
     "biomemakeover:altar",
 
+    "draconicevolution:components/draconium_ingot_from_ore",
+    "draconicevolution:components/draconium_ingot_from_dust",
+    "enderio:smelting/draconicevolution/components/draconium_ingot_from_dust",
+    "enderio:smelting/draconicevolution/components/draconium_ingot_from_ore",
+
     // s5
     "sjap_adder:kamuyex_fire",
     "sjap_adder:kamuyex_life",

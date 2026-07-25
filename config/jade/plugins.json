@@ -61,6 +61,14 @@
   "jadeaddons.mcjtylib": {
     "jadeaddons": true
   },
+  "pneumaticcraft": {
+    "pneumatic": true,
+    "tube_module": true,
+    "entity": true,
+    "redstone": true,
+    "camo": true,
+    "semiblock": true
+  },
   "bonsaitrees3": {
     "bonsaipot": true
   },

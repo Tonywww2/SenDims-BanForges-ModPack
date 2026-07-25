@@ -237,7 +237,7 @@ ServerEvents.highPriorityData(event => {
 
     // 9. 辐射零件 / Radiation Components
     tetraMaterialBuilder(event, "radiation_components").setCategory("metal")
-        .setPrimary(78).setSecondary(57).setTertiary(35)
+        .setPrimary(73).setSecondary(57).setTertiary(34)
         .setDurability(300).setIntegrityCost(8).setIntegrityGain(16)
         .setMagicCapacity(90).setToolLevel(4).setToolEfficiency(8)
         .addAttributes("minecraft:generic.attack_damage", -1.5).addAttributes("attributeslib:crit_damage", 0.08).addAttributes("attributeslib:crit_chance", 0.02)

@@ -1,0 +1,25 @@
+{
+  "name": "slashblade:tofu_diamond_plus",
+  "enchantments":
+  [
+    {
+      "id": "minecraft:power",
+      "lvl": 1
+    }
+  ],
+  "properties": {
+    "attack_base": 7.5,
+    "max_damage": 60,
+    "slash_art": "slashblade:circle_slash",
+    "special_effects":
+    [
+      "last_smith:sectumsempra_se"
+    ],
+    "sword_type": [
+      "bewitched"
+    ]
+  },
+  "render": {
+    "texture": "slashblade_addon:model/tofudiamond_katana.png"
+  }
+}

@@ -39,6 +39,17 @@ ItemEvents.tooltip(event => {
         'nuclearcraft:dps'
     ], Text.translatable('info.kubejs.nuclearcraft.apply_rad_prot').color(Color.AQUA));
 
+    event.add([
+        'draconicevolution:draconic_sword',
+        'draconicevolution:draconic_staff',
+        'draconicevolution:draconic_bow',
+        'draconicevolution:chaotic_sword',
+        'draconicevolution:chaotic_staff',
+        'draconicevolution:chaotic_bow',
+        'draconicevolution:wyvern_sword',
+        'draconicevolution:wyvern_bow'
+    ], Text.translatable('info.kubejs.draconic_weapon_warning').color(Color.RED));
+
     event.addAdvanced([
         'slashblade:slashblade',
         'energyblade:forge_energy_blade',

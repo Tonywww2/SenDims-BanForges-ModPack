@@ -472,6 +472,38 @@
 			x: 3.0d
 			y: -3.0d
 		}
+		{
+			dependencies: ["4023DE67F5B0579E"]
+			description: [
+				"铸为妖刀"
+				""
+				"以少量的基础攻击力为代价，换来可以被改造的能力与特殊的SE"
+			]
+			id: "146D5BE1499DB426"
+			rewards: [{
+				id: "04D87F88CC2A81DF"
+				item: "slashblade:proudsoul"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "可以被改造"
+			tasks: [{
+				id: "256AEAAA15E8C213"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"translate\":\"item.slashblade.tofu_diamond_plus\"}"
+						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade.tofu_diamond_plus\"}})"
+					}
+				}
+				type: "item"
+			}]
+			x: 18.0d
+			y: 6.0d
+		}
 	]
 	title: "豆腐世界"
 }

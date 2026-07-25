@@ -486,6 +486,11 @@ deep_aether:sunroot_tree
 deep_aether:virulent_quicksand_patch
 deep_aether:yagroot_and_cruderoot_trees_placement
 deep_aether:yagroot_tree
+draconicevolution:chaos_island
+draconicevolution:end_comet
+draconicevolution:end_draconium_ore
+draconicevolution:nether_draconium_ore
+draconicevolution:overworld_draconium_ore
 hearths:blackstone_disk
 hearths:enormous_netherrack_pillar
 hearths:large_ceiling_netherrack_pillar
@@ -953,6 +958,7 @@ nullscape:tar/tar_pits
 nullscape:void/void_94
 nullscape:void/void_95
 nullscape:void/void_96
+pneumaticcraft:oil_lake
 productivebees:acacia_wood_nest
 productivebees:birch_wood_nest
 productivebees:bumble_bee_nest

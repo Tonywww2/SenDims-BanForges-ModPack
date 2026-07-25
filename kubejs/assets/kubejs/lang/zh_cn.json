@@ -74,6 +74,8 @@
     "info.kubejs.blocktofugrilled": "烧制一些种类的豆腐块后获得",
     "info.kubejs.forge_energy_blade": "电力拔刀剑作为合成原料时可能会失效，在加工台中进行任意的改造后可以修复",
 
+    "info.kubejs.draconic_weapon_warning": "不建议作为战斗武器，混沌守卫可以使用其他方式击败",
+
     "info.kubejs.banned": "已禁用",
 
     "info.kubejs.faill_spawn_structure": "结构召唤失败！",
@@ -155,6 +157,10 @@
     "item.slashblade.red_blade_raye": "赫刀「零衣」",
     "item.slashblade.mahakala_black": "「大黑天」",
     "item.slashblade.mahakala_fortune": "宝刀「大黑天」",
+    "item.slashblade.tofu_diamond_plus": "豆腐「金刚」神锋",
+
+    "se.last_smith.sectumsempra_se": "神锋无影",
+    "se.last_smith.sectumsempra_se.desc": "幻影剑会附加少量目标当前生命值百分比的伤害",
 
     "tetra/schematic/slashblade/blade/tetra_warforge/axe.name": "仿铸：战斧",
     "tetra.improvement.tetra:warforge/axe.name": "仿铸：战斧",
