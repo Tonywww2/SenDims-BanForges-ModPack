@@ -30,7 +30,7 @@
     "name": "last_smith:amagumo_munin",
     "properties":
     {
-        "attack_base": 77.0,
+        "attack_base": 87.0,
         "max_damage": 100,
         "slash_art": "slashblade:void_slash",
         "special_effects":

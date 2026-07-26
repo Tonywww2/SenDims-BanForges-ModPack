@@ -6,6 +6,10 @@ SACostMap.put("slashblade:judgement_cut", [300, 0.2]);
 SACostMap.put("slashblade:judgement_cut_slash_air", [300, 0.2]);
 SACostMap.put("slashblade:judgement_cut_slash_just", [500, 0.2]);
 
+SACostMap.put("slashblade_sendims:chaotic_judgement_cut", [400, 0.2]);
+SACostMap.put("slashblade_sendims:chaotic_judgement_cut_slash_air", [400, 0.2]);
+SACostMap.put("slashblade_sendims:chaotic_judgement_cut_slash_just", [600, 0.2]);
+
 SACostMap.put("foxextra:voidslashplus", [500, 0.2]);
 
 SACostMap.put("slashblade:wave_edge_vertical", [200, 0.05]);
@@ -53,13 +57,15 @@ SACostMap.put("pseudoedge_break_dawn:dragon_boost", [300, 0.15]);
 
 SACostMap.put("last_smith:fushigiri_left", [100, 0.15]);
 
-SACostMap.put("last_smith:sakura_blistering_swords", [100, 0.15]);
+SACostMap.put("last_smith:sakura_blistering_swords", [200, 0.2]);
 
 SACostMap.put("slashblade_sendims:explosive_dawn_ammo", [600, 0.5]);
 
 SACostMap.put("slashblade_sendims:golden_crux_ex", [1000, 0.5]);
 
 SACostMap.put("slashblade_addon:blistering_terra_swords", [600, 0.3]);
+
+SACostMap.put("slashblade_sendims:chaotic_rapid_blistering_swords", [300, 0.25]);
 
 SACostMap.put("sjap_adder:cold_drive", [300, 0.2]);
 

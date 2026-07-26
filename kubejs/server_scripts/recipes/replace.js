@@ -179,4 +179,19 @@ ServerEvents.recipes(event => {
         Item.of('appflux:fe_64k_portable_cell', '{internalCurrentPower:20000.0d,power:1638400000L}').weakNBT()
     );
 
+    event.replaceInput({ id: 'draconicevolution:components/draconium_core' },
+        '#forge:gems/diamond',
+        'thermal:machine_frame'
+    );
+
+    event.replaceInput({ id: 'draconicevolution:machines/basic_crafting_injector' },
+        '#forge:stone',
+        '#forge:ingots/draconium'
+    );
+
+    event.replaceInput({ id: 'draconicevolution:machines/basic_crafting_injector' },
+        '#forge:storage_blocks/iron',
+        'ad_astra:gravity_normalizer'
+    );
+
 })

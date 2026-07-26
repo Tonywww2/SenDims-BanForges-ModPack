@@ -144,9 +144,9 @@ ServerEvents.recipes(event => {
         "DAB"
     ], {
         "A": 'kubejs:basepoint_alloy',
-        "B": 'last_smith:sakura_sphere',
-        "C": Item.of('slashblade:proudsoul_sphere', '{SpecialAttackType:"pseudoedge_break_dawn:kingblade"}').toJson(),
-        "D": Item.of('slashblade:proudsoul_sphere', '{SpecialAttackType:"slashblade:void_slash"}').toJson(),
+        "B": 'draconicevolution:chaotic_core',
+        "C": Item.of('slashblade:proudsoul_sphere', '{SpecialAttackType:"pseudoedge_break_dawn:kingblade"}').weakNBT(),
+        "D": Item.of('slashblade:proudsoul_sphere', '{SpecialAttackType:"slashblade:void_slash"}').weakNBT(),
         "X": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("last_smith:amagumo_kumo")
@@ -200,7 +200,7 @@ ServerEvents.recipes(event => {
         "BZB"
     ], {
         "A": 'apotheosis:draconic_endshelf',
-        "B": 'kubejs:chaotic_truth',
+        "B": 'draconicevolution:awakened_core',
         "V": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("slashblade:greatsword_of_damnation")
@@ -300,5 +300,105 @@ ServerEvents.recipes(event => {
         "blade": "last_smith:amagumo_kumo",
         "template": { "item": "last_smith:scroll_bewitched" }
     }).id("sdbf:amagumo_kumo_s4")
+    
+    event.custom({
+        "type": "draconicevolution:fusion_crafting",
+        "catalyst": {
+            "item": 'slashblade:proudsoul_crystal'
+        },
+        "ingredients": [
+            Item.of('draconicevolution:infused_obsidian').toJson(),
+            Item.of('draconicevolution:infused_obsidian').toJson(),
+            Item.of('draconicevolution:infused_obsidian').toJson(),
+            Item.of('draconicevolution:infused_obsidian').toJson(),
+            Item.of('draconicevolution:infused_obsidian').toJson(),
+            Item.of('draconicevolution:infused_obsidian').toJson(),
+            Item.of('draconicevolution:infused_obsidian').toJson(),
+            Item.of('draconicevolution:infused_obsidian').toJson(),
+
+            Item.of('slashblade:proudsoul_sphere', '{SpecialAttackType:"slashblade:judgement_cut"}').weakNBT().toJson(),
+            Item.of('slashblade:proudsoul_sphere', '{SpecialAttackType:"slashblade:judgement_cut"}').weakNBT().toJson(),
+            Item.of('slashblade:proudsoul_sphere', '{SpecialAttackType:"slashblade:judgement_cut"}').weakNBT().toJson(),
+            Item.of('slashblade:proudsoul_sphere', '{SpecialAttackType:"slashblade:judgement_cut"}').weakNBT().toJson(),
+
+            Item.of('draconicevolution:awakened_core').toJson(),
+            Item.of('draconicevolution:awakened_core').toJson(),
+
+            Item.of('draconicevolution:draconic_energy_core').toJson(),
+            Item.of('draconicevolution:draconic_energy_core').toJson(),
+            Item.of('draconicevolution:draconic_energy_core').toJson(),
+            Item.of('draconicevolution:draconic_energy_core').toJson(),
+            
+            Item.of('draconicevolution:awakened_core').toJson(),
+            Item.of('draconicevolution:awakened_core').toJson(),
+
+            Item.of('slashblade:proudsoul_sphere', '{SpecialAttackType:"slashblade:judgement_cut"}').weakNBT().toJson(),
+            Item.of('slashblade:proudsoul_sphere', '{SpecialAttackType:"slashblade:judgement_cut"}').weakNBT().toJson(),
+            Item.of('slashblade:proudsoul_sphere', '{SpecialAttackType:"slashblade:judgement_cut"}').weakNBT().toJson(),
+            Item.of('slashblade:proudsoul_sphere', '{SpecialAttackType:"slashblade:judgement_cut"}').weakNBT().toJson(),
+
+            Item.of('draconicevolution:infused_obsidian').toJson(),
+            Item.of('draconicevolution:infused_obsidian').toJson(),
+            Item.of('draconicevolution:infused_obsidian').toJson(),
+            Item.of('draconicevolution:infused_obsidian').toJson(),
+            Item.of('draconicevolution:infused_obsidian').toJson(),
+            Item.of('draconicevolution:infused_obsidian').toJson(),
+            Item.of('draconicevolution:infused_obsidian').toJson(),
+            Item.of('draconicevolution:infused_obsidian').toJson(),
+        ],
+        "result": Item.of('slashblade:proudsoul_sphere', '{SpecialAttackType:"slashblade_sendims:chaotic_judgement_cut"}').toJson(),
+        "tier": "DRACONIC",
+        "total_energy": 100000000
+    }).id("sdbf:chaotic_judgement_cut_s4")
+    
+    event.custom({
+        "type": "draconicevolution:fusion_crafting",
+        "catalyst": {
+            "item": 'slashblade:proudsoul_crystal'
+        },
+        "ingredients": [
+            Item.of('draconicevolution:infused_obsidian').toJson(),
+            Item.of('draconicevolution:infused_obsidian').toJson(),
+            Item.of('draconicevolution:infused_obsidian').toJson(),
+            Item.of('draconicevolution:infused_obsidian').toJson(),
+            Item.of('draconicevolution:infused_obsidian').toJson(),
+            Item.of('draconicevolution:infused_obsidian').toJson(),
+            Item.of('draconicevolution:infused_obsidian').toJson(),
+            Item.of('draconicevolution:infused_obsidian').toJson(),
+
+            Item.of('slashblade:proudsoul_sphere', '{SpecialAttackType:"slashblade_addon:rapid_blistering_swords"}').weakNBT().toJson(),
+            Item.of('slashblade:proudsoul_sphere', '{SpecialAttackType:"slashblade_addon:rapid_blistering_swords"}').weakNBT().toJson(),
+            Item.of('slashblade:proudsoul_sphere', '{SpecialAttackType:"slashblade_addon:rapid_blistering_swords"}').weakNBT().toJson(),
+            Item.of('slashblade:proudsoul_sphere', '{SpecialAttackType:"slashblade_addon:rapid_blistering_swords"}').weakNBT().toJson(),
+
+            Item.of('draconicevolution:awakened_core').toJson(),
+            Item.of('draconicevolution:awakened_core').toJson(),
+
+            Item.of('draconicevolution:draconic_energy_core').toJson(),
+            Item.of('draconicevolution:draconic_energy_core').toJson(),
+            Item.of('draconicevolution:draconic_energy_core').toJson(),
+            Item.of('draconicevolution:draconic_energy_core').toJson(),
+            
+            Item.of('draconicevolution:awakened_core').toJson(),
+            Item.of('draconicevolution:awakened_core').toJson(),
+
+            Item.of('slashblade:proudsoul_sphere', '{SpecialAttackType:"slashblade_addon:rapid_blistering_swords"}').weakNBT().toJson(),
+            Item.of('slashblade:proudsoul_sphere', '{SpecialAttackType:"slashblade_addon:rapid_blistering_swords"}').weakNBT().toJson(),
+            Item.of('slashblade:proudsoul_sphere', '{SpecialAttackType:"slashblade_addon:rapid_blistering_swords"}').weakNBT().toJson(),
+            Item.of('slashblade:proudsoul_sphere', '{SpecialAttackType:"slashblade_addon:rapid_blistering_swords"}').weakNBT().toJson(),
+
+            Item.of('draconicevolution:infused_obsidian').toJson(),
+            Item.of('draconicevolution:infused_obsidian').toJson(),
+            Item.of('draconicevolution:infused_obsidian').toJson(),
+            Item.of('draconicevolution:infused_obsidian').toJson(),
+            Item.of('draconicevolution:infused_obsidian').toJson(),
+            Item.of('draconicevolution:infused_obsidian').toJson(),
+            Item.of('draconicevolution:infused_obsidian').toJson(),
+            Item.of('draconicevolution:infused_obsidian').toJson(),
+        ],
+        "result": Item.of('slashblade:proudsoul_sphere', '{SpecialAttackType:"slashblade_sendims:chaotic_rapid_blistering_swords"}').toJson(),
+        "tier": "DRACONIC",
+        "total_energy": 100000000
+    }).id("sdbf:chaotic_rapid_blistering_swords_s4")
 
 })

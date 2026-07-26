@@ -210,6 +210,9 @@ const toRemoveID = new Set([
     "draconicevolution:components/draconium_ingot_from_dust",
     "enderio:smelting/draconicevolution/components/draconium_ingot_from_dust",
     "enderio:smelting/draconicevolution/components/draconium_ingot_from_ore",
+    "draconicevolution:components/wyvern_core",
+    "draconicevolution:components/awakened_core",
+    "draconicevolution:components/chaotic_core",
 
     // s5
     "sjap_adder:kamuyex_fire",

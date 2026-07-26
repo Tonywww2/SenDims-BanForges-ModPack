@@ -21,6 +21,14 @@
 			x: 18.0d
 			y: 0.0d
 		}
+		{
+			id: "19C7A6354335138C"
+			linked_quest: "2E150AF7AD2E748B"
+			shape: "hexagon"
+			size: 2.0d
+			x: 21.0d
+			y: 0.0d
+		}
 	]
 	quests: [
 		{
@@ -165,11 +173,14 @@
 				item: "last_smith:scroll_tengu_full"
 				type: "item"
 			}]
-			x: 18.0d
+			x: 21.0d
 			y: 12.0d
 		}
 		{
-			dependencies: ["53F747AC5A1FA677"]
+			dependencies: [
+				"53F747AC5A1FA677"
+				"1CCE0618E813ACF1"
+			]
 			id: "39FFBF8B4A64A561"
 			shape: "diamond"
 			tasks: [{
@@ -186,7 +197,7 @@
 				}
 				type: "item"
 			}]
-			x: 21.0d
+			x: 30.0d
 			y: 12.0d
 		}
 		{
@@ -197,7 +208,7 @@
 				item: "kubejs:basepoint_alloy"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 6.0d
 			y: 9.0d
 		}
 		{
@@ -234,7 +245,7 @@
 				item: "kubejs:alpha_dust"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 6.0d
 			y: 0.0d
 		}
 		{
@@ -350,10 +361,10 @@
 		}
 		{
 			dependencies: [
-				"70B3048A22DE8391"
 				"24BDD9F44F3AC6D6"
 				"651A03F2219EBCDE"
 				"1F6B42B37F50453D"
+				"2A65024E1FB8DE49"
 			]
 			id: "4EC86EB5BB82EBC1"
 			shape: "diamond"
@@ -371,7 +382,7 @@
 				}
 				type: "item"
 			}]
-			x: 6.0d
+			x: 21.0d
 			y: 15.0d
 		}
 		{
@@ -399,7 +410,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 9.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["1BF032EC08E31ABB"]
@@ -436,6 +447,11 @@
 		}
 		{
 			dependencies: ["1BF032EC08E31ABB"]
+			description: [
+				"飞向万里之外"
+				""
+				"&7在此维度，当x轴坐标和z轴坐标都为10000的倍数时，可以找到混沌岛。&r"
+			]
 			id: "10FB1898FA8701EE"
 			tasks: [{
 				icon: "draconicevolution:infused_obsidian"
@@ -446,7 +462,7 @@
 				to_observe: "draconicevolution:draconic_guardian"
 				type: "observation"
 			}]
-			x: 12.0d
+			x: 27.0d
 			y: 21.0d
 		}
 		{
@@ -457,8 +473,226 @@
 				item: "draconicevolution:medium_chaos_frag"
 				type: "item"
 			}]
-			x: 15.0d
+			x: 30.0d
 			y: 21.0d
+		}
+		{
+			dependencies: ["2A65024E1FB8DE49"]
+			id: "48F375A9CEB4A733"
+			tasks: [{
+				id: "4F4D236FE8B84E56"
+				item: {
+					Count: 1
+					id: "slashblade:proudsoul_sphere"
+					tag: {
+						SpecialAttackType: "slashblade_sendims:chaotic_judgement_cut"
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			title: "混沌次元斩"
+			x: 21.0d
+			y: 21.0d
+		}
+		{
+			dependencies: ["2A65024E1FB8DE49"]
+			id: "4BF0A5F2185FB21D"
+			tasks: [{
+				id: "7583A54AB337F1D0"
+				item: {
+					Count: 1
+					id: "slashblade:proudsoul_sphere"
+					tag: {
+						SpecialAttackType: "slashblade_sendims:chaotic_rapid_blistering_swords"
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			title: "混沌急袭幻影剑"
+			x: 21.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["09D56D99EF168D61"]
+			id: "0F6C04C57A5C0B24"
+			tasks: [{
+				id: "3652106C4D457679"
+				item: "draconicevolution:basic_crafting_injector"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["0F6C04C57A5C0B24"]
+			id: "52F31FCCE3803A20"
+			tasks: [{
+				id: "5B87346447BF8A2A"
+				item: "draconicevolution:wyvern_core"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["52F31FCCE3803A20"]
+			id: "3C182AFCA3C9BC4E"
+			tasks: [{
+				id: "38E5DA5C8CCF6313"
+				item: "draconicevolution:wyvern_crafting_injector"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["3C182AFCA3C9BC4E"]
+			id: "2A65024E1FB8DE49"
+			tasks: [{
+				id: "6940693632190869"
+				item: "draconicevolution:awakened_core"
+				type: "item"
+			}]
+			x: 21.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["2A65024E1FB8DE49"]
+			id: "3D2A9CDAE7FD77F5"
+			tasks: [{
+				id: "4A5286043F10D99F"
+				item: "draconicevolution:awakened_crafting_injector"
+				type: "item"
+			}]
+			x: 24.0d
+			y: 18.0d
+		}
+		{
+			dependencies: [
+				"3D2A9CDAE7FD77F5"
+				"4624724C7ED9D97D"
+			]
+			id: "1CCE0618E813ACF1"
+			tasks: [{
+				id: "3DE319E92940E689"
+				item: "draconicevolution:chaotic_core"
+				type: "item"
+			}]
+			x: 30.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["1CCE0618E813ACF1"]
+			id: "6A9229280B4FB28D"
+			tasks: [{
+				id: "333CA85B99AE411A"
+				item: "draconicevolution:chaotic_crafting_injector"
+				type: "item"
+			}]
+			x: 33.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["3C182AFCA3C9BC4E"]
+			id: "639FC9083D633F7E"
+			tasks: [{
+				id: "65E24E419CDDF0C1"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							energy: {
+								energy: 0
+							}
+							module_host: {
+								modules: [ ]
+								properties: { }
+								provider_id: [I;
+									-1408345224
+									1592673654
+									-1478775730
+									1853867475
+								]
+							}
+						}
+					}
+					id: "draconicevolution:wyvern_chestpiece"
+				}
+				type: "item"
+			}]
+			x: 18.0d
+			y: 27.0d
+		}
+		{
+			dependencies: [
+				"639FC9083D633F7E"
+				"3D2A9CDAE7FD77F5"
+			]
+			id: "4DB16FBCC4358634"
+			tasks: [{
+				id: "7E24A796FDB749BB"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							energy: {
+								energy: 0
+							}
+							module_host: {
+								modules: [ ]
+								properties: { }
+								provider_id: [I;
+									1410958942
+									140855550
+									-1077096917
+									-511455752
+								]
+							}
+						}
+					}
+					id: "draconicevolution:draconic_chestpiece"
+				}
+				type: "item"
+			}]
+			x: 24.0d
+			y: 27.0d
+		}
+		{
+			dependencies: [
+				"4DB16FBCC4358634"
+				"6A9229280B4FB28D"
+			]
+			id: "584874004C2F6032"
+			shape: "diamond"
+			tasks: [{
+				id: "00CCDC0E4C9D5379"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							energy: {
+								energy: 0
+							}
+							module_host: {
+								modules: [ ]
+								properties: { }
+								provider_id: [I;
+									-92566354
+									90719500
+									-1644885119
+									2009825884
+								]
+							}
+						}
+					}
+					id: "draconicevolution:chaotic_chestpiece"
+				}
+				type: "item"
+			}]
+			x: 33.0d
+			y: 27.0d
 		}
 	]
 	title: "末路之地[?]"

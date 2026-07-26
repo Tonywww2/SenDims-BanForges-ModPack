@@ -473,6 +473,8 @@ const mobTypes = new Map([
 
     ["cataclysm:aptrgangr", typeAE],
 
+    ["draconicevolution:draconic_guardian", bossTypeDragon],
+
 ]);
 
 /**

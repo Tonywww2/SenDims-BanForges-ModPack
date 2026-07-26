@@ -56,7 +56,6 @@ ServerEvents.recipes(event => {
         C: '#forge:ingots/gold'
     }).id('sdbf:thermal_rf_coil')
 
-
     event.recipes.thermal.smelter('thermal:rich_slag', [
         '6x thermal:slag',
         '3x ae2:certus_quartz_dust',

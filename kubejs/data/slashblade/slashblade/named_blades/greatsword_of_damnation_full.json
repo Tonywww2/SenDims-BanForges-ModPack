@@ -17,7 +17,7 @@
     "name": "slashblade:greatsword_of_damnation_full",
     "properties":
     {
-        "attack_base": 58.0,
+        "attack_base": 78.0,
         "max_damage": 165,
         "slash_art": "slashblade_sendims:golden_crux_ex",
         "special_effects":
