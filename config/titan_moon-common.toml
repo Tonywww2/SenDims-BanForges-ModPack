@@ -1,0 +1,75 @@
+
+#Titan Moon — 甲烷开采塔防（Methane Extraction Defense）平衡
+[methane_extraction_defense]
+	#是否启用对塔防波次怪的难度缩放（下面两项）。
+	waveMobScalingEnabled = true
+	#塔防波次怪的最大生命乘子（1.0 = 原版属性）。
+	#Range: 0.25 ~ 8.0
+	waveMobHealthMultiplier = 1.0
+	#塔防波次怪的额外攻击力（点，叠加在基础攻击之上）。
+	#Range: 0.0 ~ 20.0
+	waveMobDamageBonus = 0.0
+
+#集氢罩（Hydrogen Collector）——被动产液氢。
+[hydrogen_collector]
+	#每次产出液氢的间隔 tick。
+	#Range: 1 ~ 1200
+	produceInterval = 20
+	#每次产出的液氢量（mB）。
+	#Range: 1 ~ 100000
+	fluidPerInterval = 100
+	#集氢罩内部流体槽容量（mB）。
+	#Range: 1000 ~ 100000000
+	tankCapacity = 8000
+
+#甲烷泵（Special Methane Pump）——开采塔防状态机。
+[methane_pump]
+	#完成一次开采所需 tick（满进度）。
+	#Range: 200 ~ 720000
+	maxProgress = 2400
+	#一次开采的总波数。
+	#Range: 1 ~ 50
+	waveCount = 5
+	#泵完整度上限。
+	#Range: 10 ~ 100000
+	maxIntegrity = 100
+	#怪物「攻击」泵的判定半径（格）。
+	#Range: 1.0 ~ 16.0
+	attackRadius = 2.5
+	#甲烷泵内部流体槽容量（mB）。
+	#Range: 1000 ~ 100000000
+	tankCapacity = 16000
+	#运行期每 tick 产出的液态甲烷（mB）。
+	#Range: 1 ~ 100000
+	fluidPerTick = 8
+	#运行期每隔多少 tick 产出一次材料。
+	#Range: 20 ~ 72000
+	itemInterval = 240
+	#每累计抽取多少 mB 提升 1 点生态压力（波次强度）。
+	#Range: 100 ~ 100000000
+	extractionPerIntensity = 4000
+
+#托林堆肥槽（Tholin Composter）——被动分解产托林粉末。
+[tholin_composter]
+	#每转化 1 份生物残渣→托林粉末所需 tick。
+	#Range: 1 ~ 72000
+	processInterval = 160
+
+#饰品（Curios accessories）——维生套件回复量、毒腺手套触发。
+[curios]
+	#托林维生套件每次回复的固定生命值。
+	#Range: 0.0 ~ 1024.0
+	lifeSupportFlatHeal = 1.0
+	#托林维生套件每次回复的最大生命值比例（0.01 = 1%）。
+	#Range: 0.0 ~ 1.0
+	lifeSupportPercentHeal = 0.01
+	#托林毒腺手套造成物理伤害时附加托林毒素的概率（0.25 = 25%）。
+	#Range: 0.0 ~ 1.0
+	toxinGloveChance = 0.25
+	#托林毒腺手套附加的托林毒素持续 tick（20 tick = 1 秒）。
+	#Range: 1 ~ 72000
+	toxinGloveDurationTicks = 100
+	#托林毒腺手套附加的托林毒素等级（0 = I 级）。
+	#Range: 0 ~ 4
+	toxinGloveAmplifier = 0
+

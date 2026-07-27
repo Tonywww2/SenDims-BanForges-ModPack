@@ -360,6 +360,12 @@ the_bumblezone:sempiternal_sanctum_yellow
 the_bumblezone:stinger_spear_shrine
 the_bumblezone:subway
 the_bumblezone:throne_pillar
+titan_moon:beacon
+titan_moon:crashed_probe
+titan_moon:derrick
+titan_moon:great_hive
+titan_moon:pioneer_outpost
+titan_moon:tholin_geode
 tofucraft:tofu_castle
 tofucraft:tofu_ruins
 tofucraft:tofu_village
