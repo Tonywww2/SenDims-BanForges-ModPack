@@ -214,6 +214,20 @@ const toRemoveID = new Set([
     "draconicevolution:components/awakened_core",
     "draconicevolution:components/chaotic_core",
 
+    "pneumaticcraft:explosion_crafting/compressed_iron_ingot",
+    "pneumaticcraft:explosion_crafting/compressed_iron_block",
+    "productivebees:pneumaticcraft/compressed_iron_bee",
+    "pneumaticcraft:pressure_chamber/compressed_iron_ingot",
+    "pneumaticcraft:pressure_chamber/compressed_iron_block",
+    "productivebees:centrifuge/pneumaticcraft/honeycomb_compressed_iron",
+    "productivebees:centrifuge/pneumaticcraft/honeycomb_compressed_iron_block",
+
+    "pneumaticcraft:refinery",
+    "pneumaticcraft:refinery_output",
+    "pneumaticcraft:thermopneumatic_processing_plant",
+    "pneumaticcraft:thermo_plant/plastic_from_lpg",
+    "pneumaticcraft:thermo_plant/plastic_from_biodiesel",
+
     // s5
     "sjap_adder:kamuyex_fire",
     "sjap_adder:kamuyex_life",

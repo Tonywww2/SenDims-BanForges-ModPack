@@ -30,7 +30,7 @@
 			id: "6125CC552C522DC0"
 			linked_quest: "641BAE5B4E3ED25C"
 			x: 84.0d
-			y: 6.0d
+			y: 3.0d
 		}
 		{
 			id: "299E3B12357B5A3D"
@@ -101,8 +101,20 @@
 		{
 			id: "1D6635504027CFAD"
 			linked_quest: "07A9736A3BDF80B1"
-			x: 99.0d
+			x: 105.0d
 			y: -3.0d
+		}
+		{
+			id: "03DD949C327179AF"
+			linked_quest: "6E5EFB146C17C916"
+			x: 96.0d
+			y: -6.0d
+		}
+		{
+			id: "4066E941088A7F2F"
+			linked_quest: "234E07699A873B66"
+			x: 96.0d
+			y: -9.0d
 		}
 	]
 	quests: [
@@ -1011,7 +1023,7 @@
 				type: "item"
 			}]
 			x: 78.0d
-			y: 15.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["2B520DD47D46DDEB"]
@@ -1021,8 +1033,8 @@
 				item: "botania:terrasteel_ingot"
 				type: "item"
 			}]
-			x: 81.0d
-			y: 15.0d
+			x: 78.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["74388B1FF26F530C"]
@@ -1184,13 +1196,10 @@
 				type: "item"
 			}]
 			x: 84.0d
-			y: 15.0d
+			y: 12.0d
 		}
 		{
-			dependencies: [
-				"52DEB335E97C57C9"
-				"731769A82CB760CC"
-			]
+			dependencies: ["52DEB335E97C57C9"]
 			id: "5E2FB0326E11216D"
 			tasks: [{
 				id: "4461E26B58E50F02"
@@ -1198,7 +1207,7 @@
 				type: "item"
 			}]
 			x: 87.0d
-			y: 15.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["15D102DE2394A495"]
@@ -1267,7 +1276,7 @@
 				type: "item"
 			}]
 			x: 87.0d
-			y: 18.0d
+			y: 15.0d
 		}
 		{
 			dependencies: [
@@ -1281,7 +1290,7 @@
 				type: "item"
 			}]
 			x: 90.0d
-			y: 15.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["1355B5FEA170DF1D"]
@@ -1292,7 +1301,7 @@
 				type: "item"
 			}]
 			x: 93.0d
-			y: 15.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["42C9B0A729486047"]
@@ -1309,7 +1318,7 @@
 				type: "item"
 			}]
 			x: 96.0d
-			y: 15.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["79B89622E21E230D"]
@@ -1319,8 +1328,8 @@
 				item: "botania:travel_belt"
 				type: "item"
 			}]
-			x: 72.0d
-			y: 12.0d
+			x: 75.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -1334,7 +1343,7 @@
 				type: "item"
 			}]
 			x: 93.0d
-			y: 12.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["42C9B0A729486047"]
@@ -1345,7 +1354,7 @@
 				type: "item"
 			}]
 			x: 96.0d
-			y: 12.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["088AF6E3F4AA7E3B"]
@@ -1377,8 +1386,8 @@
 				item: "botania:manasteel_ingot"
 				type: "item"
 			}]
-			x: 72.0d
-			y: 15.0d
+			x: 75.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["42C9B0A729486047"]
@@ -1388,8 +1397,8 @@
 				item: "botania:gaia_ingot"
 				type: "item"
 			}]
-			x: 93.0d
-			y: 18.0d
+			x: 96.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["31801D73AF59C8CB"]
@@ -1567,7 +1576,7 @@
 				item: "apotheosis:mythic_material"
 				type: "item"
 			}]
-			x: 99.0d
+			x: 108.0d
 			y: -12.0d
 		}
 		{
@@ -1578,8 +1587,8 @@
 				item: "slashblade_sendims:integral_component_5"
 				type: "item"
 			}]
-			x: 93.0d
-			y: -6.0d
+			x: 99.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -1600,8 +1609,81 @@
 				}
 				type: "item"
 			}]
-			x: 102.0d
+			x: 108.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["15D102DE2394A495"]
+			description: [
+				"提供生产力可以为你的冒险提供更多的便利！"
+				""
+				"尽管如此，以通关为目标的话，本章节是完全可选的。"
+				"&m&7虽然跳过工业章节会损失相当一部分的流程体验。&r"
+				""
+				"不同的机器可以为你提供更便捷的材料加工方式、资源获取方式、合成方式、仓储方式等。"
+				"同时，也有部分的拔刀剑和材料是工业章节独占的。"
+				""
+				"在后期，可以通过一些设备全自动生产&b耀魂材料&r。"
+			]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "60DC8B96CAA7E53B"
+			subtitle: "重要"
+			tasks: [{
+				id: "67093BEC0BCA2042"
+				type: "checkmark"
+			}]
+			title: "工业章节的简介"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6E5EFB146C17C916"]
+			id: "18905E83262FFFE9"
+			tasks: [{
+				id: "4C1D2A4B50838383"
+				item: "pneumaticcraft:refinery"
+				type: "item"
+			}]
+			x: 99.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["18905E83262FFFE9"]
+			id: "7FB2902F41DE8BB3"
+			tasks: [{
+				id: "17F244A2B2400974"
+				item: "pneumaticcraft:refinery_output"
+				type: "item"
+			}]
+			x: 102.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6E5EFB146C17C916"]
+			id: "2F7FB958849D7D22"
+			tasks: [{
+				id: "472B5829FEEA0BDD"
+				item: "pneumaticcraft:thermopneumatic_processing_plant"
+				type: "item"
+			}]
+			x: 105.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2F7FB958849D7D22"]
+			description: [
+				"使用LPG制作你的第一块塑料。"
+				""
+				"你也可以使用生物燃油来增加产量。"
+			]
+			id: "04B58CD173EB1C47"
+			tasks: [{
+				id: "48F6FBFD14547F18"
+				item: "pneumaticcraft:plastic"
+				type: "item"
+			}]
+			x: 105.0d
+			y: -9.0d
 		}
 	]
 	title: "工业"

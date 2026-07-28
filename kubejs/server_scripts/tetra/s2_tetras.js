@@ -106,7 +106,7 @@ ServerEvents.highPriorityData(event => {
         .setDurability(200).setIntegrityCost(4).setIntegrityGain(6)
         .setMagicCapacity(160).setToolLevel(4).setToolEfficiency(5)
         .addAttributes("minecraft:generic.max_health", 2)
-        .setTints("f9f882", "d9db30").addTexture("heavy").addTexture("metal")
+        .setTints("D6D6D6", "575757").addTexture("heavy").addTexture("metal")
         .addItemMaterial('aether_redux:refined_sentrite')
         .setRequiredTool("hammer_dig", 1)
         .addEnchantment("apotheosis:life_mending", 1)

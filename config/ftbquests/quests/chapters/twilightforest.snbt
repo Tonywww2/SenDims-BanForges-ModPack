@@ -63,11 +63,19 @@
 			hide_until_deps_visible: true
 			icon: "twilightforest:twilight_portal_miniature_structure"
 			id: "3C1CB82ADF4FBBC1"
-			rewards: [{
-				id: "4DD3ED97C6B15E37"
-				item: "twilightforest:raven_feather"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "4DD3ED97C6B15E37"
+					item: "twilightforest:raven_feather"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "68C637A5613D0AC6"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
 			size: 2.0d
 			tasks: [{
 				dimension: "twilightforest:twilight_forest"
@@ -86,6 +94,12 @@
 			]
 			hide_until_deps_complete: true
 			id: "14E282F8699E935B"
+			rewards: [{
+				count: 2
+				id: "5809CF9BC3836D43"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
 			tasks: [{
 				id: "23FC31CDC20AE7E5"
 				item: "twilightforest:magic_map"
@@ -98,6 +112,12 @@
 			dependencies: ["3C1CB82ADF4FBBC1"]
 			hide_until_deps_complete: true
 			id: "222D394D6FDDC479"
+			rewards: [{
+				count: 2
+				id: "5E4C3628F995DABA"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
 			tasks: [{
 				advancement: "twilightforest:twilight_hunter"
 				criterion: ""
@@ -116,6 +136,12 @@
 			]
 			hide_until_deps_complete: true
 			id: "20FDE881446DF8AF"
+			rewards: [{
+				count: 4
+				id: "4DFDB862A4032AC5"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
 			subtitle: "娜迦"
 			tasks: [{
 				advancement: "twilightforest:progress_naga"
@@ -137,6 +163,12 @@
 			]
 			hide_until_deps_complete: true
 			id: "3AA758300110DA33"
+			rewards: [{
+				count: 5
+				id: "1939E05CA9D8DFFF"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
 			subtitle: "巫妖"
 			tasks: [{
 				advancement: "twilightforest:progress_lich"
@@ -151,6 +183,12 @@
 			dependencies: ["3AA758300110DA33"]
 			description: ["每一个幻影骑士都会被视作首领！但是他们的攻击力和生命值远不如普通的野生首领。"]
 			id: "6FC69F6C86DA91E0"
+			rewards: [{
+				count: 10
+				id: "54356B58C4AFBC9A"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
 			tasks: [{
 				advancement: "twilightforest:progress_knights"
 				criterion: ""
@@ -164,31 +202,39 @@
 			dependencies: ["3AA758300110DA33"]
 			description: ["米诺菇会被视作首领！"]
 			id: "2EDA6C0823CAF5BE"
-			rewards: [{
-				id: "25D8AAEEF9178DA7"
-				item: {
-					Count: 1
-					id: "twilightforest:mazebreaker_pickaxe"
-					tag: {
-						Damage: 0
-						Enchantments: [
-							{
-								id: "minecraft:efficiency"
-								lvl: 4s
-							}
-							{
-								id: "minecraft:unbreaking"
-								lvl: 3s
-							}
-							{
-								id: "minecraft:fortune"
-								lvl: 2s
-							}
-						]
+			rewards: [
+				{
+					id: "25D8AAEEF9178DA7"
+					item: {
+						Count: 1
+						id: "twilightforest:mazebreaker_pickaxe"
+						tag: {
+							Damage: 0
+							Enchantments: [
+								{
+									id: "minecraft:efficiency"
+									lvl: 4s
+								}
+								{
+									id: "minecraft:unbreaking"
+									lvl: 3s
+								}
+								{
+									id: "minecraft:fortune"
+									lvl: 2s
+								}
+							]
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					count: 10
+					id: "25F28BDD0682CF13"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
 			tasks: [{
 				advancement: "twilightforest:progress_labyrinth"
 				criterion: ""
@@ -202,6 +248,12 @@
 			dependencies: ["3AA758300110DA33"]
 			description: ["雪怪王会被视作首领！但是它的护甲值比一般的野生首领低。"]
 			id: "46D7551ADB56C59D"
+			rewards: [{
+				count: 10
+				id: "55DA23127677B3C7"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
 			tasks: [{
 				advancement: "twilightforest:progress_yeti"
 				criterion: ""
@@ -250,6 +302,12 @@
 		{
 			dependencies: ["20FDE881446DF8AF"]
 			id: "6E604BAD9F8D769C"
+			rewards: [{
+				count: 4
+				id: "33E77CF2663B5948"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7D51326A9C211610"
 				item: {
@@ -270,6 +328,12 @@
 		{
 			dependencies: ["6E604BAD9F8D769C"]
 			id: "44EB434977E45FFC"
+			rewards: [{
+				count: 3
+				id: "57F359482C9F210F"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
 			tasks: [{
 				id: "58E3FA612362DF04"
 				item: {
@@ -405,6 +469,12 @@
 		{
 			dependencies: ["222D394D6FDDC479"]
 			id: "67E435039C0EB3FA"
+			rewards: [{
+				count: 3
+				id: "3D57AA64D5503831"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
 			tasks: [{
 				id: "49B7701860E69ABF"
 				item: {
@@ -426,6 +496,12 @@
 			dependencies: ["3C1CB82ADF4FBBC1"]
 			hide_until_deps_complete: true
 			id: "5B48DD82CE048231"
+			rewards: [{
+				count: 4
+				id: "25BD7573FD39A891"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0E013267F59847D9"
 				item: "twilightforest:raw_ironwood"
@@ -442,6 +518,12 @@
 			dependency_requirement: "one_completed"
 			hide_until_deps_complete: true
 			id: "1E82AFA5EC50F0AC"
+			rewards: [{
+				count: 4
+				id: "7738CEC903C11754"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3DA0B365DC61112D"
 				item: "twilightforest:ironwood_ingot"
@@ -454,6 +536,12 @@
 			dependencies: ["3C1CB82ADF4FBBC1"]
 			hide_until_deps_complete: true
 			id: "064234E17AB63222"
+			rewards: [{
+				count: 2
+				id: "3D563DF9FC700D59"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6FA07963B61D3892"
 				item: "twilightforest:steeleaf_ingot"

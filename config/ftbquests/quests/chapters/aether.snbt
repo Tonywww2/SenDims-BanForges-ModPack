@@ -287,6 +287,12 @@
 				"4678FBC8BCAFCA82"
 			]
 			id: "370F691D89AF5467"
+			rewards: [{
+				count: 4
+				id: "73359424DE3B291F"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
 			tasks: [{
 				id: "08FC83F02FB9B75D"
 				item: "deep_aether:metal_mixture"
@@ -615,7 +621,12 @@
 			y: 18.0d
 		}
 		{
-			dependencies: ["3F0F05D26289CF7B"]
+			dependencies: [
+				"3F0F05D26289CF7B"
+				"0F8DC1AEBBC762C1"
+			]
+			dependency_requirement: "one_completed"
+			description: ["进入深境二层需要&6岗哨石&r和&6变量卡&r。"]
 			id: "5DC17402B959C2E9"
 			shape: "hexagon"
 			subtitle: "重要"
@@ -633,7 +644,11 @@
 				"6442E0C760FAF02B"
 			]
 			dependency_requirement: "one_completed"
-			description: ["这些变量卡有些特殊？"]
+			description: [
+				"进入深境二层需要&6岗哨石&r和&6变量卡&r。"
+				""
+				"这些变量卡有些特殊？"
+			]
 			id: "0C568583CC58DAA6"
 			shape: "hexagon"
 			subtitle: "重要"

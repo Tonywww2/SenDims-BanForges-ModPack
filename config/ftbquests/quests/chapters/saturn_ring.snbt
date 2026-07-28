@@ -304,14 +304,18 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["6035D1A1774B2FAF"]
+			dependencies: [
+				"6035D1A1774B2FAF"
+				"363BE015B9EDE34B"
+			]
+			description: ["初期的压缩铁锭只能通过引爆土星环合金锭获得，之后可以通过压力室合成。"]
 			id: "6E5EFB146C17C916"
 			tasks: [{
 				id: "4528F17A58379590"
 				item: "pneumaticcraft:ingot_iron_compressed"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 9.0d
 			y: 12.0d
 		}
 		{
@@ -322,30 +326,103 @@
 				item: "pneumaticcraft:reinforced_stone"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 12.0d
 			y: 12.0d
 		}
 		{
-			dependencies: ["41B3FA768C85DAEC"]
+			dependencies: [
+				"41B3FA768C85DAEC"
+				"6E5EFB146C17C916"
+			]
+			dependency_requirement: "one_completed"
 			id: "234E07699A873B66"
 			tasks: [{
 				id: "66DA9EAFABFA1581"
 				item: "pneumaticcraft:pressure_chamber_wall"
 				type: "item"
 			}]
-			x: 9.0d
+			x: 15.0d
 			y: 12.0d
 		}
 		{
-			dependencies: ["41B3FA768C85DAEC"]
+			dependencies: [
+				"41B3FA768C85DAEC"
+				"3FEA807D7584A291"
+			]
 			id: "52A0DDA2744E3CCA"
 			tasks: [{
 				id: "19E51435669B897A"
 				item: "pneumaticcraft:air_compressor"
 				type: "item"
 			}]
-			x: 9.0d
+			x: 15.0d
 			y: 15.0d
+		}
+		{
+			dependencies: ["234E07699A873B66"]
+			id: "57FFC670F65FEEBC"
+			tasks: [{
+				id: "6ED05AD6CB315AB1"
+				item: "pneumaticcraft:pressure_chamber_interface"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["234E07699A873B66"]
+			id: "5B536BFB80E3E416"
+			tasks: [{
+				id: "35891269361C3F76"
+				item: "pneumaticcraft:pressure_chamber_valve"
+				type: "item"
+			}]
+			x: 21.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["6E5EFB146C17C916"]
+			id: "3FEA807D7584A291"
+			tasks: [{
+				id: "3C4542C2FC5D73A7"
+				item: "pneumaticcraft:pressure_tube"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["3FEA807D7584A291"]
+			id: "449C67B5CDC28F5D"
+			tasks: [{
+				id: "228164B9AE426FCA"
+				item: "pneumaticcraft:regulator_tube_module"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["3FEA807D7584A291"]
+			id: "702A393FB43B477B"
+			tasks: [{
+				id: "564BD7C657BE362E"
+				item: "pneumaticcraft:safety_tube_module"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["234E07699A873B66"]
+			id: "518129C6C09E4DFC"
+			tasks: [{
+				id: "097658B36B632BF5"
+				item: "pneumaticcraft:air_canister"
+				type: "item"
+			}]
+			x: 24.0d
+			y: 12.0d
 		}
 	]
 	title: "土星环"

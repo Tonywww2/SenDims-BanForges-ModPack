@@ -75,6 +75,8 @@ SACostMap.put("slashblade_addon:lighting_swords", [400, 0.2]);
 
 SACostMap.put("foxextra:thrust_ex", [200, 0.05]);
 
+SACostMap.put("slashblade:regression_start", [200, 0.01]);
+
 let defaultCost = [200, 0.2];
 let superSlashArtCost = [400, 0.3];
 

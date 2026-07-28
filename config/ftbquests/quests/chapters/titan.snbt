@@ -14,6 +14,11 @@
 			hide_dependent_lines: true
 			id: "37CF7606A44B5357"
 			size: 2.0d
+			tasks: [{
+				dimension: "titan_moon:titan"
+				id: "3B9FF90C3B6B99F9"
+				type: "dimension"
+			}]
 			title: "土卫六"
 			x: 0.0d
 			y: 0.0d

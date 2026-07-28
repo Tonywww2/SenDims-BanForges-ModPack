@@ -77,6 +77,12 @@
 					item: "ae2:item_cell_housing"
 					type: "item"
 				}
+				{
+					count: 2
+					id: "70FDFB7E6C49033D"
+					item: "minecraft:diamond"
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "1854FBD3346613F2"
@@ -361,6 +367,23 @@
 		{
 			dependencies: ["286353DF1716B4D6"]
 			id: "49F9A5BA316F6A3B"
+			rewards: [
+				{
+					id: "3B47D0BB8EEE6210"
+					item: "ae2:chest"
+					type: "item"
+				}
+				{
+					id: "5B0D888304422D17"
+					item: {
+						Count: 1
+						id: "ae2:item_storage_cell_16k"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			shape: "diamond"
 			tasks: [{
 				id: "22408021483002D1"
 				item: "ae2:cell_component_1k"
@@ -623,6 +646,12 @@
 		{
 			dependencies: ["6130B752208314B7"]
 			id: "71FCA5FAB43DD617"
+			rewards: [{
+				count: 2
+				id: "049376034AD9C060"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
 			tasks: [{
 				id: "75B74148E2E36AA5"
 				item: "ae2:charger"
@@ -912,6 +941,18 @@
 			}]
 			x: 0.0d
 			y: -7.5d
+		}
+		{
+			dependencies: ["6130B752208314B7"]
+			description: ["被动产生40RF/t，但是同一个AE网络内只能存在一个。"]
+			id: "61A84790382576F6"
+			tasks: [{
+				id: "6C6BAF2B78622006"
+				item: "ae2:crystal_resonance_generator"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 7.5d
 		}
 	]
 	title: "库存管理"

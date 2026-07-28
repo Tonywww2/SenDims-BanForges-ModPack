@@ -1116,8 +1116,8 @@
 		{
 			dependencies: ["62C0631125654B3D"]
 			description: [
-				"圆角方形：普通任务、普通节点。"
-				"菱形：重要任务，通常包含重要的信息，或者任务道具本身十分重要。"
+				"&b圆角方形&r：普通任务、普通节点。"
+				"&b菱形&r：重要任务，通常包含重要的信息，或者任务道具本身十分重要。"
 			]
 			icon: "botania:cosmetic_questgiver_mark"
 			id: "1A6C2C2203C27C5F"
@@ -1171,6 +1171,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
+			size: 2.0d
 			subtitle: "快速扩建"
 			tasks: [{
 				consume_items: true

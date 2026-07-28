@@ -37,6 +37,12 @@ StartupEvents.registry('item', event => {
     event.create('multifaceted_ambrosia').fireResistant().rarity('rare')
     event.create('anchor_shard').fireResistant().rarity('epic')
 
+    // 液态耀魂精炼线中间产物 / Liquid proudsoul refining intermediates
+    event.create('soul_filter_matrix').fireResistant().maxStackSize(16)
+    event.create('charged_soul_filter').fireResistant().rarity('rare').maxStackSize(16)
+    event.create('condensed_proudsoul_cake').fireResistant()
+    event.create('compressed_proudsoul_cake').fireResistant().rarity('rare')
+
     event.create('ml_computing_ingot').fireResistant().rarity('epic')
     event.create('cognitio').fireResistant().rarity('rare')
     event.create('chaotic_truth').fireResistant().rarity('rare')
@@ -110,4 +116,48 @@ StartupEvents.registry('fluid', event => {
     event.create('melted_proudsoul')
         .thickTexture(0x5a30bf)
         .bucketColor(0x5a30bf)
+
+    event.create('light_distilled_proudsoul')
+        .thickTexture(0xa98cff)
+        .bucketColor(0xa98cff)
+
+    event.create('active_distilled_proudsoul')
+        .thickTexture(0x7b55e7)
+        .bucketColor(0x7b55e7)
+
+    event.create('condensed_distilled_proudsoul')
+        .thickTexture(0x5231b8)
+        .bucketColor(0x5231b8)
+
+    event.create('heavy_distilled_proudsoul')
+        .thickTexture(0x30196f)
+        .bucketColor(0x30196f)
+
+    event.create('stabilized_light_proudsoul')
+        .thickTexture(0xc5b2ff)
+        .bucketColor(0xc5b2ff)
+
+    event.create('buffered_active_proudsoul')
+        .thickTexture(0x916ff2)
+        .bucketColor(0x916ff2)
+
+    event.create('pressurized_condensed_proudsoul')
+        .thickTexture(0x6642c7)
+        .bucketColor(0x6642c7)
+
+    event.create('cracked_heavy_proudsoul')
+        .thickTexture(0x422582)
+        .bucketColor(0x422582)
+
+    event.create('volatile_proudsoul_blend')
+        .thickTexture(0xb48cff)
+        .bucketColor(0xb48cff)
+
+    event.create('dense_proudsoul_blend')
+        .thickTexture(0x4a2a9e)
+        .bucketColor(0x4a2a9e)
+
+    event.create('purified_proudsoul_fuel')
+        .thickTexture(0xd8c7ff)
+        .bucketColor(0xd8c7ff)
 })

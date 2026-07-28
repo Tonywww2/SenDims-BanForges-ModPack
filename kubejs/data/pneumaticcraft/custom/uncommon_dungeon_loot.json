@@ -1,0 +1,26 @@
+{
+  "replace": true,
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 24.0,
+                "min": 8.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "thermal:steel_ingot",
+          "weight": 10
+        }
+  ],
+  "random_sequence": "pneumaticcraft:custom/uncommon_dungeon_loot"
+}

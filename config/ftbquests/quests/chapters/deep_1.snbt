@@ -192,6 +192,12 @@
 				"0402AC2E4A8127A4"
 			]
 			id: "3F3BE932D1892CC4"
+			rewards: [{
+				count: 4
+				id: "438ABEDE7AF33312"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
 			tasks: [{
 				id: "38B1E2F156E3367D"
 				item: {
@@ -387,6 +393,12 @@
 		{
 			dependencies: ["1DE54DDD04540738"]
 			id: "4BF82964D6D12B4B"
+			rewards: [{
+				count: 4
+				id: "1F1C2554D3A0F866"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5F014EBF9B54B8F6"
 				item: {
@@ -563,6 +575,7 @@
 				"5BB642BD0BE40541"
 			]
 			dependency_requirement: "one_completed"
+			description: ["提示：两种村庄在不同的生物群系中生成，其中的一种有可能会比另一种近很多。"]
 			id: "3C4875514F38F6E4"
 			rewards: [{
 				count: 2
@@ -585,6 +598,7 @@
 				"5BB642BD0BE40541"
 			]
 			dependency_requirement: "one_completed"
+			description: ["提示：两种村庄在不同的生物群系中生成，其中的一种有可能会比另一种近很多。"]
 			id: "0E88B89884D28C35"
 			rewards: [{
 				count: 2
@@ -657,6 +671,12 @@
 		{
 			dependencies: ["6130B752208314B7"]
 			id: "206536C510BBA790"
+			rewards: [{
+				count: 2
+				id: "23346C2860186F70"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
 			subtitle: "通过战斗获得资源"
 			tasks: [{
 				id: "68E3E6DEB4AFC898"
