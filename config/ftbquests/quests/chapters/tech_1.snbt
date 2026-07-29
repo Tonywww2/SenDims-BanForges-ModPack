@@ -1487,7 +1487,7 @@
 				type: "item"
 			}]
 			x: 96.0d
-			y: -12.0d
+			y: -15.0d
 		}
 		{
 			dependencies: ["32B566DB7BFEDCA5"]
@@ -1577,7 +1577,7 @@
 				type: "item"
 			}]
 			x: 108.0d
-			y: -12.0d
+			y: -15.0d
 		}
 		{
 			dependencies: ["363BE015B9EDE34B"]
@@ -1682,8 +1682,121 @@
 				item: "pneumaticcraft:plastic"
 				type: "item"
 			}]
+			x: 108.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["18905E83262FFFE9"]
+			id: "61F042CA1E41077A"
+			tasks: [{
+				id: "135A6B514A0C9C3C"
+				item: "kubejs:soul_filter_matrix"
+				type: "item"
+			}]
+			x: 99.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["61F042CA1E41077A"]
+			id: "2DEB741FEFA6EEA6"
+			tasks: [{
+				id: "6F8D4DF1E8082901"
+				item: "kubejs:charged_soul_filter"
+				type: "item"
+			}]
+			x: 102.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["18905E83262FFFE9"]
+			id: "4639784BBFB62790"
+			tasks: [{
+				id: "6A9C5E99DAF82261"
+				item: "kubejs:condensed_proudsoul_cake"
+				type: "item"
+			}]
+			x: 99.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["4639784BBFB62790"]
+			id: "22B5BC001DF5366B"
+			tasks: [{
+				id: "43E3A7C103C22DE0"
+				item: "kubejs:compressed_proudsoul_cake"
+				type: "item"
+			}]
+			x: 102.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["2DEB741FEFA6EEA6"]
+			id: "505D3D93C0185F59"
+			tasks: [{
+				id: "34405C2993960145"
+				item: {
+					Count: 1
+					id: "thermal:florb"
+					tag: {
+						Fluid: {
+							Amount: 1000
+							FluidName: "kubejs:volatile_proudsoul_blend"
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			title: "耀魂挥发相"
 			x: 105.0d
 			y: -9.0d
+		}
+		{
+			dependencies: ["22B5BC001DF5366B"]
+			id: "22E766E3904C37CD"
+			tasks: [{
+				id: "36412B205AE65B8D"
+				item: {
+					Count: 1
+					id: "thermal:florb"
+					tag: {
+						Fluid: {
+							Amount: 1000
+							FluidName: "kubejs:dense_proudsoul_blend"
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			title: "耀魂稠密相"
+			x: 105.0d
+			y: -12.0d
+		}
+		{
+			dependencies: [
+				"22E766E3904C37CD"
+				"505D3D93C0185F59"
+			]
+			id: "64AC14BEB874BD8E"
+			tasks: [{
+				id: "58511501A2441922"
+				item: {
+					Count: 1
+					id: "thermal:florb"
+					tag: {
+						Fluid: {
+							Amount: 1000
+							FluidName: "kubejs:purified_proudsoul_fuel"
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			title: "纯化耀魂燃料"
+			x: 108.0d
+			y: -12.0d
 		}
 	]
 	title: "工业"

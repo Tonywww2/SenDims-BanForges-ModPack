@@ -487,11 +487,28 @@
 			dependencies: ["291BE5789CE1F72C"]
 			description: ["因子铁砧"]
 			id: "22D747A4B54ACF00"
-			rewards: [{
-				id: "130B4FA381373FB7"
-				type: "xp"
-				xp: 100
-			}]
+			rewards: [
+				{
+					id: "130B4FA381373FB7"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 2
+					id: "00677C836A53D51E"
+					item: {
+						Count: 1
+						id: "umapyoi:uma_factor_shard"
+						tag: {
+							factors: [{
+								factor: "umapyoi:physique_factor"
+								level: 1
+							}]
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "57590F05E6F98C64"
 				item: "umapyoi:factor_research_table"

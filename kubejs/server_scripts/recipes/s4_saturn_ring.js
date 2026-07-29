@@ -226,7 +226,7 @@ ServerEvents.recipes(event => {
         "MGM"
     ], {
         "G": 'ad_astra:gravity_normalizer',
-        "M": '#forge:storage_blocks/mana_diamond',
+        "M": Item.of('thermal:florb', '{Fluid:{Amount:1000,FluidName:"kubejs:purified_proudsoul_fuel"}}').weakNBT(),
         "S": 'last_smith:sakura_sphere',
         "H": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
@@ -268,11 +268,12 @@ ServerEvents.recipes(event => {
     //  辅材: 古魂四角 + 补天合金锭上下.
     // ========================================================================
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
-        "PJP",
+        "PJX",
         "RNM",
-        "PJP"
+        "XJP"
     ], {
         "P": "kubejs:ancient_soul",
+        "X": Item.of('thermal:florb', '{Fluid:{Amount:1000,FluidName:"kubejs:dense_proudsoul_blend"}}').weakNBT(),
         "J": "kubejs:celestial_filling_alloy_ingot",
         "N": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()

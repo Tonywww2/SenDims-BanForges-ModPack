@@ -521,17 +521,6 @@
 			x: 9.0d
 			y: 18.0d
 		}
-		{
-			dependencies: ["1AD9019A80B12C4E"]
-			id: "78371E638426F18C"
-			tasks: [{
-				id: "5EC5B8E578E142E5"
-				item: "scannable:chest_module"
-				type: "item"
-			}]
-			x: 9.0d
-			y: 21.0d
-		}
 	]
 	title: "下界"
 }

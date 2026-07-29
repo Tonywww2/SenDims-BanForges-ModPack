@@ -187,6 +187,7 @@
 		{
 			dependencies: ["77693A4D5EF97A31"]
 			id: "00C3C00C3688CEA7"
+			subtitle: "升级版"
 			tasks: [{
 				id: "2995A922CAB45029"
 				item: "rehooked:iron_hook"
@@ -206,6 +207,7 @@
 			}]
 			shape: "hexagon"
 			size: 2.0d
+			subtitle: "基础钩爪"
 			tasks: [{
 				id: "1827F027E12F1F7C"
 				item: "rehooked:wood_hook"
@@ -218,6 +220,7 @@
 		{
 			dependencies: ["00C3C00C3688CEA7"]
 			id: "691938CBA8FAA31E"
+			subtitle: "建筑帮手"
 			tasks: [{
 				id: "7026A0AC22EE6BBE"
 				item: "rehooked:red_hook"
@@ -229,6 +232,7 @@
 		{
 			dependencies: ["00C3C00C3688CEA7"]
 			id: "6D19670214234AFA"
+			subtitle: "高速跑图"
 			tasks: [{
 				id: "2AA53A55E9D6E6DE"
 				item: "rehooked:diamond_hook"
@@ -240,6 +244,7 @@
 		{
 			dependencies: ["6D19670214234AFA"]
 			id: "2130033541AB5127"
+			subtitle: "超高速跑图"
 			tasks: [{
 				id: "78C9FADBF7C2D50D"
 				item: "rehooked:blaze_hook"
@@ -251,6 +256,7 @@
 		{
 			dependencies: ["6D19670214234AFA"]
 			id: "698D94375B02D1BB"
+			subtitle: "超高速跑图"
 			tasks: [{
 				id: "2C115F92FEDE730A"
 				item: "rehooked:ender_hook"

@@ -1283,6 +1283,12 @@
 			dependency_requirement: "one_completed"
 			hide_until_deps_complete: true
 			id: "00880D674BE17F9A"
+			rewards: [{
+				count: 2
+				id: "374426EE4BAFE058"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7D5E7F7557B98741"
 				item: "last_smith:scroll_exorcism"

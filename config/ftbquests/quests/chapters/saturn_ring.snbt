@@ -21,6 +21,18 @@
 			x: 18.0d
 			y: 0.0d
 		}
+		{
+			id: "5364104969F3E688"
+			linked_quest: "22E766E3904C37CD"
+			x: 6.0d
+			y: 9.0d
+		}
+		{
+			id: "43668DE8F7546633"
+			linked_quest: "64AC14BEB874BD8E"
+			x: 15.0d
+			y: 9.0d
+		}
 	]
 	quests: [
 		{
@@ -48,7 +60,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 6.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["34C15FC6C1E469E9"]
@@ -80,7 +92,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6035D1A1774B2FAF"]
@@ -90,8 +102,8 @@
 				item: "kubejs:ancient_soul"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 0.0d
+			x: 3.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -115,15 +127,17 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 9.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
 				"49631F88EAF0261B"
 				"59F17F34F831D72E"
 				"1FC1A62930B9D276"
+				"64AC14BEB874BD8E"
 			]
 			id: "245C93D5DC91D776"
+			shape: "diamond"
 			tasks: [{
 				id: "5D9792A64F68E887"
 				item: {
@@ -146,8 +160,8 @@
 				"0DE1DF9046B9CD2E"
 				"2E2F1882E71FE497"
 				"65C573EE97C5117F"
-				"693C912DB9E27674"
 				"07A9736A3BDF80B1"
+				"22E766E3904C37CD"
 			]
 			id: "5A155C23C2AB2163"
 			tasks: [{
@@ -164,8 +178,8 @@
 				}
 				type: "item"
 			}]
-			x: 15.0d
-			y: 3.0d
+			x: 12.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -217,7 +231,7 @@
 			}]
 			title: "沙虫巢穴"
 			x: 3.0d
-			y: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["41F7CE2B7D83F4BE"]
@@ -229,7 +243,7 @@
 				type: "advancement"
 			}]
 			x: 6.0d
-			y: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -250,7 +264,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -265,7 +279,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6035D1A1774B2FAF"]
@@ -276,7 +290,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -290,7 +304,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["363BE015B9EDE34B"]
@@ -423,6 +437,66 @@
 			}]
 			x: 24.0d
 			y: 12.0d
+		}
+		{
+			description: ["气动套装可以作为Tetra护甲的改造材料，可以让Tetra护甲像气动套装一样被改造。"]
+			icon: {
+				Count: 1
+				id: "pneumaticcraft:pneumatic_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "18DE4C7E01A25334"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "1EAA1DBBC90EAACF"
+					item: {
+						Count: 1
+						id: "pneumaticcraft:pneumatic_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2CBC3B187F9528DF"
+					item: {
+						Count: 1
+						id: "pneumaticcraft:pneumatic_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "46D8AB536D601EA0"
+					item: {
+						Count: 1
+						id: "pneumaticcraft:pneumatic_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "78C63B3DA42EB6E7"
+					item: {
+						Count: 1
+						id: "pneumaticcraft:pneumatic_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 24.0d
+			y: 15.0d
 		}
 	]
 	title: "土星环"

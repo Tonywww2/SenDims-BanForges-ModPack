@@ -57,7 +57,8 @@
 			description: [
 				"建造一个&b2x2的正方形池塘&r，在边缘&b种满花朵&r（最常见的花朵是......），填充清水，最后&b投入钻石&r......"
 				""
-				"警告：暮色的难度相比同阶段的其他维度更高。"
+				"&c警告：暮色的难度相比同阶段的其他维度更高。&r"
+				"&c特别是巫妖之后的敌人。&r"
 			]
 			hide_dependent_lines: true
 			hide_until_deps_visible: true
@@ -160,6 +161,8 @@
 				"你可以使用任意的&b魔法伤害&r破除巫妖的护盾（反射宝珠、幻影剑、SA等），但是每次破除之后，都需要隔一段时间才能再次破除！"
 				""
 				"在破除护盾后的等待时间内对巫妖造成魔法伤害，会不断的缩短这个时间。"
+				""
+				"&c警告：在巫妖之后的敌人将会拥有更强大的数值。&r"
 			]
 			hide_until_deps_complete: true
 			id: "3AA758300110DA33"
@@ -266,6 +269,12 @@
 		{
 			dependencies: ["6FC69F6C86DA91E0"]
 			id: "4B5C544E097417A0"
+			rewards: [{
+				count: 5
+				id: "06E37BFE7DA628B4"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
 			tasks: [{
 				advancement: "twilightforest:progress_ur_ghast"
 				criterion: ""
@@ -278,6 +287,12 @@
 		{
 			dependencies: ["2EDA6C0823CAF5BE"]
 			id: "1228411DE12CCDA4"
+			rewards: [{
+				count: 5
+				id: "53D752D6DEC62519"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
 			tasks: [{
 				advancement: "twilightforest:progress_hydra"
 				criterion: ""
@@ -290,6 +305,12 @@
 		{
 			dependencies: ["46D7551ADB56C59D"]
 			id: "3AA48697057EBF80"
+			rewards: [{
+				count: 5
+				id: "500832C9B88B2D94"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
 			tasks: [{
 				advancement: "twilightforest:progress_glacier"
 				criterion: ""
@@ -354,6 +375,12 @@
 		{
 			dependencies: ["44EB434977E45FFC"]
 			id: "5CC520193AD1DFC2"
+			rewards: [{
+				count: 2
+				id: "76D1626EFBBEFF37"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
 			tasks: [{
 				id: "158E51512D530CEB"
 				item: {
@@ -374,6 +401,12 @@
 		{
 			dependencies: ["3AA48697057EBF80"]
 			id: "3E497DA5DACC3B62"
+			rewards: [{
+				count: 2
+				id: "10629826689E2AB7"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2CB5F6B84039B548"
 				item: {
@@ -395,6 +428,18 @@
 			dependencies: ["3C1CB82ADF4FBBC1"]
 			hide_until_deps_complete: true
 			id: "4E65D683E566049D"
+			rewards: [
+				{
+					id: "76B51BF64461BE6E"
+					item: "minecraft:diamond_block"
+					type: "item"
+				}
+				{
+					id: "55114CBEEFDD6C4D"
+					item: "artifacts:crystal_heart"
+					type: "item"
+				}
+			]
 			tasks: [{
 				advancement: "twilightforest:quest_ram"
 				criterion: ""
@@ -410,8 +455,13 @@
 				"1228411DE12CCDA4"
 				"3AA48697057EBF80"
 			]
-			hide_dependency_lines: true
 			id: "0631080913A35DC4"
+			rewards: [{
+				count: 5
+				id: "1D917D9D00172E56"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
 			tasks: [{
 				advancement: "twilightforest:progress_merge"
 				criterion: ""
@@ -424,6 +474,12 @@
 		{
 			dependencies: ["0631080913A35DC4"]
 			id: "2B54682ADC820C2A"
+			rewards: [{
+				count: 5
+				id: "579A8AC196F58A55"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
 			tasks: [{
 				advancement: "twilightforest:giants"
 				criterion: ""
@@ -436,6 +492,12 @@
 		{
 			dependencies: ["2B54682ADC820C2A"]
 			id: "6442E0C760FAF02B"
+			rewards: [{
+				count: 5
+				id: "0F46E67DBB94CAE8"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
 			tasks: [{
 				advancement: "twilightforest:progress_troll"
 				criterion: ""
@@ -449,6 +511,12 @@
 			dependencies: ["3AA758300110DA33"]
 			hide_dependent_lines: true
 			id: "4E3BAFCCEB91837F"
+			rewards: [{
+				count: 2
+				id: "2DB842366AC76791"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1F2EA1B3DDABEBE5"
 				item: {
@@ -554,6 +622,12 @@
 			dependencies: ["3C1CB82ADF4FBBC1"]
 			hide_until_deps_complete: true
 			id: "2D5F554083B41C4E"
+			rewards: [{
+				count: 2
+				id: "1C837A778878ED98"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
 			tasks: [{
 				id: "24634126873F413C"
 				item: {
@@ -574,6 +648,12 @@
 		{
 			dependencies: ["2D5F554083B41C4E"]
 			id: "5D3B1F040BBB2AF2"
+			rewards: [{
+				count: 2
+				id: "72DA0888F944E22F"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
 			tasks: [{
 				id: "19AA987128FF3389"
 				item: {
@@ -594,6 +674,12 @@
 		{
 			dependencies: ["5D3B1F040BBB2AF2"]
 			id: "572B2824EF41A64D"
+			rewards: [{
+				count: 2
+				id: "50D5407C2BC1FC3C"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1DAECC240584B1D7"
 				item: {
@@ -614,6 +700,12 @@
 		{
 			dependencies: ["2EDA6C0823CAF5BE"]
 			id: "02533C5844FD4D67"
+			rewards: [{
+				count: 2
+				id: "0C5164C3D4ACEB79"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0F23BE952EDE0212"
 				item: {
@@ -634,6 +726,12 @@
 		{
 			dependencies: ["4B5C544E097417A0"]
 			id: "2E2F1882E71FE497"
+			rewards: [{
+				count: 2
+				id: "4804286F09BDC4FC"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0F385CEE3E3E938F"
 				item: {
@@ -654,6 +752,12 @@
 		{
 			dependencies: ["2EDA6C0823CAF5BE"]
 			id: "32A264F98A0C9140"
+			rewards: [{
+				count: 2
+				id: "56D40732D884B9F1"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
 			tasks: [{
 				id: "541550596104D980"
 				item: {
@@ -677,6 +781,12 @@
 				"064234E17AB63222"
 			]
 			id: "5FFEB598BE2CB116"
+			rewards: [{
+				count: 2
+				id: "5DD133918CCE583B"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
 			tasks: [{
 				id: "372840A63504F3CC"
 				item: {
@@ -697,6 +807,12 @@
 		{
 			dependencies: ["3AA758300110DA33"]
 			id: "2A77F71A98B01A27"
+			rewards: [{
+				count: 2
+				id: "69F85D5D994D4405"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3ED57AFE7A23E680"
 				item: "minecraft:cherry_sapling"

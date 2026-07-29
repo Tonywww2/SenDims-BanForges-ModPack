@@ -169,7 +169,7 @@ ServerEvents.recipes(event => {
             }
         ],
         "temperature": {
-            "min_temp": 473
+            "max_temp": 173
         }
     }).id("sdbf:proudsoul_distillation");
 
