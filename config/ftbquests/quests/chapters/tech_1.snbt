@@ -1798,6 +1798,123 @@
 			x: 108.0d
 			y: -12.0d
 		}
+		{
+			dependencies: ["6CB912280FDB3137"]
+			description: ["气动套装可以作为Tetra护甲的改造材料，可以让Tetra护甲像气动套装一样被改造。"]
+			icon: {
+				Count: 1
+				id: "pneumaticcraft:pneumatic_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "18DE4C7E01A25334"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "1EAA1DBBC90EAACF"
+					item: {
+						Count: 1
+						id: "pneumaticcraft:pneumatic_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2CBC3B187F9528DF"
+					item: {
+						Count: 1
+						id: "pneumaticcraft:pneumatic_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "46D8AB536D601EA0"
+					item: {
+						Count: 1
+						id: "pneumaticcraft:pneumatic_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "78C63B3DA42EB6E7"
+					item: {
+						Count: 1
+						id: "pneumaticcraft:pneumatic_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 117.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["04B58CD173EB1C47"]
+			id: "692351B03C95AFFA"
+			tasks: [{
+				id: "159671B26BD22CBA"
+				item: "pneumaticcraft:empty_pcb"
+				type: "item"
+			}]
+			x: 108.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["692351B03C95AFFA"]
+			id: "0DF1279365CB2290"
+			tasks: [{
+				id: "3DF74F4893D5CC62"
+				item: "pneumaticcraft:uv_light_box"
+				type: "item"
+			}]
+			x: 111.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["0DF1279365CB2290"]
+			description: ["请查看蚀刻酸流体的合成配方。"]
+			id: "5DD616C507B5F7F0"
+			tasks: [{
+				id: "77BD77EA171F23CA"
+				item: "pneumaticcraft:etching_acid_bucket"
+				type: "item"
+			}]
+			x: 111.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5DD616C507B5F7F0"]
+			id: "74217ADD6DC9A2D5"
+			tasks: [{
+				id: "29C6E36B0FDD0A9B"
+				item: "pneumaticcraft:unassembled_pcb"
+				type: "item"
+			}]
+			x: 114.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["74217ADD6DC9A2D5"]
+			id: "6CB912280FDB3137"
+			tasks: [{
+				id: "366396FCCF470AF1"
+				item: "pneumaticcraft:printed_circuit_board"
+				type: "item"
+			}]
+			x: 114.0d
+			y: -9.0d
+		}
 	]
 	title: "工业"
 }

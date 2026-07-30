@@ -378,6 +378,12 @@ ServerEvents.recipes(event => {
         .energy(32768)
         .id("sdbf:proudsoul_trapezohedron_acc")
 
+    event.custom({
+        type: 'integrateddynamics:crafting_special_energycontainer_combination',
+        item: 'integrateddynamics:energy_battery',
+        maxCapacity: 128000000
+    }).id("sdbf:combine_batteries");
+
 })
 
 

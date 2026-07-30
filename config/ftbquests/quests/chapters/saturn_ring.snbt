@@ -438,66 +438,6 @@
 			x: 24.0d
 			y: 12.0d
 		}
-		{
-			description: ["气动套装可以作为Tetra护甲的改造材料，可以让Tetra护甲像气动套装一样被改造。"]
-			icon: {
-				Count: 1
-				id: "pneumaticcraft:pneumatic_chestplate"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "18DE4C7E01A25334"
-			shape: "diamond"
-			tasks: [
-				{
-					id: "1EAA1DBBC90EAACF"
-					item: {
-						Count: 1
-						id: "pneumaticcraft:pneumatic_helmet"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "2CBC3B187F9528DF"
-					item: {
-						Count: 1
-						id: "pneumaticcraft:pneumatic_chestplate"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "46D8AB536D601EA0"
-					item: {
-						Count: 1
-						id: "pneumaticcraft:pneumatic_leggings"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "78C63B3DA42EB6E7"
-					item: {
-						Count: 1
-						id: "pneumaticcraft:pneumatic_boots"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
-			x: 24.0d
-			y: 15.0d
-		}
 	]
 	title: "土星环"
 }

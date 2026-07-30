@@ -120,6 +120,52 @@ ServerEvents.recipes(event => {
         "time": 300
     }).id("sdbf:fluid_plastic_1");
 
+    event.custom({
+        "type": "nuclearcraft:chemical_reactor",
+        "inputFluids": [
+            {
+                "amount": 250,
+                "tag": "forge:sulfuric_acid"
+            },
+            {
+                "amount": 250,
+                "tag": "forge:hydrochloric_acid"
+            }
+        ],
+        "outputFluids": [
+            {
+                "amount": 500,
+                "fluid": "kubejs:sulfochloric_acid"
+            }
+        ],
+        "powerModifier": 1.0,
+        "radiation": 0.0,
+        "timeModifier": 1.0
+    }).id("sdbf:sulfochloric_acid");
+
+    event.custom({
+        "type": "nuclearcraft:chemical_reactor",
+        "inputFluids": [
+            {
+                "amount": 5000,
+                "fluid": "kubejs:sulfochloric_acid"
+            },
+            {
+                "amount": 1000,
+                "fluid": "pneumaticcraft:plastic"
+            }
+        ],
+        "outputFluids": [
+            {
+                "amount": 1000,
+                "fluid": "pneumaticcraft:etching_acid"
+            }
+        ],
+        "powerModifier": 3.0,
+        "radiation": 0.0,
+        "timeModifier": 2.0
+    }).id("sdbf:etching_acid");
+
     // 液态耀魂精炼线 / Liquid proudsoul refining line
     const PROUDSOUL_FLUIDS = {
         melted: "kubejs:melted_proudsoul",
@@ -405,7 +451,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.thermal.compression_fuel([
         Fluid.of(PROUDSOUL_FLUIDS.purifiedFuel, 1000)
-    ], 1600000).id("sdbf:purified_proudsoul_compression_fuel");
+    ], 6400000).id("sdbf:purified_proudsoul_compression_fuel");
 
     event.custom({
         "type": "pneumaticcraft:fuel_quality",
@@ -461,5 +507,20 @@ ServerEvents.recipes(event => {
     //     "pressure": 2.0,
     //     "time": 300
     // }).id("sdbf:fluid_plastic_2");
+
+    event.custom({
+        "type": "pneumaticcraft:pressure_chamber",
+        "inputs": [
+            { "type": "pneumaticcraft:stacked_item", "count": 2, "item": "pneumaticcraft:smooth_plastic_brick_lime" },
+            { "type": "pneumaticcraft:stacked_item", "count": 2, "item": "ae2:engineering_processor" },
+            { "type": "pneumaticcraft:stacked_item", "count": 2, "item": "minecraft:comparator" },
+            { "type": "pneumaticcraft:stacked_item", "count": 3, "tag": "forge:ingots/copper_alloy" },
+            { "item": 'nuclearcraft:silicon_wafer' }
+        ],
+        "pressure": 1.5,
+        "results": [
+            { "count": 2, "item": "pneumaticcraft:empty_pcb" }
+        ]
+    }).id("sdbf:empty_pcb");
 
 })

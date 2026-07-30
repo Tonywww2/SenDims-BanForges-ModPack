@@ -96,6 +96,7 @@
 			dependencies: ["26B66FFB1E5C691C"]
 			icon: "storagedrawers:oak_full_drawers_1"
 			id: "6B3D579B97B1A48A"
+			shape: "diamond"
 			tasks: [{
 				id: "62B3EB15A67E3204"
 				item: {
@@ -191,7 +192,9 @@
 		}
 		{
 			dependencies: ["27FEFCB730786A9B"]
+			description: ["使用逻辑线缆和物品接口将容器（箱子等）连接起来，就可以使用存储终端访问了。"]
 			id: "54651F3B69334CF1"
+			shape: "diamond"
 			tasks: [{
 				id: "1A26021D56EEDF5E"
 				item: "integratedterminals:part_terminal_storage"
@@ -512,6 +515,7 @@
 			]
 			description: ["&m它不是经验泵+高炉+喂食机+工作台+灵魂瓶+抽屉&r"]
 			id: "29BDBE467B479C35"
+			shape: "diamond"
 			subtitle: "背包，只是背包"
 			tasks: [{
 				id: "4A80A9CC3DF29B3D"

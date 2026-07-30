@@ -12,7 +12,5 @@ performance_tuning = {}
 
 #Enable or disable specific acceleration features.
 [acceleration_modules]
-	#Accelerate block entities (e.g., furnaces, hoppers). Can cause issues.
 	block_entity = false
-	block_breaking = true
 

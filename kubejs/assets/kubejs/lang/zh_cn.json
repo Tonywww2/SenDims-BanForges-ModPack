@@ -413,6 +413,8 @@
     "tetra.break_tofukinu_action.label": "手动压制",
     "tetra.break_glacio_ice_action.label": "锤炼寒冰",
     
+    "fluid.kubejs.sulfochloric_acid": "硫氯混酸",
+    "item.kubejs.sulfochloric_acid_bucket": "硫氯混酸桶",
     "fluid.kubejs.melted_proudsoul": "熔融耀魂",
     "item.kubejs.melted_proudsoul_bucket": "熔融耀魂桶",
     "fluid.kubejs.light_distilled_proudsoul": "轻质蒸馏耀魂",

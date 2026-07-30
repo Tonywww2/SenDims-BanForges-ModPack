@@ -5,7 +5,7 @@
 	waveMobScalingEnabled = true
 	#塔防波次怪的最大生命乘子（1.0 = 原版属性）。
 	#Range: 0.25 ~ 8.0
-	waveMobHealthMultiplier = 1.0
+	waveMobHealthMultiplier = 2.0
 	#塔防波次怪的额外攻击力（点，叠加在基础攻击之上）。
 	#Range: 0.0 ~ 20.0
 	waveMobDamageBonus = 0.0
@@ -17,7 +17,7 @@
 	produceInterval = 20
 	#每次产出的液氢量（mB）。
 	#Range: 1 ~ 100000
-	fluidPerInterval = 100
+	fluidPerInterval = 10
 	#集氢罩内部流体槽容量（mB）。
 	#Range: 1000 ~ 100000000
 	tankCapacity = 8000

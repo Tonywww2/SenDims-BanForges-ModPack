@@ -10,7 +10,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["3A267848CC75F232"]
 			hide_dependent_lines: true
 			id: "37CF7606A44B5357"
 			size: 2.0d
@@ -31,7 +30,7 @@
 				item: "kubejs:storm_hydrogen_crystal"
 				type: "item"
 			}]
-			x: 2.5d
+			x: 3.0d
 			y: 0.0d
 		}
 		{
@@ -42,7 +41,7 @@
 				item: "kubejs:titan-ii_composite_ingot"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -3.0d
 			y: 0.0d
 		}
 		{
@@ -62,8 +61,55 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
+			x: 6.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["37CF7606A44B5357"]
+			id: "432FF7D115B1787E"
+			tasks: [{
+				id: "29E6938652A58038"
+				item: "titan_moon:meteoric_iron_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["37CF7606A44B5357"]
+			id: "75BB07E2D32F2939"
+			tasks: [{
+				id: "3622533F5C6A4F4E"
+				item: "titan_moon:cryo_carapace"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"432FF7D115B1787E"
+				"75BB07E2D32F2939"
+			]
+			id: "3D45E2C3DAA7A648"
+			tasks: [{
+				id: "2F2A59ADF585AFB7"
+				item: "titan_moon:cryo_alloy_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["37CF7606A44B5357"]
+			id: "7852D7309BFC86B7"
+			tasks: [{
+				id: "56C24FBD8A8619B8"
+				item: "titan_moon:tholin_fibre"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.0d
 		}
 	]
 	title: "土卫六"

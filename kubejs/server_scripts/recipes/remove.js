@@ -227,6 +227,11 @@ const toRemoveID = new Set([
     "pneumaticcraft:thermopneumatic_processing_plant",
     "pneumaticcraft:thermo_plant/plastic_from_lpg",
     "pneumaticcraft:thermo_plant/plastic_from_biodiesel",
+    "pneumaticcraft:pressure_chamber/empty_pcb",
+    "pneumaticcraft:pressure_chamber/etching_acid",
+    "pneumaticcraft:assembly/unassembled_pcb",
+    
+    "integrateddynamics:special/combine_batteries",
 
     // s5
     "sjap_adder:kamuyex_fire",

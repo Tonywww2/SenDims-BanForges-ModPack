@@ -113,6 +113,10 @@ StartupEvents.registry('block', event => {
 })
 
 StartupEvents.registry('fluid', event => {
+    event.create('sulfochloric_acid')
+        .thickTexture(0xc9dc72)
+        .bucketColor(0xc9dc72)
+
     event.create('melted_proudsoul')
         .thickTexture(0x5a30bf)
         .bucketColor(0x5a30bf)
