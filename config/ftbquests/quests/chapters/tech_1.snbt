@@ -7,6 +7,7 @@
 	icon: "thermal:steel_ingot"
 	id: "524CE9039C21DC97"
 	order_index: 0
+	quest_enhance_decorative_lines: [ ]
 	quest_links: [
 		{
 			id: "4BB9EA6F2880C79F"
@@ -377,7 +378,7 @@
 				item: "thermal:machine_furnace"
 				type: "item"
 			}]
-			x: 30.0d
+			x: 27.0d
 			y: 9.0d
 		}
 		{
@@ -393,6 +394,7 @@
 		}
 		{
 			dependencies: ["6CF1E5C2D33B8465"]
+			hide_until_deps_complete: true
 			id: "4A2D947949B03EB5"
 			tasks: [{
 				id: "5E05A8682D8FEC5E"
@@ -546,7 +548,6 @@
 			dependencies: ["0A6BF4C8A75EF242"]
 			id: "4A6CCBA361F14167"
 			rewards: [{
-				count: 2
 				id: "0CFD7A0DFA646C0D"
 				item: "minecraft:ender_pearl"
 				type: "item"
@@ -568,12 +569,19 @@
 		{
 			dependencies: ["4A6CCBA361F14167"]
 			id: "3A897B2A72ABC032"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "5BE5A66535640846"
-				table_id: 2163174655912441002L
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5BE5A66535640846"
+					table_id: 2163174655912441002L
+					type: "choice"
+				}
+				{
+					id: "07C53D453198877A"
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+			]
 			shape: "diamond"
 			tasks: [{
 				id: "0BE1AF7DF8DA19AF"
@@ -619,6 +627,20 @@
 		{
 			dependencies: ["73531FB69122489F"]
 			id: "3BA3C4A36599BD29"
+			rewards: [
+				{
+					id: "7936C5E4CBAAA662"
+					item: "ad_astra:coal_generator"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "432243D1AD99EF23"
+					item: "minecraft:charcoal"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
 			subtitle: "简易的发电机"
 			tasks: [{
 				id: "237C62226D563B49"
@@ -1492,12 +1514,19 @@
 		{
 			dependencies: ["32B566DB7BFEDCA5"]
 			id: "2858B4944F0B27B8"
-			rewards: [{
-				count: 4
-				id: "75D27F4716DB19FA"
-				item: "minecraft:lapis_lazuli"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "75D27F4716DB19FA"
+					item: "minecraft:lapis_lazuli"
+					type: "item"
+				}
+				{
+					id: "2291EAF2B0F036C2"
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "223816F81CE4BEAA"
 				item: "wormhole:advanced_target_cell"
@@ -1509,11 +1538,18 @@
 		{
 			dependencies: ["3A897B2A72ABC032"]
 			id: "58234F97716261D8"
-			rewards: [{
-				id: "1451AD12D38BA1CF"
-				type: "xp"
-				xp: 100
-			}]
+			rewards: [
+				{
+					id: "1451AD12D38BA1CF"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "26E77FA8C2AF2DE3"
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "42975E7109EE332A"
 				item: {
@@ -1529,12 +1565,19 @@
 		{
 			dependencies: ["5BB642BD0BE40541"]
 			id: "0A6BF4C8A75EF242"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "59CBB642687C34C5"
-				table_id: 2163174655912441002L
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "59CBB642687C34C5"
+					table_id: 2163174655912441002L
+					type: "choice"
+				}
+				{
+					id: "13AAC401B21389A9"
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "30294753B72371D0"
 				item: "minecraft:ender_pearl"
@@ -1552,7 +1595,7 @@
 				type: "item"
 			}]
 			x: 27.0d
-			y: 9.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["1EF6714DB8D7D5A4"]
@@ -1627,6 +1670,11 @@
 			]
 			icon: "botania:cosmetic_questgiver_mark"
 			id: "60DC8B96CAA7E53B"
+			rewards: [{
+				id: "61745015F80C731C"
+				type: "xp"
+				xp: 100
+			}]
 			subtitle: "重要"
 			tasks: [{
 				id: "67093BEC0BCA2042"
@@ -1779,6 +1827,7 @@
 				"505D3D93C0185F59"
 			]
 			id: "64AC14BEB874BD8E"
+			shape: "diamond"
 			tasks: [{
 				id: "58511501A2441922"
 				item: {
@@ -1914,6 +1963,66 @@
 			}]
 			x: 114.0d
 			y: -9.0d
+		}
+		{
+			dependencies: ["6CB912280FDB3137"]
+			id: "05E887BE7C94FB32"
+			tasks: [{
+				id: "087701C1149F062A"
+				item: "appliedpneumatics:air_cell_shell"
+				type: "item"
+			}]
+			x: 114.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["6CB912280FDB3137"]
+			id: "446ED228668C5188"
+			tasks: [{
+				id: "3FEDAA919958AC67"
+				item: "appliedpneumatics:me_pressure_interface_block"
+				type: "item"
+			}]
+			x: 117.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["446ED228668C5188"]
+			id: "31CEF272A8C6E5A9"
+			tasks: [{
+				id: "7B5C16BADA1CECD9"
+				item: "appliedpneumatics:me_temperature_interface"
+				type: "item"
+			}]
+			x: 120.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["6CB912280FDB3137"]
+			id: "0C87C606D1FFB35B"
+			tasks: [{
+				id: "0B8F4030819F000A"
+				item: "pneumaticcraft:amadron_tablet"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 117.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0C87C606D1FFB35B"]
+			id: "799CE1C756F1D1E1"
+			tasks: [{
+				id: "3E19DA9918C4C08D"
+				item: {
+					Count: 1
+					id: "appliedpneumatics:amadron_wireless_terminal"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 120.0d
+			y: -6.0d
 		}
 	]
 	title: "工业"

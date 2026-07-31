@@ -107,6 +107,7 @@
 		}
 	]
 	order_index: 0
+	quest_enhance_decorative_lines: [ ]
 	quest_links: [
 		{
 			id: "7379FE5C64FC6241"
@@ -379,12 +380,20 @@
 		{
 			dependencies: ["36DD50AE28ECF216"]
 			id: "0C7B137A72152B01"
-			rewards: [{
-				count: 4
-				id: "0DB66087BFEF6781"
-				item: "minecraft:bread"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "0DB66087BFEF6781"
+					item: "minecraft:bread"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "612E4326BA1F4BCE"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
+			]
 			tasks: [{
 				icon: "quark:azalea_log"
 				id: "2CD15D73D94EA289"
@@ -404,11 +413,19 @@
 		{
 			dependencies: ["0C7B137A72152B01"]
 			id: "5748351A76910019"
-			rewards: [{
-				id: "5281225DE10ED7CD"
-				type: "xp"
-				xp: 100
-			}]
+			rewards: [
+				{
+					id: "5281225DE10ED7CD"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 4
+					id: "771BDB2AE628B036"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "12D3150C72E4E216"
 				item: "minecraft:crafting_table"
@@ -443,6 +460,12 @@
 					count: 4
 					id: "642528680FAAB806"
 					item: "minecraft:bamboo"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "21CDB61E47D49884"
+					item: "minecraft:bone_meal"
 					type: "item"
 				}
 			]
@@ -775,6 +798,8 @@
 				""
 				""
 				"最后使用指定的物品点击第二层的\"B\"。"
+				""
+				"{image:sdbf:textures/gui/tofu_gate.png width:100 height:100 align:center}"
 			]
 			hide_dependent_lines: true
 			icon: "ae2:fluix_pearl"
@@ -1159,9 +1184,9 @@
 				""
 				"将&b工业平台&r方块放置在地上，然后使用&b木棍&r或&b扳手&r右击/潜行右击调整模式，最后使用&b石头类&r方块右击它，就可以快速的构建平台了！"
 				""
-				"&c注意：平台会生成在工业方块同一平面上，被替换的方块将会被破坏！"
-				"&c棋盘格平台的厚度只有一层，而工业平台的厚度有六层，可以根据自己的喜好选择。&r"
-				"&c平台自带的光照可能不充足，请小心刷怪！&r"
+				"&c注意&r：平台会生成在工业方块同一平面上，被替换的方块&c将会被破坏&r！"
+				"棋盘格平台的厚度只有&b一层&r，而工业平台的厚度有&b六层&r，可以根据自己的喜好选择。"
+				"平台自带的光照&b可能不充足&r，请&c小心刷怪&r！"
 			]
 			icon: "industrial_platform:industrial_platform"
 			id: "2BF3D5C780608F8D"

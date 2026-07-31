@@ -854,6 +854,7 @@ nuclearcraft:uranium_additional_wasteland_ore
 nuclearcraft:uranium_ore
 nuclearcraft:uranium_wasteland_ore
 nuclearcraft:wasteland_boss_lair
+nuclearcraft:wasteland_deco
 nuclearcraft:wasteland_portal
 nuclearcraft:wasteland_ruins
 nuclearcraft:wasteland_surface
@@ -1838,6 +1839,7 @@ the_bumblezone:floaters_crashed
 the_bumblezone:floral_fill_with_rootmin
 the_bumblezone:forestry/dripping_comb_spike
 the_bumblezone:forestry/honey_comb_spike
+the_bumblezone:fungus_spore
 the_bumblezone:gazebuzz_cluster_random_music_disc
 the_bumblezone:gear_column_cannon
 the_bumblezone:gear_column_flower_headwear
@@ -1885,6 +1887,7 @@ the_bumblezone:tall_cherry_trees
 the_bumblezone:tree_dungeon
 the_bumblezone:wax_and_stone_surface_bands
 the_bumblezone:wax_tipped_spikes
+the_bumblezone:web_bridge
 the_bumblezone:web_ceiling
 the_bumblezone:web_wall
 thermal:apatite_ore

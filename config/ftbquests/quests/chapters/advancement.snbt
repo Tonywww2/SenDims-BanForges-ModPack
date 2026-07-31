@@ -6,6 +6,7 @@
 	group: "09172E2BE2B038C0"
 	id: "6A4583769220C94C"
 	order_index: 0
+	quest_enhance_decorative_lines: [ ]
 	quest_links: [ ]
 	quests: [
 		{

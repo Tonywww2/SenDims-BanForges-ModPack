@@ -475,6 +475,16 @@ const mobTypes = new Map([
 
     ["draconicevolution:draconic_guardian", bossTypeDragon],
 
+    ["titan_moon:methane_midge", type0],
+    ["titan_moon:aero_jelly", type0],
+    ["titan_moon:cryo_scavenger", typeC],
+    ["titan_moon:hydrotroph_grazer", type0],
+    ["titan_moon:ammonia_stalker", typeA],
+    ["titan_moon:corrupted_probe", typeC],
+    ["titan_moon:tholin_weaver", typeC],
+
+    ["titan_moon:native_ice_worm", bossType1],
+
 ]);
 
 /**

@@ -7,7 +7,7 @@ soul_crystal_add_proud_soul = 0
 #魂缚晶增加的锻造数
 #Range: 0 ~ 214748364
 soul_crystal_add_refine = 0
-#魂缚晶能掉落开关
+#魂缚晶掉落开关
 soul_crystal_drop = false
 #魂缚晶最多掉落数
 #Range: 0 ~ 214748364
@@ -18,4 +18,6 @@ soul_crystal_drop_divisor = 4000
 #魂缚晶额外掉落血量门槛
 #Range: 0 ~ 214748364
 soul_crystal_drop_threshold = 2000
+#惰性魂缚晶掉落开关
+lazy_soul_crystal_drop = true
 

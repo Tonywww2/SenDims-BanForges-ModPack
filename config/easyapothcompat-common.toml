@@ -1,13 +1,8 @@
 
 [reroll]
 	#Enable the reroll button in Apotheosis' enchanting table GUI.
+	#Reroll costs (lapis + experience) are taken from Easy Magic's own config.
 	enableReroll = true
-	#Number of lapis lazuli consumed per reroll. 0 = free.
-	#Range: 0 ~ 64
-	lapisCost = 1
-	#Experience points consumed per reroll. 0 = free.
-	#Range: 0 ~ 10000
-	xpCost = 0
 
 [previews]
 	#Show all possible enchantments in slot tooltips (ignoring clue count from shelves).

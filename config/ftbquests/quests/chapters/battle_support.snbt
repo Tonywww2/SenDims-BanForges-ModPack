@@ -7,6 +7,7 @@
 	icon: "minecraft:anvil"
 	id: "727081F98CCAB90B"
 	order_index: 2
+	quest_enhance_decorative_lines: [ ]
 	quest_links: [ ]
 	quests: [
 		{
@@ -1174,6 +1175,26 @@
 			}]
 			x: 9.0d
 			y: 36.0d
+		}
+		{
+			dependencies: ["1DE54DDD04540738"]
+			id: "4FA6F71247C71F6B"
+			rewards: [{
+				id: "2825DEAC9358324F"
+				item: "minecraft:compass"
+				type: "item"
+			}]
+			tasks: [{
+				id: "02520A65C8F194E7"
+				item: {
+					Count: 1
+					id: "naturescompass:naturescompass"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 9.0d
 		}
 	]
 	title: "战斗辅助"

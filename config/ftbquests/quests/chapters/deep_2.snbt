@@ -7,6 +7,7 @@
 	icon: "integrateddynamics:menril_sapling"
 	id: "6405180EFADACC88"
 	order_index: 0
+	quest_enhance_decorative_lines: [ ]
 	quest_links: [
 		{
 			id: "72C7D7E12A49ED57"

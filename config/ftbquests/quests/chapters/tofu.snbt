@@ -6,6 +6,7 @@
 	icon: "tofucraft:tofugrilled"
 	id: "5EBAE200287C397B"
 	order_index: 1
+	quest_enhance_decorative_lines: [ ]
 	quest_links: [{
 		id: "7AF774538F76952E"
 		linked_quest: "52726CE2A2740BF7"
@@ -34,6 +35,12 @@
 			hide_until_deps_visible: true
 			icon: "tofucraft:blocktofuishi"
 			id: "6140B0BCEB7F9D64"
+			rewards: [{
+				count: 2
+				id: "76B8D8242C71A513"
+				item: "minecraft:stick"
+				type: "item"
+			}]
 			size: 2.0d
 			subtitle: "第一个世界"
 			tasks: [

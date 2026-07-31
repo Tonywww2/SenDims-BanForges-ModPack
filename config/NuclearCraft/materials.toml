@@ -72,6 +72,7 @@
 	boron = true
 	magnesium_diboride = true
 	hafnium = true
+	baratol = true
 
 [nuggets]
 	steel = true
@@ -235,6 +236,8 @@
 	hsla_steel = true
 	boron = true
 	bismuth = true
+	barium_nitrate = true
+	baratol = true
 
 [blocks]
 	steel = true
@@ -261,6 +264,7 @@
 	zinc = true
 	boron = true
 	corium = true
+	kumanderite = true
 
 [gems]
 	boron_arsenide = true

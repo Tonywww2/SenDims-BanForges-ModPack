@@ -8,8 +8,6 @@ soulCost = 10000
 #下界之星增加刀面板(需要填充时比期望面板少1)
 #Range: 10 ~ 100
 maxAttackModifier = 40
-#拔刀触发幻影剑技
-enableDoSlash = false
 #SS后攻击变三段
 enabless = false
 #快刀无感模块

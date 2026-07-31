@@ -7,6 +7,7 @@
 	icon: "kubejs:titan-ii_composite_ingot"
 	id: "390334BC229FB9D8"
 	order_index: 4
+	quest_enhance_decorative_lines: [ ]
 	quest_links: [
 		{
 			id: "70F662E3FBA7E7DD"
@@ -30,6 +31,7 @@
 		{
 			id: "43668DE8F7546633"
 			linked_quest: "64AC14BEB874BD8E"
+			shape: "diamond"
 			x: 15.0d
 			y: 9.0d
 		}

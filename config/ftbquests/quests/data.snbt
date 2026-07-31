@@ -8,7 +8,13 @@
 	disable_gui: false
 	drop_book_on_death: false
 	drop_loot_crates: false
-	emergency_items_cooldown: 300
+	emergency_items: [
+		{ Count: 16, id: "minecraft:bone_meal" }
+		{ Count: 16, id: "minecraft:moss_block" }
+		{ Count: 16, id: "minecraft:cobblestone" }
+		{ Count: 1, id: "minecraft:bamboo" }
+	]
+	emergency_items_cooldown: 60
 	grid_scale: 0.5d
 	hide_excluded_quests: false
 	icon: {

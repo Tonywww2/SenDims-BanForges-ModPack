@@ -7,6 +7,7 @@
 	icon: "minecraft:netherrack"
 	id: "21FDCDE620C842AA"
 	order_index: 4
+	quest_enhance_decorative_lines: [ ]
 	quest_links: [{
 		id: "79A0E49E36559BB1"
 		linked_quest: "41B8D629DFAC4BB8"

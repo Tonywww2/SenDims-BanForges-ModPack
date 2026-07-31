@@ -4,18 +4,22 @@
 	default_quest_shape: ""
 	filename: "titan"
 	group: "72FC493D243DC969"
-	icon: "kubejs:celestial_filling_alloy_ingot"
+	icon: "titan_moon:hardened_tholin"
 	id: "6B2AC40697D09CB6"
 	order_index: 0
+	quest_enhance_decorative_lines: [ ]
 	quest_links: [ ]
 	quests: [
 		{
 			hide_dependent_lines: true
+			icon: "titan_moon:hardened_tholin"
 			id: "37CF7606A44B5357"
 			size: 2.0d
 			tasks: [{
 				dimension: "titan_moon:titan"
+				icon: "titan_moon:hardened_tholin"
 				id: "3B9FF90C3B6B99F9"
+				title: "土卫六"
 				type: "dimension"
 			}]
 			title: "土卫六"

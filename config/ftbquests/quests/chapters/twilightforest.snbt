@@ -7,6 +7,7 @@
 	icon: "twilightforest:twilight_portal_miniature_structure"
 	id: "33C0F33A1D4678D5"
 	order_index: 1
+	quest_enhance_decorative_lines: [ ]
 	quest_links: [
 		{
 			id: "70B49C8B011567BB"
@@ -56,6 +57,10 @@
 			dependencies: ["6AE2EFEC0F3BE4BE"]
 			description: [
 				"建造一个&b2x2的正方形池塘&r，在边缘&b种满花朵&r（最常见的花朵是......），填充清水，最后&b投入钻石&r......"
+				""
+				"相比于深境一层，暮色森林的矿山之中拥有更多的矿物与敌人。"
+				""
+				"挑战Boss也可以让你变得更加强大。"
 				""
 				"&c警告：暮色的难度相比同阶段的其他维度更高。&r"
 				"&c特别是巫妖之后的敌人。&r"

@@ -7,6 +7,7 @@
 	icon: "undergarden:catalyst"
 	id: "1F2DBD95DF48A8E6"
 	order_index: 3
+	quest_enhance_decorative_lines: [ ]
 	quest_links: [
 		{
 			id: "62E370CF7E37D7D1"

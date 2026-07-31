@@ -1,0 +1,9 @@
+#检视动作1（刀举正前微出鞘）
+inspect1_enable = true
+#检视动作2（刀举正前连刀带鞘倾斜）
+inspect2_enable = true
+#检视动作3（大型太刀舞）
+inspect3_enable = true
+#检视动作4（类转笔舞刀）
+inspect4_enable = true
+

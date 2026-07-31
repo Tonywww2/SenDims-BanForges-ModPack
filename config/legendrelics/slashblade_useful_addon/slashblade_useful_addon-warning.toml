@@ -1,0 +1,5 @@
+#危险功能·拔刀剑电锯模式(开启后刀光和次元斩会如同电锯一般)
+chainsaw_mode = false
+#旧版幻影剑增伤（兼容更广 但容易出现左脚踩右脚导致幻影剑伤害特别高）
+slashblade_extra_damage = false
+

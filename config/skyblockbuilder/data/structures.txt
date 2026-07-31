@@ -271,6 +271,7 @@ netherman:monument
 netherman:nether_geyser
 netherman:pipes
 netherman:trap
+nuclearcraft:wasteland_village
 nullscape:dragon_skeleton
 sdbf:ae_lab
 sdbf:apron_1

@@ -6,7 +6,91 @@
 	group: "49FC4157519361C1"
 	icon: "minecraft:deepslate"
 	id: "3D1F39AAD8A724BA"
+	images: [
+		{
+			dependency: "59C711671F81AB45"
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 90.0d
+			width: 1.0d
+			x: 21.0d
+			y: -1.5d
+		}
+		{
+			dependency: "6AE2EFEC0F3BE4BE"
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 90.0d
+			width: 1.0d
+			x: 21.0d
+			y: -7.5d
+		}
+		{
+			dependency: "5CCEAB83DF5ACE81"
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 90.0d
+			width: 1.0d
+			x: 24.0d
+			y: -10.5d
+		}
+		{
+			dependency: "4A7A22C5F8893EB8"
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 90.0d
+			width: 1.0d
+			x: 27.0d
+			y: -13.5d
+		}
+		{
+			dependency: "2EADF063117EE157"
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 90.0d
+			width: 1.0d
+			x: 18.0d
+			y: 1.5d
+		}
+		{
+			dependency: "2EADF063117EE157"
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 90.0d
+			width: 1.0d
+			x: 21.0d
+			y: 2.0d
+		}
+		{
+			dependency: "2EADF063117EE157"
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 90.0d
+			width: 1.0d
+			x: 12.0d
+			y: 14.0d
+		}
+		{
+			dependency: "2EADF063117EE157"
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 90.0d
+			width: 1.0d
+			x: 12.0d
+			y: 17.0d
+		}
+		{
+			dependency: "2EADF063117EE157"
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 90.0d
+			width: 1.0d
+			x: 6.0d
+			y: 8.0d
+		}
+	]
 	order_index: 0
+	quest_enhance_decorative_lines: [ ]
 	quest_links: [
 		{
 			id: "20ABFC2B67E2EA9F"
@@ -278,6 +362,7 @@
 				""
 				"·不同的生物群系拥有不同的矿物分布，例如彩陶洞穴内可以找到大量的黄金。"
 			]
+			hide_dependent_lines: true
 			icon: "botania:cosmetic_questgiver_mark"
 			id: "2EADF063117EE157"
 			rewards: [{
@@ -426,6 +511,11 @@
 			hide_until_deps_visible: true
 			icon: "minecraft:deepslate"
 			id: "5BB642BD0BE40541"
+			rewards: [{
+				id: "2AA98C1187EE9593"
+				type: "xp"
+				xp: 100
+			}]
 			size: 2.0d
 			subtitle: "第二个世界"
 			tasks: [
@@ -653,6 +743,7 @@
 		{
 			dependencies: ["09282B67B7D8CF17"]
 			id: "3B6D18679BD6BD0A"
+			size: 1.5d
 			subtitle: "通过战斗获得资源"
 			tasks: [{
 				id: "55A003454C9C6931"
@@ -677,6 +768,7 @@
 				item: "minecraft:diamond"
 				type: "item"
 			}]
+			size: 1.5d
 			subtitle: "通过战斗获得资源"
 			tasks: [{
 				id: "68E3E6DEB4AFC898"

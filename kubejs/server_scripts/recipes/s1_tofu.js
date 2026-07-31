@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
         .id("sdbf:blocktofumomen_s1");
 
     event.shapeless('kubejs:moss_stone_tofu', [
-        '2x #forge:seeds',
+        '#forge:seeds',
         'minecraft:moss_block',
         'dustandash:cobblestone_with_moss'
     ]).id("sdbf:moss_stone_tofu_s1")

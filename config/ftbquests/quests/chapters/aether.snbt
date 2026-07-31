@@ -7,6 +7,7 @@
 	icon: "aether:cold_aercloud"
 	id: "57ADB472871000CE"
 	order_index: 2
+	quest_enhance_decorative_lines: [ ]
 	quest_links: [
 		{
 			id: "34204459AAC5D2D2"
@@ -667,6 +668,11 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "0364B88DD91B2181"
+			rewards: [{
+				id: "39091015A192C07D"
+				item: "minecraft:bucket"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6D92B4A55FB0F70A"
 				item: "minecraft:glowstone"

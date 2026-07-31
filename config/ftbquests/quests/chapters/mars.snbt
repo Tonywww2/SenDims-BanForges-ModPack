@@ -7,6 +7,7 @@
 	icon: "ad_astra:mars_globe"
 	id: "2C322B5F848C22C7"
 	order_index: 5
+	quest_enhance_decorative_lines: [ ]
 	quest_links: [
 		{
 			id: "4FEAB9C1DEE7D47E"

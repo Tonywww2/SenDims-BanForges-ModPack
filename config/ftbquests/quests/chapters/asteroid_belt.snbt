@@ -7,6 +7,7 @@
 	icon: "kubejs:carbon_rich_asteroid_rock"
 	id: "1D84C9620E8EC0D9"
 	order_index: 0
+	quest_enhance_decorative_lines: [ ]
 	quest_links: [
 		{
 			id: "640B49985101D0EE"

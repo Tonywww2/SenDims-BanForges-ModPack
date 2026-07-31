@@ -7,6 +7,7 @@
 	icon: "midnight:rift_placer"
 	id: "5C91D6143A935C11"
 	order_index: 1
+	quest_enhance_decorative_lines: [ ]
 	quest_links: [
 		{
 			id: "40149DB62657166B"

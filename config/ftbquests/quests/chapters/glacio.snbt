@@ -7,6 +7,7 @@
 	icon: "ad_astra:glacio_globe"
 	id: "30913047B0C6C1E2"
 	order_index: 1
+	quest_enhance_decorative_lines: [ ]
 	quest_links: [
 		{
 			id: "66DC3C42246FEE07"

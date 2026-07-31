@@ -16,6 +16,7 @@
 		y: 0.27d
 	}]
 	order_index: 2
+	quest_enhance_decorative_lines: [ ]
 	quest_links: [
 		{
 			id: "7092B1DCAD1988CE"
@@ -300,6 +301,8 @@
 				""
 				""
 				"{image:sdbf:textures/gui/task_info.png width:195 height:91 align:center}"
+				""
+				"Ctrl+鼠标滚轮可以缩放任务视图的大小。"
 			]
 			hide_dependent_lines: true
 			icon: "botania:cosmetic_questgiver_mark"
