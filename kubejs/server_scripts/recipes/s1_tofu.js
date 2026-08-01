@@ -24,6 +24,16 @@ ServerEvents.recipes(event => {
         'tofucraft:tofukinu'
     ]).id("sdbf:tofumomen_s1")
 
+    event.shaped('kubejs:apoth_boss_remover', [
+        'GSG',
+        'SPS',
+        'GSG'
+    ], {
+        G: 'tofucraft:tofugem',
+        S: 'tofucraft:tofumetal',
+        P: 'slashblade:proudsoul_tiny'
+    }).id('sdbf:apoth_boss_remover_s1')
+
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
         "ABC",
         "DEF",

@@ -6,9 +6,17 @@
 	group: "0937198EE94F2B97"
 	icon: {
 		Count: 1
+		ForgeCaps: {
+			"fluxoftetra:fe": {
+				energy: 0
+			}
+		}
 		id: "tetra:modular_double"
 		tag: {
 			Damage: 0
+			"FOT$energy": {
+				energy: 0
+			}
 			"double/basic_hammer_left_material": "basic_hammer/oak"
 			"double/basic_hammer_right_material": "basic_hammer/oak"
 			"double/basic_handle_material": "basic_handle/stick"
@@ -137,7 +145,7 @@
 				title: "我已知晓"
 				type: "checkmark"
 			}]
-			title: "附魔"
+			title: "附魔调整"
 			x: -3.0d
 			y: 3.0d
 		}
@@ -150,8 +158,16 @@
 			]
 			icon: {
 				Count: 1
+				ForgeCaps: {
+					"fluxoftetra:fe": {
+						energy: 0
+					}
+				}
 				id: "tetra:modular_toolbelt"
 				tag: {
+					"FOT$energy": {
+						energy: 0
+					}
 					id: "1faca155-6c9d-4994-bbd7-99e3926376cb"
 					"toolbelt/belt": "toolbelt/belt"
 					"toolbelt/belt_material": "belt/inlaid"
@@ -402,21 +418,21 @@
 		{
 			dependencies: ["0624F14486476EA4"]
 			description: [
-				"拥有刀魂的拔刀剑在可打磨状态时，可以选择将将一部分耀魂值淬炼为破碎的耀魂。"
+				"拥有&d刀魂&r的拔刀剑在可打磨状态时，可以选择将将一部分耀魂值&b萃魂&r为破碎的耀魂。"
 				""
-				"也可以选择消耗杀敌数，淬炼一些拥有附魔的耀魂碎片。"
+				"也可以选择额外消耗杀敌数，&b萃魂&r一些拥有附魔的耀魂碎片。"
 				""
-				"你还可以额外使用破限材料，将全部的耀魂值淬炼为破碎的耀魂。"
+				"你还可以额外使用破限材料，将全部的耀魂值&b萃魂&r为破碎的耀魂。"
 			]
 			icon: "slashblade:proudsoul_tiny"
 			id: "16251EC4303A2F66"
 			shape: "diamond"
-			subtitle: "淬炼耀魂"
+			subtitle: "萃炼耀魂"
 			tasks: [{
 				id: "3E17335C8A4B0652"
 				type: "checkmark"
 			}]
-			title: "淬魂"
+			title: "萃魂"
 			x: 9.0d
 			y: 0.0d
 		}

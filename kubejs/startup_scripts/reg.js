@@ -14,6 +14,7 @@ StartupEvents.registry('item', event => {
 
     event.create('garden_lighter').fireResistant().rarity('rare')
     event.create('bedrock_breaker').fireResistant().rarity('rare').maxStackSize(16)
+    event.create('apoth_boss_remover').fireResistant().rarity('epic').maxStackSize(16)
 
     event.create('gem_ticket').fireResistant().rarity('epic').maxStackSize(8)
 

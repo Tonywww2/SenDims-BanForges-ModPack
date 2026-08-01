@@ -511,11 +511,20 @@
 			hide_until_deps_visible: true
 			icon: "minecraft:deepslate"
 			id: "5BB642BD0BE40541"
-			rewards: [{
-				id: "2AA98C1187EE9593"
-				type: "xp"
-				xp: 100
-			}]
+			rewards: [
+				{
+					id: "2AA98C1187EE9593"
+					type: "xp"
+					xp: 100
+				}
+				{
+					auto: "enabled"
+					count: 2
+					id: "3A3F7DA3F3F42D69"
+					item: "kubejs:apoth_boss_remover"
+					type: "item"
+				}
+			]
 			size: 2.0d
 			subtitle: "第二个世界"
 			tasks: [

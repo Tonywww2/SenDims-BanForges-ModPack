@@ -105,6 +105,15 @@
 			x: 46.5d
 			y: -0.5d
 		}
+		{
+			dependency: "52726CE2A2740BF7"
+			height: 0.5d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: -90.0d
+			width: 1.0d
+			x: 44.5d
+			y: -1.5d
+		}
 	]
 	order_index: 0
 	quest_enhance_decorative_lines: [ ]
