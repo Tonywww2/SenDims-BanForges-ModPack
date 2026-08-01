@@ -83,7 +83,11 @@
 				"5439AA19094755F7"
 			]
 			dependency_requirement: "one_completed"
-			description: ["在柔然的世界中，也会孕育前往深渊的钥匙"]
+			description: [
+				"在柔然的世界中，也会孕育前往深渊的钥匙"
+				""
+				"&b提示：需要合成，可以使用JEI查看配方&r"
+			]
 			id: "765A0F0A66F45570"
 			rewards: [{
 				id: "02E5C9B69BDBE013"

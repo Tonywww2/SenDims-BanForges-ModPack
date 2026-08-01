@@ -673,6 +673,7 @@
 				item: "easy_villagers:villager"
 				type: "item"
 			}]
+			subtitle: "重要"
 			tasks: [{
 				id: "384686EA62407ED2"
 				structure: "cavernous:lush_village"
@@ -696,6 +697,7 @@
 				item: "easy_villagers:villager"
 				type: "item"
 			}]
+			subtitle: "重要"
 			tasks: [{
 				id: "736F0EADAA2A1694"
 				structure: "cavernous:stone_village"
@@ -785,5 +787,5 @@
 			y: 9.0d
 		}
 	]
-	title: "深境：深邃洞穴"
+	title: "&e深境：深邃洞穴"
 }

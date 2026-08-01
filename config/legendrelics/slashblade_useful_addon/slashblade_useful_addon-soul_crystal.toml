@@ -19,5 +19,5 @@ soul_crystal_drop_divisor = 4000
 #Range: 0 ~ 214748364
 soul_crystal_drop_threshold = 2000
 #惰性魂缚晶掉落开关
-lazy_soul_crystal_drop = true
+lazy_soul_crystal_drop = false
 

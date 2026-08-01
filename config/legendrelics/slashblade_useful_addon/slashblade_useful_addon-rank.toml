@@ -7,5 +7,5 @@ rank_add_damage_count = 0
 #Range: 0.0 ~ 1.7976931348623157E308
 sss_void_attack = 0
 #拔刀触发幻影剑技
-enableDoSlash = true
+enableDoSlash = false
 

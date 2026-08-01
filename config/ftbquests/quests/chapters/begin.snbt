@@ -687,7 +687,7 @@
 			icon: "minecraft:brick"
 			id: "4563BE3E3110A2C9"
 			rewards: [{
-				count: 32
+				count: 16
 				id: "5F74D4CB8C034C81"
 				item: "minecraft:clay_ball"
 				type: "item"
@@ -736,25 +736,36 @@
 		}
 		{
 			dependencies: ["4563BE3E3110A2C9"]
-			description: ["简单的自动化开端"]
+			description: [
+				"往盆栽盆中放入&b斧头&r后，可以全自动砍伐（直到斧头损坏）。"
+				"放入&b漏斗&r后，可以将产物自动输出到下方的容器之中（箱子）。"
+			]
 			id: "5142DCD34AFA1CC0"
-			rewards: [{
-				id: "1F6D3826D67AC854"
-				item: {
-					Count: 1
-					id: "minecraft:stone_axe"
-					tag: {
-						Damage: 0
+			rewards: [
+				{
+					id: "1F6D3826D67AC854"
+					item: {
+						Count: 1
+						id: "minecraft:stone_axe"
+						tag: {
+							Damage: 0
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "4A146BC01B353F13"
+					item: "minecraft:hopper"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			subtitle: "植树节"
 			tasks: [{
 				id: "4E54D8AAB7CEB049"
 				item: "bonsaitrees3:bonsaipot"
 				type: "item"
 			}]
-			title: "基础自动化？"
 			x: 18.0d
 			y: 3.0d
 		}
@@ -1035,6 +1046,12 @@
 				"可以在熔炉内将苔藓毛豆石豆腐块烧制成烤豆腐块。"
 			]
 			id: "1CABE32AC23C7BDE"
+			rewards: [{
+				count: 4
+				id: "4CD05CD6F711C62A"
+				item: "dustandash:cobblestone_with_moss"
+				type: "item"
+			}]
 			subtitle: "烧制！"
 			tasks: [{
 				id: "42B54E335A2A751B"
@@ -1127,8 +1144,16 @@
 				"使用两个任意的种子、一个苔藓块、一个苔藓复合圆石，可以制作一块苔藓毛豆石豆腐块。"
 				""
 				"可以在熔炉内将苔藓毛豆石豆腐块烧制成烤豆腐块。"
+				""
+				"&b提示：对着苔藓块使用骨粉可以让苔藓块长草。&r"
 			]
 			id: "032BDE012A2E0222"
+			rewards: [{
+				count: 4
+				id: "2E9436023EA5D02C"
+				item: "dustandash:cobblestone_with_moss"
+				type: "item"
+			}]
 			subtitle: "这还能吃吗？"
 			tasks: [{
 				id: "13C9DD3D22F40A11"
