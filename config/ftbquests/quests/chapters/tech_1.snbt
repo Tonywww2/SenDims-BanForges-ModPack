@@ -546,6 +546,18 @@
 		}
 		{
 			dependencies: ["0A6BF4C8A75EF242"]
+			description: [
+				"&b传送门稳定器&r是&e传送门&r的核心。"
+				""
+				"使用&b传送门稳定器&r、&b传送门框架&r、&b基础/高级目标单元&r在世界中制作一个门框（不需要角），然后右击&b传送门稳定器&r激活，就可以建造一个&e传送门&r。"
+				""
+				"使用&b目标选择器&r可以存储当前的坐标，然后再使用存储了坐标的目标选择器右击&b传送门稳定器&r，可以将存储的坐标记录在&e传送门&r之中。"
+				""
+				"然后，使用任意方式为&e传送门&r供电，就可以开启传送门了。"
+				""
+				""
+				"{image:sdbf:textures/gui/portal.png width:199 height:238 align:center fit:true}"
+			]
 			id: "4A6CCBA361F14167"
 			rewards: [{
 				id: "0CFD7A0DFA646C0D"
@@ -2022,6 +2034,78 @@
 				type: "item"
 			}]
 			x: 120.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6CB912280FDB3137"]
+			id: "7628D582A796FECD"
+			tasks: [{
+				id: "407AAB5C6B9ED4BD"
+				item: "pneumaticcraft:assembly_controller"
+				type: "item"
+			}]
+			x: 120.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["7628D582A796FECD"]
+			id: "7597B5019FB899CE"
+			tasks: [{
+				id: "1268CF8487BA9512"
+				item: "pneumaticcraft:assembly_platform"
+				type: "item"
+			}]
+			x: 123.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["7597B5019FB899CE"]
+			id: "55DF8969F151CFCC"
+			tasks: [{
+				id: "56A2494BCB66F21A"
+				item: "pneumaticcraft:assembly_io_unit_import"
+				type: "item"
+			}]
+			x: 126.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["7597B5019FB899CE"]
+			id: "5C12E3CE3A46197A"
+			tasks: [{
+				id: "4069309CC0BD1CEB"
+				item: "pneumaticcraft:assembly_io_unit_export"
+				type: "item"
+			}]
+			x: 126.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"5C12E3CE3A46197A"
+				"55DF8969F151CFCC"
+			]
+			id: "43DB2DE11581F46D"
+			tasks: [{
+				id: "50029342999AEE7A"
+				item: "pneumaticcraft:assembly_laser"
+				type: "item"
+			}]
+			x: 132.0d
+			y: -12.0d
+		}
+		{
+			dependencies: [
+				"5C12E3CE3A46197A"
+				"55DF8969F151CFCC"
+			]
+			id: "40597B95C0F73DF6"
+			tasks: [{
+				id: "67DC58F1786C1D3A"
+				item: "pneumaticcraft:assembly_drill"
+				type: "item"
+			}]
+			x: 132.0d
 			y: -6.0d
 		}
 	]

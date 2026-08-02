@@ -194,4 +194,19 @@ ServerEvents.recipes(event => {
         'ad_astra:gravity_normalizer'
     );
 
+    event.replaceInput({ id: 'pneumaticcraft:gps_tool' },
+        '#forge:gems/diamond',
+        'pneumaticcraft:printed_circuit_board'
+    );
+
+    event.replaceInput({ id: 'appliedpneumatics:me_pressure_interface_block' },
+        'pneumaticcraft:air_compressor',
+        'pneumaticcraft:flux_compressor'
+    );
+
+    event.replaceInput({ id: 'appliedpneumatics:me_temperature_interface' },
+        'pneumaticcraft:advanced_air_compressor',
+        'appliedpneumatics:me_pressure_interface_block'
+    );
+
 })

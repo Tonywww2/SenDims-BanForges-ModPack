@@ -230,6 +230,9 @@ const toRemoveID = new Set([
     "pneumaticcraft:pressure_chamber/empty_pcb",
     "pneumaticcraft:pressure_chamber/etching_acid",
     "pneumaticcraft:assembly/unassembled_pcb",
+
+    "appliedpneumatics:amadron/emerald_to_air_cell_shell",
+    "appliedpneumatics:cells/housing/air_cell_shell",
     
     "integrateddynamics:special/combine_batteries",
 

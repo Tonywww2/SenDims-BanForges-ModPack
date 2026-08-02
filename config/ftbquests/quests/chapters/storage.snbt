@@ -77,15 +77,15 @@
 					type: "item"
 				}
 				{
-					count: 4
-					id: "3C003362BBA1E9D6"
-					item: "minecraft:redstone_torch"
-					type: "item"
-				}
-				{
 					count: 2
 					id: "7B3A0B11C0CF4E5A"
 					item: "minecraft:chest"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "32B81A4A796D3F46"
+					item: "minecraft:lever"
 					type: "item"
 				}
 			]

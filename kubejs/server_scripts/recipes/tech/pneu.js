@@ -523,4 +523,19 @@ ServerEvents.recipes(event => {
         ]
     }).id("sdbf:empty_pcb");
 
+    event.custom({
+        "type": "pneumaticcraft:pressure_chamber",
+        "inputs": [
+            { "type": "pneumaticcraft:stacked_item", "count": 4, "item": "pneumaticcraft:pressure_tube" },
+            { "type": "pneumaticcraft:stacked_item", "count": 3, "item": "pneumaticcraft:pressure_chamber_glass" },
+            { "type": "pneumaticcraft:stacked_item", "count": 4, "item": "pneumaticcraft:ingot_iron_compressed" },
+            { "type": "pneumaticcraft:stacked_item", "count": 1, "item": "pneumaticcraft:pressure_gauge" },
+            { "type": "pneumaticcraft:stacked_item", "count": 1, "item": "pneumaticcraft:printed_circuit_board" }
+        ],
+        "pressure": 4.0,
+        "results": [
+            { "item": "appliedpneumatics:air_cell_shell" }
+        ]
+    }).id("sdbf:air_cell_shell");
+
 })

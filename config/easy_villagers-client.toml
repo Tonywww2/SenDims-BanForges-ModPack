@@ -7,7 +7,7 @@
 	volume = 1.0
 	#The location of the cycle trades button
 	#Allowed Values: TOP_LEFT, TOP_RIGHT, NONE
-	cycle_trades_button_location = "TOP_LEFT"
+	cycle_trades_button_location = "NONE"
 	#Disables rendering any contents of the villager blocks when set to false
 	#Set to false if you have performance issues with the mod
 	render_block_contents = true
