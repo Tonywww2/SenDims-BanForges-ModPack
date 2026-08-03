@@ -2,19 +2,19 @@ let SACostMap = Utils.newMap();
 // id -> 固定值， 百分比
 SACostMap.put("slashblade:none", [0, 0]);
 
-SACostMap.put("slashblade:judgement_cut", [300, 0.2]);
-SACostMap.put("slashblade:judgement_cut_slash_air", [300, 0.2]);
-SACostMap.put("slashblade:judgement_cut_slash_just", [500, 0.2]);
+SACostMap.put("slashblade:judgement_cut", [100, 0.05]);
+SACostMap.put("slashblade:judgement_cut_slash_air", [150, 0.05]);
+SACostMap.put("slashblade:judgement_cut_slash_just", [200, 0.05]);
 
-SACostMap.put("slashblade_sendims:chaotic_judgement_cut", [400, 0.2]);
-SACostMap.put("slashblade_sendims:chaotic_judgement_cut_slash_air", [400, 0.2]);
-SACostMap.put("slashblade_sendims:chaotic_judgement_cut_slash_just", [600, 0.2]);
+SACostMap.put("slashblade_sendims:chaotic_judgement_cut", [100, 0.05]);
+SACostMap.put("slashblade_sendims:chaotic_judgement_cut_slash_air", [150, 0.05]);
+SACostMap.put("slashblade_sendims:chaotic_judgement_cut_slash_just", [200, 0.05]);
 
 SACostMap.put("foxextra:voidslashplus", [500, 0.2]);
 
 SACostMap.put("slashblade:wave_edge_vertical", [200, 0.05]);
 SACostMap.put("slashblade:drive_horizontal", [200, 0.05]);
-SACostMap.put("slashblade_sendims:wave_edge_ammo", [400, 0.1]);
+SACostMap.put("slashblade_sendims:wave_edge_ammo", [400, 0.2]);
 
 SACostMap.put("slashblade:heavens_slash_start", [200, 0.15]);
 
@@ -58,6 +58,8 @@ SACostMap.put("pseudoedge_break_dawn:dragon_boost", [300, 0.15]);
 SACostMap.put("last_smith:fushigiri_left", [100, 0.15]);
 
 SACostMap.put("last_smith:sakura_blistering_swords", [200, 0.2]);
+
+SACostMap.put("slashblade_addon:rapid_blistering_swords", [100, 0.15]);
 
 SACostMap.put("slashblade_sendims:explosive_dawn_ammo", [600, 0.5]);
 

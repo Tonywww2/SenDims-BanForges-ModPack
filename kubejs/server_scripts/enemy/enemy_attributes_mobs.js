@@ -485,6 +485,27 @@ const mobTypes = new Map([
 
     ["titan_moon:native_ice_worm", bossType1],
 
+    ["netherman:villager_prisoner", type0],
+    ["netherman:ghastly", type0],
+    ["netherman:trader", type0],
+    ["netherman:believer", typeA],
+    ["netherman:totemus_puzzle", typeA],
+    ["netherman:piglin_prisoner", typeA],
+    ["netherman:believer_villager", typeA],
+    ["netherman:welcomer", typeA],
+    ["netherman:blacksmith", typeA],
+    ["netherman:doctor", typeA],
+    ["netherman:statue_entity", typeC],
+    ["netherman:bell_guardian", typeC],
+    ["netherman:manipulator", typeC],
+    ["netherman:guardian", typeD],
+    ["netherman:statue_bossunit", typeC],
+
+    ["netherman:gilded_golem", typeAEX1],
+
+    ["netherman:azazel_human", bossType2],
+    ["netherman:azazel", bossType2],
+
 ]);
 
 /**

@@ -196,5 +196,11 @@ ServerEvents.recipes(event => {
         0,
         "s2");
 
+    sqRecipe(event,
+        "netherman:mansion_nether",
+        '#forge:ingots/netherite',
+        0,
+        "s2");
+
 
 })

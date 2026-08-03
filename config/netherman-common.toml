@@ -149,7 +149,7 @@
 ["Azazel Trophy Mask Configuration"]
 	#Time (in ticks) to regenerate 1 totem charge in the mask [2400 ticks = 2 minutes].
 	#Range: 200 ~ 72000
-	maskRegenCooldown = 2400
+	maskRegenCooldown = 4800
 	#Does wearing the Azazel Trophy mask grant fire immunity?
 	maskFireImmunity = true
 

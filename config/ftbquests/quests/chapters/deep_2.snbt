@@ -8,6 +8,7 @@
 	id: "6405180EFADACC88"
 	order_index: 0
 	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [
 		{
 			id: "72C7D7E12A49ED57"
@@ -296,8 +297,8 @@
 			dependencies: ["3DA6E818573A9A69"]
 			id: "4A962D0462EBA5FF"
 			tasks: [{
-				id: "5C5BC841DA1957AB"
-				item: "integrateddynamics:menril_log"
+				id: "625232375BD51346"
+				item: "cataclysm:abyss_eye"
 				type: "item"
 			}]
 			x: 3.0d
@@ -407,8 +408,8 @@
 		}
 		{
 			dependencies: [
-				"58F48888F1039B24"
 				"3DA6E818573A9A69"
+				"1600B014D174B4A7"
 			]
 			dependency_requirement: "one_completed"
 			id: "51C5BB3124FCCCF9"
@@ -418,7 +419,7 @@
 				type: "structure"
 			}]
 			title: "克拉肯之船"
-			x: 3.0d
+			x: 6.0d
 			y: 6.0d
 		}
 		{
@@ -485,6 +486,24 @@
 				type: "advancement"
 			}]
 			x: 9.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["58F48888F1039B24"]
+			id: "1600B014D174B4A7"
+			tasks: [{
+				id: "2F04A0D199F61A5C"
+				item: {
+					Count: 1
+					id: "slashblade_sendims:structure_quill"
+					tag: {
+						skipKnown: 1b
+						targetStructure: "block_factorys_bosses:kraken_ship"
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
 			y: 6.0d
 		}
 	]

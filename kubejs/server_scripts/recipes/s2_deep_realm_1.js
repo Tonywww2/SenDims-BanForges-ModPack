@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
     ], {
         A: 'minecraft:bone',
         B: 'minecraft:rotten_flesh',
-        C: 'ae2:cut_quartz_block'
+        C: '#forge:gems/lapis'
     }).id('sdbf:sdbf_dr1_g1_s2')
 
     event.shaped(Item.of('gateways:gate_pearl', '{gateway:"gateways:sdbf_dr1_g2"}'), [

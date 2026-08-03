@@ -90,6 +90,12 @@ LootJS.modifiers(event => {
     event.addLootTableModifier('apotheosis:chests/tome_tower')
         .addLoot('kubejs:ml_computing_ingot');
 
+    event.addEntityLootModifier("netherman:guardian")
+        .removeLoot(ItemFilter.ALWAYS_TRUE);
+
+    event.addEntityLootModifier('netherman:manipulator')
+        .removeLoot(ItemFilter.ALWAYS_TRUE);
+
     chestModifier.replaceLoot("#forge:seeds", 'slashblade:proudsoul_tiny', true);
 
 });

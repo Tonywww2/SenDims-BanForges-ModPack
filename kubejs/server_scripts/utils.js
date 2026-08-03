@@ -69,6 +69,7 @@ const numToInt = (num) => {
 }
 
 const sqRecipe = (event, structure, material, type, stage) => {
+    // print(structure);
     if (type == 0) {
         event.shapeless($StructureQuill.forStructure(structure), ['minecraft:map', material])
             .id("sdbf:sq_" + structure.replace(":", "_") + "_" + stage);

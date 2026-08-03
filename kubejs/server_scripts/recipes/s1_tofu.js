@@ -1,5 +1,11 @@
 ServerEvents.recipes(event => {
 
+    sqRecipe(event,
+        "tofucraft:tofu_castle",
+        'tofucraft:tofugem',
+        0,
+        's1');
+
     event.smelting('slashblade_sendims:estus_flask_0', ['kubejs:garden_lighter'])
         .id("sdbf:estus_flask_0_s1");
 

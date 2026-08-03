@@ -8,6 +8,7 @@
 	id: "390334BC229FB9D8"
 	order_index: 4
 	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [
 		{
 			id: "70F662E3FBA7E7DD"
@@ -87,6 +88,7 @@
 		}
 		{
 			dependencies: ["363BE015B9EDE34B"]
+			hide_until_deps_complete: true
 			id: "07A9736A3BDF80B1"
 			tasks: [{
 				id: "526E4885B7C3FE58"

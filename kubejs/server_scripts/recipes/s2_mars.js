@@ -45,13 +45,13 @@ ServerEvents.recipes(event => {
                 .build()
         ),
         "A": "minecraft:beetroot_soup",
-        "B": 'block_factorys_bosses:underworld_arena_door',
+        "B": ['block_factorys_bosses:underworld_arena_door', 'netherman:azazel_trophy'],
         "C": "minecraft:beetroot_soup",
         "D": "minecraft:rabbit_stew",
-        "F": 'ad_astra:desh_tank',
-        "G": '#forge:storage_blocks/ostrum',
-        "H": 'ad_astra:ostrum_engine',
-        "K": 'ad_astra:ostrum_tank'
+        "F": ['ad_astra:desh_tank', 'sophisticatedbackpacks:everlasting_upgrade'],
+        "G": ['#forge:storage_blocks/ostrum', '#forge:storage_blocks/netherite'],
+        "H": ['ad_astra:ostrum_engine', 'netherman:chance_totem'],
+        "K": ['ad_astra:ostrum_tank', 'minecraft:netherite_axe']
     }, "cialloblade:ciallo")
         .id('sdbf:ciallo_s2')
 
@@ -135,7 +135,7 @@ ServerEvents.recipes(event => {
     ], {
         "D": "minecraft:music_disc_13",    // 音乐唱片 13
         "I": "minecraft:golden_apple",     // 金苹果
-        "S": 'ad_astra:ostrum_engine',
+        "S": ['ad_astra:ostrum_engine', 'netherman:chance_totem'],
         "B": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("cialloblade:ciallo")

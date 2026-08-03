@@ -8,6 +8,7 @@
 	id: "5C91D6143A935C11"
 	order_index: 1
 	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [
 		{
 			id: "40149DB62657166B"
@@ -26,7 +27,7 @@
 			id: "4614C32155EBEA48"
 			linked_quest: "28CAD1DD57B60440"
 			shape: "hexagon"
-			x: 15.0d
+			x: 18.0d
 			y: -3.0d
 		}
 		{
@@ -310,8 +311,8 @@
 				item: "midnight:virilux"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -6.0d
+			x: 6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2E482B871B147DC6"]
@@ -328,8 +329,15 @@
 			dependencies: ["2E482B871B147DC6"]
 			id: "0D47BA9BE246F22B"
 			tasks: [{
-				id: "23C93A33FD31DBD8"
-				item: "midnight:ebonite"
+				id: "509DB07F5236E887"
+				item: {
+					Count: 1
+					id: "slashblade_sendims:structure_quill"
+					tag: {
+						skipKnown: 1b
+						targetStructure: "midnight:forgotten_library"
+					}
+				}
 				type: "item"
 			}]
 			x: 3.0d
@@ -386,8 +394,8 @@
 		}
 		{
 			dependencies: [
-				"3787442E50D08560"
 				"2E482B871B147DC6"
+				"38FCF6A10FAC5584"
 			]
 			dependency_requirement: "one_completed"
 			id: "22A314B00893C4D7"
@@ -397,7 +405,7 @@
 				type: "structure"
 			}]
 			title: "龙之塔"
-			x: 6.0d
+			x: 9.0d
 			y: -3.0d
 		}
 		{
@@ -409,7 +417,7 @@
 				id: "57948DDC2071EB9C"
 				type: "advancement"
 			}]
-			x: 9.0d
+			x: 12.0d
 			y: -3.0d
 		}
 		{
@@ -420,7 +428,25 @@
 				item: "block_factorys_bosses:dragon_bone"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 15.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3787442E50D08560"]
+			id: "38FCF6A10FAC5584"
+			tasks: [{
+				id: "12B043F5D069B471"
+				item: {
+					Count: 1
+					id: "slashblade_sendims:structure_quill"
+					tag: {
+						skipKnown: 1b
+						targetStructure: "block_factorys_bosses:dragon_tower"
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
 			y: -3.0d
 		}
 	]

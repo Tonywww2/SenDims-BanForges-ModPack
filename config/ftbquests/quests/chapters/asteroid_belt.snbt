@@ -8,6 +8,7 @@
 	id: "1D84C9620E8EC0D9"
 	order_index: 0
 	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [
 		{
 			id: "640B49985101D0EE"
@@ -47,6 +48,7 @@
 		}
 		{
 			dependencies: ["77DC6770CC08AEF6"]
+			hide_until_deps_complete: true
 			id: "21EA0520FC403E65"
 			tasks: [{
 				id: "089DC678FEFBC8E3"
@@ -58,6 +60,7 @@
 		}
 		{
 			dependencies: ["77DC6770CC08AEF6"]
+			hide_until_deps_complete: true
 			id: "0A2EC0BAE83D0D59"
 			tasks: [{
 				id: "201425C33023CA30"
@@ -69,6 +72,7 @@
 		}
 		{
 			dependencies: ["77DC6770CC08AEF6"]
+			hide_until_deps_complete: true
 			id: "0326C6376D5E34FF"
 			tasks: [{
 				id: "398DC37E91DDC578"
@@ -206,6 +210,7 @@
 		}
 		{
 			dependencies: ["77DC6770CC08AEF6"]
+			hide_until_deps_complete: true
 			id: "3C99585FE904ACDC"
 			tasks: [{
 				id: "2B1BF68CC5B66F30"
@@ -288,6 +293,7 @@
 		}
 		{
 			dependencies: ["77DC6770CC08AEF6"]
+			hide_until_deps_complete: true
 			id: "2E4AB72EC5D3F108"
 			tasks: [{
 				id: "1DE6BA24BCF03E5D"

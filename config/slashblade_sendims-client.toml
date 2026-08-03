@@ -1,0 +1,7 @@
+
+[structureQuill]
+	#Structure IDs whose preconfigured quills are shown in the creative mode tab.
+	#Tooltip translation keys are generated as structure.<namespace>.<path>.
+	#Changing this value requires a client restart.
+	creativeTabStructures = ["minecraft:stronghold", "tofucraft:tofu_castle", "sdbf:ae_lab", "cavernous:lush_village", "cavernous:stone_village", "dungeons_arise:plague_asylum", "dungeons_arise:coliseum", "dungeons_arise:heavenly_rider", "block_factorys_bosses:underworld_arena", "ad_astra:moon_dungeon", "tetra:regular_ruin", "minecraft:bastion_remnant", "minecraft:fortress", "cataclysm:soul_black_smith", "netherman:mansion_nether", "block_factorys_bosses:kraken_ship", "midnight:forgotten_library", "block_factorys_bosses:dragon_tower", "minecraft:end_city", "undergarden:catacombs", "the_bumblezone:throne_pillar", "aether:bronze_dungeon", "aether:silver_dungeon"]
+

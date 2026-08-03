@@ -6,8 +6,18 @@
 	group: "70C8850B64AECE42"
 	icon: "thermal:steel_ingot"
 	id: "524CE9039C21DC97"
+	images: [{
+		dependency: "1DE54DDD04540738"
+		height: 1.0d
+		image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+		rotation: -90.0d
+		width: 1.0d
+		x: 0.0d
+		y: 4.0d
+	}]
 	order_index: 0
 	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [
 		{
 			id: "4BB9EA6F2880C79F"
@@ -1061,6 +1071,7 @@
 		}
 		{
 			dependencies: ["2B520DD47D46DDEB"]
+			hide_until_deps_complete: true
 			id: "04B20E40DAED373B"
 			tasks: [{
 				id: "04BE4C78FD1CDF62"
@@ -1223,6 +1234,7 @@
 				"04B20E40DAED373B"
 				"641BAE5B4E3ED25C"
 			]
+			hide_until_deps_complete: true
 			id: "52DEB335E97C57C9"
 			tasks: [{
 				id: "5D4E6A00E9B33348"
@@ -1636,6 +1648,7 @@
 		}
 		{
 			dependencies: ["363BE015B9EDE34B"]
+			hide_until_deps_complete: true
 			id: "197050BCE3FA744A"
 			tasks: [{
 				id: "798BAD330F4126F3"
@@ -1672,7 +1685,7 @@
 			description: [
 				"提供生产力可以为你的冒险提供更多的便利！"
 				""
-				"尽管如此，以通关为目标的话，本章节是完全可选的。"
+				"尽管如此，以&b通关&r为目标的话，本章节的99%的内容是&b完全可选&r的。"
 				"&m&7虽然跳过工业章节会损失相当一部分的流程体验。&r"
 				""
 				"不同的机器可以为你提供更便捷的材料加工方式、资源获取方式、合成方式、仓储方式等。"
@@ -1698,6 +1711,7 @@
 		}
 		{
 			dependencies: ["6E5EFB146C17C916"]
+			hide_until_deps_complete: true
 			id: "18905E83262FFFE9"
 			tasks: [{
 				id: "4C1D2A4B50838383"
@@ -1720,6 +1734,7 @@
 		}
 		{
 			dependencies: ["6E5EFB146C17C916"]
+			hide_until_deps_complete: true
 			id: "2F7FB958849D7D22"
 			tasks: [{
 				id: "472B5829FEEA0BDD"

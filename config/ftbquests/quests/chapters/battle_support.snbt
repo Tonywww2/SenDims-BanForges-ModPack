@@ -8,6 +8,7 @@
 	id: "727081F98CCAB90B"
 	order_index: 2
 	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [
 		{

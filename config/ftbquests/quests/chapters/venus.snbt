@@ -8,6 +8,7 @@
 	id: "347A923727781B42"
 	order_index: 2
 	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [
 		{
 			id: "1111946D7D8ACB54"

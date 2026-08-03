@@ -8,6 +8,7 @@
 	id: "2C322B5F848C22C7"
 	order_index: 5
 	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [
 		{
 			id: "4FEAB9C1DEE7D47E"
@@ -107,9 +108,11 @@
 			dependencies: [
 				"5D3B1F040BBB2AF2"
 				"1802CDA40F0A4853"
+				"30737C99F940A46E"
 			]
 			dependency_requirement: "one_completed"
 			id: "203E60FD1465EC35"
+			shape: "diamond"
 			tasks: [{
 				id: "1E8CDCAA7EB560FF"
 				item: {
@@ -295,8 +298,15 @@
 			description: ["可以制作斗兽场的结构羽毛笔。"]
 			id: "08AFB6C900A95C4B"
 			tasks: [{
-				id: "790BAE7DFFB611ED"
-				item: "ad_astra:conglomerate"
+				id: "586279C3644D24EB"
+				item: {
+					Count: 1
+					id: "slashblade_sendims:structure_quill"
+					tag: {
+						skipKnown: 1b
+						targetStructure: "dungeons_arise:coliseum"
+					}
+				}
 				type: "item"
 			}]
 			x: 3.0d
@@ -319,8 +329,15 @@
 			description: ["可以制作天际骑士团战舰的结构羽毛笔。"]
 			id: "2BD02CD617E0BB89"
 			tasks: [{
-				id: "6CBCDBEC16441E36"
-				item: "ad_astra:mars_stone"
+				id: "6E86EA41C0DF78F7"
+				item: {
+					Count: 1
+					id: "slashblade_sendims:structure_quill"
+					tag: {
+						skipKnown: 1b
+						targetStructure: "dungeons_arise:heavenly_rider"
+					}
+				}
 				type: "item"
 			}]
 			x: 3.0d
@@ -359,8 +376,8 @@
 		}
 		{
 			dependencies: [
-				"260A17885336B776"
 				"3F43656AE6F116CB"
+				"6335105681D9B581"
 			]
 			dependency_requirement: "one_completed"
 			id: "037B81C6D7D0E665"
@@ -398,6 +415,24 @@
 				type: "advancement"
 			}]
 			x: 9.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["2E0B8635A864C99E"]
+			id: "6335105681D9B581"
+			tasks: [{
+				id: "53585B81AA25B905"
+				item: {
+					Count: 1
+					id: "slashblade_sendims:structure_quill"
+					tag: {
+						skipKnown: 1b
+						targetStructure: "block_factorys_bosses:underworld_arena"
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
 			y: 12.0d
 		}
 	]

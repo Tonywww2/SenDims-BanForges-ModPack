@@ -133,7 +133,9 @@ modpackMode = false
   # Particle ids fully disabled; 'modid:all' disables a whole namespace
   # Allows empty arrays
   # Array size must be greater 2147483647
-  disabled = []
+  disabled = [
+    "minecraft:damage_indicator"
+  ]
 
 [culling]
   # Entity and tile-entity distance culling

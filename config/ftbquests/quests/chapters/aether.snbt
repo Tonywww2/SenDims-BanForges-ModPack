@@ -8,6 +8,7 @@
 	id: "57ADB472871000CE"
 	order_index: 2
 	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [
 		{
 			id: "34204459AAC5D2D2"
@@ -48,8 +49,15 @@
 			hide_until_deps_complete: true
 			id: "4B49B929B1C14728"
 			tasks: [{
-				id: "6FC07F0B0875BF44"
-				item: "aether:quicksoil"
+				id: "31EABB217AC899F0"
+				item: {
+					Count: 1
+					id: "slashblade_sendims:structure_quill"
+					tag: {
+						skipKnown: 1b
+						targetStructure: "aether:bronze_dungeon"
+					}
+				}
 				type: "item"
 			}]
 			x: 3.0d
@@ -60,8 +68,15 @@
 			description: ["圣石+空地图可以制作白银地牢的结构羽毛笔。"]
 			id: "0B8FAEFD583DAAA2"
 			tasks: [{
-				id: "399166178E1191E9"
-				item: "aether:holystone"
+				id: "1EAD366EF8DDB1D2"
+				item: {
+					Count: 1
+					id: "slashblade_sendims:structure_quill"
+					tag: {
+						skipKnown: 1b
+						targetStructure: "aether:silver_dungeon"
+					}
+				}
 				type: "item"
 			}]
 			x: 3.0d
@@ -191,8 +206,15 @@
 			description: ["金琥珀+空地图可以制作黄铜地牢的结构羽毛笔。"]
 			id: "57A7A142E6DD90E7"
 			tasks: [{
-				id: "6E35E8E076EA6A51"
-				item: "aether:golden_amber"
+				id: "604EC66174389584"
+				item: {
+					Count: 1
+					id: "slashblade_sendims:structure_quill"
+					tag: {
+						skipKnown: 1b
+						targetStructure: "deep_aether:brass_dungeon"
+					}
+				}
 				type: "item"
 			}]
 			x: 3.0d

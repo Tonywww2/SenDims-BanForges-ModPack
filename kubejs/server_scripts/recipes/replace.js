@@ -209,4 +209,9 @@ ServerEvents.recipes(event => {
         'appliedpneumatics:me_pressure_interface_block'
     );
 
+    event.replaceInput({ id: 'cataclysm:mech_eye' },
+        'minecraft:ender_eye',
+        'minecraft:diamond'
+    );
+
 })

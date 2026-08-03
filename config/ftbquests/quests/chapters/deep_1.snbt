@@ -68,15 +68,6 @@
 			rotation: 90.0d
 			width: 1.0d
 			x: 12.0d
-			y: 14.0d
-		}
-		{
-			dependency: "2EADF063117EE157"
-			height: 1.0d
-			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
-			rotation: 90.0d
-			width: 1.0d
-			x: 12.0d
 			y: 17.0d
 		}
 		{
@@ -85,12 +76,22 @@
 			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
 			rotation: 90.0d
 			width: 1.0d
-			x: 6.0d
-			y: 8.0d
+			x: 12.0d
+			y: 20.0d
+		}
+		{
+			dependency: "2EADF063117EE157"
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 90.0d
+			width: 1.0d
+			x: 9.0d
+			y: 10.5d
 		}
 	]
 	order_index: 0
 	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [
 		{
 			id: "20ABFC2B67E2EA9F"
@@ -135,14 +136,14 @@
 		{
 			id: "63FE32795B147CBE"
 			linked_quest: "6130B752208314B7"
-			x: 6.0d
-			y: 9.0d
+			x: 9.0d
+			y: 12.0d
 		}
 		{
 			id: "05407B7FA2D2C562"
 			linked_quest: "71FCA5FAB43DD617"
-			x: 9.0d
-			y: 9.0d
+			x: 12.0d
+			y: 12.0d
 		}
 		{
 			id: "596A8AC4B21A5688"
@@ -403,7 +404,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 21.0d
+			y: 24.0d
 		}
 		{
 			dependencies: ["5BB642BD0BE40541"]
@@ -425,31 +426,45 @@
 			}]
 			title: "结构羽毛笔"
 			x: 6.0d
-			y: 12.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["64D03E66319AF253"]
 			description: ["可以制作泥砖村庄的结构羽毛笔。"]
 			id: "008A8F19BD6601FB"
 			tasks: [{
-				id: "2BCC5A9FE7BDB50B"
-				item: "minecraft:dirt"
+				id: "3E279853764D0544"
+				item: {
+					Count: 1
+					id: "slashblade_sendims:structure_quill"
+					tag: {
+						skipKnown: 1b
+						targetStructure: "cavernous:stone_village"
+					}
+				}
 				type: "item"
 			}]
 			x: 9.0d
-			y: 18.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["64D03E66319AF253"]
 			description: ["可以制作石头村庄的结构羽毛笔。"]
 			id: "22FB062F79308882"
 			tasks: [{
-				id: "1B464B79387B1728"
-				item: "minecraft:cobblestone"
+				id: "508326400EA6C64D"
+				item: {
+					Count: 1
+					id: "slashblade_sendims:structure_quill"
+					tag: {
+						skipKnown: 1b
+						targetStructure: "cavernous:lush_village"
+					}
+				}
 				type: "item"
 			}]
 			x: 9.0d
-			y: 15.0d
+			y: 18.0d
 		}
 		{
 			dependencies: [
@@ -473,7 +488,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 21.0d
+			y: 24.0d
 		}
 		{
 			dependencies: ["1DE54DDD04540738"]
@@ -626,24 +641,24 @@
 			y: -9.0d
 		}
 		{
-			dependencies: [
-				"6AE2EFEC0F3BE4BE"
-				"64D03E66319AF253"
-			]
+			dependencies: ["64D03E66319AF253"]
 			dependency_requirement: "one_completed"
 			description: ["可以制作瘟疫疯人院的结构羽毛笔。"]
 			id: "219853BE75550919"
 			tasks: [{
-				id: "61C99F0E0B975C4D"
+				id: "1DB61BF0F5412992"
 				item: {
 					Count: 1
-					id: "ad_astra:etrionic_capacitor"
-					tag: { }
+					id: "slashblade_sendims:structure_quill"
+					tag: {
+						skipKnown: 1b
+						targetStructure: "dungeons_arise:plague_asylum"
+					}
 				}
 				type: "item"
 			}]
 			x: 9.0d
-			y: 12.0d
+			y: 15.0d
 		}
 		{
 			dependencies: [
@@ -666,7 +681,7 @@
 			}]
 			title: "瘟疫疯人院"
 			x: 12.0d
-			y: 12.0d
+			y: 15.0d
 		}
 		{
 			dependencies: [
@@ -690,7 +705,7 @@
 			}]
 			title: "泥砖村庄"
 			x: 12.0d
-			y: 18.0d
+			y: 21.0d
 		}
 		{
 			dependencies: [
@@ -714,7 +729,7 @@
 			}]
 			title: "石头村庄"
 			x: 12.0d
-			y: 15.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["69856593B46ECD9E"]
@@ -734,7 +749,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: 12.0d
+			y: 15.0d
 		}
 		{
 			dependencies: [
@@ -771,7 +786,7 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["6130B752208314B7"]
+			dependencies: ["0402AC2E4A8127A4"]
 			id: "206536C510BBA790"
 			rewards: [{
 				count: 2
@@ -792,8 +807,26 @@
 				}
 				type: "item"
 			}]
-			x: 12.0d
+			x: 6.0d
 			y: 9.0d
+		}
+		{
+			dependencies: ["1DE54DDD04540738"]
+			id: "4C3BC19718372DC5"
+			tasks: [{
+				id: "39EA849BE17C7FA8"
+				item: {
+					Count: 1
+					id: "slashblade_sendims:structure_quill"
+					tag: {
+						skipKnown: 1b
+						targetStructure: "sdbf:ae_lab"
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 12.0d
 		}
 	]
 	title: "&e深境：深邃洞穴"

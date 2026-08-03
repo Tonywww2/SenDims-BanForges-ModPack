@@ -14,6 +14,7 @@
 	id: "7D57C3AFB4E77A3B"
 	order_index: 0
 	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [
 		{

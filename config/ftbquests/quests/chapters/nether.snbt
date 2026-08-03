@@ -8,12 +8,28 @@
 	id: "21FDCDE620C842AA"
 	order_index: 4
 	quest_enhance_decorative_lines: [ ]
-	quest_links: [{
-		id: "79A0E49E36559BB1"
-		linked_quest: "41B8D629DFAC4BB8"
-		x: 15.0d
-		y: 3.0d
-	}]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [
+		{
+			id: "79A0E49E36559BB1"
+			linked_quest: "41B8D629DFAC4BB8"
+			x: 15.0d
+			y: 6.0d
+		}
+		{
+			id: "7927EBC6B70C0B40"
+			linked_quest: "203E60FD1465EC35"
+			shape: "diamond"
+			x: 18.0d
+			y: 3.0d
+		}
+		{
+			id: "6A596684327CC06F"
+			linked_quest: "500ED712AFE54466"
+			x: 21.0d
+			y: 3.0d
+		}
+	]
 	quests: [
 		{
 			dependencies: ["0936AB2DCC0172A8"]
@@ -43,7 +59,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 3.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["0F5A08067624B75C"]
@@ -95,7 +111,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 3.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -112,7 +128,7 @@
 			}]
 			title: "下界堡垒"
 			x: 9.0d
-			y: 3.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["5251AFEDB9C97974"]
@@ -163,7 +179,7 @@
 				value: 1L
 			}]
 			x: 3.0d
-			y: 12.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["7A229A04D3AFE10F"]
@@ -175,7 +191,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 12.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["5251AFEDB9C97974"]
@@ -187,7 +203,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 6.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["18E165437CBA9864"]
@@ -199,7 +215,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: 6.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["0809F64B7A3864AC"]
@@ -219,7 +235,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 12.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["058C32492347BB2C"]
@@ -239,7 +255,7 @@
 				type: "item"
 			}]
 			x: 18.0d
-			y: 9.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["0809F64B7A3864AC"]
@@ -259,7 +275,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 9.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -282,13 +298,10 @@
 				type: "item"
 			}]
 			x: 18.0d
-			y: 6.0d
+			y: 9.0d
 		}
 		{
-			dependencies: [
-				"0809F64B7A3864AC"
-				"59D5F0F6374C1433"
-			]
+			dependencies: ["59D5F0F6374C1433"]
 			id: "6ED32EAF0CA23ECC"
 			tasks: [{
 				id: "6E858D9823124DE3"
@@ -305,7 +318,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: 12.0d
+			y: 15.0d
 		}
 		{
 			dependencies: [
@@ -328,7 +341,7 @@
 				type: "item"
 			}]
 			x: 18.0d
-			y: 12.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["74CCF300B72CB6EE"]
@@ -360,7 +373,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 15.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["18E165437CBA9864"]
@@ -380,7 +393,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 18.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["32F557E18C00B7A1"]
@@ -399,7 +412,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 12.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["5251AFEDB9C97974"]
@@ -410,18 +423,25 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 3.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["5251AFEDB9C97974"]
 			id: "09B56EAA8E6C1B2E"
 			tasks: [{
-				id: "047C26A7838196D5"
-				item: "minecraft:gold_ingot"
+				id: "3E3DB9B1A8D64425"
+				item: {
+					Count: 1
+					id: "slashblade_sendims:structure_quill"
+					tag: {
+						skipKnown: 1b
+						targetStructure: "minecraft:bastion_remnant"
+					}
+				}
 				type: "item"
 			}]
 			x: 3.0d
-			y: 6.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["09B56EAA8E6C1B2E"]
@@ -433,13 +453,10 @@
 			}]
 			title: "堡垒遗迹"
 			x: 6.0d
-			y: 9.0d
+			y: 12.0d
 		}
 		{
-			dependencies: [
-				"1F9B9C1CBB5B9659"
-				"09B56EAA8E6C1B2E"
-			]
+			dependencies: ["1F9B9C1CBB5B9659"]
 			id: "090010A46891A693"
 			tasks: [{
 				id: "209AF9EA43AB07F2"
@@ -453,7 +470,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 6.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -481,7 +498,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 15.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["5189F5C67CC54B72"]
@@ -498,7 +515,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 15.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["1AD9019A80B12C4E"]
@@ -509,7 +526,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 15.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["1AD9019A80B12C4E"]
@@ -520,7 +537,67 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 18.0d
+			y: 21.0d
+		}
+		{
+			dependencies: [
+				"5251AFEDB9C97974"
+				"04A8C9C6AA5E831A"
+			]
+			dependency_requirement: "one_completed"
+			id: "511247D5AA551013"
+			tasks: [{
+				id: "325E62F4F33384D1"
+				structure: "netherman:mansion_nether"
+				type: "structure"
+			}]
+			title: "下界庄园"
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0F5A08067624B75C"]
+			id: "04A8C9C6AA5E831A"
+			tasks: [{
+				id: "61D4C094526A7D50"
+				item: {
+					Count: 1
+					id: "slashblade_sendims:structure_quill"
+					tag: {
+						skipKnown: 1b
+						targetStructure: "netherman:mansion_nether"
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["511247D5AA551013"]
+			id: "1636491694C6026E"
+			tasks: [{
+				id: "68E3D47DE046FFB6"
+				item: "netherman:statue_stand"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["511247D5AA551013"]
+			id: "30737C99F940A46E"
+			tasks: [{
+				id: "68AF1D7D3DC4A672"
+				item: {
+					Count: 1
+					id: "netherman:azazel_trophy"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 15.0d
+			y: 3.0d
 		}
 	]
 	title: "&e下界"

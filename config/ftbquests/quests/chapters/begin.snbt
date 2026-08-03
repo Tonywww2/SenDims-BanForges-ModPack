@@ -117,6 +117,7 @@
 	]
 	order_index: 0
 	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [
 		{
 			id: "7379FE5C64FC6241"
@@ -1242,6 +1243,23 @@
 			title: "工业平台"
 			x: 42.0d
 			y: 3.0d
+		}
+		{
+			description: [
+				"在背包内对着一种物品按y键时，会搜索玩家周围一定范围内的容器，然后将存在这种物品的容器标记。"
+				""
+				""
+				"{quest_enhance_gif:quest_enhance:textures/ftb/y_search.gif width:200 height:200 align:center}"
+			]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "5AE24126BBBEAC66"
+			tasks: [{
+				id: "799CD25379BFFFAF"
+				type: "checkmark"
+			}]
+			title: "搜索附近容器的物品"
+			x: 6.0d
+			y: -3.0d
 		}
 	]
 	title: "起始空岛"

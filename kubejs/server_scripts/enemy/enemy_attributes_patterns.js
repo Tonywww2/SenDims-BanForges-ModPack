@@ -206,7 +206,7 @@ const bossType2EX2 = deriveTemplate(typeAEX2,
  */
 const bossTypeHydra = deriveTemplate(typeAEX2,
     true,
-    [1.1, 6, 0, 1],
+    [1.1, 9, 0.5, 1],
     [0, 0, 0, 20]
 );
 /**
@@ -222,7 +222,7 @@ const bossTypeAlphaYeti = deriveTemplate(typeAEX2,
  */
 const bossTypeDragon = deriveTemplate(bossType2,
     true,
-    [1, 1, 0.1, 1],
+    [1, 1, 0.8, 1],
     [0, 0, 0, 0]
 );
 /**

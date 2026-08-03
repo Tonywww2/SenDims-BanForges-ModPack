@@ -4,6 +4,10 @@ ServerEvents.recipes(event => {
         '9x #forge:salt'
     ]).id("sdbf:salt_block")
 
+    event.shapeless('nuclearcraft:rhodochrosite_dust', [
+        '9x minecraft:granite'
+    ]).id("sdbf:rhodochrosite_dust")
+
     event.shapeless('nuclearcraft:glowing_mushroom', [
         '#forge:mushrooms',
         '2x #forge:dusts/glowstone'

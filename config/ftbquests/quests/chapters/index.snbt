@@ -17,6 +17,7 @@
 	}]
 	order_index: 2
 	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [
 		{
 			id: "7092B1DCAD1988CE"

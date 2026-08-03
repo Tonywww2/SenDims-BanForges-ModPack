@@ -26,14 +26,14 @@ mergeScaleMax = 1.5
 #伤害数字基础缩放的对数底数
 #底数越大，大伤害数字的缩放增长越慢；底数越小增长越快
 #Range: 1.01 ~ 1.0E7
-baseScaleLogBase = 200.0
+baseScaleLogBase = 8000.0
 #合并伤害时是否重置飘字存活时间
 #true：每次合并恢复为完整存活时间；false：保持当前剩余时间
 mergeResetLife = true
 #伤害数字最终组合缩放上限（合并缩放、基础对数缩放和合并弹跳缩放之和）
 #淡出时的缩小倍率会在限制后继续生效
 #Range: 1.0 ~ 100.0
-maxCombinedScale = 10.0
+maxCombinedScale = 5.0
 #是否启用伤害数字基础缩放的对数计算；关闭后仅保留合并缩放和动画缩放
 enableBaseScaleLogarithm = true
 #伤害数字生成时的初始纵向速度；正数向上，负数向下

@@ -8,6 +8,7 @@
 	id: "05ABDD9D79EF355A"
 	order_index: 3
 	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [
 		{
 			id: "28BF7753DDD0C872"
@@ -70,8 +71,15 @@
 			hide_until_deps_complete: true
 			id: "1650B4334A8E0786"
 			tasks: [{
-				id: "446814CAA22CC544"
-				item: "ad_astra:moon_stone"
+				id: "1D1E95C8B574931E"
+				item: {
+					Count: 1
+					id: "slashblade_sendims:structure_quill"
+					tag: {
+						skipKnown: 1b
+						targetStructure: "ad_astra:moon_dungeon"
+					}
+				}
 				type: "item"
 			}]
 			x: 3.0d
