@@ -1,6 +1,6 @@
 {
   "type": "minecraft:jigsaw",
-  "biomes": "minecraft:lush_caves",
+  "biomes": "sdbf:sacred_rubber_canopy",
   "start_pool": "cataclysm:amethyst_nest/start_pool",
   "use_expansion_hack": true,
   "step": "underground_decoration",
@@ -8,10 +8,10 @@
   "start_height": {
     "type": "minecraft:uniform",
     "min_inclusive": {
-      "absolute": -10
+      "absolute": 138
     },
     "max_inclusive": {
-      "absolute": 10
+      "absolute": 142
     }
   },
   "max_distance_from_center": 80,

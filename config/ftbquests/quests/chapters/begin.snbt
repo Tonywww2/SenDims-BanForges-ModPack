@@ -1249,7 +1249,7 @@
 				"在背包内对着一种物品按y键时，会搜索玩家周围一定范围内的容器，然后将存在这种物品的容器标记。"
 				""
 				""
-				"{quest_enhance_gif:quest_enhance:textures/ftb/y_search.gif width:200 height:200 align:center}"
+				"{quest_enhance_gif:quest_enhance:textures/ftb/y_search.gif width:327 height:225 align:center fit:true}"
 			]
 			icon: "botania:cosmetic_questgiver_mark"
 			id: "5AE24126BBBEAC66"

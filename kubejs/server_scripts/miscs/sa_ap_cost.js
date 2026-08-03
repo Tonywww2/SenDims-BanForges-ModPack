@@ -79,6 +79,8 @@ SACostMap.put("foxextra:thrust_ex", [200, 0.05]);
 
 SACostMap.put("slashblade:regression_start", [200, 0.01]);
 
+SACostMap.put("slashblade:quick_draw_attack", [300, 0.2]);
+
 let defaultCost = [200, 0.2];
 let superSlashArtCost = [400, 0.3];
 

@@ -235,6 +235,7 @@ const toRemoveID = new Set([
     "appliedpneumatics:cells/housing/air_cell_shell",
     
     "integrateddynamics:special/combine_batteries",
+    "dog:cosmic_worm",
 
     // s5
     "sjap_adder:kamuyex_fire",

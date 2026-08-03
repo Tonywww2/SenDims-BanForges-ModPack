@@ -6,15 +6,26 @@
 	group: "70C8850B64AECE42"
 	icon: "thermal:steel_ingot"
 	id: "524CE9039C21DC97"
-	images: [{
-		dependency: "1DE54DDD04540738"
-		height: 1.0d
-		image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
-		rotation: -90.0d
-		width: 1.0d
-		x: 0.0d
-		y: 4.0d
-	}]
+	images: [
+		{
+			dependency: "1DE54DDD04540738"
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: -90.0d
+			width: 1.0d
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependency: "1DE54DDD04540738"
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 90.0d
+			width: 1.0d
+			x: 0.0d
+			y: -4.0d
+		}
+	]
 	order_index: 0
 	quest_enhance_decorative_lines: [ ]
 	quest_enhance_hidden_dependency_lines: [ ]
@@ -648,6 +659,10 @@
 		}
 		{
 			dependencies: ["73531FB69122489F"]
+			description: [
+				""
+				"{quest_enhance_gif:quest_enhance:textures/ftb/basic_tech.gif width:281 height:361 align:center fit:true}"
+			]
 			id: "3BA3C4A36599BD29"
 			rewards: [
 				{
@@ -2124,5 +2139,5 @@
 			y: -6.0d
 		}
 	]
-	title: "工业"
+	title: "&e工业"
 }

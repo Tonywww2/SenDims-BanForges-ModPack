@@ -61,18 +61,6 @@
 		{
 			dependencies: ["77DC6770CC08AEF6"]
 			hide_until_deps_complete: true
-			id: "0A2EC0BAE83D0D59"
-			tasks: [{
-				id: "201425C33023CA30"
-				item: "nuclearcraft:cobalt_ingot"
-				type: "item"
-			}]
-			x: 3.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["77DC6770CC08AEF6"]
-			hide_until_deps_complete: true
 			id: "0326C6376D5E34FF"
 			tasks: [{
 				id: "398DC37E91DDC578"
@@ -95,7 +83,6 @@
 		}
 		{
 			dependencies: [
-				"0A2EC0BAE83D0D59"
 				"14D5D5ADCDC5B859"
 				"2E4AB72EC5D3F108"
 			]
@@ -301,7 +288,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: -6.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
