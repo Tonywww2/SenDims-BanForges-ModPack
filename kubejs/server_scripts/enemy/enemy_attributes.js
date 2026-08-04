@@ -1,4 +1,8 @@
 // priority: 100
+EntityEvents.spawned("minecraft:ender_dragon", event => {
+    event.entity.setAttributeBaseValue("minecraft:generic.knockback_resistance", 1.0);
+});
+
 /**
  * 实装层
  */
