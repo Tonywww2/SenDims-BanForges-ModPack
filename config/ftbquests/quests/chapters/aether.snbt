@@ -384,6 +384,17 @@
 		{
 			dependencies: ["48E30F8BC43E9AD4"]
 			id: "4B44FD83A325F2F6"
+			rewards: [{
+				id: "140799F65B2CB0DB"
+				item: {
+					Count: 1
+					id: "ancient_aether:divine_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "4D9F590C2136B64B"
 				item: "aether_treasure_reforging:valkyrum_ingot"
@@ -409,6 +420,7 @@
 				"465AFA19A305AB81"
 				"6543C211F987A5FF"
 				"370F691D89AF5467"
+				"3DC00915CB991311"
 			]
 			dependency_requirement: "one_completed"
 			description: [
@@ -426,23 +438,11 @@
 				table_id: 7269548285138339695L
 				type: "loot"
 			}]
-			tasks: [
-				{
-					id: "45D871BD7E11C60C"
-					item: "deep_aether:stratus_ingot"
-					type: "item"
-				}
-				{
-					id: "08E1BFFDA6B15D37"
-					item: "deep_aether:sterling_aercloud"
-					type: "item"
-				}
-				{
-					id: "39742AA1588D8E43"
-					item: "deep_aether:chromatic_aercloud"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "45D871BD7E11C60C"
+				item: "deep_aether:stratus_ingot"
+				type: "item"
+			}]
 			x: 9.0d
 			y: -3.0d
 		}
@@ -702,6 +702,33 @@
 			}]
 			x: -3.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["0F8DC1AEBBC762C1"]
+			id: "3DC00915CB991311"
+			tasks: [{
+				id: "0991345053AF8DA0"
+				item: "deep_aether:sterling_aercloud"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["4B44FD83A325F2F6"]
+			description: [
+				"需要使用&b神圣镐&r或&b瓦尔基鲁姆镐&r。"
+				""
+				"&7&m硬编码哈哈哈&r&r"
+			]
+			id: "2B5A98CFF608D743"
+			tasks: [{
+				id: "478E534A80246CB4"
+				item: "aether_redux:raw_valkyrum"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 15.0d
 		}
 	]
 	title: "&e天境"

@@ -309,6 +309,13 @@
 			x: 9.0d
 			y: -3.0d
 		}
+		{
+			id: "6A16CC135A02DB48"
+			linked_quest: "2AB981A4A033541D"
+			shape: "gear"
+			x: -3.0d
+			y: -3.0d
+		}
 	]
 	quests: [
 		{
@@ -1203,6 +1210,7 @@
 			]
 			icon: "minecraft:command_block"
 			id: "7C3E3A6A00EA3031"
+			shape: "gear"
 			subtitle: "可选"
 			tasks: [{
 				id: "26B0EE6FA99DA3C1"

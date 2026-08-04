@@ -654,7 +654,7 @@
 			description: [
 				"&b传送门稳定器&r是&e传送门&r的核心。"
 				""
-				"使用&b传送门稳定器&r、&b传送门框架&r、&b基础/高级目标单元&r在世界中制作一个门框（不需要角），然后右击&b传送门稳定器&r激活，就可以建造一个&e传送门&r。"
+				"使用&b传送门稳定器&r、&b传送门框架&r、&b基础/高级目标单元&r在世界中制作一个门框（不需要角，大小任意），然后右击&b传送门稳定器&r激活，就可以建造一个&e传送门&r。"
 				""
 				"使用&b目标选择器&r可以存储当前的坐标，然后再使用存储了坐标的目标选择器右击&b传送门稳定器&r，可以将存储的坐标记录在&e传送门&r之中。"
 				""
@@ -670,6 +670,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
+			size: 2.0d
 			subtitle: "重要的传送设备"
 			tasks: [{
 				id: "26B50A157C0E6145"
@@ -700,6 +701,7 @@
 				}
 			]
 			shape: "diamond"
+			subtitle: "记录坐标"
 			tasks: [{
 				id: "0BE1AF7DF8DA19AF"
 				item: {
@@ -721,6 +723,7 @@
 				item: "minecraft:lapis_lazuli"
 				type: "item"
 			}]
+			subtitle: "存储坐标"
 			tasks: [{
 				id: "71FACE5483131D64"
 				item: "wormhole:basic_target_cell"
@@ -1654,6 +1657,7 @@
 					type: "item"
 				}
 			]
+			subtitle: "存储坐标"
 			tasks: [{
 				id: "223816F81CE4BEAA"
 				item: "wormhole:advanced_target_cell"
@@ -1677,6 +1681,7 @@
 					type: "item"
 				}
 			]
+			subtitle: "记录坐标"
 			tasks: [{
 				id: "42975E7109EE332A"
 				item: {

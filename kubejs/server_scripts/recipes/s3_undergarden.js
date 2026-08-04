@@ -43,9 +43,9 @@ ServerEvents.recipes(event => {
         "ADE",
         "BCB"
     ], {
-        "A": 'botania:exoflame',
+        "A": ['botania:exoflame', 'kubejs:ml_computing_ingot'],
         "B": 'undergarden:regalium_crystal',
-        "E": 'kubejs:mercury_refractory_structural_component',
+        "E": ['kubejs:mercury_refractory_structural_component', 'kubejs:ml_computing_ingot'],
         "C": 'last_smith:sakura_sphere',
         "D": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()

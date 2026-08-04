@@ -3,9 +3,13 @@
 // const $TierSortingRegistry = Java.loadClass("net.minecraftforge.common.TierSortingRegistry")
 
 SBSDEvents.registerTier(event => {
+//     event.registerTier(4,
+//          "kubejs:mining_tier_4", 'aether_treasure_reforging:valkyrum_ingot', ['aether_treasure_reforging:valkyrum_ingot'],
+//           "kubejs:valkyrum")
+
     event.registerTier(5,
-         "kubejs:mining_tier_5", "thermal:enderium_ingot", ["minecraft:netherite"],
-          "kubejs:enderium")
+         "kubejs:mining_tier_5", "aether_treasure_reforging:valkyrum_ingot", ["minecraft:netherite"],
+          "kubejs:valkyrum")
 
     // TODO 6
 

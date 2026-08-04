@@ -15,7 +15,8 @@ ServerEvents.tags("block", event => {
     )
 
     event.add("kubejs:mining_tier_5", 
-        'aether:carved_stone'
+        'aether:carved_stone',
+        'ancient_aether:valkyrum_ore'
     )
 
 })

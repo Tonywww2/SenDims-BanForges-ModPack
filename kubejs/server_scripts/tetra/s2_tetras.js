@@ -231,7 +231,7 @@ ServerEvents.highPriorityData(event => {
     tetraMaterialBuilder(event, "valkyrie").setCategory("metal")
         .setPrimary(6.0).setSecondary(3.0).setTertiary(2.6)
         .setDurability(600).setIntegrityCost(4).setIntegrityGain(5)
-        .setMagicCapacity(140).setToolLevel(5).setToolEfficiency(8)
+        .setMagicCapacity(140).setToolLevel(6).setToolEfficiency(9)
         .setTints("f0f0f0", "ffffff")
         .addTexture("shiny").addTexture("metal")
         .addItemMaterial('aether_treasure_reforging:valkyrum_ingot')
