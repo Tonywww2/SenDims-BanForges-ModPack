@@ -3,6 +3,7 @@
 // ---- Java Std ----
 const $Double = Java.loadClass("java.lang.Double");
 const $UUID = Java.loadClass("java.util.UUID");
+const $HashSet = Java.loadClass("java.util.HashSet");
 
 // ---- Minecraft ----
 const $TagKey = Java.loadClass("net.minecraft.tags.TagKey");

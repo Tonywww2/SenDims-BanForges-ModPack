@@ -1,5 +1,9 @@
 ServerEvents.recipes(event => {
 
+    event.shapeless('2x slashblade:proudsoul', [
+        'terra_entity:king_slime_spawn_egg'
+    ]).id("sdbf:king_slime_spawn_egg_to_proudsoul_s2")
+
     event.smelting('ad_astra:moon_cobblestone', ['dustandash:cobblestone_with_moss'], 0, 200).id("sdbf:moon_cobblestone_s2")
 
     event.shaped(Item.of('gateways:gate_pearl', '{gateway:"gateways:sdbf_moon_g1"}'), [
@@ -31,9 +35,9 @@ ServerEvents.recipes(event => {
         'AAA',
         'BCB'
     ], {
-        A: '#forge:ingots/desh',
+        A: ['#forge:ingots/desh', 'undergarden:goo_ball'],
         B: 'minecraft:slime_ball',
-        C: 'kubejs:bedrock_breaker'
+        C: ['kubejs:bedrock_breaker', 'undergarden:utherium_crystal']
     }).id('sdbf:slime_crown_s2')
 
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
@@ -48,7 +52,7 @@ ServerEvents.recipes(event => {
         ),
         "C": "minecraft:clock",
         "I": 'slashblade:proudsoul',
-        "Q": '#forge:ingots/desh'
+        "Q": ['#forge:ingots/desh', 'kubejs:chorus_logic_composite_coil']
     }, "slashblade_addon:wanderer")
         .id('sdbf:wanderer_s2')
 
@@ -57,10 +61,10 @@ ServerEvents.recipes(event => {
         "DEC",
         "FBC"
     ], {
-        "A": 'tetra:forged_bolt',
+        "A": ['tetra:forged_bolt', 'nuclearcraft:neutronium_ingot'],
         "B": "slashblade:proudsoul",
-        "C": 'tetra:metal_scrap',
-        "D": 'tetra:planar_stabilizer',
+        "C": ['tetra:metal_scrap', 'nuclearcraft:wasteland_earth'],
+        "D": ['tetra:planar_stabilizer', 'nuclearcraft:glowing_mushroom'],
         "F": "minecraft:obsidian",
         "E": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
@@ -105,7 +109,7 @@ ServerEvents.recipes(event => {
         "ACA",
         "DEF"
     ], {
-        "A": 'ad_astra:moon_sand',
+        "A": ['ad_astra:moon_sand', 'nuclearcraft:wasteland_earth'],
         "B": 'ad_astra:rocket_nose_cone',
         "D": 'ad_astra:moon_stone',
         "E": 'confluence:rocket_boots',
@@ -128,7 +132,7 @@ ServerEvents.recipes(event => {
     ], {
         "I": "#forge:dusts/redstone",             // 红石粉 (Redstone Dust Tag)
         "Q": 'slashblade:proudsoul',                // 石英 (Quartz Tag)
-        "C": 'ad_astra:desh_tank', // 耀魂偏方三八面体
+        "C": ['ad_astra:desh_tank', 'kubejs:chorus_logic_composite_coil'],
         "B": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("slashblade_addon:wanderer")    // 要求：浪人 (Wanderer)

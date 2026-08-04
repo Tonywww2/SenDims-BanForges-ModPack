@@ -605,6 +605,7 @@
 		}
 		{
 			dependencies: ["5BB642BD0BE40541"]
+			description: ["骷髅王的召唤需要占用很大的空间"]
 			hide_until_deps_complete: true
 			id: "5CCEAB83DF5ACE81"
 			rewards: [{

@@ -9,7 +9,50 @@
 	order_index: 0
 	quest_enhance_decorative_lines: [ ]
 	quest_enhance_hidden_dependency_lines: [ ]
-	quest_links: [ ]
+	quest_links: [
+		{
+			id: "3C2739E946D33EA4"
+			linked_quest: "06A34C8A04B2CD83"
+			x: 18.5d
+			y: 10.5d
+		}
+		{
+			id: "7DF7FA7545819F35"
+			linked_quest: "2E9AD291D5058BFF"
+			x: 16.5d
+			y: 10.5d
+		}
+		{
+			id: "695C3E23A5A2F3DB"
+			linked_quest: "65C573EE97C5117F"
+			x: 16.5d
+			y: 8.0d
+		}
+		{
+			id: "56495BE9BC8BC126"
+			linked_quest: "489E7D6A94278610"
+			x: 14.5d
+			y: 8.0d
+		}
+		{
+			id: "295FF136527F5FD1"
+			linked_quest: "0506CD90BA40D331"
+			x: 14.5d
+			y: 10.5d
+		}
+		{
+			id: "51F63E11371BE7F5"
+			linked_quest: "2F9648A58EC0C636"
+			x: 15.0d
+			y: 5.5d
+		}
+		{
+			id: "5D6EA4551477462C"
+			linked_quest: "35E9C6E28966F641"
+			x: 17.5d
+			y: 5.5d
+		}
+	]
 	quests: [
 		{
 			dependencies: ["3A267848CC75F232"]
@@ -47,7 +90,7 @@
 				item: "kubejs:titan-ii_composite_ingot"
 				type: "item"
 			}]
-			x: -3.0d
+			x: 8.5d
 			y: 0.0d
 		}
 		{
@@ -116,6 +159,176 @@
 			}]
 			x: 5.0d
 			y: 3.0d
+		}
+		{
+			dependencies: ["37CF7606A44B5357"]
+			id: "1142DC117247491F"
+			tasks: [{
+				id: "5DADFE7F45BC5A7A"
+				item: "titan_moon:condensed_acetylene"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["37CF7606A44B5357"]
+			id: "7E7BDC4E3FD52FA8"
+			tasks: [{
+				id: "6A1AA6F6FEBAA1AD"
+				item: "titan_moon:aero_membrane"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["37CF7606A44B5357"]
+			id: "7C65C9A7548D32E2"
+			tasks: [{
+				id: "1D3035210630AA7C"
+				item: "titan_moon:toxic_gland"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			id: "35479BCCEC295035"
+			tasks: [{
+				id: "5B556236E7EEA52F"
+				item: "titan_moon:depleted_battery"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["37CF7606A44B5357"]
+			id: "35132F226D6A0319"
+			tasks: [{
+				id: "494F0575F419BD7D"
+				item: "titan_moon:precision_components"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["37CF7606A44B5357"]
+			id: "51BC3907F94C87A4"
+			tasks: [{
+				id: "7F6CB822CA4A2371"
+				item: "titan_moon:silicon_dust"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["37CF7606A44B5357"]
+			id: "1EB7818E8E6685B6"
+			tasks: [{
+				id: "6192A171E7CD8639"
+				item: "titan_moon:tough_neural_gland"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["37CF7606A44B5357"]
+			id: "26D6B0EEB3738923"
+			tasks: [{
+				id: "1365D05BAE839119"
+				item: "titan_moon:tholin_silk_sac"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["37CF7606A44B5357"]
+			id: "20F0BBAF02E39404"
+			tasks: [{
+				id: "085EE0B155EB30FC"
+				item: "titan_moon:tholin_dust"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["37CF7606A44B5357"]
+			id: "18ABBED37461A4A9"
+			tasks: [{
+				id: "0A97CC6CFF9E7DD9"
+				item: "titan_moon:polyphosphazene_coenzyme"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["37CF7606A44B5357"]
+			id: "177CA816D366B146"
+			tasks: [{
+				id: "63CCAE204171A54C"
+				item: "titan_moon:azotosome_sheet"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 12.5d
+		}
+		{
+			id: "537BA7F0C89F76EC"
+			tasks: [{
+				id: "255A18E2E6B18F33"
+				item: "titan_moon:cryo_alloy_ring_mount"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 16.0d
+		}
+		{
+			id: "09506E44492A5EE7"
+			tasks: [{
+				id: "7E481CB8043229F3"
+				item: "titan_moon:tholin_fibre_belt_rig"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 16.5d
+		}
+		{
+			id: "50D25BA74574CCA2"
+			tasks: [{
+				id: "64619E2901FFE31C"
+				item: "titan_moon:meteoric_iron_back_frame"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 16.5d
+		}
+		{
+			id: "63B9146E903FDC5F"
+			tasks: [{
+				id: "7E850D74E6018F59"
+				item: "titan_moon:tholin_life_support_kit"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 17.0d
+		}
+		{
+			id: "27549ECB240A9FF9"
+			tasks: [{
+				id: "5FD0CAD7CE24789E"
+				item: "titan_moon:tholin_venom_glove"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 16.5d
 		}
 	]
 	title: "&e土卫六"

@@ -15,7 +15,7 @@
 			linked_quest: "319D8C539D81926B"
 			shape: "diamond"
 			x: 18.0d
-			y: 6.0d
+			y: 9.0d
 		}
 		{
 			id: "3ED92FEF92672EE9"
@@ -27,14 +27,14 @@
 			id: "4D9D79F9D9990672"
 			linked_quest: "28CAD1DD57B60440"
 			shape: "hexagon"
-			x: 21.0d
+			x: 24.0d
 			y: 0.0d
 		}
 		{
 			id: "65F8324FC1CFB518"
 			linked_quest: "0351BC9DA1C5B4F7"
 			shape: "hexagon"
-			x: 21.0d
+			x: 24.0d
 			y: -3.0d
 		}
 		{
@@ -42,7 +42,7 @@
 			linked_quest: "220AEBF0A8A46F7C"
 			shape: "hexagon"
 			size: 2.0d
-			x: 27.0d
+			x: 30.0d
 			y: -3.0d
 		}
 		{
@@ -50,7 +50,7 @@
 			linked_quest: "0A68F5EE8F25F036"
 			shape: "hexagon"
 			size: 2.0d
-			x: 24.0d
+			x: 27.0d
 			y: 0.0d
 		}
 	]
@@ -85,7 +85,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["7D98EABF3232321E"]
@@ -112,7 +112,7 @@
 				type: "item"
 			}]
 			title: "太空耐火"
-			x: 6.0d
+			x: 9.0d
 			y: 0.0d
 		}
 		{
@@ -132,7 +132,7 @@
 				title: "水星"
 				type: "dimension"
 			}]
-			x: 9.0d
+			x: 12.0d
 			y: 0.0d
 		}
 		{
@@ -144,7 +144,7 @@
 				item: "ad_astra:mercury_stone"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 15.0d
 			y: 3.0d
 		}
 		{
@@ -176,7 +176,9 @@
 				"32A264F98A0C9140"
 				"39B7DC65434E8CC1"
 				"3ECBD24ACD336B6C"
+				"07AEFF9468658A0C"
 			]
+			dependency_requirement: "one_completed"
 			id: "6477045E03EE3F9E"
 			tasks: [{
 				id: "313114262A5190A8"
@@ -200,7 +202,9 @@
 				"61C43936D3898BEC"
 				"32A264F98A0C9140"
 				"40DEC594EA4037DF"
+				"07AEFF9468658A0C"
 			]
+			dependency_requirement: "one_completed"
 			id: "63D9F90A01E19D8A"
 			tasks: [{
 				id: "4431E428787A143C"
@@ -222,9 +226,11 @@
 		{
 			dependencies: [
 				"4125D318FED9C668"
-				"7D98EABF3232321E"
 				"044E03F057C715B8"
+				"641BAE5B4E3ED25C"
+				"77DB6C3E80DEA149"
 			]
+			dependency_requirement: "one_completed"
 			id: "4138021AE4A37632"
 			tasks: [{
 				id: "477E7B93AC8021D3"
@@ -255,7 +261,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: 6.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -278,7 +284,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: 9.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -303,8 +309,8 @@
 				}
 				type: "item"
 			}]
-			x: 21.0d
-			y: 12.0d
+			x: 18.0d
+			y: 15.0d
 		}
 		{
 			dependencies: [
@@ -327,7 +333,7 @@
 				}
 				type: "item"
 			}]
-			x: 15.0d
+			x: 18.0d
 			y: 12.0d
 		}
 		{
@@ -351,7 +357,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: 15.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["489E7D6A94278610"]
@@ -361,7 +367,7 @@
 				item: "last_smith:scroll_shura"
 				type: "item"
 			}]
-			x: 15.0d
+			x: 18.0d
 			y: 18.0d
 		}
 		{
@@ -384,7 +390,7 @@
 				}
 				type: "item"
 			}]
-			x: 18.0d
+			x: 21.0d
 			y: 18.0d
 		}
 		{
@@ -395,7 +401,7 @@
 				item: "last_smith:scroll_mortal"
 				type: "item"
 			}]
-			x: 21.0d
+			x: 24.0d
 			y: 18.0d
 		}
 		{
@@ -407,7 +413,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 6.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["2C6833FA2E31DFF1"]
@@ -417,7 +423,7 @@
 				item: "cataclysm:flame_eye"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 15.0d
 			y: 0.0d
 		}
 		{
@@ -433,7 +439,7 @@
 				type: "structure"
 			}]
 			title: "烈焰竞技场"
-			x: 15.0d
+			x: 18.0d
 			y: 0.0d
 		}
 		{
@@ -455,7 +461,7 @@
 			}]
 			title: "诅咒金字塔"
 			x: 6.0d
-			y: 6.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["71B22CE8B354DA88"]
@@ -465,7 +471,7 @@
 				item: "cataclysm:ignitium_ingot"
 				type: "item"
 			}]
-			x: 18.0d
+			x: 21.0d
 			y: 0.0d
 		}
 		{
@@ -477,7 +483,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 6.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["68BD750B0FD3AB6D"]
@@ -488,7 +494,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 9.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["7D98EABF3232321E"]
@@ -498,8 +504,8 @@
 				item: "ad_astra:calorite_tank"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 6.0d
+			x: 9.0d
+			y: 3.0d
 		}
 	]
 	title: "金星与水星"

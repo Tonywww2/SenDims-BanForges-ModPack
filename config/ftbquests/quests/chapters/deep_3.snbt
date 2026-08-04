@@ -366,6 +366,7 @@
 		}
 		{
 			dependencies: ["2E482B871B147DC6"]
+			description: ["向石头投掷晶簇获得"]
 			id: "5A5D5E71A6C8851E"
 			tasks: [{
 				id: "562B4499C82175AD"

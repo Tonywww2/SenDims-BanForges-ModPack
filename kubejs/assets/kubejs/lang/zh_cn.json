@@ -81,11 +81,14 @@
     "info.kubejs.apoth_boss_remover.not_found": "64格内没有可驱散的神话首领",
     "info.kubejs.gem_ticket": "使用后，随机获得一个宝石",
     "info.kubejs.blocktofugrilled": "烧制一些种类的豆腐块后获得",
+    "info.kubejs.moon_stone": "可以通过熔炉加工获得",
+    "info.kubejs.moon_cobblestone": "可以通过熔炉加工获得",
+    "info.kubejs.king_slime_spawn_egg": "请使用史莱姆皇冠",
     "info.kubejs.forge_energy_blade": "电力拔刀剑作为合成原料时可能会失效，在加工台中进行任意的改造后可以修复",
 
     "info.kubejs.draconic_weapon_warning": "不建议作为战斗武器，混沌守卫可以使用其他方式击败",
 
-    "info.kubejs.banned": "已禁用",
+    "info.kubejs.banned": "已禁用§m你没资格啊，你没资格\n正因如此你没资格啊，你没资格§r",
 
     "info.kubejs.faill_spawn_structure": "结构召唤失败！",
     "info.kubejs.the_midnight_disallowed": "你进入了一个异界，但是一股力量拒绝你进入这个世界。§m需要使用某件道具§r",
@@ -93,7 +96,7 @@
     "info.kubejs.the_bumblezone_disallowed": "你说蜂巢内有一个世界？你疯掉了吗？§m需要佩戴某件饰品§r",
     "info.kubejs.overworld_disallowed": "你离开了天空，试图重新踏上主世界的大地。但是一股力量令你昏迷了过去，你又回到了天空之中。§m需要使用某件道具§r",
     "info.kubejs.overworld_allowed": "你感受到与自身相关的“某件东西”变得更加沉重了，沉重到足以突破那一直阻拦你踏上大地的力量。",
-    "info.kubejs.item_unactivated": "这个物品还未被激活§m需要与一些材料合成§r",
+    "info.kubejs.item_unactivated": "这个物品还未被激活\n§m需要与一些材料合成§r",
     "info.kubejs.rift_placer_activated": "已激活",
     "info.kubejs.deeprealm_certificate": "§b强化深境证章十分重要，特别是§a生命强化§r§b部分§r",
 

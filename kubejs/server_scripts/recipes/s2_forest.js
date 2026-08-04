@@ -1,5 +1,9 @@
 ServerEvents.recipes(event => {
 
+    event.shapeless('6x twilightforest:naga_scale', [
+        "twilightforest:naga_trophy"
+    ]).id("sdbf:naga_scale_s2")
+
     event.shapeless("5x twilightforest:alpha_yeti_fur", [
         "twilightforest:alpha_yeti_trophy"
     ]).id("sdbf:alpha_yeti_fur_s2")

@@ -54,4 +54,5 @@ JEIEvents.hideItems(event => {
 JEIEvents.removeCategories(event => {
     // console.log(event.categoryIds) //log a list of all category ids to logs/kubejs/client.txt
     event.remove('tofucraft:harden')
+    event.remove('terra_entity:npc_trade')
 })

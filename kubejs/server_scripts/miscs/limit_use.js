@@ -1,7 +1,21 @@
 let LIMIT_DIMENSTION_KEY = "sdbf.use_in";
 
+let GLOBAL_BAN_LIST = new $HashSet();
+
+GLOBAL_BAN_LIST.add('terra_entity:king_slime_spawn_egg');
+
 let limitUseDimension = (event) => {
     let item = event.getItem();
+
+    if (GLOBAL_BAN_LIST.contains(String(item.getId()))) {
+        let player = event.player;
+
+        player.addItemCooldown(item, 20);
+        player.tell(
+            Text.translatable("info.kubejs.banned"));
+        event.cancel(true);
+        return;
+    }
 
     if (!item.hasNBT()) return;
 

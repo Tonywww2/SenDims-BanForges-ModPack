@@ -575,7 +575,6 @@
 				type: "choice"
 			}]
 			shape: "diamond"
-			size: 2.0d
 			subtitle: "重要|深境"
 			tasks: [{
 				id: "2A02FB0F98EFCFAB"
@@ -1133,11 +1132,11 @@
 		{
 			dependencies: ["62C0631125654B3D"]
 			description: [
-				"对一个物品按R键，可以查看它的制作配方/来源。"
+				"对一个物品按&bR键&r，可以查看它的制作配方/来源。"
 				""
-				"对一个物品按U键，可以查看它作为合成原料的成品/用途。"
+				"对一个物品按&bU键&r，可以查看它作为合成原料的成品/用途。"
 				""
-				"大多数物品通常都有多种来源/用途，可以在顶部的标签页切换配方类型显示。"
+				"大多数物品通常有&b多种来源/用途&r，可以在&b顶部的标签页&r切换配方类型显示。"
 			]
 			icon: "botania:cosmetic_questgiver_mark"
 			id: "0A8EC9EE7934E1C0"
@@ -1179,6 +1178,9 @@
 			description: [
 				"&b圆角方形&r：普通任务、普通节点。"
 				"&b菱形&r：重要任务，通常包含重要的信息，或者任务道具本身十分重要。"
+				"&b六边形&r：阶段性任务，能够开启某个新的阶段，解锁新的章节、功能等内容。"
+				""
+				"&e感叹号图标&r：信息任务，通常包含重要的信息，建议仔细阅读。"
 			]
 			icon: "botania:cosmetic_questgiver_mark"
 			id: "1A6C2C2203C27C5F"
@@ -1186,7 +1188,7 @@
 				id: "4ACE8AB0BB6A60A6"
 				type: "checkmark"
 			}]
-			title: "任务形状的含义"
+			title: "任务外观的含义"
 			x: 3.0d
 			y: -3.0d
 		}
@@ -1232,7 +1234,6 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			size: 2.0d
 			subtitle: "快速扩建"
 			tasks: [{
 				consume_items: true
@@ -1249,7 +1250,7 @@
 				"在背包内对着一种物品按y键时，会搜索玩家周围一定范围内的容器，然后将存在这种物品的容器标记。"
 				""
 				""
-				"{quest_enhance_gif:quest_enhance:textures/ftb/y_search.gif width:327 height:225 align:center fit:true}"
+				"{quest_enhance_gif:quest_enhance:textures/ftb/y_search.gif}"
 			]
 			icon: "botania:cosmetic_questgiver_mark"
 			id: "5AE24126BBBEAC66"

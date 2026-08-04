@@ -31,6 +31,72 @@
 			x: 18.0d
 			y: 0.0d
 		}
+		{
+			id: "06CAEE6A10ACAB76"
+			linked_quest: "6AC63C19E46F09F3"
+			x: 9.0d
+			y: 6.0d
+		}
+		{
+			id: "25C3E7C52787F95E"
+			linked_quest: "58D261B5FA944C08"
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			id: "070CADE7FDBFD710"
+			linked_quest: "41DA5EE0AEF41A8A"
+			x: 3.0d
+			y: 12.0d
+		}
+		{
+			id: "670E381D99AD07C7"
+			linked_quest: "53FAFE12DC339859"
+			x: 6.0d
+			y: 12.0d
+		}
+		{
+			id: "28CED89E216938A0"
+			linked_quest: "4A5FF776DD643D73"
+			x: 9.0d
+			y: 12.0d
+		}
+		{
+			id: "45B70B222CFA310F"
+			linked_quest: "20C5B7CCF681A814"
+			x: 9.0d
+			y: 15.0d
+		}
+		{
+			id: "34CD22F69827E30E"
+			linked_quest: "549AFEC23C09BA81"
+			x: 12.0d
+			y: 15.0d
+		}
+		{
+			id: "3618B87CF1004199"
+			linked_quest: "154580144376D976"
+			x: 6.0d
+			y: 24.0d
+		}
+		{
+			id: "250B91A9C9B98ED2"
+			linked_quest: "4467B681A766AFAC"
+			x: 12.0d
+			y: 18.0d
+		}
+		{
+			id: "718805E723DFFA38"
+			linked_quest: "3348C0AE18D2FCE3"
+			x: 9.0d
+			y: 18.0d
+		}
+		{
+			id: "723299453E9C849A"
+			linked_quest: "24BDD9F44F3AC6D6"
+			x: 12.0d
+			y: 21.0d
+		}
 	]
 	quests: [
 		{
@@ -144,7 +210,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 12.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["35A8F36675442F8B"]
@@ -177,7 +243,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 15.0d
+			y: 21.0d
 		}
 		{
 			dependencies: [
@@ -185,6 +251,7 @@
 				"368D4A353C73D192"
 			]
 			dependency_requirement: "one_completed"
+			description: ["可以从箱子中找到"]
 			id: "196B8B560D6681EC"
 			tasks: [{
 				id: "0377923A378B6B09"
@@ -192,10 +259,11 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 12.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["368D4A353C73D192"]
+			description: ["可以从箱子中找到"]
 			id: "1C86F9100F42642A"
 			tasks: [{
 				id: "3F7DBC7076849C73"
@@ -300,7 +368,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 15.0d
+			y: 21.0d
 		}
 		{
 			dependencies: [
@@ -367,6 +435,7 @@
 		{
 			dependencies: ["7CF8D7EE360EE8FD"]
 			id: "051BA6257FF77056"
+			shape: "diamond"
 			tasks: [{
 				id: "190986061E2CBA32"
 				item: "slashblade_useful_addon:proud_soul_sampling"
@@ -377,7 +446,6 @@
 		}
 		{
 			dependencies: [
-				"77521D83617F9CBA"
 				"7FC6F9952EA26493"
 				"6AC63C19E46F09F3"
 				"2B1F98A770D77E12"

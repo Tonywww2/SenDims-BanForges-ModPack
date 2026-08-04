@@ -23,11 +23,11 @@ ServerEvents.recipes(event => {
                 .addEnchantment(SBEnchantmentDefinition.of("apotheosis:scavenger", 1))
                 .build()
         ),
-        "C": '#forge:storage_blocks/ostrum',
+        "C": ['#forge:storage_blocks/ostrum', '#forge:storage_blocks/cloggrum'],
         "G": "minecraft:gold_block",
         "L": "minecraft:lava_bucket",
         "P": "slashblade:proudsoul_ingot",
-        "R": '#forge:storage_blocks/raw_desh',
+        "R": ['#forge:storage_blocks/raw_desh', '#forge:storage_blocks/regalium'],
         "W": "minecraft:water_bucket"
     }, "slashblade_addon:aquablaze")
         .id('sdbf:aquablaze_s2')
@@ -67,7 +67,7 @@ ServerEvents.recipes(event => {
                 .build()
         ),
         "S": "slashblade:proudsoul",
-        "O": '#forge:ingots/ostrum'
+        "O": ['#forge:ingots/ostrum', '#forge:ingots/cloggrum']
     }, "slashblade:muramasa")
         .id('sdbf:muramasa_s2')
 
@@ -101,7 +101,7 @@ ServerEvents.recipes(event => {
                 .build()
         ),
         "D": "last_smith:scroll_sakura_blade",
-        "E": '#forge:ingots/ostrum',
+        "E": ['#forge:ingots/ostrum', 'nuclearcraft:radaway'],
         "F": 'last_smith:sakura_full',
     }, "last_smith:evil_kataware")
         .id('sdbf:exorcism_ginkgo_s2')
@@ -124,7 +124,7 @@ ServerEvents.recipes(event => {
                 .addEnchantment(SBEnchantmentDefinition.of("minecraft:fire_aspect", 2))
                 .build()
         ),
-        "E": '#forge:storage_blocks/ostrum'
+        "E": ['#forge:storage_blocks/ostrum', '#forge:storage_blocks/cloggrum']
     }, "slashblade:ruined_sword")
         .id('sdbf:ruined_sword_s2')
 

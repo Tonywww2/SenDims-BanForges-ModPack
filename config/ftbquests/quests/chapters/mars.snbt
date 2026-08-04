@@ -131,7 +131,11 @@
 			y: 12.0d
 		}
 		{
-			dependencies: ["260A17885336B776"]
+			dependencies: [
+				"260A17885336B776"
+				"2DFEC40399DF07EC"
+			]
+			dependency_requirement: "one_completed"
 			id: "20C5B7CCF681A814"
 			tasks: [{
 				id: "3C8CEEDCB21244B2"
@@ -156,7 +160,9 @@
 				"1FC6DCA09DEC558F"
 				"1A385F668652DB17"
 				"5FFEB598BE2CB116"
+				"196B8B560D6681EC"
 			]
+			dependency_requirement: "one_completed"
 			hide_until_deps_visible: true
 			id: "154580144376D976"
 			tasks: [{

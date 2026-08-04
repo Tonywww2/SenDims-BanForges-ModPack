@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
         "A": "twilightforest:knightmetal_ring",
         "D": '#forge:storage_blocks/fiery',
         "F": "twilightforest:hydra_trophy",
-        "I": 'ad_astra:infernal_spire_block',
+        "I": ['ad_astra:infernal_spire_block', 'kubejs:anchor_shard'],
         "B": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("slashblade_addon:murakumo")
@@ -78,7 +78,7 @@ ServerEvents.recipes(event => {
         "GCE"
     ], {
         "B": "slashblade:proudsoul_ingot",
-        "C": 'ad_astra:venus_sand',
+        "C": ['ad_astra:venus_sand', 'kubejs:anchor_shard'],
         "E": "minecraft:redstone_block",
         "D": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
@@ -106,10 +106,10 @@ ServerEvents.recipes(event => {
         "CDC",
         "ASA"
     ], {
-        "A": '#forge:plates/calorite',
+        "A": ['#forge:plates/calorite', 'darkerdepths:forsaken_bronze_block'],
         "B": "minecraft:nether_star",
         "C": "minecraft:diamond_block",
-        "S": 'cataclysm:ancient_spear',
+        "S": ['cataclysm:ancient_spear', 'kubejs:ml_computing_ingot'],
         "D": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance().name("slashblade:fox_white")
                 .killCount(2000)

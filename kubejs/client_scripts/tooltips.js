@@ -16,17 +16,20 @@ ItemEvents.tooltip(event => {
     event.add('slashblade_sendims:the_nectar_quest', Text.translatable('info.kubejs.the_nectar_quest'))
     event.add('slashblade_sendims:the_nectar_quest', Text.translatable('info.kubejs.the_nectar_quest_2'))
 
+    event.add('#slashblade:can_copy_sa', Text.translatable('info.kubejs.slashblade.can_copy_sa').color(Color.AQUA));
+    event.add('#slashblade:can_copy_se', Text.translatable('info.kubejs.slashblade.can_copy_se').color(Color.AQUA));
+    
     event.add("powerful_dummy:dummy_stand", Text.translatable('info.kubejs.dummy_stand').color(Color.AQUA))
 
     event.add('kubejs:anchor_shard', Text.translatable('info.kubejs.anchor_shard').color(Color.AQUA));
     event.add('kubejs:chaotic_truth', Text.translatable('info.kubejs.chaotic_truth').color(Color.AQUA));
     event.add('kubejs:apoth_boss_remover', Text.translatable('info.kubejs.apoth_boss_remover').color(Color.AQUA));
     event.add('kubejs:apoth_boss_remover', Text.translatable('info.kubejs.apoth_boss_remover.consume').color(Color.GRAY));
-
-    event.add('#slashblade:can_copy_sa', Text.translatable('info.kubejs.slashblade.can_copy_sa').color(Color.AQUA));
-    event.add('#slashblade:can_copy_se', Text.translatable('info.kubejs.slashblade.can_copy_se').color(Color.AQUA));
-
+    
     event.add('tofucraft:blocktofugrilled', Text.translatable('info.kubejs.blocktofugrilled').color(Color.AQUA));
+    event.add('ad_astra:moon_stone', Text.translatable('info.kubejs.moon_stone').color(Color.AQUA));
+    event.add('ad_astra:moon_cobblestone', Text.translatable('info.kubejs.moon_cobblestone').color(Color.AQUA));
+    event.add('terra_entity:king_slime_spawn_egg', Text.translatable('info.kubejs.king_slime_spawn_egg').color(Color.AQUA));
     
     event.add('slashblade_sendims:deeprealm_certificate', Text.translatable('info.kubejs.deeprealm_certificate'));
 

@@ -13,8 +13,8 @@ ServerEvents.highPriorityData(event => {
             "minecraft:redstone": 20,
             "minecraft:diamond": 1,        // 总量1  → [0,0,0,0,1]（仅波次5）
         },
-        perWave: { "tetra:geode": [1, 1, 1, 1, 0] },  // 波次5不发
-        completion: { "slashblade:proudsoul": 2, "tetra:geode": 2, 'apotheosis:gem_dust': 2},
+        perWave: { 'slashblade:proudsoul_tiny': [1, 2, 3, 3, 0] },  // 波次5不发
+        completion: { "slashblade:proudsoul": 2, "tetra:geode": 2, 'apotheosis:gem_dust': 2 },
     });
 
     createBossGateway("sdbf_dr1_g2", 0x4d0000, {
@@ -26,8 +26,8 @@ ServerEvents.highPriorityData(event => {
         ],
         boss: ["cataclysm:the_harbinger", 1],
         rewards: { "minecraft:iron_ingot": 34 },   // → [2,4,8,8,12]
-        perWave: { "tetra:geode": [1, 1, 2, 2, 3] },
-        completion: { "slashblade:proudsoul": 2, "tetra:geode": 3 , 'apotheosis:gem_dust': 2},
+        perWave: { 'slashblade:proudsoul_tiny': [2, 3, 4, 4, 4] },
+        completion: { "slashblade:proudsoul": 2, "tetra:geode": 3, 'apotheosis:gem_dust': 2 },
     });
 
     createMythicGateway("sdbf_moon_g1", 0x8c8c8c, {
@@ -44,8 +44,8 @@ ServerEvents.highPriorityData(event => {
             "minecraft:redstone": 20,
             "minecraft:diamond": 1,        // 总量1  → [0,0,0,0,1]（仅波次5）
         },
-        perWave: { "tetra:geode": [1, 1, 1, 1, 0] },  // 波次5不发
-        completion: { "slashblade:proudsoul": 4, "tetra:geode": 2 , 'apotheosis:gem_dust': 2},
+        perWave: { 'slashblade:proudsoul_tiny': [2, 3, 4, 4, 4] },  // 波次5不发
+        completion: { "slashblade:proudsoul": 4, "tetra:geode": 2, 'apotheosis:gem_dust': 2 },
     });
 
     createMythicGateway("sdbf_nether_g1", 0xb01a1a, {
@@ -62,8 +62,8 @@ ServerEvents.highPriorityData(event => {
             'minecraft:blaze_rod': 10,
             'thermal:sulfur_block': 2,        // 总量1  → [0,0,0,0,1]（仅波次5）
         },
-        perWave: { "tetra:geode": [1, 1, 1, 1, 0] },  // 波次5不发
-        completion: { "slashblade:proudsoul": 8, 'minecraft:netherite_scrap': 2 , 'apotheosis:gem_dust': 2},
+        perWave: { 'slashblade:proudsoul_tiny': [2, 3, 4, 4, 4] },  // 波次5不发
+        completion: { "slashblade:proudsoul": 8, 'minecraft:netherite_scrap': 2, 'apotheosis:gem_dust': 2 },
     });
 
     createMythicGateway("sdbf_mars_g1", 0xff7070, {
@@ -79,8 +79,8 @@ ServerEvents.highPriorityData(event => {
             'ad_astra:ostrum_ingot': 10,
             'minecraft:diamond': 10
         },
-        perWave: { "tetra:geode": [1, 1, 1, 1, 0] },  // 波次5不发
-        completion: { "slashblade:proudsoul": 10, 'slashblade:proudsoul_ingot': 1 , 'apotheosis:gem_dust': 2},
+        perWave: { 'slashblade:proudsoul': [2, 3, 4, 4, 4] },  // 波次5不发
+        completion: { "slashblade:proudsoul": 10, 'slashblade:proudsoul_ingot': 1, 'apotheosis:gem_dust': 2 },
     });
 
     // // ============================================================

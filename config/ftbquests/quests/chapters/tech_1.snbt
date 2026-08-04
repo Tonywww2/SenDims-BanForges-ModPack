@@ -371,6 +371,12 @@
 					}
 					type: "item"
 				}
+				{
+					count: 2
+					id: "4355A81C587EAE0B"
+					item: "thermal:raw_lead"
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "124E52EE0ACCEC94"
@@ -383,6 +389,12 @@
 		{
 			dependencies: ["03405BC60C3EFA99"]
 			id: "6CF1E5C2D33B8465"
+			rewards: [{
+				count: 2
+				id: "422252FBAA539AEB"
+				item: "thermal:raw_lead"
+				type: "item"
+			}]
 			tasks: [{
 				id: "62C65DFD12A1E703"
 				item: "thermal:machine_pulverizer"
@@ -394,6 +406,12 @@
 		{
 			dependencies: ["03405BC60C3EFA99"]
 			id: "50E8B79E8ED41183"
+			rewards: [{
+				count: 4
+				id: "316CE5430DFDC04F"
+				item: "thermal:raw_lead"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3EC998CC24F10715"
 				item: "thermal:machine_furnace"
@@ -405,6 +423,12 @@
 		{
 			dependencies: ["4A2D947949B03EB5"]
 			id: "7AE21FD78902B494"
+			rewards: [{
+				count: 2
+				id: "47C4F7CA458BCFE7"
+				item: "thermal:raw_lead"
+				type: "item"
+			}]
 			tasks: [{
 				id: "64C17D2D47D19296"
 				item: "thermal:machine_smelter"
@@ -417,6 +441,12 @@
 			dependencies: ["6CF1E5C2D33B8465"]
 			hide_until_deps_complete: true
 			id: "4A2D947949B03EB5"
+			rewards: [{
+				count: 2
+				id: "3E7636C4704C8E25"
+				item: "thermal:raw_lead"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5E05A8682D8FEC5E"
 				item: "thermal:invar_dust"
@@ -428,6 +458,12 @@
 		{
 			dependencies: ["7AE21FD78902B494"]
 			id: "7F97EF10FCEAA6D0"
+			rewards: [{
+				count: 3
+				id: "420D9BFAA2F2AF61"
+				item: "thermal:raw_lead"
+				type: "item"
+			}]
 			tasks: [{
 				id: "202AF6C63DC6C071"
 				item: "thermal:constantan_ingot"
@@ -439,6 +475,12 @@
 		{
 			dependencies: ["7F97EF10FCEAA6D0"]
 			id: "34173BFDB4914CA8"
+			rewards: [{
+				count: 3
+				id: "486105D4F10A6079"
+				item: "thermal:raw_lead"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1F6C5892E54D9D6A"
 				item: "thermal:machine_press"
@@ -461,6 +503,12 @@
 		{
 			dependencies: ["34173BFDB4914CA8"]
 			id: "0E09FA650560F98B"
+			rewards: [{
+				count: 3
+				id: "0FE975BA492C1053"
+				item: "thermal:raw_lead"
+				type: "item"
+			}]
 			tasks: [{
 				id: "11D029226C5169F3"
 				item: "thermal:gold_gear"
@@ -472,6 +520,12 @@
 		{
 			dependencies: ["0E09FA650560F98B"]
 			id: "58D42F6EFD6EA130"
+			rewards: [{
+				count: 3
+				id: "47486C1FFCA45762"
+				item: "thermal:raw_lead"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4B2660F4712E6F55"
 				item: "thermal:upgrade_augment_1"
@@ -483,6 +537,12 @@
 		{
 			dependencies: ["7AE21FD78902B494"]
 			id: "57C913F77C42AA19"
+			rewards: [{
+				count: 3
+				id: "3AF1589F7E7B9BF2"
+				item: "thermal:raw_lead"
+				type: "item"
+			}]
 			tasks: [{
 				id: "298DF6FED5560C2C"
 				item: "thermal:signalum_ingot"
@@ -497,6 +557,12 @@
 				"57C913F77C42AA19"
 			]
 			id: "06FC1F440DF26A19"
+			rewards: [{
+				count: 3
+				id: "2E42AD09A6F89D88"
+				item: "thermal:raw_lead"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0253FCF6E3B2DD81"
 				item: "thermal:signalum_gear"
@@ -511,6 +577,12 @@
 				"58D42F6EFD6EA130"
 			]
 			id: "2C45C6D02F8E450C"
+			rewards: [{
+				count: 3
+				id: "15F9644DCF562926"
+				item: "thermal:raw_lead"
+				type: "item"
+			}]
 			tasks: [{
 				id: "213791FA80D58C24"
 				item: "thermal:upgrade_augment_2"
@@ -543,6 +615,12 @@
 		{
 			dependencies: ["7AE21FD78902B494"]
 			id: "23DF5636575FFAE2"
+			rewards: [{
+				count: 3
+				id: "68A86C622FCD627C"
+				item: "thermal:raw_lead"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7F2FE4F55867FC83"
 				item: "thermal:enderium_ingot"
@@ -557,6 +635,12 @@
 				"2C45C6D02F8E450C"
 			]
 			id: "0030D7D64773B6CF"
+			rewards: [{
+				count: 3
+				id: "464F7C0167C4158C"
+				item: "thermal:raw_lead"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0CFF8060C1E815D5"
 				item: "thermal:upgrade_augment_3"
@@ -661,7 +745,7 @@
 			dependencies: ["73531FB69122489F"]
 			description: [
 				""
-				"{quest_enhance_gif:quest_enhance:textures/ftb/basic_tech.gif width:281 height:361 align:center fit:true}"
+				"{quest_enhance_gif:quest_enhance:textures/ftb/basic_tech.gif}"
 			]
 			id: "3BA3C4A36599BD29"
 			rewards: [
@@ -777,7 +861,11 @@
 		}
 		{
 			dependencies: ["66C1156C17F399C9"]
-			description: ["绿色能源"]
+			description: [
+				"绿色能源"
+				""
+				"不同的星球拥有不同的发电效率"
+			]
 			id: "470B2FD5F0F053F1"
 			tasks: [{
 				id: "1B913A2E96BF1B13"
@@ -1628,6 +1716,12 @@
 		{
 			dependencies: ["03405BC60C3EFA99"]
 			id: "34CE572668632D8E"
+			rewards: [{
+				count: 4
+				id: "030ACF326787A06F"
+				item: "thermal:raw_lead"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5560574D72EBCDE6"
 				item: "thermal:energy_duct"

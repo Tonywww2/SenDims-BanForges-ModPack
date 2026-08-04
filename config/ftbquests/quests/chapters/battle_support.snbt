@@ -271,8 +271,8 @@
 			dependencies: ["3C14A2F8BA3C3DA6"]
 			description: [
 				"神化刷怪笼，用过了都说好"
+				""
 				"可以用&4捕捉附魔&r获取刷怪蛋"
-				"耀魂数upup，杀敌数upup"
 			]
 			hide_dependency_lines: true
 			id: "12CBC73AFDD99F2C"
@@ -485,6 +485,9 @@
 				"用对应的材料材料右键&d深境证章&r吧"
 				""
 				"探索世界，慢慢填补&d深境证章&r吧......"
+				""
+				""
+				"{quest_enhance_gif:quest_enhance:textures/ftb/stack.gif}"
 			]
 			icon: {
 				Count: 1

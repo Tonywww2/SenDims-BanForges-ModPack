@@ -29,7 +29,8 @@ ServerEvents.highPriorityData(event => {
             wave.maxTime(1200);
             wave.setupTime(60);
             wave["addStackListReward(java.util.List)"]([jade]);
-            wave.addReward('tetra:geode', 12);
+            wave.addReward('tetra:geode', 6);
+            wave.addReward("slashblade:proudsoul", 6);
             wave.addReward('apotheosis:epic_material', 1);
         })
         .addWave(wave => {
@@ -40,7 +41,8 @@ ServerEvents.highPriorityData(event => {
             wave.maxTime(1400);
             wave.setupTime(20);
             wave["addStackListReward(java.util.List)"]([jade2]);
-            wave.addReward('tetra:geode', 24);
+            wave.addReward('tetra:geode', 12);
+            wave.addReward("slashblade:proudsoul", 12);
             wave.addReward('apotheosis:epic_material', 2);
             wave.addReward('apotheosis:mythic_material', 1);
         })
@@ -52,7 +54,8 @@ ServerEvents.highPriorityData(event => {
             wave.maxTime(1600);
             wave.setupTime(20);
             wave["addStackListReward(java.util.List)"]([jade4]);
-            wave.addReward('tetra:geode', 36);
+            wave.addReward('tetra:geode', 18);
+            wave.addReward("slashblade:proudsoul", 18);
             wave.addReward('apotheosis:epic_material', 3);
             wave.addReward('apotheosis:mythic_material', 2);
         })
@@ -64,12 +67,13 @@ ServerEvents.highPriorityData(event => {
             wave.maxTime(3200);
             wave.setupTime(60);
             wave["addStackListReward(java.util.List)"]([jade8]);
-            wave.addReward('tetra:geode', 36);
+            wave.addReward('tetra:geode', 18);
+            wave.addReward("slashblade:proudsoul", 18);
             wave.addReward('apotheosis:epic_material', 4);
             wave.addReward('apotheosis:mythic_material', 4);
         })
         // ── 完成奖励 ──
-        .addReward("slashblade:proudsoul", 24)
+        .addReward("slashblade:proudsoul", 12)
         .register();
 
     Gateway.customBuilder("gateways:sdbf_sr_kp")
@@ -95,7 +99,8 @@ ServerEvents.highPriorityData(event => {
             wave.maxTime(1200);
             wave.setupTime(60);
             wave["addStackListReward(java.util.List)"]([jade]);
-            wave.addReward('tetra:geode', 12);
+            wave.addReward('tetra:geode', 6);
+            wave.addReward("slashblade:proudsoul", 6);
             wave.addReward('apotheosis:epic_material', 1);
         })
         .addWave(wave => {
@@ -109,7 +114,8 @@ ServerEvents.highPriorityData(event => {
             wave.maxTime(1400);
             wave.setupTime(20);
             wave["addStackListReward(java.util.List)"]([jade2]);
-            wave.addReward('tetra:geode', 24);
+            wave.addReward('tetra:geode', 12);
+            wave.addReward("slashblade:proudsoul", 12);
             wave.addReward('apotheosis:epic_material', 2);
             wave.addReward('apotheosis:mythic_material', 1);
         })
@@ -121,7 +127,8 @@ ServerEvents.highPriorityData(event => {
             wave.maxTime(1600);
             wave.setupTime(20);
             wave["addStackListReward(java.util.List)"]([jade4]);
-            wave.addReward('tetra:geode', 36);
+            wave.addReward('tetra:geode', 18);
+            wave.addReward("slashblade:proudsoul", 12);
             wave.addReward('apotheosis:epic_material', 3);
             wave.addReward('apotheosis:mythic_material', 2);
         })
@@ -133,12 +140,13 @@ ServerEvents.highPriorityData(event => {
             wave.maxTime(3200);
             wave.setupTime(60);
             wave["addStackListReward(java.util.List)"]([jade8]);
-            wave.addReward('tetra:geode', 36);
+            wave.addReward('tetra:geode', 18);
+            wave.addReward("slashblade:proudsoul", 12);
             wave.addReward('apotheosis:epic_material', 4);
             wave.addReward('apotheosis:mythic_material', 4);
         })
         // ── 完成奖励 ──
-        .addReward("slashblade:proudsoul", 24)
+        .addReward("slashblade:proudsoul", 16)
         .register();
 
 })

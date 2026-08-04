@@ -9,7 +9,26 @@
 	order_index: 2
 	quest_enhance_decorative_lines: [ ]
 	quest_enhance_hidden_dependency_lines: [ ]
-	quest_links: [ ]
+	quest_links: [
+		{
+			id: "4CDA3DAA711A9C8B"
+			linked_quest: "6477045E03EE3F9E"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			id: "4E6D3E10F4BA3A7E"
+			linked_quest: "63D9F90A01E19D8A"
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			id: "02B9BE488D8FDF75"
+			linked_quest: "4138021AE4A37632"
+			x: 9.0d
+			y: -3.0d
+		}
+	]
 	quests: [
 		{
 			dependencies: ["07AEFF9468658A0C"]
@@ -73,7 +92,7 @@
 				}
 				type: "item"
 			}]
-			x: 9.0d
+			x: 12.0d
 			y: 0.0d
 		}
 		{
@@ -145,7 +164,11 @@
 		}
 		{
 			dependencies: ["713CA11C25A8A2E2"]
-			description: ["你可以在神化尖塔的宝箱内发现一些奇特的金属锭。"]
+			description: [
+				"你可以在神化尖塔的宝箱内发现一些奇特的金属锭。"
+				""
+				"神话尖塔散布在各种地形当中。"
+			]
 			icon: {
 				Count: 1
 				id: "apotheosis:gem"

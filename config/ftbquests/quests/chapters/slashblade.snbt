@@ -12,6 +12,15 @@
 		}
 	}
 	id: "7D57C3AFB4E77A3B"
+	images: [{
+		dependency: "36E1D57516888F2E"
+		height: 1.0d
+		image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+		rotation: -90.0d
+		width: 1.0d
+		x: 10.0d
+		y: 18.5d
+	}]
 	order_index: 0
 	quest_enhance_decorative_lines: [ ]
 	quest_enhance_hidden_dependency_lines: [ ]
