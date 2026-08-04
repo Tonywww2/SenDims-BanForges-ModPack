@@ -206,6 +206,8 @@ const toRemoveID = new Set([
     "enderio:smelting/the_bumblezone/sticky_honey_residue/from_smelting_honey_block",
     "biomemakeover:altar",
     "minecraft:flamarang_smithing",
+    "sakura:alkaline_from_mortar",
+    "last_smith:munin_from_tachyon",
 
     "draconicevolution:components/draconium_ingot_from_ore",
     "draconicevolution:components/draconium_ingot_from_dust",

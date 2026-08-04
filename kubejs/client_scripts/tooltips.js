@@ -1,5 +1,7 @@
 let GEM_TICKET_DIM_PATH = "sdbf.gt.dim";
 let LIMIT_DIMENSTION_KEY = "sdbf.use_in";
+const $SlashArtsRegistry = Java.loadClass("mods.flammpfeil.slashblade.registry.SlashArtsRegistry");
+const $ResourceLocation = Java.loadClass("net.minecraft.resources.ResourceLocation");
 
 
 ItemEvents.tooltip(event => {
@@ -57,6 +59,30 @@ ItemEvents.tooltip(event => {
         'draconicevolution:wyvern_sword',
         'draconicevolution:wyvern_bow'
     ], Text.translatable('info.kubejs.draconic_weapon_warning').color(Color.RED));
+
+    event.addAdvanced('slashblade:proudsoul_sphere', (item, advanced, text) => {
+        if (!item.nbt || !item.nbt.contains('item_list', 9)) {
+            return;
+        }
+
+        text.add(Text.translatable('info.kubejs.proudsoul_sphere.select_sa').color(Color.AQUA));
+
+        let itemList = item.nbt.getList('item_list', 8);
+        let slashArtsRegistry = $SlashArtsRegistry.REGISTRY.get();
+        for (let i = 0; i < itemList.size(); i++) {
+            let saKey = $ResourceLocation.tryParse(itemList.getString(i));
+            if (!saKey || !slashArtsRegistry.containsKey(saKey)) {
+                continue;
+            }
+
+            let slashArt = slashArtsRegistry.getValue(saKey);
+            if (slashArt) {
+                text.add(Text.of('- ')
+                    .append(Text.translatable('slashblade.tooltip.slash_art', slashArt.getDescription()))
+                    .color(Color.GRAY));
+            }
+        }
+    })
 
     event.addAdvanced([
         'slashblade:slashblade',

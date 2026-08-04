@@ -1,7 +1,55 @@
 // priority: 200
 // By Tonywww, 原始用途：千界万锻整合包
 
-const tetraMaterialBuilder = (event, id) => {
+let tetraMaterialTagEvent = null;
+let tetraMaterialTagValues = {};
+let activeTetraMaterialStage = null;
+
+const withTetraMaterialStage = (stage, buildMaterials) => {
+    let previousStage = activeTetraMaterialStage;
+    activeTetraMaterialStage = stage;
+    try {
+        buildMaterials();
+        writeTetraMaterialStageTag(stage);
+    } finally {
+        activeTetraMaterialStage = previousStage;
+    }
+};
+
+const writeTetraMaterialStageTag = stage => {
+    let tagName = `stage_${stage}`;
+    let values = tetraMaterialTagValues[tagName];
+    if (!tetraMaterialTagEvent || !values) return;
+
+    tetraMaterialTagEvent.addJson(`sdbf:tags/items/tetra_material/${tagName}.json`, {
+        replace: false,
+        values: values
+    });
+};
+
+const addTetraMaterialToStageTag = (event, stage, materialItems, materialTag) => {
+    if (stage === undefined || stage === null) return;
+
+    if (tetraMaterialTagEvent !== event) {
+        tetraMaterialTagEvent = event;
+        tetraMaterialTagValues = {};
+    }
+
+    let tagName = `stage_${stage}`;
+    let values = tetraMaterialTagValues[tagName] || [];
+    materialItems.forEach(item => {
+        if (values.indexOf(item) === -1) values.push(item);
+    });
+    if (materialTag) {
+        let tagValue = materialTag.charAt(0) === "#" ? materialTag : `#${materialTag}`;
+        if (values.indexOf(tagValue) === -1) values.push(tagValue);
+    }
+    tetraMaterialTagValues[tagName] = values;
+};
+
+const tetraMaterialBuilder = (event, id, stage) => {
+    if (stage === undefined) stage = activeTetraMaterialStage;
+
     let key = id;
     let category = "metal";
     let primary = 0;
@@ -97,6 +145,10 @@ const tetraMaterialBuilder = (event, id) => {
             if (improvements != {}) json["improvements"] = improvements;
             if (tags) json["tags"] = tags;
             event.addJson(`tetra:materials/${category}/${key}.json`, json);
+            addTetraMaterialToStageTag(event, stage, materialItems, material["tag"]);
+            if (activeTetraMaterialStage === null && stage !== undefined && stage !== null) {
+                writeTetraMaterialStageTag(stage);
+            }
             console.log(`[Tetra Wheel Chair] Material "${key}" Build-ed. `);
         }
     };

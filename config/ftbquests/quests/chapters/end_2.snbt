@@ -543,8 +543,15 @@
 			dependencies: ["0A68F5EE8F25F036"]
 			id: "75914EDF01311D05"
 			tasks: [{
-				id: "7680E5BBC66BDBF9"
-				item: "minecraft:shulker_shell"
+				id: "0172B61FCD80B192"
+				item: {
+					Count: 1
+					id: "slashblade_sendims:structure_quill"
+					tag: {
+						skipKnown: 1b
+						targetStructure: "minecraft:end_city"
+					}
+				}
 				type: "item"
 			}]
 			x: 3.0d

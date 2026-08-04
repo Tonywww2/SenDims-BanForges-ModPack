@@ -1,4 +1,4 @@
-ServerEvents.highPriorityData(event => {
+ServerEvents.highPriorityData(event => withTetraMaterialStage(2, () => {
 
     tetraMaterialBuilder(event, "ironwood").setCategory("metal")
         .setPrimary(2.3).setSecondary(2.2).setTertiary(1.3)
@@ -367,4 +367,4 @@ ServerEvents.highPriorityData(event => {
         .setRequiredTool("hammer_dig", 1)
         .build();
 
-})
+}))

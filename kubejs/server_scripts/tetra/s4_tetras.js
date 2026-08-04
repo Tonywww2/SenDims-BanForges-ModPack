@@ -1,4 +1,4 @@
-ServerEvents.highPriorityData(event => {
+ServerEvents.highPriorityData(event => withTetraMaterialStage(4, () => {
 
     // 1. 硅小行星岩 / Silica-rich Asteroid Rock
     tetraMaterialBuilder(event, "silica_rich_asteroid_rock").setCategory("stone")
@@ -248,4 +248,4 @@ ServerEvents.highPriorityData(event => {
         .setCountFactor(0.6)
         .build();
 
-})
+}))

@@ -6,7 +6,8 @@ ServerEvents.tags("item", event => {
     // )
 
     event.add("itemfilters:check_nbt", [
-        "slashblade:slashblade"
+        "slashblade:slashblade",
+        'slashblade_sendims:structure_quill'
 
     ])
 

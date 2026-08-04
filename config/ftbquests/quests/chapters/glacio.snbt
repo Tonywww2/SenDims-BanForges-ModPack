@@ -9,32 +9,12 @@
 	order_index: 1
 	quest_enhance_decorative_lines: [ ]
 	quest_enhance_hidden_dependency_lines: [ ]
-	quest_links: [
-		{
-			id: "66DC3C42246FEE07"
-			linked_quest: "245C93D5DC91D776"
-			x: 2.5d
-			y: 7.5d
-		}
-		{
-			id: "5917093D24B5C7E6"
-			linked_quest: "5A155C23C2AB2163"
-			x: -2.5d
-			y: 7.5d
-		}
-		{
-			id: "58019A4B2041C254"
-			linked_quest: "672F4EFC4C5F2A46"
-			x: 0.0d
-			y: 10.0d
-		}
-		{
-			id: "2DC35CB3E6D3B03B"
-			linked_quest: "397C4E18445F7165"
-			x: -2.5d
-			y: -2.5d
-		}
-	]
+	quest_links: [{
+		id: "2DC35CB3E6D3B03B"
+		linked_quest: "397C4E18445F7165"
+		x: -2.5d
+		y: -2.5d
+	}]
 	quests: [
 		{
 			dependencies: [

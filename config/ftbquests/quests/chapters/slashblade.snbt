@@ -1249,6 +1249,7 @@
 				"69997238A9B0874C"
 				"0A68F5EE8F25F036"
 			]
+			dependency_requirement: "one_completed"
 			hide_until_deps_complete: true
 			id: "11728C2FAEFCBBAD"
 			rewards: [{

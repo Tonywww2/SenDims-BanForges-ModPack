@@ -1,5 +1,5 @@
 // priority: 100
-ServerEvents.highPriorityData(event => {
+ServerEvents.highPriorityData(event => withTetraMaterialStage(1, () => {
     // 石豆腐
     tetraMaterialBuilder(event, "tofuishi").setCategory("stone")
         .setPrimary(1.3).setSecondary(1.3).setTertiary(0.8)
@@ -319,4 +319,4 @@ ServerEvents.highPriorityData(event => {
         .setRequiredTool("cut", 1)
         .build();
 
-})
+}))

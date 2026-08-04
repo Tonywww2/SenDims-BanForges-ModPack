@@ -139,14 +139,15 @@ ServerEvents.recipes(event => {
         .id("sdbf:roukanken_nether_s4")
 
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
-        "BAC",
+        "BSB",
         "AXA",
-        "DAB"
+        "DAC"
     ], {
         "A": 'kubejs:basepoint_alloy',
         "B": 'draconicevolution:chaotic_core',
         "C": Item.of('slashblade:proudsoul_sphere', '{SpecialAttackType:"pseudoedge_break_dawn:kingblade"}').weakNBT(),
         "D": Item.of('slashblade:proudsoul_sphere', '{SpecialAttackType:"slashblade:void_slash"}').weakNBT(),
+        "S": 'last_smith:scroll_tengu_full',
         "X": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("last_smith:amagumo_kumo")

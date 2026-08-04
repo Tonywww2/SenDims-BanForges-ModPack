@@ -180,25 +180,31 @@
 			id: "1A558CB73E2B5D94"
 			linked_quest: "293BC8386BEEE985"
 			shape: "diamond"
-			x: 15.0d
+			x: 18.0d
 			y: -3.0d
 		}
 		{
 			id: "03746C58CBB02293"
 			linked_quest: "3FA025D25ADB8411"
-			x: 12.0d
+			x: 15.0d
 			y: -3.0d
 		}
 		{
 			id: "4580AAFB4D8C6260"
 			linked_quest: "15D102DE2394A495"
-			x: 6.0d
+			x: 9.0d
 			y: -3.0d
 		}
 		{
 			id: "083984E7C54A8FA2"
 			linked_quest: "2F9AAEA563550E3F"
-			x: 9.0d
+			x: 12.0d
+			y: -3.0d
+		}
+		{
+			id: "0D42D4FCB76975D1"
+			linked_quest: "3BA3C4A36599BD29"
+			x: 6.0d
 			y: -3.0d
 		}
 	]
@@ -594,6 +600,7 @@
 		}
 		{
 			dependencies: ["5BB642BD0BE40541"]
+			description: ["可以在冰霜洞穴找到"]
 			id: "76CFDB7C2E7B3AA4"
 			tasks: [{
 				id: "6330235EB52B8EAB"

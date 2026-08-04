@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
 
-    sqRecipe(event, "minecraft:end_city", 'minecraft:shulker_shell', 1, "s3");
+    sqRecipe(event, "minecraft:end_city", 'minecraft:popped_chorus_fruit', 1, "s3");
 
     event.shapeless("minecraft:ender_eye", [
         "minecraft:ender_pearl",

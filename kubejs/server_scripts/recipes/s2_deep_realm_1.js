@@ -91,4 +91,17 @@ ServerEvents.recipes(event => {
     }, "sjap_adder:break_moon")
         .id("sdbf:break_moon_s2")
 
+    event.custom({
+        "type": "sakura:stone_mortar",
+        "experience": 0.0,
+        "ingredients": [
+            { "item": 'minecraft:stone' }
+        ],
+        "recipeTime": 200,
+        "results": [
+            { "item": "minecraft:cobblestone" },
+            { "count": 2, "item": "sakura:alkaline" }
+        ]
+    }).id("sdbf:alkaline_s2")
+
 })

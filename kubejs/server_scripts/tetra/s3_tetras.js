@@ -1,4 +1,4 @@
-ServerEvents.highPriorityData(event => {
+ServerEvents.highPriorityData(event => withTetraMaterialStage(3, () => {
 
     // 1. 金星石 (新加)
     tetraMaterialBuilder(event, "venus_stone").setCategory("stone")
@@ -434,4 +434,4 @@ ServerEvents.highPriorityData(event => {
         .setRequiredTool("hammer_dig", 1)
         .build();
 
-})
+}))
