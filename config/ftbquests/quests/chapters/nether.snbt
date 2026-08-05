@@ -459,6 +459,7 @@
 		{
 			dependencies: ["1F9B9C1CBB5B9659"]
 			id: "090010A46891A693"
+			size: 1.5d
 			tasks: [{
 				id: "209AF9EA43AB07F2"
 				item: {
@@ -599,6 +600,42 @@
 			}]
 			x: 15.0d
 			y: 3.0d
+		}
+		{
+			dependencies: ["090010A46891A693"]
+			id: "2819EBE608DE2631"
+			size: 1.5d
+			tasks: [{
+				id: "41C69BDABC37AF06"
+				item: {
+					Count: 1
+					id: "gateways:gate_pearl"
+					tag: {
+						gateway: "gateways:sdbf_nether_g2"
+					}
+				}
+				type: "item"
+			}]
+			x: 9.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["090010A46891A693"]
+			id: "152CAD374C67D2E3"
+			size: 1.5d
+			tasks: [{
+				id: "221F7120312AE163"
+				item: {
+					Count: 1
+					id: "gateways:gate_pearl"
+					tag: {
+						gateway: "gateways:sdbf_nether_g3"
+					}
+				}
+				type: "item"
+			}]
+			x: 9.0d
+			y: 12.0d
 		}
 	]
 	title: "&e下界"

@@ -7,6 +7,7 @@
     "item.kubejs.gamma_dust": "§cγ 尘§r",
     "item.kubejs.delta_dust": "§dδ 尘§r",
     "item.kubejs.epsilon_dust": "§eε 尘§r",
+    "item.kubejs.high_carbon_iron_dust": "高碳铁粉",
 
     "item.kubejs.garden_lighter": "花园火石",
     "item.kubejs.bedrock_breaker": "基岩破坏者",
@@ -110,6 +111,8 @@
     "gateways.sdbf_dr1_g2": "深境一层 [机械] 怪潮传送门",
     "gateways.sdbf_moon_g1": "月球 怪潮 传送门",
     "gateways.sdbf_nether_g1": "下界 怪潮 传送门",
+    "gateways.sdbf_nether_g2": "下界 [无尽近战] 怪潮传送门",
+    "gateways.sdbf_nether_g3": "下界 [神话首领] 怪潮传送门",
     "gateways.sdbf_mars_g1": "火星 怪潮 传送门",
     "gateways.sdbf_sr_ayeti": "土星环 [全力] 雪怪首领 传送门",
     "gateways.sdbf_sr_kp": "土星环 [全力] 幻影骑士 传送门",

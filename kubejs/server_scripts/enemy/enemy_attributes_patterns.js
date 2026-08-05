@@ -206,8 +206,8 @@ const bossType2EX2 = deriveTemplate(typeAEX2,
  */
 const bossTypeHydra = deriveTemplate(typeAEX2,
     true,
-    [1.1, 9, 0.5, 1],
-    [0, 0, 0, 20]
+    [1.1, 3, 0, 1],
+    [0, 0, 0, 5]
 );
 /**
  * BOSS 雪怪王

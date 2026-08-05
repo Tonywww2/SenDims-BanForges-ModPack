@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
         "A": "twilightforest:knightmetal_ring",
         "D": '#forge:storage_blocks/fiery',
         "F": "twilightforest:hydra_trophy",
-        "I": ['ad_astra:infernal_spire_block', 'kubejs:anchor_shard'],
+        "I": ['ad_astra:infernal_spire_block', "the_bumblezone:crystalline_flower"],
         "B": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("slashblade_addon:murakumo")
@@ -78,7 +78,7 @@ ServerEvents.recipes(event => {
         "GCE"
     ], {
         "B": "slashblade:proudsoul_ingot",
-        "C": ['ad_astra:venus_sand', 'kubejs:anchor_shard'],
+        "C": ['ad_astra:venus_sand', "the_bumblezone:crystalline_flower"],
         "E": "minecraft:redstone_block",
         "D": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()

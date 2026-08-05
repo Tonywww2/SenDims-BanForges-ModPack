@@ -36,6 +36,26 @@ ServerEvents.recipes(event => {
         C: '#forge:storage_blocks/quartz'
     }).id('sdbf:sdbf_nether_g1_s2')
 
+    event.shaped(Item.of('gateways:gate_pearl', '{gateway:"gateways:sdbf_nether_g2"}'), [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'minecraft:nether_bricks',
+        B: 'minecraft:magma_cream',
+        C: 'minecraft:crying_obsidian'
+    }).id('sdbf:sdbf_nether_g2_s2')
+
+    event.shaped(Item.of('gateways:gate_pearl', '{gateway:"gateways:sdbf_nether_g3"}'), [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'minecraft:nether_bricks',
+        B: 'apotheosis:gem_dust',
+        C: 'minecraft:netherite_scrap'
+    }).id('sdbf:sdbf_nether_g3_s2')
+
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
         "SNJ",
         "LBD",

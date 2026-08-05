@@ -299,6 +299,15 @@ ServerEvents.recipes(event => {
         }
     }).id("sdbf:backpack_d_n")
 
+    event.shapeless('kubejs:high_carbon_iron_dust', [
+        'thermal:iron_dust',
+        'nuclearcraft:charcoal_dust',
+        'nuclearcraft:charcoal_dust'
+    ]).id('sdbf:high_carbon_iron_dust')
+
+    event.blasting('thermal:steel_ingot', 'kubejs:high_carbon_iron_dust', 0, 600)
+        .id('sdbf:steel_ingot_from_high_carbon_iron_dust')
+
     event.blasting('slashblade:proudsoul_tiny', [
         'slashblade_useful_addon:proud_soul_log'
     ], 0, 1200).id("sdbf:proudsoul_tiny_from_log")

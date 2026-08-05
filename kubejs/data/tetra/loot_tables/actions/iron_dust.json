@@ -1,0 +1,23 @@
+{
+    "pools":
+    [
+        {
+            "name": "drop_iron_dust",
+            "rolls": 1,
+            "entries":
+            [
+                {
+                    "type": "minecraft:item",
+                    "name": "thermal:iron_dust"
+                }
+            ],
+            "conditions":
+            [
+                {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.95
+                }
+            ]
+        }
+    ]
+}

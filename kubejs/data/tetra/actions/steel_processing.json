@@ -1,0 +1,33 @@
+[
+    {
+        "key": "hammer_iron_ingot_action",
+        "requirement":
+        {
+            "items":
+            [
+                "minecraft:iron_ingot"
+            ]
+        },
+        "requiredTools":
+        {
+            "hammer_dig": "minecraft:stone"
+        },
+        "lootTable": "tetra:actions/iron_dust"
+    },
+    {
+        "key": "hammer_carbon_fuel_action",
+        "requirement":
+        {
+            "items":
+            [
+                "minecraft:charcoal",
+                "minecraft:coal"
+            ]
+        },
+        "requiredTools":
+        {
+            "hammer_dig": "minecraft:stone"
+        },
+        "lootTable": "tetra:actions/charcoal_dust"
+    }
+]

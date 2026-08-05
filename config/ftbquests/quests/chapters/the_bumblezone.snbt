@@ -51,6 +51,18 @@
 			x: 24.0d
 			y: -3.0d
 		}
+		{
+			id: "4CDA3DAA711A9C8B"
+			linked_quest: "6477045E03EE3F9E"
+			x: 3.0d
+			y: 9.0d
+		}
+		{
+			id: "4E6D3E10F4BA3A7E"
+			linked_quest: "63D9F90A01E19D8A"
+			x: 3.0d
+			y: 12.0d
+		}
 	]
 	quests: [
 		{

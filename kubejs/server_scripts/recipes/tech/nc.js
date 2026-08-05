@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
         'BCB',
         'ABA'
     ], {
-        A: '#forge:dusts/graphite',
+        A: ['#forge:dusts/graphite', '#forge:storage_blocks/charcoal', '#forge:storage_blocks/coal'],
         B: '#forge:ingots/lead',
         C: 'integrateddynamics:crystalized_menril_block_slab'
     }).id('sdbf:plate_basic')

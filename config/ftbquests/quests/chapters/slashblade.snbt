@@ -893,7 +893,11 @@
 		}
 		{
 			dependencies: ["371880BF8A2A75FC"]
-			description: ["无名拥有大量的分支，你可以通过各各章节的任务或者JEI查询。"]
+			description: [
+				"无名拥有大量的分支，你可以通过各各章节的任务或者JEI查询。"
+				""
+				"&b提示：&r也可以使用两把封/印/妖刀（少部分的刀不行）合成无名，但是会清空数据。"
+			]
 			icon: {
 				Count: 1
 				id: "minecraft:iron_sword"

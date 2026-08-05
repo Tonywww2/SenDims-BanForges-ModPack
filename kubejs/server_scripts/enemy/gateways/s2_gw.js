@@ -66,6 +66,47 @@ ServerEvents.highPriorityData(event => {
         completion: { "slashblade:proudsoul": 8, 'minecraft:netherite_scrap': 2, 'apotheosis:gem_dust': 2 },
     });
 
+    Gateway.customBuilder("gateways:sdbf_nether_g3")
+        .size("medium")
+        .color(0x6e0f0f)
+        .spawnRange(16)
+        .leashRange(48)
+        .allowDiscarding(false)
+        .allowDimChange(false)
+        .playerDamageOnly(false)
+        .removeMobsOnFailure(true)
+        .failOnOutOfBounds(false)
+        .spacing(16)
+        .followRangeBoost(32)
+        .defaultDropChance(0)
+        .addAttribute("minecraft:generic.knockback_resistance", 0.9)
+        .addWave(wave => {
+            wave.addApotheosisBoss("apotheosis:the_nether/piglin_brute");
+            wave.maxTime(2000);
+            wave.setupTime(100);
+            wave.addReward("slashblade:proudsoul_tiny", 2);
+            wave.addExperienceReward(60, 10);
+        })
+        .addWave(wave => {
+            wave.addApotheosisBoss("apotheosis:the_nether/wither_skeleton");
+            wave.addAttribute("minecraft:generic.max_health", 0.25, "multiply_total");
+            wave.addAttribute("minecraft:generic.attack_damage", 1);
+            wave.maxTime(2400);
+            wave.setupTime(100);
+            wave.addReward("slashblade:proudsoul_tiny", 2);
+            wave.addExperienceReward(90, 10);
+        })
+        .addWave(wave => {
+            wave.addApotheosisBoss("apotheosis:the_nether/zombified_piglin");
+            wave.addAttribute("minecraft:generic.max_health", 0.5, "multiply_total");
+            wave.addAttribute("minecraft:generic.attack_damage", 2);
+            wave.maxTime(2800);
+            wave.setupTime(120);
+            wave.addReward("slashblade:proudsoul_tiny", 2);
+            wave.addExperienceReward(120, 10);
+        })
+        .register();
+
     createMythicGateway("sdbf_mars_g1", 0xff7070, {
         normals: ['ad_astra:martian_raptor', 'minecraft:husk', 'minecraft:phantom'],
         waveCounts: [[5, 3, 2], [7, 5, 3], [10, 7, 4]],

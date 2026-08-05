@@ -524,11 +524,19 @@
 			description: ["提示：手持锋利的燧石片右键"]
 			hide_until_deps_complete: true
 			id: "5A6129A375A1B07E"
-			rewards: [{
-				id: "63C96F981EA62DB3"
-				type: "xp"
-				xp: 100
-			}]
+			rewards: [
+				{
+					id: "63C96F981EA62DB3"
+					type: "xp"
+					xp: 100
+				}
+				{
+					auto: "enabled"
+					id: "2769617083C46680"
+					item: "rehooked:wood_hook"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "4C384E9DE553D818"
 				item: "dustandash:sharpen_flint"

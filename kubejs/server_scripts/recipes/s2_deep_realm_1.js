@@ -5,6 +5,11 @@ ServerEvents.recipes(event => {
     sqRecipe(event, "cavernous:stone_village", '#forge:cobblestone', 0, "s2");
     sqRecipe(event, "dungeons_arise:plague_asylum", 'ad_astra:etrionic_capacitor', 0, "s2");
 
+    event.shapeless('3x thermal:steel_ingot', [
+        'cataclysm:witherite_ingot'
+    ]).id("sdbf:steel_ingot_from_witherite_ingot_s2")
+
+
     event.shaped(Item.of('gateways:gate_pearl', '{gateway:"gateways:sdbf_dr1_g1"}'), [
         'ABA',
         'BCB',

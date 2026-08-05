@@ -11,18 +11,6 @@
 	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [
 		{
-			id: "4CDA3DAA711A9C8B"
-			linked_quest: "6477045E03EE3F9E"
-			x: 0.0d
-			y: 6.0d
-		}
-		{
-			id: "4E6D3E10F4BA3A7E"
-			linked_quest: "63D9F90A01E19D8A"
-			x: 0.0d
-			y: 9.0d
-		}
-		{
 			id: "02B9BE488D8FDF75"
 			linked_quest: "4138021AE4A37632"
 			x: 9.0d

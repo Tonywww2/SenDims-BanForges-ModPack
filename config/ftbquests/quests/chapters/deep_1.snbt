@@ -416,8 +416,8 @@
 				item: "minecraft:sculk_catalyst"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 24.0d
+			x: 9.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["5BB642BD0BE40541"]
@@ -500,8 +500,8 @@
 				}
 				type: "item"
 			}]
-			x: 9.0d
-			y: 24.0d
+			x: 12.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["1DE54DDD04540738"]
@@ -596,7 +596,14 @@
 				"5BB642BD0BE40541"
 			]
 			dependency_requirement: "one_completed"
+			description: ["提示：可以分解为钢锭"]
 			id: "09282B67B7D8CF17"
+			rewards: [{
+				count: 2
+				id: "6D3869CD66F3D866"
+				item: "thermal:steel_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2AEEF4187226FAED"
 				item: "cataclysm:witherite_ingot"
