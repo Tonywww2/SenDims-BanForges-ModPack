@@ -260,7 +260,12 @@
 			y: -5.0d
 		}
 		{
-			dependencies: ["2270E6360EAB923F"]
+			dependencies: [
+				"2270E6360EAB923F"
+				"370F691D89AF5467"
+			]
+			dependency_requirement: "one_completed"
+			description: ["提示：&b逻辑线缆&r拥有两种合成方法，其中一种可以在游戏的早期制作。"]
 			id: "27FEFCB730786A9B"
 			tasks: [{
 				id: "4929507EA9B32E04"
@@ -271,7 +276,11 @@
 			y: -5.0d
 		}
 		{
-			dependencies: ["27FEFCB730786A9B"]
+			dependencies: [
+				"27FEFCB730786A9B"
+				"4B44FD83A325F2F6"
+			]
+			description: ["提示：&b物品接口&r拥有两种合成方法，其中一种可以在游戏的早期制作。"]
 			id: "65C246346C2C237E"
 			tasks: [{
 				id: "4AF741D0DD3F95A3"
@@ -282,28 +291,26 @@
 			y: -7.5d
 		}
 		{
-			dependencies: ["27FEFCB730786A9B"]
+			dependencies: [
+				"27FEFCB730786A9B"
+				"6005126CA254EC52"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"{image:sdbf:textures/gui/id_simple.png width:199 height:143 align:center fit:true}"
 				""
 				"使用&b逻辑线缆&r和&b物品接口&r将容器（箱子等）连接起来，就可以使用&b存储终端&r访问了。"
+				""
+				"提示：&b存储终端&r拥有两种合成方法，其中一种可以在游戏的早期制作。"
 			]
 			id: "54651F3B69334CF1"
-			rewards: [
-				{
-					count: 4
-					id: "62A966260E972CCB"
-					item: "integratedtunnels:part_interface_item"
-					type: "item"
-				}
-				{
-					count: 4
-					id: "6977F795889C9CF1"
-					item: "integrateddynamics:cable"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "6977F795889C9CF1"
+				item: "integrateddynamics:cable"
+				type: "item"
+			}]
 			shape: "diamond"
+			size: 1.5d
 			tasks: [{
 				id: "1A26021D56EEDF5E"
 				item: "integratedterminals:part_terminal_storage"

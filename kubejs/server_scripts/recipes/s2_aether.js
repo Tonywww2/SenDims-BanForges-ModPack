@@ -15,6 +15,25 @@ ServerEvents.recipes(event => {
     event.smelting('aether_treasure_reforging:valkyrum_ingot',
         ['ancient_aether:valkyrum']
         , 0, 400).id('sdbf:valkyrum_valkyrum_ingot_s2')
+        
+    event.shaped('integrateddynamics:cable', [
+        'AAA',
+        'BCB',
+        'AAA'
+    ], {
+        A: 'ancient_aether:aerogel_glass',
+        B: 'deep_aether:metal_mixture',
+        C: 'minecraft:repeater'
+    }).id('sdbf:cable_s2')
+        
+    event.shaped('integratedtunnels:part_interface_item', [
+        'ABA',
+        'ACA'
+    ], {
+        A: 'deep_aether:metal_mixture',
+        B: 'storagedrawers:controller_slave',
+        C: 'aether_treasure_reforging:valkyrum_ingot'
+    }).id('sdbf:part_interface_item_s2')
 
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
         "ABC",

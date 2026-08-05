@@ -26,6 +26,17 @@ ServerEvents.recipes(event => {
         D: 'cataclysm:witherite_ingot'
     }).id('sdbf:sdbf_dr1_g2_s2')
 
+    event.shaped('integratedterminals:part_terminal_storage', [
+        'ABA',
+        'BCB',
+        'ADA'
+    ], {
+        A: 'minecraft:hopper',
+        B: '#quark:framed_glasses',
+        C: 'cataclysm:mech_eye',
+        D: 'cataclysm:witherite_ingot'
+    }).id('sdbf:part_terminal_storage_s2')
+
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
         "ESD",
         "RBL",

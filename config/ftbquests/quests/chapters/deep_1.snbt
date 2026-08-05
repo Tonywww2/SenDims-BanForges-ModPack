@@ -207,6 +207,14 @@
 			x: 6.0d
 			y: -3.0d
 		}
+		{
+			id: "5ADCB31C3ABE77A1"
+			linked_quest: "54651F3B69334CF1"
+			shape: "diamond"
+			size: 1.5d
+			x: 18.0d
+			y: 6.0d
+		}
 	]
 	quests: [
 		{
@@ -391,8 +399,7 @@
 			dependencies: ["2EADF063117EE157"]
 			description: ["先驱者可以使用钻石激活"]
 			id: "6005126CA254EC52"
-			shape: "pentagon"
-			size: 2.0d
+			size: 1.5d
 			tasks: [{
 				id: "15CEF9F2A96CEB19"
 				item: "cataclysm:mech_eye"

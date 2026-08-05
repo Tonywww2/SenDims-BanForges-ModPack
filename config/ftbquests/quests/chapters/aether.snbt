@@ -24,6 +24,22 @@
 			x: 18.0d
 			y: 0.0d
 		}
+		{
+			id: "00BF81BD1060AC96"
+			linked_quest: "27FEFCB730786A9B"
+			shape: "diamond"
+			size: 1.5d
+			x: 12.0d
+			y: 3.0d
+		}
+		{
+			id: "16AE5258BA6A9BBD"
+			linked_quest: "65C246346C2C237E"
+			shape: "diamond"
+			size: 1.5d
+			x: 12.0d
+			y: 6.0d
+		}
 	]
 	quests: [
 		{
@@ -80,7 +96,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 15.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["0F8DC1AEBBC762C1"]
@@ -124,7 +140,7 @@
 			}]
 			title: "白银地牢"
 			x: 6.0d
-			y: 15.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -139,8 +155,8 @@
 				type: "structure"
 			}]
 			title: "黄金地牢"
-			x: 6.0d
-			y: 6.0d
+			x: 3.0d
+			y: 15.0d
 		}
 		{
 			dependencies: [
@@ -401,7 +417,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 15.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["6B7C4E19A6FD6939"]
@@ -412,7 +428,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 6.0d
+			y: 15.0d
 		}
 		{
 			dependencies: [
@@ -728,7 +744,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 15.0d
+			y: 9.0d
 		}
 	]
 	title: "&e天境"

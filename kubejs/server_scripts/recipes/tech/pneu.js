@@ -111,7 +111,7 @@ ServerEvents.recipes(event => {
         }, "input2": {
             "type": "pneumaticcraft:fluid",
             "amount": 50,
-            "tag": "forge:plastic"
+            "tag": "forge:lpg"
         },
         "item_output": {
             "item": 'dustandash:ash'

@@ -1,6 +1,14 @@
 ServerEvents.tags("block", event => {
     // event.removeAll('aether:aether_portal_blocks')
 
+    event.add('forge:ores', [
+        '#c:ores',
+        'ad_astra:moon_cheese_ore',
+        'aether_redux:veridium_ore',
+        'deep_aether:skyjade_ore',
+        'tofucraft:tofuslate_tofu_diamond_ore'
+    ])
+
     // event.add('aether:aether_portal_blocks',
     //     'aether:ambrosium_block'
     // )

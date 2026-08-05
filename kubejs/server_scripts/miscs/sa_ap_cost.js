@@ -14,6 +14,7 @@ SACostMap.put("foxextra:voidslashplus", [500, 0.2]);
 
 SACostMap.put("slashblade:wave_edge_vertical", [200, 0.05]);
 SACostMap.put("slashblade:drive_horizontal", [200, 0.05]);
+SACostMap.put("slashblade:drive_vertical", [200, 0.05]);
 SACostMap.put("slashblade_sendims:wave_edge_ammo", [400, 0.2]);
 
 SACostMap.put("slashblade:heavens_slash_start", [200, 0.15]);

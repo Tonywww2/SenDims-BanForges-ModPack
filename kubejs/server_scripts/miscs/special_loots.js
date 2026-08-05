@@ -1,6 +1,18 @@
 LootJS.modifiers(event => {
     let chestModifier = event.addLootTypeModifier(LootType.CHEST);
 
+    event.addLootTypeModifier(
+        LootType.UNKNOWN,
+        LootType.BLOCK,
+        LootType.ENTITY,
+        LootType.CHEST,
+        LootType.FISHING,
+        LootType.GIFT,
+        LootType.PIGLIN_BARTER,
+        LootType.ADVANCEMENT_ENTITY,
+        LootType.ADVANCEMENT_REWARD
+    ).removeLoot(ItemFilter.POTION);
+
     event.addEntityLootModifier('final_samurai:samurai')
         .pool(p => {
             p.addLoot(LootEntry.of('slashblade:proudsoul_ingot').limitCount([2, 4]));
