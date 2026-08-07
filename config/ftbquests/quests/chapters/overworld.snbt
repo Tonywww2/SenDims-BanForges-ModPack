@@ -14,13 +14,13 @@
 			id: "02B9BE488D8FDF75"
 			linked_quest: "4138021AE4A37632"
 			x: 9.0d
-			y: -3.0d
+			y: 3.0d
 		}
 		{
 			id: "29E3B28E4A0C2484"
 			linked_quest: "651A03F2219EBCDE"
 			x: 9.0d
-			y: 3.0d
+			y: 9.0d
 		}
 	]
 	quests: [
@@ -48,7 +48,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 3.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -63,7 +63,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 0.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -87,7 +87,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 0.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -112,8 +112,8 @@
 				}
 				type: "item"
 			}]
-			x: 6.0d
-			y: 6.0d
+			x: 3.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -138,8 +138,8 @@
 				}
 				type: "item"
 			}]
-			x: 6.0d
-			y: 3.0d
+			x: 3.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["713CA11C25A8A2E2"]
@@ -151,7 +151,7 @@
 				type: "structure"
 			}]
 			x: 3.0d
-			y: -3.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["713CA11C25A8A2E2"]
@@ -177,7 +177,7 @@
 			}]
 			title: "神化尖塔"
 			x: 3.0d
-			y: 0.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -203,8 +203,8 @@
 				}
 				type: "item"
 			}]
-			x: 6.0d
-			y: 9.0d
+			x: 3.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["56C9FAAD7AD47F1A"]
@@ -215,7 +215,64 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["713CA11C25A8A2E2"]
+			id: "02E6CE202E6EF60E"
+			tasks: [{
+				id: "730AD50EBD5B162A"
+				item: "sgjourney:golden_idol"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["02E6CE202E6EF60E"]
+			id: "0964978805C0D606"
+			tasks: [{
+				id: "670ECB0AE26BA4B0"
+				item: "sgjourney:archeology_table"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"713CA11C25A8A2E2"
+				"0964978805C0D606"
+			]
+			dependency_requirement: "one_completed"
+			id: "4BABF9CAFF0F35FB"
+			shape: "hexagon"
+			tasks: [{
+				icon: "sgjourney:milky_way_stargate"
+				id: "44DE42205086CB0C"
+				observe_type: 0
+				timer: 0L
+				title: "观察：银河星门"
+				to_observe: "sgjourney:milky_way_ring"
+				type: "observation"
+			}]
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4BABF9CAFF0F35FB"]
+			id: "6925E412FDC9E153"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				dimension: "sgjourney:abydos"
+				icon: "minecraft:sand"
+				id: "5971119DA0E698E9"
+				title: "阿比多斯"
+				type: "dimension"
+			}]
+			x: 21.0d
+			y: 0.0d
 		}
 	]
 	title: "&e空岛之下"

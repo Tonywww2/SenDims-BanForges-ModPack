@@ -3,7 +3,12 @@
     "generator": {
         "type": "minecraft:noise",
         "biome_source": {
-            "type": "minecraft:the_end"
+            "type": "slashblade_sendims:remapped_end",
+            "end": "sdbf:inside_the_end/the_end",
+            "highlands": "sdbf:inside_the_end/end_highlands",
+            "midlands": "sdbf:inside_the_end/end_midlands",
+            "islands": "sdbf:inside_the_end/small_end_islands",
+            "barrens": "sdbf:inside_the_end/end_barrens"
         },
         "settings": "sdbf:end"
     }

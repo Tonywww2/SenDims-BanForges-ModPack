@@ -1333,6 +1333,17 @@ sdbf:asteroid_belt/thorium_ore_geode
 sdbf:asteroid_belt/tin_ore_geode
 sdbf:asteroid_belt/uranium_ore_geode
 sdbf:flowers_meneglin
+sgjourney:blackstone_naquadah_spire
+sgjourney:lake_water
+sgjourney:ore_naquadah_large
+sgjourney:ore_naquadah_medium
+sgjourney:ore_naquadah_medium_nether
+sgjourney:ore_trinium_medium
+sgjourney:patch_unity
+sgjourney:rock
+sgjourney:spring_lava_tollan
+sgjourney:stone_naquadah_spire
+sgjourney:tollan_lake_lava
 slashblade_useful_addon:deep_proud_soul_ore
 slashblade_useful_addon:proud_soul_ore
 slashblade_useful_addon:proud_soul_tree

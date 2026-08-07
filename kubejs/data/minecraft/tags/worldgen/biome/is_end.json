@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "sdbf:inside_the_end/the_end",
+    "sdbf:inside_the_end/end_highlands",
+    "sdbf:inside_the_end/end_midlands",
+    "sdbf:inside_the_end/small_end_islands",
+    "sdbf:inside_the_end/end_barrens"
+  ]
+}

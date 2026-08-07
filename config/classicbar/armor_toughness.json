@@ -15,7 +15,7 @@
         "show_icon": true,
         "icon": "classicbar:textures/gui/health.png",
         "enabled": true,
-        "side": "right",
+        "side": "left",
         "fitted": true
     }
 }

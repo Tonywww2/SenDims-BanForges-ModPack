@@ -1,0 +1,23 @@
+{
+    "pools":
+    [
+        {
+            "name": "drop_tin_dust",
+            "rolls": 1,
+            "entries":
+            [
+                {
+                    "type": "minecraft:item",
+                    "name": "thermal:tin_dust"
+                }
+            ],
+            "conditions":
+            [
+                {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.2
+                }
+            ]
+        }
+    ]
+}

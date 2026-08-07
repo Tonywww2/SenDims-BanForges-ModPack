@@ -4,24 +4,24 @@
 	#Show chapters where all quests are completed
 	showCompletedChapters = false
 	#Show quest chain progress in quest list
-	showChainInList = false
+	showChainInList = true
 	#Show chapters with no visible quests
 	showEmptyChapters = false
 
 [hud]
 	#Show the HUD overlay
 	hudEnabled = true
-	hudShowCompletedTasks = false
+	hudShowCompletedTasks = true
 	#Range: 0 ~ 1920
-	hudPosX = 4
+	hudPosX = 0
 	#Range: 0 ~ 1080
-	hudPosY = 104
+	hudPosY = 96
 	#Show quest chain progress in HUD
-	showChainInHud = false
+	showChainInHud = true
 
 [general]
 	#Range: -1 ~ 9223372036854775807
-	trackedQuestId = -1
+	trackedQuestId = 458956467830659036
 	hudAutoTrack = true
 	hudAutoTrackMulti = true
 	#Enable UI sounds

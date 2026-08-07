@@ -13,6 +13,16 @@ ServerEvents.recipes(event => {
         F: 'kubejs:chorus_logic_composite_coil'
     }).id('sdbf:basepoint_alloy_s4')
 
+    event.shaped('draconicevolution:draconium_core', [
+        'ABA',
+        'CDC',
+        'ACA'
+    ], {
+        A: 'draconicevolution:draconium_ingot',
+        B: 'kubejs:alpha_dust',
+        C: '#forge:ingots/gold',
+        D: 'thermal:machine_frame'
+    }).id('sdbf:draconium_core_s4')
 
     event.custom({
         "type": "ad_astra:nasa_workbench",

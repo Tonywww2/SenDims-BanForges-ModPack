@@ -1,7 +1,25 @@
 let GEM_TICKET_DIM_PATH = "sdbf.gt.dim";
 let LIMIT_DIMENSTION_KEY = "sdbf.use_in";
+const STAR_CHART_GALACTIC_ADDRESSES_KEY = 'sdbf.sgjourney.galactic_addresses';
 const $SlashArtsRegistry = Java.loadClass("mods.flammpfeil.slashblade.registry.SlashArtsRegistry");
 const $ResourceLocation = Java.loadClass("net.minecraft.resources.ResourceLocation");
+
+const STAR_CHART_DIMENSION_KEYS = {
+    'ad_astra:moon': 'dimension.ad_astra.moon',
+    'ad_astra:mars': 'dimension.ad_astra.mars',
+    'ad_astra:venus': 'dimension.ad_astra.venus',
+    'ad_astra:mercury': 'dimension.ad_astra.mercury',
+    'sdbf:asteroid_belt': 'dimension.sdbf.asteroid_belt',
+    'sdbf:inside_the_end': 'dimension.sdbf.inside_the_end',
+    'slashblade_sendims:saturn_ring': 'dimension.slashblade_sendims.saturn_ring',
+    'ad_astra:glacio': 'dimension.ad_astra.glacio',
+    'titan_moon:titan': 'dimension.kubejs.titan'
+};
+
+function getStarChartDimensionName(dimension) {
+    let translationKey = STAR_CHART_DIMENSION_KEYS[dimension];
+    return translationKey ? Text.translatable(translationKey) : Text.of(dimension);
+}
 
 
 ItemEvents.tooltip(event => {
@@ -100,6 +118,50 @@ ItemEvents.tooltip(event => {
         if (item.nbt && item.nbt.getString(GEM_TICKET_DIM_PATH)) {
             text.add(Text.of(item.nbt.getString(GEM_TICKET_DIM_PATH)).color(Color.WHITE));
 
+        }
+    })
+
+    event.addAdvanced('kubejs:star_chart_fragment', (item, advanced, text) => {
+        text.add(Text.translatable('info.kubejs.star_chart_fragment.collect').color(Color.GRAY));
+
+        let dimension = item.nbt && item.nbt.getString('dimension');
+        if (dimension) {
+            text.add(Text.translatable('info.kubejs.star_chart_fragment.dimension',
+                getStarChartDimensionName(dimension)).color(Color.AQUA));
+        } else {
+            text.add(Text.translatable('info.kubejs.star_chart.unbound').color(Color.RED));
+        }
+    })
+
+    event.addAdvanced('kubejs:star_chart', (item, advanced, text) => {
+        if (!item.nbt || !item.nbt.contains('dimensions', 9)) {
+            text.add(Text.translatable('info.kubejs.star_chart.unbound').color(Color.RED));
+            return;
+        }
+
+        text.add(Text.translatable('info.kubejs.star_chart.dimensions').color(Color.AQUA));
+        let dimensions = item.nbt.getList('dimensions', 8);
+        let addresses = item.nbt.contains(STAR_CHART_GALACTIC_ADDRESSES_KEY, 9)
+            ? item.nbt.getList(STAR_CHART_GALACTIC_ADDRESSES_KEY, 8)
+            : null;
+
+        for (let index = 0; index < dimensions.size(); index++) {
+            let line = Text.of(`${index + 1}. `)
+                .append(getStarChartDimensionName(dimensions.getString(index)))
+                .color(Color.GRAY);
+
+            if (addresses) {
+                let address = index < addresses.size() ? addresses.getString(index) : '';
+                line.append(address
+                    ? Text.translatable('info.kubejs.star_chart.galactic_address', address).color(Color.AQUA)
+                    : Text.translatable('info.kubejs.star_chart.address_unavailable').color(Color.RED));
+            }
+
+            text.add(line);
+        }
+
+        if (!addresses) {
+            text.add(Text.translatable('info.kubejs.star_chart.sync_hint').color(Color.YELLOW));
         }
     })
 

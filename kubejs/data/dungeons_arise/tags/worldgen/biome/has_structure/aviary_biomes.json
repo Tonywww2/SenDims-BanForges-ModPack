@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "minecraft:end_midlands",
-    "minecraft:end_highlands"
+    "minecraft:end_highlands",
+    "sdbf:inside_the_end/end_midlands",
+    "sdbf:inside_the_end/end_highlands"
   ]
 }

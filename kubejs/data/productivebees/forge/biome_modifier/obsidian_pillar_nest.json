@@ -1,0 +1,10 @@
+{
+  "biomes": [
+    "minecraft:the_end",
+    "sdbf:inside_the_end/the_end"
+  ],
+  "generation_stage": "TOP_LAYER_MODIFICATION",
+  "features": "productivebees:obsidian_pillar_nest",
+  "type": "productivebees:nest",
+  "maxTemperature": 100
+}

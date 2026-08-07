@@ -52,6 +52,18 @@
       ],
       "bookmarks": [],
       "completedManualQuests": []
+    },
+    "sgjourney:stargate_journey": {
+      "viewedEntries": [
+        "sgjourney:stargate/universe_stargate",
+        "sgjourney:planets/unitas",
+        "sgjourney:getting_started/archeology",
+        "sgjourney:getting_started/finding_stargate",
+        "sgjourney:getting_started/stargates_and_dialing",
+        "sgjourney:getting_started/dhds"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
     }
   }
 }

@@ -29,5 +29,32 @@
             "hammer_dig": "minecraft:stone"
         },
         "lootTable": "tetra:actions/charcoal_dust"
+    },
+    {
+        "key": "hammer_copper_ingot_action",
+        "requirement":
+        {
+            "items":
+            [
+                "minecraft:copper_ingot"
+            ]
+        },
+        "requiredTools":
+        {
+            "hammer_dig": "minecraft:stone"
+        },
+        "lootTable": "tetra:actions/copper_dust"
+    },
+    {
+        "key": "hammer_quartz_ore_action",
+        "requirement":
+        {
+            "tag": "forge:ores/quartz"
+        },
+        "requiredTools":
+        {
+            "hammer_dig": "minecraft:stone"
+        },
+        "lootTable": "tetra:actions/tin_dust"
     }
 ]

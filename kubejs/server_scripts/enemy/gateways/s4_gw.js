@@ -74,6 +74,7 @@ ServerEvents.highPriorityData(event => {
         })
         // ── 完成奖励 ──
         .addReward("slashblade:proudsoul", 12)
+        .addLootTableReward("kubejs:rewards/star_chart_fragment", 1, "item.kubejs.star_chart_fragment")
         .register();
 
     Gateway.customBuilder("gateways:sdbf_sr_kp")
@@ -147,6 +148,7 @@ ServerEvents.highPriorityData(event => {
         })
         // ── 完成奖励 ──
         .addReward("slashblade:proudsoul", 16)
+        .addLootTableReward("kubejs:rewards/star_chart_fragment", 1, "item.kubejs.star_chart_fragment")
         .register();
 
 })

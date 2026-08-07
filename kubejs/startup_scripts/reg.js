@@ -19,6 +19,22 @@ StartupEvents.registry('item', event => {
 
     event.create('gem_ticket').fireResistant().rarity('epic').maxStackSize(8)
 
+    event.create('star_chart_fragment').rarity('uncommon')
+    event.create('star_chart').rarity('rare').maxStackSize(1)
+
+    event.create('linear_quest_book')
+        .use((level, player, hand) => {
+            if (level.clientSide) {
+                if ($ClientQuestFile.exists()) {
+                    $Minecraft.getInstance().setScreen(new $QuestBrowserScreen());
+                } else {
+                    player.displayClientMessage(Text.translatable('info.kubejs.linear_quest_book.no_data'), true);
+                }
+            }
+
+            return true;
+        })
+
     event.create('scoria_ingot').fireResistant().rarity('rare')
     event.create('mysterious_alkali_crystal').fireResistant().rarity('rare')
     event.create('menril-silicon_sic_sic_cmc_ingot').fireResistant().rarity('epic')

@@ -8,6 +8,15 @@
 	pluginTiming = false
 	#Enable JEI registration count diagnostics.
 	registrationCounts = false
+	#Report which code is responsible when a JEI startup phase runs far longer than expected.
+	#Costs nothing until a phase passes stallThresholdSeconds; after that it samples the stack
+	#of the thread running the phase and logs where the time actually went.
+	#Purely observational: it never changes what runs, in what order, or on which thread.
+	stallWatchdog = true
+	#How long one JEI startup phase may run before the stall watchdog starts sampling it.
+	#0 samples every phase, which is noisy but useful when reproducing a report.
+	#Range: 0 ~ 300
+	stallThresholdSeconds = 10
 
 [syncOptimizations]
 	#Enable one-start UID/string/sort helper caches.
@@ -57,15 +66,21 @@
 	#Enabled by default.
 	asyncIngredientFilter = true
 	#Resolve recipe ingredient tags on worker threads before JEI validates recipes during startup.
-	#Workers only read recipe data and their results are discarded, so JEI's own validation and
-	#recipe registration still run unchanged on the main thread. Enabled by default.
+	#Experimental: modded recipes and lazy ingredient caches are not always thread-safe.
+	#JEI's own validation and registration still run unchanged on the main thread. Default false.
 	parallelVanillaRecipes = true
 
 [jeiContent]
 	#Hide JEI's generated anvil repair recipes (repairing an item with its crafting material).
-	#Also skips generating them during startup, which saves time. Default false.
+	#Also skips generating them during startup, which saves time. Default true.
 	disableAnvilRepairRecipes = true
 	#Hide JEI's generated anvil enchanting recipes (combining enchanted books on an anvil).
-	#Also skips generating them during startup, which saves time. Default false.
+	#Also skips generating them during startup, which saves time. Default true.
 	disableAnvilEnchantRecipes = true
+	#Emergency hatch: comma-separated creative tabs to hide from JEI, by tab id or by mod id.
+	#Use this when one mod's creative tab makes JEI's ingredient registration take minutes;
+	#the stall watchdog in the diagnostics section names the mod responsible.
+	#Items from a skipped tab will not appear in JEI at all. Default empty (nothing skipped).
+	#Example: skipCreativeTabs = "examplemod, othermod:special_tab"
+	skipCreativeTabs = ""
 

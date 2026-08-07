@@ -319,115 +319,6 @@
 	]
 	quests: [
 		{
-			description: ["记得先拿好箱子里面的锤子吧"]
-			hide_dependent_lines: true
-			icon: "minecraft:moss_block"
-			id: "62C0631125654B3D"
-			rewards: [
-				{
-					auto: "enabled"
-					id: "7BE3F3AD0264C266"
-					item: "ftbquests:book"
-					type: "item"
-				}
-				{
-					auto: "enabled"
-					id: "41FBB7B18647F051"
-					item: "akashictome:tome"
-					type: "item"
-				}
-				{
-					count: 16
-					id: "2C862CB6AB76E5EB"
-					item: "minecraft:torch"
-					type: "item"
-				}
-				{
-					auto: "enabled"
-					command: "/gamerule keepInventory true"
-					elevate_perms: true
-					id: "2FF697EF38A9BDDB"
-					title: "死亡不掉落"
-					type: "command"
-				}
-			]
-			size: 2.0d
-			subtitle: "从这里开始|第零个世界"
-			tasks: [{
-				dimension: "minecraft:overworld"
-				icon: "minecraft:moss_block"
-				id: "5BF92BA99335A6F1"
-				title: "主世界"
-				type: "dimension"
-			}]
-			title: "起点"
-			x: 0.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["62C0631125654B3D"]
-			description: ["催熟收获你的第一颗树"]
-			icon: "minecraft:flowering_azalea"
-			id: "36DD50AE28ECF216"
-			rewards: [{
-				count: 8
-				id: "27EA9C0E2F394549"
-				item: "minecraft:bone_meal"
-				type: "item"
-			}]
-			tasks: [
-				{
-					icon: "minecraft:flowering_azalea"
-					id: "10E7C6C12548EB7E"
-					observe_type: 1
-					timer: 0L
-					title: "杜鹃花丛"
-					to_observe: "minecraft:saplings"
-					type: "observation"
-				}
-				{
-					id: "38EB002BB38B437E"
-					item: "minecraft:bone_meal"
-					type: "item"
-				}
-			]
-			x: 3.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["36DD50AE28ECF216"]
-			id: "0C7B137A72152B01"
-			rewards: [
-				{
-					count: 4
-					id: "0DB66087BFEF6781"
-					item: "minecraft:bread"
-					type: "item"
-				}
-				{
-					count: 4
-					id: "612E4326BA1F4BCE"
-					item: "minecraft:bone_meal"
-					type: "item"
-				}
-			]
-			tasks: [{
-				icon: "quark:azalea_log"
-				id: "2CD15D73D94EA289"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "minecraft:logs"
-					}
-				}
-				title: "原木"
-				type: "item"
-			}]
-			x: 6.0d
-			y: 0.0d
-		}
-		{
 			dependencies: ["0C7B137A72152B01"]
 			id: "5748351A76910019"
 			rewards: [
@@ -1277,6 +1168,121 @@
 			title: "搜索附近容器的物品"
 			x: 6.0d
 			y: -3.0d
+		}
+		{
+			description: ["记得先拿好箱子里面的锤子吧"]
+			hide_dependent_lines: true
+			icon: "minecraft:moss_block"
+			id: "62C0631125654B3D"
+			rewards: [
+				{
+					auto: "enabled"
+					id: "7BE3F3AD0264C266"
+					item: "ftbquests:book"
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					id: "41FBB7B18647F051"
+					item: "akashictome:tome"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "2C862CB6AB76E5EB"
+					item: "minecraft:torch"
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					command: "/gamerule keepInventory true"
+					elevate_perms: true
+					id: "2FF697EF38A9BDDB"
+					title: "死亡不掉落"
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					id: "02B55C3D0E5438CC"
+					item: "kubejs:linear_quest_book"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "从这里开始|第零个世界"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				icon: "minecraft:moss_block"
+				id: "5BF92BA99335A6F1"
+				title: "主世界"
+				type: "dimension"
+			}]
+			title: "起点"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["62C0631125654B3D"]
+			description: ["催熟收获你的第一颗树"]
+			icon: "minecraft:flowering_azalea"
+			id: "36DD50AE28ECF216"
+			rewards: [{
+				count: 8
+				id: "27EA9C0E2F394549"
+				item: "minecraft:bone_meal"
+				type: "item"
+			}]
+			tasks: [
+				{
+					icon: "minecraft:flowering_azalea"
+					id: "10E7C6C12548EB7E"
+					observe_type: 1
+					timer: 0L
+					title: "杜鹃花丛"
+					to_observe: "minecraft:saplings"
+					type: "observation"
+				}
+				{
+					id: "38EB002BB38B437E"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["36DD50AE28ECF216"]
+			id: "0C7B137A72152B01"
+			rewards: [
+				{
+					count: 4
+					id: "0DB66087BFEF6781"
+					item: "minecraft:bread"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "612E4326BA1F4BCE"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
+			]
+			tasks: [{
+				icon: "quark:azalea_log"
+				id: "2CD15D73D94EA289"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				title: "原木"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
 		}
 	]
 	title: "起始空岛"

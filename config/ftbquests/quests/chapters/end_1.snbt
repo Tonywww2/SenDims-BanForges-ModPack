@@ -427,11 +427,14 @@
 				item: "draconicevolution:draconium_ingot"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 0.0d
 			y: 18.0d
 		}
 		{
-			dependencies: ["48D574981922729D"]
+			dependencies: [
+				"48D574981922729D"
+				"6CD4FEF522C655C7"
+			]
 			id: "09D56D99EF168D61"
 			tasks: [{
 				id: "7CFB76116454F9D2"

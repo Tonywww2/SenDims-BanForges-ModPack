@@ -1,4 +1,25 @@
 ServerEvents.recipes(event => {
+    event.shaped('kubejs:star_chart', [
+        'FFF',
+        'FFF',
+        'FFF'
+    ], {
+        F: 'kubejs:star_chart_fragment'
+    })
+        .modifyResult((grid, result) => {
+            let dimensions = [];
+
+            for (let slot = 0; slot < 9; slot++) {
+                let fragment = grid.get(slot);
+                if (!fragment.nbt || !fragment.nbt.getString('dimension')) return Item.of('minecraft:air');
+                dimensions.push(fragment.nbt.getString('dimension'));
+            }
+
+            result.getOrCreateTag().put('dimensions', NBT.toTagList(dimensions));
+            return result;
+        })
+        .id('sdbf:star_chart')
+
     event.shapeless('slashblade:proudsoul_tiny',
         [Item.of('slashblade_sendims:blood_jade', '{sbsd.bj.kill_count:10}')])
         .modifyResult((grid, result) => {

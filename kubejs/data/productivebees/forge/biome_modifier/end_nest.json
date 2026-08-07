@@ -1,0 +1,16 @@
+{
+  "biomes": [
+    "minecraft:end_highlands",
+    "minecraft:end_midlands",
+    "minecraft:small_end_islands",
+    "minecraft:end_barrens",
+    "sdbf:inside_the_end/end_highlands",
+    "sdbf:inside_the_end/end_midlands",
+    "sdbf:inside_the_end/small_end_islands",
+    "sdbf:inside_the_end/end_barrens"
+  ],
+  "generation_stage": "TOP_LAYER_MODIFICATION",
+  "features": "productivebees:end_nest",
+  "type": "productivebees:nest",
+  "maxTemperature": 100
+}

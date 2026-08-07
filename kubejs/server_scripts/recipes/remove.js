@@ -216,6 +216,7 @@ const toRemoveID = new Set([
     "draconicevolution:components/wyvern_core",
     "draconicevolution:components/awakened_core",
     "draconicevolution:components/chaotic_core",
+    "draconicevolution:components/draconium_core",
 
     "pneumaticcraft:explosion_crafting/compressed_iron_ingot",
     "pneumaticcraft:explosion_crafting/compressed_iron_block",

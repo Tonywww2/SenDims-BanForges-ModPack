@@ -218,7 +218,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(4, () => {
         .addTexture("metal").addTexture("heavy")
         .addItemMaterial('kubejs:basepoint_alloy')
         .setRequiredTool("hammer_dig", 1)
-        .addEnchantment("minecraft:protection", 1)
+        .addEnchantment("minecraft:protection", 0.5)
         .setCountFactor(0.7)
         .build();
 

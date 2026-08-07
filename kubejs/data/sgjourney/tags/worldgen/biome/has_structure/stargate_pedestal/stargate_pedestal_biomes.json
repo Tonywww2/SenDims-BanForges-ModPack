@@ -1,0 +1,25 @@
+{
+    "replace": false,
+    "values": [
+        "ad_astra:lunar_wastelands",
+        "ad_astra:martian_wastelands",
+        "ad_astra:martian_canyon_creek",
+        "ad_astra:martian_polar_caps",
+        "ad_astra:venus_wastelands",
+        "ad_astra:infernal_venus_barrens",
+        "ad_astra:mercury_deltas",
+        "sdbf:asteroid_belt/asteroid_belt",
+        "sdbf:inside_the_end/the_end",
+        "sdbf:inside_the_end/end_highlands",
+        "sdbf:inside_the_end/end_midlands",
+        "sdbf:inside_the_end/small_end_islands",
+        "sdbf:inside_the_end/end_barrens",
+        "slashblade_sendims:void_ring",
+        "slashblade_sendims:inner_fading_ring",
+        "slashblade_sendims:inner_sparse_ring",
+        "slashblade_sendims:base_ring",
+        "slashblade_sendims:high_density_ring",
+        "slashblade_sendims:outer_sparse_ring",
+        "slashblade_sendims:transition_wall_ring"
+    ]
+}

@@ -77,6 +77,7 @@ function _addBoss(wave, bossId) {
  *      { "item_id": count } → 每波相同
  *      { "item_id": [c1,c2,c3,c4,c5] } → 逐波指定（0 表示该波不发）
  * @param {object}   o.completion - 完成奖励 { "item_id": count, ... }
+ * @param {boolean}  [o.starChart=false] - 完成后随机奖励一个星图碎片
  *
  * @example
  *   createMythicGateway("sdbf_dr1_g1", 0x007013, {
@@ -170,6 +171,7 @@ function createMythicGateway(id, color, o) {
     });
 
     if (o.completion) for (const [k, v] of Object.entries(o.completion)) b.addReward(k, v);
+    if (o.starChart) b.addLootTableReward("kubejs:rewards/star_chart_fragment", 1, "item.kubejs.star_chart_fragment");
     b.register();
 }
 
@@ -198,6 +200,7 @@ function createMythicGateway(id, color, o) {
  * @param {object}   o.rewards    - { "item_id": total, ... } 总量，自动按权重分配
  * @param {object}   [o.perWave]  - 每波固定奖励（同 createMythicGateway）
  * @param {object}   o.completion - 完成奖励 { "item_id": count, ... }
+ * @param {boolean}  [o.starChart=false] - 完成后随机奖励一个星图碎片
  *
  * @example
  *   createBossGateway("sdbf_dr1_g2", 0x4d0000, {
@@ -257,5 +260,6 @@ function createBossGateway(id, color, o) {
     });
 
     if (o.completion) for (const [k, v] of Object.entries(o.completion)) b.addReward(k, v);
+    if (o.starChart) b.addLootTableReward("kubejs:rewards/star_chart_fragment", 1, "item.kubejs.star_chart_fragment");
     b.register();
 }

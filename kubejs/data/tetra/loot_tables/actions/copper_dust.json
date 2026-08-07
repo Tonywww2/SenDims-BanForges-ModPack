@@ -1,0 +1,23 @@
+{
+    "pools":
+    [
+        {
+            "name": "drop_copper_dust",
+            "rolls": 1,
+            "entries":
+            [
+                {
+                    "type": "minecraft:item",
+                    "name": "thermal:copper_dust"
+                }
+            ],
+            "conditions":
+            [
+                {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.95
+                }
+            ]
+        }
+    ]
+}
