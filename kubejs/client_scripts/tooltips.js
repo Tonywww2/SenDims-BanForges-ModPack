@@ -1,6 +1,6 @@
 let GEM_TICKET_DIM_PATH = "sdbf.gt.dim";
 let LIMIT_DIMENSTION_KEY = "sdbf.use_in";
-const STAR_CHART_GALACTIC_ADDRESSES_KEY = 'sdbf.sgjourney.galactic_addresses';
+const STAR_CHART_GALACTIC_ADDRESS_KEY = 'sdbf.sgjourney.galactic_address';
 const $SlashArtsRegistry = Java.loadClass("mods.flammpfeil.slashblade.registry.SlashArtsRegistry");
 const $ResourceLocation = Java.loadClass("net.minecraft.resources.ResourceLocation");
 
@@ -134,33 +134,21 @@ ItemEvents.tooltip(event => {
     })
 
     event.addAdvanced('kubejs:star_chart', (item, advanced, text) => {
-        if (!item.nbt || !item.nbt.contains('dimensions', 9)) {
+        let dimension = item.nbt && item.nbt.getString('dimension');
+        if (!dimension) {
             text.add(Text.translatable('info.kubejs.star_chart.unbound').color(Color.RED));
             return;
         }
 
-        text.add(Text.translatable('info.kubejs.star_chart.dimensions').color(Color.AQUA));
-        let dimensions = item.nbt.getList('dimensions', 8);
-        let addresses = item.nbt.contains(STAR_CHART_GALACTIC_ADDRESSES_KEY, 9)
-            ? item.nbt.getList(STAR_CHART_GALACTIC_ADDRESSES_KEY, 8)
-            : null;
+        text.add(Text.translatable(
+            'info.kubejs.star_chart.target',
+            getStarChartDimensionName(dimension)
+        ).color(Color.AQUA));
 
-        for (let index = 0; index < dimensions.size(); index++) {
-            let line = Text.of(`${index + 1}. `)
-                .append(getStarChartDimensionName(dimensions.getString(index)))
-                .color(Color.GRAY);
-
-            if (addresses) {
-                let address = index < addresses.size() ? addresses.getString(index) : '';
-                line.append(address
-                    ? Text.translatable('info.kubejs.star_chart.galactic_address', address).color(Color.AQUA)
-                    : Text.translatable('info.kubejs.star_chart.address_unavailable').color(Color.RED));
-            }
-
-            text.add(line);
-        }
-
-        if (!addresses) {
+        let address = item.nbt.getString(STAR_CHART_GALACTIC_ADDRESS_KEY);
+        if (address) {
+            text.add(Text.translatable('info.kubejs.star_chart.galactic_address', address).color(Color.GRAY));
+        } else {
             text.add(Text.translatable('info.kubejs.star_chart.sync_hint').color(Color.YELLOW));
         }
     })

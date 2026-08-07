@@ -1,0 +1,18 @@
+{
+  "name": "solar_system.sdbf.venus",
+  "point_of_origin": "sgjourney:terra",
+  "symbols": "sgjourney:terra",
+  "symbol_prefix": 1,
+  "extragalactic_address": {
+    "symbols": [1, 24, 37, 26, 9, 38, 23],
+    "randomizable": true
+  },
+  "galactic_addresses": {
+    "sgjourney:milky_way": {
+      "address": {
+        "symbols": [20, 11, 35, 21, 36, 7],
+        "randomizable": true
+      }
+    }
+  }
+}

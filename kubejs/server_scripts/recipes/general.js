@@ -7,15 +7,21 @@ ServerEvents.recipes(event => {
         F: 'kubejs:star_chart_fragment'
     })
         .modifyResult((grid, result) => {
-            let dimensions = [];
+            let targetDimension = '';
 
             for (let slot = 0; slot < 9; slot++) {
                 let fragment = grid.get(slot);
-                if (!fragment.nbt || !fragment.nbt.getString('dimension')) return Item.of('minecraft:air');
-                dimensions.push(fragment.nbt.getString('dimension'));
+                let dimension = fragment.nbt ? String(fragment.nbt.getString('dimension')) : '';
+                if (!dimension) return Item.of('minecraft:air');
+
+                if (!targetDimension) {
+                    targetDimension = dimension;
+                } else if (dimension !== targetDimension) {
+                    return Item.of('minecraft:air');
+                }
             }
 
-            result.getOrCreateTag().put('dimensions', NBT.toTagList(dimensions));
+            result.getOrCreateTag().putString('dimension', targetDimension);
             return result;
         })
         .id('sdbf:star_chart')

@@ -239,6 +239,11 @@ regions_unexplored:tropical_river
 regions_unexplored:tropics
 regions_unexplored:willow_forest
 sdbf:asteroid_belt/asteroid_belt
+sdbf:inside_the_end/end_barrens
+sdbf:inside_the_end/end_highlands
+sdbf:inside_the_end/end_midlands
+sdbf:inside_the_end/small_end_islands
+sdbf:inside_the_end/the_end
 sdbf:sacred_rubber_canopy
 sgjourney:abydos_desert
 sgjourney:abydos_oasis

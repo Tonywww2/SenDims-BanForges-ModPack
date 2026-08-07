@@ -1,0 +1,18 @@
+{
+  "name": "solar_system.sdbf.mercury",
+  "point_of_origin": "sgjourney:terra",
+  "symbols": "sgjourney:terra",
+  "symbol_prefix": 1,
+  "extragalactic_address": {
+    "symbols": [1, 12, 21, 15, 10, 28, 3],
+    "randomizable": true
+  },
+  "galactic_addresses": {
+    "sgjourney:milky_way": {
+      "address": {
+        "symbols": [7, 20, 12, 24, 9, 16],
+        "randomizable": true
+      }
+    }
+  }
+}

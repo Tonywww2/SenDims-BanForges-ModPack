@@ -33,6 +33,6 @@ ServerEvents.highPriorityData(event => {
     bumblezoneBoss('the_bumblezone:rootmin');
     bumblezoneBoss('the_bumblezone:honey_slime');
     bumblezoneBoss('the_bumblezone:beehemoth');
-    bumblezoneBoss('minecraft:evoker_spawn');
+    bumblezoneBoss('minecraft:evoker');
 
 })

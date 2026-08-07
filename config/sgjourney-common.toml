@@ -361,7 +361,7 @@
 
 		["Stargate Journey Common Config"."Stargate Network Config".server]
 			#Stargate Network will randomize addresses, rather than using the addresses from datapacks
-			randomize_addresses = false
+			randomize_addresses = true
 			#Stargate Network will generate random Solar System for each dimension not registered through a datapack
 			generate_random_solar_systems = true
 			#Stargate Network will randomize addresses based on the world seed

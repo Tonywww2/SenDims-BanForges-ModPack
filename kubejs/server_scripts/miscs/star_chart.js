@@ -1,8 +1,8 @@
 const $SGJourneyUniverse = Java.loadClass('net.povstalec.sgjourney.common.data.Universe');
 const $SGJourneyConversion = Java.loadClass('net.povstalec.sgjourney.common.misc.Conversion');
 
-const STAR_CHART_DIMENSIONS_KEY = 'dimensions';
-const STAR_CHART_GALACTIC_ADDRESSES_KEY = 'sdbf.sgjourney.galactic_addresses';
+const STAR_CHART_DIMENSION_KEY = 'dimension';
+const STAR_CHART_GALACTIC_ADDRESS_KEY = 'sdbf.sgjourney.galactic_address';
 const MILKY_WAY_KEY = $SGJourneyConversion.stringToGalaxyKey('sgjourney:milky_way');
 
 ItemEvents.rightClicked('kubejs:star_chart', event => {
@@ -10,33 +10,23 @@ ItemEvents.rightClicked('kubejs:star_chart', event => {
     if (!player || player.isFake()) return;
 
     let tag = event.item.getOrCreateTag();
-    if (!tag.contains(STAR_CHART_DIMENSIONS_KEY, 9)) {
+    let dimension = String(tag.getString(STAR_CHART_DIMENSION_KEY));
+    if (!dimension) {
         player.tell(Text.translatable('info.kubejs.star_chart.unbound').color(Color.RED));
         return;
     }
 
     let universe = $SGJourneyUniverse['get(net.minecraft.server.MinecraftServer)'](player.server);
-    let dimensions = tag.getList(STAR_CHART_DIMENSIONS_KEY, 8);
-    let addresses = [];
-    let resolved = 0;
+    let dimensionKey = $SGJourneyConversion.stringToDimension(dimension);
+    let address = universe.getAddressInGalaxyFromDimension(MILKY_WAY_KEY, dimensionKey);
 
-    for (let index = 0; index < dimensions.size(); index++) {
-        let dimensionKey = $SGJourneyConversion.stringToDimension(dimensions.getString(index));
-        let address = universe.getAddressInGalaxyFromDimension(MILKY_WAY_KEY, dimensionKey);
-
-        if (address) {
-            addresses.push(String(address.toString()));
-            resolved++;
-        } else {
-            addresses.push('');
-        }
+    if (!address) {
+        tag.remove(STAR_CHART_GALACTIC_ADDRESS_KEY);
+        player.tell(Text.translatable('info.kubejs.star_chart.sync_failed').color(Color.RED));
+        return;
     }
 
-    tag.put(STAR_CHART_GALACTIC_ADDRESSES_KEY, NBT.toTagList(addresses));
+    tag.putString(STAR_CHART_GALACTIC_ADDRESS_KEY, String(address.toString()));
     player.cooldowns.addCooldown(event.item, 10);
-    player.tell(Text.translatable(
-        'info.kubejs.star_chart.synced',
-        resolved,
-        dimensions.size()
-    ).color(Color.AQUA));
+    player.tell(Text.translatable('info.kubejs.star_chart.synced').color(Color.AQUA));
 });

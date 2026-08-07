@@ -20,9 +20,9 @@
                 "breakable": 2
             },
             "tools": {
-                "axe_dig": [ 0 -2 ],
-                "shovel_dig": [ 0 -2 ],
-                "pickaxe_dig": [ 0 -4 ]
+                "axe_dig": [ 0, -2 ],
+                "shovel_dig": [ 0, -2 ],
+                "pickaxe_dig": [ 0, -4 ]
             },
             "durability": 120,
             "extract": {

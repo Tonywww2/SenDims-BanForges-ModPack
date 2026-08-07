@@ -1,0 +1,18 @@
+{
+  "name": "solar_system.sdbf.moon",
+  "point_of_origin": "sgjourney:terra",
+  "symbols": "sgjourney:terra",
+  "symbol_prefix": 1,
+  "extragalactic_address": {
+    "symbols": [1, 37, 3, 19, 20, 23, 38],
+    "randomizable": true
+  },
+  "galactic_addresses": {
+    "sgjourney:milky_way": {
+      "address": {
+        "symbols": [3, 5, 30, 21, 19, 18],
+        "randomizable": true
+      }
+    }
+  }
+}

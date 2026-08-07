@@ -20,7 +20,7 @@ ServerEvents.highPriorityData(event => {
     };
 
     netherBoss("terra_entity:hell_bat", true);
-    netherBoss("terra_entity:crimson_kemera", true);
+    netherBoss("terra_entity:crimera", true);
     netherBoss("terra_entity:fire_imp", true);
     netherBoss("terra_entity:drippler", true);
     netherBoss("terra_entity:wandering_eye_fish", true);

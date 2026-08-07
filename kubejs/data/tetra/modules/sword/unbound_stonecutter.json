@@ -27,7 +27,7 @@
                 "sweeping": 2
             },
             "tools": {
-                "pickaxe_dig": [ 0 -5 ]
+                "pickaxe_dig": [ 0, -5 ]
             },
             "durability": 120,
             "extract": {

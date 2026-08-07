@@ -295,6 +295,7 @@ sdbf:apron_1
 sdbf:broken_wither
 sdbf:illager_corsair
 sdbf:illager_galley
+sdbf:stargate/overworld_common_stargate
 sdbf:undead_pirate_ship
 sgjourney:cartouche/abydos_cartouche
 sgjourney:cartouche/chulak_cartouche_monument

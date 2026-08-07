@@ -86,6 +86,7 @@
           "type": "minecraft:tag",
           "weight": 10,
           "name": "forge:ingots/steel",
+          "expand": true,
           "functions": [
             {
               "function": "minecraft:set_count",

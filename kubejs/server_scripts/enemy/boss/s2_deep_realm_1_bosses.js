@@ -52,7 +52,7 @@ ServerEvents.highPriorityData(event => {
     deepRealm1Boss("terra_entity:ice_bat");
     deepRealm1Boss("terra_entity:lava_slime");
     deepRealm1Boss("terra_entity:hell_bat");
-    deepRealm1Boss("terra_entity:crimslime");
+    deepRealm1Boss("terra_entity:crimson_slime");
     deepRealm1Boss("terra_entity:corrupt_slime");
     deepRealm1Boss("terra_entity:tropic_slime");
     deepRealm1Boss("terra_entity:evil_slime");
@@ -80,7 +80,7 @@ ServerEvents.highPriorityData(event => {
     deepRealm1Boss("terra_entity:spore_bat");
     deepRealm1Boss("terra_entity:tomb_crawler");
     deepRealm1Boss("terra_entity:antlion_swarmer");
-    deepRealm1Boss("terra_entity:giant_antlion");
+    deepRealm1Boss("terra_entity:giant_antlion_swarmer");
     deepRealm1Boss("terra_entity:harpy");
     deepRealm1Boss("terra_entity:demon");
     deepRealm1Boss("terra_entity:voodoo_demon");
@@ -88,7 +88,7 @@ ServerEvents.highPriorityData(event => {
     deepRealm1Boss("terra_entity:blood_zombie");
     deepRealm1Boss("terra_entity:wandering_eye_fish");
     deepRealm1Boss("terra_entity:ghost");
-    deepRealm1Boss("terra_entity:crimson_kemera");
+    deepRealm1Boss("terra_entity:crimera");
     deepRealm1Boss("terra_entity:eater_of_souls");
     deepRealm1Boss("terra_entity:face_monster");
     deepRealm1Boss("terra_entity:fire_imp");
