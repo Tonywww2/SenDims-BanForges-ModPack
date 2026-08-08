@@ -23,6 +23,38 @@ ServerEvents.recipes(event => {
         C: 'integrateddynamics:crystalized_menril_block_slab'
     }).id('sdbf:plate_basic')
 
+    let pressurizerPlateRecipes = [
+        ['calorite', 'ad_astra:calorite_plate'],
+        ['constantan', 'thermal:constantan_plate'],
+        ['desh', 'ad_astra:desh_plate'],
+        ['enderium', 'thermal:enderium_plate'],
+        ['gold', 'thermal:gold_plate'],
+        ['invar', 'thermal:invar_plate'],
+        ['nickel', 'thermal:nickel_plate'],
+        ['ostrum', 'ad_astra:ostrum_plate'],
+        ['rose_gold', 'thermal:rose_gold_plate']
+    ]
+
+    pressurizerPlateRecipes.forEach(([material, output]) => {
+        event.custom({
+            type: 'nuclearcraft:pressurizer',
+            input: [{ tag: `forge:ingots/${material}` }],
+            output: [{ item: output }],
+            powerModifier: 1.0,
+            radiation: 1.0,
+            timeModifier: 1.0
+        }).id(`sdbf:nuclearcraft_pressurizer/${material}_plate`)
+    })
+
+    event.custom({
+        type: 'nuclearcraft:pressurizer',
+        input: [{ item: 'ad_astra:etrium_ingot' }],
+        output: [{ item: 'ad_astra:etrium_plate' }],
+        powerModifier: 1.0,
+        radiation: 1.0,
+        timeModifier: 1.0
+    }).id('sdbf:nuclearcraft_pressurizer/etrium_plate')
+
     event.custom({
         "type": "nuclearcraft:manufactory",
         "input": [

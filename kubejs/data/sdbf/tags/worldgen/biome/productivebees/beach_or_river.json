@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "#productivebees:is_beach_or_river",
+    "midnight:dark_river",
+    "midnight:rocky_shore",
+    "tofucraft:tofu_beach",
+    "tofucraft:tofu_river",
+    "twilightforest:stream"
+  ]
+}

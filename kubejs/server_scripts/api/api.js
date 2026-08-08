@@ -1,6 +1,6 @@
 // priority: 1900
 
-const SDBF = {
+let SDBF = {
     modInstalled: (modId) => {
         return Platform.getMods().containsKey(modId);
     },

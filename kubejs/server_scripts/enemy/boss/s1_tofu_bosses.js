@@ -1,6 +1,6 @@
 // priority: 100
 ServerEvents.highPriorityData(event => {
-    const tofuBoss = (id) => {
+    let tofuBoss = (id) => {
         let boss = bossMaterialBuilder(event, id, "tofu")
             .setWeight(75).setQuality(2).setSize(1, 1)
             .addValidGearSet("#none").addDimension("tofucraft:tofu_world")

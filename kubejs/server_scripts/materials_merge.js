@@ -229,7 +229,7 @@ LootJS.modifiers((event) => {
     let fishingModifier = event.addLootTypeModifier(LootType.FISHING);
     let chestModifier = event.addLootTypeModifier(LootType.CHEST);
 
-    for (const to of global.materialReplaceRules.keySet()) {
+    for (let to of global.materialReplaceRules.keySet()) {
         global.materialReplaceRules.get(to).list.forEach(from => {
             entityModifier.replaceLoot(from, to, true);
             blockModifier.replaceLoot(from, to, true);
@@ -248,7 +248,7 @@ LootJS.modifiers((event) => {
 
 ServerEvents.tags("item", event => {
     global.materialReplaceRules.forEach((key, value) => {
-        const id = "sdbf:" + key.split(":")[1] + "_unified";
+        let id = "sdbf:" + key.split(":")[1] + "_unified";
         event.add(id, value.list);
         // console.log(id);
     })

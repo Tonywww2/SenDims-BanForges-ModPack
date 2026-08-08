@@ -8,7 +8,18 @@
 	id: "0C53D6BD3F0492CE"
 	order_index: 2
 	quest_enhance_decorative_lines: [ ]
-	quest_enhance_hidden_dependency_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [
+		{
+			dependency: "q:4babf9caff0f35fb"
+			reveal_on_hover: 0b
+			source: "q:3cb7e2e08f8e2d6b"
+		}
+		{
+			dependency: "q:4babf9caff0f35fb"
+			reveal_on_hover: 0b
+			source: "q:30466198f15583f7"
+		}
+	]
 	quest_links: [
 		{
 			id: "02B9BE488D8FDF75"
@@ -21,6 +32,14 @@
 			linked_quest: "651A03F2219EBCDE"
 			x: 9.0d
 			y: 9.0d
+		}
+		{
+			id: "019600E570597EE7"
+			linked_quest: "37CF7606A44B5357"
+			shape: "hexagon"
+			size: 2.0d
+			x: 27.0d
+			y: 0.0d
 		}
 	]
 	quests: [
@@ -245,8 +264,26 @@
 				"0964978805C0D606"
 			]
 			dependency_requirement: "one_completed"
+			description: [
+				"发现&b星门&r之后，你还需要留意&b星门附近的石碑&r，上面会记录着一个&e特殊的地址&r。"
+				""
+				"然后，你可以把&b星门&r和&bDHD&r都带回基地，把他们放置在&e一片空闲的区域&r内。"
+				""
+				"接着，确保DHD和星门都存在足够的能量（可以使用外部的发电机，也可以使用自带的），然后开始拨号："
+				""
+				"将&b星门附近的石碑&r上的&e特殊的地址&r输入，然后再输入\"0\"，最后点击中间的红色按钮。"
+				""
+				"如果你因为一些原因失去了DHD，则需要手动拨号："
+				"（TBD，简单来说满级信号是锁定键，14-多少级是顺时针旋转，多少级-1级是逆时针旋转，需要按照石碑上的符号选择，最后选择\"0\"的符号）"
+			]
 			id: "4BABF9CAFF0F35FB"
+			rewards: [{
+				id: "3BE33AE457986E8E"
+				item: "ad_astra:solar_panel"
+				type: "item"
+			}]
 			shape: "hexagon"
+			size: 1.5d
 			tasks: [{
 				icon: "sgjourney:milky_way_stargate"
 				id: "44DE42205086CB0C"
@@ -261,9 +298,10 @@
 		}
 		{
 			dependencies: ["4BABF9CAFF0F35FB"]
+			hide_dependency_lines: true
 			id: "6925E412FDC9E153"
 			shape: "hexagon"
-			size: 2.0d
+			size: 1.5d
 			tasks: [{
 				dimension: "sgjourney:abydos"
 				icon: "minecraft:sand"
@@ -273,6 +311,207 @@
 			}]
 			x: 21.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["4BABF9CAFF0F35FB"]
+			hide_dependency_lines: true
+			id: "30466198F15583F7"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				dimension: "sgjourney:athos"
+				icon: "minecraft:spruce_log"
+				id: "3E213DA61BD494FE"
+				title: "阿索斯"
+				type: "dimension"
+			}]
+			x: 30.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4BABF9CAFF0F35FB"]
+			hide_dependency_lines: true
+			id: "33DE21972F5A6DAB"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				dimension: "sgjourney:cavum_tenebrae"
+				icon: "minecraft:deepslate"
+				id: "7B2D93D369707868"
+				title: "卡武姆·特内布雷"
+				type: "dimension"
+			}]
+			x: 24.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4BABF9CAFF0F35FB"]
+			hide_dependency_lines: true
+			id: "3CB7E2E08F8E2D6B"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				dimension: "sgjourney:chulak"
+				icon: "minecraft:oak_log"
+				id: "04FF7564FE94895B"
+				title: "丘拉克"
+				type: "dimension"
+			}]
+			x: 24.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4BABF9CAFF0F35FB"]
+			hide_dependency_lines: true
+			id: "31ECA1A6F4343C53"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				dimension: "sgjourney:destiny"
+				icon: "sgjourney:exposed_cut_naquadah_copper_block"
+				id: "453A0AF819332B56"
+				title: "命运号"
+				type: "dimension"
+			}]
+			x: 33.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4BABF9CAFF0F35FB"]
+			hide_dependency_lines: true
+			icon: "minecraft:sand"
+			id: "53AD777A5EBE3205"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				dimension: "sgjourney:lantea"
+				id: "2A95A5EDAAC1C0CF"
+				title: "兰蒂亚"
+				type: "dimension"
+			}]
+			x: 30.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4BABF9CAFF0F35FB"]
+			hide_dependency_lines: true
+			id: "5113319832E2138D"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				dimension: "sgjourney:rima"
+				icon: "minecraft:coarse_dirt"
+				id: "12235EEBA36423AD"
+				title: "里玛"
+				type: "dimension"
+			}]
+			x: 24.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["4BABF9CAFF0F35FB"]
+			hide_dependency_lines: true
+			id: "3DD187ED0B333F64"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				dimension: "sgjourney:tollan"
+				icon: "minecraft:basalt"
+				id: "514DC751E9449982"
+				title: "托兰"
+				type: "dimension"
+			}]
+			x: 24.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4BABF9CAFF0F35FB"]
+			hide_dependency_lines: true
+			id: "15837F926594442F"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				dimension: "sgjourney:unitas"
+				icon: "sgjourney:sulfur_sand"
+				id: "0154FE14D3CEB6F1"
+				title: "乌尼塔斯"
+				type: "dimension"
+			}]
+			x: 24.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6925E412FDC9E153"]
+			id: "0C099E334233878D"
+			tasks: [{
+				id: "5B7417A147B595CC"
+				item: "sgjourney:raw_naquadah"
+				type: "item"
+			}]
+			x: 21.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["3CB7E2E08F8E2D6B"]
+			id: "2EE09FEC7618A5F9"
+			tasks: [{
+				id: "132478E66B15D7FF"
+				item: {
+					Count: 1
+					id: "sgjourney:matok"
+					tag: {
+						IsOpen: 0b
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			x: 24.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["3DD187ED0B333F64"]
+			id: "643556973E0DE22E"
+			tasks: [{
+				id: "113FFCB9F0CF275C"
+				item: "sgjourney:raw_trinium"
+				type: "item"
+			}]
+			x: 24.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["15837F926594442F"]
+			id: "57AEDAD12FDBE944"
+			tasks: [{
+				id: "0B9376B067BC0F4B"
+				item: "sgjourney:unity_shard"
+				type: "item"
+			}]
+			x: 24.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["57AEDAD12FDBE944"]
+			id: "16846E9213A00C23"
+			tasks: [{
+				id: "75B74F5D99AEC164"
+				item: "sgjourney:kara_kesh"
+				type: "item"
+			}]
+			x: 27.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["0C099E334233878D"]
+			id: "357695F14FD17E3F"
+			tasks: [{
+				id: "104C9D6C238D5D30"
+				item: "sgjourney:naquadah_liquidizer"
+				type: "item"
+			}]
+			x: 21.0d
+			y: 12.0d
 		}
 	]
 	title: "&e空岛之下"

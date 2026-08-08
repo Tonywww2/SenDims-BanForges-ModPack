@@ -14,6 +14,21 @@ dimensionLimitMap.put("gateways:sdbf_mars_g1", "ad_astra:mars");
 dimensionLimitMap.put("gateways:sdbf_sr_ayeti", "slashblade_sendims:saturn_ring");
 dimensionLimitMap.put("gateways:sdbf_sr_kp", "slashblade_sendims:saturn_ring");
 
+dimensionLimitMap.put("gateways:sdbf_sgj_abydos_g1", "sgjourney:abydos");
+dimensionLimitMap.put("gateways:sdbf_sgj_abydos_g2", "sgjourney:abydos");
+dimensionLimitMap.put("gateways:sdbf_sgj_athos_g1", "sgjourney:athos");
+dimensionLimitMap.put("gateways:sdbf_sgj_athos_g2", "sgjourney:athos");
+dimensionLimitMap.put("gateways:sdbf_sgj_chulak_g1", "sgjourney:chulak");
+dimensionLimitMap.put("gateways:sdbf_sgj_chulak_g2", "sgjourney:chulak");
+dimensionLimitMap.put("gateways:sdbf_sgj_lantea_g1", "sgjourney:lantea");
+dimensionLimitMap.put("gateways:sdbf_sgj_lantea_g2", "sgjourney:lantea");
+dimensionLimitMap.put("gateways:sdbf_sgj_rima_g1", "sgjourney:rima");
+dimensionLimitMap.put("gateways:sdbf_sgj_rima_g2", "sgjourney:rima");
+dimensionLimitMap.put("gateways:sdbf_sgj_tollan_g1", "sgjourney:tollan");
+dimensionLimitMap.put("gateways:sdbf_sgj_tollan_g2", "sgjourney:tollan");
+dimensionLimitMap.put("gateways:sdbf_sgj_unitas_g1", "sgjourney:unitas");
+dimensionLimitMap.put("gateways:sdbf_sgj_unitas_g2", "sgjourney:unitas");
+
 BlockEvents.rightClicked(event => {
     let item = event.getItem();
     if (item == 'gateways:gate_pearl') {

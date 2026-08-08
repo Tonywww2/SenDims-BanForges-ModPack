@@ -167,7 +167,7 @@ ServerEvents.recipes(event => {
     }).id("sdbf:etching_acid");
 
     // 液态耀魂精炼线 / Liquid proudsoul refining line
-    const PROUDSOUL_FLUIDS = {
+    let PROUDSOUL_FLUIDS = {
         melted: "kubejs:melted_proudsoul",
         light: "kubejs:light_distilled_proudsoul",
         active: "kubejs:active_distilled_proudsoul",
@@ -182,7 +182,7 @@ ServerEvents.recipes(event => {
         purifiedFuel: "kubejs:purified_proudsoul_fuel"
     };
 
-    const PROUDSOUL_ITEMS = {
+    let PROUDSOUL_ITEMS = {
         filterMatrix: "kubejs:soul_filter_matrix",
         chargedFilter: "kubejs:charged_soul_filter",
         condensedCake: "kubejs:condensed_proudsoul_cake",

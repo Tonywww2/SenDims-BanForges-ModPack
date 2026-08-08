@@ -14,7 +14,7 @@ let difficulty_list = [
 
 let DIFFICULTY_INDEX_PATH = 'sdbf_difficulty_index';
 
-const getDifficultyMultipliers = (server) => {
+let getDifficultyMultipliers = (server) => {
     if (!server.persistentData.contains(DIFFICULTY_INDEX_PATH)) {
         server.persistentData.putInt(DIFFICULTY_INDEX_PATH, 0);
     }
@@ -26,7 +26,7 @@ const getDifficultyMultipliers = (server) => {
 };
 
 ServerEvents.commandRegistry(event => {
-    const { commands: Commands, arguments: Arguments } = event;
+    let { commands: Commands, arguments: Arguments } = event;
     event.register(
         Commands.literal('sdbf_difficulty_menu')
             .executes(c => {

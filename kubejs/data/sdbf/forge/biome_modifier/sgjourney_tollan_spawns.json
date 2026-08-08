@@ -1,0 +1,48 @@
+{
+    "type": "forge:add_spawns",
+    "biomes": "#sgjourney:is_tollan",
+    "spawners": [
+        {
+            "type": "minecraft:magma_cube",
+            "weight": 60,
+            "minCount": 2,
+            "maxCount": 4
+        },
+        {
+            "type": "minecraft:blaze",
+            "weight": 35,
+            "minCount": 1,
+            "maxCount": 2
+        },
+        {
+            "type": "aether:fire_minion",
+            "weight": 35,
+            "minCount": 1,
+            "maxCount": 3
+        },
+        {
+            "type": "minecraft:wither_skeleton",
+            "weight": 25,
+            "minCount": 1,
+            "maxCount": 2
+        },
+        {
+            "type": "twilightforest:carminite_ghastling",
+            "weight": 24,
+            "minCount": 1,
+            "maxCount": 2
+        },
+        {
+            "type": "thermal:basalz",
+            "weight": 20,
+            "minCount": 1,
+            "maxCount": 2
+        },
+        {
+            "type": "ad_astra:sulfur_creeper",
+            "weight": 8,
+            "minCount": 1,
+            "maxCount": 2
+        }
+    ]
+}

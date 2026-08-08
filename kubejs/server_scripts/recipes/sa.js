@@ -1,5 +1,5 @@
 ServerEvents.highPriorityData(event => {
-    for (let sa of Java.loadClass("mods.flammpfeil.slashblade.registry.SlashArtsRegistry").REGISTRY.get().keys) {
+    for (let sa of $SlashArtsRegistry.REGISTRY.get().keys) {
         event.addJson("kjs:recipes/" + sa.toString().replace(":", "/") + ".json", {
             "type": "minecraft:stonecutting",
             "count": 2,

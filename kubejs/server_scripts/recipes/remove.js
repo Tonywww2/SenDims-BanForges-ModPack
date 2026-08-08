@@ -1,4 +1,4 @@
-const toRemoveID = new Set([
+let toRemoveID = new Set([
     "easy_villagers:farmer",
     "easy_villagers:iron_farm",
     "minecraft:enchanting_table",
@@ -289,7 +289,7 @@ const toRemoveID = new Set([
 ]);
 
 ServerEvents.recipes(event => {
-    for (const id of toRemoveID) {
+    for (let id of toRemoveID) {
         event.remove({ id: id });
     }
 

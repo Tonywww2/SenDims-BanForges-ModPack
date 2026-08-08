@@ -1,0 +1,7 @@
+{
+  "biomes": "#sdbf:productivebees/beach_or_river",
+  "generation_stage": "TOP_LAYER_MODIFICATION",
+  "features": "productivebees:gravel_nest",
+  "type": "productivebees:nest",
+  "maxTemperature": 100
+}

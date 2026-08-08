@@ -1,0 +1,5 @@
+
+[rendering]
+	#Whether to render the initial teleport target while holding a chaos teleport rod.
+	showTeleportTarget = true
+

@@ -1,0 +1,10 @@
+
+[teleport]
+	#Whether chaos teleport rods can only be used from the main hand.
+	mainHandOnly = true
+
+[chaos]
+	#Maximum-health fraction dealt when a chaos teleport rod is used during Chaos.
+	#Range: 0.0 ~ 1.0
+	damageFraction = 0.55
+

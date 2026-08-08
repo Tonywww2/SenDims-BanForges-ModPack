@@ -63,4 +63,43 @@ ServerEvents.recipes(event => {
         .energy(8192)
         .id("sdbf:rich_slag")
 
+    let thermalPlateRecipes = [
+        ['aluminum', 'forge:ingots/aluminum', 'nuclearcraft:aluminum_plate'],
+        ['beryllium', 'forge:ingots/beryllium', 'nuclearcraft:beryllium_plate'],
+        ['boron', 'forge:ingots/boron', 'nuclearcraft:boron_plate'],
+        ['cobalt', 'forge:ingots/cobalt', 'nuclearcraft:cobalt_plate'],
+        ['extreme', 'forge:ingots/extreme', 'nuclearcraft:extreme_plate'],
+        ['ferroboron', 'forge:ingots/ferroboron', 'nuclearcraft:ferroboron_plate'],
+        ['graphite', 'forge:dusts/graphite', 'nuclearcraft:graphite_plate'],
+        ['hard_carbon', 'forge:ingots/hard_carbon', 'nuclearcraft:hard_carbon_plate'],
+        ['hsla_steel', 'forge:ingots/hsla_steel', 'nuclearcraft:hsla_steel_plate'],
+        ['lithium', 'forge:ingots/lithium', 'nuclearcraft:lithium_plate'],
+        ['lithium_manganese_dioxide', 'forge:ingots/lithium_manganese_dioxide', 'nuclearcraft:lithium_manganese_dioxide_plate'],
+        ['magnesium', 'forge:ingots/magnesium', 'nuclearcraft:magnesium_plate'],
+        ['manganese', 'forge:ingots/manganese', 'nuclearcraft:manganese_plate'],
+        ['palladium', 'forge:ingots/palladium', 'nuclearcraft:palladium_plate'],
+        ['platinum', 'forge:ingots/platinum', 'nuclearcraft:platinum_plate'],
+        ['sic_sic_cmc', 'forge:ingots/sic_sic_cmc', 'nuclearcraft:sic_sic_cmc_plate'],
+        ['thermoconducting', 'forge:ingots/thermoconducting', 'nuclearcraft:thermoconducting_plate'],
+        ['thorium', 'forge:ingots/thorium', 'nuclearcraft:thorium_plate'],
+        ['tough_alloy', 'forge:ingots/tough_alloy', 'nuclearcraft:tough_alloy_plate'],
+        ['uranium', 'forge:ingots/uranium', 'nuclearcraft:uranium_plate'],
+        ['zinc', 'forge:ingots/zinc', 'nuclearcraft:zinc_plate'],
+        ['zirconium', 'forge:ingots/zirconium', 'nuclearcraft:zirconium_plate']
+    ]
+
+    thermalPlateRecipes.forEach(([material, input, output]) => {
+        event.custom({
+            type: 'thermal:press',
+            ingredient: { tag: input },
+            result: [{ item: output }]
+        }).id(`sdbf:thermal_press/${material}_plate`)
+    })
+
+    event.custom({
+        type: 'thermal:press',
+        ingredient: { item: 'ad_astra:etrium_ingot' },
+        result: [{ item: 'ad_astra:etrium_plate' }]
+    }).id('sdbf:thermal_press/etrium_plate')
+
 })

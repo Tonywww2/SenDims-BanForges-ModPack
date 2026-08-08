@@ -1,0 +1,7 @@
+{
+  "biomes": "#sdbf:productivebees/coarse_dirt",
+  "generation_stage": "TOP_LAYER_MODIFICATION",
+  "features": "productivebees:coarse_dirt_nest",
+  "type": "productivebees:nest",
+  "maxTemperature": 100
+}

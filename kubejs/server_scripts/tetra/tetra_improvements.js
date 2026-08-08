@@ -3,7 +3,7 @@ let someArgs = {
     texturePath: "slashbladetetra:textures/gui/texture.png"
 }
 
-const ImprovementBuilder = function (scrollKey) {
+let ImprovementBuilder = function (scrollKey) {
     this.key = scrollKey;
     this.attributes = null;
     this.effects = null;

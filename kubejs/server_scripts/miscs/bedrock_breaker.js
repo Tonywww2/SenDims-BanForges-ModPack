@@ -3,7 +3,7 @@ bbAllowDims.put("ad_astra:moon", "minecraft:the_nether");
 bbAllowDims.put("twilightforest:twilight_forest", "minecraft:the_nether");
 // bbAllowDims.add("minecraft:the_nether", "ad_astra:moon");
 
-const moonToNetherKey = "sbdf.moon_to_nether";
+let moonToNetherKey = "sbdf.moon_to_nether";
 
 BlockEvents.rightClicked("minecraft:bedrock", event => {
     if (event.item == "kubejs:bedrock_breaker") {

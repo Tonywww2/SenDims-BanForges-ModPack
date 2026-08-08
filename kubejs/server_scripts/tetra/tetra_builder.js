@@ -5,7 +5,7 @@ let tetraMaterialTagEvent = null;
 let tetraMaterialTagValues = {};
 let activeTetraMaterialStage = null;
 
-const withTetraMaterialStage = (stage, buildMaterials) => {
+let withTetraMaterialStage = (stage, buildMaterials) => {
     let previousStage = activeTetraMaterialStage;
     activeTetraMaterialStage = stage;
     try {
@@ -16,7 +16,7 @@ const withTetraMaterialStage = (stage, buildMaterials) => {
     }
 };
 
-const writeTetraMaterialStageTag = stage => {
+let writeTetraMaterialStageTag = stage => {
     let tagName = `stage_${stage}`;
     let values = tetraMaterialTagValues[tagName];
     if (!tetraMaterialTagEvent || !values) return;
@@ -27,7 +27,7 @@ const writeTetraMaterialStageTag = stage => {
     });
 };
 
-const addTetraMaterialToStageTag = (event, stage, materialItems, materialTag) => {
+let addTetraMaterialToStageTag = (event, stage, materialItems, materialTag) => {
     if (stage === undefined || stage === null) return;
 
     if (tetraMaterialTagEvent !== event) {
@@ -47,7 +47,7 @@ const addTetraMaterialToStageTag = (event, stage, materialItems, materialTag) =>
     tetraMaterialTagValues[tagName] = values;
 };
 
-const tetraMaterialBuilder = (event, id, stage) => {
+let tetraMaterialBuilder = (event, id, stage) => {
     if (stage === undefined) stage = activeTetraMaterialStage;
 
     let key = id;

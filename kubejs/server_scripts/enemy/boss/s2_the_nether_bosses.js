@@ -1,6 +1,6 @@
 // priority: 100
 ServerEvents.highPriorityData(event => {
-    const netherBoss = (id, is_terra) => {
+    let netherBoss = (id, is_terra) => {
         let boss = bossMaterialBuilder(event, id, "the_nether")
             .setWeight(75).setQuality(2).setSize(1, 1)
             .addValidGearSet("#the_nether").addDimension("minecraft:the_nether")

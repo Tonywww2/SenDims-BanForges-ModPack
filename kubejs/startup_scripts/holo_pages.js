@@ -1,7 +1,4 @@
 if (Platform.isClientEnvironment()) {
-    let $MaterialManager = Java.loadClass("net.yiran.extraholopage.api.MaterialManager");
-    let $ForgeRegistries = Java.loadClass("net.minecraftforge.registries.ForgeRegistries");
-
     ClientEvents.init(event => {
         let registerAttrFilter = (attributeKey, langKey) => {
             $MaterialManager.INSTANCE.registerFilter((data) => {

@@ -38,13 +38,13 @@ let signs = [
 let PLAYER_INIT_KEY = 'sdbf.linit';
 let OVERWORLD_STAGE = 'sdbf.world_lock';
 
-const getLevelSpawnPoint = (level) => {
+let getLevelSpawnPoint = (level) => {
     let data = level.getLevelData();
 
     return [data.getXSpawn(), data.getYSpawn(), data.getZSpawn()];
 }
 
-const buildBedrockPlatform = (level) => {
+let buildBedrockPlatform = (level) => {
 
     for (let x = X_MIN; x <= X_MAX; x++) {
         for (let y = Y_MIN; y <= Y_MAX; y++) {
@@ -64,7 +64,7 @@ const buildBedrockPlatform = (level) => {
     }
 }
 
-const placeSign = (level) => {
+let placeSign = (level) => {
 
     signs.forEach(s => {
         let block = level.getBlock(s.pos);
@@ -86,7 +86,7 @@ const placeSign = (level) => {
 
 }
 
-const ensureWorldPlatform = (server) => {
+let ensureWorldPlatform = (server) => {
     let level = server.getLevel(TARGET_DIM);
 
     buildBedrockPlatform(level);
@@ -114,7 +114,7 @@ PlayerEvents.loggedIn(event => {
     player.tell('Wellcome! ');
 });
 
-const punishPlayer = (player) => {
+let punishPlayer = (player) => {
     // player.teleportTo(TARGET_DIM, SPAWN_X + 0.5, PLAYER_Y, SPAWN_Z + 0.5, 0, 0);
     if (player.tags.contains('teleport_cooldown')) return;
     let pos = getLevelSpawnPoint(player.level);

@@ -1,6 +1,6 @@
 // priority: 100
 ServerEvents.highPriorityData(event => {
-    const midnightBoss = (id) => {
+    let midnightBoss = (id) => {
         let boss = bossMaterialBuilder(event, id, "midnight")
             .setWeight(75).setQuality(2).setSize(1, 1)
             .addValidGearSet("#the_end").addDimension("midnight:the_midnight")

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:is_jungle",
+    "ancient_aether:sakura_jungle",
+    "ancient_aether:skyroot_jungle",
+    "cavernous:tropical_caves",
+    "sdbf:sacred_rubber_canopy"
+  ]
+}

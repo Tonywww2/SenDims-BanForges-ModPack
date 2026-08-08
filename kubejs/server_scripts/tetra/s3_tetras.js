@@ -207,7 +207,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(3, () => {
         .build();
 
     // 16. 贵豪 (无需修改)
-    tetraMaterialBuilder(event, "regalium").setCategory("metal")
+    tetraMaterialBuilder(event, "regalium").setCategory("gem")
         .setPrimary(20).setSecondary(10).setTertiary(10)
         .setDurability(290).setIntegrityCost(8).setIntegrityGain(8)
         .setMagicCapacity(160).setToolLevel(4).setToolEfficiency(7.5)

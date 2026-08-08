@@ -1,6 +1,6 @@
 // priority: 100
 ServerEvents.highPriorityData(event => {
-    const bumblezoneBoss = (id) => {
+    let bumblezoneBoss = (id) => {
         let boss = bossMaterialBuilder(event, id, "the_bumblezone")
             .setWeight(75).setQuality(2).setSize(1, 1)
             .addValidGearSet("#the_end").addDimension("the_bumblezone:the_bumblezone")

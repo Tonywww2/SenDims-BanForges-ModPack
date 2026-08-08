@@ -1,6 +1,6 @@
 // priority: 100
 ServerEvents.highPriorityData(event => {
-    const twilightBoss = (id, gearSet) => {
+    let twilightBoss = (id, gearSet) => {
         let boss = bossMaterialBuilder(event, id, "twilight")
             .setWeight(75).setQuality(2).setSize(1, 1)
             .addValidGearSet(gearSet).addDimension("twilightforest:twilight_forest")

@@ -426,8 +426,8 @@
 				"77521D83617F9CBA"
 				"3434AD43BC82144D"
 				"7174346AD8DCFBEC"
-				"73EC367B170C5EF6"
 			]
+			dependency_requirement: "one_completed"
 			id: "0351BC9DA1C5B4F7"
 			tasks: [{
 				id: "7994EC18FBD6D59E"

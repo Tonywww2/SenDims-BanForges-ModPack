@@ -2243,6 +2243,19 @@
 			x: 132.0d
 			y: -6.0d
 		}
+		{
+			dependencies: ["0BD7C25BE393E906"]
+			id: "2662F4A348701953"
+			shape: "diamond"
+			subtitle: "清理环境辐射"
+			tasks: [{
+				id: "031F572ED4D62334"
+				item: "nuclearcraft:gas_scrubber"
+				type: "item"
+			}]
+			x: 57.0d
+			y: -15.0d
+		}
 	]
 	title: "&e工业"
 }

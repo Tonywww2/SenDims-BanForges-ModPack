@@ -1,6 +1,3 @@
-const $TheHarbingerEntity = Java.loadClass('com.github.L_Ender.cataclysm.entity.AnimationMonster.BossMonsters.The_Harbinger_Entity');
-const $GlobalPos = Java.loadClass('net.minecraft.core.GlobalPos');
-
 ItemEvents.entityInteracted('minecraft:diamond', event => {
     let { target, player, hand, item, level } = event;
 

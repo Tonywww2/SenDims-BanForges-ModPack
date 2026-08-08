@@ -20,7 +20,7 @@ StartupEvents.registry('item', event => {
     event.create('gem_ticket').fireResistant().rarity('epic').maxStackSize(8)
 
     event.create('star_chart_fragment').rarity('uncommon')
-    event.create('star_chart').rarity('rare').maxStackSize(1)
+    event.create('star_chart').rarity('epic').maxStackSize(1)
 
     event.create('linear_quest_book')
         .use((level, player, hand) => {

@@ -1,10 +1,9 @@
 let GEM_TICKET_DIM_PATH = "sdbf.gt.dim";
 let LIMIT_DIMENSTION_KEY = "sdbf.use_in";
-const STAR_CHART_GALACTIC_ADDRESS_KEY = 'sdbf.sgjourney.galactic_address';
-const $SlashArtsRegistry = Java.loadClass("mods.flammpfeil.slashblade.registry.SlashArtsRegistry");
-const $ResourceLocation = Java.loadClass("net.minecraft.resources.ResourceLocation");
+let STAR_CHART_GALACTIC_ADDRESS_KEY = 'sdbf.sgjourney.galactic_address';
+let STAR_CHART_EXTRAGALACTIC_ADDRESS_KEY = 'sdbf.sgjourney.extragalactic_address';
 
-const STAR_CHART_DIMENSION_KEYS = {
+let STAR_CHART_DIMENSION_KEYS = {
     'ad_astra:moon': 'dimension.ad_astra.moon',
     'ad_astra:mars': 'dimension.ad_astra.mars',
     'ad_astra:venus': 'dimension.ad_astra.venus',
@@ -145,10 +144,16 @@ ItemEvents.tooltip(event => {
             getStarChartDimensionName(dimension)
         ).color(Color.AQUA));
 
-        let address = item.nbt.getString(STAR_CHART_GALACTIC_ADDRESS_KEY);
-        if (address) {
-            text.add(Text.translatable('info.kubejs.star_chart.galactic_address', address).color(Color.GRAY));
-        } else {
+        let galacticAddress = item.nbt.getString(STAR_CHART_GALACTIC_ADDRESS_KEY);
+        let extragalacticAddress = item.nbt.getString(STAR_CHART_EXTRAGALACTIC_ADDRESS_KEY);
+
+        if (galacticAddress) {
+            text.add(Text.translatable('info.kubejs.star_chart.galactic_address', galacticAddress).color(Color.GRAY));
+        }
+        if (extragalacticAddress) {
+            text.add(Text.translatable('info.kubejs.star_chart.extragalactic_address', extragalacticAddress).darkPurple());
+        }
+        if (!galacticAddress && !extragalacticAddress) {
             text.add(Text.translatable('info.kubejs.star_chart.sync_hint').color(Color.YELLOW));
         }
     })

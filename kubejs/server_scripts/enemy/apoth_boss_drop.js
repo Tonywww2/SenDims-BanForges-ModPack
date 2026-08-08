@@ -1,5 +1,3 @@
-const $BloodJade = Java.loadClass("com.tonywww.slashblade_sendims.items.BloodJade");
-
 let bossDropReplace = Utils.newMap();
 
 bossDropReplace.put("apotheosis:common", '2x apotheosis:common_material');
@@ -52,7 +50,7 @@ EntityEvents.drops(event => {
     let hasProcessedSpecialDrops = false;
     let shouldDropGem = false;
 
-    for (const i of event.getDrops()) {
+    for (let i of event.getDrops()) {
         // console.log(i);
         if (global.materialRemoveRule.test(i.getItem())) {
             // console.log(global.materialRemoveRule.test(i.getItem()))

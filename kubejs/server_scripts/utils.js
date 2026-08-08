@@ -51,7 +51,7 @@ const $UGSoundEvents = Java.loadClass("quek.undergarden.registry.UGSoundEvents")
 
 // ---- Curios ----
 const $CuriosApi = Java.loadClass("top.theillusivec4.curios.api.CuriosApi");
-const $CuriosHelper = $CuriosApi.getCuriosHelper();
+let $CuriosHelper = $CuriosApi.getCuriosHelper();
 
 // ---- Chisel ----
 const $ChiselGroupLookup = Java.loadClass("com.periut.chisel.block.ChiselGroupLookup");
@@ -61,15 +61,25 @@ const $GemRegistry = Java.loadClass("dev.shadowsoffire.apotheosis.adventure.sock
 const $IDimensional = Java.loadClass("dev.shadowsoffire.placebo.reload.WeightedDynamicRegistry").IDimensional;
 const $IStaged = Java.loadClass("dev.shadowsoffire.apotheosis.adventure.compat.GameStagesCompat").IStaged;
 
-const print = any => console.log(any)
+// ---- Distributed Server Classes ----
+const $BloodJade = Java.loadClass("com.tonywww.slashblade_sendims.items.BloodJade");
+const $TargetingConditions = Java.loadClass("net.minecraft.world.entity.ai.targeting.TargetingConditions");
+const $TheHarbingerEntity = Java.loadClass("com.github.L_Ender.cataclysm.entity.AnimationMonster.BossMonsters.The_Harbinger_Entity");
+const $GlobalPos = Java.loadClass("net.minecraft.core.GlobalPos");
+const $EntityTravelToDimensionEvent = Java.loadClass("net.minecraftforge.event.entity.EntityTravelToDimensionEvent");
+const $SGJourneyUniverse = Java.loadClass("net.povstalec.sgjourney.common.data.Universe");
+const $SGJourneyConversion = Java.loadClass("net.povstalec.sgjourney.common.misc.Conversion");
+const $SlashArtsRegistry = Java.loadClass("mods.flammpfeil.slashblade.registry.SlashArtsRegistry");
+
+let print = any => console.log(any)
 
 let GEM_TICKET_DIM_PATH = "sdbf.gt.dim";
 
-const numToInt = (num) => {
+let numToInt = (num) => {
     return new $Double(num).intValue();
 }
 
-const sqRecipe = (event, structure, material, type, stage) => {
+let sqRecipe = (event, structure, material, type, stage) => {
     // print(structure);
     if (type == 0) {
         event.shapeless($StructureQuill.forStructure(structure), ['minecraft:map', material])
@@ -86,9 +96,9 @@ const sqRecipe = (event, structure, material, type, stage) => {
     }
 };
 
-const getBladeStack = (registryAccess, bladeKey) => $SDUtils.getBladeItemStack(registryAccess, bladeKey)
+let getBladeStack = (registryAccess, bladeKey) => $SDUtils.getBladeItemStack(registryAccess, bladeKey)
 
-const hasCurios = (player, id) => {
+let hasCurios = (player, id) => {
     let curiosAll = $CuriosHelper.getEquippedCurios(player).resolve().get()
     // player.tell(curiosAll)
     for (let i = 0; i < curiosAll.getSlots(); i++) {
@@ -102,7 +112,7 @@ const hasCurios = (player, id) => {
     return false
 }
 
-const executeCommands = (player, command) => {
+let executeCommands = (player, command) => {
     command = command.trim();
     if (command !== "") {
         Utils.server.runCommandSilent(`execute as ${player.username} run ${command}`);

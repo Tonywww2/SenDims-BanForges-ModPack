@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:is_savanna",
+    "aether_redux:skyroot_shrublands",
+    "twilightforest:oak_savannah"
+  ]
+}

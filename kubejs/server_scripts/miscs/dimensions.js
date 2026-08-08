@@ -1,7 +1,6 @@
 // priority: 50
-const $EntityTravelToDimensionEvent = Java.loadClass("net.minecraftforge.event.entity.EntityTravelToDimensionEvent")
 
-const MIDNIGHT_STAGE = 'sdbf.midnight'
+let MIDNIGHT_STAGE = 'sdbf.midnight'
 
 NativeEvents.onEvent($EntityTravelToDimensionEvent, /** @param {Internal.EntityTravelToDimensionEvent} event  */ event => {
     /**

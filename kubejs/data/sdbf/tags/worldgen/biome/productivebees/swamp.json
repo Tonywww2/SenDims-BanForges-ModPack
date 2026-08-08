@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:is_swamp",
+    "cavernous:marshy_caves",
+    "cavernous:myst/dreadmire",
+    "cavernous:myst/dreadmire_",
+    "cavernous:myst/stillmarsh",
+    "deep_aether:yagroot_swamp",
+    "midnight:deceitful_marsh",
+    "midnight:deceitful_swamp",
+    "twilightforest:fire_swamp",
+    "twilightforest:swamp",
+    "undergarden:blood_mushroom_bog",
+    "undergarden:indigo_mushroom_bog",
+    "undergarden:ink_mushroom_bog",
+    "undergarden:veil_mushroom_bog"
+  ]
+}

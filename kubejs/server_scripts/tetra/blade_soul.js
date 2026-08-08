@@ -1,7 +1,7 @@
 // priority: 200
 // 用于构建 tetra:modules/slashblade/soul/sa.json
 
-const tetraSlashBladeSABuilder = (event) => {
+let tetraSlashBladeSABuilder = (event) => {
     let type = "slashbladetetra:blade";
     let slots = ["slashblade/soul"];
     let improvements = ["tetra:slashblade/shared/"];

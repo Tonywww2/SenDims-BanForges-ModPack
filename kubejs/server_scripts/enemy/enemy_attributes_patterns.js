@@ -1,17 +1,16 @@
 // priority: 200
-const $TargetingConditions = Java.loadClass('net.minecraft.world.entity.ai.targeting.TargetingConditions')
 
-const diffLevelPrefix = "dl_";
-const health = "minecraft:generic.max_health"
-const attack = "minecraft:generic.attack_damage"
-const armor = "minecraft:generic.armor"
-const magic_resist = "slashblade_sendims:magic_resistance"
-const frenzy_resistance = "slashblade_sendims:frenzy_resistance"
+let diffLevelPrefix = "dl_";
+let health = "minecraft:generic.max_health"
+let attack = "minecraft:generic.attack_damage"
+let armor = "minecraft:generic.armor"
+let magic_resist = "slashblade_sendims:magic_resistance"
+let frenzy_resistance = "slashblade_sendims:frenzy_resistance"
 // 攻击， 生命， 护甲， 魔抗
 /**
  * 均衡模板
  */
-const typeA = {
+let typeA = {
     isBoss: false,
     "0_1": [4, 20, 2, 0],
 
@@ -20,65 +19,65 @@ const typeA = {
     "1_3": [32, 210, 6, 10],
     "1_4": [47, 300, 10, 20],
 
-    "2_1": [87, 800, 20, 25],
-    "2_2": [145, 1100, 40, 25],
-    "2_3": [215, 4000, 60, 30],
+    "2_1": [87, 800, 20, 35],
+    "2_2": [145, 1100, 40, 35],
+    "2_3": [215, 4000, 60, 40],
 
-    "3_1": [325, 4500, 80, 35],
-    "3_2": [460, 8000, 110, 35],
-    "3_3": [700, 13000, 145, 40],
+    "3_1": [325, 4500, 80, 45],
+    "3_2": [460, 8000, 110, 45],
+    "3_3": [700, 13000, 145, 50],
 
-    "4_1": [945, 19000, 180, 40],
-    "4_2": [1200, 38000, 220, 45]
+    "4_1": [945, 19000, 180, 50],
+    "4_2": [1200, 38000, 220, 55]
 };
 /**
  * 均衡模板 EX1
  */
-const typeAEX1 = {
+let typeAEX1 = {
     isBoss: false,
     "0_1": [8, 45, 2, 0],
 
     "1_1": [15.5, 140, 2, 10],
     "1_2": [32, 210, 6, 10],
-    "1_3": [47, 300, 10, 15],
-    "1_4": [87, 800, 20, 15],
+    "1_3": [47, 300, 10, 20],
+    "1_4": [87, 800, 20, 35],
 
-    "2_1": [145, 1100, 40, 20],
-    "2_2": [215, 4000, 60, 20],
-    "2_3": [325, 4500, 80, 25],
+    "2_1": [145, 1100, 40, 35],
+    "2_2": [215, 4000, 60, 40],
+    "2_3": [325, 4500, 80, 45],
 
-    "3_1": [460, 8000, 110, 25],
-    "3_2": [700, 13000, 145, 30],
-    "3_3": [945, 19000, 180, 35],
+    "3_1": [460, 8000, 110, 45],
+    "3_2": [700, 13000, 145, 50],
+    "3_3": [945, 19000, 180, 50],
 
-    "4_1": [1200, 38000, 220, 40],
-    "4_2": [1600, 74000, 260, 45]
+    "4_1": [1200, 38000, 220, 55],
+    "4_2": [1600, 74000, 260, 55]
 };
 /**
  * 均衡模板 EX2
  */
-const typeAEX2 = {
+let typeAEX2 = {
     isBoss: false,
     "0_1": [12, 140, 2, 5],
 
     "1_1": [24, 210, 4, 10],
-    "1_2": [36, 300, 8, 13],
-    "1_3": [65, 800, 15, 15],
-    "1_4": [116, 1100, 30, 18],
+    "1_2": [36, 300, 8, 15],
+    "1_3": [65, 800, 15, 25],
+    "1_4": [116, 1100, 30, 35],
 
-    "2_1": [180, 4000, 50, 20],
-    "2_2": [270, 4500, 70, 23],
-    "2_3": [393, 8000, 95, 25],
+    "2_1": [180, 4000, 50, 35],
+    "2_2": [270, 4500, 70, 45],
+    "2_3": [393, 8000, 95, 45],
 
-    "3_1": [580, 13000, 128, 28],
-    "3_2": [823, 19000, 163, 33],
-    "3_3": [1073, 38500, 200, 38],
+    "3_1": [580, 13000, 128, 50],
+    "3_2": [823, 19000, 163, 50],
+    "3_3": [1073, 38500, 200, 55],
 
-    "4_1": [1400, 74000, 240, 43],
-    "4_2": [1750, 108000, 280, 48]
+    "4_1": [1400, 74000, 240, 55],
+    "4_2": [1750, 108000, 280, 60]
 };
 
-const deriveTemplate = (baseTemplate, isBoss, mults, adds) => {
+let deriveTemplate = (baseTemplate, isBoss, mults, adds) => {
     let result = { isBoss: isBoss };
     for (let key in baseTemplate) {
         if (key !== "isBoss") {
@@ -97,7 +96,7 @@ const deriveTemplate = (baseTemplate, isBoss, mults, adds) => {
 /**
  * 脆皮模板
  */
-const typeB = deriveTemplate(typeA,
+let typeB = deriveTemplate(typeA,
     false,
     [1.2, 0.5, 0.5, 1],
     [0, 0, 0, 10]
@@ -106,7 +105,7 @@ const typeB = deriveTemplate(typeA,
 /**·
  * 坦克模板
  */
-const typeC = deriveTemplate(typeA,
+let typeC = deriveTemplate(typeA,
     false,
     [0.8, 1.8, 0.8, 1],
     [0, 0, 0, 10]
@@ -115,7 +114,7 @@ const typeC = deriveTemplate(typeA,
 /**
  * 重甲模板
  */
-const typeD = deriveTemplate(typeA,
+let typeD = deriveTemplate(typeA,
     false,
     [0.9, 0.9, 1.75, 1],
     [0, 0, 0, -10]
@@ -124,7 +123,7 @@ const typeD = deriveTemplate(typeA,
 /**
  * 史莱姆模板
  */
-const typeSlime = deriveTemplate(typeA,
+let typeSlime = deriveTemplate(typeA,
     false,
     [0.9, 1, 0.5, 0],
     [0, 0, 0, -10]
@@ -133,7 +132,7 @@ const typeSlime = deriveTemplate(typeA,
 /**
  * 中立/默认模板
  */
-const type0 = deriveTemplate(typeA,
+let type0 = deriveTemplate(typeA,
     false,
     [0.6, 0.8, 0.4, 1],
     [0, 0, 0, 0]
@@ -142,7 +141,7 @@ const type0 = deriveTemplate(typeA,
 /**·
  * 坦克模板 EX2
  */
-const typeCEX2 = deriveTemplate(typeAEX2,
+let typeCEX2 = deriveTemplate(typeAEX2,
     false,
     [0.8, 1.8, 0.8, 1],
     [0, 0, 0, 10]
@@ -151,7 +150,7 @@ const typeCEX2 = deriveTemplate(typeAEX2,
 /**
  * 精英怪模板
  */
-const typeAE = deriveTemplate(typeA,
+let typeAE = deriveTemplate(typeA,
     true,
     [1.15, 4, 1, 1],
     [0, 0, 0, 20]
@@ -160,7 +159,7 @@ const typeAE = deriveTemplate(typeA,
 /**
  * BOSS1
  */
-const bossType1 = deriveTemplate(typeA,
+let bossType1 = deriveTemplate(typeA,
     true,
     [1.15, 12, 1, 1],
     [0, 0, 0, 20]
@@ -169,7 +168,7 @@ const bossType1 = deriveTemplate(typeA,
 /**
  * BOSS2
  */
-const bossType2 = deriveTemplate(typeA,
+let bossType2 = deriveTemplate(typeA,
     true,
     [1.1, 19, 1.1, 1],
     [0, 0, 0, 25]
@@ -178,7 +177,7 @@ const bossType2 = deriveTemplate(typeA,
 /**
  * BOSS1Weak
  */
-const bossType1W = deriveTemplate(typeA,
+let bossType1W = deriveTemplate(typeA,
     true,
     [1, 4, 1, 1],
     [0, 0, 0, 0]
@@ -187,7 +186,7 @@ const bossType1W = deriveTemplate(typeA,
 /**
  * BOSS EX1
  */
-const bossType1EX1 = deriveTemplate(typeAEX1,
+let bossType1EX1 = deriveTemplate(typeAEX1,
     true,
     [1.15, 6, 1, 1],
     [0, 0, 0, 20]
@@ -196,7 +195,7 @@ const bossType1EX1 = deriveTemplate(typeAEX1,
 /**
  * BOSS EX2
  */
-const bossType2EX2 = deriveTemplate(typeAEX2,
+let bossType2EX2 = deriveTemplate(typeAEX2,
     true,
     [1.1, 9, 1.1, 1],
     [0, 0, 0, 25]
@@ -204,7 +203,7 @@ const bossType2EX2 = deriveTemplate(typeAEX2,
 /**
  * BOSS 九头蛇
  */
-const bossTypeHydra = deriveTemplate(typeAEX2,
+let bossTypeHydra = deriveTemplate(typeAEX2,
     true,
     [1.1, 3, 0, 1],
     [0, 0, 0, 5]
@@ -212,7 +211,7 @@ const bossTypeHydra = deriveTemplate(typeAEX2,
 /**
  * BOSS 雪怪王
  */
-const bossTypeAlphaYeti = deriveTemplate(typeAEX2,
+let bossTypeAlphaYeti = deriveTemplate(typeAEX2,
     true,
     [0.7, 3, 0.4, 1],
     [0, 0, 0, 20]
@@ -220,7 +219,7 @@ const bossTypeAlphaYeti = deriveTemplate(typeAEX2,
 /**
  * BOSS 末影龙
  */
-const bossTypeDragon = deriveTemplate(bossType2,
+let bossTypeDragon = deriveTemplate(bossType2,
     true,
     [1, 1, 0.8, 1],
     [0, 0, 0, 0]
@@ -228,7 +227,7 @@ const bossTypeDragon = deriveTemplate(bossType2,
 /**
  * BOSS 盖亚
  */
-const bossTypeGaia = deriveTemplate(bossType2,
+let bossTypeGaia = deriveTemplate(bossType2,
     true,
     [1, 2, 1, 1],
     [0, 0, 0, 10]
@@ -237,7 +236,7 @@ const bossTypeGaia = deriveTemplate(bossType2,
 /**·
  * 末影人模板
  */
-const typeEnderman = deriveTemplate(typeC,
+let typeEnderman = deriveTemplate(typeC,
     false,
     [1.0, 1.0, 1.0, 1.0],
     [0, 0, 0, 0]
@@ -249,7 +248,7 @@ typeEnderman["2_3"][2] = typeEnderman["2_3"][2] * 0.75
 /**·
  * 鱼雷模板
  */
-const typeGuardian = deriveTemplate(typeA,
+let typeGuardian = deriveTemplate(typeA,
     false,
     [0.5, 1.0, 1.0, 1.0],
     [0, 0, 0, 0]
@@ -257,7 +256,7 @@ const typeGuardian = deriveTemplate(typeA,
 /**·
  * 宇宙水晶模板
  */
-const typeCosmicCrystal = deriveTemplate(typeA,
+let typeCosmicCrystal = deriveTemplate(typeA,
     false,
     [1.0, 0.1, 0.0, 1.0],
     [0, 0, 0, 0]
@@ -265,7 +264,7 @@ const typeCosmicCrystal = deriveTemplate(typeA,
 
 
 // 攻击， 生命， 护甲，魔抗
-const additionalStageScale = {
+let additionalStageScale = {
     "0_1": [1, 1, 1, 1],
 
     "1_1": [1, 1, 1, 1],
@@ -285,13 +284,13 @@ const additionalStageScale = {
     "4_2": [1, 1.3, 1, 1]
 }
 
-const hpFloat = 0.15;
-const atkFloat = 0.025;
-const armorFloat = 0.05;
+let hpFloat = 0.15;
+let atkFloat = 0.025;
+let armorFloat = 0.05;
 /**
  * 维度对应的难度等级
  */
-const dimensionStages = new Map([
+let dimensionStages = new Map([
     ["tofucraft:tofu_world", "0_1"],
 
     ["sdbf:deep_realm_level_1", "1_1"],
@@ -321,6 +320,16 @@ const dimensionStages = new Map([
     ["sdbf:inside_the_end", "3_3"],
     ["minecraft:overworld", "0_1"], // Special
 
+    ["sgjourney:abydos", "3_3"],
+    ["sgjourney:athos", "3_3"],
+    ["sgjourney:cavum_tenebrae", "3_3"],
+    ["sgjourney:chulak", "3_3"],
+    ["sgjourney:destiny", "3_3"],
+    ["sgjourney:lantea", "3_3"],
+    ["sgjourney:rima", "3_3"],
+    ["sgjourney:tollan", "3_3"],
+    ["sgjourney:unitas", "3_3"],
+
     ["titan_moon:titan", "4_1"],
     ["ad_astra:glacio", "4_1"],
 
@@ -328,7 +337,7 @@ const dimensionStages = new Map([
 
 ]);
 
-const dimensionSpecialRule = new Map([
+let dimensionSpecialRule = new Map([
     ["minecraft:overworld", {
         stageID: OVERWORLD_STAGE,
         normalDifficulty: "0_1",

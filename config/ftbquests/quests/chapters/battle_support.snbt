@@ -30,7 +30,7 @@
 			}]
 			title: "神化"
 			x: 0.0d
-			y: 12.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["3C14A2F8BA3C3DA6"]
@@ -48,7 +48,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 12.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["3C14A2F8BA3C3DA6"]
@@ -79,7 +79,7 @@
 			]
 			title: "神话材料"
 			x: 0.0d
-			y: 15.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["278A39AEC26ACC1A"]
@@ -90,7 +90,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 15.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["77ABEFEE93012F0A"]
@@ -111,7 +111,7 @@
 			]
 			title: "雕刻与回收"
 			x: 6.0d
-			y: 12.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["278A39AEC26ACC1A"]
@@ -123,7 +123,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 18.0d
+			y: 21.0d
 		}
 		{
 			dependencies: [
@@ -137,7 +137,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 18.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["03D989C2ED12227E"]
@@ -148,7 +148,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 18.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["77ABEFEE93012F0A"]
@@ -184,7 +184,7 @@
 			]
 			title: "各种功能符石"
 			x: 3.0d
-			y: 9.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["77693A4D5EF97A31"]
@@ -196,7 +196,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 6.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["5748351A76910019"]
@@ -217,7 +217,7 @@
 			}]
 			title: "跑图工具"
 			x: 0.0d
-			y: 6.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["00C3C00C3688CEA7"]
@@ -229,7 +229,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 9.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["00C3C00C3688CEA7"]
@@ -241,7 +241,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 6.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["6D19670214234AFA"]
@@ -253,7 +253,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 9.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["6D19670214234AFA"]
@@ -265,7 +265,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 6.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["3C14A2F8BA3C3DA6"]
@@ -286,7 +286,7 @@
 			}]
 			title: "神化刷怪笼"
 			x: 0.0d
-			y: 21.0d
+			y: 24.0d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
@@ -299,7 +299,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 21.0d
+			y: 24.0d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
@@ -312,7 +312,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 21.0d
+			y: 24.0d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
@@ -325,7 +325,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 21.0d
+			y: 24.0d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
@@ -338,7 +338,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 21.0d
+			y: 24.0d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
@@ -351,7 +351,7 @@
 				type: "item"
 			}]
 			x: 18.0d
-			y: 21.0d
+			y: 24.0d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
@@ -364,7 +364,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: 21.0d
+			y: 24.0d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
@@ -377,7 +377,7 @@
 				type: "item"
 			}]
 			x: 30.0d
-			y: 21.0d
+			y: 24.0d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
@@ -390,7 +390,7 @@
 				type: "item"
 			}]
 			x: 33.0d
-			y: 21.0d
+			y: 24.0d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
@@ -403,7 +403,7 @@
 				type: "item"
 			}]
 			x: 27.0d
-			y: 21.0d
+			y: 24.0d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
@@ -416,7 +416,7 @@
 				type: "item"
 			}]
 			x: 24.0d
-			y: 21.0d
+			y: 24.0d
 		}
 		{
 			dependencies: ["12CBC73AFDD99F2C"]
@@ -429,7 +429,7 @@
 				type: "item"
 			}]
 			x: 21.0d
-			y: 21.0d
+			y: 24.0d
 		}
 		{
 			dependencies: [
@@ -446,7 +446,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 24.0d
+			y: 27.0d
 		}
 		{
 			dependencies: ["71F1943E6E3FCA17"]
@@ -689,7 +689,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 39.0d
+			y: 42.0d
 		}
 		{
 			dependencies: ["047BB42636510BA1"]
@@ -827,7 +827,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 24.0d
+			y: 27.0d
 		}
 		{
 			dependencies: ["2563ABCEC67C3877"]
@@ -843,7 +843,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 24.0d
+			y: 27.0d
 		}
 		{
 			dependencies: ["2563ABCEC67C3877"]
@@ -854,7 +854,7 @@
 				type: "item"
 			}]
 			x: 18.0d
-			y: 24.0d
+			y: 27.0d
 		}
 		{
 			dependencies: ["2563ABCEC67C3877"]
@@ -865,7 +865,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 24.0d
+			y: 27.0d
 		}
 		{
 			dependencies: ["71D1A86D601690A9"]
@@ -876,7 +876,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 27.0d
+			y: 30.0d
 		}
 		{
 			dependencies: ["0CE6997123F920F8"]
@@ -887,7 +887,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 30.0d
+			y: 33.0d
 		}
 		{
 			dependencies: ["0CE6997123F920F8"]
@@ -898,7 +898,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 27.0d
+			y: 30.0d
 		}
 		{
 			dependencies: ["0CE6997123F920F8"]
@@ -909,7 +909,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 30.0d
+			y: 33.0d
 		}
 		{
 			dependencies: ["106E4F4250B39565"]
@@ -920,7 +920,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 33.0d
+			y: 36.0d
 		}
 		{
 			dependencies: ["04000D795240E2C3"]
@@ -931,7 +931,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 30.0d
+			y: 33.0d
 		}
 		{
 			dependencies: ["1A36C9EDCEF16904"]
@@ -942,7 +942,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 33.0d
+			y: 36.0d
 		}
 		{
 			dependencies: ["1A36C9EDCEF16904"]
@@ -953,7 +953,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 27.0d
+			y: 30.0d
 		}
 		{
 			dependencies: ["1A36C9EDCEF16904"]
@@ -964,7 +964,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 33.0d
+			y: 36.0d
 		}
 		{
 			dependencies: ["5775E3020ACAC66A"]
@@ -975,7 +975,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 27.0d
+			y: 30.0d
 		}
 		{
 			dependencies: ["76D98D4CA2BB39AF"]
@@ -986,7 +986,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: 30.0d
+			y: 33.0d
 		}
 		{
 			dependencies: ["76D98D4CA2BB39AF"]
@@ -997,7 +997,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 30.0d
+			y: 33.0d
 		}
 		{
 			dependencies: ["17EDE37B5E5EF5D3"]
@@ -1008,7 +1008,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 33.0d
+			y: 36.0d
 		}
 		{
 			dependencies: ["76D98D4CA2BB39AF"]
@@ -1019,7 +1019,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: 27.0d
+			y: 30.0d
 		}
 		{
 			dependencies: ["76C5BDB2118AA568"]
@@ -1030,7 +1030,7 @@
 				type: "item"
 			}]
 			x: 18.0d
-			y: 27.0d
+			y: 30.0d
 		}
 		{
 			dependencies: ["76C5BDB2118AA568"]
@@ -1041,7 +1041,7 @@
 				type: "item"
 			}]
 			x: 21.0d
-			y: 27.0d
+			y: 30.0d
 		}
 		{
 			dependencies: ["4C56CFEEBC74DE9A"]
@@ -1145,7 +1145,7 @@
 				type: "item"
 			}]
 			x: 18.0d
-			y: 15.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["2563ABCEC67C3877"]
@@ -1156,7 +1156,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 36.0d
+			y: 39.0d
 		}
 		{
 			dependencies: ["6BD8E758F26DBE8F"]
@@ -1167,7 +1167,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 36.0d
+			y: 39.0d
 		}
 		{
 			dependencies: ["7C1FC62A66B05BB4"]
@@ -1178,7 +1178,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 36.0d
+			y: 39.0d
 		}
 		{
 			dependencies: ["1DE54DDD04540738"]
@@ -1198,7 +1198,86 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 9.0d
+			y: 12.0d
+		}
+		{
+			id: "69932B77B63E4FE8"
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "长距离跑图工具"
+			tasks: [{
+				id: "32BC67AEB2C4E199"
+				item: "rodofdiscord:chaos_rod_1500"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["69932B77B63E4FE8"]
+			id: "0BA3EE6A57196ADF"
+			tasks: [{
+				id: "6846601EB4C3C50C"
+				item: "rodofdiscord:chaos_rod_10"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["69932B77B63E4FE8"]
+			id: "625841BF8E146E35"
+			tasks: [{
+				id: "237458026AD8E10F"
+				item: "rodofdiscord:chaos_rod_25"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["69932B77B63E4FE8"]
+			id: "59F3F3C385567498"
+			tasks: [{
+				id: "5AEC8B800055387B"
+				item: "rodofdiscord:chaos_rod_50"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["69932B77B63E4FE8"]
+			id: "134E90EFC12C4663"
+			tasks: [{
+				id: "38E0EDC96CB17ED0"
+				item: "rodofdiscord:chaos_rod_100"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["69932B77B63E4FE8"]
+			id: "1170BD4C13200DCF"
+			tasks: [{
+				id: "6F45D11FACD2C2D5"
+				item: "rodofdiscord:chaos_rod_250"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["69932B77B63E4FE8"]
+			id: "3AFFB8750A075E28"
+			tasks: [{
+				id: "66D18C1683C5640C"
+				item: "rodofdiscord:chaos_rod_500"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 6.0d
 		}
 	]
 	title: "战斗辅助"

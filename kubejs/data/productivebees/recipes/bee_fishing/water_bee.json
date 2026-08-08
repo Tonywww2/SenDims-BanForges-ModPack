@@ -1,0 +1,19 @@
+{
+  "type": "productivebees:bee_fishing",
+  "bee": "productivebees:water",
+  "biomes": [
+    "minecraft:river",
+    "ancient_aether:sky_lake",
+    "midnight:dark_river",
+    "tofucraft:tofu_river",
+    "twilightforest:lake",
+    "twilightforest:stream"
+  ],
+  "chance": 0.05,
+  "conditions": [
+    {
+      "type": "productivebees:bee_exists",
+      "bee": "productivebees:water"
+    }
+  ]
+}

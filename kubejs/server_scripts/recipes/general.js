@@ -1,4 +1,12 @@
 ServerEvents.recipes(event => {
+    event.shapeless('kubejs:linear_quest_book',
+        'ftbquests:book')
+        .id('sdbf:linear_quest_book_from_quest_book')
+        
+    event.shapeless('ftbquests:book',
+        'kubejs:linear_quest_book')
+        .id('sdbf:quest_book_from_linear_quest_book')
+
     event.shaped('kubejs:star_chart', [
         'FFF',
         'FFF',
@@ -27,12 +35,12 @@ ServerEvents.recipes(event => {
         .id('sdbf:star_chart')
 
     event.shapeless('slashblade:proudsoul_tiny',
-        [Item.of('slashblade_sendims:blood_jade', '{sbsd.bj.kill_count:10}')])
+        [Item.of('slashblade_sendims:blood_jade')])
         .modifyResult((grid, result) => {
             let bloodJade = grid.find('slashblade_sendims:blood_jade');
             if (bloodJade && bloodJade.nbt) {
                 let count = Math.floor(bloodJade.nbt.getInt('sbsd.bj.kill_count') / 15);
-                count = Math.max(1, Math.min(56));
+                count = Math.max(1, Math.min(56, count));
                 return Item.of('slashblade:proudsoul_tiny', count);
             }
 

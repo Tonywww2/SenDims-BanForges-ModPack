@@ -1,6 +1,6 @@
 // priority: 100
 
-const BASE_STRUCTURE_PATTERNS = [
+let BASE_STRUCTURE_PATTERNS = [
     [
         " A ",
         "AAA",
@@ -18,7 +18,7 @@ const BASE_STRUCTURE_PATTERNS = [
     ]
 ];
 
-const RETURN_PORTAL_PATTERN = [
+let RETURN_PORTAL_PATTERN = [
     [
         "   ",
         "   ",
@@ -36,7 +36,7 @@ const RETURN_PORTAL_PATTERN = [
     ]
 ];
 
-const registeredStructures = Utils.newMap();
+let registeredStructures = Utils.newMap();
 
 /**
  * boss召唤结构
@@ -47,7 +47,7 @@ const registeredStructures = Utils.newMap();
  * @param {boolean} config.destroyAfterSpawn - 召唤后是否销毁结构
  * @param {string} config.failMessage - 结构不匹配时的提示消息
  */
-const createBossStructure = (config) => {
+let createBossStructure = (config) => {
 
     let activateItem = config.activateItem;
     let blockMapping = config.blockMapping;
@@ -65,7 +65,7 @@ const createBossStructure = (config) => {
     if (destroyAfterSpawn === undefined) destroyAfterSpawn = true;
     if (consumeActivateItem === undefined) consumeActivateItem = true;
 
-    const destroyStructure = (level, centerPos) => {
+    let destroyStructure = (level, centerPos) => {
         for (let layerIndex = 0; layerIndex < patterns.length; layerIndex++) {
             let pattern = patterns[layerIndex];
             let yOffset = 1 - layerIndex;
@@ -86,7 +86,7 @@ const createBossStructure = (config) => {
         }
     };
 
-    const checkStructure = (level, centerPos) => {
+    let checkStructure = (level, centerPos) => {
         for (let layerIndex = 0; layerIndex < patterns.length; layerIndex++) {
             let pattern = patterns[layerIndex];
             let yOffset = 1 - layerIndex;
@@ -119,7 +119,7 @@ const createBossStructure = (config) => {
         return true;
     };
 
-    const spawn = (level, centerPos, player, event) => {
+    let spawn = (level, centerPos, player, event) => {
         if (destroyAfterSpawn) {
             destroyStructure(level, centerPos);
         }
@@ -151,7 +151,7 @@ const createBossStructure = (config) => {
  * 注册一个传送结构
  * @param {Object} config
  */
-const registerPortal = (config) => {
+let registerPortal = (config) => {
     let xf = config.x;
     let yf = config.y;
     let zf = config.z;
@@ -159,7 +159,7 @@ const registerPortal = (config) => {
     let toDim = config.to;
     let clearDestinationBlocks = config.clearDestinationBlocks;
 
-    const executePortalCommands = (level, centerPos, player) => {
+    let executePortalCommands = (level, centerPos, player) => {
         if (from != null && level.dimensionKey !== from) {
             player.tell(Text.translatable("info.kubejs.wrong_dimension"));
             return;
@@ -220,7 +220,7 @@ const registerPortal = (config) => {
  * 注册一个召唤结构
  * @param {Object} config
  */
-const registerStructure = (config) => {
+let registerStructure = (config) => {
     let structure = createBossStructure(config);
     registeredStructures.put(config.activateItem, structure);
     return structure;

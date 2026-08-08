@@ -1,6 +1,6 @@
 // priority: 100
 ServerEvents.highPriorityData(event => {
-    const aetherBoss = (id) => {
+    let aetherBoss = (id) => {
         let boss = bossMaterialBuilder(event, id, "aether")
             .setWeight(75).setQuality(2).setSize(1, 1)
             .addValidGearSet("#aether").addDimension("aether:the_aether")

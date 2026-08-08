@@ -1,6 +1,6 @@
 // priority: 100
 ServerEvents.highPriorityData(event => {
-    const undergardenBoss = (id, gearSet) => {
+    let undergardenBoss = (id, gearSet) => {
         let boss = bossMaterialBuilder(event, id, "undergarden")
             .setWeight(75).setQuality(2).setSize(1, 1)
             .addValidGearSet(gearSet).addDimension("undergarden:undergarden")

@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:is_snowy",
+    "aether_redux:frosted_forests",
+    "aether_redux:glacial_tundra",
+    "ancient_aether:festive_wyndcap_taiga",
+    "ancient_aether:frozen_caverns",
+    "cavernous:icy_caves",
+    "infinity_cave:frozen_caves",
+    "twilightforest:glacier",
+    "twilightforest:snowy_forest",
+    "undergarden:frostfields",
+    "undergarden:frosty_smogstem_forest"
+  ]
+}

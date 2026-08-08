@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:windswept_savanna",
+    "minecraft:wooded_badlands",
+    "minecraft:old_growth_pine_taiga",
+    "minecraft:old_growth_spruce_taiga",
+    "aether_redux:the_blight",
+    "cavernous:arid_caves",
+    "cavernous:painted_caves",
+    "midnight:warped_fields",
+    "tofucraft:tofu_waste",
+    "twilightforest:thornlands",
+    "undergarden:radiation_wasteland"
+  ]
+}

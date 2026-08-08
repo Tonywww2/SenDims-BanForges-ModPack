@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:is_plains",
+    "aether:skyroot_grove",
+    "aether:skyroot_meadow",
+    "aether_redux:gilded_grasslands",
+    "aether_redux:glacial_tundra",
+    "aether_redux:skyfields",
+    "aether_redux:skyroot_shrublands",
+    "aether_redux:the_blight",
+    "ancient_aether:elevated_clearing",
+    "deep_aether:aerlavender_fields",
+    "#midnight:is_plains",
+    "tofucraft:tofu_plains",
+    "tofucraft:tofu_waste",
+    "twilightforest:clearing",
+    "twilightforest:final_plateau",
+    "undergarden:forgotten_field",
+    "undergarden:frostfields",
+    "undergarden:radiation_wasteland"
+  ]
+}

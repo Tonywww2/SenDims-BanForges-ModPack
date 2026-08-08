@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
         B: 'cataclysm:void_assault_shoulder_weapon',
         A: '#forge:storage_blocks/regalium',
         C: 'kubejs:coil_of_sorrow',
-        D: 'cataclysm:ignitium_elytra_chestplate'
+        D: 'minecraft:elytra'
     }).id('sdbf:the_nectar_quest_s4')
 
     event.shaped('kubejs:multifaceted_ambrosia', [

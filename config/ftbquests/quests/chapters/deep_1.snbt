@@ -443,7 +443,11 @@
 		}
 		{
 			dependencies: ["64D03E66319AF253"]
-			description: ["可以制作泥砖村庄的结构羽毛笔。"]
+			description: [
+				"可以制作泥砖村庄的结构羽毛笔。"
+				""
+				"&c注意：&r两种村庄的生成范围不同，如果你发现一种太远了，可以尝试制作另一种村庄的结构羽毛笔。"
+			]
 			id: "008A8F19BD6601FB"
 			tasks: [{
 				id: "3E279853764D0544"
@@ -462,7 +466,11 @@
 		}
 		{
 			dependencies: ["64D03E66319AF253"]
-			description: ["可以制作石头村庄的结构羽毛笔。"]
+			description: [
+				"可以制作石头村庄的结构羽毛笔。"
+				""
+				"&c注意：&r两种村庄的生成范围不同，如果你发现一种太远了，可以尝试制作另一种村庄的结构羽毛笔。"
+			]
 			id: "22FB062F79308882"
 			tasks: [{
 				id: "508326400EA6C64D"
@@ -530,7 +538,10 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["71F1943E6E3FCA17"]
+			dependencies: [
+				"71F1943E6E3FCA17"
+				"69932B77B63E4FE8"
+			]
 			description: [
 				"使用&6裂纹砖块&r建造3x3平台，在中心放置&6红砖块&r"
 				"使用&6深渊证章&r右键&6红砖块&r激活传送"
@@ -550,6 +561,11 @@
 					count: 2
 					id: "3A3F7DA3F3F42D69"
 					item: "kubejs:apoth_boss_remover"
+					type: "item"
+				}
+				{
+					id: "011B4DF5C884D3F2"
+					item: "rodofdiscord:chaos_rod_1500"
 					type: "item"
 				}
 			]

@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:is_sandy",
+    "cavernous:arid_caves",
+    "cavernous:desert_caves",
+    "cavernous:painted_caves",
+    "tofucraft:tofu_beach",
+    "tofucraft:tofu_waste",
+    "undergarden:radiation_wasteland"
+  ]
+}

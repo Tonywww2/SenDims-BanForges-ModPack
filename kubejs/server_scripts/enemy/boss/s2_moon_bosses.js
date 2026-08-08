@@ -1,6 +1,6 @@
 // priority: 100
 ServerEvents.highPriorityData(event => {
-    const moonBoss = (id) => {
+    let moonBoss = (id) => {
         let boss = bossMaterialBuilder(event, id, "moon")
             .setWeight(75).setQuality(2).setSize(1, 1)
             .addValidGearSet("#moon").addDimension("ad_astra:moon")

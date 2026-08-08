@@ -3,7 +3,7 @@
 /**
  * 生物对应的模板
  */
-const mobTypes = new Map([
+let mobTypes = new Map([
     ['productivebees:configurable_bee', type0],
     ['productivebees:sweat_bee', type0],
     ['productivebees:digger_bee', type0],
@@ -436,6 +436,7 @@ const mobTypes = new Map([
     ["minecraft:donkey", typeA],
     ["biomemakeover:ghost", typeA],
     ["minecraft:panda", typeC],
+    ["minecraft:elder_guardian", bossType1],
     
     ["terra_entity:demolitionist", typeA],
     ["bagusmob:hunter_boar", typeA],
@@ -510,7 +511,7 @@ const mobTypes = new Map([
 /**
  * 黑名单
  */
-const entityBlackList = new Set([
+let entityBlackList = new Set([
     "powerful_dummy:test_dummy",
     "terra_entity:summon_diamond_sword",
     "terra_entity:summon_golden_sword",

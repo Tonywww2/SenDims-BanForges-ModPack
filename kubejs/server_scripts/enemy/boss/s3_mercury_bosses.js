@@ -1,6 +1,6 @@
 // priority: 100
 ServerEvents.highPriorityData(event => {
-    const mercuryBoss = (id) => {
+    let mercuryBoss = (id) => {
         let boss = bossMaterialBuilder(event, id, "mercury")
             .setWeight(75).setQuality(2).setSize(1, 1)
             .addValidGearSet("#the_nether").addDimension("ad_astra:mercury")

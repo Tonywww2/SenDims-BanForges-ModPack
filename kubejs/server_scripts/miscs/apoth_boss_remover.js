@@ -1,11 +1,11 @@
-const APOTH_BOSS_REMOVER_ITEM = 'kubejs:apoth_boss_remover';
-const APOTH_BOSS_REMOVER_RANGE = 64;
-const APOTH_BOSS_REMOVER_RANGE_SQR = APOTH_BOSS_REMOVER_RANGE * APOTH_BOSS_REMOVER_RANGE;
-const APOTH_BOSS_MARKER_KEY = 'apoth.boss';
-const APOTH_BOSS_RARITY_KEY = 'apoth.rarity';
-const APOTH_MYTHIC_RARITY = 'apotheosis:mythic';
+let APOTH_BOSS_REMOVER_ITEM = 'kubejs:apoth_boss_remover';
+let APOTH_BOSS_REMOVER_RANGE = 64;
+let APOTH_BOSS_REMOVER_RANGE_SQR = APOTH_BOSS_REMOVER_RANGE * APOTH_BOSS_REMOVER_RANGE;
+let APOTH_BOSS_MARKER_KEY = 'apoth.boss';
+let APOTH_BOSS_RARITY_KEY = 'apoth.rarity';
+let APOTH_MYTHIC_RARITY = 'apotheosis:mythic';
 
-// const isMythicApothBoss = entity => {
+// let isMythicApothBoss = entity => {
 // 	if (!entity || !entity.isAlive() || !entity.forgePersistentData) return false;
 
 // 	let data = entity.forgePersistentData;
@@ -13,7 +13,7 @@ const APOTH_MYTHIC_RARITY = 'apotheosis:mythic';
 // 		String(data.getString(APOTH_BOSS_RARITY_KEY)) === APOTH_MYTHIC_RARITY;
 // };
 
-const findNearestMythicApothBoss = (level, player) => {
+let findNearestMythicApothBoss = (level, player) => {
 	let searchBox = player.boundingBox.inflate(APOTH_BOSS_REMOVER_RANGE);
 	let nearestBoss = null;
 	let nearestDistanceSqr = APOTH_BOSS_REMOVER_RANGE_SQR + 1;

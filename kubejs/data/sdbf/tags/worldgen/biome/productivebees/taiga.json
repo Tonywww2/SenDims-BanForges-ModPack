@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:is_taiga",
+    "aether_redux:frosted_forests",
+    "ancient_aether:festive_wyndcap_taiga",
+    "ancient_aether:wyndcap_taiga",
+    "twilightforest:snowy_forest"
+  ]
+}

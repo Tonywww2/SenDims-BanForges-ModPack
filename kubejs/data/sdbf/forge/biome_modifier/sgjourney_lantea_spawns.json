@@ -1,0 +1,54 @@
+{
+    "type": "forge:add_spawns",
+    "biomes": "#sgjourney:is_lantea",
+    "spawners": [
+        {
+            "type": "minecraft:drowned",
+            "weight": 60,
+            "minCount": 2,
+            "maxCount": 4
+        },
+        {
+            "type": "cataclysm:deepling",
+            "weight": 35,
+            "minCount": 2,
+            "maxCount": 4
+        },
+        {
+            "type": "cataclysm:lionfish",
+            "weight": 25,
+            "minCount": 2,
+            "maxCount": 4
+        },
+        {
+            "type": "minecraft:guardian",
+            "weight": 20,
+            "minCount": 1,
+            "maxCount": 2
+        },
+        {
+            "type": "cataclysm:deepling_angler",
+            "weight": 18,
+            "minCount": 1,
+            "maxCount": 2
+        },
+        {
+            "type": "cataclysm:symbiocto",
+            "weight": 16,
+            "minCount": 2,
+            "maxCount": 4
+        },
+        {
+            "type": "cataclysm:drowned_host",
+            "weight": 10,
+            "minCount": 1,
+            "maxCount": 2
+        },
+        {
+            "type": "cataclysm:deepling_brute",
+            "weight": 5,
+            "minCount": 1,
+            "maxCount": 1
+        }
+    ]
+}

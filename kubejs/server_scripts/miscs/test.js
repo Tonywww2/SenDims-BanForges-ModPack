@@ -9,12 +9,8 @@ PlayerEvents.chat(event => {
 
         let targetTag = "ad_astra:can_survive_extreme_cold";
         
-        // 导入所需的Java类
-        let TagKey = Java.loadClass('net.minecraft.tags.TagKey');
-        let Registries = Java.loadClass('net.minecraft.core.registries.Registries');
-        
         // 生成TagKey
-        let tagKey = TagKey.create(Registries.ENTITY_TYPE, Utils.id(targetTag));
+        let tagKey = $TagKey.create($Registries.ENTITY_TYPE, Utils.id(targetTag));
         
         // 从注册表获取对应的实体类型
         let entityType = Utils.getRegistry('entity_type').getValue('ad_astra:corrupted_lunarian');

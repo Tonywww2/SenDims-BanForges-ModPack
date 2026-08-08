@@ -1,6 +1,4 @@
-// const $ForgeTier = Java.loadClass("net.minecraftforge.common.ForgeTier")
-// const $BlockTags = Java.loadClass("net.minecraft.tags.BlockTags")
-// const $TierSortingRegistry = Java.loadClass("net.minecraftforge.common.TierSortingRegistry")
+// Java classes for startup scripts belong in utils.js.
 
 SBSDEvents.registerTier(event => {
 //     event.registerTier(4,

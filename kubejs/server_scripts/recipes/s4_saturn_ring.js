@@ -9,10 +9,10 @@
 ServerEvents.recipes(event => {
 
     // ---- 便捷别名 / shortcuts -------------------------------------------------
-    const REGOLITH = 'kubejs:saturn_regolith'               // 土星风化砂 (新增)
-    const IRRAD = 'kubejs:irradiated_saturn_dust'        // 辐照土星砂 (新增)
-    const CORE = 'kubejs:saturn_ring_alloy_ingot'       // 土星环合金锭 (新增)
-    const RESULT = 'kubejs:celestial_filling_alloy_ingot' // 补天合金锭 (已注册)
+    let REGOLITH = 'kubejs:saturn_regolith'               // 土星风化砂 (新增)
+    let IRRAD = 'kubejs:irradiated_saturn_dust'        // 辐照土星砂 (新增)
+    let CORE = 'kubejs:saturn_ring_alloy_ingot'       // 土星环合金锭 (新增)
+    let RESULT = 'kubejs:celestial_filling_alloy_ingot' // 补天合金锭 (已注册)
 
     // ==========================================================================
     // T1 · 破碎：土星地表方块 → 土星风化砂

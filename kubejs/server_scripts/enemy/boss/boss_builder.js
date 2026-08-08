@@ -1,11 +1,11 @@
 // priority: 200
 // By Tonywww, 原始用途：千界万锻整合包
 
-const bossMaterialBuilder = (event, entity, path) => {
+let bossMaterialBuilder = (event, entity, path) => {
     let entityId = entity;
     let weight = 100;
     let quality = 1;
-    const size = {
+    let size = {
         "width": 0.6,
         "height": 1.8
     };
@@ -13,11 +13,11 @@ const bossMaterialBuilder = (event, entity, path) => {
     let dimensions = [];
     let minRarity = "common";
     let maxRarity = "legendary";
-    const stats = {};
+    let stats = {};
     
     let currentRarity = null;
 
-    const builder = {
+    let builder = {
         setEntity(id) { entityId = id; return builder; },
         setWeight(num) { weight = num; return builder; },
         setQuality(num) { quality = num; return builder; },
@@ -125,7 +125,7 @@ const bossMaterialBuilder = (event, entity, path) => {
         },
 
         build() {
-            const json = {
+            let json = {
                 entity: entityId,
                 weight: weight,
                 quality: quality,

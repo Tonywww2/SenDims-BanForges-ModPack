@@ -1,6 +1,6 @@
 // priority: 100
 ServerEvents.highPriorityData(event => {
-    const iEndBoss = (id) => {
+    let iEndBoss = (id) => {
         let boss = bossMaterialBuilder(event, id, "inside_the_end")
             .setWeight(75).setQuality(2).setSize(1, 1)
             .addValidGearSet("#the_end").addDimension("sdbf:inside_the_end")
