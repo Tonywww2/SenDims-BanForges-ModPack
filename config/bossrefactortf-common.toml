@@ -1,0 +1,127 @@
+
+#Shared attack-range telegraph rendering settings.
+[attack_telegraph]
+	#Render attack-range telegraphs.
+	enabled = true
+	#Maximum render distance.
+	#Range: 8.0 ~ 512.0
+	max_render_distance = 96.0
+	#Red channel.
+	#Range: 0 ~ 255
+	red = 255
+	#Green channel.
+	#Range: 0 ~ 255
+	green = 35
+	#Blue channel.
+	#Range: 0 ~ 255
+	blue = 35
+	#Outline alpha.
+	#Range: 0 ~ 255
+	alpha = 210
+	#Requested line width; graphics hardware may clamp it.
+	#Range: 1.0 ~ 12.0
+	line_width = 5.0
+	#Fill marked attack areas.
+	fill_enabled = true
+	#Fill alpha at windup start.
+	#Range: 0 ~ 255
+	fill_start_alpha = 20
+	#Fill alpha at windup completion.
+	#Range: 0 ~ 255
+	fill_end_alpha = 150
+	#Segments used for circles and arcs.
+	#Range: 8 ~ 256
+	curve_segments = 48
+	#Vertical telegraph offset.
+	#Range: -4.0 ~ 4.0
+	height_offset = 0.08
+
+#Knight Phantom encounter refactor settings.
+[knight_phantom]
+	#Enable all Knight Phantom refactor mechanics.
+	enabled = true
+
+	#Base traits.
+	[knight_phantom.base_traits]
+		#Increase fire damage received by Knight Phantoms.
+		fire_vulnerability_enabled = true
+		#Multiplier applied to incoming fire damage. 2.0 is +100% damage.
+		#Range: 0.0 ~ 100.0
+		fire_damage_multiplier = 2.0
+		#Scale speed and damage for each fallen member of the group.
+		fallen_knight_scaling_enabled = true
+		#Movement-speed bonus per fallen Knight Phantom. 0.05 is +5%.
+		#Range: 0.0 ~ 10.0
+		speed_bonus_per_fallen_knight = 0.05
+		#Damage bonus per fallen Knight Phantom. 0.05 is +5%.
+		#Range: 0.0 ~ 10.0
+		damage_bonus_per_fallen_knight = 0.05
+		#Make non-possessed Knight Phantoms avoid nearby players.
+		player_avoidance_enabled = true
+		#Minimum horizontal player distance for non-possessed knights.
+		#Range: 0.0 ~ 64.0
+		player_avoidance_distance = 10.0
+
+	#Sequential Knight Charge.
+	[knight_phantom.charge]
+		#Enable sequential Knight Charges.
+		enabled = true
+		#Windup before each knight's first charge, in ticks.
+		#Range: 0 ~ 1200
+		windup_ticks = 30
+		#Maximum duration of one charge, in ticks.
+		#Range: 1 ~ 1200
+		duration_ticks = 50
+		#Possessed melee-output time after the final charge segment, in ticks.
+		#Range: 0 ~ 1200
+		post_charge_possession_ticks = 60
+		#Movement-speed multiplier while charging.
+		#Range: 0.0 ~ 20.0
+		speed_multiplier = 3.0
+		#Attack-damage multiplier for a charge hit. 1.2 is 120% damage.
+		#Range: 0.0 ~ 100.0
+		damage_multiplier = 1.2
+		#Extra reach around the charging knight and its telegraph.
+		#Range: 0.0 ~ 16.0
+		hitbox_inflation = 0.25
+		#Allow charges to hit non-allied living entities other than players.
+		hits_non_players = true
+		#Put a player's used shield on cooldown after it blocks a charge.
+		shield_cooldown_enabled = true
+		#Shield cooldown after blocking a charge, in ticks. 60 ticks is 3 seconds.
+		#Range: 0 ~ 1200
+		shield_cooldown_ticks = 60
+		#Allow optional SlashBlade SenDimS integration to parry charges.
+		slashblade_parry_enabled = true
+		#Cancel every remaining charge of the parried knight, then continue the round.
+		parry_cancels_remaining_charges = true
+		#Delay after a possessed knight dies before the next knight begins its windup, in ticks.
+		#Range: 0 ~ 1200
+		death_handoff_delay_ticks = 30
+		#Maximum horizontal distance of one locked straight-line charge.
+		#Range: 0.0 ~ 128.0
+		maximum_distance = 30.0
+		#Parry feedback and stationary vulnerability duration, in ticks.
+		#Range: 1 ~ 1200
+		parry_stun_ticks = 40
+
+	#Last Knight phase.
+	[knight_phantom.last_knight]
+		#Enable the Last Knight phase.
+		enabled = true
+		#Fully heal the final Knight Phantom when the phase begins.
+		full_heal_enabled = true
+		#Reduce incoming damage during the Last Knight phase.
+		damage_reduction_enabled = true
+		#Fraction of incoming damage prevented. 0.5 is 50% reduction.
+		#Range: 0.0 ~ 1.0
+		damage_reduction = 0.5
+		#Make the final Knight Phantom charge repeatedly after one windup.
+		multi_charge_enabled = true
+		#Number of consecutive charges used by the final Knight Phantom.
+		#Range: 1 ~ 100
+		charge_count = 3
+		#Windup before each final-knight charge segment, in ticks.
+		#Range: 0 ~ 1200
+		windup_ticks = 15
+

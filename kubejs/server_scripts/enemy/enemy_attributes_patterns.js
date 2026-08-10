@@ -179,8 +179,8 @@ let bossType2 = deriveTemplate(typeA,
  */
 let bossType1W = deriveTemplate(typeA,
     true,
-    [1, 4, 1, 1],
-    [0, 0, 0, 0]
+    [1.15, 3, 1, 1],
+    [0, 0, 0, 10]
 );
 
 /**

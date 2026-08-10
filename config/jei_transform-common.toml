@@ -1,4 +1,4 @@
 #Maximum distance in blocks for containers used by JEI recipe transfer.
 #Range: 1 ~ 32
-containerSearchRadius = 8
+containerSearchRadius = 6
 

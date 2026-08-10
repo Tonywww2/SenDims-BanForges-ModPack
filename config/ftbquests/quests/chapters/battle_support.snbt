@@ -678,7 +678,11 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["2B1F98A770D77E12"]
+			dependencies: [
+				"2B1F98A770D77E12"
+				"5FC15782BFDB913C"
+			]
+			dependency_requirement: "one_completed"
 			description: ["&e泰拉饰品正在路上"]
 			id: "319D8C539D81926B"
 			shape: "hexagon"
@@ -689,7 +693,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 42.0d
+			y: 39.0d
 		}
 		{
 			dependencies: ["047BB42636510BA1"]

@@ -61,7 +61,7 @@ ServerEvents.recipes(event => {
         "XWY",
         "CDC"
     ], {
-        "B": 'kubejs:anchor_shard',
+        "B": 'kubejs:storm_hydrogen_crystal',
         "C": "minecraft:netherite_ingot",           // 下界合金锭
         "D": "minecraft:totem_of_undying",          // 不死图腾
         "W": SlashBladeIngredient.of(
@@ -104,7 +104,7 @@ ServerEvents.recipes(event => {
         "XYZ",
         "DAE"
     ], {
-        "A": 'kubejs:anchor_shard',
+        "A": 'sgjourney:classic_stargate_ring_block',
         "B": '#forge:storage_blocks/invar',
         "C": '#forge:storage_blocks/lumium',
         "D": '#forge:storage_blocks/signalum',
@@ -149,7 +149,7 @@ ServerEvents.recipes(event => {
         "BWE",
         "XYZ"
     ], {
-        "A": 'kubejs:anchor_shard',
+        "A": 'sgjourney:crystal_base',
         "B": "minecraft:sculk_sensor",                // 潜声传感器 (Sculk Sensor)
         "C": "minecraft:echo_shard",                  // 回响碎片 (Echo Shard)
         "E": "minecraft:calibrated_sculk_sensor",     // 校准潜声传感器 (Calibrated Sculk Sensor)

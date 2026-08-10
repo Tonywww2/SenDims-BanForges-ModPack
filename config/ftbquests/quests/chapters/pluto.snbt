@@ -8,38 +8,7 @@
 	order_index: 3
 	quest_enhance_decorative_lines: [ ]
 	quest_enhance_hidden_dependency_lines: [ ]
-	quest_links: [
-		{
-			id: "43486A184CECC1BF"
-			linked_quest: "2A648235D6DA1509"
-			x: -5.0d
-			y: 0.0d
-		}
-		{
-			id: "2FE4A42693CAC28C"
-			linked_quest: "295C7AEDBFF7EE12"
-			x: -5.0d
-			y: -5.0d
-		}
-		{
-			id: "49B06F4755E7B683"
-			linked_quest: "455A8F26E29E7DB0"
-			x: 5.0d
-			y: 0.0d
-		}
-		{
-			id: "3255F12E030ADC19"
-			linked_quest: "5A982FFF19EF5289"
-			x: 5.0d
-			y: -5.0d
-		}
-		{
-			id: "08DF65FFE58E627E"
-			linked_quest: "606C920FEB477498"
-			x: 0.0d
-			y: -5.0d
-		}
-	]
+	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["3A267848CC75F232"]
@@ -78,7 +47,6 @@
 		}
 		{
 			dependencies: [
-				"6C2B8E494EB829D2"
 				"2A648235D6DA1509"
 				"295C7AEDBFF7EE12"
 			]
@@ -103,7 +71,6 @@
 		}
 		{
 			dependencies: [
-				"6C2B8E494EB829D2"
 				"455A8F26E29E7DB0"
 				"5A982FFF19EF5289"
 			]
@@ -128,7 +95,6 @@
 		}
 		{
 			dependencies: [
-				"571763357AAACBEB"
 				"0DE1DF9046B9CD2E"
 				"455A8F26E29E7DB0"
 			]
@@ -152,10 +118,7 @@
 			y: 2.5d
 		}
 		{
-			dependencies: [
-				"2A648235D6DA1509"
-				"571763357AAACBEB"
-			]
+			dependencies: ["2A648235D6DA1509"]
 			id: "5119007A0128A974"
 			shape: "diamond"
 			tasks: [{
@@ -166,26 +129,6 @@
 			title: "占位符：永罚大剑"
 			x: -5.0d
 			y: 2.5d
-		}
-		{
-			dependencies: ["606C920FEB477498"]
-			id: "0F70500789CA46A9"
-			tasks: [{
-				id: "3FA28E56DAE412F2"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						display: {
-							Name: "{\"translate\":\"item.redtassel.redtassel_slashblade\"}"
-						}
-						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.redtassel.redtassel_slashblade\"}})"
-					}
-				}
-				type: "item"
-			}]
-			x: 0.0d
-			y: -7.5d
 		}
 	]
 	title: "比邻星-B"

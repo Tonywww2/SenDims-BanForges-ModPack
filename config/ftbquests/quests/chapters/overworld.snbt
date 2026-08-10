@@ -41,6 +41,48 @@
 			x: 27.0d
 			y: 0.0d
 		}
+		{
+			id: "0B7A59FD0328D60E"
+			linked_quest: "35E9C6E28966F641"
+			x: 24.0d
+			y: 18.0d
+		}
+		{
+			id: "60FF34315D0C5658"
+			linked_quest: "65C573EE97C5117F"
+			x: 27.0d
+			y: 18.0d
+		}
+		{
+			id: "4B38690C9F947FF0"
+			linked_quest: "2F9648A58EC0C636"
+			x: 27.0d
+			y: 15.0d
+		}
+		{
+			id: "75D3FF3A57DD84B2"
+			linked_quest: "489E7D6A94278610"
+			x: 30.0d
+			y: 12.0d
+		}
+		{
+			id: "245C20B85FB9C710"
+			linked_quest: "0506CD90BA40D331"
+			x: 33.0d
+			y: 12.0d
+		}
+		{
+			id: "1AFB80874967F7A3"
+			linked_quest: "2E9AD291D5058BFF"
+			x: 36.0d
+			y: 12.0d
+		}
+		{
+			id: "5B235296021CD3A6"
+			linked_quest: "06A34C8A04B2CD83"
+			x: 39.0d
+			y: 12.0d
+		}
 	]
 	quests: [
 		{
@@ -66,8 +108,8 @@
 				item: "kubejs:anchor_shard"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 12.0d
+			x: -3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -110,37 +152,11 @@
 		}
 		{
 			dependencies: [
-				"07AEFF9468658A0C"
-				"76BFA745E2BBDC7E"
-				"49631F88EAF0261B"
-				"59F17F34F831D72E"
-				"35F111CC582779BA"
-			]
-			id: "672F4EFC4C5F2A46"
-			tasks: [{
-				id: "727948017514565E"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						display: {
-							Name: "{\"translate\":\"item.sjap_adder.nihilulex\"}"
-						}
-						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.sjap_adder.nihilulex\"}})"
-					}
-				}
-				type: "item"
-			}]
-			x: 3.0d
-			y: 9.0d
-		}
-		{
-			dependencies: [
-				"07AEFF9468658A0C"
 				"3AE144DD58D30985"
 				"2354F158B208830E"
 				"65379794AA782C5B"
 				"4FD299D688A0A92A"
+				"0C099E334233878D"
 			]
 			id: "6F63F683A1A658B9"
 			tasks: [{
@@ -157,7 +173,7 @@
 				}
 				type: "item"
 			}]
-			x: 3.0d
+			x: 21.0d
 			y: 15.0d
 		}
 		{
@@ -205,7 +221,7 @@
 				"2F9648A58EC0C636"
 				"3FBD9DC1E1BB24E1"
 				"1152A96652FA7C8F"
-				"07AEFF9468658A0C"
+				"57AEDAD12FDBE944"
 			]
 			id: "63BCA9C495EBC8D8"
 			tasks: [{
@@ -222,8 +238,8 @@
 				}
 				type: "item"
 			}]
-			x: 3.0d
-			y: 12.0d
+			x: 30.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["56C9FAAD7AD47F1A"]
@@ -500,7 +516,7 @@
 				type: "item"
 			}]
 			x: 27.0d
-			y: 15.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["0C099E334233878D"]

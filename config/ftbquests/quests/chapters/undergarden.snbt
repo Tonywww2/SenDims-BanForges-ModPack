@@ -451,6 +451,7 @@
 				"2B1F98A770D77E12"
 				"641BAE5B4E3ED25C"
 			]
+			dependency_requirement: "one_completed"
 			id: "651A03F2219EBCDE"
 			tasks: [{
 				id: "1E3C1762375F7DBE"

@@ -485,6 +485,10 @@ let mobTypes = new Map([
 
     ["titan_moon:native_ice_worm", bossType1],
 
+    ["dog:devourer_segment", typeAE],
+    ["dog:devourer_head", typeAE],
+    ["dog:devourer_tail", typeAE],
+
     ["netherman:villager_prisoner", type0],
     ["netherman:ghastly", type0],
     ["netherman:trader", type0],

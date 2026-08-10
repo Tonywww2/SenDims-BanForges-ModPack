@@ -1,0 +1,851 @@
+
+#Aether Slider settings.
+#滑行魔石设置。
+[slider]
+
+	#Core Slider combat rules.
+	#滑行魔石核心战斗规则。
+	[slider.combat]
+		#Phase-two health threshold ratio.
+		#二阶段生命比例阈值。
+		#Range: 0.0 ~ 1.0
+		phase_two_health_ratio = 0.5
+		#Maximum Stone Barrier layers.
+		#石质屏障最大层数。
+		#Range: 0 ~ 100
+		max_barrier_layers = 5
+		#Maximum Glide Power layers.
+		#滑行力最大层数。
+		#Range: 1 ~ 100
+		max_glide_power = 10
+		#Minimum phase-two Glide Power outside stun.
+		#二阶段非眩晕时的最低滑行力。
+		#Range: 0 ~ 100
+		phase_two_min_glide_power = 2
+		#Glide Power consumed by Continuous Glide.
+		#连续滑行消耗的滑行力。
+		#Range: 1 ~ 100
+		continuous_glide_cost = 6
+		#Phase-two damage multiplier.
+		#二阶段伤害倍率。
+		#Range: 0.0 ~ 100.0
+		phase_two_damage_multiplier = 1.2
+		#Damage added by each Glide Power layer.
+		#每层滑行力增加的伤害倍率。
+		#Range: 0.0 ~ 10.0
+		glide_power_damage_per_layer = 0.02
+		#Damage reduction per Stone Barrier layer.
+		#每层石质屏障提供的伤害减免。
+		#Range: 0.0 ~ 1.0
+		barrier_reduction_per_layer = 0.05
+		#Stun duration after barrier break, in ticks.
+		#屏障全部破碎后的眩晕时间，单位为 tick。
+		#Range: 0 ~ 72000
+		stun_ticks = 100
+		#Shield cooldown after blocking, in ticks.
+		#成功格挡后的盾牌冷却，单位为 tick。
+		#Range: 0 ~ 72000
+		shield_cooldown_ticks = 60
+		#Phase-one Continuous Glide dash count.
+		#一阶段连续滑行冲刺次数。
+		#Range: 1 ~ 100
+		phase_one_continuous_glide_dashes = 2
+		#Phase-two Continuous Glide dash count.
+		#二阶段连续滑行冲刺次数。
+		#Range: 1 ~ 100
+		phase_two_continuous_glide_dashes = 3
+		#Chance for one extra dash.
+		#额外追加一次冲刺的概率。
+		#Range: 0.0 ~ 1.0
+		extra_dash_chance = 0.5
+		#Required charged-pickaxe attack strength.
+		#满蓄力镐攻击所需的攻击强度。
+		#Range: 0.0 ~ 1.0
+		full_pickaxe_attack_strength = 1.0
+		#Make the Slider immune to all HARMFUL mob effects and remove existing harmful effects.
+		#使滑行魔石免疫全部 HARMFUL 负面效果，并清除已有负面效果。
+		immune_to_negative_effects = true
+		#Glide Power gained after completing one arena edge.
+		#每完成一条场地边缘巡航时获得的滑行力。
+		#Range: 0 ~ 100
+		glide_power_gain_per_patrol_edge = 2
+		#Glide Power gained when one Stone Barrier layer is removed.
+		#失去一层石质屏障时获得的滑行力。
+		#Range: 0 ~ 100
+		glide_power_gain_on_barrier_break = 1
+		#Make the first phase-two Continuous Glide dash unblockable and unparryable.
+		#使二阶段连续滑行的第一次冲刺不可格挡且不可招架。
+		phase_two_first_dash_unblockable = true
+		#Recovery duration after a successful parry, in ticks.
+		#成功招架后的恢复时间，单位为 tick。
+		#Range: 1 ~ 72000
+		parry_recovery_ticks = 60
+
+	#Damage is composed before phase and Glide Power multipliers.
+	#先计算基础伤害，再应用阶段和滑行力倍率。
+	[slider.damage]
+
+		#Continuous Glide dash.
+		#连续滑行冲刺。
+		[slider.damage.chain_dash]
+			#Flat damage before the attack contribution.
+			#攻击力贡献之前的固定伤害。
+			#Range: 0.0 ~ 1000000.0
+			base_damage = 0.0
+			#Current attack-damage multiplier. Formula: base + attack * multiplier.
+			#当前攻击力倍率。公式：固定伤害 + 攻击力 * 倍率。
+			#Range: 0.0 ~ 1000.0
+			attack_damage_multiplier = 1.5
+
+		#Collision during normal perimeter patrol.
+		#普通周界巡航期间的碰撞伤害。
+		[slider.damage.normal_collision]
+			#Flat damage before the attack contribution.
+			#攻击力贡献之前的固定伤害。
+			#Range: 0.0 ~ 1000000.0
+			base_damage = 2.0
+			#Current attack-damage multiplier. Formula: base + attack * multiplier.
+			#当前攻击力倍率。公式：固定伤害 + 攻击力 * 倍率。
+			#Range: 0.0 ~ 1000.0
+			attack_damage_multiplier = 1.0
+
+	#Movement speed settings for the Aether Slider.
+	#滑行魔石移动速度设置。
+	#Base speed is relative to the original Aether maximum speed.
+	#基础速度相对于天境原始最大速度。
+	#Phase, Glide Power, and action multipliers are applied afterward.
+	#之后应用阶段、滑行力和动作倍率。
+	[slider.movement]
+		#Overall multiplier before phase and Glide Power.
+		#阶段和滑行力之前应用的总倍率。
+		#Range: 0.0 ~ 10.0
+		base_speed_multiplier = 0.4
+		#Speed multiplier during phase two.
+		#二阶段速度倍率。
+		#Range: 0.0 ~ 10.0
+		phase_two_speed_multiplier = 1.2
+		#Speed added by each Glide Power layer.
+		#每层滑行力增加的速度倍率。
+		#Range: 0.0 ~ 1.0
+		glide_power_speed_per_layer = 0.02
+		#Multiplier while moving vertically into attack height.
+		#纵向移动到可攻击高度时的速度倍率。
+		#Range: 0.0 ~ 10.0
+		vertical_alignment_speed_multiplier = 0.65
+		#Multiplier while moving to the nearest arena edge.
+		#移动到最近场地边缘时的速度倍率。
+		#Range: 0.0 ~ 10.0
+		edge_return_speed_multiplier = 0.6
+		#Multiplier while patrolling the square arena perimeter.
+		#沿方形场地边缘巡航时的速度倍率。
+		#Range: 0.0 ~ 10.0
+		perimeter_patrol_speed_multiplier = 0.5
+		#Multiplier for Continuous Glide dashes.
+		#连续滑行冲刺速度倍率。
+		#Range: 0.0 ~ 10.0
+		chain_dash_speed_multiplier = 1.6
+
+	#Slider timing in ticks.
+	#滑行魔石时间参数，单位为 tick。
+	[slider.timing]
+		#Continuous Glide windup.
+		#连续滑行前摇。
+		#Range: 0 ~ 72000
+		continuous_glide_windup_ticks = 30
+		#Maximum duration of each dash.
+		#每次连续冲刺的最大持续时间。
+		#Range: 1 ~ 72000
+		continuous_glide_dash_tick_limit = 10
+		#Pause between dashes.
+		#连续冲刺之间的停顿时间。
+		#Range: 0 ~ 72000
+		continuous_glide_interval_ticks = 4
+		#Pause after normal perimeter movement reaches a corner.
+		#普通周界移动抵达角点后的停留时间。
+		#Range: 0 ~ 72000
+		perimeter_corner_pause_ticks = 15
+
+	#Slider range and geometry.
+	#滑行魔石范围与几何参数。
+	[slider.range]
+		#Maximum dash distance.
+		#连续滑行单次冲刺最大距离。
+		#Range: 0.0 ~ 128.0
+		continuous_glide_distance = 12.0
+		#Extra clearance between the Slider and arena walls.
+		#魔石与场地墙体之间的额外间距。
+		#Range: 0.0 ~ 128.0
+		perimeter_edge_clearance = 0.35
+		#Distance used to accept an edge or corner as reached.
+		#判定到达场地边缘或角点的距离。
+		#Range: 0.0 ~ 128.0
+		perimeter_arrival_tolerance = 0.12
+		#Allowed center-height difference after vertical alignment.
+		#纵向对齐完成后允许的中心高度差。
+		#Range: 0.0 ~ 128.0
+		vertical_alignment_tolerance = 0.1
+
+	#Slider client display settings.
+	#滑行魔石客户端显示设置。
+	[slider.display]
+		#Status-label height above the Slider's bounding box.
+		#状态标签高于魔石碰撞箱顶部的高度。
+		#Range: 0.0 ~ 8.0
+		status_label_height_offset = 1.35
+
+#Valkyrie Queen settings.
+#武神女王设置。
+[valkyrie_queen]
+
+	#Core Valkyrie Queen combat rules.
+	#武神女王核心战斗规则。
+	[valkyrie_queen.combat]
+		#Phase-two health threshold ratio.
+		#二阶段生命比例阈值。
+		#Range: 0.0 ~ 1.0
+		phase_two_health_ratio = 0.5
+		#Chance to teleport after taking damage.
+		#受伤后触发传送的概率。
+		#Range: 0.0 ~ 1.0
+		reactive_teleport_chance = 0.2
+		#Reactive-teleport cooldown, in ticks.
+		#受击传送冷却，单位为 tick。
+		#Range: 0 ~ 72000
+		reactive_teleport_cooldown_ticks = 200
+		#Knockback resistance added in phase two.
+		#二阶段增加的击退抗性。
+		#Range: 0.0 ~ 1.0
+		phase_two_knockback_resistance = 1.0
+		#Basic attacks required before a martial skill.
+		#释放武神技前需要完成的基本技次数。
+		#Range: 0 ~ 100
+		basic_attacks_before_skill = 3
+		#Basic attacks required before Spear Throw.
+		#释放长枪投掷前需要完成的基本技次数。
+		#Range: 0 ~ 100
+		basic_attacks_before_spear = 2
+		#Initial martial-skill delay.
+		#武神技初始延迟。
+		#Range: 0 ~ 72000
+		initial_skill_delay_ticks = 60
+		#Initial Spear Throw delay.
+		#长枪投掷初始延迟。
+		#Range: 0 ~ 72000
+		initial_spear_delay_ticks = 160
+		#Cooldown shared by Martial Skill I and II.
+		#武神技一和二共用冷却。
+		#Range: 0 ~ 72000
+		skill_cooldown_ticks = 160
+		#Spear Throw cooldown.
+		#武神技·投掷冷却。
+		#Range: 0 ~ 72000
+		spear_cooldown_ticks = 260
+		#Chance for Martial Skill I to chain into Martial Skill II.
+		#武神技一衔接武神技二的概率。
+		#Range: 0.0 ~ 1.0
+		skill_one_chain_chance = 0.5
+		#Whether the Queen pathfinds to a target's side before attacking.
+		#武神女王是否在攻击前寻路切入目标侧方。
+		tactical_flanking_enabled = true
+		#Range used to reacquire the nearest eligible player during a boss fight.
+		#Boss 战中重新捕获最近合格玩家的追击范围。
+		#Range: 0.0 ~ 128.0
+		pursuit_range = 48.0
+		#Pathfinding speed used by direct pursuit.
+		#直接追击时的寻路速度。
+		#Range: 0.0 ~ 10.0
+		approach_speed = 1.1
+		#Pathfinding speed used while moving to a target's side.
+		#切入目标侧方时的寻路速度。
+		#Range: 0.0 ~ 10.0
+		flank_speed = 1.35
+		#Desired distance from the target at a flank point.
+		#侧翼点与目标之间的期望距离。
+		#Range: 0.0 ~ 128.0
+		flank_distance = 3.5
+		#Horizontal distance at which a flank point counts as reached.
+		#判定已抵达侧翼点的水平距离。
+		#Range: 0.0 ~ 128.0
+		flank_arrival_distance = 1.15
+		#Distance below which the Queen attacks immediately instead of circling.
+		#低于此距离时武神女王直接攻击，不再绕行切侧。
+		#Range: 0.0 ~ 128.0
+		flank_bypass_distance = 2.0
+		#Random weight for each side; the remaining weight selects the rear.
+		#每个侧方的随机权重，剩余权重用于选择后方。
+		#Range: 0.05 ~ 0.45
+		side_approach_weight = 0.35
+		#Ticks between flank-path updates.
+		#侧翼寻路重算间隔，单位为 tick。
+		#Range: 1 ~ 200
+		flank_repath_ticks = 8
+		#Expected tactical-movement time; timing out prepares the next skill.
+		#战术移动预期时间；超时后直接准备下一项技能，单位为 tick。
+		#Range: 1 ~ 72000
+		tactical_movement_timeout_ticks = 40
+		#Whether the Queen actively jumps over obstacles while pursuing.
+		#武神女王追击时是否主动跳过障碍。
+		chase_jump_enabled = true
+		#Target height advantage that can trigger a chase jump.
+		#可触发追击跳跃的目标高度差。
+		#Range: 0.0 ~ 128.0
+		chase_jump_height_threshold = 0.6
+		#Maximum horizontal target distance for height-triggered jumping.
+		#高度差触发跳跃时允许的最大水平距离。
+		#Range: 0.0 ~ 128.0
+		chase_jump_trigger_distance = 4.5
+
+	#Valkyrie Queen damage formulas.
+	#武神女王伤害公式。
+	[valkyrie_queen.damage]
+
+		#Diagonal basic slash.
+		#基本技：砍击。
+		[valkyrie_queen.damage.diagonal_slash]
+			#Flat damage before the attack contribution.
+			#攻击力贡献之前的固定伤害。
+			#Range: 0.0 ~ 1000000.0
+			base_damage = 0.0
+			#Current attack-damage multiplier. Formula: base + attack * multiplier.
+			#当前攻击力倍率。公式：固定伤害 + 攻击力 * 倍率。
+			#Range: 0.0 ~ 1000.0
+			attack_damage_multiplier = 1.0
+
+		#Horizontal basic slash.
+		#基本技：横斩。
+		[valkyrie_queen.damage.horizontal_slash]
+			#Flat damage before the attack contribution.
+			#攻击力贡献之前的固定伤害。
+			#Range: 0.0 ~ 1000000.0
+			base_damage = 0.0
+			#Current attack-damage multiplier. Formula: base + attack * multiplier.
+			#当前攻击力倍率。公式：固定伤害 + 攻击力 * 倍率。
+			#Range: 0.0 ~ 1000.0
+			attack_damage_multiplier = 1.0
+
+		#Vertical basic chop.
+		#基本技：竖劈。
+		[valkyrie_queen.damage.vertical_chop]
+			#Flat damage before the attack contribution.
+			#攻击力贡献之前的固定伤害。
+			#Range: 0.0 ~ 1000000.0
+			base_damage = 0.0
+			#Current attack-damage multiplier. Formula: base + attack * multiplier.
+			#当前攻击力倍率。公式：固定伤害 + 攻击力 * 倍率。
+			#Range: 0.0 ~ 1000.0
+			attack_damage_multiplier = 1.0
+
+		#Martial Skill I sword wave.
+		#武神技一剑气。
+		[valkyrie_queen.damage.sword_wave]
+			#Flat damage before the attack contribution.
+			#攻击力贡献之前的固定伤害。
+			#Range: 0.0 ~ 1000000.0
+			base_damage = 0.0
+			#Current attack-damage multiplier. Formula: base + attack * multiplier.
+			#当前攻击力倍率。公式：固定伤害 + 攻击力 * 倍率。
+			#Range: 0.0 ~ 1000.0
+			attack_damage_multiplier = 1.0
+
+		#Martial Skill II dash.
+		#武神技二突进。
+		[valkyrie_queen.damage.skill_two_dash]
+			#Flat damage before the attack contribution.
+			#攻击力贡献之前的固定伤害。
+			#Range: 0.0 ~ 1000000.0
+			base_damage = 0.0
+			#Current attack-damage multiplier. Formula: base + attack * multiplier.
+			#当前攻击力倍率。公式：固定伤害 + 攻击力 * 倍率。
+			#Range: 0.0 ~ 1000.0
+			attack_damage_multiplier = 1.0
+
+		#Martial Skill II lance spin.
+		#武神技二长枪回旋。
+		[valkyrie_queen.damage.skill_two_spin]
+			#Flat damage before the attack contribution.
+			#攻击力贡献之前的固定伤害。
+			#Range: 0.0 ~ 1000000.0
+			base_damage = 0.0
+			#Current attack-damage multiplier. Formula: base + attack * multiplier.
+			#当前攻击力倍率。公式：固定伤害 + 攻击力 * 倍率。
+			#Range: 0.0 ~ 1000.0
+			attack_damage_multiplier = 1.5
+
+		#Phase-two follow-up lance spin.
+		#二阶段基本技追加长枪回旋。
+		[valkyrie_queen.damage.basic_lance_spin]
+			#Flat damage before the attack contribution.
+			#攻击力贡献之前的固定伤害。
+			#Range: 0.0 ~ 1000000.0
+			base_damage = 0.0
+			#Current attack-damage multiplier. Formula: base + attack * multiplier.
+			#当前攻击力倍率。公式：固定伤害 + 攻击力 * 倍率。
+			#Range: 0.0 ~ 1000.0
+			attack_damage_multiplier = 1.0
+
+		#Spear Throw impact.
+		#武神技·投掷落点冲击。
+		[valkyrie_queen.damage.spear_throw]
+			#Flat damage before the attack contribution.
+			#攻击力贡献之前的固定伤害。
+			#Range: 0.0 ~ 1000000.0
+			base_damage = 0.0
+			#Current attack-damage multiplier. Formula: base + attack * multiplier.
+			#当前攻击力倍率。公式：固定伤害 + 攻击力 * 倍率。
+			#Range: 0.0 ~ 1000.0
+			attack_damage_multiplier = 1.5
+
+		#Phase-two lightning bonus.
+		#二阶段攻击附带雷电伤害。
+		[valkyrie_queen.damage.lightning_bonus]
+			#Flat damage before the attack contribution.
+			#攻击力贡献之前的固定伤害。
+			#Range: 0.0 ~ 1000000.0
+			base_damage = 0.0
+			#Current attack-damage multiplier. Formula: base + attack * multiplier.
+			#当前攻击力倍率。公式：固定伤害 + 攻击力 * 倍率。
+			#Range: 0.0 ~ 1000.0
+			attack_damage_multiplier = 0.2
+
+		#Thunder-cloud damage pulse.
+		#雷云伤害脉冲。
+		[valkyrie_queen.damage.thunder_cloud]
+			#Flat damage before the attack contribution.
+			#攻击力贡献之前的固定伤害。
+			#Range: 0.0 ~ 1000000.0
+			base_damage = 0.0
+			#Current attack-damage multiplier. Formula: base + attack * multiplier.
+			#当前攻击力倍率。公式：固定伤害 + 攻击力 * 倍率。
+			#Range: 0.0 ~ 1000.0
+			attack_damage_multiplier = 0.2
+
+		#Thunder Crystal hit left by reactive teleport.
+		#受击传送留下的雷音球命中伤害。
+		[valkyrie_queen.damage.thunder_crystal]
+			#Flat damage before the attack contribution.
+			#攻击力贡献之前的固定伤害。
+			#Range: 0.0 ~ 1000000.0
+			base_damage = 0.0
+			#Current attack-damage multiplier. Formula: base + attack * multiplier.
+			#当前攻击力倍率。公式：固定伤害 + 攻击力 * 倍率。
+			#Range: 0.0 ~ 1000.0
+			attack_damage_multiplier = 0.37037037037037035
+
+	#Valkyrie Queen timing in ticks. Windups are intentionally readable.
+	#武神女王时间参数，单位为 tick。默认前摇设计为清晰可读。
+	[valkyrie_queen.timing]
+		#Basic-attack windup.
+		#基本技前摇。
+		#Range: 0 ~ 72000
+		basic_windup_ticks = 18
+		#Recovery after a basic attack.
+		#基本技后的恢复时间。
+		#Range: 0 ~ 72000
+		basic_recovery_ticks = 18
+		#Recovery after a martial skill.
+		#武神技后的恢复时间。
+		#Range: 0 ~ 72000
+		skill_recovery_ticks = 28
+		#Martial Skill I windup.
+		#武神技一前摇。
+		#Range: 0 ~ 72000
+		skill_one_windup_ticks = 36
+		#Martial Skill II windup.
+		#武神技二前摇。
+		#Range: 0 ~ 72000
+		skill_two_windup_ticks = 34
+		#Spear Throw windup.
+		#武神技·投掷前摇。
+		#Range: 0 ~ 72000
+		spear_throw_windup_ticks = 44
+		#Delay between the two sword waves.
+		#两道剑气之间的间隔。
+		#Range: 0 ~ 72000
+		sword_wave_gap_ticks = 10
+		#Sword-wave firing-phase duration.
+		#剑气释放阶段持续时间。
+		#Range: 1 ~ 72000
+		skill_one_fire_ticks = 24
+		#Windup before each lance spin.
+		#每次长枪回旋前摇。
+		#Range: 0 ~ 72000
+		lance_spin_windup_ticks = 16
+		#Maximum Martial Skill II dash duration.
+		#武神技二突进最大时间。
+		#Range: 1 ~ 72000
+		skill_two_dash_tick_limit = 16
+		#Maximum spear-flight duration.
+		#长枪飞行最大时间。
+		#Range: 1 ~ 72000
+		spear_flight_ticks = 16
+		#Maximum spear-retrieval duration.
+		#长枪回收最大时间。
+		#Range: 1 ~ 72000
+		spear_retrieve_tick_limit = 24
+		#Thunder-cloud duration.
+		#雷云持续时间。
+		#Range: 1 ~ 72000
+		thunder_cloud_ticks = 120
+		#Delay between cloud damage pulses.
+		#雷云伤害脉冲间隔。
+		#Range: 1 ~ 72000
+		thunder_cloud_damage_interval_ticks = 20
+		#Recovery after being parried.
+		#被招架后的恢复时间。
+		#Range: 1 ~ 72000
+		parry_recovery_ticks = 40
+
+	#Valkyrie Queen range and movement geometry.
+	#武神女王范围与移动几何参数。
+	[valkyrie_queen.range]
+		#Diagonal-slash radius.
+		#砍击半径。
+		#Range: 0.0 ~ 128.0
+		diagonal_slash_range = 3.75
+		#Horizontal-slash radius.
+		#横斩半径。
+		#Range: 0.0 ~ 128.0
+		horizontal_slash_range = 4.25
+		#Vertical-chop radius.
+		#竖劈半径。
+		#Range: 0.0 ~ 128.0
+		vertical_chop_range = 4.75
+		#Diagonal-slash half-angle.
+		#砍击扇形半角。
+		#Range: 0.0 ~ 180.0
+		diagonal_slash_half_angle = 55.0
+		#Horizontal-slash half-angle.
+		#横斩扇形半角。
+		#Range: 0.0 ~ 180.0
+		horizontal_slash_half_angle = 85.0
+		#Vertical-chop half-angle.
+		#竖劈扇形半角。
+		#Range: 0.0 ~ 180.0
+		vertical_chop_half_angle = 25.0
+		#Downward hit range shared by all Valkyrie Queen skills.
+		#武神女王所有技能共用的向下命中范围。
+		#Range: 0.0 ~ 128.0
+		attack_downward_range = 12.0
+		#Upward tolerance for basic and radial direct attacks.
+		#基本技与圆形直接攻击的向上命中容差。
+		#Range: 0.0 ~ 128.0
+		melee_vertical_tolerance = 3.0
+		#Sword-wave speed.
+		#剑气速度。
+		#Range: 0.0 ~ 10.0
+		sword_wave_speed = 1.35
+		#Sword-wave travel distance.
+		#剑气飞行距离。
+		#Range: 0.0 ~ 128.0
+		sword_wave_distance = 13.5
+		#Sword-wave horizontal hit radius.
+		#剑气水平命中半径。
+		#Range: 0.0 ~ 128.0
+		sword_wave_hit_radius = 1.0
+		#Sword-wave upward hit height.
+		#剑气向上命中高度。
+		#Range: 0.0 ~ 128.0
+		sword_wave_hit_half_height = 1.4
+		#Martial Skill II dash speed.
+		#武神技二突进速度。
+		#Range: 0.0 ~ 10.0
+		skill_two_dash_speed = 1.25
+		#Martial Skill II dash distance.
+		#武神技二突进距离。
+		#Range: 0.0 ~ 128.0
+		skill_two_dash_distance = 11.0
+		#Extra dash hit-box size.
+		#突进命中箱额外膨胀值。
+		#Range: 0.0 ~ 128.0
+		skill_two_dash_hit_inflation = 0.35
+		#Thrown-spear speed.
+		#投掷长枪速度。
+		#Range: 0.0 ~ 10.0
+		spear_speed = 1.3
+		#Spear-retrieval speed.
+		#回收长枪速度。
+		#Range: 0.0 ~ 10.0
+		spear_retrieve_speed = 1.4
+		#Martial Skill II spin radius.
+		#武神技二回旋半径。
+		#Range: 0.0 ~ 128.0
+		skill_two_spin_radius = 5.0
+		#Basic follow-up spin radius.
+		#基本技追加回旋半径。
+		#Range: 0.0 ~ 128.0
+		basic_lance_spin_radius = 4.25
+		#Spear-impact radius.
+		#长枪落点伤害半径。
+		#Range: 0.0 ~ 128.0
+		spear_impact_radius = 6.0
+		#Thunder-cloud radius.
+		#雷云水平半径。
+		#Range: 0.0 ~ 128.0
+		thunder_cloud_radius = 5.0
+		#Thunder-cloud upward hit height.
+		#雷云向上命中高度。
+		#Range: 0.0 ~ 128.0
+		thunder_cloud_half_height = 3.0
+		#Maximum martial-skill start distance.
+		#武神技最大起手距离。
+		#Range: 0.0 ~ 128.0
+		skill_trigger_distance = 20.0
+		#Maximum Spear Throw start distance.
+		#长枪投掷最大起手距离。
+		#Range: 0.0 ~ 128.0
+		spear_trigger_distance = 22.0
+
+#Sun Spirit settings.
+#烈阳巨灵设置。
+[sun_spirit]
+
+	#Core Sun Spirit combat rules.
+	#烈阳巨灵核心战斗规则。
+	[sun_spirit.combat]
+		#Maximum-health ratio lost for each automatic minion summon.
+		#每次自动召唤一只仆从所需损失的最大生命比例。
+		#Range: 0.01 ~ 1.0
+		health_lost_per_minion = 0.1
+		#Incoming-damage multiplier while an owned minion is alive.
+		#存在所属仆从时受到的伤害倍率。
+		#Range: 0.0 ~ 1.0
+		minion_damage_multiplier = 0.5
+		#Maximum-health ratio removed by a reflected Ice Crystal.
+		#反弹冰结球命中时扣除的最大生命比例。
+		#Range: 0.0 ~ 1.0
+		reflected_ice_health_ratio = 0.05
+		#Phase-two health threshold ratio.
+		#二阶段生命比例阈值。
+		#Range: 0.0 ~ 1.0
+		phase_two_health_ratio = 0.5
+		#Damage multiplier in phase two.
+		#二阶段伤害倍率。
+		#Range: 0.0 ~ 100.0
+		phase_two_damage_multiplier = 1.2
+		#Range used to acquire eligible players.
+		#主动锁定合格玩家的范围。
+		#Range: 0.0 ~ 128.0
+		pursuit_range = 48.0
+		#Minions summoned per crossed health threshold.
+		#每跨过一个生命阈值召唤的仆从数量。
+		#Range: 0 ~ 20
+		minions_per_health_threshold = 1
+		#Minions summoned by the dedicated summon skill.
+		#场上无仆从时，专用召唤技能召唤的数量。
+		#Range: 0 ~ 20
+		empty_field_summon_count = 2
+		#Chance for a projectile attack to use an Ice Crystal.
+		#投射物攻击使用冰结球的概率。
+		#Range: 0.0 ~ 1.0
+		ice_projectile_chance = 0.5
+		#Sun Spirit knockback resistance.
+		#烈阳巨灵击退抗性。
+		#Range: 0.0 ~ 1.0
+		knockback_resistance = 1.0
+		#Owned Fire Minion knockback resistance.
+		#所属烈焰仆从击退抗性。
+		#Range: 0.0 ~ 1.0
+		minion_knockback_resistance = 1.0
+
+	#Sun Spirit damage formulas.
+	#烈阳巨灵伤害公式。
+	[sun_spirit.damage]
+
+		#Rolling Fireball and Ice Crystal.
+		#滚炎球与冰结球。
+		[sun_spirit.damage.projectile]
+			#Flat damage before the attack contribution.
+			#攻击力贡献之前的固定伤害。
+			#Range: 0.0 ~ 1000000.0
+			base_damage = 0.0
+			#Current attack-damage multiplier. Formula: base + attack * multiplier.
+			#当前攻击力倍率。公式：固定伤害 + 攻击力 * 倍率。
+			#Range: 0.0 ~ 1000.0
+			attack_damage_multiplier = 1.0
+
+		#Rising Flame circular burst.
+		#烈焰升腾环形爆发。
+		[sun_spirit.damage.rising_flame]
+			#Flat damage before the attack contribution.
+			#攻击力贡献之前的固定伤害。
+			#Range: 0.0 ~ 1000000.0
+			base_damage = 0.0
+			#Current attack-damage multiplier. Formula: base + attack * multiplier.
+			#当前攻击力倍率。公式：固定伤害 + 攻击力 * 倍率。
+			#Range: 0.0 ~ 1000.0
+			attack_damage_multiplier = 1.5
+
+		#Delayed flame sigil.
+		#延迟升起的烈焰法阵。
+		[sun_spirit.damage.flame_sigil]
+			#Flat damage before the attack contribution.
+			#攻击力贡献之前的固定伤害。
+			#Range: 0.0 ~ 1000000.0
+			base_damage = 0.0
+			#Current attack-damage multiplier. Formula: base + attack * multiplier.
+			#当前攻击力倍率。公式：固定伤害 + 攻击力 * 倍率。
+			#Range: 0.0 ~ 1000.0
+			attack_damage_multiplier = 1.0
+
+		#Titan Fist rectangle.
+		#巨神之拳矩形攻击。
+		[sun_spirit.damage.titan_fist]
+			#Flat damage before the attack contribution.
+			#攻击力贡献之前的固定伤害。
+			#Range: 0.0 ~ 1000000.0
+			base_damage = 0.0
+			#Current attack-damage multiplier. Formula: base + attack * multiplier.
+			#当前攻击力倍率。公式：固定伤害 + 攻击力 * 倍率。
+			#Range: 0.0 ~ 1000.0
+			attack_damage_multiplier = 1.2
+
+	#Sun Spirit timing in ticks.
+	#烈阳巨灵时间参数，单位为 tick。
+	[sun_spirit.timing]
+		#Projectile windup.
+		#滚炎球/冰结球前摇。
+		#Range: 0 ~ 72000
+		projectile_windup_ticks = 24
+		#Rising Flame windup.
+		#烈焰升腾前摇。
+		#Range: 0 ~ 72000
+		rising_flame_windup_ticks = 36
+		#Titan Fist windup.
+		#巨神之拳前摇。
+		#Range: 0 ~ 72000
+		titan_fist_windup_ticks = 32
+		#Distinct dedicated-summon windup.
+		#具有明显区别的专用召唤前摇。
+		#Range: 0 ~ 72000
+		summon_windup_ticks = 60
+		#Recovery after ordinary skills.
+		#普通技能后摇。
+		#Range: 0 ~ 72000
+		attack_recovery_ticks = 40
+		#Recovery after summoning or interruption.
+		#召唤完成或被打断后的恢复时间。
+		#Range: 0 ~ 72000
+		summon_recovery_ticks = 50
+		#Dedicated summon cooldown.
+		#专用召唤技能冷却。
+		#Range: 0 ~ 72000
+		summon_cooldown_ticks = 300
+		#Initial dedicated-summon delay.
+		#专用召唤初始延迟。
+		#Range: 0 ~ 72000
+		initial_summon_delay_ticks = 100
+		#Delay before a flame sigil erupts.
+		#烈焰法阵喷发延迟。
+		#Range: 0 ~ 72000
+		flame_sigil_delay_ticks = 36
+		#Fire duration after a sigil hit, in seconds.
+		#法阵命中后的点燃秒数。
+		#Range: 0 ~ 300
+		flame_seconds = 5
+		#Shield cooldown after blocking a heavy skill.
+		#格挡重型技能后的盾牌冷却。
+		#Range: 0 ~ 72000
+		shield_cooldown_ticks = 100
+		#Recovery after a SlashBlade parry.
+		#被拔刀剑招架后的恢复时间。
+		#Range: 1 ~ 72000
+		parry_recovery_ticks = 40
+		#Interval between automatic phase-two flame sigils.
+		#二阶段自动烈焰法阵间隔。
+		#Range: 1 ~ 72000
+		phase_two_sigil_interval_ticks = 160
+		#Delay before the first automatic phase-two sigil.
+		#进入二阶段后首个自动法阵的延迟。
+		#Range: 0 ~ 72000
+		initial_phase_two_sigil_delay_ticks = 80
+
+	#Sun Spirit ranges and projectile speed.
+	#烈阳巨灵范围与投射物速度。
+	[sun_spirit.range]
+		#Fire and Ice Crystal launch speed.
+		#滚炎球与冰结球发射速度。
+		#Range: 0.0 ~ 10.0
+		projectile_speed = 1.1
+		#Rising Flame radius.
+		#烈焰升腾半径。
+		#Range: 0.0 ~ 128.0
+		rising_flame_radius = 6.0
+		#Titan Fist forward length.
+		#巨神之拳前方长度。
+		#Range: 0.0 ~ 128.0
+		titan_fist_length = 10.0
+		#Titan Fist rectangle half-width.
+		#巨神之拳矩形半宽。
+		#Range: 0.0 ~ 128.0
+		titan_fist_half_width = 3.0
+		#Flame sigil radius.
+		#烈焰法阵半径。
+		#Range: 0.0 ~ 128.0
+		flame_sigil_radius = 3.5
+		#Vertical hit range for direct skills.
+		#直接技能垂直命中范围。
+		#Range: 0.0 ~ 128.0
+		vertical_hit_range = 12.0
+		#Minion spawn radius.
+		#仆从生成半径。
+		#Range: 0.0 ~ 128.0
+		summon_radius = 4.0
+		#Distinct summon-windup telegraph radius.
+		#专用召唤前摇提示半径。
+		#Range: 0.0 ~ 128.0
+		summon_telegraph_radius = 8.0
+		#Range used to count owned minions.
+		#统计所属仆从的范围。
+		#Range: 0.0 ~ 128.0
+		minion_search_range = 96.0
+
+#Attack-range outline rendering using Minecraft's built-in line shader.
+#使用 Minecraft 内置线条着色器渲染攻击范围轮廓。
+[attack_telegraph]
+	#Render red attack-range outlines.
+	#渲染红色攻击范围轮廓。
+	enabled = true
+	#Maximum render distance.
+	#最大渲染距离。
+	#Range: 8.0 ~ 512.0
+	max_render_distance = 96.0
+	#Red channel.
+	#红色通道。
+	#Range: 0 ~ 255
+	red = 255
+	#Green channel.
+	#绿色通道。
+	#Range: 0 ~ 255
+	green = 35
+	#Blue channel.
+	#蓝色通道。
+	#Range: 0 ~ 255
+	blue = 35
+	#Outline alpha.
+	#轮廓透明度。
+	#Range: 0 ~ 255
+	alpha = 210
+	#Requested shader line width; hardware may clamp it.
+	#请求的着色器线宽；显卡可能限制实际值。
+	#Range: 1.0 ~ 12.0
+	line_width = 5.0
+	#Fill the marked attack area with translucent color.
+	#使用半透明颜色填充标记的攻击区域。
+	fill_enabled = true
+	#Fill alpha at the beginning of the windup.
+	#前摇开始时的填充透明度。
+	#Range: 0 ~ 255
+	fill_start_alpha = 20
+	#Fill alpha when the windup is almost complete.
+	#前摇即将完成时的填充透明度。
+	#Range: 0 ~ 255
+	fill_end_alpha = 150
+	#Segments used for circles and arcs.
+	#圆形和扇形使用的分段数。
+	#Range: 8 ~ 256
+	curve_segments = 48
+	#Vertical outline offset.
+	#轮廓垂直偏移。
+	#Range: -4.0 ~ 4.0
+	height_offset = 0.08
+

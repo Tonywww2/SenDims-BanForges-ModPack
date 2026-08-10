@@ -74,10 +74,16 @@ ServerEvents.tags("entity_type", event => {
         "block_factorys_bosses:yeti",
         "block_factorys_bosses:underworld_knight",
         "block_factorys_bosses:sandworm",
+        "dog:devourer_segment",
+        "dog:devourer_head",
+        "dog:devourer_tail",
     ]);
 
     event.add("forge:bosses", [
-        "terra_entity:eater_of_worlds_segment"
+        "terra_entity:eater_of_worlds_segment",
+        "dog:devourer_segment",
+        "dog:devourer_head",
+        "dog:devourer_tail",
     ])
 
 

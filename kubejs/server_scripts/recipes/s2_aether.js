@@ -41,7 +41,7 @@ ServerEvents.recipes(event => {
         "DE "
     ], {
         "A": "minecraft:obsidian",
-        "B": "slashblade:proudsoul_sphere",
+        "B": "slashblade:proudsoul",
         "C": "slashblade:proudsoul_ingot",
         "D": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance().name("slashblade:fox_black")

@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
     ], {
         A: 'thermal:red_rockwool',
         B: 'kubejs:scoria_ingot',
-        C: 'kubejs:mercury_refractory_structural_component',
+        C: ['kubejs:mercury_refractory_structural_component', "the_bumblezone:crystalline_flower"],
         D: 'thermal:tinker_bench',
         E: 'minecraft:lectern',
         F: 'integrateddynamics:logic_programmer',
@@ -128,7 +128,7 @@ ServerEvents.recipes(event => {
         "A": "minecraft:repeater",
         "B": "slashblade:proudsoul_ingot",
         "C": "minecraft:redstone_block",
-        "E": 'kubejs:mercury_refractory_structural_component',
+        "E": ['kubejs:mercury_refractory_structural_component', 'sgjourney:crystal_base'],
         "D": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("slashblade:kanze_masamune") // 要求：观世正宗 (Kanze Masamune)
@@ -164,7 +164,7 @@ ServerEvents.recipes(event => {
                 .addEnchantment(SBEnchantmentDefinition.of("apotheosis:scavenger", 1))
                 .build()
         ),
-        "D": 'kubejs:mercury_refractory_structural_component',
+        "D": ['kubejs:mercury_refractory_structural_component', 'sgjourney:trinium_iris'],
         "I": '#forge:plates/calorite',
         "Q": 'minecraft:packed_ice',
         "S": "minecraft:snow_block"
@@ -176,7 +176,7 @@ ServerEvents.recipes(event => {
         "DEF",
         "CHA"
     ], {
-        "A": 'kubejs:mercury_refractory_structural_component',
+        "A": ['kubejs:mercury_refractory_structural_component', 'sgjourney:trinium_iris'],
         "C": 'slashblade_sendims:blood_jade',
         // 核心原料 1：Nihilex (虚无)
         "B": SlashBladeIngredient.of(
@@ -228,7 +228,7 @@ ServerEvents.recipes(event => {
 
     event.custom({
         "type": "slashblade:slashblade_smithing",
-        "addition": { "item": 'kubejs:mercury_refractory_structural_component' },
+        "addition": Ingredient.of(['cataclysm:ignitium_ingot', 'sgjourney:kara_kesh']).toJson(),
         "base": {
             "type": "slashblade:blade",
             "item": "slashblade:slashblade",
@@ -240,7 +240,7 @@ ServerEvents.recipes(event => {
 
     event.custom({
         "type": "slashblade:slashblade_smithing",
-        "addition": { "item": 'cataclysm:ignitium_ingot' },
+        "addition": Ingredient.of(['cataclysm:ignitium_ingot', 'sgjourney:crystal_base']).toJson(),
         "base": {
             "type": "slashblade:blade",
             "item": "slashblade:slashblade",

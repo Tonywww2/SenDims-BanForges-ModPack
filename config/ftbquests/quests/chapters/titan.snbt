@@ -16,48 +16,6 @@
 	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [
 		{
-			id: "3C2739E946D33EA4"
-			linked_quest: "06A34C8A04B2CD83"
-			x: 16.5d
-			y: 17.5d
-		}
-		{
-			id: "7DF7FA7545819F35"
-			linked_quest: "2E9AD291D5058BFF"
-			x: 14.5d
-			y: 17.5d
-		}
-		{
-			id: "695C3E23A5A2F3DB"
-			linked_quest: "65C573EE97C5117F"
-			x: 14.5d
-			y: 15.0d
-		}
-		{
-			id: "56495BE9BC8BC126"
-			linked_quest: "489E7D6A94278610"
-			x: 12.5d
-			y: 15.0d
-		}
-		{
-			id: "295FF136527F5FD1"
-			linked_quest: "0506CD90BA40D331"
-			x: 12.5d
-			y: 17.5d
-		}
-		{
-			id: "51F63E11371BE7F5"
-			linked_quest: "2F9648A58EC0C636"
-			x: 13.0d
-			y: 12.5d
-		}
-		{
-			id: "5D6EA4551477462C"
-			linked_quest: "35E9C6E28966F641"
-			x: 15.5d
-			y: 12.5d
-		}
-		{
 			id: "65E7A52FA786E765"
 			linked_quest: "4BABF9CAFF0F35FB"
 			shape: "hexagon"
@@ -84,6 +42,8 @@
 				"1. 在地球上考古，寻找&b被埋藏的星门&r，在&e星门&r之后的各个世界之中挑战他们对应的&b怪潮传送门&r，收集&b星图碎片&r，并最终抵达&e土卫六&r。"
 				""
 				"2. 发展工业，制作&b六阶火箭&r，前往&e土卫六&r。"
+				""
+				"出于某些原因，&e土卫六&r可以不使用呼吸设备。"
 			]
 			hide_dependent_lines: true
 			icon: "titan_moon:hardened_tholin"
@@ -101,18 +61,24 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["37CF7606A44B5357"]
+			dependencies: [
+				"37CF7606A44B5357"
+				"532BD2C2B2815AC0"
+			]
 			id: "2E3E9722D50C0D8A"
 			tasks: [{
 				id: "4454609790D7CF17"
 				item: "kubejs:storm_hydrogen_crystal"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 15.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["37CF7606A44B5357"]
+			dependencies: [
+				"37CF7606A44B5357"
+				"3D45E2C3DAA7A648"
+			]
 			id: "7EACD821B5688C4C"
 			tasks: [{
 				id: "1DEBEE68E755899D"
@@ -120,7 +86,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 3.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["2E3E9722D50C0D8A"]
@@ -139,8 +105,8 @@
 				}
 				type: "item"
 			}]
-			x: 12.0d
-			y: 6.0d
+			x: 15.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["37CF7606A44B5357"]
@@ -422,6 +388,45 @@
 				type: "item"
 			}]
 			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"76BFA745E2BBDC7E"
+				"49631F88EAF0261B"
+				"59F17F34F831D72E"
+				"35F111CC582779BA"
+				"2E3E9722D50C0D8A"
+			]
+			id: "672F4EFC4C5F2A46"
+			tasks: [{
+				id: "727948017514565E"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"translate\":\"item.sjap_adder.nihilulex\"}"
+						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.sjap_adder.nihilulex\"}})"
+					}
+				}
+				type: "item"
+			}]
+			x: 18.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2E3E9722D50C0D8A"]
+			id: "5FDFB60B3DDCA8B7"
+			shape: "pentagon"
+			size: 1.5d
+			tasks: [{
+				id: "04FAEA2809DDCF7A"
+				item: "dog:cosmic_worm"
+				type: "item"
+			}]
+			x: 22.0d
 			y: 0.0d
 		}
 	]

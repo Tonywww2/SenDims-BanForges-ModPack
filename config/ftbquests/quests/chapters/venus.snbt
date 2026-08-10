@@ -267,7 +267,9 @@
 			dependencies: [
 				"5F25788D537A03BC"
 				"2B1F98A770D77E12"
+				"57AEDAD12FDBE944"
 			]
+			dependency_requirement: "one_completed"
 			id: "2F9648A58EC0C636"
 			tasks: [{
 				id: "798A47B4897B0079"
@@ -317,7 +319,9 @@
 				"3E497DA5DACC3B62"
 				"2B1F98A770D77E12"
 				"482EE0B9BBA0E5D3"
+				"643556973E0DE22E"
 			]
+			dependency_requirement: "one_completed"
 			id: "35E9C6E28966F641"
 			tasks: [{
 				id: "6546C87B474F3A49"
@@ -340,6 +344,7 @@
 			dependencies: [
 				"154580144376D976"
 				"2B1F98A770D77E12"
+				"16846E9213A00C23"
 			]
 			id: "489E7D6A94278610"
 			tasks: [{

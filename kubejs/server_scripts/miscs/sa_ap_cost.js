@@ -89,6 +89,8 @@ SACostMap.put("slashblade:thermal_wave_start", [400, 0.2]);
 SACostMap.put("slashblade:blazing_rekindle_start", [100, 0.005]);
 SACostMap.put("slashblade:ice_thunder_sword_start", [150, 0.005]);
 
+SACostMap.put("sjap_adder:whirling_sword", [200, 0.15]);
+
 let defaultCost = [200, 0.2];
 let superSlashArtCost = [400, 0.3];
 
