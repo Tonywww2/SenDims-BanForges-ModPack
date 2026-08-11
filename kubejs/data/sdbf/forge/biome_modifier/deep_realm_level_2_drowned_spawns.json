@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "sdbf:sacred_rubber_canopy",
+  "spawners": {
+    "type": "minecraft:drowned",
+    "weight": 5,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

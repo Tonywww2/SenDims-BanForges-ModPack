@@ -526,6 +526,10 @@
 
     "kubejs.difficulty.n_0": "N 0",
     "kubejs.difficulty.n_-1": "N -1",
+    "kubejs.difficulty.n_-2": "N -2",
+    "kubejs.difficulty.n_-3": "N -3",
+    "kubejs.difficulty.n_-4": "N -4",
+    "kubejs.difficulty.n_-5": "N -5",
     "kubejs.difficulty.n_1": "N 1",
     "kubejs.difficulty.n_2": "N 2",
     "kubejs.difficulty.n_3": "N 3",
@@ -535,6 +539,10 @@
 
     "kubejs.difficulty.n_0.desc": "[标准的战斗体验]",
     "kubejs.difficulty.n_-1.desc": "[近乎割草般的体验] 中幅降低敌人的属性。",
+    "kubejs.difficulty.n_-2.desc": "[近乎割草般的体验] 中幅降低敌人的属性。",
+    "kubejs.difficulty.n_-3.desc": "[近乎割草般的体验] 大幅降低敌人的属性。",
+    "kubejs.difficulty.n_-4.desc": "[近乎割草般的体验] 大幅降低敌人的属性。",
+    "kubejs.difficulty.n_-5.desc": "[近乎割草般的体验] 巨幅降低敌人的属性。",
     "kubejs.difficulty.n_1.desc": "[略微强大的敌人] 小幅提升敌人的属性。",
     "kubejs.difficulty.n_2.desc": "[略微强大的敌人] 小幅提升敌人的属性。",
     "kubejs.difficulty.n_3.desc": "[更加强大的敌人] 中幅提升敌人的属性。",

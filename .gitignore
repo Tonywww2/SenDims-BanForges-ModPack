@@ -104,3 +104,4 @@ servers.essential.dat
 /apricity/blackboard/gen
 config/smoothboot.json
 .sgjourney-common-reference-tmp/
+config/zfastnoise.mixin.properties

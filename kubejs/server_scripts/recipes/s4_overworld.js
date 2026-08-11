@@ -7,6 +7,17 @@ ServerEvents.recipes(event => {
         '4x #forge:ingots/enderium'
     ]).id("sdbf:ml_computing_ingot_s4")
 
+    event.shaped('easy_villagers:auto_trader', [
+        'GGG',
+        'GRG',
+        'INI'
+    ], {
+        G: '#forge:glass_panes/colorless',
+        I: 'kubejs:ml_computing_ingot',
+        R: '#forge:dusts/redstone',
+        N: '#forge:ingots/netherite'
+    }).id('sdbf:auto_trader_s4')
+
     event.shaped('kubejs:anchor_shard', [
         'ABC',
         'DED',
