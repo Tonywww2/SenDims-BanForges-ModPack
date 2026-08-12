@@ -1,0 +1,43 @@
+cantWrapperItems = []
+
+[Schematic]
+	#一次最多掉落的附魔耀魂数量
+	maxEnchantedSoulDrop = 8
+	#一个附魔耀魂所需杀敌数的量
+	enchantedSoulDropNeeded = 40
+	#一次最多掉落的普通耀魂数量
+	maxSoulDrop = 20
+	#一个普通耀魂所需耀魂值的量
+	soulDropNeeded = 150
+	#是否添加ciallo的两个原理图（联动）
+	enableCiallo = true
+
+[Expressions]
+	#设定 剑魂映射 中 锻造影响值 的公式
+	#设置拔刀剑锻造数到剑魂映射倍率的计算公式。
+	#可用参数：refine（拔刀剑锻造数）。公式返回值将作为倍率使用。
+	#默认公式：(18 * refine + 100) / (9 * refine + 1000)
+	soulBladeMappingRule = "(18 * refine + 100) / (9 * refine + 1000)"
+	#设置拔刀剑锻造数对普通攻击额外伤害的计算公式。
+	#公式返回的值会作为额外攻击伤害；可用参数：
+	#refine：拔刀剑锻造数；isFiercerEdge：是否为锋利剑刃（1 或 0）；
+	#baseDamage：参与公式计算的基础额外伤害。默认公式：
+	#baseDamage * (1 - 1 / (1 + (isFiercerEdge ? 0.1 : 0.05) * refine))
+	refineAttackRule = "baseDamage * (1 - 1 / (1 + (isFiercerEdge ? 0.1 : 0.05) * refine))"
+
+[ModularExchange]
+	#是否转移模块交换水晶中的 Tetra 模组数据。
+	#这是默认启用的唯一转移类别。
+	transferTetraData = true
+	#是否转移原版/Tetra 附魔。
+	transferEnchantments = false
+	#是否转移拔刀剑的耀魂数量。
+	transferProudSoul = false
+	#是否转移拔刀剑的击杀数。
+	transferKillCount = false
+	#是否转移拔刀剑的锻造数。
+	transferRefine = false
+	#要转移的顶层 NBT 键。
+	#交换物品的 TransferSettings NBT 可以覆盖或扩展此列表。
+	additionalNbtKeys = []
+

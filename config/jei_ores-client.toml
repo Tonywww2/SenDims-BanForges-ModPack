@@ -1,3 +1,5 @@
 addBiomesToIndex = true
-oreGenPageHeight = 57
+showFeatureIds = true
+showUnshownPlacementWarnings = true
+showGenerationStats = true
 

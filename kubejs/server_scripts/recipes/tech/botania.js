@@ -1,5 +1,14 @@
 ServerEvents.recipes(event => {
 
+    event.shaped('botania:magnet_ring', [
+        'MS ',
+        'S S',
+        ' S '
+    ], {
+        M: 'sophisticatedbackpacks:magnet_upgrade',
+        S: '#forge:ingots/steel'
+    }).id('sdbf:magnet_ring')
+
     event.shaped('botania:alfheim_portal', [
         'ABA',
         'ACA',

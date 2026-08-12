@@ -147,6 +147,11 @@
 				"1425849749F89FA6"
 			]
 			dependency_requirement: "one_completed"
+			description: [
+				"在使用&b蜜蜂精华&r后，你可以在&e黄蜂领域&r的&e蜂蜜茧&r内找到指向&b永恒圣所的指南针&r。"
+				""
+				"在获得&b任意的圣所精华&r后，你可以用它合成&b任意圣所的结构羽毛笔&r，&b圣所精华&r不会消耗。"
+			]
 			id: "05F34C96BF68DD64"
 			tasks: [{
 				id: "2E62A8764714D952"

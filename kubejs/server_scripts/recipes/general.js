@@ -1,4 +1,13 @@
 ServerEvents.recipes(event => {
+    event.shapeless('kubejs:difficulty_selector', [
+        'minecraft:book',
+        'minecraft:moss_block'
+    ]).id('sdbf:difficulty_selector')
+
+    event.shapeless('kubejs:difficulty_locker', [
+        'kubejs:difficulty_selector'
+    ]).id('sdbf:difficulty_locker')
+
     event.shapeless('kubejs:linear_quest_book',
         'ftbquests:book')
         .id('sdbf:linear_quest_book_from_quest_book')

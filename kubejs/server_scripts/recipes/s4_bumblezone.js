@@ -2,6 +2,19 @@ ServerEvents.recipes(event => {
 
     sqRecipe(event, "the_bumblezone:throne_pillar", 'the_bumblezone:honey_compass', 0, "s4");
 
+    let sanctumColors = ['blue', 'green', 'purple', 'red', 'white', 'yellow'];
+    for (let color of sanctumColors) {
+        let structure = `the_bumblezone:sempiternal_sanctum_${color}`;
+
+        event.shapeless($StructureQuill.forStructure(structure), [
+            'minecraft:map',
+            '#the_bumblezone:essence_items',
+            `#forge:dyes/${color}`
+        ])
+            .keepIngredient('#the_bumblezone:essence_items')
+            .id(`sdbf:sq_the_bumblezone_sempiternal_sanctum_${color}_s4`);
+    }
+
     event.shaped('slashblade_sendims:the_nectar_quest', [
         'ABA',
         'CDC',

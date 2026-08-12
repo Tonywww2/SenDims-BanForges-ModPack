@@ -44,6 +44,8 @@ ItemEvents.tooltip(event => {
     event.add('kubejs:chaotic_truth', Text.translatable('info.kubejs.chaotic_truth').color(Color.AQUA));
     event.add('kubejs:apoth_boss_remover', Text.translatable('info.kubejs.apoth_boss_remover').color(Color.AQUA));
     event.add('kubejs:apoth_boss_remover', Text.translatable('info.kubejs.apoth_boss_remover.consume').color(Color.GRAY));
+    event.add('kubejs:difficulty_selector', Text.translatable('info.kubejs.difficulty_selector').color(Color.AQUA));
+    event.add('kubejs:difficulty_locker', Text.translatable('info.kubejs.difficulty_locker').color(Color.RED));
     
     event.add('tofucraft:blocktofugrilled', Text.translatable('info.kubejs.blocktofugrilled').color(Color.AQUA));
     event.add('ad_astra:moon_stone', Text.translatable('info.kubejs.moon_stone').color(Color.AQUA));

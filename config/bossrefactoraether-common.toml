@@ -1,4 +1,23 @@
 
+#Shared out-of-combat healing for all three bosses.
+#三种 Boss 共用的脱战回血设置。
+[boss_recovery]
+	#Enable out-of-combat boss healing.
+	#是否启用 Boss 脱战回血。
+	enabled = true
+	#Ticks without a valid target between heals.
+	#每次回血前需要持续无有效目标的 tick 数。
+	#Range: 1 ~ 72000
+	interval_ticks = 20
+	#Flat health restored each interval.
+	#每次回复的固定生命值。
+	#Range: 0.0 ~ 1000000.0
+	flat_healing = 5.0
+	#Maximum-health ratio restored each interval.
+	#每次按最大生命值比例回复的生命值。
+	#Range: 0.0 ~ 1.0
+	max_health_ratio = 0.05
+
 #Aether Slider settings.
 #滑行魔石设置。
 [slider]
@@ -38,6 +57,10 @@
 		#每层石质屏障提供的伤害减免。
 		#Range: 0.0 ~ 1.0
 		barrier_reduction_per_layer = 0.05
+		#Recovery duration after a successful parry, in ticks.
+		#成功招架后的恢复时间，单位为 tick。
+		#Range: 1 ~ 72000
+		parry_recovery_ticks = 60
 		#Stun duration after barrier break, in ticks.
 		#屏障全部破碎后的眩晕时间，单位为 tick。
 		#Range: 0 ~ 72000
@@ -65,6 +88,9 @@
 		#Make the Slider immune to all HARMFUL mob effects and remove existing harmful effects.
 		#使滑行魔石免疫全部 HARMFUL 负面效果，并清除已有负面效果。
 		immune_to_negative_effects = true
+		#Prevent entities outside the Slider's room from damaging it. Indirect damage uses the causing entity, such as the projectile owner.
+		#阻止魔石房间外的实体对其造成伤害。间接伤害按实际来源实体判定，例如投射物主人。
+		prevent_outside_arena_damage = true
 		#Glide Power gained after completing one arena edge.
 		#每完成一条场地边缘巡航时获得的滑行力。
 		#Range: 0 ~ 100
@@ -76,26 +102,10 @@
 		#Make the first phase-two Continuous Glide dash unblockable and unparryable.
 		#使二阶段连续滑行的第一次冲刺不可格挡且不可招架。
 		phase_two_first_dash_unblockable = true
-		#Recovery duration after a successful parry, in ticks.
-		#成功招架后的恢复时间，单位为 tick。
-		#Range: 1 ~ 72000
-		parry_recovery_ticks = 60
 
 	#Damage is composed before phase and Glide Power multipliers.
 	#先计算基础伤害，再应用阶段和滑行力倍率。
 	[slider.damage]
-
-		#Continuous Glide dash.
-		#连续滑行冲刺。
-		[slider.damage.chain_dash]
-			#Flat damage before the attack contribution.
-			#攻击力贡献之前的固定伤害。
-			#Range: 0.0 ~ 1000000.0
-			base_damage = 0.0
-			#Current attack-damage multiplier. Formula: base + attack * multiplier.
-			#当前攻击力倍率。公式：固定伤害 + 攻击力 * 倍率。
-			#Range: 0.0 ~ 1000.0
-			attack_damage_multiplier = 1.5
 
 		#Collision during normal perimeter patrol.
 		#普通周界巡航期间的碰撞伤害。
@@ -108,6 +118,18 @@
 			#当前攻击力倍率。公式：固定伤害 + 攻击力 * 倍率。
 			#Range: 0.0 ~ 1000.0
 			attack_damage_multiplier = 1.0
+
+		#Continuous Glide dash.
+		#连续滑行冲刺。
+		[slider.damage.chain_dash]
+			#Flat damage before the attack contribution.
+			#攻击力贡献之前的固定伤害。
+			#Range: 0.0 ~ 1000000.0
+			base_damage = 0.0
+			#Current attack-damage multiplier. Formula: base + attack * multiplier.
+			#当前攻击力倍率。公式：固定伤害 + 攻击力 * 倍率。
+			#Range: 0.0 ~ 1000.0
+			attack_damage_multiplier = 1.5
 
 	#Movement speed settings for the Aether Slider.
 	#滑行魔石移动速度设置。
@@ -135,11 +157,15 @@
 		#Multiplier while moving to the nearest arena edge.
 		#移动到最近场地边缘时的速度倍率。
 		#Range: 0.0 ~ 10.0
-		edge_return_speed_multiplier = 0.6
+		edge_return_speed_multiplier = 0.75
 		#Multiplier while patrolling the square arena perimeter.
 		#沿方形场地边缘巡航时的速度倍率。
 		#Range: 0.0 ~ 10.0
 		perimeter_patrol_speed_multiplier = 0.5
+		#Multiplier while continuously chasing the current player.
+		#持续追击当前玩家时的速度倍率。
+		#Range: 0.0 ~ 10.0
+		chase_speed_multiplier = 1.0
 		#Multiplier for Continuous Glide dashes.
 		#连续滑行冲刺速度倍率。
 		#Range: 0.0 ~ 10.0
@@ -160,6 +186,10 @@
 		#连续冲刺之间的停顿时间。
 		#Range: 0 ~ 72000
 		continuous_glide_interval_ticks = 4
+		#Ticks of player velocity used to lead Continuous Glide aim.
+		#连续滑行瞄准时用于预判玩家速度的 tick 数。
+		#Range: 0 ~ 72000
+		continuous_glide_prediction_ticks = 8
 		#Pause after normal perimeter movement reaches a corner.
 		#普通周界移动抵达角点后的停留时间。
 		#Range: 0 ~ 72000
@@ -172,6 +202,10 @@
 		#连续滑行单次冲刺最大距离。
 		#Range: 0.0 ~ 128.0
 		continuous_glide_distance = 12.0
+		#Maximum horizontal player-velocity lead distance.
+		#按玩家水平速度预判时允许的最大领先距离。
+		#Range: 0.0 ~ 128.0
+		continuous_glide_max_lead_distance = 4.0
 		#Extra clearance between the Slider and arena walls.
 		#魔石与场地墙体之间的额外间距。
 		#Range: 0.0 ~ 128.0

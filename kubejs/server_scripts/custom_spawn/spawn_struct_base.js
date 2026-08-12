@@ -45,6 +45,7 @@ let registeredStructures = Utils.newMap();
  * @param {Function} config.executeCommands - 执行的函数 (level, centerPos, player) => void
  * @param {string} config.structureName - 结构名
  * @param {boolean} config.destroyAfterSpawn - 召唤后是否销毁结构
+ * @param {boolean} config.weakMatch - 是否忽略 pattern 中的空格坐标
  * @param {string} config.failMessage - 结构不匹配时的提示消息
  */
 let createBossStructure = (config) => {
@@ -58,62 +59,56 @@ let createBossStructure = (config) => {
     let patterns = config.patterns;
     let destroyAfterSpawn = config.destroyAfterSpawn;
     let consumeActivateItem = config.consumeActivateItem;
+    let weakMatch = config.weakMatch;
 
     if (!structureName) structureName = "Boss";
     if (!failMessage) failMessage = Text.translatable("info.kubejs.faill_spawn_structure");
     if (!patterns) patterns = BASE_STRUCTURE_PATTERNS;
     if (destroyAfterSpawn === undefined) destroyAfterSpawn = true;
     if (consumeActivateItem === undefined) consumeActivateItem = true;
+    if (weakMatch === undefined) weakMatch = false;
 
-    let destroyStructure = (level, centerPos) => {
-        for (let layerIndex = 0; layerIndex < patterns.length; layerIndex++) {
-            let pattern = patterns[layerIndex];
-            let yOffset = 1 - layerIndex;
-            for (let row = 0; row < pattern.length; row++) {
-                let rowPattern = pattern[row];
-                let zOffset = row - 1;
-                for (let col = 0; col < rowPattern.length; col++) {
-                    let expectedChar = rowPattern.charAt(col);
-                    let xOffset = col - 1;
-                    if (expectedChar != " ") {
-                        let blockPos = centerPos.offset(xOffset, yOffset, zOffset);
-                        // console.log(blockPos)
-                        level.removeBlock(blockPos, true);
-                        level.setBlock(blockPos, Blocks.AIR.defaultBlockState(), 2);
-                    }
+    let configuredPositions = [];
+    let emptyPositions = [];
+    for (let layerIndex = 0; layerIndex < patterns.length; layerIndex++) {
+        let pattern = patterns[layerIndex];
+        let yOffset = 1 - layerIndex;
+        for (let row = 0; row < pattern.length; row++) {
+            let rowPattern = pattern[row];
+            let zOffset = row - 1;
+            for (let col = 0; col < rowPattern.length; col++) {
+                let expectedChar = rowPattern.charAt(col);
+                let position = [col - 1, yOffset, zOffset];
+                if (expectedChar === ' ') {
+                    emptyPositions.push(position);
+                } else {
+                    position.push(Block.getBlock(blockMapping[expectedChar]));
+                    configuredPositions.push(position);
                 }
             }
+        }
+    }
+
+    let destroyStructure = (level, centerPos) => {
+        for (let position of configuredPositions) {
+            let blockPos = centerPos.offset(position[0], position[1], position[2]);
+            level.removeBlock(blockPos, true);
+            level.setBlock(blockPos, Blocks.AIR.defaultBlockState(), 2);
         }
     };
 
     let checkStructure = (level, centerPos) => {
-        for (let layerIndex = 0; layerIndex < patterns.length; layerIndex++) {
-            let pattern = patterns[layerIndex];
-            let yOffset = 1 - layerIndex;
+        for (let position of configuredPositions) {
+            let checkPos = centerPos.offset(position[0], position[1], position[2]);
+            let actualBlock = level.getBlockState(checkPos).getBlock();
+            if (!actualBlock.equals(position[3])) return false;
+        }
 
-            for (let row = 0; row < pattern.length; row++) {
-                let rowPattern = pattern[row];
-                let zOffset = row - 1;
-
-                for (let col = 0; col < rowPattern.length; col++) {
-                    let expectedChar = rowPattern.charAt(col);
-                    let xOffset = col - 1;
-
-                    let checkPos = centerPos.offset(xOffset, yOffset, zOffset);
-                    let actualBlock = level.getBlockState(checkPos).getBlock();
-
-                    if (expectedChar === ' ') {
-                        if (!actualBlock.equals(Blocks.AIR)) {
-                            return false;
-                        }
-                    } else {
-                        let expectedBlock = blockMapping[expectedChar];
-                        if (!expectedBlock || !actualBlock.equals(Block.getBlock(expectedBlock))) {
-                            // print(actualBlock + ", " + expectedBlock)
-                            return false;
-                        }
-                    }
-                }
+        if (!weakMatch) {
+            for (let position of emptyPositions) {
+                let checkPos = centerPos.offset(position[0], position[1], position[2]);
+                let actualBlock = level.getBlockState(checkPos).getBlock();
+                if (!actualBlock.equals(Blocks.AIR)) return false;
             }
         }
         return true;
@@ -139,6 +134,7 @@ let createBossStructure = (config) => {
         destroyAfterSpawn: destroyAfterSpawn,
         failMessage: failMessage,
         patterns: patterns,
+        weakMatch: weakMatch,
 
         checkStructure: checkStructure,
         spawn: spawn,

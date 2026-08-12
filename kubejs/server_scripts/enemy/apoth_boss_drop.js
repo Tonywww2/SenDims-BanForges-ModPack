@@ -93,4 +93,22 @@ EntityEvents.drops(event => {
         event.addDrop(ele);
     })
 
+    let player = event.source.getPlayer();
+    if (!player || (player.isFake && player.isFake()) || player.isCreative() || player.isSpectator()) return;
+
+    let difficulty = global.getPlayerDifficulty(player);
+    let multiplier = difficulty.eventRules.entityDropMultiplier;
+    if (multiplier <= 1) return;
+
+    let originalDrops = [];
+    for (let drop of event.getDrops()) originalDrops.push(drop);
+
+    originalDrops.forEach(drop => {
+        let stack = drop.getItem();
+        if (!stack || stack.isEmpty()) return;
+        for (let copyIndex = 1; copyIndex < multiplier; copyIndex++) {
+            event.addDrop(stack.copy());
+        }
+    });
+
 })

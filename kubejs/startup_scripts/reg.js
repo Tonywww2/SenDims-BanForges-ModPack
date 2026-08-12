@@ -22,6 +22,9 @@ StartupEvents.registry('item', event => {
     event.create('star_chart_fragment').rarity('uncommon')
     event.create('star_chart').rarity('epic').maxStackSize(1)
 
+    event.create('difficulty_selector').rarity('uncommon').maxStackSize(1)
+    event.create('difficulty_locker').rarity('rare').maxStackSize(1)
+
     event.create('linear_quest_book')
         .use((level, player, hand) => {
             if (level.clientSide) {

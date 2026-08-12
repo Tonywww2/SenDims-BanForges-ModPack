@@ -1207,6 +1207,11 @@
 					item: "kubejs:linear_quest_book"
 					type: "item"
 				}
+				{
+					id: "5B947C964456823F"
+					item: "kubejs:difficulty_selector"
+					type: "item"
+				}
 			]
 			size: 2.0d
 			subtitle: "从这里开始|第零个世界"

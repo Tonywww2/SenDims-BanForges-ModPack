@@ -66,6 +66,8 @@ SACostMap.put("slashblade_sendims:explosive_dawn_ammo", [600, 0.5]);
 
 SACostMap.put("slashblade_sendims:golden_crux_ex", [1000, 0.5]);
 
+SACostMap.put("slashblade_addon:gale_swords", [300, 0.3]);
+
 SACostMap.put("slashblade_addon:blistering_terra_swords", [600, 0.3]);
 
 SACostMap.put("slashblade_sendims:chaotic_rapid_blistering_swords", [300, 0.25]);

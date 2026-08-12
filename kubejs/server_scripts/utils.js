@@ -10,6 +10,7 @@ const $TagKey = Java.loadClass("net.minecraft.tags.TagKey");
 const $Registries = Java.loadClass("net.minecraft.core.registries.Registries");
 const $SpawnEggItem = Java.loadClass("net.minecraft.world.item.SpawnEggItem");
 const $AttributeModifier = Java.loadClass("net.minecraft.world.entity.ai.attributes.AttributeModifier");
+const $AttributeModifierOperation = Java.loadClass("net.minecraft.world.entity.ai.attributes.AttributeModifier$Operation");
 const $ClickEvent = Java.loadClass("net.minecraft.network.chat.ClickEvent");
 const $ClickEventAction = Java.loadClass("net.minecraft.network.chat.ClickEvent$Action");
 
@@ -19,6 +20,7 @@ const $ForgeRegistries = Java.loadClass("net.minecraftforge.registries.ForgeRegi
 const $RegistryManager = Java.loadClass("net.minecraftforge.registries.RegistryManager");
 const $LivingHurtEvent = Java.loadClass("net.minecraftforge.event.entity.living.LivingHurtEvent");
 const $LivingTickEvent = Java.loadClass("net.minecraftforge.event.entity.living.LivingEvent$LivingTickEvent");
+const $PlayerNameFormatEvent = Java.loadClass("net.minecraftforge.event.entity.player.PlayerEvent$NameFormat");
 const $PortalSpawnEvent = Java.loadClass("net.minecraftforge.event.level.BlockEvent$PortalSpawnEvent");
 const $ItemStackedOnOtherEvent = Java.loadClass("net.minecraftforge.event.ItemStackedOnOtherEvent");
 const $ModularItemDamageEvent = Java.loadClass("se.mickelus.tetra.event.ModularItemDamageEvent");
