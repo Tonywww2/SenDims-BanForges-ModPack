@@ -1,3 +1,5 @@
+#Greatly enhance the special effects of combat equipment. Default: false
+imbaMode = false
 
 #Config for Dust and Ash
 [Machines]
@@ -108,4 +110,134 @@
 	#The Cool Down of IndestructibleCD in Tick. Range[0, 10000] Default: 300
 	#Range: 0 ~ 10000
 	indestructibleCD = 300
+
+#Curios accessories
+[Curios]
+	#
+	#Judgement invulnerability duration in ticks. Default: 60
+	#Range: 0 ~ 72000
+	judgementInvulnerabilityTicks = 60
+	#
+	#Judgement cooldown in ticks, starting when damage is blocked. Default: 240
+	#Range: 0 ~ 72000
+	judgementCooldownTicks = 240
+	#
+	#Light Forged Halo attack damage bonus. Default: 0.25
+	#Range: 0.0 ~ 10.0
+	lightHaloAttackDamageBonus = 0.25
+	#
+	#Light Forged Halo flat attack speed bonus. Default: 0.2
+	#Range: 0.0 ~ 1024.0
+	lightHaloAttackSpeedBonus = 0.2
+	#
+	#Minimum brightness required to summon a Light Staff. Default: 14
+	#Range: 0 ~ 15
+	lightHaloBrightnessThreshold = 14
+	#
+	#Light Staff direct damage as a multiplier of attack damage. Default: 0.75
+	#Range: 0.0 ~ 100.0
+	lightStaffDirectDamageMultiplier = 0.75
+	#
+	#Light Staff area damage as a multiplier of attack damage. Default: 0.5
+	#Range: 0.0 ~ 100.0
+	lightStaffAreaDamageMultiplier = 0.5
+	#
+	#Light Staff area damage radius in blocks. Default: 4
+	#Range: 0.0 ~ 64.0
+	lightStaffRadius = 4.0
+	#
+	#Light Staff summon height in blocks. Default: 8
+	#Range: 0.0 ~ 128.0
+	lightStaffFallHeight = 8.0
+	#
+	#Light Staff fall duration in ticks. Default: 10
+	#Range: 1 ~ 1200
+	lightStaffFallTicks = 10
+	#
+	#Light Staff visible duration after impact in ticks. Default: 60
+	#Range: 0 ~ 1200
+	lightStaffImpactLingerTicks = 60
+	#
+	#Light Forged Halo effect cooldown in ticks. Default: 30
+	#Range: 0 ~ 72000
+	lightHaloCooldownTicks = 30
+	#
+	#Dark Forged Halo maximum health bonus. Default: 0.25
+	#Range: 0.0 ~ 10.0
+	darkHaloMaxHealthBonus = 0.25
+	#
+	#Dark Forged Halo armor bonus. Default: 0.25
+	#Range: 0.0 ~ 10.0
+	darkHaloArmorBonus = 0.25
+	#
+	#Dark Forged Halo night vision refresh interval in ticks. Default: 10
+	#Range: 1 ~ 1200
+	darkHaloNightVisionIntervalTicks = 10
+	#
+	#Dark Forged Halo night vision duration in ticks. Default: 100
+	#Range: 1 ~ 1200
+	darkHaloNightVisionDurationTicks = 100
+	#
+	#Maximum brightness required to trigger Dark Forged Halo. Default: 5
+	#Range: 0 ~ 15
+	darkHaloBrightnessThreshold = 5
+	#
+	#Number of random effects applied by Dark Forged Halo. Default: 3
+	#Range: 0 ~ 64
+	darkHaloEffectCount = 3
+	#
+	#Dark Forged Halo random effect duration in ticks. Default: 40
+	#Range: 1 ~ 72000
+	darkHaloEffectDurationTicks = 40
+	#
+	#Minimum displayed random effect level. Default: 1
+	#Range: 1 ~ 255
+	darkHaloMinimumEffectLevel = 1
+	#
+	#Maximum displayed random effect level. Default: 5
+	#Range: 1 ~ 255
+	darkHaloMaximumEffectLevel = 5
+	#
+	#Dark Forged Halo mark duration in ticks. Default: 100
+	#Range: 0 ~ 72000
+	darkHaloMarkDurationTicks = 100
+	#
+	#Healing from damage dealt to marked targets. Default: 0.5
+	#Range: 0.0 ~ 100.0
+	darkHaloLifeStealMultiplier = 0.5
+	#
+	#Healing from sourceless damage taken. Default: 0.5
+	#Range: 0.0 ~ 100.0
+	darkHaloSourcelessHealingMultiplier = 0.5
+	#
+	#Dark smoke line particle density per block. Default: 4
+	#Range: 0.1 ~ 64.0
+	darkHaloSmokeParticlesPerBlock = 4.0
+	#
+	#Maximum particles in one Dark Forged Halo smoke line. Default: 128
+	#Range: 1 ~ 4096
+	darkHaloMaximumSmokeParticles = 128
+	#
+	#Void Ring restored maximum health multiplier. Default: 1
+	#Range: 0.0 ~ 10.0
+	voidRingHealthRestoreMultiplier = 1.0
+	#
+	#Void Ring restored food level. Default: 20
+	#Range: 0 ~ 20
+	voidRingFoodLevel = 20
+	#
+	#Void Ring restored saturation level. Default: 20
+	#Range: 0.0 ~ 20.0
+	voidRingSaturationLevel = 20.0
+	#
+	#Void Ring spectator duration in ticks. Default: 100
+	#Range: 0 ~ 72000
+	voidRingSpectatorDurationTicks = 100
+	#
+	#Void Ring cooldown in ticks. Default: 6000
+	#Range: 0 ~ 720000
+	voidRingCooldownTicks = 6000
+	#
+	#Allow Void Ring to bypass both forged halo brightness conditions.
+	voidRingBypassesHaloBrightness = true
 

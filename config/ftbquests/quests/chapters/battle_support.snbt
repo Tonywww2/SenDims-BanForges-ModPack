@@ -435,7 +435,9 @@
 			dependencies: [
 				"26527CD8C76043BE"
 				"71D1A86D601690A9"
+				"511247D5AA551013"
 			]
+			dependency_requirement: "one_completed"
 			description: ["前期弄不来的玩意，去村民吧。"]
 			id: "2563ABCEC67C3877"
 			shape: "hexagon"

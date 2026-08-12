@@ -676,7 +676,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			size: 2.0d
+			size: 1.5d
 			subtitle: "重要的传送设备"
 			tasks: [{
 				id: "26B50A157C0E6145"
@@ -2255,6 +2255,24 @@
 			}]
 			x: 57.0d
 			y: -15.0d
+		}
+		{
+			dependencies: ["58234F97716261D8"]
+			id: "25286229A52D4364"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "更便携的传送设备"
+			tasks: [{
+				id: "18B0CA3098053946"
+				item: {
+					Count: 1
+					id: "draconicevolution:advanced_dislocator"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 15.0d
+			y: 3.0d
 		}
 	]
 	title: "&e工业"

@@ -1,0 +1,12 @@
+
+#Client display settings
+["Cooldown Overlay"]
+	#
+	#Cooldown overlay X position in GUI pixels from the left edge. Default: 8
+	#Range: 0 ~ 10000
+	cooldownOverlayX = 8
+	#
+	#Cooldown overlay Y position in GUI pixels from the top edge. Default: 8
+	#Range: 0 ~ 10000
+	cooldownOverlayY = 8
+

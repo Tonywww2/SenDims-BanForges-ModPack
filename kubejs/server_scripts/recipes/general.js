@@ -85,6 +85,17 @@ ServerEvents.recipes(event => {
         C: 'integrateddynamics:crystalized_menril_chunk'
     }).id('sdbf:logic_director')
 
+    event.shaped('draconicevolution:advanced_dislocator', [
+        'ACA',
+        'BDB',
+        'ABA'
+    ], {
+        A: 'wormhole:portal_stabilizer',
+        B: 'wormhole:advanced_target_device',
+        C: 'wormhole:advanced_target_cell',
+        D: 'wormhole:advanced_energy_cell'
+    }).id('sdbf:advanced_dislocator')
+
     event.shaped('minecraft:enchanting_table', [
         ' A ',
         'BCB',
