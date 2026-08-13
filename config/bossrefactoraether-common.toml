@@ -170,6 +170,10 @@
 		#连续滑行冲刺速度倍率。
 		#Range: 0.0 ~ 10.0
 		chain_dash_speed_multiplier = 1.6
+		#Base acceleration per tick for owned chase movement.
+		#本模组接管追击时每 tick 的基础加速度。
+		#Range: 0.0 ~ 10.0
+		chase_acceleration = 0.021666666666666667
 
 	#Slider timing in ticks.
 	#滑行魔石时间参数，单位为 tick。
