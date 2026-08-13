@@ -316,7 +316,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["58F48888F1039B24"]
+			dependencies: ["3DA6E818573A9A69"]
 			description: ["多么美妙的材料！它拥有着两条加工路线，可以自行选择！"]
 			id: "52755126FB29CFEF"
 			tasks: [{
@@ -325,7 +325,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: 0.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["3DA6E818573A9A69"]

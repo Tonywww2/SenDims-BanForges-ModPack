@@ -6,16 +6,16 @@ ServerEvents.recipes(event => {
         1,
         's3');
 
-    event.shapeless('nuclearcraft:carbon_manganese_ingot', [
-        '#forge:ingots/manganese',
-        'minecraft:sugar'
-    ]).id("sdbf:carbon_manganese_ingot_s3")
+    // event.shapeless('nuclearcraft:carbon_manganese_ingot', [
+    //     '#forge:ingots/manganese',
+    //     'minecraft:sugar'
+    // ]).id("sdbf:carbon_manganese_ingot_s3")
 
-    event.shapeless('nuclearcraft:sic_sic_cmc_ingot', [
-        'minecraft:ancient_debris',
-        'nuclearcraft:carbon_manganese_ingot',
-        '3x minecraft:fire_charge'
-    ]).id("sdbf:sic_sic_cmc_ingot_s3")
+    // event.shapeless('nuclearcraft:sic_sic_cmc_ingot', [
+    //     'minecraft:ancient_debris',
+    //     'nuclearcraft:carbon_manganese_ingot',
+    //     '3x minecraft:fire_charge'
+    // ]).id("sdbf:sic_sic_cmc_ingot_s3")
 
     event.shapeless('kubejs:menril-silicon_sic_sic_cmc_ingot', [
         'integrateddynamics:crystalized_menril_block',
@@ -34,7 +34,7 @@ ServerEvents.recipes(event => {
         B: 'kubejs:mysterious_alkali_crystal',
         D: 'midnight:rift_placer',
         F: 'nuclearcraft:sulfuric_acid_bucket',
-        G: 'kubejs:menril-silicon_sic_sic_cmc_ingot'
+        G: "integrateddynamics:variablestore"
     }).id('sdbf:rift_placer_s3')
 
     event.shaped('undergarden:catalyst', [

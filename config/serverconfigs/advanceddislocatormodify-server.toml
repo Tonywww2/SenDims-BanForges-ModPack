@@ -1,0 +1,7 @@
+#高级传送符咒可用的燃料配置列表,每项格式: "物品id|燃料添加量|经验消耗"
+#经验消耗支持:固定值(如 5)、百分比(如 10%,按玩家当前经验值的百分比扣除)、
+#或组合(如 100&5%,先扣 5% 当前经验值,再扣 100 点固定经验;可选前导负号)
+#示例: "minecraft:ender_pearl|1|0", "minecraft:ender_eye|4|100&-5%"
+#该列表会完全替换原版的末影珍珠燃料机制;如需原版行为请保留 "minecraft:ender_pearl|1|0"
+advancedDislocatorFuels = ["minecraft:ender_pearl|1|100&-2%", "slashblade:proudsoul_tiny|1|200&-4%", "draconicevolution:wyvern_core|512|0"]
+

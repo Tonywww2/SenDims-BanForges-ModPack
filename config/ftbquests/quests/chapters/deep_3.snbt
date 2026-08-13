@@ -52,7 +52,6 @@
 			dependencies: [
 				"7267904F019CEFD6"
 				"078E92000B6E3912"
-				"52755126FB29CFEF"
 			]
 			dependency_requirement: "one_completed"
 			description: ["需要使用激活的&b裂隙放置器&r（请查看合成配方）。"]

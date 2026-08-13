@@ -1207,6 +1207,7 @@
 			y: 12.0d
 		}
 		{
+			dependencies: ["5BB642BD0BE40541"]
 			id: "69932B77B63E4FE8"
 			shape: "hexagon"
 			size: 2.0d

@@ -538,10 +538,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: [
-				"71F1943E6E3FCA17"
-				"69932B77B63E4FE8"
-			]
+			dependencies: ["71F1943E6E3FCA17"]
 			description: [
 				"使用&6裂纹砖块&r建造3x3平台，在中心放置&6红砖块&r"
 				"使用&6深渊证章&r右键&6红砖块&r激活传送"

@@ -218,6 +218,14 @@
 		#纵向对齐完成后允许的中心高度差。
 		#Range: 0.0 ~ 128.0
 		vertical_alignment_tolerance = 0.1
+		#Authoritative horizontal combat-room radius, including tracked dungeons.
+		#滑行魔石实际战斗房间的水平半径，包括有地牢追踪器的房间。
+		#Range: 1.0 ~ 128.0
+		standalone_room_horizontal_radius = 11.0
+		#Authoritative vertical combat-room radius, including tracked dungeons.
+		#滑行魔石实际战斗房间的垂直半径，包括有地牢追踪器的房间。
+		#Range: 1.0 ~ 128.0
+		standalone_room_vertical_radius = 7.0
 
 	#Slider client display settings.
 	#滑行魔石客户端显示设置。
