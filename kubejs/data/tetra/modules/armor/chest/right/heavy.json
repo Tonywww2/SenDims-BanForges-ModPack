@@ -6,7 +6,9 @@
         "chest/right"
     ],
     "improvements":
-    [],
+    [
+        "tetra:armor/shared/"
+    ],
     "variants":
     [
         {

@@ -6,7 +6,9 @@
         "legs/belt"
     ],
     "improvements":
-    [],
+    [
+        "tetra:armor/shared/"
+    ],
     "variants":
     [
         {

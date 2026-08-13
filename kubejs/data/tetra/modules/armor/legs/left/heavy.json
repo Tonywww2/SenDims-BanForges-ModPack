@@ -6,7 +6,9 @@
         "legs/left"
     ],
     "improvements":
-    [],
+    [
+        "tetra:armor/shared/"
+    ],
     "variants":
     [
         {

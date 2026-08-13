@@ -4,7 +4,9 @@
     "slots": [
         "feet/right"
     ],
-    "improvements": [],
+    "improvements": [
+        "tetra:armor/shared/"
+    ],
     "variants": [
         {
             "materials":
