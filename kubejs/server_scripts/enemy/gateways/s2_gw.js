@@ -66,6 +66,63 @@ ServerEvents.highPriorityData(event => {
         completion: { "slashblade:proudsoul": 8, 'minecraft:netherite_scrap': 2, 'apotheosis:gem_dust': 2 },
     });
 
+    Gateway.registerJson("gateways:sdbf_nether_g2", JSON.stringify({
+        type: "gateways:endless",
+        size: "medium",
+        color: "#B01A1A",
+        base_wave: {
+            entities: [
+                { entity: "minecraft:zombified_piglin", count: 4 },
+                { entity: "minecraft:wither_skeleton", count: 2 },
+                { entity: "minecraft:hoglin", count: 1 }
+            ],
+            rewards: [
+                {
+                    type: "gateways:stack",
+                    stack: { item: "slashblade:proudsoul_tiny", count: 1 }
+                },
+                {
+                    type: "gateways:experience",
+                    experience: 24,
+                    orb_size: 6
+                }
+            ],
+            max_wave_time: 1200,
+            setup_time: 100
+        },
+        modifiers: [
+            {
+                application_mode: {
+                    type: "gateways:after_every_n_waves",
+                    waves: 3,
+                    max: 8
+                },
+                entities: [
+                    { entity: "minecraft:zombified_piglin", count: 2 },
+                    { entity: "minecraft:wither_skeleton", count: 1 }
+                ],
+                max_wave_time: 120
+            },
+            {
+                application_mode: {
+                    type: "gateways:after_every_n_waves",
+                    waves: 5,
+                    max: 6
+                },
+                modifiers: [
+                    {
+                        attribute: "generic.max_health",
+                        operation: "multiply_total",
+                        value: 0.1
+                    }
+                ]
+            }
+        ],
+        failures: [],
+        boss_event: { mode: "name_plate" },
+        spawn_algorithm: "gateways:inward_spiral"
+    }));
+
     Gateway.customBuilder("gateways:sdbf_nether_g3")
         .size("medium")
         .color(0x6e0f0f)

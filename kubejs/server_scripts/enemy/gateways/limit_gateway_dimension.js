@@ -2,6 +2,8 @@ let dimensionLimitMap = Utils.newMap();
 
 dimensionLimitMap.put("gateways:sdbf_dr1_g1", "sdbf:deep_realm_level_1");
 dimensionLimitMap.put("gateways:sdbf_dr1_g2", "sdbf:deep_realm_level_1");
+dimensionLimitMap.put("gateways:sdbf_dr2_g1", "sdbf:deep_realm_level_2");
+dimensionLimitMap.put("gateways:sdbf_dr2_g2", "sdbf:deep_realm_level_2");
 
 dimensionLimitMap.put("gateways:sdbf_moon_g1", "ad_astra:moon");
 

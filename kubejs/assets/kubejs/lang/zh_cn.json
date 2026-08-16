@@ -136,6 +136,8 @@
 
     "gateways.sdbf_dr1_g1": "深境一层 怪潮 传送门",
     "gateways.sdbf_dr1_g2": "深境一层 [机械] 怪潮传送门",
+    "gateways.sdbf_dr2_g1": "深境二层 [远征] 菌林传送门",
+    "gateways.sdbf_dr2_g2": "深境二层 [无尽] 菌林传送门",
     "gateways.sdbf_moon_g1": "月球 怪潮 传送门",
     "gateways.sdbf_nether_g1": "下界 怪潮 传送门",
     "gateways.sdbf_nether_g2": "下界 [无尽近战] 怪潮传送门",

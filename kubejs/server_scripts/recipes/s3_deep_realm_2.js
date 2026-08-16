@@ -6,6 +6,26 @@ ServerEvents.recipes(event => {
         1,
         's3');
 
+    event.shaped(Item.of('gateways:gate_pearl', '{gateway:"gateways:sdbf_dr2_g1"}'), [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'kubejs:mysterious_alkali_crystal',
+        B: 'integrateddynamics:crystalized_menril_chunk',
+        C: 'slashblade:proudsoul'
+    }).id('sdbf:sdbf_dr2_g1_s3')
+
+    event.shaped(Item.of('gateways:gate_pearl', '{gateway:"gateways:sdbf_dr2_g2"}'), [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'kubejs:gamma_dust',
+        B: 'kubejs:mysterious_alkali_crystal',
+        C: 'slashblade:proudsoul_tiny'
+    }).id('sdbf:sdbf_dr2_g2_s3')
+
     // event.shapeless('nuclearcraft:carbon_manganese_ingot', [
     //     '#forge:ingots/manganese',
     //     'minecraft:sugar'
