@@ -4,6 +4,7 @@
 const $Double = Java.loadClass("java.lang.Double");
 const $UUID = Java.loadClass("java.util.UUID");
 const $HashSet = Java.loadClass("java.util.HashSet");
+const $StringArgumentType = Java.loadClass("com.mojang.brigadier.arguments.StringArgumentType");
 
 // ---- Minecraft ----
 const $TagKey = Java.loadClass("net.minecraft.tags.TagKey");

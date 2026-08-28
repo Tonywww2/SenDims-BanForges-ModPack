@@ -5,10 +5,10 @@
 
 [jeiContent]
 	#Hide JEI's generated anvil repair recipes (repairing an item with its crafting material).
-	#Also skips generating them during startup, which saves time. Default true.
+	#Also skips generating them during startup. Overrides anvil representative optimization.
 	disableAnvilRepairRecipes = true
 	#Hide JEI's generated anvil enchanting recipes (combining enchanted books on an anvil).
-	#Also skips generating them during startup, which saves time. Default true.
+	#Also skips generating them during startup. Overrides anvil representative optimization.
 	disableAnvilEnchantRecipes = true
 	#Emergency hatch: comma-separated creative tabs to hide from JEI, by tab id or by mod id.
 	#Use this when one mod's creative tab makes JEI's ingredient registration take minutes;
@@ -16,6 +16,27 @@
 	#Items from a skipped tab will not appear in JEI at all. Default empty (nothing skipped).
 	#Example: skipCreativeTabs = "examplemod, othermod:special_tab"
 	skipCreativeTabs = ""
+	#Keep a small, coverage-preserving set of JEI anvil examples instead of generating every item combination.
+	#Every enchantment with a compatible generated example remains represented.
+	optimizeAnvilRepresentatives = true
+	#Maximum number of distinct item families shown for each anvil enchantment.
+	#Range: 1 ~ 64
+	anvilRepresentativesPerEnchantment = 3
+	#Maximum number of generic material-repair examples retained for the anvil.
+	#Range: 0 ~ 256
+	anvilRepairRepresentatives = 16
+	#Keep a small, coverage-preserving set of JEI grindstone examples.
+	#Only affects JEI versions that generate synthetic grindstone recipes.
+	optimizeGrindstoneRepresentatives = true
+	#Maximum number of distinct item families shown for each removable enchantment.
+	#Range: 1 ~ 64
+	grindstoneRepresentativesPerEnchantment = 3
+	#Maximum number of generic self-repair examples retained for the grindstone.
+	#Range: 0 ~ 256
+	grindstoneRepairRepresentatives = 16
+	#Compact Iron's Spells Arcane Anvil imbuing combinations while preserving every item and spell level.
+	#Has no effect when Iron's Spells is not installed or its integration API is incompatible.
+	compactIronsSpellsImbuing = true
 
 [diagnostics]
 	#Enable per-plugin and per-stage JEI timing logs.

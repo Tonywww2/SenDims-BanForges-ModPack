@@ -96,8 +96,7 @@ EntityEvents.drops(event => {
     let player = event.source.getPlayer();
     if (!player || (player.isFake && player.isFake()) || player.isCreative() || player.isSpectator()) return;
 
-    let difficulty = global.getPlayerDifficulty(player);
-    let multiplier = difficulty.eventRules.entityDropMultiplier;
+    let multiplier = global.getPlayerDropMultiplier(player);
     if (multiplier <= 1) return;
 
     let originalDrops = [];
