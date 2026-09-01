@@ -1,0 +1,1458 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="aui-mouse-events" content="intercept">
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            user-select: none;
+        }
+
+        * {
+            user-select: none;
+        }
+
+        body {
+            background-color: transparent;
+            color: #eef3f1;
+            font-family: "Consolas", "Microsoft YaHei UI", monospace;
+            font-size: 10px;
+        }
+
+        button {
+            min-width: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            border-radius: 2px;
+            font-family: "Consolas", "Microsoft YaHei UI", monospace;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .screen {
+            position: fixed;
+            left: 12.5%;
+            top: 12.5%;
+            width: 75%;
+            max-width: none;
+            min-width: 0;
+            flex: 0 0 auto;
+            height: 75%;
+            max-height: none;
+            min-height: 0;
+            display: flex;
+            flex-direction: column;
+            padding: 6px 8px;
+            box-sizing: border-box;
+            border: 1px solid #526064;
+            background-color: rgba(5, 7, 8, 0.98);
+            box-shadow: 0 7px 20px rgba(0, 0, 0, 0.78);
+        }
+
+        .header {
+            flex: 0 0 42px;
+            min-height: 42px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 4px 6px;
+            box-sizing: border-box;
+            border: 1px solid #394346;
+            background-color: #0d1113;
+        }
+
+        .header texture {
+            width: 28px;
+            height: 28px;
+            flex: 0 0 28px;
+        }
+
+        .heading {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .title {
+            color: #d9ff59;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .subtitle {
+            color: #7f8d8f;
+            font-size: 8px;
+        }
+
+        .player-state {
+            flex: 0 0 auto;
+            color: #a6b2b2;
+            text-align: right;
+        }
+
+        .player-state strong {
+            color: #ffffff;
+            font-size: 13px;
+        }
+
+        .lock-state {
+            margin-left: 5px;
+            color: #ff6970;
+        }
+
+        .score-state {
+            color: #7f8d8f;
+            font-size: 8px;
+        }
+
+        .score-state strong {
+            color: #d9ff59;
+            font-size: 10px;
+        }
+
+        .enemy-total-state {
+            flex: 0 0 auto;
+            padding-left: 7px;
+            border-left: 1px solid #394346;
+            white-space: nowrap;
+        }
+
+        .enemy-total-label {
+            color: #7f8d8f;
+            font-size: 8px;
+        }
+
+        .enemy-total-values {
+            margin-top: 1px;
+            color: #9de6d3;
+            font-size: 9px;
+        }
+
+        .view-controls {
+            flex: 0 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 2px;
+        }
+
+        .view-control-button {
+            width: 22px;
+            min-width: 22px;
+            height: 22px;
+            border: 1px solid #394346;
+            background-color: #151b1d;
+            color: #d9ff59;
+            font-size: 14px;
+        }
+
+        .view-scale-label {
+            width: 38px;
+            min-width: 38px;
+            color: #a6b2b2;
+            text-align: center;
+            font-size: 8px;
+        }
+
+        .matrix-viewport {
+            width: 100%;
+            flex: 1;
+            min-height: 0;
+            margin-top: 5px;
+            box-sizing: border-box;
+            border: 1px solid #394346;
+            background-color: #090d0f;
+            overflow: hidden;
+            cursor: grab;
+            user-select: none;
+        }
+
+        .matrix-viewport.dragging {
+            cursor: grabbing;
+        }
+
+        .matrix-canvas {
+            width: 550px;
+            min-width: 550px;
+            min-height: 268px;
+            position: relative;
+            left: 0;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            padding: 3px;
+            box-sizing: border-box;
+        }
+
+        .matrix-row {
+            width: 544px;
+            min-width: 544px;
+            display: flex;
+            flex-direction: row;
+            gap: 2px;
+        }
+
+        .axis-row {
+            flex: 0 0 24px;
+            height: 24px;
+            position: relative;
+            z-index: 20;
+            background-color: #090d0f;
+        }
+
+        .category-row {
+            flex: 0 0 auto;
+            min-height: 24px;
+        }
+
+        .axis-cell,
+        .modifier-button {
+            border: 1px solid #2d373a;
+            background-color: #0d1214;
+            color: #465154;
+        }
+
+        .axis-cell {
+            width: 24px;
+            min-width: 24px;
+            flex: 0 0 24px;
+            height: 24px;
+            padding: 1px;
+            font-size: 10px;
+        }
+
+        .category-cell {
+            width: 24px;
+            min-width: 24px;
+            flex: 0 0 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 2px;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #0b0f11;
+        }
+
+        .modifier-button {
+            flex: 0 0 24px;
+            width: 24px;
+            min-width: 24px;
+            max-width: 24px;
+            height: 24px;
+            min-height: 24px;
+            max-height: 24px;
+            padding: 1px;
+            font-size: 7px;
+            line-height: 1.1;
+            white-space: normal;
+        }
+
+        .modifier-icon {
+            width: 18px;
+            min-width: 18px;
+            flex: 0 0 18px;
+            height: 18px;
+            min-height: 18px;
+            display: block;
+            background-image: none;
+            background-color: transparent;
+            pointer-events: none;
+            --aui-slot-interactive: 0;
+            --aui-slot-render-bg: 0;
+            --aui-slot-icon-scale: 1;
+        }
+
+        .axis-cell.available,
+        .modifier-button.available {
+            border-color: #2e786d;
+            color: #72f0d0;
+        }
+
+        .axis-cell.selected,
+        .modifier-button.selected {
+            border-color: #e6ece9;
+            background-color: #e6ece9;
+            color: #101617;
+            font-weight: bold;
+        }
+
+        .axis-cell.pending,
+        .modifier-button.queued {
+            border-color: #d9ff59;
+            background-color: #d9ff59;
+            color: #11150b;
+            font-weight: bold;
+        }
+
+        .axis-cell.locked,
+        .modifier-button.locked {
+            border-color: #4b292c;
+            color: #82464a;
+            cursor: default;
+        }
+
+        .modifier-button.unmet {
+            border-color: #252d30;
+            color: #414a4d;
+            cursor: default;
+        }
+
+        .hover-tooltip {
+            position: fixed;
+            z-index: 100;
+            left: 0;
+            top: 0;
+            width: 230px;
+            display: none;
+            padding: 7px 8px;
+            box-sizing: border-box;
+            border: 1px solid #68777a;
+            background-color: rgba(5, 8, 9, 0.98);
+            color: #dbe3e2;
+            line-height: 1.45;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.72);
+            pointer-events: none;
+        }
+
+        .hover-tooltip.visible {
+            display: block;
+        }
+
+        .tooltip-title {
+            color: #d9ff59;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        .tooltip-description {
+            margin-top: 3px;
+            color: #bdc7c6;
+        }
+
+        .tooltip-adjustments {
+            margin-top: 4px;
+            padding: 3px 5px;
+            border-left: 2px solid #72f0d0;
+            background-color: rgba(20, 34, 35, 0.92);
+            color: #9de6d3;
+        }
+
+        .tooltip-requirement {
+            margin-top: 3px;
+            color: #f0ad67;
+        }
+
+        .tooltip-score {
+            margin-top: 3px;
+            color: #d9ff59;
+        }
+
+        .tooltip-state {
+            margin-top: 4px;
+            padding-top: 3px;
+            border-top: 1px solid #394346;
+            color: #72f0d0;
+        }
+
+        .footer {
+            flex: 0 0 38px;
+            min-height: 38px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 5px 0 0 5px;
+            box-sizing: border-box;
+            border-top: 1px solid #394346;
+            background-color: #0d1113;
+        }
+
+        .pending-summary {
+            flex: 1;
+            min-width: 0;
+            color: #d9ff59;
+            white-space: nowrap;
+        }
+
+        .confirm-button {
+            width: 118px;
+            min-width: 118px;
+            height: 28px;
+            border: 1px solid #d9ff59;
+            background-color: #35400e;
+            color: #eeffae;
+            font-size: 9px;
+            font-weight: bold;
+        }
+
+        .confirm-button:disabled {
+            border-color: #394346;
+            background-color: #151b1d;
+            color: #596568;
+            cursor: default;
+        }
+
+        .close-button {
+            width: 28px;
+            min-width: 28px;
+            height: 28px;
+            border: 1px solid #6a3439;
+            background-color: #2d1519;
+            color: #ff858c;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <main class="screen">
+        <header class="header">
+            <texture src="kubejs:textures/item/difficulty_selector.png"></texture>
+            <div class="heading">
+                <div class="title">SDBF // DIFFICULTY MATRIX</div>
+                <div class="subtitle">PERSONAL DIFFICULTY CONTROL</div>
+            </div>
+            <div class="player-state">
+                <div>当前 <strong id="current-level">N0</strong><span id="lock-state" class="lock-state"></span></div>
+                <div class="score-state">总分 <strong id="total-score">0</strong></div>
+            </div>
+            <div class="enemy-total-state">
+                <div class="enemy-total-label">敌人属性总修正</div>
+                <div id="enemy-total-values" class="enemy-total-values">生命 -15% | 攻击 -15% | 护甲 -15%</div>
+            </div>
+            <div class="view-controls">
+                <button id="view-smaller" class="view-control-button" title="缩小视图">−</button>
+                <span id="view-scale-label" class="view-scale-label">75%</span>
+                <button id="view-larger" class="view-control-button" title="放大视图">+</button>
+            </div>
+            <button id="close-button" class="close-button" title="关闭">×</button>
+        </header>
+
+        <section id="matrix-viewport" class="matrix-viewport" title="按住并拖动浏览矩阵">
+            <div id="matrix-canvas" class="matrix-canvas"></div>
+        </section>
+
+        <footer class="footer">
+            <div id="pending-summary" class="pending-summary"></div>
+            <button id="confirm-button" class="confirm-button">确认本次选择</button>
+        </footer>
+
+        <aside id="hover-tooltip" class="hover-tooltip">
+            <div id="tooltip-title" class="tooltip-title"></div>
+            <div id="tooltip-description" class="tooltip-description"></div>
+            <div id="tooltip-adjustments" class="tooltip-adjustments"></div>
+            <div id="tooltip-requirement" class="tooltip-requirement"></div>
+            <div id="tooltip-score" class="tooltip-score"></div>
+            <div id="tooltip-state" class="tooltip-state"></div>
+        </aside>
+    </main>
+
+    <script>
+        let DIFFICULTY_STAGE_PREFIX = 'sdbf_difficulty_axis_';
+        let DIFFICULTY_SUB_STAGE_PREFIX = 'sdbf_difficulty_sub_';
+        let DIFFICULTY_LOCK_STAGE = 'sdbf_difficulty_locked';
+
+        let axisDefinitions = [];
+        let categories = [];
+
+        let currentLevel = 0;
+        let pendingLevel = 0;
+        let selectedModifiers = {};
+        let queuedModifiers = {};
+        let modifierById = {};
+        let difficultyLocked = false;
+        let SCREEN_SCALE = 0.75;
+        let contentScale = 0.75;
+        let matrixMetrics = {};
+        let pageDisposed = false;
+        let ui = {
+            active: false,
+            tooltipWidth: 230,
+            tooltipHeight: 0,
+            screen: null,
+            viewport: null,
+            canvas: null,
+            axisRow: null,
+            tooltip: null,
+            tooltipTitle: null,
+            tooltipDescription: null,
+            tooltipAdjustments: null,
+            tooltipRequirement: null,
+            tooltipScore: null,
+            tooltipState: null,
+            pendingSummary: null,
+            confirmButton: null,
+            currentLevel: null,
+            lockState: null,
+            totalScore: null,
+            enemyTotalValues: null,
+            viewScaleLabel: null,
+            axisCells: [],
+            modifierCells: [],
+            modifierIcons: [],
+            categoryRows: [],
+            categoryCells: []
+        };
+        let updateCanvasPosition = () => {};
+        let dragState = {
+            active: false,
+            moved: false,
+            suppressClick: false,
+            startX: 0,
+            startY: 0,
+            lastX: 0,
+            lastY: 0,
+            canvasLeft: 0,
+            canvasTop: 0,
+            pressedTarget: null
+        };
+
+        function difficultyTrace(message) {
+            if (typeof console != 'undefined' && console.log) {
+                console.log('[SDBF Difficulty] ' + message);
+            }
+        }
+
+        function formatLevel(level) {
+            return 'N' + (level > 0 ? '+' : '') + level;
+        }
+
+        function formatScore(score) {
+            if (score >= 0) return '+' + score;
+            return String(score);
+        }
+
+        function formatAxisAdjustment(value) {
+            let adjustment = Math.round((value - 100) * 100) / 100;
+            return (adjustment >= 0 ? '+' : '') + adjustment + '%';
+        }
+
+        function escapeHtml(value) {
+            return String(value)
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;');
+        }
+
+        function validateDifficultyData(data) {
+            if (!data || data.schemaVersion != 1) throw new Error('Unsupported difficulty data schema.');
+            if (!Array.isArray(data.axes) || data.axes.length == 0) throw new Error('Difficulty axes are missing.');
+            if (!Array.isArray(data.categories) || !Array.isArray(data.modifiers)) throw new Error('Difficulty categories or modifiers are missing.');
+            let levels = {};
+            let previousLevel = null;
+            data.axes.forEach(axis => {
+                let level = Number(axis.level);
+                if (!isFinite(level) || levels[level]) throw new Error('Invalid or duplicate difficulty level: ' + axis.level);
+                if (previousLevel != null && level <= previousLevel) throw new Error('Difficulty axes must be strictly ascending.');
+                levels[level] = true;
+                previousLevel = level;
+            });
+            if (!levels[0]) throw new Error('Difficulty axis N0 is required.');
+            let categoryIds = {};
+            data.categories.forEach(category => {
+                let categoryId = String(category.id || '');
+                let clientId = String(category.clientId || categoryId);
+                if (!categoryId || categoryIds[categoryId]) throw new Error('Invalid or duplicate difficulty category: ' + categoryId);
+                if (!/^[a-z0-9_-]+$/.test(clientId)) throw new Error('Invalid client category ID: ' + clientId);
+                categoryIds[categoryId] = true;
+            });
+            let modifierIds = {};
+            data.modifiers.forEach(modifier => {
+                let modifierId = String(modifier.id || '');
+                if (!modifierId || modifierIds[modifierId]) throw new Error('Invalid or duplicate difficulty modifier: ' + modifierId);
+                if (!categoryIds[modifier.category]) throw new Error('Unknown modifier category: ' + modifier.category);
+                if (!levels[modifier.requiredLevel]) throw new Error('Unknown modifier level: ' + modifier.requiredLevel);
+                modifierIds[modifierId] = true;
+            });
+        }
+
+        function applyDifficultyData(data) {
+            validateDifficultyData(data);
+            axisDefinitions = data.axes.map(axis => ({
+                id: 'n_' + axis.level,
+                level: Number(axis.level),
+                health: Math.round(Number(axis.health) * 100),
+                attack: Math.round(Number(axis.attack) * 100),
+                armor: Math.round(Number(axis.armor) * 100),
+                description: String(axis.description || '')
+            }));
+            let modifiersByCategory = {};
+            data.modifiers.forEach(modifier => {
+                let clientModifier = {
+                    id: String(modifier.id),
+                    level: Number(modifier.requiredLevel),
+                    score: Number(modifier.score || 0),
+                    short: String(modifier.short || ''),
+                    name: String(modifier.name || modifier.id),
+                    description: String(modifier.description || ''),
+                    icon: String(modifier.icon || 'minecraft:barrier'),
+                    effect: modifier.effect || {}
+                };
+                let categoryId = String(modifier.category);
+                if (!modifiersByCategory[categoryId]) modifiersByCategory[categoryId] = [];
+                modifiersByCategory[categoryId].push(clientModifier);
+            });
+            categories = data.categories.slice().sort((left, right) => left.order - right.order).map(category => ({
+                id: String(category.clientId || category.id),
+                sourceId: String(category.id),
+                label: String(category.label || category.id),
+                modifiers: modifiersByCategory[String(category.id)] || []
+            }));
+        }
+
+        function buildMatrix() {
+            let canvas = document.getElementById('matrix-canvas');
+            let axisIndexByLevel = {};
+            let html = '<div class="matrix-row axis-row">';
+            axisDefinitions.forEach((axis, index) => {
+                axisIndexByLevel[String(axis.level)] = index;
+                html += '<button class="axis-cell" data-axis-level="' + axis.level + '">' +
+                    escapeHtml(formatLevel(axis.level)) + '</button>';
+            });
+            html += '</div>';
+            categories.forEach((category, categoryIndex) => {
+                let modifiersByColumn = {};
+                category.modifiers.forEach(modifier => {
+                    let column = axisIndexByLevel[String(modifier.level)];
+                    if (column == undefined) return;
+                    if (!modifiersByColumn[column]) modifiersByColumn[column] = [];
+                    modifiersByColumn[column].push(modifier);
+                });
+                html += '<div class="matrix-row category-row ' + escapeHtml(category.id) +
+                    '" data-category-row="' + categoryIndex + '">';
+                for (let column = 0; column < axisDefinitions.length; column++) {
+                    html += '<div class="category-cell" data-category-cell-row="' + categoryIndex + '">';
+                    let modifiers = modifiersByColumn[column] || [];
+                    modifiers.forEach(modifier => {
+                        html += '<button class="modifier-button" data-modifier-id="' + escapeHtml(modifier.id) + '">' +
+                            '<slot class="modifier-icon" cycle="0" render="item" size="18">' +
+                            escapeHtml(modifier.icon) + '</slot></button>';
+                    });
+                    html += '</div>';
+                }
+                html += '</div>';
+            });
+            canvas.innerHTML = html;
+        }
+
+        function getModifierScore(modifier) {
+            if (!modifier) return 0;
+            if (modifier.score != undefined) return modifier.score;
+            if (modifier.id == 'infinite_items') return -50;
+            if (modifier.level < 0) return -1;
+            return 0;
+        }
+
+        function findModifierById(id) {
+            return modifierById[id] || null;
+        }
+
+        function getTotalScore() {
+            let score = pendingLevel;
+            let counted = {};
+            let selectedIds = Object.keys(selectedModifiers);
+            for (let index = 0; index < selectedIds.length; index++) {
+                let modifier = findModifierById(selectedIds[index]);
+                if (!modifier || counted[modifier.id]) continue;
+                counted[modifier.id] = true;
+                score += getModifierScore(modifier);
+            }
+            let queuedIds = Object.keys(queuedModifiers);
+            for (let index = 0; index < queuedIds.length; index++) {
+                let modifier = findModifierById(queuedIds[index]);
+                if (!modifier || counted[modifier.id]) continue;
+                counted[modifier.id] = true;
+                score += getModifierScore(modifier);
+            }
+            return score;
+        }
+
+        function getEnemyTotalAdjustments() {
+            let axis = null;
+            for (let index = 0; index < axisDefinitions.length; index++) {
+                if (axisDefinitions[index].level == pendingLevel) {
+                    axis = axisDefinitions[index];
+                    break;
+                }
+            }
+            let totals = {
+                health: axis ? axis.health : 100,
+                attack: axis ? axis.attack : 100,
+                armor: axis ? axis.armor : 100
+            };
+            let counted = {};
+            let modifierIds = Object.keys(selectedModifiers).concat(Object.keys(queuedModifiers));
+            for (let index = 0; index < modifierIds.length; index++) {
+                let modifier = findModifierById(modifierIds[index]);
+                if (!modifier || counted[modifier.id]) continue;
+                counted[modifier.id] = true;
+                let effect = modifier.effect;
+                if (!effect || effect.type != 'enemy') continue;
+                let stat = String(effect.stat);
+                if (totals[stat] != undefined) totals[stat] += Number(effect.bonus) * 100;
+            }
+            return totals;
+        }
+
+        function getAxisState(level) {
+            if (level == currentLevel) return 'selected';
+            if (level == pendingLevel) return 'pending';
+            if (difficultyLocked) return 'locked';
+            if (currentLevel < 0) return level < currentLevel ? 'available' : 'locked';
+            if (currentLevel > 0) return level > currentLevel ? 'available' : 'locked';
+            return 'available';
+        }
+
+        function isModifierAvailable(requiredLevel) {
+            if (requiredLevel == 0) return true;
+            if (requiredLevel < 0) return pendingLevel <= requiredLevel;
+            return pendingLevel >= requiredLevel;
+        }
+
+        function getModifierState(modifier) {
+            if (selectedModifiers[modifier.id]) return 'selected';
+            if (difficultyLocked) return 'locked';
+            if (!isModifierAvailable(modifier.level)) return 'unmet';
+            if (queuedModifiers[modifier.id]) return 'queued';
+            return 'available';
+        }
+
+        function stateLabel(state) {
+            if (state == 'selected') return '已选择';
+            if (state == 'pending') return '等待确认';
+            if (state == 'queued') return '已加入本次选择';
+            if (state == 'available') return '可选择';
+            if (state == 'locked') return '方向或难度已锁定';
+            return '前置难度未满足';
+        }
+
+        function rectsOverlap(first, second) {
+            return first.left < second.right && first.right > second.left &&
+                first.top < second.bottom && first.bottom > second.top;
+        }
+
+        function rectContains(outer, inner) {
+            return inner.left >= outer.left && inner.right <= outer.right &&
+                inner.top >= outer.top && inner.bottom <= outer.bottom;
+        }
+
+        function updateSlotVisibility() {
+            if (!ui.active) return;
+            let viewport = ui.viewport;
+            let axisRow = ui.axisRow;
+            let tooltip = ui.tooltip;
+            if (!viewport || !axisRow) return;
+            let viewportBounds = viewport.getBoundingClientRect();
+            let axisBounds = axisRow.getBoundingClientRect();
+            let tooltipVisible = tooltip && tooltip.classList && tooltip.classList.contains('visible');
+            let tooltipBounds = tooltipVisible ? tooltip.getBoundingClientRect() : null;
+            let icons = ui.modifierIcons;
+            for (let index = 0; index < icons.length; index++) {
+                let icon = icons[index];
+                let iconBounds = icon.getBoundingClientRect();
+                let visible = rectContains(viewportBounds, iconBounds) && !rectsOverlap(iconBounds, axisBounds);
+                if (visible && tooltipBounds && rectsOverlap(iconBounds, tooltipBounds)) visible = false;
+                let renderItem = visible ? '1' : '0';
+                if (icon.getAttribute('data-slot-visible') != renderItem) {
+                    icon.setAttribute('data-slot-visible', renderItem);
+                    icon.setAttribute('style', modifierIconStyle(renderItem));
+                }
+            }
+        }
+
+        function readPlayerState() {
+            if (typeof Client == 'undefined' || !Client.player) return;
+            currentLevel = 0;
+            selectedModifiers = {};
+            difficultyLocked = false;
+            let stages = Client.player.stages.getAll();
+            stages.forEach(stage => {
+                let stageId = String(stage);
+                if (stageId.indexOf(DIFFICULTY_STAGE_PREFIX) == 0) {
+                    let parsed = Number(stageId.substring(DIFFICULTY_STAGE_PREFIX.length).replace('n_', ''));
+                    if (!isNaN(parsed)) currentLevel = parsed;
+                } else if (stageId == DIFFICULTY_LOCK_STAGE) {
+                    difficultyLocked = true;
+                }
+            });
+            Object.keys(modifierById).forEach(modifierId => {
+                if (Client.player.stages.has(DIFFICULTY_SUB_STAGE_PREFIX + modifierId)) {
+                    selectedModifiers[modifierId] = true;
+                }
+            });
+            pendingLevel = currentLevel;
+        }
+
+        function moveTooltip(event) {
+            let tooltip = ui.tooltip;
+            if (!event || !tooltip || !tooltip.classList || !tooltip.setAttribute) return;
+            if (!tooltip.classList.contains('visible')) return;
+            let left = event.clientX + 12;
+            let top = event.clientY + 12;
+            if (left + ui.tooltipWidth > window.innerWidth - 6) left = event.clientX - ui.tooltipWidth - 12;
+            if (top + ui.tooltipHeight > window.innerHeight - 6) top = event.clientY - ui.tooltipHeight - 12;
+            tooltip.setAttribute(
+                'style',
+                'left:' + Math.max(6, left) + 'px;top:' + Math.max(6, top) + 'px;'
+            );
+            updateSlotVisibility();
+        }
+
+        function showTooltip(title, description, adjustments, requirement, score, state, event) {
+            let tooltip = ui.tooltip;
+            let tooltipTitle = ui.tooltipTitle;
+            let tooltipDescription = ui.tooltipDescription;
+            let tooltipAdjustments = ui.tooltipAdjustments;
+            let tooltipRequirement = ui.tooltipRequirement;
+            let tooltipScore = ui.tooltipScore;
+            let tooltipState = ui.tooltipState;
+            if (!tooltip || !tooltip.classList || !tooltip.setAttribute) return;
+            if (!tooltipTitle || !tooltipDescription || !tooltipAdjustments || !tooltipRequirement || !tooltipScore || !tooltipState) return;
+            tooltipTitle.textContent = title;
+            tooltipDescription.textContent = description || '';
+            tooltipDescription.setAttribute('style', description ? 'display:block;' : 'display:none;');
+            tooltipAdjustments.textContent = adjustments || '';
+            tooltipAdjustments.setAttribute('style', adjustments ? 'display:block;' : 'display:none;');
+            tooltipRequirement.textContent = requirement || '';
+            tooltipRequirement.setAttribute('style', requirement ? 'display:block;' : 'display:none;');
+            tooltipScore.textContent = '分数修正：' + formatScore(score);
+            tooltipState.textContent = stateLabel(state);
+            tooltip.classList.add('visible');
+            let bounds = tooltip.getBoundingClientRect();
+            ui.tooltipWidth = bounds.width;
+            ui.tooltipHeight = bounds.height;
+            moveTooltip(event);
+        }
+
+        function hideTooltip() {
+            let tooltip = ui.tooltip;
+            if (!tooltip || !tooltip.classList) return;
+            tooltip.classList.remove('visible');
+            updateSlotVisibility();
+        }
+
+        function installAxisCell(button, axis) {
+            button.addEventListener('mouseenter', function (event) {
+                let state = getAxisState(axis.level);
+                showTooltip(
+                    formatLevel(axis.level),
+                    axis.description,
+                    '基础属性修正  |  生命 ' + formatAxisAdjustment(axis.health) +
+                    '  |  攻击 ' + formatAxisAdjustment(axis.attack) +
+                    '  |  护甲 ' + formatAxisAdjustment(axis.armor),
+                    '',
+                    axis.level,
+                    state,
+                    event
+                );
+            });
+            button.addEventListener('mousemove', moveTooltip);
+            button.addEventListener('mouseleave', hideTooltip);
+            button.addEventListener('click', function (event) {
+                if (dragState.suppressClick) {
+                    event.preventDefault();
+                    return;
+                }
+                let state = getAxisState(axis.level);
+                if (state != 'available' && state != 'selected' && state != 'pending') return;
+                pendingLevel = axis.level;
+                pruneQueuedModifiers();
+                updateState();
+            });
+        }
+
+        function installModifierButton(button, modifier) {
+            button.addEventListener('mouseenter', function (event) {
+                showTooltip(
+                    modifier.name,
+                    modifier.description,
+                    '',
+                    '前置：' + formatLevel(modifier.level),
+                    getModifierScore(modifier),
+                    getModifierState(modifier),
+                    event
+                );
+            });
+            button.addEventListener('mousemove', moveTooltip);
+            button.addEventListener('mouseleave', hideTooltip);
+            button.addEventListener('click', function (event) {
+                if (dragState.suppressClick) {
+                    event.preventDefault();
+                    return;
+                }
+                let state = getModifierState(modifier);
+                if (state != 'available' && state != 'queued') return;
+                if (queuedModifiers[modifier.id]) delete queuedModifiers[modifier.id];
+                else queuedModifiers[modifier.id] = true;
+                updateState();
+            });
+        }
+
+        function installMatrixEvents() {
+            for (let index = 0; index < axisDefinitions.length; index++) {
+                let axis = axisDefinitions[index];
+                let button = document.querySelector('[data-axis-level="' + axis.level + '"]');
+                if (button) installAxisCell(button, axis);
+            }
+
+            for (let categoryIndex = 0; categoryIndex < categories.length; categoryIndex++) {
+                let category = categories[categoryIndex];
+                for (let modifierIndex = 0; modifierIndex < category.modifiers.length; modifierIndex++) {
+                    let modifier = category.modifiers[modifierIndex];
+                    let button = document.querySelector('[data-modifier-id="' + modifier.id + '"]');
+                    if (button) installModifierButton(button, modifier);
+                }
+            }
+        }
+
+        function initializeUiCache() {
+            ui.screen = document.querySelector('.screen');
+            ui.viewport = document.getElementById('matrix-viewport');
+            ui.canvas = document.getElementById('matrix-canvas');
+            ui.axisRow = document.querySelector('.axis-row');
+            ui.tooltip = document.getElementById('hover-tooltip');
+            ui.tooltipTitle = document.getElementById('tooltip-title');
+            ui.tooltipDescription = document.getElementById('tooltip-description');
+            ui.tooltipAdjustments = document.getElementById('tooltip-adjustments');
+            ui.tooltipRequirement = document.getElementById('tooltip-requirement');
+            ui.tooltipScore = document.getElementById('tooltip-score');
+            ui.tooltipState = document.getElementById('tooltip-state');
+            ui.pendingSummary = document.getElementById('pending-summary');
+            ui.confirmButton = document.getElementById('confirm-button');
+            ui.currentLevel = document.getElementById('current-level');
+            ui.lockState = document.getElementById('lock-state');
+            ui.totalScore = document.getElementById('total-score');
+            ui.enemyTotalValues = document.getElementById('enemy-total-values');
+            ui.viewScaleLabel = document.getElementById('view-scale-label');
+            ui.axisCells = document.querySelectorAll('[data-axis-level]');
+            ui.modifierCells = document.querySelectorAll('[data-modifier-id]');
+            ui.modifierIcons = document.querySelectorAll('.modifier-icon');
+            ui.categoryRows = document.querySelectorAll('.category-row');
+            ui.categoryCells = document.querySelectorAll('[data-category-cell-row]');
+            ui.active = true;
+        }
+
+        function disposeUiCache() {
+            ui.active = false;
+            ui.screen = null;
+            ui.viewport = null;
+            ui.canvas = null;
+            ui.axisRow = null;
+            ui.tooltip = null;
+            ui.tooltipTitle = null;
+            ui.tooltipDescription = null;
+            ui.tooltipAdjustments = null;
+            ui.tooltipRequirement = null;
+            ui.tooltipScore = null;
+            ui.tooltipState = null;
+            ui.pendingSummary = null;
+            ui.confirmButton = null;
+            ui.currentLevel = null;
+            ui.lockState = null;
+            ui.totalScore = null;
+            ui.enemyTotalValues = null;
+            ui.viewScaleLabel = null;
+            ui.axisCells = [];
+            ui.modifierCells = [];
+            ui.modifierIcons = [];
+            ui.categoryRows = [];
+            ui.categoryCells = [];
+        }
+
+        function scaledMatrixSize(value) {
+            return Math.max(1, Math.round(value * contentScale / 0.75));
+        }
+
+        function updateMatrixMetrics() {
+            matrixMetrics.columnWidth = scaledMatrixSize(24);
+            matrixMetrics.axisHeight = scaledMatrixSize(24);
+            matrixMetrics.buttonSize = scaledMatrixSize(24);
+            matrixMetrics.iconSize = scaledMatrixSize(18);
+            matrixMetrics.cellGap = scaledMatrixSize(2);
+            matrixMetrics.canvasGap = scaledMatrixSize(3);
+            matrixMetrics.canvasPadding = scaledMatrixSize(3);
+            matrixMetrics.axisFontSize = scaledMatrixSize(10);
+            matrixMetrics.modifierFontSize = scaledMatrixSize(7);
+            matrixMetrics.iconScale = contentScale / 0.75;
+            matrixMetrics.rowWidth = axisDefinitions.length * matrixMetrics.columnWidth +
+                Math.max(0, axisDefinitions.length - 1) * matrixMetrics.cellGap;
+            matrixMetrics.canvasWidth = matrixMetrics.rowWidth + 2 * matrixMetrics.canvasPadding;
+        }
+
+        function axisRowStyle() {
+            return 'position:relative;z-index:20;display:flex;flex-direction:row;align-items:stretch;' +
+                'box-sizing:border-box;background-color:#090d0f;width:' + matrixMetrics.rowWidth +
+                'px;min-width:' + matrixMetrics.rowWidth +
+                'px;gap:' + matrixMetrics.cellGap + 'px;height:' + matrixMetrics.axisHeight +
+                'px;flex:0 0 ' + matrixMetrics.axisHeight + 'px;top:' + (-dragState.canvasTop) + 'px;';
+        }
+
+        function canvasStyle() {
+            return 'left:' + dragState.canvasLeft + 'px;top:' + dragState.canvasTop +
+                'px;width:' + matrixMetrics.canvasWidth + 'px;min-width:' + matrixMetrics.canvasWidth +
+                'px;min-height:' + matrixMetrics.canvasHeight + 'px;gap:' + matrixMetrics.canvasGap +
+                'px;padding:' + matrixMetrics.canvasPadding + 'px;';
+        }
+
+        function modifierIconStyle(renderItem) {
+            return 'display:block;background-image:none;background-color:transparent;pointer-events:none;' +
+                'width:' + matrixMetrics.iconSize + 'px;min-width:' + matrixMetrics.iconSize +
+                'px;height:' + matrixMetrics.iconSize + 'px;min-height:' + matrixMetrics.iconSize +
+                'px;flex:0 0 ' + matrixMetrics.iconSize + 'px;--aui-slot-interactive:0;' +
+                '--aui-slot-render-bg:0;--aui-slot-icon-scale:' + matrixMetrics.iconScale +
+                ';--aui-slot-render-item:' + renderItem + ';';
+        }
+
+        function sizeCategoryRows() {
+            let rows = ui.categoryRows;
+            let allCells = ui.categoryCells;
+            let totalHeight = matrixMetrics.axisHeight + rows.length * matrixMetrics.canvasGap +
+                2 * matrixMetrics.canvasPadding;
+            let rowHeights = [];
+            for (let rowIndex = 0; rowIndex < rows.length; rowIndex++) {
+                let row = rows[rowIndex];
+                let category = categories[rowIndex];
+                let modifiersPerLevel = {};
+                let maxButtons = 1;
+                for (let modifierIndex = 0; modifierIndex < category.modifiers.length; modifierIndex++) {
+                    let level = String(category.modifiers[modifierIndex].level);
+                    modifiersPerLevel[level] = (modifiersPerLevel[level] || 0) + 1;
+                    maxButtons = Math.max(maxButtons, modifiersPerLevel[level]);
+                }
+                let rowHeight = maxButtons * matrixMetrics.buttonSize +
+                    Math.max(0, maxButtons - 1) * matrixMetrics.cellGap;
+                rowHeights.push(rowHeight);
+                totalHeight += rowHeight;
+                row.setAttribute(
+                    'style',
+                    'display:flex;flex-direction:row;align-items:stretch;box-sizing:border-box;width:' +
+                    matrixMetrics.rowWidth + 'px;min-width:' + matrixMetrics.rowWidth +
+                    'px;gap:' + matrixMetrics.cellGap + 'px;height:' + rowHeight +
+                    'px;min-height:' + rowHeight + 'px;flex:0 0 ' + rowHeight + 'px;'
+                );
+                let cells = [];
+                for (let cellIndex = 0; cellIndex < allCells.length; cellIndex++) {
+                    if (Number(allCells[cellIndex].getAttribute('data-category-cell-row')) == rowIndex) {
+                        cells.push(allCells[cellIndex]);
+                    }
+                }
+                for (let cellIndex = 0; cellIndex < cells.length; cellIndex++) {
+                    let cell = cells[cellIndex];
+                    cell.setAttribute(
+                        'style',
+                        'display:flex;flex-direction:column;align-items:center;justify-content:flex-start;' +
+                        'box-sizing:border-box;padding:0;background-color:#0b0f11;width:' +
+                        matrixMetrics.columnWidth + 'px;min-width:' + matrixMetrics.columnWidth +
+                        'px;flex:0 0 ' + matrixMetrics.columnWidth + 'px;height:' + rowHeight +
+                        'px;min-height:' + rowHeight + 'px;gap:' + matrixMetrics.cellGap + 'px;'
+                    );
+                }
+            }
+            let buttons = ui.modifierCells;
+            for (let buttonIndex = 0; buttonIndex < buttons.length; buttonIndex++) {
+                let button = buttons[buttonIndex];
+                let modifier = findModifierById(button.getAttribute('data-modifier-id'));
+                let state = modifier ? getModifierState(modifier) : 'unmet';
+                styleModifierButton(button, state);
+            }
+            let icons = ui.modifierIcons;
+            for (let iconIndex = 0; iconIndex < icons.length; iconIndex++) {
+                let icon = icons[iconIndex];
+                let renderItem = icon.getAttribute('data-slot-visible') == '0' ? '0' : '1';
+                icon.setAttribute('style', modifierIconStyle(renderItem));
+            }
+            matrixMetrics.rowHeights = rowHeights;
+            matrixMetrics.canvasHeight = totalHeight;
+        }
+
+        function sizeMatrix() {
+            updateMatrixMetrics();
+            sizeCategoryRows();
+            let axisRow = ui.axisRow;
+            if (axisRow) axisRow.setAttribute('style', axisRowStyle());
+            let axisCells = ui.axisCells;
+            for (let index = 0; index < axisCells.length; index++) {
+                let level = Number(axisCells[index].getAttribute('data-axis-level'));
+                styleAxisCell(axisCells[index], getAxisState(level));
+            }
+            let canvas = ui.canvas;
+            if (canvas) canvas.setAttribute('style', canvasStyle());
+        }
+
+        function pruneQueuedModifiers() {
+            let modifierIds = Object.keys(queuedModifiers);
+            for (let index = 0; index < modifierIds.length; index++) {
+                let modifier = findModifierById(modifierIds[index]);
+                if (!modifier || !isModifierAvailable(modifier.level)) delete queuedModifiers[modifierIds[index]];
+            }
+        }
+
+        function setCellState(cell, baseClass, state) {
+            if (cell.getAttribute('data-state') == state) return false;
+            cell.classList.add(baseClass);
+            cell.classList.remove('available');
+            cell.classList.remove('selected');
+            cell.classList.remove('pending');
+            cell.classList.remove('queued');
+            cell.classList.remove('locked');
+            cell.classList.remove('unmet');
+            cell.classList.add(state);
+            cell.setAttribute('data-state', state);
+            return true;
+        }
+
+        function setTextIfChanged(element, value) {
+            if (element && element.textContent != value) element.textContent = value;
+        }
+
+        function styleAxisCell(cell, state) {
+            let borderColor = '#2d373a';
+            let backgroundColor = '#0d1214';
+            let color = '#465154';
+            let fontWeight = 'normal';
+            let cursor = 'pointer';
+            if (state == 'available') {
+                borderColor = '#2e786d';
+                color = '#72f0d0';
+            } else if (state == 'selected') {
+                borderColor = '#ffffff';
+                backgroundColor = '#e6ece9';
+                color = '#101617';
+                fontWeight = 'bold';
+            } else if (state == 'pending') {
+                borderColor = '#d9ff59';
+                backgroundColor = '#d9ff59';
+                color = '#11150b';
+                fontWeight = 'bold';
+            } else if (state == 'locked') {
+                borderColor = '#4b292c';
+                color = '#82464a';
+                cursor = 'default';
+            }
+            cell.setAttribute(
+                'style',
+                'display:flex;align-items:center;justify-content:center;box-sizing:border-box;' +
+                'border:1px solid ' + borderColor + ';border-radius:2px;background-color:' +
+                backgroundColor + ';color:' + color + ';text-align:center;cursor:' + cursor +
+                ';width:' + matrixMetrics.columnWidth + 'px;min-width:' + matrixMetrics.columnWidth +
+                'px;flex:0 0 ' + matrixMetrics.columnWidth + 'px;height:' + matrixMetrics.axisHeight +
+                'px;padding:' + scaledMatrixSize(1) + 'px;font-size:' + matrixMetrics.axisFontSize +
+                'px;font-weight:' + fontWeight + ';'
+            );
+        }
+
+        function styleModifierButton(button, state) {
+            let borderColor = '#2d373a';
+            let backgroundColor = '#0d1214';
+            let color = '#465154';
+            let fontWeight = 'normal';
+            let cursor = 'pointer';
+            if (state == 'available') {
+                borderColor = '#2e786d';
+                color = '#72f0d0';
+            } else if (state == 'selected') {
+                borderColor = '#e6ece9';
+                backgroundColor = '#e6ece9';
+                color = '#101617';
+                fontWeight = 'bold';
+            } else if (state == 'queued') {
+                borderColor = '#d9ff59';
+                backgroundColor = '#d9ff59';
+                color = '#11150b';
+                fontWeight = 'bold';
+            } else if (state == 'locked') {
+                borderColor = '#4b292c';
+                color = '#82464a';
+                cursor = 'default';
+            } else if (state == 'unmet') {
+                borderColor = '#252d30';
+                color = '#414a4d';
+                cursor = 'default';
+            }
+            button.setAttribute(
+                'style',
+                'display:flex;align-items:center;justify-content:center;box-sizing:border-box;' +
+                'border:1px solid ' + borderColor + ';border-radius:2px;background-color:' +
+                backgroundColor + ';color:' + color + ';text-align:center;cursor:' + cursor +
+                ';width:' + matrixMetrics.buttonSize + 'px;min-width:' + matrixMetrics.buttonSize +
+                'px;max-width:' + matrixMetrics.buttonSize + 'px;height:' + matrixMetrics.buttonSize +
+                'px;min-height:' + matrixMetrics.buttonSize + 'px;max-height:' + matrixMetrics.buttonSize +
+                'px;flex:0 0 ' + matrixMetrics.buttonSize + 'px;padding:' + scaledMatrixSize(1) +
+                'px;font-size:' + matrixMetrics.modifierFontSize + 'px;line-height:1.1;white-space:normal;' +
+                'font-weight:' + fontWeight + ';'
+            );
+        }
+
+        function updateState() {
+            if (!ui.active) return;
+            setTextIfChanged(ui.currentLevel, formatLevel(currentLevel));
+            setTextIfChanged(ui.lockState, difficultyLocked ? 'LOCKED' : '');
+            setTextIfChanged(ui.totalScore, formatScore(getTotalScore()));
+            let enemyTotals = getEnemyTotalAdjustments();
+            setTextIfChanged(
+                ui.enemyTotalValues,
+                '生命 ' + formatAxisAdjustment(enemyTotals.health) +
+                ' | 攻击 ' + formatAxisAdjustment(enemyTotals.attack) +
+                ' | 护甲 ' + formatAxisAdjustment(enemyTotals.armor)
+            );
+
+            let axisCells = ui.axisCells;
+            for (let index = 0; index < axisCells.length; index++) {
+                let cell = axisCells[index];
+                let state = getAxisState(Number(cell.getAttribute('data-axis-level')));
+                if (setCellState(cell, 'axis-cell', state)) styleAxisCell(cell, state);
+            }
+
+            let modifierCells = ui.modifierCells;
+            for (let index = 0; index < modifierCells.length; index++) {
+                let cell = modifierCells[index];
+                let modifier = findModifierById(cell.getAttribute('data-modifier-id'));
+                let state = modifier ? getModifierState(modifier) : 'unmet';
+                if (setCellState(cell, 'modifier-button', state)) styleModifierButton(cell, state);
+            }
+
+            let queuedNames = [];
+            let queuedIds = Object.keys(queuedModifiers);
+            for (let index = 0; index < queuedIds.length; index++) {
+                let modifier = findModifierById(queuedIds[index]);
+                if (modifier) queuedNames.push(modifier.short);
+            }
+
+            let axisChanged = pendingLevel != currentLevel;
+            let hasChanges = axisChanged || queuedIds.length > 0;
+            let summary = '待确认：主轴 ' + formatLevel(pendingLevel);
+            summary += queuedNames.length > 0 ? ' · 副修正 ' + queuedNames.join('、') : ' · 未追加副修正';
+            if (difficultyLocked) summary = '当前难度已锁定';
+            setTextIfChanged(ui.pendingSummary, summary);
+            let confirmDisabled = !hasChanges || difficultyLocked;
+            if (ui.confirmButton.disabled != confirmDisabled) ui.confirmButton.disabled = confirmDisabled;
+        }
+
+        function submitSelection() {
+            if (difficultyLocked) return;
+            let modifierIds = Object.keys(queuedModifiers);
+            if (pendingLevel == currentLevel && modifierIds.length == 0) return;
+            let subIds = modifierIds.length > 0 ? modifierIds.join(' ') : 'none';
+            let command = 'sdbf_difficulty_menu apply ' + pendingLevel + ' ' + subIds;
+            if (typeof Client != 'undefined' && Client.player && Client.player.connection) {
+                Client.player.connection.sendCommand(command);
+                if (typeof ApricityUI != 'undefined') ApricityUI.closeScreen();
+                return;
+            }
+            document.getElementById('pending-summary').textContent = '预览提交：' + command;
+        }
+
+        function installDragBrowsing() {
+            let viewport = ui.viewport;
+            let canvas = ui.canvas;
+            let axisRow = ui.axisRow;
+
+            let applyCanvasPosition = () => {
+                if (!ui.active) return;
+                let bounds = viewport.getBoundingClientRect();
+                let minLeft = Math.min(0, bounds.width - matrixMetrics.canvasWidth);
+                let minTop = Math.min(0, bounds.height - matrixMetrics.canvasHeight);
+                dragState.canvasLeft = Math.max(minLeft, Math.min(0, dragState.canvasLeft));
+                dragState.canvasTop = Math.max(minTop, Math.min(0, dragState.canvasTop));
+                canvas.setAttribute('style', canvasStyle());
+                axisRow.setAttribute('style', axisRowStyle());
+                updateSlotVisibility();
+            };
+            updateCanvasPosition = applyCanvasPosition;
+
+            let startDrag = event => {
+                if (dragState.active) return;
+                dragState.active = true;
+                dragState.moved = false;
+                dragState.startX = event.clientX;
+                dragState.startY = event.clientY;
+                dragState.lastX = event.clientX;
+                dragState.lastY = event.clientY;
+                dragState.pressedTarget = event.target;
+                if (dragState.pressedTarget && dragState.pressedTarget.addEventListener) {
+                    dragState.pressedTarget.addEventListener('mousemove', handleMouseMove);
+                    dragState.pressedTarget.addEventListener('mouseup', finishDrag);
+                }
+                viewport.classList.add('dragging');
+            };
+
+            let finishDrag = () => {
+                if (!dragState.active) return;
+                dragState.active = false;
+                dragState.suppressClick = dragState.moved;
+                if (dragState.pressedTarget && dragState.pressedTarget.removeEventListener) {
+                    dragState.pressedTarget.removeEventListener('mousemove', handleMouseMove);
+                    dragState.pressedTarget.removeEventListener('mouseup', finishDrag);
+                }
+                dragState.pressedTarget = null;
+                viewport.classList.remove('dragging');
+                setTimeout(function () {
+                    dragState.suppressClick = false;
+                }, 0);
+            };
+
+            let handleMouseDown = event => {
+                if (event.button != 0) return;
+                let bounds = viewport.getBoundingClientRect();
+                if (event.clientX < bounds.left || event.clientX > bounds.right) return;
+                if (event.clientY < bounds.top || event.clientY > bounds.bottom) return;
+                startDrag(event);
+                event.preventDefault();
+            };
+
+            let handleMouseMove = event => {
+                if (!dragState.active) return;
+                let deltaX = event.clientX - dragState.lastX;
+                let deltaY = event.clientY - dragState.lastY;
+                dragState.lastX = event.clientX;
+                dragState.lastY = event.clientY;
+                if (deltaX == 0 && deltaY == 0) return;
+                if (Math.abs(event.clientX - dragState.startX) > 6 || Math.abs(event.clientY - dragState.startY) > 6) {
+                    dragState.moved = true;
+                }
+                dragState.canvasLeft += deltaX;
+                dragState.canvasTop += deltaY;
+                applyCanvasPosition();
+                event.preventDefault();
+            };
+
+            document.addEventListener('mousedown', handleMouseDown, true);
+            document.addEventListener('mousemove', handleMouseMove, true);
+
+            document.addEventListener('mouseup', finishDrag, true);
+            viewport.addEventListener('mousedown', handleMouseDown);
+            viewport.addEventListener('mousemove', handleMouseMove);
+            viewport.addEventListener('mouseup', finishDrag);
+            viewport.addEventListener('mouseleave', finishDrag);
+            if (document.body) document.body.addEventListener('unload', finishDrag);
+            window.addEventListener('resize', applyCanvasPosition);
+            applyCanvasPosition();
+        }
+
+        function sizeScreen() {
+            let screen = ui.screen;
+            if (!screen) return;
+            let width = Math.max(1, Math.floor(window.innerWidth * SCREEN_SCALE));
+            let height = Math.max(1, Math.floor(window.innerHeight * SCREEN_SCALE));
+            let left = Math.floor((window.innerWidth - width) / 2);
+            let top = Math.floor((window.innerHeight - height) / 2);
+            screen.setAttribute(
+                'style',
+                'left:' + left + 'px;top:' + top + 'px;width:' + width + 'px;max-width:' + width + 'px;height:' + height + 'px;max-height:' + height + 'px;'
+            );
+            updateCanvasPosition();
+        }
+
+        function changeViewScale(delta) {
+            contentScale = Math.max(0.5, Math.min(0.9, contentScale + delta));
+            sizeMatrix();
+            ui.viewScaleLabel.textContent = Math.round(contentScale * 100) + '%';
+            updateCanvasPosition();
+        }
+
+        function initializeFromData(data) {
+            if (pageDisposed) return;
+            difficultyTrace('initializeFromData start');
+            applyDifficultyData(data);
+            difficultyTrace('data applied: axes=' + axisDefinitions.length + ', categories=' + categories.length);
+            buildMatrix();
+            difficultyTrace(
+                'matrix built: axes=' + document.querySelectorAll('[data-axis-level]').length +
+                ', modifiers=' + document.querySelectorAll('[data-modifier-id]').length
+            );
+            initializeUiCache();
+            difficultyTrace(
+                'UI cache: axes=' + ui.axisCells.length + ', modifiers=' + ui.modifierCells.length +
+                ', slots=' + ui.modifierIcons.length + ', rows=' + ui.categoryRows.length +
+                ', cells=' + ui.categoryCells.length
+            );
+            for (let categoryIndex = 0; categoryIndex < categories.length; categoryIndex++) {
+                let modifiers = categories[categoryIndex].modifiers;
+                for (let modifierIndex = 0; modifierIndex < modifiers.length; modifierIndex++) {
+                    modifierById[modifiers[modifierIndex].id] = modifiers[modifierIndex];
+                }
+            }
+            readPlayerState();
+            sizeScreen();
+            sizeMatrix();
+            difficultyTrace(
+                'matrix sized: width=' + matrixMetrics.canvasWidth +
+                ', height=' + matrixMetrics.canvasHeight +
+                ', rows=' + matrixMetrics.rowHeights.join('/')
+            );
+            ui.viewScaleLabel.textContent = Math.round(contentScale * 100) + '%';
+            installMatrixEvents();
+            installDragBrowsing();
+            document.getElementById('view-smaller').addEventListener('click', function () {
+                changeViewScale(-0.05);
+            });
+            document.getElementById('view-larger').addEventListener('click', function () {
+                changeViewScale(0.05);
+            });
+            document.getElementById('confirm-button').addEventListener('click', submitSelection);
+            updateState();
+            if (typeof document.requestStyleRecalc == 'function') {
+                document.requestStyleRecalc(ui.canvas);
+            }
+            if (typeof document.commitStyleRecalc == 'function') {
+                document.commitStyleRecalc();
+            }
+            difficultyTrace('initializeFromData complete');
+            window.addEventListener('resize', sizeScreen);
+        }
+
+        function showConfigError(error) {
+            if (pageDisposed) return;
+            difficultyTrace('config error: ' + String(error || 'unknown error'));
+            let summary = document.getElementById('pending-summary');
+            if (summary) summary.textContent = '难度配置加载失败：' + String(error || 'unknown error');
+        }
+
+        function initializeConfig(text) {
+            difficultyTrace('config response received: length=' + String(text).length);
+            let data = null;
+            try {
+                data = JSON.parse(String(text));
+            } catch (error) {
+                showConfigError(error);
+                return;
+            }
+            try {
+                initializeFromData(data);
+            } catch (error) {
+                showConfigError(error);
+            }
+        }
+
+        function initialize() {
+            difficultyTrace('DOMContentLoaded initialize: base=' + document.getBaseURI());
+            if (document.body) {
+                document.body.addEventListener('unload', function () {
+                    difficultyTrace('body unload');
+                    pageDisposed = true;
+                    disposeUiCache();
+                });
+            }
+            document.getElementById('close-button').addEventListener('click', function () {
+                if (typeof ApricityUI != 'undefined') ApricityUI.closeScreen();
+            });
+            let configText = typeof global != 'undefined' ? global.sdbfDifficultyDataJson : null;
+            difficultyTrace('client config available: length=' + (configText ? String(configText).length : 0));
+            if (!configText) {
+                showConfigError('未收到服务端难度配置。');
+                return;
+            }
+            initializeConfig(configText);
+        }
+
+        document.addEventListener('DOMContentLoaded', initialize);
+    </script>
+</body>
+</html>

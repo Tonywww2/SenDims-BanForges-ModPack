@@ -1210,7 +1210,14 @@
 				"0AE9B149F1CB5B66"
 			]
 			dependency_requirement: "one_completed"
+			description: ["硼矿可以在&b主世界的地下/小行星&r带挖掘。"]
 			id: "41D60AA656791D52"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "36EE53D04C5C7304"
+				table_id: 2163174655912441002L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "3F80E38CC5DC9A3F"
 				item: "nuclearcraft:tough_alloy_ingot"
@@ -1517,6 +1524,12 @@
 		{
 			dependencies: ["088AF6E3F4AA7E3B"]
 			id: "01779B6E3BCFF74E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "38B2620C4E0D6C07"
+				table_id: 2163174655912441002L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "020B130A9AD22694"
 				item: "tofucraft:salt_block"
@@ -1527,7 +1540,18 @@
 		}
 		{
 			dependencies: ["01779B6E3BCFF74E"]
+			description: [
+				"可以在&b主世界的地下/小行星&r挖掘。"
+				""
+				"可以通过&b加工盐块&r获得。"
+			]
 			id: "0AE9B149F1CB5B66"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "10F2082308A5F314"
+				table_id: 2163174655912441002L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "7884E326161782F2"
 				item: "nuclearcraft:lithium_ingot"
@@ -2275,5 +2299,5 @@
 			y: 3.0d
 		}
 	]
-	title: "&e工业"
+	title: "工业"
 }

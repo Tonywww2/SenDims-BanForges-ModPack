@@ -7,6 +7,7 @@ const $HashSet = Java.loadClass("java.util.HashSet");
 const $StringArgumentType = Java.loadClass("com.mojang.brigadier.arguments.StringArgumentType");
 
 // ---- Minecraft ----
+const $CompoundTag = Java.loadClass("net.minecraft.nbt.CompoundTag");
 const $TagKey = Java.loadClass("net.minecraft.tags.TagKey");
 const $Registries = Java.loadClass("net.minecraft.core.registries.Registries");
 const $SpawnEggItem = Java.loadClass("net.minecraft.world.item.SpawnEggItem");

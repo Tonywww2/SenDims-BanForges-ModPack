@@ -50,7 +50,11 @@
 	quests: [
 		{
 			dependencies: ["750B557031EFBBEE"]
-			description: ["一阶火箭可抵达。"]
+			description: [
+				"一阶火箭可抵达。"
+				""
+				"注意：前往此维度需要推进&b后勤准备-工业章节&r的进度。"
+			]
 			hide_dependent_lines: true
 			hide_until_deps_complete: true
 			icon: "ad_astra:moon_globe"
@@ -393,5 +397,5 @@
 			y: 6.0d
 		}
 	]
-	title: "月球"
+	title: "[III] 月球"
 }

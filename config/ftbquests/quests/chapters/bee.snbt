@@ -22,9 +22,19 @@
 	quests: [
 		{
 			dependencies: ["1DE54DDD04540738"]
-			description: ["可以通过在鲜花旁边催熟特定种类的树苗（橡树、白桦、樱花）概率获得。"]
+			description: [
+				"可以通过在鲜花旁边催熟特定种类的树苗（橡树、白桦、樱花）概率获得。"
+				""
+				"&b注意：本章节为完全可选的支线章节，并且不建议在抵达黄蜂领域前优先推进。&r"
+			]
 			hide_dependent_lines: true
 			id: "30B600C449451F58"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "505D86F5E2EE38E4"
+				table_id: 2163174655912441002L
+				type: "loot"
+			}]
 			shape: "hexagon"
 			size: 2.0d
 			subtitle: "植树节！"

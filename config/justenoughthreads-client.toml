@@ -37,6 +37,66 @@
 	#Compact Iron's Spells Arcane Anvil imbuing combinations while preserving every item and spell level.
 	#Has no effect when Iron's Spells is not installed or its integration API is incompatible.
 	compactIronsSpellsImbuing = true
+	#Merge JEI fuel recipes with the same burn time into one page.
+	#All fuel items remain indexed and discoverable through recipe focus searches.
+	compactFuelRecipes = true
+	#Merge equivalent Generator Galore solid-fuel pages while retaining every fuel input.
+	#Has no effect when Generator Galore is not installed or its integration API is incompatible.
+	compactGeneratorGaloreFuels = true
+	#Merge equivalent Mekanism Nutritional Liquifier pages by paste output.
+	#Every food input remains indexed and discoverable through recipe focus searches.
+	compactMekanismNutritionalLiquifier = true
+	#Merge equivalent Thermal Stirling Dynamo fuel pages while retaining every input.
+	#Has no effect when Thermal Expansion is not installed or its integration API is incompatible.
+	compactThermalStirlingFuels = true
+	#Cache Celestial Forge Item Reinforce input and preview scans for each JEI recipe.
+	#Does not remove any matching equipment or change focus results.
+	cacheCelestialForgeReinforce = true
+	#Collapse Ultimate Car Mod workshop combinations into one page per vehicle layout.
+	#All compatible parts remain in JEI input slots; the 3D preview uses one representative vehicle.
+	compactUltimateCarWorkshop = true
+	#Merge equivalent Iron Furnaces Augment: Generator pages by energy value.
+	#All fuel and food inputs remain indexed and discoverable through recipe focus searches.
+	compactIronFurnacesGenerator = true
+	#Cache Super Factory Manager's full Falling Anvil disenchantment display lists.
+	#Focused item and enchantment queries still use SFM's original specialized path.
+	cacheSfmFallingAnvil = true
+	#Merge equivalent Embers Dawnstone Anvil visual pages while retaining every input/output pair.
+	#Bottom inputs and outputs remain position-linked for JEI focus searches.
+	compactEmbersDawnstoneAnvil = true
+	#Cache Productive Trees' log-stripping tool tag expansion for the current JEI lifecycle.
+	#Does not remove tools, recipes, catalysts, or focus results.
+	cacheProductiveTreesStripperTools = true
+	#Merge Tinkers' Construct casting display pages only when they share one parent recipe and display parameters.
+	#Every cast/output pair remains position-linked; ambiguous recipes keep their original pages.
+	compactTinkersCasting = true
+	#Lossy: limit Celestial Forge Item Reinforce input previews to representative item families.
+	#Disabled by default; omitted items no longer provide direct JEI focus hits for this category.
+	aggressiveCelestialForgeReinforce = false
+	#Lossy: limit each compacted Embers Dawnstone Anvil group to representative tools.
+	#Disabled by default; omitted tools no longer provide direct JEI focus hits for this category.
+	aggressiveEmbersDawnstoneAnvil = false
+	#Lossy: limit SFM Falling Anvil's unfiltered overview to representative tool families per enchantment.
+	#Disabled by default; focused queries still use SFM's original specialized path.
+	aggressiveSfmFallingAnvil = false
+	#Representative item-family limit used by explicitly enabled aggressive modes.
+	#Range: 1 ~ 64
+	aggressiveRepresentativesPerGroup = 3
+	#Example limit for generic repair recipes in explicitly enabled aggressive modes.
+	#Range: 1 ~ 256
+	aggressiveGenericRepairRepresentatives = 16
+	#Lossy: remove item stacks in #tconstruct:modifiable and #tconstruct:parts before JEI builds its global index.
+	#Disabled by default. Filtered variants remain in the game and creative tabs but not JEI's right-side list.
+	prefilterTinkersIngredients = false
+	#Comma-separated item tags to filter in addition to Tinkers' default modifiable and parts tags.
+	#A leading # is optional. Only used when prefilterTinkersIngredients is enabled.
+	tinkersIngredientFilterAdditionalTags = ""
+	#Use a generation-scoped hash index for JEI's repeated brewing recipe lookup.
+	#If the index ever differs from JEI's recipe collection, this optimization disables itself for that lifecycle.
+	indexedBrewingLookup = true
+	#Suppress redundant hidden anvil and grindstone menu updates while JEI fills both inputs.
+	#The result is computed once after the complete input pair is installed.
+	skipRedundantMenuUpdates = true
 
 [diagnostics]
 	#Enable per-plugin and per-stage JEI timing logs.
@@ -63,41 +123,44 @@
 	#Move JEI's recipe list compaction off the blocking startup path onto a later client tick.
 	#It still runs on the main thread, so JEI never serves queries from a list being trimmed.
 	delayCompact = true
+	#Build large recipe category layouts one visible page at a time on older JEI versions.
+	#Only applies when the installed JEI still eagerly creates every layout.
+	lazyRecipeLayouts = true
+	#Recipe count above which legacy JEI uses per-page lazy layouts.
+	#Range: 0 ~ 1000000
+	lazyRecipeLayoutThreshold = 200
 
 [async]
-	#Async search prefix index preheat. Default OFF (disabled).
-	#Reason: this builds a separate, approximate search index that can override JEI's
-	#own results for prefixed queries (@ mod, # tooltip, $ tag, % tab, ^ color, & id).
-	#It is redundant with asyncIngredientFilter, which already rebuilds JEI's real
-	#ElementSearch off-thread; the shadow index can return incomplete results and may
-	#block the render thread if a prefixed search runs before it finishes building.
-	#Enable only if you specifically need it and accept these trade-offs.
+	#Retired compatibility key. This option is always disabled.
+	#The old implementation duplicated JEI's search strings and prefix maps, could use
+	#gigabytes in large packs, and was not authoritative for empty search results.
 	searchPreheat = false
-	#Enable client-tick chunked snapshot extraction.
+	#Retired compatibility key. This option is always disabled.
 	snapshotChunking = true
-	#Enable async sort computation.
+	#Retired compatibility key. This option is always disabled.
 	sortPreheat = true
-	#Enable async recipe focus index preheat.
+	#Retired compatibility key. This option is always disabled.
 	recipeFocusPreheat = true
-	#Enable async catalyst index preheat.
+	#Retired compatibility key. This option is always disabled.
 	catalystPreheat = true
-	#Worker thread count. Ignored when all async features are disabled.
-	#Range: 1 ~ 8
+	#Worker thread count. 0 selects available processors minus two, clamped to 1-8.
+	#Ignored when all async features are disabled.
+	#Range: 0 ~ 8
 	workerThreads = 4
-	#Per-client-tick snapshot extraction budget in milliseconds. Ignored when snapshotChunking is disabled.
+	#Retired compatibility key. This value is ignored.
 	#Range: 1 ~ 10
 	snapshotBudgetMs = 2
-	#Build the JEI ingredient search filter in client-tick chunks, then publish the complete sidebar once.
+	#Populate one isolated JEI ingredient search in client-tick-budgeted steps.
 	deferredIngredientFilter = true
-	#Per-client-tick budget in milliseconds for the deferred ingredient filter build. Higher fills faster but costs more per tick.
+	#Per-client-tick budget in milliseconds for isolated ingredient search construction.
 	#Range: 1 ~ 40
 	ingredientFilterBudgetMs = 10
-	#Number of ingredients added per work unit during the deferred ingredient filter build.
+	#Number of ingredients represented by one progress step. The frame deadline is checked after every ingredient.
 	#Range: 50 ~ 4000
 	ingredientFilterChunkSize = 500
-	#Build the JEI ingredient search filter on worker threads after entering the world, then atomically swap it in.
-	#Progress reports completed chunks. JEI waits for the complete isolated index, then publishes the sidebar once
-	#instead of repeatedly refreshing a partial list. Falls back to a synchronous build if the worker build fails.
+	#Populate one isolated JEI ingredient search incrementally on client ticks.
+	#Visibility, tooltip, tag, creative-tab, and color helpers stay on the client thread.
+	#JEI waits for the complete index and publishes the sidebar once.
 	#Enabled by default.
 	asyncIngredientFilter = true
 	#Resolve recipe ingredient tags on worker threads before JEI validates recipes during startup.
@@ -113,4 +176,7 @@
 	#cancels an in-progress build before
 	#its runtime can be published. Enabled by default.
 	asyncStartup = true
+	#Minimum input size before pure indexing and warmup work uses multiple worker threads.
+	#Range: 1 ~ 1000000
+	parallelThreshold = 250
 

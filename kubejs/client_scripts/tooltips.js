@@ -69,6 +69,21 @@ ItemEvents.tooltip(event => {
     ], Text.translatable('info.kubejs.nuclearcraft.apply_rad_prot').color(Color.AQUA));
 
     event.add([
+        'ad_astra:space_helmet',
+        'ad_astra:space_suit',
+        'ad_astra:space_pants',
+        'ad_astra:space_boots',
+        'ad_astra:netherite_space_helmet',
+        'ad_astra:netherite_space_suit',
+        'ad_astra:netherite_space_pants',
+        'ad_astra:netherite_space_boots',
+        'ad_astra:jet_suit_helmet',
+        'ad_astra:jet_suit',
+        'ad_astra:jet_suit_pants',
+        'ad_astra:jet_suit_boots'
+    ], Text.translatable('info.kubejs.ad_astra_space_suit_warning').color(Color.RED));
+
+    event.add([
         'draconicevolution:draconic_sword',
         'draconicevolution:draconic_staff',
         'draconicevolution:draconic_bow',
@@ -161,6 +176,8 @@ ItemEvents.tooltip(event => {
     })
 
     event.addAdvanced('midnight:rift_placer', (item, advanced, text) => {
+        text.add(Text.translatable('info.kubejs.rift_placer.obtain').color(Color.GRAY));
+
         if (!item.nbt || !item.nbt.getBoolean("sdbf.midnight")) {
             text.add(Text.translatable('info.kubejs.item_unactivated').color(Color.RED));
 

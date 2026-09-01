@@ -6,7 +6,7 @@
 	group: "2D698D2001694314"
 	icon: "midnight:rift_placer"
 	id: "5C91D6143A935C11"
-	order_index: 1
+	order_index: 2
 	quest_enhance_decorative_lines: [ ]
 	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [
@@ -450,5 +450,5 @@
 			y: -3.0d
 		}
 	]
-	title: "&e深境：午夜"
+	title: "[VII] &e深境：午夜"
 }

@@ -102,7 +102,14 @@
 		}
 		{
 			dependencies: ["05F34C96BF68DD64"]
+			description: ["&c警告：使用后会大幅强化主世界的敌人，确保你做好了准备。&r"]
 			id: "07AEFF9468658A0C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "368CBA3AE8333B18"
+				table_id: 2163174655912441002L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "1DB3014F496DB10E"
 				item: "kubejs:anchor_shard"
@@ -530,5 +537,5 @@
 			y: 12.0d
 		}
 	]
-	title: "&e空岛之下"
+	title: "[XI] &e空岛之下"
 }

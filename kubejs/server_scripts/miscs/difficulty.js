@@ -4,18 +4,26 @@ let DIFFICULTY_SCHEMA_STAGE = 'sdbf_difficulty_schema_v5';
 let DIFFICULTY_STAGE_PREFIX = 'sdbf_difficulty_axis_';
 let DIFFICULTY_SUB_STAGE_PREFIX = 'sdbf_difficulty_sub_';
 let DIFFICULTY_LOCK_STAGE = 'sdbf_difficulty_locked';
+let DIFFICULTY_UI_PATH = 'screens/difficulty.html';
+let DIFFICULTY_DATA_CHANNEL = 'sdbf_difficulty_data';
+let DIFFICULTY_PROBE_CHANNEL = 'sdbf_difficulty_probe';
 let DEFAULT_DIFFICULTY_ID = 'n_0';
 let DEFAULT_X_PAGE = 1;
 let DEFAULT_Y_PAGE = 0;
 let SUB_ROWS_PER_PAGE = 6;
-let GRID_CELL_WIDTH = 4;
+let GRID_CELL_WIDTH = 6;
 let UNIFORM_FONT = ResourceLocation.parse('minecraft:uniform');
 
-let axisWindows = [
-    axisDefinitions.slice(0, 11),
-    axisDefinitions.slice(5, 16),
-    axisDefinitions.slice(10, 21)
-];
+let AXIS_WINDOW_SIZE = 11;
+let AXIS_WINDOW_STEP = 5;
+let axisWindows = [];
+let lastAxisWindowStart = Math.max(0, axisDefinitions.length - AXIS_WINDOW_SIZE);
+for (let start = 0; start <= lastAxisWindowStart; start += AXIS_WINDOW_STEP) {
+    axisWindows.push(axisDefinitions.slice(start, start + AXIS_WINDOW_SIZE));
+}
+if (axisWindows.length == 0 || axisWindows[axisWindows.length - 1][0] != axisDefinitions[lastAxisWindowStart]) {
+    axisWindows.push(axisDefinitions.slice(lastAxisWindowStart));
+}
 let axisById = {};
 let axisByLevel = {};
 axisDefinitions.forEach(axis => {
@@ -30,12 +38,12 @@ subCategories.forEach(category => subCategoryById[category.id] = category);
 let subModifierById = {};
 let attributeSubModifiers = [];
 let dropSubModifiers = [];
+let enemySubModifiers = [];
 subModifierDefinitions.forEach(modifier => {
-    modifier.nameKey = `kubejs.difficulty.sub.${modifier.id}.name`;
-    modifier.descriptionKey = `kubejs.difficulty.sub.${modifier.id}.desc`;
     subModifierById[modifier.id] = modifier;
     if (modifier.effect.type == 'attribute') attributeSubModifiers.push(modifier);
     if (modifier.effect.type == 'drop') dropSubModifiers.push(modifier);
+    if (modifier.effect.type == 'enemy') enemySubModifiers.push(modifier);
 });
 
 let buildSubRows = () => {
@@ -103,6 +111,16 @@ let getDifficultyById = id => {
 let getDifficultyStage = id => `${DIFFICULTY_STAGE_PREFIX}${id}`;
 let getSubModifierStage = id => `${DIFFICULTY_SUB_STAGE_PREFIX}${id}`;
 
+let syncDifficultyStages = player => {
+    if (isRealPlayer(player) && player.stages && player.stages.sync) player.stages.sync();
+};
+
+let refreshDifficultyDisplayName = player => {
+    if (!isRealPlayer(player)) return;
+    if (player.refreshDisplayName) player.refreshDisplayName();
+    if (player.refreshTabListName) player.refreshTabListName();
+};
+
 let clearDifficultyStages = player => {
     let stagesToRemove = [];
     player.stages.getAll().forEach(stage => {
@@ -127,6 +145,8 @@ let setPlayerDifficultyStage = (player, difficulty) => {
     });
     stagesToRemove.forEach(stage => player.stages.remove(stage));
     player.stages.add(getDifficultyStage(difficulty.id));
+    syncDifficultyStages(player);
+    refreshDifficultyDisplayName(player);
 };
 
 let getPlayerDifficulty = player => {
@@ -205,11 +225,23 @@ let getPlayerDropMultiplier = player => {
     return multiplier;
 };
 
+let getPlayerEnemyBonuses = player => {
+    let bonuses = { health: 0, attack: 0, armor: 0 };
+    enemySubModifiers.forEach(modifier => {
+        if (!isSubModifierSelected(player, modifier)) return;
+        let stat = modifier.effect.stat;
+        if (bonuses[stat] != undefined) bonuses[stat] += modifier.effect.bonus;
+    });
+    return bonuses;
+};
+
 let resetPlayerDifficulty = player => {
     clearDifficultyStages(player);
     player.stages.add(DIFFICULTY_SCHEMA_STAGE);
     player.stages.add(getDifficultyStage(DEFAULT_DIFFICULTY_ID));
     syncDifficultyModifiers(player);
+    syncDifficultyStages(player);
+    refreshDifficultyDisplayName(player);
 };
 
 let initializePlayerDifficulty = player => {
@@ -254,20 +286,36 @@ global.getDifficultyById = getDifficultyById;
 global.getPlayerDifficulty = getPlayerDifficulty;
 global.syncDifficultyModifiers = syncDifficultyModifiers;
 global.getPlayerDropMultiplier = getPlayerDropMultiplier;
-global.getHighestNearbyDifficulty = entity => {
-    let selected = axisById[DEFAULT_DIFFICULTY_ID];
-    let foundPlayer = false;
+global.getPlayerEnemyBonuses = getPlayerEnemyBonuses;
+let forEachNearbyDifficultyPlayer = (entity, consumer) => {
     entity.level.server.players.forEach(player => {
         if (!isRealPlayer(player) || player.isCreative() || player.isSpectator()) return;
         if (String(player.level.dimension) != String(entity.level.dimension)) return;
         if (Math.abs(player.x - entity.x) > 64) return;
         if (Math.abs(player.y - entity.y) > 64) return;
         if (Math.abs(player.z - entity.z) > 64) return;
+        consumer(player);
+    });
+};
+global.getHighestNearbyDifficulty = entity => {
+    let selected = axisById[DEFAULT_DIFFICULTY_ID];
+    let foundPlayer = false;
+    forEachNearbyDifficultyPlayer(entity, player => {
         let difficulty = getPlayerDifficulty(player);
         if (!foundPlayer || difficulty.level > selected.level) selected = difficulty;
         foundPlayer = true;
     });
     return selected;
+};
+global.getHighestNearbyEnemyBonuses = entity => {
+    let highest = { health: 0, attack: 0, armor: 0 };
+    forEachNearbyDifficultyPlayer(entity, player => {
+        let bonuses = getPlayerEnemyBonuses(player);
+        highest.health = Math.max(highest.health, bonuses.health);
+        highest.attack = Math.max(highest.attack, bonuses.attack);
+        highest.armor = Math.max(highest.armor, bonuses.armor);
+    });
+    return highest;
 };
 
 let makeSpaces = count => {
@@ -276,8 +324,8 @@ let makeSpaces = count => {
     return spaces;
 };
 
-let centerCell = label => {
-    let value = String(label);
+let centerCell = (label, clickable) => {
+    let value = clickable ? `[${label}]` : String(label);
     let padding = Math.max(0, GRID_CELL_WIDTH - value.length);
     let left = Math.floor(padding / 2);
     return makeSpaces(left) + value + makeSpaces(padding - left);
@@ -313,15 +361,53 @@ let normalizeView = (xPage, yPage) => {
 
 let getDefaultXPage = player => {
     let level = getPlayerDifficulty(player).level;
-    if (level < 0) return 0;
-    if (level > 0) return 2;
-    return DEFAULT_X_PAGE;
+    let selectedPage = 0;
+    let selectedDistance = Number.MAX_VALUE;
+    axisWindows.forEach((window, page) => {
+        if (!window.some(axis => axis.level == level)) return;
+        let centerLevel = window[Math.floor(window.length / 2)].level;
+        let distance = Math.abs(centerLevel - level);
+        if (distance < selectedDistance) {
+            selectedPage = page;
+            selectedDistance = distance;
+        }
+    });
+    return selectedPage;
 };
 
+let openDifficultyScreen = player => {
+    syncDifficultyStages(player);
+    let probePacket = new $CompoundTag();
+    probePacket.putString('probe', 'ok');
+    probePacket.putInt('expectedLength', difficultyDataJson.length);
+    player.sendData(DIFFICULTY_PROBE_CHANNEL, probePacket);
+    console.info(
+        `[SDBF Difficulty] Sent probe to ${player.username}: ` +
+        `class=${probePacket.getClass().getName()}, keys=${probePacket.getAllKeys()}, ` +
+        `probeType=${probePacket.getTagType('probe')}, ` +
+        `lengthType=${probePacket.getTagType('expectedLength')}`
+    );
+    let configPacket = new $CompoundTag();
+    configPacket.putString('json', difficultyDataJson);
+    player.sendData(DIFFICULTY_DATA_CHANNEL, configPacket);
+    console.info(
+        `[SDBF Difficulty] Sent config to ${player.username}: ` +
+        `class=${configPacket.getClass().getName()}, keys=${configPacket.getAllKeys()}, ` +
+        `length=${String(configPacket.getString('json')).length}, ` +
+        `tagType=${configPacket.getTagType('json')}`
+    );
+    player.server.scheduleInTicks(1, callback => {
+        if (!isRealPlayer(player)) return;
+        console.info(`[SDBF Difficulty] Opening AUI for ${player.username}`);
+        ApricityUI.openScreen(player, DIFFICULTY_UI_PATH);
+    });
+};
+global.openDifficultyScreen = openDifficultyScreen;
+
 let buildAxisHover = (player, axis, current) => {
-    let hover = Text.translatable(`kubejs.difficulty.${axis.id}`).color(Color.AQUA)
+    let hover = Text.of(axis.label).color(Color.AQUA)
         .append('\n')
-        .append(Text.translatable(`kubejs.difficulty.${axis.id}.desc`).color(Color.GRAY))
+        .append(Text.of(axis.description).color(Color.GRAY))
         .append('\n')
         .append(Text.translatable('kubejs.difficulty.adjustments').color(Color.WHITE))
         .append(Text.of('：').color(Color.DARK_GRAY));
@@ -348,9 +434,9 @@ let buildAxisHover = (player, axis, current) => {
 
 let buildSubModifierHover = (player, modifier, current) => {
     let state = getSubModifierState(player, modifier, current);
-    return Text.translatable(modifier.nameKey).color(Color.AQUA)
+    return Text.of(modifier.name).color(Color.AQUA)
         .append('\n')
-        .append(Text.translatable(modifier.descriptionKey).color(Color.GRAY))
+        .append(Text.of(modifier.description).color(Color.GRAY))
         .append('\n')
         .append(Text.translatable(
             'kubejs.difficulty.sub.requirement',
@@ -364,10 +450,11 @@ let renderAxisRow = (player, view) => {
     let line = withUniformFont(Text.of('轴│').color(Color.GRAY));
     axisWindows[view.xPage].forEach(axis => {
         let state = getAxisState(player, axis, view.current);
-        let cell = withUniformFont(Text.of(centerCell(getAxisLabel(axis.level))))
+        let clickable = state == 'available';
+        let cell = withUniformFont(Text.of(centerCell(getAxisLabel(axis.level), clickable)))
             .color(getStateColor(state))
             .hover(buildAxisHover(player, axis, view.current));
-        if (state == 'available') {
+        if (clickable) {
             cell.click(new $ClickEvent(
                 $ClickEventAction.RUN_COMMAND,
                 `/sdbf_difficulty_menu axis ${axis.level} ${view.xPage} ${view.yPage}`
@@ -389,10 +476,11 @@ let renderSubModifierRow = (player, row, view) => {
         }
 
         let state = getSubModifierState(player, modifier, view.current);
-        let cell = withUniformFont(Text.of(centerCell(modifier.short)))
+        let clickable = state == 'available';
+        let cell = withUniformFont(Text.of(centerCell(modifier.short, clickable)))
             .color(getStateColor(state))
             .hover(buildSubModifierHover(player, modifier, view.current));
-        if (state == 'available') {
+        if (clickable) {
             cell.click(new $ClickEvent(
                 $ClickEventAction.RUN_COMMAND,
                 `/sdbf_difficulty_menu sub ${modifier.id} ${view.xPage} ${view.yPage}`
@@ -445,6 +533,7 @@ ServerEvents.commandRegistry(event => {
     let { commands: Commands, arguments: Arguments } = event;
     let intArgument = name => Commands.argument(name, Arguments.INTEGER.create(event));
     let wordArgument = name => Commands.argument(name, $StringArgumentType.word());
+    let greedyArgument = name => Commands.argument(name, $StringArgumentType.greedyString());
     event.register(
         Commands.literal('sdbf_difficulty_menu')
             .executes(c => {
@@ -454,7 +543,7 @@ ServerEvents.commandRegistry(event => {
                     return 0;
                 }
                 initializePlayerDifficulty(player);
-                global.renderDifficulty(player, getDefaultXPage(player), DEFAULT_Y_PAGE);
+                openDifficultyScreen(player);
                 return 1;
             })
             .then(Commands.literal('view')
@@ -486,6 +575,13 @@ ServerEvents.commandRegistry(event => {
                         .then(intArgument('yPage')
                             .executes(c => global.setSubModifierFromCmd(c, Arguments, false))
                         )
+                    )
+                )
+            )
+            .then(Commands.literal('apply')
+                .then(intArgument('level')
+                    .then(greedyArgument('subIds')
+                        .executes(c => global.applyDifficultySelectionFromCmd(c, Arguments))
                     )
                 )
             )
@@ -523,7 +619,7 @@ ServerEvents.commandRegistry(event => {
                     }
                     resetPlayerDifficulty(player);
                     player.tell(Text.translatable('kubejs.difficulty.reset_success').color(Color.GREEN));
-                    global.renderDifficulty(player, DEFAULT_X_PAGE, DEFAULT_Y_PAGE);
+                    openDifficultyScreen(player);
                     return 1;
                 })
         );
@@ -574,7 +670,7 @@ global.setAxisFromCmd = (c, Arguments, confirmed) => {
             player,
             'axis',
             String(target.level),
-            Text.translatable(`kubejs.difficulty.${target.id}`),
+            Text.of(target.label),
             xPage,
             yPage
         );
@@ -627,7 +723,7 @@ global.setSubModifierFromCmd = (c, Arguments, confirmed) => {
             player,
             'sub',
             modifier.id,
-            Text.translatable(modifier.nameKey),
+            Text.of(modifier.name),
             xPage,
             yPage
         );
@@ -637,14 +733,87 @@ global.setSubModifierFromCmd = (c, Arguments, confirmed) => {
     applySubModifier(player, modifier);
     player.tell(Text.translatable(
         'kubejs.difficulty.sub_selected',
-        Text.translatable(modifier.nameKey)
+        Text.of(modifier.name)
     ).color(Color.WHITE));
     global.renderDifficulty(player, xPage, yPage);
     return 1;
 };
 
+global.applyDifficultySelectionFromCmd = (c, Arguments) => {
+    let player = c.source.player;
+    if (!isRealPlayer(player)) {
+        c.source.sendFailure(Text.translatable('kubejs.difficulty.player_only'));
+        return 0;
+    }
+    initializePlayerDifficulty(player);
+
+    let level = Arguments.INTEGER.getResult(c, 'level');
+    let target = axisByLevel[level];
+    if (!target) {
+        c.source.sendFailure(Text.translatable('kubejs.difficulty.invalid_index'));
+        return 0;
+    }
+
+    let rawSubIds = String($StringArgumentType.getString(c, 'subIds')).trim();
+    let requestedIds = rawSubIds == 'none' ? [] : rawSubIds.split(/[\s,]+/);
+    let requestedModifiers = [];
+    let seenIds = {};
+    for (let index = 0; index < requestedIds.length; index++) {
+        let subId = String(requestedIds[index]);
+        if (!subId || seenIds[subId]) continue;
+        let modifier = subModifierById[subId];
+        if (!modifier) {
+            c.source.sendFailure(Text.translatable('kubejs.difficulty.invalid_sub'));
+            return 0;
+        }
+        seenIds[subId] = true;
+        requestedModifiers.push(modifier);
+    }
+
+    let current = getPlayerDifficulty(player);
+    let axisState = getAxisState(player, target, current);
+    if (axisState != 'selected' && axisState != 'available') {
+        c.source.sendFailure(Text.translatable('kubejs.difficulty.cannot_increase'));
+        return 0;
+    }
+
+    for (let index = 0; index < requestedModifiers.length; index++) {
+        let modifier = requestedModifiers[index];
+        let state = getSubModifierState(player, modifier, target);
+        if (state != 'selected' && state != 'available') {
+            c.source.sendFailure(Text.translatable('kubejs.difficulty.sub_unavailable'));
+            return 0;
+        }
+    }
+
+    if (axisState == 'available') {
+        setPlayerDifficultyStage(player, target);
+        target.items.forEach(stack => player.give(stack.copy()));
+        player.server.players.forEach(receiver => {
+            receiver.tell(Text.translatable(
+                'kubejs.difficulty.set_success',
+                player.displayName,
+                Text.of(target.label)
+            ).color(Color.GREEN));
+        });
+    }
+
+    requestedModifiers.forEach(modifier => {
+        if (isSubModifierSelected(player, modifier)) return;
+        applySubModifier(player, modifier);
+        player.tell(Text.translatable(
+            'kubejs.difficulty.sub_selected',
+            Text.of(modifier.name)
+        ).color(Color.WHITE));
+    });
+    syncDifficultyModifiers(player);
+    syncDifficultyStages(player);
+    return 1;
+};
+
 PlayerEvents.loggedIn(event => {
     initializePlayerDifficulty(event.player);
+    refreshDifficultyDisplayName(event.player);
 });
 
 PlayerEvents.respawned(event => {
@@ -652,13 +821,15 @@ PlayerEvents.respawned(event => {
     if (!isRealPlayer(player)) return;
     copyDifficultyDataAfterRespawn(event.oldPlayer, player);
     initializePlayerDifficulty(player);
+    syncDifficultyStages(player);
+    refreshDifficultyDisplayName(player);
 });
 
 ItemEvents.rightClicked('kubejs:difficulty_selector', event => {
     let player = event.player;
     if (!isRealPlayer(player)) return;
     initializePlayerDifficulty(player);
-    global.renderDifficulty(player, getDefaultXPage(player), DEFAULT_Y_PAGE);
+    openDifficultyScreen(player);
     player.cooldowns.addCooldown(event.item, 10);
 });
 
@@ -675,7 +846,7 @@ ItemEvents.rightClicked('kubejs:difficulty_locker', event => {
     player.stages.add(DIFFICULTY_LOCK_STAGE);
     player.tell(Text.translatable(
         'kubejs.difficulty.lock_success',
-        Text.translatable(`kubejs.difficulty.${getPlayerDifficulty(player).id}`)
+        Text.of(getPlayerDifficulty(player).label)
     ).color(Color.RED));
 });
 
@@ -684,7 +855,7 @@ NativeEvents.onEvent($PlayerNameFormatEvent, event => {
     if (!isRealPlayer(player)) return;
     let difficulty = getPlayerDifficulty(player);
     let displayName = Text.of('[').color(Color.GRAY)
-        .append(Text.translatable(`kubejs.difficulty.${difficulty.id}`).color(Color.AQUA))
+        .append(Text.of(difficulty.label).color(Color.AQUA))
         .append(Text.of('] ').color(Color.GRAY))
         .append(event.username);
     event.setDisplayname(displayName);

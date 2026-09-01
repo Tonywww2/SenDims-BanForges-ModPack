@@ -105,6 +105,7 @@
     "info.kubejs.king_slime_spawn_egg": "请使用史莱姆皇冠",
     "info.kubejs.forge_energy_blade": "电力拔刀剑作为合成原料时可能会失效，在加工台中进行任意的改造后可以修复",
 
+    "info.kubejs.ad_astra_space_suit_warning": "不推荐使用此装备，推荐使用“太空呼吸”附魔书",
     "info.kubejs.draconic_weapon_warning": "不建议作为战斗武器，混沌守卫可以使用其他方式击败",
 
     "info.kubejs.banned": "已禁用§m你没资格啊，你没资格\n正因如此你没资格啊，你没资格§r",
@@ -116,6 +117,7 @@
     "info.kubejs.overworld_disallowed": "你离开了天空，试图重新踏上主世界的大地。但是一股力量令你昏迷了过去，你又回到了天空之中。§m需要使用某件道具§r",
     "info.kubejs.overworld_allowed": "你感受到与自身相关的“某件东西”变得更加沉重了，沉重到足以突破那一直阻拦你踏上大地的力量。",
     "info.kubejs.item_unactivated": "这个物品还未被激活\n§m需要与一些材料合成§r",
+    "info.kubejs.rift_placer.obtain": "可以通过击败骷髅王获得",
     "info.kubejs.rift_placer_activated": "已激活",
     "info.kubejs.deeprealm_certificate": "§b强化深境证章十分重要，特别是§a生命强化§r§b部分§r",
 
@@ -741,6 +743,26 @@
     "kubejs.difficulty.sub.drop_2.desc": "玩家击杀实体时，掉落倍率增量 +1；可与其他掉落子修正加算。",
     "kubejs.difficulty.sub.drop_3.name": "怪物掉落 III",
     "kubejs.difficulty.sub.drop_3.desc": "玩家击杀实体时，掉落倍率增量 +2；可与其他掉落子修正加算。",
+    "kubejs.difficulty.sub.enemy_attack_1.name": "敌人修正：攻击 I",
+    "kubejs.difficulty.sub.enemy_attack_1.desc": "敌人攻击倍率 +5%，与主轴加算。",
+    "kubejs.difficulty.sub.enemy_attack_2.name": "敌人修正：攻击 II",
+    "kubejs.difficulty.sub.enemy_attack_2.desc": "敌人攻击倍率 +5%，与主轴加算。",
+    "kubejs.difficulty.sub.enemy_attack_3.name": "敌人修正：攻击 III",
+    "kubejs.difficulty.sub.enemy_attack_3.desc": "敌人攻击倍率 +5%，与主轴加算。",
+    "kubejs.difficulty.sub.enemy_attack_4.name": "敌人修正：攻击 IV",
+    "kubejs.difficulty.sub.enemy_attack_4.desc": "敌人攻击倍率 +5%，与主轴加算。",
+    "kubejs.difficulty.sub.enemy_attack_5.name": "敌人修正：攻击 V",
+    "kubejs.difficulty.sub.enemy_attack_5.desc": "敌人攻击倍率 +5%，与主轴加算。",
+    "kubejs.difficulty.sub.enemy_health_1.name": "敌人修正：生命 I",
+    "kubejs.difficulty.sub.enemy_health_1.desc": "敌人生命倍率 +50%，与主轴加算。",
+    "kubejs.difficulty.sub.enemy_health_2.name": "敌人修正：生命 II",
+    "kubejs.difficulty.sub.enemy_health_2.desc": "敌人生命倍率 +50%，与主轴加算。",
+    "kubejs.difficulty.sub.enemy_health_3.name": "敌人修正：生命 III",
+    "kubejs.difficulty.sub.enemy_health_3.desc": "敌人生命倍率 +50%，与主轴加算。",
+    "kubejs.difficulty.sub.enemy_health_4.name": "敌人修正：生命 IV",
+    "kubejs.difficulty.sub.enemy_health_4.desc": "敌人生命倍率 +50%，与主轴加算。",
+    "kubejs.difficulty.sub.enemy_health_5.name": "敌人修正：生命 V",
+    "kubejs.difficulty.sub.enemy_health_5.desc": "敌人生命倍率 +50%，与主轴加算。",
 
     "biome.deep_aether.golden_grove": "金色林地",
 

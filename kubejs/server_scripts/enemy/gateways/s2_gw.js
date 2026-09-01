@@ -116,6 +116,18 @@ ServerEvents.highPriorityData(event => {
                         value: 0.1
                     }
                 ]
+            },
+            {
+                application_mode: {
+                    type: "gateways:only_on_every_n_waves",
+                    waves: 10
+                },
+                rewards: [
+                    {
+                        type: "gateways:stack",
+                        stack: { item: "minecraft:wither_skeleton_skull", count: 1 }
+                    }
+                ]
             }
         ],
         failures: [],

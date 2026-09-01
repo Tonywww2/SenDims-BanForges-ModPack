@@ -118,7 +118,12 @@ EntityEvents.spawned(event => {
 
     // Apply the highest personal difficulty near this spawn.
     let difficulty = global.getHighestNearbyDifficulty(entity);
-    let multipliers = difficulty.multipliers;
+    let enemyBonuses = global.getHighestNearbyEnemyBonuses(entity);
+    let multipliers = {
+        health: difficulty.multipliers.health + enemyBonuses.health,
+        attack: difficulty.multipliers.attack + enemyBonuses.attack,
+        armor: difficulty.multipliers.armor + enemyBonuses.armor
+    };
     entity.forgePersistentData.putString('sdbf_difficulty_id', difficulty.id);
     
     if (entity.attributes.hasAttribute(attack)) {

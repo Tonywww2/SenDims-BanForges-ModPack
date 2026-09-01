@@ -1,5 +1,17 @@
 ServerEvents.recipes(event => {
 
+    event.shaped("pneumaticcraft:pcb_blueprint", [
+        'BAB',
+        'CDE',
+        'AAA'
+    ], {
+        A: '#forge:plates/invar',
+        B: "ae2:blue_paint_ball",
+        C: "tofucraft:tf_circuit",
+        D: "nuclearcraft:basic_electric_circuit",
+        E: "ae2:printed_engineering_processor",
+    }).id('sdbf:pcb_blueprint')
+
     event.shaped('pneumaticcraft:refinery', [
         'ABA',
         'CDC',

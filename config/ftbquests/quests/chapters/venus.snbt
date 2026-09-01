@@ -6,7 +6,7 @@
 	group: "2D698D2001694314"
 	icon: "ad_astra:venus_globe"
 	id: "347A923727781B42"
-	order_index: 2
+	order_index: 1
 	quest_enhance_decorative_lines: [ ]
 	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [
@@ -513,5 +513,5 @@
 			y: 3.0d
 		}
 	]
-	title: "金星与水星"
+	title: "[VI] 金星与水星"
 }
