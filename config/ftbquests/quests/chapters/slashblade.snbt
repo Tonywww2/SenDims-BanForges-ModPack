@@ -1553,6 +1553,19 @@
 			x: 5.0d
 			y: 5.0d
 		}
+		{
+			dependencies: ["11728C2FAEFCBBAD"]
+			id: "080E15EB9E5AB83F"
+			shape: "gear"
+			subtitle: "脱胎换骨"
+			tasks: [{
+				id: "24D7C4BAC4CDDCAF"
+				item: "slashbladetetra:modular_exchange"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 5.0d
+		}
 	]
 	title: "拔刀剑"
 }

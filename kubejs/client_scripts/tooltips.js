@@ -59,6 +59,11 @@ ItemEvents.tooltip(event => {
         // 'slashbladetetra:hf'
     ], Text.translatable('info.kubejs.forge_energy_blade').color(Color.AQUA));
 
+    event.add([
+        'nuclearcraft:wasteland_earth',
+        'nuclearcraft:neutronium_ingot'
+    ], Text.translatable('info.kubejs.nc_natural_materials').color(Color.AQUA));
+
     event.add('nuclearcraft:analyzer', Text.translatable('info.kubejs.banned').color(Color.RED));
 
     event.add([

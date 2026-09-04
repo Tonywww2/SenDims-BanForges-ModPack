@@ -85,6 +85,16 @@ ServerEvents.recipes(event => {
         C: 'integrateddynamics:crystalized_menril_chunk'
     }).id('sdbf:logic_director')
 
+    event.shaped('slashbladetetra:modular_exchange', [
+        'CAC',
+        'ASA',
+        'CAC'
+    ], {
+        A: '#forge:gems/amethyst',
+        C: '#forge:gems/certus_quartz',
+        S: 'slashblade:proudsoul_sphere'
+    }).id('sdbf:modular_exchange')
+
     event.shaped('draconicevolution:advanced_dislocator', [
         'ACA',
         'BDB',

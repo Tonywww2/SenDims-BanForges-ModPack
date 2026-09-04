@@ -104,6 +104,7 @@
     "info.kubejs.moon_cobblestone": "可以通过熔炉加工获得",
     "info.kubejs.king_slime_spawn_egg": "请使用史莱姆皇冠",
     "info.kubejs.forge_energy_blade": "电力拔刀剑作为合成原料时可能会失效，在加工台中进行任意的改造后可以修复",
+    "info.kubejs.nc_natural_materials": "可以在 深园之顶 发现",
 
     "info.kubejs.ad_astra_space_suit_warning": "不推荐使用此装备，推荐使用“太空呼吸”附魔书",
     "info.kubejs.draconic_weapon_warning": "不建议作为战斗武器，混沌守卫可以使用其他方式击败",

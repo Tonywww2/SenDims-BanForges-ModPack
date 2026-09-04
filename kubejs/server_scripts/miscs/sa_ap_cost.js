@@ -93,6 +93,18 @@ SACostMap.put("slashblade:ice_thunder_sword_start", [150, 0.005]);
 
 SACostMap.put("sjap_adder:whirling_sword", [200, 0.15]);
 
+SACostMap.put("pseudoedge_break_dawn:kingblade", [200, 0.15]);
+
+SACostMap.put("sjap_adder:sakura_drive_left", [300, 0.15]);
+
+SACostMap.put("slashblade:waterfowl_dance_start", [400, 0.25]);
+
+SACostMap.put("slashblade_addon:water_drive", [200, 0.15]);
+
+SACostMap.put("slashblade:gap_moon_shadow_start", [50, 0.01]);
+
+SACostMap.put("slashblade:swallow_return_start", [100, 0.1]);
+
 let defaultCost = [200, 0.2];
 let superSlashArtCost = [400, 0.3];
 
