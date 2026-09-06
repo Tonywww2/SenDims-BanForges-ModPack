@@ -250,6 +250,7 @@ let toRemoveID = new Set([
     "sjap_adder:kamuyex_ligghtning",
     "sjap_adder:kamuyex_water",
     "sjap_adder:kamuyex_dark",
+    "last_smith:uma_tachyon",
 
     // 临时
     "dustandash:crafting/integrated_block",

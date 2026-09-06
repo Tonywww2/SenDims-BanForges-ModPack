@@ -129,6 +129,9 @@
 	#Recipe count above which legacy JEI uses per-page lazy layouts.
 	#Range: 0 ~ 1000000
 	lazyRecipeLayoutThreshold = 200
+	#Register large GTCEu recipe categories with JEI in bounded, ordered batches.
+	#Preserves every recipe and focus index while reducing temporary startup allocations.
+	batchGtceuRecipeRegistration = true
 
 [async]
 	#Retired compatibility key. This option is always disabled.

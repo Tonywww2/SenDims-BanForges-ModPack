@@ -1530,7 +1530,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: 10.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["418F8A9D369B522C"]
@@ -1565,6 +1565,69 @@
 			}]
 			x: 10.0d
 			y: 5.0d
+		}
+		{
+			dependencies: ["746E80BAF97822B7"]
+			description: ["需要使用原型的马娘之魂合成。"]
+			id: "3F0BD735700346BB"
+			tasks: [{
+				id: "30BBC5F37300DA81"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"translate\":\"item.last_smith.uma_cafe\"}"
+						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.last_smith.uma_cafe\"}})"
+					}
+				}
+				type: "item"
+			}]
+			x: 15.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["746E80BAF97822B7"]
+			description: ["需要使用原型的马娘之魂合成。"]
+			id: "2FE78DEF3A44BF26"
+			tasks: [{
+				id: "6CFCF18BB62F2871"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"translate\":\"item.last_smith.uma_digital\"}"
+						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.last_smith.uma_digital\"}})"
+					}
+				}
+				type: "item"
+			}]
+			x: 17.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["746E80BAF97822B7"]
+			description: ["需要使用原型的马娘之魂合成。"]
+			id: "71BF3E520CA523ED"
+			tasks: [{
+				id: "6AD9F78755C1289E"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"translate\":\"item.last_smith.uma_rice_shower\"}"
+						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.last_smith.uma_rice_shower\"}})"
+					}
+				}
+				type: "item"
+			}]
+			x: 20.0d
+			y: 10.0d
 		}
 	]
 	title: "拔刀剑"

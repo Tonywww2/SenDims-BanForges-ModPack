@@ -233,6 +233,26 @@
 			x: 2.5d
 			y: -7.5d
 		}
+		{
+			dependencies: ["4239AD35803375DB"]
+			id: "3DEACEFA579940A1"
+			tasks: [{
+				id: "0B82E990F81427AA"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"translate\":\"item.last_smith.uma_tachyon\"}"
+						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.last_smith.uma_tachyon\"}})"
+					}
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
 	]
 	title: "&e深境：最终极旋涡"
 }
