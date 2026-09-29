@@ -486,6 +486,7 @@ deep_aether:sunroot_tree
 deep_aether:virulent_quicksand_patch
 deep_aether:yagroot_and_cruderoot_trees_placement
 deep_aether:yagroot_tree
+deeprealm_4th:void_star_slurry_geode
 draconicevolution:chaos_island
 draconicevolution:end_comet
 draconicevolution:end_draconium_ore

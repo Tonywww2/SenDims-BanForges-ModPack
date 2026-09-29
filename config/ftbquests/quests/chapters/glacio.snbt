@@ -9,12 +9,20 @@
 	order_index: 1
 	quest_enhance_decorative_lines: [ ]
 	quest_enhance_hidden_dependency_lines: [ ]
-	quest_links: [{
-		id: "2DC35CB3E6D3B03B"
-		linked_quest: "397C4E18445F7165"
-		x: -2.5d
-		y: -2.5d
-	}]
+	quest_links: [
+		{
+			id: "2DC35CB3E6D3B03B"
+			linked_quest: "397C4E18445F7165"
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			id: "1831D0F65EC2608D"
+			linked_quest: "7441006B1C06F60E"
+			x: 7.0d
+			y: 0.0d
+		}
+	]
 	quests: [
 		{
 			dependencies: [

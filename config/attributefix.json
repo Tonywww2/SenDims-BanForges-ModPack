@@ -437,7 +437,7 @@
       },
       "max": {
         "default": 1024,
-        "value": 1000000
+        "value": 200000000
       }
     },
     "minecraft:horse.jump_strength": {
@@ -614,6 +614,17 @@
       "max": {
         "default": 512,
         "value": 512
+      }
+    },
+    "elder_bosses:scarlet_rot_capacity": {
+      "enabled": false,
+      "min": {
+        "default": 0.01,
+        "value": 0.01
+      },
+      "max": {
+        "default": 1000000,
+        "value": 1000000
       }
     },
     "attributeslib:cold_damage": {

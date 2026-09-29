@@ -396,6 +396,7 @@ ServerEvents.recipes(event => {
         .energy(16384)
         .id("sdbf:proudsoul_from_smelter")
 
+    // 基础配方
     event.recipes.slashblade.proudsoul_shapeless_recipe('slashblade:proudsoul_ingot', [
         '2x #forge:ingots/steel',
         '4x slashblade:proudsoul',
@@ -408,7 +409,6 @@ ServerEvents.recipes(event => {
         '4x nuclearcraft:borax_dust'
     ]).id("sdbf:proudsoul_sphere")
 
-    // TODO 替换基岩为真正的材料
     event.recipes.slashblade.proudsoul_shapeless_recipe('slashblade:proudsoul_crystal', [
         '3x the_bumblezone:glistering_honey_crystal',
         '3x slashblade:proudsoul_sphere',
@@ -417,9 +417,10 @@ ServerEvents.recipes(event => {
 
     event.recipes.slashblade.proudsoul_shapeless_recipe('slashblade:proudsoul_trapezohedron', [
         '6x slashblade:proudsoul_crystal',
-        'minecraft:bedrock'
+        "deeprealm_4th:star_slurry"
     ]).id("sdbf:proudsoul_trapezohedron")
 
+    // 高效配方
     event.recipes.thermal.smelter('slashblade:proudsoul_ingot', [
         '2x #forge:ingots/steel',
         '3x slashblade:proudsoul',
@@ -446,8 +447,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.thermal.smelter('slashblade:proudsoul_trapezohedron', [
         '5x slashblade:proudsoul_crystal',
-        'slashblade_useful_addon:soul_crystal',
-        'minecraft:bedrock'
+        "deeprealm_4th:star_slurry"
     ])
         .energy(32768)
         .id("sdbf:proudsoul_trapezohedron_acc")

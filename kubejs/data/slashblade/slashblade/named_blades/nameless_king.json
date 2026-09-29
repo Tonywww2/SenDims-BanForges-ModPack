@@ -1,0 +1,50 @@
+{
+    "enchantments":
+    [
+        {
+            "id": "minecraft:sharpness",
+            "lvl": 7
+        },
+        {
+            "id": "minecraft:smite",
+            "lvl": 5
+        },
+        {
+            "id": "minecraft:unbreaking",
+            "lvl": 5
+        },
+        {
+            "id": "minecraft:power",
+            "lvl": 5
+        },
+        {
+            "id": "minecraft:fire_aspect",
+            "lvl": 2
+        }
+    ],
+    "name": "slashblade:nameless_king",
+    "properties":
+    {
+        "attack_base": 55.0,
+        "max_damage": 120,
+        "slash_art": "slashblade_addon:blistering_terra_swords",
+        "special_effects":
+        [
+            "slashblade_sendims:nameless_se_crownless",
+            "slashblade_sendims:nameless_se_sovereignty_ex",
+            "slashblade_sendims:nameless_se_storm",
+            "slashblade_sendims:nameless_se_suppression"
+        ],
+        "sword_type":
+        [
+            "bewitched"
+        ]
+    },
+    "render":
+    {
+        "carry_type": "ninja",
+        "model": "last_smith:model/named/odachi/model.obj",
+        "summon_sword_color": 15782001,
+        "texture": "sdbf:model/nameless/nameless_king.png"
+    }
+}

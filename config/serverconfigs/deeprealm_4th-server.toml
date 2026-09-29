@@ -1,0 +1,11 @@
+
+[base_container]
+	#Base astral body layout: exactly 9 rows of 12 characters.
+	#X opens a cell; . closes it. Items in newly closed cells are retained but inactive.
+	layout = ["............", "............", "...XXXXXX...", "...XXXXXX...", "...XXXXXX...", "...XXXXXX...", "...XXXXXX...", "............", "............"]
+
+[travel]
+	#Dimensions where holding mimetic star slurry and falling into the void opens the Fourth Layer.
+	#Default: only the End. Use namespaced dimension IDs; an empty list disables this entrance.
+	void_entry_dimensions = ["minecraft:the_end"]
+

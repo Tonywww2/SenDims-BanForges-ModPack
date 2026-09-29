@@ -37,6 +37,9 @@ LootJS.modifiers(event => {
     event.addEntityLootModifier("block_factorys_bosses:kraken")
         .addLoot('3x kubejs:mysterious_alkali_crystal')
 
+    event.addEntityLootModifier("dog:devourer_head")
+        .addLoot('deeprealm_4th:mimetic_star_slurry')
+
     event.addEntityLootModifier('nuclearcraft:feral_ghoul')
         .anyDimension(["undergarden:undergarden"])
         .pool(p => {

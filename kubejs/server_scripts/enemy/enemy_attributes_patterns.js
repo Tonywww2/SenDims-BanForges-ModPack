@@ -170,8 +170,26 @@ let bossType1 = deriveTemplate(typeA,
  */
 let bossType2 = deriveTemplate(typeA,
     true,
-    [1.1, 19, 1.1, 1],
+    [1.1, 20, 1.1, 1],
     [0, 0, 0, 25]
+);
+
+/**
+ * BOSS3
+ */
+let bossType3 = deriveTemplate(typeA,
+    true,
+    [1.1, 30, 1.1, 1],
+    [0, 0, 0, 30]
+);
+
+/**
+ * BOSS4
+ */
+let bossType4 = deriveTemplate(typeA,
+    true,
+    [1.1, 40, 1.1, 1],
+    [0, 0, 0, 35]
 );
 
 /**
@@ -333,7 +351,7 @@ let dimensionStages = new Map([
     ["titan_moon:titan", "4_1"],
     ["ad_astra:glacio", "4_1"],
 
-    ["sdbf:deep_realm_level_4", "4_2"]
+    ["deeprealm_4th:fourth_layer", "4_2"]
 
 ]);
 

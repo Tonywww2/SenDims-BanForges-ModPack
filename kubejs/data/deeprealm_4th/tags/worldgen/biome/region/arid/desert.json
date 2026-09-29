@@ -1,0 +1,8 @@
+{
+    "replace": false,
+    "values":
+    [
+        "kubejs:fourth_layer_desert",
+        "kubejs:fourth_layer_gravel_desert"
+    ]
+}

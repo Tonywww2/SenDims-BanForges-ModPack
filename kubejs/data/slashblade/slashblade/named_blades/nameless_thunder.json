@@ -1,0 +1,37 @@
+{
+    "enchantments":
+    [
+        {
+            "id": "minecraft:sharpness",
+            "lvl": 3
+        },
+        {
+            "id": "minecraft:unbreaking",
+            "lvl": 3
+        }
+    ],
+    "name": "slashblade:nameless_thunder",
+    "properties":
+    {
+        "attack_base": 25.0,
+        "max_damage": 90,
+        "slash_art": "slashblade_addon:lighting_swords",
+        "special_effects":
+        [
+            "slashblade_sendims:nameless_se_faded",
+            "slashblade_sendims:nameless_se_sovereignty",
+            "slashblade_sendims:nameless_se_storm"
+        ],
+        "sword_type":
+        [
+            "bewitched"
+        ]
+    },
+    "render":
+    {
+        "carry_type": "katana",
+        "model": "last_smith:model/named/odachi/model.obj",
+        "summon_sword_color": 5227519,
+        "texture": "sdbf:model/nameless/nameless_thunder.png"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "name": "slashblade:nameless_faded",
+    "properties":
+    {
+        "attack_base": 7.5,
+        "max_damage": 60,
+        "slash_art": "slashblade:judgement_cut",
+        "special_effects":
+        [
+            "slashblade_sendims:nameless_se_faded"
+        ]
+    },
+    "render":
+    {
+        "carry_type": "default",
+        "model": "last_smith:model/named/odachi/model.obj",
+        "summon_sword_color": 9080982,
+        "texture": "sdbf:model/nameless/nameless_faded.png"
+    }
+}

@@ -10,82 +10,63 @@
 	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [
 		{
-			id: "7535F66965759DE1"
-			linked_quest: "295C7AEDBFF7EE12"
-			x: 0.0d
-			y: -5.0d
-		}
-		{
-			id: "101BC0FA26B9CC26"
-			linked_quest: "6F63F683A1A658B9"
-			x: -5.0d
-			y: -5.0d
-		}
-		{
-			id: "41D93CCBD150931B"
-			linked_quest: "63BCA9C495EBC8D8"
-			x: 5.0d
-			y: -5.0d
-		}
-		{
-			id: "4F6C85F160E3E1CA"
-			linked_quest: "4E419C4E4744B2C8"
-			x: -5.0d
-			y: 5.0d
-		}
-		{
-			id: "09839711CE5D60FC"
-			linked_quest: "5A982FFF19EF5289"
-			x: 0.0d
-			y: 5.0d
-		}
-		{
-			id: "39BF406D157A5FD3"
-			linked_quest: "3B3CA7DE9AD5152C"
-			x: 5.0d
-			y: 5.0d
-		}
-		{
 			id: "08DF65FFE58E627E"
 			linked_quest: "606C920FEB477498"
-			x: 5.0d
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			id: "0C69240BF104D962"
+			linked_quest: "7441006B1C06F60E"
+			x: -3.0d
 			y: 0.0d
 		}
 	]
 	quests: [
 		{
-			dependencies: ["3A267848CC75F232"]
+			dependencies: [
+				"3A267848CC75F232"
+				"7441006B1C06F60E"
+			]
 			hide_dependent_lines: true
+			icon: "deeprealm_4th:star_slurry_seep"
 			id: "4239AD35803375DB"
 			size: 2.0d
 			tasks: [{
-				id: "570AC6F1695CF184"
-				type: "checkmark"
+				dimension: "deeprealm_4th:fourth_layer"
+				icon: "deeprealm_4th:star_slurry_seep"
+				id: "42B47CC35E994C96"
+				title: "深境四层"
+				type: "dimension"
 			}]
-			title: "深境五层"
+			title: "深境四层"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["4239AD35803375DB"]
+			dependencies: [
+				"4239AD35803375DB"
+				"606C920FEB477498"
+			]
+			dependency_requirement: "one_completed"
 			id: "4E53C1AEF2A26E2D"
 			tasks: [{
 				id: "0F11D5FE79F624AC"
 				item: "kubejs:epsilon_dust"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 0.0d
+			x: 6.0d
+			y: 3.0d
 		}
 		{
-			dependencies: ["4239AD35803375DB"]
+			dependencies: ["5BDE6A80B0A1AB53"]
 			id: "5CF439D1069AFCE1"
 			tasks: [{
 				id: "5F639F4C279EBF6F"
 				item: "kubejs:rainbowshift_entropy"
 				type: "item"
 			}]
-			x: 2.5d
+			x: 9.0d
 			y: 0.0d
 		}
 		{
@@ -93,7 +74,6 @@
 				"4E53C1AEF2A26E2D"
 				"6F63F683A1A658B9"
 				"295C7AEDBFF7EE12"
-				"35EBBCF9D81BDE1F"
 			]
 			id: "4ABDF91E79EC7A9C"
 			shape: "diamond"
@@ -111,15 +91,14 @@
 				}
 				type: "item"
 			}]
-			x: -2.5d
-			y: -5.0d
+			x: 6.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
 				"295C7AEDBFF7EE12"
 				"5CF439D1069AFCE1"
 				"63BCA9C495EBC8D8"
-				"4AFA897210B9CF91"
 			]
 			id: "0DFD1BC3ED983292"
 			shape: "diamond"
@@ -137,15 +116,14 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
-			y: -5.0d
+			x: 9.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
 				"4E53C1AEF2A26E2D"
 				"4E419C4E4744B2C8"
 				"5A982FFF19EF5289"
-				"1FD888891B094B11"
 			]
 			id: "06498A02440A4B1A"
 			shape: "diamond"
@@ -163,8 +141,8 @@
 				}
 				type: "item"
 			}]
-			x: -2.5d
-			y: 5.0d
+			x: 6.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -180,8 +158,8 @@
 				type: "item"
 			}]
 			title: "占位符：疾风迅雷"
-			x: 2.5d
-			y: 5.0d
+			x: 9.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["3A267848CC75F232"]
@@ -197,41 +175,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
-			y: 7.5d
-		}
-		{
-			dependencies: ["3A267848CC75F232"]
-			id: "1FD888891B094B11"
-			tasks: [{
-				id: "6F04E16C1FC32F53"
-				item: "minecraft:heart_of_the_sea"
-				type: "item"
-			}]
-			x: -2.5d
-			y: 7.5d
-		}
-		{
-			dependencies: ["3A267848CC75F232"]
-			id: "35EBBCF9D81BDE1F"
-			tasks: [{
-				id: "3DD7D21CC2E537C9"
-				item: "nuclearcraft:californium_rtg"
-				type: "item"
-			}]
-			x: -2.5d
-			y: -7.5d
-		}
-		{
-			dependencies: ["3A267848CC75F232"]
-			id: "4AFA897210B9CF91"
-			tasks: [{
-				id: "2E3F13A3BDFB62A6"
-				item: "enderio:sentient_ender"
-				type: "item"
-			}]
-			x: 2.5d
-			y: -7.5d
+			x: 6.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["4239AD35803375DB"]
@@ -250,9 +195,20 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
+			x: 12.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4239AD35803375DB"]
+			id: "5BDE6A80B0A1AB53"
+			tasks: [{
+				id: "30CF91E9CED99ED8"
+				item: "deeprealm_4th:star_slurry"
+				type: "item"
+			}]
+			x: 3.0d
 			y: 0.0d
 		}
 	]
-	title: "&e深境：最终极旋涡"
+	title: "[XIII] &e深境四层"
 }

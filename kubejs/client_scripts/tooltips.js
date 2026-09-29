@@ -32,6 +32,19 @@ ItemEvents.tooltip(event => {
     event.add('slashblade_sendims:blessing_petals', Text.translatable('info.kubejs.blessing_petals'))
     event.add('slashblade_sendims:principle_of_sword_arts', Text.translatable('info.kubejs.principle_of_sword_arts'))
 
+    // ---- 无名王者系列 ----
+    let namelessNext = {
+        'slashblade:nameless_faded': 'info.kubejs.nameless.next.faded',
+        'slashblade:nameless_lone': 'info.kubejs.nameless.next.lone',
+        'slashblade:nameless_thunder': 'info.kubejs.nameless.next.thunder',
+        'slashblade:nameless_judgement': 'info.kubejs.nameless.next.judgement',
+        'slashblade:nameless_king': 'info.kubejs.nameless.end'
+    };
+    for (let blade in namelessNext) {
+        event.add(blade, Text.translatable('info.kubejs.nameless.series').color(Color.AQUA));
+        event.add(blade, Text.translatable(namelessNext[blade]).color(Color.GRAY));
+    }
+
     event.add('slashblade_sendims:the_nectar_quest', Text.translatable('info.kubejs.the_nectar_quest'))
     event.add('slashblade_sendims:the_nectar_quest', Text.translatable('info.kubejs.the_nectar_quest_2'))
 

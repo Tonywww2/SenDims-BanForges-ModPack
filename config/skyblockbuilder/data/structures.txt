@@ -10,12 +10,6 @@ ae2:meteorite
 aether:bronze_dungeon
 aether:gold_dungeon
 aether:large_aercloud
-aether:ruined_portal
-aether:ruined_portal_aether
-aether:ruined_portal_desert
-aether:ruined_portal_jungle
-aether:ruined_portal_mountain
-aether:ruined_portal_swamp
 aether:silver_dungeon
 ancient_aether:ancient_dungeon
 ancient_aether:holystone_ruin
@@ -184,6 +178,8 @@ dungeons_arise_seven_seas:pirate_junk
 dungeons_arise_seven_seas:small_yacht
 dungeons_arise_seven_seas:unicorn_galleon
 dungeons_arise_seven_seas:victory_frigate
+elder_bosses:malenia_arena
+elder_bosses:promised_consort_arena
 explorify:badlands_pyramid
 explorify:black_spiral
 explorify:campsite

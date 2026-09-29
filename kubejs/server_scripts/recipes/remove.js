@@ -240,7 +240,7 @@ let toRemoveID = new Set([
     
     "integrateddynamics:special/combine_batteries",
     "dog:cosmic_worm",
-    "the_blade_of_chaos49:execution_a",
+    "deeprealm_4th:mimetic_star_slurry",
 
     // s5
     "sjap_adder:kamuyex_fire",
