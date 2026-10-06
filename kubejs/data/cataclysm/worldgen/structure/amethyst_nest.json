@@ -1,18 +1,12 @@
 {
   "type": "minecraft:jigsaw",
-  "biomes": "sdbf:sacred_rubber_canopy",
+  "biomes": "#sdbf:world_tree_land",
   "start_pool": "cataclysm:amethyst_nest/start_pool",
   "use_expansion_hack": true,
   "step": "underground_decoration",
   "size": 2,
   "start_height": {
-    "type": "minecraft:uniform",
-    "min_inclusive": {
-      "absolute": 138
-    },
-    "max_inclusive": {
-      "absolute": 142
-    }
+    "absolute": 69
   },
   "max_distance_from_center": 80,
   "spawn_overrides": {

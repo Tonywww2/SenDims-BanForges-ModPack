@@ -247,6 +247,9 @@ sdbf:inside_the_end/end_midlands
 sdbf:inside_the_end/small_end_islands
 sdbf:inside_the_end/the_end
 sdbf:sacred_rubber_canopy
+sdbf:world_tree_depths
+sdbf:world_tree_roots
+sdbf:world_tree_shallows
 sgjourney:abydos_desert
 sgjourney:abydos_oasis
 sgjourney:abydos_spires

@@ -1,6 +1,6 @@
 {
   "type": "forge:add_spawns",
-  "biomes": "sdbf:sacred_rubber_canopy",
+  "biomes": "#sdbf:world_tree_water",
   "spawners": {
     "type": "minecraft:drowned",
     "weight": 5,

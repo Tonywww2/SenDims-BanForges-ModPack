@@ -161,9 +161,10 @@ let registerPortal = (config) => {
             return;
         }
 
-        let x = xf(player);
-        let y = yf(player);
-        let z = zf(player);
+        let position = config.position ? config.position(player, centerPos) : null;
+        let x = position ? position.x : xf(player);
+        let y = position ? position.y : yf(player);
+        let z = position ? position.z : zf(player);
 
         let targetX = x != null ? x : centerPos.x;
         let targetY = y != null ? y : centerPos.y;

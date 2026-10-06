@@ -1,6 +1,7 @@
 {
   "replace": true,
   "values": [
-    "sdbf:sacred_rubber_canopy"
+    "sdbf:world_tree_shallows",
+    "sdbf:world_tree_depths"
   ]
 }

@@ -30,7 +30,7 @@
     "render":
     {
         "carry_type": "katana",
-        "model": "last_smith:model/named/odachi/model.obj",
+        "model": "sdbf:model/nameless/nameless_thunder.obj",
         "summon_sword_color": 5227519,
         "texture": "sdbf:model/nameless/nameless_thunder.png"
     }

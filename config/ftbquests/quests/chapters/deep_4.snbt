@@ -4,6 +4,7 @@
 	default_quest_shape: ""
 	filename: "deep_4"
 	group: "72FC493D243DC969"
+	icon: "deeprealm_4th:star_source"
 	id: "23CB2F126A6644D7"
 	order_index: 2
 	quest_enhance_decorative_lines: [ ]
@@ -29,12 +30,12 @@
 				"7441006B1C06F60E"
 			]
 			hide_dependent_lines: true
-			icon: "deeprealm_4th:star_slurry_seep"
+			icon: "deeprealm_4th:star_source"
 			id: "4239AD35803375DB"
 			size: 2.0d
 			tasks: [{
 				dimension: "deeprealm_4th:fourth_layer"
-				icon: "deeprealm_4th:star_slurry_seep"
+				icon: "deeprealm_4th:star_source"
 				id: "42B47CC35E994C96"
 				title: "深境四层"
 				type: "dimension"
@@ -146,40 +147,9 @@
 		}
 		{
 			dependencies: [
-				"5A982FFF19EF5289"
-				"5CF439D1069AFCE1"
-				"3B3CA7DE9AD5152C"
-				"22A8EAC386D949EA"
+				"4239AD35803375DB"
+				"210D46E8F6BC2C36"
 			]
-			id: "0B3581AB347DA3D0"
-			tasks: [{
-				id: "7E276789A4EE6049"
-				item: "botania:placeholder"
-				type: "item"
-			}]
-			title: "占位符：疾风迅雷"
-			x: 9.0d
-			y: 6.0d
-		}
-		{
-			dependencies: ["3A267848CC75F232"]
-			id: "22A8EAC386D949EA"
-			tasks: [{
-				id: "4F374C0B93235970"
-				item: {
-					Count: 1
-					id: "dustandash:white_lightning"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 6.0d
-			y: 6.0d
-		}
-		{
-			dependencies: ["4239AD35803375DB"]
 			id: "3DEACEFA579940A1"
 			tasks: [{
 				id: "0B82E990F81427AA"
@@ -195,8 +165,8 @@
 				}
 				type: "item"
 			}]
-			x: 12.0d
-			y: 3.0d
+			x: 3.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["4239AD35803375DB"]
@@ -209,6 +179,176 @@
 			x: 3.0d
 			y: 0.0d
 		}
+		{
+			dependencies: ["4239AD35803375DB"]
+			id: "210D46E8F6BC2C36"
+			tasks: [{
+				id: "306D6A460EA35418"
+				item: "deeprealm_4th:star_slurry_crystal"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5BDE6A80B0A1AB53"]
+			id: "0DCACD0AACE10A1E"
+			shape: "pentagon"
+			size: 1.5d
+			tasks: [{
+				id: "2DDDA18D2093A307"
+				item: "deeprealm_4th:base_container"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"0DCACD0AACE10A1E"
+				"17E4F11F431B104E"
+			]
+			id: "07C0937F6FDE318B"
+			tasks: [{
+				id: "5E01DD3061BF4954"
+				item: "kubejs:astral_rune"
+				type: "item"
+			}]
+			x: 24.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"0DCACD0AACE10A1E"
+				"17E4F11F431B104E"
+			]
+			id: "5DAF8DD2570465F3"
+			tasks: [{
+				id: "0CEF7BE2AB48E8AF"
+				item: "kubejs:astral_frame"
+				type: "item"
+			}]
+			x: 27.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5CF439D1069AFCE1"]
+			id: "03C8BC7ED8A17482"
+			tasks: [{
+				id: "68CAD3EB6E2F717C"
+				item: "elder_bosses:rune_fragment"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5CF439D1069AFCE1"]
+			id: "1E6A0DB3AB499680"
+			tasks: [{
+				id: "3E3026574D0FFAE4"
+				structure: "elder_bosses:promised_consort_arena"
+				type: "structure"
+			}]
+			title: "竞技场"
+			x: 15.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"1E6A0DB3AB499680"
+				"03C8BC7ED8A17482"
+			]
+			icon: "elder_bosses:god_and_lord_remembrance"
+			id: "661386AB665E5CE7"
+			tasks: [{
+				id: "0BC84A6366FCF434"
+				item: "elder_bosses:god_and_lord_remembrance"
+				type: "item"
+			}]
+			x: 21.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["661386AB665E5CE7"]
+			id: "17E4F11F431B104E"
+			tasks: [{
+				id: "47804FA05CEBA8E4"
+				item: "elder_bosses:gate_fragment"
+				type: "item"
+			}]
+			x: 24.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0DCACD0AACE10A1E"]
+			id: "1526F56A7A280655"
+			tasks: [{
+				id: "45324E77B62B898B"
+				item: "kubejs:astral_gem_agent_low"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0DCACD0AACE10A1E"]
+			id: "77679F1B43EFB2F9"
+			tasks: [{
+				id: "7AD11A74544DE7ED"
+				item: "kubejs:astral_gem_agent_mid"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["0DCACD0AACE10A1E"]
+			id: "6386A7EF0DE1F1A7"
+			tasks: [{
+				id: "344EA9E7905E54A3"
+				item: "kubejs:astral_gem_agent_high"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["0DCACD0AACE10A1E"]
+			id: "02F35922C2CF4A08"
+			tasks: [{
+				id: "3D8420D9640460F7"
+				item: "kubejs:astral_gem_badge"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["17E4F11F431B104E"]
+			id: "2FC83B050CF46F10"
+			size: 2.0d
+			tasks: [{
+				id: "444B55999ABC70B7"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			title: "占位：天顶·伪·神剑"
+			x: 30.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2FC83B050CF46F10"]
+			id: "3AD23C2F2402F955"
+			tasks: [{
+				id: "236684473714AAB4"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			title: "占位：天顶剑"
+			x: 35.0d
+			y: 0.0d
+		}
 	]
-	title: "[XIII] &e深境四层"
+	title: "[XIII] &e深境：第四层"
 }

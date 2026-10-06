@@ -1,4 +1,4 @@
-436 possible biomes found:
+441 possible biomes found:
 - "sgjourney:abydos_desert"
 - "sgjourney:abydos_oasis"
 - "sgjourney:abydos_spires"
@@ -139,6 +139,8 @@
 - "twilightforest:forest"
 - "terralith:forested_highlands"
 - "undergarden:forgotten_field"
+- "kubejs:fourth_layer_desert"
+- "kubejs:fourth_layer_gravel_desert"
 - "terralith:fractured_savanna"
 - "yungscavebiomes:frosted_caves"
 - "aether_redux:frosted_forests"
@@ -427,6 +429,9 @@
 - "terralith:wintry_forest"
 - "terralith:wintry_lowlands"
 - "minecraft:wooded_badlands"
+- "sdbf:world_tree_depths"
+- "sdbf:world_tree_roots"
+- "sdbf:world_tree_shallows"
 - "ancient_aether:wyndcap_highland"
 - "ancient_aether:wyndcap_peaks"
 - "ancient_aether:wyndcap_taiga"

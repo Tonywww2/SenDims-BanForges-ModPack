@@ -39,6 +39,28 @@ ServerEvents.recipes(event => {
         .energy(16384)
         .id("sdbf:ml_computing_ingot_acc_s4")
 
+    // 无名系列：雷霆 → 天罚（主世界）
+    event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
+        "MQS",
+        "TBV",
+        "SQM"
+    ], {
+        "B": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("slashblade:nameless_thunder")
+                .killCount(10000)
+                .proudSoul(100000)
+                .refineCount(75)
+                .build()
+        ),
+        "M": 'kubejs:ml_computing_ingot',
+        "Q": 'darkerdepths:forsaken_bronze_scrap',
+        "S": 'slashblade:proudsoul_crystal',
+        "T": 'minecraft:totem_of_undying',
+        "V": 'cataclysm:void_core'
+    }, "slashblade:nameless_judgement")
+        .id("sdbf:nameless_judgement_s4")
+
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
         "EBE",
         "KAD",

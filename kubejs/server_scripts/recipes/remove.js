@@ -1,4 +1,5 @@
 let toRemoveID = new Set([
+    "deeprealm_4th:base_container",
     "easy_villagers:farmer",
     "easy_villagers:iron_farm",
     "minecraft:enchanting_table",
@@ -241,6 +242,9 @@ let toRemoveID = new Set([
     "integrateddynamics:special/combine_batteries",
     "dog:cosmic_worm",
     "deeprealm_4th:mimetic_star_slurry",
+    "deeprealm_4th:warrior_medal",
+    "deeprealm_4th:wayfarer_medal",
+    "deeprealm_4th:warden_medal",
 
     // s5
     "sjap_adder:kamuyex_fire",

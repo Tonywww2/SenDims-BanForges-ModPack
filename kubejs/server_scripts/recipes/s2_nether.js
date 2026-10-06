@@ -56,6 +56,28 @@ ServerEvents.recipes(event => {
         C: 'minecraft:netherite_scrap'
     }).id('sdbf:sdbf_nether_g3_s2')
 
+    // 无名系列：褪名 → 孤高（下界）
+    event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
+        "NFS",
+        "OBG",
+        "SFN"
+    ], {
+        "B": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("slashblade:nameless_faded")
+                .killCount(750)
+                .proudSoul(10000)
+                .refineCount(15)
+                .build()
+        ),
+        "N": '#forge:ingots/netherite',
+        "F": 'minecraft:blaze_rod',
+        "S": 'slashblade:proudsoul_ingot',
+        "O": 'minecraft:crying_obsidian',
+        "G": '#forge:storage_blocks/gold'
+    }, "slashblade:nameless_lone")
+        .id("sdbf:nameless_lone_s2")
+
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
         "SNJ",
         "LBD",

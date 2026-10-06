@@ -29,6 +29,14 @@
 			x: -3.0d
 			y: 3.0d
 		}
+		{
+			id: "559B58DB1BF806AA"
+			linked_quest: "4239AD35803375DB"
+			shape: "hexagon"
+			size: 2.0d
+			x: 27.0d
+			y: 0.0d
+		}
 	]
 	quests: [
 		{
@@ -152,8 +160,8 @@
 				item: "titan_moon:tholin_fibre"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 15.0d
+			x: 12.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["37CF7606A44B5357"]
@@ -185,8 +193,8 @@
 				item: "titan_moon:toxic_gland"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 18.0d
+			x: 12.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["37CF7606A44B5357"]
@@ -240,8 +248,8 @@
 				item: "titan_moon:tholin_silk_sac"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 21.0d
+			x: 12.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["37CF7606A44B5357"]
@@ -310,8 +318,8 @@
 				item: "titan_moon:tholin_fibre_belt_rig"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 15.0d
+			x: 15.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -324,8 +332,8 @@
 				item: "titan_moon:meteoric_iron_back_frame"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 12.0d
+			x: 15.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -355,8 +363,8 @@
 				item: "titan_moon:tholin_venom_glove"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 18.0d
+			x: 15.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["37CF7606A44B5357"]
@@ -442,5 +450,5 @@
 			y: 0.0d
 		}
 	]
-	title: "[XII] &e土卫六[部分完成]"
+	title: "[XII] &e土卫六"
 }

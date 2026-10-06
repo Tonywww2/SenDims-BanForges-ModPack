@@ -536,6 +536,30 @@
 			x: 21.0d
 			y: 12.0d
 		}
+		{
+			dependencies: [
+				"091229EAF21172B0"
+				"641BAE5B4E3ED25C"
+				"77DB6C3E80DEA149"
+			]
+			id: "441CCFBB202C3E2B"
+			tasks: [{
+				id: "5323FB895F7C1461"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"translate\":\"item.slashblade.nameless_judgement\"}"
+						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade.nameless_judgement\"}})"
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 12.0d
+		}
 	]
 	title: "[XI] &e空岛之下"
 }

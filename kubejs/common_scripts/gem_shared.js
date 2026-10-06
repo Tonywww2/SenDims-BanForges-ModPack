@@ -28,6 +28,7 @@ let GEM_AFFIX = {
 
 let getGemInfo = (stack) => {
     let tag = stack.getNbt();
+    if (tag && tag.contains('sdbf.astral_gem', 10)) return null;
     if (!tag || !tag.contains(GEM_GENERAL_KEY)) return null;
     let gemData = tag.getCompound(GEM_GENERAL_KEY);
     if (!gemData) return null;

@@ -63,6 +63,8 @@ ItemEvents.tooltip(event => {
     event.add('tofucraft:blocktofugrilled', Text.translatable('info.kubejs.blocktofugrilled').color(Color.AQUA));
     event.add('ad_astra:moon_stone', Text.translatable('info.kubejs.moon_stone').color(Color.AQUA));
     event.add('ad_astra:moon_cobblestone', Text.translatable('info.kubejs.moon_cobblestone').color(Color.AQUA));
+    event.add('thermal:steel_ingot', Text.translatable('info.kubejs.steel_ingot').color(Color.AQUA));
+    event.add('kubejs:high_carbon_iron_dust', Text.translatable('info.kubejs.high_carbon_iron_dust').color(Color.AQUA));
     event.add('terra_entity:king_slime_spawn_egg', Text.translatable('info.kubejs.king_slime_spawn_egg').color(Color.AQUA));
     
     event.add('slashblade_sendims:deeprealm_certificate', Text.translatable('info.kubejs.deeprealm_certificate'));
@@ -212,7 +214,11 @@ ItemEvents.tooltip(event => {
 
         }
 
-        if (event.alt && item.nbt) {
+        let astralGem = global.sdbfAstral && item.nbt && (
+            item.id === global.sdbfAstral.fillerId || item.id === global.sdbfAstral.badgeId ||
+            item.nbt.contains(global.sdbfAstral.gemKey, 10)
+        );
+        if (event.alt && item.nbt && !astralGem) {
             text.add(Text.of('NBT: ').append(Text.prettyPrintNbt(item.nbt)));
         }
     })

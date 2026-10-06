@@ -35,7 +35,7 @@
     "render":
     {
         "carry_type": "katana",
-        "model": "last_smith:model/named/odachi/model.obj",
+        "model": "sdbf:model/nameless/nameless_judgement.obj",
         "summon_sword_color": 13215293,
         "texture": "sdbf:model/nameless/nameless_judgement.png"
     }

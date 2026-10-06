@@ -1,14 +1,56 @@
 {
-    "type": "sdbf:deep_realm_level_2",
-    "generator":
-    {
-        "type": "minecraft:noise",
-        "seed": 0,
-        "biome_source":
-        {
-            "type": "minecraft:fixed",
-            "biome": "sdbf:sacred_rubber_canopy"
-        },
-        "settings": "sdbf:deep_realm_trees"
+  "type": "sdbf:deep_realm_level_2",
+  "generator": {
+    "type": "slashblade_sendims:world_tree_sea",
+    "biome_source": {
+      "type": "slashblade_sendims:world_tree_sea",
+      "roots": "sdbf:world_tree_roots",
+      "shallows": "sdbf:world_tree_shallows",
+      "depths": "sdbf:world_tree_depths",
+      "layout_seed": 20261004,
+      "sea_level": 64,
+      "tree_spacing": 360,
+      "crown_radius": 289
+    },
+    "wood": {
+      "Name": "integrateddynamics:menril_wood"
+    },
+    "leaves": {
+      "Name": "integrateddynamics:menril_leaves",
+      "Properties": {
+        "persistent": "true",
+        "distance": "7"
+      }
+    },
+    "soils": [
+      {
+        "Name": "botania:infused_grass"
+      },
+      {
+        "Name": "minecraft:podzol"
+      },
+      {
+        "Name": "botania:infused_grass"
+      },
+      {
+        "Name": "minecraft:coarse_dirt"
+      },
+      {
+        "Name": "minecraft:rooted_dirt"
+      }
+    ],
+    "crystal": {
+      "Name": "kubejs:alkaline_crystal_cluster",
+      "Properties": {
+        "waterlogged": "true"
+      }
+    },
+    "filled_log": {
+      "Name": "integrateddynamics:menril_log_filled",
+      "Properties": {
+        "axis": "y",
+        "facing": "north"
+      }
     }
+  }
 }

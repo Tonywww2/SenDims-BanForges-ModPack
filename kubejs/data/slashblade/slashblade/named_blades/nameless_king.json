@@ -27,7 +27,7 @@
     {
         "attack_base": 55.0,
         "max_damage": 120,
-        "slash_art": "slashblade_addon:blistering_terra_swords",
+        "slash_art": "slashblade_sendims:nameless_threefold",
         "special_effects":
         [
             "slashblade_sendims:nameless_se_crownless",
@@ -43,7 +43,7 @@
     "render":
     {
         "carry_type": "ninja",
-        "model": "last_smith:model/named/odachi/model.obj",
+        "model": "sdbf:model/nameless/nameless_king.obj",
         "summon_sword_color": 15782001,
         "texture": "sdbf:model/nameless/nameless_king.png"
     }

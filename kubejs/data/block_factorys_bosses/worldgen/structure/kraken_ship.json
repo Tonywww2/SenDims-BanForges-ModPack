@@ -7,13 +7,7 @@
   "step": "underground_decoration",
   "terrain_adaptation": "none",
   "start_height": {
-    "type": "minecraft:uniform",
-    "min_inclusive": {
-      "absolute": 136
-    },
-    "max_inclusive": {
-      "absolute": 136
-    }
+    "absolute": 60
   },
   "biomes": "#block_factorys_bosses:kraken_ship",
   "use_expansion_hack": false

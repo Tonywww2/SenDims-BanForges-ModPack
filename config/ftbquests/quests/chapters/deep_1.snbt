@@ -68,15 +68,6 @@
 			rotation: 90.0d
 			width: 1.0d
 			x: 12.0d
-			y: 17.0d
-		}
-		{
-			dependency: "2EADF063117EE157"
-			height: 1.0d
-			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
-			rotation: 90.0d
-			width: 1.0d
-			x: 12.0d
 			y: 20.0d
 		}
 		{
@@ -85,8 +76,17 @@
 			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
 			rotation: 90.0d
 			width: 1.0d
+			x: 12.0d
+			y: 23.0d
+		}
+		{
+			dependency: "2EADF063117EE157"
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			rotation: 90.0d
+			width: 1.0d
 			x: 9.0d
-			y: 10.5d
+			y: 13.5d
 		}
 	]
 	order_index: 0
@@ -137,13 +137,13 @@
 			id: "63FE32795B147CBE"
 			linked_quest: "6130B752208314B7"
 			x: 9.0d
-			y: 12.0d
+			y: 15.0d
 		}
 		{
 			id: "05407B7FA2D2C562"
 			linked_quest: "71FCA5FAB43DD617"
 			x: 12.0d
-			y: 12.0d
+			y: 15.0d
 		}
 		{
 			id: "596A8AC4B21A5688"
@@ -417,7 +417,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 9.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["5BB642BD0BE40541"]
@@ -439,7 +439,7 @@
 			}]
 			title: "结构羽毛笔"
 			x: 6.0d
-			y: 15.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["64D03E66319AF253"]
@@ -462,7 +462,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 21.0d
+			y: 24.0d
 		}
 		{
 			dependencies: ["64D03E66319AF253"]
@@ -485,7 +485,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 18.0d
+			y: 21.0d
 		}
 		{
 			dependencies: [
@@ -509,7 +509,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 9.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["1DE54DDD04540738"]
@@ -693,7 +693,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 15.0d
+			y: 18.0d
 		}
 		{
 			dependencies: [
@@ -716,7 +716,7 @@
 			}]
 			title: "瘟疫疯人院"
 			x: 12.0d
-			y: 15.0d
+			y: 18.0d
 		}
 		{
 			dependencies: [
@@ -740,7 +740,7 @@
 			}]
 			title: "泥砖村庄"
 			x: 12.0d
-			y: 21.0d
+			y: 24.0d
 		}
 		{
 			dependencies: [
@@ -764,7 +764,7 @@
 			}]
 			title: "石头村庄"
 			x: 12.0d
-			y: 18.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["69856593B46ECD9E"]
@@ -784,7 +784,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: 15.0d
+			y: 18.0d
 		}
 		{
 			dependencies: [
@@ -843,7 +843,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 9.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["1DE54DDD04540738"]
@@ -861,7 +861,27 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 12.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["0402AC2E4A8127A4"]
+			id: "3766AEF55C430C3B"
+			tasks: [{
+				id: "387060B873F5A80A"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"translate\":\"item.slashblade.nameless_faded\"}"
+						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade.nameless_faded\"}})"
+					}
+				}
+				type: "item"
+			}]
+			x: 9.0d
+			y: 9.0d
 		}
 	]
 	title: "[II] &e深境：深邃洞穴"

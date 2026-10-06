@@ -1,0 +1,22 @@
+// Run only the payload checks needed by survival cleansing, outside game startup.
+allprojects {
+    if (path == ':1.20.1-forge') {
+        afterEvaluate {
+            def workspace = 'C:/Users/Tony/AppData/Roaming/PrismLauncher/instances/SenDimsBanForges/minecraft'
+            def output = file(workspace + '/.cache/astral_gems/payload-check')
+            tasks.register('compileGemProcessingCheck', JavaCompile) {
+                dependsOn tasks.named('classes')
+                source file(workspace + '/kubejs/tools/astral_gems/GemProcessingCheck.java')
+                classpath = sourceSets.main.compileClasspath + sourceSets.main.output
+                destinationDirectory = output
+                options.release = 17
+            }
+            tasks.register('verifyGemProcessingCheck', JavaExec) {
+                dependsOn tasks.named('compileGemProcessingCheck')
+                classpath = files(output) + sourceSets.main.runtimeClasspath
+                mainClass = 'GemProcessingCheck'
+                maxHeapSize = '512m'
+            }
+        }
+    }
+}

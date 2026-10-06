@@ -21,7 +21,7 @@
     "render":
     {
         "carry_type": "default",
-        "model": "last_smith:model/named/odachi/model.obj",
+        "model": "sdbf:model/nameless/nameless_lone.obj",
         "summon_sword_color": 7244395,
         "texture": "sdbf:model/nameless/nameless_lone.png"
     }

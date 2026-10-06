@@ -13,7 +13,7 @@
     "render":
     {
         "carry_type": "default",
-        "model": "last_smith:model/named/odachi/model.obj",
+        "model": "sdbf:model/nameless/nameless_faded.obj",
         "summon_sword_color": 9080982,
         "texture": "sdbf:model/nameless/nameless_faded.png"
     }

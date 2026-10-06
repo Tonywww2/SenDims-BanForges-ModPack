@@ -1,0 +1,22 @@
+{
+  "mode": "built-in image_gen",
+  "outputFormat": "16x16 transparent PNG",
+  "export": "direct pixel-center sampling from opaque source bounds, original RGB preserved, binary alpha, lossless RGBA PNG, no interpolation or palette quantization",
+  "prompts": [
+    {
+      "key": "low",
+      "name": "astral_gem_agent_low",
+      "prompt": "Use case: stylized-concept. Asset type: Minecraft Java inventory item texture for an astral gem processing reagent, matching vanilla Minecraft 16x textures and a set of corked reagent bottles. Create ONE single upright bottle on a genuinely transparent background. Design on exactly a 16 by 16 logical pixel grid, displayed as large nearest-neighbor square blocks. Every outline, highlight and detail is aligned to the same grid, with no subpixel detail. Center it with one logical pixel of transparent margin; silhouette approximately 10 by 14 pixels. Common bottle silhouette: small brown cork, short narrow neck, pale glass rim, broad stepped shoulders, straight sides and a flat slightly stepped base, dark one-pixel outline. Small upper-left glass highlight. Use a restrained palette with two or three solid shading tones, simple large color regions, readable at actual 16x16. No lettering, label, text, numbers, grid lines, background, cast shadow, glows, antialiasing, gradients, blur, dithering, realistic reflections, or other objects. The image itself is square. Subject: initial-tier gem processing reagent. The bottle contains warm rust-red reagent, with a copper-red shadow and a light coral highlight, pale blue-gray glass and brown cork. A simple modest reagent bottle, no extra embellishments."
+    },
+    {
+      "key": "mid",
+      "name": "astral_gem_agent_mid",
+      "prompt": "Use case: stylized-concept. Asset type: Minecraft Java inventory item texture for an astral gem processing reagent, matching vanilla Minecraft 16x textures and a set of corked reagent bottles. Create ONE single upright bottle on a genuinely transparent background. Design on exactly a 16 by 16 logical pixel grid, displayed as large nearest-neighbor square blocks. Every outline, highlight and detail is aligned to the same grid, with no subpixel detail. Center it with one logical pixel of transparent margin; silhouette approximately 10 by 14 pixels. Common bottle silhouette: small brown cork, short narrow neck, pale glass rim, broad stepped shoulders, straight sides and a flat slightly stepped base, dark one-pixel outline. Small upper-left glass highlight. Use a restrained palette with two or three solid shading tones, simple large color regions, readable at actual 16x16. No lettering, label, text, numbers, grid lines, background, cast shadow, glows, antialiasing, gradients, blur, dithering, realistic reflections, or other objects. The image itself is square. Subject: intermediate-tier gem processing reagent. The bottle contains vivid turquoise reagent, with a deep teal shadow and a pale cyan highlight, pale blue-gray glass and brown cork. A simple clean reagent bottle, no extra embellishments."
+    },
+    {
+      "key": "high",
+      "name": "astral_gem_agent_high",
+      "prompt": "Use case: stylized-concept. Asset type: Minecraft Java inventory item texture for an astral gem processing reagent, matching vanilla Minecraft 16x textures and a set of corked reagent bottles. Create ONE single upright bottle on a genuinely transparent background. Design on exactly a 16 by 16 logical pixel grid, displayed as large nearest-neighbor square blocks. Every outline, highlight and detail is aligned to the same grid, with no subpixel detail. Center it with one logical pixel of transparent margin; silhouette approximately 10 by 14 pixels. Common bottle silhouette: small brown cork, short narrow neck, pale glass rim, broad stepped shoulders, straight sides and a flat slightly stepped base, dark one-pixel outline. Small upper-left glass highlight. Use a restrained palette with two or three solid shading tones, simple large color regions, readable at actual 16x16. No lettering, label, text, numbers, grid lines, background, cast shadow, glows, antialiasing, gradients, blur, dithering, realistic reflections, or other objects. The image itself is square. Subject: highest-tier gem processing reagent. The bottle contains luminous golden-yellow reagent, with an amber-orange shadow and pale cream highlight, pale blue-gray glass and brown cork. Brightness comes only from solid pixel colors, without any external glow. A simple refined reagent bottle, no extra embellishments."
+    }
+  ]
+}

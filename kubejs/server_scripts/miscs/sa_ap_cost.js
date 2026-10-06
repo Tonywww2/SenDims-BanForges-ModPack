@@ -30,6 +30,8 @@ SACostMap.put("slashblade_sendims:sakura_end_ammo", [200, 0.05]);
 
 SACostMap.put("slashblade_sendims:golden_crux", [400, 0.2]);
 
+SACostMap.put("slashblade_sendims:nameless_threefold", [400, 0.2]);
+
 SACostMap.put("pseudoedge_break_dawn:black_hole", [300, 0.15]);
 
 SACostMap.put("slashblade:circle_slash", [300, 0.15]);
@@ -181,8 +183,14 @@ NativeEvents.onEvent($PerformSlashArtEvent, event => {
 NativeEvents.onEvent($SuperSlashArtsReleaseEvent, event => {
     let player = event.getPlayer();
 
-    let cost = superSlashArtCost[0];
-    let cost_persentage = superSlashArtCost[1];
+    // 原生超 SA 直接进入连招，不再触发 PerformSlashArtEvent。
+    let mainHandItem = player.getMainHandItem();
+    let state = mainHandItem.item instanceof $ItemSlashBlade ? $SDUtils.getState(mainHandItem) : null;
+    let costs = state && String(state.getSlashArtsKey()) == "slashblade_sendims:nameless_threefold"
+        ? SACostMap.get("slashblade_sendims:nameless_threefold")
+        : superSlashArtCost;
+    let cost = costs[0];
+    let cost_persentage = costs[1];
 
     consumeAPForSA(player, event, cost, cost_persentage);
 

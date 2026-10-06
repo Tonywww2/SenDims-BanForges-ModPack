@@ -13,7 +13,7 @@
 		{
 			id: "679A5B8038C308A9"
 			linked_quest: "52EC914C3873AF88"
-			x: 3.0d
+			x: 6.0d
 			y: 9.0d
 		}
 		{
@@ -498,7 +498,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 9.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -572,6 +572,52 @@
 			title: "末地城"
 			x: 6.0d
 			y: 3.0d
+		}
+		{
+			dependencies: [
+				"3766AEF55C430C3B"
+				"0809F64B7A3864AC"
+			]
+			id: "7FDD038E442DED85"
+			tasks: [{
+				id: "2BF0E235BCCD0529"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"translate\":\"item.slashblade.nameless_lone\"}"
+						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade.nameless_lone\"}})"
+					}
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: 27.0d
+		}
+		{
+			dependencies: [
+				"17234BADC5181DFE"
+				"3766AEF55C430C3B"
+			]
+			id: "091229EAF21172B0"
+			tasks: [{
+				id: "665E4272938E948D"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"translate\":\"item.slashblade.nameless_thunder\"}"
+						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade.nameless_thunder\"}})"
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 9.0d
 		}
 	]
 	title: "[VIII] &e末地"

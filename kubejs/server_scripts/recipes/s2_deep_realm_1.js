@@ -42,6 +42,28 @@ ServerEvents.recipes(event => {
         D: 'cataclysm:witherite_ingot'
     }).id('sdbf:part_terminal_storage_s2')
 
+    // 无名系列：白鞘 → 褪名（深1）
+    event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
+        "ISP",
+        "CBL",
+        "PSI"
+    ], {
+        "B": SlashBladeIngredient.of(
+            Item.of("slashblade:slashblade_white").item,
+            SlashBladeRequestDefinition.newInstance()
+                .killCount(100)
+                .proudSoul(2000)
+                .refineCount(5)
+                .build()
+        ),
+        "I": '#forge:ingots/iron',
+        "S": '#forge:ingots/steel',
+        "P": 'slashblade:proudsoul',
+        "C": '#forge:storage_blocks/raw_gold',
+        "L": '#forge:storage_blocks/lapis'
+    }, "slashblade:nameless_faded")
+        .id("sdbf:nameless_faded_s2")
+
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
         "ESD",
         "RBL",

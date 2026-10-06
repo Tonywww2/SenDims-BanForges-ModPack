@@ -57,6 +57,28 @@ ServerEvents.recipes(event => {
         "timeModifier": 1.0
     }).id('sdbf:chorus_logic_composite_coil_acc_s3')
 
+    // 无名系列：孤高 → 雷霆（末地）
+    event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
+        "LDP",
+        "HBE",
+        "PDL"
+    ], {
+        "B": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("slashblade:nameless_lone")
+                .killCount(3000)
+                .proudSoul(30000)
+                .refineCount(35)
+                .build()
+        ),
+        "L": "minecraft:chorus_flower",
+        "D": 'minecraft:dragon_breath',
+        "P": 'slashblade:proudsoul_sphere',
+        "H": 'minecraft:dragon_head',
+        "E": "minecraft:end_stone"
+    }, "slashblade:nameless_thunder")
+        .id("sdbf:nameless_thunder_s3")
+
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
         "SNS",
         "IBI",

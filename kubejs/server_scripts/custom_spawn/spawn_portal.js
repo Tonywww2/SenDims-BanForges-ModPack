@@ -67,8 +67,10 @@ registerPortal({
     patterns: RETURN_PORTAL_PATTERN,
     from: 'minecraft:overworld',
     to: 'sdbf:deep_realm_level_2',
+    position: (player, centerPos) => Java.loadClass('com.tonywww.slashblade_sendims.worldgen.WorldTreeSeaChunkGenerator')
+        .findArrival(player.server.getLevel('sdbf:deep_realm_level_2'), centerPos.x, centerPos.z),
     x: (player) => null,
-    y: (player) => 140,
+    y: (player) => null,
     z: (player) => null,
     clearDestinationBlocks: true,
     structureName: "deep_realm_level_2_portal"

@@ -1,8 +1,14 @@
 
 [base_container]
-	#Base astral body layout: exactly 9 rows of 12 characters.
+	#Base astral body layout: height rows, each containing width characters.
 	#X opens a cell; . closes it. Items in newly closed cells are retained but inactive.
-	layout = ["............", "............", "...XXXXXX...", "...XXXXXX...", "...XXXXXX...", "...XXXXXX...", "...XXXXXX...", "............", "............"]
+	layout = ["............", "............", "....XXXX....", "....XXXX....", "....XXXX....", "....XXXX....", "....XXXX....", "............", "............"]
+	#Base astral body grid width; layout rows must match.
+	#Range: 1 ~ 64
+	width = 12
+	#Base astral body grid height; layout row count must match.
+	#Range: 1 ~ 64
+	height = 9
 
 [travel]
 	#Dimensions where holding mimetic star slurry and falling into the void opens the Fourth Layer.
