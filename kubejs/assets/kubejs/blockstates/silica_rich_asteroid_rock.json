@@ -1,0 +1,102 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "kubejs:block/silica_rich_asteroid_rock",
+        "x": 0,
+        "y": 0,
+        "weight": 1
+      },
+      {
+        "model": "kubejs:block/silica_rich_asteroid_rock",
+        "x": 0,
+        "y": 90,
+        "weight": 1
+      },
+      {
+        "model": "kubejs:block/silica_rich_asteroid_rock",
+        "x": 0,
+        "y": 180,
+        "weight": 1
+      },
+      {
+        "model": "kubejs:block/silica_rich_asteroid_rock",
+        "x": 0,
+        "y": 270,
+        "weight": 1
+      },
+      {
+        "model": "kubejs:block/silica_rich_asteroid_rock",
+        "x": 90,
+        "y": 0,
+        "weight": 1
+      },
+      {
+        "model": "kubejs:block/silica_rich_asteroid_rock",
+        "x": 90,
+        "y": 90,
+        "weight": 1
+      },
+      {
+        "model": "kubejs:block/silica_rich_asteroid_rock",
+        "x": 90,
+        "y": 180,
+        "weight": 1
+      },
+      {
+        "model": "kubejs:block/silica_rich_asteroid_rock",
+        "x": 90,
+        "y": 270,
+        "weight": 1
+      },
+      {
+        "model": "kubejs:block/silica_rich_asteroid_rock",
+        "x": 180,
+        "y": 0,
+        "weight": 1
+      },
+      {
+        "model": "kubejs:block/silica_rich_asteroid_rock",
+        "x": 180,
+        "y": 90,
+        "weight": 1
+      },
+      {
+        "model": "kubejs:block/silica_rich_asteroid_rock",
+        "x": 180,
+        "y": 180,
+        "weight": 1
+      },
+      {
+        "model": "kubejs:block/silica_rich_asteroid_rock",
+        "x": 180,
+        "y": 270,
+        "weight": 1
+      },
+      {
+        "model": "kubejs:block/silica_rich_asteroid_rock",
+        "x": 270,
+        "y": 0,
+        "weight": 1
+      },
+      {
+        "model": "kubejs:block/silica_rich_asteroid_rock",
+        "x": 270,
+        "y": 90,
+        "weight": 1
+      },
+      {
+        "model": "kubejs:block/silica_rich_asteroid_rock",
+        "x": 270,
+        "y": 180,
+        "weight": 1
+      },
+      {
+        "model": "kubejs:block/silica_rich_asteroid_rock",
+        "x": 270,
+        "y": 270,
+        "weight": 1
+      }
+    ]
+  }
+}

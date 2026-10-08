@@ -1,24 +1,1304 @@
 {
-    "type": "sdbf:asteroid_belt_type",
-    "generator": {
-        "type": "minecraft:noise",
-        "biome_source": {
-            "biomes": [
-                {
-                    "biome": "sdbf:asteroid_belt/asteroid_belt",
-                    "parameters": {
-                        "continentalness": 0,
-                        "depth": 0,
-                        "erosion": 0,
-                        "humidity": 0,
-                        "offset": 0,
-                        "temperature": 0,
-                        "weirdness": 0
-                    }
-                }
-            ],
-            "type": "minecraft:multi_noise"
+  "type": "sdbf:asteroid_belt_type",
+  "generator": {
+    "type": "slashblade_sendims:asteroid_belt",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "sdbf:asteroid_belt/asteroid_belt"
+    },
+    "layout_seed": 20261006,
+    "rocks": [
+      {
+        "Name": "kubejs:asteroid_rock"
+      },
+      {
+        "Name": "kubejs:carbon_rich_asteroid_rock"
+      },
+      {
+        "Name": "kubejs:silica_rich_asteroid_rock"
+      }
+    ],
+    "ores": [
+      {
+        "Name": "nuclearcraft:boron_deepslate_ore"
+      },
+      {
+        "Name": "nuclearcraft:boron_deepslate_ore"
+      },
+      {
+        "Name": "nuclearcraft:boron_deepslate_ore"
+      },
+      {
+        "Name": "minecraft:deepslate_coal_ore"
+      },
+      {
+        "Name": "minecraft:deepslate_coal_ore"
+      },
+      {
+        "Name": "minecraft:deepslate_coal_ore"
+      },
+      {
+        "Name": "minecraft:deepslate_coal_ore"
+      },
+      {
+        "Name": "minecraft:deepslate_coal_ore"
+      },
+      {
+        "Name": "minecraft:deepslate_coal_ore"
+      },
+      {
+        "Name": "minecraft:deepslate_coal_ore"
+      },
+      {
+        "Name": "nuclearcraft:cobalt_deepslate_ore"
+      },
+      {
+        "Name": "nuclearcraft:cobalt_deepslate_ore"
+      },
+      {
+        "Name": "nuclearcraft:cobalt_deepslate_ore"
+      },
+      {
+        "Name": "minecraft:raw_copper_block"
+      },
+      {
+        "Name": "minecraft:raw_copper_block"
+      },
+      {
+        "Name": "minecraft:raw_copper_block"
+      },
+      {
+        "Name": "minecraft:raw_copper_block"
+      },
+      {
+        "Name": "minecraft:raw_copper_block"
+      },
+      {
+        "Name": "minecraft:raw_copper_block"
+      },
+      {
+        "Name": "ad_astra:deepslate_desh_ore"
+      },
+      {
+        "Name": "ad_astra:deepslate_desh_ore"
+      },
+      {
+        "Name": "minecraft:deepslate_diamond_ore"
+      },
+      {
+        "Name": "minecraft:deepslate_iron_ore"
+      },
+      {
+        "Name": "minecraft:deepslate_iron_ore"
+      },
+      {
+        "Name": "minecraft:deepslate_iron_ore"
+      },
+      {
+        "Name": "minecraft:deepslate_iron_ore"
+      },
+      {
+        "Name": "minecraft:deepslate_iron_ore"
+      },
+      {
+        "Name": "minecraft:deepslate_iron_ore"
+      },
+      {
+        "Name": "minecraft:deepslate_iron_ore"
+      },
+      {
+        "Name": "minecraft:deepslate_lapis_ore"
+      },
+      {
+        "Name": "minecraft:deepslate_lapis_ore"
+      },
+      {
+        "Name": "minecraft:deepslate_lapis_ore"
+      },
+      {
+        "Name": "thermal:deepslate_lead_ore"
+      },
+      {
+        "Name": "thermal:deepslate_lead_ore"
+      },
+      {
+        "Name": "thermal:deepslate_lead_ore"
+      },
+      {
+        "Name": "nuclearcraft:lithium_deepslate_ore"
+      },
+      {
+        "Name": "nuclearcraft:lithium_deepslate_ore"
+      },
+      {
+        "Name": "nuclearcraft:lithium_deepslate_ore"
+      },
+      {
+        "Name": "nuclearcraft:magnesium_deepslate_ore"
+      },
+      {
+        "Name": "nuclearcraft:magnesium_deepslate_ore"
+      },
+      {
+        "Name": "nuclearcraft:magnesium_deepslate_ore"
+      },
+      {
+        "Name": "thermal:deepslate_nickel_ore"
+      },
+      {
+        "Name": "thermal:deepslate_nickel_ore"
+      },
+      {
+        "Name": "thermal:deepslate_nickel_ore"
+      },
+      {
+        "Name": "ad_astra:deepslate_ostrum_ore"
+      },
+      {
+        "Name": "nuclearcraft:platinum_deepslate_ore"
+      },
+      {
+        "Name": "minecraft:deepslate_redstone_ore"
+      },
+      {
+        "Name": "minecraft:deepslate_redstone_ore"
+      },
+      {
+        "Name": "minecraft:deepslate_redstone_ore"
+      },
+      {
+        "Name": "minecraft:deepslate_redstone_ore"
+      },
+      {
+        "Name": "minecraft:deepslate_redstone_ore"
+      },
+      {
+        "Name": "thermal:deepslate_silver_ore"
+      },
+      {
+        "Name": "thermal:deepslate_silver_ore"
+      },
+      {
+        "Name": "thermal:deepslate_silver_ore"
+      },
+      {
+        "Name": "nuclearcraft:thorium_deepslate_ore"
+      },
+      {
+        "Name": "thermal:deepslate_tin_ore"
+      },
+      {
+        "Name": "thermal:deepslate_tin_ore"
+      },
+      {
+        "Name": "thermal:deepslate_tin_ore"
+      },
+      {
+        "Name": "nuclearcraft:uranium_deepslate_ore"
+      }
+    ],
+    "ore_profiles": [
+      {
+        "id": "boron",
+        "core": {
+          "Name": "nuclearcraft:boron_deepslate_ore"
         },
-        "settings": "sdbf:asteroid_belt"
-    }
+        "inner": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "boron",
+        "core": {
+          "Name": "nuclearcraft:boron_deepslate_ore"
+        },
+        "inner": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "boron",
+        "core": {
+          "Name": "nuclearcraft:boron_deepslate_ore"
+        },
+        "inner": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "coal",
+        "core": {
+          "Name": "minecraft:deepslate_coal_ore"
+        },
+        "inner": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "coal",
+        "core": {
+          "Name": "minecraft:deepslate_coal_ore"
+        },
+        "inner": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "coal",
+        "core": {
+          "Name": "minecraft:deepslate_coal_ore"
+        },
+        "inner": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "coal",
+        "core": {
+          "Name": "minecraft:deepslate_coal_ore"
+        },
+        "inner": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "coal",
+        "core": {
+          "Name": "minecraft:deepslate_coal_ore"
+        },
+        "inner": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "coal",
+        "core": {
+          "Name": "minecraft:deepslate_coal_ore"
+        },
+        "inner": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "coal",
+        "core": {
+          "Name": "minecraft:deepslate_coal_ore"
+        },
+        "inner": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "cobalt",
+        "core": {
+          "Name": "nuclearcraft:cobalt_deepslate_ore"
+        },
+        "inner": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "cobalt",
+        "core": {
+          "Name": "nuclearcraft:cobalt_deepslate_ore"
+        },
+        "inner": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "cobalt",
+        "core": {
+          "Name": "nuclearcraft:cobalt_deepslate_ore"
+        },
+        "inner": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "copper",
+        "core": {
+          "Name": "minecraft:raw_copper_block"
+        },
+        "inner": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "copper",
+        "core": {
+          "Name": "minecraft:raw_copper_block"
+        },
+        "inner": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "copper",
+        "core": {
+          "Name": "minecraft:raw_copper_block"
+        },
+        "inner": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "copper",
+        "core": {
+          "Name": "minecraft:raw_copper_block"
+        },
+        "inner": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "copper",
+        "core": {
+          "Name": "minecraft:raw_copper_block"
+        },
+        "inner": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "copper",
+        "core": {
+          "Name": "minecraft:raw_copper_block"
+        },
+        "inner": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "desh",
+        "core": {
+          "Name": "ad_astra:deepslate_desh_ore"
+        },
+        "inner": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "desh",
+        "core": {
+          "Name": "ad_astra:deepslate_desh_ore"
+        },
+        "inner": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "diamond",
+        "core": {
+          "Name": "minecraft:deepslate_diamond_ore"
+        },
+        "inner": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "iron",
+        "core": {
+          "Name": "minecraft:deepslate_iron_ore"
+        },
+        "inner": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "iron",
+        "core": {
+          "Name": "minecraft:deepslate_iron_ore"
+        },
+        "inner": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "iron",
+        "core": {
+          "Name": "minecraft:deepslate_iron_ore"
+        },
+        "inner": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "iron",
+        "core": {
+          "Name": "minecraft:deepslate_iron_ore"
+        },
+        "inner": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "iron",
+        "core": {
+          "Name": "minecraft:deepslate_iron_ore"
+        },
+        "inner": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "iron",
+        "core": {
+          "Name": "minecraft:deepslate_iron_ore"
+        },
+        "inner": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "iron",
+        "core": {
+          "Name": "minecraft:deepslate_iron_ore"
+        },
+        "inner": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "lapis",
+        "core": {
+          "Name": "minecraft:deepslate_lapis_ore"
+        },
+        "inner": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "lapis",
+        "core": {
+          "Name": "minecraft:deepslate_lapis_ore"
+        },
+        "inner": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "lapis",
+        "core": {
+          "Name": "minecraft:deepslate_lapis_ore"
+        },
+        "inner": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "lead",
+        "core": {
+          "Name": "thermal:deepslate_lead_ore"
+        },
+        "inner": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "lead",
+        "core": {
+          "Name": "thermal:deepslate_lead_ore"
+        },
+        "inner": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "lead",
+        "core": {
+          "Name": "thermal:deepslate_lead_ore"
+        },
+        "inner": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "lithium",
+        "core": {
+          "Name": "nuclearcraft:lithium_deepslate_ore"
+        },
+        "inner": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "lithium",
+        "core": {
+          "Name": "nuclearcraft:lithium_deepslate_ore"
+        },
+        "inner": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "lithium",
+        "core": {
+          "Name": "nuclearcraft:lithium_deepslate_ore"
+        },
+        "inner": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "magnesium",
+        "core": {
+          "Name": "nuclearcraft:magnesium_deepslate_ore"
+        },
+        "inner": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "magnesium",
+        "core": {
+          "Name": "nuclearcraft:magnesium_deepslate_ore"
+        },
+        "inner": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "magnesium",
+        "core": {
+          "Name": "nuclearcraft:magnesium_deepslate_ore"
+        },
+        "inner": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "nickel",
+        "core": {
+          "Name": "thermal:deepslate_nickel_ore"
+        },
+        "inner": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "nickel",
+        "core": {
+          "Name": "thermal:deepslate_nickel_ore"
+        },
+        "inner": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "nickel",
+        "core": {
+          "Name": "thermal:deepslate_nickel_ore"
+        },
+        "inner": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "ostrum",
+        "core": {
+          "Name": "ad_astra:deepslate_ostrum_ore"
+        },
+        "inner": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "platinum",
+        "core": {
+          "Name": "nuclearcraft:platinum_deepslate_ore"
+        },
+        "inner": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "redstone",
+        "core": {
+          "Name": "minecraft:deepslate_redstone_ore"
+        },
+        "inner": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "redstone",
+        "core": {
+          "Name": "minecraft:deepslate_redstone_ore"
+        },
+        "inner": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "redstone",
+        "core": {
+          "Name": "minecraft:deepslate_redstone_ore"
+        },
+        "inner": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "redstone",
+        "core": {
+          "Name": "minecraft:deepslate_redstone_ore"
+        },
+        "inner": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "redstone",
+        "core": {
+          "Name": "minecraft:deepslate_redstone_ore"
+        },
+        "inner": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "silver",
+        "core": {
+          "Name": "thermal:deepslate_silver_ore"
+        },
+        "inner": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "silver",
+        "core": {
+          "Name": "thermal:deepslate_silver_ore"
+        },
+        "inner": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "silver",
+        "core": {
+          "Name": "thermal:deepslate_silver_ore"
+        },
+        "inner": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "thorium",
+        "core": {
+          "Name": "nuclearcraft:thorium_deepslate_ore"
+        },
+        "inner": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "tin",
+        "core": {
+          "Name": "thermal:deepslate_tin_ore"
+        },
+        "inner": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "tin",
+        "core": {
+          "Name": "thermal:deepslate_tin_ore"
+        },
+        "inner": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "tin",
+        "core": {
+          "Name": "thermal:deepslate_tin_ore"
+        },
+        "inner": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:carbon_rich_asteroid_rock"
+        }
+      },
+      {
+        "id": "uranium",
+        "core": {
+          "Name": "nuclearcraft:uranium_deepslate_ore"
+        },
+        "inner": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        },
+        "alternate": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "middle": {
+          "Name": "kubejs:asteroid_rock"
+        },
+        "outer": {
+          "Name": "kubejs:silica_rich_asteroid_rock"
+        }
+      }
+    ],
+    "scattered_ore_chance": 0.01,
+    "scattered_ores": [
+      {
+        "state": {
+          "Name": "minecraft:deepslate_iron_ore"
+        },
+        "weight": 30
+      },
+      {
+        "state": {
+          "Name": "thermal:deepslate_nickel_ore"
+        },
+        "weight": 20
+      },
+      {
+        "state": {
+          "Name": "minecraft:deepslate_copper_ore"
+        },
+        "weight": 20
+      },
+      {
+        "state": {
+          "Name": "thermal:deepslate_tin_ore"
+        },
+        "weight": 12
+      },
+      {
+        "state": {
+          "Name": "thermal:deepslate_lead_ore"
+        },
+        "weight": 10
+      },
+      {
+        "state": {
+          "Name": "minecraft:deepslate_coal_ore"
+        },
+        "weight": 8
+      }
+    ]
+  }
 }

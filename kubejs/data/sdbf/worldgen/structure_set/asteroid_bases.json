@@ -1,0 +1,23 @@
+{
+  "structures": [
+    {
+      "structure": "sdbf:asteroid_belt/research_base",
+      "weight": 1
+    },
+    {
+      "structure": "sdbf:asteroid_belt/mining_base",
+      "weight": 1
+    },
+    {
+      "structure": "sdbf:asteroid_belt/habitation_base",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 28,
+    "separation": 12,
+    "frequency": 0.75,
+    "salt": 202610061
+  }
+}

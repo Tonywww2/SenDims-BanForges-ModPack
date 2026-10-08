@@ -112,6 +112,10 @@
 	#0 samples every phase, which is noisy but useful when reproducing a report.
 	#Range: 0 ~ 300
 	stallThresholdSeconds = 10
+	#Validate tooltip search against a temporary reference index and report build metrics.
+	#With tooltipSearchIndex enabled, validation delays publication and may repeat tooltip calls on cache misses.
+	#Without tooltipSearchIndex, shadow mode retains native search. Keep disabled for performance measurements.
+	tooltipSearchMetrics = false
 
 [syncOptimizations]
 	#Enable one-start UID/string/sort helper caches.
@@ -132,6 +136,15 @@
 	#Register large GTCEu recipe categories with JEI in bounded, ordered batches.
 	#Preserves every recipe and focus index while reducing temporary startup allocations.
 	batchGtceuRecipeRegistration = true
+	#Retain at most 16 MiB of build-local tooltip snapshots for native fallback replay; cleared after publication.
+	tooltipStringCache = true
+	#Reuse repeated MineColonies Tweaks equipment checks while JEI generates tool recipes.
+	#Empty Tweaks rule sets are skipped; configured rules keep their original path.
+	#The one-entry identity cache is discarded immediately after that category finishes.
+	cacheMineColoniesToolScan = true
+	#Apply attribute modifiers in MineColonies JEI recipe calculations using vanilla equipment remove-then-add rules.
+	#Does not change item modifiers, citizen AI or player attributes. Only applies to verified MineColonies attribute calculation code.
+	fixMineColoniesAttributeModifiers = true
 
 [async]
 	#Retired compatibility key. This option is always disabled.
@@ -188,4 +201,7 @@
 	#called a main-thread-only API from justenoughthreads-start. JEI's own creative-tab
 	#enumeration and GUI runtime construction stay on the client thread automatically.
 	mainThreadPlugins = ["alexscaves:alexscaves", "experienceobelisk:jei_plugin", "collectorsreap:jei_plugin", "theurgy:jei_plugin", "productivetrees:productivetrees"]
+	#Experimental: capture tooltips on client ticks and build their native substring index on a worker.
+	#Requires asynchronous startup and a supported stock JEI search backend. Publishes only complete results.
+	tooltipSearchIndex = false
 

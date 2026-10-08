@@ -1,0 +1,390 @@
+[
+  {
+    "code": "A1",
+    "title": "古橡木木板",
+    "id": "biomemakeover:ancient_oak_planks",
+    "use": "屋架、门框与深色木饰边",
+    "jar": "biomemakeover-FORGE-1.20.1-1.11.4.jar",
+    "blockstate_resource": "assets/biomemakeover/blockstates/ancient_oak_planks.json",
+    "preview_state": {},
+    "runtime_verified": false,
+    "ctm": null,
+    "localized_name": "古橡木木板",
+    "textures": [
+      "biomemakeover:block/ancient_oak_planks"
+    ]
+  },
+  {
+    "code": "A2",
+    "title": "芦苇茅草",
+    "id": "biomemakeover:reed_thatch",
+    "use": "棚顶与旧居屋顶",
+    "jar": "biomemakeover-FORGE-1.20.1-1.11.4.jar",
+    "blockstate_resource": "assets/biomemakeover/blockstates/reed_thatch.json",
+    "preview_state": {},
+    "runtime_verified": false,
+    "ctm": null,
+    "localized_name": null,
+    "textures": [
+      "biomemakeover:block/reed_thatch",
+      "biomemakeover:block/reed_thatch_top"
+    ]
+  },
+  {
+    "code": "A3",
+    "title": "框边活木板",
+    "id": "botania:framed_livingwood",
+    "use": "墙板与住宅立面",
+    "jar": "Botania-1.20.1-454-FORGE.jar",
+    "blockstate_resource": "assets/botania/blockstates/framed_livingwood.json",
+    "preview_state": {
+      "axis": "y"
+    },
+    "runtime_verified": false,
+    "ctm": null,
+    "localized_name": "框边活木板",
+    "textures": [
+      "botania:block/framed_livingwood",
+      "botania:block/pattern_framed_livingwood"
+    ]
+  },
+  {
+    "code": "A4",
+    "title": "苔活木板",
+    "id": "botania:mossy_livingwood_planks",
+    "use": "潮湿木墙与废弃屋角",
+    "jar": "Botania-1.20.1-454-FORGE.jar",
+    "blockstate_resource": "assets/botania/blockstates/mossy_livingwood_planks.json",
+    "preview_state": {},
+    "runtime_verified": false,
+    "ctm": null,
+    "localized_name": "苔活木板",
+    "textures": [
+      "botania:block/mossy_livingwood_planks"
+    ]
+  },
+  {
+    "code": "A5",
+    "title": "绳卷",
+    "id": "quark:rope",
+    "use": "悬桥吊索与吊灯挂绳",
+    "jar": "Quark-4.0-462.jar",
+    "blockstate_resource": "assets/quark/blockstates/rope.json",
+    "preview_state": {},
+    "runtime_verified": false,
+    "ctm": null,
+    "localized_name": "绳卷",
+    "textures": [
+      "quark:block/rope"
+    ]
+  },
+  {
+    "code": "A6",
+    "title": "纸灯笼",
+    "id": "quark:paper_lantern",
+    "use": "聚落暖色照明",
+    "jar": "Quark-4.0-462.jar",
+    "blockstate_resource": "assets/quark/blockstates/paper_lantern.json",
+    "preview_state": {},
+    "runtime_verified": false,
+    "ctm": null,
+    "localized_name": "纸灯笼",
+    "textures": [
+      "quark:block/paper_lantern_inside",
+      "quark:block/paper_lantern_side",
+      "quark:block/paper_lantern_top_bottom"
+    ]
+  },
+  {
+    "code": "B1",
+    "title": "地下砖",
+    "id": "twilightforest:underbrick",
+    "use": "古回廊拱券与墙基",
+    "jar": "twilightforest-1.20.1-4.3.2508-universal.jar",
+    "blockstate_resource": "assets/twilightforest/blockstates/underbrick.json",
+    "preview_state": {},
+    "runtime_verified": false,
+    "ctm": null,
+    "localized_name": "地下砖",
+    "textures": [
+      "twilightforest:block/underbrick"
+    ]
+  },
+  {
+    "code": "B2",
+    "title": "生苔地下砖",
+    "id": "twilightforest:mossy_underbrick",
+    "use": "湿墙、柱脚和旧廊",
+    "jar": "twilightforest-1.20.1-4.3.2508-universal.jar",
+    "blockstate_resource": "assets/twilightforest/blockstates/mossy_underbrick.json",
+    "preview_state": {},
+    "runtime_verified": false,
+    "ctm": null,
+    "localized_name": "生苔地下砖",
+    "textures": [
+      "twilightforest:block/mossy_underbrick"
+    ]
+  },
+  {
+    "code": "B3",
+    "title": "裂纹地下砖",
+    "id": "twilightforest:cracked_underbrick",
+    "use": "局部老化和墙面变化",
+    "jar": "twilightforest-1.20.1-4.3.2508-universal.jar",
+    "blockstate_resource": "assets/twilightforest/blockstates/cracked_underbrick.json",
+    "preview_state": {},
+    "runtime_verified": false,
+    "ctm": null,
+    "localized_name": "裂纹地下砖",
+    "textures": [
+      "twilightforest:block/cracked_underbrick"
+    ]
+  },
+  {
+    "code": "B4",
+    "title": "螺纹石柱",
+    "id": "twilightforest:twisted_stone_pillar",
+    "use": "大厅、节点与仪式门柱",
+    "jar": "twilightforest-1.20.1-4.3.2508-universal.jar",
+    "blockstate_resource": "assets/twilightforest/blockstates/twisted_stone_pillar.json",
+    "preview_state": {
+      "axis": "y",
+      "east": "false",
+      "west": "false",
+      "up": "false",
+      "down": "false",
+      "north": "false",
+      "south": "false"
+    },
+    "runtime_verified": false,
+    "ctm": null,
+    "localized_name": "螺纹石柱",
+    "textures": [
+      "twilightforest:block/twisted_stone_cap_end",
+      "twilightforest:block/twisted_stone_cap_side",
+      "twilightforest:block/twisted_stone_pillar"
+    ]
+  },
+  {
+    "code": "B5",
+    "title": "錾制渊邃石砖",
+    "id": "undergarden:chiseled_depthrock_bricks",
+    "use": "古树根部的纹饰节点",
+    "jar": "The_Undergarden-1.20.1-0.8.14.jar",
+    "blockstate_resource": "assets/undergarden/blockstates/chiseled_depthrock_bricks.json",
+    "preview_state": {},
+    "runtime_verified": false,
+    "ctm": null,
+    "localized_name": "錾制渊邃石砖",
+    "textures": [
+      "undergarden:block/chiseled_depthrock_bricks"
+    ]
+  },
+  {
+    "code": "B6",
+    "title": "扼塞灯笼",
+    "id": "undergarden:cloggrum_lantern",
+    "use": "旧廊和样品间的吊灯",
+    "jar": "The_Undergarden-1.20.1-0.8.14.jar",
+    "blockstate_resource": "assets/undergarden/blockstates/cloggrum_lantern.json",
+    "preview_state": {
+      "face": "floor",
+      "facing": "north"
+    },
+    "runtime_verified": false,
+    "ctm": null,
+    "localized_name": "扼塞灯笼",
+    "textures": [
+      "undergarden:block/cloggrum_lantern"
+    ]
+  },
+  {
+    "code": "C1",
+    "title": "细管线纹饰块",
+    "id": "factory_blocks:small_pipes",
+    "use": "内墙管线带",
+    "jar": "factory_blocks-forge-1.4.0+mc1.20.1.jar",
+    "blockstate_resource": "assets/factory_blocks/blockstates/small_pipes.json",
+    "preview_state": {},
+    "runtime_verified": false,
+    "ctm": "athena:ctm",
+    "localized_name": null,
+    "textures": [
+      "factory_blocks:block/small_pipes"
+    ]
+  },
+  {
+    "code": "C2",
+    "title": "粗管线纹饰块",
+    "id": "factory_blocks:large_pipes",
+    "use": "采样间与主干管线",
+    "jar": "factory_blocks-forge-1.4.0+mc1.20.1.jar",
+    "blockstate_resource": "assets/factory_blocks/blockstates/large_pipes.json",
+    "preview_state": {},
+    "runtime_verified": false,
+    "ctm": "athena:ctm",
+    "localized_name": null,
+    "textures": [
+      "factory_blocks:block/large_pipes"
+    ]
+  },
+  {
+    "code": "C3",
+    "title": "通风纹饰块",
+    "id": "factory_blocks:vent",
+    "use": "设备柜和排风面板",
+    "jar": "factory_blocks-forge-1.4.0+mc1.20.1.jar",
+    "blockstate_resource": "assets/factory_blocks/blockstates/vent.json",
+    "preview_state": {},
+    "runtime_verified": false,
+    "ctm": "athena:ctm",
+    "localized_name": null,
+    "textures": [
+      "factory_blocks:block/vent"
+    ]
+  },
+  {
+    "code": "C4",
+    "title": "蓝色电路纹饰块",
+    "id": "factory_blocks:bcircuit",
+    "use": "树脂观测设备面板",
+    "jar": "factory_blocks-forge-1.4.0+mc1.20.1.jar",
+    "blockstate_resource": "assets/factory_blocks/blockstates/bcircuit.json",
+    "preview_state": {},
+    "runtime_verified": false,
+    "ctm": "athena:ctm",
+    "localized_name": null,
+    "textures": [
+      "factory_blocks:block/bcircuit"
+    ]
+  },
+  {
+    "code": "C5",
+    "title": "警示纹饰块",
+    "id": "factory_blocks:hazard",
+    "use": "气闸与实验区边界",
+    "jar": "factory_blocks-forge-1.4.0+mc1.20.1.jar",
+    "blockstate_resource": "assets/factory_blocks/blockstates/hazard.json",
+    "preview_state": {},
+    "runtime_verified": false,
+    "ctm": "athena:ctm",
+    "localized_name": null,
+    "textures": [
+      "factory_blocks:block/hazard"
+    ]
+  },
+  {
+    "code": "C6",
+    "title": "锈蚀板纹饰块",
+    "id": "factory_blocks:rust_plates",
+    "use": "内侧旧设备和局部锈斑",
+    "jar": "factory_blocks-forge-1.4.0+mc1.20.1.jar",
+    "blockstate_resource": "assets/factory_blocks/blockstates/rust_plates.json",
+    "preview_state": {},
+    "runtime_verified": false,
+    "ctm": "athena:ctm",
+    "localized_name": null,
+    "textures": [
+      "factory_blocks:block/rust_plates"
+    ]
+  },
+  {
+    "code": "C7",
+    "title": "格栅纹饰块",
+    "id": "factory_blocks:grate",
+    "use": "检修步道与地面盖板",
+    "jar": "factory_blocks-forge-1.4.0+mc1.20.1.jar",
+    "blockstate_resource": "assets/factory_blocks/blockstates/grate.json",
+    "preview_state": {},
+    "runtime_verified": false,
+    "ctm": "athena:ctm",
+    "localized_name": null,
+    "textures": [
+      "factory_blocks:block/grate"
+    ]
+  },
+  {
+    "code": "C8",
+    "title": "小型青色工业台灯",
+    "id": "ad_astra:small_cyan_industrial_lamp",
+    "use": "采样罐和观察台冷光",
+    "jar": "ad_astra-forge-1.20.1-1.15.20.jar",
+    "blockstate_resource": "assets/ad_astra/blockstates/small_cyan_industrial_lamp.json",
+    "preview_state": {
+      "face": "floor",
+      "facing": "north"
+    },
+    "runtime_verified": false,
+    "ctm": null,
+    "localized_name": "小型青色工业台灯",
+    "textures": [
+      "ad_astra:block/lamp/small_cyan_industrial_lamp"
+    ]
+  },
+  {
+    "code": "C9",
+    "title": "小型白色工业台灯",
+    "id": "ad_astra:small_white_industrial_lamp",
+    "use": "工作台和研究室照明",
+    "jar": "ad_astra-forge-1.20.1-1.15.20.jar",
+    "blockstate_resource": "assets/ad_astra/blockstates/small_white_industrial_lamp.json",
+    "preview_state": {
+      "face": "floor",
+      "facing": "north"
+    },
+    "runtime_verified": false,
+    "ctm": null,
+    "localized_name": "小型白色工业台灯",
+    "textures": [
+      "ad_astra:block/lamp/small_white_industrial_lamp"
+    ]
+  },
+  {
+    "code": "C10",
+    "title": "铁柱",
+    "id": "quark:iron_pillar",
+    "use": "铁板外壳的梁柱和门框",
+    "jar": "Quark-4.0-462.jar",
+    "blockstate_resource": "assets/quark/blockstates/iron_pillar.json",
+    "preview_state": {
+      "axis": "y"
+    },
+    "runtime_verified": false,
+    "ctm": null,
+    "localized_name": "铁柱",
+    "textures": [
+      "quark:block/iron_pillar",
+      "quark:block/iron_pillar_top"
+    ]
+  },
+  {
+    "code": "C11",
+    "title": "镶框玻璃",
+    "id": "quark:framed_glass",
+    "use": "舱室观察窗和室内隔窗",
+    "jar": "Quark-4.0-462.jar",
+    "blockstate_resource": "assets/quark/blockstates/framed_glass.json",
+    "preview_state": {},
+    "runtime_verified": false,
+    "ctm": null,
+    "localized_name": "镶框玻璃",
+    "textures": [
+      "quark:block/framed_glass"
+    ]
+  },
+  {
+    "code": "C12",
+    "title": "白色混凝土小瓷砖",
+    "id": "chisel:tiles_small/white_concrete",
+    "use": "研究室内部地面与台背",
+    "jar": "chisel-forge-2.0.0+mc1.20.1.jar",
+    "blockstate_resource": "assets/chisel/blockstates/tiles_small/white_concrete.json",
+    "preview_state": {},
+    "runtime_verified": false,
+    "ctm": null,
+    "localized_name": null,
+    "textures": [
+      "chisel:block/tiles_small/white_concrete"
+    ]
+  }
+]

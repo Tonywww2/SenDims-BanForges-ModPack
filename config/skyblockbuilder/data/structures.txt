@@ -294,6 +294,9 @@ nuclearcraft:wasteland_village
 nullscape:dragon_skeleton
 sdbf:ae_lab
 sdbf:apron_1
+sdbf:asteroid_belt/habitation_base
+sdbf:asteroid_belt/mining_base
+sdbf:asteroid_belt/research_base
 sdbf:broken_wither
 sdbf:illager_corsair
 sdbf:illager_galley
