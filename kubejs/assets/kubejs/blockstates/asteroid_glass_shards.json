@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "kubejs:block/asteroid_glass_shards",
+        "y": 0
+      },
+      {
+        "model": "kubejs:block/asteroid_glass_shards",
+        "y": 90
+      },
+      {
+        "model": "kubejs:block/asteroid_glass_shards",
+        "y": 180
+      },
+      {
+        "model": "kubejs:block/asteroid_glass_shards",
+        "y": 270
+      }
+    ]
+  }
+}

@@ -1,10 +1,18 @@
 # 深境二层 · 自然地物
 
+[性能优化实装与 A/B 结果（2026-10-09）](C:/Users/Tony/AppData/Roaming/PrismLauncher/instances/SenDimsBanForges/minecraft/docs/world_tree_ecology/optimization_2026-10-09.md)
+
+[载图性能测量与优化评估（2026-10-09）](C:/Users/Tony/AppData/Roaming/PrismLauncher/instances/SenDimsBanForges/minecraft/docs/world_tree_ecology/performance_2026-10-09.md)
+
+## 深海珊瑚礁（2026-10-09）
+
+新增低频、大片、不规则的深海珊瑚礁，自然地物共 16 类。[生成规则、预览与验证](C:/Users/Tony/AppData/Roaming/PrismLauncher/instances/SenDimsBanForges/minecraft/docs/world_tree_ecology/coral_reef.md)。
+
 ## 区域扩展与渐疏边缘（2026-10-05）
 
 区域型地物已扩大，并加入苔藓地毯等渐疏过渡带。当前范围、避让规则与最新预览以[区域扩展记录](C:/Users/Tony/AppData/Roaming/PrismLauncher/instances/SenDimsBanForges/minecraft/docs/world_tree_ecology/regions.md)为准；下方保留首版记录。
 
-维度 ID：`sdbf:deep_realm_level_2`。共 15 类，重启游戏后在新生成区块生效。
+维度 ID：`sdbf:deep_realm_level_2`。以下为原有 15 类地物记录；重启游戏后在新生成区块生效。
 
 ## 已实现地物
 

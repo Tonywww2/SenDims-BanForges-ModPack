@@ -133,3 +133,11 @@
 ## 区域扩展与渐疏边缘（2026-10-05）
 
 扩大 7 类区域型地物，加入核心到苔藓地毯/稀疏植物的连续边缘，海带高度与密度向外递减；采用区块方块索引及局部结构保护。新旧覆盖对照、15 类真实地物、地牢通路/水密及完整构建通过。JAR SHA-256：4a0ef322b12511cf99988523ef703fbaebe27ddd8cffd2f4e2f016e06f8dd9df。详情 docs/world_tree_ecology/regions.md。
+
+## 深海大片珊瑚礁（2026-10-09）
+
+在 `sdbf:deep_realm_level_2` 深水区加入少量不规则的大型珊瑚礁：礁丘、水道、五类活珊瑚、含水珊瑚扇与渐疏海草边缘。沿海床起伏铺展，避让既有结构外扩 12 格空间，并检查与沉木交叠后的邻水状态。
+
+独立 Forge 新世界样本约 58×61 格，跨 18 个区块；2,404 个活珊瑚方块/植株通过三轮原版更新。16 类地物实际生成、植物支撑、缓存与并发、结构避让及完整构建通过。原有 15 类地物方案在 49 格组逐方块一致；3,153 个既有数据文件哈希一致，JAR 仅改变自然地物类及构建清单。维度 ID 保持原值，重启后在新生成区块生效。
+
+[生成说明与真实区块模型预览](C:/Users/Tony/AppData/Roaming/PrismLauncher/instances/SenDimsBanForges/minecraft/docs/world_tree_ecology/coral_reef.md)。验证目录：`local/world_tree_work/verification/coral_reef/`；备份：`backups/world_tree_coral_reef_before/`。已安装 JAR SHA-256：`746f23afb1a90757a8511a043ecf715f900f65eb16ab0746c8b99f33a0c3d57e`。

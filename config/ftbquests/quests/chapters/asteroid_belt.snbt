@@ -313,6 +313,17 @@
 			x: 12.0d
 			y: 6.0d
 		}
+		{
+			dependencies: ["77DC6770CC08AEF6"]
+			id: "1AC714332AC4104E"
+			tasks: [{
+				id: "55DF3991AE588169"
+				item: "ad_astra:etrium_panel"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 12.0d
+		}
 	]
 	title: "[IX] 小行星带"
 }

@@ -192,6 +192,14 @@
 		}
 		{
 			dependencies: ["5BDE6A80B0A1AB53"]
+			description: [
+				"与星空共振。"
+				""
+				"使用&b宝石加工剂&r，让&b宝石&r显露出真实的样貌。"
+				""
+				"使用&b纸&r，让&b真实的宝石&r成为你的助力。"
+			]
+			hide_dependent_lines: true
 			id: "0DCACD0AACE10A1E"
 			shape: "pentagon"
 			size: 1.5d
@@ -244,6 +252,7 @@
 		}
 		{
 			dependencies: ["5CF439D1069AFCE1"]
+			icon: "elder_bosses:root_relief_stone"
 			id: "1E6A0DB3AB499680"
 			tasks: [{
 				id: "3E3026574D0FFAE4"
@@ -348,6 +357,50 @@
 			title: "占位：天顶剑"
 			x: 35.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["0DCACD0AACE10A1E"]
+			id: "08389A1193BD45D2"
+			tasks: [{
+				id: "62B1A4748F493F73"
+				item: "kubejs:astral_gem_cleanser"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["0DCACD0AACE10A1E"]
+			id: "69B08D8BE5A52FB6"
+			tasks: [{
+				id: "1B88F6ACA02F2036"
+				item: "kubejs:astral_gem_shaper"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["0DCACD0AACE10A1E"]
+			id: "6658B9E76AEE69D7"
+			tasks: [{
+				id: "50BEE0742E854B4D"
+				item: "kubejs:astral_gem_purifier"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["0DCACD0AACE10A1E"]
+			id: "1FD4E87A2B6B7808"
+			tasks: [{
+				id: "364D68F9566BC1E2"
+				item: "kubejs:astral_gem_polisher"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -9.0d
 		}
 	]
 	title: "[XIII] &e深境：第四层"
