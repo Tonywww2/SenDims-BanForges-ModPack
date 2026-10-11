@@ -28,14 +28,15 @@
   ],
   "name": "last_smith:uma_tachyon",
   "properties": {
-    "attack_base": 17.0,
+    "attack_base": 107.0,
     "max_damage": 100,
     "slash_art": "slashblade:void_slash",
     "special_effects": [
       "last_smith:extreme_sharpness",
       "last_smith:bewitched_power",
       "last_smith:extra_smite",
-      "blades_derby:uma_special"
+      "blades_derby:uma_special",
+      "slashblade:wither_edge"
     ],
     "sword_type": [
       "bewitched"

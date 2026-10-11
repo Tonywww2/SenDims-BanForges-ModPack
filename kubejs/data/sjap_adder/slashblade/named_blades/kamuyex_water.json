@@ -22,7 +22,9 @@
         "slash_art": "sjap_adder:terrifyingwaves",
         "special_effects":
         [
-            "sjap_adder:terrifyingwaves"
+            "sjap_adder:terrifyingwaves",
+            "slashblade_addon:burst_drive",
+            "slashblade:aeonia"
         ],
         "sword_type":
         [

@@ -417,7 +417,8 @@ ServerEvents.recipes(event => {
 
     event.recipes.slashblade.proudsoul_shapeless_recipe('slashblade:proudsoul_trapezohedron', [
         '6x slashblade:proudsoul_crystal',
-        "deeprealm_4th:star_slurry"
+        "deeprealm_4th:star_slurry",
+        "deeprealm_4th:star_slurry_crystal"
     ]).id("sdbf:proudsoul_trapezohedron")
 
     // 高效配方
@@ -447,7 +448,8 @@ ServerEvents.recipes(event => {
 
     event.recipes.thermal.smelter('slashblade:proudsoul_trapezohedron', [
         '5x slashblade:proudsoul_crystal',
-        "deeprealm_4th:star_slurry"
+        "deeprealm_4th:star_slurry",
+        "deeprealm_4th:star_slurry_crystal"
     ])
         .energy(32768)
         .id("sdbf:proudsoul_trapezohedron_acc")

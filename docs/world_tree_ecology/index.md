@@ -1,5 +1,7 @@
 # 深境二层 · 自然地物
 
+最新更新：[2026-10-10 珊瑚礁海泡菜与原版珊瑚形态](C:/Users/Tony/AppData/Roaming/PrismLauncher/instances/SenDimsBanForges/minecraft/docs/world_tree_ecology/coral_enrichment_2026-10-10.md)。
+
 [性能优化实装与 A/B 结果（2026-10-09）](C:/Users/Tony/AppData/Roaming/PrismLauncher/instances/SenDimsBanForges/minecraft/docs/world_tree_ecology/optimization_2026-10-09.md)
 
 [载图性能测量与优化评估（2026-10-09）](C:/Users/Tony/AppData/Roaming/PrismLauncher/instances/SenDimsBanForges/minecraft/docs/world_tree_ecology/performance_2026-10-09.md)

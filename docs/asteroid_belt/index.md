@@ -61,18 +61,18 @@
 
 ## 专用像素宇宙天空
 
-小行星带使用专门生成的冷蓝、青灰、淡紫色星云与像素星海背景。图像由内置 `image_gen` 生成，原始尺寸 **1774 × 887**；原图直接作为环绕球面的经纬贴图使用，无平滑过滤、无 mipmap。环绕接缝采用暗色过渡，两极渐变为固定的稀疏方形星点，避免经纬贴图的极点拉伸。没有额外绘制近景小行星、太阳、月亮或建筑，近景均来自实际世界。
+小行星带使用专门生成的冷蓝、青灰、淡紫色星云与像素星海背景。2026-10-10 重新绘制为四张 **887 × 1774** 的独立原生分区，环绕有效分辨率为 **3548 × 1774**，宽高均为首版的两倍，总像素数为四倍。四张原图均由内置 `image_gen` 生成，直接覆盖各自 90° 经度；没有放大旧图。新版采用更明确的阶梯轮廓、成片色阶与稀疏星点。使用最近邻采样，无平滑过滤、无 mipmap。各分区以安静的黑色边缘衔接，两极渐变为固定的稀疏方形星点，避免经纬贴图的极点拉伸。近景小行星均来自实际世界。
 
-- 图片：[`asteroid_cosmos.png`](../../kubejs/assets/slashblade_sendims/textures/environment/asteroid_cosmos.png)
+- 原始分区：[0](../../kubejs/assets/slashblade_sendims/textures/environment/asteroid_cosmos_0.png)、[1](../../kubejs/assets/slashblade_sendims/textures/environment/asteroid_cosmos_1.png)、[2](../../kubejs/assets/slashblade_sendims/textures/environment/asteroid_cosmos_2.png)、[3](../../kubejs/assets/slashblade_sendims/textures/environment/asteroid_cosmos_3.png)
 - 实机预览：[`asteroid_sky_gameplay.png`](previews/asteroid_sky_gameplay.png)
-- 完整生成提示词：[`imagegen_prompt.txt`](../../local/asteroid_sky_work/imagegen_prompt.txt)
-- 图像来源与校验信息：`local/asteroid_sky_work/imagegen_record.json`
+- 完整生成提示词：[`sector_prompts.txt`](../../local/asteroid_sky_work/highres/sector_prompts.txt)
+- 图像来源与校验信息：`local/asteroid_sky_work/highres/imagegen_record.json`
 - 客户端效果：`slashblade_sendims:asteroid_belt`，仅用于 `sdbf:asteroid_belt`。轨道维度保持原配置。
-- 渲染使用固定球面和极区星点两份顶点缓冲，每帧两次绘制；不逐帧生成星星或图片，不参与区块生成。
+- 渲染使用四份球面分区缓冲和一份极区星点缓冲，每帧五次绘制；球面总顶点数与首版相同。纹理像素数为原来的四倍，RGBA 纹理约 24 MiB；不逐帧生成星星或图片，不参与区块生成。
 - 天空贴图的渲染亮度系数为 **0.30**，极区星点为 **0.55**，让星云明显暗于前景岩体；此调整只作用于天空绘制，地形照明参数沿用原值。
 - 保留此前的维度照明参数；既有区块同样显示新天空。安装后完整重启游戏即可。
 
-原生客户端检查覆盖四个水平方向、向上、向下及环绕接缝两侧，截图与报告位于 `local/asteroid_sky_work/verification`。图片与效果单独备份在 `backups/asteroid_sky_before`。
+原生客户端检查覆盖四个水平方向、向上、向下及四处环绕接缝两侧，共 14 个视角；截图与报告位于 `local/asteroid_sky_work/highres/verification`。本次替换前的图片、渲染类与预览备份在 `backups/asteroid_sky_highres_before`。首版 `asteroid_cosmos.png` 保留作来源记录，运行时使用四个带序号的新分区。
 
 ## 废弃基地
 

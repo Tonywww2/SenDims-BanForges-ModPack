@@ -1,5 +1,7 @@
 # 深境二层 · 深海珊瑚礁
 
+后续更新：[2026-10-10 海泡菜与原版珊瑚形态](C:/Users/Tony/AppData/Roaming/PrismLauncher/instances/SenDimsBanForges/minecraft/docs/world_tree_ecology/coral_enrichment_2026-10-10.md)。下文保留首版验证记录。
+
 日期：2026-10-09。维度：`sdbf:deep_realm_level_2`。重启游戏后，在新生成的深水区出现。
 
 ## 生成设计

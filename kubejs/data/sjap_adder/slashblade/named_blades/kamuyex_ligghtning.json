@@ -18,7 +18,9 @@
         "slash_art": "sjap_adder:lightinggwaves",
         "special_effects":
         [
-            "sjap_adder:nightingales"
+            "sjap_adder:nightingales",
+            "last_smith:bewitched_power",
+            "last_smith:extra_sharpness"
         ],
         "sword_type":
         [
