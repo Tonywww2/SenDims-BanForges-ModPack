@@ -1,0 +1,19 @@
+{
+  "type": "pneumaticcraft:fluid_mixer",
+  "input1": {
+    "type": "pneumaticcraft:fluid",
+    "fluid": "kubejs:omni_pneumatic_06_fluid",
+    "amount": 1000
+  },
+  "input2": {
+    "type": "pneumaticcraft:fluid",
+    "fluid": "minecraft:water",
+    "amount": 250
+  },
+  "fluid_output": {
+    "fluid": "kubejs:omni_pneumatic_07_fluid",
+    "amount": 1000
+  },
+  "pressure": 3.0,
+  "time": 200
+}

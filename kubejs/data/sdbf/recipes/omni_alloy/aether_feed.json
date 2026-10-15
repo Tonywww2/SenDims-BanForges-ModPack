@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "titan_moon:cryo_alloy_ingot"
+    },
+    {
+      "item": "titan_moon:cryo_alloy_ingot"
+    },
+    {
+      "item": "deeprealm_4th:star_slurry_blank"
+    },
+    {
+      "item": "deeprealm_4th:star_slurry_crystal"
+    }
+  ],
+  "result": {
+    "item": "kubejs:omni_aether_feed",
+    "count": 1
+  }
+}

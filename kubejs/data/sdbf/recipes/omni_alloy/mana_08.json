@@ -1,0 +1,16 @@
+{
+  "type": "botania:terra_plate",
+  "ingredients": [
+    {
+      "item": "kubejs:omni_mana_07"
+    },
+    {
+      "item": "botania:mana_diamond"
+    }
+  ],
+  "result": {
+    "item": "kubejs:omni_mana_08",
+    "count": 1
+  },
+  "mana": 500000
+}

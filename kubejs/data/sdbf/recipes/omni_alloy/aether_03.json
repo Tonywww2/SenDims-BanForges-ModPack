@@ -1,0 +1,9 @@
+{
+  "type": "aether:ambrosium_enchanting",
+  "ingredient": {
+    "block": "kubejs:omni_aether_03_precursor"
+  },
+  "result": {
+    "block": "kubejs:omni_aether_03_block"
+  }
+}

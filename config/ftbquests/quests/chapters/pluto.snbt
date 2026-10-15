@@ -14,6 +14,7 @@
 			dependencies: ["3A267848CC75F232"]
 			hide_dependent_lines: true
 			id: "4D7803023F99E6FC"
+			quest_enhance_disable_scroll_paging: false
 			size: 2.0d
 			tasks: [{
 				id: "2514E740DB4056BC"
@@ -26,6 +27,7 @@
 		{
 			dependencies: ["4D7803023F99E6FC"]
 			id: "6C2B8E494EB829D2"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "65F0157DA4C648CA"
 				item: "kubejs:trinity_alloy_ingot"
@@ -37,6 +39,7 @@
 		{
 			dependencies: ["4D7803023F99E6FC"]
 			id: "571763357AAACBEB"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "356AA7E29CF79F21"
 				item: "kubejs:virtual_gold_ingot"
@@ -51,6 +54,7 @@
 				"295C7AEDBFF7EE12"
 			]
 			id: "559784C97D416A5E"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			tasks: [{
 				id: "71BFE97AB9179240"
@@ -75,6 +79,7 @@
 				"5A982FFF19EF5289"
 			]
 			id: "13B7F0FAFFABDC4D"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			tasks: [{
 				id: "015B4391F67689C7"
@@ -99,6 +104,7 @@
 				"455A8F26E29E7DB0"
 			]
 			id: "1D902621E0CED2EF"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			tasks: [{
 				id: "7FB321C6D5467BC6"
@@ -120,6 +126,7 @@
 		{
 			dependencies: ["2A648235D6DA1509"]
 			id: "5119007A0128A974"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			tasks: [{
 				id: "143BB6F5111316AE"

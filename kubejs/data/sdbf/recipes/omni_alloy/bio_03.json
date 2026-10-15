@@ -1,0 +1,21 @@
+{
+  "type": "tofucraft:tofu_pot_shapeless",
+  "category": "misc",
+  "cook_time": 200,
+  "exp": 0.1,
+  "fluid": {
+    "fluid": "minecraft:water"
+  },
+  "ingredients": [
+    {
+      "item": "tofucraft:blocktofukinu"
+    },
+    {
+      "item": "minecraft:kelp"
+    }
+  ],
+  "result": {
+    "item": "kubejs:omni_bio_03",
+    "count": 1
+  }
+}

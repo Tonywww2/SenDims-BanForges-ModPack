@@ -1,0 +1,36 @@
+{
+  "type": "deeprealm_4th:combination_forging",
+  "result": {
+    "item": "kubejs:omni_alloy_ingot",
+    "count": 1
+  },
+  "ingredients": [
+    {
+      "stack": {
+        "item": "kubejs:omni_billet",
+        "count": 1
+      }
+    },
+    {
+      "stack": {
+        "item": "elder_bosses:rune_fragment",
+        "count": 2
+      }
+    },
+    {
+      "stack": {
+        "item": "deeprealm_4th:star_slurry_blank",
+        "count": 1
+      }
+    },
+    {
+      "stack": {
+        "item": "deeprealm_4th:star_slurry_crystal",
+        "count": 1
+      }
+    }
+  ],
+  "clicks": 12,
+  "cooldown": 4,
+  "levels": 50
+}

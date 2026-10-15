@@ -31,68 +31,108 @@
 			protected_inventory_access = true
 			#If true, protected blocks won't be destroyed during any explosion
 			protected_blocks_ignore_explosions = false
+			#Decides the player permission level required to modify or break protected ZPM Holders
+			#Range: 0 ~ 4
+			protected_zpm_holder_permissions = 0
+			#Decides the player permission level required to modify or break protected ZPM Plugs
+			#Range: 0 ~ 4
+			protected_zpm_plug_permissions = 0
+			#Decides the player permission level required to modify or break protected ZPM Ports
+			#Range: 0 ~ 4
+			protected_zpm_port_permissions = 0
 
 	["Stargate Journey Common Config"."ZPM Config"]
 
 		["Stargate Journey Common Config"."ZPM Config".server]
-			#The energy that can be extracted from a single level of entropy
-			#Range: 1 ~ 9223372036854775807
-			zpm_energy_per_level_of_entropy = 100000000000
 			#Maximum amount of energy that can be transferred from the ZPM Hub in one tick
 			#Range: 1 ~ 9223372036854775807
 			zpm_hub_max_transfer = 100000000000
-			#If true, it will be possible to power Stargates (and by extension Interfaces) with energy from ZPMs
+			#If true, it will be possible to power Stargates (and by extension Interfaces and DHDs) with energy from ZPMs
 			stargates_use_zero_point_energy = true
 			#If true, it will be possible to power Stargate Journey technology with energy from ZPMs
 			tech_uses_zero_point_energy = true
 			#If true, it will be possible to power technology and cables from other mods with energy from ZPMs
 			other_mods_use_zero_point_energy = true
+			#If true, the ZPM Item will expose an Energy Capability that other mods can use to directly drain energy from it
+			zpm_has_energy_capability = false
+			#The maximum amount of entropy the ZPM can reach before being depleted
+			#Range: > 1
+			zpm_max_entropy = 1000
+			#The energy that can be extracted from a single level of entropy
+			#Range: 1 ~ 9223372036854775807
+			zpm_energy_per_entropy_level = 100000000000
+			#Maximum amount of energy that can be transferred from the ZPM Plug in one tick
+			#Range: 1 ~ 9223372036854775807
+			zpm_plug_max_transfer = 1000000000
+			#Maximum amount of energy that can be transferred from the ZPM Port in one tick
+			#Range: 1 ~ 9223372036854775807
+			zpm_port_max_transfer = 100000000000
+			#If true, DHDs will be able to hold ZPMs and extract energy from them in order to power Stargates
+			dhd_holds_zpm = true
 
 	["Stargate Journey Common Config"."DHD Config"]
 
 		["Stargate Journey Common Config"."DHD Config".server]
-			#The amount by which the Energy Crystal increases the Energy Target
-			#Range: 1 ~ 9223372036854775807
-			energy_crystal_energy_target_increase = 50000
-			#The amount by which the AdvancedEnergy Crystal increases the Energy Target
-			#Range: 1 ~ 9223372036854775807
-			advanced_energy_crystal_energy_target_increase = 100000
-			#Capacity of the energy buffer inside the DHD
+			#Capacity of the energy buffer inside the Milky Way DHD
 			#Range: 0 ~ 9223372036854775807
 			milky_way_dhd_energy_buffer_capacity = 300000
-			#Maximum amount of energy that can be transferred to the DHD in one tick
+			#Maximum amount of energy that can be transferred to the Milky Way DHD in one tick
 			#Range: 0 ~ 9223372036854775807
 			milky_way_dhd_max_energy_receive = 100000
-			#Maximum amount of energy that can be transferred from the DHD in one tick
+			#Maximum amount of energy that can be transferred from the Milky Way DHD in one tick
 			#Range: 0 ~ 9223372036854775807
 			milky_way_dhd_max_energy_extract = 10000000
-			#Energy depleted by pressing a button on the DHD
+			#Energy depleted by pressing a button on the Milky Way DHD
 			#Range: 0 ~ 9223372036854775807
 			milky_way_dhd_button_press_energy_cost = 5000
-			#Capacity of the energy buffer inside the DHD
+			#Capacity of the energy buffer inside the Pegasus DHD
 			#Range: 0 ~ 9223372036854775807
 			pegasus_dhd_energy_buffer_capacity = 500000
-			#Maximum amount of energy that can be transferred to the DHD in one tick
+			#Maximum amount of energy that can be transferred to the Pegasus DHD in one tick
 			#Range: 0 ~ 9223372036854775807
 			pegasus_dhd_max_energy_receive = 150000
-			#Maximum amount of energy that can be transferred from the DHD in one tick
+			#Maximum amount of energy that can be transferred from the Pegasus DHD in one tick
 			#Range: 0 ~ 9223372036854775807
 			pegasus_dhd_max_energy_extract = 100000000
-			#Energy depleted by pressing a button on the DHD
+			#Energy depleted by pressing a button on the Pegasus DHD
 			#Range: 0 ~ 9223372036854775807
 			pegasus_dhd_button_press_energy_cost = 5000
-			#Capacity of the energy buffer inside the DHD
+			#Capacity of the energy buffer inside the Classic DHD
 			#Range: 0 ~ 9223372036854775807
 			classic_dhd_energy_buffer_capacity = 300000
-			#Maximum amount of energy that can be transferred to the DHD in one tick
+			#Maximum amount of energy that can be transferred to the DClassic HD in one tick
 			#Range: 0 ~ 9223372036854775807
 			classic_dhd_max_energy_receive = 100000
-			#Maximum amount of energy that can be transferred from the DHD in one tick
+			#Maximum amount of energy that can be transferred from the Classic DHD in one tick
 			#Range: 0 ~ 9223372036854775807
 			classic_dhd_max_energy_extract = 5000000
-			#Energy depleted by pressing a button on the DHD
+			#Energy depleted by pressing a button on the Classic DHD
 			#Range: 0 ~ 9223372036854775807
 			classic_dhd_button_press_energy_cost = 5000
+			#Capacity of the energy buffer inside the Universe DHD
+			#Range: 0 ~ 9223372036854775807
+			universe_dhd_energy_buffer_capacity = 300000
+			#Maximum amount of energy that can be transferred to the Universe DHD in one tick
+			#Range: 0 ~ 9223372036854775807
+			universe_dhd_max_energy_receive = 100000
+			#Maximum amount of energy that can be transferred from the Universe DHD in one tick
+			#Range: 0 ~ 9223372036854775807
+			universe_dhd_max_energy_extract = 10000000
+			#Energy depleted by pressing a button on the Universe DHD
+			#Range: 0 ~ 9223372036854775807
+			universe_dhd_button_press_energy_cost = 5000
+			#Capacity of the energy buffer inside the Andromeda DHD
+			#Range: 0 ~ 9223372036854775807
+			andromeda_dhd_energy_buffer_capacity = 300000
+			#Maximum amount of energy that can be transferred to the Andromeda DHD in one tick
+			#Range: 0 ~ 9223372036854775807
+			andromeda_dhd_max_energy_receive = 100000
+			#Maximum amount of energy that can be transferred from the Andromeda DHD in one tick
+			#Range: 0 ~ 9223372036854775807
+			andromeda_dhd_max_energy_extract = 10000000
+			#Energy depleted by pressing a button on the Andromeda DHD
+			#Range: 0 ~ 9223372036854775807
+			andromeda_dhd_button_press_energy_cost = 5000
 
 	["Stargate Journey Common Config"."Interface Config"]
 
@@ -218,6 +258,12 @@
 			#The maximum amount of energy the Stargate can receive at once
 			#Range: 0 ~ 9223372036854775807
 			stargate_energy_max_receive = 100000000000000000
+			#FAST - Incoming Chevrons take 4 Ticks to lock; MEDIUM - Incoming Chevrons take 8 Ticks to lock; SLOW - Incoming Chevrons take 12 Ticks to lock
+			#Allowed Values: SLOW, MEDIUM, FAST
+			andromeda_chevron_lock_speed = "MEDIUM"
+			#The minimum amount of energy the Stargate needs to have stored for its side of the connection to be considered stable (this type of unstable wormhole is purely a visual indicator of low power)
+			#Range: 0 ~ 9223372036854775807
+			min_stable_wormhole_energy = 10000
 
 	["Stargate Journey Common Config"."Iris Config"]
 
@@ -364,12 +410,14 @@
 			randomize_addresses = true
 			#Stargate Network will generate random Solar System for each dimension not registered through a datapack
 			generate_random_solar_systems = true
-			#Stargate Network will randomize addresses based on the world seed
+			#If true, Stargate Network will randomize addresses based on the world seed, otherwise they'll be based on the hash of the Dimension ID
 			random_addresses_from_seed = true
 			#Stargates Network will prioritize Primary Stargates
 			primary_stargate = false
-			#Stargates Network will not consider DHDs when choosing preferred Stargate
+			#Stargates Network will not consider DHDs when choosing a preferred Stargate
 			disable_dhd_preference = false
+			#Stargates Network will not consider the generation of a Stargate when choosing a preferred Stargate
+			disable_stargate_generation_preference = false
 
 	["Stargate Journey Common Config"."Generation Config"]
 
@@ -524,10 +572,10 @@
 			#The amount of energy an Advanced Energy Crystal can hold
 			#Range: 1 ~ 9223372036854775807
 			advanced_energy_crystal_capacity = 2000000
-			#The amount of energy that can be transfered into and out of an Energy Crystal per tick
+			#The amount of energy that can be transferred into and out of an Energy Crystal per tick
 			#Range: 1 ~ 9223372036854775807
 			energy_crystal_max_transfer = 100000
-			#The amount of energy that can be transfered into and out of an Advanced Energy Crystal per tick
+			#The amount of energy that can be transferred into and out of an Advanced Energy Crystal per tick
 			#Range: 1 ~ 9223372036854775807
 			advanced_energy_crystal_max_transfer = 1000000
 			#The amount of energy a Transfer Crystal can transfer per tick
@@ -537,11 +585,17 @@
 			#Range: 1 ~ 9223372036854775807
 			advanced_transfer_crystal_max_transfer = 5000
 			#The memory capacity of the Memory Crystal
-			#Range: 1 ~ 1000
+			#Range: 1 ~ 100
 			memory_crystal_capacity = 10
 			#The memory capacity of the Advanced Memory Crystal
-			#Range: 1 ~ 1000
+			#Range: 1 ~ 100
 			advanced_memory_crystal_capacity = 50
+			#The amount by which the Energy Crystal increases the Energy Target
+			#Range: 1 ~ 9223372036854775807
+			energy_crystal_energy_target_increase = 50000
+			#The amount by which the AdvancedEnergy Crystal increases the Energy Target
+			#Range: 1 ~ 9223372036854775807
+			advanced_energy_crystal_energy_target_increase = 100000
 
 	["Stargate Journey Common Config"."Cable Config"]
 
@@ -576,7 +630,7 @@
 	["Stargate Journey Common Config"."Genetic Config"]
 
 		["Stargate Journey Common Config"."Genetic Config".server]
-			#A list of Player names who will receive the Ancient Gene when they join the world for the first time
+			#A list of Player names who will receive the Ancient Gene when they join the world for the first time (By default contains mod creator + Dpeople who helped with the mod)
 			ancient_players = ["Dev", "Woldericz_junior", "cookta2012", "mistersecret312", "_MaGistR____", "Redangel121"]
 			#A list of Player names who will inherit the Ancient Gene when they join the world for the first time
 			inherited_ancient_gene_players = []

@@ -32,6 +32,7 @@
 			hide_dependent_lines: true
 			icon: "deeprealm_4th:star_source"
 			id: "4239AD35803375DB"
+			quest_enhance_disable_scroll_paging: false
 			size: 2.0d
 			tasks: [{
 				dimension: "deeprealm_4th:fourth_layer"
@@ -51,6 +52,7 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "4E53C1AEF2A26E2D"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "0F11D5FE79F624AC"
 				item: "kubejs:epsilon_dust"
@@ -62,6 +64,7 @@
 		{
 			dependencies: ["5BDE6A80B0A1AB53"]
 			id: "5CF439D1069AFCE1"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "5F639F4C279EBF6F"
 				item: "kubejs:rainbowshift_entropy"
@@ -77,6 +80,7 @@
 				"295C7AEDBFF7EE12"
 			]
 			id: "4ABDF91E79EC7A9C"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			tasks: [{
 				id: "09E35D7986026932"
@@ -102,6 +106,7 @@
 				"63BCA9C495EBC8D8"
 			]
 			id: "0DFD1BC3ED983292"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			tasks: [{
 				id: "23B4BCEC4F7293EE"
@@ -127,6 +132,7 @@
 				"5A982FFF19EF5289"
 			]
 			id: "06498A02440A4B1A"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			tasks: [{
 				id: "4B70A0BA7774768E"
@@ -153,6 +159,7 @@
 				"17E4F11F431B104E"
 			]
 			id: "3DEACEFA579940A1"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			tasks: [{
 				id: "0B82E990F81427AA"
@@ -174,6 +181,7 @@
 		{
 			dependencies: ["4239AD35803375DB"]
 			id: "5BDE6A80B0A1AB53"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "30CF91E9CED99ED8"
 				item: "deeprealm_4th:star_slurry"
@@ -185,6 +193,7 @@
 		{
 			dependencies: ["4239AD35803375DB"]
 			id: "210D46E8F6BC2C36"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "306D6A460EA35418"
 				item: "deeprealm_4th:star_slurry_crystal"
@@ -204,6 +213,7 @@
 			]
 			hide_dependent_lines: true
 			id: "0DCACD0AACE10A1E"
+			quest_enhance_disable_scroll_paging: false
 			shape: "pentagon"
 			size: 1.5d
 			tasks: [{
@@ -220,6 +230,7 @@
 				"17E4F11F431B104E"
 			]
 			id: "07C0937F6FDE318B"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "5E01DD3061BF4954"
 				item: "kubejs:astral_rune"
@@ -234,6 +245,7 @@
 				"17E4F11F431B104E"
 			]
 			id: "5DAF8DD2570465F3"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "0CEF7BE2AB48E8AF"
 				item: "kubejs:astral_frame"
@@ -245,6 +257,7 @@
 		{
 			dependencies: ["5CF439D1069AFCE1"]
 			id: "03C8BC7ED8A17482"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "68CAD3EB6E2F717C"
 				item: "elder_bosses:rune_fragment"
@@ -257,6 +270,7 @@
 			dependencies: ["5CF439D1069AFCE1"]
 			icon: "elder_bosses:root_relief_stone"
 			id: "1E6A0DB3AB499680"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "3E3026574D0FFAE4"
 				structure: "elder_bosses:promised_consort_arena"
@@ -273,6 +287,7 @@
 			]
 			icon: "elder_bosses:god_and_lord_remembrance"
 			id: "661386AB665E5CE7"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "0BC84A6366FCF434"
 				item: "elder_bosses:god_and_lord_remembrance"
@@ -284,6 +299,7 @@
 		{
 			dependencies: ["661386AB665E5CE7"]
 			id: "17E4F11F431B104E"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "47804FA05CEBA8E4"
 				item: "elder_bosses:gate_fragment"
@@ -295,6 +311,7 @@
 		{
 			dependencies: ["0DCACD0AACE10A1E"]
 			id: "1526F56A7A280655"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "45324E77B62B898B"
 				item: "kubejs:astral_gem_agent_low"
@@ -306,6 +323,7 @@
 		{
 			dependencies: ["0DCACD0AACE10A1E"]
 			id: "77679F1B43EFB2F9"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "7AD11A74544DE7ED"
 				item: "kubejs:astral_gem_agent_mid"
@@ -317,6 +335,7 @@
 		{
 			dependencies: ["0DCACD0AACE10A1E"]
 			id: "6386A7EF0DE1F1A7"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "344EA9E7905E54A3"
 				item: "kubejs:astral_gem_agent_high"
@@ -328,6 +347,7 @@
 		{
 			dependencies: ["0DCACD0AACE10A1E"]
 			id: "02F35922C2CF4A08"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "3D8420D9640460F7"
 				item: "kubejs:astral_gem_badge"
@@ -339,6 +359,7 @@
 		{
 			dependencies: ["17E4F11F431B104E"]
 			id: "2FC83B050CF46F10"
+			quest_enhance_disable_scroll_paging: false
 			size: 2.0d
 			tasks: [{
 				id: "444B55999ABC70B7"
@@ -352,6 +373,7 @@
 		{
 			dependencies: ["2FC83B050CF46F10"]
 			id: "3AD23C2F2402F955"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "236684473714AAB4"
 				item: "minecraft:oak_log"
@@ -364,6 +386,7 @@
 		{
 			dependencies: ["0DCACD0AACE10A1E"]
 			id: "08389A1193BD45D2"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "62B1A4748F493F73"
 				item: "kubejs:astral_gem_cleanser"
@@ -375,6 +398,7 @@
 		{
 			dependencies: ["0DCACD0AACE10A1E"]
 			id: "69B08D8BE5A52FB6"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "1B88F6ACA02F2036"
 				item: "kubejs:astral_gem_shaper"
@@ -386,6 +410,7 @@
 		{
 			dependencies: ["0DCACD0AACE10A1E"]
 			id: "6658B9E76AEE69D7"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "50BEE0742E854B4D"
 				item: "kubejs:astral_gem_purifier"
@@ -397,6 +422,7 @@
 		{
 			dependencies: ["0DCACD0AACE10A1E"]
 			id: "1FD4E87A2B6B7808"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "364D68F9566BC1E2"
 				item: "kubejs:astral_gem_polisher"
@@ -411,6 +437,7 @@
 				"441CCFBB202C3E2B"
 			]
 			id: "78C0F2063D13D84F"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			tasks: [{
 				id: "33105DFC27D4C7E8"

@@ -1,0 +1,16 @@
+{
+  "type": "botania:runic_altar",
+  "ingredients": [
+    {
+      "item": "kubejs:omni_mana_06"
+    },
+    {
+      "item": "botania:mana_diamond"
+    }
+  ],
+  "output": {
+    "item": "kubejs:omni_mana_07",
+    "count": 1
+  },
+  "mana": 20000
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AB ",
+    "   ",
+    "   "
+  ],
+  "key": {
+    "A": {
+      "item": "kubejs:omni_pneumatic_assembly_1"
+    },
+    "B": {
+      "item": "kubejs:omni_pneumatic_08"
+    }
+  },
+  "result": {
+    "item": "kubejs:omni_pneumatic_assembly_2",
+    "count": 1
+  }
+}

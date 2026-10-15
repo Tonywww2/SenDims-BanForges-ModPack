@@ -3,4 +3,7 @@
 ForgeEnergy2Durability = 320
 #不附加电力的物品id
 NotEnergyItems = []
+#每次充放电的速率上限
+#default : 20000
+MaxReceive = 20000
 

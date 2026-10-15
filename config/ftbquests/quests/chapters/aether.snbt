@@ -48,6 +48,7 @@
 			hide_dependent_lines: true
 			hide_until_deps_visible: true
 			id: "0F8DC1AEBBC762C1"
+			quest_enhance_disable_scroll_paging: false
 			size: 2.0d
 			tasks: [{
 				dimension: "aether:the_aether"
@@ -64,6 +65,7 @@
 			description: ["速沙+空地图可以制作青铜地牢的结构羽毛笔。"]
 			hide_until_deps_complete: true
 			id: "4B49B929B1C14728"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "31EABB217AC899F0"
 				item: {
@@ -83,6 +85,7 @@
 			dependencies: ["0F8DC1AEBBC762C1"]
 			description: ["圣石+空地图可以制作白银地牢的结构羽毛笔。"]
 			id: "0B8FAEFD583DAAA2"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "1EAD366EF8DDB1D2"
 				item: {
@@ -102,6 +105,7 @@
 			dependencies: ["0F8DC1AEBBC762C1"]
 			description: ["神能晶片+空地图可以制作黄金地牢的结构羽毛笔。"]
 			id: "123278FEAC1E9548"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "708EBAF711E31C49"
 				item: "aether:ambrosium_shard"
@@ -117,6 +121,7 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "7CBB12CD9FDCA6A4"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "1B87D42F6942C457"
 				structure: "aether:bronze_dungeon"
@@ -133,6 +138,7 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "48E30F8BC43E9AD4"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "1369CCA3A62484BF"
 				structure: "aether:silver_dungeon"
@@ -149,6 +155,7 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "6B7C4E19A6FD6939"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "3B5BCC1BC163A6CD"
 				structure: "aether:gold_dungeon"
@@ -165,6 +172,7 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "0687CEFE5099B94C"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "16349B9A6DED9597"
 				structure: "lost_aether_content:platinum_dungeon"
@@ -190,6 +198,7 @@
 			hide_until_deps_complete: true
 			icon: "aether_redux:golden_swet_ball"
 			id: "0D2277AA594698BF"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			tasks: [
 				{
@@ -221,6 +230,7 @@
 			dependencies: ["0F8DC1AEBBC762C1"]
 			description: ["金琥珀+空地图可以制作黄铜地牢的结构羽毛笔。"]
 			id: "57A7A142E6DD90E7"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "604EC66174389584"
 				item: {
@@ -243,6 +253,7 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "614A7F7B332E03A7"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "65097B60899AFDE4"
 				structure: "deep_aether:brass_dungeon"
@@ -255,6 +266,7 @@
 		{
 			dependencies: ["0F8DC1AEBBC762C1"]
 			id: "08926606B24086D7"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "3CB78CAB02F76371"
 				item: "deep_aether:bio_crystal"
@@ -267,6 +279,7 @@
 			dependencies: ["0F8DC1AEBBC762C1"]
 			hide_until_deps_complete: true
 			id: "465AFA19A305AB81"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "2C9A88DBC62C82CE"
 				item: "aether:zanite_gemstone"
@@ -278,6 +291,7 @@
 		{
 			dependencies: ["0F8DC1AEBBC762C1"]
 			id: "71E1799970320B07"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "16950F449470A982"
 				item: "aether_redux:blightbunny_fang"
@@ -289,6 +303,7 @@
 		{
 			dependencies: ["0F8DC1AEBBC762C1"]
 			id: "4678FBC8BCAFCA82"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "0338BD6B59DCDF90"
 				item: "aether_redux:refined_sentrite"
@@ -300,6 +315,7 @@
 		{
 			dependencies: ["0F8DC1AEBBC762C1"]
 			id: "33BFB45C5C47D4E5"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "79017DA3F1A6D501"
 				item: "aether_redux:lightroot_clump"
@@ -311,6 +327,7 @@
 		{
 			dependencies: ["0F8DC1AEBBC762C1"]
 			id: "08363FF74B938904"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "4C6B297180D6745F"
 				item: "aether_redux:veridium_ingot"
@@ -326,6 +343,7 @@
 				"4678FBC8BCAFCA82"
 			]
 			id: "370F691D89AF5467"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				count: 4
 				id: "73359424DE3B291F"
@@ -343,6 +361,7 @@
 		{
 			dependencies: ["0F8DC1AEBBC762C1"]
 			id: "5A823BD33F2BD562"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "493970358F6515EB"
 				item: "aether_redux:mykapod_shell_chunk"
@@ -355,6 +374,7 @@
 			dependencies: ["0F8DC1AEBBC762C1"]
 			hide_until_deps_complete: true
 			id: "6543C211F987A5FF"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "73F25BB5719ECB82"
 				item: "deep_aether:skyjade"
@@ -367,6 +387,7 @@
 			dependencies: ["0F8DC1AEBBC762C1"]
 			hide_until_deps_complete: true
 			id: "01604A3C5394A6B9"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "214869CD87398367"
 				item: "aether_redux:gravitite_ingot"
@@ -378,6 +399,7 @@
 		{
 			dependencies: ["614A7F7B332E03A7"]
 			id: "3001FAB78FAB1FEA"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "455F7C58BA3521EC"
 				item: "deep_aether:squall_plate"
@@ -389,6 +411,7 @@
 		{
 			dependencies: ["7CBB12CD9FDCA6A4"]
 			id: "1FD18D4CCBB63483"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "29C546F50B8D311F"
 				item: "aether_treasure_reforging:neptune_mesh"
@@ -400,6 +423,7 @@
 		{
 			dependencies: ["48E30F8BC43E9AD4"]
 			id: "4B44FD83A325F2F6"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				id: "140799F65B2CB0DB"
 				item: {
@@ -422,6 +446,7 @@
 		{
 			dependencies: ["6B7C4E19A6FD6939"]
 			id: "08F23C4743FA0548"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "397D14A14B621D1E"
 				item: "aether_treasure_reforging:pyral_ingot"
@@ -448,6 +473,7 @@
 			]
 			icon: "deep_aether:stratus_ingot"
 			id: "3E8E74B1D1E90894"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5B8C24D411DB0AE1"
@@ -465,6 +491,7 @@
 		{
 			dependencies: ["7CBB12CD9FDCA6A4"]
 			id: "3F0F05D26289CF7B"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "1C7707DCC27332CD"
 				item: "aether_redux:sentry_chip"
@@ -476,6 +503,7 @@
 		{
 			dependencies: ["01604A3C5394A6B9"]
 			id: "7C6B82665A7EBFB4"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "22BF5B9B23510E17"
 				item: {
@@ -496,6 +524,7 @@
 		{
 			dependencies: ["09C52DB3DF15106A"]
 			id: "7AD098E0E3FE6154"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "54E26D40C3B09FA2"
 				item: {
@@ -516,6 +545,7 @@
 		{
 			dependencies: ["7AD098E0E3FE6154"]
 			id: "16610AD4014D684C"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "24F0673885014729"
 				item: {
@@ -539,6 +569,7 @@
 				"370F691D89AF5467"
 			]
 			id: "1A385F668652DB17"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "2B225149C07F9F67"
 				item: {
@@ -559,6 +590,7 @@
 		{
 			dependencies: ["7C6B82665A7EBFB4"]
 			id: "5881B5670577E8D0"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "4FB78A5FAF7737E5"
 				item: {
@@ -579,6 +611,7 @@
 		{
 			dependencies: ["7C6B82665A7EBFB4"]
 			id: "55FD7C131B160F62"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "2CC85151EDC30A16"
 				item: {
@@ -599,6 +632,7 @@
 		{
 			dependencies: ["55FD7C131B160F62"]
 			id: "09C52DB3DF15106A"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "2CECF37268055EFB"
 				item: {
@@ -619,6 +653,7 @@
 		{
 			dependencies: ["5881B5670577E8D0"]
 			id: "4125D318FED9C668"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "700196EF0343BB1D"
 				item: {
@@ -642,6 +677,7 @@
 				"1A14AB96A3999453"
 			]
 			id: "0ED8EF9520071AAD"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "799082A03791C999"
 				item: {
@@ -667,6 +703,7 @@
 			dependency_requirement: "one_completed"
 			description: ["进入深境二层需要&6岗哨石&r和&6变量卡&r。"]
 			id: "5DC17402B959C2E9"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			subtitle: "重要"
 			tasks: [{
@@ -689,6 +726,7 @@
 				"这些变量卡有些特殊？"
 			]
 			id: "0C568583CC58DAA6"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			subtitle: "重要"
 			tasks: [{
@@ -706,6 +744,7 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "0364B88DD91B2181"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				id: "39091015A192C07D"
 				item: "minecraft:bucket"
@@ -722,6 +761,7 @@
 		{
 			dependencies: ["0F8DC1AEBBC762C1"]
 			id: "3DC00915CB991311"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "0991345053AF8DA0"
 				item: "deep_aether:sterling_aercloud"
@@ -738,6 +778,7 @@
 				"&7&m硬编码哈哈哈&r&r"
 			]
 			id: "2B5A98CFF608D743"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "478E534A80246CB4"
 				item: "aether_redux:raw_valkyrum"

@@ -64,6 +64,7 @@
 				}
 			}
 			id: "514CF1593551F00F"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5BD25B9D9251B727"
@@ -113,6 +114,7 @@
 			]
 			icon: "tetra:seeping_bedrock"
 			id: "250BBF645D5C8C67"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "&7前往月球探索锻造遗迹"
 			tasks: [{
 				id: "40E6DBC70F1F71A4"
@@ -140,6 +142,7 @@
 				}
 			}
 			id: "719ED73018A54964"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "优秀的机制"
 			tasks: [{
 				id: "0F41199E99B66D78"
@@ -177,6 +180,7 @@
 				}
 			}
 			id: "505862F62BE854AC"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "妙妙小工具"
 			tasks: [{
 				id: "32B337F78D0FDC37"
@@ -198,6 +202,7 @@
 			]
 			icon: "slashblade:proudsoul_trapezohedron"
 			id: "0624F14486476EA4"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			subtitle: "以艺铸魂"
 			tasks: [{
@@ -218,86 +223,8 @@
 				"&m或许还有其他的刀&r"
 			]
 			hide_until_deps_visible: true
-			icon: {
-				Count: 1
-				ForgeCaps: {
-					Parent: {
-						AttackAmplifier: 0.0f
-						ComboRoot: "slashblade:standby"
-						Damage: 0
-						RepairCounter: 0
-						SpecialAttackType: "slashblade:judgement_cut"
-						StandbyRenderType: 0b
-						SummonedSwordColor: -13421569
-						SummonedSwordColorInverse: 0b
-						TargetEntity: 0
-						_onClick: 0b
-						adjustXYZ: [
-							0.0d
-							0.0d
-							0.0d
-						]
-						baseAttackModifier: 4.0f
-						currentCombo: "slashblade:none"
-						fallDecreaseRate: 0.0f
-						isBroken: 0b
-						isDefaultBewitched: 0b
-						isSealed: 0b
-						killCount: 0
-						lastActionTime: 0L
-						maxDamage: 40
-						proudSoul: 0
-						translationKey: ""
-					}
-					"fluxoftetra:fe": {
-						energy: 0
-					}
-				}
-				id: "slashbladetetra:slashblade"
-				tag: {
-					"FOT$energy": {
-						energy: 0
-					}
-					bladeState: {
-						AttackAmplifier: 0.0f
-						ComboRoot: "slashblade:standby"
-						Damage: 0
-						RepairCounter: 0
-						SpecialAttackType: "slashblade:judgement_cut"
-						StandbyRenderType: 0b
-						SummonedSwordColor: -13421569
-						SummonedSwordColorInverse: 0b
-						TargetEntity: 0
-						_onClick: 0b
-						adjustXYZ: [
-							0.0d
-							0.0d
-							0.0d
-						]
-						baseAttackModifier: 4.0f
-						currentCombo: "slashblade:none"
-						fallDecreaseRate: 0.0f
-						isBroken: 0b
-						isDefaultBewitched: 0b
-						isSealed: 0b
-						killCount: 0
-						lastActionTime: 0L
-						maxDamage: 40
-						proudSoul: 0
-						translationKey: ""
-					}
-					id: "DefaultInstance"
-					"slashblade/blade": "slashblade/blade/blade"
-					"slashblade/blade/blade_material": "blade/unnamed"
-					"slashblade/handle": "slashblade/handle/handle"
-					"slashblade/handle/handle_material": "handle/unnamed"
-					"slashblade/scabbard": "slashblade/scabbard/scabbard"
-					"slashblade/scabbard/scabbard_material": "scabbard/unnamed"
-					"slashblade/tsuba": "slashblade/tsuba/tsuba"
-					"slashblade/tsuba/tsuba_material": "tsuba/unnamed"
-				}
-			}
 			id: "51E136B4E1C27308"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "4173E4BB81ED901C"
@@ -308,58 +235,6 @@
 			subtitle: "更多的抛瓦"
 			tasks: [{
 				id: "7338C37DD3F57008"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						Parent: {
-							AttackAmplifier: 0.0f
-							ComboRoot: "slashblade:standby"
-							Damage: 0
-							RepairCounter: 0
-							SpecialAttackType: "slashblade:judgement_cut"
-							StandbyRenderType: 0b
-							SummonedSwordColor: -13421569
-							SummonedSwordColorInverse: 0b
-							TargetEntity: 0
-							_onClick: 0b
-							adjustXYZ: [
-								0.0d
-								0.0d
-								0.0d
-							]
-							baseAttackModifier: 4.0f
-							currentCombo: "slashblade:none"
-							fallDecreaseRate: 0.0f
-							isBroken: 0b
-							isDefaultBewitched: 0b
-							isSealed: 0b
-							killCount: 0
-							lastActionTime: 0L
-							maxDamage: 40
-							proudSoul: 0
-							translationKey: ""
-						}
-						"fluxoftetra:fe": {
-							energy: 0
-						}
-					}
-					id: "slashbladetetra:slashblade"
-					tag: {
-						"FOT$energy": {
-							energy: 0
-						}
-						bladeState: { }
-						id: "DefaultInstance"
-						"slashblade/blade": "slashblade/blade/blade"
-						"slashblade/blade/blade_material": "blade/unnamed"
-						"slashblade/handle": "slashblade/handle/handle"
-						"slashblade/handle/handle_material": "handle/unnamed"
-						"slashblade/scabbard": "slashblade/scabbard/scabbard"
-						"slashblade/scabbard/scabbard_material": "scabbard/unnamed"
-						"slashblade/tsuba": "slashblade/tsuba/tsuba"
-						"slashblade/tsuba/tsuba_material": "tsuba/unnamed"
-					}
-				}
 				match_nbt: false
 				type: "item"
 			}]
@@ -400,6 +275,7 @@
 				}
 			}
 			id: "3EDB392D42EA5AF0"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				id: "4D8D2E167B4A447E"
 				type: "xp"
@@ -427,6 +303,7 @@
 			]
 			icon: "slashblade:proudsoul_tiny"
 			id: "16251EC4303A2F66"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			subtitle: "萃炼耀魂"
 			tasks: [{
@@ -445,6 +322,7 @@
 				"虽然传统的&e防御型的盾牌&r在拔刀剑的战斗中几乎发挥不了任何作用，但是&e小圆盾&r可以被动的为你提供属性加成！"
 			]
 			id: "3194B048417D6C31"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "5E60D3481208B3B9"
 				item: {
@@ -468,6 +346,7 @@
 				"&e高质量&r效果可以提供少量的攻击力加成。"
 			]
 			id: "3105255BA64CD95B"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "6A6137F0651686EE"
 				item: "tetra:planar_stabilizer"
@@ -500,6 +379,7 @@
 				"&7除了基础属性以外，大多数的材料还拥有不同的材料特性。这些材料特性也会影响你的构筑风格。&r"
 			]
 			id: "06BB0C2EB2A5B5A1"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "333FF88873C80E30"

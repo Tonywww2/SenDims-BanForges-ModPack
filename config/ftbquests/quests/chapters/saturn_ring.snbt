@@ -56,6 +56,7 @@
 				"363BE015B9EDE34B"
 			]
 			id: "1FC1A62930B9D276"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "1A0CB84360E28FA9"
 				item: {
@@ -82,6 +83,7 @@
 			]
 			hide_dependent_lines: true
 			id: "6035D1A1774B2FAF"
+			quest_enhance_disable_scroll_paging: false
 			size: 2.0d
 			tasks: [{
 				dimension: "slashblade_sendims:saturn_ring"
@@ -98,6 +100,7 @@
 			dependencies: ["363BE015B9EDE34B"]
 			hide_until_deps_complete: true
 			id: "07A9736A3BDF80B1"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "526E4885B7C3FE58"
 				item: "kubejs:celestial_filling_alloy_ingot"
@@ -109,6 +112,7 @@
 		{
 			dependencies: ["6035D1A1774B2FAF"]
 			id: "693C912DB9E27674"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "7791FDFB1C2DC47C"
 				item: "kubejs:ancient_soul"
@@ -124,6 +128,7 @@
 				"07A9736A3BDF80B1"
 			]
 			id: "49631F88EAF0261B"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "500A1511DDEA42F9"
 				item: {
@@ -149,6 +154,7 @@
 				"64AC14BEB874BD8E"
 			]
 			id: "245C93D5DC91D776"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			tasks: [{
 				id: "5D9792A64F68E887"
@@ -176,6 +182,7 @@
 				"22E766E3904C37CD"
 			]
 			id: "5A155C23C2AB2163"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "24DEB990C30AF04A"
 				item: {
@@ -199,6 +206,7 @@
 				"5ED601006671E6C2"
 			]
 			id: "2C06C05377A55E40"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "6A9B36A4909E3FC2"
 				item: {
@@ -219,6 +227,7 @@
 				"61B796D6D2E64C88"
 			]
 			id: "6899831613AC8F4B"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "74FF83F16F7D2259"
 				item: {
@@ -236,6 +245,7 @@
 		{
 			dependencies: ["6035D1A1774B2FAF"]
 			id: "41F7CE2B7D83F4BE"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "62652E1A4729A65A"
 				structure: "block_factorys_bosses:sandworm_nest"
@@ -248,6 +258,7 @@
 		{
 			dependencies: ["41F7CE2B7D83F4BE"]
 			id: "5BBD689230D7E397"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				advancement: "block_factorys_bosses:kill_sandworm"
 				criterion: ""
@@ -264,6 +275,7 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "47F0BD0DE4FBB853"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "1B6AD12647678D56"
 				item: {
@@ -284,6 +296,7 @@
 				"69A40782E4BC7364"
 			]
 			id: "61B796D6D2E64C88"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "警告：此配方会产生巨量的辐射"
 			tasks: [{
 				id: "66FC0FBD20FC0F86"
@@ -296,6 +309,7 @@
 		{
 			dependencies: ["6035D1A1774B2FAF"]
 			id: "5ED601006671E6C2"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "352AE3FAF830AB3A"
 				item: "kubejs:saturn_regolith"
@@ -310,6 +324,7 @@
 				"14D5D5ADCDC5B859"
 			]
 			id: "363BE015B9EDE34B"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "4EE1CF11C4350CE0"
 				item: "kubejs:saturn_ring_alloy_ingot"
@@ -321,6 +336,7 @@
 		{
 			dependencies: ["363BE015B9EDE34B"]
 			id: "0DD91FAA270A0E24"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "68E8A3CF5A33E25C"
 				item: "slashblade_sendims:integral_component_5"
@@ -336,6 +352,7 @@
 			]
 			description: ["初期的压缩铁锭只能通过引爆土星环合金锭获得，之后可以通过压力室合成。"]
 			id: "6E5EFB146C17C916"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "4528F17A58379590"
 				item: "pneumaticcraft:ingot_iron_compressed"
@@ -347,6 +364,7 @@
 		{
 			dependencies: ["6E5EFB146C17C916"]
 			id: "41B3FA768C85DAEC"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "499A176C8F80F2BA"
 				item: "pneumaticcraft:reinforced_stone"
@@ -362,6 +380,7 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "234E07699A873B66"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "66DA9EAFABFA1581"
 				item: "pneumaticcraft:pressure_chamber_wall"
@@ -376,6 +395,7 @@
 				"3FEA807D7584A291"
 			]
 			id: "52A0DDA2744E3CCA"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "19E51435669B897A"
 				item: "pneumaticcraft:air_compressor"
@@ -387,6 +407,7 @@
 		{
 			dependencies: ["234E07699A873B66"]
 			id: "57FFC670F65FEEBC"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "6ED05AD6CB315AB1"
 				item: "pneumaticcraft:pressure_chamber_interface"
@@ -398,6 +419,7 @@
 		{
 			dependencies: ["234E07699A873B66"]
 			id: "5B536BFB80E3E416"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "35891269361C3F76"
 				item: "pneumaticcraft:pressure_chamber_valve"
@@ -409,6 +431,7 @@
 		{
 			dependencies: ["6E5EFB146C17C916"]
 			id: "3FEA807D7584A291"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "3C4542C2FC5D73A7"
 				item: "pneumaticcraft:pressure_tube"
@@ -420,6 +443,7 @@
 		{
 			dependencies: ["3FEA807D7584A291"]
 			id: "449C67B5CDC28F5D"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "228164B9AE426FCA"
 				item: "pneumaticcraft:regulator_tube_module"
@@ -431,6 +455,7 @@
 		{
 			dependencies: ["3FEA807D7584A291"]
 			id: "702A393FB43B477B"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "564BD7C657BE362E"
 				item: "pneumaticcraft:safety_tube_module"
@@ -442,6 +467,7 @@
 		{
 			dependencies: ["234E07699A873B66"]
 			id: "518129C6C09E4DFC"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "097658B36B632BF5"
 				item: "pneumaticcraft:air_canister"

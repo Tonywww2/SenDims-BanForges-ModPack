@@ -1,0 +1,19 @@
+{
+  "type": "thermal:crystallizer",
+  "ingredients": [
+    {
+      "item": "kubejs:omni_thermal_assembly_3"
+    },
+    {
+      "fluid": "minecraft:water",
+      "amount": 1000
+    }
+  ],
+  "result": [
+    {
+      "item": "kubejs:omni_thermal_21",
+      "count": 1
+    }
+  ],
+  "energy": 16000
+}

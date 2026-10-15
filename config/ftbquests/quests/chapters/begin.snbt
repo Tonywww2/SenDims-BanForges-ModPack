@@ -10,6 +10,7 @@
 		{
 			height: 1.0d
 			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 2.0d
 			x: 4.5d
@@ -19,6 +20,7 @@
 			dependency: "5748351A76910019"
 			height: 1.0d
 			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 2.0d
 			x: 16.5d
@@ -28,6 +30,7 @@
 			dependency: "02003846DA642A0D"
 			height: 1.0d
 			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 2.0d
 			x: 22.5d
@@ -37,6 +40,7 @@
 			dependency: "5748351A76910019"
 			height: 0.5d
 			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: -90.0d
 			width: 1.0d
 			x: 8.5d
@@ -46,6 +50,7 @@
 			dependency: "5748351A76910019"
 			height: 0.5d
 			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: -90.0d
 			width: 1.0d
 			x: 8.5d
@@ -55,6 +60,7 @@
 			dependency: "5748351A76910019"
 			height: 0.5d
 			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: -90.0d
 			width: 1.0d
 			x: 8.5d
@@ -64,6 +70,7 @@
 			dependency: "5748351A76910019"
 			height: 0.5d
 			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 1.0d
 			x: 13.5d
@@ -73,6 +80,7 @@
 			dependency: "13B6F6AC7608F794"
 			height: 0.5d
 			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 1.0d
 			x: 31.5d
@@ -82,6 +90,7 @@
 			dependency: "13B6F6AC7608F794"
 			height: 0.5d
 			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 1.0d
 			x: 34.5d
@@ -91,6 +100,7 @@
 			dependency: "6140B0BCEB7F9D64"
 			height: 0.5d
 			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 1.0d
 			x: 40.5d
@@ -100,6 +110,7 @@
 			dependency: "52726CE2A2740BF7"
 			height: 0.5d
 			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 1.0d
 			x: 46.5d
@@ -109,6 +120,7 @@
 			dependency: "52726CE2A2740BF7"
 			height: 0.5d
 			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: -90.0d
 			width: 1.0d
 			x: 44.5d
@@ -321,6 +333,7 @@
 		{
 			dependencies: ["0C7B137A72152B01"]
 			id: "5748351A76910019"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [
 				{
 					id: "5281225DE10ED7CD"
@@ -357,6 +370,7 @@
 				}
 			}
 			id: "630C033031F00877"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [
 				{
 					count: 8
@@ -396,6 +410,7 @@
 			dependencies: ["630C033031F00877"]
 			icon: "minecraft:furnace"
 			id: "02003846DA642A0D"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				count: 4
 				id: "5B3F235A628D9A3B"
@@ -415,6 +430,7 @@
 			description: ["提示：手持锋利的燧石片右键"]
 			hide_until_deps_complete: true
 			id: "5A6129A375A1B07E"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [
 				{
 					id: "63C96F981EA62DB3"
@@ -440,6 +456,7 @@
 			dependencies: ["5A6129A375A1B07E"]
 			description: ["提示：手持锋利的燧石片右键"]
 			id: "13B6F6AC7608F794"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				id: "5CD6027E55A1A4C2"
 				type: "xp"
@@ -474,6 +491,7 @@
 			]
 			hide_until_deps_complete: true
 			id: "52726CE2A2740BF7"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "2CC03E7E229C6BE2"
@@ -505,6 +523,7 @@
 			]
 			icon: "kubejs:garden_lighter"
 			id: "0B0F1D8BE89F8980"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [
 				{
 					id: "2106DCF3BF620456"
@@ -582,6 +601,7 @@
 			dependencies: ["5BB642BD0BE40541"]
 			dependency_requirement: "one_completed"
 			id: "73531FB69122489F"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "4FD200BBE6660319"
@@ -601,6 +621,7 @@
 			description: ["多准备一些红砖，后续会用到的"]
 			icon: "minecraft:brick"
 			id: "4563BE3E3110A2C9"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				count: 16
 				id: "5F74D4CB8C034C81"
@@ -622,6 +643,7 @@
 			description: ["原始空岛有极小概率刷新恶魔眼。"]
 			icon: "terra_entity:suspicious_looking_eye"
 			id: "76DEBD32F9E5F5C5"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				id: "2E29D37BE4A9DAF4"
 				item: "minecraft:enchanted_golden_apple"
@@ -656,6 +678,7 @@
 				"放入&b漏斗&r后，可以将产物自动输出到下方的容器之中（箱子）。"
 			]
 			id: "5142DCD34AFA1CC0"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [
 				{
 					id: "1F6D3826D67AC854"
@@ -730,6 +753,7 @@
 			hide_dependent_lines: true
 			icon: "ae2:fluix_pearl"
 			id: "034D47E905861E48"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "2E7747E71CC14DC1"
@@ -758,6 +782,7 @@
 			]
 			icon: "minecraft:grass_block"
 			id: "0191BEFB99BFD5D5"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "3D6585D9C8DC3764"
@@ -792,6 +817,7 @@
 				}
 			}
 			id: "6E4D6662243ED7F6"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				count: 16
 				id: "270FD1BD00F20AF0"
@@ -844,6 +870,7 @@
 			]
 			icon: "easy_villagers:trader"
 			id: "03324A922C738F3E"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				id: "2A0DA6B6417FC85D"
 				type: "xp"
@@ -877,6 +904,7 @@
 				"&m感觉不如直接去拐卖"
 			]
 			id: "6A7DADE65BB55882"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				id: "723AE5D6C5628130"
 				type: "xp"
@@ -893,6 +921,7 @@
 		{
 			dependencies: ["6E4D6662243ED7F6"]
 			id: "5EA8445369F95C85"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				id: "323788CF51AE2976"
 				type: "xp"
@@ -909,6 +938,7 @@
 		{
 			dependencies: ["62C0631125654B3D"]
 			id: "065E8A79D06A17DC"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				id: "2E8B8D8C82ACAE3F"
 				type: "xp"
@@ -926,6 +956,7 @@
 		{
 			dependencies: ["62C0631125654B3D"]
 			id: "72B1E82D385A4650"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				id: "3F557CDAAD0C86F7"
 				type: "xp"
@@ -944,6 +975,7 @@
 			dependencies: ["630C033031F00877"]
 			description: ["可以用于制作燧石"]
 			id: "3070257ED61256F5"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "可选"
 			tasks: [{
 				id: "683B8670C9CBE82C"
@@ -962,6 +994,7 @@
 				"可以在熔炉内将苔藓毛豆石豆腐块烧制成烤豆腐块。"
 			]
 			id: "1CABE32AC23C7BDE"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				count: 4
 				id: "4CD05CD6F711C62A"
@@ -990,6 +1023,7 @@
 			]
 			icon: "botania:cosmetic_questgiver_mark"
 			id: "3CE4450A5B3933BB"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				id: "15DE28F6E035F007"
 				type: "xp"
@@ -1021,6 +1055,7 @@
 			]
 			icon: "botania:cosmetic_questgiver_mark"
 			id: "3FBEE593F7DB4278"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				id: "2877C80A014D0CBB"
 				type: "xp"
@@ -1046,6 +1081,7 @@
 			]
 			icon: "botania:cosmetic_questgiver_mark"
 			id: "0A8EC9EE7934E1C0"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "0029C2D3937207AD"
 				type: "checkmark"
@@ -1064,6 +1100,7 @@
 				"&b提示：对着苔藓块使用骨粉可以让苔藓块长草。&r"
 			]
 			id: "032BDE012A2E0222"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				count: 4
 				id: "2E9436023EA5D02C"
@@ -1090,6 +1127,7 @@
 			]
 			icon: "botania:cosmetic_questgiver_mark"
 			id: "1A6C2C2203C27C5F"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "4ACE8AB0BB6A60A6"
 				type: "checkmark"
@@ -1109,6 +1147,7 @@
 			]
 			icon: "minecraft:command_block"
 			id: "7C3E3A6A00EA3031"
+			quest_enhance_disable_scroll_paging: false
 			shape: "gear"
 			subtitle: "可选"
 			tasks: [{
@@ -1135,6 +1174,7 @@
 			]
 			icon: "industrial_platform:industrial_platform"
 			id: "2BF3D5C780608F8D"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				id: "70C07170D1A3398D"
 				item: "industrial_platform:industrial_platform"
@@ -1161,6 +1201,7 @@
 			]
 			icon: "botania:cosmetic_questgiver_mark"
 			id: "5AE24126BBBEAC66"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "799CD25379BFFFAF"
 				type: "checkmark"
@@ -1174,6 +1215,7 @@
 			hide_dependent_lines: true
 			icon: "minecraft:moss_block"
 			id: "62C0631125654B3D"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [
 				{
 					auto: "enabled"
@@ -1231,6 +1273,7 @@
 			description: ["催熟收获你的第一颗树"]
 			icon: "minecraft:flowering_azalea"
 			id: "36DD50AE28ECF216"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				count: 8
 				id: "27EA9C0E2F394549"
@@ -1259,6 +1302,7 @@
 		{
 			dependencies: ["36DD50AE28ECF216"]
 			id: "0C7B137A72152B01"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [
 				{
 					count: 4

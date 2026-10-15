@@ -1,0 +1,14 @@
+{
+  "type": "botania:elven_trade",
+  "ingredients": [
+    {
+      "item": "kubejs:omni_mana_08"
+    }
+  ],
+  "output": [
+    {
+      "item": "kubejs:omni_mana_09",
+      "count": 1
+    }
+  ]
+}

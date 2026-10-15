@@ -14,6 +14,7 @@
 		{
 			dependencies: ["73531FB69122489F"]
 			id: "3C14A2F8BA3C3DA6"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
@@ -42,6 +43,7 @@
 			]
 			icon: "apotheosis:gem_dust"
 			id: "77ABEFEE93012F0A"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "225DF5F889219204"
 				item: "apotheosis:gem_dust"
@@ -55,6 +57,7 @@
 			dependency_requirement: "one_completed"
 			icon: "apotheosis:uncommon_material"
 			id: "278A39AEC26ACC1A"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [
 				{
 					id: "35AF37FBB43428D2"
@@ -84,6 +87,7 @@
 		{
 			dependencies: ["278A39AEC26ACC1A"]
 			id: "3864617F2C8F7BE0"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "3EF599E64D6133BF"
 				item: "apotheosis:mythic_material"
@@ -96,6 +100,7 @@
 			dependencies: ["77ABEFEE93012F0A"]
 			icon: "apotheosis:gem_cutting_table"
 			id: "2A958A3CA94287FD"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "我们俩"
 			tasks: [
 				{
@@ -117,6 +122,7 @@
 			dependencies: ["278A39AEC26ACC1A"]
 			description: ["简易重铸台只能重铸包括&1蓝色珍宝等级&r以下的材料"]
 			id: "419F370B5BCD93CF"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "23BBE71F75826062"
 				item: "apotheosis:simple_reforging_table"
@@ -131,6 +137,7 @@
 				"3864617F2C8F7BE0"
 			]
 			id: "03D989C2ED12227E"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "05E68A00B3D01919"
 				item: "apotheosis:reforging_table"
@@ -142,6 +149,7 @@
 		{
 			dependencies: ["03D989C2ED12227E"]
 			id: "5BB2FE532C00131E"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "418D0C2FFF6F4F4E"
 				item: "apotheosis:augmenting_table"
@@ -155,6 +163,7 @@
 			description: ["新生符石是重铸所需的材料之一，其他符石各有不同的功能"]
 			icon: "apotheosis:sigil_of_rebirth"
 			id: "1B7066E3776A8879"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [
 				{
 					id: "2C7A237233ADAF33"
@@ -189,6 +198,7 @@
 		{
 			dependencies: ["77693A4D5EF97A31"]
 			id: "00C3C00C3688CEA7"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "升级版"
 			tasks: [{
 				id: "2995A922CAB45029"
@@ -202,6 +212,7 @@
 			dependencies: ["5748351A76910019"]
 			description: ["跑图工具，byd帕克"]
 			id: "77693A4D5EF97A31"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				id: "722E6CAADEB83819"
 				type: "xp"
@@ -222,6 +233,7 @@
 		{
 			dependencies: ["00C3C00C3688CEA7"]
 			id: "691938CBA8FAA31E"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "建筑帮手"
 			tasks: [{
 				id: "7026A0AC22EE6BBE"
@@ -234,6 +246,7 @@
 		{
 			dependencies: ["00C3C00C3688CEA7"]
 			id: "6D19670214234AFA"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "高速跑图"
 			tasks: [{
 				id: "2AA53A55E9D6E6DE"
@@ -246,6 +259,7 @@
 		{
 			dependencies: ["6D19670214234AFA"]
 			id: "2130033541AB5127"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "超高速跑图"
 			tasks: [{
 				id: "78C9FADBF7C2D50D"
@@ -258,6 +272,7 @@
 		{
 			dependencies: ["6D19670214234AFA"]
 			id: "698D94375B02D1BB"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "超高速跑图"
 			tasks: [{
 				id: "2C115F92FEDE730A"
@@ -276,6 +291,7 @@
 			]
 			hide_dependency_lines: true
 			id: "12CBC73AFDD99F2C"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			size: 2.0d
 			subtitle: "需要精准采集的镐子"
@@ -292,6 +308,7 @@
 			dependencies: ["12CBC73AFDD99F2C"]
 			description: ["减小最小刷怪延迟（初始200t），每个减少 10t，最少 20t"]
 			id: "0B7DEE9793E3BBBB"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "最小刷怪延迟-"
 			tasks: [{
 				id: "6BE0EC3EAD280CA8"
@@ -305,6 +322,7 @@
 			dependencies: ["12CBC73AFDD99F2C"]
 			description: ["减少最大刷怪延迟（初始800t），每个减少 10t，最少 20t"]
 			id: "555AB70BA3BCA2F1"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "最大刷怪延迟-"
 			tasks: [{
 				id: "2E02E73AEE043CBB"
@@ -318,6 +336,7 @@
 			dependencies: ["12CBC73AFDD99F2C"]
 			description: ["增加刷怪数量（初始4只），每个增加 1 只，上限为 16 只"]
 			id: "2AD0D82E0283578A"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "刷怪数+"
 			tasks: [{
 				id: "4DAACED2EB7A847F"
@@ -331,6 +350,7 @@
 			dependencies: ["12CBC73AFDD99F2C"]
 			description: ["提升最大实体数量（初始6只），每个增加 2 只，上限为 32 只"]
 			id: "3728E5DD86D1B747"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "刷怪上限+"
 			tasks: [{
 				id: "3E33FBF91D1F2649"
@@ -344,6 +364,7 @@
 			dependencies: ["12CBC73AFDD99F2C"]
 			description: ["增加激活范围（初始半径16格），每个增加 2 格，上限为 48 格"]
 			id: "22658556FB03270A"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "激活范围+"
 			tasks: [{
 				id: "3FAB12FEB5C1A698"
@@ -357,6 +378,7 @@
 			dependencies: ["12CBC73AFDD99F2C"]
 			description: ["增加刷怪范围（初始半径4格），每个增加 1 格，上限为 32 格"]
 			id: "5DD1E74736BC24C3"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "刷怪范围+"
 			tasks: [{
 				id: "266874CBB872776D"
@@ -370,6 +392,7 @@
 			dependencies: ["12CBC73AFDD99F2C"]
 			description: ["忽略生物群系"]
 			id: "40F9A99C4643C0CA"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "忽略生物群系"
 			tasks: [{
 				id: "040609F3AB2BBCCE"
@@ -383,6 +406,7 @@
 			dependencies: ["12CBC73AFDD99F2C"]
 			description: ["使刷怪笼刷出的生物没有任何行为（无AI）"]
 			id: "35A8E66C90CC1FAB"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "无AI"
 			tasks: [{
 				id: "2214C6D25D6202F0"
@@ -396,6 +420,7 @@
 			dependencies: ["12CBC73AFDD99F2C"]
 			description: ["允许刷怪笼在附近没有玩家的情况下刷怪"]
 			id: "039E61CF4B810E24"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "无玩家"
 			tasks: [{
 				id: "6EC5B669432428FF"
@@ -409,6 +434,7 @@
 			dependencies: ["12CBC73AFDD99F2C"]
 			description: ["允许玩家使用红石控制刷怪笼开关"]
 			id: "53C4817DB9BBA4DF"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "红石控制"
 			tasks: [{
 				id: "42FEC9EE6885F836"
@@ -422,6 +448,7 @@
 			dependencies: ["12CBC73AFDD99F2C"]
 			description: ["允许刷怪笼无视光照刷怪"]
 			id: "1742E9CEF5B616F5"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "无视光照"
 			tasks: [{
 				id: "27D6CD46E3CDDCAE"
@@ -440,6 +467,7 @@
 			dependency_requirement: "one_completed"
 			description: ["前期弄不来的玩意，去村民吧。"]
 			id: "2563ABCEC67C3877"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
@@ -455,6 +483,7 @@
 			description: ["提示：你可以点击任务的需求查看所有可用的材料。"]
 			icon: "minecraft:diamond"
 			id: "15C68C343213D8FC"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "6BF0A9CEC0C54BA8"
 				item: {
@@ -503,6 +532,7 @@
 				}
 			}
 			id: "71F1943E6E3FCA17"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [
 				{
 					id: "397CB66B2E8FE251"
@@ -532,6 +562,7 @@
 			description: ["提示：你可以点击任务的需求查看所有可用的材料。"]
 			icon: "minecraft:gold_ingot"
 			id: "4493C85E7045BD4E"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "3D787EE52A133ADF"
 				item: {
@@ -553,6 +584,7 @@
 			description: ["提示：你可以点击任务的需求查看所有可用的材料。"]
 			icon: "minecraft:netherite_scrap"
 			id: "18416B89AC3BF527"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "4E3DC197D895BEB5"
 				item: {
@@ -574,6 +606,7 @@
 			description: ["提示：你可以点击任务的需求查看所有可用的材料。"]
 			icon: "cataclysm:witherite_ingot"
 			id: "421132E2C3F4644D"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			tasks: [{
 				id: "272F9248D3005FF7"
@@ -596,6 +629,7 @@
 			description: ["提示：你可以点击任务的需求查看所有可用的材料。"]
 			icon: "undergarden:utherium_crystal"
 			id: "65E69FE440848B78"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "0F7B2AA9BA10E65E"
 				item: {
@@ -617,6 +651,7 @@
 			description: ["提示：你可以点击任务的需求查看所有可用的材料。"]
 			icon: "undergarden:forgotten_ingot"
 			id: "75381D6628B9BB4F"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "4F755AC7EB6141ED"
 				item: {
@@ -641,6 +676,7 @@
 				tag: { }
 			}
 			id: "047BB42636510BA1"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			tasks: [{
 				id: "6E9B36DC97B9E52B"
@@ -663,6 +699,7 @@
 			description: ["提示：你可以点击任务的需求查看所有可用的材料。"]
 			icon: "undergarden:regalium_crystal"
 			id: "30685C1409FDBDFF"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "35A2551107F0DDD7"
 				item: {
@@ -687,6 +724,7 @@
 			dependency_requirement: "one_completed"
 			description: ["&e泰拉饰品正在路上"]
 			id: "319D8C539D81926B"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
@@ -701,6 +739,7 @@
 			dependencies: ["047BB42636510BA1"]
 			icon: "cataclysm:void_core"
 			id: "2C6FA7648669E74E"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			tasks: [{
 				id: "4735FC1E33EA3BB0"
@@ -722,6 +761,7 @@
 			dependencies: ["2C6FA7648669E74E"]
 			icon: "kubejs:galatic_cycle_component"
 			id: "5BA4948A347E7BE6"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			tasks: [{
 				id: "33238216B11FFB1D"
@@ -744,6 +784,7 @@
 			description: ["提示：你可以点击任务的需求查看所有可用的材料。"]
 			icon: "kubejs:ml_computing_ingot"
 			id: "561C1F6FDFB493F8"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "3EACD1A53D356693"
 				item: {
@@ -765,6 +806,7 @@
 			description: ["提示：你可以点击任务的需求查看所有可用的材料。"]
 			icon: "kubejs:virtual_gold_ingot"
 			id: "442CC8EC603410AB"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "44EEA72A133B9311"
 				item: {
@@ -786,6 +828,7 @@
 			description: ["提示：你可以点击任务的需求查看所有可用的材料。"]
 			icon: "kubejs:titan-ii_composite_ingot"
 			id: "7B68240CD80F492C"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "3FA62E08E0015A58"
 				item: {
@@ -807,6 +850,7 @@
 			description: ["提示：你可以点击任务的需求查看所有可用的材料。"]
 			icon: "kubejs:basepoint_alloy"
 			id: "64E89DB4179E3C4C"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "3F7922F389D4C60B"
 				item: {
@@ -826,6 +870,7 @@
 		{
 			dependencies: ["3C14A2F8BA3C3DA6"]
 			id: "71D1A86D601690A9"
+			quest_enhance_disable_scroll_paging: false
 			size: 1.0d
 			tasks: [{
 				id: "7C9538C827636262"
@@ -843,6 +888,7 @@
 				"提示：想要大量获得海晶类物品，可以使用海晶蜜蜂。"
 			]
 			id: "04000D795240E2C3"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "1A572E798A293E37"
 				item: "apotheosis:seashelf"
@@ -854,6 +900,7 @@
 		{
 			dependencies: ["2563ABCEC67C3877"]
 			id: "76C5BDB2118AA568"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "7906D8F751F00548"
 				item: "apotheosis:endshelf"
@@ -865,6 +912,7 @@
 		{
 			dependencies: ["2563ABCEC67C3877"]
 			id: "5775E3020ACAC66A"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "5BF8F210CEA5D4E9"
 				item: "apotheosis:dormant_deepshelf"
@@ -876,6 +924,7 @@
 		{
 			dependencies: ["71D1A86D601690A9"]
 			id: "0CE6997123F920F8"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "627797A45E563878"
 				item: "apotheosis:infused_hellshelf"
@@ -887,6 +936,7 @@
 		{
 			dependencies: ["0CE6997123F920F8"]
 			id: "106E4F4250B39565"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "16772F4A37754528"
 				item: "apotheosis:sightshelf"
@@ -898,6 +948,7 @@
 		{
 			dependencies: ["0CE6997123F920F8"]
 			id: "1FBAB3542E0AF351"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "74D3504C7716F32D"
 				item: "apotheosis:blazing_hellshelf"
@@ -909,6 +960,7 @@
 		{
 			dependencies: ["0CE6997123F920F8"]
 			id: "27CC0458662532A2"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "7C488D909670187C"
 				item: "apotheosis:glowing_hellshelf"
@@ -920,6 +972,7 @@
 		{
 			dependencies: ["106E4F4250B39565"]
 			id: "3AD96F9416FF1927"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "3FB22084882B10C0"
 				item: "apotheosis:sightshelf_t2"
@@ -931,6 +984,7 @@
 		{
 			dependencies: ["04000D795240E2C3"]
 			id: "1A36C9EDCEF16904"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "17E8E7E5C07E701C"
 				item: "apotheosis:infused_seashelf"
@@ -942,6 +996,7 @@
 		{
 			dependencies: ["1A36C9EDCEF16904"]
 			id: "42743782562B631D"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "2DAF061F1BC87AC0"
 				item: "apotheosis:crystal_seashelf"
@@ -953,6 +1008,7 @@
 		{
 			dependencies: ["1A36C9EDCEF16904"]
 			id: "6AC74B389E658438"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "6DF161298BDEE22E"
 				item: "apotheosis:heart_seashelf"
@@ -964,6 +1020,7 @@
 		{
 			dependencies: ["1A36C9EDCEF16904"]
 			id: "30EE3FC432677667"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "7A98DA9481D4F3B6"
 				item: "apotheosis:filtering_shelf"
@@ -975,6 +1032,7 @@
 		{
 			dependencies: ["5775E3020ACAC66A"]
 			id: "76D98D4CA2BB39AF"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "2A1E45375FEAE023"
 				item: "apotheosis:deepshelf"
@@ -986,6 +1044,7 @@
 		{
 			dependencies: ["76D98D4CA2BB39AF"]
 			id: "6DCEFFAB59932B78"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "7709DB3D592A607D"
 				item: "apotheosis:treasure_shelf"
@@ -997,6 +1056,7 @@
 		{
 			dependencies: ["76D98D4CA2BB39AF"]
 			id: "17EDE37B5E5EF5D3"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "4A94AC63ECA25438"
 				item: "apotheosis:soul_touched_deepshelf"
@@ -1008,6 +1068,7 @@
 		{
 			dependencies: ["17EDE37B5E5EF5D3"]
 			id: "12D816D59E0D0961"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "4D74AD340FB0EC5F"
 				item: "apotheosis:soul_touched_sculkshelf"
@@ -1019,6 +1080,7 @@
 		{
 			dependencies: ["76D98D4CA2BB39AF"]
 			id: "589A7EB1D7AC70E2"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "15E90F03CDFD6EF7"
 				item: "apotheosis:echoing_sculkshelf"
@@ -1030,6 +1092,7 @@
 		{
 			dependencies: ["76C5BDB2118AA568"]
 			id: "0423117975E035F4"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "60F811D7DCADE39F"
 				item: "apotheosis:draconic_endshelf"
@@ -1041,6 +1104,7 @@
 		{
 			dependencies: ["76C5BDB2118AA568"]
 			id: "7A36663577C6779D"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "46EB371A64655B4B"
 				item: "apotheosis:pearl_endshelf"
@@ -1052,6 +1116,7 @@
 		{
 			dependencies: ["4C56CFEEBC74DE9A"]
 			id: "2CBAF8102EEC9481"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "481F44E73243D5CD"
 				item: "slashblade_sendims:estus_flask_1"
@@ -1070,6 +1135,7 @@
 				"可以通过合成升级&b原素瓶&r。"
 			]
 			id: "4C56CFEEBC74DE9A"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				id: "0A3B0AF9A67AE126"
 				type: "xp"
@@ -1089,6 +1155,7 @@
 		{
 			dependencies: ["2CBAF8102EEC9481"]
 			id: "4D5070BCCCC63E1C"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "2D58F06353FE45A3"
 				item: "slashblade_sendims:estus_flask_2"
@@ -1100,6 +1167,7 @@
 		{
 			dependencies: ["4D5070BCCCC63E1C"]
 			id: "360410D05292960E"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "60F7B993282CCAEA"
 				item: "slashblade_sendims:estus_flask_3"
@@ -1111,6 +1179,7 @@
 		{
 			dependencies: ["360410D05292960E"]
 			id: "7E922C255CA79C9D"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "1BE0A334B8E2467A"
 				item: "slashblade_sendims:estus_flask_4"
@@ -1122,6 +1191,7 @@
 		{
 			dependencies: ["7E922C255CA79C9D"]
 			id: "0C38F6DFF2F5A61E"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "2377B867148FCD65"
 				item: "slashblade_sendims:estus_flask_5"
@@ -1133,6 +1203,7 @@
 		{
 			dependencies: ["0C38F6DFF2F5A61E"]
 			id: "40CCD51A19E67CBF"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "4E7F1C3038479C6B"
 				item: "slashblade_sendims:estus_flask_6"
@@ -1144,6 +1215,7 @@
 		{
 			dependencies: ["3864617F2C8F7BE0"]
 			id: "2597F04F3F0DAEB8"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "TBD"
 			tasks: [{
 				id: "1057F43BEB834ADF"
@@ -1156,6 +1228,7 @@
 		{
 			dependencies: ["2563ABCEC67C3877"]
 			id: "6BD8E758F26DBE8F"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "4A0B4740C1E2F26A"
 				item: "apotheosis:scrap_tome"
@@ -1167,6 +1240,7 @@
 		{
 			dependencies: ["6BD8E758F26DBE8F"]
 			id: "7C1FC62A66B05BB4"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "68998C5197908F4C"
 				item: "apotheosis:improved_scrap_tome"
@@ -1178,6 +1252,7 @@
 		{
 			dependencies: ["7C1FC62A66B05BB4"]
 			id: "56F11C76646FF3F3"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "5CB2F466B95EE6B9"
 				item: "apotheosis:extraction_tome"
@@ -1189,6 +1264,7 @@
 		{
 			dependencies: ["1DE54DDD04540738"]
 			id: "4FA6F71247C71F6B"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				id: "2825DEAC9358324F"
 				item: "minecraft:compass"
@@ -1209,6 +1285,7 @@
 		{
 			dependencies: ["5BB642BD0BE40541"]
 			id: "69932B77B63E4FE8"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			size: 2.0d
 			subtitle: "长距离跑图工具"
@@ -1223,6 +1300,7 @@
 		{
 			dependencies: ["69932B77B63E4FE8"]
 			id: "0BA3EE6A57196ADF"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "6846601EB4C3C50C"
 				item: "rodofdiscord:chaos_rod_10"
@@ -1234,6 +1312,7 @@
 		{
 			dependencies: ["69932B77B63E4FE8"]
 			id: "625841BF8E146E35"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "237458026AD8E10F"
 				item: "rodofdiscord:chaos_rod_25"
@@ -1245,6 +1324,7 @@
 		{
 			dependencies: ["69932B77B63E4FE8"]
 			id: "59F3F3C385567498"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "5AEC8B800055387B"
 				item: "rodofdiscord:chaos_rod_50"
@@ -1256,6 +1336,7 @@
 		{
 			dependencies: ["69932B77B63E4FE8"]
 			id: "134E90EFC12C4663"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "38E0EDC96CB17ED0"
 				item: "rodofdiscord:chaos_rod_100"
@@ -1267,6 +1348,7 @@
 		{
 			dependencies: ["69932B77B63E4FE8"]
 			id: "1170BD4C13200DCF"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "6F45D11FACD2C2D5"
 				item: "rodofdiscord:chaos_rod_250"
@@ -1278,6 +1360,7 @@
 		{
 			dependencies: ["69932B77B63E4FE8"]
 			id: "3AFFB8750A075E28"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "66D18C1683C5640C"
 				item: "rodofdiscord:chaos_rod_500"

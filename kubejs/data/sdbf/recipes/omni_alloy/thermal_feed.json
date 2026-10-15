@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "titan_moon:cryo_alloy_ingot"
+    },
+    {
+      "item": "titan_moon:cryo_alloy_ingot"
+    },
+    {
+      "item": "deeprealm_4th:star_slurry_blank"
+    },
+    {
+      "item": "minecraft:basalt"
+    },
+    {
+      "item": "minecraft:basalt"
+    },
+    {
+      "item": "minecraft:basalt"
+    },
+    {
+      "item": "minecraft:basalt"
+    },
+    {
+      "item": "thermal:latex_bucket"
+    },
+    {
+      "item": "minecraft:honeycomb"
+    }
+  ],
+  "result": {
+    "item": "kubejs:omni_thermal_feed",
+    "count": 1
+  }
+}

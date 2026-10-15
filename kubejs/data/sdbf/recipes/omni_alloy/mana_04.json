@@ -1,0 +1,14 @@
+{
+  "type": "botania:marimorphosis",
+  "input": {
+    "type": "block",
+    "block": "kubejs:omni_mana_03_block"
+  },
+  "output": {
+    "type": "block",
+    "block": "kubejs:omni_mana_04_block"
+  },
+  "weight": 1,
+  "biome_bonus": 0,
+  "biome_bonus_tag": "botania:marimorphosis_desert_bonus"
+}

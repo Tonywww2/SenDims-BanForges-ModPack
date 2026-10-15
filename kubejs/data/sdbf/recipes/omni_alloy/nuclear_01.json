@@ -1,0 +1,17 @@
+{
+  "type": "nuclearcraft:manufactory",
+  "powerModifier": 2.0,
+  "timeModifier": 2.0,
+  "radiation": 0.0,
+  "input": [
+    {
+      "item": "kubejs:omni_nuclear_feed"
+    }
+  ],
+  "output": [
+    {
+      "item": "kubejs:omni_nuclear_01",
+      "count": 1
+    }
+  ]
+}

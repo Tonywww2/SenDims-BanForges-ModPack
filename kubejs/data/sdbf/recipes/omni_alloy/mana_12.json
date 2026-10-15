@@ -1,0 +1,16 @@
+{
+  "type": "apotheosis:salvaging",
+  "input": {
+    "item": "kubejs:omni_mana_12_precursor"
+  },
+  "outputs": [
+    {
+      "min_count": 1,
+      "max_count": 1,
+      "stack": {
+        "item": "kubejs:omni_mana_12",
+        "count": 1
+      }
+    }
+  ]
+}

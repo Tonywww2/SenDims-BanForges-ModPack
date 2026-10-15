@@ -1,0 +1,10 @@
+{
+  "type": "deep_aether:poison_recipe",
+  "ingredient": {
+    "item": "kubejs:omni_aether_10"
+  },
+  "result": {
+    "item": "kubejs:omni_aether_11",
+    "count": 1
+  }
+}

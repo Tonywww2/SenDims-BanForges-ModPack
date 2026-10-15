@@ -1,0 +1,10 @@
+{
+  "type": "productivebees:block_conversion",
+  "bee": "productivebees:water",
+  "from": {
+    "Name": "kubejs:omni_bio_13_precursor"
+  },
+  "to": {
+    "Name": "kubejs:omni_bio_13_block"
+  }
+}

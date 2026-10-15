@@ -1,0 +1,10 @@
+{
+  "type": "aether:placement_conversion",
+  "ingredient": {
+    "block": "kubejs:omni_aether_06_block"
+  },
+  "result": {
+    "block": "kubejs:omni_aether_07_block"
+  },
+  "biome": "#aether:ultracold"
+}

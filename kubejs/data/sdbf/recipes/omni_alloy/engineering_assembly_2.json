@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABC",
+    "   ",
+    "   "
+  ],
+  "key": {
+    "A": {
+      "item": "kubejs:omni_engineering_11"
+    },
+    "B": {
+      "item": "kubejs:omni_engineering_12"
+    },
+    "C": {
+      "item": "kubejs:omni_engineering_14"
+    }
+  },
+  "result": {
+    "item": "kubejs:omni_engineering_assembly_2",
+    "count": 1
+  }
+}

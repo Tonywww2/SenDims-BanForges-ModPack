@@ -1,0 +1,15 @@
+{
+  "type": "ad_astra:refining",
+  "input": {
+    "ingredient": {
+      "tag": "ad_astra:oil"
+    },
+    "millibuckets": 1000
+  },
+  "result": {
+    "fluid": "kubejs:omni_engineering_19_fluid",
+    "millibuckets": 1000
+  },
+  "cookingtime": 100,
+  "energy": 80
+}

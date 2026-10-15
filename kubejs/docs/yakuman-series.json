@@ -1,0 +1,517 @@
+{
+  "blade_count": 19,
+  "recipes": "后续设计；本次未注册合成配方",
+  "display_order": "手牌→副露／暗杠→胡牌；天和、天授国士十四张全手牌",
+  "attack_by_rank": {
+    "1": 35,
+    "2": 60,
+    "3": 80,
+    "5": 95,
+    "6": 105
+  },
+  "blades": [
+    {
+      "name": "役刀「国士无双」",
+      "id": "slashblade_sendims:yakuman_kokushi",
+      "attack": 35,
+      "enchantments": [
+        {
+          "id": "minecraft:sharpness",
+          "lvl": 4
+        },
+        {
+          "id": "minecraft:unbreaking",
+          "lvl": 3
+        },
+        {
+          "id": "minecraft:looting",
+          "lvl": 2
+        }
+      ],
+      "sa": "十三幺·弹药",
+      "ap_flat": 300,
+      "ap_max_ratio": 0.15,
+      "se": []
+    },
+    {
+      "name": "役刀「四暗刻」",
+      "id": "slashblade_sendims:yakuman_suuankou",
+      "attack": 35,
+      "enchantments": [
+        {
+          "id": "minecraft:sharpness",
+          "lvl": 4
+        },
+        {
+          "id": "minecraft:unbreaking",
+          "lvl": 3
+        },
+        {
+          "id": "minecraft:looting",
+          "lvl": 2
+        }
+      ],
+      "sa": "四影无声",
+      "ap_flat": 250,
+      "ap_max_ratio": 0.1,
+      "se": []
+    },
+    {
+      "name": "役刀「大三元」",
+      "id": "slashblade_sendims:yakuman_daisangen",
+      "attack": 35,
+      "enchantments": [
+        {
+          "id": "minecraft:sharpness",
+          "lvl": 4
+        },
+        {
+          "id": "minecraft:unbreaking",
+          "lvl": 3
+        },
+        {
+          "id": "minecraft:looting",
+          "lvl": 2
+        }
+      ],
+      "sa": "三龙会·弹药",
+      "ap_flat": 350,
+      "ap_max_ratio": 0.15,
+      "se": []
+    },
+    {
+      "name": "役刀「小四喜」",
+      "id": "slashblade_sendims:yakuman_shousuushii",
+      "attack": 35,
+      "enchantments": [
+        {
+          "id": "minecraft:sharpness",
+          "lvl": 4
+        },
+        {
+          "id": "minecraft:unbreaking",
+          "lvl": 3
+        },
+        {
+          "id": "minecraft:looting",
+          "lvl": 2
+        }
+      ],
+      "sa": "三风一守",
+      "ap_flat": 250,
+      "ap_max_ratio": 0.1,
+      "se": []
+    },
+    {
+      "name": "役刀「字一色」",
+      "id": "slashblade_sendims:yakuman_tsuuiisou",
+      "attack": 35,
+      "enchantments": [
+        {
+          "id": "minecraft:sharpness",
+          "lvl": 4
+        },
+        {
+          "id": "minecraft:unbreaking",
+          "lvl": 3
+        },
+        {
+          "id": "minecraft:looting",
+          "lvl": 2
+        }
+      ],
+      "sa": "七字镇界",
+      "ap_flat": 450,
+      "ap_max_ratio": 0.2,
+      "se": []
+    },
+    {
+      "name": "役刀「绿一色」",
+      "id": "slashblade_sendims:yakuman_ryuuiisou",
+      "attack": 35,
+      "enchantments": [
+        {
+          "id": "minecraft:sharpness",
+          "lvl": 4
+        },
+        {
+          "id": "minecraft:unbreaking",
+          "lvl": 3
+        },
+        {
+          "id": "minecraft:looting",
+          "lvl": 2
+        }
+      ],
+      "sa": "翠竹六相",
+      "ap_flat": 300,
+      "ap_max_ratio": 0.15,
+      "se": []
+    },
+    {
+      "name": "役刀「清老头」",
+      "id": "slashblade_sendims:yakuman_chinroutou",
+      "attack": 35,
+      "enchantments": [
+        {
+          "id": "minecraft:sharpness",
+          "lvl": 4
+        },
+        {
+          "id": "minecraft:unbreaking",
+          "lvl": 3
+        },
+        {
+          "id": "minecraft:looting",
+          "lvl": 2
+        }
+      ],
+      "sa": "两极断",
+      "ap_flat": 250,
+      "ap_max_ratio": 0.1,
+      "se": []
+    },
+    {
+      "name": "役刀「九莲宝灯」",
+      "id": "slashblade_sendims:yakuman_chuuren",
+      "attack": 35,
+      "enchantments": [
+        {
+          "id": "minecraft:sharpness",
+          "lvl": 4
+        },
+        {
+          "id": "minecraft:unbreaking",
+          "lvl": 3
+        },
+        {
+          "id": "minecraft:looting",
+          "lvl": 2
+        }
+      ],
+      "sa": "九门开莲·弹药",
+      "ap_flat": 300,
+      "ap_max_ratio": 0.15,
+      "se": []
+    },
+    {
+      "name": "役刀「四杠子」",
+      "id": "slashblade_sendims:yakuman_suukantsu",
+      "attack": 35,
+      "enchantments": [
+        {
+          "id": "minecraft:sharpness",
+          "lvl": 4
+        },
+        {
+          "id": "minecraft:unbreaking",
+          "lvl": 3
+        },
+        {
+          "id": "minecraft:looting",
+          "lvl": 2
+        }
+      ],
+      "sa": "四杠镇山·弹药",
+      "ap_flat": 300,
+      "ap_max_ratio": 0.15,
+      "se": []
+    },
+    {
+      "name": "役刀「天和」",
+      "id": "slashblade_sendims:yakuman_tenhou",
+      "attack": 35,
+      "enchantments": [
+        {
+          "id": "minecraft:sharpness",
+          "lvl": 4
+        },
+        {
+          "id": "minecraft:unbreaking",
+          "lvl": 3
+        },
+        {
+          "id": "minecraft:looting",
+          "lvl": 2
+        }
+      ],
+      "sa": "天授一闪",
+      "ap_flat": 450,
+      "ap_max_ratio": 0.2,
+      "se": []
+    },
+    {
+      "name": "役刀「地和」",
+      "id": "slashblade_sendims:yakuman_chiihou",
+      "attack": 35,
+      "enchantments": [
+        {
+          "id": "minecraft:sharpness",
+          "lvl": 4
+        },
+        {
+          "id": "minecraft:unbreaking",
+          "lvl": 3
+        },
+        {
+          "id": "minecraft:looting",
+          "lvl": 2
+        }
+      ],
+      "sa": "地鸣返刃",
+      "ap_flat": 350,
+      "ap_max_ratio": 0.15,
+      "se": []
+    },
+    {
+      "name": "双役刀「大四喜」",
+      "id": "slashblade_sendims:yakuman_daisuushii",
+      "attack": 60,
+      "enchantments": [
+        {
+          "id": "minecraft:sharpness",
+          "lvl": 6
+        },
+        {
+          "id": "minecraft:unbreaking",
+          "lvl": 4
+        },
+        {
+          "id": "minecraft:looting",
+          "lvl": 3
+        }
+      ],
+      "sa": "四方俱灭",
+      "ap_flat": 350,
+      "ap_max_ratio": 0.15,
+      "se": [
+        "四风巡行",
+        "借风"
+      ]
+    },
+    {
+      "name": "双役刀「三元字敕」",
+      "id": "slashblade_sendims:yakuman_sangen_jirei",
+      "attack": 60,
+      "enchantments": [
+        {
+          "id": "minecraft:sharpness",
+          "lvl": 6
+        },
+        {
+          "id": "minecraft:unbreaking",
+          "lvl": 4
+        },
+        {
+          "id": "minecraft:looting",
+          "lvl": 3
+        }
+      ],
+      "sa": "七字三龙·弹药",
+      "ap_flat": 400,
+      "ap_max_ratio": 0.2,
+      "se": [
+        "三元印",
+        "七字敕令"
+      ]
+    },
+    {
+      "name": "双役刀「清老四刻」",
+      "id": "slashblade_sendims:yakuman_chinrou_suukou",
+      "attack": 60,
+      "enchantments": [
+        {
+          "id": "minecraft:sharpness",
+          "lvl": 6
+        },
+        {
+          "id": "minecraft:unbreaking",
+          "lvl": 4
+        },
+        {
+          "id": "minecraft:looting",
+          "lvl": 3
+        }
+      ],
+      "sa": "一九四影",
+      "ap_flat": 400,
+      "ap_max_ratio": 0.2,
+      "se": [
+        "暗刻",
+        "首尾"
+      ]
+    },
+    {
+      "name": "双役刀「碧玉四杠」",
+      "id": "slashblade_sendims:yakuman_hekigyoku_suukantsu",
+      "attack": 60,
+      "enchantments": [
+        {
+          "id": "minecraft:sharpness",
+          "lvl": 6
+        },
+        {
+          "id": "minecraft:unbreaking",
+          "lvl": 4
+        },
+        {
+          "id": "minecraft:looting",
+          "lvl": 3
+        }
+      ],
+      "sa": "翠玉牌山·弹药",
+      "ap_flat": 400,
+      "ap_max_ratio": 0.2,
+      "se": [
+        "翠生",
+        "开杠"
+      ]
+    },
+    {
+      "name": "三役刀「天授国士」",
+      "id": "slashblade_sendims:yakuman_tenju_kokushi",
+      "attack": 80,
+      "enchantments": [
+        {
+          "id": "minecraft:sharpness",
+          "lvl": 8
+        },
+        {
+          "id": "minecraft:unbreaking",
+          "lvl": 5
+        },
+        {
+          "id": "minecraft:looting",
+          "lvl": 3
+        }
+      ],
+      "sa": "天授十三面·弹药",
+      "ap_flat": 600,
+      "ap_max_ratio": 0.25,
+      "se": [
+        "孤张",
+        "天授"
+      ]
+    },
+    {
+      "name": "三役刀「地生九莲」",
+      "id": "slashblade_sendims:yakuman_chisei_chuuren",
+      "attack": 80,
+      "enchantments": [
+        {
+          "id": "minecraft:sharpness",
+          "lvl": 8
+        },
+        {
+          "id": "minecraft:unbreaking",
+          "lvl": 5
+        },
+        {
+          "id": "minecraft:looting",
+          "lvl": 3
+        }
+      ],
+      "sa": "地涌九莲·弹药",
+      "ap_flat": 550,
+      "ap_max_ratio": 0.25,
+      "se": [
+        "九莲灯",
+        "地应"
+      ]
+    },
+    {
+      "name": "五役刀「四喜字刻」",
+      "id": "slashblade_sendims:yakuman_suushi_jikoku",
+      "attack": 95,
+      "enchantments": [
+        {
+          "id": "minecraft:sharpness",
+          "lvl": 9
+        },
+        {
+          "id": "minecraft:unbreaking",
+          "lvl": 6
+        },
+        {
+          "id": "minecraft:looting",
+          "lvl": 4
+        }
+      ],
+      "sa": "无声四风",
+      "ap_flat": 750,
+      "ap_max_ratio": 0.3,
+      "se": [
+        "四方字印",
+        "七字敕令",
+        "风幕"
+      ]
+    },
+    {
+      "name": "六役刀「四象归一」",
+      "id": "slashblade_sendims:yakuman_shishou_kiitsu",
+      "attack": 105,
+      "enchantments": [
+        {
+          "id": "minecraft:sharpness",
+          "lvl": 10
+        },
+        {
+          "id": "minecraft:unbreaking",
+          "lvl": 7
+        },
+        {
+          "id": "minecraft:looting",
+          "lvl": 4
+        }
+      ],
+      "sa": "四象归一",
+      "ap_flat": 1000,
+      "ap_max_ratio": 0.4,
+      "se": [
+        "四方字印",
+        "七字敕令",
+        "风幕",
+        "开杠"
+      ]
+    }
+  ],
+  "runtime_rules": {
+    "inventory": {
+      "scale_from_previous": 1.25,
+      "centered_xy": true,
+      "orientation": "horizontal",
+      "sheath": false
+    },
+    "events": {
+      "confirmed_hits": "SlashBladeEvent.HitEvent",
+      "swing_effects": "SlashBladeEvent.DoSlashEvent",
+      "combo_boundary": "bookkeeping only",
+      "secondary_attacks": "no attack hook or combo hit action; recursive damage rejected",
+      "damage_events": "damage scaling, incoming damage reaction, and stun cancellation only"
+    },
+    "grouped_tiles": {
+      "kong": "one impact per four-card stack, four 0.75x damage pulses (3x total)",
+      "four_symbols": "one shockwave per stack; all four waves share target deduplication"
+    },
+    "slash_rendering": "native SlashBlade EntitySlashEffect; common physical/magic damage pipeline",
+    "earth_tile_faces": "face each observing player camera, including the final thrown tile",
+    "sword_projectile_speed_multiplier": 2,
+    "sword_projectile_speeds_blocks_per_tick": {
+      "small": 1.2,
+      "ordinary_and_dragon": 1.6,
+      "gold": 2.4,
+      "shadow": 2.0
+    },
+    "nine_lamps_speed_multiplier": 1.5,
+    "card_throw_speed": "unchanged; tiles have separate throwing speeds",
+    "verification": "17 native GameTests passed; client inventory/tiles/native slashes inspected with shaders disabled and Oculus + Complementary",
+    "effect_transparency": {
+      "base_opacity": 0.65,
+      "transparency": 0.35,
+      "preserve_lifetime_fade": true,
+      "scope": "All yakuman tile, stack, orbit, sword-wave, dragon, shadow, gate, light and ring meshes, plus native slashes",
+      "extra_render_passes": 0,
+      "verification": "Native slash marker synchronized; client inspected without shaders and with Oculus + Complementary"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "dustandash:integrate",
+  "ingredients": [
+    {
+      "item": "integrateddynamics:crystalized_menril_chunk"
+    },
+    {
+      "item": "dustandash:order_dust"
+    }
+  ],
+  "level": 1,
+  "output": {
+    "item": "kubejs:omni_engineering_05",
+    "count": 1
+  }
+}

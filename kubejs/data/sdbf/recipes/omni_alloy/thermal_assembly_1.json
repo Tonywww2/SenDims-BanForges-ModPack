@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "A  ",
+    "   ",
+    "   "
+  ],
+  "key": {
+    "A": {
+      "item": "kubejs:omni_thermal_08"
+    }
+  },
+  "result": {
+    "item": "kubejs:omni_thermal_assembly_1",
+    "count": 1
+  }
+}

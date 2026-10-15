@@ -10,6 +10,7 @@
 	images: [{
 		height: 25.0d
 		image: "sdbf:textures/gui/task_index.png"
+		quest_enhance_exclude_from_box_selection: false
 		rotation: 0.0d
 		width: 75.0d
 		x: 5.0d
@@ -308,6 +309,7 @@
 			hide_dependent_lines: true
 			icon: "botania:cosmetic_questgiver_mark"
 			id: "222077D4E6F647A3"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "71D96E75D08EC925"
@@ -340,6 +342,7 @@
 			]
 			icon: "minecraft:command_block"
 			id: "2AB981A4A033541D"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				id: "6DF67BCB21CCED07"
 				type: "xp"
@@ -375,6 +378,7 @@
 				"·科技：科技线大后期内容。"
 			]
 			id: "0CD325E67D4FB42C"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				id: "254A048012B2741F"
 				type: "xp"

@@ -39,6 +39,61 @@ ServerEvents.recipes(event => {
         .energy(16384)
         .id("sdbf:ml_computing_ingot_acc_s4")
 
+    // 圣剑系列：金纸竹光 + 大太刀 → 必胜黄金之剑（阶段四末期·空岛之下）
+    event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
+        "AES",
+        "GBM",
+        " S "
+    ], {
+        "G": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("last_smith:goldenbamboo")
+                .build()
+        ),
+        "B": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("last_smith:nameless_odachi")
+                .build()
+        ),
+        "A": 'kubejs:celestial_filling_alloy_ingot',
+        "E": 'sgjourney:matok',
+        "M": 'kubejs:ml_computing_ingot',
+        "S": 'slashblade:proudsoul_crystal'
+    }, "slashblade_sendims:caliburn")
+        .id("sdbf:caliburn_s4")
+
+    // 咒王刀「御厨子」：阶段四末期，三把复杂前置均要求锻造100，并消耗最后的天狗刀匠之书。
+    event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
+        "DND",
+        "BTX",
+        "ACQ"
+    ], {
+        "D": 'kubejs:delta_dust',
+        "N": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("sjap_adder:kamuy_dark")
+                .refineCount(100)
+                .build()
+        ),
+        "B": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("sjap_adder:crimsoncherryex")
+                .refineCount(100)
+                .build()
+        ),
+        "T": 'kubejs:chaotic_truth',
+        "X": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("slashblade_addon:nihilbx")
+                .refineCount(100)
+                .build()
+        ),
+        "A": 'kubejs:celestial_filling_alloy_ingot',
+        "C": 'last_smith:scroll_tengu_full',
+        "Q": 'slashblade:proudsoul_crystal'
+    }, "slashblade_sendims:mizushi")
+        .id("sdbf:mizushi_s4")
+
     // 无名系列：雷霆 → 天罚（主世界）
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
         "MQS",

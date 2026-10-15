@@ -1,0 +1,19 @@
+{
+  "block.integrateddynamics.menril_log_stripped": "去皮门瑞欧原木",
+  "block.integrateddynamics.menril_wood": "门瑞欧木",
+  "block.integrateddynamics.menril_wood_stripped": "去皮门瑞欧木",
+  "block.integrateddynamics.menril_fence": "门瑞欧栅栏",
+  "block.integrateddynamics.menril_fence_gate": "门瑞欧栅栏门",
+  "block.integrateddynamics.menril_slab": "门瑞欧台阶",
+  "block.integrateddynamics.crystalized_menril_block": "门瑞欧结晶块",
+  "block.integrateddynamics.crystalized_menril_brick": "门瑞欧结晶砖",
+  "block.integrateddynamics.crystalized_menril_block_stairs": "门瑞欧结晶楼梯",
+  "block.integrateddynamics.crystalized_menril_brick_stairs": "门瑞欧结晶砖楼梯",
+  "block.integrateddynamics.crystalized_menril_block_slab": "门瑞欧结晶台阶",
+  "block.integrateddynamics.crystalized_menril_brick_slab": "门瑞欧结晶砖台阶",
+  "item.integrateddynamics.crystalized_menril_chunk": "门瑞欧结晶碎片",
+  "item.integrateddynamics.bucket_menril_resin": "门瑞欧树脂桶",
+  "fluid_type.integrateddynamics.menril_resin": "门瑞欧树脂",
+  "info_book.integrateddynamics.tutorials.menrilBasics.text2": "接下来，你需要制作&l挤压机&r和&l烘干池&r来加工&l门瑞欧原木&r。将原木放入&l挤压机&r，站在上面不断跳跃，直到原木被压扁。挤出的&l门瑞欧树脂&r会流向&l挤压机&r两侧。在旁边放置&l烘干池&r，即可收集刚挤出的&l门瑞欧树脂&r。",
+  "info_book.integrateddynamics.tutorials.menrilBasics.text3": "如果想要再次挤压，向&l挤压机&r施加一个红石脉冲即可将其重置。"
+}

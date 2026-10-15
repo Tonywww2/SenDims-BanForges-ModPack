@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABC",
+    "   ",
+    "   "
+  ],
+  "key": {
+    "A": {
+      "item": "kubejs:omni_bio_assembly_2"
+    },
+    "B": {
+      "item": "kubejs:omni_bio_14"
+    },
+    "C": {
+      "item": "kubejs:omni_bio_16"
+    }
+  },
+  "result": {
+    "item": "kubejs:astral_biomembrane",
+    "count": 1
+  }
+}

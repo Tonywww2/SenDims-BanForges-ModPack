@@ -36,6 +36,7 @@
 			hide_until_deps_visible: true
 			icon: "tofucraft:blocktofuishi"
 			id: "6140B0BCEB7F9D64"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				auto: "enabled"
 				count: 2
@@ -91,6 +92,7 @@
 				"&b提示：需要合成，可以使用JEI查看配方&r"
 			]
 			id: "765A0F0A66F45570"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				id: "02E5C9B69BDBE013"
 				type: "xp"
@@ -114,6 +116,7 @@
 			]
 			icon: "tofucraft:blocktofuishi"
 			id: "64402F8CC5046FCE"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				count: 16
 				id: "74D3E5A3D2641BB9"
@@ -142,6 +145,7 @@
 			]
 			icon: "tofucraft:tofugem"
 			id: "290B1AB065F93570"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [
 				{
 					id: "36FB9FC93DAB0AF3"
@@ -177,6 +181,7 @@
 			dependency_requirement: "one_completed"
 			description: ["将&b石豆腐块&r放入&b加工台&r锻打。"]
 			id: "3376AE50BC0EB9A5"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				id: "1FF3FE646FBB83F5"
 				type: "xp"
@@ -198,6 +203,7 @@
 				"提示：线可以通过破坏蜘蛛网获得。"
 			]
 			id: "4EF8B289BDF7CCB3"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				id: "56879CDB6350CE12"
 				type: "xp"
@@ -250,6 +256,7 @@
 				"提示：线可以通过破坏蜘蛛网获得。"
 			]
 			id: "5F7850D2932BFCBF"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				id: "5105CECB81EA73D5"
 				item: "tofucraft:blocktofumetal"
@@ -364,6 +371,7 @@
 				}
 			}
 			id: "4023DE67F5B0579E"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				id: "31D7A8E9A209DC9C"
 				item: "tofucraft:blocktofudiamond"
@@ -425,6 +433,7 @@
 			]
 			hide_dependency_lines: true
 			id: "5D34C0BD08F21024"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				id: "01AB28AC4EBB6770"
 				type: "xp"
@@ -444,6 +453,7 @@
 			description: ["碾碎豆腐后进一步制作合成材料"]
 			icon: "tofucraft:rollingpin"
 			id: "6650904899D41ACD"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				count: 4
 				id: "34566B80D39C4426"
@@ -475,6 +485,7 @@
 			dependencies: ["6650904899D41ACD"]
 			description: ["豆腐电路板也是可锻造的材料之一"]
 			id: "5439AA19094755F7"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				id: "24BAF60BACA82D3A"
 				type: "xp"
@@ -500,6 +511,7 @@
 			dependencies: ["6140B0BCEB7F9D64"]
 			description: ["击杀豆腐史莱姆。"]
 			id: "0491FE569AFF3401"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "58C2413E54E08AA9"
 				item: "tofucraft:tofukinu"
@@ -516,6 +528,7 @@
 				"以少量的基础攻击力为代价，换来可以被改造的能力与特殊的SE"
 			]
 			id: "146D5BE1499DB426"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				id: "04D87F88CC2A81DF"
 				item: "slashblade:proudsoul"
@@ -547,6 +560,7 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "1381805FEF5CDED3"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				id: "072BA8EE0D43B71E"
 				type: "xp"

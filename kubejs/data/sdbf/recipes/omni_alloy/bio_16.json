@@ -1,0 +1,14 @@
+{
+  "type": "productivebees:bottler",
+  "fluid": {
+    "tag": "forge:honey",
+    "amount": 250
+  },
+  "input": {
+    "item": "kubejs:omni_bio_15"
+  },
+  "output": {
+    "item": "kubejs:omni_bio_16",
+    "count": 1
+  }
+}

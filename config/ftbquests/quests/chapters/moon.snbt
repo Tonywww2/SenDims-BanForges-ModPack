@@ -59,6 +59,7 @@
 			hide_until_deps_complete: true
 			icon: "ad_astra:moon_globe"
 			id: "5D5BA71C5348297D"
+			quest_enhance_disable_scroll_paging: false
 			size: 2.0d
 			tasks: [{
 				dimension: "ad_astra:moon"
@@ -74,6 +75,7 @@
 			dependencies: ["5D5BA71C5348297D"]
 			hide_until_deps_complete: true
 			id: "1650B4334A8E0786"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "1D1E95C8B574931E"
 				item: {
@@ -98,6 +100,7 @@
 			description: ["月石+空地图可以制作月球地牢的结构羽毛笔。"]
 			hide_until_deps_complete: true
 			id: "5D98E7EA6A1E56FC"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "00AEC72C1C356703"
 				structure: "ad_astra:moon_dungeon"
@@ -110,6 +113,7 @@
 		{
 			dependencies: ["5D98E7EA6A1E56FC"]
 			id: "5BD21261CD9F446E"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "3091B2FE530931A5"
 				item: "ad_astra:moon_globe"
@@ -122,6 +126,7 @@
 			dependencies: ["5BD21261CD9F446E"]
 			description: ["月球仪不会消耗"]
 			id: "36E8BDF00D6B600E"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "0F0EAD3EF14C170F"
 				item: "terra_curio:obsidian_rose"
@@ -135,6 +140,7 @@
 			hide_until_deps_complete: true
 			icon: "ad_astra:lunarian_spawn_egg"
 			id: "1C5BA781B3774E75"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "099CD6B012FFCFA6"
 				observe_type: 5
@@ -150,6 +156,7 @@
 			dependencies: ["5D5BA71C5348297D"]
 			hide_until_deps_complete: true
 			id: "6EA2DE0DEBD7A693"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "3EDAFBC3B4F41AAE"
 				item: "ad_astra:desh_ingot"
@@ -162,6 +169,7 @@
 			dependencies: ["6EA2DE0DEBD7A693"]
 			description: ["戴斯锭+空地图可以制作远古遗迹的结构羽毛笔。"]
 			id: "12DB2506A51D2B05"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				advancement: "tetra:spelunking/ancient_ruins"
 				criterion: ""
@@ -175,6 +183,7 @@
 			dependencies: ["5D5BA71C5348297D"]
 			hide_until_deps_complete: true
 			id: "74262FD23FBE1CF8"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "2D1994E38ECB9335"
 				item: "ad_astra:moon_sand"
@@ -187,6 +196,7 @@
 			dependencies: ["74262FD23FBE1CF8"]
 			description: ["未完成"]
 			id: "762D77442C0B2116"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "58999B392F388593"
 				type: "checkmark"
@@ -200,6 +210,7 @@
 			description: ["前往月球的地心"]
 			icon: "minecraft:bedrock"
 			id: "3C83ED0BBD919A31"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "1CFCA310372C33E1"
 				observe_type: 0
@@ -214,6 +225,7 @@
 		{
 			dependencies: ["12DB2506A51D2B05"]
 			id: "4BBDBE99D484D70B"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "3BBBC5DD0B2E582D"
@@ -237,6 +249,7 @@
 			dependency_requirement: "one_completed"
 			hide_until_deps_complete: true
 			id: "44DD7148C7185A28"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "475BED26ED75FA3C"
 				item: {
@@ -257,6 +270,7 @@
 		{
 			dependencies: ["44DD7148C7185A28"]
 			id: "40DEC594EA4037DF"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "6065CD78FAAA51B5"
 				item: {
@@ -282,6 +296,7 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "41DA5EE0AEF41A8A"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "535495410C422B28"
 				item: {
@@ -305,6 +320,7 @@
 				"7DC441AFE269F697"
 			]
 			id: "53FAFE12DC339859"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "568AE79924E11C32"
 				item: {
@@ -325,6 +341,7 @@
 		{
 			dependencies: ["53FAFE12DC339859"]
 			id: "4A5FF776DD643D73"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "607C85B124F2C9FA"
 				item: {
@@ -349,6 +366,7 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "58D261B5FA944C08"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "18D89B6DFB9924A5"
 				item: "terra_entity:slime_crown"
@@ -360,6 +378,7 @@
 		{
 			dependencies: ["58D261B5FA944C08"]
 			id: "6AC63C19E46F09F3"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "3CE431EC3E281E6D"
 				item: {
@@ -380,6 +399,7 @@
 		{
 			dependencies: ["5BD21261CD9F446E"]
 			id: "64C40F337525583E"
+			quest_enhance_disable_scroll_paging: false
 			size: 1.5d
 			subtitle: "通过战斗获得资源"
 			tasks: [{

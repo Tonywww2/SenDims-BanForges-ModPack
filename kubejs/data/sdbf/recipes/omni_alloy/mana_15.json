@@ -1,0 +1,11 @@
+{
+  "type": "cataclysm:amethyst_bless",
+  "ingredients": {
+    "item": "kubejs:omni_mana_14"
+  },
+  "result": {
+    "item": "kubejs:omni_mana_15",
+    "count": 1
+  },
+  "time": 200
+}

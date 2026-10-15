@@ -1,0 +1,38 @@
+{
+    "enchantments": [
+        {
+            "id": "minecraft:sharpness",
+            "lvl": 7
+        },
+        {
+            "id": "minecraft:smite",
+            "lvl": 5
+        },
+        {
+            "id": "minecraft:unbreaking",
+            "lvl": 5
+        },
+        {
+            "id": "minecraft:looting",
+            "lvl": 3
+        }
+    ],
+    "name": "slashblade_sendims:caliburn",
+    "properties": {
+        "attack_base": 70.0,
+        "slash_art": "slashblade_sendims:caliburn",
+        "special_effects": [
+            "slashblade_sendims:mana_burst",
+            "slashblade_sendims:kings_selection"
+        ],
+        "sword_type": [
+            "bewitched"
+        ]
+    },
+    "render": {
+        "carry_type": "katana",
+        "model": "slashblade_sendims:model/holy_swords/caliburn.obj",
+        "texture": "slashblade_sendims:model/holy_swords/caliburn.png",
+        "summon_sword_color": 16766571
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "integrateddynamics:mechanical_squeezer",
+  "item": {
+    "item": "kubejs:omni_engineering_feed"
+  },
+  "result": {
+    "fluid": {
+      "fluid": "kubejs:omni_engineering_03_fluid",
+      "amount": 1000
+    },
+    "items": []
+  },
+  "duration": 100
+}

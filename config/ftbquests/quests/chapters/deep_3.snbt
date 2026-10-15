@@ -59,6 +59,7 @@
 			hide_until_deps_complete: true
 			icon: "midnight:shadowroot_leaves"
 			id: "2E482B871B147DC6"
+			quest_enhance_disable_scroll_paging: false
 			size: 2.0d
 			tasks: [{
 				dimension: "midnight:the_midnight"
@@ -74,6 +75,7 @@
 		{
 			dependencies: ["2E482B871B147DC6"]
 			id: "570094989A9F5456"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "78944C4C6CF1A7C8"
 				item: {
@@ -98,6 +100,7 @@
 				"3B09B339407ADF03"
 			]
 			id: "35F111CC582779BA"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "6447F4018FD010B8"
 				item: {
@@ -121,6 +124,7 @@
 				"26527CD8C76043BE"
 			]
 			id: "539653ADBDDDE965"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "4B7D0B99F3D57BA8"
 				item: {
@@ -144,6 +148,7 @@
 				"40570CBD9A0E5C38"
 			]
 			id: "3FBD9DC1E1BB24E1"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "65B32D44A7F77CE5"
 				item: {
@@ -170,6 +175,7 @@
 				"5A5D5E71A6C8851E"
 			]
 			id: "15D7D8180F97D356"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "6CDCC04741D6C86C"
 				item: {
@@ -194,6 +200,7 @@
 				"26527CD8C76043BE"
 			]
 			id: "295CDAFD4AFD72D7"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "3C13D16EF44C2A9B"
 				item: {
@@ -214,6 +221,7 @@
 		{
 			dependencies: ["5D12434757A0C28F"]
 			id: "447935D2ECCBD5D0"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "13D1AC3185B03046"
 				item: {
@@ -237,6 +245,7 @@
 				"3787442E50D08560"
 			]
 			id: "3C0882022833F540"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "28D7FBA61A1A7403"
 				item: {
@@ -257,6 +266,7 @@
 		{
 			dependencies: ["2E482B871B147DC6"]
 			id: "40570CBD9A0E5C38"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "115E1307A878DD34"
 				item: "midnight:crystalotus"
@@ -271,6 +281,7 @@
 				"0D47BA9BE246F22B"
 			]
 			id: "5D12434757A0C28F"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "206675173F455AAB"
 				structure: "midnight:forgotten_library"
@@ -283,6 +294,7 @@
 		{
 			dependencies: ["2E482B871B147DC6"]
 			id: "3787442E50D08560"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "36147AEE895422E7"
 				item: "midnight:tenebrum_ingot"
@@ -294,6 +306,7 @@
 		{
 			dependencies: ["2E482B871B147DC6"]
 			id: "3B09B339407ADF03"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "11817A7FBA3A5AD0"
 				item: "midnight:nagrilite_ingot"
@@ -305,6 +318,7 @@
 		{
 			dependencies: ["2E482B871B147DC6"]
 			id: "5945B33D973DD2A5"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "1261ADE69D350F81"
 				item: "midnight:virilux"
@@ -316,6 +330,7 @@
 		{
 			dependencies: ["2E482B871B147DC6"]
 			id: "1A8ED47E4400DEA8"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "2FAAB9BAB5DC42F8"
 				item: "midnight:dark_pearl"
@@ -327,6 +342,7 @@
 		{
 			dependencies: ["2E482B871B147DC6"]
 			id: "0D47BA9BE246F22B"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "509DB07F5236E887"
 				item: {
@@ -349,6 +365,7 @@
 				"1A8ED47E4400DEA8"
 			]
 			id: "26527CD8C76043BE"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5F0C3736384B9DF6"
@@ -367,6 +384,7 @@
 			dependencies: ["2E482B871B147DC6"]
 			description: ["向石头投掷晶簇获得"]
 			id: "5A5D5E71A6C8851E"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "562B4499C82175AD"
 				item: "midnight:rendium_shard"
@@ -383,6 +401,7 @@
 			dependency_requirement: "one_completed"
 			hide_until_deps_visible: true
 			id: "6E39BB8C6B65D2B6"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			tasks: [{
 				id: "1F8432296BD44C87"
@@ -399,6 +418,7 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "22A314B00893C4D7"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "38FEABCB408C4175"
 				structure: "block_factorys_bosses:dragon_tower"
@@ -411,6 +431,7 @@
 		{
 			dependencies: ["22A314B00893C4D7"]
 			id: "363048E664F173C2"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				advancement: "block_factorys_bosses:kill_dragon"
 				criterion: ""
@@ -423,6 +444,7 @@
 		{
 			dependencies: ["363048E664F173C2"]
 			id: "5326175477B9A513"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "6301376B9D629D49"
 				item: "block_factorys_bosses:dragon_bone"
@@ -434,6 +456,7 @@
 		{
 			dependencies: ["3787442E50D08560"]
 			id: "38FCF6A10FAC5584"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "12B043F5D069B471"
 				item: {

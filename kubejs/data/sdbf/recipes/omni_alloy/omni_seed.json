@@ -1,0 +1,65 @@
+{
+  "type": "deeprealm_4th:projection_combining",
+  "result": {
+    "item": "kubejs:omni_seed",
+    "count": 1
+  },
+  "steps": [
+    {
+      "stack": {
+        "item": "kubejs:astral_biomembrane",
+        "count": 1
+      },
+      "direction": "material_on_frame"
+    },
+    {
+      "stack": {
+        "item": "kubejs:celestial_lattice_lens",
+        "count": 1
+      },
+      "direction": "frame_on_material"
+    },
+    {
+      "stack": {
+        "item": "kubejs:iridescent_resonance_chamber",
+        "count": 1
+      },
+      "direction": "material_on_frame"
+    },
+    {
+      "stack": {
+        "item": "kubejs:cryogenic_phase_housing",
+        "count": 1
+      },
+      "direction": "frame_on_material"
+    },
+    {
+      "stack": {
+        "item": "kubejs:stargate_coupling_coil",
+        "count": 1
+      },
+      "direction": "material_on_frame"
+    },
+    {
+      "stack": {
+        "item": "kubejs:hydrogen_logic_valve_bank",
+        "count": 1
+      },
+      "direction": "frame_on_material"
+    },
+    {
+      "stack": {
+        "item": "kubejs:neutron_confinement_ring",
+        "count": 1
+      },
+      "direction": "material_on_frame"
+    },
+    {
+      "stack": {
+        "item": "kubejs:omni_calibration_grating",
+        "count": 1
+      },
+      "direction": "frame_on_material"
+    }
+  ]
+}

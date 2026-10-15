@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "A  ",
+    "   ",
+    "   "
+  ],
+  "key": {
+    "A": {
+      "item": "kubejs:omni_mana_04_block"
+    }
+  },
+  "result": {
+    "item": "kubejs:omni_mana_assembly_1",
+    "count": 1
+  }
+}

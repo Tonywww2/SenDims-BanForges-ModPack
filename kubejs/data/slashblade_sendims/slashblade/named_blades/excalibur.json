@@ -1,0 +1,39 @@
+{
+    "enchantments": [
+        {
+            "id": "minecraft:sharpness",
+            "lvl": 10
+        },
+        {
+            "id": "minecraft:smite",
+            "lvl": 7
+        },
+        {
+            "id": "minecraft:unbreaking",
+            "lvl": 7
+        },
+        {
+            "id": "minecraft:looting",
+            "lvl": 4
+        }
+    ],
+    "name": "slashblade_sendims:excalibur",
+    "properties": {
+        "attack_base": 90.0,
+        "slash_art": "slashblade_sendims:excalibur",
+        "special_effects": [
+            "slashblade_sendims:mana_burst",
+            "slashblade_sendims:kings_selection",
+            "slashblade_sendims:invisible_air"
+        ],
+        "sword_type": [
+            "bewitched"
+        ]
+    },
+    "render": {
+        "carry_type": "katana",
+        "model": "slashblade_sendims:model/holy_swords/excalibur.obj",
+        "texture": "slashblade_sendims:model/holy_swords/excalibur.png",
+        "summon_sword_color": 16766571
+    }
+}

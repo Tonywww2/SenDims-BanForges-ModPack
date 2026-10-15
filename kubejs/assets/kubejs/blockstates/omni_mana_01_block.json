@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "kubejs:block/omni_mana_01_block"
+    }
+  }
+}

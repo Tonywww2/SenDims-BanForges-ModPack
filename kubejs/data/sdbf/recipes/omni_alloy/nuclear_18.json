@@ -1,0 +1,18 @@
+{
+  "type": "nuclearcraft:supercooler",
+  "powerModifier": 2.0,
+  "timeModifier": 2.0,
+  "radiation": 0.0,
+  "inputFluids": [
+    {
+      "tag": "kubejs:omni_nuclear_17_fluid",
+      "amount": 1000
+    }
+  ],
+  "outputFluids": [
+    {
+      "tag": "kubejs:omni_nuclear_18_fluid",
+      "amount": 1000
+    }
+  ]
+}

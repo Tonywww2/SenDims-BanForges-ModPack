@@ -1,0 +1,13 @@
+{
+  "type": "tofucraft:bittern",
+  "process": {
+    "fluid": "kubejs:omni_bio_feed"
+  },
+  "ingredient": {
+    "item": "tofucraft:bittern_bottle"
+  },
+  "result": {
+    "item": "kubejs:omni_bio_01_block",
+    "count": 1
+  }
+}

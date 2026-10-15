@@ -38,6 +38,7 @@
 			hide_dependent_lines: true
 			hide_until_deps_complete: true
 			id: "5251AFEDB9C97974"
+			quest_enhance_disable_scroll_paging: false
 			size: 2.0d
 			tasks: [{
 				dimension: "minecraft:the_nether"
@@ -53,6 +54,7 @@
 			dependencies: ["5251AFEDB9C97974"]
 			hide_until_deps_complete: true
 			id: "188D639DFD113F3D"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "3AD617781A3E8557"
 				item: "minecraft:netherrack"
@@ -65,6 +67,7 @@
 			dependencies: ["0F5A08067624B75C"]
 			hide_until_deps_complete: true
 			id: "477A42CD53645E08"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "2CB6B32510D0BFAC"
 				item: "cataclysm:monstrous_eye"
@@ -76,6 +79,7 @@
 		{
 			dependencies: ["477A42CD53645E08"]
 			id: "1BFFE0DF9A447A4A"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "525575C9079CC106"
 				structure: "cataclysm:soul_black_smith"
@@ -88,6 +92,7 @@
 		{
 			dependencies: ["1BFFE0DF9A447A4A"]
 			id: "74CCF300B72CB6EE"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5CDE7793B1660F91"
@@ -105,6 +110,7 @@
 		{
 			dependencies: ["188D639DFD113F3D"]
 			id: "1F9B9C1CBB5B9659"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "3B860CD72D903B14"
 				item: "minecraft:nether_bricks"
@@ -121,6 +127,7 @@
 			dependency_requirement: "one_completed"
 			hide_until_deps_complete: true
 			id: "43F1C6E6DEF9378A"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "418F13DB0A172EA3"
 				structure: "minecraft:fortress"
@@ -134,6 +141,7 @@
 			dependencies: ["5251AFEDB9C97974"]
 			hide_until_deps_complete: true
 			id: "3BE7D32A56D6FB44"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				advancement: "minecraft:nether/explore_nether"
 				criterion: ""
@@ -147,6 +155,7 @@
 			dependencies: ["5251AFEDB9C97974"]
 			hide_until_deps_complete: true
 			id: "0F5A08067624B75C"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "56A28843DDDCD135"
 				item: "minecraft:ancient_debris"
@@ -158,6 +167,7 @@
 		{
 			dependencies: ["0F5A08067624B75C"]
 			id: "0809F64B7A3864AC"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			tasks: [{
 				id: "1CE2DD3E1A345971"
@@ -172,6 +182,7 @@
 			hide_until_deps_complete: true
 			icon: "terra_entity:demon_spawn_egg"
 			id: "7A229A04D3AFE10F"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				entity: "terra_entity:voodoo_demon"
 				id: "7D2C93540271C005"
@@ -185,6 +196,7 @@
 			dependencies: ["7A229A04D3AFE10F"]
 			description: ["警告：肉山会破坏大范围的方块，请确保周围半径6的区块内没有重要的东西。"]
 			id: "32F557E18C00B7A1"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "233D0CA45FEB90D8"
 				item: "terra_entity:guide_voodoo_doll_hill"
@@ -197,6 +209,7 @@
 			dependencies: ["5251AFEDB9C97974"]
 			hide_until_deps_complete: true
 			id: "18E165437CBA9864"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "2FDDDF14AA3C66D0"
 				item: "minecraft:wither_skeleton_skull"
@@ -208,6 +221,7 @@
 		{
 			dependencies: ["18E165437CBA9864"]
 			id: "59D5F0F6374C1433"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			tasks: [{
 				id: "2C899E96C690C9D9"
@@ -220,6 +234,7 @@
 		{
 			dependencies: ["0809F64B7A3864AC"]
 			id: "3AA2BC619D04E949"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "0DFB48B8E6310DA0"
 				item: {
@@ -240,6 +255,7 @@
 		{
 			dependencies: ["058C32492347BB2C"]
 			id: "182A2091DC790784"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "25FFD2FE2362BAB1"
 				item: {
@@ -260,6 +276,7 @@
 		{
 			dependencies: ["0809F64B7A3864AC"]
 			id: "058C32492347BB2C"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "04BB32396AA2DA33"
 				item: {
@@ -283,6 +300,7 @@
 				"59D5F0F6374C1433"
 			]
 			id: "76BFA745E2BBDC7E"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "5ED0B99CECE6DC72"
 				item: {
@@ -303,6 +321,7 @@
 		{
 			dependencies: ["59D5F0F6374C1433"]
 			id: "6ED32EAF0CA23ECC"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "6E858D9823124DE3"
 				item: {
@@ -326,6 +345,7 @@
 				"1821196043044105"
 			]
 			id: "28F13DDE71732A6F"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "0F4499B79A94E5C5"
 				item: {
@@ -346,6 +366,7 @@
 		{
 			dependencies: ["74CCF300B72CB6EE"]
 			id: "1F5434696DE4B67B"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			tasks: [{
 				id: "00F805D032B1ABB7"
@@ -358,6 +379,7 @@
 		{
 			dependencies: ["18E165437CBA9864"]
 			id: "482EE0B9BBA0E5D3"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "5A3D4360A44896EE"
 				item: {
@@ -378,6 +400,7 @@
 		{
 			dependencies: ["18E165437CBA9864"]
 			id: "3ECBD24ACD336B6C"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "3A181FF702FC4223"
 				item: {
@@ -399,6 +422,7 @@
 			dependencies: ["32F557E18C00B7A1"]
 			description: ["肉山掉落"]
 			id: "1821196043044105"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "60D88E6F31C221C6"
 				item: {
@@ -418,6 +442,7 @@
 		{
 			dependencies: ["5251AFEDB9C97974"]
 			id: "0432A2E8EC151B87"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "4A4319772FB062AA"
 				item: "minecraft:blaze_rod"
@@ -429,6 +454,7 @@
 		{
 			dependencies: ["5251AFEDB9C97974"]
 			id: "09B56EAA8E6C1B2E"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "3E3DB9B1A8D64425"
 				item: {
@@ -447,6 +473,7 @@
 		{
 			dependencies: ["09B56EAA8E6C1B2E"]
 			id: "4A40F053B5D1B498"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "65DF4C0E04FD5764"
 				structure: "minecraft:bastion_remnant"
@@ -459,6 +486,7 @@
 		{
 			dependencies: ["1F9B9C1CBB5B9659"]
 			id: "090010A46891A693"
+			quest_enhance_disable_scroll_paging: false
 			size: 1.5d
 			tasks: [{
 				id: "209AF9EA43AB07F2"
@@ -483,6 +511,7 @@
 			dependency_requirement: "one_completed"
 			description: ["前往这个世界的基岩层......"]
 			id: "0936AB2DCC0172A8"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "10B39805EEEBF4FC"
 				item: "kubejs:bedrock_breaker"
@@ -494,6 +523,7 @@
 		{
 			dependencies: ["5251AFEDB9C97974"]
 			id: "5189F5C67CC54B72"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "2906976E31321A38"
 				item: "minecraft:quartz"
@@ -505,6 +535,7 @@
 		{
 			dependencies: ["5189F5C67CC54B72"]
 			id: "1AD9019A80B12C4E"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			subtitle: "扫描周围的物体"
 			tasks: [{
@@ -522,6 +553,7 @@
 		{
 			dependencies: ["1AD9019A80B12C4E"]
 			id: "1B19EF873F542451"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "288471730FC37F6E"
 				item: "scannable:block_module"
@@ -533,6 +565,7 @@
 		{
 			dependencies: ["1AD9019A80B12C4E"]
 			id: "0C7050A9FB048DBC"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "1E7F7EFD38FCA754"
 				item: "scannable:range_module"
@@ -548,6 +581,7 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "511247D5AA551013"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "325E62F4F33384D1"
 				structure: "netherman:mansion_nether"
@@ -560,6 +594,7 @@
 		{
 			dependencies: ["0F5A08067624B75C"]
 			id: "04A8C9C6AA5E831A"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "61D4C094526A7D50"
 				item: {
@@ -578,6 +613,7 @@
 		{
 			dependencies: ["511247D5AA551013"]
 			id: "1636491694C6026E"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "68E3D47DE046FFB6"
 				item: "netherman:statue_stand"
@@ -589,6 +625,7 @@
 		{
 			dependencies: ["511247D5AA551013"]
 			id: "30737C99F940A46E"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "68AF1D7D3DC4A672"
 				item: {
@@ -604,6 +641,7 @@
 		{
 			dependencies: ["090010A46891A693"]
 			id: "2819EBE608DE2631"
+			quest_enhance_disable_scroll_paging: false
 			size: 1.5d
 			tasks: [{
 				id: "41C69BDABC37AF06"
@@ -622,6 +660,7 @@
 		{
 			dependencies: ["090010A46891A693"]
 			id: "152CAD374C67D2E3"
+			quest_enhance_disable_scroll_paging: false
 			size: 1.5d
 			tasks: [{
 				id: "221F7120312AE163"

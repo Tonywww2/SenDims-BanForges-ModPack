@@ -11,6 +11,7 @@
 			dependency: "59C711671F81AB45"
 			height: 1.0d
 			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 90.0d
 			width: 1.0d
 			x: 21.0d
@@ -20,6 +21,7 @@
 			dependency: "6AE2EFEC0F3BE4BE"
 			height: 1.0d
 			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 90.0d
 			width: 1.0d
 			x: 21.0d
@@ -29,6 +31,7 @@
 			dependency: "5CCEAB83DF5ACE81"
 			height: 1.0d
 			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 90.0d
 			width: 1.0d
 			x: 24.0d
@@ -38,6 +41,7 @@
 			dependency: "4A7A22C5F8893EB8"
 			height: 1.0d
 			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 90.0d
 			width: 1.0d
 			x: 27.0d
@@ -47,6 +51,7 @@
 			dependency: "2EADF063117EE157"
 			height: 1.0d
 			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 90.0d
 			width: 1.0d
 			x: 18.0d
@@ -56,6 +61,7 @@
 			dependency: "2EADF063117EE157"
 			height: 1.0d
 			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 90.0d
 			width: 1.0d
 			x: 21.0d
@@ -65,6 +71,7 @@
 			dependency: "2EADF063117EE157"
 			height: 1.0d
 			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 90.0d
 			width: 1.0d
 			x: 12.0d
@@ -74,6 +81,7 @@
 			dependency: "2EADF063117EE157"
 			height: 1.0d
 			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 90.0d
 			width: 1.0d
 			x: 12.0d
@@ -83,6 +91,7 @@
 			dependency: "2EADF063117EE157"
 			height: 1.0d
 			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 90.0d
 			width: 1.0d
 			x: 9.0d
@@ -224,6 +233,7 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "6AE2EFEC0F3BE4BE"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				count: 2
 				id: "6D8F9FA127D484A8"
@@ -242,6 +252,7 @@
 		{
 			dependencies: ["1DE54DDD04540738"]
 			id: "59C711671F81AB45"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "442D16AF6C4F4689"
 				item: "nuclearcraft:sulfuric_acid_bucket"
@@ -254,6 +265,7 @@
 			dependencies: ["5BB642BD0BE40541"]
 			description: ["可以制作古代实验室的结构羽毛笔。"]
 			id: "1DE54DDD04540738"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "0015D0CF74D0EC69"
 				item: "minecraft:iron_ingot"
@@ -268,6 +280,7 @@
 				"59C711671F81AB45"
 			]
 			id: "1FC6DCA09DEC558F"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "774ECFC547F5AA8D"
 				item: {
@@ -291,6 +304,7 @@
 				"0402AC2E4A8127A4"
 			]
 			id: "3F3BE932D1892CC4"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				count: 4
 				id: "438ABEDE7AF33312"
@@ -317,6 +331,7 @@
 		{
 			dependencies: ["5BB642BD0BE40541"]
 			id: "0402AC2E4A8127A4"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "70B06522DDB559DE"
 				item: "minecraft:lapis_lazuli"
@@ -328,6 +343,7 @@
 		{
 			dependencies: ["0402AC2E4A8127A4"]
 			id: "21AAA0495A97DD6A"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "4DF61D9E91839C53"
 				item: {
@@ -348,6 +364,7 @@
 		{
 			dependencies: ["21AAA0495A97DD6A"]
 			id: "189D056BF992C545"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "3DCDE3CAFAE7B87B"
 				item: {
@@ -380,6 +397,7 @@
 			hide_dependent_lines: true
 			icon: "botania:cosmetic_questgiver_mark"
 			id: "2EADF063117EE157"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				count: 2
 				id: "5306C5B3F1075E96"
@@ -399,6 +417,7 @@
 			dependencies: ["2EADF063117EE157"]
 			description: ["先驱者可以使用钻石激活"]
 			id: "6005126CA254EC52"
+			quest_enhance_disable_scroll_paging: false
 			size: 1.5d
 			tasks: [{
 				id: "15CEF9F2A96CEB19"
@@ -411,6 +430,7 @@
 		{
 			dependencies: ["5BB642BD0BE40541"]
 			id: "3C8A6884B30E7AE7"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "33FEE8AA231C94B7"
 				item: "minecraft:sculk_catalyst"
@@ -427,6 +447,7 @@
 			]
 			icon: "slashblade_sendims:structure_quill"
 			id: "64D03E66319AF253"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				count: 2
 				id: "02CCC020BB630410"
@@ -449,6 +470,7 @@
 				"&c注意：&r两种村庄的生成范围不同，如果你发现一种太远了，可以尝试制作另一种村庄的结构羽毛笔。"
 			]
 			id: "008A8F19BD6601FB"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "3E279853764D0544"
 				item: {
@@ -472,6 +494,7 @@
 				"&c注意：&r两种村庄的生成范围不同，如果你发现一种太远了，可以尝试制作另一种村庄的结构羽毛笔。"
 			]
 			id: "22FB062F79308882"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "508326400EA6C64D"
 				item: {
@@ -494,6 +517,7 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "1A14AB96A3999453"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "7AA77D9754E239C3"
 				item: {
@@ -514,6 +538,7 @@
 		{
 			dependencies: ["1DE54DDD04540738"]
 			id: "4BF82964D6D12B4B"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				count: 4
 				id: "1F1C2554D3A0F866"
@@ -547,6 +572,7 @@
 			hide_until_deps_visible: true
 			icon: "minecraft:deepslate"
 			id: "5BB642BD0BE40541"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [
 				{
 					id: "2AA98C1187EE9593"
@@ -595,6 +621,7 @@
 			dependencies: ["5BB642BD0BE40541"]
 			description: ["深境一层中可以找到要塞，但是一股神秘的力量阻止着你进入末地......"]
 			id: "4A7A22C5F8893EB8"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "679F289DA1698790"
 				item: "minecraft:ender_eye"
@@ -611,6 +638,7 @@
 			dependency_requirement: "one_completed"
 			description: ["提示：可以分解为钢锭"]
 			id: "09282B67B7D8CF17"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				count: 2
 				id: "6D3869CD66F3D866"
@@ -629,6 +657,7 @@
 			dependencies: ["5BB642BD0BE40541"]
 			description: ["可以在冰霜洞穴找到"]
 			id: "76CFDB7C2E7B3AA4"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "6330235EB52B8EAB"
 				item: "yungscavebiomes:rare_ice"
@@ -642,6 +671,7 @@
 			description: ["骷髅王的召唤需要占用很大的空间"]
 			hide_until_deps_complete: true
 			id: "5CCEAB83DF5ACE81"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "2B49BF624FB4A8EE"
@@ -666,6 +696,7 @@
 				"提示：你需要在后续的世界中发现&e神秘碱晶&r，才能激活这个道具。"
 			]
 			id: "7267904F019CEFD6"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			tasks: [{
 				id: "215EAC577594DE3E"
@@ -680,6 +711,7 @@
 			dependency_requirement: "one_completed"
 			description: ["可以制作瘟疫疯人院的结构羽毛笔。"]
 			id: "219853BE75550919"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "1DB61BF0F5412992"
 				item: {
@@ -708,6 +740,7 @@
 				"注意：瘟疫疯人院内的敌人十分强大，他们拥有比常规敌人更优质的装备，请做好充足的准备。"
 			]
 			id: "69856593B46ECD9E"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "警告"
 			tasks: [{
 				id: "04B2EB5A3186D705"
@@ -726,6 +759,7 @@
 			dependency_requirement: "one_completed"
 			description: ["提示：两种村庄在不同的生物群系中生成，其中的一种有可能会比另一种近很多。"]
 			id: "3C4875514F38F6E4"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				count: 2
 				id: "22CF8B925B863481"
@@ -750,6 +784,7 @@
 			dependency_requirement: "one_completed"
 			description: ["提示：两种村庄在不同的生物群系中生成，其中的一种有可能会比另一种近很多。"]
 			id: "0E88B89884D28C35"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				count: 2
 				id: "0F1365798062F3CB"
@@ -769,6 +804,7 @@
 		{
 			dependencies: ["69856593B46ECD9E"]
 			id: "619E1D88F9CF6F9B"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "43F42BB309FB31CB"
 				item: {
@@ -792,6 +828,7 @@
 				"2EADF063117EE157"
 			]
 			id: "4F316EFF191CEBF5"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "7805EBED20BB258D"
 				structure: "sdbf:ae_lab"
@@ -804,6 +841,7 @@
 		{
 			dependencies: ["09282B67B7D8CF17"]
 			id: "3B6D18679BD6BD0A"
+			quest_enhance_disable_scroll_paging: false
 			size: 1.5d
 			subtitle: "通过战斗获得资源"
 			tasks: [{
@@ -823,6 +861,7 @@
 		{
 			dependencies: ["0402AC2E4A8127A4"]
 			id: "206536C510BBA790"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				count: 2
 				id: "23346C2860186F70"
@@ -848,6 +887,7 @@
 		{
 			dependencies: ["1DE54DDD04540738"]
 			id: "4C3BC19718372DC5"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "39EA849BE17C7FA8"
 				item: {
@@ -866,6 +906,7 @@
 		{
 			dependencies: ["0402AC2E4A8127A4"]
 			id: "3766AEF55C430C3B"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "387060B873F5A80A"
 				item: {

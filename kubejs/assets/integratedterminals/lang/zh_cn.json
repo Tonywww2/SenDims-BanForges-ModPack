@@ -1,0 +1,9 @@
+{
+  "block.integratedterminals.menril_glass": "门瑞欧玻璃",
+  "block.integratedterminals.menril_glass.info": "发光玻璃",
+  "advancement.integratedterminals.menril_glass": "发光玻璃",
+  "advancement.integratedterminals.menril_glass.desc": "将门瑞欧树脂浇在玻璃上并烘干，制成门瑞欧玻璃。",
+  "info_book.integratedterminals.storage_terminal.crafting.text1": "要合成&l存储终端&r，首先需要一种会发光的&o玻璃&r，即&l门瑞欧玻璃&r。将玻璃和门瑞欧树脂放入&l烘干池&r即可制成。",
+  "info_book.integratedterminals.storage_terminal.portable.text1": "将&l门瑞欧结晶碎片&r与&l存储终端&r合成，即可制作便携式存储终端。",
+  "info_book.integratedterminals.tutorials.storage_terminal.text2": "本教程很简单：合成&l门瑞欧玻璃&r和&l存储终端&r，将终端连接到网络，然后打开其界面。"
+}

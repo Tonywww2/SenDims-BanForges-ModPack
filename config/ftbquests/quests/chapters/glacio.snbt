@@ -31,6 +31,7 @@
 			]
 			hide_dependent_lines: true
 			id: "2E150AF7AD2E748B"
+			quest_enhance_disable_scroll_paging: false
 			size: 2.0d
 			tasks: [{
 				dimension: "ad_astra:glacio"
@@ -58,6 +59,7 @@
 				}
 			}
 			id: "53D8B3248F215A27"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "猎巫"
 			tasks: [{
 				id: "7F146C7344B5BB90"
@@ -83,6 +85,7 @@
 		{
 			dependencies: ["2E150AF7AD2E748B"]
 			id: "5740D7EB5FC2CCB5"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "23571A67B137B3BF"
 				item: "ad_astra:permafrost"
@@ -94,6 +97,7 @@
 		{
 			dependencies: ["2E150AF7AD2E748B"]
 			id: "727A3BB85C431A51"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "3E46B9EA6F8AA2B2"
 				item: "ad_astra:glacio_stone"
@@ -105,6 +109,7 @@
 		{
 			dependencies: ["2E150AF7AD2E748B"]
 			id: "0026560C056CC8EB"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "5E8CE162C317F532"
 				item: "minecraft:bedrock"
@@ -124,6 +129,7 @@
 			]
 			hide_dependency_lines: true
 			id: "4FB4B07E9F4377DC"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 1.0d
 			tasks: [{
@@ -146,6 +152,7 @@
 		{
 			dependencies: ["0026560C056CC8EB"]
 			id: "78F7666CEE16B22C"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "1D14F0A79963D089"
 				item: "slashblade_sendims:integral_component_6"

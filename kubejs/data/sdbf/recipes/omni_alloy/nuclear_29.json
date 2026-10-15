@@ -1,0 +1,18 @@
+{
+  "type": "nuclearcraft:steam_turbine",
+  "powerModifier": 2.0,
+  "timeModifier": 2.0,
+  "radiation": 0.0,
+  "inputFluids": [
+    {
+      "tag": "kubejs:omni_nuclear_28_fluid",
+      "amount": 1000
+    }
+  ],
+  "outputFluids": [
+    {
+      "tag": "kubejs:omni_nuclear_29_fluid",
+      "amount": 1000
+    }
+  ]
+}

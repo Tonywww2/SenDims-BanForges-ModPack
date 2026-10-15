@@ -1,0 +1,13 @@
+{
+  "type": "pneumaticcraft:heat_frame_cooling",
+  "input": {
+    "type": "pneumaticcraft:fluid",
+    "fluid": "kubejs:omni_pneumatic_07_fluid",
+    "amount": 1000
+  },
+  "result": {
+    "item": "kubejs:omni_pneumatic_08",
+    "count": 1
+  },
+  "max_temp": 273
+}

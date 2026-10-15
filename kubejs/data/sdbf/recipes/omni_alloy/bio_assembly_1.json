@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AB ",
+    "   ",
+    "   "
+  ],
+  "key": {
+    "A": {
+      "item": "kubejs:omni_bio_01_block"
+    },
+    "B": {
+      "item": "kubejs:omni_bio_03"
+    }
+  },
+  "result": {
+    "item": "kubejs:omni_bio_assembly_1",
+    "count": 1
+  }
+}

@@ -1,0 +1,93 @@
+
+#Read before Forge config loading. All startup changes require a full game restart.
+[startup]
+	#Enable this whole group. -Dsendims.startup.enabled=false temporarily overrides it.
+	enabled = true
+	#Cache Mixin opcode names using an already installed agent.
+	opcodeNameCache = true
+	#Use the low-allocation OBJ parser with upstream syntax fallback.
+	objParser = true
+	#Prepare OBJ models asynchronously on the existing game executor.
+	parallelObjPreparation = true
+	#0 automatically chooses at most four OBJ preparation jobs.
+	#Range: 0 ~ 8
+	objWorkers = 0
+	#Cache parsed OBJ data on disk, keyed by resource content.
+	objDiskCache = true
+	#Disk cache budget in MiB; 0 disables cache reads and writes.
+	#Range: 0 ~ 1024
+	objCacheMiB = 128
+	#Larger OBJ sources use the original parser with serialized fallback.
+	#Range: 1 ~ 64
+	objMaxSourceMiB = 16
+	#Reuse model locations during model preparation.
+	modelLocationCache = true
+	#Maximum model-location entries; all are released after preparation.
+	#Range: 0 ~ 1048576
+	modelLocationEntries = 262144
+	#Batch model JSON input tasks on the existing game executor.
+	modelInputBatches = true
+	#0 automatically chooses at most eight jobs per JSON input category.
+	#Range: 0 ~ 32
+	modelWorkers = 0
+	#Defer Sounds config previews on startup; keep quest HUD images eager.
+	lazyConfigImages = true
+
+[performance]
+
+	[performance.neat]
+		#Additional Neat visibility filter. Existing Neat filters still apply.
+		#Allowed Values: ALL, DAMAGED_OR_TARGETED, TARGETED
+		healthBars = "ALL"
+		#Hide duplicate maximum HP and percentage fields; keep current HP.
+		compactHealthText = false
+		#Show Neat mob-type icons. Armor remains controlled by Neat's showArmor.
+		attributeIcons = true
+
+	[performance.rendering]
+		#Cache static grinder sword geometry and streamline animated submission. False restores CCL rendering.
+		draconicGrinderGeometry = true
+		#Hard geometry-array budget per grinder renderer, including all idle poses. Zero uses upstream rendering.
+		#Range: 0 ~ 16
+		grinderCacheMiB = 2
+		#Reuse OBJ face math scratch data. Live vertices, UV, light and render override events are preserved.
+		slashbladeObjSubmission = true
+
+	[performance.hud]
+		#Reuse consecutive identical FTB entity-icon texture filter writes inside one HUD pass.
+		minimapIconFilters = true
+		#Batch UIQuest background slices; preserve the original stepped gradient and text/item ordering.
+		questBackgroundBatching = true
+		#Cache immutable trimmed quest text by font, resource generation and width. Quest progress is never cached.
+		questTrimmedTextCache = true
+
+	[performance.buffers]
+		#Reuse bounded immutable views of ImmediatelyFast fixed buffers. No buffer pooling or flush reordering.
+		immediatelyFastFixedBufferViews = true
+
+[holySwordVisuals]
+	#Enable Caliburn/Excalibur visual effects. Client visuals only.
+	enabled = true
+	#Show ceiling-clipped sword curtains and sky pillars.
+	skyLight = true
+	#Effect opacity. Standard depth-tested emissive materials support shader packs.
+	#Range: 0.15 ~ 1.5
+	intensity = 1.0
+	#Maximum motes drawn across all holy sword casts. No dynamic lights.
+	#Range: 0 ~ 768
+	moteBudget = 768
+	#Beyond this distance render only the main light silhouettes.
+	#Range: 16 ~ 96
+	detailDistance = 48
+
+[structureQuill]
+	#Structure IDs whose preconfigured quills are shown in the creative mode tab.
+	#Tooltip translation keys are generated as structure.<namespace>.<path>.
+	#Changing this value requires a client restart.
+	creativeTabStructures = ["minecraft:stronghold", "tofucraft:tofu_castle", "sdbf:ae_lab", "cavernous:lush_village", "cavernous:stone_village", "dungeons_arise:plague_asylum", "dungeons_arise:coliseum", "dungeons_arise:heavenly_rider", "block_factorys_bosses:underworld_arena", "ad_astra:moon_dungeon", "tetra:regular_ruin", "minecraft:bastion_remnant", "minecraft:fortress", "cataclysm:soul_black_smith", "netherman:mansion_nether", "block_factorys_bosses:kraken_ship", "midnight:forgotten_library", "block_factorys_bosses:dragon_tower", "minecraft:end_city", "undergarden:catacombs", "the_bumblezone:throne_pillar", "the_bumblezone:sempiternal_sanctum_blue", "the_bumblezone:sempiternal_sanctum_green", "the_bumblezone:sempiternal_sanctum_purple", "the_bumblezone:sempiternal_sanctum_red", "the_bumblezone:sempiternal_sanctum_white", "the_bumblezone:sempiternal_sanctum_yellow", "aether:bronze_dungeon", "aether:silver_dungeon"]
+
+[draconicEvolution]
+	#The only dimension where Draconic Evolution chaos islands may affect world generation.
+	#Changing this value requires a server restart.
+	targetDimension = "sdbf:inside_the_end"
+

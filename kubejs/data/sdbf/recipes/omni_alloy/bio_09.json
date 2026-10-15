@@ -1,0 +1,17 @@
+{
+  "type": "sakura:cooking",
+  "experience": 0.1,
+  "fluid": {
+    "null_fluid": true
+  },
+  "ingredients": [
+    {
+      "item": "kubejs:omni_bio_08"
+    }
+  ],
+  "recipeTime": 200,
+  "result": {
+    "item": "kubejs:omni_bio_09",
+    "count": 1
+  }
+}

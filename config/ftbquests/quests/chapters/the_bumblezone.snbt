@@ -84,6 +84,7 @@
 			hide_dependent_lines: true
 			icon: "the_bumblezone:beehive_beeswax"
 			id: "220AEBF0A8A46F7C"
+			quest_enhance_disable_scroll_paging: false
 			size: 2.0d
 			tasks: [{
 				dimension: "the_bumblezone:the_bumblezone"
@@ -99,6 +100,7 @@
 		{
 			dependencies: ["220AEBF0A8A46F7C"]
 			id: "67CEA0F546DE635F"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "2DCAB4AAD1B5FEEC"
 				item: "the_bumblezone:honey_crystal_shards"
@@ -110,6 +112,7 @@
 		{
 			dependencies: ["67CEA0F546DE635F"]
 			id: "6BF110540677BC99"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "08C0E86DFE41FC2B"
 				item: "the_bumblezone:pollen_puff"
@@ -121,6 +124,7 @@
 		{
 			dependencies: ["220AEBF0A8A46F7C"]
 			id: "5FC15782BFDB913C"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			tasks: [{
 				id: "5322C37AF1717BD4"
@@ -133,6 +137,7 @@
 		{
 			dependencies: ["67CEA0F546DE635F"]
 			id: "3C0F4DC6CA3B4AAD"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "7642BCC53B0F1E40"
 				item: "the_bumblezone:glistering_honey_crystal"
@@ -153,6 +158,7 @@
 				"在获得&b任意的圣所精华&r后，你可以用它合成&b任意圣所的结构羽毛笔&r，&b圣所精华&r不会消耗。"
 			]
 			id: "05F34C96BF68DD64"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "2E62A8764714D952"
 				item: "the_bumblezone:essence_of_the_bees"
@@ -170,6 +176,7 @@
 			description: ["可以使用任意的蜜蜂指南针，制作定位王座尖塔的结构羽毛笔。"]
 			icon: "the_bumblezone:bee_queen_spawn_egg"
 			id: "1425849749F89FA6"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "74993AD3C6888951"
 				observe_type: 5
@@ -184,6 +191,7 @@
 		{
 			dependencies: ["05F34C96BF68DD64"]
 			id: "50810C9710385F58"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "7EF84AECC5EDB551"
 				item: {
@@ -205,6 +213,7 @@
 		{
 			dependencies: ["05F34C96BF68DD64"]
 			id: "09E8DC7F68D573E9"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "24000F235CD9F2EC"
 				item: {
@@ -226,6 +235,7 @@
 		{
 			dependencies: ["05F34C96BF68DD64"]
 			id: "6CCC54D46EB1FD91"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "7D48481CB600F18D"
 				item: {
@@ -247,6 +257,7 @@
 		{
 			dependencies: ["05F34C96BF68DD64"]
 			id: "7FCF3EFF7EF69E4D"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "042950BCB4E8CEB0"
 				item: {
@@ -278,6 +289,7 @@
 				}
 			}
 			id: "3EA7431F5CEA94F0"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "1578FADA0E323E58"
 				item: {
@@ -299,6 +311,7 @@
 		{
 			dependencies: ["05F34C96BF68DD64"]
 			id: "505145BA63BA4220"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "79B8A0600FBCBFBC"
 				item: {
@@ -326,6 +339,7 @@
 				"7FCF3EFF7EF69E4D"
 			]
 			id: "3B3CA7DE9AD5152C"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "44E1CF0BCDA70121"
 				item: {
@@ -346,6 +360,7 @@
 		{
 			dependencies: ["7830BE2BDC13CC00"]
 			id: "6D6FC1765F6AAA8B"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "16B065909DBD63AF"
 				item: {
@@ -371,6 +386,7 @@
 				"09E8DC7F68D573E9"
 			]
 			id: "455A8F26E29E7DB0"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "7A6F1FA93FF5C6FE"
 				item: {
@@ -395,6 +411,7 @@
 				"182A2091DC790784"
 			]
 			id: "0DE1DF9046B9CD2E"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "6924945E575EFDD7"
 				item: {
@@ -416,6 +433,7 @@
 			dependencies: ["05E54DE8EF83C8EB"]
 			hide_until_deps_complete: true
 			id: "682B4755022DFAD3"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "2E955366CA52973D"
 				item: "last_smith:scroll_tengu_vol1"
@@ -427,6 +445,7 @@
 		{
 			dependencies: ["1425849749F89FA6"]
 			id: "7830BE2BDC13CC00"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "2F6517B240C0B836"
 				item: "kubejs:multifaceted_ambrosia"
@@ -443,6 +462,7 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "0351BC9DA1C5B4F7"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "7994EC18FBD6D59E"
 				item: {
@@ -469,6 +489,7 @@
 				"00880D674BE17F9A"
 			]
 			id: "67DC282A5517F481"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "0D61C581C47CCF10"
 				item: {
@@ -489,6 +510,7 @@
 		{
 			dependencies: ["220AEBF0A8A46F7C"]
 			id: "3BE92E8D1DB90EFC"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				advancement: "the_bumblezone:effects/getting_protection"
 				criterion: ""
@@ -501,6 +523,7 @@
 		{
 			dependencies: ["220AEBF0A8A46F7C"]
 			id: "08CDD7E3B51E31E8"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				advancement: "the_bumblezone:effects/honey_permission"
 				criterion: ""
@@ -518,6 +541,7 @@
 				"也可以直接制作定位王座尖塔的结构羽毛笔。"
 			]
 			id: "19B4A795254F023B"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "51A1175A89AC86A8"
 				item: {
@@ -533,6 +557,7 @@
 		{
 			dependencies: ["220AEBF0A8A46F7C"]
 			id: "0BE994ED14E4C64D"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "74BC32A78D749F05"
 				item: "the_bumblezone:ancient_wax_compound_eyes"

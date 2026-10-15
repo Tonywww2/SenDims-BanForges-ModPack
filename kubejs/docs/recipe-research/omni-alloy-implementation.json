@@ -1,0 +1,1551 @@
+{
+  "status": "implemented_pending_game_restart_validation",
+  "design_revision": 4,
+  "workflows": {
+    "bio_17": {
+      "mode": "original_supply",
+      "output": "minecraft:oak_log"
+    },
+    "bio_12": {
+      "mode": "original_supply",
+      "output": "minecraft:honeycomb"
+    },
+    "thermal_25": {
+      "mode": "original_supply",
+      "output": "minecraft:basalt"
+    },
+    "thermal_23": {
+      "mode": "original_supply",
+      "output": "thermal:latex_bucket"
+    },
+    "thermal_24": {
+      "mode": "original_supply",
+      "output": "minecraft:honeycomb"
+    },
+    "engineering_15": {
+      "mode": "original_supply",
+      "output": "enderio:grains_of_infinity"
+    },
+    "nuclear_32": {
+      "mode": "original_supply",
+      "output": "nuclearcraft:helium_bucket"
+    },
+    "bio_01": {
+      "recipes": [
+        "sdbf:omni_alloy/bio_01"
+      ],
+      "mode": "native_recipe"
+    },
+    "bio_03": {
+      "recipes": [
+        "sdbf:omni_alloy/bio_03"
+      ],
+      "mode": "native_recipe"
+    },
+    "bio_07": {
+      "recipes": [
+        "sdbf:omni_alloy/bio_07"
+      ],
+      "mode": "native_recipe"
+    },
+    "bio_08": {
+      "recipes": [
+        "sdbf:omni_alloy/bio_08"
+      ],
+      "mode": "native_recipe"
+    },
+    "bio_09": {
+      "recipes": [
+        "sdbf:omni_alloy/bio_09"
+      ],
+      "mode": "native_recipe"
+    },
+    "bio_10": {
+      "recipes": [
+        "sdbf:omni_alloy/bio_10"
+      ],
+      "mode": "native_recipe"
+    },
+    "bio_11": {
+      "recipes": [
+        "sdbf:omni_alloy/bio_11"
+      ],
+      "mode": "native_recipe"
+    },
+    "bio_13": {
+      "recipes": [
+        "sdbf:omni_alloy/bio_13"
+      ],
+      "mode": "native_recipe",
+      "preparation": "sdbf:omni_alloy/bio_13_prepare"
+    },
+    "bio_14": {
+      "recipes": [
+        "sdbf:omni_alloy/bio_14"
+      ],
+      "mode": "native_recipe"
+    },
+    "bio_15": {
+      "recipes": [
+        "sdbf:omni_alloy/bio_15"
+      ],
+      "mode": "native_recipe",
+      "preparation": "sdbf:omni_alloy/bio_15_prepare"
+    },
+    "bio_16": {
+      "recipes": [
+        "sdbf:omni_alloy/bio_16"
+      ],
+      "mode": "native_recipe"
+    },
+    "aether_01": {
+      "recipes": [
+        "sdbf:omni_alloy/aether_01"
+      ],
+      "mode": "native_recipe"
+    },
+    "aether_02": {
+      "recipes": [
+        "sdbf:omni_alloy/aether_02"
+      ],
+      "mode": "native_recipe"
+    },
+    "aether_03": {
+      "recipes": [
+        "sdbf:omni_alloy/aether_03"
+      ],
+      "mode": "native_recipe",
+      "preparation": "sdbf:omni_alloy/aether_03_prepare"
+    },
+    "aether_04": {
+      "recipes": [
+        "sdbf:omni_alloy/aether_04"
+      ],
+      "mode": "native_recipe"
+    },
+    "aether_05": {
+      "recipes": [
+        "sdbf:omni_alloy/aether_05"
+      ],
+      "mode": "native_recipe"
+    },
+    "aether_06": {
+      "recipes": [
+        "sdbf:omni_alloy/aether_06"
+      ],
+      "mode": "native_recipe"
+    },
+    "aether_07": {
+      "recipes": [
+        "sdbf:omni_alloy/aether_07"
+      ],
+      "mode": "native_recipe"
+    },
+    "aether_10": {
+      "recipes": [
+        "sdbf:omni_alloy/aether_10"
+      ],
+      "mode": "native_recipe"
+    },
+    "aether_11": {
+      "recipes": [
+        "sdbf:omni_alloy/aether_11"
+      ],
+      "mode": "native_recipe"
+    },
+    "aether_08": {
+      "mode": "native_carrier",
+      "recipes": [
+        "sdbf:omni_alloy/aether_08_pack"
+      ],
+      "carrier": "aether_redux:infused_veridium_axe",
+      "check": "none",
+      "note": "消耗原生注入后的维瑞迪姆斧；沿用 Redux 注入配方。"
+    },
+    "aether_09": {
+      "recipes": [
+        "sdbf:omni_alloy/aether_09"
+      ],
+      "mode": "native_recipe",
+      "preparation": "sdbf:omni_alloy/aether_09_prepare"
+    },
+    "aether_12": {
+      "recipes": [
+        "sdbf:omni_alloy/aether_12"
+      ],
+      "mode": "native_recipe",
+      "preparation": "sdbf:omni_alloy/aether_12_prepare"
+    },
+    "aether_13": {
+      "recipes": [
+        "sdbf:omni_alloy/aether_13"
+      ],
+      "mode": "native_recipe"
+    },
+    "aether_14": {
+      "recipes": [
+        "sdbf:omni_alloy/aether_14"
+      ],
+      "mode": "native_recipe"
+    },
+    "mana_01": {
+      "recipes": [
+        "sdbf:omni_alloy/mana_01"
+      ],
+      "mode": "native_recipe"
+    },
+    "mana_02": {
+      "recipes": [
+        "sdbf:omni_alloy/mana_02"
+      ],
+      "mode": "native_recipe"
+    },
+    "mana_03": {
+      "recipes": [
+        "sdbf:omni_alloy/mana_03"
+      ],
+      "mode": "native_recipe"
+    },
+    "mana_04": {
+      "recipes": [
+        "sdbf:omni_alloy/mana_04"
+      ],
+      "mode": "native_recipe"
+    },
+    "mana_05": {
+      "recipes": [
+        "sdbf:omni_alloy/mana_05"
+      ],
+      "mode": "native_recipe"
+    },
+    "mana_06": {
+      "recipes": [
+        "sdbf:omni_alloy/mana_06"
+      ],
+      "mode": "native_recipe"
+    },
+    "mana_07": {
+      "recipes": [
+        "sdbf:omni_alloy/mana_07"
+      ],
+      "mode": "native_recipe"
+    },
+    "mana_08": {
+      "recipes": [
+        "sdbf:omni_alloy/mana_08"
+      ],
+      "mode": "native_recipe"
+    },
+    "mana_09": {
+      "recipes": [
+        "sdbf:omni_alloy/mana_09"
+      ],
+      "mode": "native_recipe"
+    },
+    "mana_14": {
+      "recipes": [
+        "sdbf:omni_alloy/mana_14"
+      ],
+      "mode": "native_recipe"
+    },
+    "mana_15": {
+      "recipes": [
+        "sdbf:omni_alloy/mana_15"
+      ],
+      "mode": "native_recipe"
+    },
+    "mana_10": {
+      "mode": "native_carrier",
+      "recipes": [
+        "sdbf:omni_alloy/mana_10_pack"
+      ],
+      "carrier": "botania:brew_vial",
+      "check": "brew_absorption",
+      "note": "吸收效果的完整植物酿造药水瓶，至少四口剩余次数。"
+    },
+    "mana_11": {
+      "recipes": [
+        "sdbf:omni_alloy/mana_11"
+      ],
+      "mode": "native_recipe",
+      "preparation": "sdbf:omni_alloy/mana_11_prepare"
+    },
+    "mana_12": {
+      "recipes": [
+        "sdbf:omni_alloy/mana_12"
+      ],
+      "mode": "native_recipe",
+      "preparation": "sdbf:omni_alloy/mana_12_prepare"
+    },
+    "thermal_01": {
+      "recipes": [
+        "sdbf:omni_alloy/thermal_01"
+      ],
+      "mode": "native_recipe"
+    },
+    "thermal_02": {
+      "recipes": [
+        "sdbf:omni_alloy/thermal_02"
+      ],
+      "mode": "native_recipe"
+    },
+    "thermal_03": {
+      "recipes": [
+        "sdbf:omni_alloy/thermal_03"
+      ],
+      "mode": "native_recipe"
+    },
+    "thermal_04": {
+      "recipes": [
+        "sdbf:omni_alloy/thermal_04"
+      ],
+      "mode": "native_recipe"
+    },
+    "thermal_07": {
+      "recipes": [
+        "sdbf:omni_alloy/thermal_07"
+      ],
+      "mode": "native_recipe"
+    },
+    "thermal_08": {
+      "recipes": [
+        "sdbf:omni_alloy/thermal_08"
+      ],
+      "mode": "native_recipe"
+    },
+    "thermal_09": {
+      "recipes": [
+        "sdbf:omni_alloy/thermal_09"
+      ],
+      "mode": "native_recipe"
+    },
+    "thermal_10": {
+      "recipes": [
+        "sdbf:omni_alloy/thermal_10"
+      ],
+      "mode": "native_recipe"
+    },
+    "thermal_11": {
+      "recipes": [
+        "sdbf:omni_alloy/thermal_11"
+      ],
+      "mode": "native_recipe"
+    },
+    "thermal_12": {
+      "recipes": [
+        "sdbf:omni_alloy/thermal_12"
+      ],
+      "mode": "native_recipe"
+    },
+    "thermal_13": {
+      "recipes": [
+        "sdbf:omni_alloy/thermal_13"
+      ],
+      "mode": "native_recipe"
+    },
+    "thermal_14": {
+      "recipes": [
+        "sdbf:omni_alloy/thermal_14"
+      ],
+      "mode": "native_recipe"
+    },
+    "thermal_15": {
+      "recipes": [
+        "sdbf:omni_alloy/thermal_15"
+      ],
+      "mode": "native_recipe"
+    },
+    "thermal_05": {
+      "recipes": [
+        "sdbf:omni_alloy/thermal_05"
+      ],
+      "mode": "native_recipe"
+    },
+    "thermal_06": {
+      "recipes": [
+        "sdbf:omni_alloy/thermal_06"
+      ],
+      "mode": "native_recipe"
+    },
+    "thermal_16": {
+      "recipes": [
+        "sdbf:omni_alloy/thermal_16"
+      ],
+      "mode": "native_recipe",
+      "preparation": "sdbf:omni_alloy/thermal_16_prepare"
+    },
+    "thermal_17": {
+      "recipes": [
+        "sdbf:omni_alloy/thermal_17"
+      ],
+      "mode": "native_recipe"
+    },
+    "thermal_18": {
+      "recipes": [
+        "sdbf:omni_alloy/thermal_18"
+      ],
+      "mode": "native_recipe"
+    },
+    "thermal_19": {
+      "recipes": [
+        "sdbf:omni_alloy/thermal_19"
+      ],
+      "mode": "native_recipe"
+    },
+    "thermal_21": {
+      "recipes": [
+        "sdbf:omni_alloy/thermal_21"
+      ],
+      "mode": "native_recipe"
+    },
+    "thermal_22": {
+      "recipes": [
+        "sdbf:omni_alloy/thermal_22"
+      ],
+      "mode": "native_recipe"
+    },
+    "thermal_20": {
+      "recipes": [
+        "sdbf:omni_alloy/thermal_20",
+        "sdbf:omni_alloy/thermal_20_bottle"
+      ],
+      "mode": "native_recipe",
+      "preparation": "sdbf:omni_alloy/thermal_20_prepare"
+    },
+    "engineering_03": {
+      "recipes": [
+        "sdbf:omni_alloy/engineering_03"
+      ],
+      "mode": "native_recipe"
+    },
+    "engineering_04": {
+      "recipes": [
+        "sdbf:omni_alloy/engineering_04"
+      ],
+      "mode": "native_recipe"
+    },
+    "engineering_05": {
+      "recipes": [
+        "sdbf:omni_alloy/engineering_05"
+      ],
+      "mode": "native_recipe"
+    },
+    "engineering_06": {
+      "recipes": [
+        "sdbf:omni_alloy/engineering_06_sheet",
+        "sdbf:omni_alloy/engineering_06"
+      ],
+      "mode": "native_recipe"
+    },
+    "engineering_07": {
+      "recipes": [
+        "sdbf:omni_alloy/engineering_07"
+      ],
+      "mode": "native_recipe"
+    },
+    "engineering_08": {
+      "recipes": [
+        "sdbf:omni_alloy/engineering_08"
+      ],
+      "mode": "native_recipe",
+      "preparation": "sdbf:omni_alloy/engineering_08_prepare"
+    },
+    "engineering_09": {
+      "recipes": [
+        "sdbf:omni_alloy/engineering_09"
+      ],
+      "mode": "native_recipe"
+    },
+    "engineering_10": {
+      "recipes": [
+        "sdbf:omni_alloy/engineering_10"
+      ],
+      "mode": "native_recipe"
+    },
+    "engineering_11": {
+      "recipes": [
+        "sdbf:omni_alloy/engineering_11"
+      ],
+      "mode": "native_recipe"
+    },
+    "engineering_12": {
+      "mode": "native_carrier",
+      "recipes": [
+        "sdbf:omni_alloy/engineering_12_pack"
+      ],
+      "carrier": "kubejs:charged_soul_filter",
+      "check": "none",
+      "note": "沿用原生加工产物，装配时消耗实物。",
+      "original_recipe": "sdbf:charged_soul_filter"
+    },
+    "engineering_14": {
+      "recipes": [
+        "sdbf:omni_alloy/engineering_14"
+      ],
+      "mode": "native_recipe",
+      "preparation": "sdbf:omni_alloy/engineering_14_prepare"
+    },
+    "engineering_22": {
+      "recipes": [
+        "sdbf:omni_alloy/engineering_22"
+      ],
+      "mode": "native_recipe"
+    },
+    "engineering_20": {
+      "recipes": [
+        "sdbf:omni_alloy/engineering_20"
+      ],
+      "mode": "native_recipe"
+    },
+    "engineering_19": {
+      "recipes": [
+        "sdbf:omni_alloy/engineering_19"
+      ],
+      "mode": "native_recipe"
+    },
+    "engineering_26": {
+      "recipes": [
+        "sdbf:omni_alloy/engineering_26"
+      ],
+      "mode": "native_recipe"
+    },
+    "engineering_24": {
+      "recipes": [
+        "sdbf:omni_alloy/engineering_24"
+      ],
+      "mode": "native_recipe"
+    },
+    "pneumatic_02": {
+      "recipes": [
+        "sdbf:omni_alloy/pneumatic_02"
+      ],
+      "mode": "native_recipe"
+    },
+    "pneumatic_03": {
+      "recipes": [
+        "sdbf:omni_alloy/pneumatic_03"
+      ],
+      "mode": "native_recipe"
+    },
+    "pneumatic_04": {
+      "recipes": [
+        "sdbf:omni_alloy/pneumatic_04"
+      ],
+      "mode": "native_recipe"
+    },
+    "pneumatic_05": {
+      "recipes": [
+        "sdbf:omni_alloy/pneumatic_05"
+      ],
+      "mode": "native_recipe"
+    },
+    "pneumatic_06": {
+      "recipes": [
+        "sdbf:omni_alloy/pneumatic_06"
+      ],
+      "mode": "native_recipe"
+    },
+    "pneumatic_07": {
+      "recipes": [
+        "sdbf:omni_alloy/pneumatic_07"
+      ],
+      "mode": "native_recipe"
+    },
+    "pneumatic_08": {
+      "recipes": [
+        "sdbf:omni_alloy/pneumatic_08"
+      ],
+      "mode": "native_recipe"
+    },
+    "pneumatic_11": {
+      "recipes": [
+        "sdbf:omni_alloy/pneumatic_11"
+      ],
+      "mode": "native_recipe"
+    },
+    "pneumatic_12": {
+      "recipes": [
+        "sdbf:omni_alloy/pneumatic_12"
+      ],
+      "mode": "native_recipe"
+    },
+    "pneumatic_13": {
+      "recipes": [
+        "sdbf:omni_alloy/pneumatic_13"
+      ],
+      "mode": "native_recipe"
+    },
+    "pneumatic_14": {
+      "recipes": [
+        "sdbf:omni_alloy/pneumatic_14"
+      ],
+      "mode": "native_recipe"
+    },
+    "pneumatic_15": {
+      "recipes": [
+        "sdbf:omni_alloy/pneumatic_15"
+      ],
+      "mode": "native_recipe",
+      "preparation": "sdbf:omni_alloy/pneumatic_15_prepare"
+    },
+    "pneumatic_16": {
+      "mode": "native_carrier",
+      "recipes": [
+        "sdbf:omni_alloy/pneumatic_16_pack"
+      ],
+      "carrier": "pneumaticcraft:unassembled_pcb",
+      "check": "uv_full",
+      "note": "必须在紫外灯箱曝光至 100%，未曝光或部分曝光板不能封装。"
+    },
+    "pneumatic_17": {
+      "mode": "native_carrier",
+      "recipes": [
+        "sdbf:omni_alloy/pneumatic_17_pack"
+      ],
+      "carrier": "pneumaticcraft:empty_pcb",
+      "check": "none",
+      "note": "消耗原生蚀刻成功的空白 PCB；完全曝光后蚀刻避免失败。"
+    },
+    "nuclear_01": {
+      "recipes": [
+        "sdbf:omni_alloy/nuclear_01"
+      ],
+      "mode": "native_recipe"
+    },
+    "nuclear_02": {
+      "recipes": [
+        "sdbf:omni_alloy/nuclear_02"
+      ],
+      "mode": "native_recipe"
+    },
+    "nuclear_03": {
+      "recipes": [
+        "sdbf:omni_alloy/nuclear_03"
+      ],
+      "mode": "native_recipe"
+    },
+    "nuclear_04": {
+      "recipes": [
+        "sdbf:omni_alloy/nuclear_04"
+      ],
+      "mode": "native_recipe"
+    },
+    "nuclear_05": {
+      "recipes": [
+        "sdbf:omni_alloy/nuclear_05"
+      ],
+      "mode": "native_recipe"
+    },
+    "nuclear_06": {
+      "recipes": [
+        "sdbf:omni_alloy/nuclear_06"
+      ],
+      "mode": "native_recipe"
+    },
+    "nuclear_09": {
+      "recipes": [
+        "sdbf:omni_alloy/nuclear_09"
+      ],
+      "mode": "native_recipe"
+    },
+    "nuclear_07": {
+      "recipes": [
+        "sdbf:omni_alloy/nuclear_07"
+      ],
+      "mode": "native_recipe",
+      "preparation": "sdbf:omni_alloy/nuclear_07_prepare"
+    },
+    "nuclear_08": {
+      "recipes": [
+        "sdbf:omni_alloy/nuclear_08"
+      ],
+      "mode": "native_recipe"
+    },
+    "nuclear_10": {
+      "recipes": [
+        "sdbf:omni_alloy/nuclear_10"
+      ],
+      "mode": "native_recipe"
+    },
+    "nuclear_11": {
+      "recipes": [
+        "sdbf:omni_alloy/nuclear_11"
+      ],
+      "mode": "native_recipe"
+    },
+    "nuclear_12": {
+      "recipes": [
+        "sdbf:omni_alloy/nuclear_12"
+      ],
+      "mode": "native_recipe",
+      "preparation": "sdbf:omni_alloy/nuclear_12_prepare"
+    },
+    "nuclear_13": {
+      "recipes": [
+        "sdbf:omni_alloy/nuclear_13"
+      ],
+      "mode": "native_recipe"
+    },
+    "nuclear_14": {
+      "recipes": [
+        "sdbf:omni_alloy/nuclear_14"
+      ],
+      "mode": "native_recipe"
+    },
+    "nuclear_15": {
+      "recipes": [
+        "sdbf:omni_alloy/nuclear_15"
+      ],
+      "mode": "native_recipe"
+    },
+    "nuclear_16": {
+      "recipes": [
+        "sdbf:omni_alloy/nuclear_16"
+      ],
+      "mode": "native_recipe"
+    },
+    "nuclear_20": {
+      "recipes": [
+        "sdbf:omni_alloy/nuclear_20"
+      ],
+      "mode": "native_recipe"
+    },
+    "nuclear_19": {
+      "recipes": [
+        "sdbf:omni_alloy/nuclear_19_melt",
+        "sdbf:omni_alloy/nuclear_19"
+      ],
+      "mode": "native_recipe"
+    },
+    "nuclear_21": {
+      "recipes": [
+        "sdbf:omni_alloy/nuclear_21"
+      ],
+      "mode": "native_recipe"
+    },
+    "nuclear_17": {
+      "recipes": [
+        "sdbf:omni_alloy/nuclear_17"
+      ],
+      "mode": "native_recipe"
+    },
+    "nuclear_18": {
+      "recipes": [
+        "sdbf:omni_alloy/nuclear_18"
+      ],
+      "mode": "native_recipe"
+    },
+    "nuclear_22": {
+      "mode": "native_carrier",
+      "recipes": [
+        "sdbf:omni_alloy/nuclear_22_pack"
+      ],
+      "carrier": "nuclearcraft:depleted_fuel_americium_hea_242",
+      "check": "none",
+      "note": "消耗固体裂变的原生乏燃料，后续在燃料后处理机继续处理。",
+      "original_recipe": "nuclearcraft:fission_reactor_controller/americium_hea_242"
+    },
+    "nuclear_25": {
+      "recipes": [
+        "sdbf:omni_alloy/nuclear_25"
+      ],
+      "mode": "native_recipe"
+    },
+    "nuclear_23": {
+      "mode": "native_carrier",
+      "recipes": [
+        "sdbf:omni_alloy/nuclear_23_pack"
+      ],
+      "carrier": "nuclearcraft:depleted_fuel_americium_hea_242_tr",
+      "check": "none",
+      "note": "消耗熔盐反应堆的原生乏燃料载体。",
+      "original_recipe": "nuclearcraft:msr_controller/americium_hea_242_tr"
+    },
+    "nuclear_24": {
+      "recipes": [
+        "sdbf:omni_alloy/nuclear_24"
+      ],
+      "mode": "native_recipe"
+    },
+    "nuclear_26": {
+      "recipes": [
+        "sdbf:omni_alloy/nuclear_26"
+      ],
+      "mode": "native_recipe"
+    },
+    "nuclear_27": {
+      "recipes": [
+        "sdbf:omni_alloy/nuclear_27"
+      ],
+      "mode": "native_recipe"
+    },
+    "nuclear_28": {
+      "recipes": [
+        "sdbf:omni_alloy/nuclear_28"
+      ],
+      "mode": "native_recipe"
+    },
+    "nuclear_29": {
+      "recipes": [
+        "sdbf:omni_alloy/nuclear_29"
+      ],
+      "mode": "native_recipe"
+    },
+    "nuclear_30": {
+      "recipes": [
+        "sdbf:omni_alloy/nuclear_30"
+      ],
+      "mode": "native_recipe"
+    },
+    "nuclear_31": {
+      "recipes": [
+        "sdbf:omni_alloy/nuclear_31"
+      ],
+      "mode": "native_recipe"
+    },
+    "precision_01": {
+      "recipes": [
+        "sdbf:omni_alloy/precision_01"
+      ],
+      "mode": "native_recipe"
+    },
+    "precision_04": {
+      "recipes": [
+        "sdbf:omni_alloy/precision_04"
+      ],
+      "mode": "native_recipe"
+    },
+    "precision_05": {
+      "recipes": [
+        "sdbf:omni_alloy/precision_05"
+      ],
+      "mode": "native_recipe",
+      "preparation": "sdbf:omni_alloy/precision_05_prepare"
+    },
+    "precision_15": {
+      "mode": "native_carrier",
+      "recipes": [
+        "sdbf:omni_alloy/precision_15_pack"
+      ],
+      "carrier": "last_smith:blade_unfinished_4",
+      "check": "none",
+      "note": "单件刀胚在有水炼药锅中淬火，消耗一层水后封装。"
+    },
+    "precision_08": {
+      "mode": "native_carrier",
+      "recipes": [
+        "sdbf:omni_alloy/precision_08_pack"
+      ],
+      "carrier": "exposure:developed_black_and_white_film",
+      "check": "developed_film",
+      "note": "显影胶卷至少保留一帧真实拍摄数据，空胶卷不能封装。"
+    },
+    "precision_16": {
+      "mode": "native_carrier",
+      "recipes": [
+        "sdbf:omni_alloy/precision_16_pack"
+      ],
+      "carrier": "exposure:photograph",
+      "check": "photograph",
+      "note": "打印的照片必须具有有效拍摄标识，空白照片不能封装。"
+    },
+    "precision_10": {
+      "mode": "native_carrier",
+      "recipes": [
+        "sdbf:omni_alloy/precision_10_pack"
+      ],
+      "carrier": "exposure:aged_photograph",
+      "check": "photograph",
+      "note": "老化照片必须保留有效拍摄数据。"
+    },
+    "precision_17": {
+      "mode": "native_carrier",
+      "recipes": [
+        "sdbf:omni_alloy/precision_17_pack"
+      ],
+      "carrier": "exposure:stacked_photographs",
+      "check": "photo_stack",
+      "note": "照片叠至少包含两张具有有效拍摄标识的照片，整叠消耗。"
+    },
+    "precision_12": {
+      "mode": "native_carrier",
+      "recipes": [
+        "sdbf:omni_alloy/precision_12_pack"
+      ],
+      "carrier": "minecraft:potion",
+      "check": "strong_swiftness",
+      "note": "使用原生酿造的迅捷 II 药水，按 Potion 字段检查。"
+    },
+    "omni_seed": {
+      "recipes": [
+        "sdbf:omni_alloy/omni_seed"
+      ],
+      "mode": "native_recipe"
+    },
+    "omni_billet": {
+      "recipes": [
+        "sdbf:omni_alloy/omni_billet"
+      ],
+      "mode": "native_recipe"
+    },
+    "omni_alloy_ingot": {
+      "recipes": [
+        "sdbf:omni_alloy/omni_alloy_ingot"
+      ],
+      "mode": "native_recipe"
+    }
+  },
+  "recipes": [
+    "process_liner",
+    "bio_feed",
+    "bio_assembly_1",
+    "bio_assembly_2",
+    "bio_assembly_3",
+    "aether_feed",
+    "aether_assembly_1",
+    "aether_assembly_2",
+    "aether_assembly_3",
+    "mana_feed",
+    "mana_assembly_1",
+    "mana_assembly_2",
+    "mana_assembly_3",
+    "thermal_feed",
+    "thermal_assembly_1",
+    "thermal_assembly_2",
+    "thermal_assembly_3",
+    "thermal_assembly_4",
+    "engineering_feed",
+    "engineering_assembly_1",
+    "engineering_assembly_2",
+    "engineering_assembly_3",
+    "engineering_assembly_4",
+    "pneumatic_feed",
+    "pneumatic_assembly_1",
+    "pneumatic_assembly_2",
+    "pneumatic_assembly_3",
+    "pneumatic_assembly_4",
+    "nuclear_feed",
+    "nuclear_assembly_1",
+    "nuclear_assembly_2",
+    "nuclear_assembly_3",
+    "nuclear_assembly_4",
+    "nuclear_assembly_5",
+    "nuclear_assembly_6",
+    "precision_feed",
+    "precision_assembly_1",
+    "precision_assembly_2",
+    "precision_assembly_3",
+    "bio_01",
+    "bio_03",
+    "bio_07",
+    "bio_08",
+    "bio_09",
+    "bio_10",
+    "bio_11",
+    "bio_13_prepare",
+    "bio_13",
+    "bio_14",
+    "bio_15_prepare",
+    "bio_15",
+    "bio_16",
+    "aether_01",
+    "aether_02",
+    "aether_03_prepare",
+    "aether_03",
+    "aether_04",
+    "aether_05",
+    "aether_06",
+    "aether_07",
+    "aether_10",
+    "aether_11",
+    "aether_09_prepare",
+    "aether_09",
+    "aether_12_prepare",
+    "aether_12",
+    "aether_13",
+    "aether_14",
+    "mana_01",
+    "mana_02",
+    "mana_03",
+    "mana_04",
+    "mana_05",
+    "mana_06",
+    "mana_07",
+    "mana_08",
+    "mana_09",
+    "mana_14",
+    "mana_15",
+    "mana_11_prepare",
+    "mana_11",
+    "mana_12_prepare",
+    "mana_12",
+    "thermal_01",
+    "thermal_02",
+    "thermal_03",
+    "thermal_04",
+    "thermal_07",
+    "thermal_08",
+    "thermal_09",
+    "thermal_10",
+    "thermal_11",
+    "thermal_12",
+    "thermal_13",
+    "thermal_14",
+    "thermal_15",
+    "thermal_05",
+    "thermal_06",
+    "thermal_16_prepare",
+    "thermal_16",
+    "thermal_17",
+    "thermal_18",
+    "thermal_19",
+    "thermal_21",
+    "thermal_22",
+    "thermal_20_prepare",
+    "thermal_20",
+    "thermal_20_bottle",
+    "engineering_03",
+    "engineering_04",
+    "engineering_05",
+    "engineering_06_sheet",
+    "engineering_06",
+    "engineering_07",
+    "engineering_08_prepare",
+    "engineering_08",
+    "engineering_09",
+    "engineering_10",
+    "engineering_11",
+    "engineering_14_prepare",
+    "engineering_14",
+    "engineering_22",
+    "engineering_20",
+    "engineering_19",
+    "engineering_26",
+    "engineering_24",
+    "pneumatic_02",
+    "pneumatic_03",
+    "pneumatic_04",
+    "pneumatic_05",
+    "pneumatic_06",
+    "pneumatic_07",
+    "pneumatic_08",
+    "pneumatic_11",
+    "pneumatic_12",
+    "pneumatic_13",
+    "pneumatic_14",
+    "pneumatic_15_prepare",
+    "pneumatic_15",
+    "nuclear_01",
+    "nuclear_02",
+    "nuclear_03",
+    "nuclear_04",
+    "nuclear_05",
+    "nuclear_06",
+    "nuclear_09",
+    "nuclear_07_prepare",
+    "nuclear_07",
+    "nuclear_08",
+    "nuclear_10",
+    "nuclear_11",
+    "nuclear_12_prepare",
+    "nuclear_12",
+    "nuclear_13",
+    "nuclear_14",
+    "nuclear_15",
+    "nuclear_16",
+    "nuclear_20",
+    "nuclear_19_melt",
+    "nuclear_19",
+    "nuclear_21",
+    "nuclear_17",
+    "nuclear_18",
+    "nuclear_25",
+    "nuclear_24_prepare",
+    "nuclear_24",
+    "nuclear_26",
+    "nuclear_27",
+    "nuclear_28",
+    "nuclear_29",
+    "nuclear_30",
+    "nuclear_31",
+    "precision_01",
+    "precision_04",
+    "precision_05_prepare",
+    "precision_05",
+    "omni_seed",
+    "omni_billet",
+    "omni_alloy_ingot"
+  ],
+  "registrations": {
+    "items": 136,
+    "blocks": 24,
+    "fluids": 32
+  },
+  "generated_files": [
+    "kubejs/data/sdbf/recipes/omni_alloy/process_liner.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/bio_feed.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/bio_assembly_1.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/bio_assembly_2.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/bio_assembly_3.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/aether_feed.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/aether_assembly_1.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/aether_assembly_2.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/aether_assembly_3.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/mana_feed.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/mana_assembly_1.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/mana_assembly_2.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/mana_assembly_3.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/thermal_feed.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/thermal_assembly_1.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/thermal_assembly_2.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/thermal_assembly_3.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/thermal_assembly_4.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/engineering_feed.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/engineering_assembly_1.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/engineering_assembly_2.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/engineering_assembly_3.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/engineering_assembly_4.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/pneumatic_feed.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/pneumatic_assembly_1.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/pneumatic_assembly_2.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/pneumatic_assembly_3.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/pneumatic_assembly_4.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/nuclear_feed.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/nuclear_assembly_1.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/nuclear_assembly_2.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/nuclear_assembly_3.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/nuclear_assembly_4.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/nuclear_assembly_5.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/nuclear_assembly_6.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/precision_feed.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/precision_assembly_1.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/precision_assembly_2.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/precision_assembly_3.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/bio_01.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/bio_03.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/bio_07.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/bio_08.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/bio_09.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/bio_10.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/bio_11.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/bio_13_prepare.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/bio_13.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/bio_14.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/bio_15_prepare.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/bio_15.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/bio_16.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/aether_01.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/aether_02.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/aether_03_prepare.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/aether_03.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/aether_04.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/aether_05.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/aether_06.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/aether_07.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/aether_10.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/aether_11.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/aether_09_prepare.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/aether_09.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/aether_12_prepare.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/aether_12.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/aether_13.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/aether_14.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/mana_01.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/mana_02.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/mana_03.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/mana_04.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/mana_05.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/mana_06.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/mana_07.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/mana_08.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/mana_09.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/mana_14.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/mana_15.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/mana_11_prepare.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/mana_11.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/mana_12_prepare.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/mana_12.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/thermal_01.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/thermal_02.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/thermal_03.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/thermal_04.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/thermal_07.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/thermal_08.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/thermal_09.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/thermal_10.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/thermal_11.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/thermal_12.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/thermal_13.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/thermal_14.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/thermal_15.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/thermal_05.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/thermal_06.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/thermal_16_prepare.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/thermal_16.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/thermal_17.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/thermal_18.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/thermal_19.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/thermal_21.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/thermal_22.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/thermal_20_prepare.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/thermal_20.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/thermal_20_bottle.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/engineering_03.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/engineering_04.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/engineering_05.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/engineering_06_sheet.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/engineering_06.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/engineering_07.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/engineering_08_prepare.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/engineering_08.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/engineering_09.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/engineering_10.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/engineering_11.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/engineering_14_prepare.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/engineering_14.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/engineering_22.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/engineering_20.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/engineering_19.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/engineering_26.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/engineering_24.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/pneumatic_02.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/pneumatic_03.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/pneumatic_04.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/pneumatic_05.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/pneumatic_06.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/pneumatic_07.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/pneumatic_08.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/pneumatic_11.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/pneumatic_12.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/pneumatic_13.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/pneumatic_14.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/pneumatic_15_prepare.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/pneumatic_15.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/nuclear_01.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/nuclear_02.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/nuclear_03.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/nuclear_04.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/nuclear_05.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/nuclear_06.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/nuclear_09.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/nuclear_07_prepare.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/nuclear_07.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/nuclear_08.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/nuclear_10.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/nuclear_11.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/nuclear_12_prepare.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/nuclear_12.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/nuclear_13.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/nuclear_14.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/nuclear_15.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/nuclear_16.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/nuclear_20.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/nuclear_19_melt.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/nuclear_19.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/nuclear_21.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/nuclear_17.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/nuclear_18.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/nuclear_25.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/nuclear_24_prepare.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/nuclear_24.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/nuclear_26.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/nuclear_27.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/nuclear_28.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/nuclear_29.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/nuclear_30.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/nuclear_31.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/precision_01.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/precision_04.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/precision_05_prepare.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/precision_05.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/omni_seed.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/omni_billet.json",
+    "kubejs/data/sdbf/recipes/omni_alloy/omni_alloy_ingot.json",
+    "kubejs/data/kubejs/tags/fluids/omni_external/minecraft/water.json",
+    "kubejs/data/kubejs/tags/fluids/omni_bio_10_fluid.json",
+    "kubejs/data/kubejs/tags/fluids/omni_nuclear_05_fluid.json",
+    "kubejs/data/kubejs/tags/fluids/omni_nuclear_07_fluid.json",
+    "kubejs/data/kubejs/tags/fluids/omni_nuclear_08_fluid.json",
+    "kubejs/data/kubejs/tags/fluids/omni_external/nuclearcraft/hydrochloric_acid.json",
+    "kubejs/data/kubejs/tags/fluids/omni_external/nuclearcraft/sodium_hydroxide_solution.json",
+    "kubejs/data/kubejs/tags/fluids/omni_nuclear_10_fluid.json",
+    "kubejs/data/kubejs/tags/fluids/omni_nuclear_12_fluid.json",
+    "kubejs/data/kubejs/tags/fluids/omni_nuclear_13_fluid.json",
+    "kubejs/data/kubejs/tags/fluids/omni_nuclear_14_fluid.json",
+    "kubejs/data/kubejs/tags/fluids/omni_nuclear_20_melt.json",
+    "kubejs/data/kubejs/tags/fluids/omni_nuclear_19_fluid.json",
+    "kubejs/data/kubejs/tags/fluids/omni_nuclear_21_fluid.json",
+    "kubejs/data/kubejs/tags/fluids/omni_external/nuclearcraft/borax_solution.json",
+    "kubejs/data/kubejs/tags/fluids/omni_nuclear_17_fluid.json",
+    "kubejs/data/kubejs/tags/fluids/omni_nuclear_18_fluid.json",
+    "kubejs/data/kubejs/tags/fluids/omni_fusion_feed.json",
+    "kubejs/data/kubejs/tags/fluids/omni_external/nuclearcraft/helium_3.json",
+    "kubejs/data/kubejs/tags/fluids/omni_nuclear_24_fluid.json",
+    "kubejs/data/kubejs/tags/fluids/omni_external/nuclearcraft/high_pressure_steam.json",
+    "kubejs/data/kubejs/tags/fluids/omni_nuclear_26_fluid.json",
+    "kubejs/data/kubejs/tags/fluids/omni_nuclear_27_fluid.json",
+    "kubejs/data/kubejs/tags/fluids/omni_nuclear_28_fluid.json",
+    "kubejs/data/kubejs/tags/fluids/omni_nuclear_29_fluid.json",
+    "kubejs/data/kubejs/tags/fluids/omni_bio_feed.json",
+    "kubejs/data/kubejs/tags/fluids/omni_bio_11_fluid.json",
+    "kubejs/data/kubejs/tags/fluids/omni_thermal_14_fluid.json",
+    "kubejs/data/kubejs/tags/fluids/omni_thermal_17_fluid.json",
+    "kubejs/data/kubejs/tags/fluids/omni_thermal_18_fluid.json",
+    "kubejs/data/kubejs/tags/fluids/omni_engineering_03_fluid.json",
+    "kubejs/data/kubejs/tags/fluids/omni_engineering_20_fluid.json",
+    "kubejs/data/kubejs/tags/fluids/omni_engineering_19_fluid.json",
+    "kubejs/data/kubejs/tags/fluids/omni_engineering_26_fluid.json",
+    "kubejs/data/kubejs/tags/fluids/omni_pneumatic_05_fluid.json",
+    "kubejs/data/kubejs/tags/fluids/omni_pneumatic_06_fluid.json",
+    "kubejs/data/kubejs/tags/fluids/omni_pneumatic_07_fluid.json",
+    "kubejs/data/kubejs/tags/fluids/omni_thermal_20_brew.json",
+    "kubejs/assets/kubejs/textures/item/astral_biomembrane.png",
+    "kubejs/assets/kubejs/textures/item/celestial_lattice_lens.png",
+    "kubejs/assets/kubejs/textures/item/iridescent_resonance_chamber.png",
+    "kubejs/assets/kubejs/textures/item/cryogenic_phase_housing.png",
+    "kubejs/assets/kubejs/textures/item/stargate_coupling_coil.png",
+    "kubejs/assets/kubejs/textures/item/hydrogen_logic_valve_bank.png",
+    "kubejs/assets/kubejs/textures/item/neutron_confinement_ring.png",
+    "kubejs/assets/kubejs/textures/item/omni_calibration_grating.png",
+    "kubejs/assets/kubejs/textures/item/omni_alloy_ingot.png",
+    "kubejs/assets/kubejs/models/item/omni_bio_03.json",
+    "kubejs/assets/kubejs/models/item/omni_bio_assembly_1.json",
+    "kubejs/assets/kubejs/models/item/omni_bio_07.json",
+    "kubejs/assets/kubejs/models/item/omni_bio_08.json",
+    "kubejs/assets/kubejs/models/item/omni_bio_09.json",
+    "kubejs/assets/kubejs/models/item/omni_bio_assembly_2.json",
+    "kubejs/assets/kubejs/models/item/omni_bio_14.json",
+    "kubejs/assets/kubejs/models/item/omni_bio_15.json",
+    "kubejs/assets/kubejs/models/item/omni_bio_16.json",
+    "kubejs/assets/kubejs/models/item/astral_biomembrane.json",
+    "kubejs/assets/kubejs/models/item/omni_aether_feed.json",
+    "kubejs/assets/kubejs/models/item/omni_aether_01.json",
+    "kubejs/assets/kubejs/models/item/omni_aether_02.json",
+    "kubejs/assets/kubejs/models/item/omni_aether_assembly_1.json",
+    "kubejs/assets/kubejs/models/item/omni_aether_10.json",
+    "kubejs/assets/kubejs/models/item/omni_aether_11.json",
+    "kubejs/assets/kubejs/models/item/omni_aether_08.json",
+    "kubejs/assets/kubejs/models/item/omni_aether_assembly_2.json",
+    "kubejs/assets/kubejs/models/item/celestial_lattice_lens.json",
+    "kubejs/assets/kubejs/models/item/omni_mana_assembly_1.json",
+    "kubejs/assets/kubejs/models/item/omni_mana_05.json",
+    "kubejs/assets/kubejs/models/item/omni_mana_06.json",
+    "kubejs/assets/kubejs/models/item/omni_mana_07.json",
+    "kubejs/assets/kubejs/models/item/omni_mana_08.json",
+    "kubejs/assets/kubejs/models/item/omni_mana_09.json",
+    "kubejs/assets/kubejs/models/item/omni_mana_assembly_2.json",
+    "kubejs/assets/kubejs/models/item/omni_mana_14.json",
+    "kubejs/assets/kubejs/models/item/omni_mana_15.json",
+    "kubejs/assets/kubejs/models/item/omni_mana_10.json",
+    "kubejs/assets/kubejs/models/item/omni_mana_11.json",
+    "kubejs/assets/kubejs/models/item/omni_mana_12.json",
+    "kubejs/assets/kubejs/models/item/iridescent_resonance_chamber.json",
+    "kubejs/assets/kubejs/models/item/omni_thermal_feed.json",
+    "kubejs/assets/kubejs/models/item/omni_thermal_01.json",
+    "kubejs/assets/kubejs/models/item/omni_thermal_02.json",
+    "kubejs/assets/kubejs/models/item/omni_thermal_03.json",
+    "kubejs/assets/kubejs/models/item/omni_thermal_04.json",
+    "kubejs/assets/kubejs/models/item/omni_thermal_07.json",
+    "kubejs/assets/kubejs/models/item/omni_thermal_08.json",
+    "kubejs/assets/kubejs/models/item/omni_thermal_assembly_1.json",
+    "kubejs/assets/kubejs/models/item/omni_thermal_09.json",
+    "kubejs/assets/kubejs/models/item/omni_thermal_10.json",
+    "kubejs/assets/kubejs/models/item/omni_thermal_11.json",
+    "kubejs/assets/kubejs/models/item/omni_thermal_12.json",
+    "kubejs/assets/kubejs/models/item/omni_thermal_13.json",
+    "kubejs/assets/kubejs/models/item/omni_thermal_15.json",
+    "kubejs/assets/kubejs/models/item/omni_thermal_assembly_2.json",
+    "kubejs/assets/kubejs/models/item/omni_thermal_05.json",
+    "kubejs/assets/kubejs/models/item/omni_thermal_06.json",
+    "kubejs/assets/kubejs/models/item/omni_thermal_16.json",
+    "kubejs/assets/kubejs/models/item/omni_thermal_19.json",
+    "kubejs/assets/kubejs/models/item/omni_thermal_assembly_3.json",
+    "kubejs/assets/kubejs/models/item/omni_thermal_21.json",
+    "kubejs/assets/kubejs/models/item/omni_thermal_22.json",
+    "kubejs/assets/kubejs/models/item/omni_thermal_20.json",
+    "kubejs/assets/kubejs/models/item/cryogenic_phase_housing.json",
+    "kubejs/assets/kubejs/models/item/omni_engineering_feed.json",
+    "kubejs/assets/kubejs/models/item/omni_engineering_04.json",
+    "kubejs/assets/kubejs/models/item/omni_engineering_05.json",
+    "kubejs/assets/kubejs/models/item/omni_engineering_06.json",
+    "kubejs/assets/kubejs/models/item/omni_engineering_07.json",
+    "kubejs/assets/kubejs/models/item/omni_engineering_assembly_1.json",
+    "kubejs/assets/kubejs/models/item/omni_engineering_09.json",
+    "kubejs/assets/kubejs/models/item/omni_engineering_10.json",
+    "kubejs/assets/kubejs/models/item/omni_engineering_11.json",
+    "kubejs/assets/kubejs/models/item/omni_engineering_12.json",
+    "kubejs/assets/kubejs/models/item/omni_engineering_14.json",
+    "kubejs/assets/kubejs/models/item/omni_engineering_assembly_2.json",
+    "kubejs/assets/kubejs/models/item/omni_engineering_22.json",
+    "kubejs/assets/kubejs/models/item/omni_engineering_assembly_3.json",
+    "kubejs/assets/kubejs/models/item/omni_engineering_24.json",
+    "kubejs/assets/kubejs/models/item/stargate_coupling_coil.json",
+    "kubejs/assets/kubejs/models/item/omni_pneumatic_feed.json",
+    "kubejs/assets/kubejs/models/item/omni_pneumatic_02.json",
+    "kubejs/assets/kubejs/models/item/omni_pneumatic_03.json",
+    "kubejs/assets/kubejs/models/item/omni_pneumatic_04.json",
+    "kubejs/assets/kubejs/models/item/omni_pneumatic_assembly_1.json",
+    "kubejs/assets/kubejs/models/item/omni_pneumatic_08.json",
+    "kubejs/assets/kubejs/models/item/omni_pneumatic_assembly_2.json",
+    "kubejs/assets/kubejs/models/item/omni_pneumatic_11.json",
+    "kubejs/assets/kubejs/models/item/omni_pneumatic_12.json",
+    "kubejs/assets/kubejs/models/item/omni_pneumatic_13.json",
+    "kubejs/assets/kubejs/models/item/omni_pneumatic_14.json",
+    "kubejs/assets/kubejs/models/item/omni_pneumatic_assembly_3.json",
+    "kubejs/assets/kubejs/models/item/omni_pneumatic_16.json",
+    "kubejs/assets/kubejs/models/item/omni_pneumatic_17.json",
+    "kubejs/assets/kubejs/models/item/hydrogen_logic_valve_bank.json",
+    "kubejs/assets/kubejs/models/item/omni_nuclear_feed.json",
+    "kubejs/assets/kubejs/models/item/omni_nuclear_01.json",
+    "kubejs/assets/kubejs/models/item/omni_nuclear_02.json",
+    "kubejs/assets/kubejs/models/item/omni_nuclear_03.json",
+    "kubejs/assets/kubejs/models/item/omni_nuclear_04.json",
+    "kubejs/assets/kubejs/models/item/omni_nuclear_06.json",
+    "kubejs/assets/kubejs/models/item/omni_nuclear_assembly_1.json",
+    "kubejs/assets/kubejs/models/item/omni_nuclear_09.json",
+    "kubejs/assets/kubejs/models/item/omni_nuclear_11.json",
+    "kubejs/assets/kubejs/models/item/omni_nuclear_15.json",
+    "kubejs/assets/kubejs/models/item/omni_nuclear_16.json",
+    "kubejs/assets/kubejs/models/item/omni_nuclear_assembly_2.json",
+    "kubejs/assets/kubejs/models/item/omni_nuclear_20.json",
+    "kubejs/assets/kubejs/models/item/omni_nuclear_assembly_3.json",
+    "kubejs/assets/kubejs/models/item/omni_nuclear_22.json",
+    "kubejs/assets/kubejs/models/item/omni_nuclear_25.json",
+    "kubejs/assets/kubejs/models/item/omni_nuclear_23.json",
+    "kubejs/assets/kubejs/models/item/omni_nuclear_assembly_4.json",
+    "kubejs/assets/kubejs/models/item/omni_nuclear_assembly_5.json",
+    "kubejs/assets/kubejs/models/item/omni_nuclear_30.json",
+    "kubejs/assets/kubejs/models/item/omni_nuclear_31.json",
+    "kubejs/assets/kubejs/models/item/neutron_confinement_ring.json",
+    "kubejs/assets/kubejs/models/item/omni_precision_feed.json",
+    "kubejs/assets/kubejs/models/item/omni_precision_01.json",
+    "kubejs/assets/kubejs/models/item/omni_precision_04.json",
+    "kubejs/assets/kubejs/models/item/omni_precision_05.json",
+    "kubejs/assets/kubejs/models/item/omni_precision_15.json",
+    "kubejs/assets/kubejs/models/item/omni_precision_assembly_1.json",
+    "kubejs/assets/kubejs/models/item/omni_precision_08.json",
+    "kubejs/assets/kubejs/models/item/omni_precision_16.json",
+    "kubejs/assets/kubejs/models/item/omni_precision_10.json",
+    "kubejs/assets/kubejs/models/item/omni_precision_17.json",
+    "kubejs/assets/kubejs/models/item/omni_precision_assembly_2.json",
+    "kubejs/assets/kubejs/models/item/omni_precision_12.json",
+    "kubejs/assets/kubejs/models/item/omni_calibration_grating.json",
+    "kubejs/assets/kubejs/models/item/omni_seed.json",
+    "kubejs/assets/kubejs/models/item/omni_billet.json",
+    "kubejs/assets/kubejs/models/item/omni_alloy_ingot.json",
+    "kubejs/assets/kubejs/models/item/omni_process_liner.json",
+    "kubejs/assets/kubejs/models/item/omni_bio_15_precursor.json",
+    "kubejs/assets/kubejs/models/item/omni_mana_11_precursor.json",
+    "kubejs/assets/kubejs/models/item/omni_mana_12_precursor.json",
+    "kubejs/assets/kubejs/models/item/omni_thermal_16_precursor.json",
+    "kubejs/assets/kubejs/models/item/omni_thermal_20_precursor.json",
+    "kubejs/assets/kubejs/models/item/omni_menril_foil.json",
+    "kubejs/assets/kubejs/models/item/omni_engineering_14_precursor.json",
+    "kubejs/assets/kubejs/models/item/omni_nuclear_07_precursor.json",
+    "kubejs/assets/kubejs/models/item/omni_nuclear_12_precursor.json",
+    "kubejs/assets/kubejs/models/item/omni_precision_05_precursor.json",
+    "kubejs/assets/kubejs/blockstates/omni_bio_01_block.json",
+    "kubejs/assets/kubejs/models/block/omni_bio_01_block.json",
+    "kubejs/assets/kubejs/models/item/omni_bio_01_block.json",
+    "kubejs/data/kubejs/loot_tables/blocks/omni_bio_01_block.json",
+    "kubejs/assets/kubejs/blockstates/omni_bio_13_block.json",
+    "kubejs/assets/kubejs/models/block/omni_bio_13_block.json",
+    "kubejs/assets/kubejs/models/item/omni_bio_13_block.json",
+    "kubejs/data/kubejs/loot_tables/blocks/omni_bio_13_block.json",
+    "kubejs/assets/kubejs/blockstates/omni_aether_03_block.json",
+    "kubejs/assets/kubejs/models/block/omni_aether_03_block.json",
+    "kubejs/assets/kubejs/models/item/omni_aether_03_block.json",
+    "kubejs/data/kubejs/loot_tables/blocks/omni_aether_03_block.json",
+    "kubejs/assets/kubejs/blockstates/omni_aether_04_block.json",
+    "kubejs/assets/kubejs/models/block/omni_aether_04_block.json",
+    "kubejs/assets/kubejs/models/item/omni_aether_04_block.json",
+    "kubejs/data/kubejs/loot_tables/blocks/omni_aether_04_block.json",
+    "kubejs/assets/kubejs/blockstates/omni_aether_05_block.json",
+    "kubejs/assets/kubejs/models/block/omni_aether_05_block.json",
+    "kubejs/assets/kubejs/models/item/omni_aether_05_block.json",
+    "kubejs/data/kubejs/loot_tables/blocks/omni_aether_05_block.json",
+    "kubejs/assets/kubejs/blockstates/omni_aether_06_block.json",
+    "kubejs/assets/kubejs/models/block/omni_aether_06_block.json",
+    "kubejs/assets/kubejs/models/item/omni_aether_06_block.json",
+    "kubejs/data/kubejs/loot_tables/blocks/omni_aether_06_block.json",
+    "kubejs/assets/kubejs/blockstates/omni_aether_07_block.json",
+    "kubejs/assets/kubejs/models/block/omni_aether_07_block.json",
+    "kubejs/assets/kubejs/models/item/omni_aether_07_block.json",
+    "kubejs/data/kubejs/loot_tables/blocks/omni_aether_07_block.json",
+    "kubejs/assets/kubejs/blockstates/omni_aether_09_block.json",
+    "kubejs/assets/kubejs/models/block/omni_aether_09_block.json",
+    "kubejs/assets/kubejs/models/item/omni_aether_09_block.json",
+    "kubejs/data/kubejs/loot_tables/blocks/omni_aether_09_block.json",
+    "kubejs/assets/kubejs/blockstates/omni_aether_12_block.json",
+    "kubejs/assets/kubejs/models/block/omni_aether_12_block.json",
+    "kubejs/assets/kubejs/models/item/omni_aether_12_block.json",
+    "kubejs/data/kubejs/loot_tables/blocks/omni_aether_12_block.json",
+    "kubejs/assets/kubejs/blockstates/omni_aether_13_block.json",
+    "kubejs/assets/kubejs/models/block/omni_aether_13_block.json",
+    "kubejs/assets/kubejs/models/item/omni_aether_13_block.json",
+    "kubejs/data/kubejs/loot_tables/blocks/omni_aether_13_block.json",
+    "kubejs/assets/kubejs/blockstates/omni_aether_14_block.json",
+    "kubejs/assets/kubejs/models/block/omni_aether_14_block.json",
+    "kubejs/assets/kubejs/models/item/omni_aether_14_block.json",
+    "kubejs/data/kubejs/loot_tables/blocks/omni_aether_14_block.json",
+    "kubejs/assets/kubejs/blockstates/omni_mana_feed.json",
+    "kubejs/assets/kubejs/models/block/omni_mana_feed.json",
+    "kubejs/assets/kubejs/models/item/omni_mana_feed.json",
+    "kubejs/data/kubejs/loot_tables/blocks/omni_mana_feed.json",
+    "kubejs/assets/kubejs/blockstates/omni_mana_01_block.json",
+    "kubejs/assets/kubejs/models/block/omni_mana_01_block.json",
+    "kubejs/assets/kubejs/models/item/omni_mana_01_block.json",
+    "kubejs/data/kubejs/loot_tables/blocks/omni_mana_01_block.json",
+    "kubejs/assets/kubejs/blockstates/omni_mana_02_block.json",
+    "kubejs/assets/kubejs/models/block/omni_mana_02_block.json",
+    "kubejs/assets/kubejs/models/item/omni_mana_02_block.json",
+    "kubejs/data/kubejs/loot_tables/blocks/omni_mana_02_block.json",
+    "kubejs/assets/kubejs/blockstates/omni_mana_03_block.json",
+    "kubejs/assets/kubejs/models/block/omni_mana_03_block.json",
+    "kubejs/assets/kubejs/models/item/omni_mana_03_block.json",
+    "kubejs/data/kubejs/loot_tables/blocks/omni_mana_03_block.json",
+    "kubejs/assets/kubejs/blockstates/omni_mana_04_block.json",
+    "kubejs/assets/kubejs/models/block/omni_mana_04_block.json",
+    "kubejs/assets/kubejs/models/item/omni_mana_04_block.json",
+    "kubejs/data/kubejs/loot_tables/blocks/omni_mana_04_block.json",
+    "kubejs/assets/kubejs/blockstates/omni_engineering_08_block.json",
+    "kubejs/assets/kubejs/models/block/omni_engineering_08_block.json",
+    "kubejs/assets/kubejs/models/item/omni_engineering_08_block.json",
+    "kubejs/data/kubejs/loot_tables/blocks/omni_engineering_08_block.json",
+    "kubejs/assets/kubejs/blockstates/omni_pneumatic_15_block.json",
+    "kubejs/assets/kubejs/models/block/omni_pneumatic_15_block.json",
+    "kubejs/assets/kubejs/models/item/omni_pneumatic_15_block.json",
+    "kubejs/data/kubejs/loot_tables/blocks/omni_pneumatic_15_block.json",
+    "kubejs/assets/kubejs/blockstates/omni_bio_13_precursor.json",
+    "kubejs/assets/kubejs/models/block/omni_bio_13_precursor.json",
+    "kubejs/assets/kubejs/models/item/omni_bio_13_precursor.json",
+    "kubejs/data/kubejs/loot_tables/blocks/omni_bio_13_precursor.json",
+    "kubejs/assets/kubejs/blockstates/omni_aether_03_precursor.json",
+    "kubejs/assets/kubejs/models/block/omni_aether_03_precursor.json",
+    "kubejs/assets/kubejs/models/item/omni_aether_03_precursor.json",
+    "kubejs/data/kubejs/loot_tables/blocks/omni_aether_03_precursor.json",
+    "kubejs/assets/kubejs/blockstates/omni_aether_09_precursor.json",
+    "kubejs/assets/kubejs/models/block/omni_aether_09_precursor.json",
+    "kubejs/assets/kubejs/models/item/omni_aether_09_precursor.json",
+    "kubejs/data/kubejs/loot_tables/blocks/omni_aether_09_precursor.json",
+    "kubejs/assets/kubejs/blockstates/omni_aether_12_precursor.json",
+    "kubejs/assets/kubejs/models/block/omni_aether_12_precursor.json",
+    "kubejs/assets/kubejs/models/item/omni_aether_12_precursor.json",
+    "kubejs/data/kubejs/loot_tables/blocks/omni_aether_12_precursor.json",
+    "kubejs/assets/kubejs/blockstates/omni_engineering_08_precursor.json",
+    "kubejs/assets/kubejs/models/block/omni_engineering_08_precursor.json",
+    "kubejs/assets/kubejs/models/item/omni_engineering_08_precursor.json",
+    "kubejs/data/kubejs/loot_tables/blocks/omni_engineering_08_precursor.json",
+    "kubejs/assets/kubejs/blockstates/omni_pneumatic_15_precursor.json",
+    "kubejs/assets/kubejs/models/block/omni_pneumatic_15_precursor.json",
+    "kubejs/assets/kubejs/models/item/omni_pneumatic_15_precursor.json",
+    "kubejs/data/kubejs/loot_tables/blocks/omni_pneumatic_15_precursor.json",
+    "kubejs/assets/kubejs/lang/zh_cn.json",
+    "kubejs/config/omni_alloy.json"
+  ],
+  "interface_adjustments": [
+    "亚原子液化前增加核工熔化桥接。",
+    "热力药水酿造机使用已核对支持的专用流体输出，再灌装。",
+    "固体裂变与熔盐反应堆沿用原生燃料／乏燃料，封装后参与本路线。"
+  ]
+}

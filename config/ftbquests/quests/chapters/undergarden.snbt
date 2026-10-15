@@ -105,6 +105,7 @@
 			hide_dependent_lines: true
 			hide_until_deps_complete: true
 			id: "35A8F36675442F8B"
+			quest_enhance_disable_scroll_paging: false
 			size: 2.0d
 			tasks: [{
 				dimension: "undergarden:undergarden"
@@ -119,6 +120,7 @@
 		{
 			dependencies: ["35A8F36675442F8B"]
 			id: "4384A4237A88E317"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "4CE9DBEAE4482AD0"
 				item: "undergarden:froststeel_ingot"
@@ -130,6 +132,7 @@
 		{
 			dependencies: ["35A8F36675442F8B"]
 			id: "2DFEC40399DF07EC"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "5C7DB4BD2247C237"
 				item: "undergarden:cloggrum_ingot"
@@ -142,6 +145,7 @@
 			dependencies: ["35A8F36675442F8B"]
 			description: ["可以制作遗忆府邸的结构羽毛笔。"]
 			id: "26FBCD46CCE1BABC"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "46B04C701162C0D2"
 				item: {
@@ -164,6 +168,7 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "0565456A2B5996BE"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "340DA4A317ADC543"
 				structure: "undergarden:catacombs"
@@ -176,6 +181,7 @@
 		{
 			dependencies: ["0565456A2B5996BE"]
 			id: "6974BDB798A698A6"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "094C699E53FE59F3"
 				item: "undergarden:forgotten_nugget"
@@ -189,6 +195,7 @@
 			hide_dependent_lines: true
 			icon: "nuclearcraft:wasteland_earth"
 			id: "368D4A353C73D192"
+			quest_enhance_disable_scroll_paging: false
 			size: 2.0d
 			tasks: [{
 				id: "7FFED1C4FECDE7A0"
@@ -204,6 +211,7 @@
 		{
 			dependencies: ["368D4A353C73D192"]
 			id: "6833F2ACD3A596D8"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "070DC3839A0AD7C8"
 				item: "nuclearcraft:glowing_mushroom"
@@ -215,6 +223,7 @@
 		{
 			dependencies: ["35A8F36675442F8B"]
 			id: "4FDDFCD61DCA1D6D"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "39274E3D794273E8"
 				item: "undergarden:utherium_crystal"
@@ -226,6 +235,7 @@
 		{
 			dependencies: ["35A8F36675442F8B"]
 			id: "77521D83617F9CBA"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "5BB2F030C78BE7D9"
 				item: "undergarden:regalium_crystal"
@@ -237,6 +247,7 @@
 		{
 			dependencies: ["368D4A353C73D192"]
 			id: "2F67DCF5EC57FDC2"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "6A26E2944D65221E"
 				item: "nuclearcraft:xenorium_298"
@@ -253,6 +264,7 @@
 			dependency_requirement: "one_completed"
 			description: ["可以从箱子中找到"]
 			id: "196B8B560D6681EC"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "0377923A378B6B09"
 				item: "nuclearcraft:radaway"
@@ -265,6 +277,7 @@
 			dependencies: ["368D4A353C73D192"]
 			description: ["可以从箱子中找到"]
 			id: "1C86F9100F42642A"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "3F7DBC7076849C73"
 				item: "nuclearcraft:neutronium_ingot"
@@ -280,6 +293,7 @@
 			]
 			hide_until_deps_complete: true
 			id: "3ED64EBDF663056D"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "35233790D7363271"
 				item: {
@@ -304,6 +318,7 @@
 				"77521D83617F9CBA"
 			]
 			id: "7FC6F9952EA26493"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "1222A2E6A4AB1327"
 				item: {
@@ -328,6 +343,7 @@
 				"00880D674BE17F9A"
 			]
 			id: "5C754EA1BB21D901"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "4DFC78D00A0F15F3"
 				item: {
@@ -353,6 +369,7 @@
 				"6988EF237AE411F0"
 			]
 			id: "7D800CACE4E69CFF"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "101ED209AA3E6995"
 				item: {
@@ -377,6 +394,7 @@
 				"4384A4237A88E317"
 			]
 			id: "3434AD43BC82144D"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "157C7D1414337A47"
 				item: "kubejs:coil_of_sorrow"
@@ -388,6 +406,7 @@
 		{
 			dependencies: ["35A8F36675442F8B"]
 			id: "3C9875B4348ADAAA"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "49F715D0AC9F2591"
 				item: "undergarden:virulent_mix_bucket"
@@ -399,6 +418,7 @@
 		{
 			dependencies: ["3CEF98F6DE8C6375"]
 			id: "7CF8D7EE360EE8FD"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				entity: "final_samurai:samurai"
 				id: "2D364A2BA3E98F75"
@@ -424,6 +444,7 @@
 			]
 			icon: "slashblade:proudsoul_tiny"
 			id: "3CEF98F6DE8C6375"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "07459F21EA4F40E1"
 				type: "checkmark"
@@ -435,6 +456,7 @@
 		{
 			dependencies: ["7CF8D7EE360EE8FD"]
 			id: "051BA6257FF77056"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			tasks: [{
 				id: "190986061E2CBA32"
@@ -453,6 +475,7 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "651A03F2219EBCDE"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "1E3C1762375F7DBE"
 				item: {

@@ -45,6 +45,7 @@
 			hide_dependent_lines: true
 			hide_until_deps_complete: true
 			id: "3F43656AE6F116CB"
+			quest_enhance_disable_scroll_paging: false
 			size: 2.0d
 			tasks: [{
 				dimension: "ad_astra:mars"
@@ -60,6 +61,7 @@
 			dependencies: ["3F43656AE6F116CB"]
 			hide_until_deps_complete: true
 			id: "5252B3E3137F1957"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "58E6CBE56BCE9C2B"
 				item: "ad_astra:mars_sand"
@@ -71,6 +73,7 @@
 		{
 			dependencies: ["5252B3E3137F1957"]
 			id: "37CFBBB29EFC0389"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "未完成"
 			tasks: [{
 				id: "46DEDCD7EDCF3BFE"
@@ -84,6 +87,7 @@
 			dependencies: ["3F43656AE6F116CB"]
 			hide_until_deps_complete: true
 			id: "2E0B8635A864C99E"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "73997F672A50E944"
 				item: "ad_astra:raw_ostrum"
@@ -96,6 +100,7 @@
 			dependencies: ["2E0B8635A864C99E"]
 			description: ["可以制作冥界竞技场的结构羽毛笔。"]
 			id: "260A17885336B776"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "4364672E087539C6"
 				item: "ad_astra:ostrum_ingot"
@@ -112,6 +117,7 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "203E60FD1465EC35"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			tasks: [{
 				id: "1E8CDCAA7EB560FF"
@@ -137,6 +143,7 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "20C5B7CCF681A814"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "3C8CEEDCB21244B2"
 				item: {
@@ -165,6 +172,7 @@
 			dependency_requirement: "one_completed"
 			hide_until_deps_visible: true
 			id: "154580144376D976"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "149B65DE39E1422C"
 				item: {
@@ -185,6 +193,7 @@
 		{
 			dependencies: ["20C5B7CCF681A814"]
 			id: "549AFEC23C09BA81"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "10244535320ECABC"
 				item: "last_smith:scroll_muramasa"
@@ -196,6 +205,7 @@
 		{
 			dependencies: ["203E60FD1465EC35"]
 			id: "500ED712AFE54466"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "04E7FDF0D9064986"
 				item: {
@@ -216,6 +226,7 @@
 		{
 			dependencies: ["3F43656AE6F116CB"]
 			id: "051641EF8104FA8F"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "狩猎"
 			tasks: [{
 				id: "45A9A44E12CDB276"
@@ -242,6 +253,7 @@
 		{
 			dependencies: ["20C5B7CCF681A814"]
 			id: "3348C0AE18D2FCE3"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "78D9D83B24B5FD01"
 				item: {
@@ -262,6 +274,7 @@
 		{
 			dependencies: ["3348C0AE18D2FCE3"]
 			id: "24BDD9F44F3AC6D6"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "56CD585340E2E3C0"
 				item: {
@@ -282,6 +295,7 @@
 		{
 			dependencies: ["20C5B7CCF681A814"]
 			id: "4467B681A766AFAC"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "7EAB4C4F0E0D234B"
 				item: {
@@ -303,6 +317,7 @@
 			dependencies: ["3F43656AE6F116CB"]
 			description: ["可以制作斗兽场的结构羽毛笔。"]
 			id: "08AFB6C900A95C4B"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "586279C3644D24EB"
 				item: {
@@ -321,6 +336,7 @@
 		{
 			dependencies: ["08AFB6C900A95C4B"]
 			id: "1922B02256A88B09"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "5C5D0F7E7C34E473"
 				structure: "dungeons_arise:coliseum"
@@ -334,6 +350,7 @@
 			dependencies: ["3F43656AE6F116CB"]
 			description: ["可以制作天际骑士团战舰的结构羽毛笔。"]
 			id: "2BD02CD617E0BB89"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "6E86EA41C0DF78F7"
 				item: {
@@ -353,6 +370,7 @@
 			dependencies: ["2BD02CD617E0BB89"]
 			description: ["他们是怎么到这的？"]
 			id: "1D327A774EA080AA"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "56BBDCBD8DBF5D09"
 				structure: "dungeons_arise:heavenly_rider"
@@ -365,6 +383,7 @@
 		{
 			dependencies: ["051641EF8104FA8F"]
 			id: "3D2F6FBFCD40C3F5"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "通过战斗获得资源"
 			tasks: [{
 				id: "4D2578621E51BC39"
@@ -387,6 +406,7 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "037B81C6D7D0E665"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "03B10B4C08A946F0"
 				structure: "block_factorys_bosses:underworld_arena"
@@ -403,6 +423,7 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "1802CDA40F0A4853"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "4CFAC6E4AE78566E"
 				item: "block_factorys_bosses:underworld_arena_door"
@@ -414,6 +435,7 @@
 		{
 			dependencies: ["037B81C6D7D0E665"]
 			id: "14DBAFAF7B62438D"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				advancement: "block_factorys_bosses:kill_underworld_knight"
 				criterion: ""
@@ -426,6 +448,7 @@
 		{
 			dependencies: ["2E0B8635A864C99E"]
 			id: "6335105681D9B581"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "53585B81AA25B905"
 				item: {

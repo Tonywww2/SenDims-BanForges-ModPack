@@ -91,6 +91,7 @@
 			hide_dependent_lines: true
 			icon: "minecraft:grass_block"
 			id: "713CA11C25A8A2E2"
+			quest_enhance_disable_scroll_paging: false
 			size: 2.0d
 			tasks: [{
 				id: "78BD4E045EB397EB"
@@ -104,6 +105,7 @@
 			dependencies: ["05F34C96BF68DD64"]
 			description: ["&c警告：使用后会大幅强化主世界的敌人，确保你做好了准备。&r"]
 			id: "07AEFF9468658A0C"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "368CBA3AE8333B18"
@@ -125,6 +127,7 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "641BAE5B4E3ED25C"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "5322BC1F7194E0F5"
 				item: "kubejs:ml_computing_ingot"
@@ -140,6 +143,7 @@
 				"6F69543F135C4821"
 			]
 			id: "093A3A5A5BBB3A44"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "7EC52EDE3BF9C786"
 				item: {
@@ -166,6 +170,7 @@
 				"0C099E334233878D"
 			]
 			id: "6F63F683A1A658B9"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "5EB7F85396EFDBD8"
 				item: {
@@ -186,6 +191,7 @@
 		{
 			dependencies: ["713CA11C25A8A2E2"]
 			id: "56C9FAAD7AD47F1A"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "1286FFAED44ABD3D"
 				structure: "darkerdepths:catacombs"
@@ -213,6 +219,7 @@
 				}
 			}
 			id: "2B1E25722BDE5592"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "38D7687CBF37F99C"
 				type: "checkmark"
@@ -231,6 +238,7 @@
 				"57AEDAD12FDBE944"
 			]
 			id: "63BCA9C495EBC8D8"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "3A7F30B8E5E16DD7"
 				item: {
@@ -251,6 +259,7 @@
 		{
 			dependencies: ["56C9FAAD7AD47F1A"]
 			id: "77DB6C3E80DEA149"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "1D1A1940A4607842"
 				item: "darkerdepths:forsaken_bronze_scrap"
@@ -262,6 +271,7 @@
 		{
 			dependencies: ["713CA11C25A8A2E2"]
 			id: "02E6CE202E6EF60E"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "730AD50EBD5B162A"
 				item: "sgjourney:golden_idol"
@@ -273,6 +283,7 @@
 		{
 			dependencies: ["02E6CE202E6EF60E"]
 			id: "0964978805C0D606"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "670ECB0AE26BA4B0"
 				item: "sgjourney:archeology_table"
@@ -300,6 +311,7 @@
 				"（TBD，简单来说满级信号是锁定键，14-多少级是顺时针旋转，多少级-1级是逆时针旋转，需要按照石碑上的符号选择，最后选择\"0\"的符号）"
 			]
 			id: "4BABF9CAFF0F35FB"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				id: "3BE33AE457986E8E"
 				item: "ad_astra:solar_panel"
@@ -323,6 +335,7 @@
 			dependencies: ["4BABF9CAFF0F35FB"]
 			hide_dependency_lines: true
 			id: "6925E412FDC9E153"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
@@ -339,6 +352,7 @@
 			dependencies: ["4BABF9CAFF0F35FB"]
 			hide_dependency_lines: true
 			id: "30466198F15583F7"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
@@ -355,6 +369,7 @@
 			dependencies: ["4BABF9CAFF0F35FB"]
 			hide_dependency_lines: true
 			id: "33DE21972F5A6DAB"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
@@ -371,6 +386,7 @@
 			dependencies: ["4BABF9CAFF0F35FB"]
 			hide_dependency_lines: true
 			id: "3CB7E2E08F8E2D6B"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
@@ -387,6 +403,7 @@
 			dependencies: ["4BABF9CAFF0F35FB"]
 			hide_dependency_lines: true
 			id: "31ECA1A6F4343C53"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
@@ -404,6 +421,7 @@
 			hide_dependency_lines: true
 			icon: "minecraft:sand"
 			id: "53AD777A5EBE3205"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
@@ -419,6 +437,7 @@
 			dependencies: ["4BABF9CAFF0F35FB"]
 			hide_dependency_lines: true
 			id: "5113319832E2138D"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
@@ -435,6 +454,7 @@
 			dependencies: ["4BABF9CAFF0F35FB"]
 			hide_dependency_lines: true
 			id: "3DD187ED0B333F64"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
@@ -451,6 +471,7 @@
 			dependencies: ["4BABF9CAFF0F35FB"]
 			hide_dependency_lines: true
 			id: "15837F926594442F"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
@@ -466,6 +487,7 @@
 		{
 			dependencies: ["6925E412FDC9E153"]
 			id: "0C099E334233878D"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "5B7417A147B595CC"
 				item: "sgjourney:raw_naquadah"
@@ -477,6 +499,7 @@
 		{
 			dependencies: ["3CB7E2E08F8E2D6B"]
 			id: "2EE09FEC7618A5F9"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "132478E66B15D7FF"
 				item: {
@@ -495,6 +518,7 @@
 		{
 			dependencies: ["3DD187ED0B333F64"]
 			id: "643556973E0DE22E"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "113FFCB9F0CF275C"
 				item: "sgjourney:raw_trinium"
@@ -506,6 +530,7 @@
 		{
 			dependencies: ["15837F926594442F"]
 			id: "57AEDAD12FDBE944"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "0B9376B067BC0F4B"
 				item: "sgjourney:unity_shard"
@@ -517,6 +542,7 @@
 		{
 			dependencies: ["57AEDAD12FDBE944"]
 			id: "16846E9213A00C23"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "75B74F5D99AEC164"
 				item: "sgjourney:kara_kesh"
@@ -528,6 +554,7 @@
 		{
 			dependencies: ["0C099E334233878D"]
 			id: "357695F14FD17E3F"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "104C9D6C238D5D30"
 				item: "sgjourney:naquadah_liquidizer"
@@ -543,6 +570,7 @@
 				"77DB6C3E80DEA149"
 			]
 			id: "441CCFBB202C3E2B"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "5323FB895F7C1461"
 				item: {
@@ -559,6 +587,27 @@
 			}]
 			x: 6.0d
 			y: 12.0d
+		}
+		{
+			dependencies: ["2EE09FEC7618A5F9"]
+			id: "77F7C48C17B644A0"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0C57095116742799"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"translate\":\"item.slashblade_sendims.caliburn\"}"
+						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade_sendims.caliburn\"}})"
+					}
+				}
+				type: "item"
+			}]
+			x: 30.0d
+			y: 9.0d
 		}
 	]
 	title: "[XI] &e空岛之下"

@@ -1,0 +1,11 @@
+{
+  "type": "pneumaticcraft:assembly_drill",
+  "input": {
+    "item": "kubejs:omni_pneumatic_02"
+  },
+  "program": "drill",
+  "result": {
+    "item": "kubejs:omni_pneumatic_03",
+    "count": 1
+  }
+}

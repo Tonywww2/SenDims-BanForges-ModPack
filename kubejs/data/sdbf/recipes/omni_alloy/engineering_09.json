@@ -1,0 +1,23 @@
+{
+  "type": "enderio:alloy_smelting",
+  "inputs": [
+    {
+      "ingredient": {
+        "item": "kubejs:omni_engineering_assembly_1"
+      },
+      "count": 1
+    },
+    {
+      "ingredient": {
+        "item": "enderio:conductive_alloy_ingot"
+      },
+      "count": 1
+    }
+  ],
+  "result": {
+    "item": "kubejs:omni_engineering_09",
+    "count": 1
+  },
+  "energy": 16000,
+  "experience": 0.1
+}

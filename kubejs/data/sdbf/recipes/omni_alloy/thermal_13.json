@@ -1,0 +1,15 @@
+{
+  "type": "thermal:press",
+  "ingredients": [
+    {
+      "item": "kubejs:omni_thermal_12"
+    }
+  ],
+  "result": [
+    {
+      "item": "kubejs:omni_thermal_13",
+      "count": 1
+    }
+  ],
+  "energy": 8000
+}

@@ -1,0 +1,10 @@
+{
+  "type": "aether:enchanting",
+  "category": "enchanting_misc",
+  "ingredient": {
+    "item": "kubejs:omni_aether_feed"
+  },
+  "result": "kubejs:omni_aether_01",
+  "cookingtime": 400,
+  "experience": 0.1
+}

@@ -41,6 +41,7 @@
 			hide_until_deps_visible: true
 			icon: "integrateddynamics:menril_sapling"
 			id: "3DA6E818573A9A69"
+			quest_enhance_disable_scroll_paging: false
 			size: 2.0d
 			tasks: [
 				{
@@ -72,6 +73,7 @@
 				"52755126FB29CFEF"
 			]
 			id: "47820A4E592EE375"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "7B90725CB5D859F5"
 				item: {
@@ -96,6 +98,7 @@
 				"52755126FB29CFEF"
 			]
 			id: "6367E660F1CE8B30"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "565909A93DCCED12"
 				item: {
@@ -117,6 +120,7 @@
 			dependencies: ["6367E660F1CE8B30"]
 			hide_until_deps_complete: true
 			id: "7465DB175504D0F3"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "69DF5807233F8FB9"
 				item: "last_smith:scroll_god"
@@ -129,6 +133,7 @@
 			dependencies: ["47820A4E592EE375"]
 			hide_until_deps_complete: true
 			id: "00C6734E62C48C2D"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "721186BF371EF6DE"
 				item: "last_smith:scroll_blood"
@@ -144,6 +149,7 @@
 				"208F9215CAD12EF7"
 			]
 			id: "6F69543F135C4821"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "3D01491A6868D8EA"
 				item: {
@@ -168,6 +174,7 @@
 				"53256181C4C5332B"
 			]
 			id: "416CF285388AC45E"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "4BA8999DAE7E0F2B"
 				item: {
@@ -188,6 +195,7 @@
 		{
 			dependencies: ["34E2C69E62618843"]
 			id: "6FAD86E3643B7984"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "236983294EA8DFF7"
 				item: {
@@ -208,6 +216,7 @@
 		{
 			dependencies: ["6FAD86E3643B7984"]
 			id: "37DAF8058AB60237"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "5D97CF6CC6685D0F"
 				item: {
@@ -231,6 +240,7 @@
 				"6A7820E176CC4FAB"
 			]
 			id: "77725AE40795028C"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "167524E5EEDBC727"
 				item: {
@@ -251,6 +261,7 @@
 		{
 			dependencies: ["34E2C69E62618843"]
 			id: "5F25788D537A03BC"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "2AE41418C5F88A60"
 				item: {
@@ -276,6 +287,7 @@
 				"52755126FB29CFEF"
 			]
 			id: "161E8BD488E58BEC"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "42A2B3F073F40A8B"
 				item: {
@@ -296,6 +308,7 @@
 		{
 			dependencies: ["3DA6E818573A9A69"]
 			id: "4A962D0462EBA5FF"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "625232375BD51346"
 				item: "cataclysm:abyss_eye"
@@ -307,6 +320,7 @@
 		{
 			dependencies: ["3DA6E818573A9A69"]
 			id: "58F48888F1039B24"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "1CFB90B804E1B158"
 				item: "integrateddynamics:crystalized_menril_chunk"
@@ -319,6 +333,7 @@
 			dependencies: ["3DA6E818573A9A69"]
 			description: ["多么美妙的材料！它拥有着两条加工路线，可以自行选择！"]
 			id: "52755126FB29CFEF"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "34E8EB29C4F84E26"
 				item: "kubejs:menril-silicon_sic_sic_cmc_ingot"
@@ -331,6 +346,7 @@
 			dependencies: ["3DA6E818573A9A69"]
 			description: ["深境二层中的一些珍稀生物会掉落这种材料。"]
 			id: "34E2C69E62618843"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "285BE6DAF4E6C77D"
 				item: "kubejs:gamma_dust"
@@ -347,6 +363,7 @@
 				"深境二层的海盗们也喜欢收藏这种奇特的晶体。"
 			]
 			id: "078E92000B6E3912"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			tasks: [{
 				id: "2003919EAE0BFA16"
@@ -363,6 +380,7 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "20D8DB313AF6ED7F"
+			quest_enhance_disable_scroll_paging: false
 			shape: "pentagon"
 			tasks: [{
 				id: "6550BFE2C3F6FE83"
@@ -376,6 +394,7 @@
 		{
 			dependencies: ["20D8DB313AF6ED7F"]
 			id: "27D7689ADCE678E0"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "4C5CDD801EABEAE1"
 				item: "cataclysm:abyssal_sacrifice"
@@ -387,6 +406,7 @@
 		{
 			dependencies: ["27D7689ADCE678E0"]
 			id: "208F9215CAD12EF7"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "2A6D512B5BBB44B0"
 				item: "cataclysm:tidal_claws"
@@ -398,6 +418,7 @@
 		{
 			dependencies: ["20D8DB313AF6ED7F"]
 			id: "6A7820E176CC4FAB"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "69C5E35D7DBDBB0D"
 				item: "cataclysm:blessed_amethyst_crab_meat"
@@ -413,6 +434,7 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "51C5BB3124FCCCF9"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "361EE6CCDC2B58B9"
 				structure: "block_factorys_bosses:kraken_ship"
@@ -425,6 +447,7 @@
 		{
 			dependencies: ["01EF5D894D324559"]
 			id: "53256181C4C5332B"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "1670D3533F8D7A75"
 				item: "block_factorys_bosses:kraken_tooth"
@@ -439,6 +462,7 @@
 				"58F48888F1039B24"
 			]
 			id: "0EFAC7AECCFDD801"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "1FFA66B89495F145"
 				item: {
@@ -459,6 +483,7 @@
 		{
 			dependencies: ["0EFAC7AECCFDD801"]
 			id: "4FD299D688A0A92A"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "038232275CAD0AB4"
 				item: {
@@ -479,6 +504,7 @@
 		{
 			dependencies: ["51C5BB3124FCCCF9"]
 			id: "01EF5D894D324559"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				advancement: "block_factorys_bosses:kill_kraken"
 				criterion: ""
@@ -491,6 +517,7 @@
 		{
 			dependencies: ["58F48888F1039B24"]
 			id: "1600B014D174B4A7"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "2F04A0D199F61A5C"
 				item: {

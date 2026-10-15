@@ -1,0 +1,17 @@
+{
+  "type": "nuclearcraft:melter",
+  "powerModifier": 2.0,
+  "timeModifier": 2.0,
+  "radiation": 0.0,
+  "input": [
+    {
+      "item": "kubejs:omni_nuclear_04"
+    }
+  ],
+  "outputFluids": [
+    {
+      "tag": "kubejs:omni_nuclear_05_fluid",
+      "amount": 1000
+    }
+  ]
+}

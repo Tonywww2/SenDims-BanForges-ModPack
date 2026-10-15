@@ -14,6 +14,7 @@
 			dependencies: ["3A267848CC75F232"]
 			hide_dependent_lines: true
 			id: "1C7A16CB4CD91DA5"
+			quest_enhance_disable_scroll_paging: false
 			size: 2.0d
 			tasks: [{
 				id: "732B2B3C53DD5572"
@@ -32,6 +33,7 @@
 				"·不使用任何游戏漏洞"
 			]
 			id: "2527C72C7EB0BB94"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			tasks: [{
 				id: "332F385DC62B9DFD"
@@ -49,6 +51,7 @@
 				"·不能使用任何生命偷取相关的物品"
 			]
 			id: "3F9B9616695DC5DB"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			tasks: [{
 				id: "4C8B6CEAB93270F5"
@@ -67,6 +70,7 @@
 				"·使一把拔刀剑的&b杀敌数&r到达&b10000&r"
 			]
 			id: "7311991EFC1D027A"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			tasks: [{
 				id: "1FCBB03EAA4DF5E7"
@@ -80,6 +84,7 @@
 		{
 			id: "3A267848CC75F232"
 			invisible: true
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "584C42C28B1CC8E5"
 				item: "minecraft:barrier"
@@ -99,6 +104,7 @@
 				"注意：整合包难度不是设置右上角的难度，而是使用/sdbf_difficulty_menu切换的难度。"
 			]
 			id: "69653BD0F8D9E379"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			tasks: [{
 				id: "335B21D8264C07CB"
@@ -119,6 +125,7 @@
 				"注意：整合包难度不是设置右上角的难度，而是使用/sdbf_difficulty_menu切换的难度。"
 			]
 			id: "6A4550CAA689EBBD"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			tasks: [{
 				id: "62807E6460364D12"
@@ -142,6 +149,7 @@
 				"注意：整合包难度不是设置右上角的难度，而是使用/sdbf_difficulty_menu切换的难度。"
 			]
 			id: "482AE8A7E399743D"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			tasks: [{
 				id: "6D19A077A2DC9B68"

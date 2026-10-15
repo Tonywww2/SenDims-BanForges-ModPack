@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AB ",
+    "   ",
+    "   "
+  ],
+  "key": {
+    "A": {
+      "item": "kubejs:omni_thermal_22"
+    },
+    "B": {
+      "item": "kubejs:omni_thermal_20"
+    }
+  },
+  "result": {
+    "item": "kubejs:cryogenic_phase_housing",
+    "count": 1
+  }
+}

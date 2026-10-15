@@ -308,3 +308,9 @@
 	#Range: > 16
 	max_network_size = 4096
 
+[designs_hub]
+	#Enable the Designs Hub: browse/upload/vote on shared fission reactor designs
+	enabled = true
+	#Base URL of the Designs Hub API
+	base_url = "https://nc-fission-designs-api.itman.website"
+

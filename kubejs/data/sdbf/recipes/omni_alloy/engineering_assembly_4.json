@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "A  ",
+    "   ",
+    "   "
+  ],
+  "key": {
+    "A": {
+      "item": "kubejs:omni_engineering_24"
+    }
+  },
+  "result": {
+    "item": "kubejs:stargate_coupling_coil",
+    "count": 1
+  }
+}

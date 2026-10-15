@@ -17,6 +17,9 @@
 	#每次按最大生命值比例回复的生命值。
 	#Range: 0.0 ~ 1.0
 	max_health_ratio = 0.05
+	#Start healing when a boss has no valid target.
+	#Boss 无有效目标时是否开始回血。
+	heal_when_no_target = true
 
 #Aether Slider settings.
 #滑行魔石设置。
@@ -190,8 +193,8 @@
 		#连续冲刺之间的停顿时间。
 		#Range: 0 ~ 72000
 		continuous_glide_interval_ticks = 4
-		#Ticks of player velocity used to lead Continuous Glide aim.
-		#连续滑行瞄准时用于预判玩家速度的 tick 数。
+		#Extra lead ticks after windup and estimated dash travel time.
+		#在前摇与预计冲刺时间之外追加的预判 tick 数。
 		#Range: 0 ~ 72000
 		continuous_glide_prediction_ticks = 8
 		#Pause after normal perimeter movement reaches a corner.
@@ -230,6 +233,10 @@
 		#滑行魔石实际战斗房间的垂直半径，包括有地牢追踪器的房间。
 		#Range: 1.0 ~ 128.0
 		standalone_room_vertical_radius = 7.0
+		#Maximum lateral center-line error before locking a dash.
+		#锁定冲刺前，冲刺中心线允许的最大横向误差。
+		#Range: 0.0 ~ 2.0
+		continuous_glide_alignment_tolerance = 0.1
 
 	#Slider client display settings.
 	#滑行魔石客户端显示设置。

@@ -1,0 +1,19 @@
+{
+  "type": "nuclearcraft:heat_exchanger_controller",
+  "powerModifier": 2.0,
+  "timeModifier": 2.0,
+  "radiation": 0.0,
+  "heat": 100.0,
+  "inputFluids": [
+    {
+      "tag": "kubejs:omni_external/nuclearcraft/high_pressure_steam",
+      "amount": 1000
+    }
+  ],
+  "outputFluids": [
+    {
+      "tag": "kubejs:omni_nuclear_26_fluid",
+      "amount": 1000
+    }
+  ]
+}

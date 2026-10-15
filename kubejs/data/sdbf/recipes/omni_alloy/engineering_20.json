@@ -1,0 +1,12 @@
+{
+  "type": "ad_astra:cryo_freezing",
+  "ingredient": {
+    "item": "minecraft:blue_ice"
+  },
+  "result": {
+    "fluid": "kubejs:omni_engineering_20_fluid",
+    "millibuckets": 1000
+  },
+  "cookingtime": 200,
+  "energy": 80
+}

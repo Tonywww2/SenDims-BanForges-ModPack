@@ -1,0 +1,14 @@
+{
+  "type": "thermal:refinery",
+  "ingredient": {
+    "fluid": "kubejs:omni_thermal_17_fluid",
+    "amount": 1000
+  },
+  "result": [
+    {
+      "fluid": "kubejs:omni_thermal_18_fluid",
+      "amount": 1000
+    }
+  ],
+  "energy": 12000
+}

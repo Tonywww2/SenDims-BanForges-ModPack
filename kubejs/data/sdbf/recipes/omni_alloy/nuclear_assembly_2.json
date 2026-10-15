@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABC",
+    "D  ",
+    "   "
+  ],
+  "key": {
+    "A": {
+      "item": "kubejs:omni_nuclear_09"
+    },
+    "B": {
+      "item": "kubejs:omni_nuclear_08_fluid_bucket"
+    },
+    "C": {
+      "item": "kubejs:omni_nuclear_11"
+    },
+    "D": {
+      "item": "kubejs:omni_nuclear_16"
+    }
+  },
+  "result": {
+    "item": "kubejs:omni_nuclear_assembly_2",
+    "count": 1
+  }
+}

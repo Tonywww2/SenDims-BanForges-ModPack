@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABC",
+    "   ",
+    "   "
+  ],
+  "key": {
+    "A": {
+      "item": "kubejs:omni_aether_11"
+    },
+    "B": {
+      "item": "kubejs:omni_aether_08"
+    },
+    "C": {
+      "item": "kubejs:omni_aether_09_block"
+    }
+  },
+  "result": {
+    "item": "kubejs:omni_aether_assembly_2",
+    "count": 1
+  }
+}

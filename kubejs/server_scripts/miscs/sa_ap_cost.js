@@ -1,4 +1,12 @@
 let SACostMap = Utils.newMap();
+// 役满系列：静态注册一次；天授／九莲灯只报价，成功进入原生 SA 后再消耗充能。
+let $YakumanEffects = Java.loadClass("com.tonywww.slashblade_sendims.yakuman.YakumanEffects");
+let $YakumanSpec = Java.loadClass("com.tonywww.slashblade_sendims.yakuman.YakumanSpec");
+let yakumanArts = $YakumanSpec.values();
+for (let i = 0; i < yakumanArts.length; i++) {
+    let art = yakumanArts[i];
+    SACostMap.put(String(art.id), [art.ap, art.apRatio]);
+}
 // id -> 固定值， 百分比
 SACostMap.put("slashblade:none", [0, 0]);
 
@@ -20,7 +28,7 @@ SACostMap.put("slashblade_sendims:wave_edge_ammo", [400, 0.2]);
 SACostMap.put("slashblade:heavens_slash_start", [200, 0.15]);
 
 SACostMap.put("slashblade:void_slash", [200, 0.1]);
-SACostMap.put("slashblade_sendims:void_slash_ammo", [400, 0.15]);
+SACostMap.put("slashblade_sendims:void_slash_ammo", [400, 0.25]);
 
 SACostMap.put("sjap_adder:illusion_drive", [400, 0.2]);
 
@@ -31,6 +39,10 @@ SACostMap.put("slashblade_sendims:sakura_end_ammo", [200, 0.05]);
 SACostMap.put("slashblade_sendims:golden_crux", [400, 0.2]);
 
 SACostMap.put("slashblade_sendims:nameless_threefold", [400, 0.2]);
+
+SACostMap.put("slashblade_sendims:caliburn", [350, 0.15]);
+SACostMap.put("slashblade_sendims:excalibur", [600, 0.25]);
+SACostMap.put("slashblade_sendims:malevolent_shrine", [450, 0.2]);
 
 SACostMap.put("pseudoedge_break_dawn:black_hole", [300, 0.15]);
 
@@ -137,7 +149,7 @@ let consumeAPForSA = (entity, event, cost, cost_persentage) => {
 
     let currentAP = $UmaSoulUtils.getActionPoint(soul);
     let maxAP = $UmaSoulUtils.getMaxActionPoint(soul);
-    let total_cost = cost + (maxAP * cost_persentage);
+    let total_cost = (cost + (maxAP * cost_persentage)) * $YakumanEffects.apMultiplier(entity);
 
     let hasEnoughAP = currentAP >= total_cost;
 
@@ -186,8 +198,14 @@ NativeEvents.onEvent($SuperSlashArtsReleaseEvent, event => {
     // 原生超 SA 直接进入连招，不再触发 PerformSlashArtEvent。
     let mainHandItem = player.getMainHandItem();
     let state = mainHandItem.item instanceof $ItemSlashBlade ? $SDUtils.getState(mainHandItem) : null;
-    let costs = state && String(state.getSlashArtsKey()) == "slashblade_sendims:nameless_threefold"
-        ? SACostMap.get("slashblade_sendims:nameless_threefold")
+    let saKey = state ? String(state.getSlashArtsKey()) : "";
+    let usesConfiguredSuperCost = saKey == "slashblade_sendims:nameless_threefold"
+        || saKey == "slashblade_sendims:caliburn"
+        || saKey == "slashblade_sendims:excalibur"
+        || saKey == "slashblade_sendims:malevolent_shrine"
+        || (saKey.startsWith("slashblade_sendims:yakuman_") && SACostMap.containsKey(saKey));
+    let costs = usesConfiguredSuperCost
+        ? SACostMap.get(saKey)
         : superSlashArtCost;
     let cost = costs[0];
     let cost_persentage = costs[1];

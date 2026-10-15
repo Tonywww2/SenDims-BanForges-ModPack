@@ -64,6 +64,7 @@
 			hide_dependent_lines: true
 			hide_until_deps_visible: true
 			id: "51A9FF63F9F3E125"
+			quest_enhance_disable_scroll_paging: false
 			size: 2.0d
 			subtitle: "警告：需要火焰防护"
 			tasks: [{
@@ -79,6 +80,7 @@
 		{
 			dependencies: ["51A9FF63F9F3E125"]
 			id: "7D98EABF3232321E"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "78BECCEFC7D3C955"
 				item: "ad_astra:calorite_ingot"
@@ -91,6 +93,7 @@
 			dependencies: ["7D98EABF3232321E"]
 			description: ["不需要抗火效果就可以在金星和水星防火了！"]
 			id: "31341BED5E582FBF"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				id: "2AEB9AA33591B18D"
 				type: "xp"
@@ -124,6 +127,7 @@
 			description: ["三阶火箭可抵达。"]
 			icon: "ad_astra:mercury_globe"
 			id: "2C6833FA2E31DFF1"
+			quest_enhance_disable_scroll_paging: false
 			size: 2.0d
 			tasks: [{
 				dimension: "ad_astra:mercury"
@@ -139,6 +143,7 @@
 			dependencies: ["2C6833FA2E31DFF1"]
 			hide_until_deps_visible: true
 			id: "5FDD83613CC8DBB5"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "3607D328676AE6AF"
 				item: "ad_astra:mercury_stone"
@@ -150,6 +155,7 @@
 		{
 			dependencies: ["51A9FF63F9F3E125"]
 			id: "61C43936D3898BEC"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "2EF085A4ED3C78A1"
 				item: "ad_astra:venus_sand"
@@ -161,6 +167,7 @@
 		{
 			dependencies: ["51A9FF63F9F3E125"]
 			id: "39B7DC65434E8CC1"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "778E3E0EB4A7F037"
 				item: "ad_astra:infernal_spire_block"
@@ -180,6 +187,7 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "6477045E03EE3F9E"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "313114262A5190A8"
 				item: {
@@ -206,6 +214,7 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "63D9F90A01E19D8A"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "4431E428787A143C"
 				item: {
@@ -232,6 +241,7 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "4138021AE4A37632"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "477E7B93AC8021D3"
 				item: {
@@ -255,6 +265,7 @@
 				"363E4E4BD5FC757F"
 			]
 			id: "2B1F98A770D77E12"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "1BAB274E278E2343"
 				item: "kubejs:mercury_refractory_structural_component"
@@ -271,6 +282,7 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "2F9648A58EC0C636"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "798A47B4897B0079"
 				item: {
@@ -297,6 +309,7 @@
 				"0EFAC7AECCFDD801"
 			]
 			id: "65C573EE97C5117F"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "63DCE2EA0C0A77EA"
 				item: {
@@ -323,6 +336,7 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "35E9C6E28966F641"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "6546C87B474F3A49"
 				item: {
@@ -347,6 +361,7 @@
 				"16846E9213A00C23"
 			]
 			id: "489E7D6A94278610"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "41AB0CA4B10A9324"
 				item: {
@@ -367,6 +382,7 @@
 		{
 			dependencies: ["489E7D6A94278610"]
 			id: "0506CD90BA40D331"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "385E30AC845C843C"
 				item: "last_smith:scroll_shura"
@@ -381,6 +397,7 @@
 				"73EC367B170C5EF6"
 			]
 			id: "2E9AD291D5058BFF"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "6CDCFE1B395BCB8D"
 				item: {
@@ -401,6 +418,7 @@
 		{
 			dependencies: ["2E9AD291D5058BFF"]
 			id: "06A34C8A04B2CD83"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "51125D816CA37AA6"
 				item: "last_smith:scroll_mortal"
@@ -412,6 +430,7 @@
 		{
 			dependencies: ["51A9FF63F9F3E125"]
 			id: "31EA9A38D8474C88"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "0B56ACB1B67B0400"
 				item: "cataclysm:desert_eye"
@@ -423,6 +442,7 @@
 		{
 			dependencies: ["2C6833FA2E31DFF1"]
 			id: "5F0FC78E11482861"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "0AFB184273ABD527"
 				item: "cataclysm:flame_eye"
@@ -438,6 +458,7 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "71B22CE8B354DA88"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "176383DEE3C9E53D"
 				structure: "cataclysm:burning_arena"
@@ -454,6 +475,7 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "68BD750B0FD3AB6D"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				id: "6D485908C9721707"
 				item: "cataclysm:sticky_gloves"
@@ -471,6 +493,7 @@
 		{
 			dependencies: ["71B22CE8B354DA88"]
 			id: "73EC367B170C5EF6"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "1822FDFDA43DE743"
 				item: "cataclysm:ignitium_ingot"
@@ -482,6 +505,7 @@
 		{
 			dependencies: ["68BD750B0FD3AB6D"]
 			id: "044E03F057C715B8"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "6672D956707459C7"
 				item: "cataclysm:ancient_metal_ingot"
@@ -493,6 +517,7 @@
 		{
 			dependencies: ["68BD750B0FD3AB6D"]
 			id: "12D9DA1E0735EFDD"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "68A78B63F70F4F71"
 				item: "cataclysm:koboleton_bone"
@@ -504,6 +529,7 @@
 		{
 			dependencies: ["7D98EABF3232321E"]
 			id: "363E4E4BD5FC757F"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "287BD832420F7404"
 				item: "ad_astra:calorite_tank"

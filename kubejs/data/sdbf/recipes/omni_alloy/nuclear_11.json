@@ -1,0 +1,23 @@
+{
+  "type": "nuclearcraft:fluid_infuser",
+  "powerModifier": 2.0,
+  "timeModifier": 2.0,
+  "radiation": 0.0,
+  "input": [
+    {
+      "item": "minecraft:iron_ingot"
+    }
+  ],
+  "inputFluids": [
+    {
+      "tag": "kubejs:omni_nuclear_10_fluid",
+      "amount": 1000
+    }
+  ],
+  "output": [
+    {
+      "item": "kubejs:omni_nuclear_11",
+      "count": 1
+    }
+  ]
+}

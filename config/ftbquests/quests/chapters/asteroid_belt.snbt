@@ -35,6 +35,7 @@
 			hide_dependent_lines: true
 			icon: "kubejs:asteroid_rock"
 			id: "77DC6770CC08AEF6"
+			quest_enhance_disable_scroll_paging: false
 			size: 2.0d
 			tasks: [{
 				dimension: "sdbf:asteroid_belt"
@@ -50,6 +51,7 @@
 			dependencies: ["77DC6770CC08AEF6"]
 			hide_until_deps_complete: true
 			id: "21EA0520FC403E65"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "089DC678FEFBC8E3"
 				item: "kubejs:asteroid_rock"
@@ -62,6 +64,7 @@
 			dependencies: ["77DC6770CC08AEF6"]
 			hide_until_deps_complete: true
 			id: "0326C6376D5E34FF"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "398DC37E91DDC578"
 				item: "nuclearcraft:thorium_ingot"
@@ -73,6 +76,7 @@
 		{
 			dependencies: ["21EA0520FC403E65"]
 			id: "14D5D5ADCDC5B859"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "566D0CE17A04E535"
 				item: "kubejs:bizarre_matter_dust"
@@ -87,6 +91,7 @@
 				"2E4AB72EC5D3F108"
 			]
 			id: "690B503CC20750EE"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "01705BEAC893FF77"
 				item: "kubejs:delta_dust"
@@ -109,6 +114,7 @@
 				"该BUG的来源是TLS中的一个设定，文史在激活状态下基础攻击力会修改至13（硬编码），在取消后修改至6（硬编码）。但是由于我们使用数据包将文史的基础攻击力提高到了60，所以产生的问题就显而易见了。 "
 			]
 			id: "399F39F1E6D8F717"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "5B242DFED58C18BA"
 				item: {
@@ -130,6 +136,7 @@
 			dependencies: ["0326C6376D5E34FF"]
 			description: ["需要使用 压缩氦收集器制作"]
 			id: "49271C4646459DEE"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "0F54D2C5081A1D62"
 				item: "kubejs:galatic_cycle_component"
@@ -147,6 +154,7 @@
 				"3C0882022833F540"
 			]
 			id: "2A648235D6DA1509"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "0060DDFA043583C8"
 				item: {
@@ -167,6 +175,7 @@
 		{
 			dependencies: ["04B20E40DAED373B"]
 			id: "1498BB469C25AD67"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "1E11F9D6960449E1"
 				item: {
@@ -187,6 +196,7 @@
 		{
 			dependencies: ["3C99585FE904ACDC"]
 			id: "697FFC9EE89DC1DD"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "24DC11F1992BD7FF"
 				item: "cataclysm:essence_of_the_storm"
@@ -199,6 +209,7 @@
 			dependencies: ["77DC6770CC08AEF6"]
 			hide_until_deps_complete: true
 			id: "3C99585FE904ACDC"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "2B1BF68CC5B66F30"
 				item: "cataclysm:storm_eye"
@@ -213,6 +224,7 @@
 				"65C573EE97C5117F"
 			]
 			id: "45770550FCF01C94"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "0B19CFF664E318E7"
 				item: {
@@ -237,6 +249,7 @@
 				"1498BB469C25AD67"
 			]
 			id: "60BC7DF019B63722"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "025503F8EDD7FEB2"
 				item: {
@@ -261,6 +274,7 @@
 				"1498BB469C25AD67"
 			]
 			id: "281BD02608ADF2EE"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "6BD3784AD81DD679"
 				item: {
@@ -282,6 +296,7 @@
 			dependencies: ["77DC6770CC08AEF6"]
 			hide_until_deps_complete: true
 			id: "2E4AB72EC5D3F108"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "1DE6BA24BCF03E5D"
 				item: "nuclearcraft:lead_platinum_ingot"
@@ -296,6 +311,7 @@
 				"2F9648A58EC0C636"
 			]
 			id: "33AE46297AC49922"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "5EB943451BCECBC9"
 				item: {
@@ -316,6 +332,7 @@
 		{
 			dependencies: ["77DC6770CC08AEF6"]
 			id: "1AC714332AC4104E"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "55DF3991AE588169"
 				item: "ad_astra:etrium_panel"

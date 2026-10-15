@@ -1,0 +1,9 @@
+{
+  "type": "aether:icestone_freezable",
+  "ingredient": {
+    "block": "kubejs:omni_aether_04_block"
+  },
+  "result": {
+    "block": "kubejs:omni_aether_05_block"
+  }
+}

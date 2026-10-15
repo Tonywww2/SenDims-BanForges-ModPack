@@ -61,6 +61,7 @@
 			hide_dependent_lines: true
 			hide_until_deps_complete: true
 			id: "0A68F5EE8F25F036"
+			quest_enhance_disable_scroll_paging: false
 			size: 2.0d
 			tasks: [{
 				dimension: "minecraft:the_end"
@@ -75,6 +76,7 @@
 		{
 			dependencies: ["0A68F5EE8F25F036"]
 			id: "5EEA2C8F11FB0470"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				advancement: "minecraft:end/kill_dragon"
 				criterion: ""
@@ -155,6 +157,7 @@
 				}
 			}
 			id: "6120DF977C2DFEA2"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "7A146CEADA3647B2"
 				item: {
@@ -175,6 +178,7 @@
 		{
 			dependencies: ["5EEA2C8F11FB0470"]
 			id: "76C5347D28B53D00"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "41980B63B46A600E"
 				item: "minecraft:dragon_egg"
@@ -190,6 +194,7 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "0D69B0100D962B3B"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "61E7B00BFA19A989"
 				structure: "cataclysm:ruined_citadel"
@@ -202,6 +207,7 @@
 		{
 			dependencies: ["0D69B0100D962B3B"]
 			id: "7174346AD8DCFBEC"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "0DDD6923E5D889D8"
 				item: "cataclysm:void_core"
@@ -213,6 +219,7 @@
 		{
 			dependencies: ["0A68F5EE8F25F036"]
 			id: "17234BADC5181DFE"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "7A0940A2A3F73F69"
 				item: "minecraft:chorus_fruit"
@@ -227,6 +234,7 @@
 				"11728C2FAEFCBBAD"
 			]
 			id: "2354F158B208830E"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "10B2409D30863409"
 				item: {
@@ -247,6 +255,7 @@
 		{
 			dependencies: ["0AB0F8AA8EFC1E53"]
 			id: "74C39C2A8B73986F"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "40B5CC92E7B206B1"
 				item: "kubejs:chorus_logic_composite_coil"
@@ -261,6 +270,7 @@
 				"74C39C2A8B73986F"
 			]
 			id: "3AE144DD58D30985"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "79F66CCF0F276B4C"
 				item: {
@@ -282,6 +292,7 @@
 			dependencies: ["3AE144DD58D30985"]
 			hide_until_deps_complete: true
 			id: "6FC2094BBDF8974D"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "5F242350A3DC5841"
 				item: "last_smith:scroll_causality"
@@ -296,6 +307,7 @@
 				"6FC2094BBDF8974D"
 			]
 			id: "295C7AEDBFF7EE12"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "13657A008E6ED9A8"
 				item: "last_smith:scroll_sharpness"
@@ -311,6 +323,7 @@
 				"28F13DDE71732A6F"
 			]
 			id: "1F6B42B37F50453D"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "3BC937C2CB1490A2"
 				item: {
@@ -331,6 +344,7 @@
 		{
 			dependencies: ["1F6B42B37F50453D"]
 			id: "285BBB474F852773"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "08E5C03EBDBCF94C"
 				item: {
@@ -355,6 +369,7 @@
 			]
 			hide_until_deps_complete: true
 			id: "0E848F953EE65A31"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "33F5247185DCF50F"
 				item: {
@@ -375,6 +390,7 @@
 		{
 			dependencies: ["1F6B42B37F50453D"]
 			id: "5C75E5457757ACDB"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "36267658622E5752"
 				item: {
@@ -395,6 +411,7 @@
 		{
 			dependencies: ["5EEA2C8F11FB0470"]
 			id: "7EBECD450AEF2EEC"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "0D3717D0A9CFA7C0"
 				item: "last_smith:scroll_star"
@@ -411,6 +428,7 @@
 			]
 			hide_until_deps_complete: true
 			id: "1152A96652FA7C8F"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "5642C1E1168D59CB"
 				item: {
@@ -431,6 +449,7 @@
 		{
 			dependencies: ["1152A96652FA7C8F"]
 			id: "2430A8ADE814E85B"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "0E59AD58D6924F7A"
 				item: "last_smith:scroll_yamato"
@@ -442,6 +461,7 @@
 		{
 			dependencies: ["17234BADC5181DFE"]
 			id: "2B94BC787621CEA1"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "66A5C5F8F06D27E0"
 				item: "integrateddynamics:crystalized_chorus_chunk"
@@ -453,6 +473,7 @@
 		{
 			dependencies: ["2B94BC787621CEA1"]
 			id: "0AB0F8AA8EFC1E53"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "297C964F1F9CF05F"
 				item: "integrateddynamics:logic_director"
@@ -468,6 +489,7 @@
 				"6FC2094BBDF8974D"
 			]
 			id: "65379794AA782C5B"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "5F9A1FBD514FF3D1"
 				item: {
@@ -491,6 +513,7 @@
 				"52EC914C3873AF88"
 			]
 			id: "16EC7C595EDEA0AD"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			tasks: [{
 				id: "13F750AA178D9740"
@@ -510,6 +533,7 @@
 			dependency_requirement: "one_completed"
 			hide_until_deps_visible: true
 			id: "28CAD1DD57B60440"
+			quest_enhance_disable_scroll_paging: false
 			size: 1.0d
 			tasks: [{
 				id: "54507E443D0F2512"
@@ -531,6 +555,7 @@
 		{
 			dependencies: ["0A68F5EE8F25F036"]
 			id: "0DA99D68D7FA3B01"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "1F16F5DE7B217238"
 				item: "cataclysm:void_eye"
@@ -542,6 +567,7 @@
 		{
 			dependencies: ["0A68F5EE8F25F036"]
 			id: "75914EDF01311D05"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "0172B61FCD80B192"
 				item: {
@@ -564,6 +590,7 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "45B6FCADF2E92076"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "3098C859E51B15D2"
 				structure: "minecraft:end_city"
@@ -579,6 +606,7 @@
 				"0809F64B7A3864AC"
 			]
 			id: "7FDD038E442DED85"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "2BF0E235BCCD0529"
 				item: {
@@ -602,6 +630,7 @@
 				"3766AEF55C430C3B"
 			]
 			id: "091229EAF21172B0"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "665E4272938E948D"
 				item: {

@@ -7,8 +7,8 @@
 	#English: Weapon attributes. 
 	[equipment.weapons]
 
-		#中文：奉献义手刀。
-		#English: Consecrated prosthetic blade. 
+		#中文：玛莲妮亚的义手刀。
+		#English: Hand of Malenia. 
 		[equipment.weapons.consecrated_prosthetic_blade]
 			#中文：攻击伤害。
 			#English: Attack damage. 
@@ -27,8 +27,8 @@
 			#Range: 0 ~ 1000
 			enchantability = 15
 
-		#中文：年轻狮子大剑。
-		#English: Young lion greatsword. 
+		#中文：拉塔恩的大剑。
+		#English: Greatsword of Radahn, Light. 
 		[equipment.weapons.young_lion_greatsword]
 			#中文：攻击伤害。
 			#English: Attack damage. 
@@ -59,37 +59,124 @@
 			#Range: 0.0 ~ 1000000.0
 			rot_capacity_bonus = 40.0
 
-		#中文：奉献义手刀。
-		#English: Consecrated prosthetic blade. 
+		#中文：玛莲妮亚的义手刀。
+		#English: Hand of Malenia. 
 		[equipment.curios.consecrated_prosthetic_blade]
 			#中文：攻击速度加成。饰品攻击速度加成比例；0.10表示+10%，仅功能性Curios槽位生效。
 			#English: Attack speed bonus. Curio attack speed bonus; 0.10 means +10%
 			#Range: 0.0 ~ 10.0
 			attack_speed_bonus = 0.1
-
-		#中文：年轻狮子大剑。
-		#English: Young lion greatsword. 
-		[equipment.curios.young_lion_greatsword]
-			#中文：攻击伤害加成。饰品攻击伤害加成比例；0.10表示+10%，仅功能性Curios槽位生效。
-			#English: Attack damage bonus. Curio attack damage bonus; 0.10 means +10%
+			#中文：连击叠层命中次数。有效近战命中达到此次数时增加一层连击；横扫同次攻击只计一次。
+			#English: Hits per Combo stack. Successful melee hits needed to gain one Combo stack; one sweeping attack counts once.
+			#Range: 1 ~ 1024
+			combo_hits_per_stack = 4
+			#中文：连击持续时间 · tick。每次叠层刷新此持续时间；20tick为1秒。
+			#English: Combo duration · ticks. Duration refreshed when earning a stack; 20 ticks equal one second.
+			#Range: 1 ~ 12000
+			combo_duration_ticks = 50
+			#中文：连击1层伤害加成。该层连击提供的总伤害比例加成；0.10为10%，各层不相加。
+			#English: Combo level 1 damage bonus. Total damage bonus at this Combo level; 0.10 means 10%, levels do not add together.
 			#Range: 0.0 ~ 10.0
-			attack_damage_bonus = 0.1
-			#中文：击退抗性加成。直接增加击退抗性；0.10表示增加10个百分点。
-			#English: Knockback resistance bonus. Flat knockback resistance addition; 0.10 adds 10 percentage points.
+			combo_damage_bonus_level_1 = 0.1
+			#中文：连击2层伤害加成。该层连击提供的总伤害比例加成；0.10为10%，各层不相加。
+			#English: Combo level 2 damage bonus. Total damage bonus at this Combo level; 0.10 means 10%, levels do not add together.
+			#Range: 0.0 ~ 10.0
+			combo_damage_bonus_level_2 = 0.15
+			#中文：连击3层伤害加成。该层连击提供的总伤害比例加成；0.10为10%，各层不相加。
+			#English: Combo level 3 damage bonus. Total damage bonus at this Combo level; 0.10 means 10%, levels do not add together.
+			#Range: 0.0 ~ 10.0
+			combo_damage_bonus_level_3 = 0.2
+			#中文：连击4层伤害加成。该层连击提供的总伤害比例加成；0.10为10%，各层不相加。
+			#English: Combo level 4 damage bonus. Total damage bonus at this Combo level; 0.10 means 10%, levels do not add together.
+			#Range: 0.0 ~ 10.0
+			combo_damage_bonus_level_4 = 0.25
+
+		#中文：拉塔恩的大剑。
+		#English: Greatsword of Radahn, Light. 
+		[equipment.curios.young_lion_greatsword]
+			#中文：韧性削减加成。提高对本模组Boss的韧性削减值；0.15为15%。
+			#English: Poise damage bonus. Increases poise damage against this mod bosses; 0.15 means 15%.
+			#Range: 0.0 ~ 10.0
+			stagger_damage_bonus = 0.15
+			#中文：重力波动概率。有效近战攻击触发概率；0.30为30%，0关闭。
+			#English: Gravity Wave chance. Chance per successful melee attack; 0.30 means 30%, 0 disables it.
 			#Range: 0.0 ~ 1.0
-			knockback_resistance_bonus = 0.1
+			gravity_wave_chance = 0.3
+			#中文：重力波动冷却 · tick。成功触发后的冷却时间；20tick为1秒，卸下装备不重置冷却。
+			#English: Gravity Wave cooldown · ticks. Cooldown after triggering, at 20 ticks per second; unequipping does not reset it.
+			#Range: 0 ~ 12000
+			gravity_wave_cooldown_ticks = 200
+			#中文：重力波动半径 · 格。以攻击者为中心的球形作用半径，单位为格。
+			#English: Gravity Wave radius · blocks. Spherical radius in blocks around the attacker.
+			#Range: 0.1 ~ 64.0
+			gravity_wave_radius = 6.0
+			#中文：重力波动伤害比例。物理伤害为触发近战攻击的护甲结算前伤害乘此比例；1为100%。
+			#English: Gravity Wave damage ratio. Physical damage as a fraction of the triggering melee damage before armor; 1 means 100%.
+			#Range: 0.0 ~ 10.0
+			gravity_wave_damage_ratio = 1.0
+			#中文：重力波动缓慢等级。缓慢效果的显示等级；2为缓慢II。
+			#English: Gravity Wave Slowness level. Displayed Slowness level; 2 means Slowness II.
+			#Range: 1 ~ 256
+			gravity_wave_slow_level = 2
+			#中文：重力波动缓慢时间 · tick。缓慢持续时间；20tick为1秒。
+			#English: Gravity Wave Slowness duration · ticks. Slowness duration, at 20 ticks per second.
+			#Range: 1 ~ 12000
+			gravity_wave_slow_ticks = 40
 
 		#中文：渐隐光冠。
 		#English: Circlet of fading light. 
 		[equipment.curios.circlet_of_fading_light]
-			#中文：护甲加成。
-			#English: Armor bonus. 
-			#Range: 0.0 ~ 1000.0
-			armor_bonus = 2.0
-			#中文：幸运加成。直接增加幸运，只影响使用幸运属性的战利品表。
-			#English: Luck bonus. Flat luck addition, affecting only loot tables that use the luck attribute.
-			#Range: -1024.0 ~ 1024.0
-			luck_bonus = 1.0
+			#中文：圣属性伤害减免。减少圣属性标签伤害；0.50为50%，1为完全减免。
+			#English: Holy damage reduction. Reduces Holy-tagged incoming damage; 0.50 means 50%, 1 means full resistance.
+			#Range: 0.0 ~ 1.0
+			holy_damage_reduction = 0.5
+			#中文：圣属性附伤比例。有效近战命中附加的圣属性伤害比例，基于护甲结算前近战伤害，附伤无视护甲。
+			#English: Bonus Holy damage ratio. Bonus Holy damage per successful melee hit, based on melee damage before armor; bypasses armor.
+			#Range: 0.0 ~ 10.0
+			holy_damage_ratio = 0.05
+
+		#中文：无垢金翼盔。
+		#English: Unalloyed winged helm. 
+		[equipment.curios.unalloyed_winged_helm]
+			#中文：腐败容量加成。玩家基础腐败容量为100；此值直接增加容量，0关闭加成。
+			#English: Rot capacity bonus. Adds to the player's base scarlet rot capacity of 100; 0 disables the bonus.
+			#Range: 0.0 ~ 1000000.0
+			rot_capacity_bonus = 40.0
+			#中文：腐败伤害减免。减少承受的猩红腐败伤害；0.50为50%，1为完全减免。
+			#English: Scarlet Rot damage reduction. Reduces incoming Scarlet Rot damage; 0.50 means 50%, 1 means full resistance.
+			#Range: 0.0 ~ 1.0
+			rot_damage_reduction = 0.5
+
+	#中文：大卢恩与神授。
+	#English: Great runes and attunement. 
+	[equipment.great_runes]
+		#中文：默认激活上限。每枚弯弧默认最多激活的大卢恩数量；弯弧的MaxActiveRunes数据可覆盖此值。
+		#English: Default active limit. Maximum active great runes per arc by default; the arc's MaxActiveRunes data overrides this value.
+		#Range: 1 ~ 128
+		default_active_limit = 1
+		#中文：拉塔恩生命加成。最大生命总倍率加成，0.15表示增加15%。
+		#English: Radahn health bonus. Total maximum health multiplier bonus; 0.15 adds 15%.
+		#Range: 0.0 ~ 10.0
+		radahn_health_bonus = 0.15
+		#中文：拉塔恩伤害加成。玩家造成的伤害倍率加成，0.15表示增加15%。
+		#English: Radahn damage bonus. Player damage multiplier bonus; 0.15 adds 15%.
+		#Range: 0.0 ~ 10.0
+		radahn_damage_bonus = 0.15
+		#中文：虚血保留时间 · tick。仅保留最近一次实际生命伤害为虚血；再次受伤覆盖余量并重新计时，超时失效；80tick为4秒。
+		#English: Rally damage window · ticks. Only the latest health hit becomes rally health; a new hit replaces the remainder and restarts expiry
+		#Range: 1 ~ 1200
+		rally_window_ticks = 80
+		#中文：虚血转化比例。实际造成的伤害乘此比例可转化为治疗，但不超过尚未恢复的虚血。
+		#English: Rally healing ratio. Dealt health damage times this ratio can be healed, capped by remaining rally damage.
+		#Range: 0.0 ~ 10.0
+		rally_heal_ratio = 0.5
+		#中文：驯服后保留生命。致命伤改为驯服后保留的生命值，不超过目标最大生命。
+		#English: Health retained on taming. Health retained when a lethal hit tames the target, capped by its maximum health.
+		#Range: 1.0 ~ 1024.0
+		tame_health = 1.0
+		#中文：启用致命伤驯服。米凯拉的大卢恩将可驯服目标的致命伤改为驯服，尊重驯服事件限制。
+		#English: Enable lethal-hit taming. Miquella's great rune replaces a tameable target's lethal hit with taming and respects tame-event vetoes.
+		taming_enabled = true
 
 #中文：Boss音乐。
 #English: Boss music. 
@@ -657,8 +744,8 @@
 		#English: Avoid last action count. 
 		#Range: > 0
 		avoid_last_action_count = 2
-		#中文：水鸟乱舞后退距离上限 · 格。
-		#English: Waterfowl retreat max range · blocks. 
+		#中文：后退与水鸟准备距离 · 格。限制后退斩的起手距离；水鸟可用且目标过近时，先后移准备。
+		#English: Retreat and waterfowl preparation distance · blocks. Limits retreat slash start distance; when waterfowl is ready and the target is too close, retreat first to prepare.
 		#Range: 0.0 ~ 2048.0
 		waterfowl_retreat_max_range = 4.0
 		#中文：使用物品惩罚距离下限 · 格。
@@ -709,18 +796,18 @@
 		#English: Recent interrupt weight multiplier. 
 		#Range: 0.0 ~ 100.0
 		recent_interrupt_weight_multiplier = 1.4
-		#中文：远距离阈值。
-		#English: Long range threshold. 
-		#Range: 0.0 ~ 2048.0
-		long_range_threshold = 12.0
-		#中文：远距离奔跑斩权重倍率。
-		#English: Long range running slash weight multiplier. 
-		#Range: 0.0 ~ 100.0
-		long_range_running_slash_weight_multiplier = 1.6
 		#中文：高威胁技能组冷却 · tick。
 		#English: High threat group cooldown ticks · ticks. 
 		#Range: > 0
 		high_threat_group_cooldown_ticks = 140
+		#中文：近战距离 · 格。目标水平距离超过此值时优先突进，默认6格。
+		#English: Melee distance · blocks. Prioritize gap closers beyond this horizontal distance; default 6 blocks.
+		#Range: 0.0 ~ 2048.0
+		melee_distance = 6.0
+		#中文：突进优先倍率。超过近战距离时，各突进技能的选招权重倍率。
+		#English: Gap closer weight multiplier. Selection weight multiplier for gap closers beyond melee distance.
+		#Range: 0.0 ~ 100.0
+		gap_close_weight_multiplier = 3.0
 
 	#中文：转阶段保护与演出。
 	#English: Phase transition protection and presentation. 
@@ -833,20 +920,16 @@
 			#English: Range · blocks. 
 			#Range: 0.01 ~ 2048.0
 			range = 3.4
-			#中文：弧形角度 · 度。
-			#English: Arc degrees · degrees. 
-			#Range: 0.01 ~ 360.0
-			arc_degrees = 120.0
-			#中文：前摇时间 · tick。攻击开始前的准备时间。
-			#English: Windup ticks · ticks. Preparation before the attack
+			#中文：前摇时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+			#English: Windup ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 			#Range: 1 ~ 1000000
 			windup_ticks = 10
-			#中文：释放时间 · tick。攻击释放阶段的时间；不表示每tick都重复造成伤害。
-			#English: Active ticks · ticks. Duration of the attack's active phase; this does not imply damage every tick.
+			#中文：释放时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+			#English: Active ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 			#Range: 1 ~ 1000000
 			active_ticks = 3
-			#中文：后摇时间 · tick。攻击释放后的恢复时间；多段数组与前摇、释放数组的长度和顺序一致。
-			#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
+			#中文：后摇时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+			#English: Recovery ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 			#Range: 1 ~ 1000000
 			recovery_ticks = 14
 
@@ -885,14 +968,14 @@
 			#English: Range · blocks. 
 			#Range: 0.01 ~ 2048.0
 			range = 3.5
-			#中文：前摇时间 · tick。攻击开始前的准备时间。
-			#English: Windup ticks · ticks. Preparation before the attack
+			#中文：前摇时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+			#English: Windup ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 			windup_ticks = [11, 9]
-			#中文：释放时间 · tick。攻击释放阶段的时间；不表示每tick都重复造成伤害。
-			#English: Active ticks · ticks. Duration of the attack's active phase; this does not imply damage every tick.
+			#中文：释放时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+			#English: Active ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 			active_ticks = [3, 3]
-			#中文：后摇时间 · tick。攻击释放后的恢复时间；多段数组与前摇、释放数组的长度和顺序一致。
-			#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
+			#中文：后摇时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+			#English: Recovery ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 			recovery_ticks = [6, 18]
 
 			#中文：伤害。
@@ -944,22 +1027,18 @@
 			#English: Range · blocks. 
 			#Range: 0.01 ~ 2048.0
 			range = 3.6
-			#中文：开场命中次数。
-			#English: Opening hits. 
-			#Range: 3 ~ 3
-			opening_hits = 3
 
-			#中文：组成段时间。
-			#English: Component timing. 
+			#中文：动作节奏参考。各段时间之和调节整套动作速度，命中时刻随动作同步。
+			#English: Cadence reference. The sum sets the whole action speed; contacts follow the animation.
 			[malenia.skills.rapid_slashes.components]
-				#中文：前摇时间 · tick。攻击开始前的准备时间。
-				#English: Windup ticks · ticks. Preparation before the attack
+				#中文：前摇时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+				#English: Windup ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 				windup_ticks = [14, 0, 0, 7]
-				#中文：释放时间 · tick。攻击释放阶段的时间；不表示每tick都重复造成伤害。
-				#English: Active ticks · ticks. Duration of the attack's active phase; this does not imply damage every tick.
+				#中文：释放时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+				#English: Active ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 				active_ticks = [1, 1, 1, 6]
-				#中文：后摇时间 · tick。攻击释放后的恢复时间；多段数组与前摇、释放数组的长度和顺序一致。
-				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
+				#中文：后摇时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+				#English: Recovery ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 				recovery_ticks = [1, 1, 0, 22]
 
 			#中文：开场伤害。
@@ -1007,16 +1086,16 @@
 			#English: Range · blocks. 
 			#Range: 0.01 ~ 2048.0
 			range = 9.0
-			#中文：前摇时间 · tick。攻击开始前的准备时间。
-			#English: Windup ticks · ticks. Preparation before the attack
+			#中文：前摇时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+			#English: Windup ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 			#Range: 1 ~ 1000000
 			windup_ticks = 16
-			#中文：释放时间 · tick。攻击释放阶段的时间；不表示每tick都重复造成伤害。
-			#English: Active ticks · ticks. Duration of the attack's active phase; this does not imply damage every tick.
+			#中文：释放时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+			#English: Active ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 			#Range: 1 ~ 1000000
 			active_ticks = 6
-			#中文：后摇时间 · tick。攻击释放后的恢复时间；多段数组与前摇、释放数组的长度和顺序一致。
-			#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
+			#中文：后摇时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+			#English: Recovery ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 			#Range: 1 ~ 1000000
 			recovery_ticks = 18
 
@@ -1055,14 +1134,14 @@
 			#English: Range · blocks. 
 			#Range: 0.01 ~ 2048.0
 			range = 3.5
-			#中文：前摇时间 · tick。攻击开始前的准备时间。
-			#English: Windup ticks · ticks. Preparation before the attack
+			#中文：前摇时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+			#English: Windup ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 			windup_ticks = [18, 14]
-			#中文：释放时间 · tick。攻击释放阶段的时间；不表示每tick都重复造成伤害。
-			#English: Active ticks · ticks. Duration of the attack's active phase; this does not imply damage every tick.
+			#中文：释放时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+			#English: Active ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 			active_ticks = [4, 5]
-			#中文：后摇时间 · tick。攻击释放后的恢复时间；多段数组与前摇、释放数组的长度和顺序一致。
-			#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
+			#中文：后摇时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+			#English: Recovery ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 			recovery_ticks = [8, 24]
 
 			#中文：伤害。
@@ -1114,20 +1193,16 @@
 			#English: Range · blocks. 
 			#Range: 0.01 ~ 2048.0
 			range = 2.3
-			#中文：弧形角度 · 度。
-			#English: Arc degrees · degrees. 
-			#Range: 0.01 ~ 360.0
-			arc_degrees = 100.0
-			#中文：前摇时间 · tick。攻击开始前的准备时间。
-			#English: Windup ticks · ticks. Preparation before the attack
+			#中文：前摇时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+			#English: Windup ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 			#Range: 1 ~ 1000000
 			windup_ticks = 9
-			#中文：释放时间 · tick。攻击释放阶段的时间；不表示每tick都重复造成伤害。
-			#English: Active ticks · ticks. Duration of the attack's active phase; this does not imply damage every tick.
+			#中文：释放时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+			#English: Active ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 			#Range: 1 ~ 1000000
 			active_ticks = 4
-			#中文：后摇时间 · tick。攻击释放后的恢复时间；多段数组与前摇、释放数组的长度和顺序一致。
-			#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
+			#中文：后摇时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+			#English: Recovery ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 			#Range: 1 ~ 1000000
 			recovery_ticks = 18
 			#中文：盾牌架势消耗倍率。
@@ -1173,20 +1248,20 @@
 			#English: Range · blocks. 
 			#Range: 0.01 ~ 2048.0
 			range = 10.0
-			#中文：宽度 · 格。
-			#English: Width · blocks. 
+			#中文：宽度 · 格。调整刺击的整体范围倍率。
+			#English: Width · blocks. Adjusts the thrust's overall range multiplier.
 			#Range: 0.01 ~ 2048.0
 			width = 1.2
-			#中文：前摇时间 · tick。攻击开始前的准备时间。
-			#English: Windup ticks · ticks. Preparation before the attack
+			#中文：前摇时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+			#English: Windup ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 			#Range: 1 ~ 1000000
 			windup_ticks = 22
-			#中文：释放时间 · tick。攻击释放阶段的时间；不表示每tick都重复造成伤害。
-			#English: Active ticks · ticks. Duration of the attack's active phase; this does not imply damage every tick.
+			#中文：释放时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+			#English: Active ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 			#Range: 1 ~ 1000000
 			active_ticks = 6
-			#中文：后摇时间 · tick。攻击释放后的恢复时间；多段数组与前摇、释放数组的长度和顺序一致。
-			#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
+			#中文：后摇时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+			#English: Recovery ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 			#Range: 1 ~ 1000000
 			recovery_ticks = 24
 
@@ -1230,17 +1305,17 @@
 			#Range: 0.01 ~ 2048.0
 			width = 1.2
 
-			#中文：组成段时间。
-			#English: Component timing. 
+			#中文：动作节奏参考。各段时间之和调节整套动作速度，命中时刻随动作同步。
+			#English: Cadence reference. The sum sets the whole action speed; contacts follow the animation.
 			[malenia.skills.grab_impale.components]
-				#中文：前摇时间 · tick。攻击开始前的准备时间。
-				#English: Windup ticks · ticks. Preparation before the attack
+				#中文：前摇时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+				#English: Windup ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 				windup_ticks = [24, 15, 9]
-				#中文：释放时间 · tick。攻击释放阶段的时间；不表示每tick都重复造成伤害。
-				#English: Active ticks · ticks. Duration of the attack's active phase; this does not imply damage every tick.
+				#中文：释放时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+				#English: Active ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 				active_ticks = [5, 1, 1]
-				#中文：后摇时间 · tick。攻击释放后的恢复时间；多段数组与前摇、释放数组的长度和顺序一致。
-				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
+				#中文：后摇时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+				#English: Recovery ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 				recovery_ticks = [0, 0, 12]
 
 			#中文：投技伤害。
@@ -1298,20 +1373,16 @@
 			#English: Range · blocks. 
 			#Range: 0.01 ~ 2048.0
 			range = 3.4
-			#中文：后退距离 · 格。
-			#English: Retreat distance · blocks. 
-			#Range: 0.01 ~ 2048.0
-			retreat_distance = 3.0
-			#中文：前摇时间 · tick。攻击开始前的准备时间。
-			#English: Windup ticks · ticks. Preparation before the attack
+			#中文：前摇时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+			#English: Windup ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 			#Range: 1 ~ 1000000
 			windup_ticks = 8
-			#中文：释放时间 · tick。攻击释放阶段的时间；不表示每tick都重复造成伤害。
-			#English: Active ticks · ticks. Duration of the attack's active phase; this does not imply damage every tick.
+			#中文：释放时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+			#English: Active ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 			#Range: 1 ~ 1000000
 			active_ticks = 4
-			#中文：后摇时间 · tick。攻击释放后的恢复时间；多段数组与前摇、释放数组的长度和顺序一致。
-			#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
+			#中文：后摇时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+			#English: Recovery ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 			#Range: 1 ~ 1000000
 			recovery_ticks = 20
 
@@ -1362,36 +1433,26 @@
 			#English: Minimum start range · blocks. 
 			#Range: 0.01 ~ 2048.0
 			minimum_start_range = 6.0
-			#中文：突进次数。
-			#English: Burst count. 
-			#Range: 4 ~ 4
-			burst_count = 4
 			#中文：突进宽度 · 格。
 			#English: Burst width · blocks. 
 			#Range: 0.01 ~ 2048.0
 			burst_width = 3.5
-			#中文：每目标突进命中上限。
-			#English: Burst max hits per target. 
-			burst_max_hits_per_target = [2, 2, 2, 1]
-			#中文：突进距离上限。
-			#English: Burst max travel. 
-			burst_max_travel = [11.0, 9.0, 8.0, 4.0]
 			#中文：单次动作回血上限。
 			#English: Action heal cap. 
 			#Range: 0.0 ~ 1000000.0
 			action_heal_cap = 16.0
 
-			#中文：组成段时间。
-			#English: Component timing. 
+			#中文：动作节奏参考。各段时间之和调节整套动作速度，命中时刻随动作同步。
+			#English: Cadence reference. The sum sets the whole action speed; contacts follow the animation.
 			[malenia.skills.waterfowl_dance.components]
-				#中文：前摇时间 · tick。攻击开始前的准备时间。
-				#English: Windup ticks · ticks. Preparation before the attack
+				#中文：前摇时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+				#English: Windup ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 				windup_ticks = [32, 12, 8, 8]
-				#中文：释放时间 · tick。攻击释放阶段的时间；不表示每tick都重复造成伤害。
-				#English: Active ticks · ticks. Duration of the attack's active phase; this does not imply damage every tick.
+				#中文：释放时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+				#English: Active ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 				active_ticks = [18, 12, 20, 6]
-				#中文：后摇时间 · tick。攻击释放后的恢复时间；多段数组与前摇、释放数组的长度和顺序一致。
-				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
+				#中文：后摇时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+				#English: Recovery ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 				recovery_ticks = [0, 0, 0, 26]
 
 			#中文：斩击伤害。
@@ -1450,17 +1511,17 @@
 			#Range: 1 ~ 1000000
 			zone_interval_ticks = 20
 
-			#中文：组成段时间。
-			#English: Component timing. 
+			#中文：动作节奏参考。各段时间之和调节整套动作速度，命中时刻随动作同步。
+			#English: Cadence reference. The sum sets the whole action speed; contacts follow the animation.
 			[malenia.skills.scarlet_aeonia.components]
-				#中文：前摇时间 · tick。攻击开始前的准备时间。
-				#English: Windup ticks · ticks. Preparation before the attack
+				#中文：前摇时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+				#English: Windup ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 				windup_ticks = [0, 0, 0, 0, 24]
-				#中文：释放时间 · tick。攻击释放阶段的时间；不表示每tick都重复造成伤害。
-				#English: Active ticks · ticks. Duration of the attack's active phase; this does not imply damage every tick.
+				#中文：释放时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+				#English: Active ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 				active_ticks = [26, 17, 18, 1, 42]
-				#中文：后摇时间 · tick。攻击释放后的恢复时间；多段数组与前摇、释放数组的长度和顺序一致。
-				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
+				#中文：后摇时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+				#English: Recovery ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 				recovery_ticks = [0, 0, 0, 0, 54]
 
 			#中文：下砸伤害。
@@ -1527,17 +1588,17 @@
 			#Range: 0.0 ~ 1000000.0
 			burst_rot_buildup = 24.0
 
-			#中文：组成段时间。
-			#English: Component timing. 
+			#中文：动作节奏参考。各段时间之和调节整套动作速度，命中时刻随动作同步。
+			#English: Cadence reference. The sum sets the whole action speed; contacts follow the animation.
 			[malenia.skills.scarlet_plunge.components]
-				#中文：前摇时间 · tick。攻击开始前的准备时间。
-				#English: Windup ticks · ticks. Preparation before the attack
+				#中文：前摇时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+				#English: Windup ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 				windup_ticks = [24, 0]
-				#中文：释放时间 · tick。攻击释放阶段的时间；不表示每tick都重复造成伤害。
-				#English: Active ticks · ticks. Duration of the attack's active phase; this does not imply damage every tick.
+				#中文：释放时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+				#English: Active ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 				active_ticks = [6, 6]
-				#中文：后摇时间 · tick。攻击释放后的恢复时间；多段数组与前摇、释放数组的长度和顺序一致。
-				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
+				#中文：后摇时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+				#English: Recovery ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 				recovery_ticks = [0, 30]
 
 			#中文：刀刃伤害。
@@ -1585,14 +1646,14 @@
 			#English: Range · blocks. 
 			#Range: 0.01 ~ 2048.0
 			range = 11.0
-			#中文：前摇时间 · tick。攻击开始前的准备时间。
-			#English: Windup ticks · ticks. Preparation before the attack
+			#中文：前摇时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+			#English: Windup ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 			windup_ticks = [20, 12]
-			#中文：释放时间 · tick。攻击释放阶段的时间；不表示每tick都重复造成伤害。
-			#English: Active ticks · ticks. Duration of the attack's active phase; this does not imply damage every tick.
+			#中文：释放时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+			#English: Active ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 			active_ticks = [5, 4]
-			#中文：后摇时间 · tick。攻击释放后的恢复时间；多段数组与前摇、释放数组的长度和顺序一致。
-			#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
+			#中文：后摇时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+			#English: Recovery ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 			recovery_ticks = [8, 24]
 			#中文：腐败累积量。
 			#English: Rot buildup. 
@@ -1643,22 +1704,10 @@
 			#English: Range multiplier. Scales hit dimensions, body-relative offsets, controlled horizontal motion and matching warnings; does not change animation timing.
 			#Range: 0.1 ~ 5.0
 			range_multiplier = 1.45
-			#中文：分身数量。
-			#English: Phantom count. 
-			#Range: > 1
-			phantom_count = 5
 			#中文：分身攻击宽度 · 格。
 			#English: Phantom width · blocks. 
 			#Range: 0.01 ~ 2048.0
 			phantom_width = 1.6
-			#中文：每目标前段命中上限。
-			#English: Max early hits per target. 
-			#Range: > 1
-			max_early_hits_per_target = 2
-			#中文：每目标后段命中上限。
-			#English: Max late hits per target. 
-			#Range: > 1
-			max_late_hits_per_target = 2
 			#中文：分身腐败累积量。
 			#English: Phantom rot buildup. 
 			#Range: 0.0 ~ 1000000.0
@@ -1671,18 +1720,18 @@
 			#English: Hyper armor. 
 			hyper_armor = true
 
-			#中文：组成段时间。
-			#English: Component timing. 
+			#中文：动作节奏参考。各段时间之和调节整套动作速度，命中时刻随动作同步。
+			#English: Cadence reference. The sum sets the whole action speed; contacts follow the animation.
 			[malenia.skills.scarlet_phantoms.components]
-				#中文：前摇时间 · tick。攻击开始前的准备时间。
-				#English: Windup ticks · ticks. Preparation before the attack
-				windup_ticks = [36, 0, 0, 0, 0, 0]
-				#中文：释放时间 · tick。攻击释放阶段的时间；不表示每tick都重复造成伤害。
-				#English: Active ticks · ticks. Duration of the attack's active phase; this does not imply damage every tick.
-				active_ticks = [8, 8, 8, 8, 8, 12]
-				#中文：后摇时间 · tick。攻击释放后的恢复时间；多段数组与前摇、释放数组的长度和顺序一致。
-				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
-				recovery_ticks = [0, 0, 0, 0, 0, 38]
+				#中文：前摇时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+				#English: Windup ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
+				windup_ticks = [36, 0, 0, 0, 0]
+				#中文：释放时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+				#English: Active ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
+				active_ticks = [8, 8, 8, 8, 12]
+				#中文：后摇时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+				#English: Recovery ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
+				recovery_ticks = [0, 0, 0, 0, 38]
 
 			#中文：分身伤害。
 			#English: Phantom damage. 
@@ -1729,16 +1778,16 @@
 			#English: Range · blocks. 
 			#Range: 0.01 ~ 2048.0
 			range = 4.0
-			#中文：前摇时间 · tick。攻击开始前的准备时间。
-			#English: Windup ticks · ticks. Preparation before the attack
+			#中文：前摇时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+			#English: Windup ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 			#Range: 1 ~ 1000000
 			windup_ticks = 16
-			#中文：释放时间 · tick。攻击释放阶段的时间；不表示每tick都重复造成伤害。
-			#English: Active ticks · ticks. Duration of the attack's active phase; this does not imply damage every tick.
+			#中文：释放时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+			#English: Active ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 			#Range: 1 ~ 1000000
 			active_ticks = 8
-			#中文：后摇时间 · tick。攻击释放后的恢复时间；多段数组与前摇、释放数组的长度和顺序一致。
-			#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
+			#中文：后摇时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
+			#English: Recovery ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 			#Range: 1 ~ 1000000
 			recovery_ticks = 22
 			#中文：腐败累积量。
@@ -1981,8 +2030,8 @@
 		#中文：攻击可命中目标规则。players_only: 仅玩家；players_and_owned: 玩家及其所属实体；all_living: 全部生物。
 		#English: Attack target policy. players_only; players_and_owned; all_living
 		attack_target_policy = "all_living"
-		#中文：受伤判为远程的玩家距离 · 格。受到有效生命伤害时，来源玩家到Boss碰撞箱的三维距离达到此值，也判为远程。
-		#English: Ranged damage distance · blocks. Effective health damage also counts as ranged when the player is at least this three-dimensional distance from the boss hitbox
+		#中文：受伤判为远程的玩家距离 · 格。受到有效生命伤害时，来源玩家到Boss碰撞箱的三维距离达到此值，判为远程。
+		#English: Ranged damage distance · blocks. Effective health damage counts as ranged when the player is at least this three-dimensional distance from the boss hitbox
 		#Range: 0.01 ~ 2048.0
 		ranged_damage_distance = 9.0
 
@@ -2011,6 +2060,9 @@
 		#English: Ranged retaliation attack ratio. Retaliation adds this fraction of the boss current attack damage; 0.25 means 25%.
 		#Range: 0.0 ~ 4096.0
 		retaliation_attack_ratio = 0.25
+		#中文：弹射物判定。将弹射物伤害及玩家发射弹射物也作为远程模式触发条件。
+		#English: Projectile detection. Also trigger ranged mode from projectile damage or a player launching a projectile
+		projectile_detection = false
 
 	#中文：架势与失衡。
 	#English: Stagger. 
@@ -2158,8 +2210,8 @@
 	#中文：转阶段保护与演出。
 	#English: Phase transition protection and presentation. 
 	[promised_consort.phase_transition]
-		#中文：持续时间 · tick。
-		#English: Duration ticks · ticks. 
+		#中文：持续时间 · tick。统一缩放转场动作、光效、米凯拉出现及台词时刻，默认7秒。
+		#English: Duration ticks · ticks. Scales the entire cinematic, lights, Miquella appearance and dialogue timing; default 7 seconds.
 		#Range: 1 ~ 1000000
 		duration_ticks = 140
 		#中文：强制后摇时间 · tick。
@@ -2175,30 +2227,6 @@
 		#中文：清除自身已生成的攻击区域。
 		#English: Clear owned hazards. 
 		clear_owned_hazards = true
-		#中文：返回落地冲击时刻 · tick。
-		#English: Return impact tick · ticks. 
-		#Range: 0 ~ 1000000
-		return_impact_tick = 127
-
-		#中文：返回落地物理伤害。
-		#English: Return physical damage. 
-		[promised_consort.phase_transition.return_physical_damage]
-			#中文：固定伤害加值。固定加值。
-			#English: Flat. Flat addition.
-			flat = 4.0
-			#中文：攻击力系数。攻击力系数。
-			#English: Attack ratio. Attack damage coefficient.
-			attack_ratio = 0.7
-
-		#中文：返回落地圣属性伤害。
-		#English: Return holy damage. 
-		[promised_consort.phase_transition.return_holy_damage]
-			#中文：固定伤害加值。固定加值。
-			#English: Flat. Flat addition.
-			flat = 2.0
-			#中文：攻击力系数。攻击力系数。
-			#English: Attack ratio. Attack damage coefficient.
-			attack_ratio = 0.35
 
 	#中文：大荒星陨触发保护。
 	#English: Consort meteor protection. 
@@ -2212,73 +2240,9 @@
 		#中文：大荒星陨重复释放方式。cooldown_forced: 冷却结束后强制释放；weighted: 按权重选择；once: 只释放一次。
 		#English: Repeat mode. cooldown_forced; weighted; once
 		repeat_mode = "cooldown_forced"
-
-	#中文：圣光余波。
-	#English: Holy light echoes. 
-	[promised_consort.light_echo]
-		#中文：启用。
-		#English: Enabled. 
-		enabled = true
-		#中文：延迟时间 · tick。
-		#English: Delay ticks · ticks. 
-		#Range: 0 ~ 1000000
-		delay_ticks = 8
-		#中文：预警时间 · tick。
-		#English: Telegraph ticks · ticks. 
-		#Range: 1 ~ 1000000
-		telegraph_ticks = 8
-		#中文：释放时间 · tick。攻击释放阶段的时间；不表示每tick都重复造成伤害。
-		#English: Active ticks · ticks. Duration of the attack's active phase; this does not imply damage every tick.
-		#Range: 1 ~ 1000000
-		active_ticks = 3
-		#中文：宽度 · 格。
-		#English: Width · blocks. 
-		#Range: 0.01 ~ 64.0
-		width = 0.8
-		#中文：高度 · 格。
-		#English: Height · blocks. 
-		#Range: 0.01 ~ 256.0
-		height = 8.0
-		#中文：逻辑光柱数量上限。
-		#English: Max logical columns. 
-		#Range: 0 ~ 1024
-		max_logical_columns = 24
-
-		#中文：伤害。
-		#English: Damage. 
-		[promised_consort.light_echo.damage]
-			#中文：固定伤害加值。固定加值。
-			#English: Flat. Flat addition.
-			flat = 1.0
-			#中文：攻击力系数。攻击力系数。
-			#English: Attack ratio. Attack damage coefficient.
-			attack_ratio = 0.25
-
-	#中文：重力、陨石与圣光外观。
-	#English: Gravity, meteor and holy visuals. 
-	[promised_consort.visuals]
-		#中文：启用分身外观。
-		#English: Visual clones enabled. 
-		visual_clones_enabled = true
-		#中文：分身渲染方式。empty_geo_entity: 使用分身实体渲染；paths_only: 只显示轨迹。
-		#English: Clone render mode. empty_geo_entity; paths_only
-		clone_render_mode = "empty_geo_entity"
-
-	#中文：运行预算。
-	#English: Runtime budgets. 
-	[promised_consort.performance]
-		#中文：逻辑弹丸上限。
-		#English: Max logical projectiles. 
-		#Range: 0 ~ 1024
-		max_logical_projectiles = 16
-		#中文：逻辑光柱上限。
-		#English: Max logical light columns. 
-		#Range: 0 ~ 1024
-		max_logical_light_columns = 24
-		#中文：分身外观上限。
-		#English: Max visual clones. 
-		#Range: 0 ~ 64
-		max_visual_clones = 4
+		#中文：大荒星陨期间无敌。启用后在升空至落地收招期间免疫伤害；关闭后按正常受伤规则结算，服务端配置重载后生效。
+		#English: Invulnerable during Consort Meteor. Immune from ascent through landing recovery when enabled; otherwise use normal damage rules
+		invulnerable = true
 
 	#中文：台词与字幕。
 	#English: Dialogue and subtitles. 
@@ -2298,14 +2262,6 @@
 		#English: Subtitle duration ticks · ticks. 
 		#Range: 1 ~ 1000000
 		subtitle_duration_ticks = 70
-		#中文：转阶段呼唤台词时刻 · tick。
-		#English: Transition call tick · ticks. 
-		#Range: 0 ~ 1000000
-		transition_call_tick = 58
-		#中文：二阶段誓言台词时刻 · tick。
-		#English: Phase two vow tick · ticks. 
-		#Range: 0 ~ 1000000
-		phase_two_vow_tick = 92
 		#中文：战败台词时刻 · tick。
 		#English: Defeated tick · ticks. 
 		#Range: 0 ~ 1000000
@@ -2347,6 +2303,10 @@
 			#English: Repeat contact interval · ticks. Contact immunity within a segment; 10 ticks is 0.5 seconds, cleared early on the next segment.
 			#Range: 0.0 ~ 1200.0
 			segment_immunity_ticks = 10.0
+			#中文：地面预警提前时间 · tick。全部技能共用的预警提前量，默认5tick。
+			#English: Warning lead ticks · ticks. Shared warning lead for all skills, default 5 ticks.
+			#Range: 1.0 ~ 200.0
+			warning_lead_ticks = 5.0
 
 		#中文：选招。技能代号。控制选招和冷却。
 		#English: Action selection. Skill codes. Selection and cooldowns.
@@ -3161,12 +3121,24 @@
 					#Range: 0.0 ~ 1200.0
 					halo_ticks = 18.0
 
-		#中文：投技与重复魅惑秒杀。
-		#English: Grab and repeated charm instant kill. 
+		#中文：投技与重复魅惑。
+		#English: Grab and repeated charm. 
 		[promised_consort.skills.grab]
-			#中文：启用重复魅惑秒杀投技。控制第二次魅惑的秒杀。
-			#English: Instant kill enabled. Controls instant death on the second charm
+			#中文：启用重复魅惑秒杀投技。再次抓住已魅惑玩家时执行秒杀；关闭后造成首次投技的2倍伤害，首次投技始终造成普通伤害。
+			#English: Instant kill enabled. Instantly kills an already charmed victim on a repeated grab; when disabled, deals twice the first grab's damage
 			instant_kill_enabled = false
+
+			#中文：投技伤害。
+			#English: Grab damage. 
+			[promised_consort.skills.grab.damage]
+				#中文：固定伤害加值。每次投技结算一次，首次默认20加攻击力的200%；关闭秒杀时重复投技在此基础上再加一倍，即总伤害乘2。
+				#English: Flat. Applies once per grab: the first defaults to 20 plus 200% attack damage; repeated grabs deal 2x total when instant kill is disabled.
+				#Range: 0.0 ~ 1200000.0
+				flat = 20.0
+				#中文：攻击力系数。每次投技结算一次，首次默认20加攻击力的200%；关闭秒杀时重复投技在此基础上再加一倍，即总伤害乘2。
+				#English: Attack ratio. Applies once per grab: the first defaults to 20 plus 200% attack damage; repeated grabs deal 2x total when instant kill is disabled.
+				#Range: 0.0 ~ 4096.0
+				attack_ratio = 2.0
 
 		#中文：近战站位与间距。
 		#English: Melee positioning and spacing. 
@@ -3210,17 +3182,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
 				recovery_ticks = 33.33334
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
-				#中文：落点锁定提前时间 · tick。在第一条攻击事件前提前锁定落点；锁定后不跟随目标后续移动。
-				#English: Target lock lead ticks · ticks. Locks the landing point this many ticks before the first attack event; later target movement does not move the locked point.
-				#Range: 0.0 ~ 200.0
-				target_lock_lead_ticks = 1.0
-				#中文：启用目标落点适配。把根移动适配到锁定的目标落点；启用后仍保留身体中心的垂直轨迹和贴地修正。
-				#English: Targeted landing. Adapts root motion to the locked target landing point while retaining vertical body motion and terrain correction.
-				targeted_landing = false
 
 			#中文：a3001。
 			#English: a3001. 
@@ -3237,17 +3198,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
 				recovery_ticks = 26.0
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
-				#中文：落点锁定提前时间 · tick。在第一条攻击事件前提前锁定落点；锁定后不跟随目标后续移动。
-				#English: Target lock lead ticks · ticks. Locks the landing point this many ticks before the first attack event; later target movement does not move the locked point.
-				#Range: 0.0 ~ 200.0
-				target_lock_lead_ticks = 1.0
-				#中文：启用目标落点适配。把根移动适配到锁定的目标落点；启用后仍保留身体中心的垂直轨迹和贴地修正。
-				#English: Targeted landing. Adapts root motion to the locked target landing point while retaining vertical body motion and terrain correction.
-				targeted_landing = false
 
 			#中文：a3002。
 			#English: a3002. 
@@ -3264,17 +3214,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
 				recovery_ticks = 32.66666
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
-				#中文：落点锁定提前时间 · tick。在第一条攻击事件前提前锁定落点；锁定后不跟随目标后续移动。
-				#English: Target lock lead ticks · ticks. Locks the landing point this many ticks before the first attack event; later target movement does not move the locked point.
-				#Range: 0.0 ~ 200.0
-				target_lock_lead_ticks = 1.0
-				#中文：启用目标落点适配。把根移动适配到锁定的目标落点；启用后仍保留身体中心的垂直轨迹和贴地修正。
-				#English: Targeted landing. Adapts root motion to the locked target landing point while retaining vertical body motion and terrain correction.
-				targeted_landing = false
 
 			#中文：a3003。
 			#English: a3003. 
@@ -3291,17 +3230,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
 				recovery_ticks = 40.0
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
-				#中文：落点锁定提前时间 · tick。在第一条攻击事件前提前锁定落点；锁定后不跟随目标后续移动。
-				#English: Target lock lead ticks · ticks. Locks the landing point this many ticks before the first attack event; later target movement does not move the locked point.
-				#Range: 0.0 ~ 200.0
-				target_lock_lead_ticks = 1.0
-				#中文：启用目标落点适配。把根移动适配到锁定的目标落点；启用后仍保留身体中心的垂直轨迹和贴地修正。
-				#English: Targeted landing. Adapts root motion to the locked target landing point while retaining vertical body motion and terrain correction.
-				targeted_landing = false
 
 			#中文：a3004。
 			#English: a3004. 
@@ -3318,17 +3246,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
 				recovery_ticks = 29.33334
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
-				#中文：落点锁定提前时间 · tick。在第一条攻击事件前提前锁定落点；锁定后不跟随目标后续移动。
-				#English: Target lock lead ticks · ticks. Locks the landing point this many ticks before the first attack event; later target movement does not move the locked point.
-				#Range: 0.0 ~ 200.0
-				target_lock_lead_ticks = 1.0
-				#中文：启用目标落点适配。把根移动适配到锁定的目标落点；启用后仍保留身体中心的垂直轨迹和贴地修正。
-				#English: Targeted landing. Adapts root motion to the locked target landing point while retaining vertical body motion and terrain correction.
-				targeted_landing = false
 
 			#中文：a3005。
 			#English: a3005. 
@@ -3345,17 +3262,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
 				recovery_ticks = 35.33334
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
-				#中文：落点锁定提前时间 · tick。在第一条攻击事件前提前锁定落点；锁定后不跟随目标后续移动。
-				#English: Target lock lead ticks · ticks. Locks the landing point this many ticks before the first attack event; later target movement does not move the locked point.
-				#Range: 0.0 ~ 200.0
-				target_lock_lead_ticks = 1.0
-				#中文：启用目标落点适配。把根移动适配到锁定的目标落点；启用后仍保留身体中心的垂直轨迹和贴地修正。
-				#English: Targeted landing. Adapts root motion to the locked target landing point while retaining vertical body motion and terrain correction.
-				targeted_landing = false
 
 			#中文：a3006。
 			#English: a3006. 
@@ -3372,17 +3278,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
 				recovery_ticks = 56.66666
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
-				#中文：落点锁定提前时间 · tick。在第一条攻击事件前提前锁定落点；锁定后不跟随目标后续移动。
-				#English: Target lock lead ticks · ticks. Locks the landing point this many ticks before the first attack event; later target movement does not move the locked point.
-				#Range: 0.0 ~ 200.0
-				target_lock_lead_ticks = 1.0
-				#中文：启用目标落点适配。把根移动适配到锁定的目标落点；启用后仍保留身体中心的垂直轨迹和贴地修正。
-				#English: Targeted landing. Adapts root motion to the locked target landing point while retaining vertical body motion and terrain correction.
-				targeted_landing = false
 
 			#中文：a3007。
 			#English: a3007. 
@@ -3399,17 +3294,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
 				recovery_ticks = 37.33334
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
-				#中文：落点锁定提前时间 · tick。在第一条攻击事件前提前锁定落点；锁定后不跟随目标后续移动。
-				#English: Target lock lead ticks · ticks. Locks the landing point this many ticks before the first attack event; later target movement does not move the locked point.
-				#Range: 0.0 ~ 200.0
-				target_lock_lead_ticks = 1.0
-				#中文：启用目标落点适配。把根移动适配到锁定的目标落点；启用后仍保留身体中心的垂直轨迹和贴地修正。
-				#English: Targeted landing. Adapts root motion to the locked target landing point while retaining vertical body motion and terrain correction.
-				targeted_landing = false
 
 			#中文：a3008。
 			#English: a3008. 
@@ -3426,17 +3310,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
 				recovery_ticks = 47.33332
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
-				#中文：落点锁定提前时间 · tick。在第一条攻击事件前提前锁定落点；锁定后不跟随目标后续移动。
-				#English: Target lock lead ticks · ticks. Locks the landing point this many ticks before the first attack event; later target movement does not move the locked point.
-				#Range: 0.0 ~ 200.0
-				target_lock_lead_ticks = 1.0
-				#中文：启用目标落点适配。把根移动适配到锁定的目标落点；启用后仍保留身体中心的垂直轨迹和贴地修正。
-				#English: Targeted landing. Adapts root motion to the locked target landing point while retaining vertical body motion and terrain correction.
-				targeted_landing = false
 
 			#中文：a3009。
 			#English: a3009. 
@@ -3453,10 +3326,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
 				recovery_ticks = 47.33332
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
 
 			#中文：a3010。
 			#English: a3010. 
@@ -3473,17 +3342,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
 				recovery_ticks = 39.33334
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
-				#中文：落点锁定提前时间 · tick。在第一条攻击事件前提前锁定落点；锁定后不跟随目标后续移动。
-				#English: Target lock lead ticks · ticks. Locks the landing point this many ticks before the first attack event; later target movement does not move the locked point.
-				#Range: 0.0 ~ 200.0
-				target_lock_lead_ticks = 8.0
-				#中文：启用目标落点适配。把根移动适配到锁定的目标落点；启用后仍保留身体中心的垂直轨迹和贴地修正。
-				#English: Targeted landing. Adapts root motion to the locked target landing point while retaining vertical body motion and terrain correction.
-				targeted_landing = true
 
 			#中文：a3011。
 			#English: a3011. 
@@ -3500,17 +3358,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
 				recovery_ticks = 52.0
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
-				#中文：落点锁定提前时间 · tick。在第一条攻击事件前提前锁定落点；锁定后不跟随目标后续移动。
-				#English: Target lock lead ticks · ticks. Locks the landing point this many ticks before the first attack event; later target movement does not move the locked point.
-				#Range: 0.0 ~ 200.0
-				target_lock_lead_ticks = 7.33334
-				#中文：启用目标落点适配。把根移动适配到锁定的目标落点；启用后仍保留身体中心的垂直轨迹和贴地修正。
-				#English: Targeted landing. Adapts root motion to the locked target landing point while retaining vertical body motion and terrain correction.
-				targeted_landing = true
 
 			#中文：a3012。
 			#English: a3012. 
@@ -3527,10 +3374,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
 				recovery_ticks = 47.33332
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
 
 			#中文：a3013。
 			#English: a3013. 
@@ -3547,17 +3390,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
 				recovery_ticks = 38.0
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
-				#中文：落点锁定提前时间 · tick。在第一条攻击事件前提前锁定落点；锁定后不跟随目标后续移动。
-				#English: Target lock lead ticks · ticks. Locks the landing point this many ticks before the first attack event; later target movement does not move the locked point.
-				#Range: 0.0 ~ 200.0
-				target_lock_lead_ticks = 1.0
-				#中文：启用目标落点适配。把根移动适配到锁定的目标落点；启用后仍保留身体中心的垂直轨迹和贴地修正。
-				#English: Targeted landing. Adapts root motion to the locked target landing point while retaining vertical body motion and terrain correction.
-				targeted_landing = false
 
 			#中文：a3014。
 			#English: a3014. 
@@ -3574,10 +3406,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
 				recovery_ticks = 38.66666
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
 
 			#中文：a3015。
 			#English: a3015. 
@@ -3594,17 +3422,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
 				recovery_ticks = 42.0
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
-				#中文：落点锁定提前时间 · tick。在第一条攻击事件前提前锁定落点；锁定后不跟随目标后续移动。
-				#English: Target lock lead ticks · ticks. Locks the landing point this many ticks before the first attack event; later target movement does not move the locked point.
-				#Range: 0.0 ~ 200.0
-				target_lock_lead_ticks = 1.33332
-				#中文：启用目标落点适配。把根移动适配到锁定的目标落点；启用后仍保留身体中心的垂直轨迹和贴地修正。
-				#English: Targeted landing. Adapts root motion to the locked target landing point while retaining vertical body motion and terrain correction.
-				targeted_landing = true
 
 			#中文：a3016。
 			#English: a3016. 
@@ -3621,17 +3438,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
 				recovery_ticks = 18.66668
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
-				#中文：落点锁定提前时间 · tick。在第一条攻击事件前提前锁定落点；锁定后不跟随目标后续移动。
-				#English: Target lock lead ticks · ticks. Locks the landing point this many ticks before the first attack event; later target movement does not move the locked point.
-				#Range: 0.0 ~ 200.0
-				target_lock_lead_ticks = 1.0
-				#中文：启用目标落点适配。把根移动适配到锁定的目标落点；启用后仍保留身体中心的垂直轨迹和贴地修正。
-				#English: Targeted landing. Adapts root motion to the locked target landing point while retaining vertical body motion and terrain correction.
-				targeted_landing = false
 
 			#中文：a3017。
 			#English: a3017. 
@@ -3648,10 +3454,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
 				recovery_ticks = 51.33334
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
 
 			#中文：a3018。
 			#English: a3018. 
@@ -3668,10 +3470,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
 				recovery_ticks = 25.33334
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
 
 			#中文：a3019。
 			#English: a3019. 
@@ -3688,17 +3486,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
 				recovery_ticks = 13.33332
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
-				#中文：落点锁定提前时间 · tick。在第一条攻击事件前提前锁定落点；锁定后不跟随目标后续移动。
-				#English: Target lock lead ticks · ticks. Locks the landing point this many ticks before the first attack event; later target movement does not move the locked point.
-				#Range: 0.0 ~ 200.0
-				target_lock_lead_ticks = 1.0
-				#中文：启用目标落点适配。把根移动适配到锁定的目标落点；启用后仍保留身体中心的垂直轨迹和贴地修正。
-				#English: Targeted landing. Adapts root motion to the locked target landing point while retaining vertical body motion and terrain correction.
-				targeted_landing = false
 
 			#中文：a3020。
 			#English: a3020. 
@@ -3715,17 +3502,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
 				recovery_ticks = 33.33334
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
-				#中文：落点锁定提前时间 · tick。在第一条攻击事件前提前锁定落点；锁定后不跟随目标后续移动。
-				#English: Target lock lead ticks · ticks. Locks the landing point this many ticks before the first attack event; later target movement does not move the locked point.
-				#Range: 0.0 ~ 200.0
-				target_lock_lead_ticks = 1.0
-				#中文：启用目标落点适配。把根移动适配到锁定的目标落点；启用后仍保留身体中心的垂直轨迹和贴地修正。
-				#English: Targeted landing. Adapts root motion to the locked target landing point while retaining vertical body motion and terrain correction.
-				targeted_landing = false
 
 			#中文：a3022。
 			#English: a3022. 
@@ -3742,10 +3518,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
 				recovery_ticks = 61.33334
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
 
 			#中文：a3023。
 			#English: a3023. 
@@ -3762,10 +3534,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
 				recovery_ticks = 56.66668
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
 
 			#中文：a3024。
 			#English: a3024. 
@@ -3782,10 +3550,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
 				recovery_ticks = 79.33332
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
 
 			#中文：a3025。
 			#English: a3025. 
@@ -3802,10 +3566,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
 				recovery_ticks = 48.66666
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
 
 			#中文：a3026。
 			#English: a3026. 
@@ -3822,10 +3582,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
 				recovery_ticks = 165.33334
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
 
 			#中文：a3028。
 			#English: a3028. 
@@ -3842,14 +3598,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
 				recovery_ticks = 62.66666
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
-				#中文：落点锁定提前时间 · tick。在第一条攻击事件前提前锁定落点；锁定后不跟随目标后续移动。
-				#English: Target lock lead ticks · ticks. Locks the landing point this many ticks before the first attack event; later target movement does not move the locked point.
-				#Range: 0.0 ~ 200.0
-				target_lock_lead_ticks = 1.0
 
 			#中文：a3030。
 			#English: a3030. 
@@ -3866,17 +3614,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
 				recovery_ticks = 16.0
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
-				#中文：落点锁定提前时间 · tick。在第一条攻击事件前提前锁定落点；锁定后不跟随目标后续移动。
-				#English: Target lock lead ticks · ticks. Locks the landing point this many ticks before the first attack event; later target movement does not move the locked point.
-				#Range: 0.0 ~ 200.0
-				target_lock_lead_ticks = 1.0
-				#中文：启用目标落点适配。把根移动适配到锁定的目标落点；启用后仍保留身体中心的垂直轨迹和贴地修正。
-				#English: Targeted landing. Adapts root motion to the locked target landing point while retaining vertical body motion and terrain correction.
-				targeted_landing = false
 
 			#中文：a3031。
 			#English: a3031. 
@@ -3893,14 +3630,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
 				recovery_ticks = 38.66666
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
-				#中文：落点锁定提前时间 · tick。在第一条攻击事件前提前锁定落点；锁定后不跟随目标后续移动。
-				#English: Target lock lead ticks · ticks. Locks the landing point this many ticks before the first attack event; later target movement does not move the locked point.
-				#Range: 0.0 ~ 200.0
-				target_lock_lead_ticks = 1.0
 
 			#中文：a3032。
 			#English: a3032. 
@@ -3917,14 +3646,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
 				recovery_ticks = 28.66666
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
-				#中文：落点锁定提前时间 · tick。在第一条攻击事件前提前锁定落点；锁定后不跟随目标后续移动。
-				#English: Target lock lead ticks · ticks. Locks the landing point this many ticks before the first attack event; later target movement does not move the locked point.
-				#Range: 0.0 ~ 200.0
-				target_lock_lead_ticks = 1.0
 
 			#中文：a3033。
 			#English: a3033. 
@@ -3941,17 +3662,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 0.0
 				recovery_ticks = 0.0
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
-				#中文：落点锁定提前时间 · tick。在第一条攻击事件前提前锁定落点；锁定后不跟随目标后续移动。
-				#English: Target lock lead ticks · ticks. Locks the landing point this many ticks before the first attack event; later target movement does not move the locked point.
-				#Range: 0.0 ~ 200.0
-				target_lock_lead_ticks = 1.0
-				#中文：启用目标落点适配。把根移动适配到锁定的目标落点；启用后仍保留身体中心的垂直轨迹和贴地修正。
-				#English: Targeted landing. Adapts root motion to the locked target landing point while retaining vertical body motion and terrain correction.
-				targeted_landing = false
 
 			#中文：a3034。
 			#English: a3034. 
@@ -3968,17 +3678,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 0.0
 				recovery_ticks = 0.0
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
-				#中文：落点锁定提前时间 · tick。在第一条攻击事件前提前锁定落点；锁定后不跟随目标后续移动。
-				#English: Target lock lead ticks · ticks. Locks the landing point this many ticks before the first attack event; later target movement does not move the locked point.
-				#Range: 0.0 ~ 200.0
-				target_lock_lead_ticks = 1.0
-				#中文：启用目标落点适配。把根移动适配到锁定的目标落点；启用后仍保留身体中心的垂直轨迹和贴地修正。
-				#English: Targeted landing. Adapts root motion to the locked target landing point while retaining vertical body motion and terrain correction.
-				targeted_landing = false
 
 			#中文：a3035。
 			#English: a3035. 
@@ -3995,17 +3694,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 0.0
 				recovery_ticks = 0.0
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
-				#中文：落点锁定提前时间 · tick。在第一条攻击事件前提前锁定落点；锁定后不跟随目标后续移动。
-				#English: Target lock lead ticks · ticks. Locks the landing point this many ticks before the first attack event; later target movement does not move the locked point.
-				#Range: 0.0 ~ 200.0
-				target_lock_lead_ticks = 1.0
-				#中文：启用目标落点适配。把根移动适配到锁定的目标落点；启用后仍保留身体中心的垂直轨迹和贴地修正。
-				#English: Targeted landing. Adapts root motion to the locked target landing point while retaining vertical body motion and terrain correction.
-				targeted_landing = false
 
 			#中文：a3036。
 			#English: a3036. 
@@ -4022,17 +3710,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
 				recovery_ticks = 50.0
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
-				#中文：落点锁定提前时间 · tick。在第一条攻击事件前提前锁定落点；锁定后不跟随目标后续移动。
-				#English: Target lock lead ticks · ticks. Locks the landing point this many ticks before the first attack event; later target movement does not move the locked point.
-				#Range: 0.0 ~ 200.0
-				target_lock_lead_ticks = 1.0
-				#中文：启用目标落点适配。把根移动适配到锁定的目标落点；启用后仍保留身体中心的垂直轨迹和贴地修正。
-				#English: Targeted landing. Adapts root motion to the locked target landing point while retaining vertical body motion and terrain correction.
-				targeted_landing = false
 
 			#中文：a4100。
 			#English: a4100. 
@@ -4049,10 +3726,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 0.0
 				recovery_ticks = 0.0
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
 
 			#中文：a8700。
 			#English: a8700. 
@@ -4069,10 +3742,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 0.0
 				recovery_ticks = 0.0
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
 				#中文：启用原霸体窗口。控制此动画段原有霸体窗口；不新增中不存在的霸体窗口。
 				#English: Hyper armor active. Controls the animation's hyper armor windows without adding new windows.
 				hyper_armor_active = true
@@ -4092,17 +3761,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
 				recovery_ticks = 33.33334
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
-				#中文：落点锁定提前时间 · tick。在第一条攻击事件前提前锁定落点；锁定后不跟随目标后续移动。
-				#English: Target lock lead ticks · ticks. Locks the landing point this many ticks before the first attack event; later target movement does not move the locked point.
-				#Range: 0.0 ~ 200.0
-				target_lock_lead_ticks = 1.0
-				#中文：启用目标落点适配。把根移动适配到锁定的目标落点；启用后仍保留身体中心的垂直轨迹和贴地修正。
-				#English: Targeted landing. Adapts root motion to the locked target landing point while retaining vertical body motion and terrain correction.
-				targeted_landing = false
 
 			#中文：a20003。
 			#English: a20003. 
@@ -4119,17 +3777,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
 				recovery_ticks = 14.0
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
-				#中文：落点锁定提前时间 · tick。在第一条攻击事件前提前锁定落点；锁定后不跟随目标后续移动。
-				#English: Target lock lead ticks · ticks. Locks the landing point this many ticks before the first attack event; later target movement does not move the locked point.
-				#Range: 0.0 ~ 200.0
-				target_lock_lead_ticks = 1.0
-				#中文：启用目标落点适配。把根移动适配到锁定的目标落点；启用后仍保留身体中心的垂直轨迹和贴地修正。
-				#English: Targeted landing. Adapts root motion to the locked target landing point while retaining vertical body motion and terrain correction.
-				targeted_landing = false
 
 			#中文：a20004。
 			#English: a20004. 
@@ -4146,17 +3793,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
 				recovery_ticks = 83.33334
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
-				#中文：落点锁定提前时间 · tick。在第一条攻击事件前提前锁定落点；锁定后不跟随目标后续移动。
-				#English: Target lock lead ticks · ticks. Locks the landing point this many ticks before the first attack event; later target movement does not move the locked point.
-				#Range: 0.0 ~ 200.0
-				target_lock_lead_ticks = 1.0
-				#中文：启用目标落点适配。把根移动适配到锁定的目标落点；启用后仍保留身体中心的垂直轨迹和贴地修正。
-				#English: Targeted landing. Adapts root motion to the locked target landing point while retaining vertical body motion and terrain correction.
-				targeted_landing = false
 
 			#中文：a20005。
 			#English: a20005. 
@@ -4173,17 +3809,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
 				recovery_ticks = 49.33332
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
-				#中文：落点锁定提前时间 · tick。在第一条攻击事件前提前锁定落点；锁定后不跟随目标后续移动。
-				#English: Target lock lead ticks · ticks. Locks the landing point this many ticks before the first attack event; later target movement does not move the locked point.
-				#Range: 0.0 ~ 200.0
-				target_lock_lead_ticks = 1.0
-				#中文：启用目标落点适配。把根移动适配到锁定的目标落点；启用后仍保留身体中心的垂直轨迹和贴地修正。
-				#English: Targeted landing. Adapts root motion to the locked target landing point while retaining vertical body motion and terrain correction.
-				targeted_landing = false
 
 			#中文：a20006。
 			#English: a20006. 
@@ -4200,10 +3825,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
 				recovery_ticks = 48.66666
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
 
 			#中文：a20007。
 			#English: a20007. 
@@ -4220,10 +3841,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
 				recovery_ticks = 79.33334
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
 
 			#中文：a20008。
 			#English: a20008. 
@@ -4240,10 +3857,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
 				recovery_ticks = 80.0
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
 
 			#中文：a20009。
 			#English: a20009. 
@@ -4260,10 +3873,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
 				recovery_ticks = 79.33332
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
 
 			#中文：a20010。
 			#English: a20010. 
@@ -4280,37 +3889,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
 				recovery_ticks = 57.33332
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
-				#中文：落点锁定提前时间 · tick。在第一条攻击事件前提前锁定落点；锁定后不跟随目标后续移动。
-				#English: Target lock lead ticks · ticks. Locks the landing point this many ticks before the first attack event; later target movement does not move the locked point.
-				#Range: 0.0 ~ 200.0
-				target_lock_lead_ticks = 2.66666
-				#中文：启用目标落点适配。把根移动适配到锁定的目标落点；启用后仍保留身体中心的垂直轨迹和贴地修正。
-				#English: Targeted landing. Adapts root motion to the locked target landing point while retaining vertical body motion and terrain correction.
-				targeted_landing = true
-
-			#中文：a20011。
-			#English: a20011. 
-			[promised_consort.skills.animations.a20011]
-				#中文：前摇时间 · tick。攻击开始前的准备时间。
-				#English: Windup ticks · ticks. Preparation before the attack
-				#Range: 0.0 ~ 0.0
-				windup_ticks = 0.0
-				#中文：释放时间 · tick。攻击释放阶段的时间；不表示每tick都重复造成伤害。
-				#English: Active ticks · ticks. Duration of the attack's active phase; this does not imply damage every tick.
-				#Range: 2.0E-5 ~ 1200000.0
-				active_ticks = 163.33334
-				#中文：后摇时间 · tick。攻击释放后的恢复时间；多段数组与前摇、释放数组的长度和顺序一致。
-				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
-				#Range: 0.0 ~ 0.0
-				recovery_ticks = 0.0
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
 
 			#中文：a20013。
 			#English: a20013. 
@@ -4327,10 +3905,6 @@
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
 				recovery_ticks = 79.33332
-				#中文：地面预警提前时间 · tick。命中前的地面预警提前量，实际至少保留1tick。
-				#English: Warning lead ticks · ticks. Lead time for the ground warning before impact; runtime retains at least one tick.
-				#Range: 1.0 ~ 200.0
-				warning_lead_ticks = 5.0
 
 		#中文：攻击。攻击代号。伤害为固定值加攻击力乘总权重乘系数除100。
 		#English: Attacks. Attack codes. Damage = flat + attack damage × total channel weight / 100 × attack ratio.
@@ -4371,10 +3945,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 2.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220110。
 			#English: a5220110. 
@@ -4411,10 +3981,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 2.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220120。
 			#English: a5220120. 
@@ -4451,10 +4017,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 2.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220121。
 			#English: a5220121. 
@@ -4491,10 +4053,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 2.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220122。
 			#English: a5220122. 
@@ -4531,10 +4089,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 2.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220123。
 			#English: a5220123. 
@@ -4571,10 +4125,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 2.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220130。
 			#English: a5220130. 
@@ -4611,10 +4161,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220131。
 			#English: a5220131. 
@@ -4651,10 +4197,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220140。
 			#English: a5220140. 
@@ -4691,10 +4233,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 2.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220150。
 			#English: a5220150. 
@@ -4731,10 +4269,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 2.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220151。
 			#English: a5220151. 
@@ -4771,10 +4305,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 2.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220160。
 			#English: a5220160. 
@@ -4811,10 +4341,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 2.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220161。
 			#English: a5220161. 
@@ -4851,10 +4377,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 2.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220162。
 			#English: a5220162. 
@@ -4891,10 +4413,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 2.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220163。
 			#English: a5220163. 
@@ -4931,10 +4449,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 2.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220170。
 			#English: a5220170. 
@@ -4971,10 +4485,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 2.3
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220171。
 			#English: a5220171. 
@@ -5011,10 +4521,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 2.3
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220180。
 			#English: a5220180. 
@@ -5051,10 +4557,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220181。
 			#English: a5220181. 
@@ -5091,10 +4593,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220190。
 			#English: a5220190. 
@@ -5131,10 +4629,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 0.85
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220191。
 			#English: a5220191. 
@@ -5171,10 +4665,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 0.85
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220200。
 			#English: a5220200. 
@@ -5211,10 +4701,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220201。
 			#English: a5220201. 
@@ -5251,10 +4737,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220202。
 			#English: a5220202. 
@@ -5291,10 +4773,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220210。
 			#English: a5220210. 
@@ -5331,10 +4809,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220211。
 			#English: a5220211. 
@@ -5371,10 +4845,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220220。
 			#English: a5220220. 
@@ -5411,10 +4881,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = -3.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220221。
 			#English: a5220221. 
@@ -5451,10 +4917,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = -8.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220222。
 			#English: a5220222. 
@@ -5491,10 +4953,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = -13.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220223。
 			#English: a5220223. 
@@ -5531,10 +4989,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = -18.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220224。
 			#English: a5220224. 
@@ -5571,10 +5025,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = -23.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220225。
 			#English: a5220225. 
@@ -5611,10 +5061,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = -28.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220230。
 			#English: a5220230. 
@@ -5651,10 +5097,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220231。
 			#English: a5220231. 
@@ -5691,10 +5133,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220232。
 			#English: a5220232. 
@@ -5731,10 +5169,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220240。
 			#English: a5220240. 
@@ -5771,10 +5205,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220241。
 			#English: a5220241. 
@@ -5811,10 +5241,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220242。
 			#English: a5220242. 
@@ -5851,10 +5277,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 3.3
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220250。
 			#English: a5220250. 
@@ -5891,10 +5313,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220251。
 			#English: a5220251. 
@@ -5931,10 +5349,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220252。
 			#English: a5220252. 
@@ -5971,10 +5385,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220260。
 			#English: a5220260. 
@@ -6011,10 +5421,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220261。
 			#English: a5220261. 
@@ -6051,10 +5457,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 0.25
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220262。
 			#English: a5220262. 
@@ -6091,10 +5493,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220265。
 			#English: a5220265. 
@@ -6131,10 +5529,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220270。
 			#English: a5220270. 
@@ -6171,10 +5565,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220271。
 			#English: a5220271. 
@@ -6211,10 +5601,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220280。
 			#English: a5220280. 
@@ -6251,10 +5637,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 0.25
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220281。
 			#English: a5220281. 
@@ -6291,10 +5673,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 0.25
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220282。
 			#English: a5220282. 
@@ -6331,10 +5709,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 2.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220290。
 			#English: a5220290. 
@@ -6371,10 +5745,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220310。
 			#English: a5220310. 
@@ -6411,10 +5781,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220320。
 			#English: a5220320. 
@@ -6451,10 +5817,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220321。
 			#English: a5220321. 
@@ -6491,10 +5853,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220330。
 			#English: a5220330. 
@@ -6531,10 +5889,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220331。
 			#English: a5220331. 
@@ -6571,10 +5925,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 0.25
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220340。
 			#English: a5220340. 
@@ -6611,10 +5961,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220341。
 			#English: a5220341. 
@@ -6651,10 +5997,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220342。
 			#English: a5220342. 
@@ -6691,10 +6033,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220343。
 			#English: a5220343. 
@@ -6731,10 +6069,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220350。
 			#English: a5220350. 
@@ -6771,10 +6105,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220360。
 			#English: a5220360. 
@@ -6811,10 +6141,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220370。
 			#English: a5220370. 
@@ -6851,10 +6177,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 2.3
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220371。
 			#English: a5220371. 
@@ -6891,10 +6213,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 2.3
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220380。
 			#English: a5220380. 
@@ -6931,10 +6249,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220390。
 			#English: a5220390. 
@@ -6971,10 +6285,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220391。
 			#English: a5220391. 
@@ -7011,10 +6321,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220400。
 			#English: a5220400. 
@@ -7051,10 +6357,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220410。
 			#English: a5220410. 
@@ -7091,10 +6393,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220420。
 			#English: a5220420. 
@@ -7131,10 +6429,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220430。
 			#English: a5220430. 
@@ -7171,10 +6465,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220431。
 			#English: a5220431. 
@@ -7211,10 +6501,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220432。
 			#English: a5220432. 
@@ -7251,10 +6537,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220433。
 			#English: a5220433. 
@@ -7291,10 +6573,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220434。
 			#English: a5220434. 
@@ -7331,10 +6609,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220435。
 			#English: a5220435. 
@@ -7371,10 +6645,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220436。
 			#English: a5220436. 
@@ -7411,10 +6681,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220440。
 			#English: a5220440. 
@@ -7451,10 +6717,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220441。
 			#English: a5220441. 
@@ -7491,10 +6753,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220442。
 			#English: a5220442. 
@@ -7531,10 +6789,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220800。
 			#English: a5220800. 
@@ -7571,10 +6825,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 2.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220810。
 			#English: a5220810. 
@@ -7611,10 +6861,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 2.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220820。
 			#English: a5220820. 
@@ -7651,10 +6897,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 2.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220830。
 			#English: a5220830. 
@@ -7691,10 +6933,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 2.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220840。
 			#English: a5220840. 
@@ -7731,10 +6969,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 2.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220850。
 			#English: a5220850. 
@@ -7771,10 +7005,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 2.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220851。
 			#English: a5220851. 
@@ -7811,10 +7041,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 2.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220900。
 			#English: a5220900. 
@@ -7851,10 +7077,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220910。
 			#English: a5220910. 
@@ -7891,10 +7113,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a5220920。
 			#English: a5220920. 
@@ -7931,10 +7149,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 1.8
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a0。
 			#English: a0. 
@@ -7971,10 +7185,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a1。
 			#English: a1. 
@@ -8011,10 +7221,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a4。
 			#English: a4. 
@@ -8051,10 +7257,6 @@
 				#English: knockback distance. Minecraft knockback distance is this value × 0.1; negative values pull toward the boss.
 				#Range: -256.0 ~ 256.0
 				knockbackDist = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 		#中文：弹丸。弹丸代号。时间用秒。
 		#English: Projectiles. Projectile codes. Time in seconds.
@@ -8091,10 +7293,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220163。
 			#English: a205220163. 
@@ -8127,10 +7325,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.13
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220164。
 			#English: a205220164. 
@@ -8163,10 +7357,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220165。
 			#English: a205220165. 
@@ -8199,10 +7389,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220166。
 			#English: a205220166. 
@@ -8235,10 +7421,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220167。
 			#English: a205220167. 
@@ -8271,10 +7453,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220181。
 			#English: a205220181. 
@@ -8307,10 +7485,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220190。
 			#English: a205220190. 
@@ -8343,10 +7517,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.05
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220191。
 			#English: a205220191. 
@@ -8379,10 +7549,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220192。
 			#English: a205220192. 
@@ -8415,10 +7581,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220193。
 			#English: a205220193. 
@@ -8451,10 +7613,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.07
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220194。
 			#English: a205220194. 
@@ -8487,10 +7645,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220195。
 			#English: a205220195. 
@@ -8523,10 +7677,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220202。
 			#English: a205220202. 
@@ -8559,10 +7709,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220211。
 			#English: a205220211. 
@@ -8595,10 +7741,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220220。
 			#English: a205220220. 
@@ -8631,10 +7773,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220221。
 			#English: a205220221. 
@@ -8667,10 +7805,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220222。
 			#English: a205220222. 
@@ -8703,10 +7837,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220223。
 			#English: a205220223. 
@@ -8739,10 +7869,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220224。
 			#English: a205220224. 
@@ -8775,10 +7901,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220225。
 			#English: a205220225. 
@@ -8811,10 +7933,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220240。
 			#English: a205220240. 
@@ -8847,10 +7965,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220241。
 			#English: a205220241. 
@@ -8883,10 +7997,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220251。
 			#English: a205220251. 
@@ -8919,10 +8029,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.1
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220252。
 			#English: a205220252. 
@@ -8955,10 +8061,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220253。
 			#English: a205220253. 
@@ -8991,10 +8093,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220261。
 			#English: a205220261. 
@@ -9027,10 +8125,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220262。
 			#English: a205220262. 
@@ -9063,10 +8157,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220265。
 			#English: a205220265. 
@@ -9099,10 +8189,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220271。
 			#English: a205220271. 
@@ -9135,10 +8221,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220281。
 			#English: a205220281. 
@@ -9171,17 +8253,13 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220310。
 			#English: a205220310. 
 			[promised_consort.skills.projectiles.a205220310]
-				#中文：弹丸寿命 · 秒。弹丸寿命，单位为秒；负值保留原无限寿命含义。
-				#English: Projectile lifetime · seconds. Projectile lifetime in seconds; a negative value retains the unlimited lifetime.
-				#Range: -1000000.0 ~ 1000000.0
+				#中文：升空预警时长 · 秒。升空后地面预警从小到大扩张，尚不造成伤害。
+				#English: Ascent warning duration · seconds. The expanding ascent warning does not deal damage
+				#Range: 0.0 ~ 1000000.0
 				life = 1.0
 				#中文：发射间隔 · 秒。
 				#English: Shot interval · seconds. 
@@ -9191,9 +8269,9 @@
 				#English: Radius growth time · seconds. Seconds for the hit radius to grow from its initial value to the maximum.
 				#Range: 0.0 ~ 1000000.0
 				spreadTime = 0.0
-				#中文：每次发射数量。一次发射的弹丸数量；0停止该发射。
-				#English: Projectiles per shot. Number of projectiles per shot; 0 disables that launch.
-				#Range: 0 ~ 1000000
+				#中文：每次发射数量。0关闭米凯拉之光，1启用一套连续光柱流程。
+				#English: Projectiles per shot. 0 disables Light of Miquella; 1 enables one continuous column sequence.
+				#Range: 0 ~ 1
 				numShoot = 1
 				#中文：子弹生成等待时间 · 秒。
 				#English: Child projectile creation delay · seconds. 
@@ -9207,17 +8285,13 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220311。
 			#English: a205220311. 
 			[promised_consort.skills.projectiles.a205220311]
-				#中文：弹丸寿命 · 秒。弹丸寿命，单位为秒；负值保留原无限寿命含义。
-				#English: Projectile lifetime · seconds. Projectile lifetime in seconds; a negative value retains the unlimited lifetime.
-				#Range: -1000000.0 ~ 1000000.0
+				#中文：主光柱扩张时长 · 秒。脚下细高光柱持续扩大，范围内持续造成伤害。
+				#English: Main column growth duration · seconds. The tall column expands continuously and damages targets inside it
+				#Range: 0.0 ~ 1000000.0
 				life = 4.2
 				#中文：发射间隔 · 秒。
 				#English: Shot interval · seconds. 
@@ -9243,17 +8317,13 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 1.7
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220312。
 			#English: a205220312. 
 			[promised_consort.skills.projectiles.a205220312]
-				#中文：弹丸寿命 · 秒。弹丸寿命，单位为秒；负值保留原无限寿命含义。
-				#English: Projectile lifetime · seconds. Projectile lifetime in seconds; a negative value retains the unlimited lifetime.
-				#Range: -1000000.0 ~ 1000000.0
+				#中文：最大光柱维持时长 · 秒。主光柱保持最大范围并持续造成伤害。
+				#English: Full column duration · seconds. The main column stays at maximum size and deals repeated damage
+				#Range: 0.0 ~ 1000000.0
 				life = 1.1
 				#中文：发射间隔 · 秒。
 				#English: Shot interval · seconds. 
@@ -9279,10 +8349,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220313。
 			#English: a205220313. 
@@ -9315,10 +8381,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.25
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220314。
 			#English: a205220314. 
@@ -9351,10 +8413,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220315。
 			#English: a205220315. 
@@ -9387,17 +8445,13 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220316。
 			#English: a205220316. 
 			[promised_consort.skills.projectiles.a205220316]
-				#中文：弹丸寿命 · 秒。弹丸寿命，单位为秒；负值保留原无限寿命含义。
-				#English: Projectile lifetime · seconds. Projectile lifetime in seconds; a negative value retains the unlimited lifetime.
-				#Range: -1000000.0 ~ 1000000.0
+				#中文：小光柱维持时长 · 秒。大光柱消失后出现小光柱，范围内持续造成伤害。
+				#English: Small column duration · seconds. Small damaging columns appear after the main column disappears
+				#Range: 0.0 ~ 1000000.0
 				life = 1.5
 				#中文：发射间隔 · 秒。
 				#English: Shot interval · seconds. 
@@ -9423,17 +8477,13 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220317。
 			#English: a205220317. 
 			[promised_consort.skills.projectiles.a205220317]
-				#中文：弹丸寿命 · 秒。弹丸寿命，单位为秒；负值保留原无限寿命含义。
-				#English: Projectile lifetime · seconds. Projectile lifetime in seconds; a negative value retains the unlimited lifetime.
-				#Range: -1000000.0 ~ 1000000.0
+				#中文：小光柱消散时长 · 秒。小光柱短暂消散，结束时停止伤害。
+				#English: Small column fade duration · seconds. Small columns fade briefly; damage stops when they disappear
+				#Range: 0.0 ~ 1000000.0
 				life = 0.2
 				#中文：发射间隔 · 秒。
 				#English: Shot interval · seconds. 
@@ -9459,10 +8509,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220321。
 			#English: a205220321. 
@@ -9495,10 +8541,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220331。
 			#English: a205220331. 
@@ -9531,10 +8573,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220400。
 			#English: a205220400. 
@@ -9567,10 +8605,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220410。
 			#English: a205220410. 
@@ -9603,10 +8637,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.05
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220436。
 			#English: a205220436. 
@@ -9639,10 +8669,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.05
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220441。
 			#English: a205220441. 
@@ -9675,10 +8701,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.05
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220442。
 			#English: a205220442. 
@@ -9711,10 +8733,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.05
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220851。
 			#English: a205220851. 
@@ -9747,10 +8765,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.05
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220900。
 			#English: a205220900. 
@@ -9783,10 +8797,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220901。
 			#English: a205220901. 
@@ -9819,10 +8829,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.05
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220902。
 			#English: a205220902. 
@@ -9855,10 +8861,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220903。
 			#English: a205220903. 
@@ -9891,10 +8893,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220904。
 			#English: a205220904. 
@@ -9927,10 +8925,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220930。
 			#English: a205220930. 
@@ -9963,10 +8957,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.05
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220931。
 			#English: a205220931. 
@@ -9999,10 +8989,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220932。
 			#English: a205220932. 
@@ -10035,10 +9021,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220933。
 			#English: a205220933. 
@@ -10071,10 +9053,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220940。
 			#English: a205220940. 
@@ -10107,10 +9085,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220941。
 			#English: a205220941. 
@@ -10143,10 +9117,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220942。
 			#English: a205220942. 
@@ -10179,10 +9149,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220943。
 			#English: a205220943. 
@@ -10215,10 +9181,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220944。
 			#English: a205220944. 
@@ -10251,10 +9213,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220945。
 			#English: a205220945. 
@@ -10287,10 +9245,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220950。
 			#English: a205220950. 
@@ -10323,10 +9277,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220951。
 			#English: a205220951. 
@@ -10359,10 +9309,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220952。
 			#English: a205220952. 
@@ -10395,10 +9341,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220953。
 			#English: a205220953. 
@@ -10431,10 +9373,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220954。
 			#English: a205220954. 
@@ -10467,10 +9405,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 			#中文：a205220955。
 			#English: a205220955. 
@@ -10503,10 +9437,6 @@
 				#English: Maximum child projectile interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.0
-				#中文：每目标命中次数上限。限制该攻击或弹丸对每个目标的命中次数。
-				#English: Max hits per target. Limits hits by this attack or projectile per target
-				#Range: 1 ~ 1000
-				max_hits_per_target = 1
 
 		#中文：出血累积与脉冲。
 		#English: Bleed buildup and pulses. 
@@ -10566,4 +9496,11 @@
 		#中文：播报技能。在聊天栏播报技能开始和结束。
 		#English: Announce skills. Announce skill starts and endings in chat.
 		action_broadcast = false
+
+#中文：竞技场与位置。两个Boss场地共用；服务端配置重载后生效。
+#English: Arena and positioning. Shared by both boss arenas; applies after server config reload.
+[arena]
+	#中文：场地内自然刷怪。允许女武神和拉塔恩场地内自然生成生物；默认关闭，配置重载后立即生效，未召唤Boss时也生效，不影响召唤与刷怪笼。
+	#English: Natural spawning in boss arenas. Allows natural mob spawning inside Malenia and Radahn arenas; disabled by default, applies on config reload even before summoning, and leaves summons and spawners unaffected.
+	allow_natural_spawns = false
 

@@ -59,4 +59,30 @@
 	#0 leaves the sky intact but still. Phase 1's sky never reacts.
 	#Range: 0.0 ~ 2.0
 	reactiveSkyIntensity = 1.0
+	#Overhead trace of his body drawn around the crosshair, which stands
+	#in for you. He is 340 blocks long, so which end is near you matters
+	#more than a compass bearing would tell you.
+	bossRadarEnabled = true
+	#How far the trace spreads from the crosshair. 1.0 is the intended
+	#look; raise it for more room to read, lower it to keep the view clear.
+	#Range: 0.4 ~ 3.0
+	bossRadarSize = 1.0
+	#How many blocks the outer edge represents. Anything further away is
+	#pinned to the edge rather than dropped.
+	#Range: 48 ~ 1024
+	bossRadarRange = 200
+	#Opacity of the trace. It sits over the middle of the screen, so this
+	#is the setting to reach for if it distracts.
+	#Range: 0.1 ~ 1.0
+	bossRadarOpacity = 1.0
+	#Show a spectrum along the top of the screen while his record
+	#plays. Only while the disc is playing, nothing else.
+	discVisualizer = true
+	#Colour of his outline, as RRGGBB hex.
+	#bodyGlow in the common config turns the outline off entirely.
+	bodyGlowColor = "6A2FA0"
+	#Pixels around the crosshair kept clear of the radar trace. 0 turns it off.
+	#Scaled by bossRadarSize.
+	#Range: 0.0 ~ 64.0
+	bossRadarDeadZone = 14.0
 

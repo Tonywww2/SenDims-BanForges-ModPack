@@ -2,22 +2,32 @@
 [taunts]
 	#Whether the Devourer shows taunt text on screen.
 	enabled = true
-	#Minimum seconds between taunts triggered by damaging him.
+	#Minimum seconds between taunts he throws for hurting a player.
+	#Applies to ON_BITE and ANY_DAMAGE; INTERVAL uses its own timer.
 	#Range: 1 ~ 600
 	cooldownSeconds = 60
 	#Damage taunts only start once his health is below this fraction of
 	#his maximum.
 	#Range: 0.0 ~ 1.0
 	healthThreshold = 0.9
-	#Head hits landed before taunts move up to tier 2. Calamity escalates
+	#Hits he lands before taunts move up to tier 2. Calamity escalates
 	#at 6 hits; this is about 3x that, since a Minecraft boss is hit more
-	#often.
+	#often. Under INTERVAL each taunt counts as one hit instead.
 	#Range: 1 ~ 10000
 	tier2Hits = 40
-	#Head hits landed before taunts move up to tier 3. Calamity escalates
+	#Hits he lands before taunts move up to tier 3. Calamity escalates
 	#at 10 hits; this is about 3x that.
 	#Range: 1 ~ 10000
 	tier3Hits = 80
+	#What makes him talk.
+	#ON_BITE: his bite only. ANY_DAMAGE: body contact, lasers and fireball impacts
+	#too, though still held to cooldownSeconds. INTERVAL: on a timer instead.
+	#Allowed Values: ON_BITE, ANY_DAMAGE, INTERVAL
+	trigger = "ON_BITE"
+	#Seconds between taunts when trigger is INTERVAL. Each one counts as an
+	#escalation, so the tiers below still advance.
+	#Range: 1 ~ 600
+	intervalSeconds = 45
 
 [auras]
 	#Whether players near the boss are given Slowness I.
@@ -63,6 +73,17 @@
 	#10 degrees at speed 3.6 is roughly a 21 block radius.
 	#Range: 1.0 ~ 90.0
 	aggressiveTurnRateDeg = 10.0
+	#How hard he is pushed back up when he ends up in the ground.
+	#He flies through terrain, and aiming at a player standing on it used
+	#to carry him underground and keep him there. Raise if he still spends
+	#time in the floor, lower for more willingness to dive.
+	#0 restores the old behaviour.
+	#Range: 0.0 ~ 4.0
+	groundAvoidance = 1.0
+	#Blocks above the terrain he tries to stay. He can still dip below it
+	#briefly during a charge; the deeper he goes the harder he climbs out.
+	#Range: 0.0 ~ 64.0
+	groundClearance = 8.0
 
 [combat]
 	#Base maximum health, for a single player. Only applies to a newly
@@ -111,14 +132,11 @@
 	#of segments caught. Projectiles are never merged either way, so each
 	#arrow or bullet that connects always counts.
 	mergeMeleeSegmentHits = true
-	#Invulnerability window covering his entire body. After a player
-	#damages him anywhere, further damage from that same player is ignored
-	#for this many ticks. 20 ticks = 1 second, 0 disables it.
-	#
-	#He is ~100 segments, so area damage hits many at once and multiplies
-	#accordingly. This caps that, but also caps genuine multi-hit weapons
-	#(a volley of arrows counts once per window).
-	#Raise towards 5 for packs with persistent area-damage weapons.
+	#Invulnerability window covering his whole body, in ticks. 20 is one second.
+	#Caps the damage a ~100 segment worm multiplies from one area attack, and caps
+	#genuine multi-hit weapons with it.
+	#0 turns off this window only. mergeMeleeSegmentHits above is separate and still
+	#merges a swing; set both for no throttling at all.
 	#Range: 0 ~ 100
 	bossHitCooldownTicks = 2
 	#Whether vanilla status effects such as poison, wither and slowness
@@ -160,10 +178,6 @@
 	#20 ticks = 1 second.
 	#Range: 1 ~ 2400
 	cosmicFlameDurationTicks = 100
-	#Whether Cosmic Flame stops the affected entity healing from any
-	#source, including regeneration, golden apples, potions and natural
-	#regeneration. Off by default, as it is a large difficulty increase.
-	cosmicFlameBlocksHealing = false
 	#Armor points removed while Cosmic Flame is active. Armor toughness is
 	#reduced by a quarter of this value. Applied as an attribute modifier,
 	#so it shows in tooltips and is removed when the effect ends.
@@ -174,6 +188,106 @@
 	#entity has any. Restored when the effect ends. 0 disables it.
 	#Range: 0 ~ 10
 	cosmicFlameResistanceReduction = 1
+	#Armor points. 30 is Minecraft's own ceiling for the attribute, not a limit here.
+	#Armor is weak against big hits by design, so for a boss that survives endgame
+	#gear use playerDamageMultiplier below instead.
+	#Range: 0.0 ~ 30.0
+	armor = 0.0
+	#Armor toughness, capped at 20 by the attribute. Resists armor being eaten
+	#through by heavy hits. Does nothing while armor is 0.
+	#Range: 0.0 ~ 20.0
+	armorToughness = 0.0
+	#Body segments behind the head. Applies to a newly summoned boss only.
+	#Every segment is a ticked, tracked entity, so this is the most expensive number
+	#in the file.
+	#Range: 2 ~ 512
+	segmentCount = 102
+	#Blocks between segments along his path. Applies to a newly summoned boss only.
+	#Raise it if you have remodelled him with longer segments, lower it for a denser
+	#body.
+	#Range: 0.25 ~ 32.0
+	segmentSpacing = 3.28125
+	#Resistance to knockback, 0 to 1. 1 is Minecraft's ceiling.
+	#He never moves either way; this is what mods that read the attribute see.
+	#Range: 0.0 ~ 1.0
+	knockbackResistance = 1.0
+	#Multiplies damage HE DEALS to players: bite, body, lasers, fireballs
+	#and Cosmic Flame. Stacks with the phase 2 and co-op multipliers.
+	#Range: 0.0 ~ 100.0
+	attackDamageMultiplier = 1.0
+	#Most beams one Doombeam volley may contain. Extra beams are dropped and logged.
+	#Every beam is sent to every nearby client, so this is bandwidth as well as work.
+	#Range: 16 ~ 20000
+	maxBeamsPerVolley = 2048
+	#Health he regains each time regeneration fires. 0 is off.
+	#Paused during the entrance, the phase 2 transition, the death and the departure.
+	#Range: 0.0 ~ 100000.0
+	regenAmount = 0.0
+	#Ticks between regeneration attempts. 20 is once a second.
+	#Range: 1 ~ 12000
+	regenIntervalTicks = 20
+	#Chance each attempt heals him, 0 to 1.
+	#Range: 0.0 ~ 1.0
+	regenChance = 1.0
+	#Armor points of yours he ignores. 20 ignores a fully armored player.
+	#Armor is percentage reduction, so raising attackDamageMultiplier only multiplies
+	#what survives it; this removes the reduction instead.
+	#Range: 0.0 ~ 30.0
+	armorPierce = 0.0
+	#Armor toughness of yours he ignores. -1 tracks half of armorPierce.
+	#Range: -1.0 ~ 20.0
+	armorToughnessPierce = -1.0
+	#Protection levels of yours he ignores, counted the way vanilla counts them.
+	#Separate from armorPierce, because Protection is a separate reduction step.
+	#Range: 0.0 ~ 20.0
+	enchantmentPierce = 0.0
+	#Seconds his attacks seal your healing for, shown as Devoured Vitality. 0 is off.
+	#Range: 0 ~ 600
+	regenHaltSeconds = 0
+	#How deeply Devoured Vitality bites, 1 to 5.
+	#1 stops natural regeneration only, so potions and golden apples still work.
+	#2 to 5 also cut every other source a quarter at a time; 5 stops healing entirely.
+	#Range: 1 ~ 5
+	regenHaltLevel = 1
+	#Seconds before a hit can seal your healing again, counted from the last time it
+	#was applied.
+	#Range: 0 ~ 600
+	regenHaltCooldownSeconds = 30
+	#Whether he eats levels off your enchanted gear, healing on what he takes.
+	#Curses are left alone. What he takes comes back when he is dead or gone.
+	enchantDevourEnabled = false
+	#Seconds between one player having gear eaten and the next time it can happen to
+	#them.
+	#Range: 1 ~ 600
+	enchantDevourCooldownSeconds = 30
+	#Enchantment levels taken from the chosen item each time.
+	#Range: 1 ~ 10
+	enchantDevourCount = 1
+	#Percent of his maximum health he regains for a common enchantment.
+	#Range: 0.0 ~ 100.0
+	enchantDevourHealMinPercent = 1.0
+	#Percent for a very rare one. The rarities between are spread across the two.
+	#Range: 0.0 ~ 100.0
+	enchantDevourHealMaxPercent = 5.0
+	#NOT RECOMMENDED. Keeps what he ate after he is gone.
+	#Every fight then degrades gear permanently, with no way to undo it short of
+	#re-enchanting.
+	enchantDevourPermanent = false
+	#Multiplies damage PLAYERS DEAL to him, including from their summons.
+	#Below 1 makes him tankier without changing his health bar, which is
+	#useful when a pack's weapons outscale him. Above 1 makes him softer.
+	#Applied before armor, and it stacks with segmentDamageToHeadRatio.
+	#Damage from anything with no player behind it is unaffected.
+	#Range: 0.0 ~ 100.0
+	playerDamageMultiplier = 1.0
+	#Outline him through terrain, head and body.
+	#Draws every body part twice, so turn it off if the fight runs badly.
+	#Renamed from headGlow; an older config reverts to the default.
+	bodyGlow = true
+	#Most Faith Incinerators in the air at once, per dimension.
+	#At the limit the oldest is retired to make room for the new one.
+	#Range: 1 ~ 500
+	maxConcurrentFireballs = 48
 
 [coopScaling]
 	#Health multiplier applied per player beyond the first, compounding.
@@ -244,19 +358,18 @@
 	#it only replaces values you have not changed yourself.
 	#Never shown if you have tuned any of them.
 	notifyOnOutdatedDefaults = true
+	#Send his whole body to clients regardless of view distance.
+	#Minecraft normally only sends an entity within the view distance, so
+	#on a low setting most of his 340 block body is never sent and players
+	#see segments missing or the boss invisible while it still attacks.
+	#Turn off if another mod conflicts over entity tracking.
+	extendBossTrackingRange = true
 
 [progression]
 	#Whether the first Ender Dragon kill plays the devour cutscene, in
 	#which the Devourer tears in, eats the dragon and vanishes. Cosmetic
 	#only: the reward below still drops when this is off.
 	dragonDevourCutscene = true
-	#Whether killing the Ender Dragon gives the devour reward at all.
-	#What it gives is data driven rather than a config option: override the
-	#loot table dog:gameplay/dragon_devour in a datapack to change it, or
-	#empty it to grant nothing. His own drops come from
-	#dog:entities/devourer_head, and the Cosmic Worm recipe is a normal
-	#datapack recipe at dog:cosmic_worm.
-	dragonDropsCosmicLarva = true
 	#Whether the Cosmic Worm is used up when it summons him.
 	#Off by default, so one Worm can summon him repeatedly. Turn on to
 	#make every summon cost the full craft, which is the stricter
@@ -286,4 +399,39 @@
 	#MUSIC category is also stopped; boss music is unaffected because it
 	#plays on the master channel.
 	dragonDeathSilencedSounds = ["minecraft:entity.ender_dragon.death", "minecraft:entity.ender_dragon.growl", "minecraft:entity.ender_dragon.hurt", "minecraft:entity.warden.sonic_boom", "true_ending:music.dragon_defeat"]
+	#Whether killing the Ender Dragon gives the devour reward.
+	#What it gives is the loot table dog:gameplay/dragon_devour; empty it in a
+	#datapack to grant nothing.
+	#Renamed from dragonDropsCosmicLarva, so an older config reverts to the default.
+	dragonDropsReward = true
+	#Whether summoning him changes the time of day.
+	#False leaves the clock alone entirely, including the gradual shift
+	#during the summon ritual.
+	shiftTimeOnSummon = true
+	#Time of day he arrives at, in vanilla ticks.
+	#0 dawn, 6000 noon, 12000 dusk, 18000 midnight.
+	#The ritual slews toward it, then his arrival sets it exactly.
+	#Range: 0 ~ 23999
+	summonTimeOfDay = 18000
+	#Whether the daylight cycle stops while he is alive, holding the sky
+	#at the time above. It is restored when he dies or leaves.
+	freezeDaylightCycle = true
+	#Whether summoning him changes the weather. The old weather is put back when he
+	#dies or leaves.
+	setWeatherOnSummon = false
+	#The sky he arrives under. THUNDER also darkens it.
+	#Allowed Values: CLEAR, RAIN, THUNDER
+	summonWeather = "THUNDER"
+	#Whether the weather cycle stops while he is alive.
+	freezeWeather = true
+	#Commands run once when he arrives, without the leading slash.
+	#Run as the server at permission 4, positioned on him: @s is him and ~ ~ ~ is
+	#where he is. Output is suppressed; failures are logged.
+	summonCommands = []
+	#Commands run once when he dies or leaves, same rules as above.
+	departureCommands = []
+	#Whether summoning needs open sky above you.
+	#Ignored in dimensions with no open sky anywhere, like the End and the Nether,
+	#so adding one to the list above is enough on its own.
+	requireOpenSky = true
 

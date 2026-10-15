@@ -105,3 +105,5 @@ servers.essential.dat
 config/smoothboot.json
 .sgjourney-common-reference-tmp/
 config/zfastnoise.mixin.properties
+/cache
+/docs/tools/__pycache__

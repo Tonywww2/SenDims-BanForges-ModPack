@@ -1,0 +1,9 @@
+{
+  "type": "aether:swet_ball_conversion",
+  "ingredient": {
+    "block": "kubejs:omni_aether_03_block"
+  },
+  "result": {
+    "block": "kubejs:omni_aether_04_block"
+  }
+}

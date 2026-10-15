@@ -1,0 +1,9 @@
+{
+  "type": "deep_aether:golden_swet_ball_recipe",
+  "ingredient": {
+    "block": "kubejs:omni_aether_12_precursor"
+  },
+  "result": {
+    "block": "kubejs:omni_aether_12_block"
+  }
+}

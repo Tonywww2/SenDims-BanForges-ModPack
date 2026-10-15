@@ -1,0 +1,21 @@
+{
+  "type": "pneumaticcraft:thermo_plant",
+  "fluid_input": {
+    "type": "pneumaticcraft:fluid",
+    "fluid": "kubejs:omni_pneumatic_05_fluid",
+    "amount": 1000
+  },
+  "item_input": {
+    "item": "minecraft:slime_ball"
+  },
+  "fluid_output": {
+    "fluid": "kubejs:omni_pneumatic_06_fluid",
+    "amount": 1000
+  },
+  "pressure": 3.0,
+  "temperature": {
+    "min_temp": 423
+  },
+  "speed": 0.2,
+  "exothermic": false
+}

@@ -1,0 +1,13 @@
+{
+  "type": "dustandash:milling",
+  "ingredients": [
+    {
+      "item": "kubejs:omni_engineering_05"
+    }
+  ],
+  "output": {
+    "item": "kubejs:omni_menril_foil",
+    "count": 25
+  },
+  "step1": true
+}

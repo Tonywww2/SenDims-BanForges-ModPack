@@ -254,3 +254,21 @@
 |---|---|---|
 | `energyblade:hf_blade` | item.energyblade.hf_blade | 高周波刀 |
 
+## slashblade_sendims · 圣剑系列（新增 2 把）
+
+| ID | 翻译键 | 本地化名 |
+|---|---|---|
+| `slashblade_sendims:caliburn` | item.slashblade_sendims.caliburn | 「必胜黄金之剑」 |
+| `slashblade_sendims:excalibur` | item.slashblade_sendims.excalibur | 「誓约胜利之剑」 |
+| `slashblade_sendims:mizushi` | item.slashblade_sendims.mizushi | 咒王刀「御厨子」 |
+
+必胜黄金之剑：基础攻击力 70，锋利 VII、亡灵杀手 V、耐久 V、抢夺 III。
+誓约胜利之剑：基础攻击力 90，锋利 X、亡灵杀手 VII、耐久 VII、抢夺 IV。
+必胜黄金之剑配方：阶段四末期·空岛之下，前置为名刀「金纸竹光」与大太刀，脚本 `s4_overworld.js`，配方 ID `sdbf:caliburn_s4`。
+誓约胜利之剑配方：阶段五初期·土卫六，前置为必胜黄金之剑与「大地之刃」，脚本 `s5_titan.js`，配方 ID `sdbf:excalibur_s5`。
+
+咒王刀「御厨子」：基础攻击力65，锋利V、耐久III、抢夺III；SE为魔虚罗·伪、空间斩、反转术式。
+SA为领域展开·伏魔御厨子：半径16格，上下各6格，持续7.5秒；每0.5秒斩击一次，共15轮，每轮0.5倍物理＋0.5倍真实伤害，总倍率15倍。消耗450＋最大AP的20%。
+配方位于阶段四末期·空岛之下，前置为神威刀「诺克特」、炼狱刀「血雨红樱」、炼狱刀「死念」，三把均要求锻造100；另需最后的天狗刀匠之书（`last_smith:scroll_tengu_full`）。脚本 `s4_overworld.js`，配方ID `sdbf:mizushi_s4`。
+上方统计为原始导出，不含此处新增刀。
+
