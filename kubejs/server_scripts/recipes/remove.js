@@ -256,9 +256,13 @@ let toRemoveID = new Set([
     "sjap_adder:kamuyex_dark",
     "last_smith:uma_tachyon",
     "elder_bosses:rune_fragment",
+    "dustandash:crafting/milling_machine",
+    "dustandash:crafting/ash_collector",
+    "dustandash:crafting/integrated_frame_1",
+    "dustandash:crafting/neutron_indestructible",
+    "dustandash:crafting/rock_solid",
 
     // 临时
-    "dustandash:crafting/integrated_block",
     "last_smith:hakurouken_inferno",
     "slashblade_addon:nihilul",
     // "apotheosis:hellshelf",
@@ -288,7 +292,7 @@ let toRemoveID = new Set([
     // "apotheosis:sightshelf_t2",
     // "apotheosis:filtering_shelf",
     // "apotheosis:treasure_shelf"
-    
+
     // 坏配方
     "bonsaitrees3:sapling/quark/pink_blossom_sapling",
     "aether_redux:genesis_dark_gummy_swet"

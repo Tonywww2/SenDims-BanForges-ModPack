@@ -6,11 +6,11 @@ __cfg_version = 0
 
 [festivals]
 
-	[festivals.new_year]
-		enabled = true
-		lastShownDate = ""
-
 	[festivals.chongyang]
+		enabled = true
+		lastShownDate = "2026-10-18"
+
+	[festivals.new_year]
 		enabled = true
 		lastShownDate = ""
 

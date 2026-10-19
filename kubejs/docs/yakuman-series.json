@@ -465,14 +465,16 @@
         }
       ],
       "sa": "四象归一",
-      "ap_flat": 1000,
-      "ap_max_ratio": 0.4,
+      "ap_flat": 2000,
+      "ap_max_ratio": 0.64,
       "se": [
         "四方字印",
         "七字敕令",
         "风幕",
         "开杠"
-      ]
+      ],
+      "ammo": 4,
+      "shot_cooldown_ticks": 15
     }
   ],
   "runtime_rules": {
@@ -490,21 +492,22 @@
       "damage_events": "damage scaling, incoming damage reaction, and stun cancellation only"
     },
     "grouped_tiles": {
-      "kong": "one impact per four-card stack, four 0.75x damage pulses (3x total)",
-      "four_symbols": "one shockwave per stack; all four waves share target deduplication"
+      "kong": "one impact per four-card stack, four 0.75x damage pulses (3x total)"
     },
-    "slash_rendering": "native SlashBlade EntitySlashEffect; common physical/magic damage pipeline",
-    "earth_tile_faces": "face each observing player camera, including the final thrown tile",
+    "slash_rendering": "Stationary cuts: native EntitySlashEffect. Moving sword waves: EntityDrive subclass with native renderer, swept server collision and confirmed-hit callbacks.",
+    "earth_tile_faces": "face caster world eye position; independent of every observing camera",
     "sword_projectile_speed_multiplier": 2,
     "sword_projectile_speeds_blocks_per_tick": {
       "small": 1.2,
-      "ordinary_and_dragon": 1.6,
+      "ordinary": 1.6,
+      "dragon": 2.4,
       "gold": 2.4,
-      "shadow": 2.0
+      "shadow": 2.0,
+      "cardinal_and_small_winds": 0.8
     },
     "nine_lamps_speed_multiplier": 1.5,
     "card_throw_speed": "unchanged; tiles have separate throwing speeds",
-    "verification": "17 native GameTests passed; client inventory/tiles/native slashes inspected with shaders disabled and Oculus + Complementary",
+    "verification": "22 native GameTests passed; caster-facing and quarter-scale assertions; actual client inspected with shaders disabled and Oculus + Complementary",
     "effect_transparency": {
       "base_opacity": 0.65,
       "transparency": 0.35,
@@ -512,6 +515,105 @@
       "scope": "All yakuman tile, stack, orbit, sword-wave, dragon, shadow, gate, light and ring meshes, plus native slashes",
       "extra_render_passes": 0,
       "verification": "Native slash marker synchronized; client inspected without shaders and with Oculus + Complementary"
+    },
+    "earth_and_honors_tile_scale": 0.25,
+    "unlocked_sa_search_radius": 12,
+    "sword_wave_hitbox_width_multiplier": 2,
+    "sword_wave_density": "spawn arrangement tightened to 60%; denser local light; projectile counts and original damage unchanged",
+    "wind_flight_lifetime_multiplier": 2,
+    "native_slash_lifetime_synchronized": true,
+    "network_protocol": 6,
+    "bamboo_wave_interval_ticks": 5,
+    "bamboo_final_card_tick": 25,
+    "dragon": {
+      "visual_scale": 2,
+      "pierces_targets": true,
+      "speed_from_previous": 1.5,
+      "damage_per_target_per_projectile": 5
+    },
+    "four_symbols": {
+      "date": "2026-10-18",
+      "type": "ammo",
+      "reload_ap_flat": 2000,
+      "reload_max_ap_ratio": 0.64,
+      "ammo": 4,
+      "shot_cooldown_ticks": 15,
+      "cooldown_entry": "AmmoSA.onSlashEffects",
+      "rounds": [
+        {
+          "round": 1,
+          "heal_lost_health_ratio": 0.14,
+          "heal_minimum": 20,
+          "heal_capped_at_maximum": true,
+          "gold_sword_damage_ratio": 0.5,
+          "damage_type": "true",
+          "projectile_hits": 1
+        },
+        {
+          "round": 2,
+          "restore_missing_ap_ratio": 0.14,
+          "restore_minimum": 500,
+          "restore_capped_at_maximum": true,
+          "gold_sword_damage_ratio": 0.5,
+          "damage_type": "true",
+          "projectile_hits": 1
+        },
+        {
+          "round": 3,
+          "gather_radius": 12,
+          "destination_radius": 0.5,
+          "no_lock_anchor_forward": 5,
+          "exclude_bosses": true,
+          "boss_lookup": [
+            "sdbf:bosses generated from existing mobTypes",
+            "LeaderApi",
+            "vanilla bosses",
+            "forge:bosses",
+            "c:bosses"
+          ],
+          "placement": "Horizontal random offsets; allow entity stacking; reject solid blocks and invalid world bounds using bounded sampling."
+        },
+        {
+          "round": 4,
+          "damage_ratio": 24,
+          "damage_type": "magic",
+          "width": 8,
+          "height": 2,
+          "range": 32,
+          "speed_blocks_per_tick": 1.6,
+          "horizontal": true,
+          "pierces_all_enemies": true,
+          "max_hits_per_target": 1
+        }
+      ],
+      "retired": [
+        "wind tile stacks",
+        "expanding shockwaves",
+        "automatic shadows"
+      ],
+      "verification": "Compiled JAR only; no tests run at user request.",
+      "deployment": "Installed in the pack; restart the game to load the new mod.",
+      "compiled_jar_sha256": "0b60d1a621ca31cfce51f234ab6155366ef9138bda6ab7fba9a4dfe1c2cdaef1",
+      "deployed_jar_sha256": "0b60d1a621ca31cfce51f234ab6155366ef9138bda6ab7fba9a4dfe1c2cdaef1"
+    },
+    "native_phantom_blade_revision": {
+      "date": "2026-10-16",
+      "entity": "slashblade_sendims:yakuman_drive",
+      "scope": "Thirteen Orphans, golden upgrade, gate/bamboo waves, small/four winds, and wind-cycle SE",
+      "tracking_interval_ticks": 3,
+      "client_reconciliation_ticks": 3,
+      "opacity": 0.65,
+      "server_damage": "Existing physical/magic damage, doubled hitbox, per-shot victim sets and per-cast four-wind initial-hit sets retained.",
+      "impact_effects": "Confirmed hits dispatch the existing extra cuts and area followups once per permitted victim.",
+      "other_streaming_visuals": "Preserve displayed position when a snapshot arrives; blend correction over three ticks and keep ribbon animation continuous.",
+      "verification": "JAR compilation and reobfuscation succeeded. No game tests rerun for this revision at user request.",
+      "deployed_jar_sha256": "b56aa3c122e2711ef3a2f22ae578b5bc12391c1f8de066cdbdad710abe1c4862"
+    },
+    "flight_rotation_revision": {
+      "date": "2026-10-18",
+      "native_drive": "Use velocity yaw/pitch; discard native no-clip yaw reversal; preserve previous angles for interpolation.",
+      "light_sword": "Map native mesh tip +X onto the common +Z flight frame.",
+      "culling": "Bounds include the scaled sword wave."
     }
   }
 }

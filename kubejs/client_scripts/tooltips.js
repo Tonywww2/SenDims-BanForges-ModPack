@@ -32,25 +32,13 @@ ItemEvents.tooltip(event => {
     event.add('slashblade_sendims:blessing_petals', Text.translatable('info.kubejs.blessing_petals'))
     event.add('slashblade_sendims:principle_of_sword_arts', Text.translatable('info.kubejs.principle_of_sword_arts'))
 
-    // ---- 无名王者系列 ----
-    let namelessNext = {
-        'slashblade:nameless_faded': 'info.kubejs.nameless.next.faded',
-        'slashblade:nameless_lone': 'info.kubejs.nameless.next.lone',
-        'slashblade:nameless_thunder': 'info.kubejs.nameless.next.thunder',
-        'slashblade:nameless_judgement': 'info.kubejs.nameless.next.judgement',
-        'slashblade:nameless_king': 'info.kubejs.nameless.end'
-    };
-    for (let blade in namelessNext) {
-        event.add(blade, Text.translatable('info.kubejs.nameless.series').color(Color.AQUA));
-        event.add(blade, Text.translatable(namelessNext[blade]).color(Color.GRAY));
-    }
 
     event.add('slashblade_sendims:the_nectar_quest', Text.translatable('info.kubejs.the_nectar_quest'))
     event.add('slashblade_sendims:the_nectar_quest', Text.translatable('info.kubejs.the_nectar_quest_2'))
 
     event.add('#slashblade:can_copy_sa', Text.translatable('info.kubejs.slashblade.can_copy_sa').color(Color.AQUA));
     event.add('#slashblade:can_copy_se', Text.translatable('info.kubejs.slashblade.can_copy_se').color(Color.AQUA));
-    
+
     event.add("powerful_dummy:dummy_stand", Text.translatable('info.kubejs.dummy_stand').color(Color.AQUA))
 
     event.add('kubejs:anchor_shard', Text.translatable('info.kubejs.anchor_shard').color(Color.AQUA));
@@ -59,14 +47,18 @@ ItemEvents.tooltip(event => {
     event.add('kubejs:apoth_boss_remover', Text.translatable('info.kubejs.apoth_boss_remover.consume').color(Color.GRAY));
     event.add('kubejs:difficulty_selector', Text.translatable('info.kubejs.difficulty_selector').color(Color.AQUA));
     event.add('kubejs:difficulty_locker', Text.translatable('info.kubejs.difficulty_locker').color(Color.RED));
-    
+
     event.add('tofucraft:blocktofugrilled', Text.translatable('info.kubejs.blocktofugrilled').color(Color.AQUA));
     event.add('ad_astra:moon_stone', Text.translatable('info.kubejs.moon_stone').color(Color.AQUA));
     event.add('ad_astra:moon_cobblestone', Text.translatable('info.kubejs.moon_cobblestone').color(Color.AQUA));
     event.add('thermal:steel_ingot', Text.translatable('info.kubejs.steel_ingot').color(Color.AQUA));
     event.add('kubejs:high_carbon_iron_dust', Text.translatable('info.kubejs.high_carbon_iron_dust').color(Color.AQUA));
+    event.add([
+        'dustandash:hand_vacuum',
+        'dustandash:iron_vacuum'
+    ], Text.translatable('info.kubejs.vacuum_resource_source').color(Color.GRAY));
     event.add('terra_entity:king_slime_spawn_egg', Text.translatable('info.kubejs.king_slime_spawn_egg').color(Color.AQUA));
-    
+
     event.add('slashblade_sendims:deeprealm_certificate', Text.translatable('info.kubejs.deeprealm_certificate'));
 
     event.add([
@@ -113,6 +105,14 @@ ItemEvents.tooltip(event => {
         'draconicevolution:wyvern_sword',
         'draconicevolution:wyvern_bow'
     ], Text.translatable('info.kubejs.draconic_weapon_warning').color(Color.RED));
+
+    event.add('#kubejs:yakuman_certificates',
+        Text.translatable('info.kubejs.yakuman_certificate.obtain').color(Color.GRAY));
+    event.add('#kubejs:yakuman_certificates',
+        Text.translatable('info.kubejs.yakuman_certificate.material').color(Color.AQUA));
+
+    event.add('kubejs:yakuman_forging_soul',
+        Text.translatable('info.kubejs.yakuman_forging_soul').color(Color.AQUA));
 
     event.addAdvanced('slashblade:proudsoul_sphere', (item, advanced, text) => {
         if (!item.nbt || !item.nbt.contains('item_list', 9)) {

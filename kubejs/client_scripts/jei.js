@@ -2,6 +2,9 @@ JEIEvents.hideItems(event => {
     event.hide("easy_villagers:farmer");
     event.hide("easy_villagers:iron_farm");
     event.hide('nuclearcraft:analyzer');
+    event.hide('ad_astra:etrionic_capacitor');
+    event.hide('dustandash:indestructible');
+    event.hide('dustandash:rock_solid');
 
     // event.hide("apotheosis:hellshelf");
     // event.hide("apotheosis:infused_hellshelf");

@@ -11,10 +11,20 @@ ServerEvents.recipes(event => {
     event.shapeless('kubejs:linear_quest_book',
         'ftbquests:book')
         .id('sdbf:linear_quest_book_from_quest_book')
-        
+
     event.shapeless('ftbquests:book',
         'kubejs:linear_quest_book')
         .id('sdbf:quest_book_from_linear_quest_book')
+
+    event.shaped('kubejs:capacitor', [
+        'R#R',
+        '#D#',
+        'D#D'
+    ], {
+        '#': '#ad_astra:steel_plates',
+        D: 'minecraft:diamond',
+        R: 'minecraft:redstone'
+    }).id('sdbf:capacitor');
 
     event.shaped('kubejs:star_chart', [
         'FFF',
@@ -234,6 +244,26 @@ ServerEvents.recipes(event => {
         B: ['minecraft:elytra', '#forge:storage_blocks/platinum'],
         C: 'slashblade_sendims:estus_flask_3'
     }).id('sdbf:estus_flask_4')
+
+    event.shaped('slashblade_sendims:estus_flask_5', [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        A: ["sgjourney:unity_shard", "titan_moon:meteoric_iron_ingot"],
+        B: ["sgjourney:trinium_ingot", "titan_moon:polyphosphazene_coenzyme"],
+        C: 'slashblade_sendims:estus_flask_4'
+    }).id('sdbf:estus_flask_5')
+
+    event.shaped('slashblade_sendims:estus_flask_6', [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        A: ["kubejs:storm_hydrogen_crystal", "kubejs:rainbowshift_entropy"],
+        B: ["kubejs:titan-ii_composite_ingot", "elder_bosses:gate_fragment"],
+        C: 'slashblade_sendims:estus_flask_5'
+    }).id('sdbf:estus_flask_6')
 
     event.custom({
         "type": "sophisticatedbackpacks:basic_backpack",

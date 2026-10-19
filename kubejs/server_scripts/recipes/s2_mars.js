@@ -1,4 +1,40 @@
 ServerEvents.recipes(event => {
+    event.shaped('dustandash:milling_machine', [
+        ' #S',
+        'BAP',
+        'iCi'
+    ], {
+        '#': 'dustandash:fire_gem',
+        A: 'minecraft:anvil',
+        B: 'minecraft:blast_furnace',
+        C: 'minecraft:crafting_table',
+        P: 'minecraft:smithing_table',
+        S: 'minecraft:stonecutter',
+        i: '#forge:ingots/ostrum'
+    }).id('sdbf:milling_machine_s2');
+
+    event.shaped('dustandash:ash_collector', [
+        '###',
+        'SHS',
+        'S_S'
+    ], {
+        '#': 'ad_astra:ostrum_fluid_pipe',
+        H: 'minecraft:hopper',
+        S: 'minecraft:stone_bricks',
+        '_': 'minecraft:smooth_stone_slab'
+    }).id('sdbf:ash_collector_s2');
+
+    event.shaped('dustandash:integrated_frame_1', [
+        '#B#',
+        '#C#',
+        'A#A'
+    ], {
+        '#': 'ad_astra:ostrum_fluid_pipe',
+        A: 'minecraft:bricks',
+        B: 'minecraft:water_bucket',
+        C: 'minecraft:lava_bucket'
+    }).id('sdbf:integrated_frame_1_s2');
+
     event.shaped(Item.of('gateways:gate_pearl', '{gateway:"gateways:sdbf_mars_g1"}'), [
         'ABA',
         'BCB',

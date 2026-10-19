@@ -1,0 +1,26 @@
+def packRoot = new File(System.getProperty('certificate.pack'))
+def verifyRoot = new File(System.getProperty('certificate.verify'))
+allprojects {
+    afterEvaluate { project ->
+        if (project != rootProject) return
+        repositories { maven { url new File(verifyRoot, 'maven').toURI() } }
+        dependencies { runtimeOnly fg.deobf('local.riichi:riichi-mahjong-forge:0.2.0') }
+        sourceSets {
+            yakumanCertificateTest {
+                java.srcDir new File(packRoot, 'kubejs/tools/yakuman_certificate_tests')
+                resources.srcDir new File(verifyRoot, 'resources')
+                compileClasspath += sourceSets.main.output + sourceSets.main.compileClasspath + configurations.runtimeClasspath
+                runtimeClasspath += sourceSets.main.output + sourceSets.main.runtimeClasspath
+            }
+        }
+        minecraft.runs.gameTestServer {
+            workingDirectory new File(verifyRoot, 'run')
+            property 'forge.enabledGameTestNamespaces', 'yakuman_certificate_test'
+            property 'fml.maxParallelism', '1'
+            mods { slashblade_sendims { source sourceSets.yakumanCertificateTest } }
+        }
+        tasks.matching { it.name == 'runGameTestServer' }.configureEach {
+            dependsOn tasks.named('yakumanCertificateTestClasses')
+        }
+    }
+}

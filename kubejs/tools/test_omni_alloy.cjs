@@ -9,7 +9,7 @@ const read = file => fs.readFileSync(path.join(root, file), 'utf8');
 const catalog = JSON.parse(read('kubejs/config/omni_alloy.json'));
 const batches = [];
 const registries = {};
-const builder = () => new Proxy({}, {get: () => () => builder()});
+const builder = () => new Proxy({}, {get: (_, key) => key === 'bucketItem' ? builder() : () => builder()});
 const ctx = vm.createContext({
   global: {},
   JsonIO: {read: () => catalog},

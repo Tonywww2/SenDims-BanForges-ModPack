@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "kubejs:item/omni_pneumatic_07_fluid_bucket"
+  }
+}

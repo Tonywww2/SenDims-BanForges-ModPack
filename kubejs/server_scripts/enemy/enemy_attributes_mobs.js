@@ -536,6 +536,7 @@ ServerEvents.tags("entity_type", event => {
     mobTypes.forEach((type, e) => {
         // console.log(e);
         if (type.isBoss) {
+            event.add("sdbf:bosses", e);
             event.add("enderio:soul_vial_blacklist", e);
             // console.log(e);
         }

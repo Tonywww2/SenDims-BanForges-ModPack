@@ -346,6 +346,10 @@
 		#English: Recent damage window ticks · ticks. 
 		#Range: > 1
 		recent_damage_window_ticks = 160
+		#中文：远程格挡距离 · 格。非技能期间，攻击者到碰撞箱的三维距离达到此值时格挡伤害；弹射物格挡不受此值限制。
+		#English: Ranged deflection distance · blocks. Between skills, deflect damage when the attacker is at least this 3D distance from the hitbox; projectile deflection is independent of this distance.
+		#Range: 0.1 ~ 1024.0
+		ranged_deflect_distance = 9.0
 
 	#中文：架势与失衡。
 	#English: Stagger. 
@@ -1805,6 +1809,20 @@
 				#English: Attack ratio. Attack damage coefficient.
 				attack_ratio = 0.55
 
+	#中文：开场清场。开场结束后，一秒内逐个攻击场内非玩家生物，再返回原点。
+	#English: Opening sweep. After the intro, strike each non-player creature in the arena within one second, then return.
+	[malenia.opening_sweep]
+
+		#中文：伤害。
+		#English: Damage. 
+		[malenia.opening_sweep.damage]
+			#中文：固定伤害加值。固定加值。
+			#English: Flat. Flat addition.
+			flat = 20.0
+			#中文：攻击力系数。攻击力系数。
+			#English: Attack ratio. Attack damage coefficient.
+			attack_ratio = 4.0
+
 #中文：约定之王拉塔恩。战斗设置在开战时生效。
 #English: Radahn, Promised Consort. Combat settings apply when an encounter starts.
 [promised_consort]
@@ -2333,6 +2351,10 @@
 				#English: Weight during cooldown. Overrides the SetCoolTime weight during cooldown; does not change attack damage.
 				#Range: 0.0 ~ 1000.0
 				weight_during_cooldown = 0.0
+				#中文：落光追踪概率。小光柱在玩家周围随机落下的概率；预警期间缓慢跟随偏移位置，落地后固定。
+				#English: Light rain tracking chance. Chance to scatter a column around a player; the random offset follows slowly during the warning and locks on impact
+				#Range: 0.0 ~ 1.0
+				rain_tracking_chance = 0.1
 
 			#中文：swing_combo。
 			#English: swing_combo. 
@@ -8373,20 +8395,20 @@
 				#English: Child projectile creation delay · seconds. 
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateWaitTime = 0.0
-				#中文：子弹生成间隔下限 · 秒。
-				#English: Minimum child projectile interval · seconds. 
+				#中文：落光最短间隔 · 秒。随机落光波次间隔，使用动作时钟秒，最短0.05秒。
+				#English: Minimum rain interval · seconds. Random delay between rain waves in action-clock seconds, at least 0.05 seconds.
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMin = 0.15
-				#中文：子弹生成间隔上限 · 秒。
-				#English: Maximum child projectile interval · seconds. 
+				#中文：落光最长间隔 · 秒。随机落光波次间隔，使用动作时钟秒，最短0.05秒。
+				#English: Maximum rain interval · seconds. Random delay between rain waves in action-clock seconds, at least 0.05 seconds.
 				#Range: 0.0 ~ 1000000.0
 				intervalCreateTimeMax = 0.25
 
 			#中文：a205220314。
 			#English: a205220314. 
 			[promised_consort.skills.projectiles.a205220314]
-				#中文：弹丸寿命 · 秒。弹丸寿命，单位为秒；负值保留原无限寿命含义。
-				#English: Projectile lifetime · seconds. Projectile lifetime in seconds; a negative value retains the unlimited lifetime.
+				#中文：落光预警时长 · 秒。小光柱下落并追踪目标，落地前不造成伤害。
+				#English: Light rain warning duration · seconds. Small columns descend and track targets without dealing damage before landing
 				#Range: -1000000.0 ~ 1000000.0
 				life = 0.4
 				#中文：发射间隔 · 秒。
@@ -8397,8 +8419,8 @@
 				#English: Radius growth time · seconds. Seconds for the hit radius to grow from its initial value to the maximum.
 				#Range: 0.0 ~ 1000000.0
 				spreadTime = 0.0
-				#中文：每次发射数量。一次发射的弹丸数量；0停止该发射。
-				#English: Projectiles per shot. Number of projectiles per shot; 0 disables that launch.
+				#中文：每波落光数量。每波随机小光柱的数量，默认2根，每波最多8根、同时最多64根。
+				#English: Columns per rain wave. Random columns per wave, default 2, capped at 8 per wave and 64 active columns.
 				#Range: 0 ~ 1000000
 				numShoot = 2
 				#中文：子弹生成等待时间 · 秒。
@@ -8449,8 +8471,8 @@
 			#中文：a205220316。
 			#English: a205220316. 
 			[promised_consort.skills.projectiles.a205220316]
-				#中文：小光柱维持时长 · 秒。大光柱消失后出现小光柱，范围内持续造成伤害。
-				#English: Small column duration · seconds. Small damaging columns appear after the main column disappears
+				#中文：小光柱维持时长 · 秒。落地后固定位置，在可见范围内持续造成伤害。
+				#English: Small column duration · seconds. After landing, columns lock their position and deal repeated damage within their visible area
 				#Range: 0.0 ~ 1000000.0
 				life = 1.5
 				#中文：发射间隔 · 秒。

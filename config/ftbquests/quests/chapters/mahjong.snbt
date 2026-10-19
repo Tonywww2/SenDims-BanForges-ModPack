@@ -1,0 +1,339 @@
+{
+	autofocus_id: "572AF696CAC6C564"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mahjong"
+	group: "09172E2BE2B038C0"
+	icon: "riichi_mahjong_forge:tile_dragon_red"
+	id: "4689E139E09885CE"
+	order_index: 1
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			id: "572AF696CAC6C564"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "48AFC856E27449ED"
+				item: "riichi_mahjong_forge:tile_dragon_white"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["572AF696CAC6C564"]
+			id: "7AA96C81895C53E0"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "44D9FA1E1526EAC3"
+				item: "riichi_mahjong_forge:mahjong_altar"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["572AF696CAC6C564"]
+			description: ["这不是摸鱼，这是帮家里发电！"]
+			id: "021D9071C961E904"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "2CDF79B9DDF7F9D7"
+				item: "riichi_mahjong_forge:yaku_generator_tier_1"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"7AA96C81895C53E0"
+				"021D9071C961E904"
+			]
+			id: "032ECFB41D48A71C"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "248729F55BFE4447"
+				item: "riichi_mahjong_forge:tile_dragon_red"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["032ECFB41D48A71C"]
+			hide_dependent_lines: true
+			id: "7054E15504000736"
+			quest_enhance_disable_scroll_paging: false
+			shape: "pentagon"
+			size: 1.5d
+			tasks: [{
+				id: "2C3A0C78FA967564"
+				item: "riichi_mahjong_forge:mahjong_table_new"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"021D9071C961E904"
+				"18A5D93725BC306E"
+			]
+			id: "45A8EE304D8553F7"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "48160065295B76F7"
+				item: "riichi_mahjong_forge:yaku_generator_tier_2"
+				type: "item"
+			}]
+			x: 15.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7054E15504000736"]
+			id: "18A5D93725BC306E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4D8FF129609B8111"
+				item: "riichi_mahjong_forge:mahjong_star"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7054E15504000736"]
+			id: "4AAEA42F23EAD17B"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "49EC0699E8B981F8"
+				item: "kubejs:yakuman_certificate_kokushi_musou"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7054E15504000736"]
+			id: "08B2CCF600382C0B"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "20925DAD85C1D0DC"
+				item: "kubejs:yakuman_certificate_kokushi_musou_juusanmen_machi"
+				type: "item"
+			}]
+			x: 21.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7054E15504000736"]
+			id: "68AC6903FD6FC99E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "491520D29DCF328B"
+				item: "kubejs:yakuman_certificate_suu_ankou"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7054E15504000736"]
+			id: "29517B7F248F28C7"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1B8F87C2132DE9A5"
+				item: "kubejs:yakuman_certificate_suu_ankou_tanki"
+				type: "item"
+			}]
+			x: 21.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7054E15504000736"]
+			id: "78FA169E9FAC0AC3"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3C91112FD25406C7"
+				item: "kubejs:yakuman_certificate_daisangen"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["7054E15504000736"]
+			id: "4DC2AFA55C45E50D"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "278CE2841CA01399"
+				item: "kubejs:yakuman_certificate_shousuushii"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["7054E15504000736"]
+			id: "73EDDEF445C7D6C8"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "72EA18ADC5741D6C"
+				item: "kubejs:yakuman_certificate_daisuushii"
+				type: "item"
+			}]
+			x: 21.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["7054E15504000736"]
+			id: "04FD6C64FB2F779B"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0E24136148C6F06D"
+				item: "kubejs:yakuman_certificate_tsuuiisou"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["7054E15504000736"]
+			id: "0A57C20D2F302F48"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "431A4C2C5B7682DF"
+				item: "kubejs:yakuman_certificate_chinroutou"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7054E15504000736"]
+			id: "70548E05AC24F170"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1DC7B97E144EDA7D"
+				item: "kubejs:yakuman_certificate_ryuuiisou"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7054E15504000736"]
+			id: "5CE283E7FE233A17"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "36572BCB6540FE6C"
+				item: "kubejs:yakuman_certificate_chuuren_poutou"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["7054E15504000736"]
+			id: "7180C05808A160C5"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4A544CC43A1BA2C7"
+				item: "kubejs:yakuman_certificate_junsei_chuuren_poutou"
+				type: "item"
+			}]
+			x: 21.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["7054E15504000736"]
+			id: "408FCAD9ABD097DD"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1580C3B4C4BF3340"
+				item: "kubejs:yakuman_certificate_suukantsu"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["7054E15504000736"]
+			id: "3EE97ACA884752D2"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "633DE5D47845EDF3"
+				item: "kubejs:yakuman_certificate_tenhou"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["7054E15504000736"]
+			id: "457D0E4B658CFE6D"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "16D6721D7C5975D0"
+				item: "kubejs:yakuman_certificate_chiihou"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["7054E15504000736"]
+			id: "643B09387820A345"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0B463B48E837EE0B"
+				item: "kubejs:yakuman_certificate_renhou"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["7054E15504000736"]
+			id: "2BE0F7C2240AFB74"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "2CF207E1A559BDE0"
+				item: "kubejs:yakuman_certificate_kazoe_yakuman"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["18A5D93725BC306E"]
+			id: "02DF2EBAEA051209"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "094D7840E2BDDF77"
+				item: "kubejs:yakuman_forging_soul"
+				type: "item"
+			}]
+			x: 21.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["45A8EE304D8553F7"]
+			id: "69AD4F5F7729532F"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4BB8E52286C0F52A"
+				item: "riichi_mahjong_forge:yaku_generator_tier_3"
+				type: "item"
+			}]
+			x: 24.0d
+			y: -3.0d
+		}
+	]
+	title: "雀之路"
+}

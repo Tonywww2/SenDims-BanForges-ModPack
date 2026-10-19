@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
-    event.replaceInput({ id: 'storagedrawers:copper_storage_upgrade' },
-        'storagedrawers:upgrade_template',
-        'storagedrawers:obsidian_storage_upgrade'
+    event.replaceInput({},
+        'ad_astra:etrionic_capacitor',
+        'kubejs:capacitor'
     );
 
     event.replaceInput({ id: 'storagedrawers:iron_storage_upgrade' },

@@ -476,6 +476,10 @@ def emit():
 def emit_assets():
     lang={}
     component_textures=emit_component_textures()
+    from omni_textures.build import draw_catalog
+    texture_files=draw_catalog(REG,K/"assets")
+    FILES.extend(p.relative_to(ROOT).as_posix() for p in texture_files
+                 if p.relative_to(ROOT).as_posix() not in FILES)
     for ident,spec in REG["items"].items():
         ns,path=ident.split(":",1)
         lang[f"item.{ns}.{path}"]=spec["name"]
@@ -484,7 +488,7 @@ def emit_assets():
         ns,path=ident.split(":",1)
         lang[f"block.{ns}.{path}"]=spec["name"]
         write(f"assets/{ns}/blockstates/{path}.json",{"variants":{"":{"model":f"{ns}:block/{path}"}}})
-        write(f"assets/{ns}/models/block/{path}.json",{"parent":"minecraft:block/cube_all","textures":{"all":"minecraft:block/amethyst_block"}})
+        write(f"assets/{ns}/models/block/{path}.json",{"parent":"minecraft:block/cube_all","textures":{"all":spec["texture"]}})
         write(f"assets/{ns}/models/item/{path}.json",{"parent":f"{ns}:block/{path}"})
         write(f"data/{ns}/loot_tables/blocks/{path}.json",{"type":"minecraft:block","pools":[{"rolls":1,
             "entries":[{"type":"minecraft:item","name":ident}],"conditions":[{"condition":"minecraft:survives_explosion"}]}]})
@@ -493,6 +497,8 @@ def emit_assets():
         lang[f"fluid.{ns}.{path}"]=spec["name"]
         lang[f"block.{ns}.{path}"]=spec["name"]
         lang[f"item.{ns}.{path}_bucket"]=spec["name"]+"桶"
+        write(f"assets/{ns}/models/item/{path}_bucket.json",{"parent":"minecraft:item/generated",
+            "textures":{"layer0":spec["bucket_texture"]}})
     existing_path=K/"assets/kubejs/lang/zh_cn.json"
     existing=json.loads(existing_path.read_text(encoding="utf-8-sig"))
     for group,entries in PREVIOUS_REG.items():

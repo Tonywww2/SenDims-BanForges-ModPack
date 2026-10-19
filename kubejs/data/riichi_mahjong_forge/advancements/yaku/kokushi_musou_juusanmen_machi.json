@@ -1,0 +1,27 @@
+{
+  "parent": "riichi_mahjong_forge:yaku/kokushi_musou",
+  "criteria": {
+    "earned": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "icon": {
+      "item": "riichi_mahjong_forge:tile_wind_north"
+    },
+    "title": {
+      "translate": "riichi_mahjong_forge.yaku.kokushi_musou_juusanmen_machi"
+    },
+    "description": {
+      "translate": "riichi_mahjong_forge.advancement.kokushi_musou_juusanmen_machi.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "rewards": {
+    "loot": [
+      "kubejs:rewards/yakuman_certificates/kokushi_musou_juusanmen_machi"
+    ]
+  }
+}

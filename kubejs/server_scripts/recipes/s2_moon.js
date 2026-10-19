@@ -153,10 +153,4 @@ ServerEvents.recipes(event => {
         1,
         's2');
 
-    event.smithing('ad_astra:oil_bucket',
-        'nuclearcraft:sulfuric_acid_bucket',
-        'minecraft:lava_bucket',
-        'tofucraft:tofudiamond'
-    ).id('sdbf:oil_bucket_s2')
-
 })

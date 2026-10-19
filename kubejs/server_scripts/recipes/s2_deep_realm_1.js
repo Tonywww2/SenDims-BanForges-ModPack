@@ -3,7 +3,24 @@ ServerEvents.recipes(event => {
     sqRecipe(event, "sdbf:ae_lab", '#forge:ingots/iron', 0, "s2");
     sqRecipe(event, "cavernous:lush_village", '#minecraft:dirt', 0, "s2");
     sqRecipe(event, "cavernous:stone_village", '#forge:cobblestone', 0, "s2");
-    sqRecipe(event, "dungeons_arise:plague_asylum", 'ad_astra:etrionic_capacitor', 0, "s2");
+    sqRecipe(event, "dungeons_arise:plague_asylum", 'kubejs:capacitor', 0, "s2");
+
+    // 一体机按八个固定槽位匹配，六份火药需分别放入六个输入槽。
+    event.custom({
+        type: 'dustandash:integrate',
+        ingredients: [
+            { item: 'nuclearcraft:sulfuric_acid_bucket' },
+            { item: 'minecraft:seagrass' },
+            { item: 'minecraft:gunpowder' },
+            { item: 'minecraft:gunpowder' },
+            { item: 'minecraft:gunpowder' },
+            { item: 'minecraft:gunpowder' },
+            { item: 'minecraft:gunpowder' },
+            { item: 'minecraft:gunpowder' }
+        ],
+        level: 0,
+        output: { item: 'ad_astra:oil_bucket', count: 1 }
+    }).id('sdbf:oil_bucket_from_sulfuric_acid_s2');
 
     event.shapeless('3x thermal:steel_ingot', [
         'cataclysm:witherite_ingot'

@@ -4,942 +4,1062 @@
       "kubejs:omni_bio_03": {
         "name": "豆腐锅构件",
         "branch": "bio",
-        "texture": "minecraft:item/slime_ball"
+        "texture": "kubejs:item/omni_bio_03"
       },
       "kubejs:omni_bio_assembly_1": {
         "name": "陶瓷承压膜",
         "branch": "bio",
-        "texture": "minecraft:item/slime_ball"
+        "texture": "kubejs:item/omni_bio_assembly_1"
       },
       "kubejs:omni_bio_07": {
         "name": "石臼研磨构件",
         "branch": "bio",
-        "texture": "minecraft:item/slime_ball"
+        "texture": "kubejs:item/omni_bio_07"
       },
       "kubejs:omni_bio_08": {
         "name": "砧板切制构件",
         "branch": "bio",
-        "texture": "minecraft:item/slime_ball"
+        "texture": "kubejs:item/omni_bio_08"
       },
       "kubejs:omni_bio_09": {
         "name": "烹饪构件",
         "branch": "bio",
-        "texture": "minecraft:item/slime_ball"
+        "texture": "kubejs:item/omni_bio_09"
       },
       "kubejs:omni_bio_assembly_2": {
         "name": "代谢催化膜",
         "branch": "bio",
-        "texture": "minecraft:item/slime_ball"
+        "texture": "kubejs:item/omni_bio_assembly_2"
       },
       "kubejs:omni_bio_14": {
         "name": "蜜蜂物品转化构件",
         "branch": "bio",
-        "texture": "minecraft:item/slime_ball"
+        "texture": "kubejs:item/omni_bio_14"
       },
       "kubejs:omni_bio_15": {
         "name": "蜂蜜离心构件",
         "branch": "bio",
-        "texture": "minecraft:item/slime_ball"
+        "texture": "kubejs:item/omni_bio_15"
       },
       "kubejs:omni_bio_16": {
         "name": "蜂蜜灌装构件",
         "branch": "bio",
-        "texture": "minecraft:item/slime_ball"
+        "texture": "kubejs:item/omni_bio_16"
       },
       "kubejs:astral_biomembrane": {
         "name": "星浆仿生隔膜",
         "branch": "bio",
-        "texture": "minecraft:item/slime_ball"
+        "texture": "kubejs:item/astral_biomembrane"
       },
       "kubejs:omni_aether_feed": {
         "name": "冰晶光学毛坯",
         "branch": "aether",
-        "texture": "minecraft:item/prismarine_crystals"
+        "texture": "kubejs:item/omni_aether_feed"
       },
       "kubejs:omni_aether_01": {
         "name": "祭坛附魔加工构件",
         "branch": "aether",
-        "texture": "minecraft:item/prismarine_crystals"
+        "texture": "kubejs:item/omni_aether_01"
       },
       "kubejs:omni_aether_02": {
         "name": "冰冻器加工构件",
         "branch": "aether",
-        "texture": "minecraft:item/prismarine_crystals"
+        "texture": "kubejs:item/omni_aether_02"
       },
       "kubejs:omni_aether_assembly_1": {
         "name": "极寒折射镜坯",
         "branch": "aether",
-        "texture": "minecraft:item/prismarine_crystals"
+        "texture": "kubejs:item/omni_aether_assembly_1"
       },
       "kubejs:omni_aether_10": {
         "name": "深天境组合构件",
         "branch": "aether",
-        "texture": "minecraft:item/prismarine_crystals"
+        "texture": "kubejs:item/omni_aether_10"
       },
       "kubejs:omni_aether_11": {
         "name": "毒液浸泡构件",
         "branch": "aether",
-        "texture": "minecraft:item/prismarine_crystals"
+        "texture": "kubejs:item/omni_aether_11"
       },
       "kubejs:omni_aether_08": {
         "name": "注入加工构件",
         "branch": "aether",
-        "texture": "minecraft:item/prismarine_crystals"
+        "texture": "kubejs:item/omni_aether_08"
       },
       "kubejs:omni_aether_assembly_2": {
         "name": "孢光镀层镜片",
         "branch": "aether",
-        "texture": "minecraft:item/prismarine_crystals"
+        "texture": "kubejs:item/omni_aether_assembly_2"
       },
       "kubejs:celestial_lattice_lens": {
         "name": "苍穹晶格透镜",
         "branch": "aether",
-        "texture": "minecraft:item/prismarine_crystals"
+        "texture": "kubejs:item/celestial_lattice_lens"
       },
       "kubejs:omni_mana_assembly_1": {
         "name": "四相活石腔壁",
         "branch": "mana",
-        "texture": "minecraft:item/ender_pearl"
+        "texture": "kubejs:item/omni_mana_assembly_1"
       },
       "kubejs:omni_mana_05": {
         "name": "花瓣药剂台构件",
         "branch": "mana",
-        "texture": "minecraft:item/ender_pearl"
+        "texture": "kubejs:item/omni_mana_05"
       },
       "kubejs:omni_mana_06": {
         "name": "魔力池注入构件",
         "branch": "mana",
-        "texture": "minecraft:item/ender_pearl"
+        "texture": "kubejs:item/omni_mana_06"
       },
       "kubejs:omni_mana_07": {
         "name": "符文祭坛构件",
         "branch": "mana",
-        "texture": "minecraft:item/ender_pearl"
+        "texture": "kubejs:item/omni_mana_07"
       },
       "kubejs:omni_mana_08": {
         "name": "泰拉凝聚板构件",
         "branch": "mana",
-        "texture": "minecraft:item/ender_pearl"
+        "texture": "kubejs:item/omni_mana_08"
       },
       "kubejs:omni_mana_09": {
         "name": "精灵门交易构件",
         "branch": "mana",
-        "texture": "minecraft:item/ender_pearl"
+        "texture": "kubejs:item/omni_mana_09"
       },
       "kubejs:omni_mana_assembly_2": {
         "name": "符文谐振内衬",
         "branch": "mana",
-        "texture": "minecraft:item/ender_pearl"
+        "texture": "kubejs:item/omni_mana_assembly_2"
       },
       "kubejs:omni_mana_14": {
         "name": "武器融合构件",
         "branch": "mana",
-        "texture": "minecraft:item/ender_pearl"
+        "texture": "kubejs:item/omni_mana_14"
       },
       "kubejs:omni_mana_15": {
         "name": "紫晶祝福构件",
         "branch": "mana",
-        "texture": "minecraft:item/ender_pearl"
+        "texture": "kubejs:item/omni_mana_15"
       },
       "kubejs:omni_mana_10": {
         "name": "植物酿造构件",
         "branch": "mana",
-        "texture": "minecraft:item/ender_pearl"
+        "texture": "kubejs:item/omni_mana_10"
       },
       "kubejs:omni_mana_11": {
         "name": "神化附魔构件",
         "branch": "mana",
-        "texture": "minecraft:item/ender_pearl"
+        "texture": "kubejs:item/omni_mana_11"
       },
       "kubejs:omni_mana_12": {
         "name": "神化分解构件",
         "branch": "mana",
-        "texture": "minecraft:item/ender_pearl"
+        "texture": "kubejs:item/omni_mana_12"
       },
       "kubejs:iridescent_resonance_chamber": {
         "name": "虹移共振腔",
         "branch": "mana",
-        "texture": "minecraft:item/ender_pearl"
+        "texture": "kubejs:item/iridescent_resonance_chamber"
       },
       "kubejs:omni_thermal_feed": {
         "name": "冰晶矿质复合坯",
         "branch": "thermal",
-        "texture": "minecraft:item/iron_ingot"
+        "texture": "kubejs:item/omni_thermal_feed"
       },
       "kubejs:omni_thermal_01": {
         "name": "有序工作台构件",
         "branch": "thermal",
-        "texture": "minecraft:item/iron_ingot"
+        "texture": "kubejs:item/omni_thermal_01"
       },
       "kubejs:omni_thermal_02": {
         "name": "无序工作台构件",
         "branch": "thermal",
-        "texture": "minecraft:item/iron_ingot"
+        "texture": "kubejs:item/omni_thermal_02"
       },
       "kubejs:omni_thermal_03": {
         "name": "熔炉构件",
         "branch": "thermal",
-        "texture": "minecraft:item/iron_ingot"
+        "texture": "kubejs:item/omni_thermal_03"
       },
       "kubejs:omni_thermal_04": {
         "name": "高炉构件",
         "branch": "thermal",
-        "texture": "minecraft:item/iron_ingot"
+        "texture": "kubejs:item/omni_thermal_04"
       },
       "kubejs:omni_thermal_07": {
         "name": "切石机构件",
         "branch": "thermal",
-        "texture": "minecraft:item/iron_ingot"
+        "texture": "kubejs:item/omni_thermal_07"
       },
       "kubejs:omni_thermal_08": {
         "name": "锻造台构件",
         "branch": "thermal",
-        "texture": "minecraft:item/iron_ingot"
+        "texture": "kubejs:item/omni_thermal_08"
       },
       "kubejs:omni_thermal_assembly_1": {
         "name": "锻制承压骨架",
         "branch": "thermal",
-        "texture": "minecraft:item/iron_ingot"
+        "texture": "kubejs:item/omni_thermal_assembly_1"
       },
       "kubejs:omni_thermal_09": {
         "name": "红石熔炉构件",
         "branch": "thermal",
-        "texture": "minecraft:item/iron_ingot"
+        "texture": "kubejs:item/omni_thermal_09"
       },
       "kubejs:omni_thermal_10": {
         "name": "锯木机构件",
         "branch": "thermal",
-        "texture": "minecraft:item/iron_ingot"
+        "texture": "kubejs:item/omni_thermal_10"
       },
       "kubejs:omni_thermal_11": {
         "name": "磨粉机构件",
         "branch": "thermal",
-        "texture": "minecraft:item/iron_ingot"
+        "texture": "kubejs:item/omni_thermal_11"
       },
       "kubejs:omni_thermal_12": {
         "name": "感应炉构件",
         "branch": "thermal",
-        "texture": "minecraft:item/iron_ingot"
+        "texture": "kubejs:item/omni_thermal_12"
       },
       "kubejs:omni_thermal_13": {
         "name": "冲压机构件",
         "branch": "thermal",
-        "texture": "minecraft:item/iron_ingot"
+        "texture": "kubejs:item/omni_thermal_13"
       },
       "kubejs:omni_thermal_15": {
         "name": "急速冷冻机构件",
         "branch": "thermal",
-        "texture": "minecraft:item/iron_ingot"
+        "texture": "kubejs:item/omni_thermal_15"
       },
       "kubejs:omni_thermal_assembly_2": {
         "name": "相变金属外壳",
         "branch": "thermal",
-        "texture": "minecraft:item/iron_ingot"
+        "texture": "kubejs:item/omni_thermal_assembly_2"
       },
       "kubejs:omni_thermal_05": {
         "name": "烟熏炉构件",
         "branch": "thermal",
-        "texture": "minecraft:item/iron_ingot"
+        "texture": "kubejs:item/omni_thermal_05"
       },
       "kubejs:omni_thermal_06": {
         "name": "营火构件",
         "branch": "thermal",
-        "texture": "minecraft:item/iron_ingot"
+        "texture": "kubejs:item/omni_thermal_06"
       },
       "kubejs:omni_thermal_16": {
         "name": "离心分离机构件",
         "branch": "thermal",
-        "texture": "minecraft:item/iron_ingot"
+        "texture": "kubejs:item/omni_thermal_16"
       },
       "kubejs:omni_thermal_19": {
         "name": "流体灌装机构件",
         "branch": "thermal",
-        "texture": "minecraft:item/iron_ingot"
+        "texture": "kubejs:item/omni_thermal_19"
       },
       "kubejs:omni_thermal_assembly_3": {
         "name": "热解隔热夹层",
         "branch": "thermal",
-        "texture": "minecraft:item/iron_ingot"
+        "texture": "kubejs:item/omni_thermal_assembly_3"
       },
       "kubejs:omni_thermal_21": {
         "name": "结晶器构件",
         "branch": "thermal",
-        "texture": "minecraft:item/iron_ingot"
+        "texture": "kubejs:item/omni_thermal_21"
       },
       "kubejs:omni_thermal_22": {
         "name": "有机灌注机构件",
         "branch": "thermal",
-        "texture": "minecraft:item/iron_ingot"
+        "texture": "kubejs:item/omni_thermal_22"
       },
       "kubejs:omni_thermal_20": {
         "name": "药水酿造机构件",
         "branch": "thermal",
-        "texture": "minecraft:item/iron_ingot"
+        "texture": "kubejs:item/omni_thermal_20"
       },
       "kubejs:cryogenic_phase_housing": {
         "name": "冰晶相变壳体",
         "branch": "thermal",
-        "texture": "minecraft:item/iron_ingot"
+        "texture": "kubejs:item/cryogenic_phase_housing"
       },
       "kubejs:omni_engineering_feed": {
         "name": "星浆导电基材",
         "branch": "engineering",
-        "texture": "minecraft:item/copper_ingot"
+        "texture": "kubejs:item/omni_engineering_feed"
       },
       "kubejs:omni_engineering_04": {
         "name": "机械烘干构件",
         "branch": "engineering",
-        "texture": "minecraft:item/copper_ingot"
+        "texture": "kubejs:item/omni_engineering_04"
       },
       "kubejs:omni_engineering_05": {
         "name": "尘烬整合构件",
         "branch": "engineering",
-        "texture": "minecraft:item/copper_ingot"
+        "texture": "kubejs:item/omni_engineering_05"
       },
       "kubejs:omni_engineering_06": {
         "name": "铣床装配构件",
         "branch": "engineering",
-        "texture": "minecraft:item/copper_ingot"
+        "texture": "kubejs:item/omni_engineering_06"
       },
       "kubejs:omni_engineering_07": {
         "name": "尘烬离心构件",
         "branch": "engineering",
-        "texture": "minecraft:item/copper_ingot"
+        "texture": "kubejs:item/omni_engineering_07"
       },
       "kubejs:omni_engineering_assembly_1": {
         "name": "门瑞欧导电骨架",
         "branch": "engineering",
-        "texture": "minecraft:item/copper_ingot"
+        "texture": "kubejs:item/omni_engineering_assembly_1"
       },
       "kubejs:omni_engineering_09": {
         "name": "合金炉构件",
         "branch": "engineering",
-        "texture": "minecraft:item/copper_ingot"
+        "texture": "kubejs:item/omni_engineering_09"
       },
       "kubejs:omni_engineering_10": {
         "name": "SAG 磨粉构件",
         "branch": "engineering",
-        "texture": "minecraft:item/copper_ingot"
+        "texture": "kubejs:item/omni_engineering_10"
       },
       "kubejs:omni_engineering_11": {
         "name": "切片加工构件",
         "branch": "engineering",
-        "texture": "minecraft:item/copper_ingot"
+        "texture": "kubejs:item/omni_engineering_11"
       },
       "kubejs:omni_engineering_12": {
         "name": "灵魂绑定构件",
         "branch": "engineering",
-        "texture": "minecraft:item/copper_ingot"
+        "texture": "kubejs:item/omni_engineering_12"
       },
       "kubejs:omni_engineering_14": {
         "name": "流体罐加工构件",
         "branch": "engineering",
-        "texture": "minecraft:item/copper_ingot"
+        "texture": "kubejs:item/omni_engineering_14"
       },
       "kubejs:omni_engineering_assembly_2": {
         "name": "灵魂绝缘绕组",
         "branch": "engineering",
-        "texture": "minecraft:item/copper_ingot"
+        "texture": "kubejs:item/omni_engineering_assembly_2"
       },
       "kubejs:omni_engineering_22": {
         "name": "NASA 工作台构件",
         "branch": "engineering",
-        "texture": "minecraft:item/copper_ingot"
+        "texture": "kubejs:item/omni_engineering_22"
       },
       "kubejs:omni_engineering_assembly_3": {
         "name": "航天供能线组",
         "branch": "engineering",
-        "texture": "minecraft:item/copper_ingot"
+        "texture": "kubejs:item/omni_engineering_assembly_3"
       },
       "kubejs:omni_engineering_24": {
         "name": "星门高级结晶构件",
         "branch": "engineering",
-        "texture": "minecraft:item/copper_ingot"
+        "texture": "kubejs:item/omni_engineering_24"
       },
       "kubejs:stargate_coupling_coil": {
         "name": "星门耦合线圈",
         "branch": "engineering",
-        "texture": "minecraft:item/copper_ingot"
+        "texture": "kubejs:item/stargate_coupling_coil"
       },
       "kubejs:omni_pneumatic_feed": {
         "name": "氢压阀体毛坯",
         "branch": "pneumatic",
-        "texture": "minecraft:item/iron_nugget"
+        "texture": "kubejs:item/omni_pneumatic_feed"
       },
       "kubejs:omni_pneumatic_02": {
         "name": "压力室构件",
         "branch": "pneumatic",
-        "texture": "minecraft:item/iron_nugget"
+        "texture": "kubejs:item/omni_pneumatic_02"
       },
       "kubejs:omni_pneumatic_03": {
         "name": "装配钻床构件",
         "branch": "pneumatic",
-        "texture": "minecraft:item/iron_nugget"
+        "texture": "kubejs:item/omni_pneumatic_03"
       },
       "kubejs:omni_pneumatic_04": {
         "name": "装配激光构件",
         "branch": "pneumatic",
-        "texture": "minecraft:item/iron_nugget"
+        "texture": "kubejs:item/omni_pneumatic_04"
       },
       "kubejs:omni_pneumatic_assembly_1": {
         "name": "钻刻耐压阀体",
         "branch": "pneumatic",
-        "texture": "minecraft:item/iron_nugget"
+        "texture": "kubejs:item/omni_pneumatic_assembly_1"
       },
       "kubejs:omni_pneumatic_08": {
         "name": "热处理架冷却构件",
         "branch": "pneumatic",
-        "texture": "minecraft:item/iron_nugget"
+        "texture": "kubejs:item/omni_pneumatic_08"
       },
       "kubejs:omni_pneumatic_assembly_2": {
         "name": "热控密封阀座",
         "branch": "pneumatic",
-        "texture": "minecraft:item/iron_nugget"
+        "texture": "kubejs:item/omni_pneumatic_assembly_2"
       },
       "kubejs:omni_pneumatic_11": {
         "name": "AE 充能构件",
         "branch": "pneumatic",
-        "texture": "minecraft:item/iron_nugget"
+        "texture": "kubejs:item/omni_pneumatic_11"
       },
       "kubejs:omni_pneumatic_12": {
         "name": "AE 压印构件",
         "branch": "pneumatic",
-        "texture": "minecraft:item/iron_nugget"
+        "texture": "kubejs:item/omni_pneumatic_12"
       },
       "kubejs:omni_pneumatic_13": {
         "name": "AE 水中转化构件",
         "branch": "pneumatic",
-        "texture": "minecraft:item/iron_nugget"
+        "texture": "kubejs:item/omni_pneumatic_13"
       },
       "kubejs:omni_pneumatic_14": {
         "name": "AE 爆炸转化构件",
         "branch": "pneumatic",
-        "texture": "minecraft:item/iron_nugget"
+        "texture": "kubejs:item/omni_pneumatic_14"
       },
       "kubejs:omni_pneumatic_assembly_3": {
         "name": "熵变信号阀片",
         "branch": "pneumatic",
-        "texture": "minecraft:item/iron_nugget"
+        "texture": "kubejs:item/omni_pneumatic_assembly_3"
       },
       "kubejs:omni_pneumatic_16": {
         "name": "PCB 紫外曝光构件",
         "branch": "pneumatic",
-        "texture": "minecraft:item/iron_nugget"
+        "texture": "kubejs:item/omni_pneumatic_16"
       },
       "kubejs:omni_pneumatic_17": {
         "name": "PCB 蚀刻构件",
         "branch": "pneumatic",
-        "texture": "minecraft:item/iron_nugget"
+        "texture": "kubejs:item/omni_pneumatic_17"
       },
       "kubejs:hydrogen_logic_valve_bank": {
         "name": "氢压逻辑阀组",
         "branch": "pneumatic",
-        "texture": "minecraft:item/iron_nugget"
+        "texture": "kubejs:item/hydrogen_logic_valve_bank"
       },
       "kubejs:omni_nuclear_feed": {
         "name": "氦封约束环胚",
         "branch": "nuclear",
-        "texture": "minecraft:item/nautilus_shell"
+        "texture": "kubejs:item/omni_nuclear_feed"
       },
       "kubejs:omni_nuclear_01": {
         "name": "核工制造构件",
         "branch": "nuclear",
-        "texture": "minecraft:item/nautilus_shell"
+        "texture": "kubejs:item/omni_nuclear_01"
       },
       "kubejs:omni_nuclear_02": {
         "name": "核工碎岩构件",
         "branch": "nuclear",
-        "texture": "minecraft:item/nautilus_shell"
+        "texture": "kubejs:item/omni_nuclear_02"
       },
       "kubejs:omni_nuclear_03": {
         "name": "核工合金熔炼构件",
         "branch": "nuclear",
-        "texture": "minecraft:item/nautilus_shell"
+        "texture": "kubejs:item/omni_nuclear_03"
       },
       "kubejs:omni_nuclear_04": {
         "name": "核工加压构件",
         "branch": "nuclear",
-        "texture": "minecraft:item/nautilus_shell"
+        "texture": "kubejs:item/omni_nuclear_04"
       },
       "kubejs:omni_nuclear_06": {
         "name": "核工铸锭构件",
         "branch": "nuclear",
-        "texture": "minecraft:item/nautilus_shell"
+        "texture": "kubejs:item/omni_nuclear_06"
       },
       "kubejs:omni_nuclear_assembly_1": {
         "name": "致密承束环",
         "branch": "nuclear",
-        "texture": "minecraft:item/nautilus_shell"
+        "texture": "kubejs:item/omni_nuclear_assembly_1"
       },
       "kubejs:omni_nuclear_09": {
         "name": "同位素分离构件",
         "branch": "nuclear",
-        "texture": "minecraft:item/nautilus_shell"
+        "texture": "kubejs:item/omni_nuclear_09"
       },
       "kubejs:omni_nuclear_11": {
         "name": "核工流体灌注构件",
         "branch": "nuclear",
-        "texture": "minecraft:item/nautilus_shell"
+        "texture": "kubejs:item/omni_nuclear_11"
       },
       "kubejs:omni_nuclear_15": {
         "name": "核工结晶构件",
         "branch": "nuclear",
-        "texture": "minecraft:item/nautilus_shell"
+        "texture": "kubejs:item/omni_nuclear_15"
       },
       "kubejs:omni_nuclear_16": {
         "name": "核工组装构件",
         "branch": "nuclear",
-        "texture": "minecraft:item/nautilus_shell"
+        "texture": "kubejs:item/omni_nuclear_16"
       },
       "kubejs:omni_nuclear_assembly_2": {
         "name": "同位素过滤层",
         "branch": "nuclear",
-        "texture": "minecraft:item/nautilus_shell"
+        "texture": "kubejs:item/omni_nuclear_assembly_2"
       },
       "kubejs:omni_nuclear_20": {
         "name": "衰变加速构件",
         "branch": "nuclear",
-        "texture": "minecraft:item/nautilus_shell"
+        "texture": "kubejs:item/omni_nuclear_20"
       },
       "kubejs:omni_nuclear_assembly_3": {
         "name": "辐照吸收层",
         "branch": "nuclear",
-        "texture": "minecraft:item/nautilus_shell"
+        "texture": "kubejs:item/omni_nuclear_assembly_3"
       },
       "kubejs:omni_nuclear_22": {
         "name": "固体裂变构件",
         "branch": "nuclear",
-        "texture": "minecraft:item/nautilus_shell"
+        "texture": "kubejs:item/omni_nuclear_22"
       },
       "kubejs:omni_nuclear_25": {
         "name": "燃料后处理构件",
         "branch": "nuclear",
-        "texture": "minecraft:item/nautilus_shell"
+        "texture": "kubejs:item/omni_nuclear_25"
       },
       "kubejs:omni_nuclear_23": {
         "name": "熔盐反应堆构件",
         "branch": "nuclear",
-        "texture": "minecraft:item/nautilus_shell"
+        "texture": "kubejs:item/omni_nuclear_23"
       },
       "kubejs:omni_nuclear_assembly_4": {
         "name": "燃料闭锁环",
         "branch": "nuclear",
-        "texture": "minecraft:item/nautilus_shell"
+        "texture": "kubejs:item/omni_nuclear_assembly_4"
       },
       "kubejs:omni_nuclear_assembly_5": {
         "name": "多级换热环套",
         "branch": "nuclear",
-        "texture": "minecraft:item/nautilus_shell"
+        "texture": "kubejs:item/omni_nuclear_assembly_5"
       },
       "kubejs:omni_nuclear_30": {
         "name": "球状闪电加工构件",
         "branch": "nuclear",
-        "texture": "minecraft:item/nautilus_shell"
+        "texture": "kubejs:item/omni_nuclear_30"
       },
       "kubejs:omni_nuclear_31": {
         "name": "靶室构件",
         "branch": "nuclear",
-        "texture": "minecraft:item/nautilus_shell"
+        "texture": "kubejs:item/omni_nuclear_31"
       },
       "kubejs:neutron_confinement_ring": {
         "name": "中子约束环",
         "branch": "nuclear",
-        "texture": "minecraft:item/nautilus_shell"
+        "texture": "kubejs:item/neutron_confinement_ring"
       },
       "kubejs:omni_precision_feed": {
         "name": "星浆光栅基板",
         "branch": "precision",
-        "texture": "minecraft:item/amethyst_shard"
+        "texture": "kubejs:item/omni_precision_feed"
       },
       "kubejs:omni_precision_01": {
         "name": "耀魂加工构件",
         "branch": "precision",
-        "texture": "minecraft:item/amethyst_shard"
+        "texture": "kubejs:item/omni_precision_01"
       },
       "kubejs:omni_precision_04": {
         "name": "刀卷研究构件",
         "branch": "precision",
-        "texture": "minecraft:item/amethyst_shard"
+        "texture": "kubejs:item/omni_precision_04"
       },
       "kubejs:omni_precision_05": {
         "name": "泰拉工坊构件",
         "branch": "precision",
-        "texture": "minecraft:item/amethyst_shard"
+        "texture": "kubejs:item/omni_precision_05"
       },
       "kubejs:omni_precision_15": {
         "name": "炼药锅淬火构件",
         "branch": "precision",
-        "texture": "minecraft:item/amethyst_shard"
+        "texture": "kubejs:item/omni_precision_15"
       },
       "kubejs:omni_precision_assembly_1": {
         "name": "定向刻线刀组",
         "branch": "precision",
-        "texture": "minecraft:item/amethyst_shard"
+        "texture": "kubejs:item/omni_precision_assembly_1"
       },
       "kubejs:omni_precision_08": {
         "name": "胶卷显影构件",
         "branch": "precision",
-        "texture": "minecraft:item/amethyst_shard"
+        "texture": "kubejs:item/omni_precision_08"
       },
       "kubejs:omni_precision_16": {
         "name": "照片打印构件",
         "branch": "precision",
-        "texture": "minecraft:item/amethyst_shard"
+        "texture": "kubejs:item/omni_precision_16"
       },
       "kubejs:omni_precision_10": {
         "name": "照片老化构件",
         "branch": "precision",
-        "texture": "minecraft:item/amethyst_shard"
+        "texture": "kubejs:item/omni_precision_10"
       },
       "kubejs:omni_precision_17": {
         "name": "照片叠放构件",
         "branch": "precision",
-        "texture": "minecraft:item/amethyst_shard"
+        "texture": "kubejs:item/omni_precision_17"
       },
       "kubejs:omni_precision_assembly_2": {
         "name": "多层成像标尺",
         "branch": "precision",
-        "texture": "minecraft:item/amethyst_shard"
+        "texture": "kubejs:item/omni_precision_assembly_2"
       },
       "kubejs:omni_precision_12": {
         "name": "原版酿造构件",
         "branch": "precision",
-        "texture": "minecraft:item/amethyst_shard"
+        "texture": "kubejs:item/omni_precision_12"
       },
       "kubejs:omni_calibration_grating": {
         "name": "万象校准光栅",
         "branch": "precision",
-        "texture": "minecraft:item/amethyst_shard"
+        "texture": "kubejs:item/omni_calibration_grating"
       },
       "kubejs:omni_seed": {
         "name": "万象原核",
         "branch": "precision",
-        "texture": "minecraft:item/amethyst_shard"
+        "texture": "kubejs:item/omni_seed"
       },
       "kubejs:omni_billet": {
         "name": "万象锻坯",
         "branch": "precision",
-        "texture": "minecraft:item/amethyst_shard"
+        "texture": "kubejs:item/omni_billet"
       },
       "kubejs:omni_alloy_ingot": {
         "name": "万象合金锭",
         "branch": "precision",
-        "texture": "minecraft:item/amethyst_shard"
+        "texture": "kubejs:item/omni_alloy_ingot"
       },
       "kubejs:omni_process_liner": {
         "name": "工艺衬片",
         "branch": "precision",
-        "texture": "minecraft:item/paper"
+        "texture": "kubejs:item/omni_process_liner"
       },
       "kubejs:omni_bio_15_precursor": {
         "name": "蜂蜜离心原料",
         "branch": "bio",
-        "texture": "minecraft:item/slime_ball"
+        "texture": "kubejs:item/omni_bio_15_precursor"
       },
       "kubejs:omni_mana_11_precursor": {
         "name": "神化附魔原料",
         "branch": "mana",
-        "texture": "minecraft:item/ender_pearl"
+        "texture": "kubejs:item/omni_mana_11_precursor"
       },
       "kubejs:omni_mana_12_precursor": {
         "name": "神化分解原料",
         "branch": "mana",
-        "texture": "minecraft:item/ender_pearl"
+        "texture": "kubejs:item/omni_mana_12_precursor"
       },
       "kubejs:omni_thermal_16_precursor": {
         "name": "离心分离机原料",
         "branch": "thermal",
-        "texture": "minecraft:item/iron_ingot"
+        "texture": "kubejs:item/omni_thermal_16_precursor"
       },
       "kubejs:omni_thermal_20_precursor": {
         "name": "药水酿造机原料",
         "branch": "thermal",
-        "texture": "minecraft:item/iron_ingot"
+        "texture": "kubejs:item/omni_thermal_20_precursor"
       },
       "kubejs:omni_menril_foil": {
         "name": "门瑞欧导电箔",
         "branch": "engineering",
-        "texture": "minecraft:item/copper_ingot"
+        "texture": "kubejs:item/omni_menril_foil"
       },
       "kubejs:omni_engineering_14_precursor": {
         "name": "流体罐加工原料",
         "branch": "engineering",
-        "texture": "minecraft:item/copper_ingot"
+        "texture": "kubejs:item/omni_engineering_14_precursor"
       },
       "kubejs:omni_nuclear_07_precursor": {
         "name": "核工提取原料",
         "branch": "nuclear",
-        "texture": "minecraft:item/nautilus_shell"
+        "texture": "kubejs:item/omni_nuclear_07_precursor"
       },
       "kubejs:omni_nuclear_12_precursor": {
         "name": "核工流体富集原料",
         "branch": "nuclear",
-        "texture": "minecraft:item/nautilus_shell"
+        "texture": "kubejs:item/omni_nuclear_12_precursor"
       },
       "kubejs:omni_precision_05_precursor": {
         "name": "泰拉工坊原料",
         "branch": "precision",
-        "texture": "minecraft:item/amethyst_shard"
+        "texture": "kubejs:item/omni_precision_05_precursor"
       }
     },
     "blocks": {
       "kubejs:omni_bio_01_block": {
         "name": "盐卤凝固构件",
-        "branch": "bio"
+        "branch": "bio",
+        "texture": "kubejs:block/omni_bio_01_block"
       },
       "kubejs:omni_bio_13_block": {
         "name": "蜜蜂方块转化构件",
-        "branch": "bio"
+        "branch": "bio",
+        "texture": "kubejs:block/omni_bio_13_block"
       },
       "kubejs:omni_aether_03_block": {
         "name": "圣石碎片转化构件",
-        "branch": "aether"
+        "branch": "aether",
+        "texture": "kubejs:block/omni_aether_03_block"
       },
       "kubejs:omni_aether_04_block": {
         "name": "史维特球转化构件",
-        "branch": "aether"
+        "branch": "aether",
+        "texture": "kubejs:block/omni_aether_04_block"
       },
       "kubejs:omni_aether_05_block": {
         "name": "冰石冻结构件",
-        "branch": "aether"
+        "branch": "aether",
+        "texture": "kubejs:block/omni_aether_05_block"
       },
       "kubejs:omni_aether_06_block": {
         "name": "冰饰品冻结构件",
-        "branch": "aether"
+        "branch": "aether",
+        "texture": "kubejs:block/omni_aether_06_block"
       },
       "kubejs:omni_aether_07_block": {
         "name": "群系放置转化构件",
-        "branch": "aether"
+        "branch": "aether",
+        "texture": "kubejs:block/omni_aether_07_block"
       },
       "kubejs:omni_aether_09_block": {
         "name": "枯萎孢子转化构件",
-        "branch": "aether"
+        "branch": "aether",
+        "texture": "kubejs:block/omni_aether_09_block"
       },
       "kubejs:omni_aether_12_block": {
         "name": "金色史维特球转化构件",
-        "branch": "aether"
+        "branch": "aether",
+        "texture": "kubejs:block/omni_aether_12_block"
       },
       "kubejs:omni_aether_13_block": {
         "name": "发光孢子转化构件",
-        "branch": "aether"
+        "branch": "aether",
+        "texture": "kubejs:block/omni_aether_13_block"
       },
       "kubejs:omni_aether_14_block": {
         "name": "瓦解号角构件",
-        "branch": "aether"
+        "branch": "aether",
+        "texture": "kubejs:block/omni_aether_14_block"
       },
       "kubejs:omni_mana_feed": {
         "name": "虹移腔室基座",
-        "branch": "mana"
+        "branch": "mana",
+        "texture": "kubejs:block/omni_mana_feed"
       },
       "kubejs:omni_mana_01_block": {
         "name": "白雏菊转化构件",
-        "branch": "mana"
+        "branch": "mana",
+        "texture": "kubejs:block/omni_mana_01_block"
       },
       "kubejs:omni_mana_02_block": {
         "name": "凝矿兰构件",
-        "branch": "mana"
+        "branch": "mana",
+        "texture": "kubejs:block/omni_mana_02_block"
       },
       "kubejs:omni_mana_03_block": {
         "name": "狱火凝矿兰构件",
-        "branch": "mana"
+        "branch": "mana",
+        "texture": "kubejs:block/omni_mana_03_block"
       },
       "kubejs:omni_mana_04_block": {
         "name": "石莲转化构件",
-        "branch": "mana"
+        "branch": "mana",
+        "texture": "kubejs:block/omni_mana_04_block"
       },
       "kubejs:omni_engineering_08_block": {
         "name": "万用电解构件",
-        "branch": "engineering"
+        "branch": "engineering",
+        "texture": "kubejs:block/omni_engineering_08_block"
       },
       "kubejs:omni_pneumatic_15_block": {
         "name": "AE 熵变构件",
-        "branch": "pneumatic"
+        "branch": "pneumatic",
+        "texture": "kubejs:block/omni_pneumatic_15_block"
       },
       "kubejs:omni_bio_13_precursor": {
         "name": "蜜蜂方块转化前驱块",
-        "branch": "bio"
+        "branch": "bio",
+        "texture": "kubejs:block/omni_bio_13_precursor"
       },
       "kubejs:omni_aether_03_precursor": {
         "name": "圣石碎片转化前驱块",
-        "branch": "aether"
+        "branch": "aether",
+        "texture": "kubejs:block/omni_aether_03_precursor"
       },
       "kubejs:omni_aether_09_precursor": {
         "name": "枯萎孢子转化前驱块",
-        "branch": "aether"
+        "branch": "aether",
+        "texture": "kubejs:block/omni_aether_09_precursor"
       },
       "kubejs:omni_aether_12_precursor": {
         "name": "金色史维特球转化前驱块",
-        "branch": "aether"
+        "branch": "aether",
+        "texture": "kubejs:block/omni_aether_12_precursor"
       },
       "kubejs:omni_engineering_08_precursor": {
         "name": "万用电解前驱块",
-        "branch": "engineering"
+        "branch": "engineering",
+        "texture": "kubejs:block/omni_engineering_08_precursor"
       },
       "kubejs:omni_pneumatic_15_precursor": {
         "name": "AE 熵变前驱块",
-        "branch": "pneumatic"
+        "branch": "pneumatic",
+        "texture": "kubejs:block/omni_pneumatic_15_precursor"
       }
     },
     "fluids": {
       "kubejs:omni_bio_feed": {
         "name": "星浆培养液液",
         "branch": "bio",
-        "color": "93be6c"
+        "color": "93be6c",
+        "still_texture": "kubejs:block/omni_bio_feed_still",
+        "flowing_texture": "kubejs:block/omni_bio_feed_flow",
+        "bucket_texture": "kubejs:item/omni_bio_feed_bucket"
       },
       "kubejs:omni_bio_10_fluid": {
         "name": "发酵构件液",
         "branch": "bio",
-        "color": "93be6c"
+        "color": "93be6c",
+        "still_texture": "kubejs:block/omni_bio_10_fluid_still",
+        "flowing_texture": "kubejs:block/omni_bio_10_fluid_flow",
+        "bucket_texture": "kubejs:item/omni_bio_10_fluid_bucket"
       },
       "kubejs:omni_bio_11_fluid": {
         "name": "蒸馏构件液",
         "branch": "bio",
-        "color": "93be6c"
+        "color": "93be6c",
+        "still_texture": "kubejs:block/omni_bio_11_fluid_still",
+        "flowing_texture": "kubejs:block/omni_bio_11_fluid_flow",
+        "bucket_texture": "kubejs:item/omni_bio_11_fluid_bucket"
       },
       "kubejs:omni_thermal_14_fluid": {
         "name": "熔岩炉构件液",
         "branch": "thermal",
-        "color": "74cace"
+        "color": "74cace",
+        "still_texture": "kubejs:block/omni_thermal_14_fluid_still",
+        "flowing_texture": "kubejs:block/omni_thermal_14_fluid_flow",
+        "bucket_texture": "kubejs:item/omni_thermal_14_fluid_bucket"
       },
       "kubejs:omni_thermal_17_fluid": {
         "name": "热解炉构件液",
         "branch": "thermal",
-        "color": "74cace"
+        "color": "74cace",
+        "still_texture": "kubejs:block/omni_thermal_17_fluid_still",
+        "flowing_texture": "kubejs:block/omni_thermal_17_fluid_flow",
+        "bucket_texture": "kubejs:item/omni_thermal_17_fluid_bucket"
       },
       "kubejs:omni_thermal_18_fluid": {
         "name": "分馏精炼机构件液",
         "branch": "thermal",
-        "color": "74cace"
+        "color": "74cace",
+        "still_texture": "kubejs:block/omni_thermal_18_fluid_still",
+        "flowing_texture": "kubejs:block/omni_thermal_18_fluid_flow",
+        "bucket_texture": "kubejs:item/omni_thermal_18_fluid_bucket"
       },
       "kubejs:omni_engineering_03_fluid": {
         "name": "机械挤压构件液",
         "branch": "engineering",
-        "color": "edb85d"
+        "color": "edb85d",
+        "still_texture": "kubejs:block/omni_engineering_03_fluid_still",
+        "flowing_texture": "kubejs:block/omni_engineering_03_fluid_flow",
+        "bucket_texture": "kubejs:item/omni_engineering_03_fluid_bucket"
       },
       "kubejs:omni_engineering_20_fluid": {
         "name": "低温燃料制备构件液",
         "branch": "engineering",
-        "color": "edb85d"
+        "color": "edb85d",
+        "still_texture": "kubejs:block/omni_engineering_20_fluid_still",
+        "flowing_texture": "kubejs:block/omni_engineering_20_fluid_flow",
+        "bucket_texture": "kubejs:item/omni_engineering_20_fluid_bucket"
       },
       "kubejs:omni_engineering_19_fluid": {
         "name": "燃油精炼构件液",
         "branch": "engineering",
-        "color": "edb85d"
+        "color": "edb85d",
+        "still_texture": "kubejs:block/omni_engineering_19_fluid_still",
+        "flowing_texture": "kubejs:block/omni_engineering_19_fluid_flow",
+        "bucket_texture": "kubejs:item/omni_engineering_19_fluid_bucket"
       },
       "kubejs:omni_engineering_26_fluid": {
         "name": "Naquadah 重液制备构件液",
         "branch": "engineering",
-        "color": "edb85d"
+        "color": "edb85d",
+        "still_texture": "kubejs:block/omni_engineering_26_fluid_still",
+        "flowing_texture": "kubejs:block/omni_engineering_26_fluid_flow",
+        "bucket_texture": "kubejs:item/omni_engineering_26_fluid_bucket"
       },
       "kubejs:omni_pneumatic_05_fluid": {
         "name": "气动炼油构件液",
         "branch": "pneumatic",
-        "color": "7fb1e8"
+        "color": "7fb1e8",
+        "still_texture": "kubejs:block/omni_pneumatic_05_fluid_still",
+        "flowing_texture": "kubejs:block/omni_pneumatic_05_fluid_flow",
+        "bucket_texture": "kubejs:item/omni_pneumatic_05_fluid_bucket"
       },
       "kubejs:omni_pneumatic_06_fluid": {
         "name": "热气动处理构件液",
         "branch": "pneumatic",
-        "color": "7fb1e8"
+        "color": "7fb1e8",
+        "still_texture": "kubejs:block/omni_pneumatic_06_fluid_still",
+        "flowing_texture": "kubejs:block/omni_pneumatic_06_fluid_flow",
+        "bucket_texture": "kubejs:item/omni_pneumatic_06_fluid_bucket"
       },
       "kubejs:omni_pneumatic_07_fluid": {
         "name": "流体混合构件液",
         "branch": "pneumatic",
-        "color": "7fb1e8"
+        "color": "7fb1e8",
+        "still_texture": "kubejs:block/omni_pneumatic_07_fluid_still",
+        "flowing_texture": "kubejs:block/omni_pneumatic_07_fluid_flow",
+        "bucket_texture": "kubejs:item/omni_pneumatic_07_fluid_bucket"
       },
       "kubejs:omni_nuclear_05_fluid": {
         "name": "核工熔融构件液",
         "branch": "nuclear",
-        "color": "b3ce63"
+        "color": "b3ce63",
+        "still_texture": "kubejs:block/omni_nuclear_05_fluid_still",
+        "flowing_texture": "kubejs:block/omni_nuclear_05_fluid_flow",
+        "bucket_texture": "kubejs:item/omni_nuclear_05_fluid_bucket"
       },
       "kubejs:omni_nuclear_07_fluid": {
         "name": "核工提取构件液",
         "branch": "nuclear",
-        "color": "b3ce63"
+        "color": "b3ce63",
+        "still_texture": "kubejs:block/omni_nuclear_07_fluid_still",
+        "flowing_texture": "kubejs:block/omni_nuclear_07_fluid_flow",
+        "bucket_texture": "kubejs:item/omni_nuclear_07_fluid_bucket"
       },
       "kubejs:omni_nuclear_08_fluid": {
         "name": "核工电解构件液",
         "branch": "nuclear",
-        "color": "b3ce63"
+        "color": "b3ce63",
+        "still_texture": "kubejs:block/omni_nuclear_08_fluid_still",
+        "flowing_texture": "kubejs:block/omni_nuclear_08_fluid_flow",
+        "bucket_texture": "kubejs:item/omni_nuclear_08_fluid_bucket"
       },
       "kubejs:omni_nuclear_10_fluid": {
         "name": "核工化学反应构件液",
         "branch": "nuclear",
-        "color": "b3ce63"
+        "color": "b3ce63",
+        "still_texture": "kubejs:block/omni_nuclear_10_fluid_still",
+        "flowing_texture": "kubejs:block/omni_nuclear_10_fluid_flow",
+        "bucket_texture": "kubejs:item/omni_nuclear_10_fluid_bucket"
       },
       "kubejs:omni_nuclear_12_fluid": {
         "name": "核工流体富集构件液",
         "branch": "nuclear",
-        "color": "b3ce63"
+        "color": "b3ce63",
+        "still_texture": "kubejs:block/omni_nuclear_12_fluid_still",
+        "flowing_texture": "kubejs:block/omni_nuclear_12_fluid_flow",
+        "bucket_texture": "kubejs:item/omni_nuclear_12_fluid_bucket"
       },
       "kubejs:omni_nuclear_13_fluid": {
         "name": "核工离心构件液",
         "branch": "nuclear",
-        "color": "b3ce63"
+        "color": "b3ce63",
+        "still_texture": "kubejs:block/omni_nuclear_13_fluid_still",
+        "flowing_texture": "kubejs:block/omni_nuclear_13_fluid_flow",
+        "bucket_texture": "kubejs:item/omni_nuclear_13_fluid_bucket"
       },
       "kubejs:omni_nuclear_14_fluid": {
         "name": "核工浸出构件液",
         "branch": "nuclear",
-        "color": "b3ce63"
+        "color": "b3ce63",
+        "still_texture": "kubejs:block/omni_nuclear_14_fluid_still",
+        "flowing_texture": "kubejs:block/omni_nuclear_14_fluid_flow",
+        "bucket_texture": "kubejs:item/omni_nuclear_14_fluid_bucket"
       },
       "kubejs:omni_nuclear_19_fluid": {
         "name": "亚原子液化构件液",
         "branch": "nuclear",
-        "color": "b3ce63"
+        "color": "b3ce63",
+        "still_texture": "kubejs:block/omni_nuclear_19_fluid_still",
+        "flowing_texture": "kubejs:block/omni_nuclear_19_fluid_flow",
+        "bucket_texture": "kubejs:item/omni_nuclear_19_fluid_bucket"
       },
       "kubejs:omni_nuclear_21_fluid": {
         "name": "核工辐照构件液",
         "branch": "nuclear",
-        "color": "b3ce63"
+        "color": "b3ce63",
+        "still_texture": "kubejs:block/omni_nuclear_21_fluid_still",
+        "flowing_texture": "kubejs:block/omni_nuclear_21_fluid_flow",
+        "bucket_texture": "kubejs:item/omni_nuclear_21_fluid_bucket"
       },
       "kubejs:omni_nuclear_17_fluid": {
         "name": "气体洗涤构件液",
         "branch": "nuclear",
-        "color": "b3ce63"
+        "color": "b3ce63",
+        "still_texture": "kubejs:block/omni_nuclear_17_fluid_still",
+        "flowing_texture": "kubejs:block/omni_nuclear_17_fluid_flow",
+        "bucket_texture": "kubejs:item/omni_nuclear_17_fluid_bucket"
       },
       "kubejs:omni_nuclear_18_fluid": {
         "name": "核工超冷构件液",
         "branch": "nuclear",
-        "color": "b3ce63"
+        "color": "b3ce63",
+        "still_texture": "kubejs:block/omni_nuclear_18_fluid_still",
+        "flowing_texture": "kubejs:block/omni_nuclear_18_fluid_flow",
+        "bucket_texture": "kubejs:item/omni_nuclear_18_fluid_bucket"
       },
       "kubejs:omni_nuclear_24_fluid": {
         "name": "核聚变构件液",
         "branch": "nuclear",
-        "color": "b3ce63"
+        "color": "b3ce63",
+        "still_texture": "kubejs:block/omni_nuclear_24_fluid_still",
+        "flowing_texture": "kubejs:block/omni_nuclear_24_fluid_flow",
+        "bucket_texture": "kubejs:item/omni_nuclear_24_fluid_bucket"
       },
       "kubejs:omni_nuclear_26_fluid": {
         "name": "核工换热构件液",
         "branch": "nuclear",
-        "color": "b3ce63"
+        "color": "b3ce63",
+        "still_texture": "kubejs:block/omni_nuclear_26_fluid_still",
+        "flowing_texture": "kubejs:block/omni_nuclear_26_fluid_flow",
+        "bucket_texture": "kubejs:item/omni_nuclear_26_fluid_bucket"
       },
       "kubejs:omni_nuclear_27_fluid": {
         "name": "裂变沸腾构件液",
         "branch": "nuclear",
-        "color": "b3ce63"
+        "color": "b3ce63",
+        "still_texture": "kubejs:block/omni_nuclear_27_fluid_still",
+        "flowing_texture": "kubejs:block/omni_nuclear_27_fluid_flow",
+        "bucket_texture": "kubejs:item/omni_nuclear_27_fluid_bucket"
       },
       "kubejs:omni_nuclear_28_fluid": {
         "name": "大型涡轮构件液",
         "branch": "nuclear",
-        "color": "b3ce63"
+        "color": "b3ce63",
+        "still_texture": "kubejs:block/omni_nuclear_28_fluid_still",
+        "flowing_texture": "kubejs:block/omni_nuclear_28_fluid_flow",
+        "bucket_texture": "kubejs:item/omni_nuclear_28_fluid_bucket"
       },
       "kubejs:omni_nuclear_29_fluid": {
         "name": "小型蒸汽涡轮构件液",
         "branch": "nuclear",
-        "color": "b3ce63"
+        "color": "b3ce63",
+        "still_texture": "kubejs:block/omni_nuclear_29_fluid_still",
+        "flowing_texture": "kubejs:block/omni_nuclear_29_fluid_flow",
+        "bucket_texture": "kubejs:item/omni_nuclear_29_fluid_bucket"
       },
       "kubejs:omni_thermal_20_brew": {
         "name": "相变抑制酿液",
         "branch": "thermal",
-        "color": "74cace"
+        "color": "74cace",
+        "still_texture": "kubejs:block/omni_thermal_20_brew_still",
+        "flowing_texture": "kubejs:block/omni_thermal_20_brew_flow",
+        "bucket_texture": "kubejs:item/omni_thermal_20_brew_bucket"
       },
       "kubejs:omni_nuclear_20_melt": {
         "name": "稳定同位素熔体",
         "branch": "nuclear",
-        "color": "b3ce63"
+        "color": "b3ce63",
+        "still_texture": "kubejs:block/omni_nuclear_20_melt_still",
+        "flowing_texture": "kubejs:block/omni_nuclear_20_melt_flow",
+        "bucket_texture": "kubejs:item/omni_nuclear_20_melt_bucket"
       },
       "kubejs:omni_fusion_feed": {
         "name": "聚变氘载液",
         "branch": "nuclear",
-        "color": "b3ce63"
+        "color": "b3ce63",
+        "still_texture": "kubejs:block/omni_fusion_feed_still",
+        "flowing_texture": "kubejs:block/omni_fusion_feed_flow",
+        "bucket_texture": "kubejs:item/omni_fusion_feed_bucket"
       }
     }
   },

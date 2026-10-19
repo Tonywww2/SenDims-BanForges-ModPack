@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "minecraft:block/amethyst_block"
+    "all": "kubejs:block/omni_pneumatic_15_block"
   }
 }

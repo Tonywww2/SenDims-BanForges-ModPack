@@ -59,7 +59,9 @@ ServerEvents.tags("item", event => {
     )
     // 4-5
     event.add('slashblade_sendims:drc_rank_material_5',
-
+        "kubejs:storm_hydrogen_crystal",
+        "deeprealm_4th:star_slurry",
+        "block_factorys_bosses:sandworm_gauntlet"
 
     )
 
@@ -87,8 +89,6 @@ ServerEvents.tags("item", event => {
         'twilightforest:knightmetal_ring',
         "undergarden:utherium_crystal",                         // 御腐水晶
         "undergarden:cloggrum_ingot",                           // 厄瑟锭
-        "enderio:double_layer_capacitor",                       // 双层电容
-
         "midnight:ebonite",                                     // 黯铁
         "undergarden:froststeel_ingot",                         // 霜钢
         "cyclic:sprout_seed",                                   // 魔豆
@@ -110,14 +110,11 @@ ServerEvents.tags("item", event => {
         "midnight:virilux",                         // 幽光
         "nuclearcraft:magnesium_ingot",                 // 镁锭
         "kubejs:bizarre_matter_dust",                   // 奇异物质尘
-        "kubejs:gamma_dust",
         "the_bumblezone:redstone_honey_web",            // 红石蜜蜂网
-        "nuclearcraft:empty_heat_sink",                      // 空散热器
         "enderio:end_steel_ingot",                      // 末地钢
-        "kubejs:delta_dust",                            // 德尔塔尘
         "undergarden:forgotten_ingot",                   // 遗忆锭
-        "kubejs:mercury_refractory_structural_component",       // 墨丘利组件
         "kubejs:menril-silicon_sic_sic_cmc_ingot"               // menril-silicon_sic_sic_cmc_ingot
+
     ])
     event.add("slashblade_sendims:drc_damage_material_2", [
         "slashblade:proudsoul_sphere",
@@ -145,19 +142,34 @@ ServerEvents.tags("item", event => {
         "cataclysm:essence_of_the_storm",          // 风暴精华
         "kubejs:titan-ii_composite_ingot",         // 泰坦II复合锭
         "kubejs:ancient_soul",                     // 古代灵魂
-        "kubejs:epsilon_dust"                      // 艾普塞隆尘
+        "draconicevolution:draconium_core"
     ])
 
     // 阶段4
     event.add("slashblade_sendims:drc_health_material_4", [
-        "kubejs:virtual_gold_ingot",               // 虚金
-        "kubejs:rainbowshift_entropy",              // 虹移之熵
-        "kubejs:basepoint_alloy",
-        'apotheosis:mythic_material'
+        "darkerdepths:forsaken_bronze_ingot",
+        'apotheosis:mythic_material',
+        "sgjourney:unity_shard",
+        "sgjourney:trinium_block",
+        "titan_moon:cryo_alloy_ingot"
     ])
     event.add("slashblade_sendims:drc_damage_material_4", [
         "kubejs:basepoint_alloy",                  // 奇点合金
-        "kubejs:radiation_components"              // 辐射零件组
+        "kubejs:radiation_components",              // 辐射零件组
+        "draconicevolution:small_chaos_frag",
+        "slashblade_sendims:soul_crystal_cluster"
+    ])
+
+    // 阶段5
+    event.add("slashblade_sendims:drc_health_material_5", [
+        "titan_moon:cryo_alloy_ingot",
+        "kubejs:omni_aether_01"
+    ])
+    event.add("slashblade_sendims:drc_damage_material_5", [
+        "titan_moon:bio_battery", 
+        "draconicevolution:small_chaos_frag",
+        "slashblade_sendims:soul_crystal_cluster",
+        "elder_bosses:gate_fragment"
     ])
 
 

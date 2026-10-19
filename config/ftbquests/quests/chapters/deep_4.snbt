@@ -456,6 +456,18 @@
 			x: 15.0d
 			y: 6.0d
 		}
+		{
+			dependencies: ["661386AB665E5CE7"]
+			id: "1B50E401EAF34D86"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "2DC2B378A3A9F4F2"
+				item: "elder_bosses:great_rune_arc"
+				type: "item"
+			}]
+			x: 21.0d
+			y: 6.0d
+		}
 	]
 	title: "[XIII] &e深境：第四层"
 }

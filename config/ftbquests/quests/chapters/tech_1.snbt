@@ -107,7 +107,7 @@
 		{
 			id: "1686B653B6054D4D"
 			linked_quest: "59C711671F81AB45"
-			x: 3.0d
+			x: 6.0d
 			y: -6.0d
 		}
 		{
@@ -160,6 +160,7 @@
 			id: "15D102DE2394A495"
 			quest_enhance_disable_scroll_paging: false
 			size: 2.0d
+			subtitle: "重要"
 			tasks: [{
 				id: "72BA5656AD674175"
 				item: "ad_astra:etrionic_blast_furnace"
@@ -769,19 +770,6 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["4A6CCBA361F14167"]
-			id: "2718DE33391A2093"
-			quest_enhance_disable_scroll_paging: false
-			subtitle: "简易的发电机·2"
-			tasks: [{
-				id: "6706B66C36FDA292"
-				item: "wormhole:coal_generator"
-				type: "item"
-			}]
-			x: 6.0d
-			y: 6.0d
-		}
-		{
 			dependencies: ["73531FB69122489F"]
 			description: [
 				""
@@ -886,8 +874,8 @@
 		}
 		{
 			dependencies: [
-				"590D7D0D241DD369"
 				"59C711671F81AB45"
+				"79292C56C8BD4C69"
 			]
 			description: [
 				"将钻石豆腐、硫酸桶、熔岩桶在锻造台上加工，可以制成石油桶。&m&7多么奇幻的加工方式啊！&r&r"
@@ -902,8 +890,8 @@
 				item: "ad_astra:oil_bucket"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -3.0d
+			x: 9.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["66C1156C17F399C9"]
@@ -1451,18 +1439,6 @@
 			}]
 			x: 87.0d
 			y: 12.0d
-		}
-		{
-			dependencies: ["15D102DE2394A495"]
-			id: "590D7D0D241DD369"
-			quest_enhance_disable_scroll_paging: false
-			tasks: [{
-				id: "5C05E8F1A201F6A6"
-				item: "tofucraft:tofudiamond"
-				type: "item"
-			}]
-			x: 3.0d
-			y: -3.0d
 		}
 		{
 			dependencies: ["0BD7C25BE393E906"]
@@ -2435,6 +2411,152 @@
 			}]
 			x: 15.0d
 			y: 3.0d
+		}
+		{
+			dependencies: [
+				"73531FB69122489F"
+				"0F1E4DE1479DA903"
+			]
+			hide_dependency_lines: true
+			id: "79292C56C8BD4C69"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "254A9DEECE6B92AE"
+				item: "dustandash:integrated_block"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -9.0d
+		}
+		{
+			dependencies: [
+				"6D3717017E686733"
+				"260A17885336B776"
+			]
+			id: "78A4E8A7BD1FFBB8"
+			quest_enhance_disable_scroll_paging: false
+			subtitle: "可选"
+			tasks: [{
+				id: "294CC5295653E747"
+				item: "dustandash:milling_machine"
+				type: "item"
+			}]
+			x: 33.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["13B6F6AC7608F794"]
+			id: "0F1E4DE1479DA903"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "66FCFEEB7FB5DF09"
+				item: {
+					Count: 1
+					id: "dustandash:hand_vacuum"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["23C802E82B32C24E"]
+			id: "6D3717017E686733"
+			quest_enhance_disable_scroll_paging: false
+			subtitle: "可选"
+			tasks: [{
+				id: "21C05E5E03E2845A"
+				item: {
+					Count: 1
+					id: "dustandash:iron_vacuum"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["0F1E4DE1479DA903"]
+			id: "23C802E82B32C24E"
+			quest_enhance_disable_scroll_paging: false
+			subtitle: "可选"
+			tasks: [{
+				id: "473934033683E353"
+				item: "dustandash:dust_with_energy"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["78A4E8A7BD1FFBB8"]
+			id: "0AD873120AB5CD07"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "215AAC55B031B0F4"
+				item: "dustandash:ash_collector"
+				type: "item"
+			}]
+			x: 36.0d
+			y: -12.0d
+		}
+		{
+			dependencies: [
+				"0AD873120AB5CD07"
+				"6094469B0945A363"
+			]
+			id: "36C65755EE3A8B9A"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "27A2D21952CA5BFF"
+				item: "dustandash:ash_steel_ingot"
+				type: "item"
+			}]
+			x: 39.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["78A4E8A7BD1FFBB8"]
+			id: "6094469B0945A363"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				count: 4L
+				id: "5A876EA634411868"
+				item: "dustandash:integrated_frame_1"
+				type: "item"
+			}]
+			x: 36.0d
+			y: -15.0d
+		}
+		{
+			dependencies: ["36C65755EE3A8B9A"]
+			id: "0E179157A844A2C9"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "2E4CF5F591C41CAC"
+				item: "dustandash:centrifuge"
+				type: "item"
+			}]
+			x: 42.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["0E179157A844A2C9"]
+			id: "3B0458751BD6D4A5"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3EEEA6D621E5968A"
+				item: "dustandash:ionizer"
+				type: "item"
+			}]
+			x: 45.0d
+			y: -12.0d
 		}
 	]
 	title: "工业"

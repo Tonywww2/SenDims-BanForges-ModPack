@@ -1369,6 +1369,72 @@
 			x: 18.0d
 			y: 6.0d
 		}
+		{
+			dependencies: ["5BA4948A347E7BE6"]
+			icon: "deeprealm_4th:star_slurry"
+			id: "6189315D9F8D8F27"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			tasks: [{
+				id: "128F5C2B0AEDD7B0"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "slashblade_sendims:drc_rank_material_5"
+					}
+				}
+				title: "阶级-5-突破材料"
+				type: "item"
+			}]
+			title: "阶级五突破材料"
+			x: 18.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6189315D9F8D8F27"]
+			description: ["提示：你可以点击任务的需求查看所有可用的材料。"]
+			icon: "titan_moon:cryo_alloy_ingot"
+			id: "148D9A4D9E1CD5D9"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1767AC101828091E"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "slashblade_sendims:drc_health_material_5"
+					}
+				}
+				title: "阶级-5-生命强化材料"
+				type: "item"
+			}]
+			title: "阶级-5-生命强化材料"
+			x: 18.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6189315D9F8D8F27"]
+			description: ["提示：你可以点击任务的需求查看所有可用的材料。"]
+			icon: "titan_moon:bio_battery"
+			id: "5D7AB6DE0E2BA628"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6CCEAFE1C66A07AB"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "slashblade_sendims:drc_damage_material_5"
+					}
+				}
+				title: "阶级-5-伤害强化材料"
+				type: "item"
+			}]
+			title: "阶级-5-伤害强化材料"
+			x: 18.0d
+			y: -3.0d
+		}
 	]
 	title: "战斗辅助"
 }

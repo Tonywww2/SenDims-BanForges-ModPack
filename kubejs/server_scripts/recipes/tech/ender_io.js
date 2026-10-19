@@ -48,7 +48,7 @@ ServerEvents.recipes(event => {
 
     event.replaceInput({id : "enderio:basic_capacitor"},
         "#forge:ingots/copper",
-        'ad_astra:etrionic_capacitor'
+        'kubejs:capacitor'
     )
 
     event.replaceInput({id : "enderio:basic_capacitor"},
