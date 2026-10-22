@@ -13,7 +13,7 @@
 			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 2.0d
-			x: 4.5d
+			x: 3.0d
 			y: -0.5d
 		}
 		{
@@ -23,7 +23,7 @@
 			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 2.0d
-			x: 16.5d
+			x: 11.0d
 			y: -0.5d
 		}
 		{
@@ -33,7 +33,7 @@
 			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 2.0d
-			x: 22.5d
+			x: 15.0d
 			y: -0.5d
 		}
 		{
@@ -43,8 +43,8 @@
 			quest_enhance_exclude_from_box_selection: false
 			rotation: -90.0d
 			width: 1.0d
-			x: 8.5d
-			y: -1.5d
+			x: 6.0d
+			y: -1.0d
 		}
 		{
 			dependency: "5748351A76910019"
@@ -53,8 +53,8 @@
 			quest_enhance_exclude_from_box_selection: false
 			rotation: -90.0d
 			width: 1.0d
-			x: 8.5d
-			y: -4.5d
+			x: 6.0d
+			y: -3.0d
 		}
 		{
 			dependency: "5748351A76910019"
@@ -63,8 +63,8 @@
 			quest_enhance_exclude_from_box_selection: false
 			rotation: -90.0d
 			width: 1.0d
-			x: 8.5d
-			y: -7.5d
+			x: 6.0d
+			y: -5.0d
 		}
 		{
 			dependency: "5748351A76910019"
@@ -73,8 +73,8 @@
 			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 1.0d
-			x: 13.5d
-			y: -3.5d
+			x: 8.0d
+			y: -4.0d
 		}
 		{
 			dependency: "13B6F6AC7608F794"
@@ -83,7 +83,7 @@
 			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 1.0d
-			x: 31.5d
+			x: 21.0d
 			y: -0.5d
 		}
 		{
@@ -93,7 +93,7 @@
 			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 1.0d
-			x: 34.5d
+			x: 25.0d
 			y: -0.5d
 		}
 		{
@@ -103,7 +103,7 @@
 			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 1.0d
-			x: 40.5d
+			x: 27.0d
 			y: -0.5d
 		}
 		{
@@ -113,7 +113,7 @@
 			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 1.0d
-			x: 46.5d
+			x: 31.0d
 			y: -0.5d
 		}
 		{
@@ -123,8 +123,8 @@
 			quest_enhance_exclude_from_box_selection: false
 			rotation: -90.0d
 			width: 1.0d
-			x: 44.5d
-			y: -1.5d
+			x: 30.0d
+			y: -1.0d
 		}
 	]
 	order_index: 0
@@ -134,199 +134,190 @@
 		{
 			id: "7379FE5C64FC6241"
 			linked_quest: "6FD736B74327F2AF"
-			x: 12.0d
-			y: -3.0d
+			x: 8.0d
+			y: -2.0d
 		}
 		{
 			id: "40D3BA256430AF4B"
 			linked_quest: "4A57E4499E188BD7"
-			x: 15.0d
-			y: -3.0d
+			x: 10.0d
+			y: -2.0d
 		}
 		{
 			id: "37F9308A7B690DE9"
 			linked_quest: "765A0F0A66F45570"
-			x: 39.0d
+			x: 26.0d
 			y: 0.0d
 		}
 		{
 			id: "4413A8820A84AB93"
 			linked_quest: "71F1943E6E3FCA17"
 			shape: "diamond"
-			size: 2.0d
-			x: 45.0d
+			x: 30.0d
 			y: 0.0d
 		}
 		{
 			id: "7B526208D694FBFA"
 			linked_quest: "4C56CFEEBC74DE9A"
 			shape: "diamond"
-			x: 24.0d
-			y: -3.0d
+			x: 16.0d
+			y: -2.0d
 		}
 		{
 			id: "64467FFD7950DBC7"
 			linked_quest: "5BB642BD0BE40541"
 			shape: "hexagon"
-			size: 2.0d
-			x: 48.0d
+			size: 1.5d
+			x: 32.0d
 			y: 0.0d
 		}
 		{
 			id: "167E4C5AEBEF9AD4"
 			linked_quest: "6140B0BCEB7F9D64"
 			shape: "hexagon"
-			size: 2.0d
-			x: 36.0d
+			size: 1.5d
+			x: 24.0d
 			y: 0.0d
 		}
 		{
 			id: "79C94B16167111AE"
 			linked_quest: "222077D4E6F647A3"
-			shape: "diamond"
-			size: 2.0d
-			x: 30.0d
-			y: -3.0d
+			x: 2.0d
+			y: -4.0d
 		}
 		{
 			id: "0C4CCBAE17D0696D"
 			linked_quest: "514CF1593551F00F"
 			shape: "diamond"
-			size: 2.0d
-			x: 9.0d
-			y: -6.0d
+			x: 6.0d
+			y: -4.0d
 		}
 		{
 			id: "52C5A4364DA3150F"
 			linked_quest: "51E136B4E1C27308"
 			shape: "diamond"
-			size: 2.0d
-			x: 18.0d
-			y: -6.0d
+			x: 10.0d
+			y: -4.0d
 		}
 		{
 			id: "38961D4CD9B5434F"
 			linked_quest: "540057998A3DBAFD"
-			x: 15.0d
-			y: -9.0d
+			x: 12.0d
+			y: -6.0d
 		}
 		{
 			id: "6FE41F8F07813E22"
 			linked_quest: "371880BF8A2A75FC"
-			x: 15.0d
-			y: -6.0d
+			x: 12.0d
+			y: -4.0d
 		}
 		{
 			id: "1C92B13CE2E3415C"
 			linked_quest: "1379B8D98C84F257"
-			x: 18.0d
-			y: -3.0d
+			x: 12.0d
+			y: -2.0d
 		}
 		{
 			id: "3123289EAAB1F36F"
 			linked_quest: "3EDB392D42EA5AF0"
 			shape: "diamond"
-			size: 2.0d
-			x: 9.0d
-			y: -9.0d
+			x: 6.0d
+			y: -6.0d
 		}
 		{
 			id: "4F16C21D034E197B"
 			linked_quest: "6AE2EFEC0F3BE4BE"
-			x: 51.0d
+			x: 34.0d
 			y: 0.0d
 		}
 		{
 			id: "2EB080C162AB459A"
 			linked_quest: "3C1CB82ADF4FBBC1"
 			shape: "hexagon"
-			size: 2.0d
-			x: 60.0d
+			size: 1.5d
+			x: 38.0d
 			y: 0.0d
 		}
 		{
 			id: "2A3209D264A20CD3"
 			linked_quest: "0364B88DD91B2181"
-			x: 51.0d
-			y: -3.0d
+			x: 34.0d
+			y: -2.0d
 		}
 		{
 			id: "586559DF6AFDAFEB"
 			linked_quest: "0F8DC1AEBBC762C1"
 			shape: "hexagon"
-			size: 2.0d
-			x: 60.0d
-			y: -3.0d
+			size: 1.5d
+			x: 38.0d
+			y: -2.0d
 		}
 		{
 			id: "5525800A67BE1EC7"
 			linked_quest: "750B557031EFBBEE"
-			x: 51.0d
-			y: -6.0d
+			x: 34.0d
+			y: -4.0d
 		}
 		{
 			id: "1D43057B8DCAD655"
 			linked_quest: "5D5BA71C5348297D"
 			shape: "hexagon"
-			size: 2.0d
-			x: 60.0d
-			y: -6.0d
+			size: 1.5d
+			x: 38.0d
+			y: -4.0d
 		}
 		{
 			id: "72A801C267A1D0EF"
 			linked_quest: "26B66FFB1E5C691C"
-			x: 9.0d
-			y: 6.0d
+			x: 6.0d
+			y: 2.0d
 		}
 		{
 			id: "63777C0D8711BC79"
 			linked_quest: "7EE0F0E7324E3356"
-			x: 12.0d
-			y: 6.0d
+			x: 8.0d
+			y: 4.0d
 		}
 		{
 			id: "15CBFCFDA2B50623"
 			linked_quest: "29BDBE467B479C35"
 			shape: "diamond"
-			x: 15.0d
-			y: 6.0d
+			x: 10.0d
+			y: 4.0d
 		}
 		{
 			id: "0D09F404AEF7B769"
 			linked_quest: "0A6BF4C8A75EF242"
-			x: 54.0d
-			y: 3.0d
+			x: 32.0d
+			y: 2.0d
 		}
 		{
 			id: "383B751440AD9984"
 			linked_quest: "4A6CCBA361F14167"
 			shape: "diamond"
-			size: 2.0d
-			x: 57.0d
-			y: 3.0d
+			size: 1.5d
+			x: 34.0d
+			y: 2.0d
 		}
 		{
 			id: "304B55FB32102ECA"
 			linked_quest: "3A897B2A72ABC032"
 			shape: "diamond"
-			size: 2.0d
-			x: 60.0d
-			y: 3.0d
+			x: 36.0d
+			y: 2.0d
 		}
 		{
 			id: "56C9A6736855924D"
 			linked_quest: "06BB0C2EB2A5B5A1"
 			shape: "diamond"
-			size: 2.0d
-			x: 9.0d
-			y: -3.0d
+			x: 6.0d
+			y: -2.0d
 		}
 		{
 			id: "6A16CC135A02DB48"
 			linked_quest: "2AB981A4A033541D"
-			shape: "gear"
-			x: -3.0d
-			y: -3.0d
+			x: -2.0d
+			y: -2.0d
 		}
 	]
 	quests: [
@@ -352,7 +343,7 @@
 				item: "minecraft:crafting_table"
 				type: "item"
 			}]
-			x: 9.0d
+			x: 6.0d
 			y: 0.0d
 		}
 		{
@@ -403,7 +394,7 @@
 				type: "item"
 			}]
 			title: "采集资源"
-			x: 12.0d
+			x: 8.0d
 			y: 0.0d
 		}
 		{
@@ -422,7 +413,7 @@
 				item: "minecraft:furnace"
 				type: "item"
 			}]
-			x: 15.0d
+			x: 10.0d
 			y: 0.0d
 		}
 		{
@@ -449,7 +440,7 @@
 				item: "dustandash:sharpen_flint"
 				type: "item"
 			}]
-			x: 18.0d
+			x: 12.0d
 			y: 0.0d
 		}
 		{
@@ -467,7 +458,7 @@
 				item: "dustandash:bloody_flint"
 				type: "item"
 			}]
-			x: 21.0d
+			x: 14.0d
 			y: 0.0d
 		}
 		{
@@ -509,7 +500,7 @@
 				}
 				type: "item"
 			}]
-			x: 42.0d
+			x: 28.0d
 			y: 0.0d
 		}
 		{
@@ -594,7 +585,7 @@
 				item: "kubejs:garden_lighter"
 				type: "item"
 			}]
-			x: 24.0d
+			x: 16.0d
 			y: 0.0d
 		}
 		{
@@ -613,8 +604,8 @@
 				item: "minecraft:iron_ingot"
 				type: "item"
 			}]
-			x: 51.0d
-			y: 6.0d
+			x: 32.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["02003846DA642A0D"]
@@ -635,8 +626,8 @@
 				type: "item"
 			}]
 			title: "更长远的准备"
-			x: 15.0d
-			y: 3.0d
+			x: 12.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["5748351A76910019"]
@@ -668,8 +659,8 @@
 				}
 			]
 			title: "boss召唤器！"
-			x: 9.0d
-			y: 9.0d
+			x: 6.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["4563BE3E3110A2C9"]
@@ -704,8 +695,8 @@
 				item: "bonsaitrees3:bonsaipot"
 				type: "item"
 			}]
-			x: 18.0d
-			y: 3.0d
+			x: 14.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["0B0F1D8BE89F8980"]
@@ -761,14 +752,14 @@
 				type: "choice"
 			}]
 			shape: "diamond"
-			size: 2.0d
+			size: 1.0d
 			subtitle: "重要"
 			tasks: [{
 				id: "2377C119A89E61F6"
 				type: "checkmark"
 			}]
 			title: "结构召唤仪式"
-			x: 33.0d
+			x: 22.0d
 			y: 0.0d
 		}
 		{
@@ -790,14 +781,14 @@
 				type: "choice"
 			}]
 			shape: "diamond"
-			size: 2.0d
+			size: 1.0d
 			tasks: [{
 				id: "5B3AB99A64A876F0"
 				type: "checkmark"
 			}]
 			title: "返回仪式"
-			x: 33.0d
-			y: -3.0d
+			x: 22.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["73531FB69122489F"]
@@ -824,7 +815,7 @@
 				item: "minecraft:sand"
 				type: "item"
 			}]
-			size: 1.5d
+			size: 1.0d
 			subtitle: "深境一层有少量村庄"
 			tasks: [
 				{
@@ -858,8 +849,8 @@
 				}
 			]
 			title: "简易村民"
-			x: 51.0d
-			y: 9.0d
+			x: 32.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["6E4D6662243ED7F6"]
@@ -893,8 +884,8 @@
 					type: "item"
 				}
 			]
-			x: 54.0d
-			y: 12.0d
+			x: 34.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["6E4D6662243ED7F6"]
@@ -915,8 +906,8 @@
 				item: "easy_villagers:breeder"
 				type: "item"
 			}]
-			x: 51.0d
-			y: 12.0d
+			x: 34.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["6E4D6662243ED7F6"]
@@ -932,8 +923,8 @@
 				item: "easy_villagers:incubator"
 				type: "item"
 			}]
-			x: 54.0d
-			y: 9.0d
+			x: 32.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["62C0631125654B3D"]
@@ -950,8 +941,8 @@
 				item: "minecraft:gravel"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 3.0d
+			x: 2.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["62C0631125654B3D"]
@@ -968,8 +959,8 @@
 				item: "minecraft:clay_ball"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 6.0d
+			x: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["630C033031F00877"]
@@ -982,8 +973,8 @@
 				item: "sakura:stone_mortar"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 3.0d
+			x: 8.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["032BDE012A2E0222"]
@@ -1007,7 +998,7 @@
 				item: "tofucraft:blocktofugrilled"
 				type: "item"
 			}]
-			x: 30.0d
+			x: 20.0d
 			y: 0.0d
 		}
 		{
@@ -1035,8 +1026,8 @@
 				type: "checkmark"
 			}]
 			title: "深境证章省流"
-			x: 42.0d
-			y: -3.0d
+			x: 28.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["71F1943E6E3FCA17"]
@@ -1067,8 +1058,8 @@
 				type: "checkmark"
 			}]
 			title: "战斗力提升的方式"
-			x: 45.0d
-			y: -3.0d
+			x: 30.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["62C0631125654B3D"]
@@ -1088,7 +1079,7 @@
 			}]
 			title: "JEI的简单说明"
 			x: 0.0d
-			y: -3.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["0B0F1D8BE89F8980"]
@@ -1113,7 +1104,7 @@
 				item: "kubejs:moss_stone_tofu"
 				type: "item"
 			}]
-			x: 27.0d
+			x: 18.0d
 			y: 0.0d
 		}
 		{
@@ -1133,8 +1124,8 @@
 				type: "checkmark"
 			}]
 			title: "任务外观的含义"
-			x: 3.0d
-			y: -3.0d
+			x: 2.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["62C0631125654B3D"]
@@ -1155,7 +1146,7 @@
 				type: "checkmark"
 			}]
 			title: "关闭死亡不掉落"
-			x: -3.0d
+			x: -2.0d
 			y: 0.0d
 		}
 		{
@@ -1189,8 +1180,8 @@
 				type: "item"
 			}]
 			title: "工业平台"
-			x: 42.0d
-			y: 3.0d
+			x: 28.0d
+			y: 2.0d
 		}
 		{
 			description: [
@@ -1207,8 +1198,8 @@
 				type: "checkmark"
 			}]
 			title: "搜索附近容器的物品"
-			x: 6.0d
-			y: -3.0d
+			x: 0.0d
+			y: -4.0d
 		}
 		{
 			description: ["记得先拿好箱子里面的锤子吧"]
@@ -1296,7 +1287,7 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
+			x: 2.0d
 			y: 0.0d
 		}
 		{
@@ -1330,7 +1321,35 @@
 				title: "原木"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"&e首先感谢您的游玩&r！"
+				""
+				"目前整合包还处于测试阶段阶段，虽然已经经过了数轮内部测试，但是仍然可能有许多的BUG或平衡性问题。"
+				"如果你遇到了问题，请通过QQ群/MCMOD/CurseForge/Github反馈！"
+				"如果你有任何的改进建议，请通过Github反馈！"
+				""
+				"&e目前内容完成度（99%）：&r"
+				"·最终的天顶剑（完全毕业）还在制作中"
+				"·一些细节内容待调整"
+				"·新BOSS的平衡调整"
+			]
+			id: "0CD325E67D4FB42C"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "254A048012B2741F"
+				type: "xp"
+				xp: 77
+			}]
+			tasks: [{
+				id: "0634B66B3AE0B5BC"
+				type: "checkmark"
+			}]
+			title: "临时公告"
+			x: -4.0d
 			y: 0.0d
 		}
 	]
