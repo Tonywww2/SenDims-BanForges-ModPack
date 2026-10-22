@@ -1,9 +1,0 @@
-{
-  "type": "aether_redux:spore_blighting",
-  "ingredient": {
-    "block": "kubejs:omni_aether_09_precursor"
-  },
-  "result": {
-    "block": "kubejs:omni_aether_09_block"
-  }
-}

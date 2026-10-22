@@ -468,6 +468,7 @@
 		{
 			dependencies: ["5FDFB60B3DDCA8B7"]
 			dependency_requirement: "one_completed"
+			description: ["前往末地，坠入虚空。"]
 			id: "7441006B1C06F60E"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -502,6 +503,31 @@
 			}]
 			x: 15.0d
 			y: 6.0d
+		}
+		{
+			dependencies: [
+				"7EACD821B5688C4C"
+				"2354F158B208830E"
+				"244DE4322B5B3EA5"
+			]
+			id: "3085694729A8F349"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6DD5A6ED94E0009C"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"translate\":\"item.sjap_adder.kamuy_death\"}"
+						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.sjap_adder.kamuy_death\"}})"
+					}
+				}
+				type: "item"
+			}]
+			x: 15.0d
+			y: 9.0d
 		}
 	]
 	title: "[XII] &e土卫六"

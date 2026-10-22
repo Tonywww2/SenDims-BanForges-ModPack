@@ -1,6 +1,9 @@
 // priority: 90
 
 let difficultyData = global.sdbfDifficultyData;
+if (global.difficulty_cvu_enabled === false) {
+    difficultyData.modifiers = difficultyData.modifiers.filter(modifier => modifier.id != 'infinite_items');
+}
 let difficultyDataJson = JSON.stringify(difficultyData);
 
 let validateDifficultyData = data => {

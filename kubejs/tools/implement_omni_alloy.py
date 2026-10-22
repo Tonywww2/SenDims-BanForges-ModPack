@@ -8,6 +8,7 @@ from __future__ import annotations
 import collections
 import json
 from pathlib import Path
+from omni_alloy_sources import STARTUP, SERVER, read_catalog, write_catalog, write_recipes
 
 ROOT = Path(__file__).resolve().parents[2]
 K = ROOT / "kubejs"
@@ -21,8 +22,7 @@ FILES = []
 FLUID_TAGS = {}
 MANIFEST = K / "docs/recipe-research/omni-alloy-implementation.json"
 PREVIOUS_FILES = json.loads(MANIFEST.read_text(encoding="utf-8"))["generated_files"] if MANIFEST.exists() else []
-CONFIG = K / "config/omni_alloy.json"
-PREVIOUS_REG = json.loads(CONFIG.read_text(encoding="utf-8"))["registrations"] if CONFIG.exists() else {}
+PREVIOUS_REG = read_catalog()["registrations"] if STARTUP.exists() else {}
 PREFIX = "sdbf:omni_alloy/"
 SHIM = "kubejs:omni_process_liner"
 PALETTE = {"bio": "93be6c", "aether": "81d2ef", "mana": "e395e9", "thermal": "74cace",
@@ -449,18 +449,22 @@ def build():
 
 def emit():
     # Registration and presentation are emitted after every auxiliary is known.
-    for ident,data in RECIPES.items():write(f"data/sdbf/recipes/omni_alloy/{ident}.json",data)
     for ident,spec in REG["fluids"].items():
         fluid_tag(ident)
     for tag,ident in FLUID_TAGS.items():
         ns,path=tag.split(":",1)
         write(f"data/{ns}/tags/fluids/{path}.json",{"replace":False,"values":[ident]})
     emit_assets()
-    write("config/omni_alloy.json",{"registrations":REG,"packaging":PACKS,
+    catalog={"registrations":REG,"packaging":PACKS,
         "expected_recipe_ids":[PREFIX+x for x in RECIPES]+[x["recipe"] for x in PACKS],
-        "workflows":WORKFLOWS,"design_revision":PLAN["revision"]})
+        "workflows":WORKFLOWS,"design_revision":PLAN["revision"]}
+    write_catalog(catalog)
+    write_recipes({PREFIX+ident:recipe for ident,recipe in RECIPES.items()},catalog,
+                 {ident:node["label"] for ident,node in NODES.items()})
+    FILES.extend(path.relative_to(ROOT).as_posix() for path in (STARTUP,SERVER))
     write("docs/recipe-research/omni-alloy-implementation.json",{
         "status":"implemented_pending_game_restart_validation","design_revision":PLAN["revision"],
+        "recipe_storage":"inline_kubejs_scripts",
         "workflows":WORKFLOWS,"recipes":list(RECIPES),"registrations":{k:len(v) for k,v in REG.items()},
         "generated_files":FILES,
         "interface_adjustments":["亚原子液化前增加核工熔化桥接。","热力药水酿造机使用已核对支持的专用流体输出，再灌装。",
@@ -470,7 +474,7 @@ def emit():
         target=(ROOT/old).resolve()
         assert target.is_relative_to(K.resolve()), old
         if target.is_file():target.unlink()
-    print(f"Generated {len(RECIPES)} recipe JSON; {len(PACKS)} native-carrier packaging recipes; {len(WORKFLOWS)} workflows")
+    print(f"Generated {len(RECIPES)} inline custom recipes; {len(PACKS)} native-carrier packaging recipes; {len(WORKFLOWS)} workflows")
 
 
 def emit_assets():

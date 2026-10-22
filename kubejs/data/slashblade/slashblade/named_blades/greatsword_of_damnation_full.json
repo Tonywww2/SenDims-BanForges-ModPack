@@ -34,8 +34,8 @@
     "render":
     {
         "carry_type": "ninja",
-        "model": "slashblade:model/named/ruined_sword/ruined_sword.obj",
+        "model": "sdbf:model/damnation/greatsword.obj",
         "summon_sword_color": 16744448,
-        "texture": "slashblade:model/greatsword_of_damnation/greatsword_of_damnation_full.png"
+        "texture": "sdbf:model/damnation/damnation_gold.png"
     }
 }

@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="aui-viewport" content="mode=gui,zoom=1,min-zoom=1,max-zoom=1,user-scalable=false">
     <meta name="aui-mouse-events" content="intercept">
     <style>
         html,
@@ -58,14 +59,19 @@
 
         .header {
             flex: 0 0 42px;
+            height: 42px;
             min-height: 42px;
+            max-height: 42px;
             display: flex;
+            flex-wrap: nowrap;
+            align-content: center;
             align-items: center;
             gap: 8px;
             padding: 4px 6px;
             box-sizing: border-box;
             border: 1px solid #394346;
             background-color: #0d1113;
+            overflow: hidden;
         }
 
         .header texture {
@@ -75,19 +81,26 @@
         }
 
         .heading {
-            flex: 1;
+            flex: 1 1 180px;
             min-width: 0;
+            overflow: hidden;
         }
 
         .title {
             color: #d9ff59;
             font-size: 16px;
             font-weight: bold;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         .subtitle {
             color: #7f8d8f;
             font-size: 8px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         .player-state {
@@ -159,6 +172,22 @@
             font-size: 8px;
         }
 
+        @media (max-width: 640px) {
+            .header {
+                flex: 0 0 70px;
+                height: 70px;
+                min-height: 70px;
+                max-height: 70px;
+                flex-wrap: wrap;
+                gap: 4px;
+                padding: 3px 6px;
+            }
+
+            .title {
+                font-size: 13px;
+            }
+        }
+
         .matrix-viewport {
             width: 100%;
             flex: 1;
@@ -219,18 +248,19 @@
         }
 
         .axis-cell {
-            width: 24px;
-            min-width: 24px;
-            flex: 0 0 24px;
+            width: 32px;
+            min-width: 32px;
+            flex: 0 0 32px;
             height: 24px;
             padding: 1px;
             font-size: 10px;
+            white-space: nowrap;
         }
 
         .category-cell {
-            width: 24px;
-            min-width: 24px;
-            flex: 0 0 24px;
+            width: 32px;
+            min-width: 32px;
+            flex: 0 0 32px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -268,6 +298,15 @@
             --aui-slot-interactive: 0;
             --aui-slot-render-bg: 0;
             --aui-slot-icon-scale: 1;
+        }
+
+        .modifier-icon > item {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
         }
 
         .axis-cell.available,
@@ -379,6 +418,8 @@
             min-width: 0;
             color: #d9ff59;
             white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         .confirm-button {
@@ -413,7 +454,7 @@
 <body>
     <main class="screen">
         <header class="header">
-            <texture src="kubejs:textures/item/difficulty_selector.png"></texture>
+            <texture src="kubejs:textures/item/difficulty_selector.png" />
             <div class="heading">
                 <div class="title">SDBF // DIFFICULTY MATRIX</div>
                 <div class="subtitle">PERSONAL DIFFICULTY CONTROL</div>
@@ -471,6 +512,7 @@
         let contentScale = 0.75;
         let matrixMetrics = {};
         let pageDisposed = false;
+        let layoutRefreshFrame = null;
         let ui = {
             active: false,
             tooltipWidth: 230,
@@ -500,6 +542,18 @@
             categoryCells: []
         };
         let updateCanvasPosition = () => {};
+        let scheduleLayoutRefresh = () => {
+            if (pageDisposed || layoutRefreshFrame != null) return;
+            layoutRefreshFrame = window.requestAnimationFrame(() => {
+                layoutRefreshFrame = null;
+                if (pageDisposed || !ui.active) return;
+                if (typeof document.isInitialCommitSlicing == 'function' && document.isInitialCommitSlicing()) {
+                    scheduleLayoutRefresh();
+                    return;
+                }
+                updateCanvasPosition();
+            });
+        };
         let dragState = {
             active: false,
             moved: false,
@@ -632,8 +686,8 @@
                     let modifiers = modifiersByColumn[column] || [];
                     modifiers.forEach(modifier => {
                         html += '<button class="modifier-button" data-modifier-id="' + escapeHtml(modifier.id) + '">' +
-                            '<slot class="modifier-icon" cycle="0" render="item" size="18">' +
-                            escapeHtml(modifier.icon) + '</slot></button>';
+                            '<slot class="modifier-icon" interactive="false" render-bg="false">' +
+                            '<item interactive="false">' + escapeHtml(modifier.icon) + '</item></slot></button>';
                     });
                     html += '</div>';
                 }
@@ -751,12 +805,17 @@
             if (!viewport || !axisRow) return;
             let viewportBounds = viewport.getBoundingClientRect();
             let axisBounds = axisRow.getBoundingClientRect();
+            if (viewportBounds.width <= 0 || viewportBounds.height <= 0 || axisBounds.height <= 0) {
+                scheduleLayoutRefresh();
+                return;
+            }
             let tooltipVisible = tooltip && tooltip.classList && tooltip.classList.contains('visible');
             let tooltipBounds = tooltipVisible ? tooltip.getBoundingClientRect() : null;
             let icons = ui.modifierIcons;
             for (let index = 0; index < icons.length; index++) {
                 let icon = icons[index];
                 let iconBounds = icon.getBoundingClientRect();
+                if (iconBounds.width <= 0 || iconBounds.height <= 0) continue;
                 let visible = rectContains(viewportBounds, iconBounds) && !rectsOverlap(iconBounds, axisBounds);
                 if (visible && tooltipBounds && rectsOverlap(iconBounds, tooltipBounds)) visible = false;
                 let renderItem = visible ? '1' : '0';
@@ -940,6 +999,10 @@
         }
 
         function disposeUiCache() {
+            if (layoutRefreshFrame != null) {
+                window.cancelAnimationFrame(layoutRefreshFrame);
+                layoutRefreshFrame = null;
+            }
             ui.active = false;
             ui.screen = null;
             ui.viewport = null;
@@ -971,7 +1034,7 @@
         }
 
         function updateMatrixMetrics() {
-            matrixMetrics.columnWidth = scaledMatrixSize(24);
+            matrixMetrics.columnWidth = scaledMatrixSize(32);
             matrixMetrics.axisHeight = scaledMatrixSize(24);
             matrixMetrics.buttonSize = scaledMatrixSize(24);
             matrixMetrics.iconSize = scaledMatrixSize(18);
@@ -1141,6 +1204,7 @@
                 'display:flex;align-items:center;justify-content:center;box-sizing:border-box;' +
                 'border:1px solid ' + borderColor + ';border-radius:2px;background-color:' +
                 backgroundColor + ';color:' + color + ';text-align:center;cursor:' + cursor +
+                ';white-space:nowrap' +
                 ';width:' + matrixMetrics.columnWidth + 'px;min-width:' + matrixMetrics.columnWidth +
                 'px;flex:0 0 ' + matrixMetrics.columnWidth + 'px;height:' + matrixMetrics.axisHeight +
                 'px;padding:' + scaledMatrixSize(1) + 'px;font-size:' + matrixMetrics.axisFontSize +
@@ -1257,6 +1321,10 @@
             let applyCanvasPosition = () => {
                 if (!ui.active) return;
                 let bounds = viewport.getBoundingClientRect();
+                if (bounds.width <= 0 || bounds.height <= 0) {
+                    scheduleLayoutRefresh();
+                    return;
+                }
                 let minLeft = Math.min(0, bounds.width - matrixMetrics.canvasWidth);
                 let minTop = Math.min(0, bounds.height - matrixMetrics.canvasHeight);
                 dragState.canvasLeft = Math.max(minLeft, Math.min(0, dragState.canvasLeft));
@@ -1332,29 +1400,30 @@
             viewport.addEventListener('mouseup', finishDrag);
             viewport.addEventListener('mouseleave', finishDrag);
             if (document.body) document.body.addEventListener('unload', finishDrag);
-            window.addEventListener('resize', applyCanvasPosition);
-            applyCanvasPosition();
+            window.addEventListener('resize', scheduleLayoutRefresh);
+            scheduleLayoutRefresh();
         }
 
         function sizeScreen() {
             let screen = ui.screen;
             if (!screen) return;
-            let width = Math.max(1, Math.floor(window.innerWidth * SCREEN_SCALE));
-            let height = Math.max(1, Math.floor(window.innerHeight * SCREEN_SCALE));
+            let scale = window.innerWidth < 800 || window.innerHeight < 450 ? 0.95 : SCREEN_SCALE;
+            let width = Math.max(1, Math.floor(window.innerWidth * scale));
+            let height = Math.max(1, Math.floor(window.innerHeight * scale));
             let left = Math.floor((window.innerWidth - width) / 2);
             let top = Math.floor((window.innerHeight - height) / 2);
             screen.setAttribute(
                 'style',
                 'left:' + left + 'px;top:' + top + 'px;width:' + width + 'px;max-width:' + width + 'px;height:' + height + 'px;max-height:' + height + 'px;'
             );
-            updateCanvasPosition();
+            scheduleLayoutRefresh();
         }
 
         function changeViewScale(delta) {
             contentScale = Math.max(0.5, Math.min(0.9, contentScale + delta));
             sizeMatrix();
             ui.viewScaleLabel.textContent = Math.round(contentScale * 100) + '%';
-            updateCanvasPosition();
+            scheduleLayoutRefresh();
         }
 
         function initializeFromData(data) {
@@ -1404,6 +1473,7 @@
             if (typeof document.commitStyleRecalc == 'function') {
                 document.commitStyleRecalc();
             }
+            scheduleLayoutRefresh();
             difficultyTrace('initializeFromData complete');
             window.addEventListener('resize', sizeScreen);
         }

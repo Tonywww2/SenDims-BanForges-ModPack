@@ -1,0 +1,79 @@
+{
+  "name": "slashblade_sendims:zenith_false_kingship",
+  "enchantments": [
+    {
+      "id": "minecraft:feather_falling",
+      "lvl": 4
+    },
+    {
+      "id": "minecraft:fire_aspect",
+      "lvl": 2
+    },
+    {
+      "id": "minecraft:looting",
+      "lvl": 4
+    },
+    {
+      "id": "minecraft:power",
+      "lvl": 5
+    },
+    {
+      "id": "minecraft:sharpness",
+      "lvl": 10
+    },
+    {
+      "id": "minecraft:smite",
+      "lvl": 7
+    },
+    {
+      "id": "minecraft:soul_speed",
+      "lvl": 2
+    },
+    {
+      "id": "minecraft:sweeping",
+      "lvl": 3
+    },
+    {
+      "id": "minecraft:unbreaking",
+      "lvl": 7
+    }
+  ],
+  "properties": {
+    "attack_base": 107.0,
+    "max_damage": 120,
+    "slash_art": "slashblade_sendims:nameless_threefold",
+    "special_effects": [
+      "slashblade_sendims:nameless_se_crownless",
+      "slashblade_sendims:nameless_se_sovereignty_ex",
+      "slashblade_sendims:nameless_se_storm",
+      "slashblade_sendims:nameless_se_suppression",
+      "slashblade_sendims:mana_burst",
+      "slashblade_sendims:kings_selection",
+      "slashblade_sendims:invisible_air",
+      "last_smith:extreme_sharpness",
+      "last_smith:bewitched_power",
+      "last_smith:extra_smite",
+      "blades_derby:uma_special",
+      "slashblade:wither_edge",
+      "slashblade_sendims:yakuman_four_seals",
+      "slashblade_sendims:yakuman_seven_edict",
+      "slashblade_sendims:yakuman_wind_veil",
+      "slashblade_sendims:yakuman_kong",
+      "slashblade_sendims:yakuman_solitary",
+      "slashblade_sendims:yakuman_heaven",
+      "slashblade_sendims:yakuman_nine_lamps",
+      "slashblade_sendims:yakuman_earth",
+      "slashblade_sendims:yakuman_wind_cycle",
+      "slashblade_sendims:yakuman_borrow_wind"
+    ],
+    "sword_type": [
+      "bewitched"
+    ]
+  },
+  "render": {
+    "carry_type": "rninja",
+    "model": "sdbf:model/zenith/zenith.obj",
+    "texture": "sdbf:model/zenith/zenith_kingship.png",
+    "summon_sword_color": 16768903
+  }
+}

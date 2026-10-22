@@ -1,0 +1,1147 @@
+{
+  "date": "2026-10-19",
+  "source": "kubejs/server_scripts/recipes/mahjong.js",
+  "blade_count": 19,
+  "normal_recipe_count": 19,
+  "early_recipe_count": 19,
+  "all_parents_consumed": true,
+  "inheritance": {
+    "kills": "sum of all parent blades",
+    "proud_souls": "sum of all parent blades",
+    "refine": "maximum, per existing slashblade config",
+    "special_effects": "named output definition; single-yakuman blades keep no SE"
+  },
+  "stage5_refine": {
+    "requirement": 200,
+    "changes_global_limit": false
+  },
+  "advancement_blade_rewards": {
+    "riichi_mahjong_forge:yaku/tenhou": "slashblade_sendims:yakuman_tenhou",
+    "riichi_mahjong_forge:yaku/chiihou": "slashblade_sendims:yakuman_chiihou"
+  },
+  "verification": {
+    "javascript_syntax": "passed node --check",
+    "static_catalog_and_slots": "all 19 definitions, parent references, certificate IDs/tags and tile models checked; maximum nine slots",
+    "game_tests_run": false,
+    "game_launched": false
+  },
+  "recipes": [
+    {
+      "id": "sdbf:yakuman_kokushi_s3",
+      "blade": "slashblade_sendims:yakuman_kokushi",
+      "name": "国士无双",
+      "early": false,
+      "stage": 3,
+      "parents": [
+        {
+          "id": "slashblade:nameless_lone",
+          "role": "primary",
+          "kill": 12000,
+          "proud_soul": 100000,
+          "refine": 50
+        }
+      ],
+      "forging_souls": 1,
+      "soul": "slashblade:proudsoul_ingot",
+      "soul_count": 2,
+      "stage_material": "ad_astra:calorite_ingot",
+      "certificate_any_of": [],
+      "replacement_count": 1,
+      "tiles": [
+        "riichi_mahjong_forge:tile_man_1",
+        "riichi_mahjong_forge:tile_man_9"
+      ]
+    },
+    {
+      "id": "sdbf:yakuman_kokushi_early_s2",
+      "blade": "slashblade_sendims:yakuman_kokushi",
+      "name": "国士无双",
+      "early": true,
+      "stage": 2,
+      "parents": [
+        {
+          "id": "slashblade:nameless_lone",
+          "role": "primary",
+          "kill": 12000,
+          "proud_soul": 100000,
+          "refine": 25
+        }
+      ],
+      "forging_souls": 1,
+      "soul": "slashblade:proudsoul_ingot",
+      "soul_count": 2,
+      "stage_material": null,
+      "certificate_any_of": [
+        "#kubejs:yakuman_certificates/kokushi_musou"
+      ],
+      "replacement_count": 1,
+      "tiles": [
+        "riichi_mahjong_forge:tile_man_1",
+        "riichi_mahjong_forge:tile_man_9"
+      ]
+    },
+    {
+      "id": "sdbf:yakuman_suuankou_s3",
+      "blade": "slashblade_sendims:yakuman_suuankou",
+      "name": "四暗刻",
+      "early": false,
+      "stage": 3,
+      "parents": [
+        {
+          "id": "slashblade:nameless_lone",
+          "role": "primary",
+          "kill": 12000,
+          "proud_soul": 100000,
+          "refine": 50
+        }
+      ],
+      "forging_souls": 1,
+      "soul": "slashblade:proudsoul_ingot",
+      "soul_count": 2,
+      "stage_material": "ad_astra:calorite_ingot",
+      "certificate_any_of": [],
+      "replacement_count": 1,
+      "tiles": [
+        "riichi_mahjong_forge:tile_pin_1",
+        "riichi_mahjong_forge:tile_pin_1",
+        "riichi_mahjong_forge:tile_pin_1"
+      ]
+    },
+    {
+      "id": "sdbf:yakuman_suuankou_early_s2",
+      "blade": "slashblade_sendims:yakuman_suuankou",
+      "name": "四暗刻",
+      "early": true,
+      "stage": 2,
+      "parents": [
+        {
+          "id": "slashblade:nameless_lone",
+          "role": "primary",
+          "kill": 12000,
+          "proud_soul": 100000,
+          "refine": 25
+        }
+      ],
+      "forging_souls": 1,
+      "soul": "slashblade:proudsoul_ingot",
+      "soul_count": 2,
+      "stage_material": null,
+      "certificate_any_of": [
+        "#kubejs:yakuman_certificates/suu_ankou"
+      ],
+      "replacement_count": 1,
+      "tiles": [
+        "riichi_mahjong_forge:tile_pin_1",
+        "riichi_mahjong_forge:tile_pin_1",
+        "riichi_mahjong_forge:tile_pin_1"
+      ]
+    },
+    {
+      "id": "sdbf:yakuman_daisangen_s3",
+      "blade": "slashblade_sendims:yakuman_daisangen",
+      "name": "大三元",
+      "early": false,
+      "stage": 3,
+      "parents": [
+        {
+          "id": "slashblade:nameless_lone",
+          "role": "primary",
+          "kill": 12000,
+          "proud_soul": 100000,
+          "refine": 50
+        }
+      ],
+      "forging_souls": 1,
+      "soul": "slashblade:proudsoul_ingot",
+      "soul_count": 2,
+      "stage_material": "ad_astra:calorite_ingot",
+      "certificate_any_of": [],
+      "replacement_count": 1,
+      "tiles": [
+        "riichi_mahjong_forge:tile_dragon_white",
+        "riichi_mahjong_forge:tile_dragon_green",
+        "riichi_mahjong_forge:tile_dragon_red"
+      ]
+    },
+    {
+      "id": "sdbf:yakuman_daisangen_early_s2",
+      "blade": "slashblade_sendims:yakuman_daisangen",
+      "name": "大三元",
+      "early": true,
+      "stage": 2,
+      "parents": [
+        {
+          "id": "slashblade:nameless_lone",
+          "role": "primary",
+          "kill": 12000,
+          "proud_soul": 100000,
+          "refine": 25
+        }
+      ],
+      "forging_souls": 1,
+      "soul": "slashblade:proudsoul_ingot",
+      "soul_count": 2,
+      "stage_material": null,
+      "certificate_any_of": [
+        "#kubejs:yakuman_certificates/daisangen"
+      ],
+      "replacement_count": 1,
+      "tiles": [
+        "riichi_mahjong_forge:tile_dragon_white",
+        "riichi_mahjong_forge:tile_dragon_green",
+        "riichi_mahjong_forge:tile_dragon_red"
+      ]
+    },
+    {
+      "id": "sdbf:yakuman_shousuushii_s3",
+      "blade": "slashblade_sendims:yakuman_shousuushii",
+      "name": "小四喜",
+      "early": false,
+      "stage": 3,
+      "parents": [
+        {
+          "id": "slashblade:nameless_lone",
+          "role": "primary",
+          "kill": 12000,
+          "proud_soul": 100000,
+          "refine": 50
+        }
+      ],
+      "forging_souls": 1,
+      "soul": "slashblade:proudsoul_ingot",
+      "soul_count": 2,
+      "stage_material": "ad_astra:calorite_ingot",
+      "certificate_any_of": [],
+      "replacement_count": 1,
+      "tiles": [
+        "riichi_mahjong_forge:tile_wind_east",
+        "riichi_mahjong_forge:tile_wind_south",
+        "riichi_mahjong_forge:tile_wind_west",
+        "riichi_mahjong_forge:tile_wind_north"
+      ]
+    },
+    {
+      "id": "sdbf:yakuman_shousuushii_early_s2",
+      "blade": "slashblade_sendims:yakuman_shousuushii",
+      "name": "小四喜",
+      "early": true,
+      "stage": 2,
+      "parents": [
+        {
+          "id": "slashblade:nameless_lone",
+          "role": "primary",
+          "kill": 12000,
+          "proud_soul": 100000,
+          "refine": 25
+        }
+      ],
+      "forging_souls": 1,
+      "soul": "slashblade:proudsoul_ingot",
+      "soul_count": 2,
+      "stage_material": null,
+      "certificate_any_of": [
+        "#kubejs:yakuman_certificates/shousuushii"
+      ],
+      "replacement_count": 1,
+      "tiles": [
+        "riichi_mahjong_forge:tile_wind_east",
+        "riichi_mahjong_forge:tile_wind_south",
+        "riichi_mahjong_forge:tile_wind_west",
+        "riichi_mahjong_forge:tile_wind_north"
+      ]
+    },
+    {
+      "id": "sdbf:yakuman_tsuuiisou_s3",
+      "blade": "slashblade_sendims:yakuman_tsuuiisou",
+      "name": "字一色",
+      "early": false,
+      "stage": 3,
+      "parents": [
+        {
+          "id": "slashblade:nameless_lone",
+          "role": "primary",
+          "kill": 12000,
+          "proud_soul": 100000,
+          "refine": 50
+        }
+      ],
+      "forging_souls": 1,
+      "soul": "slashblade:proudsoul_ingot",
+      "soul_count": 2,
+      "stage_material": "ad_astra:calorite_ingot",
+      "certificate_any_of": [],
+      "replacement_count": 1,
+      "tiles": [
+        "riichi_mahjong_forge:tile_wind_east",
+        "riichi_mahjong_forge:tile_dragon_white",
+        "riichi_mahjong_forge:tile_dragon_red"
+      ]
+    },
+    {
+      "id": "sdbf:yakuman_tsuuiisou_early_s2",
+      "blade": "slashblade_sendims:yakuman_tsuuiisou",
+      "name": "字一色",
+      "early": true,
+      "stage": 2,
+      "parents": [
+        {
+          "id": "slashblade:nameless_lone",
+          "role": "primary",
+          "kill": 12000,
+          "proud_soul": 100000,
+          "refine": 25
+        }
+      ],
+      "forging_souls": 1,
+      "soul": "slashblade:proudsoul_ingot",
+      "soul_count": 2,
+      "stage_material": null,
+      "certificate_any_of": [
+        "#kubejs:yakuman_certificates/tsuuiisou"
+      ],
+      "replacement_count": 1,
+      "tiles": [
+        "riichi_mahjong_forge:tile_wind_east",
+        "riichi_mahjong_forge:tile_dragon_white",
+        "riichi_mahjong_forge:tile_dragon_red"
+      ]
+    },
+    {
+      "id": "sdbf:yakuman_ryuuiisou_s3",
+      "blade": "slashblade_sendims:yakuman_ryuuiisou",
+      "name": "绿一色",
+      "early": false,
+      "stage": 3,
+      "parents": [
+        {
+          "id": "slashblade:nameless_lone",
+          "role": "primary",
+          "kill": 12000,
+          "proud_soul": 100000,
+          "refine": 50
+        }
+      ],
+      "forging_souls": 1,
+      "soul": "slashblade:proudsoul_ingot",
+      "soul_count": 2,
+      "stage_material": "ad_astra:calorite_ingot",
+      "certificate_any_of": [],
+      "replacement_count": 1,
+      "tiles": [
+        "riichi_mahjong_forge:tile_sou_2",
+        "riichi_mahjong_forge:tile_sou_3",
+        "riichi_mahjong_forge:tile_dragon_green"
+      ]
+    },
+    {
+      "id": "sdbf:yakuman_ryuuiisou_early_s2",
+      "blade": "slashblade_sendims:yakuman_ryuuiisou",
+      "name": "绿一色",
+      "early": true,
+      "stage": 2,
+      "parents": [
+        {
+          "id": "slashblade:nameless_lone",
+          "role": "primary",
+          "kill": 12000,
+          "proud_soul": 100000,
+          "refine": 25
+        }
+      ],
+      "forging_souls": 1,
+      "soul": "slashblade:proudsoul_ingot",
+      "soul_count": 2,
+      "stage_material": null,
+      "certificate_any_of": [
+        "#kubejs:yakuman_certificates/ryuuiisou"
+      ],
+      "replacement_count": 1,
+      "tiles": [
+        "riichi_mahjong_forge:tile_sou_2",
+        "riichi_mahjong_forge:tile_sou_3",
+        "riichi_mahjong_forge:tile_dragon_green"
+      ]
+    },
+    {
+      "id": "sdbf:yakuman_chinroutou_s3",
+      "blade": "slashblade_sendims:yakuman_chinroutou",
+      "name": "清老头",
+      "early": false,
+      "stage": 3,
+      "parents": [
+        {
+          "id": "slashblade:nameless_lone",
+          "role": "primary",
+          "kill": 12000,
+          "proud_soul": 100000,
+          "refine": 50
+        }
+      ],
+      "forging_souls": 1,
+      "soul": "slashblade:proudsoul_ingot",
+      "soul_count": 2,
+      "stage_material": "ad_astra:calorite_ingot",
+      "certificate_any_of": [],
+      "replacement_count": 1,
+      "tiles": [
+        "riichi_mahjong_forge:tile_man_1",
+        "riichi_mahjong_forge:tile_pin_9"
+      ]
+    },
+    {
+      "id": "sdbf:yakuman_chinroutou_early_s2",
+      "blade": "slashblade_sendims:yakuman_chinroutou",
+      "name": "清老头",
+      "early": true,
+      "stage": 2,
+      "parents": [
+        {
+          "id": "slashblade:nameless_lone",
+          "role": "primary",
+          "kill": 12000,
+          "proud_soul": 100000,
+          "refine": 25
+        }
+      ],
+      "forging_souls": 1,
+      "soul": "slashblade:proudsoul_ingot",
+      "soul_count": 2,
+      "stage_material": null,
+      "certificate_any_of": [
+        "#kubejs:yakuman_certificates/chinroutou"
+      ],
+      "replacement_count": 1,
+      "tiles": [
+        "riichi_mahjong_forge:tile_man_1",
+        "riichi_mahjong_forge:tile_pin_9"
+      ]
+    },
+    {
+      "id": "sdbf:yakuman_chuuren_s3",
+      "blade": "slashblade_sendims:yakuman_chuuren",
+      "name": "九莲宝灯",
+      "early": false,
+      "stage": 3,
+      "parents": [
+        {
+          "id": "slashblade:nameless_lone",
+          "role": "primary",
+          "kill": 12000,
+          "proud_soul": 100000,
+          "refine": 50
+        }
+      ],
+      "forging_souls": 1,
+      "soul": "slashblade:proudsoul_ingot",
+      "soul_count": 2,
+      "stage_material": "ad_astra:calorite_ingot",
+      "certificate_any_of": [],
+      "replacement_count": 1,
+      "tiles": [
+        "riichi_mahjong_forge:tile_man_1",
+        "riichi_mahjong_forge:tile_man_5",
+        "riichi_mahjong_forge:tile_man_9"
+      ]
+    },
+    {
+      "id": "sdbf:yakuman_chuuren_early_s2",
+      "blade": "slashblade_sendims:yakuman_chuuren",
+      "name": "九莲宝灯",
+      "early": true,
+      "stage": 2,
+      "parents": [
+        {
+          "id": "slashblade:nameless_lone",
+          "role": "primary",
+          "kill": 12000,
+          "proud_soul": 100000,
+          "refine": 25
+        }
+      ],
+      "forging_souls": 1,
+      "soul": "slashblade:proudsoul_ingot",
+      "soul_count": 2,
+      "stage_material": null,
+      "certificate_any_of": [
+        "#kubejs:yakuman_certificates/chuuren_poutou"
+      ],
+      "replacement_count": 1,
+      "tiles": [
+        "riichi_mahjong_forge:tile_man_1",
+        "riichi_mahjong_forge:tile_man_5",
+        "riichi_mahjong_forge:tile_man_9"
+      ]
+    },
+    {
+      "id": "sdbf:yakuman_suukantsu_s3",
+      "blade": "slashblade_sendims:yakuman_suukantsu",
+      "name": "四杠子",
+      "early": false,
+      "stage": 3,
+      "parents": [
+        {
+          "id": "slashblade:nameless_lone",
+          "role": "primary",
+          "kill": 12000,
+          "proud_soul": 100000,
+          "refine": 50
+        }
+      ],
+      "forging_souls": 1,
+      "soul": "slashblade:proudsoul_ingot",
+      "soul_count": 2,
+      "stage_material": "ad_astra:calorite_ingot",
+      "certificate_any_of": [],
+      "replacement_count": 1,
+      "tiles": [
+        "riichi_mahjong_forge:tile_sou_1",
+        "riichi_mahjong_forge:tile_sou_1",
+        "riichi_mahjong_forge:tile_sou_1",
+        "riichi_mahjong_forge:tile_sou_1"
+      ]
+    },
+    {
+      "id": "sdbf:yakuman_suukantsu_early_s2",
+      "blade": "slashblade_sendims:yakuman_suukantsu",
+      "name": "四杠子",
+      "early": true,
+      "stage": 2,
+      "parents": [
+        {
+          "id": "slashblade:nameless_lone",
+          "role": "primary",
+          "kill": 12000,
+          "proud_soul": 100000,
+          "refine": 25
+        }
+      ],
+      "forging_souls": 1,
+      "soul": "slashblade:proudsoul_ingot",
+      "soul_count": 2,
+      "stage_material": null,
+      "certificate_any_of": [
+        "#kubejs:yakuman_certificates/suukantsu"
+      ],
+      "replacement_count": 1,
+      "tiles": [
+        "riichi_mahjong_forge:tile_sou_1",
+        "riichi_mahjong_forge:tile_sou_1",
+        "riichi_mahjong_forge:tile_sou_1",
+        "riichi_mahjong_forge:tile_sou_1"
+      ]
+    },
+    {
+      "id": "sdbf:yakuman_tenhou_s3",
+      "blade": "slashblade_sendims:yakuman_tenhou",
+      "name": "天和",
+      "early": false,
+      "stage": 3,
+      "parents": [
+        {
+          "id": "slashblade:nameless_lone",
+          "role": "primary",
+          "kill": 12000,
+          "proud_soul": 100000,
+          "refine": 50
+        }
+      ],
+      "forging_souls": 1,
+      "soul": "slashblade:proudsoul_ingot",
+      "soul_count": 2,
+      "stage_material": "ad_astra:calorite_ingot",
+      "certificate_any_of": [],
+      "replacement_count": 1,
+      "tiles": [
+        "riichi_mahjong_forge:tile_wind_east",
+        "riichi_mahjong_forge:tile_dragon_white"
+      ]
+    },
+    {
+      "id": "sdbf:yakuman_tenhou_early_s2",
+      "blade": "slashblade_sendims:yakuman_tenhou",
+      "name": "天和",
+      "early": true,
+      "stage": 2,
+      "parents": [
+        {
+          "id": "slashblade:nameless_lone",
+          "role": "primary",
+          "kill": 12000,
+          "proud_soul": 100000,
+          "refine": 25
+        }
+      ],
+      "forging_souls": 1,
+      "soul": "slashblade:proudsoul_ingot",
+      "soul_count": 2,
+      "stage_material": null,
+      "certificate_any_of": [
+        "#kubejs:yakuman_certificates/tenhou"
+      ],
+      "replacement_count": 1,
+      "tiles": [
+        "riichi_mahjong_forge:tile_wind_east",
+        "riichi_mahjong_forge:tile_dragon_white"
+      ]
+    },
+    {
+      "id": "sdbf:yakuman_chiihou_s3",
+      "blade": "slashblade_sendims:yakuman_chiihou",
+      "name": "地和",
+      "early": false,
+      "stage": 3,
+      "parents": [
+        {
+          "id": "slashblade:nameless_lone",
+          "role": "primary",
+          "kill": 12000,
+          "proud_soul": 100000,
+          "refine": 50
+        }
+      ],
+      "forging_souls": 1,
+      "soul": "slashblade:proudsoul_ingot",
+      "soul_count": 2,
+      "stage_material": "ad_astra:calorite_ingot",
+      "certificate_any_of": [],
+      "replacement_count": 1,
+      "tiles": [
+        "riichi_mahjong_forge:tile_wind_south",
+        "riichi_mahjong_forge:tile_dragon_white"
+      ]
+    },
+    {
+      "id": "sdbf:yakuman_chiihou_early_s2",
+      "blade": "slashblade_sendims:yakuman_chiihou",
+      "name": "地和",
+      "early": true,
+      "stage": 2,
+      "parents": [
+        {
+          "id": "slashblade:nameless_lone",
+          "role": "primary",
+          "kill": 12000,
+          "proud_soul": 100000,
+          "refine": 25
+        }
+      ],
+      "forging_souls": 1,
+      "soul": "slashblade:proudsoul_ingot",
+      "soul_count": 2,
+      "stage_material": null,
+      "certificate_any_of": [
+        "#kubejs:yakuman_certificates/chiihou"
+      ],
+      "replacement_count": 1,
+      "tiles": [
+        "riichi_mahjong_forge:tile_wind_south",
+        "riichi_mahjong_forge:tile_dragon_white"
+      ]
+    },
+    {
+      "id": "sdbf:yakuman_daisuushii_s4",
+      "blade": "slashblade_sendims:yakuman_daisuushii",
+      "name": "大四喜",
+      "early": false,
+      "stage": 4,
+      "parents": [
+        {
+          "id": "slashblade_sendims:yakuman_shousuushii",
+          "role": "primary",
+          "kill": 30000,
+          "proud_soul": 300000,
+          "refine": 100
+        }
+      ],
+      "forging_souls": 2,
+      "soul": "slashblade:proudsoul_sphere",
+      "soul_count": 4,
+      "stage_material": "kubejs:delta_dust",
+      "certificate_any_of": [],
+      "replacement_count": 1,
+      "tiles": []
+    },
+    {
+      "id": "sdbf:yakuman_daisuushii_early_s3",
+      "blade": "slashblade_sendims:yakuman_daisuushii",
+      "name": "大四喜",
+      "early": true,
+      "stage": 3,
+      "parents": [
+        {
+          "id": "slashblade_sendims:yakuman_shousuushii",
+          "role": "primary",
+          "kill": 30000,
+          "proud_soul": 300000,
+          "refine": 50
+        }
+      ],
+      "forging_souls": 2,
+      "soul": "slashblade:proudsoul_sphere",
+      "soul_count": 4,
+      "stage_material": null,
+      "certificate_any_of": [
+        "#kubejs:yakuman_certificates/daisuushii"
+      ],
+      "replacement_count": 1,
+      "tiles": []
+    },
+    {
+      "id": "sdbf:yakuman_sangen_jirei_s4",
+      "blade": "slashblade_sendims:yakuman_sangen_jirei",
+      "name": "三元字敕",
+      "early": false,
+      "stage": 4,
+      "parents": [
+        {
+          "id": "slashblade_sendims:yakuman_daisangen",
+          "role": "primary",
+          "kill": 30000,
+          "proud_soul": 300000,
+          "refine": 100
+        },
+        {
+          "id": "slashblade_sendims:yakuman_tsuuiisou",
+          "role": "secondary",
+          "kill": 12000,
+          "proud_soul": 100000,
+          "refine": 100
+        }
+      ],
+      "forging_souls": 2,
+      "soul": "slashblade:proudsoul_sphere",
+      "soul_count": 4,
+      "stage_material": "kubejs:delta_dust",
+      "certificate_any_of": [],
+      "replacement_count": 1,
+      "tiles": []
+    },
+    {
+      "id": "sdbf:yakuman_sangen_jirei_early_s3",
+      "blade": "slashblade_sendims:yakuman_sangen_jirei",
+      "name": "三元字敕",
+      "early": true,
+      "stage": 3,
+      "parents": [
+        {
+          "id": "slashblade_sendims:yakuman_daisangen",
+          "role": "primary",
+          "kill": 30000,
+          "proud_soul": 300000,
+          "refine": 50
+        },
+        {
+          "id": "slashblade_sendims:yakuman_tsuuiisou",
+          "role": "secondary",
+          "kill": 12000,
+          "proud_soul": 100000,
+          "refine": 50
+        }
+      ],
+      "forging_souls": 2,
+      "soul": "slashblade:proudsoul_sphere",
+      "soul_count": 4,
+      "stage_material": null,
+      "certificate_any_of": [
+        "#kubejs:yakuman_certificates/daisangen",
+        "#kubejs:yakuman_certificates/tsuuiisou"
+      ],
+      "replacement_count": 1,
+      "tiles": []
+    },
+    {
+      "id": "sdbf:yakuman_chinrou_suukou_s4",
+      "blade": "slashblade_sendims:yakuman_chinrou_suukou",
+      "name": "清老四刻",
+      "early": false,
+      "stage": 4,
+      "parents": [
+        {
+          "id": "slashblade_sendims:yakuman_chinroutou",
+          "role": "primary",
+          "kill": 30000,
+          "proud_soul": 300000,
+          "refine": 100
+        },
+        {
+          "id": "slashblade_sendims:yakuman_suuankou",
+          "role": "secondary",
+          "kill": 12000,
+          "proud_soul": 100000,
+          "refine": 100
+        }
+      ],
+      "forging_souls": 2,
+      "soul": "slashblade:proudsoul_sphere",
+      "soul_count": 4,
+      "stage_material": "kubejs:delta_dust",
+      "certificate_any_of": [],
+      "replacement_count": 1,
+      "tiles": []
+    },
+    {
+      "id": "sdbf:yakuman_chinrou_suukou_early_s3",
+      "blade": "slashblade_sendims:yakuman_chinrou_suukou",
+      "name": "清老四刻",
+      "early": true,
+      "stage": 3,
+      "parents": [
+        {
+          "id": "slashblade_sendims:yakuman_chinroutou",
+          "role": "primary",
+          "kill": 30000,
+          "proud_soul": 300000,
+          "refine": 50
+        },
+        {
+          "id": "slashblade_sendims:yakuman_suuankou",
+          "role": "secondary",
+          "kill": 12000,
+          "proud_soul": 100000,
+          "refine": 50
+        }
+      ],
+      "forging_souls": 2,
+      "soul": "slashblade:proudsoul_sphere",
+      "soul_count": 4,
+      "stage_material": null,
+      "certificate_any_of": [
+        "#kubejs:yakuman_certificates/chinroutou",
+        "#kubejs:yakuman_certificates/suu_ankou"
+      ],
+      "replacement_count": 1,
+      "tiles": []
+    },
+    {
+      "id": "sdbf:yakuman_hekigyoku_suukantsu_s4",
+      "blade": "slashblade_sendims:yakuman_hekigyoku_suukantsu",
+      "name": "碧玉四杠",
+      "early": false,
+      "stage": 4,
+      "parents": [
+        {
+          "id": "slashblade_sendims:yakuman_ryuuiisou",
+          "role": "primary",
+          "kill": 30000,
+          "proud_soul": 300000,
+          "refine": 100
+        },
+        {
+          "id": "slashblade_sendims:yakuman_suukantsu",
+          "role": "secondary",
+          "kill": 12000,
+          "proud_soul": 100000,
+          "refine": 100
+        }
+      ],
+      "forging_souls": 2,
+      "soul": "slashblade:proudsoul_sphere",
+      "soul_count": 4,
+      "stage_material": "kubejs:delta_dust",
+      "certificate_any_of": [],
+      "replacement_count": 1,
+      "tiles": []
+    },
+    {
+      "id": "sdbf:yakuman_hekigyoku_suukantsu_early_s3",
+      "blade": "slashblade_sendims:yakuman_hekigyoku_suukantsu",
+      "name": "碧玉四杠",
+      "early": true,
+      "stage": 3,
+      "parents": [
+        {
+          "id": "slashblade_sendims:yakuman_ryuuiisou",
+          "role": "primary",
+          "kill": 30000,
+          "proud_soul": 300000,
+          "refine": 50
+        },
+        {
+          "id": "slashblade_sendims:yakuman_suukantsu",
+          "role": "secondary",
+          "kill": 12000,
+          "proud_soul": 100000,
+          "refine": 50
+        }
+      ],
+      "forging_souls": 2,
+      "soul": "slashblade:proudsoul_sphere",
+      "soul_count": 4,
+      "stage_material": null,
+      "certificate_any_of": [
+        "#kubejs:yakuman_certificates/ryuuiisou",
+        "#kubejs:yakuman_certificates/suukantsu"
+      ],
+      "replacement_count": 1,
+      "tiles": []
+    },
+    {
+      "id": "sdbf:yakuman_tenju_kokushi_s4",
+      "blade": "slashblade_sendims:yakuman_tenju_kokushi",
+      "name": "天授国士",
+      "early": false,
+      "stage": 4,
+      "parents": [
+        {
+          "id": "slashblade_sendims:yakuman_kokushi",
+          "role": "primary",
+          "kill": 45000,
+          "proud_soul": 500000,
+          "refine": 100
+        },
+        {
+          "id": "slashblade_sendims:yakuman_tenhou",
+          "role": "secondary",
+          "kill": 12000,
+          "proud_soul": 100000,
+          "refine": 100
+        }
+      ],
+      "forging_souls": 1,
+      "soul": "slashblade:proudsoul_sphere",
+      "soul_count": 5,
+      "stage_material": "kubejs:multifaceted_ambrosia",
+      "certificate_any_of": [],
+      "replacement_count": 1,
+      "tiles": []
+    },
+    {
+      "id": "sdbf:yakuman_tenju_kokushi_early_s3",
+      "blade": "slashblade_sendims:yakuman_tenju_kokushi",
+      "name": "天授国士",
+      "early": true,
+      "stage": 3,
+      "parents": [
+        {
+          "id": "slashblade_sendims:yakuman_kokushi",
+          "role": "primary",
+          "kill": 45000,
+          "proud_soul": 500000,
+          "refine": 50
+        },
+        {
+          "id": "slashblade_sendims:yakuman_tenhou",
+          "role": "secondary",
+          "kill": 12000,
+          "proud_soul": 100000,
+          "refine": 50
+        }
+      ],
+      "forging_souls": 1,
+      "soul": "slashblade:proudsoul_sphere",
+      "soul_count": 5,
+      "stage_material": null,
+      "certificate_any_of": [
+        "#kubejs:yakuman_certificates/tenhou",
+        "kubejs:yakuman_certificate_kokushi_musou_juusanmen_machi"
+      ],
+      "replacement_count": 1,
+      "tiles": []
+    },
+    {
+      "id": "sdbf:yakuman_chisei_chuuren_s4",
+      "blade": "slashblade_sendims:yakuman_chisei_chuuren",
+      "name": "地生九莲",
+      "early": false,
+      "stage": 4,
+      "parents": [
+        {
+          "id": "slashblade_sendims:yakuman_chuuren",
+          "role": "primary",
+          "kill": 45000,
+          "proud_soul": 500000,
+          "refine": 100
+        },
+        {
+          "id": "slashblade_sendims:yakuman_chiihou",
+          "role": "secondary",
+          "kill": 12000,
+          "proud_soul": 100000,
+          "refine": 100
+        }
+      ],
+      "forging_souls": 1,
+      "soul": "slashblade:proudsoul_sphere",
+      "soul_count": 5,
+      "stage_material": "kubejs:multifaceted_ambrosia",
+      "certificate_any_of": [],
+      "replacement_count": 1,
+      "tiles": []
+    },
+    {
+      "id": "sdbf:yakuman_chisei_chuuren_early_s3",
+      "blade": "slashblade_sendims:yakuman_chisei_chuuren",
+      "name": "地生九莲",
+      "early": true,
+      "stage": 3,
+      "parents": [
+        {
+          "id": "slashblade_sendims:yakuman_chuuren",
+          "role": "primary",
+          "kill": 45000,
+          "proud_soul": 500000,
+          "refine": 50
+        },
+        {
+          "id": "slashblade_sendims:yakuman_chiihou",
+          "role": "secondary",
+          "kill": 12000,
+          "proud_soul": 100000,
+          "refine": 50
+        }
+      ],
+      "forging_souls": 1,
+      "soul": "slashblade:proudsoul_sphere",
+      "soul_count": 5,
+      "stage_material": null,
+      "certificate_any_of": [
+        "#kubejs:yakuman_certificates/chiihou",
+        "kubejs:yakuman_certificate_junsei_chuuren_poutou"
+      ],
+      "replacement_count": 1,
+      "tiles": []
+    },
+    {
+      "id": "sdbf:yakuman_suushi_jikoku_s5",
+      "blade": "slashblade_sendims:yakuman_suushi_jikoku",
+      "name": "四喜字刻",
+      "early": false,
+      "stage": 5,
+      "parents": [
+        {
+          "id": "slashblade_sendims:yakuman_daisuushii",
+          "role": "primary",
+          "kill": 75000,
+          "proud_soul": 1000000,
+          "refine": 200
+        },
+        {
+          "id": "slashblade_sendims:yakuman_tsuuiisou",
+          "role": "secondary",
+          "kill": 12000,
+          "proud_soul": 100000,
+          "refine": 200
+        },
+        {
+          "id": "slashblade_sendims:yakuman_suuankou",
+          "role": "secondary",
+          "kill": 12000,
+          "proud_soul": 100000,
+          "refine": 200
+        }
+      ],
+      "forging_souls": 1,
+      "soul": "slashblade:proudsoul_crystal",
+      "soul_count": 4,
+      "stage_material": "deeprealm_4th:star_slurry_crystal",
+      "certificate_any_of": [],
+      "replacement_count": 1,
+      "tiles": []
+    },
+    {
+      "id": "sdbf:yakuman_suushi_jikoku_early_s4",
+      "blade": "slashblade_sendims:yakuman_suushi_jikoku",
+      "name": "四喜字刻",
+      "early": true,
+      "stage": 4,
+      "parents": [
+        {
+          "id": "slashblade_sendims:yakuman_daisuushii",
+          "role": "primary",
+          "kill": 75000,
+          "proud_soul": 1000000,
+          "refine": 100
+        },
+        {
+          "id": "slashblade_sendims:yakuman_tsuuiisou",
+          "role": "secondary",
+          "kill": 12000,
+          "proud_soul": 100000,
+          "refine": 100
+        },
+        {
+          "id": "slashblade_sendims:yakuman_suuankou",
+          "role": "secondary",
+          "kill": 12000,
+          "proud_soul": 100000,
+          "refine": 100
+        }
+      ],
+      "forging_souls": 1,
+      "soul": "slashblade:proudsoul_crystal",
+      "soul_count": 4,
+      "stage_material": null,
+      "certificate_any_of": [
+        "#kubejs:yakuman_certificates/daisuushii",
+        "kubejs:yakuman_certificate_suu_ankou_tanki"
+      ],
+      "replacement_count": 1,
+      "tiles": []
+    },
+    {
+      "id": "sdbf:yakuman_shishou_kiitsu_s5",
+      "blade": "slashblade_sendims:yakuman_shishou_kiitsu",
+      "name": "四象归一",
+      "early": false,
+      "stage": 5,
+      "parents": [
+        {
+          "id": "slashblade_sendims:yakuman_suushi_jikoku",
+          "role": "primary",
+          "kill": 100000,
+          "proud_soul": 1500000,
+          "refine": 200
+        },
+        {
+          "id": "slashblade_sendims:yakuman_suukantsu",
+          "role": "secondary",
+          "kill": 12000,
+          "proud_soul": 100000,
+          "refine": 200
+        }
+      ],
+      "forging_souls": 1,
+      "soul": "slashblade:proudsoul_crystal",
+      "soul_count": 5,
+      "stage_material": "kubejs:rainbowshift_entropy",
+      "certificate_any_of": [],
+      "replacement_count": 1,
+      "tiles": []
+    },
+    {
+      "id": "sdbf:yakuman_shishou_kiitsu_early_s4",
+      "blade": "slashblade_sendims:yakuman_shishou_kiitsu",
+      "name": "四象归一",
+      "early": true,
+      "stage": 4,
+      "parents": [
+        {
+          "id": "slashblade_sendims:yakuman_suushi_jikoku",
+          "role": "primary",
+          "kill": 100000,
+          "proud_soul": 1500000,
+          "refine": 100
+        },
+        {
+          "id": "slashblade_sendims:yakuman_suukantsu",
+          "role": "secondary",
+          "kill": 12000,
+          "proud_soul": 100000,
+          "refine": 100
+        }
+      ],
+      "forging_souls": 1,
+      "soul": "slashblade:proudsoul_crystal",
+      "soul_count": 5,
+      "stage_material": null,
+      "certificate_any_of": [
+        "#kubejs:yakuman_certificates/daisuushii",
+        "kubejs:yakuman_certificate_suu_ankou_tanki",
+        "#kubejs:yakuman_certificates/suukantsu"
+      ],
+      "replacement_count": 1,
+      "tiles": []
+    }
+  ],
+  "definition_style": "All 38 blade recipes are explicit calls in mahjong.js; no runtime recipe catalog, loop-based builder or external JSON recipe input."
+}

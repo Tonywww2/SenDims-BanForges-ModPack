@@ -1,9 +1,0 @@
-{
-  "type": "deep_aether:glowing_spores_recipe",
-  "ingredient": {
-    "block": "kubejs:omni_aether_12_block"
-  },
-  "result": {
-    "block": "kubejs:omni_aether_13_block"
-  }
-}

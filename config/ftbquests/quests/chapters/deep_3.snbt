@@ -145,7 +145,7 @@
 		{
 			dependencies: [
 				"5F25788D537A03BC"
-				"40570CBD9A0E5C38"
+				"558D3ECCC65569D9"
 			]
 			id: "3FBD9DC1E1BB24E1"
 			quest_enhance_disable_scroll_paging: false
@@ -163,8 +163,8 @@
 				}
 				type: "item"
 			}]
-			x: 6.0d
-			y: 14.5d
+			x: 15.0d
+			y: 15.0d
 		}
 		{
 			dependencies: [
@@ -273,7 +273,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 14.5d
+			y: 15.0d
 		}
 		{
 			dependencies: [
@@ -471,6 +471,43 @@
 			}]
 			x: 6.0d
 			y: -3.0d
+		}
+		{
+			dependencies: ["40570CBD9A0E5C38"]
+			id: "0B9B24404A473CCA"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6DB3A6F1058CA3EE"
+				structure: "elder_bosses:malenia_arena"
+				type: "structure"
+			}]
+			title: "圣树竞技场"
+			x: 6.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["2A9D15C315A89924"]
+			id: "558D3ECCC65569D9"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "561CE3C41894E80D"
+				item: "elder_bosses:rot_goddess_remembrance"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["40570CBD9A0E5C38"]
+			id: "2A9D15C315A89924"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "32AFC5A01E69B359"
+				item: "kubejs:corrupted_crystalotus"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 15.0d
 		}
 	]
 	title: "[VII] &e深境：午夜"

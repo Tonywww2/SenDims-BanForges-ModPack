@@ -1,0 +1,70 @@
+{
+  "name": "slashblade_sendims:zenith_false_dark_curse",
+  "enchantments": [
+    {
+      "id": "minecraft:bane_of_arthropods",
+      "lvl": 2
+    },
+    {
+      "id": "minecraft:fire_aspect",
+      "lvl": 3
+    },
+    {
+      "id": "minecraft:fire_protection",
+      "lvl": 1
+    },
+    {
+      "id": "minecraft:looting",
+      "lvl": 3
+    },
+    {
+      "id": "minecraft:power",
+      "lvl": 5
+    },
+    {
+      "id": "minecraft:sharpness",
+      "lvl": 7
+    },
+    {
+      "id": "minecraft:smite",
+      "lvl": 8
+    },
+    {
+      "id": "minecraft:soul_speed",
+      "lvl": 2
+    },
+    {
+      "id": "minecraft:unbreaking",
+      "lvl": 4
+    }
+  ],
+  "properties": {
+    "attack_base": 102.0,
+    "max_damage": 300,
+    "slash_art": "slashblade_sendims:malevolent_shrine",
+    "special_effects": [
+      "slashblade_sendims:mahoraga_false",
+      "slashblade_sendims:space_cut",
+      "slashblade_sendims:reverse_cursed_technique",
+      "slashblade_sendims:frenzied_flame",
+      "slashblade_sendims:arcane_a",
+      "slashblade_sendims:three_fingers",
+      "blades_derby:uma_special",
+      "sjap_adder:dark_cuter",
+      "slashblade:aeonia",
+      "last_smith:bewitched_power",
+      "last_smith:extra_sharpness",
+      "slashblade_sendims:yakuman_hidden_triplets",
+      "slashblade_sendims:yakuman_terminals"
+    ],
+    "sword_type": [
+      "bewitched"
+    ]
+  },
+  "render": {
+    "carry_type": "rninja",
+    "model": "sdbf:model/zenith/zenith.obj",
+    "texture": "sdbf:model/zenith/zenith_dark_curse.png",
+    "summon_sword_color": 9982648
+  }
+}

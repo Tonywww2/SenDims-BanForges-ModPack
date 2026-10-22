@@ -69,7 +69,7 @@
 			#中文：连击叠层命中次数。有效近战命中达到此次数时增加一层连击；横扫同次攻击只计一次。
 			#English: Hits per Combo stack. Successful melee hits needed to gain one Combo stack; one sweeping attack counts once.
 			#Range: 1 ~ 1024
-			combo_hits_per_stack = 4
+			combo_hits_per_stack = 6
 			#中文：连击持续时间 · tick。每次叠层刷新此持续时间；20tick为1秒。
 			#English: Combo duration · ticks. Duration refreshed when earning a stack; 20 ticks equal one second.
 			#Range: 1 ~ 12000
@@ -77,19 +77,19 @@
 			#中文：连击1层伤害加成。该层连击提供的总伤害比例加成；0.10为10%，各层不相加。
 			#English: Combo level 1 damage bonus. Total damage bonus at this Combo level; 0.10 means 10%, levels do not add together.
 			#Range: 0.0 ~ 10.0
-			combo_damage_bonus_level_1 = 0.1
+			combo_damage_bonus_level_1 = 0.01
 			#中文：连击2层伤害加成。该层连击提供的总伤害比例加成；0.10为10%，各层不相加。
 			#English: Combo level 2 damage bonus. Total damage bonus at this Combo level; 0.10 means 10%, levels do not add together.
 			#Range: 0.0 ~ 10.0
-			combo_damage_bonus_level_2 = 0.15
+			combo_damage_bonus_level_2 = 0.025
 			#中文：连击3层伤害加成。该层连击提供的总伤害比例加成；0.10为10%，各层不相加。
 			#English: Combo level 3 damage bonus. Total damage bonus at this Combo level; 0.10 means 10%, levels do not add together.
 			#Range: 0.0 ~ 10.0
-			combo_damage_bonus_level_3 = 0.2
+			combo_damage_bonus_level_3 = 0.05
 			#中文：连击4层伤害加成。该层连击提供的总伤害比例加成；0.10为10%，各层不相加。
 			#English: Combo level 4 damage bonus. Total damage bonus at this Combo level; 0.10 means 10%, levels do not add together.
 			#Range: 0.0 ~ 10.0
-			combo_damage_bonus_level_4 = 0.25
+			combo_damage_bonus_level_4 = 0.07
 
 		#中文：拉塔恩的大剑。
 		#English: Greatsword of Radahn, Light. 
@@ -157,11 +157,11 @@
 		#中文：拉塔恩生命加成。最大生命总倍率加成，0.15表示增加15%。
 		#English: Radahn health bonus. Total maximum health multiplier bonus; 0.15 adds 15%.
 		#Range: 0.0 ~ 10.0
-		radahn_health_bonus = 0.15
+		radahn_health_bonus = 0.075
 		#中文：拉塔恩伤害加成。玩家造成的伤害倍率加成，0.15表示增加15%。
 		#English: Radahn damage bonus. Player damage multiplier bonus; 0.15 adds 15%.
 		#Range: 0.0 ~ 10.0
-		radahn_damage_bonus = 0.15
+		radahn_damage_bonus = 0.075
 		#中文：虚血保留时间 · tick。仅保留最近一次实际生命伤害为虚血；再次受伤覆盖余量并重新计时，超时失效；80tick为4秒。
 		#English: Rally damage window · ticks. Only the latest health hit becomes rally health; a new hit replaces the remainder and restarts expiry
 		#Range: 1 ~ 1200
@@ -169,7 +169,7 @@
 		#中文：虚血转化比例。实际造成的伤害乘此比例可转化为治疗，但不超过尚未恢复的虚血。
 		#English: Rally healing ratio. Dealt health damage times this ratio can be healed, capped by remaining rally damage.
 		#Range: 0.0 ~ 10.0
-		rally_heal_ratio = 0.5
+		rally_heal_ratio = 0.01
 		#中文：驯服后保留生命。致命伤改为驯服后保留的生命值，不超过目标最大生命。
 		#English: Health retained on taming. Health retained when a lethal hit tames the target, capped by its maximum health.
 		#Range: 1.0 ~ 1024.0
@@ -443,7 +443,7 @@
 	[malenia.instant_guard]
 		#中文：启用。
 		#English: Enabled. 
-		enabled = true
+		enabled = false
 		#中文：启用瞬防提示光圈。
 		#English: Cue effect enabled. 
 		cue_effect_enabled = true
@@ -9525,4 +9525,11 @@
 	#中文：场地内自然刷怪。允许女武神和拉塔恩场地内自然生成生物；默认关闭，配置重载后立即生效，未召唤Boss时也生效，不影响召唤与刷怪笼。
 	#English: Natural spawning in boss arenas. Allows natural mob spawning inside Malenia and Radahn arenas; disabled by default, applies on config reload even before summoning, and leaves summons and spawners unaffected.
 	allow_natural_spawns = false
+
+#中文：Boss属性应用。
+#English: Boss attribute application. 
+[bosses]
+	#中文：应用配置基础属性。默认开启，应用配置中的生命、攻击力、移动速度、索敌距离和击退抗性。关闭后，两个Boss在开战、读档和重置时保留实体已有的属性基础值。
+	#English: Apply configured base attributes. Enabled by default. Applies configured health, attack damage, movement speed, follow range and knockback resistance. Disable to retain both bosses' existing attribute bases when starting combat, loading or resetting.
+	apply_configured_base_attributes = false
 

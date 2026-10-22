@@ -2558,6 +2558,179 @@
 			x: 45.0d
 			y: -12.0d
 		}
+		{
+			dependencies: ["7590D9A9E80EF78F"]
+			id: "56E8774CAB56D54D"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "0AB56078E8D71196"
+				item: "kubejs:omni_alloy_ingot"
+				type: "item"
+			}]
+			x: 147.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["38F953F7277133D2"]
+			id: "7590D9A9E80EF78F"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1D605E8D103EF697"
+				item: "kubejs:omni_billet"
+				type: "item"
+			}]
+			x: 144.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0924EDD9AC3329CC"
+				"7844385B14F19F9D"
+				"7EB4A92EFD0DF943"
+				"36C1176995A48AD6"
+				"7807B73D6748372F"
+				"24F20FC55D7C0EB5"
+				"1D75F0FC7768F4BE"
+				"7A572FE8D8555515"
+			]
+			id: "38F953F7277133D2"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4F28E4E0BEC0BA3C"
+				item: "kubejs:omni_seed"
+				type: "item"
+			}]
+			x: 141.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["40D7228299ADB97D"]
+			id: "24F20FC55D7C0EB5"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1B11FBCE017B7EAF"
+				item: "kubejs:astral_biomembrane"
+				type: "item"
+			}]
+			x: 138.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["40D7228299ADB97D"]
+			id: "7807B73D6748372F"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1FEB5E07EC05CF77"
+				item: "kubejs:celestial_lattice_lens"
+				type: "item"
+			}]
+			x: 141.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["40D7228299ADB97D"]
+			id: "1D75F0FC7768F4BE"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3816FE4A2271B748"
+				item: "kubejs:iridescent_resonance_chamber"
+				type: "item"
+			}]
+			x: 138.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["40D7228299ADB97D"]
+			id: "7844385B14F19F9D"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3ED560AC92F545DD"
+				item: "kubejs:cryogenic_phase_housing"
+				type: "item"
+			}]
+			x: 135.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["40D7228299ADB97D"]
+			id: "0924EDD9AC3329CC"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4D8CC687BED7F52E"
+				item: "kubejs:stargate_coupling_coil"
+				type: "item"
+			}]
+			x: 135.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["40D7228299ADB97D"]
+			id: "7EB4A92EFD0DF943"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4E73F754DC17D9D7"
+				item: "kubejs:hydrogen_logic_valve_bank"
+				type: "item"
+			}]
+			x: 135.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["40D7228299ADB97D"]
+			id: "36C1176995A48AD6"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "74F07C9225C98EE4"
+				item: "kubejs:neutron_confinement_ring"
+				type: "item"
+			}]
+			x: 138.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["40D7228299ADB97D"]
+			id: "7A572FE8D8555515"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "409362E6987449BC"
+				item: "kubejs:omni_calibration_grating"
+				type: "item"
+			}]
+			x: 141.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"43DB2DE11581F46D"
+				"40597B95C0F73DF6"
+				"397C4E18445F7165"
+			]
+			hide_dependent_lines: true
+			icon: {
+				Count: 1
+				id: "slashblade_sendims:deeprealm_certificate"
+				tag: {
+					deeprealm: {
+						damage_rate_progress: 0
+						health_progress: 0
+						rank: 0
+					}
+				}
+			}
+			id: "40D7228299ADB97D"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "35FB3179C028DC5D"
+				type: "checkmark"
+			}]
+			title: "万锻：万象"
+			x: 132.0d
+			y: 0.0d
+		}
 	]
 	title: "工业"
 }

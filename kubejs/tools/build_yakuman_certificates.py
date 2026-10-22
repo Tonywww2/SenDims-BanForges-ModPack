@@ -16,7 +16,114 @@ def write_json(path, data):
 
 
 def main():
-    catalog = json.loads((KUBEJS / 'config/yakuman_certificates.json').read_text(encoding='utf-8'))
+    # 17种证书及本地化直接在此定义；游戏内注册位于 startup_scripts/yakuman_certificates.js。
+    catalog = {
+        "reward_count": 1,
+        "certificates": [
+            {
+                "key": "kokushi_musou",
+                "family": "kokushi_musou",
+                "zh_cn": "国士无双",
+                "en_us": "Thirteen Orphans"
+            },
+            {
+                "key": "kokushi_musou_juusanmen_machi",
+                "family": "kokushi_musou",
+                "zh_cn": "国士无双十三面",
+                "en_us": "Thirteen Orphans Thirteen-Sided Wait"
+            },
+            {
+                "key": "suu_ankou",
+                "family": "suu_ankou",
+                "zh_cn": "四暗刻",
+                "en_us": "Four Concealed Triplets"
+            },
+            {
+                "key": "suu_ankou_tanki",
+                "family": "suu_ankou",
+                "zh_cn": "四暗刻单骑",
+                "en_us": "Four Concealed Triplets Single Wait"
+            },
+            {
+                "key": "daisangen",
+                "family": "daisangen",
+                "zh_cn": "大三元",
+                "en_us": "Big Three Dragons"
+            },
+            {
+                "key": "shousuushii",
+                "family": "shousuushii",
+                "zh_cn": "小四喜",
+                "en_us": "Little Four Winds"
+            },
+            {
+                "key": "daisuushii",
+                "family": "daisuushii",
+                "zh_cn": "大四喜",
+                "en_us": "Big Four Winds"
+            },
+            {
+                "key": "tsuuiisou",
+                "family": "tsuuiisou",
+                "zh_cn": "字一色",
+                "en_us": "All Honors"
+            },
+            {
+                "key": "chinroutou",
+                "family": "chinroutou",
+                "zh_cn": "清老头",
+                "en_us": "All Terminals"
+            },
+            {
+                "key": "ryuuiisou",
+                "family": "ryuuiisou",
+                "zh_cn": "绿一色",
+                "en_us": "All Green"
+            },
+            {
+                "key": "chuuren_poutou",
+                "family": "chuuren_poutou",
+                "zh_cn": "九莲宝灯",
+                "en_us": "Nine Gates"
+            },
+            {
+                "key": "junsei_chuuren_poutou",
+                "family": "chuuren_poutou",
+                "zh_cn": "纯正九莲宝灯",
+                "en_us": "Pure Nine Gates"
+            },
+            {
+                "key": "suukantsu",
+                "family": "suukantsu",
+                "zh_cn": "四杠子",
+                "en_us": "Four Kans"
+            },
+            {
+                "key": "tenhou",
+                "family": "tenhou",
+                "zh_cn": "天和",
+                "en_us": "Blessing of Heaven"
+            },
+            {
+                "key": "chiihou",
+                "family": "chiihou",
+                "zh_cn": "地和",
+                "en_us": "Blessing of Earth"
+            },
+            {
+                "key": "renhou",
+                "family": "renhou",
+                "zh_cn": "人和",
+                "en_us": "Blessing of Man"
+            },
+            {
+                "key": "kazoe_yakuman",
+                "family": "kazoe_yakuman",
+                "zh_cn": "累计役满",
+                "en_us": "Counted Yakuman"
+            }
+        ]
+    }
     certificates = catalog['certificates']
     assert len(certificates) == len({entry['key'] for entry in certificates}) == 17
     assert catalog['reward_count'] == 1
@@ -71,7 +178,12 @@ def main():
         'acquisition': 'One item from the first completion of each specific Mahjong advancement.',
         'generic_yakuman_summary_reward': False,
         'reward_delivery': 'Vanilla advancement loot rewards; no player tick scan or extra event listener.',
-        'crafting_policy': 'Consumed by future one-stage-earlier blade recipes.',
+        'crafting_policy': 'Consumed one per early blade recipe, replacing its single stage material; all parent blades and other materials remain required.',
+        'item_registration': {
+            'source': 'kubejs/startup_scripts/yakuman_certificates.js',
+            'style': '17 explicit registrations; no runtime JsonIO/catalog dependency.'
+        },
+        'catalog_source': 'kubejs/tools/build_yakuman_certificates.py',
         'shared_texture': 'kubejs:item/yakuman_certificate',
         'texture': {
             'size': [16, 16],

@@ -1,0 +1,60 @@
+flowchart LR
+    lone["无名「孤高」"]
+    subgraph single["阶段3 · 单役（证可提前至阶段2）"]
+        kokushi["国士无双"]
+        suuankou["四暗刻"]
+        daisangen["大三元"]
+        shousuushii["小四喜"]
+        tsuuiisou["字一色"]
+        ryuuiisou["绿一色"]
+        chinroutou["清老头"]
+        chuuren["九莲宝灯"]
+        suukantsu["四杠子"]
+        tenhou["天和"]
+        chiihou["地和"]
+    end
+    subgraph compound["阶段4 · 双役与三役（证可提前至阶段3）"]
+        daisuushii["2役 · 大四喜"]
+        sangen_jirei["2役 · 三元字敕"]
+        chinrou_suukou["2役 · 清老四刻"]
+        hekigyoku_suukantsu["2役 · 碧玉四杠"]
+        tenju_kokushi["3役 · 天授国士"]
+        chisei_chuuren["3役 · 地生九莲"]
+    end
+    subgraph final["阶段5 · 五役与六役（证可提前至阶段4）"]
+        suushi_jikoku["5役 · 四喜字刻"]
+        shishou_kiitsu["6役 · 四象归一"]
+    end
+    lone --> kokushi
+    lone --> suuankou
+    lone --> daisangen
+    lone --> shousuushii
+    lone --> tsuuiisou
+    lone --> ryuuiisou
+    lone --> chinroutou
+    lone --> chuuren
+    lone --> suukantsu
+    lone --> tenhou
+    lone --> chiihou
+    shousuushii --> daisuushii
+    daisangen --> sangen_jirei
+    tsuuiisou --> sangen_jirei
+    chinroutou --> chinrou_suukou
+    suuankou --> chinrou_suukou
+    ryuuiisou --> hekigyoku_suukantsu
+    suukantsu --> hekigyoku_suukantsu
+    kokushi --> tenju_kokushi
+    tenhou --> tenju_kokushi
+    chuuren --> chisei_chuuren
+    chiihou --> chisei_chuuren
+    daisuushii --> suushi_jikoku
+    tsuuiisou --> suushi_jikoku
+    suuankou --> suushi_jikoku
+    suushi_jikoku --> shishou_kiitsu
+    suukantsu --> shishou_kiitsu
+    classDef one fill:#e8f1fb,stroke:#527ca5,color:#18344f
+    classDef compound fill:#e9f4eb,stroke:#598863,color:#21452a
+    classDef final fill:#fff0ce,stroke:#b58a34,color:#5e4310
+    class kokushi,suuankou,daisangen,shousuushii,tsuuiisou,ryuuiisou,chinroutou,chuuren,suukantsu,tenhou,chiihou one
+    class daisuushii,sangen_jirei,chinrou_suukou,hekigyoku_suukantsu,tenju_kokushi,chisei_chuuren compound
+    class suushi_jikoku,shishou_kiitsu final

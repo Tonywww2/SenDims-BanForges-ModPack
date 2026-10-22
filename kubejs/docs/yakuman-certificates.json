@@ -3,10 +3,13 @@
   "acquisition": "One item from the first completion of each specific Mahjong advancement.",
   "generic_yakuman_summary_reward": false,
   "reward_delivery": "Vanilla advancement loot rewards; no player tick scan or extra event listener.",
-  "crafting_policy": "Consumed by future one-stage-earlier blade recipes.",
+  "crafting_policy": "Consumed one per early blade recipe, replacing its single stage material; all parent blades and other materials remain required.",
   "shared_texture": "kubejs:item/yakuman_certificate",
   "texture": {
-    "size": [16, 16],
+    "size": [
+      16,
+      16
+    ],
     "transparent": true,
     "generator": "hand-drawn native pixel grid",
     "source": "kubejs/tools/draw_yakuman_certificate.py",
@@ -143,5 +146,11 @@
     ],
     "mod_version": "0.2.0",
     "config_sha256": "6727fbbd4ea56794759fd2f988d3ceb7e6c71fc574fe5f4ee70931e93c1a00e5"
-  }
+  },
+  "blade_reward_script": "kubejs/server_scripts/recipes/mahjong.js: tenhou and chiihou advancement completion also gives the corresponding named blade.",
+  "item_registration": {
+    "source": "kubejs/startup_scripts/yakuman_certificates.js",
+    "style": "17 explicit registrations; no runtime JsonIO/catalog dependency."
+  },
+  "catalog_source": "kubejs/tools/build_yakuman_certificates.py"
 }

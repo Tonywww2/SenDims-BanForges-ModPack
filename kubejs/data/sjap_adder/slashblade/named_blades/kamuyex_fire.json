@@ -1,6 +1,5 @@
 {
-    "enchantments":
-    [
+    "enchantments": [
         {
             "id": "minecraft:sharpness",
             "lvl": 7
@@ -23,22 +22,20 @@
         }
     ],
     "name": "sjap_adder:kamuyex_fire",
-    "properties":
-    {
+    "properties": {
         "attack_base": 79.0,
         "max_damage": 200,
         "slash_art": "sjap_adder:burning_dances",
-        "special_effects":
-        [
-            "sjap_adder:fire_dance"
+        "special_effects": [
+            "sjap_adder:fire_dance",
+            "blades_derby:uma_special",
+            "slashblade:dual_blade_main"
         ],
-        "sword_type":
-        [
+        "sword_type": [
             "bewitched"
         ]
     },
-    "render":
-    {
+    "render": {
         "carry_type": "default",
         "model": "sjap_adder:model/kaumyex/kamuyex.obj",
         "summon_sword_color": 16711680,

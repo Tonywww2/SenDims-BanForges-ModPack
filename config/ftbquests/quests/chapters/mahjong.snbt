@@ -9,9 +9,15 @@
 	order_index: 1
 	quest_enhance_decorative_lines: [ ]
 	quest_enhance_hidden_dependency_lines: [ ]
-	quest_links: [ ]
+	quest_links: [{
+		id: "3D2BD1DBD7217E0D"
+		linked_quest: "7FDD038E442DED85"
+		x: 24.0d
+		y: 0.0d
+	}]
 	quests: [
 		{
+			dependencies: ["5251AFEDB9C97974"]
 			id: "572AF696CAC6C564"
 			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
@@ -83,6 +89,7 @@
 			dependencies: [
 				"021D9071C961E904"
 				"18A5D93725BC306E"
+				"6EA2DE0DEBD7A693"
 			]
 			id: "45A8EE304D8553F7"
 			quest_enhance_disable_scroll_paging: false
@@ -108,6 +115,7 @@
 		}
 		{
 			dependencies: ["7054E15504000736"]
+			hide_until_deps_complete: true
 			id: "4AAEA42F23EAD17B"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -120,6 +128,7 @@
 		}
 		{
 			dependencies: ["7054E15504000736"]
+			hide_until_deps_complete: true
 			id: "08B2CCF600382C0B"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -132,6 +141,7 @@
 		}
 		{
 			dependencies: ["7054E15504000736"]
+			hide_until_deps_complete: true
 			id: "68AC6903FD6FC99E"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -144,6 +154,7 @@
 		}
 		{
 			dependencies: ["7054E15504000736"]
+			hide_until_deps_complete: true
 			id: "29517B7F248F28C7"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -156,6 +167,7 @@
 		}
 		{
 			dependencies: ["7054E15504000736"]
+			hide_until_deps_complete: true
 			id: "78FA169E9FAC0AC3"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -168,6 +180,7 @@
 		}
 		{
 			dependencies: ["7054E15504000736"]
+			hide_until_deps_complete: true
 			id: "4DC2AFA55C45E50D"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -180,6 +193,7 @@
 		}
 		{
 			dependencies: ["7054E15504000736"]
+			hide_until_deps_complete: true
 			id: "73EDDEF445C7D6C8"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -192,6 +206,7 @@
 		}
 		{
 			dependencies: ["7054E15504000736"]
+			hide_until_deps_complete: true
 			id: "04FD6C64FB2F779B"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -204,6 +219,7 @@
 		}
 		{
 			dependencies: ["7054E15504000736"]
+			hide_until_deps_complete: true
 			id: "0A57C20D2F302F48"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -216,6 +232,7 @@
 		}
 		{
 			dependencies: ["7054E15504000736"]
+			hide_until_deps_complete: true
 			id: "70548E05AC24F170"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -228,6 +245,7 @@
 		}
 		{
 			dependencies: ["7054E15504000736"]
+			hide_until_deps_complete: true
 			id: "5CE283E7FE233A17"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -240,6 +258,7 @@
 		}
 		{
 			dependencies: ["7054E15504000736"]
+			hide_until_deps_complete: true
 			id: "7180C05808A160C5"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -252,6 +271,7 @@
 		}
 		{
 			dependencies: ["7054E15504000736"]
+			hide_until_deps_complete: true
 			id: "408FCAD9ABD097DD"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -259,11 +279,12 @@
 				item: "kubejs:yakuman_certificate_suukantsu"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 9.0d
+			x: 15.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["7054E15504000736"]
+			hide_until_deps_complete: true
 			id: "3EE97ACA884752D2"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -271,11 +292,12 @@
 				item: "kubejs:yakuman_certificate_tenhou"
 				type: "item"
 			}]
-			x: 15.0d
-			y: 9.0d
+			x: 21.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["7054E15504000736"]
+			hide_until_deps_complete: true
 			id: "457D0E4B658CFE6D"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -283,11 +305,12 @@
 				item: "kubejs:yakuman_certificate_chiihou"
 				type: "item"
 			}]
-			x: 15.0d
-			y: 12.0d
+			x: 18.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["7054E15504000736"]
+			hide_until_deps_complete: true
 			id: "643B09387820A345"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -300,6 +323,7 @@
 		}
 		{
 			dependencies: ["7054E15504000736"]
+			hide_until_deps_complete: true
 			id: "2BE0F7C2240AFB74"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -312,6 +336,7 @@
 		}
 		{
 			dependencies: ["18A5D93725BC306E"]
+			hide_dependent_lines: true
 			id: "02DF2EBAEA051209"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -323,7 +348,10 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["45A8EE304D8553F7"]
+			dependencies: [
+				"45A8EE304D8553F7"
+				"37CF7606A44B5357"
+			]
 			id: "69AD4F5F7729532F"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -333,6 +361,440 @@
 			}]
 			x: 24.0d
 			y: -3.0d
+		}
+		{
+			dependencies: ["02DF2EBAEA051209"]
+			hide_until_deps_complete: true
+			id: "74DECA735D9109E0"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "05BBFB9111CED27A"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"translate\":\"item.slashblade_sendims.yakuman_shousuushii\"}"
+						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade_sendims.yakuman_shousuushii\"}})"
+					}
+				}
+				type: "item"
+			}]
+			x: 30.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["02DF2EBAEA051209"]
+			hide_until_deps_complete: true
+			id: "3909EE6CE05427EE"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7DE6D4FB7542AAEA"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"translate\":\"item.slashblade_sendims.yakuman_tsuuiisou\"}"
+						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade_sendims.yakuman_tsuuiisou\"}})"
+					}
+				}
+				type: "item"
+			}]
+			x: 24.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["02DF2EBAEA051209"]
+			hide_until_deps_complete: true
+			id: "7574ED01E183B60D"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "67E6249A8DE88E53"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"translate\":\"item.slashblade_sendims.yakuman_suuankou\"}"
+						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade_sendims.yakuman_suuankou\"}})"
+					}
+				}
+				type: "item"
+			}]
+			x: 30.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["02DF2EBAEA051209"]
+			hide_until_deps_complete: true
+			id: "7EDF174F2B294191"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0B0EAA04FBAFCAC6"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"translate\":\"item.slashblade_sendims.yakuman_daisangen\"}"
+						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade_sendims.yakuman_daisangen\"}})"
+					}
+				}
+				type: "item"
+			}]
+			x: 24.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["02DF2EBAEA051209"]
+			hide_until_deps_complete: true
+			id: "37C0F1A4E8E8E2A4"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "44487CD2EADAC7DB"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"translate\":\"item.slashblade_sendims.yakuman_chinroutou\"}"
+						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade_sendims.yakuman_chinroutou\"}})"
+					}
+				}
+				type: "item"
+			}]
+			x: 24.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["02DF2EBAEA051209"]
+			hide_until_deps_complete: true
+			id: "72B80B39EEDEDC6E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "501AC631BB91A91A"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"translate\":\"item.slashblade_sendims.yakuman_kokushi\"}"
+						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade_sendims.yakuman_kokushi\"}})"
+					}
+				}
+				type: "item"
+			}]
+			x: 30.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["02DF2EBAEA051209"]
+			hide_until_deps_complete: true
+			id: "3B09889E30294794"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "357013BE554668A9"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"translate\":\"item.slashblade_sendims.yakuman_tenhou\"}"
+						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade_sendims.yakuman_tenhou\"}})"
+					}
+				}
+				type: "item"
+			}]
+			x: 36.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["02DF2EBAEA051209"]
+			hide_until_deps_complete: true
+			id: "74E00FB525C9B4F6"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1A999F9C3448C0BC"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"translate\":\"item.slashblade_sendims.yakuman_ryuuiisou\"}"
+						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade_sendims.yakuman_ryuuiisou\"}})"
+					}
+				}
+				type: "item"
+			}]
+			x: 24.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["02DF2EBAEA051209"]
+			hide_until_deps_complete: true
+			id: "273899C32692A51F"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "20492AFC16C46BE0"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"translate\":\"item.slashblade_sendims.yakuman_chuuren\"}"
+						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade_sendims.yakuman_chuuren\"}})"
+					}
+				}
+				type: "item"
+			}]
+			x: 30.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["02DF2EBAEA051209"]
+			hide_until_deps_complete: true
+			id: "0E2C92CE65EE095C"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5DE11087671FABD3"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"translate\":\"item.slashblade_sendims.yakuman_suukantsu\"}"
+						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade_sendims.yakuman_suukantsu\"}})"
+					}
+				}
+				type: "item"
+			}]
+			x: 27.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["02DF2EBAEA051209"]
+			hide_until_deps_complete: true
+			id: "26B0EE73BC1EB363"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0676AC90D68A9025"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"translate\":\"item.slashblade_sendims.yakuman_chiihou\"}"
+						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade_sendims.yakuman_chiihou\"}})"
+					}
+				}
+				type: "item"
+			}]
+			x: 36.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"72B80B39EEDEDC6E"
+				"3B09889E30294794"
+			]
+			id: "244320A5D1242A2A"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "04C9BCD14103E8EE"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"translate\":\"item.slashblade_sendims.yakuman_tenju_kokushi\"}"
+						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade_sendims.yakuman_tenju_kokushi\"}})"
+					}
+				}
+				type: "item"
+			}]
+			x: 36.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"0E2C92CE65EE095C"
+				"74E00FB525C9B4F6"
+			]
+			id: "0D3B0557EB13CF44"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7CBEDB5401CF784C"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"translate\":\"item.slashblade_sendims.yakuman_hekigyoku_suukantsu\"}"
+						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade_sendims.yakuman_hekigyoku_suukantsu\"}})"
+					}
+				}
+				type: "item"
+			}]
+			x: 33.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"273899C32692A51F"
+				"26B0EE73BC1EB363"
+			]
+			id: "46BBFA98850F9F33"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "131230D1BCE1CB56"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"translate\":\"item.slashblade_sendims.yakuman_chisei_chuuren\"}"
+						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade_sendims.yakuman_chisei_chuuren\"}})"
+					}
+				}
+				type: "item"
+			}]
+			x: 36.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["74DECA735D9109E0"]
+			id: "2DCC905C9F01D57A"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "2D7D5324696D0394"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"translate\":\"item.slashblade_sendims.yakuman_daisuushii\"}"
+						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade_sendims.yakuman_daisuushii\"}})"
+					}
+				}
+				type: "item"
+			}]
+			x: 33.0d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"7EDF174F2B294191"
+				"3909EE6CE05427EE"
+			]
+			id: "645EBDB31D9332E8"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1C9AD09AADBC0798"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"translate\":\"item.slashblade_sendims.yakuman_sangen_jirei\"}"
+						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade_sendims.yakuman_sangen_jirei\"}})"
+					}
+				}
+				type: "item"
+			}]
+			x: 33.0d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"37C0F1A4E8E8E2A4"
+				"7574ED01E183B60D"
+			]
+			id: "4B16C3355B14A57B"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "287DB97C3F099CEE"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"translate\":\"item.slashblade_sendims.yakuman_chinrou_suukou\"}"
+						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade_sendims.yakuman_chinrou_suukou\"}})"
+					}
+				}
+				type: "item"
+			}]
+			x: 33.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"2DCC905C9F01D57A"
+				"7574ED01E183B60D"
+				"3909EE6CE05427EE"
+			]
+			id: "0E7BD4D68B4FF199"
+			quest_enhance_disable_scroll_paging: false
+			shape: "diamond"
+			tasks: [{
+				id: "49147B8958E63127"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"translate\":\"item.slashblade_sendims.yakuman_suushi_jikoku\"}"
+						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade_sendims.yakuman_suushi_jikoku\"}})"
+					}
+				}
+				type: "item"
+			}]
+			x: 42.0d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"0E2C92CE65EE095C"
+				"0E7BD4D68B4FF199"
+			]
+			id: "02FC1870D0CBC4B5"
+			quest_enhance_disable_scroll_paging: false
+			shape: "diamond"
+			tasks: [{
+				id: "563E4E159A37C440"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"translate\":\"item.slashblade_sendims.yakuman_shishou_kiitsu\"}"
+						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade_sendims.yakuman_shishou_kiitsu\"}})"
+					}
+				}
+				type: "item"
+			}]
+			x: 42.0d
+			y: 6.0d
 		}
 	]
 	title: "雀之路"

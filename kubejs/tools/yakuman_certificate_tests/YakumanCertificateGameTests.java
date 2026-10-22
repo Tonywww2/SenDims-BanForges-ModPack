@@ -1,6 +1,5 @@
 package com.tonywww.slashblade_sendims.gametest;
 
-import com.google.gson.JsonParser;
 import com.mojang.authlib.GameProfile;
 import com.riichimahjongforge.mahjongcore.MahjongYakuAdvancements;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -23,9 +22,8 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.gametest.GameTestHolder;
 import net.minecraftforge.gametest.PrefixGameTestTemplate;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.List;
+import java.util.Map;
 import java.util.UUID;
 
 /** Runs with the actual KubeJS registration, Mahjong jar and advancement loot reward pipeline. */
@@ -59,14 +57,31 @@ public final class YakumanCertificateGameTests {
     public static void allCertificatesAwardExactlyOnce(GameTestHelper h) throws Exception {
         var p=player(h);
         try {
-            var catalog=JsonParser.parseString(Files.readString(Path.of("kubejs/config/yakuman_certificates.json")))
-                    .getAsJsonObject().getAsJsonArray("certificates");
+            var catalog=List.of(
+                    Map.entry("kokushi_musou", "kokushi_musou"),
+                    Map.entry("kokushi_musou_juusanmen_machi", "kokushi_musou"),
+                    Map.entry("suu_ankou", "suu_ankou"),
+                    Map.entry("suu_ankou_tanki", "suu_ankou"),
+                    Map.entry("daisangen", "daisangen"),
+                    Map.entry("shousuushii", "shousuushii"),
+                    Map.entry("daisuushii", "daisuushii"),
+                    Map.entry("tsuuiisou", "tsuuiisou"),
+                    Map.entry("chinroutou", "chinroutou"),
+                    Map.entry("ryuuiisou", "ryuuiisou"),
+                    Map.entry("chuuren_poutou", "chuuren_poutou"),
+                    Map.entry("junsei_chuuren_poutou", "chuuren_poutou"),
+                    Map.entry("suukantsu", "suukantsu"),
+                    Map.entry("tenhou", "tenhou"),
+                    Map.entry("chiihou", "chiihou"),
+                    Map.entry("renhou", "renhou"),
+                    Map.entry("kazoe_yakuman", "kazoe_yakuman")
+            );
             h.assertTrue(catalog.size()==17,"Certificate catalog incomplete");
-            for(var element:catalog) {
-                var entry=element.getAsJsonObject();String key=entry.get("key").getAsString();
+            for(var entry:catalog) {
+                String key=entry.getKey();
                 var item=item(key);h.assertTrue(item!=Items.AIR,"Startup registration missing for "+key);
                 var all=TagKey.create(Registries.ITEM,id("kubejs:yakuman_certificates"));
-                var family=TagKey.create(Registries.ITEM,id("kubejs:yakuman_certificates/"+entry.get("family").getAsString()));
+                var family=TagKey.create(Registries.ITEM,id("kubejs:yakuman_certificates/"+entry.getValue()));
                 h.assertTrue(item.builtInRegistryHolder().is(all),"Missing certificate material tag for "+key);
                 h.assertTrue(item.builtInRegistryHolder().is(family),"Missing yaku family tag for "+key);
                 var a=advancement(h,key);

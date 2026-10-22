@@ -1,6 +1,5 @@
 {
-    "enchantments":
-    [
+    "enchantments": [
         {
             "id": "minecraft:unbreaking",
             "lvl": 10
@@ -23,26 +22,25 @@
         }
     ],
     "name": "sjap_adder:nihilbxex",
-    "properties":
-    {
+    "properties": {
         "attack_base": 81.25,
         "max_damage": 600,
         "slash_art": "sjap_adder:sakura_wave_edge",
-        "special_effects":
-        [
+        "special_effects": [
             "sjap_adder:wave_edge_rise_up",
             "sjap_adder:end_sakura_rise_up",
             "last_smith:extra_sharpness",
             "last_smith:smite_se",
-            "last_smith:extra_power"
+            "last_smith:extra_power",
+            "slashblade:wither_edge",
+            "last_smith:extra_smite",
+            "last_smith:extreme_sharpness"
         ],
-        "sword_type":
-        [
+        "sword_type": [
             "bewitched"
         ]
     },
-    "render":
-    {
+    "render": {
         "carry_type": "default",
         "model": "sjap_adder:model/nihill/nihil_over_bx.obj",
         "texture": "sjap_adder:model/nihill/nihilbx.png"

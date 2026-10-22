@@ -5,6 +5,7 @@ import hashlib
 import json
 from pathlib import Path
 from PIL import Image
+from omni_alloy_sources import read_catalog
 
 ROOT = Path(__file__).resolve().parents[2]
 K = ROOT / "kubejs"
@@ -21,7 +22,7 @@ def texture_path(resource):
 
 
 def main():
-    reg = read(K / "config/omni_alloy.json")["registrations"]
+    reg = read_catalog()["registrations"]
     owned = set(read(K / "docs/recipe-research/omni-alloy-implementation.json")["generated_files"])
     fingerprints = collections.defaultdict(list)
     checked = set()

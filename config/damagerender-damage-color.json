@@ -9,10 +9,11 @@
 	"minecraft:player_attack": "#FFFFFF",
 	"attributeslib:fire_damage": "#8B0000",
 	"attributeslib:cold_damage": "#00FFFF",
+	"slashblade_sendims:true_damage": "#DDDDFF",
 	"minecraft:on_fire": "#8B0000",
 	"minecraft:heal": "#94FF6E",
 	"draconicevolution:chaotic_arrow_spoof": "#FFAA00",
-	"draconicevolution:chaotic_arrow": "#FFAA00",
+	"minecraft:in_fire": "#8B0000",
 	"minecraft:wither": "#27004B",
-	"minecraft:in_fire": "#8B0000"
+	"draconicevolution:chaotic_arrow": "#FFAA00"
 }

@@ -602,32 +602,8 @@
 		}
 		{
 			dependencies: [
-				"3766AEF55C430C3B"
-				"0809F64B7A3864AC"
-			]
-			id: "7FDD038E442DED85"
-			quest_enhance_disable_scroll_paging: false
-			tasks: [{
-				id: "2BF0E235BCCD0529"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						display: {
-							Name: "{\"translate\":\"item.slashblade.nameless_lone\"}"
-						}
-						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade.nameless_lone\"}})"
-					}
-				}
-				type: "item"
-			}]
-			x: 12.0d
-			y: 27.0d
-		}
-		{
-			dependencies: [
 				"17234BADC5181DFE"
-				"3766AEF55C430C3B"
+				"7FDD038E442DED85"
 			]
 			id: "091229EAF21172B0"
 			quest_enhance_disable_scroll_paging: false

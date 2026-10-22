@@ -1,6 +1,5 @@
 {
-    "enchantments":
-    [
+    "enchantments": [
         {
             "id": "minecraft:sharpness",
             "lvl": 7
@@ -11,22 +10,18 @@
         }
     ],
     "name": "sjap_adder:kamuyex_life",
-    "properties":
-    {
+    "properties": {
         "attack_base": 80.0,
         "max_damage": 300,
         "slash_art": "sjap_adder:for_life_drive",
-        "special_effects":
-        [
+        "special_effects": [
             "sjap_adder:life_for_health"
         ],
-        "sword_type":
-        [
+        "sword_type": [
             "bewitched"
         ]
     },
-    "render":
-    {
+    "render": {
         "carry_type": "default",
         "model": "sjap_adder:model/kaumyex/kamuyex.obj",
         "summon_sword_color": 65299,

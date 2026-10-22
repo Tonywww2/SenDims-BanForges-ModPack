@@ -1,45 +1,58 @@
 {
-    "creativeGroup": "sjap_adder:sjap_adder_slashblade_icf",
-    "enchantments":
-    [
-        {
-            "id": "minecraft:unbreaking",
-            "lvl": 10
-        },
-        {
-            "id": "minecraft:sharpness",
-            "lvl": 5
-        },
-        {
-            "id": "minecraft:smite",
-            "lvl": 10
-        }
-    ],
-    "name": "sjap_adder:dragon_steel_ice",
-    "properties":
+  "name": "sjap_adder:dragon_steel_ice",
+  "enchantments": [
     {
-        "attack_base": 62.5,
-        "max_damage": 300,
-        "slash_art": "slashblade:wave_edge",
-        "special_effects":
-        [
-            "slashblade_addon:mana_burst",
-            "slashblade_addon:mana_repair",
-            "slashblade_addon:burst_drive",
-            "slashblade_sendims:invincible_pierce",
-            "slashblade_sendims:mana_detonation",
-            "sjap_adder:dragon_lightning"
-        ],
-        "sword_type":
-        [
-            "bewitched"
-        ]
+      "id": "minecraft:fire_protection",
+      "lvl": 1
     },
-    "render":
     {
-        "carry_type": "default",
-        "model": "sjap_adder:model/icf/icfex/model.obj",
-        "summon_sword_color": 46079,
-        "texture": "sjap_adder:model/icf/icfex/ice.png"
+      "id": "minecraft:knockback",
+      "lvl": 3
+    },
+    {
+      "id": "minecraft:looting",
+      "lvl": 3
+    },
+    {
+      "id": "minecraft:power",
+      "lvl": 1
+    },
+    {
+      "id": "minecraft:sharpness",
+      "lvl": 5
+    },
+    {
+      "id": "minecraft:smite",
+      "lvl": 10
+    },
+    {
+      "id": "minecraft:unbreaking",
+      "lvl": 10
     }
+  ],
+  "properties": {
+    "attack_base": 62.0,
+    "max_damage": 300,
+    "slash_art": "slashblade:wave_edge",
+    "special_effects": [
+      "slashblade_addon:mana_burst",
+      "slashblade_addon:mana_repair",
+      "slashblade_sendims:invincible_pierce",
+      "sjap_adder:dragon_lightning",
+      "slashblade_addon:burst_drive",
+      "slashblade:aeonia",
+      "slashblade_sendims:mana_detonation",
+      "sjap_adder:dragon_fire"
+    ],
+    "sword_type": [
+      "bewitched"
+    ]
+  },
+  "render": {
+    "carry_type": "default",
+    "model": "sjap_adder:model/icf/icfex/model.obj",
+    "summon_sword_color": 46079,
+    "texture": "sjap_adder:model/icf/icfex/ice.png"
+  },
+  "creativeGroup": "sjap_adder:sjap_adder_slashblade_icf"
 }

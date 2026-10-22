@@ -9,6 +9,7 @@ import json
 import re
 import zipfile
 from pathlib import Path
+from omni_alloy_sources import read_catalog, read_recipes
 
 ROOT=Path(__file__).resolve().parents[2]
 K=ROOT/"kubejs"
@@ -20,10 +21,10 @@ def read(path):
 
 def main():
     plan=read(K/"docs/recipe-research/omni-alloy-route.json")
-    data=read(K/"config/omni_alloy.json")
+    data=read_catalog()
     reg=data["registrations"]
     records={r["id"] for r in read(K/"docs/recipe-research/recipe-types.json")["records"]}
-    recipes={p.stem:read(p) for p in (K/"data/sdbf/recipes/omni_alloy").glob("*.json")}
+    recipes={recipe_id.rsplit("/",1)[-1]:recipe for recipe_id,recipe in read_recipes().items()}
     native_ids={x["step"] for x in data["packaging"]}
     nodes={n["id"]:n for n in plan["nodes"]}
     planned={n["id"] for n in nodes.values() if n.get("phase") in {"processing","early_supply"}}
@@ -146,7 +147,7 @@ def main():
     assert "kubejs:omni_bio_02_block" not in reg["blocks"]
     assert "kubejs:omni_nuclear_33" not in reg["items"]
     assert not any(r["type"] in {"tofucraft:harder","tofucraft:harden","nuclearcraft:analyzer"} for r in recipes.values())
-    print(f"PASS: {len(recipes)} data recipes + {len(data['packaging'])} checked carrier recipes; {len(planned)} workflows")
+    print(f"PASS: {len(recipes)} inline recipes + {len(data['packaging'])} checked carrier recipes; {len(planned)} workflows")
     print("PASS: item/fluid references, serializer IDs, slot capacities, actual material edges, Chinese names, block drops, S5 gate")
     print("Runtime machines, native state APIs and world interactions still require a full Forge restart and in-game validation.")
 

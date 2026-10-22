@@ -1,0 +1,32 @@
+{
+    "creativeGroup": "sjap_adder:sjap_adder_slashblade",
+    "enchantments": [
+        {
+            "id": "minecraft:sharpness",
+            "lvl": 5
+        },
+        {
+            "id": "minecraft:unbreaking",
+            "lvl": 3
+        },
+        {
+            "id": "minecraft:looting",
+            "lvl": 1
+        }
+    ],
+    "name": "sjap_adder:kamuy_death",
+    "properties": {
+        "attack_base": 60.0,
+        "max_damage": 300,
+        "slash_art": "sjap_adder:dead_ball",
+        "sword_type": [
+            "bewitched"
+        ]
+    },
+    "render": {
+        "carry_type": "default",
+        "model": "slashblade_addon:model/kamuy/kamuy.obj",
+        "summon_sword_color": -8355712,
+        "texture": "sjap_adder:model/kaumyex/death.png"
+    }
+}

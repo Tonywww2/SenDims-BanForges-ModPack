@@ -1,6 +1,6 @@
 {
   "blade_count": 19,
-  "recipes": "后续设计；本次未注册合成配方",
+  "recipes": "已在 mahjong.js 注册19条常规配方、19条役满之证替代配方；明细见 yakuman-recipes.json。",
   "display_order": "手牌→副露／暗杠→胡牌；天和、天授国士十四张全手牌",
   "attack_by_rank": {
     "1": 35,
@@ -464,7 +464,7 @@
           "lvl": 4
         }
       ],
-      "sa": "四象归一",
+      "sa": "四象归一·弹药",
       "ap_flat": 2000,
       "ap_max_ratio": 0.64,
       "se": [
@@ -614,6 +614,14 @@
       "native_drive": "Use velocity yaw/pitch; discard native no-clip yaw reversal; preserve previous angles for interpolation.",
       "light_sword": "Map native mesh tip +X onto the common +Z flight frame.",
       "culling": "Bounds include the scaled sword wave."
+    },
+    "description_sync": {
+      "date": "2026-10-19",
+      "updated_sa_descriptions": 16,
+      "style": "qualitative, without numeric damage, range or duration values",
+      "sources": "pack zh_cn/en_us overrides and native mod zh_cn/en_us language files",
+      "four_symbols_name": "四象归一·弹药"
     }
-  }
+  },
+  "recipe_dependencies": "kubejs/docs/yakuman-recipes.mmd"
 }

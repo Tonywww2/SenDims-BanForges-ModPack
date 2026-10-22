@@ -199,7 +199,6 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(4, () => {
         .addAttributes("minecraft:generic.knockback_resistance", 0.1)
         .addAttributes("minecraft:generic.armor", 1)
         .addAttributes("attributeslib:cold_damage", 16)
-        .addAttributes("slashblade_sendims:ap_gain_percentage", 0.2)
         .setTints("4a5d6e", "2c3e50")
         .addTexture("metal").addTexture("heavy")
         .addItemMaterial('kubejs:anchor_shard')
@@ -237,7 +236,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(4, () => {
 
     // 9. 辐射零件 / Radiation Components
     tetraMaterialBuilder(event, "radiation_components").setCategory("metal")
-        .setPrimary(73).setSecondary(57).setTertiary(34)
+        .setPrimary(73).setSecondary(57).setTertiary(35)
         .setDurability(300).setIntegrityCost(8).setIntegrityGain(16)
         .setMagicCapacity(90).setToolLevel(4).setToolEfficiency(8)
         .addAttributes("minecraft:generic.attack_damage", -1.5).addAttributes("attributeslib:crit_damage", 0.08).addAttributes("attributeslib:crit_chance", 0.02)
@@ -248,4 +247,258 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(4, () => {
         .setCountFactor(0.6)
         .build();
 
-}))
+    // 3.x 后期材料归入整合包阶段 4；已存在的五种材料在上方原位维护。
+    // 辅助参数按材料定位与阶段独立配置；颜色对应原物品的主色。
+    // ap_reduce_amount 为负表示增加消耗；单个 * 为最大生命的基础倍率加算。
+
+    // 3.3.2 古代灵魂
+    tetraMaterialBuilder(event, "ancient_soul").setCategory("gem")
+        .setPrimary(64).setSecondary(50).setTertiary(34)
+        .setDurability(180).setIntegrityCost(7).setIntegrityGain(10)
+        .setMagicCapacity(230).setToolLevel(4).setToolEfficiency(4.5)
+        .addAttributes("slashblade_sendims:magic_resistance", 4)
+        .setTints("b88655", "d6b179")
+        .addTexture("shiny").addTexture("default")
+        .addItemMaterial('kubejs:ancient_soul')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
+    // 3.3.2 土星环合金锭
+    tetraMaterialBuilder(event, "saturn_ring_alloy_ingot").setCategory("metal")
+        .setPrimary(62).setSecondary(55).setTertiary(34)
+        .setDurability(340).setIntegrityCost(8).setIntegrityGain(15)
+        .setMagicCapacity(145).setToolLevel(4).setToolEfficiency(8)
+        .addAttributes("attributeslib:armor_shred", 0.02)
+        .addAttributes("attributeslib:crit_damage", 0.04)
+        .addAttributes("slashblade_sendims:ap_gain_percentage", 0.04)
+        .setTints("d9ae5a", "f1d38e")
+        .addTexture("metal").addTexture("shiny")
+        .addItemMaterial('kubejs:saturn_ring_alloy_ingot')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
+    // 3.3.2 龙锭
+    tetraMaterialBuilder(event, "draconium_ingot").setCategory("metal")
+        .setPrimary(68).setSecondary(40).setTertiary(33)
+        .setDurability(360).setIntegrityCost(9).setIntegrityGain(12)
+        .setMagicCapacity(170).setToolLevel(4).setToolEfficiency(8.5)
+        .addAttributes("attributeslib:fire_damage", 14)
+        .addAttributes("attributeslib:armor_pierce", 2)
+        .addAttributes("minecraft:generic.attack_damage", 0.5)
+        .setTints("8c48bd", "b781e5")
+        .addTexture("metal").addTexture("shiny")
+        .addItemMaterial('draconicevolution:draconium_ingot')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
+    // 3.3.2 压缩铁锭
+    tetraMaterialBuilder(event, "ingot_iron_compressed").setCategory("metal")
+        .setPrimary(58).setSecondary(65).setTertiary(33)
+        .setDurability(420).setIntegrityCost(9).setIntegrityGain(16)
+        .setMagicCapacity(80).setToolLevel(4).setToolEfficiency(7)
+        .addAttributes("minecraft:generic.armor", 1)
+        .addAttributes("minecraft:generic.armor_toughness", 1.5)
+        .addAttributes("minecraft:generic.knockback_resistance", 0.025)
+        .setTints("888888", "a1a1a1")
+        .addTexture("metal").addTexture("heavy")
+        .addItemMaterial('pneumaticcraft:ingot_iron_compressed')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
+    // 3.3.3 塑料片
+    tetraMaterialBuilder(event, "plastic").setCategory("fabric")
+        .setPrimary(50).setSecondary(100).setTertiary(32)
+        .setDurability(200).setIntegrityCost(4).setIntegrityGain(10)
+        .setMagicCapacity(60).setToolLevel(4).setToolEfficiency(4)
+        .addAttributes("attributeslib:dodge_chance", 0.015)
+        .addAttributes("slashblade_sendims:ap_reduce_amount", 4)
+        .addAttributes("minecraft:generic.armor", -1)
+        .setTints("a9b6b6", "e1e5e5")
+        .addTexture("default")
+        .addItemMaterial('pneumaticcraft:plastic')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
+    // 3.3.3 遗弃青铜锭
+    tetraMaterialBuilder(event, "forsaken_bronze_ingot").setCategory("metal")
+        .setPrimary(60).setSecondary(80).setTertiary(33)
+        .setDurability(360).setIntegrityCost(7).setIntegrityGain(15)
+        .setMagicCapacity(140).setToolLevel(4).setToolEfficiency(7)
+        .addAttributes("minecraft:generic.armor", 1)
+        .addAttributes("slashblade_sendims:parry_heal_amount", 60)
+        .addAttributes("slashblade_sendims:madness_reduce", 15)
+        .setTints("916952", "b39072")
+        .addTexture("metal").addTexture("crude")
+        .addItemMaterial('darkerdepths:forsaken_bronze_ingot')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
+    // 3.3.3 硅岩锭
+    tetraMaterialBuilder(event, "naquadah_ingot").setCategory("metal")
+        .setPrimary(72).setSecondary(50).setTertiary(33)
+        .setDurability(340).setIntegrityCost(10).setIntegrityGain(11)
+        .setMagicCapacity(155).setToolLevel(4).setToolEfficiency(8.5)
+        .addAttributes("slashblade_sendims:magic_penetration", 3)
+        .addAttributes("attributeslib:fire_damage", 12)
+        .addAttributes("attributeslib:healing_received", -0.03)
+        .setTints("676764", "898983")
+        .addTexture("metal").addTexture("heavy")
+        .addItemMaterial('sgjourney:naquadah_ingot')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
+    // 3.3.4 压实耀魂滤饼
+    tetraMaterialBuilder(event, "compressed_proudsoul_cake").setCategory("scale")
+        .setPrimary(52).setSecondary(105).setTertiary(33)
+        .setDurability(180).setIntegrityCost(8).setIntegrityGain(10)
+        .setMagicCapacity(220).setToolLevel(4).setToolEfficiency(4.5)
+        .addAttributes("slashblade_sendims:ap_gain_percentage", 0.06)
+        .addAttributes("slashblade_sendims:parry_heal_amount", 100)
+        .addAttributes("minecraft:generic.attack_damage", -1)
+        .setTints("6f4c8d", "9470b2")
+        .addTexture("shiny").addTexture("crude")
+        .addItemMaterial('kubejs:compressed_proudsoul_cake')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
+    // 3.3.4 硅岩铁合金
+    tetraMaterialBuilder(event, "naquadah_iron_alloy").setCategory("metal")
+        .setPrimary(82).setSecondary(30).setTertiary(33)
+        .setDurability(480).setIntegrityCost(10).setIntegrityGain(18)
+        .setMagicCapacity(95).setToolLevel(4).setToolEfficiency(9)
+        .addAttributes("attributeslib:armor_pierce", 3)
+        .addAttributes("minecraft:generic.armor_toughness", 1)
+        .addAttributes("slashblade_sendims:ap_reduce_amount", -20)
+        .setTints("5d6c8c", "8a9bbf")
+        .addTexture("metal").addTexture("heavy")
+        .addItemMaterial('sgjourney:naquadah_iron_alloy')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
+    // 3.3.5 武器级硅岩
+    tetraMaterialBuilder(event, "naquadah").setCategory("metal")
+        .setPrimary(84).setSecondary(30).setTertiary(33.5)
+        .setDurability(320).setIntegrityCost(12).setIntegrityGain(10)
+        .setMagicCapacity(110).setToolLevel(4).setToolEfficiency(10)
+        .addAttributes("attributeslib:armor_shred", 0.025)
+        .addAttributes("attributeslib:fire_damage", 20)
+        .addAttributes("minecraft:generic.armor_toughness", -1)
+        .setTints("575050", "756d6d")
+        .addTexture("metal").addTexture("shiny")
+        .addItemMaterial('sgjourney:naquadah')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
+    // 3.3.5 凯金锭
+    tetraMaterialBuilder(event, "trinium_ingot").setCategory("metal")
+        .setPrimary(68).setSecondary(70).setTertiary(33)
+        .setDurability(380).setIntegrityCost(6).setIntegrityGain(16)
+        .setMagicCapacity(140).setToolLevel(4).setToolEfficiency(8.5)
+        .addAttributes("slashblade_sendims:sprint_cd", 0.015)
+        .addAttributes("slashblade_sendims:ap_reduce_amount", 4)
+        .addAttributes("attributeslib:crit_damage", 0.04)
+        .setTints("c8c8c8", "eaeaea")
+        .addTexture("metal").addTexture("shiny")
+        .addItemMaterial('sgjourney:trinium_ingot')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
+    // 3.3.5 合一碎片
+    tetraMaterialBuilder(event, "unity_shard").setCategory("gem")
+        .setPrimary(70).setSecondary(64).setTertiary(32)
+        .setDurability(280).setIntegrityCost(7).setIntegrityGain(14)
+        .setMagicCapacity(190).setToolLevel(4).setToolEfficiency(6)
+        .addAttributes("minecraft:generic.armor", 1)
+        .addAttributes("slashblade_sendims:magic_resistance", 2)
+        .addAttributes("attributeslib:healing_received", 0.03)
+        .setTints("576ffa", "a7b3ff")
+        .addTexture("shiny").addTexture("default")
+        .addItemMaterial('sgjourney:unity_shard')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
+    // 3.3.6 飞龙核心
+    tetraMaterialBuilder(event, "wyvern_core").setCategory("gem")
+        .setPrimary(71).setSecondary(63).setTertiary(33)
+        .setDurability(320).setIntegrityCost(9).setIntegrityGain(13)
+        .setMagicCapacity(180).setToolLevel(4).setToolEfficiency(8)
+        .addAttributes("attributeslib:crit_chance", 0.02)
+        .addAttributes("attributeslib:crit_damage", 0.06)
+        .addAttributes("slashblade_sendims:ap_reduce_amount", 4)
+        .setTints("ad7bcb", "be92d9")
+        .addTexture("shiny").addTexture("default")
+        .addItemMaterial('draconicevolution:wyvern_core')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
+    // 3.3.6 高级控制水晶
+    tetraMaterialBuilder(event, "advanced_control_crystal").setCategory("gem")
+        .setPrimary(68).setSecondary(70).setTertiary(33)
+        .setDurability(220).setIntegrityCost(6).setIntegrityGain(12)
+        .setMagicCapacity(210).setToolLevel(4).setToolEfficiency(5.5)
+        .addAttributes("slashblade_sendims:ap_reduce_amount", 6)
+        .addAttributes("slashblade_sendims:sprint_cd", 0.01)
+        .addAttributes("slashblade_sendims:magic_resistance", 1)
+        .setTints("20c4b5", "a1fbe9")
+        .addTexture("shiny").addTexture("default")
+        .addItemMaterial('sgjourney:advanced_control_crystal')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
+    // 3.3.7 补天合金锭
+    tetraMaterialBuilder(event, "celestial_filling_alloy_ingot").setCategory("metal")
+        .setPrimary(50).setSecondary(115).setTertiary(33)
+        .setDurability(440).setIntegrityCost(9).setIntegrityGain(20)
+        .setMagicCapacity(180).setToolLevel(4).setToolEfficiency(6.5)
+        .addAttributes("*minecraft:generic.max_health", 0.01)
+        .addAttributes("attributeslib:healing_received", 0.04)
+        .addAttributes("slashblade_sendims:madness_reduce", 15)
+        .setTints("d784c5", "f0a1d6")
+        .addTexture("metal").addTexture("shiny")
+        .addItemMaterial('kubejs:celestial_filling_alloy_ingot')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
+    // 3.3.7 大型控制水晶
+    tetraMaterialBuilder(event, "large_control_crystal").setCategory("gem")
+        .setPrimary(65).setSecondary(77).setTertiary(33)
+        .setDurability(260).setIntegrityCost(8).setIntegrityGain(14)
+        .setMagicCapacity(240).setToolLevel(4).setToolEfficiency(6)
+        .addAttributes("slashblade_sendims:ap_gain_percentage", 0.08)
+        .addAttributes("slashblade_sendims:sprint_cd", 0.015)
+        .addAttributes("minecraft:generic.attack_damage", -1)
+        .setTints("c7021f", "eb7180")
+        .addTexture("shiny").addTexture("default")
+        .addItemMaterial('sgjourney:large_control_crystal')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
+    // 3.3.8 神龙核心（觉醒核心）
+    tetraMaterialBuilder(event, "awakened_core").setCategory("gem")
+        .setPrimary(72).setSecondary(65).setTertiary(34.5)
+        .setDurability(380).setIntegrityCost(10).setIntegrityGain(14)
+        .setMagicCapacity(205).setToolLevel(4).setToolEfficiency(9)
+        .addAttributes("attributeslib:crit_damage", 0.1)
+        .addAttributes("attributeslib:armor_pierce", 3)
+        .addAttributes("slashblade_sendims:ap_reduce_amount", -20)
+        .setTints("ff921c", "ffd17f")
+        .addTexture("shiny").addTexture("default")
+        .addItemMaterial('draconicevolution:awakened_core')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
+    // 3.3.9 混沌核心
+    tetraMaterialBuilder(event, "chaotic_core").setCategory("gem")
+        .setPrimary(74).setSecondary(70).setTertiary(36)
+        .setDurability(320).setIntegrityCost(12).setIntegrityGain(11)
+        .setMagicCapacity(235).setToolLevel(4).setToolEfficiency(10)
+        .addAttributes("slashblade_sendims:frenzy_damage", 0.08)
+        .addAttributes("attributeslib:crit_damage", 0.08)
+        .addAttributes("*minecraft:generic.max_health", -0.01)
+        .setTints("e0e0e0", "9b9b9b")
+        .addTexture("shiny").addTexture("default")
+        .addItemMaterial('draconicevolution:chaotic_core')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
+}));

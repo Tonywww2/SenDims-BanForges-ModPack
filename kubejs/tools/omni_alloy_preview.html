@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>万象锭 · 合成路线图</title>
+<style>
+:root{--bg:#101516;--panel:#192022;--panel2:#20292c;--ink:#edf2ea;--muted:#9eafad;--line:#344143;--gold:#dfc188;--accent:#a5d1ba;--shadow:0 18px 60px #0003;font-family:"Segoe UI","Microsoft YaHei UI","Microsoft YaHei",sans-serif;color:var(--ink);background:var(--bg);font-synthesis:none}
+*{box-sizing:border-box}body{margin:0}button,input{font:inherit}button{cursor:pointer;color:inherit}button:focus-visible,input:focus-visible,a:focus-visible{outline:2px solid var(--gold);outline-offset:4px}button{border:1px solid var(--line);background:var(--panel2);border-radius:8px}button:hover{background:#303b3e}a{color:var(--accent)}.wrap{max-width:1640px;margin:auto;padding:36px 40px 28px}.eyebrow{font-size:11px;font-weight:700;letter-spacing:.18em;color:var(--gold);text-transform:uppercase}.hero{display:flex;justify-content:space-between;gap:30px;align-items:center;margin-bottom:28px}.hero-left{display:flex;align-items:center;gap:22px}.hero-icon{width:86px;height:86px;display:grid;place-items:center;background:radial-gradient(#dfc18822,transparent 70%);border:1px solid #dfc18844;border-radius:22px;transform:rotate(-5deg)}.hero-icon img{width:56px;height:56px;image-rendering:pixelated;transform:rotate(5deg)}h1{font-size:34px;letter-spacing:.02em;font-weight:650;margin:8px 0}h1 span{color:var(--muted);font-weight:350;font-size:24px}p{line-height:1.7;margin:8px 0;color:var(--muted)}.subline{font-size:13px;max-width:680px}.stats{display:flex;gap:28px}.stat b{display:block;font-size:27px;font-weight:550;font-variant-numeric:tabular-nums}.stat span{font-size:11px;color:var(--muted)}.toolbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:16px}.tabs{display:flex;gap:6px;flex-wrap:wrap;flex:1}.tabs button{padding:10px 13px;font-size:12px;background:transparent}.tabs button.active{background:var(--gold);color:#262a23;border-color:var(--gold)}.tab-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--branch,var(--gold));margin-right:7px}.search-box{position:relative;min-width:235px}.search-box input{width:100%;background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:11px 13px 11px 33px;font-size:12px}.search-mark{position:absolute;left:12px;top:11px;color:var(--muted)}#results{position:absolute;right:0;top:44px;background:#20292c;border:1px solid var(--line);border-radius:10px;width:360px;max-height:420px;overflow:auto;z-index:20;box-shadow:var(--shadow)}#results:empty{display:none}.result{display:flex;align-items:center;gap:10px;text-align:left;border:0;border-bottom:1px solid var(--line);border-radius:0;background:transparent;padding:12px;width:100%;font-size:12px}.result small{display:block;color:var(--muted);margin-top:4px}.compact-btn{padding:10px 12px;font-size:12px}.overview{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:28px;position:relative}.section-head{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:6px 0 14px}.section-head h2{font-size:14px;margin:0;font-weight:550}.section-head span{font-size:11px;color:var(--muted)}.branch-list{display:flex;flex-direction:column;gap:8px}.branch-row{display:grid;grid-template-columns:198px minmax(0,1fr) 28px;gap:14px;align-items:center;min-height:83px;padding:14px 16px;border:1px solid var(--line);border-radius:10px;background:linear-gradient(100deg,color-mix(in srgb,var(--branch) 8%,#192022),#192022 60%);position:relative;text-align:left;width:100%}.branch-row:hover{border-color:var(--branch);background:linear-gradient(100deg,color-mix(in srgb,var(--branch) 13%,#192022),#1e2729)}.branch-row:before{content:"";position:absolute;left:-1px;top:20px;bottom:20px;width:3px;background:var(--branch);border-radius:3px}.branch-title{display:flex;align-items:center;gap:12px;min-width:0}.pixel{width:34px;height:34px;image-rendering:pixelated;object-fit:contain;flex-shrink:0}.placeholder{display:grid;place-items:center;background:#ffffff0a;border-radius:6px;color:var(--branch,var(--gold));font-size:16px}.branch-title b{font-size:13px;font-weight:600;display:block}.branch-title small{display:block;color:var(--muted);font-size:10px;margin-top:7px;letter-spacing:.02em}.stage-strip{display:flex;align-items:center;gap:7px;flex-wrap:wrap}.stage-chip{font-size:10px;color:#b9c6c3;border:1px solid #ffffff12;padding:5px 7px;border-radius:5px;white-space:nowrap}.stage-arrow{font-size:10px;color:var(--branch)}.row-arrow{font-size:20px;color:var(--branch)}.final-column{border-left:1px solid var(--line);padding-left:28px;position:relative}.final-column:before{content:"";height:1px;position:absolute;left:0;top:355px;width:28px;background:var(--line)}.final-intro{font-size:11px;color:var(--muted);margin:17px 0 21px;line-height:1.8}.final-card{padding:20px;text-align:left;width:100%;background:linear-gradient(150deg,#2b302a,#1b2425);border:1px solid #dfc18855;border-radius:12px;display:block}.final-card .step-no{font-size:10px;letter-spacing:.12em;color:var(--gold)}.final-card .card-heading{display:flex;gap:12px;align-items:center;margin:14px 0}.final-card b{font-size:17px;font-weight:600}.final-card p{font-size:11px;margin:0}.final-card .method{font-size:12px;color:var(--gold);margin:4px 0 10px}.final-card.target{border-color:var(--gold);box-shadow:0 0 38px #dfc1880a}.final-card.target .pixel{width:44px;height:44px}.final-arrow{text-align:center;color:var(--gold);padding:9px;font-size:20px}.overview-foot{display:flex;align-items:center;gap:10px;margin-top:20px;font-size:11px;color:var(--muted)}.overview-foot .dot{width:5px;height:5px;border-radius:50%;background:var(--accent)}.atlas{display:grid;grid-template-columns:minmax(0,1fr) 330px;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--panel);box-shadow:var(--shadow)}.graph-area{min-width:0}.graph-heading{padding:20px 22px 16px;border-bottom:1px solid var(--line);display:flex;gap:15px;align-items:center;min-height:108px}.graph-heading h2{font-size:20px;margin:0 0 7px}.graph-heading p{font-size:12px;margin:0}.graph-heading .pixel{width:44px;height:44px}.graph-controls{display:flex;gap:6px;margin-left:auto;align-items:center}.graph-controls button{padding:7px 9px;white-space:nowrap;font-size:11px}.graph-controls output{width:42px;text-align:center;font-size:10px;color:var(--muted)}.viewport{height:610px;position:relative;overflow:hidden;touch-action:none;background-color:#141c1e;background-image:radial-gradient(#ffffff0e 1px,transparent 1px);background-size:20px 20px;cursor:grab}.viewport.dragging{cursor:grabbing}.graph-world{position:absolute;top:0;left:0;transform-origin:0 0;will-change:transform}svg.edges{position:absolute;inset:0;overflow:visible;pointer-events:none}.edge{fill:none;stroke:#687c79;stroke-width:1.6;opacity:.4}.edge.focus{stroke:var(--branch);stroke-width:2.3;opacity:1}.edge.faded{opacity:.09}.node{position:absolute;width:210px;height:92px;display:flex;gap:11px;align-items:center;padding:12px;text-align:left;background:#202b2e;border:1px solid #425153;border-radius:10px;box-shadow:0 6px 12px #0002;transition:opacity .14s,border-color .14s;overflow:hidden}.node:hover{background:#2a393c;border-color:var(--branch)}.node.selected{border:2px solid var(--branch);background:color-mix(in srgb,var(--branch) 11%,#202b2e)}.node.faded{opacity:.3}.node.assembly{background:#2b312d;border-color:#8c90624d}.node.stage5_entry{border-color:#dfc18880}.node.early_supply{border-style:dashed;border-color:#78aa8e80}.node.issue:after{content:"!";position:absolute;right:8px;top:8px;background:#b77b43;color:white;font-size:9px;width:14px;height:14px;border-radius:50%;text-align:center;line-height:14px}.node-text{min-width:0}.node-text b{display:block;font-size:12px;line-height:1.5;font-weight:550}.node-text small{display:block;color:var(--muted);font-size:10px;margin-top:5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.node-text em{font-size:9px;font-style:normal;color:var(--branch);display:block;margin-bottom:3px}.column-label{position:absolute;font-size:11px;color:#b7c8c1;letter-spacing:.05em;white-space:nowrap;padding-bottom:10px;border-bottom:1px solid #ffffff18}.canvas-hint{position:absolute;bottom:14px;left:18px;font-size:10px;background:#172021e8;border:1px solid var(--line);border-radius:6px;padding:7px 10px;color:var(--muted);pointer-events:none}.inspector{border-left:1px solid var(--line);padding:23px 22px;overflow:auto;max-height:718px;background:#1a2325}.inspector .label{font-size:10px;letter-spacing:.12em;color:var(--gold);margin-bottom:16px}.inspector h3{font-size:20px;line-height:1.4;margin:12px 0 4px;font-weight:550}.inspector .item-id{font-family:Consolas,monospace;font-size:10px;overflow-wrap:anywhere;color:var(--muted);margin-bottom:18px;line-height:1.5}.inspector .large-icon{width:54px;height:54px}.badge{display:inline-block;padding:4px 7px;font-size:10px;border-radius:5px;background:#ffffff0a;border:1px solid #ffffff14;margin:0 4px 5px 0;color:var(--muted)}.inspector h4{font-size:11px;color:var(--muted);font-weight:500;margin:23px 0 10px}.inspector p{font-size:12px;line-height:1.8}.input-row{display:flex;gap:9px;align-items:center;margin:6px 0;padding:8px 9px;border:1px solid #ffffff0b;border-radius:6px;font-size:11px;background:#ffffff03;text-align:left;color:var(--ink);width:100%}.input-row .pixel{width:24px;height:24px}.input-row span{flex:1;overflow-wrap:anywhere}.input-row b{font-weight:550;color:var(--gold);white-space:nowrap}.inspector code{font-family:Consolas,monospace;font-size:10px;overflow-wrap:anywhere;color:#a7b8b1}.recipe-ref{padding:10px 0;border-top:1px solid var(--line);margin-top:12px}.recipe-ref summary{font-size:11px;cursor:pointer;color:#c5d0c7;line-height:1.7;overflow-wrap:anywhere}.recipe-ref small{font-size:9px;color:var(--muted)}pre{white-space:pre-wrap;word-break:break-word;font-size:10px;color:#bdcfbb;background:#101719;padding:12px;border-radius:6px;line-height:1.7;max-height:300px;overflow:auto}.issue-note{font-size:11px;color:#e8bf91;background:#d2914110;border:1px solid #d2914140;border-radius:7px;padding:11px;line-height:1.8;margin-top:16px}.graph-legend{display:flex;gap:18px;flex-wrap:wrap;padding:12px 20px;color:var(--muted);font-size:10px;border-top:1px solid var(--line)}.legend-box{width:10px;height:10px;border:1px solid #667b77;display:inline-block;margin-right:6px;border-radius:2px;vertical-align:-1px}.legend-box.supply{border-style:dashed;border-color:#78aa8e}.legend-box.feed{border-color:var(--gold)}.legend-box.assembly{background:#8c906244}.bottom-bar{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-top:22px;padding-top:18px;border-top:1px solid var(--line);font-size:10px;color:var(--muted);line-height:1.8}.bottom-bar button{font-size:10px;padding:7px 9px}.status{color:#c7b896}.hidden{display:none!important}dialog{background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:14px;width:min(900px,95vw);max-height:86vh;box-shadow:var(--shadow);padding:27px}dialog::backdrop{background:#070c0dc9;backdrop-filter:blur(5px)}.modal-head{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:15px}.modal-head h2{font-size:20px;margin:0}.modal-head button{width:32px;height:32px}.cost-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px 28px}.cost-grid h3{font-size:13px;margin:18px 0 10px;color:var(--gold)}.cost-grid p{font-size:11px}.cost-list{list-style:none;padding:0;margin:0}.cost-list li{display:flex;gap:15px;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--line);font-size:12px}.cost-list b{color:var(--gold);font-weight:500}.print-title{display:none}
+.input-row>.pixel{flex:0 0 24px}.minimap{position:absolute;bottom:14px;right:16px;width:220px;height:84px;background:#172021f0;border:1px solid var(--line);padding:8px 10px;box-shadow:0 5px 20px #0002;cursor:crosshair}.minimap>span{display:block;text-align:left;font-size:9px;color:var(--muted);margin-bottom:7px}.minimap svg{display:block;width:100%;height:44px;overflow:hidden}
+@media(min-width:1450px){.branch-row{grid-template-columns:210px minmax(0,1fr) 28px;min-height:88px}.stage-chip{font-size:11px;padding:5px 8px}}
+@media(max-width:1100px){.wrap{padding:25px 22px}.hero{align-items:flex-start}.hero-icon{width:70px;height:70px;flex-shrink:0}.stats{gap:18px}.overview{grid-template-columns:minmax(0,1fr) 255px;gap:18px}.final-column{padding-left:18px}.branch-row{grid-template-columns:176px minmax(0,1fr) 15px;gap:8px;min-height:94px;padding:11px}.branch-title{gap:7px}.branch-title b{font-size:12px}.branch-title .pixel{width:27px;height:27px}.stage-chip{font-size:9px;padding:4px}.stage-strip{gap:4px}.atlas{grid-template-columns:minmax(0,1fr) 290px}.inspector{padding:20px 17px}.graph-heading{padding:17px;flex-wrap:wrap}.graph-controls{margin-left:0}.graph-heading h2{font-size:18px}.graph-heading p{max-width:320px}}
+@media(max-width:760px){.wrap{padding:22px 16px}.hero{display:block}.hero-left{gap:16px}.hero-icon{width:60px;height:60px;border-radius:16px}.hero-icon img{width:40px;height:40px}h1{font-size:27px}h1 span{font-size:18px}.eyebrow{font-size:9px}.subline{font-size:11px}.stats{margin:22px 0 0;padding-left:3px;justify-content:space-between}.stat b{font-size:23px}.stat span{font-size:10px}.toolbar{gap:12px}.tabs{order:2;flex-basis:100%;gap:5px}.tabs button{padding:8px;font-size:11px}.search-box{flex:1;min-width:170px}.compact-btn{padding:10px;font-size:11px}#results{width:min(360px,90vw)}.overview{display:block}.section-head span{font-size:9px}.branch-row{grid-template-columns:1fr 16px;min-height:110px;padding:14px;gap:10px}.branch-title{gap:12px}.branch-title .pixel{width:32px;height:32px}.branch-title b{font-size:14px}.branch-title small{font-size:10px}.stage-strip{grid-column:1;grid-row:2;margin-left:44px}.stage-chip{font-size:9px}.row-arrow{grid-column:2;grid-row:1/3}.final-column{margin-top:28px;padding:0;border:0}.final-column:before{display:none}.final-intro{margin:8px 0 15px}.final-card{padding:17px}.final-card .card-heading{margin:9px 0}.final-card p{font-size:12px}.final-arrow{padding:7px}.atlas{display:block}.viewport{height:510px}.graph-heading{min-height:125px;gap:10px}.graph-heading .pixel{width:34px;height:34px}.graph-heading p{font-size:11px;max-width:270px}.graph-controls{margin-left:auto}.inspector{border-left:0;border-top:1px solid var(--line);max-height:none;min-height:230px;padding:23px}.inspector .large-icon{float:left;margin:0 15px 10px 0}.inspector h3{font-size:19px}.inspector .label{margin-bottom:12px}.bottom-bar{align-items:flex-start;font-size:9px}.cost-grid{display:block}dialog{padding:20px}.modal-head h2{font-size:18px}}
+@media print{body{background:white;color:#172020}.wrap{padding:0;max-width:none}.toolbar,.bottom-bar,.graph-controls,.canvas-hint,.overview-foot{display:none!important}.hero{margin-bottom:20px}h1{font-size:27px}.hero-icon{border-color:#ccc}.hero p,.stat span,.branch-title small,.section-head span,.final-intro{color:#52615d}.overview{grid-template-columns:1fr 220px;gap:15px}.branch-row{background:white!important;border-color:#ccc;min-height:85px;padding:9px;grid-template-columns:170px 1fr 10px;break-inside:avoid}.branch-title b{font-size:12px}.stage-chip{color:#3e4c48;border-color:#ccc;font-size:9px}.final-card{background:white!important;color:#172020}.final-card p{color:#52615d}.final-column{padding-left:15px}.stats{gap:20px}.stage-arrow{color:#52615d}.atlas{break-inside:avoid}.inspector{max-height:none}.print-title{display:block}}
+</style>
+<style>@media(max-width:760px){.canvas-hint{bottom:107px;left:14px;font-size:9px}.minimap{width:180px;right:12px;bottom:12px}.graph-controls{margin-left:0}.graph-controls button{padding:7px 10px}}@media print{.minimap{display:none}}</style>
+<style>
+.atlas.complete-view{display:block;position:relative}.complete-view .viewport{height:calc(100vh - 350px);min-height:450px;max-height:1100px}.complete-view .inspector{display:none;position:absolute;right:14px;top:120px;width:330px;max-height:calc(100% - 180px);border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow);z-index:5}.complete-view.details-open .inspector{display:block}.complete-view .node{border-color:color-mix(in srgb,var(--branch) 48%,#344143)}.lane-band{position:absolute;border:2px solid color-mix(in srgb,var(--branch) 30%,transparent);border-radius:24px;background:color-mix(in srgb,var(--branch) 4%,transparent);pointer-events:none}.lane-label{position:absolute;width:555px;display:flex;align-items:center;gap:24px;color:var(--branch);pointer-events:none}.lane-label .pixel{width:90px;height:90px}.lane-label b{font-size:52px;font-weight:600;white-space:nowrap}.lane-label small{display:block;font-size:31px;color:#acbdb5;margin-top:18px}.full-caption{position:absolute;font-size:42px;color:var(--gold);white-space:nowrap}.close-inspector{display:block;float:right;width:27px;height:27px;margin:-8px -8px 8px 8px;font-size:16px}.atlas:fullscreen{width:100%;height:100%;border:0;border-radius:0;background:var(--panel);padding:0;display:block}.atlas:fullscreen .viewport{height:calc(100vh - 152px);max-height:none;min-height:0}.atlas:fullscreen .graph-heading{min-height:108px}.atlas:fullscreen .inspector{max-height:calc(100vh - 180px)}
+.complete-view.fitted .minimap{display:none}
+@media(max-width:760px){.complete-view .viewport{height:calc(100vh - 320px);min-height:410px}.complete-view .inspector{width:calc(100% - 22px);right:11px;top:142px;max-height:calc(100% - 210px)}.atlas:fullscreen .viewport{height:calc(100vh - 205px)}}
+@media print{.complete-view .inspector{display:none!important}.complete-view .viewport{height:720px!important;min-height:0}.close-inspector{display:none}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header class="hero">
+    <div class="hero-left"><div class="hero-icon" id="hero-icon"></div><div><div class="eyebrow">SenDimsBanForges / Stage 05</div><h1>万象锭 <span>合成路线图</span></h1><p class="subline">从土卫六与深境四层出发。八种部件，汇合为一枚万象合金锭。</p></div></div>
+    <div class="stats" aria-label="路线统计"><div class="stat"><b>08</b><span>并行支线</span></div><div class="stat"><b id="stat-methods"></b><span>工艺步骤</span></div><div class="stat"><b id="stat-nodes"></b><span>含制坯与装配的节点</span></div><div class="stat"><b>01</b><span>最终产出 / 锭</span></div></div>
+  </header>
+  <nav class="toolbar" aria-label="路线导航"><div class="tabs" id="tabs"></div><div class="search-box"><span class="search-mark">⌕</span><input id="search" type="search" aria-label="搜索材料、工艺或 ID" placeholder="搜索材料 / 工艺 / ID" autocomplete="off"><div id="results"></div></div><button id="cost-button" class="compact-btn">材料账单 ↗</button></nav>
+  <section id="overview" class="overview" aria-label="八支线与最终汇合总览">
+    <div><div class="section-head"><h2>八条支线 · 点击展开完整工序</h2><span>箭头表示阶段推进，支线内部含并行辅件</span></div><div class="branch-list" id="branch-list"></div><div class="overview-foot"><span class="dot"></span>原生供料设施置于前端，普通辅料随每一批制坯持续消耗。</div></div>
+    <div class="final-column"><div class="section-head"><h2>最终汇合</h2><span>8 → 1</span></div><p class="final-intro">收集八种支线部件各 1 件，依次完成投影组合、混沌聚合与深境锻造。</p><div id="final-cards"></div></div>
+  </section>
+  <section class="atlas hidden" id="atlas" aria-label="支线详细依赖图">
+    <div class="graph-area"><div class="graph-heading" id="graph-heading"></div><div class="viewport" id="viewport"><div class="graph-world" id="world"></div><div class="canvas-hint">拖动平移 · 滚轮缩放 · 点击节点查看配方</div><button class="minimap" id="minimap" aria-label="点击全链缩略图跳转位置"></button></div><div class="graph-legend"><span><i class="legend-box supply"></i>推荐原生供料</span><span><i class="legend-box feed"></i>阶段五制坯</span><span><i class="legend-box"></i>加工 / 原生载体</span><span><i class="legend-box assembly"></i>阶段装配</span><span>连线由实际前驱关系生成 →</span></div></div>
+    <aside class="inspector" id="inspector" aria-live="polite"></aside>
+  </section>
+  <footer class="bottom-bar"><div>依据：路线设计 r<span id="revision"></span> + 脚本内配方定义 + 原生载体规则<br><span class="status">路线预览 · 尚未完成全流程实机验收<span id="issue-count"></span></span></div><div style="text-align:right"><button id="print-button">打印当前视图</button><br>全部数据与贴图已嵌入 · 可离线使用 · <span id="built"></span></div></footer>
+</main>
+<dialog id="cost-dialog"><div class="modal-head"><h2>每锭材料账单</h2><button id="close-cost" aria-label="关闭材料账单">×</button></div><p style="font-size:12px">按八条支线各生产 1 份计算。此处统计支线入口、持续供料与最终追加材料；各机器的普通辅料可在节点详情查看。</p><div class="cost-grid" id="cost-content"></div></dialog>
+<script id="route-data" type="application/json">/*__ROUTE_DATA__*/</script>
+<script>
+let data = JSON.parse(document.getElementById('route-data').textContent);
+let $ = (id) => document.getElementById(id);
+let esc = (value) => String(value ?? '').replace(/[&<>"']/g, (s) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[s]));
+let colors = {bio:'#aaca87',aether:'#88cadd',mana:'#c7a0dd',thermal:'#dfb27a',engineering:'#87c8b0',pneumatic:'#e2ce7d',nuclear:'#c1ce7b',precision:'#b0b9df',final:'#dfc188'};
+let shortNames = {bio:'仿生隔膜',aether:'晶格透镜',mana:'共振腔',thermal:'相变壳体',engineering:'耦合线圈',pneumatic:'逻辑阀组',nuclear:'约束环',precision:'校准光栅'};
+let nodeMap = new Map(data.nodes.map((n) => [n.id,n]));
+let edgeCount = data.nodes.reduce((total,n)=>total+(n.dependencies || []).length,0);
+let branchMap = new Map(data.branches.map((b) => [b.id,b]));
+let itemName = (id) => data.names[id] || id;
+let icon = (id, extra='') => data.icons[id] ? `<img class="pixel ${extra}" alt="" src="${data.icons[id]}">` : `<span class="pixel placeholder ${extra}" aria-hidden="true">◇</span>`;
+let phaseName = (n) => ({early_supply:'原生供料',stage5_entry:'入口制坯',assembly:'阶段装配',processing:'加工工序'}[n.phase] || '最终工序');
+let modeName = (n) => ({original_supply:'沿用原生供料',native_carrier:'原生载体 → 检验封装',native_recipe:'专用配方',assembly:'专用装配'}[n.mode] || '专用配方');
+let currentBranch = 'overview';
+let selected = null;
+let currentNodes = [];
+let positions = new Map();
+let dimensions = {width:1,height:1};
+let camera = {x:0,y:0,scale:1};
+let drag = null;
+let finals = ['omni_seed','omni_billet','omni_alloy_ingot'];
+let finalNotes = [
+  ['投影组合','八种部件按固定顺序投入，方向逐次交替。','8 步 · 各 1 件'],
+  ['聚合装置',`万象原核 + ${['kubejs:epsilon_dust','kubejs:basepoint_alloy','kubejs:chaotic_truth','kubejs:rainbowshift_entropy'].map(itemName).join('、')}各 1。`,'混沌级 · 2 亿 RF'],
+  ['深境组合锻造',`万象锻坯 + 2 ${itemName('elder_bosses:rune_fragment')} + 星浆晶胚 + 星浆晶体。`,'12 次锻造 · 4 tick · 50 级']
+];
+$('hero-icon').innerHTML = icon('kubejs:omni_alloy_ingot');
+$('stat-methods').textContent = data.coverage.planned_workflow_steps;
+$('stat-nodes').textContent = data.nodes.length;
+$('stat-methods').title = '包含 7 个推荐原生供料步骤；不含入口制坯与阶段装配。';
+$('revision').textContent = data.revision;
+$('built').textContent = data.built;
+let issues = data.nodes.filter((n) => n.issue);
+$('issue-count').textContent = issues.length ? ` · ${issues.length} 个节点已标注待修正` : '';
+$('tabs').innerHTML = `<button data-view="all">完整视图</button><button data-view="overview">总览</button>` + data.branches.map((b) => `<button data-view="${b.id}" style="--branch:${colors[b.id]}"><i class="tab-dot"></i>${shortNames[b.id]}</button>`).join('');
+$('branch-list').innerHTML = data.branches.map((b,i) => {
+  let count = data.nodes.filter((n) => n.branch === b.id).length;
+  return `<button class="branch-row" data-branch="${b.id}" style="--branch:${colors[b.id]}"><span class="branch-title">${icon(b.component_item)}<span><b>${esc(b.name)}</b><small>0${i+1} / ${count} 节点 · ${b.stages.length} 次装配${b.supplies.length ? ' · 前端供料' : ''}</small></span></span><span class="stage-strip">${b.stages.map((s,j) => `${j ? '<span class="stage-arrow">→</span>' : ''}<span class="stage-chip">${esc(nodeMap.get(s.id).name)}</span>`).join('')}</span><span class="row-arrow">↗</span></button>`;
+}).join('');
+$('final-cards').innerHTML = finals.map((id,i) => `<button class="final-card ${i===2?'target':''}" data-final="${id}"><span class="step-no">FINAL / 0${i+1}</span><span class="card-heading">${icon(nodeMap.get(id).output_contract.id)}<b>${esc(nodeMap.get(id).name)}</b></span><div class="method">${finalNotes[i][0]}</div><p>${finalNotes[i][1]}</p><p style="margin-top:10px;color:var(--ink)">${finalNotes[i][2]}</p></button>${i<2?'<div class="final-arrow">↓</div>':''}`).join('');
+let renderCamera = () => {
+  $('world').style.transform = `translate(${camera.x}px,${camera.y}px) scale(${camera.scale})`;
+  $('atlas').classList.toggle('fitted',currentBranch==='all'&&camera.x>=0&&camera.y>=0&&camera.x+dimensions.width*camera.scale<=$('viewport').clientWidth+1&&camera.y+dimensions.height*camera.scale<=$('viewport').clientHeight+1);
+  if ($('zoom-readout')) $('zoom-readout').textContent = `${Math.round(camera.scale*100)}%`;
+  if ($('mini-window')) {
+    let rect=$('mini-window');
+    rect.setAttribute('x',-camera.x/camera.scale);
+    rect.setAttribute('y',-camera.y/camera.scale);
+    rect.setAttribute('width',$('viewport').clientWidth/camera.scale);
+    rect.setAttribute('height',$('viewport').clientHeight/camera.scale);
+  }
+};
+let fit = () => {
+  let view = $('viewport');
+  camera.scale = Math.min(1.05,(view.clientWidth-64)/dimensions.width,(view.clientHeight-80)/dimensions.height);
+  camera.scale = Math.max(.015,camera.scale);
+  camera.x = (view.clientWidth-dimensions.width*camera.scale)/2;
+  camera.y = (view.clientHeight-dimensions.height*camera.scale)/2;
+  renderCamera();
+};
+let zoom = (factor,x=$('viewport').clientWidth/2,y=$('viewport').clientHeight/2) => {
+  let next = Math.max(.015,Math.min(2.2,camera.scale*factor));
+  camera.x = x-(x-camera.x)*next/camera.scale;
+  camera.y = y-(y-camera.y)*next/camera.scale;
+  camera.scale = next; renderCamera();
+};
+let readable = (id) => {
+  let point=positions.get(id || selected) || positions.values().next().value;
+  camera.scale=$('viewport').clientWidth<500?.82:.95;
+  camera.x=Math.max(22,$('viewport').clientWidth*.27-(point.x+105)*camera.scale);
+  if(point.x>240)camera.x=$('viewport').clientWidth/2-(point.x+105)*camera.scale;
+  camera.y=$('viewport').clientHeight/2-(point.y+46)*camera.scale;
+  renderCamera();
+};
+// Each stage is one parallel column: real dependencies determine ranks inside it.
+// Independent auxiliary chains remain separate lanes instead of becoming false prerequisites.
+let layoutBranch = (branch) => {
+  let groups = [];
+  let assigned = new Set();
+  let add = (ids,label) => {
+    ids = ids.filter((id) => nodeMap.has(id) && !assigned.has(id));
+    if (!ids.length) return;
+    ids.forEach((id) => assigned.add(id));
+    groups.push({ids,label});
+  };
+  if (!branch) {
+    add(data.branches.map((b) => b.component),'八种部件 · 各 1 件');
+    finals.forEach((id,i) => add([id],`0${i+1} / ${finalNotes[i][0]}`));
+  } else {
+    add([...branch.supplies,branch.feed],'持续供料 / 阶段五制坯');
+    branch.stages.forEach((s,i) => add([...s.chains.flat(),s.id],`0${i+1} / ${nodeMap.get(s.id).name}`));
+  }
+  let pos = new Map();
+  let offset = 24;
+  let maxHeight = 0;
+  let labels = [];
+  groups.forEach((group) => {
+    let set = new Set(group.ids);
+    let rank = new Map();
+    let calc = (id) => {
+      if (rank.has(id)) return rank.get(id);
+      let prior = (nodeMap.get(id).dependencies || []).filter((dep) => set.has(dep));
+      let value = prior.length ? Math.max(...prior.map(calc))+1 : 0;
+      rank.set(id,value); return value;
+    };
+    group.ids.forEach(calc);
+    let layers = new Map();
+    group.ids.forEach((id) => {let r=rank.get(id);if(!layers.has(r))layers.set(r,[]);layers.get(r).push(id);});
+    let rows = Math.max(...[...layers.values()].map((ids) => ids.length));
+    let height = rows*126;
+    maxHeight = Math.max(maxHeight,height);
+    labels.push({x:offset,label:group.label});
+    [...layers].forEach(([r,ids]) => ids.forEach((id,i) => pos.set(id,{x:offset+r*252,y:60+i*126+(height-ids.length*126)/2})));
+    offset += (Math.max(...rank.values())+1)*252+35;
+  });
+  // Align stage centers to reduce vertical excursions of the main material flow.
+  groups.forEach((group) => {
+    let localMax = Math.max(...group.ids.map((id) => pos.get(id).y+92));
+    let shift = (maxHeight+26-localMax)/2;
+    group.ids.forEach((id) => pos.get(id).y += shift);
+  });
+  return {positions:pos,labels,width:offset-35,height:maxHeight+94};
+};
+// Keep all 179 nodes in one graph, with eight separate lanes and one final merge.
+// Stretch shorter lanes horizontally so every branch exits into a clear merge gutter.
+let layoutAll = () => {
+  let layouts=data.branches.map((branch)=>({branch,layout:layoutBranch(branch)}));
+  let laneWidth=Math.max(...layouts.map(({layout})=>layout.width));
+  let left=640, top=40, gap=80;
+  let pos=new Map(), bands=[];
+  layouts.forEach(({branch,layout},index)=>{
+    let height=layout.height+52;
+    let maxX=Math.max(...[...layout.positions.values()].map((p)=>p.x));
+    let stretch=(laneWidth-240)/maxX;
+    layout.positions.forEach((p,id)=>pos.set(id,{x:left+p.x*stretch,y:top+p.y+26}));
+    bands.push({x:12,y:top,width:left+laneWidth+22,height,branch,index});
+    top+=height+gap;
+  });
+  let height=top-gap+40, mergeX=left+laneWidth+240;
+  finals.forEach((id,index)=>pos.set(id,{x:mergeX+index*310,y:height/2-46}));
+  return {positions:pos,labels:[],bands,width:mergeX+900,height};
+};
+let drawGraph = (branch) => {
+  let layout = currentBranch==='all' ? layoutAll() : layoutBranch(branch);
+  positions = layout.positions; dimensions = {width:layout.width,height:layout.height};
+  currentNodes = [...positions.keys()].map((id) => nodeMap.get(id));
+  let paths = [];
+  currentNodes.forEach((n) => (n.dependencies || []).forEach((dep) => {
+    if (!positions.has(dep)) return;
+    let from = positions.get(dep), to = positions.get(n.id);
+    let x1=from.x+210,y1=from.y+46,x2=to.x,y2=to.y+46;
+    let mid=(x1+x2)/2;
+    let color=colors[nodeMap.get(dep).branch] || colors.final;
+    paths.push(`<path class="edge" data-from="${dep}" data-to="${n.id}" style="stroke:${color}" d="M${x1},${y1} C${mid},${y1} ${mid},${y2} ${x2},${y2}" marker-end="url(#arrow)"/>`);
+  }));
+  $('world').style.width = dimensions.width+'px';
+  $('world').style.height = dimensions.height+'px';
+  let bands=(layout.bands || []).map((band)=>`<div class="lane-band" style="left:${band.x}px;top:${band.y}px;width:${band.width}px;height:${band.height}px;--branch:${colors[band.branch.id]}"></div><div class="lane-label" data-lane="${band.branch.id}" style="left:46px;top:${band.y+band.height/2-58}px;--branch:${colors[band.branch.id]}">${icon(band.branch.component_item)}<span><b>${esc(band.branch.name)}</b><small>0${band.index+1} / ${data.nodes.filter((n)=>n.branch===band.branch.id).length} 节点 · ${band.branch.stages.length} 次装配</small></span></div>`).join('');
+  let mergeCaption=currentBranch==='all'?`<span class="full-caption" style="left:${positions.get('omni_seed').x-40}px;top:${positions.get('omni_seed').y-155}px">八部件汇合 → 聚合 → 锻造</span>`:'';
+  $('world').innerHTML = bands + `<svg class="edges" width="${dimensions.width}" height="${dimensions.height}"><defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#81958c"/></marker></defs>${paths.join('')}</svg>` + mergeCaption + layout.labels.map((l) => `<span class="column-label" style="left:${l.x}px;top:14px">${esc(l.label)}</span>`).join('') + currentNodes.map((n) => {
+    let p = positions.get(n.id), color=colors[n.branch] || colors.final;
+    return `<button class="node ${n.phase || 'final'} ${n.issue?'issue':''}" data-node="${n.id}" style="left:${p.x}px;top:${p.y}px;--branch:${color}" aria-label="${esc(n.name+'，'+n.label)}">${icon(n.output_contract.id)}<span class="node-text"><em>${phaseName(n)}</em><b>${esc(n.name)}</b><small>${esc(n.phase==='assembly'?'工作台装配':n.label)}</small></span></button>`;
+  }).join('');
+  $('minimap').innerHTML=`<span>全链缩略图 · 点击定位</span><svg viewBox="0 0 ${dimensions.width} ${dimensions.height}" preserveAspectRatio="none">${currentNodes.map((n)=>{let p=positions.get(n.id);return `<rect x="${p.x}" y="${p.y}" width="210" height="92" rx="12" fill="${colors[n.branch]||colors.final}" opacity=".65"/>`;}).join('')}<rect id="mini-window" fill="#ffffff12" stroke="#edf2ea" stroke-width="${dimensions.width/190}"/></svg>`;
+};
+let showView = (id, nodeId=null) => {
+  currentBranch = id;
+  document.querySelectorAll('[data-view]').forEach((b) => {b.classList.toggle('active',b.dataset.view===id);b.setAttribute('aria-current',b.dataset.view===id?'page':'false');});
+  $('overview').classList.toggle('hidden',id!=='overview');
+  $('atlas').classList.toggle('hidden',id==='overview');
+  $('atlas').classList.toggle('complete-view',id==='all');
+  $('atlas').classList.remove('details-open');
+  if (id==='overview') return;
+  let branch = branchMap.get(id);
+  let color = colors[id] || colors.final;
+  $('atlas').style.setProperty('--branch',color);
+  let full=id==='all';
+  $('graph-heading').innerHTML = `${icon(branch?branch.component_item:'kubejs:omni_alloy_ingot')}<div><h2>${full?'万象锭 · 八支线完整视图':branch?esc(branch.name):'万象锭 · 最终汇合'}</h2><p>${full?`${data.nodes.length} 个节点、${edgeCount} 条依赖连线同时显示；滚轮放大可读，点击节点查看详情。`:branch?esc(branch.purpose):'八种部件各 1 件 → 万象原核 → 万象锻坯 → 万象合金锭'}</p></div><div class="graph-controls"><button id="zoom-out" aria-label="缩小">−</button><output id="zoom-readout"></output><button id="zoom-in" aria-label="放大">＋</button><button id="fit">${full?'显示全图':'全链'}</button><button id="readable">阅读</button>${full?'<button id="fullscreen">全屏</button>':''}</div>`;
+  drawGraph(branch);
+  $('zoom-in').onclick = () => zoom(1.25);
+  $('zoom-out').onclick = () => zoom(.8);
+  $('fit').onclick = () => {$('atlas').classList.remove('details-open');fit();};
+  $('readable').onclick = () => readable();
+  if(full)$('fullscreen').onclick=async()=>{if(document.fullscreenElement)await document.exitFullscreen();else await $('atlas').requestFullscreen();};
+  if(full && !nodeId){selected=null;$('inspector').innerHTML='';}
+  else selectNode(nodeId || (branch ? branch.feed : 'omni_alloy_ingot'));
+  if(branch)readable();else fit();
+};
+let row = (id,amount,source=null) => `<${source?'button':'div'} class="input-row" ${source?`data-jump="${source}"`:''}>${icon(id)}<span>${esc(itemName(id))}</span><b>${esc(amount)}</b></${source?'button':'div'}>`;
+let renderInspector = (n) => {
+  let output=n.output_contract;
+  let outAmount = output.fluid ? `${output.amount_mB} mB` : `× ${output.count || 1}`;
+  let deps = (n.consumed_inputs || []).map((input) => {let source=nodeMap.get(input.source_node);return row(source.output_contract.id,`× ${input.count}`,source.id);}).join('');
+  if (!deps && n.dependencies?.length) deps=n.dependencies.map((id) => {let source=nodeMap.get(id);return row(source.output_contract.id,'× 1',id);}).join('');
+  let recipes = n.recipes.map((r) => `<details class="recipe-ref"><summary>${r.native?'原生参考 / ':''}${esc(r.json.type || n.recipe_identifier)}<br><small>${esc(r.id)}</small></summary>${r.inputs.length?'<h4>配方输入字段</h4>'+r.inputs.map((input) => row(input.id,input.amount?`${input.amount} mB`:`× ${input.count}`)).join(''):''}<h4>完整配方 JSON</h4><pre>${esc(JSON.stringify(r.json,null,2))}</pre></details>`).join('');
+  let special = '';
+  if(n.id==='omni_seed') special=`<h4>按此顺序完成 8 步投影</h4><div>${data.branches.map((b,i) => `<p style="margin:8px 0">${i+1}. ${esc(b.name)}<br><span style="color:var(--gold);font-size:10px">${i%2===0?'材料 → 框架':'框架 → 材料'}</span></p>`).join('')}</div>`;
+  if(n.id==='omni_billet') special='<h4>聚合要求</h4><p>混沌级（CHAOTIC）<br>总能量：200,000,000 RF<br>原核作为催化物消耗，四种辅料各 1 件。</p>';
+  if(n.id==='omni_alloy_ingot') special='<h4>锻造要求</h4><p>12 次有效锻造 · 冷却 4 tick<br>消耗 50 级经验<br>在锻造皮革垫进行，产出 1 锭。</p>';
+  $('inspector').innerHTML = `<div class="label">${esc(n.id.toUpperCase())} / ${phaseName(n)}</div>${icon(output.id,'large-icon')}<h3>${esc(n.name)}</h3><div class="item-id">${esc(output.id)} · ${outAmount}</div><span class="badge">${esc(n.label)}</span><span class="badge">${modeName(n)}</span>${n.issue?`<div class="issue-note">${esc(n.issue)}</div>`:''}${special}${deps?'<h4>图中直接前驱</h4>'+deps:''}${n.phase==='stage5_entry'?'<h4>阶段五入口材料 · 每批消耗</h4>'+branchMap.get(n.branch).stage5_inputs.map((i)=>row(i.item,'× '+i.count)).join(''):''}${n.mode==='original_supply'?`<h4>每锭持续供料</h4><p>${n.per_ingot_demand || 1} 份；设施可复用，产出会在入口制坯中消耗。原料可能存在其他获取方式。</p>`:''}${n.carrier?`<h4>原生载体</h4>${row(n.carrier,'× 1')}<p>${esc(n.note)}</p><p>完成原生操作后，与工艺衬片一起封装为路线专用构件。</p>`:''}<h4>操作说明</h4><p>${esc(n.constraint || '')}</p>${recipes?'<h4>配方详情 · 点击展开</h4>'+recipes:''}`;
+};
+let selectNode = (id) => {
+  let n = nodeMap.get(id);if(!n)return;
+  selected=id;
+  if(currentBranch==='all')$('atlas').classList.add('details-open');
+  let upstream = new Set([id]), downstream = new Set([id]);
+  let visit = (key) => (nodeMap.get(key).dependencies || []).forEach((dep) => {if(!upstream.has(dep)){upstream.add(dep);visit(dep);}});
+  visit(id);
+  let grow=true;
+  while(grow){grow=false;data.nodes.forEach((node)=>{if(!downstream.has(node.id)&&(node.dependencies||[]).some((dep)=>downstream.has(dep))){downstream.add(node.id);grow=true;}});}
+  document.querySelectorAll('[data-node]').forEach((el) => {
+    el.classList.toggle('selected',el.dataset.node===id);
+    el.classList.toggle('faded',currentBranch!=='all'&&!upstream.has(el.dataset.node)&&!downstream.has(el.dataset.node));
+    el.setAttribute('aria-pressed',el.dataset.node===id?'true':'false');
+  });
+  document.querySelectorAll('.edge').forEach((el) => {
+    let related=(upstream.has(el.dataset.from)&&upstream.has(el.dataset.to))||(downstream.has(el.dataset.from)&&downstream.has(el.dataset.to));
+    el.classList.toggle('focus',related);el.classList.toggle('faded',currentBranch!=='all'&&!related);
+  });
+  renderInspector(n);
+  if(currentBranch==='all')$('inspector').insertAdjacentHTML('afterbegin','<button class="close-inspector" id="close-inspector" aria-label="关闭节点详情">×</button>');
+  $('inspector').scrollTop=0;
+};
+let jump = (id,center=true) => {
+  let n=nodeMap.get(id);if(!n)return;
+  let view=currentBranch==='all'?'all':n.branch || 'final';
+  if(currentBranch!==view) showView(view,id); else selectNode(id);
+  if(center&&positions.has(id)){
+    let p=positions.get(id);camera.scale=Math.max(.65,camera.scale);
+    camera.x=$('viewport').clientWidth/2-(p.x+105)*camera.scale;
+    camera.y=$('viewport').clientHeight/2-(p.y+46)*camera.scale;renderCamera();
+  }
+};
+document.addEventListener('click',(event) => {
+  let view=event.target.closest('[data-view]');if(view)showView(view.dataset.view);
+  let branch=event.target.closest('[data-branch]');if(branch)showView(branch.dataset.branch);
+  let final=event.target.closest('[data-final]');if(final)showView('final',final.dataset.final);
+  let node=event.target.closest('[data-node]');if(node && !drag?.moved)selectNode(node.dataset.node);
+  let target=event.target.closest('[data-jump]');if(target)jump(target.dataset.jump);
+  let result=event.target.closest('[data-result]');if(result){jump(result.dataset.result);$('results').innerHTML='';$('search').value='';}
+  if(event.target.closest('#close-inspector'))$('atlas').classList.remove('details-open');
+  if(!event.target.closest('.search-box'))$('results').innerHTML='';
+});
+$('search').addEventListener('input',() => {
+  let query=$('search').value.trim().toLowerCase();
+  if(!query){$('results').innerHTML='';return;}
+  let matches=data.nodes.filter((n)=>[n.name,n.label,n.id,n.recipe_identifier,n.output_contract.id].join(' ').toLowerCase().includes(query));
+  $('results').innerHTML=matches.slice(0,40).map((n)=>`<button class="result" data-result="${n.id}">${icon(n.output_contract.id)}<span>${esc(n.name)}<small>${esc(n.label)} · ${esc(n.id)}</small></span></button>`).join('') || '<p style="padding:10px;font-size:12px">未找到匹配节点</p>';
+});
+$('search').addEventListener('keydown',(event)=>{if(event.key==='Escape'){$('results').innerHTML='';$('search').blur();}if(event.key==='Enter'){let first=$('results').querySelector('[data-result]');if(first)first.click();}});
+$('viewport').addEventListener('wheel',(event)=>{event.preventDefault();let rect=$('viewport').getBoundingClientRect();zoom(Math.exp(-event.deltaY*.0015),event.clientX-rect.left,event.clientY-rect.top);},{passive:false});
+$('viewport').addEventListener('pointerdown',(event)=>{
+  if(event.target.closest('#minimap'))return;
+  if(event.button!==0)return;
+  drag={id:event.pointerId,x:event.clientX,y:event.clientY,cx:camera.x,cy:camera.y,moved:false};
+});
+$('viewport').addEventListener('pointermove',(event)=>{
+  if(!drag||event.pointerId!==drag.id)return;
+  let dx=event.clientX-drag.x,dy=event.clientY-drag.y;
+  if(Math.hypot(dx,dy)>5){drag.moved=true;$('viewport').setPointerCapture(event.pointerId);$('viewport').classList.add('dragging');}
+  if(drag.moved){camera.x=drag.cx+dx;camera.y=drag.cy+dy;renderCamera();}
+});
+let endDrag=()=>{$('viewport').classList.remove('dragging');setTimeout(()=>{drag=null;},0);};
+$('viewport').addEventListener('pointerup',endDrag);
+$('viewport').addEventListener('pointercancel',endDrag);
+window.addEventListener('resize',()=>{if(currentBranch==='all')fit();else if(currentBranch!=='overview')readable();});
+document.addEventListener('fullscreenchange',()=>{if($('fullscreen'))$('fullscreen').textContent=document.fullscreenElement?'退出全屏':'全屏';fit();});
+let locateMini=(event)=>{
+  let rect=$('minimap').querySelector('svg').getBoundingClientRect();
+  let px=Math.min(1,Math.max(0,(event.clientX-rect.left)/rect.width))*dimensions.width;
+  let py=Math.min(1,Math.max(0,(event.clientY-rect.top)/rect.height))*dimensions.height;
+  camera.x=$('viewport').clientWidth/2-px*camera.scale;
+  camera.y=$('viewport').clientHeight/2-py*camera.scale;renderCamera();
+};
+$('minimap').onclick=locateMini;
+$('minimap').onkeydown=(event)=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();fit();}};
+let costList=(entries)=>`<ul class="cost-list">${entries.map(([name,amount])=>`<li><span>${esc(name)}</span><b>${esc(amount)}</b></li>`).join('')}</ul>`;
+$('cost-content').innerHTML=`<div><h3>01 / 八支线的阶段五入口总计</h3>${costList(Object.entries(data.entryTotals).map(([id,count])=>[itemName(id),'× '+count]))}<p>未包含最终聚合、锻造的额外投入；不含上游原材料递归成本。</p></div><div><h3>02 / 最终两步追加</h3>${costList([[itemName('kubejs:epsilon_dust'),'× 1'],[itemName('kubejs:basepoint_alloy'),'× 1'],[itemName('kubejs:chaotic_truth'),'× 1'],[itemName('kubejs:rainbowshift_entropy'),'× 1'],[itemName('elder_bosses:rune_fragment'),'× 2'],[itemName('deeprealm_4th:star_slurry_blank'),'× 1'],[itemName('deeprealm_4th:star_slurry_crystal'),'× 1']])}<h3>03 / 每锭消耗的前端原生供料</h3>${costList(data.supplies.map((s)=>[`${itemName(s.item)} · ${nodeMap.get(s.source_node).label.replace('（原生供料）','')}`,s.amount_mB?s.amount_mB+' mB':'× '+s.count]))}<p>同类原料在不同支线独立计数；这些供料方式属于推荐覆盖，可沿用已有设施。</p></div>`;
+$('cost-button').onclick=()=>$('cost-dialog').showModal();
+$('close-cost').onclick=()=>$('cost-dialog').close();
+$('cost-dialog').addEventListener('click',(event)=>{if(event.target===$('cost-dialog')){let rect=$('cost-dialog').getBoundingClientRect();if(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom)$('cost-dialog').close();}});
+$('print-button').onclick=()=>window.print();
+showView(location.hash==='#overview'?'overview':'all');
+</script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+{
+  "name": "slashblade_sendims:zenith_false_black_crown",
+  "enchantments": [
+    {
+      "id": "minecraft:fire_aspect",
+      "lvl": 10
+    },
+    {
+      "id": "minecraft:looting",
+      "lvl": 10
+    },
+    {
+      "id": "minecraft:mending",
+      "lvl": 10
+    },
+    {
+      "id": "minecraft:power",
+      "lvl": 10
+    },
+    {
+      "id": "minecraft:punch",
+      "lvl": 5
+    },
+    {
+      "id": "minecraft:sharpness",
+      "lvl": 7
+    },
+    {
+      "id": "minecraft:smite",
+      "lvl": 10
+    },
+    {
+      "id": "minecraft:thorns",
+      "lvl": 5
+    },
+    {
+      "id": "minecraft:unbreaking",
+      "lvl": 10
+    }
+  ],
+  "properties": {
+    "attack_base": 81.25,
+    "max_damage": 600,
+    "slash_art": "slashblade_sendims:explosive_dawn_ammo",
+    "special_effects": [
+      "slashblade_sendims:mahakala",
+      "sjap_adder:shadow_of_revenant",
+      "slashblade_sendims:aftershock",
+      "last_smith:extreme_sharpness",
+      "slashblade_sendims:armor_melt",
+      "sjap_adder:wave_edge_rise_up",
+      "sjap_adder:end_sakura_rise_up",
+      "last_smith:extra_sharpness",
+      "last_smith:smite_se",
+      "last_smith:extra_power",
+      "slashblade:wither_edge",
+      "last_smith:extra_smite",
+      "redtassel:sakura",
+      "slashblade_sendims:yakuman_jade_life",
+      "slashblade_sendims:yakuman_kong"
+    ],
+    "sword_type": [
+      "bewitched"
+    ]
+  },
+  "render": {
+    "carry_type": "rninja",
+    "model": "sdbf:model/zenith/zenith.obj",
+    "texture": "sdbf:model/zenith/zenith_black_crown.png",
+    "summon_sword_color": 6511237
+  }
+}

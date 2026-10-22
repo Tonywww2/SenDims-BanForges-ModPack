@@ -95,7 +95,7 @@
 | `sjap_adder:dragon_bone_ice` | item.sjap_adder.dragon_bone_ice | 龙骨刀「白」 |
 | `sjap_adder:dragon_bone_lightning` | item.sjap_adder.dragon_bone_lightning | 龙骨刀「霆刃」 |
 | `sjap_adder:dragon_steel_fire` | item.sjap_adder.dragon_steel_fire | 龙王铸「炎龙刀」 |
-| `sjap_adder:dragon_steel_ice` | item.sjap_adder.dragon_steel_ice | 天顶剑「伪」魔剑 |
+| `sjap_adder:dragon_steel_ice` | item.sjap_adder.dragon_steel_ice | 天顶·伪「魔剑」 |
 | `sjap_adder:dragon_steel_lightning` | item.sjap_adder.dragon_steel_lightning | 龙王铸「雷龙刀」 |
 | `sjap_adder:frostbane_moonveil` | item.sjap_adder.frostbane_moonveil | 寒妖刀「冰胧月」 |
 | `sjap_adder:kamuy_dark` | item.sjap_adder.kamuy_dark | 神威刀「诺克特」 |
@@ -272,3 +272,23 @@ SA为领域展开·伏魔御厨子：半径16格，上下各6格，持续7.5秒�
 配方位于阶段四末期·空岛之下，前置为神威刀「诺克特」、炼狱刀「血雨红樱」、炼狱刀「死念」，三把均要求锻造100；另需最后的天狗刀匠之书（`last_smith:scroll_tengu_full`）。脚本 `s4_overworld.js`，配方ID `sdbf:mizushi_s4`。
 上方统计为原始导出，不含此处新增刀。
 
+
+## slashblade_sendims · 永罚最终形态（新增）
+
+| ID | 翻译键 | 本地化名 |
+|---|---|---|
+| `slashblade_sendims:greatsword_of_damnation_final` | item.slashblade_sendims.greatsword_of_damnation_final | 「永罚」 |
+
+基础攻击力90，耐久240；SA为黄金穿刺·EX。附魔取永罚大剑与神威刀「阿贝」的较高等级，SE显式合并继承。模型与贴图复用现有永罚的金色与癫火素材。
+配方位于阶段五·霜原星，前置为永罚大剑（杀敌30000、耀魂300000、锻造150）与阿贝（杀敌10000、耀魂100000、锻造150）；另需不融冰×2、无上利刃之书、耀魂宝珠、觉醒核心、下界之星与焰魔锭（`cataclysm:ignitium_ingot`）。脚本 `s5_glacio.js`，配方ID `sdbf:greatsword_of_damnation_final_s5`。
+
+## 天顶·伪新增定义
+
+| 刀名 | 刀 ID |
+|---|---|
+| 天顶·伪「黑冠」 | `slashblade_sendims:zenith_false_black_crown` |
+| 天顶·伪「神威」 | `slashblade_sendims:zenith_false_divine_might` |
+| 天顶·伪「王权」 | `slashblade_sendims:zenith_false_kingship` |
+| 天顶·伪「暗咒」 | `slashblade_sendims:zenith_false_dark_curse` |
+
+研究与配方详见 [天顶系列](zenith-series.md)。

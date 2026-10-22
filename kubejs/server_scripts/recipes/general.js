@@ -8,6 +8,17 @@ ServerEvents.recipes(event => {
         'kubejs:difficulty_selector'
     ]).id('sdbf:difficulty_locker')
 
+    event.shaped('kubejs:corrupted_crystalotus', [
+        'RFR',
+        'WCW',
+        'RFR'
+    ], {
+        R: 'minecraft:crimson_roots',
+        F: 'minecraft:crimson_fungus',
+        W: 'minecraft:nether_wart',
+        C: 'midnight:crystalotus'
+    }).id('sdbf:corrupted_crystalotus')
+
     event.shapeless('kubejs:linear_quest_book',
         'ftbquests:book')
         .id('sdbf:linear_quest_book_from_quest_book')

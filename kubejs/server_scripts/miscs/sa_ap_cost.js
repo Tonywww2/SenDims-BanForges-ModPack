@@ -32,6 +32,13 @@ SACostMap.put("slashblade_sendims:void_slash_ammo", [400, 0.25]);
 
 SACostMap.put("sjap_adder:illusion_drive", [400, 0.2]);
 
+// 神威暂沿用极乌卡 SA；连招注册名与 SA 注册名不同，显式记录原默认消耗。
+SACostMap.put("sjap_adder:terrifying_waves", [200, 0.2]);
+
+// 帝斯陀：死裁 7 枚；EX 21 枚，并由原生连招施加 7 秒物品冷却。
+SACostMap.put("sjap_adder:dead_ball", [400, 0.2]);
+SACostMap.put("sjap_adder:dead_ball_ex", [1000, 0.4]);
+
 SACostMap.put("slashblade:sakura_end_left", [200, 0.05]);
 SACostMap.put("slashblade:sakura_end_left_air", [200, 0.05]);
 SACostMap.put("slashblade_sendims:sakura_end_ammo", [200, 0.05]);
@@ -203,6 +210,8 @@ NativeEvents.onEvent($SuperSlashArtsReleaseEvent, event => {
         || saKey == "slashblade_sendims:caliburn"
         || saKey == "slashblade_sendims:excalibur"
         || saKey == "slashblade_sendims:malevolent_shrine"
+        || saKey == "sjap_adder:dead_ball"
+        || saKey == "sjap_adder:dead_ball_ex"
         || (saKey.startsWith("slashblade_sendims:yakuman_") && SACostMap.containsKey(saKey));
     let costs = usesConfiguredSuperCost
         ? SACostMap.get(saKey)

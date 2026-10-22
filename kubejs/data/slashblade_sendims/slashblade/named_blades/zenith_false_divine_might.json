@@ -1,0 +1,67 @@
+{
+  "name": "slashblade_sendims:zenith_false_divine_might",
+  "enchantments": [
+    {
+      "id": "minecraft:bane_of_arthropods",
+      "lvl": 5
+    },
+    {
+      "id": "minecraft:fire_aspect",
+      "lvl": 3
+    },
+    {
+      "id": "minecraft:fire_protection",
+      "lvl": 3
+    },
+    {
+      "id": "minecraft:looting",
+      "lvl": 5
+    },
+    {
+      "id": "minecraft:sharpness",
+      "lvl": 15
+    },
+    {
+      "id": "minecraft:smite",
+      "lvl": 10
+    },
+    {
+      "id": "minecraft:unbreaking",
+      "lvl": 7
+    }
+  ],
+  "properties": {
+    "attack_base": 102.0,
+    "max_damage": 300,
+    "slash_art": "sjap_adder:terrifyingwaves",
+    "special_effects": [
+      "sjap_adder:fire_dance",
+      "blades_derby:uma_special",
+      "sjap_adder:terrifyingwaves",
+      "slashblade_addon:burst_drive",
+      "slashblade:aeonia",
+      "sjap_adder:nightingales",
+      "last_smith:bewitched_power",
+      "last_smith:extra_sharpness",
+      "sjap_adder:life_for_health",
+      "sjap_adder:the_lich_of_dead",
+      "last_smith:smite_se",
+      "last_smith:extra_power",
+      "slashblade:wither_edge",
+      "last_smith:extra_smite",
+      "last_smith:extreme_sharpness",
+      "sjap_adder:wave_edge_rise_up",
+      "slashblade_sendims:yakuman_three_seals",
+      "slashblade_sendims:yakuman_seven_edict"
+    ],
+    "sword_type": [
+      "bewitched"
+    ]
+  },
+  "render": {
+    "carry_type": "rninja",
+    "model": "sdbf:model/zenith/zenith.obj",
+    "texture": "sdbf:model/zenith/zenith_divine_might.png",
+    "summon_sword_color": 6540257
+  }
+}

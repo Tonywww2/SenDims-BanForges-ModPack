@@ -502,7 +502,10 @@ if __name__=="__main__":
     import json
     from PIL import Image,ImageDraw,ImageFont
     root=Path(__file__).resolve().parents[2]
-    catalog=json.loads((root/"config/omni_alloy.json").read_text(encoding="utf-8"))["registrations"]
+    import sys
+    sys.path.insert(0,str(root/"tools"))
+    from omni_alloy_sources import read_catalog
+    catalog=read_catalog()["registrations"]
     cache=root.parent/".cache/omni_alloy/redraw-organic"
     outputs=draw(catalog,cache/"assets")
     entries=[(g,i,r) for g in outputs for i,r in outputs[g].items()]

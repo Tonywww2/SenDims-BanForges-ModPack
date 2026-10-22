@@ -446,5 +446,8 @@ def draw(catalog, assets_root):
 if __name__=='__main__':
     import json
     root=Path(__file__).resolve().parents[3]
-    catalog=json.loads((root/'kubejs/config/omni_alloy.json').read_text(encoding='utf-8'))['registrations']
+    import sys
+    sys.path.insert(0,str(root/'kubejs/tools'))
+    from omni_alloy_sources import read_catalog
+    catalog=read_catalog()['registrations']
     print({k:len(v) for k,v in draw(catalog,root/'kubejs/assets').items()})

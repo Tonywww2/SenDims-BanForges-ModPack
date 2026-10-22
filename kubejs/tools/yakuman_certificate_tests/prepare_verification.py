@@ -17,8 +17,8 @@ def main():
     (VERIFY / 'session-created.json').write_text(json.dumps({'created_by': 'yakuman_certificate_tests', 'runtime': str(runtime)}), encoding='utf-8')
     # Pre-populate NuclearCraft's configuration to avoid competing first-run writes on Windows.
     shutil.copytree(SOURCE / 'run/config/NuclearCraft', runtime / 'config/NuclearCraft')
-    for relative in ('startup_scripts/yakuman_certificates.js', 'client_scripts/yakuman_certificates.js',
-                     'config/yakuman_certificates.json', 'assets/kubejs/lang/zh_cn.json', 'assets/kubejs/lang/en_us.json'):
+    for relative in ('startup_scripts/yakuman_certificates.js',
+                     'assets/kubejs/lang/zh_cn.json', 'assets/kubejs/lang/en_us.json'):
         target = runtime / 'kubejs' / relative
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(PACK / 'kubejs' / relative, target)

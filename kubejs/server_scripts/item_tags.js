@@ -27,6 +27,10 @@ ServerEvents.tags("item", event => {
 
     ])
 
+    event.add('elder_bosses:malenia_offerings', [
+        'kubejs:corrupted_crystalotus'
+    ])
+
     // TODO 证章强化材料
     // 0-1
     event.add('slashblade_sendims:drc_rank_material_1',
@@ -140,7 +144,7 @@ ServerEvents.tags("item", event => {
     ])
     event.add("slashblade_sendims:drc_damage_material_3", [
         "cataclysm:essence_of_the_storm",          // 风暴精华
-        "kubejs:titan-ii_composite_ingot",         // 泰坦II复合锭
+        "kubejs:titan-ii_composite_ingot",         // 泰坦二型复合锭
         "kubejs:ancient_soul",                     // 古代灵魂
         "draconicevolution:draconium_core"
     ])

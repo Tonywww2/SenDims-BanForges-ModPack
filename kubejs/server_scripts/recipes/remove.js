@@ -247,8 +247,10 @@ let toRemoveID = new Set([
     "deeprealm_4th:warden_medal",
 
     // s5
+    "redtassel:redtassel_slashblade",
     "sjap_adder:kamuyex_fire",
     "sjap_adder:kamuyex_life",
+    "sjap_adder:kamuyex_death",
     "sjap_adder:nihilbxex",
     "slashblade_addon:nihilbx",
     "sjap_adder:kamuyex_ligghtning",

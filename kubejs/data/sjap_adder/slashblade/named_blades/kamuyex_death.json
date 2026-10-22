@@ -1,0 +1,54 @@
+{
+    "creativeGroup": "sjap_adder:sjap_adder_slashblade",
+    "enchantments": [
+        {
+            "id": "minecraft:sharpness",
+            "lvl": 7
+        },
+        {
+            "id": "minecraft:unbreaking",
+            "lvl": 5
+        },
+        {
+            "id": "minecraft:smite",
+            "lvl": 10
+        },
+        {
+            "id": "minecraft:bane_of_arthropods",
+            "lvl": 5
+        },
+        {
+            "id": "minecraft:fire_aspect",
+            "lvl": 2
+        },
+        {
+            "id": "minecraft:looting",
+            "lvl": 5
+        }
+    ],
+    "name": "sjap_adder:kamuyex_death",
+    "properties": {
+        "attack_base": 85.0,
+        "max_damage": 300,
+        "slash_art": "sjap_adder:dead_ball_ex",
+        "special_effects": [
+            "sjap_adder:the_lich_of_dead",
+            "last_smith:extra_sharpness",
+            "last_smith:smite_se",
+            "last_smith:extra_power",
+            "slashblade:wither_edge",
+            "last_smith:extra_smite",
+            "last_smith:extreme_sharpness",
+            "sjap_adder:wave_edge_rise_up"
+        ],
+        "sword_type": [
+            "bewitched"
+        ]
+    },
+    "render": {
+        "carry_type": "default",
+        "model": "sjap_adder:model/kaumyex/kamuyex.obj",
+        "summon_sword_color": -8355712,
+        "texture": "sjap_adder:model/kaumyex/death.png"
+    }
+}

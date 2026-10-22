@@ -130,11 +130,12 @@ ServerEvents.recipes(event => {
         .id("sdbf:green_mist_s3")
 
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
-        "AAA",
+        "AZA",
         "CDE",
         "GGG"
     ], {
-        "A": 'midnight:crystalotus',
+        "A": "kubejs:corrupted_crystalotus",
+        "Z": "elder_bosses:rot_goddess_remembrance", 
         "C": "minecraft:ender_eye",
         "E": "minecraft:axolotl_bucket",
         "G": 'slashblade:proudsoul_ingot',

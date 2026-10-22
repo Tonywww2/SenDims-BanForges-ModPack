@@ -7,6 +7,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 from omni_textures.build import draw_catalog, preview
+from omni_alloy_sources import read_catalog, write_catalog
 
 ROOT = Path(__file__).resolve().parents[2]
 K = ROOT / "kubejs"
@@ -18,8 +19,7 @@ def write(path, value):
 
 
 def main():
-    config = K / "config/omni_alloy.json"
-    data = json.loads(config.read_text(encoding="utf-8"))
+    data = read_catalog()
     reg = data["registrations"]
     files = draw_catalog(reg, K / "assets")
     for ident, spec in reg["items"].items():
@@ -37,7 +37,7 @@ def main():
         path = K / f"assets/{ns}/models/item/{name}_bucket.json"
         write(path, {"parent": "minecraft:item/generated", "textures": {"layer0": spec["bucket_texture"]}})
         files.append(path)
-    write(config, data)
+    write_catalog(data)
     manifest = K / "docs/recipe-research/omni-alloy-implementation.json"
     info = json.loads(manifest.read_text(encoding="utf-8"))
     info["generated_files"] = sorted(set(info["generated_files"]) | {p.relative_to(ROOT).as_posix() for p in files})

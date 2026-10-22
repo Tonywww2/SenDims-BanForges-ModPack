@@ -1,7 +1,6 @@
 {
     "creativeGroup": "redtassel:redtassel_slashblade",
-    "enchantments":
-    [
+    "enchantments": [
         {
             "id": "minecraft:thorns",
             "lvl": 5
@@ -20,22 +19,19 @@
         }
     ],
     "name": "redtassel:redtassel_slashblade",
-    "properties":
-    {
+    "properties": {
         "attack_base": 75.5,
         "max_damage": 140,
         "slash_art": "redtassel:that_go_go_go",
-        "special_effects":
-        [
-            "redtassel:sakura"
+        "special_effects": [
+            "redtassel:sakura",
+            "last_smith:smite_se"
         ],
-        "sword_type":
-        [
+        "sword_type": [
             "bewitched"
         ]
     },
-    "render":
-    {
+    "render": {
         "carry_type": "ninja",
         "model": "redtassel:model/katana/redtassel_blade.obj",
         "summon_sword_color": 16711680,

@@ -357,33 +357,6 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["17E4F11F431B104E"]
-			id: "2FC83B050CF46F10"
-			quest_enhance_disable_scroll_paging: false
-			size: 2.0d
-			tasks: [{
-				id: "444B55999ABC70B7"
-				item: "minecraft:oak_log"
-				type: "item"
-			}]
-			title: "占位：天顶·伪·神剑"
-			x: 30.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["2FC83B050CF46F10"]
-			id: "3AD23C2F2402F955"
-			quest_enhance_disable_scroll_paging: false
-			tasks: [{
-				id: "236684473714AAB4"
-				item: "minecraft:oak_log"
-				type: "item"
-			}]
-			title: "占位：天顶剑"
-			x: 35.0d
-			y: 0.0d
-		}
-		{
 			dependencies: ["0DCACD0AACE10A1E"]
 			id: "08389A1193BD45D2"
 			quest_enhance_disable_scroll_paging: false

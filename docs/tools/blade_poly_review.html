@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>拔刀剑多面体化候选 · 未接入</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,"Microsoft YaHei",sans-serif;background:#111722;color:#e9edf3}*{box-sizing:border-box}body{margin:0}header{padding:22px 28px 16px;border-bottom:1px solid #354254}h1{font-size:23px;margin:0 0 8px}p{color:#9eadc2;font-size:14px;margin:8px 0}.badge{font-size:12px;background:#324938;color:#b6e7bd;border-radius:5px;padding:4px 8px;margin-left:12px}nav{display:flex;gap:14px;align-items:center;flex-wrap:wrap;padding:16px 28px;background:#18202e}label{font-size:14px;display:flex;gap:7px;align-items:center}select,button{background:#263246;border:1px solid #455672;color:#e9edf3;border-radius:6px;padding:8px 10px}button{cursor:pointer}select{max-width:420px}input{accent-color:#83ddbd}.labels{display:grid;grid-template-columns:1fr 1fr;text-align:center;padding:15px 10px 0;position:absolute;inset:0 0 auto;pointer-events:none}.labels b{font-size:18px}.labels span{display:block;color:#94a8c1;font-size:13px;margin-top:5px}.candidate b{color:#83ddbd}main{position:relative}canvas{display:block;width:100%;height:calc(100vh - 245px);min-height:360px;touch-action:none;background:#18202e}.divider{position:absolute;left:50%;top:65px;bottom:0;width:1px;background:#354254;pointer-events:none}footer{padding:12px 28px;font-size:13px;color:#94a8c1}#status{color:#ffc980}a{color:#a5cfef}
+</style>
+<header><h1>拔刀剑多面体化候选<span class="badge">未接入游戏</span></h1><p>同一原贴图、相同视角并排比较。拖动旋转，滚轮缩放；可切换刀身、刀鞘及线框。</p></header>
+<nav>
+<label>模型 <select id="model"></select></label>
+<label>部件 <select id="mode"></select></label>
+<label>贴图 <select id="texture"></select></label>
+<label><input type="checkbox" id="clay">灰模</label>
+<label><input type="checkbox" id="wire">线框</label>
+<button id="reset">重置视角</button>
+</nav>
+<main><canvas id="view"></canvas><div class="labels"><div><b>原版</b><span id="before"></span></div><div class="candidate"><b>约 5k 候选</b><span id="after"></span></div></div><div class="divider"></div></main>
+<footer><span id="status">正在载入…</span><span> · 面数为当前所选分组的三角面。不模拟游戏动画、附魔与发光层。原始资源和候选资源均在独立审阅目录。</span></footer>
+<script>
+'use strict';
+let models = /*__MODEL_DATA__*/[];
+let $ = id => document.getElementById(id);
+let canvas = $('view');
+let gl = canvas.getContext('webgl2', {antialias:true,alpha:false});
+let program, geometries=[], texture, mode, loadToken=0, yaw=.14, pitch=.12, zoom=1, roll=0, frame=0;
+let modeNames={normal:'正常刀身＋刀鞘',blade:'刀身',sheath:'刀鞘',inventory:'物品栏'};
+let vertex=`#version 300 es
+precision highp float;
+layout(location=0) in vec3 position; layout(location=1) in vec3 normal; layout(location=2) in vec2 uv;
+uniform vec3 center, right, up, eye; uniform float scale, aspect;
+out vec2 vUV; out vec3 vNormal, bary;
+void main(){vec3 p=position-center; gl_Position=vec4(dot(p,right)*scale/aspect,dot(p,up)*scale,-dot(p,eye)*scale*.1,1.);
+vUV=uv; vNormal=normal; int i=gl_VertexID%3; bary=i==0?vec3(1,0,0):i==1?vec3(0,1,0):vec3(0,0,1);}`;
+let fragment=`#version 300 es
+precision highp float;
+in vec2 vUV; in vec3 vNormal,bary; uniform sampler2D surface; uniform bool clay,wire;
+out vec4 color;
+void main(){vec4 tex=clay?vec4(.70,.75,.82,1.):texture(surface,vUV);if(tex.a<.06)discard;
+float light=.60+.40*max(0.,dot(normalize(vNormal),normalize(vec3(-.3,.5,.9))));
+vec3 rgb=tex.rgb*light;
+if(wire){vec3 d=fwidth(bary); vec3 edge=smoothstep(vec3(0.),d*1.15,bary);rgb=mix(vec3(.11,.22,.29),rgb,min(min(edge.x,edge.y),edge.z));}
+color=vec4(rgb,1.);}`;
+let compile=(type,source)=>{let shader=gl.createShader(type);gl.shaderSource(shader,source);gl.compileShader(shader);if(!gl.getShaderParameter(shader,gl.COMPILE_STATUS))throw Error(gl.getShaderInfoLog(shader));return shader;};
+let unit=v=>{let n=Math.hypot(...v);return v.map(x=>x/n);};
+let cross=(a,b)=>[a[1]*b[2]-a[2]*b[1],a[2]*b[0]-a[0]*b[2],a[0]*b[1]-a[1]*b[0]];
+let requestDraw=()=>{if(!frame)frame=requestAnimationFrame(draw);};
+let draw=()=>{
+frame=0;if(!geometries.length)return;
+let ratio=Math.min(devicePixelRatio||1,2),width=Math.round(canvas.clientWidth*ratio),height=Math.round(canvas.clientHeight*ratio);
+if(canvas.width!==width||canvas.height!==height){canvas.width=width;canvas.height=height;}
+gl.clearColor(.094,.125,.18,1);gl.clear(gl.COLOR_BUFFER_BIT|gl.DEPTH_BUFFER_BIT);gl.useProgram(program);
+let eye=[Math.sin(yaw)*Math.cos(pitch),Math.sin(pitch),Math.cos(yaw)*Math.cos(pitch)];
+let r=unit(cross([0,1,0],eye)),u=cross(eye,r),right=r.map((x,i)=>x*Math.cos(roll)+u[i]*Math.sin(roll)),up=u.map((x,i)=>x*Math.cos(roll)-r[i]*Math.sin(roll));
+let center=mode.low.map((x,i)=>(x+mode.high[i])/2),radius=Math.hypot(...mode.high.map((x,i)=>(x-mode.low[i])/2));
+gl.uniform3fv(gl.getUniformLocation(program,'center'),center);gl.uniform3fv(gl.getUniformLocation(program,'right'),right);gl.uniform3fv(gl.getUniformLocation(program,'up'),up);gl.uniform3fv(gl.getUniformLocation(program,'eye'),eye);
+gl.uniform1f(gl.getUniformLocation(program,'scale'),zoom*.90/Math.max(radius,.0001));gl.uniform1i(gl.getUniformLocation(program,'clay'),$('clay').checked);gl.uniform1i(gl.getUniformLocation(program,'wire'),$('wire').checked);
+gl.activeTexture(gl.TEXTURE0);gl.bindTexture(gl.TEXTURE_2D,texture);
+for(let i=0;i<2;i++){let w=i===0?Math.floor(width/2):width-Math.floor(width/2);gl.viewport(i*Math.floor(width/2),0,w,height);gl.uniform1f(gl.getUniformLocation(program,'aspect'),w/height);gl.bindVertexArray(geometries[i].vao);gl.drawArrays(gl.TRIANGLES,0,geometries[i].count);}
+};
+let decode=async packed=>{if(!packed.data)return new Float32Array();let bytes=Uint8Array.from(atob(packed.data),c=>c.charCodeAt(0));let stream=new Blob([bytes]).stream().pipeThrough(new DecompressionStream('deflate'));return new Float32Array(await new Response(stream).arrayBuffer());};
+let upload=array=>{let buffer=gl.createBuffer(),vao=gl.createVertexArray();gl.bindVertexArray(vao);gl.bindBuffer(gl.ARRAY_BUFFER,buffer);gl.bufferData(gl.ARRAY_BUFFER,array,gl.STATIC_DRAW);for(let [location,size,offset] of [[0,3,0],[1,3,12],[2,2,24]]){gl.enableVertexAttribArray(location);gl.vertexAttribPointer(location,size,gl.FLOAT,false,32,offset);}return {vao,buffer,count:array.length/8};};
+let updateTexture=async()=>{let t=models[+$('model').value].textures[+$('texture').value],img=new Image();img.src='data:image/png;base64,'+t.image;await img.decode();if(texture)gl.deleteTexture(texture);texture=gl.createTexture();gl.bindTexture(gl.TEXTURE_2D,texture);gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL,true);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,img);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.NEAREST);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.NEAREST);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);requestDraw();};
+let reset=()=>{yaw=.14;pitch=.12;zoom=1;let span=mode.high.map((x,i)=>x-mode.low[i]);roll=span[1]>span[0]*1.5?Math.PI/2:0;requestDraw();};
+let changeMode=async()=>{let token=++loadToken;$('status').textContent='正在载入所选分组…';mode=models[+$('model').value].modes[$('mode').value];let arrays=await Promise.all([decode(mode.original),decode(mode.candidate)]);if(token!==loadToken)return;for(let mesh of geometries){gl.deleteBuffer(mesh.buffer);gl.deleteVertexArray(mesh.vao);}geometries=arrays.map(upload);$('before').textContent=mode.original.triangles.toLocaleString()+' 三角面';$('after').textContent=mode.candidate.triangles.toLocaleString()+' 三角面';$('status').textContent='候选未应用'+(models[+$('model').value].note?' · '+models[+$('model').value].note:'');reset();};
+let changeModel=async()=>{let m=models[+$('model').value];$('clay').checked=!!m.defaultClay;$('mode').replaceChildren(...Object.keys(m.modes).map(key=>new Option(modeNames[key],key)));$('texture').replaceChildren(...m.textures.map((t,i)=>new Option(t.resource.split('/').pop()+' · '+(Array.isArray(t.size)?t.size.join('×'):t.size),i)));await updateTexture();await changeMode();};
+let start=async()=>{if(!gl)throw Error('浏览器不支持 WebGL2，请查看 PNG 对照图。');program=gl.createProgram();gl.attachShader(program,compile(gl.VERTEX_SHADER,vertex));gl.attachShader(program,compile(gl.FRAGMENT_SHADER,fragment));gl.linkProgram(program);if(!gl.getProgramParameter(program,gl.LINK_STATUS))throw Error(gl.getProgramInfoLog(program));gl.enable(gl.DEPTH_TEST);gl.enable(gl.CULL_FACE);gl.cullFace(gl.BACK);$('model').replaceChildren(...models.map((m,i)=>new Option(m.name,i)));$('model').onchange=()=>changeModel().catch(fail);$('mode').onchange=()=>changeMode().catch(fail);$('texture').onchange=()=>updateTexture().catch(fail);$('clay').onchange=requestDraw;$('wire').onchange=requestDraw;$('reset').onclick=reset;await changeModel();};
+let fail=e=>{$('status').textContent='载入失败：'+e.message+'；请使用目录中的 PNG 对照图。';};
+let drag=null;
+canvas.onpointerdown=e=>{drag=[e.clientX,e.clientY];canvas.setPointerCapture(e.pointerId);};
+canvas.onpointermove=e=>{if(!drag)return;yaw+=(e.clientX-drag[0])*.008;pitch=Math.max(-1.5,Math.min(1.5,pitch+(e.clientY-drag[1])*.008));drag=[e.clientX,e.clientY];requestDraw();};
+canvas.onpointerup=()=>{drag=null;};canvas.onpointercancel=()=>{drag=null;};
+canvas.addEventListener('wheel',e=>{e.preventDefault();zoom=Math.max(.15,Math.min(12,zoom*Math.exp(-e.deltaY*.001)));requestDraw();},{passive:false});
+new ResizeObserver(requestDraw).observe(canvas);
+start().catch(fail);
+</script>
+</html>

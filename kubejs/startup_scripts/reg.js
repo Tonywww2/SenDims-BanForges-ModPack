@@ -26,6 +26,11 @@ StartupEvents.registry('item', event => {
     event.create('difficulty_selector').rarity('uncommon').maxStackSize(1)
     event.create('difficulty_locker').rarity('rare').maxStackSize(1)
 
+    event.create('corrupted_crystalotus')
+        .rarity('rare')
+        .texture('midnight:item/crystalotus')
+        .color(0, 0xDC143C)
+
     event.create('linear_quest_book')
         .use((level, player, hand) => {
             if (level.clientSide) {
@@ -49,6 +54,10 @@ StartupEvents.registry('item', event => {
     event.create('galatic_cycle_component').fireResistant().rarity('epic')
     event.create('bizarre_matter_dust').fireResistant().rarity('rare')
     event.create('storm_hydrogen_crystal').fireResistant().rarity('rare')
+    // 霜原星：不融冰加工线
+    event.create('permafrost_crystal_dust').fireResistant().rarity('rare')
+    event.create('frost_crystal_embryo').fireResistant().rarity('rare')
+    event.create('unmelting_ice').fireResistant().rarity('epic')
     event.create('celestial_filling_alloy_ingot').fireResistant().rarity('rare')
     // 土星环加工线中间产物 / Saturn ring processing intermediates
     event.create('saturn_regolith').fireResistant()
