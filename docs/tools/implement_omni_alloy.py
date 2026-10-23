@@ -329,7 +329,7 @@ def pneumatic(n):
     ident=n["id"]; out=output(n); kind=n["recipe_identifier"]; items=in_items(n); fluids=in_fluids(n)
     if ident=="pneumatic_02":data={"inputs":items+[ingredient("minecraft:redstone")],"pressure":4.0,"results":[stack(out)]}
     elif ident in {"pneumatic_03","pneumatic_04"}:data={"input":items[0],"program":"drill" if ident.endswith("03") else "laser","result":stack(out)}
-    elif ident=="pneumatic_05":data={"input":{"type":"pneumaticcraft:fluid","tag":"forge:crude_oil","amount":1000},"results":[{"fluid":n["output_contract"]["fluid"],"amount":1000}],"temperature":{"min_temp":373}}
+    elif ident=="pneumatic_05":data={"input":{"type":"pneumaticcraft:fluid","tag":"forge:crude_oil","amount":1000},"results":[{"fluid":n["output_contract"]["fluid"],"amount":200},{"fluid":"minecraft:water","amount":100}],"temperature":{"min_temp":373}}
     elif ident=="pneumatic_06":data={"fluid_input":{"type":"pneumaticcraft:fluid","fluid":fluids[0],"amount":1000},"item_input":ingredient("minecraft:slime_ball"),
         "fluid_output":{"fluid":n["output_contract"]["fluid"],"amount":1000},"pressure":3.0,"temperature":{"min_temp":423},"speed":0.2,"exothermic":False}
     elif ident=="pneumatic_07":data={"input1":{"type":"pneumaticcraft:fluid","fluid":fluids[0],"amount":1000},

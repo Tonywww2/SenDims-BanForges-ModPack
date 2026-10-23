@@ -2599,7 +2599,11 @@ ServerEvents.recipes(event => {
         "results": [
             {
                 "fluid": "kubejs:omni_pneumatic_05_fluid",
-                "amount": 1000
+                "amount": 200
+            },
+            {
+                "fluid": "minecraft:water",
+                "amount": 100
             }
         ],
         "temperature": {
