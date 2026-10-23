@@ -1,0 +1,257 @@
+{
+  "date": "2026-10-22",
+  "moved_files": 3511,
+  "moved_bytes": 33317906,
+  "groups": [
+    {
+      "from": "kubejs/docs",
+      "to": "docs/kubejs",
+      "files": 15,
+      "bytes": 2281023
+    },
+    {
+      "from": "kubejs/tools",
+      "to": "docs/tools",
+      "files": 42,
+      "bytes": 457797
+    },
+    {
+      "from": "dev_docs/assets",
+      "to": "docs/development/assets",
+      "files": 7,
+      "bytes": 63570
+    },
+    {
+      "from": ".cache/astral_gem_investigation",
+      "to": "docs/archive/cache/astral_gem_investigation",
+      "files": 42,
+      "bytes": 1940072
+    },
+    {
+      "from": ".cache/astral_gems",
+      "to": "docs/archive/cache/astral_gems",
+      "files": 1097,
+      "bytes": 14452498
+    },
+    {
+      "from": ".cache/capacitor-migration",
+      "to": "docs/archive/cache/capacitor-migration",
+      "files": 2,
+      "bytes": 6316
+    },
+    {
+      "from": ".cache/culling-crash-2026-10-16",
+      "to": "docs/archive/cache/culling-crash-2026-10-16",
+      "files": 9,
+      "bytes": 164020
+    },
+    {
+      "from": ".cache/deep-realm-certificate-crash",
+      "to": "docs/archive/cache/deep-realm-certificate-crash",
+      "files": 7,
+      "bytes": 2570123
+    },
+    {
+      "from": ".cache/mahjong-research",
+      "to": "docs/archive/cache/mahjong-research",
+      "files": 31,
+      "bytes": 787148
+    },
+    {
+      "from": ".cache/oil-integrate-recipe",
+      "to": "docs/archive/cache/oil-integrate-recipe",
+      "files": 3,
+      "bytes": 51776
+    },
+    {
+      "from": ".cache/omni-alloy-script-migration",
+      "to": "docs/archive/cache/omni-alloy-script-migration",
+      "files": 1,
+      "bytes": 156735
+    },
+    {
+      "from": ".cache/omni_alloy",
+      "to": "docs/archive/cache/omni_alloy",
+      "files": 2223,
+      "bytes": 8959429
+    },
+    {
+      "from": ".cache/tetra-auxiliary-update",
+      "to": "docs/archive/cache/tetra-auxiliary-update",
+      "files": 4,
+      "bytes": 344852
+    },
+    {
+      "from": ".cache/tetra-material-design",
+      "to": "docs/archive/cache/tetra-material-design",
+      "files": 2,
+      "bytes": 176752
+    },
+    {
+      "from": ".cache/tetra-materials-implementation",
+      "to": "docs/archive/cache/tetra-materials-implementation",
+      "files": 5,
+      "bytes": 270600
+    },
+    {
+      "from": ".cache/world-load-hang",
+      "to": "docs/archive/cache/world-load-hang",
+      "files": 4,
+      "bytes": 374644
+    },
+    {
+      "from": ".codex-tmp",
+      "to": "docs/archive/tmp",
+      "files": 0,
+      "bytes": 0
+    },
+    {
+      "from": "dev_docs/bumblezone_honey_crystal_mixin_plan.md",
+      "to": "docs/development/bumblezone_honey_crystal_mixin_plan.md",
+      "files": 1,
+      "bytes": 10318
+    },
+    {
+      "from": "dev_docs/pneumaticcraft_armor_init_hotfix.md",
+      "to": "docs/development/pneumaticcraft_armor_init_hotfix.md",
+      "files": 1,
+      "bytes": 1713
+    },
+    {
+      "from": "dev_docs/stargate_journey_wiki_and_datapack_reference.md",
+      "to": "docs/development/stargate_journey_wiki_and_datapack_reference.md",
+      "files": 1,
+      "bytes": 40091
+    },
+    {
+      "from": "dev_docs/Tetra材料生成模板.md",
+      "to": "docs/development/Tetra材料生成模板.md",
+      "files": 1,
+      "bytes": 3599
+    },
+    {
+      "from": "dev_docs/宝石设计表.md",
+      "to": "docs/development/宝石设计表.md",
+      "files": 1,
+      "bytes": 23749
+    },
+    {
+      "from": "dev_docs/星界宝石系统-实装与测试说明.md",
+      "to": "docs/development/星界宝石系统-实装与测试说明.md",
+      "files": 1,
+      "bytes": 37189
+    },
+    {
+      "from": "dev_docs/星界宝石系统-获取与加工设计草案.md",
+      "to": "docs/development/星界宝石系统-获取与加工设计草案.md",
+      "files": 1,
+      "bytes": 40937
+    },
+    {
+      "from": "dev_docs/星界宝石系统-首轮数值草案.md",
+      "to": "docs/development/星界宝石系统-首轮数值草案.md",
+      "files": 1,
+      "bytes": 7081
+    },
+    {
+      "from": "dev_docs/星界宝石系统API扩展草案.md",
+      "to": "docs/development/星界宝石系统API扩展草案.md",
+      "files": 1,
+      "bytes": 65123
+    },
+    {
+      "from": "dev_docs/clear_block_entities.py",
+      "to": "docs/tools/legacy/clear_block_entities.py",
+      "files": 1,
+      "bytes": 7048
+    },
+    {
+      "from": "dev_docs/ftbquest.py",
+      "to": "docs/tools/legacy/ftbquest.py",
+      "files": 1,
+      "bytes": 4079
+    },
+    {
+      "from": "dev_docs/gem.py",
+      "to": "docs/tools/legacy/gem.py",
+      "files": 1,
+      "bytes": 3581
+    },
+    {
+      "from": "dev_docs/test.js",
+      "to": "docs/tools/legacy/test.js",
+      "files": 1,
+      "bytes": 3813
+    },
+    {
+      "from": "dev_docs/test2.js",
+      "to": "docs/tools/legacy/test2.js",
+      "files": 1,
+      "bytes": 4608
+    },
+    {
+      "from": "halve_gif_frames.py",
+      "to": "docs/tools/halve_gif_frames.py",
+      "files": 1,
+      "bytes": 3459
+    },
+    {
+      "from": "replace_nbt_blocks.py",
+      "to": "docs/tools/replace_nbt_blocks.py",
+      "files": 1,
+      "bytes": 4064
+    },
+    {
+      "from": "checkerboard.png",
+      "to": "docs/assets/checkerboard.png",
+      "files": 1,
+      "bytes": 99
+    }
+  ],
+  "updated_references": [
+    "docs/development/assets/astral_gems/native_16x_textures.json",
+    "docs/development/宝石设计表.md",
+    "docs/development/星界宝石系统-实装与测试说明.md",
+    "docs/development/星界宝石系统-获取与加工设计草案.md",
+    "docs/kubejs/recipe-research/omni-alloy-implementation.md",
+    "docs/kubejs/recipe-research/recipe-types.md",
+    "docs/kubejs/yakuman-certificates.json",
+    "docs/kubejs/yakuman-materials.json",
+    "docs/kubejs/yakuman-series.json",
+    "docs/tools/astral_gems/build_catalog.py",
+    "docs/tools/astral_gems/draw_native_textures.cjs",
+    "docs/tools/astral_gems/fit_generation.py",
+    "docs/tools/astral_gems/sample_luck.js",
+    "docs/tools/astral_gems/sample_luck_maxima.js",
+    "docs/tools/astral_gems/verify_container_resize.py",
+    "docs/tools/astral_gems/verify_generation.js",
+    "docs/tools/astral_gems/verify_processing.init.gradle",
+    "docs/tools/astral_gems/verify_processing.js",
+    "docs/tools/audit_slashblade_models.py",
+    "docs/tools/build_omni_alloy_preview.py",
+    "docs/tools/build_recipe_route_design.py",
+    "docs/tools/build_yakuman_certificates.py",
+    "docs/tools/collect_recipe_types.py",
+    "docs/tools/draw_omni_alloy_textures.py",
+    "docs/tools/draw_yakuman_certificate.py",
+    "docs/tools/draw_yakuman_forging_soul.py",
+    "docs/tools/implement_omni_alloy.py",
+    "docs/tools/omni_textures/draw_industry.py",
+    "docs/tools/omni_textures/draw_organic.py",
+    "docs/tools/patch_deep_realm_certificate.py",
+    "docs/tools/replace_nbt_blocks.py",
+    "docs/tools/validate_omni_alloy.py",
+    "docs/tools/validate_omni_alloy_textures.py",
+    "docs/tools/yakuman_certificate_tests/verification.init.gradle",
+    "kubejs/startup_scripts/astral_gems/00_catalog.js"
+  ],
+  "verification": "Every moved file SHA256 matched before reference updates; archive snapshots are unchanged.",
+  "preserved": [
+    "Runtime scripts/assets/data",
+    "local mod configuration and autogenerated API docs",
+    "AGENTS.md and .github agent instructions",
+    "dev_docs spreadsheets, artwork and in-game Lua program",
+    ".cache/modeling-python dependencies",
+    ".cache/mod-backups rollback jars"
+  ]
+}

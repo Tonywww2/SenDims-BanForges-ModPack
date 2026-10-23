@@ -229,7 +229,7 @@ def main():
     for source in sorted(set(lang_sources), key=lambda s: (s.priority, s.label)):
         translations.update(json.loads(source.read().decode('utf-8-sig')))
     doc_names = {}
-    for line in (ROOT / 'kubejs/docs/slashblade-list.md').read_text(encoding='utf-8').splitlines():
+    for line in (ROOT / 'docs/kubejs/slashblade-list.md').read_text(encoding='utf-8').splitlines():
         match = re.match(r'\| `([^`]+)` \| [^|]+ \| ([^|]+) \|', line)
         if match:
             doc_names[match[1]] = match[2].strip()

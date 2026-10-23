@@ -1,0 +1,106 @@
+{
+  "mode": "manual native pixel art",
+  "source": "docs/tools/astral_gems/draw_native_textures.cjs",
+  "gameTextureConstruction": "256 directly authored RGBA pixels; no resize, sampling or palette conversion",
+  "assets": [
+    {
+      "name": "astral_gem_agent_low",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 104,
+      "colours": 10,
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "name": "astral_gem_agent_mid",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 104,
+      "colours": 10,
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "name": "astral_gem_agent_high",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 104,
+      "colours": 10,
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "name": "astral_gem_cleanser",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 106,
+      "colours": 10,
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "name": "astral_gem_shaper",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 116,
+      "colours": 10,
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "name": "astral_gem_purifier",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 76,
+      "colours": 10,
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "name": "astral_gem_polisher",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 98,
+      "colours": 10,
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "name": "astral_rune",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 128,
+      "colours": 6,
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "name": "astral_frame",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 118,
+      "colours": 6,
+      "alpha": [
+        0,
+        255
+      ]
+    }
+  ]
+}
