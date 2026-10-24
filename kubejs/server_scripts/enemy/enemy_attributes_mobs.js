@@ -41,6 +41,7 @@ let mobTypes = new Map([
     ['tofucraft:tofupig', type0],
     ['tofucraft:tofufish', type0],
     ['tofucraft:tofucow', type0],
+    ['minecraft:ocelot', typeA],
     ['minecraft:trader_llama', typeA],
     ['minecraft:wandering_trader', typeA],
     ['twilightforest:squirrel', type0],

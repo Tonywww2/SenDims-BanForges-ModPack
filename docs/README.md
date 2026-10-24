@@ -22,6 +22,10 @@
 
 ## 常用文档
 
+- [SDBF 服务端打包规范](development/SDBF-服务端打包规范.md)
+- [服务端物品丢失与麻将崩溃修复（2026-10-24）](development/SDBF-服务端严重问题修复-2026-10-24.md)
+- [麻将整场结束后卡住修复（v2）](development/SDBF-麻将整场结束卡住修复-2026-10-24.md)
+- [FluxOfTetra 作者反馈文档](development/FluxOfTetra-作者反馈-能量反序列化递归与物品丢失.md)
 - [刀名与刀 ID 对照](kubejs/slashblade-list.md)
 - [天顶系列设计](kubejs/zenith-series.md)
 - [役刀配方依赖图](kubejs/yakuman-recipes.mmd)
