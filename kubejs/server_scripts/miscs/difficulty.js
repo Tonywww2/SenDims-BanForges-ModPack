@@ -39,11 +39,13 @@ let subModifierById = {};
 let attributeSubModifiers = [];
 let dropSubModifiers = [];
 let enemySubModifiers = [];
+let damageTakenSubModifiers = [];
 subModifierDefinitions.forEach(modifier => {
     subModifierById[modifier.id] = modifier;
     if (modifier.effect.type == 'attribute') attributeSubModifiers.push(modifier);
     if (modifier.effect.type == 'drop') dropSubModifiers.push(modifier);
     if (modifier.effect.type == 'enemy') enemySubModifiers.push(modifier);
+    if (modifier.effect.type == 'damage_taken') damageTakenSubModifiers.push(modifier);
 });
 
 let buildSubRows = () => {
@@ -226,13 +228,22 @@ let getPlayerDropMultiplier = player => {
 };
 
 let getPlayerEnemyBonuses = player => {
-    let bonuses = { health: 0, attack: 0, armor: 0 };
+    let bonuses = { health: 0, armor: 0 };
     enemySubModifiers.forEach(modifier => {
         if (!isSubModifierSelected(player, modifier)) return;
         let stat = modifier.effect.stat;
         if (bonuses[stat] != undefined) bonuses[stat] += modifier.effect.bonus;
     });
     return bonuses;
+};
+
+let getPlayerDamageTakenMultiplier = player => {
+    if (!isRealPlayer(player)) return 1;
+    let multiplier = getPlayerDifficulty(player).multipliers.damageTaken;
+    damageTakenSubModifiers.forEach(modifier => {
+        if (isSubModifierSelected(player, modifier)) multiplier += modifier.effect.bonus;
+    });
+    return Math.max(0, multiplier);
 };
 
 let resetPlayerDifficulty = player => {
@@ -287,6 +298,8 @@ global.getPlayerDifficulty = getPlayerDifficulty;
 global.syncDifficultyModifiers = syncDifficultyModifiers;
 global.getPlayerDropMultiplier = getPlayerDropMultiplier;
 global.getPlayerEnemyBonuses = getPlayerEnemyBonuses;
+global.getPlayerDamageTakenMultiplier = getPlayerDamageTakenMultiplier;
+global.isRealDifficultyPlayer = isRealPlayer;
 let forEachNearbyDifficultyPlayer = (entity, consumer) => {
     entity.level.server.players.forEach(player => {
         if (!isRealPlayer(player) || player.isCreative() || player.isSpectator()) return;
@@ -297,25 +310,39 @@ let forEachNearbyDifficultyPlayer = (entity, consumer) => {
         consumer(player);
     });
 };
-global.getHighestNearbyDifficulty = entity => {
+global.getNearbyDifficultyContext = entity => {
     let selected = axisById[DEFAULT_DIFFICULTY_ID];
     let foundPlayer = false;
+    let highest = { health: 0, armor: 0 };
     forEachNearbyDifficultyPlayer(entity, player => {
         let difficulty = getPlayerDifficulty(player);
         if (!foundPlayer || difficulty.level > selected.level) selected = difficulty;
-        foundPlayer = true;
-    });
-    return selected;
-};
-global.getHighestNearbyEnemyBonuses = entity => {
-    let highest = { health: 0, attack: 0, armor: 0 };
-    forEachNearbyDifficultyPlayer(entity, player => {
         let bonuses = getPlayerEnemyBonuses(player);
         highest.health = Math.max(highest.health, bonuses.health);
-        highest.attack = Math.max(highest.attack, bonuses.attack);
         highest.armor = Math.max(highest.armor, bonuses.armor);
+        foundPlayer = true;
     });
-    return highest;
+    return { difficulty: selected, bonuses: highest, foundPlayer: foundPlayer };
+};
+
+global.getHighestNearbyDifficulty = entity => global.getNearbyDifficultyContext(entity).difficulty;
+global.getHighestNearbyEnemyBonuses = entity => global.getNearbyDifficultyContext(entity).bonuses;
+
+global.getNearestDifficultyPlayer = (entity, range) => {
+    let selected = null;
+    let distanceSquared = range * range;
+    entity.level.server.players.forEach(player => {
+        if (!isRealPlayer(player) || player.isCreative() || player.isSpectator()) return;
+        if (String(player.level.dimension) != String(entity.level.dimension)) return;
+        let dx = player.x - entity.x;
+        let dy = player.y - entity.y;
+        let dz = player.z - entity.z;
+        let candidateDistance = dx * dx + dy * dy + dz * dz;
+        if (candidateDistance > distanceSquared) return;
+        selected = player;
+        distanceSquared = candidateDistance;
+    });
+    return selected;
 };
 
 let makeSpaces = count => {
@@ -414,7 +441,7 @@ let buildAxisHover = (player, axis, current) => {
 
     appendAdjustment(hover, 'kubejs.difficulty.hp_adjustment', axis.multipliers.health);
     hover.append(Text.of('  |  ').color(Color.DARK_GRAY));
-    appendAdjustment(hover, 'kubejs.difficulty.atk_adjustment', axis.multipliers.attack);
+    appendAdjustment(hover, 'kubejs.difficulty.damage_taken_adjustment', axis.multipliers.damageTaken);
     hover.append(Text.of('  |  ').color(Color.DARK_GRAY));
     appendAdjustment(hover, 'kubejs.difficulty.armor_adjustment', axis.multipliers.armor);
 

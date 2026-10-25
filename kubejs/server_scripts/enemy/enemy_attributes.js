@@ -1,147 +1,120 @@
 // priority: 100
-EntityEvents.spawned("minecraft:ender_dragon", event => {
-    event.entity.setAttributeBaseValue("minecraft:generic.knockback_resistance", 1.0);
+
+let MOB_DIFFICULTY_VERSION = 2;
+let MOB_DIFFICULTY_VERSION_KEY = 'sdbf_difficulty_attributes_version';
+let MOB_DIFFICULTY_FALLBACK_KEY = 'sdbf_difficulty_used_fallback';
+let MOB_DIFFICULTY_REBOUND_KEY = 'sdbf_difficulty_player_reapplied';
+
+EntityEvents.spawned('minecraft:ender_dragon', event => {
+    event.entity.setAttributeBaseValue('minecraft:generic.knockback_resistance', 1.0);
 });
 
-/**
- * 实装层
- */
-EntityEvents.spawned(event => {
-    /**
-     * @type {Internal.LivingEntity}
-     */
-    let entity = event.entity;
-    if (!entity || !entity.isLiving()) return;
-    let name = String(entity.type.toString());
+let canApplyMobDifficulty = entity => {
+    return entity && entity.isLiving() && !entity.isPlayer() && entity.forgePersistentData
+        && !entityBlackList.has(String(entity.type));
+};
 
-    if (entity.isPlayer()) return;
-    if (entityBlackList.has(name)) return;
-    if (!entity.forgePersistentData) return;
-    if (entity.forgePersistentData.contains('dimension_difficulty')) return;
-    entity.forgePersistentData.putBoolean('dimension_difficulty', true);
+// Keep each mob's random rolls stable when a fallback is replaced or it is loaded again.
+let getMobDifficultyRoll = (data, name, amount) => {
+    let key = 'sdbf_difficulty_roll_' + name;
+    if (!data.contains(key)) data.putDouble(key, Math.random());
+    return 1 + data.getDouble(key) * amount;
+};
 
-    let dim = String(event.level.dimension.toString());
-    let player = entity.getLevel().getNearestPlayer(entity, 240);
-    let dimStage = null;
-    if (dimensionSpecialRule.has(dim) && player) {
-        // Special Rule
-        let dimInfo = dimensionSpecialRule.get(dim);
-        if (player.stages.has(dimInfo.stageID)) {
-            dimStage = dimInfo.activateDifficulty;
+let applyMobDifficulty = (entity, forcedPlayer, preserveHealth) => {
+    if (!canApplyMobDifficulty(entity)) return false;
+    let data = entity.forgePersistentData;
+    let name = String(entity.type);
+    let dim = String(entity.level.dimension);
+    let context = forcedPlayer ? {
+        difficulty: global.getPlayerDifficulty(forcedPlayer),
+        bonuses: global.getPlayerEnemyBonuses(forcedPlayer),
+        foundPlayer: true
+    } : global.getNearbyDifficultyContext(entity);
+    let usedFallback = !context.foundPlayer;
+    let dimensionPlayer = forcedPlayer || global.getNearestDifficultyPlayer(entity, 240);
+    let dimStage = dimensionStages.get(dim);
+    if (dimensionSpecialRule.has(dim)) {
+        if (dimensionPlayer) {
+            let rule = dimensionSpecialRule.get(dim);
+            dimStage = dimensionPlayer.stages.has(rule.stageID) ? rule.activateDifficulty : rule.normalDifficulty;
         } else {
-            dimStage = dimInfo.normalDifficulty;
+            usedFallback = true;
         }
-
-
-
-    } else {
-        // Normal Rule
-        dimStage = dimensionStages.get(dim);
-        if (!dimStage) dimStage = "0_1";
-
+    }
+    if (!dimStage) {
+        dimStage = '0_1';
+        usedFallback = true;
     }
 
-    entity.forgePersistentData.putString('sbsd.diff', dimStage);
-    // console.log(name)
     let mobType = mobTypes.get(name);
     if (!mobType) {
         mobType = type0;
-        console.log(name + " does not have a mobtype!")
+        usedFallback = true;
     }
     let mobValues = mobType[dimStage];
-    if (!mobValues) mobValues = mobType["0_1"];
+    if (!mobValues) {
+        mobValues = mobType['0_1'];
+        usedFallback = true;
+    }
     let additionalScale = additionalStageScale[dimStage];
-    if (!additionalScale) additionalScale = additionalStageScale["0_1"];
+    if (!additionalScale) {
+        additionalScale = additionalStageScale['0_1'];
+        usedFallback = true;
+    }
 
-    /**
-     * @type {Internal.Player}
-     */
-    // 
-    // let diffNum = -1;
+    let healthRatio = preserveHealth && entity.getMaxHealth() > 0
+        ? Math.max(0, Math.min(1, entity.getHealth() / entity.getMaxHealth())) : 1;
+    let healthMultiplier = context.difficulty.multipliers.health + context.bonuses.health;
+    let armorMultiplier = context.difficulty.multipliers.armor + context.bonuses.armor;
 
-    // if (player) {
-    //     player.stages.getAll().forEach(element => {
-    //         if (element.startsWith(diffLevelPrefix)) {
-    //             diffNum = Math.max(diffNum, parseInt(element.split('_')[2]));
-    //         }
-    //     })
-
-    // }
-    // if (diffNum == -1) diffNum = 1;
-
-    // let playerCount = entity.getLevel().getNearbyPlayers(
-    //     $TargetingConditions.DEFAULT,
-    //     entity,
-    //     AABB.ofSize(entity.position(), 64, 64, 64)
-    // ).size() - 1;
-    // if (playerCount < 0) playerCount = 0;
-
+    // Always rebuild from the template, never from an already-scaled base value.
+    // Personal difficulty no longer changes the mob's attack attribute.
     if (entity.attributes.hasAttribute(attack)) {
-        let val = mobValues[0];
-        val *= 1 + (Math.random() * atkFloat);
-        val *= additionalScale[0];
-        val = Math.floor(val);
-        entity.setAttributeBaseValue(attack, val);
-        // console.log(val);
+        let value = Math.floor(mobValues[0] * getMobDifficultyRoll(data, 'attack', atkFloat) * additionalScale[0]);
+        entity.setAttributeBaseValue(attack, value);
     }
-
     if (entity.attributes.hasAttribute(health)) {
-        let val = mobValues[1];
-        val *= 1 + (Math.random() * hpFloat);
-        val *= additionalScale[1];
-        val = Math.floor(val);
-        entity.setAttributeBaseValue(health, val);
-        entity.setHealth(entity.getMaxHealth());
-        // console.log(val);
+        let value = Math.floor(mobValues[1] * getMobDifficultyRoll(data, 'health', hpFloat) * additionalScale[1]);
+        entity.setAttributeBaseValue(health, value * healthMultiplier);
+        entity.setHealth(entity.getMaxHealth() * healthRatio);
     }
-
     if (entity.attributes.hasAttribute(armor)) {
-        let val = mobValues[2];
-        val *= 1 + (Math.random() * armorFloat);
-        val *= additionalScale[2];
-        val = Math.floor(val);
-        entity.setAttributeBaseValue(armor, val);
-        // console.log(val);
+        let value = Math.floor(mobValues[2] * getMobDifficultyRoll(data, 'armor', armorFloat) * additionalScale[2]);
+        entity.setAttributeBaseValue(armor, value * armorMultiplier);
     }
-
     if (entity.attributes.hasAttribute(magic_resist)) {
-        let val = mobValues[3];
-        val *= additionalScale[3];
-        entity.setAttributeBaseValue(magic_resist, val);
-        // console.log(val);
+        entity.setAttributeBaseValue(magic_resist, mobValues[3] * additionalScale[3]);
+    }
+    if (mobType.isBoss && entity.attributes.hasAttribute(frenzy_resistance)) {
+        entity.setAttributeBaseValue(frenzy_resistance, mobValues[3] * 0.006);
     }
 
-    if (mobType.isBoss && entity.attributes.hasAttribute(magic_resist)) {
-        let val = mobValues[3] * 0.006;
-        entity.setAttributeBaseValue(frenzy_resistance, val);
-    }
+    // Mark success last: an interrupted application must remain eligible for retry.
+    data.putString('sbsd.diff', dimStage);
+    data.putString('sdbf_difficulty_id', context.difficulty.id);
+    data.putBoolean(MOB_DIFFICULTY_FALLBACK_KEY, usedFallback);
+    data.putBoolean(MOB_DIFFICULTY_REBOUND_KEY, !!forcedPlayer);
+    if (forcedPlayer) data.putString('sdbf_difficulty_player', String(forcedPlayer.uuid));
+    data.putInt(MOB_DIFFICULTY_VERSION_KEY, MOB_DIFFICULTY_VERSION);
+    data.putBoolean('dimension_difficulty', true);
+    return true;
+};
 
-    // Apply the highest personal difficulty near this spawn.
-    let difficulty = global.getHighestNearbyDifficulty(entity);
-    let enemyBonuses = global.getHighestNearbyEnemyBonuses(entity);
-    let multipliers = {
-        health: difficulty.multipliers.health + enemyBonuses.health,
-        attack: difficulty.multipliers.attack + enemyBonuses.attack,
-        armor: difficulty.multipliers.armor + enemyBonuses.armor
-    };
-    entity.forgePersistentData.putString('sdbf_difficulty_id', difficulty.id);
-    
-    if (entity.attributes.hasAttribute(attack)) {
-        let currentAtk = entity.attributes.getInstance(attack).getBaseValue();
-        entity.setAttributeBaseValue(attack, currentAtk * multipliers.attack);
-    }
-    
-    if (entity.attributes.hasAttribute(health)) {
-        let currentHp = entity.attributes.getInstance(health).getBaseValue();
-        entity.setAttributeBaseValue(health, currentHp * multipliers.health);
-        entity.setHealth(entity.getMaxHealth());
-    }
-    
-    if (entity.attributes.hasAttribute(armor)) {
-        let currentArmor = entity.attributes.getInstance(armor).getBaseValue();
-        entity.setAttributeBaseValue(armor, currentArmor * multipliers.armor);
-    }
+global.reapplyDefaultDifficultyOnPlayerHit = (entity, player) => {
+    if (!canApplyMobDifficulty(entity) || !player || !global.isRealDifficultyPlayer(player)) return;
+    let data = entity.forgePersistentData;
+    let needsMigration = data.getInt(MOB_DIFFICULTY_VERSION_KEY) != MOB_DIFFICULTY_VERSION;
+    if (!needsMigration && (!data.getBoolean(MOB_DIFFICULTY_FALLBACK_KEY)
+        || data.getBoolean(MOB_DIFFICULTY_REBOUND_KEY))) return;
+    applyMobDifficulty(entity, player, true);
+};
 
-    // console.log(`[EA] Spawned ${name} in ${dim}.`)
-
-})
+EntityEvents.spawned(event => {
+    let entity = event.entity;
+    if (!canApplyMobDifficulty(entity)) return;
+    let data = entity.forgePersistentData;
+    if (data.getInt(MOB_DIFFICULTY_VERSION_KEY) == MOB_DIFFICULTY_VERSION) return;
+    // One-time migration also removes the old attack multiplier from saved mobs.
+    applyMobDifficulty(entity, null, data.contains('dimension_difficulty'));
+});

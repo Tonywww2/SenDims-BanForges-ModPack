@@ -1,0 +1,59 @@
+// Run from the SenDims source project with -Dsdbf.packRoot=<pack> -I <this file>
+// -PexcludeGiselleFromServerRuntime runGameTestServer.
+def pack = new File(System.getProperty('sdbf.packRoot'))
+def fixtures = new File(pack, 'docs/tools/difficulty_tests')
+allprojects {
+    afterEvaluate { project ->
+        if (project != rootProject) return
+        def scratch = new File(pack, 'docs/archive/difficulty-verification-20261024')
+        def eventRepo = new File(scratch, 'maven')
+        def artifact = new File(eventRepo, 'local/eventjs/EventJS/1.4.3')
+        artifact.mkdirs()
+        new File(artifact, 'EventJS-1.4.3.jar').bytes = new File(pack, 'mods/EventJS-1.20.1-1.4.3.jar').bytes
+        new File(artifact, 'EventJS-1.4.3.pom').text = '<project><modelVersion>4.0.0</modelVersion><groupId>local.eventjs</groupId><artifactId>EventJS</artifactId><version>1.4.3</version></project>'
+        repositories { maven { url = eventRepo.toURI() } }
+        dependencies { runtimeOnly fg.deobf('local.eventjs:EventJS:1.4.3') }
+        sourceSets {
+            difficultyGameTest {
+                java.srcDir new File(fixtures, 'java')
+                compileClasspath += sourceSets.main.output + sourceSets.main.compileClasspath
+                runtimeClasspath += sourceSets.main.output + sourceSets.main.runtimeClasspath
+            }
+        }
+        tasks.named('processDifficultyGameTestResources', ProcessResources).configure {
+            from('src/main/resources/data/slashblade_sendims/structures/holy_sword_test.nbt') {
+                into 'data/sdbf_difficulty_test/structures'
+                rename { 'difficulty_test.nbt' }
+            }
+        }
+        def testRun = new File(scratch, 'run')
+        minecraft.runs.gameTestServer {
+            workingDirectory testRun
+            property 'forge.enabledGameTestNamespaces', 'sdbf_difficulty_test'
+            property 'fml.maxParallelism', '1'
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+            mods { slashblade_sendims { source sourceSets.difficultyGameTest } }
+        }
+        tasks.matching { it.name == 'runGameTestServer' }.configureEach {
+            dependsOn tasks.named('difficultyGameTestClasses')
+            doFirst {
+                copy { from 'run/config/NuclearCraft'; into new File(testRun, 'config/NuclearCraft') }
+                copy {
+                    from new File(pack, 'kubejs/server_scripts')
+                    include 'enemy/enemy_attributes*.js', 'miscs/difficulty*.js', 'miscs/damage_scale_events.js'
+                    into new File(testRun, 'kubejs/server_scripts')
+                }
+                copy {
+                    from fixtures
+                    include 'bootstrap.js', 'combat_only.js'
+                    into new File(testRun, 'kubejs/server_scripts')
+                }
+                copy { from new File(fixtures, 'items.js'); into new File(testRun, 'kubejs/startup_scripts') }
+                // Remove the previous fixture's JSON so tag tests exercise only ServerEvents.tags.
+                def legacyTag = new File(testRun, 'kubejs/data/sdbf/tags/damage_type/difficulty_unaffected.json')
+                if (legacyTag.exists() && !legacyTag.delete()) throw new GradleException('Unable to remove obsolete test tag: ' + legacyTag)
+            }
+        }
+    }
+}

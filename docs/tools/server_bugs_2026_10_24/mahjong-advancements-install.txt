@@ -1,0 +1,27 @@
+SDBF 麻将役满成就增量修复 — 2026-10-24
+
+目标：Minecraft 1.20.1 / riichi_mahjong_forge-0.2.0.jar / hotai-1.0.jar。
+保留现有 Forge 版本与原模组 JAR，可以与麻将 v3 设置入口补丁同时使用。
+
+本包只新增 hotai/com/riichimahjongforge/mahjongcore/MahjongWinEffects.class。
+修复结算时未将具体役满列表交给成就判定的问题，并校正地和等六个役名映射。
+不包含配置、存档、YSM、FluxOfTetra、任务同步或已有 v3 牌桌类。
+
+安装：
+1. 完全停止服务端。
+2. 如果目标位置已有 MahjongWinEffects.class 或 MahjongWinEffects.badiff，将其备份到整个 hotai 目录外，再移走原位置的旧文件。
+3. 将包内 hotai 文件夹合并进服务端根目录，保留其他补丁，完整重启。
+4. 首次加载后 HotAI 将 .class 转成 .badiff 并移除 .class 属正常行为；不要重新覆盖回 .class。
+同一目标不允许同时存在 .class 和 .badiff。/reload 无法加载字节码补丁。
+联机客户端不必安装，本次修复需要服务端安装。
+
+过去错过的成就不会自动补发。对于已经确认胡出的大三元、国士无双，可由 OP 在玩家在线时执行（把 玩家名 替换成实际名字）：
+/advancement grant 玩家名 only riichi_mahjong_forge:yaku/daisangen
+/advancement grant 玩家名 only riichi_mahjong_forge:yaku/kokushi_musou
+远程服已包含当前 KubeJS 奖励数据时，首次完成会发放对应证书；已完成不会重复发放。
+
+本地验证：819 项成就断言通过；既有回归共 197 项通过；真实 HotAI 差分往返及字节码校验通过。
+被测牌桌、结算、成就判定方法为真实模组字节码，Minecraft 成就保存和物品发放等边界使用替身。
+尚待远程实际胡牌后的弹窗、成就进度和证书到账验证。
+
+回退：停止服务端，仅移走 MahjongWinEffects 的 .class/.badiff，必要时恢复该目标的备份，再重启。

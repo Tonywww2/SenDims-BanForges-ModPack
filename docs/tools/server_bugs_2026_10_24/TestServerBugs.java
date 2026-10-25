@@ -20,8 +20,10 @@ import youyihj.hotai.transformers.DiffTransformer;
  * Real Guava cache and the mod's real Mahjong match/driver remain in use.
  * This is a regression harness, not a substitute for a Forge integration test.
  */
-public final class TestServerBugs implements Opcodes {
+public class TestServerBugs implements Opcodes {
     static int checks;
+    static Map<String,String> extraTableMap = Map.of();
+    static Set<String> extraTableMethods = Set.of();
     static final String ENERGY = PatchServerBugs.ENERGY, TABLE = PatchServerBugs.TABLE;
     static final String NBT = "net/minecraft/nbt/CompoundTag";
     static final String HUMAN = "com/riichimahjongforge/mahjongtable/MahjongTableHumanPlayer";
@@ -152,7 +154,8 @@ public final class TestServerBugs implements Opcodes {
             "advanceRoundAfterResult", "computeRenchan", "clearResultAnimState", "endGame",
             "driverIsTerminal", "onTableRightClick", "seatOfOccupant", "sdbf$finishEndedMatch",
             "tryStartMatch", "effectivePreset", "seatsMatchCanonicalLayout", "buildPlayersFromSeats", "buildPlayer");
-        n.methods.removeIf(m -> !keep.contains(m.name));
+        n.methods.removeIf(m -> !keep.contains(m.name) && !extraTableMethods.contains(m.name));
+        if (extraTableMap.containsKey("net/minecraft/world/MenuProvider")) n.interfaces.add("net/minecraft/world/MenuProvider");
         for (MethodNode method : n.methods) {
             method.access = (method.access & ~(ACC_PRIVATE | ACC_PROTECTED)) | ACC_PUBLIC;
             for (AbstractInsnNode instruction : method.instructions) {
@@ -189,6 +192,7 @@ public final class TestServerBugs implements Opcodes {
         m.put("com/riichimahjongforge/mahjongtable/RuleSetPreset", name(Preset.class));
         m.put("com/riichimahjongforge/themahjongcompat/DriverNbt", name(DriverSave.class));
         m.put(HUMAN, name(Human.class));
+        m.putAll(extraTableMap);
         return remap(n, m);
     }
     static void set(Object o, String key, Object v) throws Exception { o.getClass().getField(key).set(o, v); }
@@ -392,12 +396,57 @@ public final class TestServerBugs implements Opcodes {
     }
     public static class Inventory extends ArrayList<Stack> {}
     public static class Level {
-        public boolean m_5776_() { return false; }
+        public boolean client; public BlockEntity table;
+        public boolean m_5776_() { return client; }
         public long m_46467_() { return 100L; }
+        public BlockEntity m_7702_(Pos pos) { return table; }
     }
     public static class ServerLevel extends Level {}
-    public static class ServerPlayer { public UUID m_20148_() { return new UUID(0, 1); } }
-    public static class BlockEntity { public Level f_58857_; public void m_183515_(Compound tag) {} }
+    public static class Player {
+        public boolean wrench, shift; public int menus, messages; public MenuProvider opened; public Level level;
+        public UUID m_20148_() { return new UUID(0, 1); }
+        public Stack m_21120_(Hand hand) { return new Stack(new Item(), true); }
+        public boolean m_6144_() { return shift; }
+        public Level m_9236_() { return level; }
+        public void m_213846_(Component message) { messages++; }
+    }
+    public static class ServerPlayer extends Player {
+        public void m_5661_(Component message, boolean overlay) { messages++; }
+    }
+    public static class BlockEntity { public Level f_58857_; public void m_183515_(Compound tag) {} public Pos m_58899_() { return new Pos(); } }
+    public static class Pos {}
+    public static class Hit {}
+    public interface MenuProvider {}
+    public interface Component { static MutableComponent m_237113_(String text) { return new MutableComponent(); } }
+    public static class MutableComponent implements Component {}
+    public enum Hand { MAIN_HAND, OFF_HAND }
+    public enum InteractionResult { SUCCESS, PASS, CONSUME }
+    public static class Property {}
+    public enum Direction { NORTH }
+    public static class BlockState {
+        public boolean centre = true;
+        public Comparable<?> m_61143_(Property property) {
+            return property == BlockBoundary.FACING ? Direction.NORTH : Integer.valueOf(centre ? 1 : 0);
+        }
+    }
+    public static class BlockBoundary {
+        public static final Property PART_X = new Property(), PART_Z = new Property(), FACING = new Property();
+        public static boolean holdsWrench(Player player) { return player.wrench; }
+        public static boolean isMaster(BlockState state) { return state.centre; }
+        public static Pos masterPos(Pos pos, BlockState state) { return pos; }
+        public static OptionalInt seatForCell(int x, int z, Direction direction) { return OptionalInt.empty(); }
+        public static Component warningFor(StartMatchResult result, BlockEntity table) { return null; }
+    }
+    public static class NetworkHooks {
+        public static void openScreen(ServerPlayer player, MenuProvider menu, Pos pos) { player.menus++; player.opened = menu; }
+    }
+    public interface InteractKey {}
+    public static class RecordItem extends Item {
+        public boolean isPredefinedFixtureForRouting() { return false; }
+        public static boolean hasRecordedTableState(Stack stack) { return false; }
+        public void applyToTable(ServerPlayer player, BlockEntity table, Stack stack) { throw new AssertionError("unexpected record application"); }
+        public void recordFromTable(ServerPlayer player, BlockEntity table, Stack stack) { throw new AssertionError("unexpected record write"); }
+    }
     public enum State { IDLE, GAME }
     public enum Anim { NONE, SHOW_HEADER, AWAITING_ADVANCE }
     public enum StartMatchResult { STARTED, NOT_IDLE, SEATS_MISMATCH_PRESET }
@@ -408,7 +457,10 @@ public final class TestServerBugs implements Opcodes {
             return this == MAHJONG_SOUL_4P ? TheMahjongMatch.defaultMahjongSoul() : TheMahjongMatch.defaultMahjongSoulSanma();
         }
     }
-    public record Seat(boolean enabled, Optional<UUID> occupant) {}
+    public record Seat(boolean enabled, Optional<UUID> occupant) {
+        public static Seat open() { return new Seat(true, Optional.empty()); }
+        public static Seat closed() { return new Seat(false, Optional.empty()); }
+    }
     public static class DriverSave {
         public static Compound writeDriver(TheMahjongDriver driver) {
             Compound tag = new Compound(); tag.m_128405_("playerCount", driver.match().playerCount()); return tag;
@@ -421,6 +473,7 @@ public final class TestServerBugs implements Opcodes {
         public void setOccupant(UUID uuid) {}
         public void setAutoDrawAfterSeconds(double seconds) {}
         public void onTableRightClick(TheMahjongDriver driver, MatchPhase phase, int seat, ServerPlayer player) {}
+        public void onCuteClick(InteractKey key, TheMahjongDriver driver, int seat, ServerPlayer player) {}
         public Optional<PlayerAction> chooseAction(DecisionRequest request, double delta) { return Optional.empty(); }
         public void validateBeforeAdvance(ServerLevel level) { before++; }
         public boolean tickAfterAdvance(ServerLevel level, BlockEntity table, int seat, MatchPhase phase) { after++; return false; }

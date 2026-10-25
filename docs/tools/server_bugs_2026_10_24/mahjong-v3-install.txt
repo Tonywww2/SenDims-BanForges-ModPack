@@ -1,0 +1,34 @@
+SDBF 麻将 HotAI v3 — 2026-10-24
+
+目标：Minecraft 1.20.1 / riichi_mahjong_forge-0.2.0.jar / hotai-1.0.jar。
+保留现有 Forge 版本和原模组 JAR。
+
+本包修复扳手和模型点击绕过终局清理、导致设置界面打不开的问题，包含此前三人局越界及整场结束卡住修复。
+只有两个麻将类；不包含 FluxOfTetra、任务同步、配置、存档或 YSM 文件。
+
+安装到远程服务端：
+1. 完全停止服务端。
+2. 在 hotai/com/riichimahjongforge/mahjongtable/ 中，把以下旧文件备份到整个 hotai 目录之外，再从原位置移走：
+   MahjongTableBlockEntity.class
+   MahjongTableBlockEntity.badiff
+   MahjongTableBlock.class
+   MahjongTableBlock.badiff
+   只处理实际存在的上述文件。不要清空其他补丁，也不要把备份放在 hotai 的任何子目录。
+3. 将本包 hotai 文件夹合并进服务端根目录。必须同时安装两个 .class，不能只更新其中一个。
+4. 完整启动服务端。不能用 /reload 代替重启。
+   首次加载后，HotAI 把 .class 转为 .badiff 并移除 .class 属正常行为。
+   不要随后再次覆盖回 .class；同一目标不能同时留下 .class 和 .badiff。
+
+使用：
+整场结束、结算动画播放完后，手持麻将扳手普通右键牌桌中央。
+应先打开牌桌物品栏，点击原有设置按钮选择模式。
+关闭界面并收起扳手，Shift 右键中央重新开局。
+仍在进行的对局或普通单局结算不会被扳手结束，会显示状态提示。
+本补丁不提供中途强制结束功能。联机客户端不必安装本包。
+
+回退：停止服务端，将上述两个目标当前的 .class/.badiff 移走，恢复备份后完整重启。
+
+验证：原有 80 项断言及新增 116 项交互断言通过，真实 HotAI 差分往返一致。
+测试直接执行交互方法字节码和真实麻将核心；Minecraft 网络/UI 使用测试替身。
+尚未在远程完整模组环境确认实际界面。
+若仍失败，请保留从启动到点击后的服务端日志，并记录是否出现状态提示、物品栏是否打开。

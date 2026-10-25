@@ -46,7 +46,7 @@ let axisDefinitions = difficultyData.axes.map(definition => ({
     label: `N${definition.level > 0 ? '+' : ''}${definition.level}`,
     multipliers: {
         health: definition.health,
-        attack: definition.attack,
+        damageTaken: definition.damageTaken,
         armor: definition.armor
     },
     description: definition.description,

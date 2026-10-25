@@ -26,11 +26,16 @@ $patchScratch = Join-Path $BuildRoot 'hotai-roundtrip'
 New-Item -ItemType Directory -Path $patchClasses -Force | Out-Null
 $patchCp = $patchDependencies -join ';'
 & (Join-Path $JavaBin 'javac.exe') -encoding UTF-8 -cp $patchCp -d $patchClasses `
-    (Join-Path $PSScriptRoot 'PatchServerBugs.java') (Join-Path $PSScriptRoot 'TestServerBugs.java')
+    (Join-Path $PSScriptRoot 'PatchServerBugs.java') (Join-Path $PSScriptRoot 'TestServerBugs.java') `
+    (Join-Path $PSScriptRoot 'TestMahjongInteractions.java') (Join-Path $PSScriptRoot 'TestMahjongAdvancements.java')
 if ($LASTEXITCODE -ne 0) { throw "Compilation failed: $LASTEXITCODE" }
 $patchCp += ';' + $patchClasses
 & (Join-Path $JavaBin 'java.exe') -Xverify:all -cp $patchCp PatchServerBugs $MinecraftRoot $patchOutput
 if ($LASTEXITCODE -ne 0) { throw "Patch generation failed: $LASTEXITCODE" }
 & (Join-Path $JavaBin 'java.exe') -Xverify:all -cp $patchCp TestServerBugs $MinecraftRoot $patchOutput $patchScratch
 if ($LASTEXITCODE -ne 0) { throw "Regression tests failed: $LASTEXITCODE" }
+& (Join-Path $JavaBin 'java.exe') -Xverify:all -cp $patchCp TestMahjongInteractions $MinecraftRoot $patchOutput $patchScratch
+if ($LASTEXITCODE -ne 0) { throw "Interaction regression tests failed: $LASTEXITCODE" }
+& (Join-Path $JavaBin 'java.exe') -Xverify:all -cp $patchCp TestMahjongAdvancements $MinecraftRoot $patchOutput $patchScratch
+if ($LASTEXITCODE -ne 0) { throw "Advancement regression tests failed: $LASTEXITCODE" }
 Write-Output "Validated patches: $patchOutput"

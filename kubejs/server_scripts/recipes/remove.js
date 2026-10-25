@@ -263,11 +263,11 @@ let toRemoveID = new Set([
     "dustandash:crafting/integrated_frame_1",
     "dustandash:crafting/neutron_indestructible",
     "dustandash:crafting/rock_solid",
-
-    // 临时
     "last_smith:hakurouken_inferno",
     "slashblade_addon:nihilul",
-    // "apotheosis:hellshelf",
+
+    // 临时
+    "pseudoedge_break_dawn:dimension",
     // "apotheosis:enchanting/infused_hellshelf",
     // "apotheosis:blazing_hellshelf",
     // "apotheosis:glowing_hellshelf",

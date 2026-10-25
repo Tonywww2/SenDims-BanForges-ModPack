@@ -464,8 +464,8 @@
                 <div class="score-state">总分 <strong id="total-score">0</strong></div>
             </div>
             <div class="enemy-total-state">
-                <div class="enemy-total-label">敌人属性总修正</div>
-                <div id="enemy-total-values" class="enemy-total-values">生命 -15% | 攻击 -15% | 护甲 -15%</div>
+                <div class="enemy-total-label">敌人与受伤总修正</div>
+                <div id="enemy-total-values" class="enemy-total-values">敌命 -15% | 受伤 -15% | 敌甲 -15%</div>
             </div>
             <div class="view-controls">
                 <button id="view-smaller" class="view-control-button" title="缩小视图">−</button>
@@ -633,7 +633,7 @@
                 id: 'n_' + axis.level,
                 level: Number(axis.level),
                 health: Math.round(Number(axis.health) * 100),
-                attack: Math.round(Number(axis.attack) * 100),
+                damageTaken: Math.round(Number(axis.damageTaken) * 100),
                 armor: Math.round(Number(axis.armor) * 100),
                 description: String(axis.description || '')
             }));
@@ -738,7 +738,7 @@
             }
             let totals = {
                 health: axis ? axis.health : 100,
-                attack: axis ? axis.attack : 100,
+                damageTaken: axis ? axis.damageTaken : 100,
                 armor: axis ? axis.armor : 100
             };
             let counted = {};
@@ -748,7 +748,12 @@
                 if (!modifier || counted[modifier.id]) continue;
                 counted[modifier.id] = true;
                 let effect = modifier.effect;
-                if (!effect || effect.type != 'enemy') continue;
+                if (!effect) continue;
+                if (effect.type == 'damage_taken') {
+                    totals.damageTaken += Number(effect.bonus) * 100;
+                    continue;
+                }
+                if (effect.type != 'enemy') continue;
                 let stat = String(effect.stat);
                 if (totals[stat] != undefined) totals[stat] += Number(effect.bonus) * 100;
             }
@@ -903,9 +908,9 @@
                 showTooltip(
                     formatLevel(axis.level),
                     axis.description,
-                    '基础属性修正  |  生命 ' + formatAxisAdjustment(axis.health) +
-                    '  |  攻击 ' + formatAxisAdjustment(axis.attack) +
-                    '  |  护甲 ' + formatAxisAdjustment(axis.armor),
+                    '主轴修正  |  敌人生命 ' + formatAxisAdjustment(axis.health) +
+                    '  |  受到伤害 ' + formatAxisAdjustment(axis.damageTaken) +
+                    '  |  敌人护甲 ' + formatAxisAdjustment(axis.armor),
                     '',
                     axis.level,
                     state,
@@ -1262,9 +1267,9 @@
             let enemyTotals = getEnemyTotalAdjustments();
             setTextIfChanged(
                 ui.enemyTotalValues,
-                '生命 ' + formatAxisAdjustment(enemyTotals.health) +
-                ' | 攻击 ' + formatAxisAdjustment(enemyTotals.attack) +
-                ' | 护甲 ' + formatAxisAdjustment(enemyTotals.armor)
+                '敌命 ' + formatAxisAdjustment(enemyTotals.health) +
+                ' | 受伤 ' + formatAxisAdjustment(enemyTotals.damageTaken) +
+                ' | 敌甲 ' + formatAxisAdjustment(enemyTotals.armor)
             );
 
             let axisCells = ui.axisCells;
