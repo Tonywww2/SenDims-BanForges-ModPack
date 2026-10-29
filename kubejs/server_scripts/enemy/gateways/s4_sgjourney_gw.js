@@ -12,7 +12,9 @@ ServerEvents.highPriorityData(event => {
 
     let smallRewards = material => {
         let rewards = {
-            "slashblade:proudsoul": [4, 6, 8, 10, 10],
+            // 前两波的耀魂数量减半改为耀魂铁；第 3 波起改发耀魂宝珠。
+            "slashblade:proudsoul_ingot": [2, 3, 0, 0, 0],
+            "slashblade:proudsoul_sphere": [0, 0, 1, 2, 3],
             "tetra:geode": [4, 7, 9, 10, 10],
             "apotheosis:epic_material": [1, 1, 2, 2, 2],
             "apotheosis:mythic_material": [0, 0, 1, 1, 3]
@@ -23,7 +25,9 @@ ServerEvents.highPriorityData(event => {
 
     let mediumRewards = material => {
         let rewards = {
-            "slashblade:proudsoul": [3, 3, 4, 4, 4, 5, 5, 5, 6, 6],
+            // 前四波的耀魂数量减半（向下取整）改为耀魂铁；第 5 波起改发宝珠。
+            "slashblade:proudsoul_ingot": [1, 1, 2, 2, 0, 0, 0, 0, 0, 0],
+            "slashblade:proudsoul_sphere": [0, 0, 0, 0, 1, 1, 2, 2, 3, 3],
             "tetra:geode": [2, 3, 3, 4, 4, 4, 5, 5, 5, 5],
             "apotheosis:epic_material": [0, 1, 1, 0, 1, 1, 1, 1, 1, 1],
             "apotheosis:mythic_material": [0, 0, 0, 0, 1, 0, 1, 0, 1, 2]
@@ -175,7 +179,7 @@ ServerEvents.highPriorityData(event => {
             bossIds: config.smallBosses.map(entity => bossId(config.id, entity)),
             perWave: smallRewards(config.material),
             jadeRewards: smallJades(),
-            completion: { "slashblade:proudsoul": 6 }
+            completion: { "slashblade:proudsoul_sphere": 3 }
         });
 
         createS4MediumMythicGateway(`sdbf_sgj_${config.id}_g2`, config.color, {
@@ -183,7 +187,7 @@ ServerEvents.highPriorityData(event => {
             bossIds: config.mediumBosses.map(entity => bossId(config.id, entity)),
             perWave: mediumRewards(config.material),
             jadeRewards: mediumJades(),
-            completion: { "slashblade:proudsoul": 5 },
+            completion: { "slashblade:proudsoul_sphere": 5 },
             starChart: true
         });
     }

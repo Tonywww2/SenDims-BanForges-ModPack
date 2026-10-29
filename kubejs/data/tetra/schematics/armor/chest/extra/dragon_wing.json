@@ -1,13 +1,14 @@
 {
-    "replace": true,
-    "slots": [
-    ],
-    "materialSlotCount": 1,
-    "displayType": "major",
-    "glyph": {
-        "textureLocation": "geotetraarmor:textures/gui/gui_gta.png",
-        "textureX": 48,
-        "textureY": 0
-    },
-    "outcomes": []
+  "replace": true,
+  "slots": [
+    "sdbf/disabled"
+  ],
+  "materialSlotCount": 1,
+  "displayType": "major",
+  "glyph": {
+    "textureLocation": "geotetraarmor:textures/gui/gui_gta.png",
+    "textureX": 48,
+    "textureY": 0
+  },
+  "outcomes": []
 }

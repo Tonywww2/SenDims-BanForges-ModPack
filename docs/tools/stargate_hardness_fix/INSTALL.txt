@@ -1,0 +1,45 @@
+SDBF Stargate Journey / Tetra 挖掘崩溃修复 — 2026-10-28
+
+适用：Minecraft 1.20.1 Forge、Stargate.Journey-1.20.1-0.6.51.jar、HotAI 1.0。
+原星门模组 JAR SHA-256：4bed593c4762db6e3bbc0037c04e13e6f5950c183785e589ce5b392c8581eaaf
+原始 StargateBlockState.class SHA-256：54227e7bca559dab73330456937b037b69b1661de5355b98418658556cdcf56f
+补丁 StargateBlockState.class SHA-256：fea2ab957806ec9a99b36a887feb468955829e88d34eec0cfd98d7873f3088a7
+
+修复：
+Tetra 查询原星门方块硬度时，如果当前位置已成为空气或其他方块，
+星门原代码仍按门环解析当前位置的 stargate_part，导致服务端崩溃。
+补丁在这种情况下返回原方块的基础硬度，避免解析已不存在的门环。
+当前位置仍是同种星门方块时，沿用完整原逻辑，保留连接保护、
+允许拆除已连接星门的配置、伪装硬度和其他行为。未修改模组 JAR。
+
+安装到远程服务端：
+1. 完全停止服务端。
+2. 检查整个 hotai 目录是否已有同目标类的旧 .class/.badiff：
+   net/povstalec/sgjourney/common/blockstates/StargateBlockState
+   如果有，备份到整个 hotai 目录外，再移走旧文件，避免重复应用。
+3. 将发布包里的 hotai 文件夹合并到服务端根目录，保留其他补丁。
+   实际只需添加这一个文件：
+   hotai/net/povstalec/sgjourney/common/blockstates/StargateBlockState.class
+4. 完整启动服务端；/reload 无法加载该补丁。
+5. 查看目标类加载后的日志，确认包含：
+   Patched class: net/povstalec/sgjourney/common/blockstates/StargateBlockState
+   然后用原来的 Tetra 工具测试挖掘未连接星门门环。
+
+联机服务端安装即可修复报告中的服务端崩溃。客户端可同步安装，
+保护客户端侧相同的硬度查询；单人/局域网主机需要本地安装。
+
+HotAI 首次加载目标类时，会将 .class 转为 .badiff 并移除 .class，属于正常行为。
+不要在转换之后反复上传同一份 .class；不要同时保留同目标的 .class 和 .badiff。
+跨机器分发本 ZIP 中的 .class，让目标环境自行转换，不分发本机转换后的 .badiff。
+
+验证：
+- 10 项结构与真实 HotAI 往返检查，3882 项行为检查通过。
+- 使用模组实际的 StargateBlockState 硬度方法，以及门环 getStargate / getBaseBlockPos 字节码。
+- 复现当前位置为空气、洞穴空气、石头和水时的原始异常；补丁后安全返回原硬度。
+- 覆盖其他星门替换、4 个代表性门环部件、4 个朝向、3 种方向、连接/拆除配置、伪装及基础实体缺失。
+- JVM -Xverify:all 和 ASM 校验通过；其他方法、字段、类元数据与原始类一致。
+- Minecraft/Forge 世界、属性和实体边界使用测试替身；尚未启动完整游戏实测。
+
+回退：停止服务端或退出游戏，仅移走上述目标的 .class/.badiff，然后重新启动。
+模组更新或原始目标类指纹改变时，需要重新核对，不能直接沿用此版本补丁。
+源码与构建入口：docs/tools/stargate_hardness_fix/Build-And-Test.ps1。

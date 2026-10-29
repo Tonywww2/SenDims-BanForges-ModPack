@@ -1,4 +1,19 @@
 ServerEvents.tags("item", event => {
+    // 展开嵌套标签后过滤，确保通过 #forge:ores_in_ground/stone 引入的矿石也被移除。
+    let excludedBoonDrops = new Set([
+        'sgjourney:naquadah_ore',
+        'sgjourney:naquadria_ore',
+        'sgjourney:trinium_ore'
+    ]);
+    let boonDrops = event.get('apotheosis:boon_drops');
+    let allowedBoonDrops = [];
+    boonDrops.getObjectIds().forEach(id => {
+        let itemId = String(id);
+        if (!excludedBoonDrops.has(itemId)) allowedBoonDrops.push(itemId);
+    });
+    boonDrops.removeAll();
+    boonDrops.add(allowedBoonDrops);
+
     // event.removeAll('twilightforest:portal/activator')
 
     // event.add('twilightforest:portal/activator',

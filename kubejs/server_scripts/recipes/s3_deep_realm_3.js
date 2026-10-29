@@ -2,6 +2,7 @@ ServerEvents.recipes(event => {
 
     sqRecipe(event, "midnight:forgotten_library", 'midnight:ebonite', 1, "s3");
     sqRecipe(event, "block_factorys_bosses:dragon_tower", 'midnight:tenebrum_ingot', 1, "s3");
+    sqRecipe(event, "elder_bosses:malenia_arena", 'midnight:virilux', 1, "s3");
 
     event.shaped('kubejs:scoria_ingot', [
         'DBA',

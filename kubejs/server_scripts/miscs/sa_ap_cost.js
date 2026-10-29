@@ -32,6 +32,8 @@ SACostMap.put("slashblade_sendims:void_slash_ammo", [400, 0.25]);
 
 SACostMap.put("sjap_adder:illusion_drive", [400, 0.2]);
 
+SACostMap.put("slashblade:corpse_piler_start", [300, 0.15]);
+
 // 神威暂沿用极乌卡 SA；连招注册名与 SA 注册名不同，显式记录原默认消耗。
 SACostMap.put("sjap_adder:terrifying_waves", [200, 0.2]);
 

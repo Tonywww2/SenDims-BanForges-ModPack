@@ -2,6 +2,16 @@ ServerEvents.recipes(event => {
 
     sqRecipe(event, "minecraft:end_city", 'minecraft:popped_chorus_fruit', 1, "s3");
 
+    event.shaped(Item.of('gateways:gate_pearl', '{gateway:"gateways:sdbf_end_g1"}'), [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'minecraft:end_stone_bricks',
+        B: 'minecraft:ender_eye',
+        C: 'slashblade:proudsoul_ingot'
+    }).id('sdbf:sdbf_end_g1_s3')
+
     event.shapeless("minecraft:ender_eye", [
         "minecraft:ender_pearl",
         '#forge:dusts/glowstone',

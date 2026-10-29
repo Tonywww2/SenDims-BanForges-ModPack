@@ -1,5 +1,8 @@
 ServerEvents.recipes(event => {
 
+    sqRecipe(event, "sgjourney:stargate/milky_way/terra_stargate", 'minecraft:ender_eye', 1, "s4");
+    sqRecipe(event, "darkerdepths:catacombs", 'minecraft:soul_lantern', 1, "s4");
+
     event.shapeless('2x kubejs:ml_computing_ingot', [
         'kubejs:ml_computing_ingot',
         'computercraft:computer_advanced',

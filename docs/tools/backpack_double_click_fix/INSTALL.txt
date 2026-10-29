@@ -1,0 +1,41 @@
+SDBF Backpack Side GUI：移除双击自动转存背包 — 2026-10-26
+
+适用：Minecraft 1.20.1 Forge、backpack_side_gui-1.2.9-beta.jar、hotai-1.0.jar。
+原模组 JAR SHA-256：3e06283355b65b33d8d5b179c6eb95d6d92c63893c80ab10ca169861c3e1752c
+
+修改：
+- 客户端 SideBackpackClient.tryMenuDoubleClickTransfer 始终返回 false，不再拦截物品栏/容器双击，也不发送双击转存请求。
+- 服务端 ServerSidePanel.transferMenuSlotToBackpackByDoubleClick 直接返回，不执行双击转存。
+- 其他方法、字段、类元数据保持一致；包含 Shift 快速转移、侧栏点击/拖拽、侧栏内双击收集、排序及工具界面等路径。
+- 不改变配置、物品或存档，不修改模组 JAR。
+
+安装：
+1. 完全退出 Minecraft 客户端。若也给服务端安装，先停服。
+2. 检查整个 hotai 目录及子目录是否已有这两个目标的旧 .class/.badiff：
+   com/locknar/backpacksidegui/client/SideBackpackClient
+   com/locknar/backpacksidegui/server/ServerSidePanel
+   如有，先备份到整个 hotai 目录外，再移走旧文件。旧补丁备份不能放在 hotai 子目录内。
+3. 将包内 hotai 文件夹合并到 Minecraft/服务端根目录，保留其他补丁。文件位置：
+   hotai/com/locknar/backpacksidegui/client/SideBackpackClient.class
+   hotai/com/locknar/backpacksidegui/server/ServerSidePanel.class
+4. 完整重启。/reload、资源重载或重新打开界面均无法加载字节码补丁。
+
+联机：必须给希望关闭该双击操作的各客户端安装。仅给服务器安装，旧客户端仍会拦截双击并发送请求，操作体验不会恢复正常。
+服务器可安装同包，禁用旧客户端发送的双击转存请求。两端可合并整个包；专用服务端不会使用客户端类。
+
+HotAI 在某目标类首次加载时将对应 .class 转成 .badiff 并移除 .class，是正常现象。
+不要反复把 .class 覆盖回去；同一目标不要同时保留 .class/.badiff。
+跨机器使用本发布包内的 .class，让目标环境自行首次转换，不上传本机启动后产生的 .badiff。
+专用服务端未加载客户端目标类时，客户端 .class 保持原样也属于正常情况。
+
+验证：双击普通物品栏/容器槽位应继续由正常界面逻辑处理，不再自动转入背包。
+Shift 操作、侧栏正常点击/拖拽等应保持原有功能。
+
+本地验证共 57 项检查通过：12 项字节码/HotAI 检查，45 项行为检查。
+执行实际原版及修补后方法字节码，复现原版隐藏侧栏时的双击拦截和鼠标/容器物品转存；补丁后不发送转存请求、不改动物品，并验证普通双向快速转移分派保持正常。
+两类均通过真实 HotAI .class → .badiff → 重启重建验证，以及 JVM 字节码校验。
+Minecraft/Forge、网络发送和物品栏边界使用替身；尚未进行完整游戏中的鼠标点击实测。
+
+回退：完全退出游戏/停服，仅移走上述两个目标的 .class/.badiff，必要时恢复对应旧补丁，再重启。
+模组版本或原始类指纹不同，先重新核对并构建，不直接沿用。
+构建源代码：docs/tools/backpack_double_click_fix/；Build-And-Test.ps1 只构建验证，不自动安装。

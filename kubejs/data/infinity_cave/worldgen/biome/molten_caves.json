@@ -27,14 +27,7 @@
     }
   },
   "spawners": {
-    "ambient": [
-      {
-        "type": "minecraft:strider",
-        "weight": 1,
-        "minCount": 1,
-        "maxCount": 1
-      }
-    ],
+    "ambient": [],
     "axolotls": [],
     "creature": [],
     "misc": [],
@@ -80,12 +73,7 @@
     "water_ambient": [],
     "water_creature": []
   },
-  "spawn_costs": {
-    "minecraft:strider": {
-      "energy_budget": 0.25,
-      "charge": 3
-    }
-  },
+  "spawn_costs": {},
   "carvers": {
     "air": []
   },

@@ -49,7 +49,7 @@
 [Worldgen]
 	#Uses an alternative island noise for the Aether. By default, this is disabled with the Ancient Aether mod installed.
 	#Allowed Values: TRUE, FALSE, WITHOUT_AA
-	"Redux Noise" = "without_aa"
+	"Redux Noise" = "WITHOUT_AA"
 
 	[Worldgen."Additional Features"]
 		#Enables Mossy Holystone as an ore. Configurable so that if you disable it, it's easier to tell if you've come across a dungeon.

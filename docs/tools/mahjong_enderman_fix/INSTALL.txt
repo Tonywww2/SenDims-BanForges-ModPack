@@ -1,0 +1,36 @@
+SDBF 麻将模组末影人初始携带逻辑移除 — 2026-10-25
+
+适用：Minecraft 1.20.1 Forge、riichi_mahjong_forge-0.2.0.jar、hotai-1.0.jar。
+原模组 JAR SHA-256：4e5ecc9a10e6dec5ec63315de08af8eed7b5981650ad7d7e3207ef37572bea18
+
+修改：将 EndermanCarriesMahjongTile.onEndermanFinalizeSpawn 方法改为直接返回。
+完全停止该模组在生成时给末影人塞入草方块或四万麻将牌，包括麻将方块缺失时的备用分支。
+不新增死亡掉落，不改变原版正常搬方块行为，不清空已经持有的方块，不清理存档中的现有实体。
+与已有牌桌、三人局、设置界面和成就 HotAI 补丁使用不同目标类，可同时安装。
+
+远程服务端安装：
+1. 完全停止服务端。
+2. 检查整个 hotai 目录及子目录是否已有名为 EndermanCarriesMahjongTile.class 或 EndermanCarriesMahjongTile.badiff 的文件。
+   如有，先备份到整个 hotai 目录外，再移走旧文件；不要把旧补丁备份放在 hotai 子目录里。
+3. 将压缩包中的 hotai 文件夹合并到服务端根目录。目标文件必须位于：
+   hotai/com/riichimahjongforge/gimmicks/EndermanCarriesMahjongTile.class
+   保留其他目标类的补丁，不要替换或删除整个 hotai 目录。
+4. 完整重启。/reload 无法应用字节码补丁。
+
+首次目标类加载时，HotAI 将 .class 转成 .badiff 并删除 .class 是正常行为。
+不要再把 .class 覆盖回去，也不要上传本地运行后生成的 .badiff；发布包提供的是待远程环境首次转换的 .class。
+服务端安装即可，联机客户端不必同步。当前客户端实例安装后，重启也会修复其单人世界中的生成事件。
+
+验证：在有自然刷怪的末地区域观察新生成的末影人，不再由麻将模组统一赋予草方块/四万。
+原版自然搬起方块的行为仍会出现。既有的携带方块末影人不会因安装补丁立即减少，不能以旧实体总量判断补丁无效。
+本次未执行任何清理实体或修改存档的命令。
+
+本地测试：46 项检查通过。实际执行原版及修补后的事件方法字节码，覆盖草方块、四万、缺失麻将方块的备用分支、已有携带物及其他生物。
+实际 HotAI .class → .badiff → 重启重新应用流程通过，并开启 JVM 字节码验证。
+Minecraft/Forge 边界使用替身；尚未在完整远程服务器中进行自然生成实测。
+
+回退：停服，只移走本目标类的 .class/.badiff，再重启；不要删除其他补丁。
+模组升级或 JAR 不同，先核对 manifest.json 中的原始目标类指纹，不能直接沿用。
+
+重建：从整合包根目录运行 docs/tools/mahjong_enderman_fix/Build-And-Test.ps1。
+该构建脚本仅生成和验证补丁，不自动安装或启动 Minecraft。

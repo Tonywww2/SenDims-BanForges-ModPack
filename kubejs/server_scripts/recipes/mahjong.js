@@ -68,8 +68,8 @@ ServerEvents.recipes(event => {
             'B': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade:nameless_lone')
-                    .killCount(12000)
-                    .proudSoul(100000)
+                    .killCount(2500)
+                    .proudSoul(8000)
                     .refineCount(50)
                     .build()
             ),
@@ -94,8 +94,8 @@ ServerEvents.recipes(event => {
             'B': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade:nameless_lone')
-                    .killCount(12000)
-                    .proudSoul(100000)
+                    .killCount(2500)
+                    .proudSoul(8000)
                     .refineCount(25)
                     .build()
             ),
@@ -120,8 +120,8 @@ ServerEvents.recipes(event => {
             'B': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade:nameless_lone')
-                    .killCount(12000)
-                    .proudSoul(100000)
+                    .killCount(2500)
+                    .proudSoul(8000)
                     .refineCount(50)
                     .build()
             ),
@@ -147,8 +147,8 @@ ServerEvents.recipes(event => {
             'B': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade:nameless_lone')
-                    .killCount(12000)
-                    .proudSoul(100000)
+                    .killCount(2500)
+                    .proudSoul(8000)
                     .refineCount(25)
                     .build()
             ),
@@ -174,8 +174,8 @@ ServerEvents.recipes(event => {
             'B': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade:nameless_lone')
-                    .killCount(12000)
-                    .proudSoul(100000)
+                    .killCount(2500)
+                    .proudSoul(8000)
                     .refineCount(50)
                     .build()
             ),
@@ -201,8 +201,8 @@ ServerEvents.recipes(event => {
             'B': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade:nameless_lone')
-                    .killCount(12000)
-                    .proudSoul(100000)
+                    .killCount(2500)
+                    .proudSoul(8000)
                     .refineCount(25)
                     .build()
             ),
@@ -228,8 +228,8 @@ ServerEvents.recipes(event => {
             'B': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade:nameless_lone')
-                    .killCount(12000)
-                    .proudSoul(100000)
+                    .killCount(2500)
+                    .proudSoul(8000)
                     .refineCount(50)
                     .build()
             ),
@@ -256,8 +256,8 @@ ServerEvents.recipes(event => {
             'B': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade:nameless_lone')
-                    .killCount(12000)
-                    .proudSoul(100000)
+                    .killCount(2500)
+                    .proudSoul(8000)
                     .refineCount(25)
                     .build()
             ),
@@ -284,8 +284,8 @@ ServerEvents.recipes(event => {
             'B': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade:nameless_lone')
-                    .killCount(12000)
-                    .proudSoul(100000)
+                    .killCount(2500)
+                    .proudSoul(8000)
                     .refineCount(50)
                     .build()
             ),
@@ -311,8 +311,8 @@ ServerEvents.recipes(event => {
             'B': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade:nameless_lone')
-                    .killCount(12000)
-                    .proudSoul(100000)
+                    .killCount(2500)
+                    .proudSoul(8000)
                     .refineCount(25)
                     .build()
             ),
@@ -338,8 +338,8 @@ ServerEvents.recipes(event => {
             'B': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade:nameless_lone')
-                    .killCount(12000)
-                    .proudSoul(100000)
+                    .killCount(2500)
+                    .proudSoul(8000)
                     .refineCount(50)
                     .build()
             ),
@@ -365,8 +365,8 @@ ServerEvents.recipes(event => {
             'B': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade:nameless_lone')
-                    .killCount(12000)
-                    .proudSoul(100000)
+                    .killCount(2500)
+                    .proudSoul(8000)
                     .refineCount(25)
                     .build()
             ),
@@ -392,8 +392,8 @@ ServerEvents.recipes(event => {
             'B': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade:nameless_lone')
-                    .killCount(12000)
-                    .proudSoul(100000)
+                    .killCount(2500)
+                    .proudSoul(8000)
                     .refineCount(50)
                     .build()
             ),
@@ -418,8 +418,8 @@ ServerEvents.recipes(event => {
             'B': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade:nameless_lone')
-                    .killCount(12000)
-                    .proudSoul(100000)
+                    .killCount(2500)
+                    .proudSoul(8000)
                     .refineCount(25)
                     .build()
             ),
@@ -444,8 +444,8 @@ ServerEvents.recipes(event => {
             'B': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade:nameless_lone')
-                    .killCount(12000)
-                    .proudSoul(100000)
+                    .killCount(2500)
+                    .proudSoul(8000)
                     .refineCount(50)
                     .build()
             ),
@@ -471,8 +471,8 @@ ServerEvents.recipes(event => {
             'B': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade:nameless_lone')
-                    .killCount(12000)
-                    .proudSoul(100000)
+                    .killCount(2500)
+                    .proudSoul(8000)
                     .refineCount(25)
                     .build()
             ),
@@ -498,8 +498,8 @@ ServerEvents.recipes(event => {
             'B': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade:nameless_lone')
-                    .killCount(12000)
-                    .proudSoul(100000)
+                    .killCount(2500)
+                    .proudSoul(8000)
                     .refineCount(50)
                     .build()
             ),
@@ -526,8 +526,8 @@ ServerEvents.recipes(event => {
             'B': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade:nameless_lone')
-                    .killCount(12000)
-                    .proudSoul(100000)
+                    .killCount(2500)
+                    .proudSoul(8000)
                     .refineCount(25)
                     .build()
             ),
@@ -554,8 +554,8 @@ ServerEvents.recipes(event => {
             'B': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade:nameless_lone')
-                    .killCount(12000)
-                    .proudSoul(100000)
+                    .killCount(2500)
+                    .proudSoul(8000)
                     .refineCount(50)
                     .build()
             ),
@@ -580,8 +580,8 @@ ServerEvents.recipes(event => {
             'B': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade:nameless_lone')
-                    .killCount(12000)
-                    .proudSoul(100000)
+                    .killCount(2500)
+                    .proudSoul(8000)
                     .refineCount(25)
                     .build()
             ),
@@ -606,8 +606,8 @@ ServerEvents.recipes(event => {
             'B': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade:nameless_lone')
-                    .killCount(12000)
-                    .proudSoul(100000)
+                    .killCount(2500)
+                    .proudSoul(8000)
                     .refineCount(50)
                     .build()
             ),
@@ -632,8 +632,8 @@ ServerEvents.recipes(event => {
             'B': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade:nameless_lone')
-                    .killCount(12000)
-                    .proudSoul(100000)
+                    .killCount(2500)
+                    .proudSoul(8000)
                     .refineCount(25)
                     .build()
             ),
@@ -658,8 +658,8 @@ ServerEvents.recipes(event => {
             'B': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_shousuushii')
-                    .killCount(30000)
-                    .proudSoul(300000)
+                    .killCount(8000)
+                    .proudSoul(15000)
                     .refineCount(100)
                     .build()
             ),
@@ -682,8 +682,8 @@ ServerEvents.recipes(event => {
             'B': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_shousuushii')
-                    .killCount(30000)
-                    .proudSoul(300000)
+                    .killCount(8000)
+                    .proudSoul(15000)
                     .refineCount(50)
                     .build()
             ),
@@ -706,16 +706,16 @@ ServerEvents.recipes(event => {
             'B': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_daisangen')
-                    .killCount(30000)
-                    .proudSoul(300000)
+                    .killCount(8000)
+                    .proudSoul(15000)
                     .refineCount(100)
                     .build()
             ),
             'C': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_tsuuiisou')
-                    .killCount(12000)
-                    .proudSoul(100000)
+                    .killCount(2500)
+                    .proudSoul(8000)
                     .refineCount(100)
                     .build()
             ),
@@ -738,16 +738,16 @@ ServerEvents.recipes(event => {
             'B': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_daisangen')
-                    .killCount(30000)
-                    .proudSoul(300000)
+                    .killCount(8000)
+                    .proudSoul(15000)
                     .refineCount(50)
                     .build()
             ),
             'C': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_tsuuiisou')
-                    .killCount(12000)
-                    .proudSoul(100000)
+                    .killCount(2500)
+                    .proudSoul(8000)
                     .refineCount(50)
                     .build()
             ),
@@ -770,16 +770,16 @@ ServerEvents.recipes(event => {
             'B': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_chinroutou')
-                    .killCount(30000)
-                    .proudSoul(300000)
+                    .killCount(8000)
+                    .proudSoul(15000)
                     .refineCount(100)
                     .build()
             ),
             'C': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_suuankou')
-                    .killCount(12000)
-                    .proudSoul(100000)
+                    .killCount(2500)
+                    .proudSoul(8000)
                     .refineCount(100)
                     .build()
             ),
@@ -802,16 +802,16 @@ ServerEvents.recipes(event => {
             'B': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_chinroutou')
-                    .killCount(30000)
-                    .proudSoul(300000)
+                    .killCount(8000)
+                    .proudSoul(15000)
                     .refineCount(50)
                     .build()
             ),
             'C': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_suuankou')
-                    .killCount(12000)
-                    .proudSoul(100000)
+                    .killCount(2500)
+                    .proudSoul(8000)
                     .refineCount(50)
                     .build()
             ),
@@ -834,16 +834,16 @@ ServerEvents.recipes(event => {
             'B': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_ryuuiisou')
-                    .killCount(30000)
-                    .proudSoul(300000)
+                    .killCount(8000)
+                    .proudSoul(15000)
                     .refineCount(100)
                     .build()
             ),
             'C': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_suukantsu')
-                    .killCount(12000)
-                    .proudSoul(100000)
+                    .killCount(2500)
+                    .proudSoul(8000)
                     .refineCount(100)
                     .build()
             ),
@@ -866,16 +866,16 @@ ServerEvents.recipes(event => {
             'B': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_ryuuiisou')
-                    .killCount(30000)
-                    .proudSoul(300000)
+                    .killCount(8000)
+                    .proudSoul(15000)
                     .refineCount(50)
                     .build()
             ),
             'C': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_suukantsu')
-                    .killCount(12000)
-                    .proudSoul(100000)
+                    .killCount(2500)
+                    .proudSoul(8000)
                     .refineCount(50)
                     .build()
             ),
@@ -898,16 +898,16 @@ ServerEvents.recipes(event => {
             'B': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_kokushi')
-                    .killCount(45000)
-                    .proudSoul(500000)
+                    .killCount(10000)
+                    .proudSoul(20000)
                     .refineCount(100)
                     .build()
             ),
             'C': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_tenhou')
-                    .killCount(12000)
-                    .proudSoul(100000)
+                    .killCount(2500)
+                    .proudSoul(8000)
                     .refineCount(100)
                     .build()
             ),
@@ -930,16 +930,16 @@ ServerEvents.recipes(event => {
             'B': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_kokushi')
-                    .killCount(45000)
-                    .proudSoul(500000)
+                    .killCount(10000)
+                    .proudSoul(20000)
                     .refineCount(50)
                     .build()
             ),
             'C': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_tenhou')
-                    .killCount(12000)
-                    .proudSoul(100000)
+                    .killCount(2500)
+                    .proudSoul(8000)
                     .refineCount(50)
                     .build()
             ),
@@ -962,16 +962,16 @@ ServerEvents.recipes(event => {
             'B': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_chuuren')
-                    .killCount(45000)
-                    .proudSoul(500000)
+                    .killCount(10000)
+                    .proudSoul(20000)
                     .refineCount(100)
                     .build()
             ),
             'C': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_chiihou')
-                    .killCount(12000)
-                    .proudSoul(100000)
+                    .killCount(2500)
+                    .proudSoul(8000)
                     .refineCount(100)
                     .build()
             ),
@@ -994,16 +994,16 @@ ServerEvents.recipes(event => {
             'B': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_chuuren')
-                    .killCount(45000)
-                    .proudSoul(500000)
+                    .killCount(10000)
+                    .proudSoul(20000)
                     .refineCount(50)
                     .build()
             ),
             'C': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_chiihou')
-                    .killCount(12000)
-                    .proudSoul(100000)
+                    .killCount(2500)
+                    .proudSoul(8000)
                     .refineCount(50)
                     .build()
             ),
@@ -1026,24 +1026,24 @@ ServerEvents.recipes(event => {
             'B': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_daisuushii')
-                    .killCount(75000)
-                    .proudSoul(1000000)
+                    .killCount(15000)
+                    .proudSoul(70000)
                     .refineCount(200)
                     .build()
             ),
             'C': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_tsuuiisou')
-                    .killCount(12000)
-                    .proudSoul(100000)
+                    .killCount(2500)
+                    .proudSoul(8000)
                     .refineCount(200)
                     .build()
             ),
             'D': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_suuankou')
-                    .killCount(12000)
-                    .proudSoul(100000)
+                    .killCount(2500)
+                    .proudSoul(8000)
                     .refineCount(200)
                     .build()
             ),
@@ -1066,24 +1066,24 @@ ServerEvents.recipes(event => {
             'B': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_daisuushii')
-                    .killCount(75000)
-                    .proudSoul(1000000)
+                    .killCount(15000)
+                    .proudSoul(70000)
                     .refineCount(100)
                     .build()
             ),
             'C': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_tsuuiisou')
-                    .killCount(12000)
-                    .proudSoul(100000)
+                    .killCount(2500)
+                    .proudSoul(8000)
                     .refineCount(100)
                     .build()
             ),
             'D': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_suuankou')
-                    .killCount(12000)
-                    .proudSoul(100000)
+                    .killCount(2500)
+                    .proudSoul(8000)
                     .refineCount(100)
                     .build()
             ),
@@ -1106,16 +1106,16 @@ ServerEvents.recipes(event => {
             'B': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_suushi_jikoku')
-                    .killCount(100000)
-                    .proudSoul(1500000)
+                    .killCount(40000)
+                    .proudSoul(400000)
                     .refineCount(200)
                     .build()
             ),
             'C': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_suukantsu')
-                    .killCount(12000)
-                    .proudSoul(100000)
+                    .killCount(2500)
+                    .proudSoul(8000)
                     .refineCount(200)
                     .build()
             ),
@@ -1138,16 +1138,16 @@ ServerEvents.recipes(event => {
             'B': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_suushi_jikoku')
-                    .killCount(100000)
-                    .proudSoul(1500000)
+                    .killCount(40000)
+                    .proudSoul(400000)
                     .refineCount(100)
                     .build()
             ),
             'C': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_suukantsu')
-                    .killCount(12000)
-                    .proudSoul(100000)
+                    .killCount(2500)
+                    .proudSoul(8000)
                     .refineCount(100)
                     .build()
             ),

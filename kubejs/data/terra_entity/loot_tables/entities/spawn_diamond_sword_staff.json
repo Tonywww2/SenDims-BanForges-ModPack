@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "terra_entity:summon_diamond_sword_staff",
+          "weight": 50
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 950
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "terra_entity:entities/spawn_diamond_sword_staff"
+}

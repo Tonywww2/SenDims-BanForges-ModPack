@@ -79,7 +79,7 @@ ServerEvents.recipes(event => {
         A: 'kubejs:storm_hydrogen_crystal',
         B: 'minecraft:dragon_egg',
         C: 'slashblade:proudsoul_crystal',
-        D: 'dog:cosmic_larva',
+        D: 'dog:draconic_soul_fragment',
         E: 'minecraft:nether_star',
     }).id('sdbf:cosmic_worm_s5')
 

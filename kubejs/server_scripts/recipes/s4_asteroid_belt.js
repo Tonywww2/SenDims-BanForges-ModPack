@@ -1,5 +1,15 @@
 ServerEvents.recipes(event => {
 
+    event.shaped(Item.of('gateways:gate_pearl', '{gateway:"gateways:sdbf_asteroid_g1"}'), [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'kubejs:carbon_rich_asteroid_rock',
+        B: 'nuclearcraft:cobalt_ingot',
+        C: 'slashblade:proudsoul_sphere'
+    }).id('sdbf:sdbf_asteroid_g1_s4')
+
     event.shaped('kubejs:delta_dust', [
         'BAB',
         'CDC',

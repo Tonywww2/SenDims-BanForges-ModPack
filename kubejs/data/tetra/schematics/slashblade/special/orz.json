@@ -1,7 +1,7 @@
 {
   "replace": true,
   "slots": [
-    "slashblade/special"
+    "sdbf/disabled"
   ],
   "materialSlotCount": 1,
   "displayType": "major",
@@ -10,18 +10,5 @@
     "textureY": 0,
     "textureLocation": "slashbladetetra:textures/gui/texture.png"
   },
-  "outcomes": [
-    {
-      "materials": [
-        "tetra:fibre/",
-        "tetra:skin/",
-        "tetra:fabric/",
-        "tetra:metal/",
-        "tetra:wood/",
-        "tetra:gem/"
-      ],
-      "moduleKey": "slashblade/special/orz",
-      "moduleVariant": "orz/"
-    }
-  ]
+  "outcomes": []
 }

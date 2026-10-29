@@ -142,7 +142,7 @@ ServerEvents.recipes(event => {
             "type": "umapyoi:umasoul",
             "item": "umapyoi:uma_soul",
             "request": {
-                "identifier": "umapyoi:agnus_tachyon"
+                "name": "umapyoi:agnus_tachyon"
             }
         }),
         "B": 'last_smith:scroll_named',

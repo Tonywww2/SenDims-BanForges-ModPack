@@ -29,6 +29,8 @@
 - [麻将大三元、国士无双等役满成就修复](development/SDBF-麻将役满成就修复-2026-10-24.md)
 - [FluxOfTetra 作者反馈文档](development/FluxOfTetra-作者反馈-能量反序列化递归与物品丢失.md)
 - [FluxOfTetra HotAI 重复补丁启动故障](development/SDBF-FluxOfTetra-HotAI重复补丁-2026-10-24.md)
+- [星门与 Tetra 挖掘崩溃 HotAI 修复](development/SDBF-星门-Tetra-挖掘崩溃修复-2026-10-28.md)
+- [末地与小行星带神话首领门](kubejs/gateways-end-asteroid-bosses.md)
 - [刀名与刀 ID 对照](kubejs/slashblade-list.md)
 - [天顶系列设计](kubejs/zenith-series.md)
 - [役刀配方依赖图](kubejs/yakuman-recipes.mmd)
@@ -53,6 +55,8 @@ python -X utf8 docs/tools/build_omni_alloy_preview.py
 ```
 
 根目录原有的 Python 工具现位于 [GIF 帧处理工具](tools/halve_gif_frames.py) 和 [NBT 方块替换工具](tools/replace_nbt_blocks.py)。
+
+Java 堆内存增长采样：启动游戏并进入世界后，双击 [Start-HeapCapture.cmd](tools/heap_growth/Start-HeapCapture.cmd)。先选 `1` 采集低占用基线，继续游玩，内存增长后选 `2`；完整堆快照会暂停游戏并请求一次 GC。两阶段样本按同一 Java 进程保存到 `docs/archive/heap-samples/`，用于比较存活对象和引用关系。也可直接运行 PowerShell 脚本，使用 `-Mode Status` 查看占用，或使用 `-HistogramOnly` 仅采集小型类直方图。完整操作和参数见 [采样说明](tools/heap_growth/README.md)。
 
 ## 存放约定
 

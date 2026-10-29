@@ -293,6 +293,16 @@ let getStateColor = state => {
     return Color.DARK_GRAY;
 };
 
+let getDifficultyNameColor = level => {
+    if (level <= -6) return Color.LIGHT_PURPLE;
+    if (level <= -2) return Color.GREEN;
+    if (level <= 1) return Color.WHITE;
+    if (level <= 5) return Color.AQUA;
+    if (level <= 9) return Color.YELLOW;
+    if (level <= 15) return Color.RED;
+    return Color.DARK_RED;
+};
+
 global.getDifficultyById = getDifficultyById;
 global.getPlayerDifficulty = getPlayerDifficulty;
 global.syncDifficultyModifiers = syncDifficultyModifiers;
@@ -882,7 +892,7 @@ NativeEvents.onEvent($PlayerNameFormatEvent, event => {
     if (!isRealPlayer(player)) return;
     let difficulty = getPlayerDifficulty(player);
     let displayName = Text.of('[').color(Color.GRAY)
-        .append(Text.of(difficulty.label).color(Color.AQUA))
+        .append(Text.of(difficulty.label).color(getDifficultyNameColor(difficulty.level)))
         .append(Text.of('] ').color(Color.GRAY))
         .append(event.username);
     event.setDisplayname(displayName);

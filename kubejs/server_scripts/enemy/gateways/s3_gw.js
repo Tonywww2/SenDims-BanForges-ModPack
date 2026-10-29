@@ -58,28 +58,23 @@ ServerEvents.highPriorityData(event => {
 			setup_time: 100
 		},
 		modifiers: [
+			// 战斗修正：增怪和属性强化的累计次数上限翻倍。
 			{
 				application_mode: {
 					type: "gateways:after_every_n_waves",
 					waves: 3,
-					max: 6
+					max: 12
 				},
 				entities: [
 					{ entity: "terra_entity:pixie", count: 1 },
 					{ entity: "terra_entity:granite_elemental", count: 1 }
-				],
-				rewards: [
-					{
-						type: "gateways:stack",
-						stack: { item: "kubejs:mysterious_alkali_crystal", count: 1 }
-					}
 				]
 			},
 			{
 				application_mode: {
 					type: "gateways:after_every_n_waves",
 					waves: 5,
-					max: 3
+					max: 6
 				},
 				entities: [
 					{ entity: "terra_entity:possess_armor", count: 1 }
@@ -90,12 +85,27 @@ ServerEvents.highPriorityData(event => {
 						operation: "multiply_total",
 						value: 0.1
 					}
-				],
+				]
+			},
+			// 奖励独立按波次发放，不累计叠加：每 3 波一个耀魂铁，每 5 波一组珍珠和血玉。
+			{
+				application_mode: {
+					type: "gateways:only_on_every_n_waves",
+					waves: 3
+				},
 				rewards: [
 					{
 						type: "gateways:stack",
 						stack: { item: "slashblade:proudsoul_ingot", count: 1 }
-					},
+					}
+				]
+			},
+			{
+				application_mode: {
+					type: "gateways:only_on_every_n_waves",
+					waves: 5
+				},
+				rewards: [
 					{
 						type: "gateways:stack",
 						stack: { item: "apotheosis:mythic_material", count: 1 }

@@ -1,5 +1,7 @@
 # 小行星带重做
 
+后续修复：[2026-10-27 基地线缆生成崩溃与旋转端口](C:/Users/Tony/AppData/Roaming/PrismLauncher/instances/SenDimsBanForges/minecraft/docs/asteroid_belt/crash_fix_2026-10-27.md)。
+
 实现日期：2026-10-06；棱角柔化与常见散生矿物修订：2026-10-07。维度 ID 保持 **`sdbf:asteroid_belt`**，高度仍为 Y=0–319，原群系 ID 和轨道维度保持不变。
 
 ## 地形与生态
