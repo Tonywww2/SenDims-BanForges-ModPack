@@ -1,3 +1,5 @@
-# These task caches were ignored at their original locations as well.
-/cache/
-/tmp/
+# Investigation output, compiler products, test fixtures and release staging.
+# Keep only this policy and the directory guide in version control.
+/*
+!/.gitignore
+!/README.md

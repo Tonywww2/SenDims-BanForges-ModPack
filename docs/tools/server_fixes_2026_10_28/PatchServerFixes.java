@@ -220,6 +220,10 @@ public final class PatchServerFixes implements Opcodes {
     }
     static void ownMod(Path root, Path build) throws Exception {
         Path jar = root.resolve("mods/slashblade_sendims-1.1.1.jar");
+        // After installation, rebuild from the preserved original rather than from our patched JAR.
+        if (!sha(Files.readAllBytes(jar)).equals("67c1b285199caa1b9a353e0553063a4a67504d7fb6a460ae16aecbebf593a47d")) {
+            jar = root.resolve("docs/releases/backups/server-fixes-2026-10-28/mods/slashblade_sendims-1.1.1.jar");
+        }
         check(sha(Files.readAllBytes(jar)).equals("67c1b285199caa1b9a353e0553063a4a67504d7fb6a460ae16aecbebf593a47d"), "exact own-mod baseline before surgical update");
         Map<String,byte[]> changes = new HashMap<>();
         byte[] originalPlugin;

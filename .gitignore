@@ -96,3 +96,9 @@ config/smoothboot.json
 config/zfastnoise.mixin.properties
 /cache
 /docs/tools/__pycache__
+
+# Local AI work, rollback copies and generated release packages.
+/.codex-tmp/
+/.sdbf-backups/
+/docs/releases/*.zip
+__pycache__/

@@ -30,6 +30,7 @@
 - [FluxOfTetra 作者反馈文档](development/FluxOfTetra-作者反馈-能量反序列化递归与物品丢失.md)
 - [FluxOfTetra HotAI 重复补丁启动故障](development/SDBF-FluxOfTetra-HotAI重复补丁-2026-10-24.md)
 - [星门与 Tetra 挖掘崩溃 HotAI 修复](development/SDBF-星门-Tetra-挖掘崩溃修复-2026-10-28.md)
+- [禁用 Darker Depths 水晶西瓜充能](development/DarkerDepths-禁用水晶西瓜充能-2026-10-29.md)
 - [末地与小行星带神话首领门](kubejs/gateways-end-asteroid-bosses.md)
 - [刀名与刀 ID 对照](kubejs/slashblade-list.md)
 - [天顶系列设计](kubejs/zenith-series.md)
