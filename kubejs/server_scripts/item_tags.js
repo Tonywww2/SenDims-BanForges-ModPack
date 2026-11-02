@@ -180,7 +180,7 @@ ServerEvents.tags("item", event => {
         "kubejs:basepoint_alloy",                  // 奇点合金
         "kubejs:radiation_components",              // 辐射零件组
         "draconicevolution:small_chaos_frag",
-        "slashblade_sendims:soul_crystal_cluster"
+        "titan_moon:bio_battery"
     ])
 
     // 阶段5
