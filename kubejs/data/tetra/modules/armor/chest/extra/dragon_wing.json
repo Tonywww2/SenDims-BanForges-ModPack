@@ -24,6 +24,7 @@
             ],
             "effects":
             {
+                "gta:fly": 1
             }
         }
     ]

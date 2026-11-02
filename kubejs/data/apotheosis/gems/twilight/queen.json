@@ -21,19 +21,19 @@
 			"values": {
 				"rare": {
 					"chance": 0.05,
-					"cooldown": 6000
+					"cooldown": 12000
 				},
 				"epic": {
 					"chance": 0.10,
-					"cooldown": 5400
+					"cooldown": 10800
 				},
 				"mythic": {
 					"chance": 0.125,
-					"cooldown": 5100
+					"cooldown": 10200
 				},
 				"ancient": {
 					"chance": 0.15,
-					"cooldown": 4800
+					"cooldown": 9600
 				}
 			}
 		},

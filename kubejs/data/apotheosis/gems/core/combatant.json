@@ -17,12 +17,12 @@
 			},
 			"damage_type": "physical",
 			"values": {
-				"common": 0.025,
-				"uncommon": 0.035,
-				"rare": 0.045,
-				"epic": 0.06,
-				"mythic": 0.075,
-				"ancient": 0.1
+				"common": 0.0125,
+				"uncommon": 0.0175,
+				"rare": 0.0225,
+				"epic": 0.03,
+				"mythic": 0.0375,
+				"ancient": 0.05
 			}
 		},
 		{

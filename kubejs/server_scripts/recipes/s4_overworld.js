@@ -3,6 +3,39 @@ ServerEvents.recipes(event => {
     sqRecipe(event, "sgjourney:stargate/milky_way/terra_stargate", 'minecraft:ender_eye', 1, "s4");
     sqRecipe(event, "darkerdepths:catacombs", 'minecraft:soul_lantern', 1, "s4");
 
+    // 太空防护附魔书：耀魂结晶替代板材，硅岩锭替代石材；结晶上下位置区分两本书。
+    event.shaped(Item.of('minecraft:enchanted_book', '{StoredEnchantments:[{id:"ad_astra_giselle_addon:space_fire_proof",lvl:1s}]}'), [
+        'R#R',
+        'RBR',
+        'RRR'
+    ], {
+        B: 'minecraft:book',
+        '#': 'slashblade:proudsoul_crystal',
+        R: 'sgjourney:naquadah_ingot'
+    }).id('sdbf:enchanted_book_space_fire_proof_s4');
+
+    event.shaped(Item.of('minecraft:enchanted_book', '{StoredEnchantments:[{id:"ad_astra_giselle_addon:acid_rain_proof",lvl:1s}]}'), [
+        'RRR',
+        'RBR',
+        'R#R'
+    ], {
+        B: 'minecraft:book',
+        '#': 'slashblade:proudsoul_crystal',
+        R: 'sgjourney:naquadah_ingot'
+    }).id('sdbf:enchanted_book_acid_rain_proof_s4');
+
+    // 保留原氧气罐升级逻辑，继承氧气和充气模式。
+    event.custom({
+        type: 'ad_astra_giselle_addon:can_upgrading',
+        result: { item: 'ad_astra_giselle_addon:netherite_oxygen_can' },
+        pattern: [' N ', 'OCO', 'OOO'],
+        key: {
+            N: { tag: 'forge:ingots/netherite' },
+            O: { item: 'slashblade:proudsoul_crystal' },
+            C: { item: 'ad_astra_giselle_addon:oxygen_can' }
+        }
+    }).id('sdbf:netherite_oxygen_can_s4');
+
     event.shapeless('2x kubejs:ml_computing_ingot', [
         'kubejs:ml_computing_ingot',
         'computercraft:computer_advanced',

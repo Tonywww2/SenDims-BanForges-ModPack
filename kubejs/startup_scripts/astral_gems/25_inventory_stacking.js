@@ -31,7 +31,7 @@ let initializeAstralGemStacking = () => {
         player.playNotifySound(success ? config.successSound : config.failureSound, player.soundSource,
           config.volume, success ? config.successPitch : config.failurePitch);
       } catch (error) {
-        console.warn('[Astral gems] Interaction sound: ' + error);
+        // console.warn('[Astral gems] Interaction sound: ' + error);
       }
     }
     // Our operation has finished; suppress the original inventory interaction.

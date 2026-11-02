@@ -7,12 +7,15 @@
 - 珍珠 ID：`gateways:sdbf_end_g1`。
 - 名称：末地 [神话首领] 怪潮传送门。
 - 使用维度：`minecraft:the_end`。
+- 三波均从末地可用的 Apotheosis 首领池随机生成，不再指定首领类型。
+
+随机维度筛选依赖[随机首领维度限制补丁](../development/Apotheosis-传送门随机首领维度限制-2026-10-29.md)。原模组的无参数随机接口使用全局池，必须安装该 HotAI 补丁并重启。
 
 | 波次 | 首领 | 波次额外生命 / 攻击 | 时限 / 准备时间 | 固定物品奖励 | 经验 |
 | --- | --- | --- | --- | --- | --- |
-| 1 | 神话模组末影螨 | +0% / +0 | 110秒 / 5秒 | 耀魂铁锭×1、末影珍珠×4 | 90 |
-| 2 | 现有末地尸壳首领 | +25% / +1 | 130秒 / 5秒 | 耀魂铁锭×2、爆裂紫颂果×4、宝石尘×1 | 120 |
-| 3 | 神话模组末影人 | +50% / +2 | 150秒 / 6秒 | 耀魂宝珠×1、潜影壳×1 | 150 |
+| 1 | 随机末地首领 | +0% / +0 | 110秒 / 5秒 | 耀魂铁锭×1、末影珍珠×4 | 90 |
+| 2 | 随机末地首领 | +25% / +1 | 130秒 / 5秒 | 耀魂铁锭×2、爆裂紫颂果×4、宝石尘×1 | 120 |
+| 3 | 随机末地首领 | +50% / +2 | 150秒 / 6秒 | 耀魂宝珠×1、潜影壳×1 | 150 |
 
 额外通关奖励：晶洞×2、宝石尘×1。
 
@@ -60,7 +63,7 @@
 
 ## 远程更新文件
 
-更新以下五个文件；专用服务端需要前四个，中文名称文件还需同步到客户端：
+完整部署需要以下六个文件；专用服务端需要除中文名称外的五个，中文名称文件还需同步到客户端：
 
 ```text
 kubejs/server_scripts/enemy/gateways/mythic_boss_gw.js
@@ -68,6 +71,7 @@ kubejs/server_scripts/enemy/gateways/limit_gateway_dimension.js
 kubejs/server_scripts/recipes/s3_the_end.js
 kubejs/server_scripts/recipes/s4_asteroid_belt.js
 kubejs/assets/kubejs/lang/zh_cn.json
+hotai/dev/shadowsoffire/apotheosis/adventure/compat/GatewaysCompat$BossWaveEntity.class
 ```
 
-服务端重载数据或重启后使用新定义；客户端更新语言文件后重载资源或重启。现有首领模板无需更新。
+新增 HotAI 补丁后必须完整重启游戏或服务端；之后只修改门定义时可以重载数据。客户端更新语言文件后重载资源或重启。现有首领模板无需更新。

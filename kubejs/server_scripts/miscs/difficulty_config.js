@@ -35,10 +35,10 @@ let validateDifficultyData = data => {
 };
 
 validateDifficultyData(difficultyData);
-console.info(
-    `[SDBF Difficulty] Loaded JS config: axes=${difficultyData.axes.length}, ` +
-    `categories=${difficultyData.categories.length}, modifiers=${difficultyData.modifiers.length}`
-);
+// console.info(
+//     `[SDBF Difficulty] Loaded JS config: axes=${difficultyData.axes.length}, ` +
+//     `categories=${difficultyData.categories.length}, modifiers=${difficultyData.modifiers.length}`
+// );
 
 let axisDefinitions = difficultyData.axes.map(definition => ({
     id: `n_${definition.level}`,

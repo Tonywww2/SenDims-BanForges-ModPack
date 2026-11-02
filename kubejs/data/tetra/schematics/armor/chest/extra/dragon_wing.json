@@ -1,14 +1,34 @@
 {
   "replace": true,
   "slots": [
-    "sdbf/disabled"
+    "chest/extra"
   ],
-  "materialSlotCount": 1,
+  "materialSlotCount": 2,
   "displayType": "major",
   "glyph": {
     "textureLocation": "geotetraarmor:textures/gui/gui_gta.png",
     "textureX": 48,
     "textureY": 0
   },
-  "outcomes": []
+  "outcomes": [
+    {
+      "material": {
+        "items": [
+          "elder_bosses:gate_fragment"
+        ],
+        "count": 8
+      },
+      "moduleKey": "armor/chest/extra/dragon_wing",
+      "moduleVariant": "extra_wing_dragon/common"
+    },
+    {
+      "material": {
+        "items": [
+          "deeprealm_4th:base_container"
+        ],
+        "count": 1
+      },
+      "materialSlot": 1
+    }
+  ]
 }

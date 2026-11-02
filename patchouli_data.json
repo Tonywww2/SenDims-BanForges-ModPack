@@ -60,7 +60,14 @@
         "sgjourney:getting_started/archeology",
         "sgjourney:getting_started/finding_stargate",
         "sgjourney:getting_started/stargates_and_dialing",
-        "sgjourney:getting_started/dhds"
+        "sgjourney:getting_started/dhds",
+        "sgjourney:planets/abydos",
+        "sgjourney:planets/chulak",
+        "sgjourney:planets/rima",
+        "sgjourney:planets/cavum_tenebrae",
+        "sgjourney:planets/lantea",
+        "sgjourney:getting_started/addresses",
+        "sgjourney:getting_started/interfacing"
       ],
       "bookmarks": [],
       "completedManualQuests": []

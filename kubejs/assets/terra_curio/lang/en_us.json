@@ -1,0 +1,5 @@
+{
+  "item.terra_curio.worm_scarf.tooltip": "Reduces damage taken by 1%",
+  "item.terra_curio.frozen_turtle_shell.tooltip": "Puts a shell around the owner when below 50% life that reduces damage by 5%",
+  "item.terra_curio.frozen_shield.tooltip2": "Puts a shell around the owner when below 50% life that reduces damage by 5%"
+}

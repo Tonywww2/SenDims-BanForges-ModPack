@@ -62,8 +62,8 @@ ServerEvents.highPriorityData(event => {
             'minecraft:blaze_rod': 10,
             'thermal:sulfur_block': 2,        // 总量1  → [0,0,0,0,1]（仅波次5）
         },
-        perWave: { 'slashblade:proudsoul_tiny': [2, 3, 4, 4, 4] },  // 波次5不发
-        completion: { "slashblade:proudsoul": 8, 'minecraft:netherite_scrap': 2, 'apotheosis:gem_dust': 2 },
+        perWave: { 'slashblade:proudsoul_tiny': [4, 6, 8, 8, 8] },  // 波次5不发
+        completion: { "slashblade:proudsoul": 16, 'minecraft:netherite_scrap': 2, 'apotheosis:gem_dust': 2 },
     });
 
     Gateway.registerJson("gateways:sdbf_nether_g2", JSON.stringify({
@@ -79,7 +79,7 @@ ServerEvents.highPriorityData(event => {
             rewards: [
                 {
                     type: "gateways:stack",
-                    stack: { item: "slashblade:proudsoul_tiny", count: 1 }
+                    stack: { item: "slashblade:proudsoul_tiny", count: 2 }
                 },
                 {
                     type: "gateways:experience",
@@ -153,7 +153,7 @@ ServerEvents.highPriorityData(event => {
             wave.addApotheosisBoss("apotheosis:the_nether/piglin_brute");
             wave.maxTime(2000);
             wave.setupTime(100);
-            wave.addReward("slashblade:proudsoul_tiny", 2);
+            wave.addReward("slashblade:proudsoul_tiny", 4);
             wave.addExperienceReward(60, 10);
         })
         .addWave(wave => {
@@ -162,7 +162,7 @@ ServerEvents.highPriorityData(event => {
             wave.addAttribute("minecraft:generic.attack_damage", 1);
             wave.maxTime(2400);
             wave.setupTime(100);
-            wave.addReward("slashblade:proudsoul_tiny", 2);
+            wave.addReward("slashblade:proudsoul_tiny", 4);
             wave.addExperienceReward(90, 10);
         })
         .addWave(wave => {
@@ -171,7 +171,7 @@ ServerEvents.highPriorityData(event => {
             wave.addAttribute("minecraft:generic.attack_damage", 2);
             wave.maxTime(2800);
             wave.setupTime(120);
-            wave.addReward("slashblade:proudsoul_tiny", 2);
+            wave.addReward("slashblade:proudsoul_tiny", 4);
             wave.addExperienceReward(120, 10);
         })
         .register();

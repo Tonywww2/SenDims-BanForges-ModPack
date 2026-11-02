@@ -36,12 +36,12 @@
 			"attribute": "minecraft:generic.max_health",
 			"operation": "MULTIPLY_TOTAL",
 			"values": {
-				"common": 0.025,
-				"uncommon": 0.035,
-				"rare": 0.045,
-				"epic": 0.065,
-				"mythic": 0.1,
-				"ancient": 0.15
+				"common": 0.005,
+				"uncommon": 0.01,
+				"rare": 0.015,
+				"epic": 0.02,
+				"mythic": 0.03,
+				"ancient": 0.05
 			}
 		}
 	]

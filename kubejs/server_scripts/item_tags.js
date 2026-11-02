@@ -20,6 +20,10 @@ ServerEvents.tags("item", event => {
     //     'minecraft:nether_star'
     // )
 
+    // NuclearCraft 1.2.36 的钚燃料再处理配方（HEP/LEP-239、HEP/LEP-241 及 TRISO 变体共 8 个）
+    // 输出 #forge:dusts/americium/242，但模组没有定义这个标签；空标签会让配方被判为不完整而丢弃。
+    event.add("forge:dusts/americium/242", "nuclearcraft:americium_242")
+
     event.add("itemfilters:check_nbt", [
         "slashblade:slashblade",
         'slashblade_sendims:structure_quill'

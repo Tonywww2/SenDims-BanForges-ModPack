@@ -51,7 +51,7 @@ let initializeAstralGemStackingJei = () => {
     // Rebuild only our displays when recipes synchronize.
     StackData.AllData.removeIf(data => String(data.lang()).startsWith(prefix));
     displays.forEach(display => StackData.register(display.lang, display.carried, display.target));
-    console.info('[Astral gems] Registered ' + displays.length + ' Sendims stacking JEI displays.');
+    // console.info('[Astral gems] Registered ' + displays.length + ' Sendims stacking JEI displays.');
   };
   NativeEvents.onEvent(Priority.HIGHEST, false, RecipesUpdated, registerAstralGemStackingJei);
 };

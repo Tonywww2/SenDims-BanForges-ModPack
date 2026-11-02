@@ -19,9 +19,9 @@
 				"common": 1,
 				"uncommon": 2,
 				"rare": 3,
-				"epic": 4,
-				"mythic": 7,
-				"ancient": 10
+				"epic": 6,
+				"mythic": 10,
+				"ancient": 18
 			}
 		},
 		{

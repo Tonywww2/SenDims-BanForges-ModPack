@@ -37,10 +37,10 @@
 	#Set to 0 to turn off.
 	#Range: 0.0 ~ 1.0
 	chance_motivation_effect = 0.2
-	#Determining the damage that will effect motivation.
+	#Minimum damage as a percentage of current maximum health (30 = 30%).
 	#Set to 0 to turn off.
-	#Range: 0.0 ~ 1.7976931348623157E308
-	damage_motivation_effect = 120.0
+	#Range: 0.0 ~ 100.0
+	damage_motivation_health_percent = 30.0
 	#Determining the sum of gacha probabilities.
 	#If the sum of the three gacha probabilities does not equal the expected sum, follow the default configuration.
 	#Range: > 3

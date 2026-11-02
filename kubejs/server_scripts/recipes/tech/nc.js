@@ -151,4 +151,16 @@ ServerEvents.recipes(event => {
         "powerModifier": 1.0, "radiation": 1.0, "timeModifier": 1.0
     }).id("sdbf:proudsoul_tiny_quantum")
 
+    // 暮色森林紫色城堡符文砖（终焉高原城堡）：4 个粉碎为硫酸钙粉、氟石粉和镁粉
+    event.custom({
+        "type": "nuclearcraft:rock_crusher",
+        "input": [{ "count": 4, "item": "twilightforest:violet_castle_rune_brick" }],
+        "output": [
+            { "item": "nuclearcraft:calcium_sulfate_dust" },
+            { "item": "nuclearcraft:fluorite_dust" },
+            { "item": "nuclearcraft:magnesium_dust" }
+        ],
+        "powerModifier": 1.0, "radiation": 1.0, "timeModifier": 1.0
+    }).id("sdbf:nuclearcraft_rock_crusher/violet_castle_rune_brick")
+
 })

@@ -15,9 +15,9 @@
 			"operation": "multiply_total",
 			"values": {
 				"rare": 0.025,
-				"epic": 0.05,
-				"mythic": 0.075,
-				"ancient": 0.10
+				"epic": 0.04,
+				"mythic": 0.06,
+				"ancient": 0.08
 			},
             "attributes": [
                 "minecraft:generic.max_health",

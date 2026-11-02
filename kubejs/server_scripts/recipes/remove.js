@@ -268,6 +268,7 @@ let toRemoveID = new Set([
 
     // 临时
     "pseudoedge_break_dawn:dimension",
+    "ad_astra:etrionic_capacitor",
     // "apotheosis:enchanting/infused_hellshelf",
     // "apotheosis:blazing_hellshelf",
     // "apotheosis:glowing_hellshelf",

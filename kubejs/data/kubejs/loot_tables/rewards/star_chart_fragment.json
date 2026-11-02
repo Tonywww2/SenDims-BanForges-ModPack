@@ -84,6 +84,16 @@
                             "tag": "{dimension:\"ad_astra:glacio\"}"
                         }
                     ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "kubejs:star_chart_fragment",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{dimension:\"titan_moon:titan\"}"
+                        }
+                    ]
                 }
             ]
         }

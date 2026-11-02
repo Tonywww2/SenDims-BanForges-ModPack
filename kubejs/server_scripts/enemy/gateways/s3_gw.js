@@ -28,8 +28,7 @@ ServerEvents.highPriorityData(event => {
 			"apotheosis:mythic_material": [0, 0, 0, 0, 0, 0, 1, 0, 0, 1]
 		},
 		jadeRewards: [jade(1), null, null, jade(1), null, null, jade(1), null, jade(1), jade(1)],
-		completion: { "slashblade:proudsoul": 4 },
-		starChart: true
+		completion: { "slashblade:proudsoul": 4 }
 	});
 
 	Gateway.registerJson("gateways:sdbf_dr2_g2", JSON.stringify({

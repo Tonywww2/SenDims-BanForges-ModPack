@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
         'CAC'
     ], {
         A: '#forge:glass',
-        B: 'ad_astra:photovoltaic_etrium_cell',
+        B: ['ad_astra:photovoltaic_etrium_cell', "nuclearcraft:chassis"],
         C: '#forge:ingots/steel'
     }).id('sdbf:thermal_machine_frame')
 
@@ -51,7 +51,7 @@ ServerEvents.recipes(event => {
         'ACA',
         'BA '
     ], {
-        A: 'ad_astra:desh_cable',
+        A: ['ad_astra:desh_cable', "nuclearcraft:plate_basic"],
         B: '#forge:storage_blocks/redstone',
         C: '#forge:ingots/gold'
     }).id('sdbf:thermal_rf_coil')

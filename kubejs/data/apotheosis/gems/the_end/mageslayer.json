@@ -18,18 +18,18 @@
 					"attribute": "attributeslib:prot_pierce",
 					"operation": "ADDITION",
 					"values": {
-						"epic": 6,
-						"mythic": 8,
-						"ancient": 12
+						"epic": 12,
+						"mythic": 16,
+						"ancient": 24
 					}
 				},
 				{
 					"attribute": "attributeslib:armor_pierce",
 					"operation": "MULTIPLY_TOTAL",
 					"values": {
-						"epic": -0.15,
-						"mythic": -0.25,
-						"ancient": -0.35
+						"epic": -0.075,
+						"mythic": -0.125,
+						"ancient": -0.175
 					}
 				}
 			]

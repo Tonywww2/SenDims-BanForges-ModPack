@@ -236,8 +236,8 @@ ServerEvents.highPriorityData(event => {
 
     new ImprovementBuilder("tetra:sword/sturdy_guard")
         .addGroup("slashblade_warforge")
-        .addAttribute("attributeslib:life_steal", "", 0.04)
-        .addAttribute("minecraft:generic.max_health", "**", -0.4)
+        .addAttribute("slashblade_sendims:knockback_dealt", "**", -0.8)
+        .addAttribute("slashblade_sendims:magic_resistance", "", 5)
         .setMaterial('slashblade:proudsoul_tiny', 16)
         .setExperienceCost(20)
         .build(event)

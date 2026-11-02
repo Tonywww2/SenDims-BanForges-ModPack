@@ -83,4 +83,13 @@ ServerEvents.recipes(event => {
         E: 'minecraft:nether_star',
     }).id('sdbf:cosmic_worm_s5')
 
+    // 土卫六星图碎片：任意星图碎片 + 耀魂结晶 + 3 神铸珍珠 + 合一碎片 + 凯金虹膜，工作台无序合成。
+    event.shapeless(Item.of('kubejs:star_chart_fragment', '{dimension:"titan_moon:titan"}'), [
+        'kubejs:star_chart_fragment',
+        'slashblade:proudsoul_crystal',
+        '3x apotheosis:mythic_material',
+        'sgjourney:unity_shard',
+        'sgjourney:trinium_iris'
+    ]).id('sdbf:star_chart_fragment_titan_s5')
+
 })

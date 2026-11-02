@@ -49,65 +49,25 @@ ServerEvents.recipes(event => {
         'apotheosis:mythic_material'
     );
 
-    event.replaceInput({ id: 'botania:apothecary_default' },
-        "#botania:petals",
-        'ad_astra:calorite_engine'
-    );
-
-    event.replaceInput({ id: 'botania:apothecary_forest' },
-        "#botania:petals",
-        'ad_astra:calorite_engine'
-    );
-
-    event.replaceInput({ id: 'botania:apothecary_plains' },
-        "#botania:petals",
-        'ad_astra:calorite_engine'
-    );
-
-    event.replaceInput({ id: 'botania:apothecary_mountain' },
-        "#botania:petals",
-        'ad_astra:calorite_engine'
-    );
-
-    event.replaceInput({ id: 'botania:apothecary_fungal' },
-        "#botania:petals",
-        'ad_astra:calorite_engine'
-    );
-
-    event.replaceInput({ id: 'botania:apothecary_swamp' },
-        "#botania:petals",
-        'ad_astra:calorite_engine'
-    );
-
-    event.replaceInput({ id: 'botania:apothecary_desert' },
-        "#botania:petals",
-        'ad_astra:calorite_engine'
-    );
-
-    event.replaceInput({ id: 'botania:apothecary_taiga' },
-        "#botania:petals",
-        'ad_astra:calorite_engine'
-    );
-
-    event.replaceInput({ id: 'botania:apothecary_mesa' },
-        "#botania:petals",
-        'ad_astra:calorite_engine'
-    );
-
-    event.replaceInput({ id: 'botania:apothecary_livingrock' },
-        "#botania:petals",
-        'ad_astra:calorite_engine'
-    );
-
-    event.replaceInput({ id: 'botania:apothecary_deepslate' },
-        "#botania:petals",
-        'ad_astra:calorite_engine'
-    );
-
-    event.replaceInput({ id: 'botania:apothecary_mossy' },
-        "#botania:petals",
-        'ad_astra:calorite_engine'
-    );
+    [
+        'default',
+        'forest',
+        'plains',
+        'mountain',
+        'fungal',
+        'swamp',
+        'desert',
+        'taiga',
+        'mesa',
+        'livingrock',
+        'deepslate',
+        'mossy'
+    ].forEach(variant => {
+        event.replaceInput({ id: `botania:apothecary_${variant}` },
+            "#botania:petals",
+            ['ad_astra:calorite_engine', "darkerdepths:forsaken_bronze_ingot"]
+        );
+    });
 
     event.replaceInput({ id: 'apotheosis:augmenting_table' },
         'apotheosis:mythic_material',

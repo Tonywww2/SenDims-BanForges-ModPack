@@ -22,8 +22,8 @@ ServerEvents.loaded(event => {
         if (!manager.byKey(new ResourceLocation(id)).isPresent()) missing.push('recipe ' + id);
     });
     if (missing.length) {
-        console.error('[万象合金] 加载检查失败，共缺失 ' + missing.length + ' 项：' + missing.join(', '));
+        // console.error('[万象合金] 加载检查失败，共缺失 ' + missing.length + ' 项：' + missing.join(', '));
     } else {
-        console.info('[万象合金] 加载检查通过：' + data.expected_recipe_ids.length + ' 条配方及全部材料已注册');
+        // console.info('[万象合金] 加载检查通过：' + data.expected_recipe_ids.length + ' 条配方及全部材料已注册');
     }
 });

@@ -38,9 +38,9 @@
 				"common": 1.0,
 				"uncommon": 2.0,
 				"rare": 4.0,
-				"epic": 8.0,
-				"mythic": 14.0,
-				"ancient": 20.0
+				"epic": 20.0,
+				"mythic": 40.0,
+				"ancient": 100.0
 			}
 		}
 	]

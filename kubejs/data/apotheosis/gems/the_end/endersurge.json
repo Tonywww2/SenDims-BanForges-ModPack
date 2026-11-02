@@ -22,9 +22,9 @@
 			"_comment": "The enchantment field is unused when global=true, but still must be a valid name",
 			"global": true,
 			"values": {
-				"epic": 2,
-				"mythic": 3,
-				"ancient": 5
+				"epic": 1,
+				"mythic": 2,
+				"ancient": 3
 			}
 		}
 	]

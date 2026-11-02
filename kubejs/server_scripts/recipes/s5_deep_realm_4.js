@@ -183,4 +183,13 @@ ServerEvents.recipes(event => {
     }, "sjap_adder:kamuyex_dark")
         .id("sdbf:kamuyex_dark_s5")
 
+    // 无限之体现：陈旧布匹、发光水晶碎片各 1，玄奥沙、神铸珍珠各 2，神门残片 1，工作台无序合成
+    event.shapeless('apotheosis:ancient_material', [
+        'apotheosis:uncommon_material',
+        'apotheosis:rare_material',
+        '2x apotheosis:epic_material',
+        '2x apotheosis:mythic_material',
+        'elder_bosses:gate_fragment'
+    ]).id('sdbf:ancient_material_s5')
+
 })

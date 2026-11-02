@@ -18,7 +18,7 @@ rareCreatures = ["minecraft:panda", "minecraft:skeleton_horse", "minecraft:allay
 
 ["Invulnerable Time"]
 	#Range: > 0
-	CrossNecklace = 40
+	CrossNecklace = 30
 	#Range: > 0
 	StarVeil = 40
 

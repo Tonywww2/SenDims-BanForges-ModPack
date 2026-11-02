@@ -11,7 +11,8 @@ ServerEvents.highPriorityData(event => {
 
         waves.forEach(config => {
             builder.addWave(wave => {
-                wave.addApotheosisBoss(config.boss);
+                if (config.boss) wave.addApotheosisBoss(config.boss);
+                else wave.addApotheosisBoss();
                 if (config.health > 0) wave.addAttribute("minecraft:generic.max_health", config.health, "multiply_total");
                 if (config.attack > 0) wave.addAttribute("minecraft:generic.attack_damage", config.attack);
                 wave.maxTime(config.maxTime);
@@ -25,22 +26,19 @@ ServerEvents.highPriorityData(event => {
         builder.register();
     };
 
-    // S3 末地：沿用末地首领池，直接宝石尘总计 2 个。
+    // S3 末地：每波从末地首领池随机生成首领，直接宝石尘总计 2 个。
     registerBossGateway("sdbf_end_g1", 0x8054a3, [
         {
-            boss: "apotheosis:the_end/endermite",
             health: 0, attack: 0, maxTime: 2200, setupTime: 100,
             rewards: { "slashblade:proudsoul_ingot": 1, "minecraft:ender_pearl": 4 },
             experience: 90
         },
         {
-            boss: "sdbf:the_end/minecraft_husk",
             health: 0.25, attack: 1, maxTime: 2600, setupTime: 100,
             rewards: { "slashblade:proudsoul_ingot": 2, "minecraft:popped_chorus_fruit": 4, "apotheosis:gem_dust": 1 },
             experience: 120
         },
         {
-            boss: "apotheosis:the_end/enderman",
             health: 0.5, attack: 2, maxTime: 3000, setupTime: 120,
             rewards: { "slashblade:proudsoul_sphere": 1, "minecraft:shulker_shell": 1 },
             experience: 150

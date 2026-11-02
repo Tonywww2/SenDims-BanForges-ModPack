@@ -1,3 +1,5 @@
+let $DamageTypeTags = Java.loadClass("net.minecraft.tags.DamageTypeTags");
+
 NativeEvents.onEvent($LivingHurtEvent,
     /**
      * 
@@ -15,9 +17,10 @@ NativeEvents.onEvent($LivingHurtEvent,
         // print(damage)
 
         if (entity.type == "minecraft:phantom") {
-            if (type == "onFire" && 
-                entity.level.dimensionKey == "minecraft:overworld" &&
-                entity.level.dayTime() > 0 && entity.level.dayTime() < 12000
+            // 白天（每日 0–12000 tick）在主世界受到任意火焰伤害时，直接移除幻翼
+            if (source.is($DamageTypeTags.IS_FIRE) &&
+                String(entity.level.dimension) == "minecraft:overworld" &&
+                entity.level.dayTime() % 24000 < 12000
             ) {
                 entity.discard();
                 return;

@@ -247,7 +247,7 @@ let bossTypeDragon = deriveTemplate(bossType2,
  */
 let bossTypeGaia = deriveTemplate(bossType2,
     true,
-    [1, 2, 1, 1],
+    [1, 1.25, 1, 1],
     [0, 0, 0, 10]
 );
 

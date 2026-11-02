@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
         B: '#forge:gears/steel',
         C: 'kubejs:gamma_dust',
         D: 'thermal:machine_frame',
-        E: 'thermal:energy_cell',
+        E: ['thermal:energy_cell', "nuclearcraft:elite_voltaic_pile"],
     }).id('sdbf:void_chassis')
 
     event.recipes.enderio.alloy_smelting('kubejs:soul_filter_matrix', [

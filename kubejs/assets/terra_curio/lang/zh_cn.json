@@ -1,0 +1,5 @@
+{
+  "item.terra_curio.worm_scarf.tooltip": "所受伤害减少1%",
+  "item.terra_curio.frozen_turtle_shell.tooltip": "当生命值低于50%时，在主人周围放置一个外壳，使伤害降低5%",
+  "item.terra_curio.frozen_shield.tooltip2": "当生命值低于50%时，在主人周围放置一个外壳，使伤害降低5%"
+}

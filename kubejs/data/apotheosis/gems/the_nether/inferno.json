@@ -33,9 +33,9 @@
                 "common": 2,
                 "uncommon": 3,
                 "rare": 5,
-                "epic": 7,
-                "mythic": 9,
-                "ancient": 11
+                "epic": 8,
+                "mythic": 12,
+                "ancient": 24
             }
         },
         {
@@ -84,9 +84,9 @@
                 "common": 2,
                 "uncommon": 3,
                 "rare": 5,
-                "epic": 7,
-                "mythic": 9,
-                "ancient": 11
+                "epic": 8,
+                "mythic": 12,
+                "ancient": 24
             }
         },
         {
