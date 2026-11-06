@@ -244,8 +244,10 @@
 		}
 		{
 			dependencies: ["6035D1A1774B2FAF"]
+			icon: "minecraft:sand"
 			id: "41F7CE2B7D83F4BE"
 			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
 			tasks: [{
 				id: "62652E1A4729A65A"
 				structure: "block_factorys_bosses:sandworm_nest"
@@ -349,8 +351,15 @@
 			dependencies: [
 				"6035D1A1774B2FAF"
 				"363BE015B9EDE34B"
+				"713CA11C25A8A2E2"
 			]
-			description: ["初期的压缩铁锭只能通过引爆土星环合金锭获得，之后可以通过压力室合成。"]
+			dependency_requirement: "one_completed"
+			description: [
+				"初期的压缩铁锭只能通过引爆土星环合金锭获得，之后可以通过压力室合成。"
+				""
+				"&m或者？&r"
+			]
+			hide_dependent_lines: true
 			id: "6E5EFB146C17C916"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{

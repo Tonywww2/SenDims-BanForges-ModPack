@@ -5,6 +5,15 @@
 	group: "35DD57C332D61BB0"
 	icon: "the_bumblezone:beehive_beeswax"
 	id: "22702047F4B6E264"
+	images: [{
+		height: 2.0d
+		image: "ad_astra:block/flag/warning_flag"
+		quest_enhance_exclude_from_box_selection: false
+		rotation: 0.0d
+		width: 2.0d
+		x: 16.5d
+		y: 9.0d
+	}]
 	order_index: 1
 	quest_enhance_decorative_lines: [ ]
 	quest_enhance_hidden_dependency_lines: [ ]
@@ -32,8 +41,8 @@
 		{
 			id: "7737F9DD5669DDA8"
 			linked_quest: "05E54DE8EF83C8EB"
-			x: 18.0d
-			y: 18.0d
+			x: 24.0d
+			y: 9.0d
 		}
 		{
 			id: "424B79CF57E7F667"
@@ -157,8 +166,10 @@
 				""
 				"在获得&b任意的圣所精华&r后，你可以用它合成&b任意圣所的结构羽毛笔&r，&b圣所精华&r不会消耗。"
 			]
+			hide_dependent_lines: true
 			id: "05F34C96BF68DD64"
 			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
 			tasks: [{
 				id: "2E62A8764714D952"
 				item: "the_bumblezone:essence_of_the_bees"
@@ -192,6 +203,12 @@
 			dependencies: ["05F34C96BF68DD64"]
 			id: "50810C9710385F58"
 			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 4
+				id: "77D80D682B29270C"
+				item: "thermal:raw_lead"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7EF84AECC5EDB551"
 				item: {
@@ -207,13 +224,19 @@
 				match_nbt: false
 				type: "item"
 			}]
-			x: 15.0d
-			y: 12.0d
+			x: 21.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["05F34C96BF68DD64"]
 			id: "09E8DC7F68D573E9"
 			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 4
+				id: "218D9C71E74E54BD"
+				item: "thermal:raw_lead"
+				type: "item"
+			}]
 			tasks: [{
 				id: "24000F235CD9F2EC"
 				item: {
@@ -229,13 +252,19 @@
 				match_nbt: false
 				type: "item"
 			}]
-			x: 15.0d
-			y: 15.0d
+			x: 21.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["05F34C96BF68DD64"]
 			id: "6CCC54D46EB1FD91"
 			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 4
+				id: "5F2CDF407F0E3DCD"
+				item: "thermal:raw_lead"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7D48481CB600F18D"
 				item: {
@@ -251,13 +280,25 @@
 				match_nbt: false
 				type: "item"
 			}]
-			x: 15.0d
-			y: 18.0d
+			x: 21.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["05F34C96BF68DD64"]
+			description: [
+				"·极度艰难的战斗"
+				"·对个人属性的全方面考验"
+				"·需要强大的续航能力"
+			]
 			id: "7FCF3EFF7EF69E4D"
 			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 4
+				id: "1862B7A76E66C836"
+				item: "thermal:raw_lead"
+				type: "item"
+			}]
+			subtitle: "警告：一点都不平静"
 			tasks: [{
 				id: "042950BCB4E8CEB0"
 				item: {
@@ -290,6 +331,12 @@
 			}
 			id: "3EA7431F5CEA94F0"
 			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 4
+				id: "71F2FBD91919FADA"
+				item: "thermal:raw_lead"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1578FADA0E323E58"
 				item: {
@@ -312,6 +359,12 @@
 			dependencies: ["05F34C96BF68DD64"]
 			id: "505145BA63BA4220"
 			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 4
+				id: "5D017ADCD2B8FE22"
+				item: "thermal:raw_lead"
+				type: "item"
+			}]
 			tasks: [{
 				id: "79B8A0600FBCBFBC"
 				item: {
@@ -401,8 +454,8 @@
 				}
 				type: "item"
 			}]
-			x: 18.0d
-			y: 15.0d
+			x: 24.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -439,8 +492,8 @@
 				item: "last_smith:scroll_tengu_vol1"
 				type: "item"
 			}]
-			x: 21.0d
-			y: 18.0d
+			x: 27.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["1425849749F89FA6"]
@@ -517,8 +570,8 @@
 				id: "7DA2789D20047F85"
 				type: "advancement"
 			}]
-			x: 3.0d
-			y: -6.0d
+			x: 6.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["220AEBF0A8A46F7C"]
@@ -556,6 +609,7 @@
 		}
 		{
 			dependencies: ["220AEBF0A8A46F7C"]
+			description: ["可以使用剑类物品将古蜡砖在几种变种之间互相转换。"]
 			id: "0BE994ED14E4C64D"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{

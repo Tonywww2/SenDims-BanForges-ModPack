@@ -1,4 +1,23 @@
 ServerEvents.recipes(event => {
+    // 四条陆地股各两档基础门；星浆材料确保配方在深四阶段解锁。
+    let deep4GatewayRecipe = (branch, tier, outer, inner) => {
+        let id = `sdbf_dr4_${branch}_${tier}`;
+        event.shaped(Item.of('gateways:gate_pearl', `{gateway:"gateways:${id}"}`), [
+            'ABA', 'BCB', 'ABA'
+        ], {
+            A: outer, B: inner,
+            C: tier === 'g1' ? 'deeprealm_4th:star_slurry' : 'slashblade:proudsoul_crystal'
+        }).id(`sdbf:${id}_s5`)
+    };
+    deep4GatewayRecipe('arid', 'g1', 'minecraft:cut_red_sandstone', 'minecraft:gold_ingot');
+    deep4GatewayRecipe('infernal', 'g1', 'minecraft:polished_basalt', 'minecraft:magma_cream');
+    deep4GatewayRecipe('woodland', 'g1', 'minecraft:moss_block', 'twilightforest:steeleaf_ingot');
+    deep4GatewayRecipe('oceanic', 'g1', 'minecraft:prismarine', 'minecraft:nautilus_shell');
+    deep4GatewayRecipe('arid', 'g2', 'deeprealm_4th:star_slurry_blank', 'cataclysm:ancient_metal_ingot');
+    deep4GatewayRecipe('infernal', 'g2', 'deeprealm_4th:star_slurry_blank', 'thermal:basalz_rod');
+    deep4GatewayRecipe('woodland', 'g2', 'deeprealm_4th:star_slurry_blank', 'twilightforest:knightmetal_ingot');
+    deep4GatewayRecipe('oceanic', 'g2', 'deeprealm_4th:star_slurry_blank', 'minecraft:prismarine_crystals');
+
     event.custom({
         "type": "deeprealm_4th:projection_combining",
         "result": Item.of("kubejs:rainbowshift_entropy").toJson(),

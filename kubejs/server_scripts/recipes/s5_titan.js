@@ -1,5 +1,33 @@
 ServerEvents.recipes(event => {
 
+    // 土卫六三种传送门珍珠：材料清剿、勘探远征、四类神话首领猎杀。
+    let titanGatewayRecipe = (id, outer, inner, center) => {
+        event.shaped(Item.of('gateways:gate_pearl', `{gateway:"gateways:${id}"}`), [
+            'ABA',
+            'BCB',
+            'ABA'
+        ], {
+            A: outer,
+            B: inner,
+            C: center
+        }).id(`sdbf:${id}_s5`)
+    };
+
+    titanGatewayRecipe('sdbf_titan_g1', 'titan_moon:cryo_carapace', 'titan_moon:tholin_fibre', 'slashblade:proudsoul_sphere');
+    titanGatewayRecipe('sdbf_titan_g2', 'titan_moon:cryo_alloy_ingot', 'titan_moon:precision_components', 'slashblade:proudsoul_crystal');
+    titanGatewayRecipe('sdbf_titan_g3', 'titan_moon:cryo_alloy_ingot', 'apotheosis:mythic_material', 'slashblade:proudsoul_crystal');
+
+    // 树枝状结晶以氢为生长流体；显式 fluid_tag 会替代灌注机配方的默认水。
+    event.custom({
+        type: 'thermal:insolator',
+        ingredients: [
+            { item: 'titan_moon:branch_crystal' },
+            { fluid_tag: 'forge:hydrogen', amount: 1000 }
+        ],
+        result: [{ item: 'titan_moon:branch_crystal', chance: 2.0 }],
+        energy: 16000
+    }).id('sdbf:branch_crystal_hydrogen_propagation_s5')
+
     // 泰坦二型复合锭：指环座作骨架，以冰晶合金、膜片和辅酶复合，每批 4 锭。
     event.shaped(Item.of('kubejs:titan-ii_composite_ingot'), [
         'AMA',
@@ -46,6 +74,44 @@ ServerEvents.recipes(event => {
         B: 'titan_moon:hydrogen_capsule',
         C: 'titan_moon:bio_battery'
     }).id('sdbf:storm_hydrogen_crystal_s5')
+
+    // 土卫六后期：「大黑天」+ 宝刀「山吹」露台 + 圣幸刀「绿乃雾」→ 宝刀「大黑天」。
+    // 三枚泰坦二型复合锭、名刀之书、风暴氢晶与耀魂结晶完成重铸。
+    event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
+        "ISI",
+        "GBM",
+        "IHP"
+    ], {
+        "B": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("slashblade:mahakala_black")
+                .killCount(25000)
+                .proudSoul(250000)
+                .refineCount(125)
+                .build()
+        ),
+        "G": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("slashblade:rodai_golden")
+                .killCount(1000)
+                .proudSoul(10000)
+                .refineCount(50)
+                .build()
+        ),
+        "M": SlashBladeIngredient.of(
+            SlashBladeRequestDefinition.newInstance()
+                .name("slashblade_addon:green_mist")
+                .killCount(5000)
+                .proudSoul(50000)
+                .refineCount(50)
+                .build()
+        ),
+        "I": 'kubejs:titan-ii_composite_ingot',
+        "S": 'last_smith:scroll_named',
+        "H": 'kubejs:storm_hydrogen_crystal',
+        "P": 'slashblade:proudsoul_crystal'
+    }, "slashblade:mahakala_fortune")
+        .id("sdbf:mahakala_fortune_s5")
 
     // 圣剑系列：必胜黄金之剑 + 大地之刃 → 誓约胜利之剑（阶段五初期·土卫六）
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [

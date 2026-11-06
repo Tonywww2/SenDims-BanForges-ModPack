@@ -78,6 +78,24 @@ ServerEvents.recipes(event => {
         })
         .id("sdbf:jade_to_soul")
 
+    // 血髓：血玉 + 破碎的耀魂；血玉的每 1 点杀敌数折算为 50 点耀魂值
+    if (Item.of('slashblade_sendims:blood_marrow').isEmpty()) {
+        console.warn('slashblade_sendims:blood_marrow 未注册，跳过血髓配方（需要新版 SenDims）');
+    } else {
+        event.shapeless('slashblade_sendims:blood_marrow',
+            ['slashblade_sendims:blood_jade', 'slashblade:proudsoul_tiny'])
+            .modifyResult((grid, result) => {
+                let bloodJade = grid.find('slashblade_sendims:blood_jade');
+                if (!bloodJade || !bloodJade.nbt) return Item.of('minecraft:air');
+                let kills = bloodJade.nbt.getInt('sbsd.bj.kill_count');
+                if (kills <= 0) return Item.of('minecraft:air');
+                let marrow = Item.of('slashblade_sendims:blood_marrow');
+                marrow.getOrCreateTag().putInt('sbsd.bm.proud_soul', Math.min(2147483647, kills * 50));
+                return marrow;
+            })
+            .id("sdbf:jade_to_marrow")
+    }
+
     event.shapeless('slashblade:proudsoul_sphere',
         ['slashblade_sendims:principle_of_sword_arts', 'slashblade:proudsoul_sphere'])
         .keepIngredient('slashblade_sendims:principle_of_sword_arts')

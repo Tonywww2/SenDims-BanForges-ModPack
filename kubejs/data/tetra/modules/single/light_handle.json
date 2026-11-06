@@ -27,8 +27,11 @@
                 "throwable": [ 1, 0.8 ]
             },
             "extract": {
+                "tertiaryAttributes": {
+                    "generic.attack_speed": 0.012
+                },
                 "secondaryAttributes": {
-                    "generic.attack_speed": -0.1
+                    "generic.attack_speed": -0.0025
                 },
                 "secondaryEffects": {
                     "throwable": [ 0, 0.1 ]

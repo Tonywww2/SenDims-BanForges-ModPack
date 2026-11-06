@@ -17,11 +17,12 @@
     "name": "slashblade:mahakala_fortune",
     "properties":
     {
-        "attack_base": 52.0,
+        "attack_base": 79.0,
         "max_damage": 11,
         "slash_art": "slashblade_sendims:mahakala",
         "special_effects":
         [
+            "slashblade_sendims:mahakala",
             "slashblade_sendims:blessing_and_bane"
         ],
         "sword_type":

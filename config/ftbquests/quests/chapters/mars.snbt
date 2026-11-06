@@ -60,32 +60,6 @@
 		{
 			dependencies: ["3F43656AE6F116CB"]
 			hide_until_deps_complete: true
-			id: "5252B3E3137F1957"
-			quest_enhance_disable_scroll_paging: false
-			tasks: [{
-				id: "58E6CBE56BCE9C2B"
-				item: "ad_astra:mars_sand"
-				type: "item"
-			}]
-			x: 3.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["5252B3E3137F1957"]
-			id: "37CFBBB29EFC0389"
-			quest_enhance_disable_scroll_paging: false
-			subtitle: "未完成"
-			tasks: [{
-				id: "46DEDCD7EDCF3BFE"
-				type: "checkmark"
-			}]
-			title: "火星地牢"
-			x: 6.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["3F43656AE6F116CB"]
-			hide_until_deps_complete: true
 			id: "2E0B8635A864C99E"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -134,7 +108,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: 12.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -142,6 +116,7 @@
 				"2DFEC40399DF07EC"
 			]
 			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
 			id: "20C5B7CCF681A814"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -158,8 +133,8 @@
 				}
 				type: "item"
 			}]
-			x: 6.0d
-			y: 18.0d
+			x: 9.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -188,7 +163,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 21.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["20C5B7CCF681A814"]
@@ -199,8 +174,8 @@
 				item: "last_smith:scroll_muramasa"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 15.0d
+			x: 12.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["203E60FD1465EC35"]
@@ -221,7 +196,7 @@
 				type: "item"
 			}]
 			x: 18.0d
-			y: 12.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["3F43656AE6F116CB"]
@@ -268,8 +243,8 @@
 				}
 				type: "item"
 			}]
-			x: 9.0d
-			y: 18.0d
+			x: 12.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["3348C0AE18D2FCE3"]
@@ -289,8 +264,8 @@
 				}
 				type: "item"
 			}]
-			x: 12.0d
-			y: 18.0d
+			x: 15.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["20C5B7CCF681A814"]
@@ -311,7 +286,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 21.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["3F43656AE6F116CB"]
@@ -364,13 +339,14 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 6.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["2BD02CD617E0BB89"]
 			description: ["他们是怎么到这的？"]
 			id: "1D327A774EA080AA"
 			quest_enhance_disable_scroll_paging: false
+			size: 1.0d
 			tasks: [{
 				id: "56BBDCBD8DBF5D09"
 				structure: "dungeons_arise:heavenly_rider"
@@ -378,7 +354,7 @@
 			}]
 			title: "天际骑士团战舰"
 			x: 6.0d
-			y: 6.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["051641EF8104FA8F"]
@@ -405,8 +381,10 @@
 				"6335105681D9B581"
 			]
 			dependency_requirement: "one_completed"
+			icon: "block_factorys_bosses:underworld_arena_key"
 			id: "037B81C6D7D0E665"
 			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
 			tasks: [{
 				id: "03B10B4C08A946F0"
 				structure: "block_factorys_bosses:underworld_arena"
@@ -414,7 +392,7 @@
 			}]
 			title: "冥界竞技场"
 			x: 6.0d
-			y: 12.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -430,7 +408,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 12.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["037B81C6D7D0E665"]
@@ -443,7 +421,7 @@
 				type: "advancement"
 			}]
 			x: 9.0d
-			y: 12.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["2E0B8635A864C99E"]
@@ -462,7 +440,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 12.0d
+			y: 6.0d
 		}
 	]
 	title: "[V] 火星"

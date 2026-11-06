@@ -475,6 +475,7 @@ let mobTypes = new Map([
     ["cataclysm:elite_draugr", typeC],
 
     ["cataclysm:aptrgangr", typeAE],
+    ["cataclysm:maledictus", bossType1],
 
     ["draconicevolution:draconic_guardian", bossTypeDragon],
 
@@ -512,7 +513,6 @@ let mobTypes = new Map([
 
     ["netherman:azazel_human", bossType2],
     ["netherman:azazel", bossType2],
-
 
     ["elder_bosses:malenia", bossType3],
     ["elder_bosses:promised_consort", bossType4],

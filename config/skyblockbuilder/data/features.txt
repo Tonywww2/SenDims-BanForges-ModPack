@@ -1928,6 +1928,7 @@ titan_moon:acetylene_geode
 titan_moon:ammonia_crystal_patch
 titan_moon:ammonia_geode
 titan_moon:ammonia_pool
+titan_moon:ammonia_rime_chalice
 titan_moon:basalt_boulder
 titan_moon:branch_crystal
 titan_moon:crater_geode
@@ -1950,8 +1951,11 @@ titan_moon:ice_cathedral
 titan_moon:ice_sinkhole
 titan_moon:ice_spike
 titan_moon:impact_basin
+titan_moon:inverted_ice_coral
 titan_moon:megayardang
+titan_moon:meteor_salt_forktree
 titan_moon:meteor_vein
+titan_moon:methane_bladderstalk
 titan_moon:methane_cascade
 titan_moon:methane_geode
 titan_moon:methane_lake
@@ -1969,11 +1973,13 @@ titan_moon:tar_seep
 titan_moon:tholin_arch
 titan_moon:tholin_boulder
 titan_moon:tholin_geode
+titan_moon:tholin_sailtree
 titan_moon:tholin_shrub_patch
 titan_moon:tholin_spire
 titan_moon:titan_ore_vein
 titan_moon:weathered_boulder
 titan_moon:weathered_hoodoo
+titan_moon:windcombed_silica_tree
 tofucraft:apricot_tree
 tofucraft:big_leek
 tofucraft:big_zunda_tofu_mushroom

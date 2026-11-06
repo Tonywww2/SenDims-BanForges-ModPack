@@ -8,8 +8,8 @@ ServerEvents.recipes(event => {
         A: 'kubejs:alpha_dust',
         B: 'slashblade:proudsoul_crystal',
         C: 'kubejs:scoria_ingot',
-        D: 'nuclearcraft:niobium_titanium_electromagnet',
-        E: 'kubejs:menril-silicon_sic_sic_cmc_ingot',
+        D: Ingredient.of(['nuclearcraft:niobium_titanium_electromagnet', 'elder_bosses:gate_fragment']),
+        E: Ingredient.of(['kubejs:menril-silicon_sic_sic_cmc_ingot', 'elder_bosses:great_rune_arc']),
         F: 'kubejs:chorus_logic_composite_coil'
     }).id('sdbf:basepoint_alloy_s4')
 
@@ -82,8 +82,8 @@ ServerEvents.recipes(event => {
     ], {
         "A": 'minecraft:blue_ice',
         "B": 'slashblade:proudsoul_crystal',
-        "C": 'kubejs:chaotic_truth',
-        "D": 'nuclearcraft:cryotheum_heat_sink',
+        "C": Ingredient.of(['kubejs:chaotic_truth', 'elder_bosses:great_rune_arc']),
+        "D": Ingredient.of(['nuclearcraft:cryotheum_heat_sink', 'elder_bosses:gate_fragment']),
         "E": 'aether:icestone',
         "W": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
@@ -125,7 +125,7 @@ ServerEvents.recipes(event => {
         "CXW",
         "BYA"
     ], {
-        "A": 'kubejs:radiation_components',
+        "A": Ingredient.of(['kubejs:radiation_components', 'elder_bosses:gate_fragment']),
         "B": 'slashblade:proudsoul_crystal',
         "C": 'last_smith:scroll_yamato',
         "W": 'last_smith:scroll_blood',
@@ -154,7 +154,7 @@ ServerEvents.recipes(event => {
         "DAC"
     ], {
         "A": 'kubejs:basepoint_alloy',
-        "B": 'draconicevolution:chaotic_core',
+        "B": Ingredient.of(['draconicevolution:chaotic_core', 'elder_bosses:gate_fragment']),
         "C": Item.of('slashblade:proudsoul_sphere', '{SpecialAttackType:"pseudoedge_break_dawn:kingblade"}').weakNBT(),
         "D": Item.of('slashblade:proudsoul_sphere', '{SpecialAttackType:"slashblade:void_slash"}').weakNBT(),
         "S": 'last_smith:scroll_tengu_full',
@@ -174,10 +174,10 @@ ServerEvents.recipes(event => {
         "XYZ",
         "CAC"
     ], {
-        "A": 'nuclearcraft:californium_rtg',
-        "B": 'nuclearcraft:fusion_core',
+        "A": Ingredient.of(['nuclearcraft:californium_rtg', 'slashblade:proudsoul_trapezohedron']),
+        "B": Ingredient.of(['nuclearcraft:fusion_core', 'elder_bosses:great_rune_arc']),
         "C": 'slashblade:proudsoul_crystal',
-        "D": 'nuclearcraft:dense_nitrogen_collector',
+        "D": Ingredient.of(['nuclearcraft:dense_nitrogen_collector', 'elder_bosses:gate_fragment']),
         "X": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("last_smith:roukanken_nether")
@@ -211,7 +211,7 @@ ServerEvents.recipes(event => {
         "BZB"
     ], {
         "A": 'apotheosis:draconic_endshelf',
-        "B": 'draconicevolution:awakened_core',
+        "B": Ingredient.of(['draconicevolution:awakened_core', 'elder_bosses:gate_fragment']),
         "V": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("slashblade:greatsword_of_damnation")

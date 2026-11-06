@@ -71,7 +71,9 @@
 			dependencies: [
 				"43FDCFF3F409783D"
 				"52755126FB29CFEF"
+				"77DB6C3E80DEA149"
 			]
+			dependency_requirement: "one_completed"
 			id: "47820A4E592EE375"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -96,7 +98,9 @@
 				"43FDCFF3F409783D"
 				"00C6734E62C48C2D"
 				"52755126FB29CFEF"
+				"77DB6C3E80DEA149"
 			]
+			dependency_requirement: "one_completed"
 			id: "6367E660F1CE8B30"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -145,7 +149,6 @@
 		{
 			dependencies: [
 				"09C52DB3DF15106A"
-				"34E2C69E62618843"
 				"208F9215CAD12EF7"
 			]
 			id: "6F69543F135C4821"
@@ -210,7 +213,7 @@
 				}
 				type: "item"
 			}]
-			x: 6.0d
+			x: 9.0d
 			y: 18.0d
 		}
 		{
@@ -276,7 +279,7 @@
 				}
 				type: "item"
 			}]
-			x: 6.0d
+			x: 9.0d
 			y: 15.0d
 		}
 		{
@@ -352,7 +355,7 @@
 				item: "kubejs:gamma_dust"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 6.0d
 			y: 15.0d
 		}
 		{
@@ -379,9 +382,10 @@
 				"3DA6E818573A9A69"
 			]
 			dependency_requirement: "one_completed"
+			icon: "minecraft:stone_bricks"
 			id: "20D8DB313AF6ED7F"
 			quest_enhance_disable_scroll_paging: false
-			shape: "pentagon"
+			size: 1.5d
 			tasks: [{
 				id: "6550BFE2C3F6FE83"
 				structure: "cataclysm:sunken_city"
@@ -433,8 +437,10 @@
 				"1600B014D174B4A7"
 			]
 			dependency_requirement: "one_completed"
+			icon: "block_factorys_bosses:kraken_cannon_item"
 			id: "51C5BB3124FCCCF9"
 			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
 			tasks: [{
 				id: "361EE6CCDC2B58B9"
 				structure: "block_factorys_bosses:kraken_ship"

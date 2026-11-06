@@ -1,0 +1,25 @@
+#关闭后不再记录新的伤害，已经统计到的数据仍然保留
+trackingEnabled = true
+#单位 tick，20 tick = 1 秒。超过这个时长没有新伤害就结束本场战斗会话
+#Range: 20 ~ 12000
+sessionTimeoutTicks = 100
+#单位 tick。窗口越短越能反映瞬时爆发，越长越平滑
+#Range: 20 ~ 1200
+dpsWindowTicks = 100
+#单位现实小时。到期后仅从实例候选目录移除，不删除完整原始伤害事件
+#Range: > 1
+instanceDirectoryRetentionHours = 72
+#单位每世界候选实例数。超出后淘汰最久未交互的实例，不删除完整原始伤害事件
+#Range: > 1
+instanceDirectoryLimit = 5000
+#设为 0 则只保留当前会话，不留历史
+#Range: 0 ~ 100
+keepFinishedSessions = 10
+#是否按 autoSaveIntervalTicks 定时写出聚合缓存。完整事件和实例候选会在正常停止时始终保存
+autoSave = true
+#单位 tick。正常退出和崩服都会写盘，这个只防被强制结束进程（kill -9、断电）。0 表示不定时写盘
+#Range: 0 ~ 432000
+autoSaveIntervalTicks = 0
+#允许玩家查看其他实体的统计。因为目标的承伤明细里带着其他玩家的输出，关掉后只有管理员能查
+publicStats = true
+

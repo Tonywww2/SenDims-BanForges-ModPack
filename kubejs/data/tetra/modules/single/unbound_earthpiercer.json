@@ -26,8 +26,11 @@
             },
             "durability": 120,
             "extract": {
+                "primaryAttributes": {
+                    "generic.attack_speed": 0.004
+                },
                 "secondaryAttributes": {
-                    "generic.attack_speed": -0.15
+                    "generic.attack_speed": -0.004
                 },
                 "tertiaryEffects": {
                     "piercing": 0.8

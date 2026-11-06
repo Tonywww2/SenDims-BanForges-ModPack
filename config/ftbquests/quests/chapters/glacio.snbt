@@ -17,10 +17,7 @@
 	}]
 	quests: [
 		{
-			dependencies: [
-				"3A267848CC75F232"
-				"397C4E18445F7165"
-			]
+			dependencies: ["397C4E18445F7165"]
 			hide_dependent_lines: true
 			id: "2E150AF7AD2E748B"
 			quest_enhance_disable_scroll_paging: false
@@ -300,6 +297,49 @@
 			}]
 			x: 15.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["2E150AF7AD2E748B"]
+			id: "6480BFFC5D4FC476"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5B48B8B6F62EC8AB"
+				item: "cataclysm:black_steel_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2E150AF7AD2E748B"]
+			id: "1A9ED5DE348EFDBB"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "15F668CD4435F824"
+				item: "cataclysm:cursed_eye"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"2E150AF7AD2E748B"
+				"1A9ED5DE348EFDBB"
+			]
+			dependency_requirement: "one_completed"
+			icon: "cataclysm:black_steel_nugget"
+			id: "5874D621D41B8857"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
+			tasks: [{
+				id: "7E2781F6FC71C59E"
+				structure: "cataclysm:frosted_prison"
+				type: "structure"
+			}]
+			title: "苦寒监牢"
+			x: 6.0d
+			y: 3.0d
 		}
 	]
 	title: "[XII] 霜原星"

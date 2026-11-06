@@ -41,7 +41,7 @@ StartupEvents.registry('item', event => {
         .tag('last_smith:scroll')
         .tag('kubejs:zenith_research_scrolls');
 
-    // 「大黑天」
+    // 宝刀「大黑天」
     event.create('zenith_research_slashblade_mahakala_black')
         .rarity('rare')
         .fireResistant()

@@ -15,6 +15,22 @@ def read(path):
     return json.loads(path.read_text(encoding="utf-8-sig"))
 
 
+def wrap_seams(image):
+    """Return (wrap difference, largest interior difference) for rows and columns.
+
+    A tiling face may contain grids or lines, so the edge is compared with the
+    harshest transition already inside the tile instead of requiring equal edges.
+    """
+    px = image.convert("RGB").load()
+
+    def diff(a, b):
+        return sum(abs(x - y) for x, y in zip(a, b))
+
+    rows = [sum(diff(px[x, y], px[x, (y + 1) % 16]) for x in range(16)) / 16 for y in range(16)]
+    cols = [sum(diff(px[x, y], px[(x + 1) % 16, y]) for y in range(16)) / 16 for x in range(16)]
+    return (rows[15], max(rows[:15])), (cols[15], max(cols[:15]))
+
+
 def texture_path(resource):
     assert resource.startswith("kubejs:"), (resource, "placeholder texture remains")
     ns, name = resource.split(":", 1)
@@ -43,16 +59,20 @@ def main():
                 assert alpha.getextrema() == (0, 255), (path, "item has no transparent silhouette")
             else:
                 assert alpha.getextrema() == (255, 255), (path, "block face has transparency")
-                assert all(image.getpixel((x, 0)) == image.getpixel((x, 15)) for x in range(16)), (path, "vertical tile seam")
-                assert all(image.getpixel((0, y)) == image.getpixel((15, y)) for y in range(16)), (path, "horizontal tile seam")
+                vertical, horizontal = wrap_seams(image)
+                assert vertical[0] <= vertical[1] * 1.25 + 8, (path, "vertical tile seam", vertical)
+                assert horizontal[0] <= horizontal[1] * 1.25 + 8, (path, "horizontal tile seam", horizontal)
             fingerprints[hashlib.sha256(image.tobytes()).hexdigest()].append(resource)
         else:
-            assert w == (16 if kind == "still" else 32) and h == w * 4, (path, "invalid animation dimensions")
+            count = h // w
+            assert w == (16 if kind == "still" else 32) and h == w * count and count >= 4, (path, "invalid animation dimensions")
             metadata = path.with_name(path.name + ".mcmeta")
-            assert read(metadata)["animation"] == {"frametime": 8, "interpolate": False}, metadata
+            animation = read(metadata)["animation"]
+            assert set(animation) == {"frametime", "interpolate"} and animation["interpolate"] is False, metadata
+            assert isinstance(animation["frametime"], int) and animation["frametime"] >= 1, metadata
             assert metadata.relative_to(ROOT).as_posix() in owned
-            frames = [image.crop((0, i * w, w, (i + 1) * w)).tobytes() for i in range(4)]
-            assert len(set(frames)) == 4, (path, "identical animation frames")
+            frames = [image.crop((0, i * w, w, (i + 1) * w)).tobytes() for i in range(count)]
+            assert len(set(frames)) == count, (path, "identical animation frames")
         checked.add(path)
 
     for kind in ("items", "blocks"):
@@ -70,14 +90,15 @@ def main():
         ns, name = ident.split(":", 1)
         check(spec["still_texture"], "still")
         check(spec["flowing_texture"], "flow")
-        check(spec["bucket_texture"], "item")
+        # Buckets are composed in game from the vanilla bucket and the still texture.
+        assert "bucket_texture" not in spec, (ident, "buckets use forge:fluid_container")
         model = read(K / f"assets/{ns}/models/item/{name}_bucket.json")
-        assert model["parent"] == "minecraft:item/generated"
-        assert model["textures"]["layer0"] == spec["bucket_texture"]
+        assert model == {"parent": "forge:item/bucket", "loader": "forge:fluid_container", "fluid": ident}, (ident, model)
+        assert not (K / f"assets/{ns}/textures/item/{name}_bucket.png").exists(), (ident, "unused bucket sprite")
     duplicates = [values for values in fingerprints.values() if len(values) > 1]
     assert not duplicates, ("identical material icons", duplicates)
-    print(f"PASS: {len(reg['items'])} items, {len(reg['blocks'])} blocks, {len(reg['fluids'])} buckets; "
-          f"{len(checked)} PNGs including 64 native-resolution fluid animations")
+    print(f"PASS: {len(reg['items'])} items, {len(reg['blocks'])} blocks, {len(reg['fluids'])} fluid-container buckets; "
+          f"{len(checked)} PNGs including {len(reg['fluids']) * 2} native-resolution fluid animations")
     print("PASS: unique pixel content, RGBA transparency, tile seams, complete model links, animation metadata, generator ownership")
 
 

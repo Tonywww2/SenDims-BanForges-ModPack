@@ -190,6 +190,7 @@
 		}
 		{
 			dependencies: ["713CA11C25A8A2E2"]
+			description: ["前往 沙质迷穴。"]
 			id: "56C9FAAD7AD47F1A"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -312,11 +313,41 @@
 			]
 			id: "4BABF9CAFF0F35FB"
 			quest_enhance_disable_scroll_paging: false
-			rewards: [{
-				id: "3BE33AE457986E8E"
-				item: "ad_astra:solar_panel"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "3BE33AE457986E8E"
+					item: "ad_astra:solar_panel"
+					type: "item"
+				}
+				{
+					id: "0B1E2CCC29F7766D"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "ad_astra_giselle_addon:space_breathing"
+								lvl: 1s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "685A432675CF3D77"
+					item: {
+						Count: 1
+						id: "ad_astra_giselle_addon:oxygen_can"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "420742074712A26D"
+					item: "ad_astra:oxygen_loader"
+					type: "item"
+				}
+			]
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
@@ -497,7 +528,11 @@
 			y: 9.0d
 		}
 		{
-			dependencies: ["3CB7E2E08F8E2D6B"]
+			dependencies: [
+				"3CB7E2E08F8E2D6B"
+				"6925E412FDC9E153"
+			]
+			dependency_requirement: "one_completed"
 			id: "2EE09FEC7618A5F9"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -586,7 +621,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 12.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["2EE09FEC7618A5F9"]
@@ -608,6 +643,35 @@
 			}]
 			x: 30.0d
 			y: 9.0d
+		}
+		{
+			dependencies: ["4BABF9CAFF0F35FB"]
+			description: [
+				"发现&b星门&r之后，你还需要留意&b星门附近的石碑&r，上面会记录着一个&e特殊的地址&r。"
+				""
+				"然后，你可以把&b星门&r和&bDHD&r都带回基地，把他们放置在&e一片空闲的区域&r内。"
+				""
+				"接着，确保DHD和星门都存在足够的能量（可以使用外部的发电机，也可以使用自带的），然后开始拨号："
+				""
+				"将&b星门附近的石碑&r上的&e特殊的地址&r输入，然后再输入\"0\"，最后点击中间的红色按钮。"
+				""
+				"如果你因为一些原因失去了DHD，则需要手动拨号："
+				"·你需要把石碑放置在世界中，观察上面的符号"
+				"·向星门传递不同等级的红石信号对应着不同类型的操作"
+				"·15级/满级信号是锁定键，用于在选取对应的数字符号后选择该地址"
+				"·14-8级信号是顺时针旋转，用于选择数字符号"
+				"·7-1信号是逆时针旋转，用于选择数字符号"
+			]
+			icon: "sgjourney:sandstone_cartouche"
+			id: "0465001EA9A838C3"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3FE410A2E2472329"
+				type: "checkmark"
+			}]
+			title: "星门：拨号"
+			x: 15.0d
+			y: -3.0d
 		}
 	]
 	title: "[XI] &e空岛之下"

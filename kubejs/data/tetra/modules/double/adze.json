@@ -29,6 +29,9 @@
             },
             "durability": -10,
             "extract": {
+                "primaryAttributes": {
+                    "generic.attack_speed": 0.004
+                },
                 "tools": {
                     "axe_dig": [ 0.6, 0.6 ],
                     "shovel_dig": [ 0.6, 0.6 ]

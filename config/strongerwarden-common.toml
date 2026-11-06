@@ -1,0 +1,26 @@
+#启用新增技能 / Enable additional Warden skills
+enabled = true
+#重力劈跃解锁生命比例 / Health fraction unlocking Gravity Leap
+#Range: 0.0 ~ 1.0
+phaseTwoHealth = 0.5
+#技能伤害倍率，以原版攻击力为基准 / Skill damage scale relative to vanilla attack damage
+#Range: 0.0 ~ 10.0
+damageScale = 1.0
+#技能范围与追击距离倍率 / Hit range and pursuit distance scale
+#Range: 0.25 ~ 4.0
+rangeScale = 1.0
+#技能间隔秒数，近战时至多 0.6 秒 / Seconds between skills; capped at 0.6 in melee
+#Range: 0.5 ~ 30.0
+recoverySeconds = 1.5
+#同一招式冷却秒数，突进使用一半 / Per-skill cooldown seconds; rushes use half
+#Range: 1 ~ 120
+skillCooldownSeconds = 12
+#普通狮子斩追加概率 / Follow-up chance after Lion's Claw
+#Range: 0.0 ~ 1.0
+followupChance = 0.4
+#特效粒子百分比，0 为关闭 / Particle density percent; zero disables particles
+#Range: 0 ~ 200
+particles = 100
+#播报技能 / Announce skills
+announceSkills = false
+

@@ -31,7 +31,7 @@ ItemEvents.tooltip(event => {
         Text.translatable('tooltip.kubejs.zenith_research_requirement', 22500, 200000, 100).darkGray()
     ]);
 
-    // 「大黑天」
+    // 宝刀「大黑天」
     event.add('kubejs:zenith_research_slashblade_mahakala_black', [
         Text.translatable('tooltip.kubejs.zenith_research').gray(),
         Text.translatable('tooltip.kubejs.zenith_research_requirement', 20000, 200000, 150).darkGray()

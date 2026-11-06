@@ -39,7 +39,8 @@
             "durability": -10,
             "extract": {
                 "primaryAttributes": {
-                    "generic.attack_damage": 1
+                    "generic.attack_damage": 1,
+                    "generic.attack_speed": 0.007
                 },
                 "tools": {
                     "hoe_dig": [ 0.74, 0.4 ]

@@ -20,6 +20,7 @@
         "slashblade_sendims:base_ring",
         "slashblade_sendims:high_density_ring",
         "slashblade_sendims:outer_sparse_ring",
-        "slashblade_sendims:transition_wall_ring"
+        "slashblade_sendims:transition_wall_ring",
+        "#titan_moon:is_titan"
     ]
 }

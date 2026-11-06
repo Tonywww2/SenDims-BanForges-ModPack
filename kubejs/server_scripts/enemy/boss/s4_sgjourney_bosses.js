@@ -69,7 +69,6 @@ ServerEvents.highPriorityData(event => {
         tollan: [
             "minecraft:magma_cube",
             "minecraft:blaze",
-            "aether:fire_minion",
             "minecraft:wither_skeleton",
             "thermal:basalz",
             "ad_astra:sulfur_creeper"

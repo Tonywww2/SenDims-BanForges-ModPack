@@ -137,7 +137,7 @@ ServerEvents.recipes(event => {
         }
     ).id('sdbf:zenith/research/sjap_adder_dragon_steel_fire');
 
-    // 研究：「大黑天」
+    // 研究：宝刀「大黑天」（不是普通「大黑天」）
     event.custom(
         {
             'type': 'last_smith:research',
@@ -145,7 +145,7 @@ ServerEvents.recipes(event => {
                 'type': 'slashblade:blade',
                 'item': 'slashblade:slashblade',
                 'request': {
-                    'name': 'slashblade:mahakala_black',
+                    'name': 'slashblade:mahakala_fortune',
                     'kill': 20000,
                     'proud_soul': 200000,
                     'refine': 150

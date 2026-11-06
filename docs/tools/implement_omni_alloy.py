@@ -480,7 +480,7 @@ def emit():
 def emit_assets():
     lang={}
     component_textures=emit_component_textures()
-    from omni_textures.build import draw_catalog
+    from omni_alloy_textures.build import draw_catalog
     texture_files=draw_catalog(REG,K/"assets")
     FILES.extend(p.relative_to(ROOT).as_posix() for p in texture_files
                  if p.relative_to(ROOT).as_posix() not in FILES)
@@ -501,8 +501,8 @@ def emit_assets():
         lang[f"fluid.{ns}.{path}"]=spec["name"]
         lang[f"block.{ns}.{path}"]=spec["name"]
         lang[f"item.{ns}.{path}_bucket"]=spec["name"]+"桶"
-        write(f"assets/{ns}/models/item/{path}_bucket.json",{"parent":"minecraft:item/generated",
-            "textures":{"layer0":spec["bucket_texture"]}})
+        write(f"assets/{ns}/models/item/{path}_bucket.json",{"parent":"forge:item/bucket",
+            "loader":"forge:fluid_container","fluid":ident})
     existing_path=K/"assets/kubejs/lang/zh_cn.json"
     existing=json.loads(existing_path.read_text(encoding="utf-8-sig"))
     for group,entries in PREVIOUS_REG.items():

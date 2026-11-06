@@ -32,6 +32,9 @@
             },
             "durability": -10,
             "extract": {
+                "primaryAttributes": {
+                    "generic.attack_speed": 0.006
+                },
                 "tools": {
                     "pickaxe_dig": [ 1, 0.91 ]
                 },

@@ -32,7 +32,8 @@
             "durability": -10,
             "extract": {
                 "primaryAttributes": {
-                    "generic.attack_damage": 1
+                    "generic.attack_damage": 1,
+                    "generic.attack_speed": 0.004
                 },
                 "tools": {
                     "pry": [ 1, 0.8333 ]

@@ -32,6 +32,7 @@
 		}
 		{
 			dependencies: ["572AF696CAC6C564"]
+			description: ["将白板放置在麻将祭坛上，然后在周围使用麻将桌/役种发电机胡牌，即可获得红中之魂或中。"]
 			id: "7AA96C81895C53E0"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -59,6 +60,12 @@
 			dependencies: [
 				"7AA96C81895C53E0"
 				"021D9071C961E904"
+			]
+			description: [
+				"将白板放置在麻将祭坛上，然后在周围使用麻将桌/役种发电机胡牌，即可获得红中之魂或中。"
+				""
+				"1级役种发电机+1组对子=1番=红中"
+				"2番或更高=红中之魂"
 			]
 			id: "032ECFB41D48A71C"
 			quest_enhance_disable_scroll_paging: false

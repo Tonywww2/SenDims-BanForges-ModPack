@@ -75,6 +75,16 @@
 			rotation: 90.0d
 			width: 1.0d
 			x: 12.0d
+			y: 17.0d
+		}
+		{
+			dependency: "2EADF063117EE157"
+			height: 1.0d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			quest_enhance_exclude_from_box_selection: false
+			rotation: 90.0d
+			width: 1.0d
+			x: 12.0d
 			y: 20.0d
 		}
 		{
@@ -85,17 +95,7 @@
 			rotation: 90.0d
 			width: 1.0d
 			x: 12.0d
-			y: 23.0d
-		}
-		{
-			dependency: "2EADF063117EE157"
-			height: 1.0d
-			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
-			quest_enhance_exclude_from_box_selection: false
-			rotation: 90.0d
-			width: 1.0d
-			x: 9.0d
-			y: 13.5d
+			y: 10.5d
 		}
 	]
 	order_index: 0
@@ -145,14 +145,14 @@
 		{
 			id: "63FE32795B147CBE"
 			linked_quest: "6130B752208314B7"
-			x: 9.0d
-			y: 15.0d
+			x: 12.0d
+			y: 12.0d
 		}
 		{
 			id: "05407B7FA2D2C562"
 			linked_quest: "71FCA5FAB43DD617"
-			x: 12.0d
-			y: 15.0d
+			x: 15.0d
+			y: 12.0d
 		}
 		{
 			id: "596A8AC4B21A5688"
@@ -262,7 +262,10 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["5BB642BD0BE40541"]
+			dependencies: [
+				"5BB642BD0BE40541"
+				"6D59E62FF5432802"
+			]
 			description: ["可以制作古代实验室的结构羽毛笔。"]
 			id: "1DE54DDD04540738"
 			quest_enhance_disable_scroll_paging: false
@@ -303,6 +306,7 @@
 				"6AE2EFEC0F3BE4BE"
 				"0402AC2E4A8127A4"
 			]
+			hide_dependency_lines: true
 			id: "3F3BE932D1892CC4"
 			quest_enhance_disable_scroll_paging: false
 			rewards: [{
@@ -436,8 +440,8 @@
 				item: "minecraft:sculk_catalyst"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 12.0d
+			x: 12.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["5BB642BD0BE40541"]
@@ -460,7 +464,7 @@
 			}]
 			title: "结构羽毛笔"
 			x: 6.0d
-			y: 18.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["64D03E66319AF253"]
@@ -484,7 +488,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 24.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["64D03E66319AF253"]
@@ -508,7 +512,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 21.0d
+			y: 18.0d
 		}
 		{
 			dependencies: [
@@ -532,8 +536,8 @@
 				}
 				type: "item"
 			}]
-			x: 12.0d
-			y: 12.0d
+			x: 15.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["1DE54DDD04540738"]
@@ -678,8 +682,8 @@
 				table_id: 7214542327696130213L
 				type: "loot"
 			}]
-			shape: "pentagon"
-			size: 2.0d
+			shape: "rsquare"
+			size: 1.5d
 			tasks: [{
 				id: "4B7399053F683820"
 				item: "terra_entity:clothier_voodoo_doll"
@@ -725,7 +729,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 18.0d
+			y: 15.0d
 		}
 		{
 			dependencies: [
@@ -749,7 +753,7 @@
 			}]
 			title: "瘟疫疯人院"
 			x: 12.0d
-			y: 18.0d
+			y: 15.0d
 		}
 		{
 			dependencies: [
@@ -774,7 +778,7 @@
 			}]
 			title: "泥砖村庄"
 			x: 12.0d
-			y: 24.0d
+			y: 21.0d
 		}
 		{
 			dependencies: [
@@ -799,7 +803,7 @@
 			}]
 			title: "石头村庄"
 			x: 12.0d
-			y: 21.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["69856593B46ECD9E"]
@@ -820,7 +824,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: 18.0d
+			y: 15.0d
 		}
 		{
 			dependencies: [
@@ -886,6 +890,7 @@
 		}
 		{
 			dependencies: ["1DE54DDD04540738"]
+			hide_dependency_lines: true
 			id: "4C3BC19718372DC5"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -900,8 +905,8 @@
 				}
 				type: "item"
 			}]
-			x: 6.0d
-			y: 15.0d
+			x: 9.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["0402AC2E4A8127A4"]
@@ -923,6 +928,19 @@
 			}]
 			x: 9.0d
 			y: 9.0d
+		}
+		{
+			description: ["在加工台上粉碎铁锭和木炭，将其混合得到"]
+			id: "6D59E62FF5432802"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0D1739EAAEADE2C1"
+				item: "kubejs:high_carbon_iron_dust"
+				type: "item"
+			}]
+			title: "钢的另一个来源"
+			x: 3.0d
+			y: -3.0d
 		}
 	]
 	title: "[II] &e深境：深邃洞穴"

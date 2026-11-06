@@ -229,6 +229,11 @@
 				"0DCACD0AACE10A1E"
 				"17E4F11F431B104E"
 			]
+			description: [
+				"将&b星界躯体&r放上&b锻造皮革垫&r，与&b卢恩残片&r、&b神门残片&r等材料组合锻造。"
+				""
+				"躯体中已有的填充物会一并迁入。6×6 的密集格盘，四邻完整的格子更多。"
+			]
 			id: "07C0937F6FDE318B"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -243,6 +248,11 @@
 			dependencies: [
 				"0DCACD0AACE10A1E"
 				"17E4F11F431B104E"
+			]
+			description: [
+				"将&b星界躯体&r放上&b锻造皮革垫&r，与&b投影框架&r、&b透星片&r、&b神门残片&r等材料组合锻造。"
+				""
+				"躯体中已有的填充物会一并迁入。两条十格长轴加中央汇流区，适合直线与边界类填充物。"
 			]
 			id: "5DAF8DD2570465F3"
 			quest_enhance_disable_scroll_paging: false

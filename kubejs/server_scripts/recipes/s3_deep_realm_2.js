@@ -215,13 +215,18 @@ ServerEvents.recipes(event => {
     }, "energyblade:hf_blade")
         .id("sdbf:hf_blade_s3")
 
+    let m3scOrForsakenBronze = Ingredient.of([
+        "kubejs:menril-silicon_sic_sic_cmc_ingot",
+        "darkerdepths:forsaken_bronze_ingot"
+    ]);
+
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
         "EBC",
         "BDB",
         "ABE"
     ], {
         "B": "slashblade:proudsoul_ingot",
-        "E": "kubejs:menril-silicon_sic_sic_cmc_ingot",
+        "E": m3scOrForsakenBronze,
         "D": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance().name("energyblade:hf_blade") // 前置：观世正宗
                 .killCount(4000)         // 杀敌数 / Kill count
@@ -247,9 +252,7 @@ ServerEvents.recipes(event => {
 
     event.custom({
         "type": "slashblade:slashblade_smithing",
-        "addition": {
-            "item": "kubejs:menril-silicon_sic_sic_cmc_ingot"
-        },
+        "addition": m3scOrForsakenBronze.toJson(),
         "base": {
             "type": "slashblade:blade",
             "item": "slashblade:slashblade",
@@ -272,9 +275,7 @@ ServerEvents.recipes(event => {
 
     event.custom({
         "type": "slashblade:slashblade_smithing",
-        "addition": {
-            "item": "kubejs:menril-silicon_sic_sic_cmc_ingot"
-        },
+        "addition": m3scOrForsakenBronze.toJson(),
         "base": {
             "type": "slashblade:blade",
             "item": "slashblade:slashblade",

@@ -12,9 +12,9 @@ ServerEvents.highPriorityData(event => {
 
     let smallRewards = material => {
         let rewards = {
-            // 前两波的耀魂数量减半改为耀魂铁；第 3 波起改发耀魂宝珠。
-            "slashblade:proudsoul_ingot": [2, 3, 0, 0, 0],
-            "slashblade:proudsoul_sphere": [0, 0, 1, 2, 3],
+            // 前两波发耀魂铁；第 3 波起发耀魂宝珠，各发奖波次的数量增加 1。
+            "slashblade:proudsoul_ingot": [3, 4, 0, 0, 0],
+            "slashblade:proudsoul_sphere": [0, 0, 2, 3, 4],
             "tetra:geode": [4, 7, 9, 10, 10],
             "apotheosis:epic_material": [1, 1, 2, 2, 2],
             "apotheosis:mythic_material": [0, 0, 1, 1, 3]
@@ -25,9 +25,9 @@ ServerEvents.highPriorityData(event => {
 
     let mediumRewards = material => {
         let rewards = {
-            // 前四波的耀魂数量减半（向下取整）改为耀魂铁；第 5 波起改发宝珠。
-            "slashblade:proudsoul_ingot": [1, 1, 2, 2, 0, 0, 0, 0, 0, 0],
-            "slashblade:proudsoul_sphere": [0, 0, 0, 0, 1, 1, 2, 2, 3, 3],
+            // 前四波发耀魂铁；第 5 波起发宝珠，各发奖波次的数量增加 1。
+            "slashblade:proudsoul_ingot": [2, 2, 3, 3, 0, 0, 0, 0, 0, 0],
+            "slashblade:proudsoul_sphere": [0, 0, 0, 0, 2, 2, 3, 3, 4, 4],
             "tetra:geode": [2, 3, 3, 4, 4, 4, 5, 5, 5, 5],
             "apotheosis:epic_material": [0, 1, 1, 0, 1, 1, 1, 1, 1, 1],
             "apotheosis:mythic_material": [0, 0, 0, 0, 1, 0, 1, 0, 1, 2]
@@ -138,18 +138,18 @@ ServerEvents.highPriorityData(event => {
             material: "sgjourney:raw_trinium",
             small: [
                 [["minecraft:magma_cube", 4], ["minecraft:blaze", 2]],
-                [["minecraft:magma_cube", 6], ["aether:fire_minion", 2], ["minecraft:wither_skeleton", 2]]
+                [["minecraft:magma_cube", 6], ["minecraft:blaze", 2], ["minecraft:wither_skeleton", 2]]
             ],
             medium: [
                 [["minecraft:magma_cube", 4], ["minecraft:blaze", 2]],
                 [["minecraft:magma_cube", 6], ["minecraft:wither_skeleton", 2]],
-                [["aether:fire_minion", 4], ["thermal:basalz", 2]],
+                [["minecraft:blaze", 4], ["thermal:basalz", 2]],
                 [["minecraft:blaze", 5], ["twilightforest:carminite_ghastling", 2]],
                 [["minecraft:wither_skeleton", 4], ["minecraft:magma_cube", 5]],
                 [["thermal:basalz", 3], ["ad_astra:sulfur_creeper", 3]]
             ],
             smallBosses: ["minecraft:magma_cube", "minecraft:blaze", "minecraft:wither_skeleton"],
-            mediumBosses: ["minecraft:magma_cube", "aether:fire_minion", "minecraft:wither_skeleton", "thermal:basalz"]
+            mediumBosses: ["minecraft:magma_cube", "minecraft:blaze", "minecraft:wither_skeleton", "thermal:basalz"]
         },
         {
             id: "unitas",

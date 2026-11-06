@@ -133,7 +133,10 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["0326C6376D5E34FF"]
+			dependencies: [
+				"0326C6376D5E34FF"
+				"1AC714332AC4104E"
+			]
 			description: ["需要使用 压缩氦收集器制作"]
 			id: "49271C4646459DEE"
 			quest_enhance_disable_scroll_paging: false
@@ -194,7 +197,11 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["3C99585FE904ACDC"]
+			dependencies: [
+				"3C99585FE904ACDC"
+				"77DC6770CC08AEF6"
+			]
+			dependency_requirement: "one_completed"
 			id: "697FFC9EE89DC1DD"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -302,7 +309,7 @@
 				item: "nuclearcraft:lead_platinum_ingot"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 6.0d
 			y: -3.0d
 		}
 		{

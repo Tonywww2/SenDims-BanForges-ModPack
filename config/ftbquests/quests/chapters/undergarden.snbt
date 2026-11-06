@@ -106,6 +106,24 @@
 			hide_until_deps_complete: true
 			id: "35A8F36675442F8B"
 			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					id: "0CF8367BDE902FC5"
+					item: {
+						Count: 1
+						id: "nuclearcraft:dosimeter"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1E8F5394049FC954"
+					item: "nuclearcraft:geiger_counter"
+					type: "item"
+				}
+			]
 			size: 2.0d
 			tasks: [{
 				dimension: "undergarden:undergarden"

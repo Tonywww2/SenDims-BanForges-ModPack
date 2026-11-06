@@ -379,9 +379,13 @@
 				"在满足&e一些条件&r后锻造，可以使拔刀剑的部件获得&e高质量&r效果。"
 				""
 				"&e高质量&r效果可以提供少量的攻击力加成。"
+				""
+				"&m&e平面稳定器&r&r"
 			]
 			id: "3105255BA64CD95B"
 			quest_enhance_disable_scroll_paging: false
+			shape: "diamond"
+			size: 1.5d
 			tasks: [{
 				id: "6A6137F0651686EE"
 				item: "tetra:planar_stabilizer"
@@ -451,6 +455,26 @@
 			}]
 			x: 3.0d
 			y: 3.0d
+		}
+		{
+			dependencies: ["250BBF645D5C8C67"]
+			description: ["为什么不试试神奇的经验修补"]
+			id: "256CAAF6C2BED6FF"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "578DD7F8ABA5590E"
+				item: {
+					Count: 1
+					id: "tetra:thermal_cell"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "我的电池没电了怎么办"
+			x: 0.0d
+			y: 6.0d
 		}
 	]
 	title: "锻造"

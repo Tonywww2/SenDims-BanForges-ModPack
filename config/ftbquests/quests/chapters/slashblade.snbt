@@ -1227,25 +1227,11 @@
 				type: "item"
 			}]
 			subtitle: "5"
-			tasks: [
-				{
-					id: "7BEDE2630FB6FEE9"
-					item: "slashblade:proudsoul_tiny"
-					type: "item"
-				}
-				{
-					id: "6720823C253FB8E8"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "minecraft:anvil"
-						}
-					}
-					title: "Any #minecraft:anvil"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7BEDE2630FB6FEE9"
+				item: "slashblade:proudsoul_tiny"
+				type: "item"
+			}]
 			x: 2.5d
 			y: 2.5d
 		}
@@ -1485,6 +1471,11 @@
 			]
 			id: "606C920FEB477498"
 			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "679FBF6824483D25"
+				item: "slashblade:proudsoul_trapezohedron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5BD5BAD2F4D50E3E"
 				item: "slashblade:proudsoul_trapezohedron"

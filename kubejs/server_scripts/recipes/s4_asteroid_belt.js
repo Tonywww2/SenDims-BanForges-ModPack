@@ -22,17 +22,23 @@ ServerEvents.recipes(event => {
         E: '#forge:storage_blocks/cobalt'
     }).id('sdbf:delta_dust_s4')
 
+    event.recipes.thermal.smelter('2x ad_astra:etrium_panel', [
+        'ad_astra:etrium_panel',
+        'nuclearcraft:turbine_casing'
+    ]).energy(16384)
+        .id('sdbf:etrium_panel_s4')
+
     event.shaped('kubejs:galatic_cycle_component', [
         'ABA',
         'CDE',
         'AFA'
     ], {
-        A: 'nuclearcraft:turbine_casing',
-        B: 'nuclearcraft:niobium_titanium_rf_amplifier',
-        C: 'nuclearcraft:compact_helium_collector',
+        A: 'ad_astra:etrium_panel',
+        B: Ingredient.of(['nuclearcraft:niobium_titanium_rf_amplifier', 'slashblade:proudsoul_trapezohedron']),
+        C: Ingredient.of(['nuclearcraft:compact_helium_collector', 'elder_bosses:gate_fragment']),
         D: 'nuclearcraft:electrolyzer',
         E: 'nuclearcraft:nuclear_furnace',
-        F: 'nuclearcraft:niobium_titanium_electromagnet'
+        F: Ingredient.of(['nuclearcraft:niobium_titanium_electromagnet', 'elder_bosses:great_rune_arc'])
     }).id('sdbf:galatic_cycle_component_s4')
 
     event.shapeless('kubejs:bizarre_matter_dust', [
@@ -262,8 +268,8 @@ ServerEvents.recipes(event => {
         "AEA"
     ], {
         "A": 'slashblade:proudsoul_sphere',
-        "B": 'nuclearcraft:active_enderium_heat_sink',
-        "C": 'nuclearcraft:active_redstone_heat_sink',
+        "B": Ingredient.of(['nuclearcraft:active_enderium_heat_sink', 'elder_bosses:gate_fragment']),
+        "C": Ingredient.of(['nuclearcraft:active_redstone_heat_sink', 'elder_bosses:great_rune_arc']),
         "D": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("slashblade_addon:hf_murasama")

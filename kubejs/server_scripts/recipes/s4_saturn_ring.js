@@ -158,10 +158,10 @@ ServerEvents.recipes(event => {
         C: 'slashblade:proudsoul_sphere',
     }).id('sdbf:sdbf_sr_kp_s4')
 
-    // 狱界剑 白楼剑: 白楼剑 + 斩断不死之录 + 补天合金锭
+    // 狱界剑 白楼剑: 白楼剑 + 斩断不死之录 + 补天合金锭或神门残片
     event.custom({
         "type": "slashblade:slashblade_smithing",
-        "addition": { "item": 'kubejs:celestial_filling_alloy_ingot' },
+        "addition": Ingredient.of(['kubejs:celestial_filling_alloy_ingot', 'elder_bosses:gate_fragment']).toJson(),
         "base": {
             "type": "slashblade:blade",
             "item": "slashblade:slashblade",
@@ -176,14 +176,14 @@ ServerEvents.recipes(event => {
         "template": { "item": "last_smith:scroll_mortal" }
     }).id("sdbf:hakurouken_nether_s4")
 
-    // 狱刀 似蛭: 五把材料刀 + 古代灵魂 + 土星环合金锭
+    // 狱刀 似蛭: 五把材料刀 + 古代灵魂 + 土星环合金锭或神门残片
     event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
         "AYA",
         "RNS",
         "BYB"
     ], {
         "A": 'kubejs:ancient_soul',
-        "B": CORE,
+        "B": Ingredient.of([CORE, 'elder_bosses:gate_fragment']),
         "Y": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()
                 .name("slashblade:yamato")
@@ -225,8 +225,11 @@ ServerEvents.recipes(event => {
         "HNR",
         "MGM"
     ], {
-        "G": 'ad_astra:gravity_normalizer',
-        "M": Item.of('thermal:florb', '{Fluid:{Amount:1000,FluidName:"kubejs:purified_proudsoul_fuel"}}').weakNBT(),
+        "G": Ingredient.of(['ad_astra:gravity_normalizer', 'elder_bosses:great_rune_arc']),
+        "M": Ingredient.of([
+            Item.of('thermal:florb', '{Fluid:{Amount:1000,FluidName:"kubejs:purified_proudsoul_fuel"}}').weakNBT(),
+            'elder_bosses:gate_fragment'
+        ]),
         "S": 'last_smith:sakura_sphere',
         "H": SlashBladeIngredient.of(
             SlashBladeRequestDefinition.newInstance()

@@ -1,0 +1,57 @@
+#常显浮层是否显示。也可以用按键随时开关，开关状态会存回这里
+overlayVisible = false
+#浮层左上角的横向位置，0 是屏幕最左，1 是最右
+#Range: 0.0 ~ 1.0
+overlayX = 0.01
+#浮层左上角的纵向位置，0 是屏幕最上，1 是最下
+#Range: 0.0 ~ 1.0
+overlayY = 0.3
+#常显浮层的缩放比例
+#Range: 0.5 ~ 2.0
+overlayScale = 1.0
+#常显浮层背景的不透明度，0 为完全透明
+#Range: 0.0 ~ 1.0
+overlayBackgroundOpacity = 0.5
+#常显浮层是否显示命中次数
+overlayShowHits = true
+overlayShowFocus = true
+overlayShowActualDamage = true
+#Allowed Values: SESSION, LIFETIME
+overlayActualDamageScope = "SESSION"
+overlayShowOriginalDamage = false
+#Allowed Values: SESSION, LIFETIME
+overlayOriginalDamageScope = "SESSION"
+overlayShowReduction = false
+#Allowed Values: SESSION, LIFETIME
+overlayReductionScope = "SESSION"
+overlayShowActualAverageDps = true
+#Allowed Values: SESSION, LIFETIME
+overlayActualAverageDpsScope = "SESSION"
+overlayShowActualRealtimeDps = true
+#Allowed Values: SESSION, LIFETIME
+overlayActualRealtimeDpsScope = "SESSION"
+overlayShowOriginalAverageDps = false
+#Allowed Values: SESSION, LIFETIME
+overlayOriginalAverageDpsScope = "SESSION"
+overlayShowOriginalRealtimeDps = false
+#Allowed Values: SESSION, LIFETIME
+overlayOriginalRealtimeDpsScope = "SESSION"
+overlayShowAverageHit = false
+#Allowed Values: SESSION, LIFETIME
+overlayAverageHitScope = "SESSION"
+#Allowed Values: SESSION, LIFETIME
+overlayHitsScope = "SESSION"
+overlayShowMaxOriginal = false
+#Allowed Values: SESSION, LIFETIME
+overlayMaxOriginalScope = "SESSION"
+overlayShowMaxActual = false
+#Allowed Values: SESSION, LIFETIME
+overlayMaxActualScope = "SESSION"
+overlayShowTopDamageType = false
+#Allowed Values: SESSION, LIFETIME
+overlayTopDamageTypeScope = "SESSION"
+overlayShowTopDirectSource = false
+#Allowed Values: SESSION, LIFETIME
+overlayTopDirectSourceScope = "SESSION"
+overlayShowSessionStatus = false
+

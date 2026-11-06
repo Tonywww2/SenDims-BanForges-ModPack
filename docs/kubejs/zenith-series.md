@@ -67,7 +67,7 @@ P：耀魂材料，魔剑 4 个、其他四把各 3 个；S：分支总卷；A�
 
 | 研究刀 | 杀敌 | 耀魂 | 锻造 | 墨料 |
 |---|---:|---:|---:|---|
-| 「大黑天」 (`slashblade:mahakala_black`) | 20000 | 200000 | 150 | `slashblade:proudsoul_crystal` |
+| 宝刀「大黑天」 (`slashblade:mahakala_fortune`) | 20000 | 200000 | 150 | `slashblade:proudsoul_crystal` |
 | 赫刀「魂灵影」 (`slashblade:red_blade_black_soul`) | 20000 | 200000 | 150 | `slashblade:proudsoul_crystal` |
 | 终狱刀「绝念」 (`sjap_adder:nihilbxex`) | 20000 | 200000 | 150 | `slashblade:proudsoul_crystal` |
 | 红樱 (`redtassel:redtassel_slashblade`) | 20000 | 200000 | 150 | `slashblade:proudsoul_crystal` |
@@ -141,7 +141,7 @@ flowchart LR
   r_sjap_adder_dragon_steel_fire["龙王铸「炎龙刀」"] --> s_magic["魔剑研究总卷"]
   s_magic --> z_magic["天顶·伪「魔剑」"]
   r_sjap_adder_dragon_steel_lightning -- "消耗指定本体" --> z_magic
-  r_slashblade_mahakala_black["「大黑天」"] --> s_black_crown["黑冠研究总卷"]
+  r_slashblade_mahakala_black["宝刀「大黑天」"] --> s_black_crown["黑冠研究总卷"]
   r_slashblade_red_blade_black_soul["赫刀「魂灵影」"] --> s_black_crown["黑冠研究总卷"]
   r_sjap_adder_nihilbxex["终狱刀「绝念」"] --> s_black_crown["黑冠研究总卷"]
   r_redtassel_redtassel_slashblade["红樱"] --> s_black_crown["黑冠研究总卷"]

@@ -78,6 +78,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(1, () => {
         .addTexture("shiny").addTexture("metal")
         .addItemMaterial('tofucraft:tf_circuit')
         .setRequiredTool("hammer_dig", 1)
+        .setCountFactor(0.35)
         .build();
 
     // 豆腐核心

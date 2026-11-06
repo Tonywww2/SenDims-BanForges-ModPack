@@ -196,9 +196,24 @@ let getSubModifierState = (player, modifier, current) => {
     return currentLevel >= modifier.requiredLevel ? 'available' : 'unmet';
 };
 
+let giveDifficultySupplies = (player, modifier) => {
+    modifier.effect.supplies.forEach(supply => {
+        let stack = supply.stack;
+        if (supply.blade) {
+            // getBladeItemStack 在刀ID不存在时抛错；一件出错不影响其他补给。
+            try { stack = getBladeStack(player.server.registryAccess(), supply.blade); } catch (error) { stack = null; }
+        }
+        if (!stack || stack.isEmpty()) {
+            console.error(`[SDBF Difficulty] ${modifier.id}: 无法生成补给 ${supply.blade || supply.stack}`);
+            return;
+        }
+        player.give(stack.copy());
+    });
+};
+
 let applySubModifier = (player, modifier) => {
     player.stages.add(getSubModifierStage(modifier.id));
-    if (modifier.effect.type == 'item') player.give(modifier.effect.stack.copy());
+    if (modifier.effect.type == 'item') giveDifficultySupplies(player, modifier);
     if (modifier.effect.type == 'attribute') syncDifficultyModifiers(player);
 };
 
@@ -373,7 +388,7 @@ let withUniformFont = component => {
 };
 
 let getAxisLabel = level => {
-    return `N${level > 0 ? '+' : ''}${level}`;
+    return Text.translatable(axisByLevel[level].translationKey);
 };
 
 let clamp = (value, min, max) => {
@@ -442,9 +457,9 @@ let openDifficultyScreen = player => {
 global.openDifficultyScreen = openDifficultyScreen;
 
 let buildAxisHover = (player, axis, current) => {
-    let hover = Text.of(axis.label).color(Color.AQUA)
+    let hover = getAxisLabel(axis.level).color(Color.AQUA)
         .append('\n')
-        .append(Text.of(axis.description).color(Color.GRAY))
+        .append(Text.translatable(axis.descriptionKey).color(Color.GRAY))
         .append('\n')
         .append(Text.translatable('kubejs.difficulty.adjustments').color(Color.WHITE))
         .append(Text.of('：').color(Color.DARK_GRAY));
@@ -488,7 +503,12 @@ let renderAxisRow = (player, view) => {
     axisWindows[view.xPage].forEach(axis => {
         let state = getAxisState(player, axis, view.current);
         let clickable = state == 'available';
-        let cell = withUniformFont(Text.of(centerCell(getAxisLabel(axis.level), clickable)))
+        let labelWidth = axis.label.length + (clickable ? 2 : 0);
+        let padding = Math.max(0, GRID_CELL_WIDTH - labelWidth);
+        let leftPadding = Math.floor(padding / 2);
+        let cell = withUniformFont(Text.of(makeSpaces(leftPadding) + (clickable ? '[' : '')))
+            .append(getAxisLabel(axis.level))
+            .append(Text.of((clickable ? ']' : '') + makeSpaces(padding - leftPadding)))
             .color(getStateColor(state))
             .hover(buildAxisHover(player, axis, view.current));
         if (clickable) {
@@ -707,7 +727,7 @@ global.setAxisFromCmd = (c, Arguments, confirmed) => {
             player,
             'axis',
             String(target.level),
-            Text.of(target.label),
+            getAxisLabel(target.level),
             xPage,
             yPage
         );
@@ -721,7 +741,7 @@ global.setAxisFromCmd = (c, Arguments, confirmed) => {
         receiver.tell(Text.translatable(
             'kubejs.difficulty.set_success',
             player.displayName,
-            Text.translatable(`kubejs.difficulty.${target.id}`)
+            getAxisLabel(target.level)
         ).color(Color.GREEN));
     });
     global.renderDifficulty(player, xPage, yPage);
@@ -830,7 +850,7 @@ global.applyDifficultySelectionFromCmd = (c, Arguments) => {
             receiver.tell(Text.translatable(
                 'kubejs.difficulty.set_success',
                 player.displayName,
-                Text.of(target.label)
+                getAxisLabel(target.level)
             ).color(Color.GREEN));
         });
     }
@@ -883,7 +903,7 @@ ItemEvents.rightClicked('kubejs:difficulty_locker', event => {
     player.stages.add(DIFFICULTY_LOCK_STAGE);
     player.tell(Text.translatable(
         'kubejs.difficulty.lock_success',
-        Text.of(getPlayerDifficulty(player).label)
+        getAxisLabel(getPlayerDifficulty(player).level)
     ).color(Color.RED));
 });
 
@@ -892,7 +912,7 @@ NativeEvents.onEvent($PlayerNameFormatEvent, event => {
     if (!isRealPlayer(player)) return;
     let difficulty = getPlayerDifficulty(player);
     let displayName = Text.of('[').color(Color.GRAY)
-        .append(Text.of(difficulty.label).color(getDifficultyNameColor(difficulty.level)))
+        .append(getAxisLabel(difficulty.level).color(getDifficultyNameColor(difficulty.level)))
         .append(Text.of('] ').color(Color.GRAY))
         .append(event.username);
     event.setDisplayname(displayName);

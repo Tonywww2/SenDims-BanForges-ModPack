@@ -1,0 +1,29 @@
+{
+  "Physical": [
+    "minecraft:player_attack",
+    "minecraft:mob_attack",
+    "minecraft:arrow",
+    "minecraft:trident",
+    "minecraft:thorns"
+  ],
+  "Magic": [
+    "minecraft:magic",
+    "minecraft:indirect_magic",
+    "minecraft:wither"
+  ],
+  "Fire": [
+    "minecraft:in_fire",
+    "minecraft:on_fire",
+    "minecraft:lava"
+  ],
+  "Explosion": [
+    "minecraft:explosion",
+    "minecraft:player_explosion"
+  ],
+  "Environment": [
+    "minecraft:fall",
+    "minecraft:drown",
+    "minecraft:starve",
+    "minecraft:freeze"
+  ]
+}

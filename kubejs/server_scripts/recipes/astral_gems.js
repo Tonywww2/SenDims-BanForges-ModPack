@@ -27,6 +27,19 @@
     event.shaped('deeprealm_4th:base_container', ['AGA', 'GMG', 'AGA'], {
       A: 'minecraft:amethyst_shard', G: P.materials.iron, M: P.materials.star
     }).id('sdbf:astral/base_container');
+    // 升级容器：锻造皮革垫组合锻造，消耗星界躯体，躯体里的填充物随之迁入（startup_scripts/astral_gems/35_container_upgrade.js）。
+    // 共同材料：神门残片 ×2、固相星浆 ×4、耀魂结晶 ×1；6 次敲击、30 级。
+    // 卢恩是密集布局（四邻完整格 16、2×2 区域 25），用更贵的卢恩残片；框架是长轴布局，用投影框架、透星片和低温合金。
+    let upgrade = (kind, extra) => {
+      let body = { stack: stack(A.containers.base.id), name: 'body', data_predicate: 'sdbf:astral_upgradable_body', exact_data: false };
+      event.custom({
+        type: 'deeprealm_4th:combination_forging', result: stack(A.containers[kind].id),
+        ingredients: [body].concat(materialInputs([['gate', 2], ['solid', 4], ['crystal', 1]]), extra),
+        clicks: 6, cooldown: 5, levels: 30, data_transform: 'sdbf:astral_container_upgrade'
+      }).id('sdbf:astral/container_' + kind);
+    };
+    upgrade('rune', [{ stack: stack('elder_bosses:rune_fragment') }, { stack: stack('minecraft:amethyst_block', 8) }]);
+    upgrade('frame', [{ stack: stack('deeprealm_4th:projection_frame', 4) }].concat(materialInputs([['lens', 4], ['alloy', 16]])));
     forging('empty_badge', stack(A.badgeId), materialInputs([['alloy', 1], ['sheet', 1], ['solid', 1], ['lens', 1]]), 2);
     Object.keys(P.tiers).forEach(tier => {
       let rule = P.manufacture[tier], item = P.tiers[tier].id;

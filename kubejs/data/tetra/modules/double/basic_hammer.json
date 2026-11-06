@@ -28,6 +28,9 @@
                 "blunt_weapon": 1
             },
             "extract": {
+                "primaryAttributes": {
+                    "generic.attack_speed": 0.004
+                },
                 "tools": {
                     "hammer_dig": [ 0, 0.8333 ]
                 },
@@ -67,11 +70,12 @@
             ],
             "extract": {
                 "primaryAttributes": {
-                    "generic.attack_damage": 0.5
+                    "generic.attack_damage": 0.5,
+                    "generic.attack_speed": 0.004
                 },
                 "secondaryAttributes": {
                     "generic.attack_damage": 1,
-                    "generic.attack_speed": -0.08
+                    "generic.attack_speed": -0.003
                 },
                 "tools": {
                     "hammer_dig": [ 0, 0.8333 ]
@@ -100,11 +104,12 @@
             },
             "extract": {
                 "primaryAttributes": {
-                    "generic.attack_damage": 0.5
+                    "generic.attack_damage": 0.5,
+                    "generic.attack_speed": 0.004
                 },
                 "secondaryAttributes": {
                     "generic.attack_damage": 1,
-                    "generic.attack_speed": -0.08
+                    "generic.attack_speed": -0.003
                 },
                 "tools": {
                     "hammer_dig": [ 0, 0.8333 ]
@@ -139,11 +144,12 @@
             },
             "extract": {
                 "primaryAttributes": {
-                    "generic.attack_damage": 0.5
+                    "generic.attack_damage": 0.5,
+                    "generic.attack_speed": 0.004
                 },
                 "secondaryAttributes": {
                     "generic.attack_damage": 1,
-                    "generic.attack_speed": -0.08
+                    "generic.attack_speed": -0.003
                 },
                 "tools": {
                     "hammer_dig": [ 0, 0.8333 ]
@@ -178,11 +184,12 @@
             },
             "extract": {
                 "primaryAttributes": {
-                    "generic.attack_damage": 0.5
+                    "generic.attack_damage": 0.5,
+                    "generic.attack_speed": 0.004
                 },
                 "secondaryAttributes": {
                     "generic.attack_damage": 1,
-                    "generic.attack_speed": -0.08
+                    "generic.attack_speed": -0.003
                 },
                 "tools": {
                     "hammer_dig": [ 0, 0.8333 ]
@@ -218,11 +225,12 @@
             "integrity": -1,
             "extract": {
                 "primaryAttributes": {
-                    "generic.attack_damage": 0.5
+                    "generic.attack_damage": 0.5,
+                    "generic.attack_speed": 0.004
                 },
                 "secondaryAttributes": {
                     "generic.attack_damage": 1,
-                    "generic.attack_speed": -0.08
+                    "generic.attack_speed": -0.003
                 },
                 "tools": {
                     "hammer_dig": [ 0, 0.8333 ]
@@ -262,11 +270,12 @@
             ],
             "extract": {
                 "primaryAttributes": {
-                    "generic.attack_damage": 0.5
+                    "generic.attack_damage": 0.5,
+                    "generic.attack_speed": 0.004
                 },
                 "secondaryAttributes": {
                     "generic.attack_damage": 1,
-                    "generic.attack_speed": -0.08
+                    "generic.attack_speed": -0.003
                 },
                 "tools": {
                     "hammer_dig": [ 0, 0.8333 ]
@@ -296,11 +305,12 @@
             "integrity": -1,
             "extract": {
                 "primaryAttributes": {
-                    "generic.attack_damage": 0.5
+                    "generic.attack_damage": 0.5,
+                    "generic.attack_speed": 0.004
                 },
                 "secondaryAttributes": {
                     "generic.attack_damage": 1,
-                    "generic.attack_speed": -0.08
+                    "generic.attack_speed": -0.003
                 },
                 "tools": {
                     "hammer_dig": [ 0, 0.8333 ]

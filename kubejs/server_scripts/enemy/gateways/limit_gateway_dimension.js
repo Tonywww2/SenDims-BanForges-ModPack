@@ -16,6 +16,16 @@ dimensionLimitMap.put("gateways:sdbf_mars_g1", "ad_astra:mars");
 dimensionLimitMap.put("gateways:sdbf_end_g1", "minecraft:the_end");
 dimensionLimitMap.put("gateways:sdbf_asteroid_g1", "sdbf:asteroid_belt");
 
+dimensionLimitMap.put("gateways:sdbf_titan_g1", "titan_moon:titan");
+dimensionLimitMap.put("gateways:sdbf_titan_g2", "titan_moon:titan");
+dimensionLimitMap.put("gateways:sdbf_titan_g3", "titan_moon:titan");
+
+["arid", "infernal", "woodland", "oceanic"].forEach(branch => {
+    ["g1", "g2"].forEach(tier => {
+        dimensionLimitMap.put(`gateways:sdbf_dr4_${branch}_${tier}`, "deeprealm_4th:fourth_layer");
+    });
+});
+
 dimensionLimitMap.put("gateways:sdbf_sr_ayeti", "slashblade_sendims:saturn_ring");
 dimensionLimitMap.put("gateways:sdbf_sr_kp", "slashblade_sendims:saturn_ring");
 

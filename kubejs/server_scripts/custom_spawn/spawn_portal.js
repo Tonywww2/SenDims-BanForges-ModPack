@@ -14,7 +14,8 @@ registerPortal({
     y: (player) => PLAYER_Y,
     z: (player) => getLevelSpawnPoint(player.level)[2],
     clearDestinationBlocks: false,
-    structureName: "return_portal"
+    structureName: "return_portal",
+    theme: 'return'
 });
 
 registerPortal({
@@ -33,7 +34,8 @@ registerPortal({
     y: (player) => 64,
     z: (player) => null,
     clearDestinationBlocks: true,
-    structureName: "tofu_portal"
+    structureName: "tofu_portal",
+    theme: 'tofu'
 });
 
 registerPortal({
@@ -52,7 +54,8 @@ registerPortal({
     y: (player) => 285,
     z: (player) => null,
     clearDestinationBlocks: true,
-    structureName: "deep_realm_level_1_portal"
+    structureName: "deep_realm_level_1_portal",
+    theme: 'deep_realm_1'
 });
 
 registerPortal({
@@ -73,5 +76,6 @@ registerPortal({
     y: (player) => null,
     z: (player) => null,
     clearDestinationBlocks: true,
-    structureName: "deep_realm_level_2_portal"
+    structureName: "deep_realm_level_2_portal",
+    theme: 'deep_realm_2'
 });

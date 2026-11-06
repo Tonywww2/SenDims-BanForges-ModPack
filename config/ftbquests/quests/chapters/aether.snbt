@@ -14,7 +14,7 @@
 			id: "34204459AAC5D2D2"
 			linked_quest: "00880D674BE17F9A"
 			x: 9.0d
-			y: 27.0d
+			y: 24.0d
 		}
 		{
 			id: "60884F4EA4EAF984"
@@ -120,8 +120,10 @@
 				"4B49B929B1C14728"
 			]
 			dependency_requirement: "one_completed"
+			icon: "aether:bronze_dungeon_key"
 			id: "7CBB12CD9FDCA6A4"
 			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
 			tasks: [{
 				id: "1B87D42F6942C457"
 				structure: "aether:bronze_dungeon"
@@ -137,8 +139,10 @@
 				"0B8FAEFD583DAAA2"
 			]
 			dependency_requirement: "one_completed"
+			icon: "aether:silver_dungeon_key"
 			id: "48E30F8BC43E9AD4"
 			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
 			tasks: [{
 				id: "1369CCA3A62484BF"
 				structure: "aether:silver_dungeon"
@@ -154,15 +158,18 @@
 				"123278FEAC1E9548"
 			]
 			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
+			icon: "aether:gold_dungeon_key"
 			id: "6B7C4E19A6FD6939"
 			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
 			tasks: [{
 				id: "3B5BCC1BC163A6CD"
 				structure: "aether:gold_dungeon"
 				type: "structure"
 			}]
 			title: "黄金地牢"
-			x: 3.0d
+			x: 6.0d
 			y: 15.0d
 		}
 		{
@@ -171,8 +178,10 @@
 				"0D2277AA594698BF"
 			]
 			dependency_requirement: "one_completed"
+			icon: "lost_aether_content:platinum_key"
 			id: "0687CEFE5099B94C"
 			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
 			tasks: [{
 				id: "16349B9A6DED9597"
 				structure: "lost_aether_content:platinum_dungeon"
@@ -252,8 +261,10 @@
 				"57A7A142E6DD90E7"
 			]
 			dependency_requirement: "one_completed"
+			icon: "deep_aether:brass_dungeon_key"
 			id: "614A7F7B332E03A7"
 			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
 			tasks: [{
 				id: "65097B60899AFDE4"
 				structure: "deep_aether:brass_dungeon"
@@ -273,7 +284,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 21.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["0F8DC1AEBBC762C1"]
@@ -297,8 +308,8 @@
 				item: "aether_redux:blightbunny_fang"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 18.0d
+			x: 9.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["0F8DC1AEBBC762C1"]
@@ -322,7 +333,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 24.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["0F8DC1AEBBC762C1"]
@@ -368,7 +379,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 27.0d
+			y: 24.0d
 		}
 		{
 			dependencies: ["0F8DC1AEBBC762C1"]
@@ -519,7 +530,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 21.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["09C52DB3DF15106A"]
@@ -540,7 +551,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: 24.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["7AD098E0E3FE6154"]
@@ -561,7 +572,7 @@
 				type: "item"
 			}]
 			x: 18.0d
-			y: 24.0d
+			y: 21.0d
 		}
 		{
 			dependencies: [
@@ -585,7 +596,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 27.0d
+			y: 24.0d
 		}
 		{
 			dependencies: ["7C6B82665A7EBFB4"]
@@ -606,7 +617,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 21.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["7C6B82665A7EBFB4"]
@@ -627,7 +638,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 24.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["55FD7C131B160F62"]
@@ -648,7 +659,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 24.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["5881B5670577E8D0"]
@@ -669,7 +680,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 21.0d
+			y: 18.0d
 		}
 		{
 			dependencies: [
@@ -692,8 +703,8 @@
 				}
 				type: "item"
 			}]
-			x: 9.0d
-			y: 18.0d
+			x: 12.0d
+			y: 15.0d
 		}
 		{
 			dependencies: [

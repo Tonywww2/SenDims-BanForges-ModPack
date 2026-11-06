@@ -738,6 +738,7 @@
 				""
 				""
 				"最后使用指定的物品点击第二层的\"B\"。"
+				"潜行时空手或手持激活物右键\"B\"可以预览整座结构；摆错时会在原位标出缺少的方块。"
 				""
 				"{image:sdbf:textures/gui/tofu_gate.png width:100 height:100 align:center}"
 			]

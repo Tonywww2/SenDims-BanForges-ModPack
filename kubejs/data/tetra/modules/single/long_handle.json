@@ -30,11 +30,12 @@
                     "forge:attack_range": 0.1
                 },
                 "secondaryAttributes": {
-                    "generic.attack_speed": -0.25
+                    "generic.attack_speed": -0.006
                 },
                 "tertiaryAttributes": {
                     "forge:reach_distance": 0.2,
-                    "forge:attack_range": 0.2
+                    "forge:attack_range": 0.2,
+                    "generic.attack_speed": 0.008
                 },
                 "durability": 0.25,
                 "integrity": 1,

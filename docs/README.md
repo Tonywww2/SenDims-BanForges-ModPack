@@ -42,13 +42,27 @@
 - [Chloride 与 JEI 15.74 的覆盖层兼容修复（HotAI）](development/Chloride-JEI覆盖层HotAI修复-2026-10-30.md)
 - [仿铸：坚固守护改为造成击退与魔法抗性（SenDims 新属性）](development/仿铸坚固守护-造成击退属性-2026-10-31.md)
 - [SenDims 行动力恢复调整与结构羽毛笔修复](development/SenDims-行动力恢复与结构羽毛笔修复-2026-11-01.md)
+- [SGJourney：土卫六与楚拉克找不到星门](development/SGJourney-土卫六与楚拉克星门生成-2026-11-02.md)
+- [SA 斩击统一为原生群伤，石中剑/湖中剑剑气上下各 6 格](development/SenDims-SA斩击改为原生群伤与圣剑剑气高度-2026-11-04.md)
 - [末地与小行星带神话首领门](kubejs/gateways-end-asteroid-bosses.md)
+- [土卫六神话首领与三种传送门珍珠](kubejs/titan-bosses-and-gateways.md)
+- [土卫六与深四：传送门奖励、八类首领及宝石池](kubejs/titan-deep4-gateways-gems-2026-11-02.md)
+- [Tetra 采掘适配、普通氧气罐提示与树枝状结晶繁殖](kubejs/tetra-mining-oxygen-crystal-2026-11-02.md)
+- [难度翻译匹配与分级选择确认](kubejs/difficulty-confirmation-2026-11-02.md)
+- [难度系统 N0、N-3～N-7 物品补给子修正与 N-6 以上开关](kubejs/difficulty-supplies-2026-11-04.md)
+- [AUI 难度确认输入崩溃修复](development/AUI-难度确认输入崩溃修复-2026-11-02.md)
+- [JET / ModernUI 后台字体异常：交接给 JET Agent](development/JET-ModernUI后台字体异常-交接给JETAgent-2026-11-02.md)
+- [SkyblockBuilder 客户端闪电崩溃 HotAI 修复](development/SkyblockBuilder-客户端闪电崩溃-HotAI-2026-11-02.md)
+- [Thermal 树脂提取机扫描优化（HotAI）](development/Thermal-树脂提取机性能优化-2026-11-02.md)
 - [刀名与刀 ID 对照](kubejs/slashblade-list.md)
 - [天顶系列设计](kubejs/zenith-series.md)
 - [役刀配方依赖图](kubejs/yakuman-recipes.mmd)
 - [役刀定义与路线数据](kubejs/yakuman-series.json)
 - [万象合金路线设计](kubejs/recipe-research/omni-alloy-route.md)
 - [万象合金交互预览](kubejs/recipe-research/omni-alloy-route-preview.html)
+- [万象合金专用材料贴图](development/万象合金专用材料贴图-2026-11-03.md)
+- [Tetra 龙翼图纸预览崩溃](development/Tetra-龙翼图纸预览崩溃-2026-11-03.md)
+- [仪式与基岩破坏者特效设计](development/仪式与基岩破坏者特效设计-2026-11-03.md)
 - [星界宝石设计表](development/宝石设计表.md)
 - [星界宝石实装与测试说明](development/星界宝石系统-实装与测试说明.md)
 - [世界树之海实现说明](world_tree_sea_implementation.md)
@@ -59,8 +73,10 @@
 
 ```text
 python -X utf8 docs/tools/validate_omni_alloy.py
+python -X utf8 docs/tools/draw_omni_alloy_textures.py
 python -X utf8 docs/tools/validate_omni_alloy_textures.py
 node docs/tools/test_omni_alloy.cjs
+node docs/tools/test_ritual_fx.cjs
 python -X utf8 docs/tools/collect_recipe_types.py
 python -X utf8 docs/tools/build_recipe_route_design.py
 python -X utf8 docs/tools/build_omni_alloy_preview.py

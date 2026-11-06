@@ -33,6 +33,9 @@
             },
             "durability": -10,
             "extract": {
+                "primaryAttributes": {
+                    "generic.attack_speed": 0.005
+                },
                 "tools": {
                     "axe_dig": [ 1, 1 ],
                     "axe_strip": [ 1, 1 ],

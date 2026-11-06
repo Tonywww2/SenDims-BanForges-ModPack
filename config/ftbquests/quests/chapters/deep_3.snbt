@@ -163,8 +163,8 @@
 				}
 				type: "item"
 			}]
-			x: 15.0d
-			y: 15.0d
+			x: 18.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -272,8 +272,8 @@
 				item: "midnight:crystalotus"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 15.0d
+			x: 6.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -417,8 +417,10 @@
 				"38FCF6A10FAC5584"
 			]
 			dependency_requirement: "one_completed"
+			icon: "block_factorys_bosses:dragon_skull"
 			id: "22A314B00893C4D7"
 			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
 			tasks: [{
 				id: "38FEABCB408C4175"
 				structure: "block_factorys_bosses:dragon_tower"
@@ -474,16 +476,18 @@
 		}
 		{
 			dependencies: ["40570CBD9A0E5C38"]
+			icon: "elder_bosses:haligtree_root"
 			id: "0B9B24404A473CCA"
 			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
 			tasks: [{
 				id: "6DB3A6F1058CA3EE"
 				structure: "elder_bosses:malenia_arena"
 				type: "structure"
 			}]
 			title: "圣树竞技场"
-			x: 6.0d
-			y: 15.0d
+			x: 9.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["2A9D15C315A89924"]
@@ -494,8 +498,8 @@
 				item: "elder_bosses:rot_goddess_remembrance"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 15.0d
+			x: 15.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["40570CBD9A0E5C38"]
@@ -506,8 +510,8 @@
 				item: "kubejs:corrupted_crystalotus"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 15.0d
+			x: 12.0d
+			y: 12.0d
 		}
 	]
 	title: "[VII] &e深境：午夜"

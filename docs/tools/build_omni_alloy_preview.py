@@ -64,7 +64,7 @@ def build():
     for category, registrations in config["registrations"].items():
         for item, entry in registrations.items():
             names[item] = entry["name"]
-            texture = entry.get("texture") or entry.get("bucket_texture")
+            texture = entry.get("texture") or entry.get("still_texture")
             icon_id = item if category != "fluids" else item + "_bucket"
             if category == "fluids":
                 names[icon_id] = entry["name"] + "桶"

@@ -10,7 +10,9 @@
     "quality": 1.5,
     "dimensions":
     [
-        "the_bumblezone:the_bumblezone"
+        "the_bumblezone:the_bumblezone",
+        "twilightforest:twilight_forest",
+        "titan_moon:titan"
     ],
     "unique": true,
     "min_rarity": "rare",

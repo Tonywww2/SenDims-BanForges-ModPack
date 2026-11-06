@@ -324,8 +324,8 @@
 				}
 				type: "item"
 			}]
-			x: 18.0d
-			y: 15.0d
+			x: 24.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -377,7 +377,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: 18.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["489E7D6A94278610"]
@@ -389,7 +389,7 @@
 				type: "item"
 			}]
 			x: 18.0d
-			y: 18.0d
+			y: 15.0d
 		}
 		{
 			dependencies: [
@@ -413,7 +413,7 @@
 				type: "item"
 			}]
 			x: 21.0d
-			y: 18.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["2E9AD291D5058BFF"]
@@ -425,7 +425,7 @@
 				type: "item"
 			}]
 			x: 24.0d
-			y: 18.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["51A9FF63F9F3E125"]
@@ -457,8 +457,10 @@
 				"2C6833FA2E31DFF1"
 			]
 			dependency_requirement: "one_completed"
+			icon: "cataclysm:dying_ember"
 			id: "71B22CE8B354DA88"
 			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
 			tasks: [{
 				id: "176383DEE3C9E53D"
 				structure: "cataclysm:burning_arena"
@@ -474,6 +476,7 @@
 				"51A9FF63F9F3E125"
 			]
 			dependency_requirement: "one_completed"
+			icon: "cataclysm:ancient_metal_nugget"
 			id: "68BD750B0FD3AB6D"
 			quest_enhance_disable_scroll_paging: false
 			rewards: [{
@@ -481,6 +484,7 @@
 				item: "cataclysm:sticky_gloves"
 				type: "item"
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "7A9A6C21178BC65A"
 				structure: "cataclysm:cursed_pyramid"

@@ -21,6 +21,7 @@
 			dependencies: [
 				"0B0F1D8BE89F8980"
 				"034D47E905861E48"
+				"62C0631125654B3D"
 			]
 			dependency_requirement: "one_completed"
 			description: [

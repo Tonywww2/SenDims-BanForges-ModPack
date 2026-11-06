@@ -449,6 +449,111 @@
             color: #ff858c;
             font-size: 15px;
         }
+
+        .confirmation-overlay {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 100;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 8px;
+            box-sizing: border-box;
+            background-color: rgba(0, 0, 0, 0.82);
+        }
+
+        .confirmation-dialog {
+            width: 88%;
+            max-width: 400px;
+            max-height: 92%;
+            min-height: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding: 12px;
+            box-sizing: border-box;
+            border: 1px solid #b86460;
+            background-color: #101517;
+            overflow: auto;
+        }
+
+        .confirmation-title {
+            flex: 0 0 auto;
+            color: #ffb3a6;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .confirmation-progress {
+            flex: 0 0 auto;
+            color: #9aa8aa;
+            font-size: 9px;
+        }
+
+        .confirmation-message {
+            flex: 0 0 auto;
+            font-size: 11px;
+            line-height: 1.5;
+            white-space: normal;
+            overflow-wrap: break-word;
+        }
+
+        .confirmation-input-group {
+            flex: 0 0 auto;
+            display: none;
+        }
+
+        .confirmation-input-hint {
+            margin-bottom: 5px;
+            color: #e6dca3;
+            font-size: 10px;
+        }
+
+        .confirmation-input {
+            width: 100%;
+            height: 26px;
+            min-height: 26px;
+            padding: 4px 6px;
+            box-sizing: border-box;
+            border: 1px solid #657478;
+            background-color: #090d0f;
+            color: #eef3f1;
+            font-size: 11px;
+            user-select: text;
+        }
+
+        .confirmation-actions {
+            flex: 0 0 auto;
+            display: flex;
+            justify-content: flex-end;
+            gap: 8px;
+        }
+
+        .confirmation-actions button {
+            flex: 0 1 auto;
+            min-width: 84px;
+            height: 28px;
+            padding: 3px 8px;
+            border: 1px solid #526064;
+            background-color: #1a2326;
+            color: #dce6e6;
+            font-size: 10px;
+        }
+
+        .confirmation-actions .confirmation-accept {
+            border-color: #b86460;
+            background-color: #42201f;
+            color: #ffb3a6;
+        }
+
+        .confirmation-actions .confirmation-accept:disabled {
+            border-color: #394346;
+            background-color: #151b1d;
+            color: #596568;
+        }
     </style>
 </head>
 <body>
@@ -494,6 +599,22 @@
         </aside>
     </main>
 
+    <section id="confirmation-overlay" class="confirmation-overlay" role="dialog" aria-modal="true" aria-labelledby="confirmation-title">
+        <div class="confirmation-dialog">
+            <div id="confirmation-title" class="confirmation-title"></div>
+            <div id="confirmation-progress" class="confirmation-progress"></div>
+            <div id="confirmation-message" class="confirmation-message"></div>
+            <div id="confirmation-input-group" class="confirmation-input-group">
+                <div id="confirmation-input-hint" class="confirmation-input-hint"></div>
+                <input id="confirmation-input" class="confirmation-input" type="text" maxlength="32" autocomplete="off" spellcheck="false">
+            </div>
+            <div class="confirmation-actions">
+                <button id="confirmation-cancel" type="button"></button>
+                <button id="confirmation-accept" class="confirmation-accept" type="button"></button>
+            </div>
+        </div>
+    </section>
+
     <script>
         let DIFFICULTY_STAGE_PREFIX = 'sdbf_difficulty_axis_';
         let DIFFICULTY_SUB_STAGE_PREFIX = 'sdbf_difficulty_sub_';
@@ -508,6 +629,10 @@
         let queuedModifiers = {};
         let modifierById = {};
         let difficultyLocked = false;
+        let confirmationI18n = {};
+        let confirmationState = null;
+        let confirmationUi = null;
+        let selectionSubmitted = false;
         let SCREEN_SCALE = 0.75;
         let contentScale = 0.75;
         let matrixMetrics = {};
@@ -573,9 +698,12 @@
             }
         }
 
-        function formatLevel(level) {
+        let formatLevel = level => {
+            for (let index = 0; index < axisDefinitions.length; index++) {
+                if (axisDefinitions[index].level == level) return axisDefinitions[index].label;
+            }
             return 'N' + (level > 0 ? '+' : '') + level;
-        }
+        };
 
         function formatScore(score) {
             if (score >= 0) return '+' + score;
@@ -629,9 +757,11 @@
 
         function applyDifficultyData(data) {
             validateDifficultyData(data);
+            confirmationI18n = data.confirmationI18n || {};
             axisDefinitions = data.axes.map(axis => ({
                 id: 'n_' + axis.level,
                 level: Number(axis.level),
+                label: String(axis.label || 'N' + (axis.level > 0 ? '+' : '') + axis.level),
                 health: Math.round(Number(axis.health) * 100),
                 damageTaken: Math.round(Number(axis.damageTaken) * 100),
                 armor: Math.round(Number(axis.armor) * 100),
@@ -821,7 +951,7 @@
                 let icon = icons[index];
                 let iconBounds = icon.getBoundingClientRect();
                 if (iconBounds.width <= 0 || iconBounds.height <= 0) continue;
-                let visible = rectContains(viewportBounds, iconBounds) && !rectsOverlap(iconBounds, axisBounds);
+                let visible = !confirmationState && rectContains(viewportBounds, iconBounds) && !rectsOverlap(iconBounds, axisBounds);
                 if (visible && tooltipBounds && rectsOverlap(iconBounds, tooltipBounds)) visible = false;
                 let renderItem = visible ? '1' : '0';
                 if (icon.getAttribute('data-slot-visible') != renderItem) {
@@ -920,6 +1050,7 @@
             button.addEventListener('mousemove', moveTooltip);
             button.addEventListener('mouseleave', hideTooltip);
             button.addEventListener('click', function (event) {
+                if (confirmationState || selectionSubmitted) return;
                 if (dragState.suppressClick) {
                     event.preventDefault();
                     return;
@@ -947,6 +1078,7 @@
             button.addEventListener('mousemove', moveTooltip);
             button.addEventListener('mouseleave', hideTooltip);
             button.addEventListener('click', function (event) {
+                if (confirmationState || selectionSubmitted) return;
                 if (dragState.suppressClick) {
                     event.preventDefault();
                     return;
@@ -1004,6 +1136,9 @@
         }
 
         function disposeUiCache() {
+            document.removeEventListener('keydown', onConfirmationKeyDown, true);
+            confirmationState = null;
+            confirmationUi = null;
             if (layoutRefreshFrame != null) {
                 window.cancelAnimationFrame(layoutRefreshFrame);
                 layoutRefreshFrame = null;
@@ -1300,23 +1435,168 @@
             summary += queuedNames.length > 0 ? ' · 副修正 ' + queuedNames.join('、') : ' · 未追加副修正';
             if (difficultyLocked) summary = '当前难度已锁定';
             setTextIfChanged(ui.pendingSummary, summary);
-            let confirmDisabled = !hasChanges || difficultyLocked;
+            let confirmDisabled = !hasChanges || difficultyLocked || confirmationState != null || selectionSubmitted;
             if (ui.confirmButton.disabled != confirmDisabled) ui.confirmButton.disabled = confirmDisabled;
         }
 
-        function submitSelection() {
-            if (difficultyLocked) return;
-            let modifierIds = Object.keys(queuedModifiers);
-            if (pendingLevel == currentLevel && modifierIds.length == 0) return;
-            let subIds = modifierIds.length > 0 ? modifierIds.join(' ') : 'none';
-            let command = 'sdbf_difficulty_menu apply ' + pendingLevel + ' ' + subIds;
+        let confirmationSteps = [
+            { level: 6, message: 'combat', word: '' },
+            { level: 10, message: 'duration', word: '' },
+            { level: 15, message: 'high', word: 'Yes' },
+            { level: 18, message: 'extreme', word: 'Confirmed' }
+        ];
+
+        let confirmationText = (id, values) => {
+            let text = String(confirmationI18n[id] || 'kubejs.difficulty.confirm.' + id);
+            return text.replace(/\{(level|step|total|word)\}/g, (match, key) => {
+                return values && values[key] != undefined ? String(values[key]) : match;
+            });
+        };
+
+        let selectionMatches = selection => {
+            return pendingLevel == selection.level &&
+                Object.keys(queuedModifiers).sort().join(' ') == selection.modifierIds.slice().sort().join(' ');
+        };
+
+        let confirmationWordMatches = () => {
+            if (!confirmationState || !confirmationUi) return false;
+            let step = confirmationState.steps[confirmationState.index];
+            return !step.word || String(confirmationUi.input.value || '').trim().toLowerCase() == step.word.toLowerCase();
+        };
+
+        let resetConfirmationInput = () => {
+            let input = confirmationUi.input;
+            // AUI 的 value 字段赋值不会同步光标；属性更新会清理选区和撤销历史。
+            input.value = '';
+            input.setAttribute('value', '');
+            if (typeof input.setSelectionRange == 'function') input.setSelectionRange(0, 0);
+        };
+
+        let closeConfirmation = restoreFocus => {
+            confirmationState = null;
+            if (confirmationUi) {
+                confirmationUi.overlay.setAttribute('style', 'display:none;');
+                resetConfirmationInput();
+                confirmationUi.input.disabled = true;
+            }
+            updateState();
+            updateSlotVisibility();
+            if (restoreFocus && ui.confirmButton && typeof ui.confirmButton.focus == 'function') ui.confirmButton.focus();
+        };
+
+        let commitSelection = selection => {
+            if (pageDisposed || difficultyLocked || selectionSubmitted) return;
+            if (!selectionMatches(selection)) {
+                closeConfirmation(true);
+                setTextIfChanged(ui.pendingSummary, confirmationText('selection_changed'));
+                return;
+            }
+            selectionSubmitted = true;
+            closeConfirmation(false);
+            let subIds = selection.modifierIds.length > 0 ? selection.modifierIds.join(' ') : 'none';
+            let command = 'sdbf_difficulty_menu apply ' + selection.level + ' ' + subIds;
             if (typeof Client != 'undefined' && Client.player && Client.player.connection) {
                 Client.player.connection.sendCommand(command);
                 if (typeof ApricityUI != 'undefined') ApricityUI.closeScreen();
                 return;
             }
-            document.getElementById('pending-summary').textContent = '预览提交：' + command;
-        }
+            setTextIfChanged(ui.pendingSummary, '预览提交：' + command);
+        };
+
+        let showConfirmationStep = () => {
+            if (!confirmationState || !confirmationUi) return;
+            let state = confirmationState;
+            let step = state.steps[state.index];
+            confirmationUi.title.textContent = confirmationText('title', { level: formatLevel(state.selection.level) });
+            confirmationUi.progress.textContent = confirmationText('progress', { step: state.index + 1, total: state.steps.length });
+            confirmationUi.message.textContent = confirmationText(step.message);
+            confirmationUi.hint.textContent = step.word ? confirmationText('input_hint', { word: step.word }) : '';
+            confirmationUi.inputGroup.setAttribute('style', step.word ? 'display:block;' : 'display:none;');
+            resetConfirmationInput();
+            confirmationUi.input.disabled = !step.word;
+            confirmationUi.accept.disabled = !!step.word;
+            confirmationUi.accept.textContent = confirmationText(state.index == state.steps.length - 1 ? 'submit' : 'continue');
+            confirmationUi.cancel.textContent = confirmationText('cancel');
+            confirmationUi.overlay.setAttribute('style', 'display:flex;');
+            if (typeof document.requestStyleRecalc == 'function') document.requestStyleRecalc(confirmationUi.overlay);
+            if (typeof document.commitStyleRecalc == 'function') document.commitStyleRecalc();
+            let focusTarget = step.word ? confirmationUi.input : confirmationUi.cancel;
+            if (typeof focusTarget.focus == 'function') focusTarget.focus();
+            updateState();
+            updateSlotVisibility();
+        };
+
+        let advanceConfirmation = () => {
+            if (pageDisposed || !confirmationState || selectionSubmitted || !confirmationWordMatches()) return;
+            let state = confirmationState;
+            if (difficultyLocked || !selectionMatches(state.selection)) {
+                closeConfirmation(true);
+                setTextIfChanged(ui.pendingSummary, confirmationText('selection_changed'));
+                return;
+            }
+            state.index++;
+            if (state.index == state.steps.length) commitSelection(state.selection);
+            else showConfirmationStep();
+        };
+
+        let onConfirmationKeyDown = event => {
+            if (pageDisposed || !confirmationState || !confirmationUi) return;
+            if (event.key == 'Escape' || event.keyCode == 256) {
+                event.preventDefault();
+                event.stopPropagation();
+                closeConfirmation(true);
+            } else if (event.key == 'Tab' || event.keyCode == 258) {
+                event.preventDefault();
+                event.stopPropagation();
+                let controls = [];
+                if (!confirmationUi.input.disabled) controls.push(confirmationUi.input);
+                controls.push(confirmationUi.cancel);
+                if (!confirmationUi.accept.disabled) controls.push(confirmationUi.accept);
+                let index = controls.indexOf(document.activeElement);
+                let next = index < 0 ? 0 : (index + (event.shiftKey ? -1 : 1) + controls.length) % controls.length;
+                if (typeof controls[next].focus == 'function') controls[next].focus();
+            }
+        };
+
+        let initializeConfirmationDialog = () => {
+            if (confirmationUi) return;
+            confirmationUi = {
+                overlay: document.getElementById('confirmation-overlay'),
+                title: document.getElementById('confirmation-title'),
+                progress: document.getElementById('confirmation-progress'),
+                message: document.getElementById('confirmation-message'),
+                inputGroup: document.getElementById('confirmation-input-group'),
+                hint: document.getElementById('confirmation-input-hint'),
+                input: document.getElementById('confirmation-input'),
+                cancel: document.getElementById('confirmation-cancel'),
+                accept: document.getElementById('confirmation-accept')
+            };
+            confirmationUi.cancel.addEventListener('click', () => closeConfirmation(true));
+            confirmationUi.accept.addEventListener('click', advanceConfirmation);
+            confirmationUi.input.addEventListener('input', () => {
+                if (confirmationState) confirmationUi.accept.disabled = !confirmationWordMatches();
+            });
+            document.addEventListener('keydown', onConfirmationKeyDown, true);
+        };
+
+        let submitSelection = () => {
+            if (pageDisposed || difficultyLocked || confirmationState || selectionSubmitted) return;
+            let modifierIds = Object.keys(queuedModifiers);
+            if (pendingLevel == currentLevel && modifierIds.length == 0) return;
+            let selection = { level: pendingLevel, modifierIds: modifierIds };
+            let steps = confirmationSteps.filter(step => pendingLevel >= step.level);
+            if (steps.length == 0) {
+                commitSelection(selection);
+                return;
+            }
+            dragState.active = false;
+            dragState.moved = false;
+            dragState.suppressClick = false;
+            if (ui.viewport) ui.viewport.classList.remove('dragging');
+            hideTooltip();
+            confirmationState = { selection: selection, steps: steps, index: 0 };
+            showConfirmationStep();
+        };
 
         function installDragBrowsing() {
             let viewport = ui.viewport;
@@ -1425,6 +1705,7 @@
         }
 
         function changeViewScale(delta) {
+            if (confirmationState || selectionSubmitted) return;
             contentScale = Math.max(0.5, Math.min(0.9, contentScale + delta));
             sizeMatrix();
             ui.viewScaleLabel.textContent = Math.round(contentScale * 100) + '%';
@@ -1464,6 +1745,7 @@
             ui.viewScaleLabel.textContent = Math.round(contentScale * 100) + '%';
             installMatrixEvents();
             installDragBrowsing();
+            initializeConfirmationDialog();
             document.getElementById('view-smaller').addEventListener('click', function () {
                 changeViewScale(-0.05);
             });

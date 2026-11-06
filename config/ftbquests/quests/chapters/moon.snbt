@@ -137,6 +137,7 @@
 		}
 		{
 			dependencies: ["5D5BA71C5348297D"]
+			description: ["月球村民拥有一些特殊交易，你也可以和普通村民一样捕捉他们。"]
 			hide_until_deps_complete: true
 			icon: "ad_astra:lunarian_spawn_egg"
 			id: "1C5BA781B3774E75"
@@ -150,7 +151,7 @@
 			}]
 			title: "月球村民"
 			x: 3.0d
-			y: 12.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["5D5BA71C5348297D"]
@@ -178,32 +179,6 @@
 			}]
 			x: 6.0d
 			y: 0.0d
-		}
-		{
-			dependencies: ["5D5BA71C5348297D"]
-			hide_until_deps_complete: true
-			id: "74262FD23FBE1CF8"
-			quest_enhance_disable_scroll_paging: false
-			tasks: [{
-				id: "2D1994E38ECB9335"
-				item: "ad_astra:moon_sand"
-				type: "item"
-			}]
-			x: 3.0d
-			y: 6.0d
-		}
-		{
-			dependencies: ["74262FD23FBE1CF8"]
-			description: ["未完成"]
-			id: "762D77442C0B2116"
-			quest_enhance_disable_scroll_paging: false
-			tasks: [{
-				id: "58999B392F388593"
-				type: "checkmark"
-			}]
-			title: "月面战斗塔"
-			x: 6.0d
-			y: 6.0d
 		}
 		{
 			dependencies: ["0936AB2DCC0172A8"]
@@ -265,7 +240,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 9.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["44DD7148C7185A28"]
@@ -286,7 +261,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 9.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -367,6 +342,7 @@
 			dependency_requirement: "one_completed"
 			id: "58D261B5FA944C08"
 			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
 			tasks: [{
 				id: "18D89B6DFB9924A5"
 				item: "terra_entity:slime_crown"

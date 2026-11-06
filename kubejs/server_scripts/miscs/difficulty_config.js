@@ -1,8 +1,11 @@
 // priority: 90
 
 let difficultyData = global.sdbfDifficultyData;
-if (global.difficulty_cvu_enabled === false) {
-    difficultyData.modifiers = difficultyData.modifiers.filter(modifier => modifier.id != 'infinite_items');
+// configs.js 的 difficulty_extreme_modifiers_enabled 为 false 时，移除 N-6 及以下（N-6、N-7）的全部子修正。
+// 旧开关 difficulty_cvu_enabled = false（原先只禁用创造贩卖升级）也按此处理。
+let DIFFICULTY_EXTREME_LEVEL = -6;
+if (global.difficulty_extreme_modifiers_enabled === false || global.difficulty_cvu_enabled === false) {
+    difficultyData.modifiers = difficultyData.modifiers.filter(modifier => modifier.requiredLevel > DIFFICULTY_EXTREME_LEVEL);
 }
 let difficultyDataJson = JSON.stringify(difficultyData);
 
@@ -44,6 +47,8 @@ let axisDefinitions = difficultyData.axes.map(definition => ({
     id: `n_${definition.level}`,
     level: definition.level,
     label: `N${definition.level > 0 ? '+' : ''}${definition.level}`,
+    translationKey: `kubejs.difficulty.n_${definition.level}`,
+    descriptionKey: `kubejs.difficulty.n_${definition.level}.desc`,
     multipliers: {
         health: definition.health,
         damageTaken: definition.damageTaken,
@@ -80,8 +85,13 @@ let subModifierDefinitions = difficultyData.modifiers.map(definition => {
     let effect = definition.effect;
     let runtimeEffect = Object.assign({}, effect);
     if (effect.type == 'item') {
-        if (effect.nbt) runtimeEffect.stack = Item.of(effect.item, effect.nbt);
-        else runtimeEffect.stack = Item.of(effect.item, effect.count || 1);
+        // 单件写法 {item, count|nbt} 与多件写法 {items: [...]} 统一为 supplies；
+        // {blade: 刀ID} 是拔刀剑具名刀，需要服务端注册表，发放时才生成。
+        let entries = Array.isArray(effect.items) ? effect.items : [{ item: effect.item, count: effect.count, nbt: effect.nbt }];
+        runtimeEffect.supplies = entries.map(entry => {
+            if (entry.blade) return { blade: String(entry.blade) };
+            return { stack: entry.nbt ? Item.of(entry.item, entry.nbt) : Item.of(entry.item, entry.count || 1) };
+        });
     }
     return {
         id: definition.id,

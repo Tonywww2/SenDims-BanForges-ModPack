@@ -78,8 +78,10 @@
 		}
 		{
 			dependencies: ["477A42CD53645E08"]
+			icon: "minecraft:netherite_block"
 			id: "1BFFE0DF9A447A4A"
 			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
 			tasks: [{
 				id: "525575C9079CC106"
 				structure: "cataclysm:soul_black_smith"
@@ -126,8 +128,10 @@
 			]
 			dependency_requirement: "one_completed"
 			hide_until_deps_complete: true
+			icon: "minecraft:nether_bricks"
 			id: "43F1C6E6DEF9378A"
 			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
 			tasks: [{
 				id: "418F13DB0A172EA3"
 				structure: "minecraft:fortress"
@@ -197,6 +201,7 @@
 			description: ["警告：肉山会破坏大范围的方块，请确保周围半径6的区块内没有重要的东西。"]
 			id: "32F557E18C00B7A1"
 			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
 			tasks: [{
 				id: "233D0CA45FEB90D8"
 				item: "terra_entity:guide_voodoo_doll_hill"
@@ -472,8 +477,10 @@
 		}
 		{
 			dependencies: ["09B56EAA8E6C1B2E"]
+			icon: "minecraft:gilded_blackstone"
 			id: "4A40F053B5D1B498"
 			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
 			tasks: [{
 				id: "65DF4C0E04FD5764"
 				structure: "minecraft:bastion_remnant"
@@ -580,15 +587,17 @@
 				"04A8C9C6AA5E831A"
 			]
 			dependency_requirement: "one_completed"
+			icon: "netherman:statue_stand"
 			id: "511247D5AA551013"
 			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
 			tasks: [{
 				id: "325E62F4F33384D1"
 				structure: "netherman:mansion_nether"
 				type: "structure"
 			}]
 			title: "下界庄园"
-			x: 6.0d
+			x: 9.0d
 			y: 3.0d
 		}
 		{
@@ -608,18 +617,6 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["511247D5AA551013"]
-			id: "1636491694C6026E"
-			quest_enhance_disable_scroll_paging: false
-			tasks: [{
-				id: "68E3D47DE046FFB6"
-				item: "netherman:statue_stand"
-				type: "item"
-			}]
-			x: 9.0d
 			y: 3.0d
 		}
 		{

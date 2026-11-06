@@ -55,8 +55,9 @@
 			dependencies: ["28CAD1DD57B60440"]
 			description: [
 				"在深境一层使用&b末影之眼&r寻找要塞。"
-				""
 				"需要佩戴一个&b特殊的饰品&r（请查看前置任务）。"
+				""
+				"末地外岛似乎有些异样？"
 			]
 			hide_dependent_lines: true
 			hide_until_deps_complete: true
@@ -77,6 +78,12 @@
 			dependencies: ["0A68F5EE8F25F036"]
 			id: "5EEA2C8F11FB0470"
 			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "3143DC5D3328F1DA"
+				item: "minecraft:dragon_head"
+				type: "item"
+			}]
+			size: 1.5d
 			tasks: [{
 				advancement: "minecraft:end/kill_dragon"
 				criterion: ""
@@ -193,8 +200,10 @@
 				"0DA99D68D7FA3B01"
 			]
 			dependency_requirement: "one_completed"
+			icon: "minecraft:purpur_block"
 			id: "0D69B0100D962B3B"
 			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
 			tasks: [{
 				id: "61E7B00BFA19A989"
 				structure: "cataclysm:ruined_citadel"
@@ -256,6 +265,11 @@
 			dependencies: ["0AB0F8AA8EFC1E53"]
 			id: "74C39C2A8B73986F"
 			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "774B1B696508A4B1"
+				item: "minecraft:dragon_head"
+				type: "item"
+			}]
 			tasks: [{
 				id: "40B5CC92E7B206B1"
 				item: "kubejs:chorus_logic_composite_coil"
@@ -623,6 +637,22 @@
 			}]
 			x: 3.0d
 			y: 9.0d
+		}
+		{
+			dependencies: [
+				"0A68F5EE8F25F036"
+				"45B6FCADF2E92076"
+			]
+			dependency_requirement: "one_completed"
+			id: "721124A1938C5783"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "72C3DEE597DFEC7E"
+				item: "minecraft:dragon_head"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 3.0d
 		}
 	]
 	title: "[VIII] &e末地"

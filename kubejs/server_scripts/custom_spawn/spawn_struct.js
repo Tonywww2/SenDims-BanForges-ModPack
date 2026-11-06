@@ -7,6 +7,8 @@ registerStructure({
     },
     destroyAfterSpawn: true,
     weakMatch: true,
+    theme: 'aether',
+    displayName: 'info.kubejs.ritual.name.platinum_dungeon',
     executeCommands: (level, centerPos, player) => {
         player.tell(Text.of("TungTungTung").obfuscated())
         player.server.runCommandSilent(`execute at ${player.name.string} run place structure lost_aether_content:platinum_dungeon`);
@@ -23,6 +25,8 @@ registerStructure({
     },
     destroyAfterSpawn: true,
     weakMatch: true,
+    theme: 'undergarden',
+    displayName: 'info.kubejs.ritual.name.samurai_x',
     executeCommands: (level, centerPos, player) => {
         player.tell(Text.of("Samurai X").obfuscated())
         player.server.runCommandSilent(`execute in ${level.dimensionKey.location().toString()} positioned ${centerPos.x} ${centerPos.y} ${centerPos.z} run summon final_samurai:samurai`);

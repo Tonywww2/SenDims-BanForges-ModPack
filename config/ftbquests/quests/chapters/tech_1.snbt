@@ -361,7 +361,11 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["66C1156C17F399C9"]
+			dependencies: [
+				"66C1156C17F399C9"
+				"3DA6E818573A9A69"
+			]
+			dependency_requirement: "one_completed"
 			id: "03405BC60C3EFA99"
 			quest_enhance_disable_scroll_paging: false
 			rewards: [
@@ -877,11 +881,7 @@
 				"59C711671F81AB45"
 				"79292C56C8BD4C69"
 			]
-			description: [
-				"将钻石豆腐、硫酸桶、熔岩桶在锻造台上加工，可以制成石油桶。&m&7多么奇幻的加工方式啊！&r&r"
-				""
-				"你一共需要三桶才能制作发射一次的燃料。"
-			]
+			description: ["你一共需要三桶才能制作发射一次的燃料。"]
 			id: "1620FC37BD64FA7E"
 			quest_enhance_disable_scroll_paging: false
 			subtitle: "奇异的加工方式"
@@ -1170,7 +1170,11 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["31801D73AF59C8CB"]
+			dependencies: [
+				"31801D73AF59C8CB"
+				"77DB6C3E80DEA149"
+			]
+			dependency_requirement: "one_completed"
 			id: "6EA0FF1CC5982E8F"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -2225,7 +2229,11 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["74217ADD6DC9A2D5"]
+			dependencies: [
+				"74217ADD6DC9A2D5"
+				"6E5EFB146C17C916"
+			]
+			dependency_requirement: "one_completed"
 			id: "6CB912280FDB3137"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -2380,20 +2388,6 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["0BD7C25BE393E906"]
-			id: "2662F4A348701953"
-			quest_enhance_disable_scroll_paging: false
-			shape: "diamond"
-			subtitle: "清理环境辐射"
-			tasks: [{
-				id: "031F572ED4D62334"
-				item: "nuclearcraft:gas_scrubber"
-				type: "item"
-			}]
-			x: 57.0d
-			y: -15.0d
-		}
-		{
 			dependencies: ["58234F97716261D8"]
 			id: "25286229A52D4364"
 			quest_enhance_disable_scroll_paging: false
@@ -2415,7 +2409,7 @@
 		{
 			dependencies: [
 				"73531FB69122489F"
-				"0F1E4DE1479DA903"
+				"6F45CA42A93272AE"
 			]
 			hide_dependency_lines: true
 			id: "79292C56C8BD4C69"
@@ -2730,6 +2724,37 @@
 			title: "万锻：万象"
 			x: 132.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["0F1E4DE1479DA903"]
+			description: ["灰尘源会慢慢的在下方的粗糙方块（例如木板）上堆积灰尘。"]
+			id: "6F45CA42A93272AE"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0E0CC922AE3C6A87"
+				item: "dustandash:dust_source"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["03405BC60C3EFA99"]
+			id: "6D8DC124944F5A9A"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 2
+				id: "0FAF5A74274D0000"
+				item: "minecraft:jungle_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "08EC535FEC44A1A5"
+				item: "thermal:device_tree_extractor"
+				type: "item"
+			}]
+			x: 30.0d
+			y: 3.0d
 		}
 	]
 	title: "工业"

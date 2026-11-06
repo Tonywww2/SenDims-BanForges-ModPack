@@ -141,7 +141,8 @@ progressed.stages.add('sdbf.world_lock');
 hurt(waiting, 1, progressed);
 check(waiting.forgePersistentData.getString('sbsd.diff') == '3_3', 'Dimension special rule uses the attacker too');
 near(waiting.values.get('minecraft:generic.attack_damage'), 700, 'Dimension base attack retained');
-near(waiting.getMaxHealth(), 26908.2, 'Dimension and personal health recomputed from template');
+// Math.random is fixed at zero, so the stable health roll is 1, not the upper 1.15 bound.
+near(waiting.getMaxHealth(), 23400, 'Dimension and personal health recomputed from template');
 
 players.push(player(18, [], { creative: true }), player(-7));
 let easy = mob();

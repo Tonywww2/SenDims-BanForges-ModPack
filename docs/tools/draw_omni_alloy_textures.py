@@ -6,7 +6,7 @@ Only material presentation resources and their ownership manifest are updated.
 from __future__ import annotations
 import json
 from pathlib import Path
-from omni_textures.build import draw_catalog, preview
+from omni_alloy_textures.build import bucket_model, draw_catalog, preview
 from omni_alloy_sources import read_catalog, write_catalog
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -35,17 +35,24 @@ def main():
     for ident, spec in reg["fluids"].items():
         ns, name = ident.split(":", 1)
         path = K / f"assets/{ns}/models/item/{name}_bucket.json"
-        write(path, {"parent": "minecraft:item/generated", "textures": {"layer0": spec["bucket_texture"]}})
+        write(path, bucket_model(ident))
         files.append(path)
     write_catalog(data)
     manifest = ROOT / "docs/kubejs/recipe-research/omni-alloy-implementation.json"
     info = json.loads(manifest.read_text(encoding="utf-8"))
-    info["generated_files"] = sorted(set(info["generated_files"]) | {p.relative_to(ROOT).as_posix() for p in files})
+    produced = {p.relative_to(ROOT).as_posix() for p in files}
+    # Textures this tool no longer draws (e.g. the old hand-drawn buckets) leave the ownership manifest.
+    stale = sorted(p for p in info["generated_files"]
+                   if p.startswith("kubejs/assets/kubejs/textures/") and p not in produced)
+    info["generated_files"] = sorted((set(info["generated_files"]) - set(stale)) | produced)
     write(manifest, info)
+    leftover = [p for p in stale if (ROOT / p).exists()]
+    if leftover:
+        print("No longer generated; delete these files:", *leftover, sep="\n  ")
     output = ROOT / "docs/archive/cache/omni_alloy/material-textures-preview.png"
     preview(reg, K / "assets", output)
     print(f"Drew {len(reg['items']) - 9} intermediate item sprites, {len(reg['blocks'])} block tiles, "
-          f"{len(reg['fluids'])} buckets and {len(reg['fluids']) * 2} animated fluid textures; kept 9 final sprites.")
+          f"{len(reg['fluids']) * 2} animated fluid textures and {len(reg['fluids'])} fluid-container bucket models; kept 9 final sprites.")
     print(f"Preview: {output}")
 
 

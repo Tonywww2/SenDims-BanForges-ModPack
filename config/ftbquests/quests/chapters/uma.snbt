@@ -262,10 +262,7 @@
 			y: 6.0d
 		}
 		{
-			dependencies: [
-				"7D818AD425FC2A9D"
-				"291BE5789CE1F72C"
-			]
+			dependencies: ["7D818AD425FC2A9D"]
 			id: "44276B696C7522ED"
 			quest_enhance_disable_scroll_paging: false
 			rewards: [{
@@ -344,8 +341,6 @@
 			description: [
 				"技能书能让马娘之魂在技能学习台中学习不同技能。"
 				"训练书能在使用后增加马娘之魂的属性。"
-				""
-				"&7tip：切石机可以将一些转化一些训练书。"
 			]
 			id: "318497B5AECDACE3"
 			quest_enhance_disable_scroll_paging: false

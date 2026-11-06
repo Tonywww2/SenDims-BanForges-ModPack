@@ -2589,11 +2589,12 @@ ServerEvents.recipes(event => {
     }).id('sdbf:omni_alloy/pneumatic_04');
 
     // 气动炼油 (pneumatic_05)
+    // 炼油塔按原料和输出层数选配方，不按温度区分；使用柴油避开原油蒸馏。
     event.custom({
         "type": "pneumaticcraft:refinery",
         "input": {
             "type": "pneumaticcraft:fluid",
-            "tag": "forge:crude_oil",
+            "fluid": "pneumaticcraft:diesel",
             "amount": 1000
         },
         "results": [

@@ -813,256 +813,224 @@ global.sdbfOmniAlloy = {
                 "branch": "bio",
                 "color": "93be6c",
                 "still_texture": "kubejs:block/omni_bio_feed_still",
-                "flowing_texture": "kubejs:block/omni_bio_feed_flow",
-                "bucket_texture": "kubejs:item/omni_bio_feed_bucket"
+                "flowing_texture": "kubejs:block/omni_bio_feed_flow"
             },
             "kubejs:omni_bio_10_fluid": {
                 "name": "发酵构件液",
                 "branch": "bio",
                 "color": "93be6c",
                 "still_texture": "kubejs:block/omni_bio_10_fluid_still",
-                "flowing_texture": "kubejs:block/omni_bio_10_fluid_flow",
-                "bucket_texture": "kubejs:item/omni_bio_10_fluid_bucket"
+                "flowing_texture": "kubejs:block/omni_bio_10_fluid_flow"
             },
             "kubejs:omni_bio_11_fluid": {
                 "name": "蒸馏构件液",
                 "branch": "bio",
                 "color": "93be6c",
                 "still_texture": "kubejs:block/omni_bio_11_fluid_still",
-                "flowing_texture": "kubejs:block/omni_bio_11_fluid_flow",
-                "bucket_texture": "kubejs:item/omni_bio_11_fluid_bucket"
+                "flowing_texture": "kubejs:block/omni_bio_11_fluid_flow"
             },
             "kubejs:omni_thermal_14_fluid": {
                 "name": "熔岩炉构件液",
                 "branch": "thermal",
                 "color": "74cace",
                 "still_texture": "kubejs:block/omni_thermal_14_fluid_still",
-                "flowing_texture": "kubejs:block/omni_thermal_14_fluid_flow",
-                "bucket_texture": "kubejs:item/omni_thermal_14_fluid_bucket"
+                "flowing_texture": "kubejs:block/omni_thermal_14_fluid_flow"
             },
             "kubejs:omni_thermal_17_fluid": {
                 "name": "热解炉构件液",
                 "branch": "thermal",
                 "color": "74cace",
                 "still_texture": "kubejs:block/omni_thermal_17_fluid_still",
-                "flowing_texture": "kubejs:block/omni_thermal_17_fluid_flow",
-                "bucket_texture": "kubejs:item/omni_thermal_17_fluid_bucket"
+                "flowing_texture": "kubejs:block/omni_thermal_17_fluid_flow"
             },
             "kubejs:omni_thermal_18_fluid": {
                 "name": "分馏精炼机构件液",
                 "branch": "thermal",
                 "color": "74cace",
                 "still_texture": "kubejs:block/omni_thermal_18_fluid_still",
-                "flowing_texture": "kubejs:block/omni_thermal_18_fluid_flow",
-                "bucket_texture": "kubejs:item/omni_thermal_18_fluid_bucket"
+                "flowing_texture": "kubejs:block/omni_thermal_18_fluid_flow"
             },
             "kubejs:omni_engineering_03_fluid": {
                 "name": "机械挤压构件液",
                 "branch": "engineering",
                 "color": "edb85d",
                 "still_texture": "kubejs:block/omni_engineering_03_fluid_still",
-                "flowing_texture": "kubejs:block/omni_engineering_03_fluid_flow",
-                "bucket_texture": "kubejs:item/omni_engineering_03_fluid_bucket"
+                "flowing_texture": "kubejs:block/omni_engineering_03_fluid_flow"
             },
             "kubejs:omni_engineering_20_fluid": {
                 "name": "低温燃料制备构件液",
                 "branch": "engineering",
                 "color": "edb85d",
                 "still_texture": "kubejs:block/omni_engineering_20_fluid_still",
-                "flowing_texture": "kubejs:block/omni_engineering_20_fluid_flow",
-                "bucket_texture": "kubejs:item/omni_engineering_20_fluid_bucket"
+                "flowing_texture": "kubejs:block/omni_engineering_20_fluid_flow"
             },
             "kubejs:omni_engineering_19_fluid": {
                 "name": "燃油精炼构件液",
                 "branch": "engineering",
                 "color": "edb85d",
                 "still_texture": "kubejs:block/omni_engineering_19_fluid_still",
-                "flowing_texture": "kubejs:block/omni_engineering_19_fluid_flow",
-                "bucket_texture": "kubejs:item/omni_engineering_19_fluid_bucket"
+                "flowing_texture": "kubejs:block/omni_engineering_19_fluid_flow"
             },
             "kubejs:omni_engineering_26_fluid": {
                 "name": "Naquadah 重液制备构件液",
                 "branch": "engineering",
                 "color": "edb85d",
                 "still_texture": "kubejs:block/omni_engineering_26_fluid_still",
-                "flowing_texture": "kubejs:block/omni_engineering_26_fluid_flow",
-                "bucket_texture": "kubejs:item/omni_engineering_26_fluid_bucket"
+                "flowing_texture": "kubejs:block/omni_engineering_26_fluid_flow"
             },
             "kubejs:omni_pneumatic_05_fluid": {
                 "name": "气动炼油构件液",
                 "branch": "pneumatic",
                 "color": "7fb1e8",
                 "still_texture": "kubejs:block/omni_pneumatic_05_fluid_still",
-                "flowing_texture": "kubejs:block/omni_pneumatic_05_fluid_flow",
-                "bucket_texture": "kubejs:item/omni_pneumatic_05_fluid_bucket"
+                "flowing_texture": "kubejs:block/omni_pneumatic_05_fluid_flow"
             },
             "kubejs:omni_pneumatic_06_fluid": {
                 "name": "热气动处理构件液",
                 "branch": "pneumatic",
                 "color": "7fb1e8",
                 "still_texture": "kubejs:block/omni_pneumatic_06_fluid_still",
-                "flowing_texture": "kubejs:block/omni_pneumatic_06_fluid_flow",
-                "bucket_texture": "kubejs:item/omni_pneumatic_06_fluid_bucket"
+                "flowing_texture": "kubejs:block/omni_pneumatic_06_fluid_flow"
             },
             "kubejs:omni_pneumatic_07_fluid": {
                 "name": "流体混合构件液",
                 "branch": "pneumatic",
                 "color": "7fb1e8",
                 "still_texture": "kubejs:block/omni_pneumatic_07_fluid_still",
-                "flowing_texture": "kubejs:block/omni_pneumatic_07_fluid_flow",
-                "bucket_texture": "kubejs:item/omni_pneumatic_07_fluid_bucket"
+                "flowing_texture": "kubejs:block/omni_pneumatic_07_fluid_flow"
             },
             "kubejs:omni_nuclear_05_fluid": {
                 "name": "核工熔融构件液",
                 "branch": "nuclear",
                 "color": "b3ce63",
                 "still_texture": "kubejs:block/omni_nuclear_05_fluid_still",
-                "flowing_texture": "kubejs:block/omni_nuclear_05_fluid_flow",
-                "bucket_texture": "kubejs:item/omni_nuclear_05_fluid_bucket"
+                "flowing_texture": "kubejs:block/omni_nuclear_05_fluid_flow"
             },
             "kubejs:omni_nuclear_07_fluid": {
                 "name": "核工提取构件液",
                 "branch": "nuclear",
                 "color": "b3ce63",
                 "still_texture": "kubejs:block/omni_nuclear_07_fluid_still",
-                "flowing_texture": "kubejs:block/omni_nuclear_07_fluid_flow",
-                "bucket_texture": "kubejs:item/omni_nuclear_07_fluid_bucket"
+                "flowing_texture": "kubejs:block/omni_nuclear_07_fluid_flow"
             },
             "kubejs:omni_nuclear_08_fluid": {
                 "name": "核工电解构件液",
                 "branch": "nuclear",
                 "color": "b3ce63",
                 "still_texture": "kubejs:block/omni_nuclear_08_fluid_still",
-                "flowing_texture": "kubejs:block/omni_nuclear_08_fluid_flow",
-                "bucket_texture": "kubejs:item/omni_nuclear_08_fluid_bucket"
+                "flowing_texture": "kubejs:block/omni_nuclear_08_fluid_flow"
             },
             "kubejs:omni_nuclear_10_fluid": {
                 "name": "核工化学反应构件液",
                 "branch": "nuclear",
                 "color": "b3ce63",
                 "still_texture": "kubejs:block/omni_nuclear_10_fluid_still",
-                "flowing_texture": "kubejs:block/omni_nuclear_10_fluid_flow",
-                "bucket_texture": "kubejs:item/omni_nuclear_10_fluid_bucket"
+                "flowing_texture": "kubejs:block/omni_nuclear_10_fluid_flow"
             },
             "kubejs:omni_nuclear_12_fluid": {
                 "name": "核工流体富集构件液",
                 "branch": "nuclear",
                 "color": "b3ce63",
                 "still_texture": "kubejs:block/omni_nuclear_12_fluid_still",
-                "flowing_texture": "kubejs:block/omni_nuclear_12_fluid_flow",
-                "bucket_texture": "kubejs:item/omni_nuclear_12_fluid_bucket"
+                "flowing_texture": "kubejs:block/omni_nuclear_12_fluid_flow"
             },
             "kubejs:omni_nuclear_13_fluid": {
                 "name": "核工离心构件液",
                 "branch": "nuclear",
                 "color": "b3ce63",
                 "still_texture": "kubejs:block/omni_nuclear_13_fluid_still",
-                "flowing_texture": "kubejs:block/omni_nuclear_13_fluid_flow",
-                "bucket_texture": "kubejs:item/omni_nuclear_13_fluid_bucket"
+                "flowing_texture": "kubejs:block/omni_nuclear_13_fluid_flow"
             },
             "kubejs:omni_nuclear_14_fluid": {
                 "name": "核工浸出构件液",
                 "branch": "nuclear",
                 "color": "b3ce63",
                 "still_texture": "kubejs:block/omni_nuclear_14_fluid_still",
-                "flowing_texture": "kubejs:block/omni_nuclear_14_fluid_flow",
-                "bucket_texture": "kubejs:item/omni_nuclear_14_fluid_bucket"
+                "flowing_texture": "kubejs:block/omni_nuclear_14_fluid_flow"
             },
             "kubejs:omni_nuclear_19_fluid": {
                 "name": "亚原子液化构件液",
                 "branch": "nuclear",
                 "color": "b3ce63",
                 "still_texture": "kubejs:block/omni_nuclear_19_fluid_still",
-                "flowing_texture": "kubejs:block/omni_nuclear_19_fluid_flow",
-                "bucket_texture": "kubejs:item/omni_nuclear_19_fluid_bucket"
+                "flowing_texture": "kubejs:block/omni_nuclear_19_fluid_flow"
             },
             "kubejs:omni_nuclear_21_fluid": {
                 "name": "核工辐照构件液",
                 "branch": "nuclear",
                 "color": "b3ce63",
                 "still_texture": "kubejs:block/omni_nuclear_21_fluid_still",
-                "flowing_texture": "kubejs:block/omni_nuclear_21_fluid_flow",
-                "bucket_texture": "kubejs:item/omni_nuclear_21_fluid_bucket"
+                "flowing_texture": "kubejs:block/omni_nuclear_21_fluid_flow"
             },
             "kubejs:omni_nuclear_17_fluid": {
                 "name": "气体洗涤构件液",
                 "branch": "nuclear",
                 "color": "b3ce63",
                 "still_texture": "kubejs:block/omni_nuclear_17_fluid_still",
-                "flowing_texture": "kubejs:block/omni_nuclear_17_fluid_flow",
-                "bucket_texture": "kubejs:item/omni_nuclear_17_fluid_bucket"
+                "flowing_texture": "kubejs:block/omni_nuclear_17_fluid_flow"
             },
             "kubejs:omni_nuclear_18_fluid": {
                 "name": "核工超冷构件液",
                 "branch": "nuclear",
                 "color": "b3ce63",
                 "still_texture": "kubejs:block/omni_nuclear_18_fluid_still",
-                "flowing_texture": "kubejs:block/omni_nuclear_18_fluid_flow",
-                "bucket_texture": "kubejs:item/omni_nuclear_18_fluid_bucket"
+                "flowing_texture": "kubejs:block/omni_nuclear_18_fluid_flow"
             },
             "kubejs:omni_nuclear_24_fluid": {
                 "name": "核聚变构件液",
                 "branch": "nuclear",
                 "color": "b3ce63",
                 "still_texture": "kubejs:block/omni_nuclear_24_fluid_still",
-                "flowing_texture": "kubejs:block/omni_nuclear_24_fluid_flow",
-                "bucket_texture": "kubejs:item/omni_nuclear_24_fluid_bucket"
+                "flowing_texture": "kubejs:block/omni_nuclear_24_fluid_flow"
             },
             "kubejs:omni_nuclear_26_fluid": {
                 "name": "核工换热构件液",
                 "branch": "nuclear",
                 "color": "b3ce63",
                 "still_texture": "kubejs:block/omni_nuclear_26_fluid_still",
-                "flowing_texture": "kubejs:block/omni_nuclear_26_fluid_flow",
-                "bucket_texture": "kubejs:item/omni_nuclear_26_fluid_bucket"
+                "flowing_texture": "kubejs:block/omni_nuclear_26_fluid_flow"
             },
             "kubejs:omni_nuclear_27_fluid": {
                 "name": "裂变沸腾构件液",
                 "branch": "nuclear",
                 "color": "b3ce63",
                 "still_texture": "kubejs:block/omni_nuclear_27_fluid_still",
-                "flowing_texture": "kubejs:block/omni_nuclear_27_fluid_flow",
-                "bucket_texture": "kubejs:item/omni_nuclear_27_fluid_bucket"
+                "flowing_texture": "kubejs:block/omni_nuclear_27_fluid_flow"
             },
             "kubejs:omni_nuclear_28_fluid": {
                 "name": "大型涡轮构件液",
                 "branch": "nuclear",
                 "color": "b3ce63",
                 "still_texture": "kubejs:block/omni_nuclear_28_fluid_still",
-                "flowing_texture": "kubejs:block/omni_nuclear_28_fluid_flow",
-                "bucket_texture": "kubejs:item/omni_nuclear_28_fluid_bucket"
+                "flowing_texture": "kubejs:block/omni_nuclear_28_fluid_flow"
             },
             "kubejs:omni_nuclear_29_fluid": {
                 "name": "小型蒸汽涡轮构件液",
                 "branch": "nuclear",
                 "color": "b3ce63",
                 "still_texture": "kubejs:block/omni_nuclear_29_fluid_still",
-                "flowing_texture": "kubejs:block/omni_nuclear_29_fluid_flow",
-                "bucket_texture": "kubejs:item/omni_nuclear_29_fluid_bucket"
+                "flowing_texture": "kubejs:block/omni_nuclear_29_fluid_flow"
             },
             "kubejs:omni_thermal_20_brew": {
                 "name": "相变抑制酿液",
                 "branch": "thermal",
                 "color": "74cace",
                 "still_texture": "kubejs:block/omni_thermal_20_brew_still",
-                "flowing_texture": "kubejs:block/omni_thermal_20_brew_flow",
-                "bucket_texture": "kubejs:item/omni_thermal_20_brew_bucket"
+                "flowing_texture": "kubejs:block/omni_thermal_20_brew_flow"
             },
             "kubejs:omni_nuclear_20_melt": {
                 "name": "稳定同位素熔体",
                 "branch": "nuclear",
                 "color": "b3ce63",
                 "still_texture": "kubejs:block/omni_nuclear_20_melt_still",
-                "flowing_texture": "kubejs:block/omni_nuclear_20_melt_flow",
-                "bucket_texture": "kubejs:item/omni_nuclear_20_melt_bucket"
+                "flowing_texture": "kubejs:block/omni_nuclear_20_melt_flow"
             },
             "kubejs:omni_fusion_feed": {
                 "name": "聚变氘载液",
                 "branch": "nuclear",
                 "color": "b3ce63",
                 "still_texture": "kubejs:block/omni_fusion_feed_still",
-                "flowing_texture": "kubejs:block/omni_fusion_feed_flow",
-                "bucket_texture": "kubejs:item/omni_fusion_feed_bucket"
+                "flowing_texture": "kubejs:block/omni_fusion_feed_flow"
             }
         }
     },
@@ -2284,8 +2252,8 @@ StartupEvents.registry('fluid', event => {
     let catalog = global.sdbfOmniAlloy.registrations.fluids;
     Object.keys(catalog).forEach(id => {
         let spec = catalog[id];
-        let fluid = event.create(id).stillTexture(spec.still_texture)
+        event.create(id).stillTexture(spec.still_texture)
             .flowingTexture(spec.flowing_texture).color(0xFFFFFF).bucketColor(0xFFFFFF);
-        fluid.bucketItem.parentModel('minecraft:item/generated').texture(spec.bucket_texture);
+        // Bucket models use forge:fluid_container (assets/kubejs/models/item/*_bucket.json).
     });
 });

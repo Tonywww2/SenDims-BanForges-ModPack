@@ -43,6 +43,11 @@
 			hide_dependent_lines: true
 			id: "1BF032EC08E31ABB"
 			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "5CB8E8E0D5D453F9"
+				item: "minecraft:dragon_head"
+				type: "item"
+			}]
 			size: 2.0d
 			tasks: [{
 				dimension: "sdbf:inside_the_end"
@@ -483,6 +488,7 @@
 			]
 			id: "10FB1898FA8701EE"
 			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
 			tasks: [{
 				icon: "draconicevolution:infused_obsidian"
 				id: "1D623A277268287A"

@@ -39,6 +39,20 @@ ItemEvents.tooltip(event => {
     event.add('#slashblade:can_copy_sa', Text.translatable('info.kubejs.slashblade.can_copy_sa').color(Color.AQUA));
     event.add('#slashblade:can_copy_se', Text.translatable('info.kubejs.slashblade.can_copy_se').color(Color.AQUA));
 
+    event.addAdvanced('#slashblade:proudsouls', (item, advanced, text) => {
+        // 精炼与附魔能力共用这个值，读取实际值以兼容特供补丁和配置。
+        let materialLevel = item.getEnchantmentValue();
+        if (materialLevel < 0) {
+            return;
+        }
+
+        let refineLimit = Math.max(5, materialLevel);
+        let limitText = refineLimit === 2147483647
+            ? Text.translatable('info.kubejs.slashblade.refine_unlimited')
+            : Text.of(String(refineLimit));
+        text.add(Text.translatable('info.kubejs.slashblade.refine_material_cap', limitText).color(Color.AQUA));
+    });
+
     event.add("powerful_dummy:dummy_stand", Text.translatable('info.kubejs.dummy_stand').color(Color.AQUA))
 
     event.add('kubejs:anchor_shard', Text.translatable('info.kubejs.anchor_shard').color(Color.AQUA));
@@ -51,6 +65,7 @@ ItemEvents.tooltip(event => {
     event.add('tofucraft:blocktofugrilled', Text.translatable('info.kubejs.blocktofugrilled').color(Color.AQUA));
     event.add('ad_astra:moon_stone', Text.translatable('info.kubejs.moon_stone').color(Color.AQUA));
     event.add('ad_astra:moon_cobblestone', Text.translatable('info.kubejs.moon_cobblestone').color(Color.AQUA));
+    event.add('ad_astra_giselle_addon:oxygen_can', Text.translatable('info.kubejs.oxygen_can_hot_planets').color(Color.RED));
     event.add('thermal:steel_ingot', Text.translatable('info.kubejs.steel_ingot').color(Color.AQUA));
     event.add('kubejs:high_carbon_iron_dust', Text.translatable('info.kubejs.high_carbon_iron_dust').color(Color.AQUA));
     event.add([

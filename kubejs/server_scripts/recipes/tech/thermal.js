@@ -51,7 +51,7 @@ ServerEvents.recipes(event => {
         'ACA',
         'BA '
     ], {
-        A: ['ad_astra:desh_cable', "nuclearcraft:plate_basic"],
+        A: ['ad_astra:desh_cable', "nuclearcraft:plate_basic", "nuclearcraft:uranium_235"],
         B: '#forge:storage_blocks/redstone',
         C: '#forge:ingots/gold'
     }).id('sdbf:thermal_rf_coil')

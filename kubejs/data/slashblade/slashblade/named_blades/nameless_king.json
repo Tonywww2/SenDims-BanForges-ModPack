@@ -25,7 +25,7 @@
     "name": "slashblade:nameless_king",
     "properties":
     {
-        "attack_base": 55.0,
+        "attack_base": 107.0,
         "max_damage": 120,
         "slash_art": "slashblade_sendims:nameless_threefold",
         "special_effects":

@@ -28,7 +28,8 @@
         ],
         "count": 1
       },
-      "materialSlot": 1
+      "materialSlot": 1,
+      "hidden": true
     }
   ]
 }

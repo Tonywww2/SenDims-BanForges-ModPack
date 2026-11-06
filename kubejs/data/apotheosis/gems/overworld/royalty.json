@@ -1,7 +1,7 @@
 {
 	"weight": 5,
 	"quality": 1.5,
-	"dimensions": ["minecraft:overworld"],
+	"dimensions": ["minecraft:overworld", "deeprealm_4th:fourth_layer"],
 	"unique": true,
 	"min_rarity": "rare",
 	"bonuses": [{

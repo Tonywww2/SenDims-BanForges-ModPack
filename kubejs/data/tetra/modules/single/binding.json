@@ -9,8 +9,11 @@
             "materials": [ "tetra:fibre/", "tetra:skin/" ],
             "key": "single_binding/",
             "extract": {
+                "tertiaryAttributes": {
+                    "generic.attack_speed": 0.004
+                },
                 "secondaryAttributes": {
-                    "generic.attack_speed": -0.1
+                    "generic.attack_speed": -0.002
                 },
                 "durability": 0.1,
                 "integrity": 0.7,

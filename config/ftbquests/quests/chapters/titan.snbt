@@ -47,7 +47,7 @@
 			dependency_requirement: "one_completed"
 			description: [
 				"前往&e土卫六&r有两条途径："
-				"1. 在地球上考古，寻找&b被埋藏的星门&r，在&e星门&r之后的各个世界之中挑战他们对应的&b怪潮传送门&r，收集&b星图碎片&r，并最终抵达&e土卫六&r。"
+				"1. 在地球上考古，寻找&b被埋藏的星门&r，在&e星门&r之后的各个世界之中挑战他们对应的&b怪潮传送门&r，收集&b星图碎片&r，并最终抵达&e土卫六&r。&e土卫六&r的星图碎片可以通过其他星图碎片合成。"
 				""
 				"2. 发展工业，制作&b六阶火箭&r，前往&e土卫六&r。"
 				""
@@ -122,6 +122,7 @@
 		}
 		{
 			dependencies: ["37CF7606A44B5357"]
+			description: ["陨铁可以在撞击陨坑荒原发现。"]
 			id: "432FF7D115B1787E"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -455,7 +456,6 @@
 			dependencies: ["2E3E9722D50C0D8A"]
 			id: "5FDFB60B3DDCA8B7"
 			quest_enhance_disable_scroll_paging: false
-			shape: "pentagon"
 			size: 1.5d
 			tasks: [{
 				id: "04FAEA2809DDCF7A"
