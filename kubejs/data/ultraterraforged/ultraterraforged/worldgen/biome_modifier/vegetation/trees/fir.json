@@ -1,0 +1,8 @@
+{
+  "type": "ultraterraforged:replace",
+  "biomes": "#ultraterraforged:features/has_fir_forest_trees",
+  "replacements": {
+    "minecraft:trees_windswept_forest": "ultraterraforged:fir_trees"
+  },
+  "step": "vegetal_decoration"
+}

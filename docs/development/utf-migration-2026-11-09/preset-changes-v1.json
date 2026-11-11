@@ -1,0 +1,157 @@
+[
+  {
+    "parameter": "world.properties.worldHeight",
+    "before": 512,
+    "after": 320
+  },
+  {
+    "parameter": "world.continent.continentScale",
+    "before": 3000,
+    "after": 4800
+  },
+  {
+    "parameter": "world.continent.continentSizeVariance",
+    "before": 0.25,
+    "after": 0.2
+  },
+  {
+    "parameter": "world.continent.continentSkipping",
+    "before": 0.25,
+    "after": 0.2
+  },
+  {
+    "parameter": "terrain.general.terrainRegionSize",
+    "before": 1200,
+    "after": 1600
+  },
+  {
+    "parameter": "terrain.general.globalHorizontalScale",
+    "before": 1,
+    "after": 1.25
+  },
+  {
+    "parameter": "terrain.mountains.horizontalScale",
+    "before": 1,
+    "after": 1.15
+  },
+  {
+    "parameter": "terrain.hills.horizontalScale",
+    "before": 1,
+    "after": 1.1
+  },
+  {
+    "parameter": "climate.biomeShape.biomeSize",
+    "before": 225,
+    "after": 300
+  },
+  {
+    "parameter": "climate.biomeShape.biomeWarpStrength",
+    "before": 80,
+    "after": 60
+  },
+  {
+    "parameter": "rivers.riverCount",
+    "before": 8,
+    "after": 10
+  },
+  {
+    "parameter": "rivers.mainRivers.bedWidth",
+    "before": 8,
+    "after": 10
+  },
+  {
+    "parameter": "rivers.mainRivers.bankWidth",
+    "before": 20,
+    "after": 26
+  },
+  {
+    "parameter": "rivers.branchRivers.bedWidth",
+    "before": 5,
+    "after": 6
+  },
+  {
+    "parameter": "rivers.branchRivers.bankWidth",
+    "before": 14,
+    "after": 18
+  },
+  {
+    "parameter": "rivers.gorgeDepth",
+    "before": 32,
+    "after": 24
+  },
+  {
+    "parameter": "rivers.lakes.chance",
+    "before": 0.3,
+    "after": 0.24
+  },
+  {
+    "parameter": "rivers.lakes.sizeMin",
+    "before": 75,
+    "after": 100
+  },
+  {
+    "parameter": "rivers.lakes.sizeMax",
+    "before": 150,
+    "after": 200
+  },
+  {
+    "parameter": "coasts.coastalIslands.frequency",
+    "before": 0.5,
+    "after": 0.3
+  },
+  {
+    "parameter": "coasts.peninsulas.frequency",
+    "before": 0.5,
+    "after": 0.4
+  },
+  {
+    "parameter": "coasts.peninsulas.size",
+    "before": 1,
+    "after": 1.25
+  },
+  {
+    "parameter": "coasts.skerries.density",
+    "before": 0.5,
+    "after": 0.3
+  },
+  {
+    "parameter": "coasts.islandArcs.frequency",
+    "before": 0.3,
+    "after": 0.2
+  },
+  {
+    "parameter": "landforms.atolls.frequency",
+    "before": 0.35,
+    "after": 0.25
+  },
+  {
+    "parameter": "oceans.shelves.width",
+    "before": 1,
+    "after": 1.25
+  },
+  {
+    "parameter": "caveFeatures.giantCaverns.frequency",
+    "before": 0.3,
+    "after": 0.42
+  },
+  {
+    "parameter": "caveFeatures.layerCaves.frequency",
+    "before": 0.4,
+    "after": 0.5
+  },
+  {
+    "parameter": "caveFeatures.undergroundRivers.frequency",
+    "before": 0.4,
+    "after": 0.48
+  },
+  {
+    "parameter": "caveFeatures.karstCaves.size",
+    "before": 1,
+    "after": 1.15
+  },
+  {
+    "parameter": "miscellaneous.customBiomeFeatures",
+    "before": true,
+    "after": false
+  }
+]

@@ -492,6 +492,7 @@
 		}
 		{
 			dependencies: ["5CBF48D154C47731"]
+			description: ["具体请见JEI"]
 			icon: "botania:cosmetic_questgiver_mark"
 			id: "25C3CC3EE3A3DC7B"
 			quest_enhance_disable_scroll_paging: false
@@ -514,6 +515,26 @@
 			}]
 			x: 12.0d
 			y: 3.0d
+		}
+		{
+			dependencies: ["5CBF48D154C47731"]
+			description: [
+				"大多数的基础资源（钻石、下界合金碎片、龙锭等）都可以通过蜜蜂获取。"
+				""
+				"详细请见JEI搜索对应的蜜蜂。"
+			]
+			icon: "minecraft:netherite_scrap"
+			id: "1F0B4E7091A16374"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "6423DE8AC2142691"
+				type: "checkmark"
+			}]
+			title: "高级蜜蜂"
+			x: 12.0d
+			y: 12.0d
 		}
 	]
 	title: "蜜蜂养殖"

@@ -1,0 +1,19 @@
+{
+  "type": "ultraterraforged:add",
+  "input1": {
+    "type": "ultraterraforged:multiply",
+    "input1": {
+      "type": "ultraterraforged:shift",
+      "input": {
+        "type": "ultraterraforged:worley_edge",
+        "distance": 1.0,
+        "distance_function": "EUCLIDEAN",
+        "edge_function": "DISTANCE_2_SUB",
+        "frequency": 0.14285715
+      },
+      "shift": 4133
+    },
+    "input2": -1.0
+  },
+  "input2": 1.0
+}

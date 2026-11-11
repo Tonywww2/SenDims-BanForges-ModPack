@@ -109,7 +109,8 @@
 		],
 		[
 			"minecraft:amethyst_geode",
-			"cavernous:generic/big_geode"
+			"cavernous:generic/big_geode",
+			"sdbf:deep_realm_1/upper/amethyst_geode"
 		],
 		[],
 		[],
@@ -136,9 +137,9 @@
 			"cavernous:generic/ores/special/copper_chunk"
 		],
 		[
-			
 			"cavernous:biomes/thermal/volcanic/basalt_patch",
-			"minecraft:glow_lichen"
+			"minecraft:glow_lichen",
+			"sdbf:deep_realm_1/upper/glow_lichen"
 		],
 		[
 			"minecraft:freeze_top_layer",

@@ -1,0 +1,82 @@
+{
+  "date": "2026-11-10",
+  "layerCaves": {
+    "enabled": true,
+    "frequency": 0.1,
+    "baseLayerY": [
+      -48,
+      -26,
+      -4,
+      18,
+      40
+    ],
+    "tiltRange": [
+      -8,
+      8
+    ],
+    "maxCarvedYApprox": 52,
+    "surfaceRoofMinimum": 12,
+    "hotaiPatch": "hotai/com/pandaismyname1/ultraterraforged/world/worldgen/cave/LayerCaves.badiff"
+  },
+  "snowFinding": {
+    "savedWorld": "saves/nnst",
+    "sampleBounds": {
+      "minX": 3100,
+      "maxX": 3220,
+      "minZ": -610,
+      "maxZ": -450
+    },
+    "snowBlockCountsByBiome": {
+      "minecraft:cherry_grove": 15,
+      "terralith:rocky_mountains": 572
+    },
+    "terralithBiomeTemperature": 0.3,
+    "terralithBiomeHasPrecipitation": false,
+    "removedForcedSnowFeatures": [
+      "terralith:mountains/rocky/snow",
+      "terralith:mountains/rocky/funny_snow",
+      "terralith:mountains/rocky/funny_snow_segwit_2x"
+    ],
+    "source": "mods/Terralith_1.20.x_v2.5.4.jar",
+    "interpretation": "Saved snow-bearing columns near the screenshot predominantly belong to terralith:rocky_mountains. Its raw-generation snow features directly place snow and lack a temperature predicate."
+  },
+  "patchVerification": "Original class SHA-256 342e6de929af6f9ab16407408003234136630f059f7bbfd4f1234360308b40b2\nPatched class SHA-256 61fc2b64a2c6a34ecd144edc5ab958115604f92d7e78f9271a3b20cc1b8fbce7\nFive base layers at -48, -26, -4, 18, 40, with native +/-8 block tilt.\nMaximum carved Y is approximately 52. Surface roof checks use 12 blocks.\nNative 2-5 block cavity height and horizontal noise remain in use.\nASM bytecode verification and native HotAI conversion/restart round-trip passed.\n",
+  "validation": "ASM bytecode verification, HotAI first-load and restart round-trip, JSON equality, target feature IDs and generation stage, package hashes, and PowerShell installer syntax. Visual validation requires newly generated chunks.",
+  "backup": "C:\\Users\\Tony\\AppData\\Roaming\\PrismLauncher\\instances\\SenDimsBanForges\\minecraft\\.sdbf-backups\\utf-layer-snow-2026-11-10",
+  "previousPackageSha256": "fd5a08c79a37a1723830d43cb921a5bf4dbb9b7855bc78bc97f90ecd9c69d06c",
+  "package": "C:\\Users\\Tony\\AppData\\Roaming\\PrismLauncher\\instances\\SenDimsBanForges\\minecraft\\docs\\releases\\SDBF-Update-2026-11-08.zip",
+  "packageSha256": "9454cbc41ce0e9c4b0c68fa4433ec710e342535b162ea5dabc79a596d4239833",
+  "packageRuntimeFiles": 266,
+  "files": [
+    {
+      "path": "config/ultraterraforged/server-preset.json",
+      "beforeSha256": "00f28ce8fd251b54650b92b13b1ddd184005619d1dae9fc0acd4474b73874100",
+      "sha256": "15d32c816a22270fa4dea9fa50a4689a7241fd12a701f5cfcfe21bfba94e47ac",
+      "size": 8227
+    },
+    {
+      "path": "config/ultraterraforged/modpack-presets/SDBF_Continental.json",
+      "beforeSha256": "00f28ce8fd251b54650b92b13b1ddd184005619d1dae9fc0acd4474b73874100",
+      "sha256": "15d32c816a22270fa4dea9fa50a4689a7241fd12a701f5cfcfe21bfba94e47ac",
+      "size": 8227
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/ultraterraforged/worldgen/preset/preset.json",
+      "beforeSha256": "00f28ce8fd251b54650b92b13b1ddd184005619d1dae9fc0acd4474b73874100",
+      "sha256": "15d32c816a22270fa4dea9fa50a4689a7241fd12a701f5cfcfe21bfba94e47ac",
+      "size": 8227
+    },
+    {
+      "path": "hotai/com/pandaismyname1/ultraterraforged/world/worldgen/cave/LayerCaves.badiff",
+      "beforeSha256": null,
+      "sha256": "559bc61069b2724bf4922453f83f393e73025f14b041fdd08cb6dd7d11cf311b",
+      "size": 395
+    },
+    {
+      "path": "kubejs/data/sdbf/forge/biome_modifier/utf_remove_rocky_mountains_forced_snow.json",
+      "beforeSha256": null,
+      "sha256": "3843aaaffee2646929c079177a1d589855af326d16d0d93b18632ddf0841345f",
+      "size": 274
+    }
+  ]
+}

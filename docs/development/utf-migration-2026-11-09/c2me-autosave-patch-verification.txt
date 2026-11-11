@@ -1,0 +1,4 @@
+JAR e73681883b2c867049800f8b2f7bdcbbbda6c9a44eb5e165c0513914364abfc6
+Original ecff4d4c25cc5e514e8a55e77ef2f391ddaad5f25616f40d43688898abbd89b5
+Patched 186509ddf1695136e4cb5910e79da4178e799e52db8d74aefc245dbb4df78beb
+Save and future callbacks execute outside dirty-queue monitor.

@@ -1,25 +1,26 @@
+# SDBF worker cap uses at most half the logical processors, with a minimum of one.
 version = 3
 # (Default: 
-#    max(
-#        1,
-#        min(
-#            if( is_windows,
-#                (cpus / 1.6 - 2),
-#                (cpus / 1.2 - 2)
-#            ),
-#            if( is_j9vm,
-#                ( ( mem_gb - (if(is_client, 0.6, 0.2)) ) / 0.5 ),
-#                ( ( mem_gb - (if(is_client, 1.2, 0.6)) ) / 1.2 )
-#            )
-#        ) - if(is_client, 2, 0)
-#    )
-# )  
+#   max(
+#       1,
+#       min(
+#           if( max(0, 9 - cpus),
+#               cpus,
+#               (cpus * 0.85) - if(is_client, 1, 0)
+#           ),
+#           if( is_j9vm,
+#               ( ( mem_gb - (if(is_client, 1.0, 0.6)) ) / 0.35 ),
+#               ( ( mem_gb - (if(is_client, 1.5, 1.0)) ) / 0.6 )
+#           )
+#       )
+#   )
+#)  
 #  The expression for the default value of global executor parallelism. 
 #  This is used when the parallelism isn't overridden.
 #  Available variables: is_windows, is_j9vm, is_client, cpus, mem_gb
 # 
-defaultGlobalExecutorParallelismExpression = "default"
-# (Default: 7) Configures the parallelism of global executor
+defaultGlobalExecutorParallelismExpression = "max(1, min(4, cpus / 2))"
+# (Default: 4) Configures the parallelism of global executor
 globalExecutorParallelism = "default"
 
 [fixes]
@@ -44,21 +45,38 @@ globalExecutorParallelism = "default"
 	disableLoggingShutdownHook = "default"
 
 [ioSystem]
-	# (Default: false) EXPERIMENTAL FEATURE
-	# This replaces the way your chunks are saved.
-	# Please keep regular backups of your world if you are using this feature,
-	# and report any world issues you encounter with this feature to our GitHub.
-	# 
-	# Whether to use the fast reduced allocation chunk serializer
-	# (may cause incompatibility with other mods)
+	# (Default: false) EXPERIMENTAL FEATURE - DISABLED since forge.9.8, this setting is ignored.
+	# The fast chunk serializer writes half-generated chunks incorrectly: a chunk that is still
+	# being generated when you leave the world comes back with different terrain, which shows as
+	# hard seams and ridges at the edge of the area you had explored. It stays off until fixed.
 	# 
 	# Set to false for the following reasons: 
 	# Incompatible with architectury@9.2.14 (*) (defined in c2me) 
-	gcFreeChunkSerializer = "default"
+	gcFreeChunkSerializer = false
 	# (Default: true) Whether to use the optimized implementation of IO system
 	replaceImpl = "default"
 	# (Default: true) Whether to use async chunk loading & unloading
 	async = "default"
+	# (Default: 8192) Soft limit for io worker nbt cache
+	chunkDataCacheSoftLimit = "default"
+	# (Default: 32678) Hard limit for io worker nbt cache
+	chunkDataCacheLimit = "default"
+	# (Default: -1) Defines which chunk compression should be used 
+	# -1 for Vanilla default  
+	# 1  for GZip (RFC1952) (Vanilla compatible) 
+	# 2  for Zlib (RFC1950) (Vanilla default) (Vanilla compatible) 
+	# 3  for Uncompressed (Fastest, but higher disk usage) (Vanilla compatible) 
+	#  
+	# Original chunk data will still readable after modifying this option  
+	# as this option only affects newly stored chunks 
+	# Invalid values will fall back to vanilla default 
+	# 
+	chunkStreamVersion = "default"
+	# (Default: false) Whether to recover from errors when loading chunks 
+	#  This will cause errored chunk to be regenerated entirely, which may cause data loss 
+	#  Only applies when async chunk loading is enabled
+	# 
+	recoverFromErrors = "default"
 
 [generalOptimizations]
 	# (Default: 100000) The task interval of mid-tick chunk tasks in nanoseconds (-1 to disable)  
@@ -90,8 +108,9 @@ globalExecutorParallelism = "default"
 
 [noTickViewDistance]
 	# (Default: true) Whether to enable no-tick view distance
-	enabled = "default"
-	# (Default: 8) No-tick view distance max concurrent chunk loads 
+	# (switched off automatically with Valkyrien Skies, whose ship physics needs ticking-ready chunks)
+	enabled = false
+	# (Default: 5) No-tick view distance max concurrent chunk loads 
 	#  Lower this for a better latency and higher this for a faster loading
 	maxConcurrentChunkLoads = "default"
 	# (Default: true) Whether to use compatibility mode to send chunks 
@@ -115,10 +134,46 @@ globalExecutorParallelism = "default"
 	# (may cause incompatibility with other mods)
 	# 
 	asyncScheduling = "default"
+	# (Default: fr.meulti.mbackrooms) Chunk generators whose generation steps run one chunk at a time within their dimension. 
+	# Comma-separated list of class-name prefixes (a mod's package is enough); "none" disables it. 
+	# Every generator not listed here (vanilla, Forge, other mods) still runs fully parallel. 
+	# For custom-dimension mods whose generator keeps shared state that is not thread-safe, which 
+	# crashes with ArrayIndexOutOfBoundsException / ConcurrentModificationException inside that mod 
+	# once several of its chunks generate at the same time. Meulti's Backrooms keeps its big-room 
+	# map in a plain hash map and writes it from the surface step, so it is listed by default. 
+	# 
+	serializedChunkGenerators = "default"
 
 [clientSideConfig]
 
 	[clientSideConfig.modifyMaxVDConfig]
 		# (Default: 68) Max render distance allowed in game options
 		maxViewDistance = "default"
+
+[vanillaWorldGenOptimizations]
+	# (Default: true) Whether to enable aquifer optimizations to accelerate overworld worldgen
+	# (may cause incompatibility with other mods)
+	optimizeAquifer = "default"
+	# (Default: true) Whether to enable End Biome Cache to accelerate The End worldgen 
+	# This is no longer included in lithium-fabric 
+	# (may cause incompatibility with other mods)
+	# 
+	useEndBiomeCache = "default"
+	# (Default: true) Whether to compile the terrain-shape functions (density functions) to fast code.
+	# The terrain is the same either way; set to false to rule it out when looking for a worldgen problem.
+	# -Dc2me.dfc.enabled=false does the same.
+	# 
+	densityCompiler = "default"
+	# (Default: true) Whether to skip or bulk-fill noise cells whose blocks are proven in advance (all sky, or all the default block).
+	# Switches itself off when another mod hooks what such a cell skips. -Dc2me.cellproof.enabled=false does the same.
+	# 
+	cellProofs = "default"
+	# (Default: true) Whether to reuse the parts of the terrain-shape functions that no chunk changes, instead of rebuilding them for
+	# every chunk. -Dc2me.puremap.puremap=false does the same.
+	# 
+	reuseDensityFunctions = "default"
+	# (Default: true) Whether surface rules place their blocks through a shortcut of vanilla's chunk write (same blocks and heightmaps).
+	# -Dc2me.surface.enabled=false does the same.
+	# 
+	surfaceFastPath = "default"
 

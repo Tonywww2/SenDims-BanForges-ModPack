@@ -25,12 +25,11 @@
   },
   "features": [
     [
-      "infinity_cave:depths_63",
-      "infinity_cave:depths_79",
-      "infinity_cave:depths_95",
-      "infinity_cave:depths_111",
-      "infinity_cave:depths_127",
-      "infinity_cave:spawning"
+      "sdbf:deep_realm_1/depths_63",
+      "sdbf:deep_realm_1/depths_79",
+      "sdbf:deep_realm_1/depths_95",
+      "sdbf:deep_realm_1/depths_111",
+      "sdbf:deep_realm_1/depths_127"
     ],
     [],
     [
@@ -72,21 +71,20 @@
       "minecraft:disk_sand",
       "minecraft:disk_clay",
       "minecraft:disk_gravel",
-      "infinity_cave:generic/delta",
-      "infinity_cave:generic/rock",
-      "infinity_cave:generic/pillar",
-      "infinity_cave:generic/big_pillar",
-      "infinity_cave:generic/small_pillar",
-      "infinity_cave:generic/ores/iron",
-      "infinity_cave:generic/ores/copper",
-      "infinity_cave:generic/pile",
-      "infinity_cave:generic/ceiling",
-      "infinity_cave:generic/replace"
+      "sdbf:deep_realm_1/generic/delta",
+      "sdbf:deep_realm_1/generic/rock",
+      "sdbf:deep_realm_1/generic/pillar",
+      "sdbf:deep_realm_1/generic/big_pillar",
+      "sdbf:deep_realm_1/generic/small_pillar",
+      "sdbf:deep_realm_1/generic/ores/iron",
+      "sdbf:deep_realm_1/generic/ores/copper",
+      "sdbf:deep_realm_1/generic/pile",
+      "sdbf:deep_realm_1/generic/ceiling"
     ],
     [
       "minecraft:sculk_vein",
       "minecraft:sculk_patch_deep_dark",
-      "infinity_cave:deep_dark/patch_floor"
+      "sdbf:deep_realm_1/deep_dark/patch_floor"
     ],
     [],
     [

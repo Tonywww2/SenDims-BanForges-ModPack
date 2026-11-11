@@ -1,0 +1,8 @@
+enabled = true
+optimizeDroppedItems = true
+physicalDroppedItems = false
+skipVisibilityChecks = true
+#CPU cache update budget per frame in milliseconds. 0 updates immediately; a single item can exceed the budget.
+#Range: 0.0 ~ 20.0
+cacheUpdateBudgetMs = 2.0
+

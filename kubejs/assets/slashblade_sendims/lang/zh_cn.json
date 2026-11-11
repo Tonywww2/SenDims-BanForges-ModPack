@@ -37,7 +37,7 @@
   "se.slashblade_sendims.nameless_se_faded.desc": "一段时间内未命中敌人时，下次攻击命中会修正刀的剩余耐久。\n剩余耐久较高时会降低，较低时会恢复，使其维持在一定区间内。",
   "se.slashblade_sendims.nameless_se_sovereignty.desc": "攻击命中时，将目标记入§b王之名录§r，名录不会重复记录同一目标。\n每隔一段时间，依据名录中的敌人数量积累§b王威§r并清空名录。积累到一定程度后，消耗充能并恢复一定比例的最大行动力。",
   "se.slashblade_sendims.nameless_se_sovereignty_ex.desc": "强化§b王威§r，降低触发所需的充能，并提高恢复的行动力。\n攻击命中时记录目标，定期依据名录中的敌人数量积累充能。充能充足时，消耗充能并恢复一定比例的最大行动力。",
-  "se.slashblade_sendims.nameless_se_storm.desc": "成功释放SA时，获得短时间的§3风暴穿透§r，提高魔法穿透。\n同时对锁定目标降下雷击，造成闪电伤害。没有锁定目标时，选择附近最近的敌人。",
+  "se.slashblade_sendims.nameless_se_storm.desc": "成功释放SA时，获得短时间的§3风暴穿透§r，提高攻击力。\n同时对锁定目标降下雷击，造成闪电伤害。没有锁定目标时，选择附近最近的敌人。",
   "se.slashblade_sendims.nameless_se_suppression.desc": "攻击命中精英或首领时，基于本次伤害附带一定比例的真实伤害。",
   "se.slashblade_sendims.nameless_se_crownless.desc": "解除§7褪名§r对耐久的限制，使§b王威§r进化为§6王威·极§r，提高行动力恢复能力。",
   "slash_art.slashblade_sendims.caliburn.desc": "凝聚黄金之光，先横扫前方，随后纵斩释放强力的黄金剑气，对前方的敌人造成物理伤害。",

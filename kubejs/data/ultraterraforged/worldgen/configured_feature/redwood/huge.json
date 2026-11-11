@@ -1,0 +1,52 @@
+{
+  "type": "ultraterraforged:template",
+  "config": {
+    "decorator": {
+      "biome_decorators": {},
+      "default_decorators": [
+        {
+          "type": "ultraterraforged:tree",
+          "decorator": {
+            "type": "minecraft:alter_ground",
+            "provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:podzol",
+                "Properties": {
+                  "snowy": "false"
+                }
+              }
+            }
+          },
+          "modified_decorator": {
+            "type": "minecraft:alter_ground",
+            "provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:podzol",
+                "Properties": {
+                  "snowy": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "paste": {
+      "base_depth": 3,
+      "check_bounds": true
+    },
+    "placement": {
+      "type": "ultraterraforged:tree"
+    },
+    "templates": [
+      "ultraterraforged:structures/trees/redwood/huge/redwood_massive_1.nbt",
+      "ultraterraforged:structures/trees/redwood/huge/redwood_massive_2.nbt",
+      "ultraterraforged:structures/trees/redwood/huge/redwood_massive_3.nbt",
+      "ultraterraforged:structures/trees/redwood/huge/redwood_massive_4.nbt",
+      "ultraterraforged:structures/trees/redwood/huge/redwood_massive_5.nbt",
+      "ultraterraforged:structures/trees/redwood/huge/redwood_massive_6.nbt"
+    ]
+  }
+}

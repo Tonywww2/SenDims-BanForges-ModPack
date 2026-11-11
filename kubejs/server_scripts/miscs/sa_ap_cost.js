@@ -47,7 +47,7 @@ SACostMap.put("slashblade_sendims:sakura_end_ammo", [200, 0.05]);
 
 SACostMap.put("slashblade_sendims:golden_crux", [400, 0.2]);
 
-SACostMap.put("slashblade_sendims:nameless_threefold", [400, 0.2]);
+SACostMap.put("slashblade_sendims:nameless_threefold", [300, 0.15]);
 
 SACostMap.put("slashblade_sendims:caliburn", [350, 0.15]);
 SACostMap.put("slashblade_sendims:excalibur", [600, 0.25]);

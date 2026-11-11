@@ -1,0 +1,6 @@
+{
+  "gui.xaero_box_cave_mode": "Cave Mode (Normal / Partial Layer)",
+  "gui.xaero_wm_box_cave_mode_type": "Switch between two modes, saved per dimension. Every dimension returns to Normal (Auto) when you join a world. \n \n Normal (Auto) - shows the surface; switches to the cave view automatically when there is a ceiling above you and around you underground \n Partial Layer - always shows the cave view \n \n The cave view shows 30 layers down from the first ceiling block above your head (at most 4 blocks above your feet) and cannot be adjusted. Applies to the minimap as well. You can also bind \"Toggle Cave Mode (Normal / Partial Layer)\" in Controls.",
+  "gui.xaero_wm_cave_mode_type_layered": "Partial Layer",
+  "gui.xaero_wm_cave_mode_start_display": "Cave View Top Y: %d"
+}

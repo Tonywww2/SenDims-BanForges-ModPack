@@ -542,6 +542,116 @@
 			x: 9.0d
 			y: 3.0d
 		}
+		{
+			dependencies: ["51A9FF63F9F3E125"]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "34336CAE9FAF54BD"
+			quest_enhance_disable_scroll_paging: false
+			shape: "none"
+			tasks: [{
+				id: "09AC5288D3C3B40B"
+				type: "checkmark"
+			}]
+			title: "Tetra材料/可获得的实用物品"
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["51A9FF63F9F3E125"]
+			id: "554902C95CAA389E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1262DBEAF080C832"
+				item: "ad_astra:venus_stone"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["51A9FF63F9F3E125"]
+			id: "6C6C4AD82DF6990B"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3CD12228286D93C3"
+				item: "ad_astra:infernal_spire_block"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["51A9FF63F9F3E125"]
+			id: "15443D4181FD0E01"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4933952521351C71"
+				item: "ad_astra:mercury_stone"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["51A9FF63F9F3E125"]
+			id: "49A445AB229079D2"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "19AE6154764C7CA4"
+				item: "ad_astra:calorite_ingot"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["51A9FF63F9F3E125"]
+			id: "0B82BB0796874F7F"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "18213525E18F52C2"
+				item: "cataclysm:ancient_metal_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["51A9FF63F9F3E125"]
+			id: "02FFF9A811254DA4"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "76A50B41F6C11B1E"
+				item: "cataclysm:ignitium_ingot"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["51A9FF63F9F3E125"]
+			id: "1CE660EB70C2F5AA"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4474248D50FAEA30"
+				item: "kubejs:mercury_refractory_structural_component"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["51A9FF63F9F3E125"]
+			id: "642B8B19A4B0D690"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "479C5DB4E7026818"
+				item: "botania:manasteel_ingot"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 4.0d
+		}
 	]
 	title: "[VI] 金星与水星"
 }

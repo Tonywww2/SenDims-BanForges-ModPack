@@ -1,0 +1,24 @@
+{
+  "type": "ultraterraforged:template",
+  "config": {
+    "decorator": {
+      "biome_decorators": {},
+      "default_decorators": []
+    },
+    "paste": {
+      "check_bounds": true
+    },
+    "placement": {
+      "type": "ultraterraforged:tree"
+    },
+    "templates": [
+      "ultraterraforged:structures/mushrooms/brown/brown_mushroom_1.nbt",
+      "ultraterraforged:structures/mushrooms/brown/brown_mushroom_2.nbt",
+      "ultraterraforged:structures/mushrooms/brown/brown_mushroom_3.nbt",
+      "ultraterraforged:structures/mushrooms/brown/brown_mushroom_4.nbt",
+      "ultraterraforged:structures/mushrooms/brown/brown_mushroom_5.nbt",
+      "ultraterraforged:structures/mushrooms/brown/brown_mushroom_6.nbt",
+      "ultraterraforged:structures/mushrooms/brown/brown_mushroom_7.nbt"
+    ]
+  }
+}

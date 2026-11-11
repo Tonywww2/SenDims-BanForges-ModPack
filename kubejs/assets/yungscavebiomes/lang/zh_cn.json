@@ -1,5 +1,5 @@
 {
-  "biome.infinity_cave.amethyst_caves": "紫晶深窟",
+  "biome.sdbf.deep_realm_1.amethyst_caves": "紫晶深窟",
   "biome.cavernous.crystal_caves": "水晶洞穴", 
   "biome.cavernous.tropical_caves": "蔓生洞穴",
   "biome.cavernous.painted_caves": "彩绘洞穴",
@@ -7,8 +7,9 @@
   "biome.cavernous.desert_caves": "沙漠洞穴",
   "biome.cavernous.icy_caves": "冰封洞穴",
   "biome.cavernous.marshy_caves": "沼泽洞穴",
-  "biome.infinity_cave.molten_caves": "炼狱深窟",
+  "biome.sdbf.deep_realm_1.molten_caves": "炼狱深窟",
   "biome.cavernous.volcanic_caves": "火山洞穴",
-  "biome.infinity_cave.sulfide_caves": "地心花园",
-  "biome.infinity_cave.deeprock_caverns": "深岩洞窟"
+  "biome.sdbf.deep_realm_1.sulfide_caves": "地心花园",
+  "biome.sdbf.deep_realm_1.deeprock_caverns": "深岩洞窟",
+  "biome.sdbf.deep_realm_1.deep_dark": "深暗之域"
 }

@@ -1,0 +1,24 @@
+{
+  "type": "ultraterraforged:multiply",
+  "input1": {
+    "type": "ultraterraforged:multiply",
+    "input1": {
+      "type": "ultraterraforged:multiply",
+      "input1": {
+        "type": "ultraterraforged:shift",
+        "input": {
+          "type": "ultraterraforged:perlin_ridge",
+          "frequency": 0.016666668,
+          "gain": 0.975,
+          "interpolation": "CURVE3",
+          "lacunarity": 2.0,
+          "octaves": 3
+        },
+        "shift": 746382643
+      },
+      "input2": "ultraterraforged:surface/iceberg/shallow/mask"
+    },
+    "input2": "ultraterraforged:surface/iceberg/shallow/fade_down"
+  },
+  "input2": 0.05859375
+}

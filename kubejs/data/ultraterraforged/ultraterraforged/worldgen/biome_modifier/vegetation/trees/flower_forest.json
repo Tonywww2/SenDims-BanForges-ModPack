@@ -1,0 +1,8 @@
+{
+  "type": "ultraterraforged:replace",
+  "biomes": "#ultraterraforged:features/has_flower_forest_trees",
+  "replacements": {
+    "minecraft:trees_flower_forest": "ultraterraforged:flower_forest_trees"
+  },
+  "step": "vegetal_decoration"
+}

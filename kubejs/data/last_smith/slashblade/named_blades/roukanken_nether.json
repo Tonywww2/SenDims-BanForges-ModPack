@@ -23,7 +23,8 @@
         "special_effects":
         [
             "last_smith:extreme_sharpness",
-            "slashblade:wither_edge"
+            "slashblade:wither_edge",
+            "slashblade:bleeding_cutting"
         ],
         "sword_type":
         [

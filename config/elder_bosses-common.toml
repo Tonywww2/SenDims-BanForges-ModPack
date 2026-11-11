@@ -187,7 +187,7 @@
 	#中文：音量。音量增益：1为正常，2为两倍，0为静音；仍受音乐和主音量滑块控制。
 	#English: Volume. Gain: 1 is normal, 2 doubles the amplitude, 0 mutes; music and master sliders still apply.
 	#Range: 0.0 ~ 16.0
-	volume = 0.85
+	volume = 1.0
 	#中文：距离 · 格。
 	#English: Distance · blocks. 
 	#Range: 16.0 ~ 256.0
@@ -288,6 +288,14 @@
 		#English: Max active players. 
 		#Range: 1 ~ 4
 		max_active_players = 4
+		#中文：护甲。
+		#English: Armor. 
+		#Range: 0.0 ~ 30.0
+		armor = 10.0
+		#中文：盔甲韧性。
+		#English: Armor toughness. 
+		#Range: 0.0 ~ 20.0
+		armor_toughness = 4.0
 
 	#中文：调试输出。
 	#English: Debug output. 
@@ -361,7 +369,7 @@
 		#中文：架势容量占生命上限的比例。架势上限相对于Boss生命上限的比例。
 		#English: Capacity health ratio. Stagger capacity as a fraction of the boss's maximum health.
 		#Range: 0.001 ~ 1.0
-		capacity_health_ratio = 0.25
+		capacity_health_ratio = 0.5
 		#中文：快速失衡保护统计窗口 · tick。统计近期架势增长的时间窗口，用于快速失衡保护。
 		#English: Rapid window ticks · ticks. Window for tracking recent stagger growth for rapid stagger protection.
 		#Range: 1 ~ 1000000
@@ -495,7 +503,7 @@
 		#中文：单次动作回血上限。
 		#English: Action cap. 
 		#Range: 0.0 ~ 1000000.0
-		action_cap = 16.0
+		action_cap = 1600.0
 		#中文：判定窗口时间 · tick。
 		#English: Window ticks · ticks. 
 		#Range: > 1
@@ -503,7 +511,7 @@
 		#中文：统计窗口内回血上限。
 		#English: Window cap. 
 		#Range: 0.0 ~ 1000000.0
-		window_cap = 36.0
+		window_cap = 3600.0
 
 		#中文：普通攻击回血。
 		#English: Standard heal. 
@@ -513,7 +521,7 @@
 			flat = 1.0
 			#中文：攻击力系数。攻击力系数。
 			#English: Attack ratio. Attack damage coefficient.
-			attack_ratio = 0.06
+			attack_ratio = 0.3
 
 		#中文：重攻击回血。
 		#English: Heavy heal. 
@@ -523,7 +531,7 @@
 			flat = 2.0
 			#中文：攻击力系数。攻击力系数。
 			#English: Attack ratio. Attack damage coefficient.
-			attack_ratio = 0.08
+			attack_ratio = 0.4
 
 		#中文：水鸟乱舞回血。
 		#English: Waterfowl heal. 
@@ -533,7 +541,7 @@
 			flat = 0.0
 			#中文：攻击力系数。攻击力系数。
 			#English: Attack ratio. Attack damage coefficient.
-			attack_ratio = 0.04
+			attack_ratio = 0.2
 
 		#中文：投技回血。
 		#English: Grab heal. 
@@ -543,7 +551,7 @@
 			flat = 3.0
 			#中文：攻击力系数。攻击力系数。
 			#English: Attack ratio. Attack damage coefficient.
-			attack_ratio = 0.1
+			attack_ratio = 0.5
 
 	#中文：入伤抗性。
 	#English: Incoming damage resistance. 
@@ -735,11 +743,11 @@
 		#中文：一阶段待机时间上限 · tick。
 		#English: Phase one idle max ticks · ticks. 
 		#Range: > 0
-		phase_one_idle_max_ticks = 35
+		phase_one_idle_max_ticks = 30
 		#中文：二阶段待机时间下限 · tick。
 		#English: Phase two idle min ticks · ticks. 
 		#Range: > 0
-		phase_two_idle_min_ticks = 8
+		phase_two_idle_min_ticks = 12
 		#中文：二阶段待机时间上限 · tick。
 		#English: Phase two idle max ticks · ticks. 
 		#Range: > 0
@@ -945,7 +953,7 @@
 				flat = 1.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
-				attack_ratio = 0.45
+				attack_ratio = 0.65
 
 		#中文：双斩。
 		#English: Double slash. 
@@ -994,7 +1002,7 @@
 					flat = 1.0
 					#中文：攻击力系数。攻击力系数。
 					#English: Attack ratio. Attack damage coefficient.
-					attack_ratio = 0.42
+					attack_ratio = 0.55
 
 				#中文：第2段。
 				#English: Stage 2. 
@@ -1004,7 +1012,7 @@
 					flat = 1.0
 					#中文：攻击力系数。攻击力系数。
 					#English: Attack ratio. Attack damage coefficient.
-					attack_ratio = 0.42
+					attack_ratio = 0.55
 
 		#中文：连续快斩。
 		#English: Rapid slashes. 
@@ -1053,7 +1061,7 @@
 				flat = 0.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
-				attack_ratio = 0.34
+				attack_ratio = 0.45
 
 			#中文：终结攻击伤害。
 			#English: Finisher damage. 
@@ -1063,7 +1071,7 @@
 				flat = 2.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
-				attack_ratio = 0.5
+				attack_ratio = 0.7
 
 		#中文：奔跑斩。
 		#English: Running slash. 
@@ -1111,7 +1119,7 @@
 				flat = 2.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
-				attack_ratio = 0.55
+				attack_ratio = 0.75
 
 		#中文：上挑连段。
 		#English: Upward combo. 
@@ -1160,7 +1168,7 @@
 					flat = 2.0
 					#中文：攻击力系数。攻击力系数。
 					#English: Attack ratio. Attack damage coefficient.
-					attack_ratio = 0.5
+					attack_ratio = 0.7
 
 				#中文：第2段。
 				#English: Stage 2. 
@@ -1170,7 +1178,7 @@
 					flat = 3.0
 					#中文：攻击力系数。攻击力系数。
 					#English: Attack ratio. Attack damage coefficient.
-					attack_ratio = 0.65
+					attack_ratio = 0.9
 
 		#中文：踢击。
 		#English: Kick. 
@@ -1225,7 +1233,7 @@
 				flat = 2.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
-				attack_ratio = 0.42
+				attack_ratio = 0.55
 
 		#中文：突刺。
 		#English: Thrust. 
@@ -1251,7 +1259,7 @@
 			#中文：范围 · 格。
 			#English: Range · blocks. 
 			#Range: 0.01 ~ 2048.0
-			range = 10.0
+			range = 7.0
 			#中文：宽度 · 格。调整刺击的整体范围倍率。
 			#English: Width · blocks. Adjusts the thrust's overall range multiplier.
 			#Range: 0.01 ~ 2048.0
@@ -1263,7 +1271,7 @@
 			#中文：释放时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
 			#English: Active ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 			#Range: 1 ~ 1000000
-			active_ticks = 6
+			active_ticks = 4
 			#中文：后摇时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
 			#English: Recovery ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 			#Range: 1 ~ 1000000
@@ -1277,7 +1285,7 @@
 				flat = 3.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
-				attack_ratio = 0.7
+				attack_ratio = 1.0
 
 		#中文：抓取穿刺。
 		#English: Grab impale. 
@@ -1398,7 +1406,7 @@
 				flat = 1.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
-				attack_ratio = 0.45
+				attack_ratio = 0.6
 
 		#中文：水鸟乱舞。
 		#English: Waterfowl dance. 
@@ -1451,13 +1459,13 @@
 			[malenia.skills.waterfowl_dance.components]
 				#中文：前摇时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
 				#English: Windup ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
-				windup_ticks = [32, 12, 8, 8]
+				windup_ticks = [32, 4, 4, 4]
 				#中文：释放时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
 				#English: Active ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
-				active_ticks = [18, 12, 20, 6]
+				active_ticks = [14, 12, 12, 18]
 				#中文：后摇时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
 				#English: Recovery ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
-				recovery_ticks = [0, 0, 0, 26]
+				recovery_ticks = [0, 0, 0, 42]
 
 			#中文：斩击伤害。
 			#English: Slash damage. 
@@ -1467,7 +1475,7 @@
 				flat = 0.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
-				attack_ratio = 0.22
+				attack_ratio = 0.3
 
 		#中文：猩红艾奥尼亚。
 		#English: Scarlet aeonia. 
@@ -1520,10 +1528,10 @@
 			[malenia.skills.scarlet_aeonia.components]
 				#中文：前摇时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
 				#English: Windup ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
-				windup_ticks = [0, 0, 0, 0, 24]
+				windup_ticks = [0, 0, 0, 0, 8]
 				#中文：释放时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
 				#English: Active ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
-				active_ticks = [26, 17, 18, 1, 42]
+				active_ticks = [26, 17, 6, 1, 42]
 				#中文：后摇时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
 				#English: Recovery ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 				recovery_ticks = [0, 0, 0, 0, 54]
@@ -1536,7 +1544,7 @@
 				flat = 3.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
-				attack_ratio = 0.6
+				attack_ratio = 0.85
 
 			#中文：爆炸伤害。
 			#English: Explosion damage. 
@@ -1546,7 +1554,7 @@
 				flat = 5.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
-				attack_ratio = 0.9
+				attack_ratio = 1.25
 
 			#中文：区域伤害。
 			#English: Zone damage. 
@@ -1556,7 +1564,7 @@
 				flat = 0.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
-				attack_ratio = 0.15
+				attack_ratio = 0.2
 
 		#中文：猩红俯冲。
 		#English: Scarlet plunge. 
@@ -1613,7 +1621,7 @@
 				flat = 3.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
-				attack_ratio = 0.65
+				attack_ratio = 0.9
 
 			#中文：突进伤害。
 			#English: Burst damage. 
@@ -1623,7 +1631,7 @@
 				flat = 2.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
-				attack_ratio = 0.45
+				attack_ratio = 0.6
 
 		#中文：飞身斩。
 		#English: Flying slash. 
@@ -1649,7 +1657,7 @@
 			#中文：范围 · 格。
 			#English: Range · blocks. 
 			#Range: 0.01 ~ 2048.0
-			range = 11.0
+			range = 7.0
 			#中文：前摇时间 · tick。同技能各段时间合计控制整体节奏，默认值保持基准速度。
 			#English: Windup ticks · ticks. Combined timing sets the action cadence; defaults preserve the base speed.
 			windup_ticks = [20, 12]
@@ -1675,7 +1683,7 @@
 					flat = 2.0
 					#中文：攻击力系数。攻击力系数。
 					#English: Attack ratio. Attack damage coefficient.
-					attack_ratio = 0.5
+					attack_ratio = 0.7
 
 				#中文：第2段。
 				#English: Stage 2. 
@@ -1685,7 +1693,7 @@
 					flat = 3.0
 					#中文：攻击力系数。攻击力系数。
 					#English: Attack ratio. Attack damage coefficient.
-					attack_ratio = 0.65
+					attack_ratio = 0.9
 
 		#中文：猩红分身。
 		#English: Scarlet phantoms. 
@@ -1745,7 +1753,7 @@
 				flat = 1.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
-				attack_ratio = 0.28
+				attack_ratio = 0.4
 
 			#中文：下砸伤害。
 			#English: Dive damage. 
@@ -1755,7 +1763,7 @@
 				flat = 4.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
-				attack_ratio = 0.75
+				attack_ratio = 1.05
 
 		#中文：展翼横扫。
 		#English: Winged sweep. 
@@ -1807,7 +1815,7 @@
 				flat = 2.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
-				attack_ratio = 0.55
+				attack_ratio = 0.75
 
 	#中文：开场清场。开场结束后，一秒内逐个攻击场内非玩家生物，再返回原点。
 	#English: Opening sweep. After the intro, strike each non-player creature in the arena within one second, then return.
@@ -1821,7 +1829,21 @@
 			flat = 20.0
 			#中文：攻击力系数。攻击力系数。
 			#English: Attack ratio. Attack damage coefficient.
-			attack_ratio = 4.0
+			attack_ratio = 10.0
+
+#中文：竞技场与位置。两个Boss场地共用；服务端配置重载后生效。
+#English: Arena and positioning. Shared by both boss arenas; applies after server config reload.
+[arena]
+	#中文：场地内自然刷怪。允许女武神和拉塔恩场地内自然生成生物；默认关闭，配置重载后立即生效，未召唤Boss时也生效，不影响召唤与刷怪笼。
+	#English: Natural spawning in boss arenas. Allows natural mob spawning inside Malenia and Radahn arenas; disabled by default, applies on config reload even before summoning, and leaves summons and spawners unaffected.
+	allow_natural_spawns = false
+
+#中文：Boss属性应用。
+#English: Boss attribute application. 
+[bosses]
+	#中文：应用配置基础属性。默认开启，应用配置中的生命、攻击力、移动速度、索敌距离、击退抗性、护甲和盔甲韧性。
+	#English: Apply configured base attributes. Enabled by default
+	apply_configured_base_attributes = false
 
 #中文：约定之王拉塔恩。战斗设置在开战时生效。
 #English: Radahn, Promised Consort. Combat settings apply when an encounter starts.
@@ -1850,6 +1872,14 @@
 		#English: Knockback resistance. 
 		#Range: 0.0 ~ 1.0
 		knockback_resistance = 1.0
+		#中文：护甲。
+		#English: Armor. 
+		#Range: 0.0 ~ 30.0
+		armor = 16.0
+		#中文：盔甲韧性。
+		#English: Armor toughness. 
+		#Range: 0.0 ~ 20.0
+		armor_toughness = 8.0
 		#中文：二阶段触发生命比例。
 		#English: Phase two health ratio. 
 		#Range: 0.01 ~ 1.0
@@ -1857,7 +1887,7 @@
 		#中文：首次星陨剩余生命比例。按总体剩余生命比例触发，默认85%；与二阶段门槛分别计算。
 		#English: First meteor remaining health ratio. Remaining total health for the first meteor, default 85%, independent of the phase-two threshold.
 		#Range: 0.01 ~ 1.0
-		meteor_health_ratio = 0.25
+		meteor_health_ratio = 0.85
 		#中文：参战人数上限。
 		#English: Max active players. 
 		#Range: 1 ~ 16
@@ -1981,7 +2011,7 @@
 		#中文：战斗场地逻辑半径 · 格。
 		#English: Logical radius · blocks. 
 		#Range: 1.0 ~ 2048.0
-		logical_radius = 40.0
+		logical_radius = 84.0
 		#中文：开场相对场心偏移。相对于竞技场中心的[x,y,z]偏移，单位为格；不改写建筑的神门出生锚点。
 		#English: Intro offset. Arena-center-relative [x,y,z] offset in blocks; does not rewrite the structure's Divine Gate spawn anchor.
 		intro_offset = [0.0, 14.0, 18.0]
@@ -1990,7 +2020,7 @@
 		phase_return_offset = [0.0, 0.0, -30.0]
 		#中文：允许破坏方块。允许移动和攻击清除障碍；地面层以下、竞技场保护区域、黑名单和方块实体始终保留。
 		#English: Allow block breaking. Allow movement and attacks to clear obstacles; ground layers, protected arena volumes, blacklist blocks and block entities are preserved.
-		allow_block_breaking = false
+		allow_block_breaking = true
 		#中文：破坏方块的半径 · 格。
 		#English: Block break radius · blocks. 
 		#Range: 0.0 ~ 64.0
@@ -2013,6 +2043,10 @@
 	#中文：锁定与远程判断。
 	#English: Targeting and ranged detection. 
 	[promised_consort.targeting]
+		#中文：受伤判为远程的玩家距离 · 格。受到有效生命伤害时，来源玩家到Boss碰撞箱的三维距离达到此值，判为远程。
+		#English: Ranged damage distance · blocks. Effective health damage counts as ranged when the player is at least this three-dimensional distance from the boss hitbox
+		#Range: 0.01 ~ 2048.0
+		ranged_damage_distance = 18.0
 		#中文：单段追击距离上限 · 格。
 		#English: Max segment pursuit distance · blocks. 
 		#Range: 0.0 ~ 16.0
@@ -2048,10 +2082,6 @@
 		#中文：攻击可命中目标规则。players_only: 仅玩家；players_and_owned: 玩家及其所属实体；all_living: 全部生物。
 		#English: Attack target policy. players_only; players_and_owned; all_living
 		attack_target_policy = "all_living"
-		#中文：受伤判为远程的玩家距离 · 格。受到有效生命伤害时，来源玩家到Boss碰撞箱的三维距离达到此值，判为远程。
-		#English: Ranged damage distance · blocks. Effective health damage counts as ranged when the player is at least this three-dimensional distance from the boss hitbox
-		#Range: 0.01 ~ 2048.0
-		ranged_damage_distance = 9.0
 
 	#中文：血条与架势显示对象。
 	#English: Boss bar and stagger audience. 
@@ -2066,6 +2096,9 @@
 	#中文：远程应对。
 	#English: Ranged response. 
 	[promised_consort.ranged_counter]
+		#中文：弹射物判定。将弹射物伤害及玩家发射弹射物也作为远程模式触发条件。
+		#English: Projectile detection. Also trigger ranged mode from projectile damage or a player launching a projectile
+		projectile_detection = false
 		#中文：远程减伤百分比。远程应对模式下，攻击者到Boss碰撞箱的距离达到远程阈值时减伤；90表示减伤90%。
 		#English: Ranged damage reduction percent. Damage reduction during ranged mode when the attacker is beyond the ranged distance; 90 means 90% reduction.
 		#Range: 0.0 ~ 100.0
@@ -2078,9 +2111,6 @@
 		#English: Ranged retaliation attack ratio. Retaliation adds this fraction of the boss current attack damage; 0.25 means 25%.
 		#Range: 0.0 ~ 4096.0
 		retaliation_attack_ratio = 0.25
-		#中文：弹射物判定。将弹射物伤害及玩家发射弹射物也作为远程模式触发条件。
-		#English: Projectile detection. Also trigger ranged mode from projectile damage or a player launching a projectile
-		projectile_detection = false
 
 	#中文：架势与失衡。
 	#English: Stagger. 
@@ -2092,7 +2122,7 @@
 		#中文：架势容量占生命上限的比例。架势上限相对于Boss生命上限的比例。
 		#English: Capacity health ratio. Stagger capacity as a fraction of the boss's maximum health.
 		#Range: 0.001 ~ 1.0
-		capacity_health_ratio = 0.5
+		capacity_health_ratio = 0.125
 		#中文：快速失衡保护统计窗口 · tick。统计近期架势增长的时间窗口，用于快速失衡保护。
 		#English: Rapid window ticks · ticks. Window for tracking recent stagger growth for rapid stagger protection.
 		#Range: 1 ~ 1000000
@@ -2249,6 +2279,9 @@
 	#中文：大荒星陨触发保护。
 	#English: Consort meteor protection. 
 	[promised_consort.meteor]
+		#中文：大荒星陨期间无敌。启用后在升空至落地收招期间免疫伤害；关闭后按正常受伤规则结算，服务端配置重载后生效。
+		#English: Invulnerable during Consort Meteor. Immune from ascent through landing recovery when enabled; otherwise use normal damage rules
+		invulnerable = true
 		#中文：允许架势累积。
 		#English: Accepts stagger. 
 		accepts_stagger = false
@@ -2258,9 +2291,6 @@
 		#中文：大荒星陨重复释放方式。cooldown_forced: 冷却结束后强制释放；weighted: 按权重选择；once: 只释放一次。
 		#English: Repeat mode. cooldown_forced; weighted; once
 		repeat_mode = "cooldown_forced"
-		#中文：大荒星陨期间无敌。启用后在升空至落地收招期间免疫伤害；关闭后按正常受伤规则结算，服务端配置重载后生效。
-		#English: Invulnerable during Consort Meteor. Immune from ascent through landing recovery when enabled; otherwise use normal damage rules
-		invulnerable = true
 
 	#中文：台词与字幕。
 	#English: Dialogue and subtitles. 
@@ -2336,6 +2366,10 @@
 				#中文：释放时无敌。米凯拉之光释放期间免疫伤害。
 				#English: Invulnerable while casting. Immune to damage while casting Light of Miquella.
 				invulnerable = true
+				#中文：落光追踪概率。小光柱在玩家周围随机落下的概率；预警期间缓慢跟随偏移位置，落地后固定。
+				#English: Light rain tracking chance. Chance to scatter a column around a player; the random offset follows slowly during the warning and locks on impact
+				#Range: 0.0 ~ 1.0
+				rain_tracking_chance = 0.1
 				#中文：启用。
 				#English: Enabled. 
 				enabled = true
@@ -2351,10 +2385,6 @@
 				#English: Weight during cooldown. Overrides the SetCoolTime weight during cooldown; does not change attack damage.
 				#Range: 0.0 ~ 1000.0
 				weight_during_cooldown = 0.0
-				#中文：落光追踪概率。小光柱在玩家周围随机落下的概率；预警期间缓慢跟随偏移位置，落地后固定。
-				#English: Light rain tracking chance. Chance to scatter a column around a player; the random offset follows slowly during the warning and locks on impact
-				#Range: 0.0 ~ 1.0
-				rain_tracking_chance = 0.1
 
 			#中文：swing_combo。
 			#English: swing_combo. 
@@ -3563,15 +3593,15 @@
 				#中文：前摇时间 · tick。攻击开始前的准备时间。
 				#English: Windup ticks · ticks. Preparation before the attack
 				#Range: 1.0 ~ 1200000.0
-				windup_ticks = 85.33334
+				windup_ticks = 64.000005
 				#中文：释放时间 · tick。攻击释放阶段的时间；不表示每tick都重复造成伤害。
 				#English: Active ticks · ticks. Duration of the attack's active phase; this does not imply damage every tick.
 				#Range: 2.0E-5 ~ 1200000.0
-				active_ticks = 2.0
+				active_ticks = 1.5
 				#中文：后摇时间 · tick。攻击释放后的恢复时间；多段数组与前摇、释放数组的长度和顺序一致。
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
-				recovery_ticks = 79.33332
+				recovery_ticks = 59.49999
 
 			#中文：a3025。
 			#English: a3025. 
@@ -3854,15 +3884,15 @@
 				#中文：前摇时间 · tick。攻击开始前的准备时间。
 				#English: Windup ticks · ticks. Preparation before the attack
 				#Range: 1.0 ~ 1200000.0
-				windup_ticks = 20.66666
+				windup_ticks = 15.499995
 				#中文：释放时间 · tick。攻击释放阶段的时间；不表示每tick都重复造成伤害。
 				#English: Active ticks · ticks. Duration of the attack's active phase; this does not imply damage every tick.
 				#Range: 2.0E-5 ~ 1200000.0
-				active_ticks = 2.0
+				active_ticks = 1.5
 				#中文：后摇时间 · tick。攻击释放后的恢复时间；多段数组与前摇、释放数组的长度和顺序一致。
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
-				recovery_ticks = 79.33334
+				recovery_ticks = 59.500005
 
 			#中文：a20008。
 			#English: a20008. 
@@ -3870,15 +3900,15 @@
 				#中文：前摇时间 · tick。攻击开始前的准备时间。
 				#English: Windup ticks · ticks. Preparation before the attack
 				#Range: 1.0 ~ 1200000.0
-				windup_ticks = 23.33334
+				windup_ticks = 17.500005
 				#中文：释放时间 · tick。攻击释放阶段的时间；不表示每tick都重复造成伤害。
 				#English: Active ticks · ticks. Duration of the attack's active phase; this does not imply damage every tick.
 				#Range: 2.0E-5 ~ 1200000.0
-				active_ticks = 2.0
+				active_ticks = 1.5
 				#中文：后摇时间 · tick。攻击释放后的恢复时间；多段数组与前摇、释放数组的长度和顺序一致。
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
-				recovery_ticks = 80.0
+				recovery_ticks = 60.0
 
 			#中文：a20009。
 			#English: a20009. 
@@ -3886,15 +3916,15 @@
 				#中文：前摇时间 · tick。攻击开始前的准备时间。
 				#English: Windup ticks · ticks. Preparation before the attack
 				#Range: 1.0 ~ 1200000.0
-				windup_ticks = 9.33334
+				windup_ticks = 7.000005
 				#中文：释放时间 · tick。攻击释放阶段的时间；不表示每tick都重复造成伤害。
 				#English: Active ticks · ticks. Duration of the attack's active phase; this does not imply damage every tick.
 				#Range: 2.0E-5 ~ 1200000.0
-				active_ticks = 2.0
+				active_ticks = 1.5
 				#中文：后摇时间 · tick。攻击释放后的恢复时间；多段数组与前摇、释放数组的长度和顺序一致。
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
-				recovery_ticks = 79.33332
+				recovery_ticks = 59.49999
 
 			#中文：a20010。
 			#English: a20010. 
@@ -3918,15 +3948,15 @@
 				#中文：前摇时间 · tick。攻击开始前的准备时间。
 				#English: Windup ticks · ticks. Preparation before the attack
 				#Range: 1.0 ~ 1200000.0
-				windup_ticks = 9.33334
+				windup_ticks = 7.000005
 				#中文：释放时间 · tick。攻击释放阶段的时间；不表示每tick都重复造成伤害。
 				#English: Active ticks · ticks. Duration of the attack's active phase; this does not imply damage every tick.
 				#Range: 2.0E-5 ~ 1200000.0
-				active_ticks = 2.0
+				active_ticks = 1.5
 				#中文：后摇时间 · tick。攻击释放后的恢复时间；多段数组与前摇、释放数组的长度和顺序一致。
 				#English: Recovery ticks · ticks. Recovery after the attack; stage arrays must match the windup and active arrays in length and order.
 				#Range: 0.0 ~ 1200000.0
-				recovery_ticks = 79.33332
+				recovery_ticks = 59.49999
 
 		#中文：攻击。攻击代号。伤害为固定值加攻击力乘总权重乘系数除100。
 		#English: Attacks. Attack codes. Damage = flat + attack damage × total channel weight / 100 × attack ratio.
@@ -3938,11 +3968,11 @@
 				#中文：固定伤害加值。固定加值。
 				#English: Flat. Flat addition.
 				#Range: 0.0 ~ 1200000.0
-				flat = 0.0
+				flat = 2.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -3974,11 +4004,11 @@
 				#中文：固定伤害加值。固定加值。
 				#English: Flat. Flat addition.
 				#Range: 0.0 ~ 1200000.0
-				flat = 0.0
+				flat = 2.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -4014,7 +4044,7 @@
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -4050,7 +4080,7 @@
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -4086,7 +4116,7 @@
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -4122,7 +4152,7 @@
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -4158,7 +4188,7 @@
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -4190,11 +4220,11 @@
 				#中文：固定伤害加值。固定加值。
 				#English: Flat. Flat addition.
 				#Range: 0.0 ~ 1200000.0
-				flat = 0.0
+				flat = 1.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -4226,11 +4256,11 @@
 				#中文：固定伤害加值。固定加值。
 				#English: Flat. Flat addition.
 				#Range: 0.0 ~ 1200000.0
-				flat = 0.0
+				flat = 2.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -4262,11 +4292,11 @@
 				#中文：固定伤害加值。固定加值。
 				#English: Flat. Flat addition.
 				#Range: 0.0 ~ 1200000.0
-				flat = 0.0
+				flat = 1.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -4298,11 +4328,11 @@
 				#中文：固定伤害加值。固定加值。
 				#English: Flat. Flat addition.
 				#Range: 0.0 ~ 1200000.0
-				flat = 0.0
+				flat = 1.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -4334,11 +4364,11 @@
 				#中文：固定伤害加值。固定加值。
 				#English: Flat. Flat addition.
 				#Range: 0.0 ~ 1200000.0
-				flat = 0.0
+				flat = 3.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -4370,11 +4400,11 @@
 				#中文：固定伤害加值。固定加值。
 				#English: Flat. Flat addition.
 				#Range: 0.0 ~ 1200000.0
-				flat = 0.0
+				flat = 3.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -4410,7 +4440,7 @@
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -4446,7 +4476,7 @@
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -4478,11 +4508,11 @@
 				#中文：固定伤害加值。固定加值。
 				#English: Flat. Flat addition.
 				#Range: 0.0 ~ 1200000.0
-				flat = 0.0
+				flat = 2.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -4514,11 +4544,11 @@
 				#中文：固定伤害加值。固定加值。
 				#English: Flat. Flat addition.
 				#Range: 0.0 ~ 1200000.0
-				flat = 0.0
+				flat = 2.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -4550,11 +4580,11 @@
 				#中文：固定伤害加值。固定加值。
 				#English: Flat. Flat addition.
 				#Range: 0.0 ~ 1200000.0
-				flat = 0.0
+				flat = 3.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -4586,11 +4616,11 @@
 				#中文：固定伤害加值。固定加值。
 				#English: Flat. Flat addition.
 				#Range: 0.0 ~ 1200000.0
-				flat = 0.0
+				flat = 1.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -4626,7 +4656,7 @@
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -4658,11 +4688,11 @@
 				#中文：固定伤害加值。固定加值。
 				#English: Flat. Flat addition.
 				#Range: 0.0 ~ 1200000.0
-				flat = 0.0
+				flat = 2.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -4694,11 +4724,11 @@
 				#中文：固定伤害加值。固定加值。
 				#English: Flat. Flat addition.
 				#Range: 0.0 ~ 1200000.0
-				flat = 0.0
+				flat = 3.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -4730,11 +4760,11 @@
 				#中文：固定伤害加值。固定加值。
 				#English: Flat. Flat addition.
 				#Range: 0.0 ~ 1200000.0
-				flat = 0.0
+				flat = 3.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -4770,7 +4800,7 @@
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -4802,11 +4832,11 @@
 				#中文：固定伤害加值。固定加值。
 				#English: Flat. Flat addition.
 				#Range: 0.0 ~ 1200000.0
-				flat = 0.0
+				flat = 3.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -4842,7 +4872,7 @@
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -4878,7 +4908,7 @@
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -4914,7 +4944,7 @@
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -4950,7 +4980,7 @@
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -4986,7 +5016,7 @@
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -5022,7 +5052,7 @@
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -5058,7 +5088,7 @@
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -5090,11 +5120,11 @@
 				#中文：固定伤害加值。固定加值。
 				#English: Flat. Flat addition.
 				#Range: 0.0 ~ 1200000.0
-				flat = 0.0
+				flat = 1.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -5126,11 +5156,11 @@
 				#中文：固定伤害加值。固定加值。
 				#English: Flat. Flat addition.
 				#Range: 0.0 ~ 1200000.0
-				flat = 0.0
+				flat = 3.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -5162,11 +5192,11 @@
 				#中文：固定伤害加值。固定加值。
 				#English: Flat. Flat addition.
 				#Range: 0.0 ~ 1200000.0
-				flat = 0.0
+				flat = 4.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -5198,11 +5228,11 @@
 				#中文：固定伤害加值。固定加值。
 				#English: Flat. Flat addition.
 				#Range: 0.0 ~ 1200000.0
-				flat = 0.0
+				flat = 1.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -5234,11 +5264,11 @@
 				#中文：固定伤害加值。固定加值。
 				#English: Flat. Flat addition.
 				#Range: 0.0 ~ 1200000.0
-				flat = 0.0
+				flat = 1.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -5270,11 +5300,11 @@
 				#中文：固定伤害加值。固定加值。
 				#English: Flat. Flat addition.
 				#Range: 0.0 ~ 1200000.0
-				flat = 0.0
+				flat = 1.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -5306,11 +5336,11 @@
 				#中文：固定伤害加值。固定加值。
 				#English: Flat. Flat addition.
 				#Range: 0.0 ~ 1200000.0
-				flat = 0.0
+				flat = 5.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -5342,11 +5372,11 @@
 				#中文：固定伤害加值。固定加值。
 				#English: Flat. Flat addition.
 				#Range: 0.0 ~ 1200000.0
-				flat = 0.0
+				flat = 1.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -5378,11 +5408,11 @@
 				#中文：固定伤害加值。固定加值。
 				#English: Flat. Flat addition.
 				#Range: 0.0 ~ 1200000.0
-				flat = 0.0
+				flat = 5.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -5414,11 +5444,11 @@
 				#中文：固定伤害加值。固定加值。
 				#English: Flat. Flat addition.
 				#Range: 0.0 ~ 1200000.0
-				flat = 0.0
+				flat = 5.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -5454,7 +5484,7 @@
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -5490,7 +5520,7 @@
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -5522,11 +5552,11 @@
 				#中文：固定伤害加值。固定加值。
 				#English: Flat. Flat addition.
 				#Range: 0.0 ~ 1200000.0
-				flat = 0.0
+				flat = 2.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -5562,7 +5592,7 @@
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -5594,11 +5624,11 @@
 				#中文：固定伤害加值。固定加值。
 				#English: Flat. Flat addition.
 				#Range: 0.0 ~ 1200000.0
-				flat = 0.0
+				flat = 2.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -5738,11 +5768,11 @@
 				#中文：固定伤害加值。固定加值。
 				#English: Flat. Flat addition.
 				#Range: 0.0 ~ 1200000.0
-				flat = 0.0
+				flat = 1.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -5774,11 +5804,11 @@
 				#中文：固定伤害加值。固定加值。
 				#English: Flat. Flat addition.
 				#Range: 0.0 ~ 1200000.0
-				flat = 0.0
+				flat = 4.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -5810,11 +5840,11 @@
 				#中文：固定伤害加值。固定加值。
 				#English: Flat. Flat addition.
 				#Range: 0.0 ~ 1200000.0
-				flat = 0.0
+				flat = 3.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -5846,11 +5876,11 @@
 				#中文：固定伤害加值。固定加值。
 				#English: Flat. Flat addition.
 				#Range: 0.0 ~ 1200000.0
-				flat = 0.0
+				flat = 1.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -5882,11 +5912,11 @@
 				#中文：固定伤害加值。固定加值。
 				#English: Flat. Flat addition.
 				#Range: 0.0 ~ 1200000.0
-				flat = 0.0
+				flat = 3.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -5922,7 +5952,7 @@
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -5958,7 +5988,7 @@
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -5994,7 +6024,7 @@
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -6030,7 +6060,7 @@
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -6066,7 +6096,7 @@
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -6098,11 +6128,11 @@
 				#中文：固定伤害加值。固定加值。
 				#English: Flat. Flat addition.
 				#Range: 0.0 ~ 1200000.0
-				flat = 0.0
+				flat = 1.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -6134,11 +6164,11 @@
 				#中文：固定伤害加值。固定加值。
 				#English: Flat. Flat addition.
 				#Range: 0.0 ~ 1200000.0
-				flat = 0.0
+				flat = 1.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -6170,11 +6200,11 @@
 				#中文：固定伤害加值。固定加值。
 				#English: Flat. Flat addition.
 				#Range: 0.0 ~ 1200000.0
-				flat = 0.0
+				flat = 1.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -6206,11 +6236,11 @@
 				#中文：固定伤害加值。固定加值。
 				#English: Flat. Flat addition.
 				#Range: 0.0 ~ 1200000.0
-				flat = 0.0
+				flat = 1.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -6246,7 +6276,7 @@
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -6282,7 +6312,7 @@
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -6318,7 +6348,7 @@
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -6350,11 +6380,11 @@
 				#中文：固定伤害加值。固定加值。
 				#English: Flat. Flat addition.
 				#Range: 0.0 ~ 1200000.0
-				flat = 0.0
+				flat = 1.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -6386,11 +6416,11 @@
 				#中文：固定伤害加值。固定加值。
 				#English: Flat. Flat addition.
 				#Range: 0.0 ~ 1200000.0
-				flat = 0.0
+				flat = 1.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -6422,11 +6452,11 @@
 				#中文：固定伤害加值。固定加值。
 				#English: Flat. Flat addition.
 				#Range: 0.0 ~ 1200000.0
-				flat = 0.0
+				flat = 1.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -6462,7 +6492,7 @@
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -6498,7 +6528,7 @@
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -6534,7 +6564,7 @@
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -6570,7 +6600,7 @@
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -6606,7 +6636,7 @@
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -6638,11 +6668,11 @@
 				#中文：固定伤害加值。固定加值。
 				#English: Flat. Flat addition.
 				#Range: 0.0 ~ 1200000.0
-				flat = 0.0
+				flat = 6.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -6674,11 +6704,11 @@
 				#中文：固定伤害加值。固定加值。
 				#English: Flat. Flat addition.
 				#Range: 0.0 ~ 1200000.0
-				flat = 0.0
+				flat = 3.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -6822,7 +6852,7 @@
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -6858,7 +6888,7 @@
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -6894,7 +6924,7 @@
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -6930,7 +6960,7 @@
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -6966,7 +6996,7 @@
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -7070,11 +7100,11 @@
 				#中文：固定伤害加值。固定加值。
 				#English: Flat. Flat addition.
 				#Range: 0.0 ~ 1200000.0
-				flat = 0.0
+				flat = 2.0
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -7110,7 +7140,7 @@
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -7146,7 +7176,7 @@
 				#中文：攻击力系数。攻击力系数。
 				#English: Attack ratio. Attack damage coefficient.
 				#Range: 0.0 ~ 4096.0
-				attack_ratio = 1.0
+				attack_ratio = 0.227272
 				#中文：物理权重。
 				#English: Physical weight. 
 				#Range: 0.0 ~ 1000000.0
@@ -8314,7 +8344,7 @@
 				#中文：主光柱扩张时长 · 秒。脚下细高光柱持续扩大，范围内持续造成伤害。
 				#English: Main column growth duration · seconds. The tall column expands continuously and damages targets inside it
 				#Range: 0.0 ~ 1000000.0
-				life = 4.2
+				life = 3.36
 				#中文：发射间隔 · 秒。
 				#English: Shot interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
@@ -8474,7 +8504,7 @@
 				#中文：小光柱维持时长 · 秒。落地后固定位置，在可见范围内持续造成伤害。
 				#English: Small column duration · seconds. After landing, columns lock their position and deal repeated damage within their visible area
 				#Range: 0.0 ~ 1000000.0
-				life = 1.5
+				life = 0.4
 				#中文：发射间隔 · 秒。
 				#English: Shot interval · seconds. 
 				#Range: 0.0 ~ 1000000.0
@@ -9518,18 +9548,4 @@
 		#中文：播报技能。在聊天栏播报技能开始和结束。
 		#English: Announce skills. Announce skill starts and endings in chat.
 		action_broadcast = false
-
-#中文：竞技场与位置。两个Boss场地共用；服务端配置重载后生效。
-#English: Arena and positioning. Shared by both boss arenas; applies after server config reload.
-[arena]
-	#中文：场地内自然刷怪。允许女武神和拉塔恩场地内自然生成生物；默认关闭，配置重载后立即生效，未召唤Boss时也生效，不影响召唤与刷怪笼。
-	#English: Natural spawning in boss arenas. Allows natural mob spawning inside Malenia and Radahn arenas; disabled by default, applies on config reload even before summoning, and leaves summons and spawners unaffected.
-	allow_natural_spawns = false
-
-#中文：Boss属性应用。
-#English: Boss attribute application. 
-[bosses]
-	#中文：应用配置基础属性。默认开启，应用配置中的生命、攻击力、移动速度、索敌距离和击退抗性。关闭后，两个Boss在开战、读档和重置时保留实体已有的属性基础值。
-	#English: Apply configured base attributes. Enabled by default. Applies configured health, attack damage, movement speed, follow range and knockback resistance. Disable to retain both bosses' existing attribute bases when starting combat, loading or resetting.
-	apply_configured_base_attributes = false
 

@@ -513,6 +513,80 @@
 			x: 12.0d
 			y: 12.0d
 		}
+		{
+			dependencies: ["2E482B871B147DC6"]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "0F25F11843F1DBA5"
+			quest_enhance_disable_scroll_paging: false
+			shape: "none"
+			tasks: [{
+				id: "3FB2938ED28EC574"
+				type: "checkmark"
+			}]
+			title: "Tetra材料/可获得的实用物品"
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2E482B871B147DC6"]
+			id: "1381F242CA29DBEE"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6130BE4FAB61962B"
+				item: "midnight:ebonite"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2E482B871B147DC6"]
+			id: "2B9C27B844E207F9"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6D4BC1A14139BC51"
+				item: "midnight:rendium_shard"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2E482B871B147DC6"]
+			id: "6960E1AA340B87CE"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3AFF84BCD5072F4D"
+				item: "midnight:nagrilite_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2E482B871B147DC6"]
+			id: "6106404EC9CEAEBC"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "70349FDFCFA227C8"
+				item: "midnight:virilux"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2E482B871B147DC6"]
+			id: "729C0FD1DC2BB694"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "551664409258A629"
+				item: "kubejs:scoria_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.0d
+		}
 	]
 	title: "[VII] &e深境：午夜"
 }

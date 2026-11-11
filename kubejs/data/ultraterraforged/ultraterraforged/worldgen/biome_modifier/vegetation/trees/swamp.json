@@ -1,0 +1,8 @@
+{
+  "type": "ultraterraforged:replace",
+  "biomes": "#ultraterraforged:features/has_swamp_trees",
+  "replacements": {
+    "minecraft:trees_swamp": "ultraterraforged:swamp_trees"
+  },
+  "step": "vegetal_decoration"
+}

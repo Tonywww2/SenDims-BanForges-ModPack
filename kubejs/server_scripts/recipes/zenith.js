@@ -148,7 +148,7 @@ ServerEvents.recipes(event => {
                     'name': 'slashblade:mahakala_fortune',
                     'kill': 20000,
                     'proud_soul': 200000,
-                    'refine': 150
+                    'refine': 125
                 }
             },
             'paper': {
@@ -174,7 +174,7 @@ ServerEvents.recipes(event => {
                     'name': 'slashblade:red_blade_black_soul',
                     'kill': 20000,
                     'proud_soul': 200000,
-                    'refine': 150
+                    'refine': 125
                 }
             },
             'paper': {
@@ -200,7 +200,7 @@ ServerEvents.recipes(event => {
                     'name': 'sjap_adder:nihilbxex',
                     'kill': 20000,
                     'proud_soul': 200000,
-                    'refine': 150
+                    'refine': 125
                 }
             },
             'paper': {
@@ -226,7 +226,7 @@ ServerEvents.recipes(event => {
                     'name': 'redtassel:redtassel_slashblade',
                     'kill': 20000,
                     'proud_soul': 200000,
-                    'refine': 150
+                    'refine': 125
                 }
             },
             'paper': {
@@ -252,7 +252,7 @@ ServerEvents.recipes(event => {
                     'name': 'slashblade_sendims:yakuman_hekigyoku_suukantsu',
                     'kill': 30000,
                     'proud_soul': 300000,
-                    'refine': 150
+                    'refine': 125
                 }
             },
             'paper': {
@@ -278,7 +278,7 @@ ServerEvents.recipes(event => {
                     'name': 'sjap_adder:kamuyex_fire',
                     'kill': 20000,
                     'proud_soul': 200000,
-                    'refine': 150
+                    'refine': 125
                 }
             },
             'paper': {
@@ -304,7 +304,7 @@ ServerEvents.recipes(event => {
                     'name': 'sjap_adder:kamuyex_water',
                     'kill': 20000,
                     'proud_soul': 200000,
-                    'refine': 150
+                    'refine': 125
                 }
             },
             'paper': {
@@ -330,7 +330,7 @@ ServerEvents.recipes(event => {
                     'name': 'sjap_adder:kamuyex_ligghtning',
                     'kill': 20000,
                     'proud_soul': 200000,
-                    'refine': 150
+                    'refine': 125
                 }
             },
             'paper': {
@@ -356,7 +356,7 @@ ServerEvents.recipes(event => {
                     'name': 'sjap_adder:kamuyex_life',
                     'kill': 20000,
                     'proud_soul': 200000,
-                    'refine': 150
+                    'refine': 125
                 }
             },
             'paper': {
@@ -382,7 +382,7 @@ ServerEvents.recipes(event => {
                     'name': 'sjap_adder:kamuyex_death',
                     'kill': 20000,
                     'proud_soul': 200000,
-                    'refine': 150
+                    'refine': 125
                 }
             },
             'paper': {
@@ -408,7 +408,7 @@ ServerEvents.recipes(event => {
                     'name': 'slashblade_sendims:yakuman_sangen_jirei',
                     'kill': 30000,
                     'proud_soul': 300000,
-                    'refine': 150
+                    'refine': 125
                 }
             },
             'paper': {
@@ -434,7 +434,7 @@ ServerEvents.recipes(event => {
                     'name': 'slashblade:nameless_king',
                     'kill': 20000,
                     'proud_soul': 200000,
-                    'refine': 150
+                    'refine': 125
                 }
             },
             'paper': {
@@ -460,7 +460,7 @@ ServerEvents.recipes(event => {
                     'name': 'slashblade_sendims:excalibur',
                     'kill': 20000,
                     'proud_soul': 200000,
-                    'refine': 150
+                    'refine': 125
                 }
             },
             'paper': {
@@ -486,7 +486,7 @@ ServerEvents.recipes(event => {
                     'name': 'last_smith:uma_tachyon',
                     'kill': 20000,
                     'proud_soul': 200000,
-                    'refine': 150
+                    'refine': 125
                 }
             },
             'paper': {
@@ -538,7 +538,7 @@ ServerEvents.recipes(event => {
                     'name': 'slashblade_sendims:yakuman_tenju_kokushi',
                     'kill': 45000,
                     'proud_soul': 500000,
-                    'refine': 150
+                    'refine': 125
                 }
             },
             'paper': {
@@ -564,7 +564,7 @@ ServerEvents.recipes(event => {
                     'name': 'slashblade_sendims:yakuman_chisei_chuuren',
                     'kill': 45000,
                     'proud_soul': 500000,
-                    'refine': 150
+                    'refine': 125
                 }
             },
             'paper': {
@@ -590,7 +590,7 @@ ServerEvents.recipes(event => {
                     'name': 'slashblade_sendims:mizushi',
                     'kill': 20000,
                     'proud_soul': 200000,
-                    'refine': 150
+                    'refine': 125
                 }
             },
             'paper': {
@@ -616,7 +616,7 @@ ServerEvents.recipes(event => {
                     'name': 'slashblade_sendims:greatsword_of_damnation_final',
                     'kill': 20000,
                     'proud_soul': 200000,
-                    'refine': 150
+                    'refine': 125
                 }
             },
             'paper': {
@@ -642,7 +642,7 @@ ServerEvents.recipes(event => {
                     'name': 'sjap_adder:kamuyex_dark',
                     'kill': 20000,
                     'proud_soul': 200000,
-                    'refine': 150
+                    'refine': 125
                 }
             },
             'paper': {
@@ -668,7 +668,7 @@ ServerEvents.recipes(event => {
                     'name': 'last_smith:bunshi',
                     'kill': 20000,
                     'proud_soul': 200000,
-                    'refine': 150
+                    'refine': 125
                 }
             },
             'paper': {
@@ -694,7 +694,7 @@ ServerEvents.recipes(event => {
                     'name': 'slashblade_sendims:yakuman_chinrou_suukou',
                     'kill': 30000,
                     'proud_soul': 300000,
-                    'refine': 150
+                    'refine': 125
                 }
             },
             'paper': {
@@ -781,7 +781,7 @@ ServerEvents.recipes(event => {
                     .name('slashblade:red_blade_black_soul')
                     .killCount(30000)
                     .proudSoul(300000)
-                    .refineCount(150)
+                    .refineCount(125)
                     .build()
             ),
             'M': 'kubejs:epsilon_dust',
@@ -823,7 +823,7 @@ ServerEvents.recipes(event => {
                     .name('sjap_adder:kamuyex_water')
                     .killCount(30000)
                     .proudSoul(300000)
-                    .refineCount(150)
+                    .refineCount(125)
                     .build()
             ),
             'M': 'elder_bosses:rune_fragment',
@@ -865,7 +865,7 @@ ServerEvents.recipes(event => {
                     .name('slashblade:nameless_king')
                     .killCount(30000)
                     .proudSoul(300000)
-                    .refineCount(150)
+                    .refineCount(125)
                     .build()
             ),
             'M': 'kubejs:rainbowshift_entropy',
@@ -906,7 +906,7 @@ ServerEvents.recipes(event => {
                     .name('slashblade_sendims:mizushi')
                     .killCount(30000)
                     .proudSoul(300000)
-                    .refineCount(150)
+                    .refineCount(125)
                     .build()
             ),
             'M': 'kubejs:rainbowshift_entropy',

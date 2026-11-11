@@ -392,6 +392,32 @@
 			x: 9.0d
 			y: 6.0d
 		}
+		{
+			dependencies: ["5D5BA71C5348297D"]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "0F064E4F314FA299"
+			quest_enhance_disable_scroll_paging: false
+			shape: "none"
+			tasks: [{
+				id: "3FF9C7241A0311DC"
+				type: "checkmark"
+			}]
+			title: "Tetra材料/可获得的实用物品"
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5D5BA71C5348297D"]
+			id: "1BE502C8C9A92EAA"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "108AEBE964D0D8BC"
+				item: "ad_astra:desh_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 3.0d
+		}
 	]
 	title: "[III] 月球"
 }

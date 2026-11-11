@@ -72,6 +72,7 @@ let ritualDistanceSqr = (player, x, y, z) => {
  * @param {boolean} config.consumeActivateItem - 释放时是否消耗 1 个激活物
  * @param {boolean} config.weakMatch - 是否忽略 pattern 中的空格坐标
  * @param {string} config.from - 只能在该维度进行（传送门）
+ * @param {Function} config.precheck - 可选，(level, centerPos, player) => 提示文本或 null；激活前和蓄能复查时调用，返回文本即不能进行
  */
 let createBossStructure = (config) => {
     let activateItem = String(config.activateItem);
@@ -294,6 +295,14 @@ let createBossStructure = (config) => {
             player.cooldowns.addCooldown(item, RITUAL_FAIL_COOLDOWN);
             return;
         }
+        if (config.precheck) {
+            let refusal = config.precheck(level, centerPos, player);
+            if (refusal) {
+                fizzle(level, centerPos, player, refusal);
+                player.cooldowns.addCooldown(item, RITUAL_FAIL_COOLDOWN);
+                return;
+            }
+        }
         let report = inspect(level, centerPos);
         if (!report.ok) {
             diagnose(level, centerPos, player, report);
@@ -315,6 +324,7 @@ let createBossStructure = (config) => {
             if (RitualFx.dimOf(player.level) !== dimension) return 'info.kubejs.ritual.interrupted';
             if (ritualDistanceSqr(player, centerPos.x + 0.5, centerPos.y + 0.5, centerPos.z + 0.5) > RITUAL_MAX_DISTANCE_SQR) return 'info.kubejs.ritual.interrupted';
             if (!ritualHolds(player, activateItem)) return 'info.kubejs.ritual.item_left';
+            if (config.precheck && config.precheck(level, centerPos, player)) return 'info.kubejs.ritual.item_left';
             if (!checkStructure(level, centerPos)) return 'info.kubejs.ritual.interrupted';
             return null;
         };

@@ -1,0 +1,17 @@
+{
+  "feature": "sdbf:deep_realm_1/depths",
+  "placement": [
+    {
+      "type": "ultraterraforged:dimension_filter",
+      "blacklist": [
+        "minecraft:overworld"
+      ]
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "absolute": 137
+      }
+    }
+  ]
+}

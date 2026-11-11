@@ -1,0 +1,14 @@
+{
+	"structures": [
+		{
+			"structure": "sdbf:deep_realm_1/deep_dark_temple",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"type": "minecraft:random_spread",
+		"salt": 656662444,
+		"spacing": 32,
+		"separation": 12
+	}
+}

@@ -22,6 +22,7 @@
 
 ## 常用文档
 
+- [UTF 与 C2MEF 实施报告及 11/08 补丁合并](development/SDBF-UTF与C2MEF实施阶段报告-2026-11-09.md)
 - [SDBF 服务端打包规范](development/SDBF-服务端打包规范.md)
 - [服务端物品丢失与麻将崩溃修复（2026-10-24）](development/SDBF-服务端严重问题修复-2026-10-24.md)
 - [麻将整场结束后卡住修复（v2）](development/SDBF-麻将整场结束卡住修复-2026-10-24.md)

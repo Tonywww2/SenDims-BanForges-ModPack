@@ -1,0 +1,34 @@
+{
+  "type": "ultraterraforged:warp",
+  "domain": {
+    "type": "ultraterraforged:domain",
+    "distance": 6.0,
+    "x": {
+      "type": "ultraterraforged:perlin",
+      "frequency": 0.125,
+      "gain": 0.5,
+      "interpolation": "CURVE3",
+      "lacunarity": 2.0,
+      "octaves": 1,
+      "seed": 4135
+    },
+    "z": {
+      "type": "ultraterraforged:perlin",
+      "frequency": 0.125,
+      "gain": 0.5,
+      "interpolation": "CURVE3",
+      "lacunarity": 2.0,
+      "octaves": 1,
+      "seed": 4136
+    }
+  },
+  "input": {
+    "type": "ultraterraforged:perlin",
+    "frequency": 0.071428575,
+    "gain": 0.5,
+    "interpolation": "CURVE3",
+    "lacunarity": 2.0,
+    "octaves": 2,
+    "seed": 4134
+  }
+}

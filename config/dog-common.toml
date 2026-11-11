@@ -170,7 +170,7 @@
 	#second is damage x 20 / procIntervalTicks, so the defaults give about
 	#4 per second. Vanilla fire is 1 per second.
 	#Range: 0.0 ~ 100.0
-	cosmicFlameDamage = 200.0
+	cosmicFlameDamage = 100.0
 	#Ticks between Cosmic Flame damage ticks. 20 is once per second.
 	#Range: 1 ~ 100
 	cosmicFlameProcIntervalTicks = 10

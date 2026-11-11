@@ -15,6 +15,8 @@ dimensionLimitMap.put("gateways:sdbf_mars_g1", "ad_astra:mars");
 
 dimensionLimitMap.put("gateways:sdbf_end_g1", "minecraft:the_end");
 dimensionLimitMap.put("gateways:sdbf_asteroid_g1", "sdbf:asteroid_belt");
+dimensionLimitMap.put("gateways:sdbf_inside_end_g1", "sdbf:inside_the_end");
+dimensionLimitMap.put("gateways:sdbf_inside_end_g2", "sdbf:inside_the_end");
 
 dimensionLimitMap.put("gateways:sdbf_titan_g1", "titan_moon:titan");
 dimensionLimitMap.put("gateways:sdbf_titan_g2", "titan_moon:titan");

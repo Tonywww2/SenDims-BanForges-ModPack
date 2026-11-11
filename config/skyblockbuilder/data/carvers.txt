@@ -7,11 +7,6 @@ cavernous:flat_cave
 cavernous:flat_ravine
 cavernous:sinkhole
 cavernous:snaking_ravine
-infinity_cave:canyon
-infinity_cave:cave
-infinity_cave:cave_extra_underground
-infinity_cave:insane
-infinity_cave:nether_cave
 midnight:midnight_cave
 minecraft:canyon
 minecraft:cave

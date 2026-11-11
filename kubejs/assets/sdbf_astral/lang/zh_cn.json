@@ -113,5 +113,11 @@
   "tooltip.sdbf_astral.effect.34.alpha": "放大魔力；智力与感知分别提高倍率",
   "tooltip.sdbf_astral.effect.34.beta": "合并2–3颗宝石为智力；分数类型越多，效率越高",
   "tooltip.sdbf_astral.effect.34.gamma": "3颗不同规则宝石的最低总分转为体质，数值提高倍率",
-  "tooltip.sdbf_astral.effect.34.delta": "放大最高分数并转为力量；其余分数提高倍率"
+  "tooltip.sdbf_astral.effect.34.delta": "放大最高分数并转为力量；其余分数提高倍率",
+  "tooltip.sdbf_astral.process_hint": "按下Shift查看星界宝石信息",
+  "tooltip.sdbf_astral.filler_types": "可加工为填充物：",
+  "tooltip.sdbf_astral.badge_rule": "徽章规则：",
+  "tooltip.sdbf_astral.role.producer": "加分规则",
+  "tooltip.sdbf_astral.role.converter": "分数转换规则",
+  "tooltip.sdbf_astral.role.amplifier": "放大规则"
 }

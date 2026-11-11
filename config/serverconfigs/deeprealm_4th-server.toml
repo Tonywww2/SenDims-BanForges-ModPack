@@ -15,3 +15,8 @@
 	#Default: only the End. Use namespaced dimension IDs; an empty list disables this entrance.
 	void_entry_dimensions = ["minecraft:the_end"]
 
+[calculation]
+	#Ticks between equipment and menu score calculations. 1 restores every-tick evaluation.
+	#Range: 1 ~ 1200
+	interval_ticks = 5
+

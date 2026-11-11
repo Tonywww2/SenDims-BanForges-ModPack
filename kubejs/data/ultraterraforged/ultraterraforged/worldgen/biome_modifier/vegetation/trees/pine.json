@@ -1,0 +1,9 @@
+{
+  "type": "ultraterraforged:replace",
+  "biomes": "#ultraterraforged:features/has_pine_forest_trees",
+  "replacements": {
+    "minecraft:trees_old_growth_spruce_taiga": "ultraterraforged:pine_trees",
+    "minecraft:trees_taiga": "ultraterraforged:pine_trees"
+  },
+  "step": "vegetal_decoration"
+}

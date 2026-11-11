@@ -1,0 +1,8 @@
+{
+  "type": "ultraterraforged:replace",
+  "biomes": "#ultraterraforged:features/has_jungle_edge_trees",
+  "replacements": {
+    "minecraft:trees_sparse_jungle": "ultraterraforged:jungle_edge_trees"
+  },
+  "step": "vegetal_decoration"
+}

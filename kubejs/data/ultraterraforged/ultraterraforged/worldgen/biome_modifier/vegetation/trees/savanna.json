@@ -1,0 +1,8 @@
+{
+  "type": "ultraterraforged:replace",
+  "biomes": "#ultraterraforged:features/has_savanna_trees",
+  "replacements": {
+    "minecraft:trees_savanna": "ultraterraforged:savanna_trees"
+  },
+  "step": "vegetal_decoration"
+}

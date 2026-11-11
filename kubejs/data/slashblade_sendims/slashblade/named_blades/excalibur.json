@@ -20,11 +20,13 @@
     "name": "slashblade_sendims:excalibur",
     "properties": {
         "attack_base": 90.0,
+        "max_damage": 160,
         "slash_art": "slashblade_sendims:excalibur",
         "special_effects": [
             "slashblade_sendims:mana_burst",
             "slashblade_sendims:kings_selection",
-            "slashblade_sendims:invisible_air"
+            "slashblade_sendims:invisible_air",
+            "slashblade_sendims:avalon"
         ],
         "sword_type": [
             "bewitched"

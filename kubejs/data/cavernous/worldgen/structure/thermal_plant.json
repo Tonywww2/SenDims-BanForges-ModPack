@@ -42,10 +42,10 @@
 	"start_height": {
 		"type": "minecraft:uniform",
 		"min_inclusive": {
-			"above_bottom": 12
+			"absolute": 208
 		},
 		"max_inclusive": {
-			"above_bottom": 24
+			"absolute": 300
 		}
 	},
 	"max_distance_from_center": 80,

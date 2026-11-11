@@ -1,0 +1,20 @@
+{
+  "type": "ultraterraforged:add",
+  "input1": {
+    "type": "ultraterraforged:multiply",
+    "input1": {
+      "type": "ultraterraforged:shift",
+      "input": {
+        "type": "ultraterraforged:perlin_ridge",
+        "frequency": 0.04,
+        "gain": 0.975,
+        "interpolation": "CURVE3",
+        "lacunarity": 2.0,
+        "octaves": 2
+      },
+      "shift": 746382644
+    },
+    "input2": 0.01171875
+  },
+  "input2": 0.0078125
+}

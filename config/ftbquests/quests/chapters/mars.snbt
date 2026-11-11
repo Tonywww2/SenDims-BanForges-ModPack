@@ -442,6 +442,32 @@
 			x: 3.0d
 			y: 6.0d
 		}
+		{
+			dependencies: ["3F43656AE6F116CB"]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "14841DB71B3E1362"
+			quest_enhance_disable_scroll_paging: false
+			shape: "none"
+			tasks: [{
+				id: "49A74D4C670B98A3"
+				type: "checkmark"
+			}]
+			title: "Tetra材料/可获得的实用物品"
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3F43656AE6F116CB"]
+			id: "28F75076D5756287"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "76076D28BB7ADB49"
+				item: "ad_astra:ostrum_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 3.0d
+		}
 	]
 	title: "[V] 火星"
 }

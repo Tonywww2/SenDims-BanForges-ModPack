@@ -1,0 +1,24 @@
+{
+  "type": "ultraterraforged:template",
+  "config": {
+    "decorator": {
+      "biome_decorators": {},
+      "default_decorators": []
+    },
+    "paste": {
+      "base_depth": 3,
+      "check_bounds": true
+    },
+    "placement": {
+      "type": "ultraterraforged:tree"
+    },
+    "templates": [
+      "ultraterraforged:structures/trees/spruce/small/spruce_small_1.nbt",
+      "ultraterraforged:structures/trees/spruce/small/spruce_small_2.nbt",
+      "ultraterraforged:structures/trees/spruce/small/spruce_small_3.nbt",
+      "ultraterraforged:structures/trees/spruce/small/spruce_small_4.nbt",
+      "ultraterraforged:structures/trees/spruce/bush/spruce_bush_1.nbt",
+      "ultraterraforged:structures/trees/spruce/bush/spruce_bush_2.nbt"
+    ]
+  }
+}

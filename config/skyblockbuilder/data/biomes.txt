@@ -67,12 +67,6 @@ deep_aether:golden_heights
 deep_aether:luminescent_forest
 deep_aether:mystic_aerglow_forest
 deep_aether:yagroot_swamp
-infinity_cave:amethyst_caves
-infinity_cave:deeprock_caverns
-infinity_cave:frozen_caves
-infinity_cave:limestone_grotto
-infinity_cave:molten_caves
-infinity_cave:sulfide_caves
 integrateddynamics:meneglin
 kubejs:fourth_layer_desert
 kubejs:fourth_layer_gravel_desert
@@ -241,6 +235,11 @@ regions_unexplored:tropical_river
 regions_unexplored:tropics
 regions_unexplored:willow_forest
 sdbf:asteroid_belt/asteroid_belt
+sdbf:deep_realm_1/amethyst_caves
+sdbf:deep_realm_1/deep_dark
+sdbf:deep_realm_1/deeprock_caverns
+sdbf:deep_realm_1/molten_caves
+sdbf:deep_realm_1/sulfide_caves
 sdbf:inside_the_end/end_barrens
 sdbf:inside_the_end/end_highlands
 sdbf:inside_the_end/end_midlands

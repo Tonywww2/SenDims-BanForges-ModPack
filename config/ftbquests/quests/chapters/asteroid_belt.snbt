@@ -348,6 +348,104 @@
 			x: 3.0d
 			y: 12.0d
 		}
+		{
+			dependencies: ["77DC6770CC08AEF6"]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "7FCD0A38B1ECF2F0"
+			quest_enhance_disable_scroll_paging: false
+			shape: "none"
+			tasks: [{
+				id: "1D57C92E6FC58B75"
+				type: "checkmark"
+			}]
+			title: "Tetra材料/可获得的实用物品"
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["77DC6770CC08AEF6"]
+			id: "05CBA3A576A54788"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1A84C1E19662411D"
+				item: "kubejs:silica_rich_asteroid_rock"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["77DC6770CC08AEF6"]
+			id: "210D55E19019541A"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4C713065108C9864"
+				item: "cataclysm:lacrima"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["77DC6770CC08AEF6"]
+			id: "55BB3008DC6592AD"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4DF5A36ED43BAB4B"
+				item: "kubejs:bizarre_matter_dust"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["77DC6770CC08AEF6"]
+			id: "300F27E36B279255"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4356AE5C058C3F51"
+				item: "cataclysm:essence_of_the_storm"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["77DC6770CC08AEF6"]
+			id: "16AA7FC0FB9875E3"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "00103E319990AD6F"
+				item: "kubejs:delta_dust"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["77DC6770CC08AEF6"]
+			id: "3223B3845E7041AB"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "67C88982FA4DD5BE"
+				item: "kubejs:galatic_cycle_component"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["77DC6770CC08AEF6"]
+			id: "5DABC7B2F45B35D1"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4B1CC788A1408ECE"
+				item: "botania:terrasteel_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.0d
+		}
 	]
 	title: "[IX] 小行星带"
 }

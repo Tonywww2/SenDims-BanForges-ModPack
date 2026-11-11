@@ -1,0 +1,5 @@
+{
+  "gui.xaero_toggle_manual_cave_mode": "Toggle Cave Mode (Normal / Partial Layer)",
+  "gui.xaero_manual_cave_mode": "Partial-Layer Cave Mode",
+  "gui.xaero_infodisplay_manual_cave_mode_indicator": "Partial-Layer Cave Mode Status"
+}

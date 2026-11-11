@@ -1,4 +1,5 @@
 {
+	autofocus_id: "220AEBF0A8A46F7C"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "the_bumblezone"
@@ -619,6 +620,80 @@
 			}]
 			x: 0.0d
 			y: 6.0d
+		}
+		{
+			dependencies: ["220AEBF0A8A46F7C"]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "6EED41DE735FFEE4"
+			quest_enhance_disable_scroll_paging: false
+			shape: "none"
+			tasks: [{
+				id: "6E5A17FCED135589"
+				type: "checkmark"
+			}]
+			title: "Tetra材料/可获得的实用物品"
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["220AEBF0A8A46F7C"]
+			id: "49174E5446F4AAFE"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "583D0CBFB437F628"
+				item: "the_bumblezone:redstone_honey_web"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["220AEBF0A8A46F7C"]
+			id: "29B0358CAC665E24"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5771174B744753D7"
+				item: "the_bumblezone:glistering_honey_crystal"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["220AEBF0A8A46F7C"]
+			id: "59EA3F4FC187BEC4"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "331CAFEC10737170"
+				item: "the_bumblezone:ancient_wax_compound_eyes"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["220AEBF0A8A46F7C"]
+			id: "1D2EB0F6DE9594D5"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1F97E198D280041E"
+				item: "the_bumblezone:royal_jelly_bottle"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["220AEBF0A8A46F7C"]
+			id: "34517E7A21B26601"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "77BC677118F533AE"
+				item: "kubejs:multifaceted_ambrosia"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.0d
 		}
 	]
 	title: "[X] &e黄蜂领域"

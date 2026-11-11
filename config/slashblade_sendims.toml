@@ -54,8 +54,6 @@
 		slashbladeObjSubmission = true
 
 	[performance.hud]
-		#Reuse consecutive identical FTB entity-icon texture filter writes inside one HUD pass.
-		minimapIconFilters = true
 		#Batch UIQuest background slices; preserve the original stepped gradient and text/item ordering.
 		questBackgroundBatching = true
 		#Cache immutable trimmed quest text by font, resource generation and width. Quest progress is never cached.

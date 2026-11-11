@@ -1,0 +1,10 @@
+{
+  "type": "ultraterraforged:add",
+  "biomes": {
+    "behavior": "whitelist",
+    "biomes": "#ultraterraforged:features/has_steppe_bushes"
+  },
+  "features": "ultraterraforged:shrubs/steppe_bush",
+  "order": "prepend",
+  "step": "vegetal_decoration"
+}

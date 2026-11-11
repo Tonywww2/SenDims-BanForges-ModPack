@@ -654,6 +654,128 @@
 			x: 9.0d
 			y: 3.0d
 		}
+		{
+			dependencies: ["0A68F5EE8F25F036"]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "3B0AC4A37BDDFB9C"
+			quest_enhance_disable_scroll_paging: false
+			shape: "none"
+			tasks: [{
+				id: "6430495E7F3F0C11"
+				type: "checkmark"
+			}]
+			title: "Tetra材料/可获得的实用物品"
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0A68F5EE8F25F036"]
+			id: "2191C8D96458960E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "394C55FBF7984B8D"
+				item: "minecraft:popped_chorus_fruit"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0A68F5EE8F25F036"]
+			id: "234FD1AD61A5E97F"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1C1294EEA955891C"
+				item: "integrateddynamics:crystalized_chorus_chunk"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0A68F5EE8F25F036"]
+			id: "3CE3A7E4BF6B4471"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6E443118EFB42679"
+				item: "quark:myalite_crystal"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0A68F5EE8F25F036"]
+			id: "19AEF23582A6C304"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3C56840CAE11B7D0"
+				item: "integrateddynamics:logic_director"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0A68F5EE8F25F036"]
+			id: "6BB254B81DE31F59"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "30229F719FF8A3D5"
+				item: "integratedterminals:chorus_glass"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0A68F5EE8F25F036"]
+			id: "056660663636838A"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "133E9A5145FC2AD2"
+				item: "cataclysm:void_stone"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0A68F5EE8F25F036"]
+			id: "6B8E8FB9C9318430"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "620E942A8B84CBD0"
+				item: "cataclysm:void_core"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0A68F5EE8F25F036"]
+			id: "79DE541527E0BBC0"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "01EC93823AE16F3D"
+				item: "kubejs:chorus_logic_composite_coil"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0A68F5EE8F25F036"]
+			id: "661BB1D7D2DDB0EE"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "72B09EC00556BF85"
+				item: "enderio:end_steel_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 6.0d
+		}
 	]
 	title: "[VIII] &e末地"
 }

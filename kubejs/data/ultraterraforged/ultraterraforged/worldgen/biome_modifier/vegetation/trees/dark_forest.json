@@ -1,0 +1,8 @@
+{
+  "type": "ultraterraforged:replace",
+  "biomes": "#ultraterraforged:features/has_dark_forest_trees",
+  "replacements": {
+    "minecraft:dark_forest_vegetation": "ultraterraforged:dark_forest_trees"
+  },
+  "step": "vegetal_decoration"
+}

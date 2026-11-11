@@ -46,6 +46,38 @@
   Object.keys(A.scoreNames).forEach(score => { colorsByName[A.scoreNames[score]] = ScoreColors.rgb(ScoreType[score]); });
   // A neutral parent retains the colored span; CLEAR (\u00a7r) restores formatting after it.
   let clear = text => Text.of('').append(text).append(Text.of('\u00a7r'));
+  // Description text: colour only the score/stat words (unified colours) and numbers, nothing bleeds.
+  let describe = value => {
+    let result = Text.of('');
+    String(value).split(/(大小|纯度|抛光|打磨|力量|敏捷|智力|体质|感知|魔力|[-+]?\d+(?:\.\d+)?(?:e[-+]?\d+)?%?)/i).forEach(part => {
+      if (!part) return;
+      let color = colorsByName[part];
+      if (part === '打磨') color = statColors.polish;
+      if (color === undefined) color = /\d/.test(part) ? Color.YELLOW : Color.GRAY;
+      result.append(clear(Text.of(part).color(color)));
+    });
+    return result;
+  };
+  // Processing outcomes shown for unprocessed gems: role label and colour per rule role.
+  let roleInfo = {
+    producer: { key: 'tooltip.sdbf_astral.role.producer', color: 0xF2C14E },
+    converter: { key: 'tooltip.sdbf_astral.role.converter', color: 0x6FD3FF },
+    amplifier: { key: 'tooltip.sdbf_astral.role.amplifier', color: 0xD98CFF }
+  };
+  // Raw gem: list which fillers it can roll (role + effect + badge rule) without touching the Java API.
+  let appendGemOutcomes = (text, shift, id) => {
+    let candidates = A.byItem ? A.byItem[id] : null;
+    if (!candidates || !candidates.length) return;
+    if (!shift) { text.add(clear(Text.translatable('tooltip.sdbf_astral.process_hint').yellow())); return; }
+    text.add(clear(Text.translatable('tooltip.sdbf_astral.filler_types').gold()));
+    candidates.forEach(r => {
+      let role = roleInfo[r.role] || { key: 'tooltip.sdbf_astral.role.' + r.role, color: 0xAAAAAA };
+      text.add(clear(Text.of(r.letter + ' ').append(Text.translatable(role.key)).color(role.color)));
+      wrap(Text.translatable('tooltip.sdbf_astral.effect.' + r.kind + '.' + r.primary).getString(), 27)
+        .forEach(line => text.add(describe('　' + line)));
+      text.add(clear(Text.translatable('tooltip.sdbf_astral.badge_rule').gray().append(describe(r.badgeText))));
+    });
+  };
   let numeric = (value, state) => {
     let result = Text.of(''), current = state ? state.current : null;
     String(value).split(/(大小|纯度|抛光|打磨|力量|敏捷|智力|体质|感知|魔力|[-+]?\d+(?:\.\d+)?(?:e[-+]?\d+)?%?)/i).forEach(part => {
@@ -68,6 +100,8 @@
   };
   ItemEvents.tooltip(event => event.addAdvanced(A.species.map(s => s.item).concat([A.fillerId, A.badgeId]), (item, advanced, text) => {
     let id = String(item.id), badge = id === A.badgeId, filler = id === A.fillerId;
+    // Unprocessed gem: show the filler types it can roll, independent of the Java API.
+    if (!badge && !filler && A.byItem && A.byItem[id]) { appendGemOutcomes(text, event.shift, id); return; }
     if (!A.apiReady) { if (badge || filler) text.add(clear(Text.translatable('tooltip.sdbf_astral.api_unavailable').gray())); return; }
     let parsed = A.read(item);
     if (!parsed.payload) {
@@ -99,8 +133,10 @@
         }
       }
     }
-    if (!badge) add('填充物：' + Text.translatable('tooltip.sdbf_astral.effect.' + r.kind + '.' + r.primary).getString());
-    if (!filler) r.badgeChannels.forEach(channel => add('徽章：' + channel.scores.map(score => A.scoreNames[score]).join('＋') + ' → ' + channel.label));
+    if (!badge) wrap('填充物：' + Text.translatable('tooltip.sdbf_astral.effect.' + r.kind + '.' + r.primary).getString(), 28)
+      .forEach(line => text.add(describe(line)));
+    if (!filler) r.badgeChannels.forEach(channel => wrap('徽章：' + channel.scores.map(score => A.scoreNames[score]).join('＋') + ' → ' + channel.label, 28)
+      .forEach(line => text.add(describe(line))));
     if (!A.balance) text.add(clear(Text.translatable('tooltip.sdbf_astral.balance_pending').yellow()));
     if (!event.shift) text.add(clear(Text.translatable('tooltip.sdbf_astral.details_hint').darkGray()));
   }));

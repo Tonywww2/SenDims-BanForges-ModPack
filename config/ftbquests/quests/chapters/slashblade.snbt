@@ -1158,6 +1158,11 @@
 		}
 		{
 			dependencies: ["4A57E4499E188BD7"]
+			description: [
+				"山樱拥有较高的基础攻击力，并且初始为&d妖刀&r。"
+				""
+				"不过制作过程&e略微复杂&r，并且不制作也可以拥有足够的战力，请酌情考虑。"
+			]
 			id: "1379B8D98C84F257"
 			quest_enhance_disable_scroll_paging: false
 			subtitle: "可被改造"

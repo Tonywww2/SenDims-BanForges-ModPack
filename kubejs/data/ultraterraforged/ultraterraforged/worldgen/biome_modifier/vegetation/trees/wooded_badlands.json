@@ -1,0 +1,8 @@
+{
+  "type": "ultraterraforged:replace",
+  "biomes": "#ultraterraforged:features/has_wooded_badlands_trees",
+  "replacements": {
+    "minecraft:trees_badlands": "ultraterraforged:wooded_badlands_trees"
+  },
+  "step": "vegetal_decoration"
+}

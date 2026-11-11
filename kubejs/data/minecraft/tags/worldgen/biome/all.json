@@ -1,9 +1,8 @@
 {
   "values": [
-    "infinity_cave:molten_caves",
-    "infinity_cave:sulfide_caves",
-    "infinity_cave:amethyst_caves",
-    "infinity_cave:frozen_caves",
-    "infinity_cave:deeprock_caverns"
+    "sdbf:deep_realm_1/molten_caves",
+    "sdbf:deep_realm_1/sulfide_caves",
+    "sdbf:deep_realm_1/amethyst_caves",
+    "sdbf:deep_realm_1/deeprock_caverns"
   ]
 }

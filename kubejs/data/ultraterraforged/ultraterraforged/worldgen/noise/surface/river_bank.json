@@ -1,0 +1,39 @@
+{
+  "type": "ultraterraforged:shift",
+  "input": {
+    "type": "ultraterraforged:warp",
+    "domain": {
+      "type": "ultraterraforged:domain",
+      "distance": 3.0,
+      "x": {
+        "type": "ultraterraforged:shift",
+        "input": {
+          "type": "ultraterraforged:white",
+          "frequency": 0.5
+        },
+        "shift": 16
+      },
+      "z": {
+        "type": "ultraterraforged:shift",
+        "input": {
+          "type": "ultraterraforged:white",
+          "frequency": 0.5
+        },
+        "shift": 17
+      }
+    },
+    "input": {
+      "type": "ultraterraforged:shift",
+      "input": {
+        "type": "ultraterraforged:simplex",
+        "frequency": 0.2,
+        "gain": 0.5,
+        "interpolation": "CURVE3",
+        "lacunarity": 2.0,
+        "octaves": 5
+      },
+      "shift": 15
+    }
+  },
+  "shift": 746382634
+}

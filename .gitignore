@@ -102,3 +102,8 @@ config/zfastnoise.mixin.properties
 /.sdbf-backups/
 /docs/releases/*.zip
 __pycache__/
+/xaero
+config/brandon3055/contributors.json
+config/brandon3055/contributors.json.etag
+/config/brandon3055/servers
+config/backpack_side_gui-client.toml

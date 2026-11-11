@@ -29,17 +29,14 @@
     ]
   },
   "features": [
-    // RAW_GENERATION
-    [     "infinity_cave:depths_63",
-      "infinity_cave:depths_79",
-      "infinity_cave:depths_95",
-      "infinity_cave:depths_111",
-      "infinity_cave:depths_127"
-    ],
-    // LAKES
     [
+      "sdbf:deep_realm_1/depths_63",
+      "sdbf:deep_realm_1/depths_79",
+      "sdbf:deep_realm_1/depths_95",
+      "sdbf:deep_realm_1/depths_111",
+      "sdbf:deep_realm_1/depths_127"
     ],
-    // LOCAL_MODIFICATIONS
+    [],
     [
       "minecraft:amethyst_geode",
       "yungscavebiomes:frosted_caves/large_icicle",
@@ -50,18 +47,15 @@
       "yungscavebiomes:frosted_caves/frost_lily",
       "yungscavebiomes:frosted_caves/water_surface_ice_fragment",
       "yungscavebiomes:frosted_caves/water_surface_ice_fragment_2",
-      "yungscavebiomes:frosted_caves/icicles"
+      "yungscavebiomes:frosted_caves/icicles",
+      "sdbf:deep_realm_1/upper/amethyst_geode"
     ],
-    // UNDERGROUND_STRUCTURES,
     [
       "minecraft:monster_room",
       "minecraft:monster_room_deep"
     ],
-    // SURFACE_STRUCTURES
     [],
-    // STRONGHOLDS
     [],
-    // UNDERGROUND_ORES
     [
       "minecraft:ore_dirt",
       "minecraft:ore_gravel",
@@ -92,17 +86,11 @@
       "minecraft:disk_clay",
       "minecraft:disk_gravel"
     ],
-    // UNDERGROUND_DECORATION
-    [
-    ],
-    // FLUID_SPRINGS
+    [],
     [
       "minecraft:spring_water"
     ],
-    // VEGETAL_DECORATION
-    [
-    ],
-    // TOP_LAYER_MODIFICATION
+    [],
     [
       "minecraft:freeze_top_layer",
       "yungscavebiomes:frosted_caves/ice_sheet_replace",

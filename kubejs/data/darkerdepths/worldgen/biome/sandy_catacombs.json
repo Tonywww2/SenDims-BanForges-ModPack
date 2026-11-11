@@ -28,21 +28,22 @@
   },
   "features": [
     [
-      "infinity_cave:depths_15",
-      "infinity_cave:depths_31",
-      "infinity_cave:depths_47",
-      "infinity_cave:depths_63",
-      "infinity_cave:depths_79",
-      "infinity_cave:depths_95",
-      "infinity_cave:depths_111",
-      "infinity_cave:depths_127"
+      "sdbf:deep_realm_1/depths_15",
+      "sdbf:deep_realm_1/depths_31",
+      "sdbf:deep_realm_1/depths_47",
+      "sdbf:deep_realm_1/depths_63",
+      "sdbf:deep_realm_1/depths_79",
+      "sdbf:deep_realm_1/depths_95",
+      "sdbf:deep_realm_1/depths_111",
+      "sdbf:deep_realm_1/depths_127"
     ],
     [
       "minecraft:lake_lava_underground",
       "minecraft:lake_lava_surface"
     ],
     [
-      "minecraft:amethyst_geode"
+      "minecraft:amethyst_geode",
+      "sdbf:deep_realm_1/upper/amethyst_geode"
     ],
     [
       "minecraft:monster_room",
@@ -76,15 +77,14 @@
       "minecraft:disk_sand",
       "minecraft:disk_clay",
       "minecraft:disk_gravel",
-      "infinity_cave:generic/rock",
-      "infinity_cave:generic/pillar",
-      "infinity_cave:generic/big_pillar",
-      "infinity_cave:generic/small_pillar",
-      "infinity_cave:generic/ores/iron",
-      "infinity_cave:generic/ores/redstone",
-      "infinity_cave:generic/pile",
-      "infinity_cave:generic/ceiling",
-      "infinity_cave:generic/replace"
+      "sdbf:deep_realm_1/generic/rock",
+      "sdbf:deep_realm_1/generic/pillar",
+      "sdbf:deep_realm_1/generic/big_pillar",
+      "sdbf:deep_realm_1/generic/small_pillar",
+      "sdbf:deep_realm_1/generic/ores/iron",
+      "sdbf:deep_realm_1/generic/ores/redstone",
+      "sdbf:deep_realm_1/generic/pile",
+      "sdbf:deep_realm_1/generic/ceiling"
     ],
     [],
     [
@@ -93,7 +93,8 @@
     ],
     [
       "minecraft:glow_lichen",
-      "minecraft:patch_tall_grass_2"
+      "minecraft:patch_tall_grass_2",
+      "sdbf:deep_realm_1/upper/glow_lichen"
     ],
     [
       "minecraft:freeze_top_layer"

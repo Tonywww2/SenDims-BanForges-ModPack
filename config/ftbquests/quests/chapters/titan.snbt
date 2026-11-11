@@ -27,7 +27,7 @@
 			linked_quest: "397C4E18445F7165"
 			shape: "hexagon"
 			x: -3.0d
-			y: 3.0d
+			y: -3.0d
 		}
 		{
 			id: "559B58DB1BF806AA"
@@ -528,6 +528,104 @@
 			}]
 			x: 15.0d
 			y: 9.0d
+		}
+		{
+			dependencies: ["37CF7606A44B5357"]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "465F4C9B8D212D33"
+			quest_enhance_disable_scroll_paging: false
+			shape: "none"
+			tasks: [{
+				id: "77E3741CC3C67C09"
+				type: "checkmark"
+			}]
+			title: "Tetra材料/可获得的实用物品"
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["37CF7606A44B5357"]
+			id: "3F82C8D918D80448"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "22308883C7A4F0DC"
+				item: "titan_moon:tholin_fibre"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["37CF7606A44B5357"]
+			id: "2E0F87E7756633CA"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "05B845C8B2949E8C"
+				item: "titan_moon:tough_neural_gland"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["37CF7606A44B5357"]
+			id: "3516036609FFC565"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0ADC1959851184A4"
+				item: "titan_moon:meteoric_iron_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["37CF7606A44B5357"]
+			id: "2518893E7E934722"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4C0869841F377670"
+				item: "titan_moon:azotosome_sheet"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["37CF7606A44B5357"]
+			id: "21DBEDBC1160A944"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1495FF1D79A1F10D"
+				item: "titan_moon:cryo_alloy_ingot"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["37CF7606A44B5357"]
+			id: "6DEF71D5D35815D4"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1EB51F2BAB7F9F52"
+				item: "kubejs:titan-ii_composite_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["37CF7606A44B5357"]
+			id: "02EF38B7FBA5E9FF"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "16CA7447ECA3E5ED"
+				item: "kubejs:storm_hydrogen_crystal"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 6.0d
 		}
 	]
 	title: "[XII] &e土卫六"

@@ -1,0 +1,14 @@
+{
+	"structures": [
+		{
+			"structure": "sdbf:deep_realm_1/sulfide_huts",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"type": "minecraft:random_spread",
+		"salt": 9592963,
+		"spacing": 20,
+		"separation": 7
+	}
+}

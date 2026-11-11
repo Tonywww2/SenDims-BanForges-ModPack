@@ -1,4 +1,4 @@
-7 possible world-presets found:
+8 possible world-presets found:
 - "minecraft:amplified"
 - "minecraft:debug_all_block_states"
 - "minecraft:flat"
@@ -6,3 +6,4 @@
 - "minecraft:normal"
 - "minecraft:single_biome_surface"
 - "skyblockbuilder:skyblock"
+- "ultraterraforged:ultraterraforged"

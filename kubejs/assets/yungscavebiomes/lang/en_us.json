@@ -1,5 +1,5 @@
 {
-  "biome.infinity_cave.amethyst_caves": "Amethyst Caverns",
+  "biome.sdbf.deep_realm_1.amethyst_caves": "Amethyst Caverns",
   "biome.cavernous.crystal_caves": "Crystal Caves",
   "biome.cavernous.tropical_caves": "Tropical Caves",
   "biome.cavernous.painted_caves": "Painted Caves",
@@ -7,8 +7,9 @@
   "biome.cavernous.desert_caves": "Desert Caves",
   "biome.cavernous.icy_caves": "Icy Caves",
   "biome.cavernous.marshy_caves": "Marshy Caves",
-  "biome.infinity_cave.molten_caves": "Molten Caverns",
+  "biome.sdbf.deep_realm_1.molten_caves": "Molten Caverns",
   "biome.cavernous.volcanic_caves": "Volcanic Caves",
-  "biome.infinity_cave.sulfide_caves": "Blooming Caverns",
-  "biome.infinity_cave.deeprock_caverns": "Deeprock Caverns"
+  "biome.sdbf.deep_realm_1.sulfide_caves": "Blooming Caverns",
+  "biome.sdbf.deep_realm_1.deeprock_caverns": "Deeprock Caverns",
+  "biome.sdbf.deep_realm_1.deep_dark": "Deep Dark"
 }

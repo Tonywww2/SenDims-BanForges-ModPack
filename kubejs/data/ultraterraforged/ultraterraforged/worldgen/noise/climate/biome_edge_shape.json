@@ -1,0 +1,16 @@
+{
+  "type": "ultraterraforged:add",
+  "input1": {
+    "type": "ultraterraforged:shift",
+    "input": {
+      "type": "ultraterraforged:simplex",
+      "frequency": 0.041666668,
+      "gain": 0.5,
+      "interpolation": "CURVE3",
+      "lacunarity": 2.65,
+      "octaves": 2
+    },
+    "shift": 0
+  },
+  "input2": -0.5
+}

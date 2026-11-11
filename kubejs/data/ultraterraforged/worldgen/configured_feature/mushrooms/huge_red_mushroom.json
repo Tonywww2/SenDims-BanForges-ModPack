@@ -1,0 +1,23 @@
+{
+  "type": "ultraterraforged:template",
+  "config": {
+    "decorator": {
+      "biome_decorators": {},
+      "default_decorators": []
+    },
+    "paste": {
+      "base_depth": 3,
+      "check_bounds": true
+    },
+    "placement": {
+      "type": "ultraterraforged:tree"
+    },
+    "templates": [
+      "ultraterraforged:structures/mushrooms/red/red_mushroom_1.nbt",
+      "ultraterraforged:structures/mushrooms/red/red_mushroom_2.nbt",
+      "ultraterraforged:structures/mushrooms/red/red_mushroom_3.nbt",
+      "ultraterraforged:structures/mushrooms/red/red_mushroom_4.nbt",
+      "ultraterraforged:structures/mushrooms/red/red_mushroom_5.nbt"
+    ]
+  }
+}

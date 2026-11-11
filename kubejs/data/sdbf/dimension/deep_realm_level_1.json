@@ -7,7 +7,7 @@
 			"type": "minecraft:multi_noise",
 			"biomes": [
 				{
-					"biome": "infinity_cave:amethyst_caves",
+					"biome": "sdbf:deep_realm_1/amethyst_caves",
 					"parameters": {
 						"temperature": -0.3,
 						"humidity": -0.3,
@@ -172,7 +172,7 @@
 					}
 				},
 				{
-					"biome": "infinity_cave:molten_caves",
+					"biome": "sdbf:deep_realm_1/molten_caves",
 					"parameters": {
 						"temperature": 0.6,
 						"humidity": -0.5,
@@ -202,7 +202,7 @@
 					}
 				},
 				{
-					"biome": "infinity_cave:sulfide_caves",
+					"biome": "sdbf:deep_realm_1/sulfide_caves",
 					"parameters": {
 						"temperature": 0,
 						"humidity": 0.5,
@@ -232,7 +232,7 @@
 					}
 				},
 				{
-					"biome": "infinity_cave:deeprock_caverns",
+					"biome": "sdbf:deep_realm_1/deeprock_caverns",
 					"parameters": {
 						"temperature": 0,
 						"humidity": 0,
@@ -247,7 +247,7 @@
 					}
 				},
 				{
-					"biome": "minecraft:deep_dark",
+					"biome": "sdbf:deep_realm_1/deep_dark",
 					"parameters": {
 						"temperature": 0.2,
 						"humidity": -0.1,

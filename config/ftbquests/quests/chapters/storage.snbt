@@ -209,12 +209,20 @@
 			dependencies: ["26B66FFB1E5C691C"]
 			id: "7EE0F0E7324E3356"
 			quest_enhance_disable_scroll_paging: false
-			rewards: [{
-				count: 4
-				id: "5587EF456F76F09F"
-				item: "minecraft:redstone_torch"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "5587EF456F76F09F"
+					item: "minecraft:redstone_torch"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2E84E2D4566E8D42"
+					item: "minecraft:lever"
+					type: "item"
+				}
+			]
 			subtitle: "合成材料，不建议实际使用"
 			tasks: [{
 				id: "04B93ED562C8AFAB"

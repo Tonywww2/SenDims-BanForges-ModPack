@@ -25,6 +25,30 @@
       ],
       "south": [],
       "west": []
+    },
+    "classic_moss": {
+      "north": [],
+      "east": [
+        [ 2, 6, 2 ]
+      ],
+      "south": [],
+      "west": []
+    },
+    "small_flat": {
+      "north": [],
+      "east": [],
+      "south": [
+        [ 2, 1, 2 ]
+      ],
+      "west": []
+    },
+    "otto": {
+      "north": [],
+      "east": [],
+      "south": [
+        [ 2, 1, 2 ]
+      ],
+      "west": []
     }
   },
   
@@ -53,6 +77,21 @@
       "name": "spawn_island",
       "file": "spawn_island.snbt",
       "spawns": "spawn"
+    },
+    {
+      "name": "classic_moss",
+      "file": "classic_moss.nbt",
+      "spawns": "classic_moss"
+    },
+    {
+      "name": "small_flat",
+      "file": "small_flat.nbt",
+      "spawns": "small_flat"
+    },
+    {
+      "name": "otto",
+      "file": "otto.nbt",
+      "spawns": "otto"
     }
   ]
 }

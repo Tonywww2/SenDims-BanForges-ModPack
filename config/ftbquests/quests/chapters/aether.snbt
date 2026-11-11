@@ -798,6 +798,224 @@
 			x: 12.0d
 			y: 9.0d
 		}
+		{
+			dependencies: ["0F8DC1AEBBC762C1"]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "74CE43717DF4A4A7"
+			quest_enhance_disable_scroll_paging: false
+			shape: "none"
+			tasks: [{
+				id: "1B468121D9829FA1"
+				type: "checkmark"
+			}]
+			title: "Tetra材料/可获得的实用物品"
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0F8DC1AEBBC762C1"]
+			id: "7F8B2EAC7D63C420"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "603B4890160D3BB2"
+				item: "aether:ambrosium_shard"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0F8DC1AEBBC762C1"]
+			id: "03DAD46E15276784"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "41FD7347585BA637"
+				item: "deep_aether:bio_crystal"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0F8DC1AEBBC762C1"]
+			id: "20A72EE9F9896E17"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7338E25232BB6596"
+				item: "aether:zanite_gemstone"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0F8DC1AEBBC762C1"]
+			id: "35D82F79160B4472"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0932DE16783DC14E"
+				item: "aether_redux:blightbunny_fang"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0F8DC1AEBBC762C1"]
+			id: "50C2D6DE58E7940C"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6DC5F8B45C387560"
+				item: "aether_redux:sentry_chip"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0F8DC1AEBBC762C1"]
+			id: "51FC7222D6CA6CD8"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "71313AF0C0676E4B"
+				item: "aether_redux:lightroot_clump"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0F8DC1AEBBC762C1"]
+			id: "62C17BE769CDAE08"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "006758290EA9DD6A"
+				item: "aether_redux:refined_sentrite"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0F8DC1AEBBC762C1"]
+			id: "6819BB0139862FC0"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3B04519EEDD62A3A"
+				item: "aether_redux:veridium_ingot"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0F8DC1AEBBC762C1"]
+			id: "329C802C82225D6A"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "03E96297AF39AE23"
+				item: "deep_aether:metal_mixture"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0F8DC1AEBBC762C1"]
+			id: "4C2931CDE689BEAD"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "46697EB41F881976"
+				item: "aether_redux:mykapod_shell_chunk"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0F8DC1AEBBC762C1"]
+			id: "1AB10D65760F2CE7"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "38EAC3DDBB32614E"
+				item: "deep_aether:skyjade"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0F8DC1AEBBC762C1"]
+			id: "4CBDA705998BEBB2"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "466143CA7579DBDD"
+				item: "aether_redux:gravitite_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0F8DC1AEBBC762C1"]
+			id: "42E5B58F740A7744"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0047F963B820E2AB"
+				item: "aether_treasure_reforging:neptune_mesh"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["0F8DC1AEBBC762C1"]
+			id: "75CBA21CAE379F2B"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "436D041F74A215B1"
+				item: "aether_treasure_reforging:pyral_ingot"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["0F8DC1AEBBC762C1"]
+			id: "2232A547CC11B9D3"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "203050E0E3316887"
+				item: "deep_aether:squall_plate"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["0F8DC1AEBBC762C1"]
+			id: "6272D601F2E27350"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "63F09791338A2497"
+				item: "aether_treasure_reforging:valkyrum_ingot"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0F8DC1AEBBC762C1"]
+			id: "114E2C85D825035D"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "169FDC8048D96E31"
+				item: "deep_aether:stratus_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 8.0d
+		}
 	]
 	title: "[III] &e天境"
 }

@@ -673,6 +673,140 @@
 			x: 15.0d
 			y: -3.0d
 		}
+		{
+			dependencies: ["713CA11C25A8A2E2"]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "2E9C17B2742E7281"
+			quest_enhance_disable_scroll_paging: false
+			shape: "none"
+			tasks: [{
+				id: "72E164C84742CDF5"
+				type: "checkmark"
+			}]
+			title: "Tetra材料/可获得的实用物品"
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["713CA11C25A8A2E2"]
+			id: "58D7B908F3E7BCDE"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "542D5A659AE4F954"
+				item: "kubejs:ml_computing_ingot"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["713CA11C25A8A2E2"]
+			id: "1639156A75A06A80"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7BB0E92F0ADED05E"
+				item: "kubejs:anchor_shard"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["713CA11C25A8A2E2"]
+			id: "45F157BA898A2EB5"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7F409ACDC8C3B218"
+				item: "darkerdepths:forsaken_bronze_ingot"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["713CA11C25A8A2E2"]
+			id: "41CADEA9FBD5474E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "12DFE01BF62E6AFF"
+				item: "sgjourney:naquadah_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["713CA11C25A8A2E2"]
+			id: "233E61E44321F1C3"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "61B066585CF4C088"
+				item: "sgjourney:naquadah_iron_alloy"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["713CA11C25A8A2E2"]
+			id: "6CB9BDF34645E0AE"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "120C5FC07560E36A"
+				item: "sgjourney:trinium_ingot"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["713CA11C25A8A2E2"]
+			id: "56D45331A6269D47"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5B874EEB2F08C857"
+				item: "sgjourney:unity_shard"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["713CA11C25A8A2E2"]
+			id: "4F36182887235B62"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7EBC7D89FDDB9A38"
+				item: "sgjourney:naquadah"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["713CA11C25A8A2E2"]
+			id: "3D04EFE69C98AFF9"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "45435E4F160265B3"
+				item: "sgjourney:advanced_control_crystal"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["713CA11C25A8A2E2"]
+			id: "6E4E841B723D3CAC"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "02D881BD0A2805F6"
+				item: "sgjourney:large_control_crystal"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 7.0d
+		}
 	]
 	title: "[XI] &e空岛之下"
 }

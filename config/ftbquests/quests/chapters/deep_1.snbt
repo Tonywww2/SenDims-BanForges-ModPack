@@ -251,6 +251,7 @@
 		}
 		{
 			dependencies: ["1DE54DDD04540738"]
+			description: ["在&b深境一层&r的最底层，存在着一片&e海&r。"]
 			id: "59C711671F81AB45"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -930,6 +931,7 @@
 			y: 9.0d
 		}
 		{
+			dependencies: ["5BB642BD0BE40541"]
 			description: ["在加工台上粉碎铁锭和木炭，将其混合得到"]
 			id: "6D59E62FF5432802"
 			quest_enhance_disable_scroll_paging: false
@@ -941,6 +943,224 @@
 			title: "钢的另一个来源"
 			x: 3.0d
 			y: -3.0d
+		}
+		{
+			dependencies: ["5BB642BD0BE40541"]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "751D7F6F5B877793"
+			quest_enhance_disable_scroll_paging: false
+			shape: "none"
+			tasks: [{
+				id: "00E5286205D58E6E"
+				type: "checkmark"
+			}]
+			title: "Tetra材料/可获得的实用物品"
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5BB642BD0BE40541"]
+			id: "420E2670257A7486"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6164489D282B0341"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5BB642BD0BE40541"]
+			id: "1402375C1E0258DC"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "17667D883A02310F"
+				item: "minecraft:bone"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5BB642BD0BE40541"]
+			id: "554C482703AE16F3"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "79A21904FF06AAB2"
+				item: "minecraft:leather"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5BB642BD0BE40541"]
+			id: "40AA344A7311C275"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0EBE1A263FF209BF"
+				item: "minecraft:obsidian"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5BB642BD0BE40541"]
+			id: "6B7EE4B04E055DD7"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "501D8B96E4C0AFAA"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5BB642BD0BE40541"]
+			id: "1D7C5AD345A894DD"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "21036D583B47F761"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5BB642BD0BE40541"]
+			id: "62444D1CCEAAEE3F"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "569DCE20781515FB"
+				item: "ae2:certus_quartz_crystal"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5BB642BD0BE40541"]
+			id: "0EB9B6292A46C11C"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "2BAA64A55B43178A"
+				item: "minecraft:amethyst_shard"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5BB642BD0BE40541"]
+			id: "14F04CCE81D81071"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0AC31127C4582A6A"
+				item: "thermal:steel_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5BB642BD0BE40541"]
+			id: "1DDCE748A4EC157C"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "382A0E3CAAF0822F"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5BB642BD0BE40541"]
+			id: "03804829281D036C"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1C5DE3BE15887B5E"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5BB642BD0BE40541"]
+			id: "151D9447D0C574D4"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6046295BFB43B128"
+				item: "cataclysm:witherite_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["5BB642BD0BE40541"]
+			id: "3DDD5DA44EE105DC"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "155238F8856D560E"
+				item: "terra_curio:shackle"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5BB642BD0BE40541"]
+			id: "3B7438B6B2554EB9"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1825F15958F23D9C"
+				item: "easy_villagers:trader"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5BB642BD0BE40541"]
+			id: "3181ADA5FB31A7DA"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3ED4AD11B726296D"
+				item: "integratedterminals:part_terminal_storage"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5BB642BD0BE40541"]
+			id: "3A99ECAE0E68AC9F"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "645EDC0C3FEB4B8B"
+				item: "ae2:crafting_terminal"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5BB642BD0BE40541"]
+			id: "4A0A9FD37C6F3559"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3DCC81D438BFE5F6"
+				item: "ad_astra:etrionic_blast_furnace"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 4.0d
 		}
 	]
 	title: "[II] &e深境：深邃洞穴"

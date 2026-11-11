@@ -6,7 +6,18 @@
             "element": {
                 "element_type": "minecraft:single_pool_element",
                 "projection": "rigid",
-                "processors": "minecraft:empty",
+                "processors": {
+                    "processors": [
+                        {
+                            "processor_type": "minecraft:block_ignore",
+                            "blocks": [
+                                {
+                                    "Name": "minecraft:air"
+                                }
+                            ]
+                        }
+                    ]
+                },
                 "location": "sdbf:apron_1"
             },
             "weight": 1

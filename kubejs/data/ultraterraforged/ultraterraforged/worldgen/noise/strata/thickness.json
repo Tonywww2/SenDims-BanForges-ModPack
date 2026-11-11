@@ -1,0 +1,14 @@
+{
+  "type": "ultraterraforged:map",
+  "alpha": {
+    "type": "ultraterraforged:perlin",
+    "frequency": 0.0011111111,
+    "gain": 0.5,
+    "interpolation": "CURVE3",
+    "lacunarity": 2.0,
+    "octaves": 2,
+    "seed": 1234158
+  },
+  "from": 0.75,
+  "to": 1.35
+}

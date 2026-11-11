@@ -1,0 +1,75 @@
+{
+  "type": "ultraterraforged:template",
+  "config": {
+    "decorator": {
+      "biome_decorators": {
+        "minecraft:flower_forest": [
+          {
+            "type": "ultraterraforged:tree",
+            "decorator": {
+              "type": "minecraft:beehive",
+              "probability": 0.02
+            },
+            "modified_decorator": {
+              "type": "minecraft:beehive",
+              "probability": 0.05
+            }
+          }
+        ],
+        "minecraft:plains": [
+          {
+            "type": "ultraterraforged:tree",
+            "decorator": {
+              "type": "minecraft:beehive",
+              "probability": 0.05
+            },
+            "modified_decorator": {
+              "type": "minecraft:beehive",
+              "probability": 0.05
+            }
+          }
+        ],
+        "minecraft:sunflower_plains": [
+          {
+            "type": "ultraterraforged:tree",
+            "decorator": {
+              "type": "minecraft:beehive",
+              "probability": 0.05
+            },
+            "modified_decorator": {
+              "type": "minecraft:beehive",
+              "probability": 0.05
+            }
+          }
+        ]
+      },
+      "default_decorators": [
+        {
+          "type": "ultraterraforged:tree",
+          "decorator": {
+            "type": "minecraft:beehive",
+            "probability": 0.002
+          },
+          "modified_decorator": {
+            "type": "minecraft:beehive",
+            "probability": 0.05
+          }
+        }
+      ]
+    },
+    "paste": {
+      "base_depth": 3,
+      "check_bounds": true
+    },
+    "placement": {
+      "type": "ultraterraforged:tree"
+    },
+    "templates": [
+      "ultraterraforged:structures/trees/oak/large/oak_1.nbt",
+      "ultraterraforged:structures/trees/oak/large/oak_2.nbt",
+      "ultraterraforged:structures/trees/oak/large/oak_3.nbt",
+      "ultraterraforged:structures/trees/oak/large/oak_4.nbt",
+      "ultraterraforged:structures/trees/oak/large/oak_5.nbt"
+    ]
+  }
+}

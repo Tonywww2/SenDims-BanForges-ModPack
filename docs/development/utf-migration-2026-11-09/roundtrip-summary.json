@@ -1,0 +1,20 @@
+{
+  "A": {
+    "contentIdentical": true,
+    "contentChanges": {},
+    "lightingChangedChunks": 0,
+    "checkedChunks": 17
+  },
+  "B": {
+    "contentIdentical": true,
+    "contentChanges": {},
+    "lightingChangedChunks": 10,
+    "checkedChunks": 17
+  },
+  "C": {
+    "contentIdentical": true,
+    "contentChanges": {},
+    "lightingChangedChunks": 0,
+    "checkedChunks": 17
+  }
+}

@@ -29,17 +29,17 @@
   },
   "features": [
     [
-      "infinity_cave:depths_47",
-      "infinity_cave:depths_63",
-      "infinity_cave:depths_79",
-      "infinity_cave:depths_95",
-      "infinity_cave:depths_111",
-      "infinity_cave:depths_127"
+      "sdbf:deep_realm_1/depths_47",
+      "sdbf:deep_realm_1/depths_63",
+      "sdbf:deep_realm_1/depths_79",
+      "sdbf:deep_realm_1/depths_95",
+      "sdbf:deep_realm_1/depths_111",
+      "sdbf:deep_realm_1/depths_127"
     ],
+    [],
     [
-    ],
-    [
-      "minecraft:amethyst_geode"
+      "minecraft:amethyst_geode",
+      "sdbf:deep_realm_1/upper/amethyst_geode"
     ],
     [
       "minecraft:monster_room",
@@ -73,21 +73,20 @@
       "minecraft:disk_sand",
       "minecraft:disk_clay",
       "minecraft:disk_gravel",
-      "infinity_cave:generic/delta",
-      "infinity_cave:generic/rock",
-      "infinity_cave:generic/pillar",
-      "infinity_cave:generic/big_pillar",
-      "infinity_cave:generic/small_pillar",
-      "infinity_cave:generic/ores/iron",
-      "infinity_cave:generic/ores/emerald",
-      "infinity_cave:generic/pile",
-      "infinity_cave:generic/ceiling",
-      "infinity_cave:generic/replace"
+      "sdbf:deep_realm_1/generic/delta",
+      "sdbf:deep_realm_1/generic/rock",
+      "sdbf:deep_realm_1/generic/pillar",
+      "sdbf:deep_realm_1/generic/big_pillar",
+      "sdbf:deep_realm_1/generic/small_pillar",
+      "sdbf:deep_realm_1/generic/ores/iron",
+      "sdbf:deep_realm_1/generic/ores/emerald",
+      "sdbf:deep_realm_1/generic/pile",
+      "sdbf:deep_realm_1/generic/ceiling"
     ],
     [
-      "infinity_cave:ancient_delta/vegetation",
-      "infinity_cave:ancient_delta/delta",
-      "infinity_cave:ancient_delta/patch_floor"
+      "sdbf:deep_realm_1/ancient_delta/vegetation",
+      "sdbf:deep_realm_1/ancient_delta/delta",
+      "sdbf:deep_realm_1/ancient_delta/patch_floor"
     ],
     [
       "minecraft:spring_water",
@@ -105,7 +104,12 @@
       "regions_unexplored:corpse_flower",
       "regions_unexplored:duskmelon",
       "regions_unexplored:dusktrap",
-      "regions_unexplored:dropleaf"
+      "regions_unexplored:dropleaf",
+      "sdbf:deep_realm_1/ancient_delta/ru_bladed_grass",
+      "sdbf:deep_realm_1/ancient_delta/ru_corpse_flower",
+      "sdbf:deep_realm_1/ancient_delta/ru_duskmelon",
+      "sdbf:deep_realm_1/ancient_delta/ru_dusktrap",
+      "sdbf:deep_realm_1/ancient_delta/ru_dropleaf"
     ],
     [
       "minecraft:freeze_top_layer"

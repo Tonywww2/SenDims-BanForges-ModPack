@@ -1,6 +1,0 @@
-{
-    "blade": "slashblade:sabigatana",
-    "drop_rate": 0.005,
-    "entity_type": "minecraft:zombie",
-    "request_slashblade": true
-}

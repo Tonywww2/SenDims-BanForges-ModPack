@@ -1,0 +1,11 @@
+{
+  "type": "ultraterraforged:map",
+  "alpha": {
+    "type": "ultraterraforged:clamp",
+    "input": "ultraterraforged:surface/iceberg/shallow/shape",
+    "max": 0.65,
+    "min": 0.6
+  },
+  "from": 0.0,
+  "to": 1.0
+}

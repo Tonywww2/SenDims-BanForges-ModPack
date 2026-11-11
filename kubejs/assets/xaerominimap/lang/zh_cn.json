@@ -1,0 +1,5 @@
+{
+  "gui.xaero_toggle_manual_cave_mode": "切换洞穴模式（普通／部分层级）",
+  "gui.xaero_manual_cave_mode": "部分层级洞穴模式",
+  "gui.xaero_infodisplay_manual_cave_mode_indicator": "部分层级洞穴模式状态"
+}

@@ -1,0 +1,14 @@
+{
+	"structures": [
+		{
+			"structure": "sdbf:deep_realm_1/amethyst_geode",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"type": "minecraft:random_spread",
+		"salt": 94635984,
+		"spacing": 18,
+		"separation": 9
+	}
+}

@@ -20,7 +20,7 @@
 2. 将该分支全部研究卷轴与阶段材料无序合成为总卷。
 3. 在工作台以总卷、指定刀本体与材料制作伪天顶；只消耗这一把刀本体。
 
-配方逐项写在 `kubejs/server_scripts/recipes/zenith.js` 中。卷轴注册直接定义于 `kubejs/startup_scripts/zenith_scrolls.js`，提示直接定义于 `kubejs/client_scripts/zenith_scrolls.js`，模型映射直接定义于 `kubejs/client_scripts/zenith_models.js`；这些脚本均不依赖外部目录 JSON。
+配方逐项写在 `kubejs/server_scripts/recipes/zenith.js` 中。卷轴注册直接定义于 `kubejs/startup_scripts/zenith_scrolls.js`，卷轴不带物品描述（2026-11-11 移除），模型映射直接定义于 `kubejs/client_scripts/zenith_models.js`；这些脚本均不依赖外部目录 JSON。
 
 魔剑成品布局：
 
@@ -61,67 +61,67 @@ P：耀魂材料，魔剑 4 个、其他四把各 3 个；S：分支总卷；A�
 
 - 成品：`slashblade_sendims:zenith_false_black_crown`
 - 总卷：`kubejs:zenith_scroll_black_crown`
-- 本体：`slashblade:red_blade_black_soul`，杀敌 30000／耀魂 300000／锻造 150。
+- 本体：`slashblade:red_blade_black_soul`，杀敌 30000／耀魂 300000／锻造 125。
 - 总卷额外材料：`kubejs:epsilon_dust`、`kubejs:unmelting_ice`、`slashblade:proudsoul_trapezohedron`，各 1 个。
 - 最终锻造：3 × `slashblade:proudsoul_trapezohedron`、2 × `kubejs:unmelting_ice`、1 × `kubejs:epsilon_dust`、1 × `elder_bosses:gate_fragment`。
 
 | 研究刀 | 杀敌 | 耀魂 | 锻造 | 墨料 |
 |---|---:|---:|---:|---|
-| 宝刀「大黑天」 (`slashblade:mahakala_fortune`) | 20000 | 200000 | 150 | `slashblade:proudsoul_crystal` |
-| 赫刀「魂灵影」 (`slashblade:red_blade_black_soul`) | 20000 | 200000 | 150 | `slashblade:proudsoul_crystal` |
-| 终狱刀「绝念」 (`sjap_adder:nihilbxex`) | 20000 | 200000 | 150 | `slashblade:proudsoul_crystal` |
-| 红樱 (`redtassel:redtassel_slashblade`) | 20000 | 200000 | 150 | `slashblade:proudsoul_crystal` |
-| 双役刀「碧玉四杠」 (`slashblade_sendims:yakuman_hekigyoku_suukantsu`) | 30000 | 300000 | 150 | `slashblade:proudsoul_crystal` |
+| 宝刀「大黑天」 (`slashblade:mahakala_fortune`) | 20000 | 200000 | 125 | `slashblade:proudsoul_crystal` |
+| 赫刀「魂灵影」 (`slashblade:red_blade_black_soul`) | 20000 | 200000 | 125 | `slashblade:proudsoul_crystal` |
+| 终狱刀「绝念」 (`sjap_adder:nihilbxex`) | 20000 | 200000 | 125 | `slashblade:proudsoul_crystal` |
+| 红樱 (`redtassel:redtassel_slashblade`) | 20000 | 200000 | 125 | `slashblade:proudsoul_crystal` |
+| 双役刀「碧玉四杠」 (`slashblade_sendims:yakuman_hekigyoku_suukantsu`) | 30000 | 300000 | 125 | `slashblade:proudsoul_crystal` |
 
 ## 神威
 
 - 成品：`slashblade_sendims:zenith_false_divine_might`
 - 总卷：`kubejs:zenith_scroll_divine_might`
-- 本体：`sjap_adder:kamuyex_water`，杀敌 30000／耀魂 300000／锻造 150。
+- 本体：`sjap_adder:kamuyex_water`，杀敌 30000／耀魂 300000／锻造 125。
 - 总卷额外材料：`kubejs:epsilon_dust`、`kubejs:rainbowshift_entropy`、`slashblade:proudsoul_trapezohedron`，各 1 个。
 - 最终锻造：3 × `slashblade:proudsoul_trapezohedron`、2 × `kubejs:epsilon_dust`、1 × `elder_bosses:rune_fragment`、1 × `elder_bosses:gate_fragment`。
 
 | 研究刀 | 杀敌 | 耀魂 | 锻造 | 墨料 |
 |---|---:|---:|---:|---|
-| 极神威「阿贝」·灼热影舞 (`sjap_adder:kamuyex_fire`) | 20000 | 200000 | 150 | `slashblade:proudsoul_crystal` |
-| 极神威「乌卡」·惊涛碎岳 (`sjap_adder:kamuyex_water`) | 20000 | 200000 | 150 | `slashblade:proudsoul_crystal` |
-| 极神威「坎那」·时序惊蛰 (`sjap_adder:kamuyex_ligghtning`) | 20000 | 200000 | 150 | `slashblade:proudsoul_crystal` |
-| 极神威「莉芙」·至生颂魂 (`sjap_adder:kamuyex_life`) | 20000 | 200000 | 150 | `slashblade:proudsoul_crystal` |
-| 极神威「帝斯陀」·冥灾帝陨 (`sjap_adder:kamuyex_death`) | 20000 | 200000 | 150 | `slashblade:proudsoul_crystal` |
-| 双役刀「三元字敕」 (`slashblade_sendims:yakuman_sangen_jirei`) | 30000 | 300000 | 150 | `slashblade:proudsoul_crystal` |
+| 极神威「阿贝」·灼热影舞 (`sjap_adder:kamuyex_fire`) | 20000 | 200000 | 125 | `slashblade:proudsoul_crystal` |
+| 极神威「乌卡」·惊涛碎岳 (`sjap_adder:kamuyex_water`) | 20000 | 200000 | 125 | `slashblade:proudsoul_crystal` |
+| 极神威「坎那」·时序惊蛰 (`sjap_adder:kamuyex_ligghtning`) | 20000 | 200000 | 125 | `slashblade:proudsoul_crystal` |
+| 极神威「莉芙」·至生颂魂 (`sjap_adder:kamuyex_life`) | 20000 | 200000 | 125 | `slashblade:proudsoul_crystal` |
+| 极神威「帝斯陀」·冥灾帝陨 (`sjap_adder:kamuyex_death`) | 20000 | 200000 | 125 | `slashblade:proudsoul_crystal` |
+| 双役刀「三元字敕」 (`slashblade_sendims:yakuman_sangen_jirei`) | 30000 | 300000 | 125 | `slashblade:proudsoul_crystal` |
 
 ## 王权
 
 - 成品：`slashblade_sendims:zenith_false_kingship`
 - 总卷：`kubejs:zenith_scroll_kingship`
-- 本体：`slashblade:nameless_king`，杀敌 30000／耀魂 300000／锻造 150。
+- 本体：`slashblade:nameless_king`，杀敌 30000／耀魂 300000／锻造 125。
 - 总卷额外材料：`deeprealm_4th:star_slurry_crystal`、`kubejs:rainbowshift_entropy`、`slashblade:proudsoul_trapezohedron`，各 1 个。
 - 最终锻造：3 × `slashblade:proudsoul_trapezohedron`、2 × `deeprealm_4th:star_slurry_crystal`、1 × `kubejs:rainbowshift_entropy`、1 × `elder_bosses:gate_fragment`。
 
 | 研究刀 | 杀敌 | 耀魂 | 锻造 | 墨料 |
 |---|---:|---:|---:|---|
-| 无名王者「无冠」 (`slashblade:nameless_king`) | 20000 | 200000 | 150 | `slashblade:proudsoul_crystal` |
-| 「誓约胜利之剑」 (`slashblade_sendims:excalibur`) | 20000 | 200000 | 150 | `slashblade:proudsoul_crystal` |
-| 天云「无光」速子 (`last_smith:uma_tachyon`) | 20000 | 200000 | 150 | `slashblade:proudsoul_crystal` |
+| 无名王者「无冠」 (`slashblade:nameless_king`) | 20000 | 200000 | 125 | `slashblade:proudsoul_crystal` |
+| 「誓约胜利之剑」 (`slashblade_sendims:excalibur`) | 20000 | 200000 | 125 | `slashblade:proudsoul_crystal` |
+| 天云「无光」速子 (`last_smith:uma_tachyon`) | 20000 | 200000 | 125 | `slashblade:proudsoul_crystal` |
 | 六役刀「四象归一」 (`slashblade_sendims:yakuman_shishou_kiitsu`) | 100000 | 1500000 | 200 | `slashblade:proudsoul_crystal` |
-| 三役刀「天授国士」 (`slashblade_sendims:yakuman_tenju_kokushi`) | 45000 | 500000 | 150 | `slashblade:proudsoul_crystal` |
-| 三役刀「地生九莲」 (`slashblade_sendims:yakuman_chisei_chuuren`) | 45000 | 500000 | 150 | `slashblade:proudsoul_crystal` |
+| 三役刀「天授国士」 (`slashblade_sendims:yakuman_tenju_kokushi`) | 45000 | 500000 | 125 | `slashblade:proudsoul_crystal` |
+| 三役刀「地生九莲」 (`slashblade_sendims:yakuman_chisei_chuuren`) | 45000 | 500000 | 125 | `slashblade:proudsoul_crystal` |
 
 ## 暗咒
 
 - 成品：`slashblade_sendims:zenith_false_dark_curse`
 - 总卷：`kubejs:zenith_scroll_dark_curse`
-- 本体：`slashblade_sendims:mizushi`，杀敌 30000／耀魂 300000／锻造 150。
+- 本体：`slashblade_sendims:mizushi`，杀敌 30000／耀魂 300000／锻造 125。
 - 总卷额外材料：`kubejs:unmelting_ice`、`kubejs:rainbowshift_entropy`、`slashblade:proudsoul_trapezohedron`，各 1 个。
 - 最终锻造：3 × `slashblade:proudsoul_trapezohedron`、2 × `kubejs:unmelting_ice`、1 × `kubejs:rainbowshift_entropy`、1 × `elder_bosses:gate_fragment`。
 
 | 研究刀 | 杀敌 | 耀魂 | 锻造 | 墨料 |
 |---|---:|---:|---:|---|
-| 咒王刀「御厨子」 (`slashblade_sendims:mizushi`) | 20000 | 200000 | 150 | `slashblade:proudsoul_crystal` |
-| 「永罚」 (`slashblade_sendims:greatsword_of_damnation_final`) | 20000 | 200000 | 150 | `slashblade:proudsoul_crystal` |
-| 极神威「诺克特」·暗轮破斩 (`sjap_adder:kamuyex_dark`) | 20000 | 200000 | 150 | `slashblade:proudsoul_crystal` |
-| 「文始」 (`last_smith:bunshi`) | 20000 | 200000 | 150 | `slashblade:proudsoul_crystal` |
-| 双役刀「清老四刻」 (`slashblade_sendims:yakuman_chinrou_suukou`) | 30000 | 300000 | 150 | `slashblade:proudsoul_crystal` |
+| 咒王刀「御厨子」 (`slashblade_sendims:mizushi`) | 20000 | 200000 | 125 | `slashblade:proudsoul_crystal` |
+| 「永罚」 (`slashblade_sendims:greatsword_of_damnation_final`) | 20000 | 200000 | 125 | `slashblade:proudsoul_crystal` |
+| 极神威「诺克特」·暗轮破斩 (`sjap_adder:kamuyex_dark`) | 20000 | 200000 | 125 | `slashblade:proudsoul_crystal` |
+| 「文始」 (`last_smith:bunshi`) | 20000 | 200000 | 125 | `slashblade:proudsoul_crystal` |
+| 双役刀「清老四刻」 (`slashblade_sendims:yakuman_chinrou_suukou`) | 30000 | 300000 | 125 | `slashblade:proudsoul_crystal` |
 
 ## 继承 SE 的释放入口
 

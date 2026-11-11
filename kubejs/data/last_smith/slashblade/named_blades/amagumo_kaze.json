@@ -23,7 +23,8 @@
         "slash_art": "slashblade:sakura_end",
         "special_effects":
         [
-            "last_smith:extreme_sharpness"
+            "last_smith:extreme_sharpness",
+            "slashblade_sendims:amagumo_crow"
         ],
         "sword_type":
         [

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "default": "ultraterraforged:jungle/small",
+    "features": [
+      {
+        "chance": 0.2,
+        "feature": "ultraterraforged:jungle/small"
+      },
+      {
+        "chance": 0.3,
+        "feature": "ultraterraforged:jungle/large"
+      },
+      {
+        "chance": 0.4,
+        "feature": "minecraft:jungle_bush"
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "feature": "ultraterraforged:swamp_trees",
+  "placement": [
+    {
+      "type": "ultraterraforged:fast_poission",
+      "biome_fade": 0.4,
+      "density_variance_scale": 250,
+      "density_variation": 0.0,
+      "jitter": 0.8,
+      "radius": 6,
+      "scale": 0.75
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "MOTION_BLOCKING"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

@@ -38,10 +38,10 @@ modpackMode = false
 
 [fog]
   # Fog rendering and the sky blue band
-  enabled = true
-  onOverworld = true
-  onNether = true
-  onEnd = true
+  enabled = false
+  onOverworld = false
+  onNether = false
+  onEnd = false
   blueBand = true
 
   # Overrides vanilla fog with the start/end/shape values below
@@ -59,7 +59,7 @@ modpackMode = false
 [world]
   # World rendering tweaks
   # Value must be less than '364' and greater than '64'
-  cloudsHeight = 192
+  cloudsHeight = 280
 
   # Accepted values are: [OFF, FAST, SLOW]
   chunkFadeSpeed = "SLOW"

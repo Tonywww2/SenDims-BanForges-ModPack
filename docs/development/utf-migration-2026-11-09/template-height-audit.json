@@ -1,0 +1,34 @@
+{
+  "classic_moss.nbt": {
+    "size": [
+      12,
+      9,
+      8
+    ],
+    "topAtY300": 308
+  },
+  "otto.nbt": {
+    "size": [
+      32,
+      9,
+      32
+    ],
+    "topAtY300": 308
+  },
+  "small_flat.nbt": {
+    "size": [
+      13,
+      7,
+      13
+    ],
+    "topAtY300": 306
+  },
+  "spawn_island.snbt": {
+    "size": [
+      48,
+      11,
+      48
+    ],
+    "topAtY300": 310
+  }
+}

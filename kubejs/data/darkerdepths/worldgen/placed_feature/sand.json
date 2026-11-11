@@ -15,7 +15,7 @@
           "max_inclusive": 3
         }
       },
-      "replaceable": "#infinity_cave:all_but_lava",
+      "replaceable": "#sdbf:deep_realm_1/all_but_lava",
       "ground_state": {
         "type": "minecraft:weighted_state_provider",
         "entries": [

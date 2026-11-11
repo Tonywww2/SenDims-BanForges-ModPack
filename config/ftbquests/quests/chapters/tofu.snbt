@@ -38,13 +38,20 @@
 			icon: "tofucraft:blocktofuishi"
 			id: "6140B0BCEB7F9D64"
 			quest_enhance_disable_scroll_paging: false
-			rewards: [{
-				auto: "enabled"
-				count: 2
-				id: "76B8D8242C71A513"
-				item: "minecraft:stick"
-				type: "item"
-			}]
+			rewards: [
+				{
+					auto: "enabled"
+					count: 2
+					id: "76B8D8242C71A513"
+					item: "minecraft:stick"
+					type: "item"
+				}
+				{
+					id: "383399572E5CEDC6"
+					item: "kubejs:garden_lighter"
+					type: "item"
+				}
+			]
 			size: 2.0d
 			subtitle: "第一个世界"
 			tasks: [
@@ -574,6 +581,284 @@
 			}]
 			x: 6.0d
 			y: 9.0d
+		}
+		{
+			dependencies: ["6140B0BCEB7F9D64"]
+			id: "35A9274BE0E0E54B"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6FF378DC2BAAD89C"
+				item: "tofucraft:tofuishi"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6140B0BCEB7F9D64"]
+			id: "7294C47190B75E2F"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "12A82E6CABC17D42"
+				item: "tofucraft:tofuslate"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6140B0BCEB7F9D64"]
+			id: "57BFBFE595E92581"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "53120CBAD9AA64B3"
+				item: "tofucraft:tofumetal"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6140B0BCEB7F9D64"]
+			id: "054E7EABD63B55F2"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "28F4C0EE9F28036B"
+				item: "tofucraft:tofuzunda"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6140B0BCEB7F9D64"]
+			id: "1507EBD124A28F31"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "70020DD5A711E130"
+				item: "tofucraft:tofugem"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6140B0BCEB7F9D64"]
+			id: "2B4DBB41C7A18D14"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "324F94836907A69C"
+				item: "tofucraft:tofudiamond"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6140B0BCEB7F9D64"]
+			id: "1D02A1117C2DF95A"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "2577A929C879D539"
+				item: "tofucraft:tf_circuit"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6140B0BCEB7F9D64"]
+			id: "47269F0AF4D3C7EF"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "10DB0AAD8554BAB7"
+				item: "tofucraft:tofu_core"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6140B0BCEB7F9D64"]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "1040E0F3C4B11637"
+			quest_enhance_disable_scroll_paging: false
+			shape: "none"
+			tasks: [{
+				id: "61FD7A0D88E19420"
+				type: "checkmark"
+			}]
+			title: "Tetra材料/可获得的实用物品"
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6140B0BCEB7F9D64"]
+			id: "330DCCA1B0A2C15C"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "24A22E9376DF61AF"
+				item: "terra_curio:depth_meter"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6140B0BCEB7F9D64"]
+			id: "48FF34028EFF66DA"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "133CE033DAE79463"
+				item: "terra_curio:compass"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6140B0BCEB7F9D64"]
+			id: "0F63AB76E80E0813"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6CE5A1D3DAF8B12B"
+				item: "terra_curio:radar"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6140B0BCEB7F9D64"]
+			id: "4BB6D460CC69B729"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5CD86F61BFC50402"
+				item: "terra_curio:life_form_analyzer"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6140B0BCEB7F9D64"]
+			id: "21B91F7784F432F1"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4836F59298CF21CA"
+				item: "terra_curio:tally_counter"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6140B0BCEB7F9D64"]
+			id: "199AC08D7AFB3766"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3CDCF03DDC999D90"
+				item: "terra_curio:metal_detector"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6140B0BCEB7F9D64"]
+			id: "63AE2D61B54C30E8"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4E1EFDB89F5A0098"
+				item: "terra_curio:stopwatch"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6140B0BCEB7F9D64"]
+			id: "5DE27D9E46B013A8"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0F85CADA8A35F72D"
+				item: "terra_curio:dps_meter"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6140B0BCEB7F9D64"]
+			id: "519D0A65392AE4AD"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "355F7D1E39065D1C"
+				item: "terra_curio:fishermans_pocket_guide"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6140B0BCEB7F9D64"]
+			id: "3A6B3E1941E25725"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "68C61E51B05F9DEA"
+				item: "terra_curio:weather_radio"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["6140B0BCEB7F9D64"]
+			id: "24B6F457C071829E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "33919703BE265CD8"
+				item: "terra_curio:sextant"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["6140B0BCEB7F9D64"]
+			id: "40D4DE38EF0DDCC9"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5F6F0F66B4588135"
+				item: "artifacts:lucky_scarf"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6140B0BCEB7F9D64"]
+			id: "25074776F74CCC3E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "21851C1175B8C866"
+				item: "slashblade_sendims:tofu_miner_lantern"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6140B0BCEB7F9D64"]
+			id: "6D56E24FCC45D1DF"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4CECC62D23E7239B"
+				item: "slashblade_sendims:tofu_hunter_knife"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
 		}
 	]
 	title: "[I] 豆腐世界"

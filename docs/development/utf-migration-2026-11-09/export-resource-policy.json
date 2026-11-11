@@ -1,0 +1,402 @@
+[
+  {
+    "resource": "data/minecraft/dimension_type/overworld.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/minecraft/tags/blocks/overworld_carver_replaceables.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/minecraft/worldgen/configured_carver/canyon.json",
+    "action": "omit_override",
+    "reason": "Use the existing shared vanilla/modpack definition"
+  },
+  {
+    "resource": "data/minecraft/worldgen/configured_carver/cave.json",
+    "action": "omit_override",
+    "reason": "Use the existing shared vanilla/modpack definition"
+  },
+  {
+    "resource": "data/minecraft/worldgen/configured_carver/cave_extra_underground.json",
+    "action": "omit_override",
+    "reason": "Use the existing shared vanilla/modpack definition"
+  },
+  {
+    "resource": "data/minecraft/worldgen/noise_settings/overworld.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/minecraft/worldgen/placed_feature/ore_andesite_lower.json",
+    "action": "omit_override",
+    "reason": "Use the existing shared vanilla/modpack definition"
+  },
+  {
+    "resource": "data/minecraft/worldgen/placed_feature/ore_andesite_upper.json",
+    "action": "omit_override",
+    "reason": "Use the existing shared vanilla/modpack definition"
+  },
+  {
+    "resource": "data/minecraft/worldgen/placed_feature/ore_diorite_lower.json",
+    "action": "omit_override",
+    "reason": "Use the existing shared vanilla/modpack definition"
+  },
+  {
+    "resource": "data/minecraft/worldgen/placed_feature/ore_diorite_upper.json",
+    "action": "omit_override",
+    "reason": "Use the existing shared vanilla/modpack definition"
+  },
+  {
+    "resource": "data/minecraft/worldgen/placed_feature/ore_dirt.json",
+    "action": "omit_override",
+    "reason": "Use the existing shared vanilla/modpack definition"
+  },
+  {
+    "resource": "data/minecraft/worldgen/placed_feature/ore_granite_lower.json",
+    "action": "omit_override",
+    "reason": "Use the existing shared vanilla/modpack definition"
+  },
+  {
+    "resource": "data/minecraft/worldgen/placed_feature/ore_granite_upper.json",
+    "action": "omit_override",
+    "reason": "Use the existing shared vanilla/modpack definition"
+  },
+  {
+    "resource": "data/minecraft/worldgen/placed_feature/ore_gravel.json",
+    "action": "omit_override",
+    "reason": "Use the existing shared vanilla/modpack definition"
+  },
+  {
+    "resource": "data/terrablender/worldgen/density_function/uniqueness.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/tags/blocks/clay.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/tags/blocks/deep_rock.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/tags/blocks/erodible.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/tags/blocks/ore_compatible_rock.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/tags/blocks/rock.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/tags/blocks/sediment.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/tags/blocks/soil.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/tags/blocks/strata_excluded.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/tags/worldgen/biome/features/has_swamp_surface.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/tags/worldgen/biome/surface/erosion_blacklist.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/ultraterraforged/worldgen/biome_modifier/modification/erode_snow.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/ultraterraforged/worldgen/biome_modifier/raw_generation/swamp_surface.json",
+    "action": "omit_override",
+    "reason": "Shared swamp feature has no UTF dimension-context guard"
+  },
+  {
+    "resource": "data/ultraterraforged/ultraterraforged/worldgen/noise/climate/biome_edge_shape.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/ultraterraforged/worldgen/noise/features/meadow_trees.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/ultraterraforged/worldgen/noise/strata/offset.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/ultraterraforged/worldgen/noise/strata/selector.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/ultraterraforged/worldgen/noise/strata/thickness.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/ultraterraforged/worldgen/noise/surface/coral.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/ultraterraforged/worldgen/noise/surface/desert.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/ultraterraforged/worldgen/noise/surface/eroded_dirt.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/ultraterraforged/worldgen/noise/surface/eroded_rock.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/ultraterraforged/worldgen/noise/surface/forest.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/ultraterraforged/worldgen/noise/surface/glacial_debris.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/ultraterraforged/worldgen/noise/surface/height_variance.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/ultraterraforged/worldgen/noise/surface/iceberg/deep/down.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/ultraterraforged/worldgen/noise/surface/iceberg/deep/fade_down.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/ultraterraforged/worldgen/noise/surface/iceberg/deep/fade_up.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/ultraterraforged/worldgen/noise/surface/iceberg/deep/mask.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/ultraterraforged/worldgen/noise/surface/iceberg/deep/shape.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/ultraterraforged/worldgen/noise/surface/iceberg/deep/top.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/ultraterraforged/worldgen/noise/surface/iceberg/deep/up.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/ultraterraforged/worldgen/noise/surface/iceberg/shallow/down.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/ultraterraforged/worldgen/noise/surface/iceberg/shallow/fade_down.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/ultraterraforged/worldgen/noise/surface/iceberg/shallow/fade_up.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/ultraterraforged/worldgen/noise/surface/iceberg/shallow/mask.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/ultraterraforged/worldgen/noise/surface/iceberg/shallow/shape.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/ultraterraforged/worldgen/noise/surface/iceberg/shallow/top.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/ultraterraforged/worldgen/noise/surface/iceberg/shallow/up.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/ultraterraforged/worldgen/noise/surface/lava_fields.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/ultraterraforged/worldgen/noise/surface/random.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/ultraterraforged/worldgen/noise/surface/river_bank.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/ultraterraforged/worldgen/noise/surface/river_bed.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/ultraterraforged/worldgen/noise/surface/salt_flat.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/ultraterraforged/worldgen/noise/surface/steepness_variance.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/ultraterraforged/worldgen/noise/surface/swamp.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/ultraterraforged/worldgen/noise/surface/volcanic_rock.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/ultraterraforged/worldgen/preset/preset.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/ultraterraforged/worldgen/structure_rule/cell_test.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/worldgen/configured_feature/erode_snow.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/worldgen/configured_feature/swamp_surface.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/worldgen/density_function/overworld/base_3d_noise.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/worldgen/density_function/overworld/caves/entrances.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/worldgen/density_function/overworld/caves/noodle.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/worldgen/density_function/overworld/caves/spaghetti_2d.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/worldgen/density_function/overworld/continents.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/worldgen/density_function/overworld/depth.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/worldgen/density_function/overworld/erosion.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/worldgen/density_function/overworld/factor.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/worldgen/density_function/overworld/jaggedness.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/worldgen/density_function/overworld/offset.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/worldgen/density_function/overworld/ridges.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/worldgen/density_function/overworld/ridges_folded.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/worldgen/density_function/overworld/sloped_cheese.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/worldgen/placed_feature/erode_snow.json",
+    "action": "include",
+    "existing": false
+  },
+  {
+    "resource": "data/ultraterraforged/worldgen/placed_feature/swamp_surface.json",
+    "action": "include",
+    "existing": false
+  }
+]

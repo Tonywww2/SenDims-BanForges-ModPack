@@ -1,0 +1,6 @@
+{
+  "type": "ultraterraforged:add",
+  "features": "ultraterraforged:erode_snow",
+  "order": "append",
+  "step": "top_layer_modification"
+}

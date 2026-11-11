@@ -5,19 +5,12 @@
   "max_distance_from_center": 64,
   "spawn_overrides": {},
   "step": "top_layer_modification",
-  "terrain_adaptation": "beard_box",
+  "terrain_adaptation": "none",
   "start_height": {
-    "type": "minecraft:uniform",
-    "min_inclusive": {
-      "absolute": 9
-    },
-    "max_inclusive": {
-      "absolute": 11
-    }
+    "absolute": 7
   },
-  "project_start_to_heightmap": "WORLD_SURFACE_WG",
   "biomes": [
-    "infinity_cave:amethyst_caves",
+    "sdbf:deep_realm_1/amethyst_caves",
     "cavernous:crystal_caves",
     "cavernous:tropical_caves",
     "darkerdepths:sandy_catacombs",
@@ -28,12 +21,12 @@
     "cavernous:icy_caves",
     "regions_unexplored:ancient_delta",
     "cavernous:marshy_caves",
-    "infinity_cave:molten_caves",
+    "sdbf:deep_realm_1/molten_caves",
     "cavernous:volcanic_caves",
-    "infinity_cave:sulfide_caves",
+    "sdbf:deep_realm_1/sulfide_caves",
     "minecraft:lush_caves",
-    "infinity_cave:deeprock_caverns",
-    "minecraft:deep_dark"
+    "sdbf:deep_realm_1/deeprock_caverns",
+    "sdbf:deep_realm_1/deep_dark"
   ],
   "use_expansion_hack": false
 }

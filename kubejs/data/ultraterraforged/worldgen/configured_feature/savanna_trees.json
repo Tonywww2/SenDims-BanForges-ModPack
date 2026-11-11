@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "default": "ultraterraforged:acacia/large",
+    "features": [
+      {
+        "chance": 0.4,
+        "feature": "ultraterraforged:acacia/large"
+      },
+      {
+        "chance": 0.15,
+        "feature": "ultraterraforged:acacia/small"
+      }
+    ]
+  }
+}

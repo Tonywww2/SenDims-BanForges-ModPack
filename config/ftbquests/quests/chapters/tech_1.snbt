@@ -1730,6 +1730,8 @@
 			]
 			id: "557FEB1D34169026"
 			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			subtitle: "黑洞"
 			tasks: [{
 				id: "4FB0FEA558147D50"
 				item: "nuclearcraft:chamber_terminal"

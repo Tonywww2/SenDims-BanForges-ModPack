@@ -179,7 +179,7 @@ let bossType2 = deriveTemplate(typeA,
  */
 let bossType3 = deriveTemplate(typeA,
     true,
-    [1.1, 30, 1.1, 1],
+    [1.1, 25, 1.0, 1],
     [0, 0, 0, 30]
 );
 
@@ -188,7 +188,7 @@ let bossType3 = deriveTemplate(typeA,
  */
 let bossType4 = deriveTemplate(typeA,
     true,
-    [1.1, 40, 1.1, 1],
+    [1.2, 30, 1.0, 1],
     [0, 0, 0, 35]
 );
 

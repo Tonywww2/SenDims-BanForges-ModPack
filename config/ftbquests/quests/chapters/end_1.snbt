@@ -743,6 +743,116 @@
 			x: 33.0d
 			y: 27.0d
 		}
+		{
+			dependencies: ["1BF032EC08E31ABB"]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "501F17AE3A8649A7"
+			quest_enhance_disable_scroll_paging: false
+			shape: "none"
+			tasks: [{
+				id: "0ECDFD62E19839F1"
+				type: "checkmark"
+			}]
+			title: "Tetra材料/可获得的实用物品"
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1BF032EC08E31ABB"]
+			id: "54FAF117C265E3DA"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3A72270C690B6E1D"
+				item: "kubejs:alpha_dust"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1BF032EC08E31ABB"]
+			id: "7C0E17D66E8422D6"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "69FC2F59367C4E65"
+				item: "kubejs:chaotic_truth"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1BF032EC08E31ABB"]
+			id: "57E0374293BEEB92"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "716C87F5C5F7D960"
+				item: "draconicevolution:draconium_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1BF032EC08E31ABB"]
+			id: "413927A57169A812"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "27A8D461334040DA"
+				item: "kubejs:radiation_components"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1BF032EC08E31ABB"]
+			id: "2EEDF56AFCE967AE"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "23E6CEB24A886736"
+				item: "kubejs:basepoint_alloy"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1BF032EC08E31ABB"]
+			id: "56969AEF3F39654D"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7C679E2C928E1544"
+				item: "draconicevolution:wyvern_core"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1BF032EC08E31ABB"]
+			id: "4324D1B22B2D9ABA"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7723CDFB3FC3DC29"
+				item: "draconicevolution:awakened_core"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1BF032EC08E31ABB"]
+			id: "197A18AC8A71679B"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4BF3EEE1B1B821CE"
+				item: "draconicevolution:chaotic_core"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 7.0d
+		}
 	]
 	title: "[XI] 里末地"
 }

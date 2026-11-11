@@ -37,11 +37,11 @@
   "features": [
     // RAW_GENERATION
     [
-      "infinity_cave:depths_63",
-      "infinity_cave:depths_79",
-      "infinity_cave:depths_95",
-      "infinity_cave:depths_111",
-      "infinity_cave:depths_127"
+      "sdbf:deep_realm_1/depths_63",
+      "sdbf:deep_realm_1/depths_79",
+      "sdbf:deep_realm_1/depths_95",
+      "sdbf:deep_realm_1/depths_111",
+      "sdbf:deep_realm_1/depths_127"
     ],
     // LAKES
     [],

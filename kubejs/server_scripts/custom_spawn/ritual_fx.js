@@ -11,6 +11,7 @@ let RITUAL_THEMES = {
     deep_realm_1: { dust: ['0.75 0.3 0.2', '1 0.55 0.15'], converge: 'minecraft:portal', accent: 'minecraft:lava', extra: 'minecraft:ash', chime: 'minecraft:block.furnace.fire_crackle' },
     deep_realm_2: { dust: ['0.3 0.85 0.85', '0.35 0.9 0.45'], converge: 'minecraft:portal', accent: 'minecraft:glow', extra: 'minecraft:spore_blossom_air', chime: 'minecraft:block.amethyst_block.resonate' },
     return: { dust: ['0.6 0.3 0.9', '0.1 0.05 0.15'], converge: 'minecraft:portal', accent: 'minecraft:reverse_portal', extra: 'minecraft:falling_obsidian_tear', chime: 'minecraft:block.respawn_anchor.ambient' },
+    map_teleport: { dust: ['0.35 0.9 0.85', '0.93 0.88 0.73'], converge: 'minecraft:portal', accent: 'minecraft:end_rod', extra: 'minecraft:enchant', chime: 'minecraft:ui.cartography_table.take_result' },
     bedrock: { dust: ['0.45 0.45 0.45', '1 0.4 0.1'], converge: 'minecraft:portal', accent: 'minecraft:lava', extra: 'minecraft:crimson_spore', chime: 'minecraft:block.deepslate.hit' }
 };
 

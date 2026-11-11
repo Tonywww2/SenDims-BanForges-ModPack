@@ -1,0 +1,114 @@
+{
+  "date": "2026-11-10",
+  "baseline": "Current UTF 1.0.3 preset with customBiomeFeatures=true, after the UTF feature enablement on 2026-11-10",
+  "changes": [
+    {
+      "path": "miscellaneous.erosionDecorator",
+      "before": true,
+      "after": false
+    },
+    {
+      "path": "caves.cheeseCaveDepthOffset",
+      "before": 1.5625,
+      "after": 3.5
+    },
+    {
+      "path": "caveFeatures.layerCaves.enabled",
+      "before": true,
+      "after": false
+    },
+    {
+      "path": "caveFeatures.glacierCaves.frequency",
+      "before": 0.5,
+      "after": 0.1
+    },
+    {
+      "path": "caveFeatures.rockShelters.frequency",
+      "before": 0.6,
+      "after": 0.15
+    },
+    {
+      "path": "rivers.raisedWater",
+      "before": true,
+      "after": false
+    },
+    {
+      "path": "rivers.mainRivers.bankWidth",
+      "before": 20,
+      "after": 28
+    },
+    {
+      "path": "rivers.branchRivers.bankWidth",
+      "before": 14,
+      "after": 20
+    }
+  ],
+  "screenshots": [
+    "screenshots/2026-11-10_14.00.44.png",
+    "screenshots/2026-11-10_14.00.53.png",
+    "screenshots/2026-11-10_14.01.05.png",
+    "screenshots/2026-11-10_14.01.17.png",
+    "screenshots/2026-11-10_14.01.31.png"
+  ],
+  "sourceJar": "mods/ultraterraforged-1.0.3+1.20.1-forge.jar",
+  "sourceJarSha256": "6af840f61e53d94cab7a4b7ef2f3d7e5e48c8afdb1ea358e0464811ad51d66d9",
+  "sourceFindings": [
+    {
+      "method": "PresetSurfaceRuleData.overworld / makeErodedDirtRule",
+      "finding": "erosionDecorator enables broad rock and coarse-dirt/gravel surface substitutions based on slope and elevation."
+    },
+    {
+      "method": "LayerCaves.carve",
+      "finding": "12 cave beds from Y=-40 in 22-block steps, 2 to 5 blocks high, can carve to 4 blocks below the local surface."
+    },
+    {
+      "method": "GlacierCaves.carve / find",
+      "finding": "Blue-ice-lined mountain tunnels, radius 3.2, occur in glacial valleys and cirques."
+    },
+    {
+      "method": "PresetNoiseRouterData.overworld",
+      "finding": "cheeseCaveDepthOffset is the sloped-cheese density threshold selecting the underground cave graph. Raising it delays large noise caves below the terrain surface."
+    },
+    {
+      "method": "RiverPopulator.carveRaised",
+      "finding": "The raised-water branch may raise low river-bank columns to the river level plus one block, matching artificial elevated channel walls."
+    },
+    {
+      "method": "WaterLevels.level / step",
+      "finding": "Raised river levels are sampled along 16-block stretches, quantized in 3-block steps, with tributaries given the parent junction water level."
+    }
+  ],
+  "interpretation": "Screenshots plus source establish contributing mechanisms. Individual displayed voids were not classified by runtime carver tracing.",
+  "validation": "One offline native UTFDataGen.makePreset run, JSON equality, exact eight-parameter diff, generated noise threshold, package hashes and PowerShell installer syntax.",
+  "visualValidation": "Pending inspection of newly generated chunks after a full restart.",
+  "backup": "C:\\Users\\Tony\\AppData\\Roaming\\PrismLauncher\\instances\\SenDimsBanForges\\minecraft\\.sdbf-backups\\utf-terrain-2026-11-10",
+  "previousPackageSha256": "9bbc18985f79a26bbcb57221966269b878a3671f8d10d2d35225a31b5c9aa5de",
+  "package": "C:\\Users\\Tony\\AppData\\Roaming\\PrismLauncher\\instances\\SenDimsBanForges\\minecraft\\docs\\releases\\SDBF-Update-2026-11-08.zip",
+  "packageSha256": "fd5a08c79a37a1723830d43cb921a5bf4dbb9b7855bc78bc97f90ecd9c69d06c",
+  "files": [
+    {
+      "path": "config/ultraterraforged/server-preset.json",
+      "beforeSha256": "4dd6e55e1c6d0235ec22527c0374c85d342bf82fbf4c7abc5504f664c4217fa9",
+      "sha256": "00f28ce8fd251b54650b92b13b1ddd184005619d1dae9fc0acd4474b73874100",
+      "size": 8228
+    },
+    {
+      "path": "config/ultraterraforged/modpack-presets/SDBF_Continental.json",
+      "beforeSha256": "4dd6e55e1c6d0235ec22527c0374c85d342bf82fbf4c7abc5504f664c4217fa9",
+      "sha256": "00f28ce8fd251b54650b92b13b1ddd184005619d1dae9fc0acd4474b73874100",
+      "size": 8228
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/ultraterraforged/worldgen/preset/preset.json",
+      "beforeSha256": "4dd6e55e1c6d0235ec22527c0374c85d342bf82fbf4c7abc5504f664c4217fa9",
+      "sha256": "00f28ce8fd251b54650b92b13b1ddd184005619d1dae9fc0acd4474b73874100",
+      "size": 8228
+    },
+    {
+      "path": "kubejs/data/minecraft/worldgen/noise_settings/overworld.json",
+      "beforeSha256": "58fa413059dd4d753e3ddea861d773f673e91ef7c0df37cc2287d5e51eb5ac90",
+      "sha256": "194cc4ec2d79f138398f4e4189904e1c20e4cbb379fe7aa41f9565c88da69724",
+      "size": 205334
+    }
+  ]
+}

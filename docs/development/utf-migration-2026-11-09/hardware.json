@@ -1,0 +1,15 @@
+{
+  "cpu": "13th Gen Intel(R) Core(TM) i7-13700K",
+  "logicalCpu": 24,
+  "physicalMemory": 34039865344,
+  "availableMemory": 7000952832,
+  "javaProcesses": [
+    {
+      "pid": 31152,
+      "name": "java.exe",
+      "rss": 14458654720,
+      "private": 2065481728
+    }
+  ],
+  "os": "Windows-11-10.0.26200-SP0"
+}

@@ -44,16 +44,6 @@
 			rotation: -90.0d
 			width: 1.0d
 			x: 6.0d
-			y: -1.0d
-		}
-		{
-			dependency: "5748351A76910019"
-			height: 0.5d
-			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
-			quest_enhance_exclude_from_box_selection: false
-			rotation: -90.0d
-			width: 1.0d
-			x: 6.0d
 			y: -3.0d
 		}
 		{
@@ -71,10 +61,20 @@
 			height: 0.5d
 			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
 			quest_enhance_exclude_from_box_selection: false
+			rotation: -90.0d
+			width: 1.0d
+			x: 6.0d
+			y: -7.0d
+		}
+		{
+			dependency: "5748351A76910019"
+			height: 0.5d
+			image: "jei:textures/jei/atlas/gui/recipe_arrow_filled.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 1.0d
-			x: 8.0d
-			y: -4.0d
+			x: 9.0d
+			y: -6.0d
 		}
 		{
 			dependency: "13B6F6AC7608F794"
@@ -134,14 +134,14 @@
 		{
 			id: "7379FE5C64FC6241"
 			linked_quest: "6FD736B74327F2AF"
-			x: 8.0d
-			y: -2.0d
+			x: 10.0d
+			y: -4.0d
 		}
 		{
 			id: "40D3BA256430AF4B"
 			linked_quest: "4A57E4499E188BD7"
-			x: 10.0d
-			y: -2.0d
+			x: 12.0d
+			y: -4.0d
 		}
 		{
 			id: "37F9308A7B690DE9"
@@ -190,39 +190,39 @@
 			linked_quest: "514CF1593551F00F"
 			shape: "diamond"
 			x: 6.0d
-			y: -4.0d
+			y: -6.0d
 		}
 		{
 			id: "52C5A4364DA3150F"
 			linked_quest: "51E136B4E1C27308"
 			shape: "diamond"
-			x: 10.0d
-			y: -4.0d
-		}
-		{
-			id: "38961D4CD9B5434F"
-			linked_quest: "540057998A3DBAFD"
 			x: 12.0d
 			y: -6.0d
 		}
 		{
+			id: "38961D4CD9B5434F"
+			linked_quest: "540057998A3DBAFD"
+			x: 14.0d
+			y: -8.0d
+		}
+		{
 			id: "6FE41F8F07813E22"
 			linked_quest: "371880BF8A2A75FC"
-			x: 12.0d
-			y: -4.0d
+			x: 14.0d
+			y: -6.0d
 		}
 		{
 			id: "1C92B13CE2E3415C"
 			linked_quest: "1379B8D98C84F257"
-			x: 12.0d
-			y: -2.0d
+			x: 14.0d
+			y: -4.0d
 		}
 		{
 			id: "3123289EAAB1F36F"
 			linked_quest: "3EDB392D42EA5AF0"
 			shape: "diamond"
 			x: 6.0d
-			y: -6.0d
+			y: -8.0d
 		}
 		{
 			id: "4F16C21D034E197B"
@@ -311,13 +311,33 @@
 			linked_quest: "06BB0C2EB2A5B5A1"
 			shape: "diamond"
 			x: 6.0d
-			y: -2.0d
+			y: -4.0d
 		}
 		{
 			id: "6A16CC135A02DB48"
 			linked_quest: "2AB981A4A033541D"
 			x: -2.0d
 			y: -2.0d
+		}
+		{
+			id: "7FF36A86ED19774A"
+			linked_quest: "19926BF0592FDD52"
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			id: "13ACD7C3669A79E2"
+			linked_quest: "65DE58C03568F5D7"
+			shape: "diamond"
+			x: 10.0d
+			y: 6.0d
+		}
+		{
+			id: "43BBB5C0A06B33CF"
+			linked_quest: "0E2694C5E6E1B504"
+			shape: "diamond"
+			x: 12.0d
+			y: 6.0d
 		}
 	]
 	quests: [
@@ -429,9 +449,8 @@
 					xp: 100
 				}
 				{
-					auto: "enabled"
-					id: "2769617083C46680"
-					item: "rehooked:wood_hook"
+					id: "12993255E66DF2C5"
+					item: "rehooked:iron_hook"
 					type: "item"
 				}
 			]
@@ -1352,6 +1371,38 @@
 			title: "临时公告"
 			x: -4.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["62C0631125654B3D"]
+			description: ["如果你希望&e跳过空岛的流程&r，直接进入&e第一个新世界：豆腐世界&r，可以打开&b难度选择器&r，并且选择位于&bN0&r难度下的&b跳过初始空岛部分&r。"]
+			icon: "minecraft:command_block_minecart"
+			id: "34EA39CBF68C303D"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			subtitle: "重要"
+			tasks: [{
+				id: "2679A43447FDF509"
+				type: "checkmark"
+			}]
+			title: "跳过空岛准备"
+			x: 10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["62C0631125654B3D"]
+			description: ["如果你希望&e跳过豆腐世界的流程&r，直接进入&e第二章节&r，可以打开&b难度选择器&r，并且选择位于&bN0&r难度下的&b跳过豆腐世界部分&r。"]
+			icon: "minecraft:command_block_minecart"
+			id: "1003BE33B2EA0823"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			subtitle: "重要"
+			tasks: [{
+				id: "0E6C3E635B82217A"
+				type: "checkmark"
+			}]
+			title: "跳过豆腐世界"
+			x: 12.0d
+			y: -2.0d
 		}
 	]
 	title: "[I] 起始空岛"

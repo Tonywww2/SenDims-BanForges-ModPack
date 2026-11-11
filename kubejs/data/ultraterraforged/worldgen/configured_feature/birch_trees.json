@@ -1,0 +1,67 @@
+{
+  "type": "ultraterraforged:chance",
+  "config": {
+    "entries": [
+      {
+        "chance": 0.2,
+        "feature": "ultraterraforged:birch/large",
+        "modifiers": [
+          {
+            "type": "ultraterraforged:elevation",
+            "exclusive": false,
+            "from": 0.25,
+            "to": 0.0
+          },
+          {
+            "type": "ultraterraforged:biome_edge",
+            "exclusive": false,
+            "from": 0.1,
+            "to": 0.3
+          }
+        ]
+      },
+      {
+        "chance": 0.2,
+        "feature": "ultraterraforged:birch/forest",
+        "modifiers": [
+          {
+            "type": "ultraterraforged:elevation",
+            "exclusive": false,
+            "from": 0.3,
+            "to": 0.0
+          },
+          {
+            "type": "ultraterraforged:biome_edge",
+            "exclusive": false,
+            "from": 0.05,
+            "to": 0.2
+          }
+        ]
+      },
+      {
+        "chance": 0.1,
+        "feature": "ultraterraforged:birch/small",
+        "modifiers": [
+          {
+            "type": "ultraterraforged:biome_edge",
+            "exclusive": false,
+            "from": 0.25,
+            "to": 0.0
+          }
+        ]
+      },
+      {
+        "chance": 0.1,
+        "feature": "ultraterraforged:birch/small",
+        "modifiers": [
+          {
+            "type": "ultraterraforged:elevation",
+            "exclusive": false,
+            "from": 0.25,
+            "to": 0.65
+          }
+        ]
+      }
+    ]
+  }
+}

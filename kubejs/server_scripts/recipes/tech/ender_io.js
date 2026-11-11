@@ -1,5 +1,14 @@
 ServerEvents.recipes(event => {
 
+    event.shaped('enderio:enderman_head', [
+        'EEE',
+        'EHE',
+        'EEE'
+    ], {
+        E: 'minecraft:ender_eye',
+        H: '#forge:heads'
+    }).id('sdbf:enderman_head')
+
     event.shaped('enderio:void_chassis', [
         'ABA',
         'CDC',

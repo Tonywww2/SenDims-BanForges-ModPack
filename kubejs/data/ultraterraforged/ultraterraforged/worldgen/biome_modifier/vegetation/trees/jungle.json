@@ -1,0 +1,9 @@
+{
+  "type": "ultraterraforged:replace",
+  "biomes": "#ultraterraforged:features/has_jungle_trees",
+  "replacements": {
+    "minecraft:bamboo_vegetation": "ultraterraforged:jungle_trees",
+    "minecraft:trees_jungle": "ultraterraforged:jungle_trees"
+  },
+  "step": "vegetal_decoration"
+}

@@ -1,0 +1,14 @@
+{
+	"structures": [
+		{
+			"structure": "sdbf:deep_realm_1/dinosaur",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"type": "minecraft:random_spread",
+		"salt": 204662444,
+		"spacing": 20,
+		"separation": 7
+	}
+}

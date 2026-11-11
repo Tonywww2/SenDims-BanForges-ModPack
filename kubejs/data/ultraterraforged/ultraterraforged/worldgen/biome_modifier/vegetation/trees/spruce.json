@@ -1,0 +1,8 @@
+{
+  "type": "ultraterraforged:replace",
+  "biomes": "#ultraterraforged:features/has_spruce_forest_trees",
+  "replacements": {
+    "minecraft:trees_taiga": "ultraterraforged:spruce_trees"
+  },
+  "step": "vegetal_decoration"
+}

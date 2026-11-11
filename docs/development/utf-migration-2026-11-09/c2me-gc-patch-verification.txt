@@ -1,0 +1,4 @@
+C2MEF JAR SHA-256 e73681883b2c867049800f8b2f7bdcbbbda6c9a44eb5e165c0513914364abfc6
+Original class SHA-256 85bc5083da35a5285acbab2612434ea440d15b1ac139c88bd8c68d194cd4a274
+Patched class SHA-256 3b416c2888b196009718cd760e159470e890bbf6b5bbb14d706cb0d1de58fea9
+Only totalGcMillis()J changed. ZGC concurrent cycles excluded, pause timers retained.

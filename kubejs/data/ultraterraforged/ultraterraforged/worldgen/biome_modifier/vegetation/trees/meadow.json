@@ -1,0 +1,8 @@
+{
+  "type": "ultraterraforged:replace",
+  "biomes": "#ultraterraforged:features/has_meadow_trees",
+  "replacements": {
+    "minecraft:trees_meadow": "ultraterraforged:meadow_trees"
+  },
+  "step": "vegetal_decoration"
+}

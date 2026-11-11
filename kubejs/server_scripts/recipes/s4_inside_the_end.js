@@ -1,5 +1,25 @@
 ServerEvents.recipes(event => {
 
+    event.shaped(Item.of('gateways:gate_pearl', '{gateway:"gateways:sdbf_inside_end_g1"}'), [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'draconicevolution:draconium_dust',
+        B: 'minecraft:purpur_block',
+        C: 'slashblade:proudsoul_sphere'
+    }).id('sdbf:sdbf_inside_end_g1_s4')
+
+    event.shaped(Item.of('gateways:gate_pearl', '{gateway:"gateways:sdbf_inside_end_g2"}'), [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'draconicevolution:draconium_ingot',
+        B: 'apotheosis:epic_material',
+        C: 'slashblade:proudsoul_crystal'
+    }).id('sdbf:sdbf_inside_end_g2_s4')
+
     event.shaped('kubejs:basepoint_alloy', [
         'ABA',
         'CDE',

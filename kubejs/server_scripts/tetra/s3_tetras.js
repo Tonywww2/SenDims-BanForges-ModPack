@@ -77,6 +77,20 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(3, () => {
         .addEffects("fot:fe_store", 18000)
         .build();
 
+    // 6.1 远古金属锭（2026-11-11 自 s2 移入金星阶段）
+    // 诅咒金字塔的怪物、宝箱和 Boss（一次掉一整块）都能产出，比 ignitium 好拿，强度放在耐热金属和 ignitium 之间。
+    tetraMaterialBuilder(event, "ancient_metal_ingot").setCategory("metal")
+        .setPrimary(16).setSecondary(12).setTertiary(8)
+        .setDurability(640).setIntegrityCost(5).setIntegrityGain(6)
+        .setMagicCapacity(130).setToolLevel(5).setToolEfficiency(8)
+        .addAttributes("slashblade_sendims:frenzy_resistance", 0.05)
+        .addAttributes("slashblade_sendims:madness_reduce", 5)
+        .setTints("d4af37", "c5a017")
+        .addTexture("heavy").addTexture("metal")
+        .addItemMaterial('cataclysm:ancient_metal_ingot')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
     // 7. 水星石 (新加)
     tetraMaterialBuilder(event, "mercury_stone").setCategory("stone")
         .setPrimary(10).setSecondary(5).setTertiary(6)

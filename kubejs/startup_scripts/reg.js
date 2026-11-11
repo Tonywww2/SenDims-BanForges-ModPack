@@ -22,6 +22,8 @@ StartupEvents.registry('item', event => {
 
     event.create('star_chart_fragment').rarity('uncommon')
     event.create('star_chart').rarity('epic').maxStackSize(1)
+    // 地图传送仪式消耗品（结构羽毛笔地图 3000 格以上传送）
+    event.create('map_teleport_powder').rarity('uncommon')
 
     event.create('difficulty_selector').rarity('uncommon').maxStackSize(1)
     event.create('difficulty_locker').rarity('rare').maxStackSize(1)
@@ -195,4 +197,13 @@ StartupEvents.registry('fluid', event => {
     event.create('purified_proudsoul_fuel')
         .thickTexture(0xd8c7ff)
         .bucketColor(0xd8c7ff)
+
+    // 硼砂湿法提硼（配方见 server_scripts/recipes/tech/nc.js）
+    event.create('molten_borax')
+        .thickTexture(0xE0A040)
+        .bucketColor(0xE0A040)
+
+    event.create('molten_nickel')
+        .thickTexture(0x9EAA96)
+        .bucketColor(0x9EAA96)
 })

@@ -1,0 +1,9 @@
+{
+  "type": "ultraterraforged:replace",
+  "biomes": "#ultraterraforged:features/has_badlands_trees",
+  "replacements": {
+    "minecraft:trees_badlands": "ultraterraforged:badlands_trees",
+    "minecraft:trees_windswept_savanna": "ultraterraforged:badlands_trees"
+  },
+  "step": "vegetal_decoration"
+}

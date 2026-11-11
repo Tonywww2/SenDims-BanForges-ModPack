@@ -539,6 +539,68 @@
 			x: 3.0d
 			y: 6.0d
 		}
+		{
+			dependencies: ["3DA6E818573A9A69"]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "6B2B76A4E5A10A72"
+			quest_enhance_disable_scroll_paging: false
+			shape: "none"
+			tasks: [{
+				id: "07D95400FB8E231E"
+				type: "checkmark"
+			}]
+			title: "Tetra材料/可获得的实用物品"
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3DA6E818573A9A69"]
+			id: "1E2D16B3FB2121EF"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1BC3D386D03CE20E"
+				item: "integrateddynamics:crystalized_menril_chunk"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3DA6E818573A9A69"]
+			id: "1EDCA4A245137661"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "68C130E63C7D3C53"
+				item: "kubejs:menril-silicon_sic_sic_cmc_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3DA6E818573A9A69"]
+			id: "08D847CF99DE0A28"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "69FE5B32B9F3AD44"
+				item: "enderio:vibrant_alloy_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3DA6E818573A9A69"]
+			id: "29B9F6629C9C44E7"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "56708827E2861FB5"
+				item: "nuclearcraft:extreme_ingot"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 4.0d
+		}
 	]
 	title: "[VI] &e深境：巨树之海"
 }

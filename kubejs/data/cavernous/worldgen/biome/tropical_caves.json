@@ -116,7 +116,8 @@
 		],
 		[
 			"minecraft:amethyst_geode",
-			"cavernous:generic/big_geode"
+			"cavernous:generic/big_geode",
+			"sdbf:deep_realm_1/upper/amethyst_geode"
 		],
 		[],
 		[],
@@ -143,7 +144,6 @@
 			"cavernous:generic/ores/special/treasure",
 			"cavernous:generic/ores/special/gold_chunk",
 			"cavernous:generic/ores/special/copper_chunk",
-			
 			"cavernous:generic/silverfish_nest"
 		],
 		[
@@ -158,7 +158,8 @@
 			"cavernous:biomes/lush/tropical/ground_patch",
 			"cavernous:biomes/lush/tropical/coarse_dirt_patch",
 			"cavernous:biomes/lush/tropical/bamboo_patch",
-			"minecraft:glow_lichen"
+			"minecraft:glow_lichen",
+			"sdbf:deep_realm_1/upper/glow_lichen"
 		],
 		[
 			"minecraft:freeze_top_layer",

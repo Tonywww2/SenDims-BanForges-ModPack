@@ -36,7 +36,9 @@
       "last_smith:bewitched_power",
       "last_smith:extra_smite",
       "blades_derby:uma_special",
-      "slashblade:wither_edge"
+      "slashblade:wither_edge",
+      "slashblade_sendims:amagumo_crow",
+      "slashblade_sendims:amagumo_wind"
     ],
     "sword_type": [
       "bewitched"

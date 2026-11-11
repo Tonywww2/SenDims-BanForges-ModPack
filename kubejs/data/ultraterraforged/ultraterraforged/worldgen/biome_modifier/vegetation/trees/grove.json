@@ -1,0 +1,8 @@
+{
+  "type": "ultraterraforged:replace",
+  "biomes": "#ultraterraforged:features/has_grove_trees",
+  "replacements": {
+    "minecraft:trees_grove": "ultraterraforged:grove_trees"
+  },
+  "step": "vegetal_decoration"
+}

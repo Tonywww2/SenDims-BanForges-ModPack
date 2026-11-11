@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-19",
+  "date": "2026-11-09",
   "source": "kubejs/server_scripts/recipes/mahjong.js",
   "blade_count": 19,
   "normal_recipe_count": 19,
@@ -12,7 +12,26 @@
     "special_effects": "named output definition; single-yakuman blades keep no SE"
   },
   "stage5_refine": {
-    "requirement": 200,
+    "normal": {
+      "five_yakuman": {
+        "primary": 100,
+        "secondary": 50
+      },
+      "six_yakuman": {
+        "primary": 150,
+        "secondary": 100
+      }
+    },
+    "early": {
+      "five_yakuman": {
+        "primary": 60,
+        "secondary": 35
+      },
+      "six_yakuman": {
+        "primary": 100,
+        "secondary": 75
+      }
+    },
     "changes_global_limit": false
   },
   "advancement_blade_rewards": {
@@ -21,7 +40,7 @@
   },
   "verification": {
     "javascript_syntax": "passed node --check",
-    "static_catalog_and_slots": "all 19 definitions, parent references, certificate IDs/tags and tile models checked; maximum nine slots",
+    "static_catalog_and_slots": "All 38 recipe parent requirements synchronized with mahjong.js; ingredient and kill requirements unchanged.",
     "game_tests_run": false,
     "game_launched": false
   },
@@ -36,9 +55,9 @@
         {
           "id": "slashblade:nameless_lone",
           "role": "primary",
-          "kill": 12000,
-          "proud_soul": 100000,
-          "refine": 50
+          "kill": 2500,
+          "proud_soul": 4000,
+          "refine": 25
         }
       ],
       "forging_souls": 1,
@@ -62,9 +81,9 @@
         {
           "id": "slashblade:nameless_lone",
           "role": "primary",
-          "kill": 12000,
-          "proud_soul": 100000,
-          "refine": 25
+          "kill": 2500,
+          "proud_soul": 4000,
+          "refine": 15
         }
       ],
       "forging_souls": 1,
@@ -90,9 +109,9 @@
         {
           "id": "slashblade:nameless_lone",
           "role": "primary",
-          "kill": 12000,
-          "proud_soul": 100000,
-          "refine": 50
+          "kill": 2500,
+          "proud_soul": 4000,
+          "refine": 25
         }
       ],
       "forging_souls": 1,
@@ -117,9 +136,9 @@
         {
           "id": "slashblade:nameless_lone",
           "role": "primary",
-          "kill": 12000,
-          "proud_soul": 100000,
-          "refine": 25
+          "kill": 2500,
+          "proud_soul": 4000,
+          "refine": 15
         }
       ],
       "forging_souls": 1,
@@ -146,9 +165,9 @@
         {
           "id": "slashblade:nameless_lone",
           "role": "primary",
-          "kill": 12000,
-          "proud_soul": 100000,
-          "refine": 50
+          "kill": 2500,
+          "proud_soul": 4000,
+          "refine": 25
         }
       ],
       "forging_souls": 1,
@@ -173,9 +192,9 @@
         {
           "id": "slashblade:nameless_lone",
           "role": "primary",
-          "kill": 12000,
-          "proud_soul": 100000,
-          "refine": 25
+          "kill": 2500,
+          "proud_soul": 4000,
+          "refine": 15
         }
       ],
       "forging_souls": 1,
@@ -202,9 +221,9 @@
         {
           "id": "slashblade:nameless_lone",
           "role": "primary",
-          "kill": 12000,
-          "proud_soul": 100000,
-          "refine": 50
+          "kill": 2500,
+          "proud_soul": 4000,
+          "refine": 25
         }
       ],
       "forging_souls": 1,
@@ -230,9 +249,9 @@
         {
           "id": "slashblade:nameless_lone",
           "role": "primary",
-          "kill": 12000,
-          "proud_soul": 100000,
-          "refine": 25
+          "kill": 2500,
+          "proud_soul": 4000,
+          "refine": 15
         }
       ],
       "forging_souls": 1,
@@ -260,9 +279,9 @@
         {
           "id": "slashblade:nameless_lone",
           "role": "primary",
-          "kill": 12000,
-          "proud_soul": 100000,
-          "refine": 50
+          "kill": 2500,
+          "proud_soul": 4000,
+          "refine": 25
         }
       ],
       "forging_souls": 1,
@@ -287,9 +306,9 @@
         {
           "id": "slashblade:nameless_lone",
           "role": "primary",
-          "kill": 12000,
-          "proud_soul": 100000,
-          "refine": 25
+          "kill": 2500,
+          "proud_soul": 4000,
+          "refine": 15
         }
       ],
       "forging_souls": 1,
@@ -316,9 +335,9 @@
         {
           "id": "slashblade:nameless_lone",
           "role": "primary",
-          "kill": 12000,
-          "proud_soul": 100000,
-          "refine": 50
+          "kill": 2500,
+          "proud_soul": 4000,
+          "refine": 25
         }
       ],
       "forging_souls": 1,
@@ -343,9 +362,9 @@
         {
           "id": "slashblade:nameless_lone",
           "role": "primary",
-          "kill": 12000,
-          "proud_soul": 100000,
-          "refine": 25
+          "kill": 2500,
+          "proud_soul": 4000,
+          "refine": 15
         }
       ],
       "forging_souls": 1,
@@ -372,9 +391,9 @@
         {
           "id": "slashblade:nameless_lone",
           "role": "primary",
-          "kill": 12000,
-          "proud_soul": 100000,
-          "refine": 50
+          "kill": 2500,
+          "proud_soul": 4000,
+          "refine": 25
         }
       ],
       "forging_souls": 1,
@@ -398,9 +417,9 @@
         {
           "id": "slashblade:nameless_lone",
           "role": "primary",
-          "kill": 12000,
-          "proud_soul": 100000,
-          "refine": 25
+          "kill": 2500,
+          "proud_soul": 4000,
+          "refine": 15
         }
       ],
       "forging_souls": 1,
@@ -426,9 +445,9 @@
         {
           "id": "slashblade:nameless_lone",
           "role": "primary",
-          "kill": 12000,
-          "proud_soul": 100000,
-          "refine": 50
+          "kill": 2500,
+          "proud_soul": 4000,
+          "refine": 25
         }
       ],
       "forging_souls": 1,
@@ -453,9 +472,9 @@
         {
           "id": "slashblade:nameless_lone",
           "role": "primary",
-          "kill": 12000,
-          "proud_soul": 100000,
-          "refine": 25
+          "kill": 2500,
+          "proud_soul": 4000,
+          "refine": 15
         }
       ],
       "forging_souls": 1,
@@ -482,9 +501,9 @@
         {
           "id": "slashblade:nameless_lone",
           "role": "primary",
-          "kill": 12000,
-          "proud_soul": 100000,
-          "refine": 50
+          "kill": 2500,
+          "proud_soul": 4000,
+          "refine": 25
         }
       ],
       "forging_souls": 1,
@@ -510,9 +529,9 @@
         {
           "id": "slashblade:nameless_lone",
           "role": "primary",
-          "kill": 12000,
-          "proud_soul": 100000,
-          "refine": 25
+          "kill": 2500,
+          "proud_soul": 4000,
+          "refine": 15
         }
       ],
       "forging_souls": 1,
@@ -540,9 +559,9 @@
         {
           "id": "slashblade:nameless_lone",
           "role": "primary",
-          "kill": 12000,
-          "proud_soul": 100000,
-          "refine": 50
+          "kill": 2500,
+          "proud_soul": 4000,
+          "refine": 25
         }
       ],
       "forging_souls": 1,
@@ -566,9 +585,9 @@
         {
           "id": "slashblade:nameless_lone",
           "role": "primary",
-          "kill": 12000,
-          "proud_soul": 100000,
-          "refine": 25
+          "kill": 2500,
+          "proud_soul": 4000,
+          "refine": 15
         }
       ],
       "forging_souls": 1,
@@ -594,9 +613,9 @@
         {
           "id": "slashblade:nameless_lone",
           "role": "primary",
-          "kill": 12000,
-          "proud_soul": 100000,
-          "refine": 50
+          "kill": 2500,
+          "proud_soul": 4000,
+          "refine": 25
         }
       ],
       "forging_souls": 1,
@@ -620,9 +639,9 @@
         {
           "id": "slashblade:nameless_lone",
           "role": "primary",
-          "kill": 12000,
-          "proud_soul": 100000,
-          "refine": 25
+          "kill": 2500,
+          "proud_soul": 4000,
+          "refine": 15
         }
       ],
       "forging_souls": 1,
@@ -648,9 +667,9 @@
         {
           "id": "slashblade_sendims:yakuman_shousuushii",
           "role": "primary",
-          "kill": 30000,
-          "proud_soul": 300000,
-          "refine": 100
+          "kill": 8000,
+          "proud_soul": 10000,
+          "refine": 60
         }
       ],
       "forging_souls": 2,
@@ -671,9 +690,9 @@
         {
           "id": "slashblade_sendims:yakuman_shousuushii",
           "role": "primary",
-          "kill": 30000,
-          "proud_soul": 300000,
-          "refine": 50
+          "kill": 8000,
+          "proud_soul": 10000,
+          "refine": 35
         }
       ],
       "forging_souls": 2,
@@ -696,16 +715,16 @@
         {
           "id": "slashblade_sendims:yakuman_daisangen",
           "role": "primary",
-          "kill": 30000,
-          "proud_soul": 300000,
-          "refine": 100
+          "kill": 8000,
+          "proud_soul": 10000,
+          "refine": 60
         },
         {
           "id": "slashblade_sendims:yakuman_tsuuiisou",
           "role": "secondary",
-          "kill": 12000,
-          "proud_soul": 100000,
-          "refine": 100
+          "kill": 2500,
+          "proud_soul": 3000,
+          "refine": 30
         }
       ],
       "forging_souls": 2,
@@ -726,16 +745,16 @@
         {
           "id": "slashblade_sendims:yakuman_daisangen",
           "role": "primary",
-          "kill": 30000,
-          "proud_soul": 300000,
-          "refine": 50
+          "kill": 8000,
+          "proud_soul": 10000,
+          "refine": 35
         },
         {
           "id": "slashblade_sendims:yakuman_tsuuiisou",
           "role": "secondary",
-          "kill": 12000,
-          "proud_soul": 100000,
-          "refine": 50
+          "kill": 2500,
+          "proud_soul": 3000,
+          "refine": 20
         }
       ],
       "forging_souls": 2,
@@ -759,16 +778,16 @@
         {
           "id": "slashblade_sendims:yakuman_chinroutou",
           "role": "primary",
-          "kill": 30000,
-          "proud_soul": 300000,
-          "refine": 100
+          "kill": 8000,
+          "proud_soul": 10000,
+          "refine": 60
         },
         {
           "id": "slashblade_sendims:yakuman_suuankou",
           "role": "secondary",
-          "kill": 12000,
-          "proud_soul": 100000,
-          "refine": 100
+          "kill": 2500,
+          "proud_soul": 3000,
+          "refine": 30
         }
       ],
       "forging_souls": 2,
@@ -789,16 +808,16 @@
         {
           "id": "slashblade_sendims:yakuman_chinroutou",
           "role": "primary",
-          "kill": 30000,
-          "proud_soul": 300000,
-          "refine": 50
+          "kill": 8000,
+          "proud_soul": 10000,
+          "refine": 35
         },
         {
           "id": "slashblade_sendims:yakuman_suuankou",
           "role": "secondary",
-          "kill": 12000,
-          "proud_soul": 100000,
-          "refine": 50
+          "kill": 2500,
+          "proud_soul": 3000,
+          "refine": 20
         }
       ],
       "forging_souls": 2,
@@ -822,16 +841,16 @@
         {
           "id": "slashblade_sendims:yakuman_ryuuiisou",
           "role": "primary",
-          "kill": 30000,
-          "proud_soul": 300000,
-          "refine": 100
+          "kill": 8000,
+          "proud_soul": 10000,
+          "refine": 60
         },
         {
           "id": "slashblade_sendims:yakuman_suukantsu",
           "role": "secondary",
-          "kill": 12000,
-          "proud_soul": 100000,
-          "refine": 100
+          "kill": 2500,
+          "proud_soul": 3000,
+          "refine": 30
         }
       ],
       "forging_souls": 2,
@@ -852,16 +871,16 @@
         {
           "id": "slashblade_sendims:yakuman_ryuuiisou",
           "role": "primary",
-          "kill": 30000,
-          "proud_soul": 300000,
-          "refine": 50
+          "kill": 8000,
+          "proud_soul": 10000,
+          "refine": 35
         },
         {
           "id": "slashblade_sendims:yakuman_suukantsu",
           "role": "secondary",
-          "kill": 12000,
-          "proud_soul": 100000,
-          "refine": 50
+          "kill": 2500,
+          "proud_soul": 3000,
+          "refine": 20
         }
       ],
       "forging_souls": 2,
@@ -885,16 +904,16 @@
         {
           "id": "slashblade_sendims:yakuman_kokushi",
           "role": "primary",
-          "kill": 45000,
-          "proud_soul": 500000,
-          "refine": 100
+          "kill": 10000,
+          "proud_soul": 12000,
+          "refine": 75
         },
         {
           "id": "slashblade_sendims:yakuman_tenhou",
           "role": "secondary",
-          "kill": 12000,
-          "proud_soul": 100000,
-          "refine": 100
+          "kill": 2500,
+          "proud_soul": 3000,
+          "refine": 40
         }
       ],
       "forging_souls": 1,
@@ -915,16 +934,16 @@
         {
           "id": "slashblade_sendims:yakuman_kokushi",
           "role": "primary",
-          "kill": 45000,
-          "proud_soul": 500000,
-          "refine": 50
+          "kill": 10000,
+          "proud_soul": 12000,
+          "refine": 40
         },
         {
           "id": "slashblade_sendims:yakuman_tenhou",
           "role": "secondary",
-          "kill": 12000,
-          "proud_soul": 100000,
-          "refine": 50
+          "kill": 2500,
+          "proud_soul": 3000,
+          "refine": 25
         }
       ],
       "forging_souls": 1,
@@ -948,16 +967,16 @@
         {
           "id": "slashblade_sendims:yakuman_chuuren",
           "role": "primary",
-          "kill": 45000,
-          "proud_soul": 500000,
-          "refine": 100
+          "kill": 10000,
+          "proud_soul": 12000,
+          "refine": 75
         },
         {
           "id": "slashblade_sendims:yakuman_chiihou",
           "role": "secondary",
-          "kill": 12000,
-          "proud_soul": 100000,
-          "refine": 100
+          "kill": 2500,
+          "proud_soul": 3000,
+          "refine": 40
         }
       ],
       "forging_souls": 1,
@@ -978,16 +997,16 @@
         {
           "id": "slashblade_sendims:yakuman_chuuren",
           "role": "primary",
-          "kill": 45000,
-          "proud_soul": 500000,
-          "refine": 50
+          "kill": 10000,
+          "proud_soul": 12000,
+          "refine": 40
         },
         {
           "id": "slashblade_sendims:yakuman_chiihou",
           "role": "secondary",
-          "kill": 12000,
-          "proud_soul": 100000,
-          "refine": 50
+          "kill": 2500,
+          "proud_soul": 3000,
+          "refine": 25
         }
       ],
       "forging_souls": 1,
@@ -1011,23 +1030,23 @@
         {
           "id": "slashblade_sendims:yakuman_daisuushii",
           "role": "primary",
-          "kill": 75000,
-          "proud_soul": 1000000,
-          "refine": 200
+          "kill": 15000,
+          "proud_soul": 35000,
+          "refine": 100
         },
         {
           "id": "slashblade_sendims:yakuman_tsuuiisou",
           "role": "secondary",
-          "kill": 12000,
-          "proud_soul": 100000,
-          "refine": 200
+          "kill": 2500,
+          "proud_soul": 3000,
+          "refine": 50
         },
         {
           "id": "slashblade_sendims:yakuman_suuankou",
           "role": "secondary",
-          "kill": 12000,
-          "proud_soul": 100000,
-          "refine": 200
+          "kill": 2500,
+          "proud_soul": 3000,
+          "refine": 50
         }
       ],
       "forging_souls": 1,
@@ -1048,23 +1067,23 @@
         {
           "id": "slashblade_sendims:yakuman_daisuushii",
           "role": "primary",
-          "kill": 75000,
-          "proud_soul": 1000000,
-          "refine": 100
+          "kill": 15000,
+          "proud_soul": 35000,
+          "refine": 60
         },
         {
           "id": "slashblade_sendims:yakuman_tsuuiisou",
           "role": "secondary",
-          "kill": 12000,
-          "proud_soul": 100000,
-          "refine": 100
+          "kill": 2500,
+          "proud_soul": 3000,
+          "refine": 35
         },
         {
           "id": "slashblade_sendims:yakuman_suuankou",
           "role": "secondary",
-          "kill": 12000,
-          "proud_soul": 100000,
-          "refine": 100
+          "kill": 2500,
+          "proud_soul": 3000,
+          "refine": 35
         }
       ],
       "forging_souls": 1,
@@ -1088,16 +1107,16 @@
         {
           "id": "slashblade_sendims:yakuman_suushi_jikoku",
           "role": "primary",
-          "kill": 100000,
-          "proud_soul": 1500000,
-          "refine": 200
+          "kill": 40000,
+          "proud_soul": 150000,
+          "refine": 150
         },
         {
           "id": "slashblade_sendims:yakuman_suukantsu",
           "role": "secondary",
-          "kill": 12000,
-          "proud_soul": 100000,
-          "refine": 200
+          "kill": 2500,
+          "proud_soul": 3000,
+          "refine": 100
         }
       ],
       "forging_souls": 1,
@@ -1118,16 +1137,16 @@
         {
           "id": "slashblade_sendims:yakuman_suushi_jikoku",
           "role": "primary",
-          "kill": 100000,
-          "proud_soul": 1500000,
+          "kill": 40000,
+          "proud_soul": 150000,
           "refine": 100
         },
         {
           "id": "slashblade_sendims:yakuman_suukantsu",
           "role": "secondary",
-          "kill": 12000,
-          "proud_soul": 100000,
-          "refine": 100
+          "kill": 2500,
+          "proud_soul": 3000,
+          "refine": 75
         }
       ],
       "forging_souls": 1,

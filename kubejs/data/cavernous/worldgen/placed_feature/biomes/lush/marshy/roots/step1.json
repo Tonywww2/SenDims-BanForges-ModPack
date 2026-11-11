@@ -34,11 +34,11 @@
 	"placement": [
 		{
 			"type": "minecraft:count",
-			"count": 170
+			"count": 174
 		},
 		{
 			"type": "minecraft:count",
-			"count": 50
+			"count": 75
 		},
 		{
 			"type": "minecraft:in_square"
@@ -48,10 +48,10 @@
 			"height": {
 				"type": "minecraft:uniform",
 				"min_inclusive": {
-					"above_bottom": 0
+					"absolute": 176
 				},
 				"max_inclusive": {
-					"absolute": 57
+					"absolute": 300
 				}
 			}
 		},
@@ -75,7 +75,8 @@
 						"blocks": [
 							"minecraft:mangrove_roots"
 						]
-					},					{
+					},
+					{
 						"type": "minecraft:matching_blocks",
 						"offset": [
 							0,
@@ -100,7 +101,13 @@
 				]
 			},
 			"allowed_search_condition": {
-				"type": "minecraft:true"
+				"type": "minecraft:matching_blocks",
+				"offset": [
+					0,
+					0,
+					0
+				],
+				"blocks": "minecraft:air"
 			}
 		}
 	]

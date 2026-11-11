@@ -1,0 +1,67 @@
+{
+  "type": "ultraterraforged:chance",
+  "config": {
+    "entries": [
+      {
+        "chance": 0.4,
+        "feature": "ultraterraforged:redwood/huge",
+        "modifiers": [
+          {
+            "type": "ultraterraforged:elevation",
+            "exclusive": false,
+            "from": 0.15,
+            "to": 0.0
+          },
+          {
+            "type": "ultraterraforged:biome_edge",
+            "exclusive": false,
+            "from": 0.1,
+            "to": 0.3
+          }
+        ]
+      },
+      {
+        "chance": 0.2,
+        "feature": "ultraterraforged:redwood/large",
+        "modifiers": [
+          {
+            "type": "ultraterraforged:elevation",
+            "exclusive": false,
+            "from": 0.25,
+            "to": 0.0
+          },
+          {
+            "type": "ultraterraforged:biome_edge",
+            "exclusive": false,
+            "from": 0.05,
+            "to": 0.25
+          }
+        ]
+      },
+      {
+        "chance": 0.4,
+        "feature": "ultraterraforged:spruce/large",
+        "modifiers": [
+          {
+            "type": "ultraterraforged:elevation",
+            "exclusive": false,
+            "from": 0.35,
+            "to": 0.15
+          }
+        ]
+      },
+      {
+        "chance": 0.2,
+        "feature": "ultraterraforged:spruce/small",
+        "modifiers": [
+          {
+            "type": "ultraterraforged:elevation",
+            "exclusive": false,
+            "from": 0.5,
+            "to": 0.2
+          }
+        ]
+      }
+    ]
+  }
+}

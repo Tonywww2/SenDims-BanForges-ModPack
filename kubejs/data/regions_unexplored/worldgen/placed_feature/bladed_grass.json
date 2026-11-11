@@ -1,0 +1,25 @@
+{
+  "feature": "regions_unexplored:patch_bladed_grass",
+  "placement": [
+    {
+      "type": "ultraterraforged:dimension_filter",
+      "blacklist": [
+        "sdbf:deep_realm_level_1"
+      ]
+    },
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": 155
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_blocks",
+        "blocks": "minecraft:air"
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "type": "ultraterraforged:replace",
+  "biomes": "#ultraterraforged:features/has_birch_forest_trees",
+  "replacements": {
+    "minecraft:birch_tall": "ultraterraforged:birch_trees",
+    "minecraft:trees_birch": "ultraterraforged:birch_trees"
+  },
+  "step": "vegetal_decoration"
+}

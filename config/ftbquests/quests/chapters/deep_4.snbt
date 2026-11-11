@@ -25,10 +25,7 @@
 	]
 	quests: [
 		{
-			dependencies: [
-				"3A267848CC75F232"
-				"7441006B1C06F60E"
-			]
+			dependencies: ["7441006B1C06F60E"]
 			hide_dependent_lines: true
 			icon: "deeprealm_4th:star_source"
 			id: "4239AD35803375DB"
@@ -450,6 +447,90 @@
 			}]
 			x: 21.0d
 			y: 6.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["5BDE6A80B0A1AB53"]
+			id: "1D879C188FF35F2F"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "4F396BF748C89552"
+				item: "deeprealm_4th:star_source"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				consume_items: true
+				count: 2L
+				id: "426E935D3DE019C1"
+				item: "deeprealm_4th:stabilized_star_slurry"
+				type: "item"
+			}]
+			title: "兑换星之源"
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4239AD35803375DB"]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "7FD22EBB7EBAC042"
+			quest_enhance_disable_scroll_paging: false
+			shape: "none"
+			tasks: [{
+				id: "5DF9C28621FBCB97"
+				type: "checkmark"
+			}]
+			title: "Tetra材料/可获得的实用物品"
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4239AD35803375DB"]
+			id: "21791C2A9099807A"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "781AD46E026E90E5"
+				item: "deeprealm_4th:star_slurry_crystal"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4239AD35803375DB"]
+			id: "7B1346325725780D"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4CC3B019580D328D"
+				item: "kubejs:rainbowshift_entropy"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4239AD35803375DB"]
+			id: "56453F9D3D9ECC77"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "07A7044E6612B5FB"
+				item: "kubejs:epsilon_dust"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4239AD35803375DB"]
+			id: "7ECE3F0EADF69BB7"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "40AC70D2E65C97D4"
+				item: "elder_bosses:gate_fragment"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 5.0d
 		}
 	]
 	title: "[XIII] &e深境：第四层"

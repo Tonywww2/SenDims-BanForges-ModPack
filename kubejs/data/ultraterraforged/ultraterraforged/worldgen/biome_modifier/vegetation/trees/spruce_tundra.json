@@ -1,0 +1,9 @@
+{
+  "type": "ultraterraforged:replace",
+  "biomes": "#ultraterraforged:features/has_spruce_tundra_trees",
+  "replacements": {
+    "minecraft:trees_snowy": "ultraterraforged:spruce_tundra_trees",
+    "minecraft:trees_water": "ultraterraforged:spruce_tundra_trees"
+  },
+  "step": "vegetal_decoration"
+}

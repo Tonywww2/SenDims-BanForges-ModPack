@@ -115,7 +115,8 @@
 		],
 		[
 			"minecraft:amethyst_geode",
-			"cavernous:generic/big_geode"
+			"cavernous:generic/big_geode",
+			"sdbf:deep_realm_1/upper/amethyst_geode"
 		],
 		[],
 		[],
@@ -138,7 +139,6 @@
 			"cavernous:generic/ores/lapis_buried",
 			"cavernous:generic/ores/redstone",
 			"cavernous:generic/ores/redstone_lower",
-
 			"cavernous:biomes/ice/icy/ore_iron_extra",
 			"cavernous:biomes/ice/icy/ore_diamond_extra"
 		],
@@ -150,7 +150,8 @@
 		[
 			"cavernous:biomes/ice/icy/mammoth",
 			"cavernous:biomes/ice/icy/ice_pillar_hang",
-			"minecraft:glow_lichen"
+			"minecraft:glow_lichen",
+			"sdbf:deep_realm_1/upper/glow_lichen"
 		],
 		[
 			"minecraft:freeze_top_layer",

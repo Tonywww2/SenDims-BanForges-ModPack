@@ -73,14 +73,25 @@
   };
   FillerPresentations.registerName(A.badgeId, name);
   A.species.forEach(species => FillerPresentations.registerFoil(species.item, stack => !!A.read(stack).payload));
+  // Catalog/rules run at higher startup priorities than this 1700 bridge.
+  let attributeNames = [];
+  // Call after any supported catalog extension before evaluating scores again.
+  A.rebuildAttributeNames = () => {
+    attributeNames = [];
+    Object.keys(A.byIdentity).forEach(key => A.byIdentity[key].badgeChannels.forEach(c => {
+      if (attributeNames.indexOf(c.attribute) < 0) attributeNames.push(c.attribute);
+    }));
+  };
+  A.rebuildAttributeNames();
+  let overworldTime = (player, s) => {
+    let server = player.getServer();
+    return server ? Number(server.overworld().getDayTime()) : A.clientDayTime === null ? Number(s.dayTime()) : A.clientDayTime + Number(s.gameTime()) - A.clientClockTime;
+  };
   A.playerState = (player, s) => {
     let attrs = {};
-    Object.keys(A.byIdentity).forEach(key => A.byIdentity[key].badgeChannels.forEach(c => {
-      if (attrs[c.attribute] === undefined) { let v = s.attribute(c.attribute); attrs[c.attribute] = Number.isFinite(v) ? v : 0; }
-    }));
+    attributeNames.forEach(id => { let v = s.attribute(id); attrs[id] = Number.isFinite(v) ? v : 0; });
     // Server calculation uses overworld time, as required by the amethyst rules.
-    let server = player.getServer();
-    let dayTime = server ? Number(server.overworld().getDayTime()) : A.clientDayTime === null ? Number(s.dayTime()) : A.clientDayTime + Number(s.gameTime()) - A.clientClockTime;
+    let dayTime = overworldTime(player, s);
     return {
       healthRatio: s.healthRatio(), level: s.experienceLevel(), experienceProgress: s.experienceProgress(), food: s.food(),
       onGround: s.onGround(), crouching: s.crouching(), raining: s.raining(), thundering: s.thundering(),
@@ -88,31 +99,55 @@
       mainHandDamageable: s.mainHandDamageable(), mainHandRemaining: s.mainHandRemaining(), attributes: attrs
     };
   };
-  let pureState = ctx => A.playerState(ctx.player(), ctx.state());
-  let environment = ctx => {
-    let cells = A.list(ctx.cells()).map(c => {
-      let rule = A.byIdentity[String(c.kindKey()) + '#' + String(c.variantKey())];
-      let parsed = rule ? A.payloadFromTag(c.instanceData()) : {};
-      return {
-        index: c.index(), x: c.x(), y: c.y(), inBounds: c.inBounds(), open: c.open(), occupied: c.occupied(),
-        effective: c.effective(), rule: rule, payload: parsed.payload, view: c
-      };
-    });
-    let locate = (x, y) => cells.filter(c => c.x === x && c.y === y)[0] || { index: -1, x: x, y: y, inBounds: false, open: false, occupied: false, effective: false };
+  // Only this audited adapter reads these memo values. Never cache writers/results/env.
+  let memo = (ctx, key, create, wholeRound) => {
+    let supported = false;
+    try { supported = typeof ctx.memoGet === 'function' && typeof ctx.roundMemoGet === 'function'; } catch (ignored) {}
+    if (!supported) return create();
+    let value = wholeRound ? ctx.roundMemoGet(key) : ctx.memoGet(key);
+    if (value !== null && value !== undefined) return value;
+    value = create();
+    if (wholeRound) ctx.roundMemoPut(key, value); else ctx.memoPut(key, value);
+    return value;
+  };
+  let pureState = ctx => memo(ctx, 'sdbf:player-state', () => A.playerState(ctx.player(), ctx.state()), true);
+  let lazy = (object, key, create) => {
+    let ready = false, value;
+    Object.defineProperty(object, key, { enumerable: true, get: () => {
+      if (!ready) { value = create(); ready = true; }
+      return value;
+    } });
+  };
+  let environment = (ctx, metadataOnly) => {
+    let shared = memo(ctx, 'sdbf:cells', () => {
+      let cells = A.list(ctx.cells()).map(c => {
+        let rule = A.byIdentity[String(c.kindKey()) + '#' + String(c.variantKey())];
+        let cell = {
+          index: c.index(), x: c.x(), y: c.y(), inBounds: c.inBounds(), open: c.open(), occupied: c.occupied(),
+          effective: c.effective(), rule: rule, view: c
+        };
+        // reads touches metadata only. Decode a cell at most once when calculate needs it.
+        lazy(cell, 'payload', () => rule ? A.payloadFromTag(c.instanceData()).payload : undefined);
+        return cell;
+      });
+      return { cells: cells, width: ctx.layout().width(), height: ctx.layout().height() };
+    }, false);
+    let cells = shared.cells, width = shared.width, height = shared.height;
+    let locate = (x, y) => x >= 0 && y >= 0 && x < width && y < height ? cells[y * width + x]
+      : { index: -1, x: x, y: y, inBounds: false, open: false, occupied: false, effective: false };
     let x = ctx.x(), y = ctx.y(), directions = [[0, -1], [1, 0], [0, 1], [-1, 0]];
-    let result = {
-      cells: cells, x: x, y: y, index: ctx.index(), state: pureState(ctx),
-      neighbors: directions.map(d => locate(x + d[0], y + d[1])),
-      diagonal: [[-1, -1], [1, -1], [1, 1], [-1, 1]].map(d => locate(x + d[0], y + d[1])),
-      mirror: [locate(ctx.layout().width() - 1 - x, ctx.layout().height() - 1 - y)],
-      squares: Math.max(ctx.layout().width(), ctx.layout().height()) >= 2 ? A.list(ctx.squaresContainingSelf(2)).map(list => A.list(list).map(c => locate(c.x(), c.y()))) : [],
-      gapTwo: directions.filter(d => { let c = locate(x + d[0], y + d[1]); return c.open && !c.occupied; }).map(d => locate(x + 2 * d[0], y + 2 * d[1])),
-      rays: directions.map(d => { let ray = []; for (let j = 1; ; j++) { let c = locate(x + j * d[0], y + j * d[1]); if (!c.inBounds || !c.open || !c.effective || !c.rule || c.rule.role !== 'producer') break; ray.push(c); } return ray; })
-    };
+    let result = { cells: cells, x: x, y: y, index: ctx.index() };
+    if (!metadataOnly) lazy(result, 'state', () => pureState(ctx));
+    lazy(result, 'neighbors', () => directions.map(d => locate(x + d[0], y + d[1])));
+    lazy(result, 'diagonal', () => [[-1, -1], [1, -1], [1, 1], [-1, 1]].map(d => locate(x + d[0], y + d[1])));
+    lazy(result, 'mirror', () => [locate(width - 1 - x, height - 1 - y)]);
+    lazy(result, 'squares', () => Math.max(width, height) >= 2 ? A.list(ctx.squaresContainingSelf(2)).map(list => A.list(list).map(c => locate(c.x(), c.y()))) : []);
+    lazy(result, 'gapTwo', () => directions.filter(d => { let c = locate(x + d[0], y + d[1]); return c.open && !c.occupied; }).map(d => locate(x + 2 * d[0], y + 2 * d[1])));
+    lazy(result, 'rays', () => directions.map(d => { let ray = []; for (let j = 1; ; j++) { let c = locate(x + j * d[0], y + j * d[1]); if (!c.inBounds || !c.open || !c.effective || !c.rule || c.rule.role !== 'producer') break; ray.push(c); } return ray; }));
     result.cluster = (index, item) => {
-      let start = cells.filter(c => c.index === index)[0], seen = {}, queue = start ? [start] : [], out = [];
-      while (queue.length) {
-        let c = queue.shift(); if (seen[c.index] || !c.effective || !c.rule || c.rule.item !== item) continue; seen[c.index] = true; out.push(c);
+      let start = cells[index], seen = {}, queue = start ? [start] : [], out = [];
+      for (let head = 0; head < queue.length; head++) {
+        let c = queue[head]; if (seen[c.index] || !c.effective || !c.rule || c.rule.item !== item) continue; seen[c.index] = true; out.push(c);
         directions.forEach(d => { let n = locate(c.x + d[0], c.y + d[1]); if (n.inBounds) queue.push(n); });
       }
       return out;
@@ -140,15 +175,20 @@
     let p = A.parameters(r);
     return A.evaluate(r, data, env, {}, A.intrinsic(r, data, state, p), N, p);
   };
-  AstralFillers.register(A.fillerId, FillerDefinition.builder().activation(FillerActivation.STACKABLE)
+  let definitionBuilder = () => {
+    let builder = FillerDefinition.builder();
+    try { if (typeof builder.readOnlySnapshot === 'function') return builder.readOnlySnapshot(); } catch (ignored) {}
+    return builder;
+  };
+  AstralFillers.register(A.fillerId, definitionBuilder().activation(FillerActivation.STACKABLE)
     .node(ctx => {
       let parsed = A.read(ctx.filler()); if (!parsed.payload) return FillerNode.invalid(parsed.error);
       if (!A.balance) return FillerNode.invalid('sdbf_astral_balance_pending');
-      let r = parsed.rule;
+      let r = parsed.rule, own = parsed.payload, parameters = A.parameters(r);
       return FillerNode.builder().kindKey(r.item).variantKey(r.primary).ruleKey(r.key).role(r.role).data(A.encode(parsed.payload))
-        .intrinsic((ctx, data, out) => { let own = A.payloadFromTag(data).payload; let result = A.intrinsic(r, own, pureState(ctx), A.parameters(r)); Object.keys(result).forEach(s => out.add(ScoreType[s], result[s])); })
+        .intrinsic((ctx, data, out) => { let state = r.kind === 5 && r.primary === 'alpha' ? { overworldDayTime: overworldTime(ctx.player(), ctx.state()) } : {}; let result = A.intrinsic(r, own, state, parameters); Object.keys(result).forEach(s => out.add(ScoreType[s], result[s])); })
         .reads((ctx, data) => {
-          let env = environment(ctx), plan = ReadPlan.builder(), selected = sources(r, env);
+          let env = environment(ctx, true), plan = ReadPlan.builder(), selected = sources(r, env);
           let views = new ArrayList(); selected.filter(c => c.index !== env.index && c.view).forEach(c => views.add(c.view));
           r.ports.forEach(port => {
             let filter = FillerFilter.where(c => c.effective() && String(c.actualItemId()) === A.fillerId && A.allowed(port, A.byIdentity[String(c.kindKey()) + '#' + String(c.variantKey())]));
@@ -158,11 +198,11 @@
         .calculate((ctx, data, inputs, out) => {
           let input = {}; r.ports.forEach(port => { input[port.name] = A.list(inputs.results(port.name)).map(x => ({ index: x.cellRef(), identity: String(x.kindKey()) + '#' + String(x.variantKey()), scores: scores(port.mode === 'base' ? x.baseScores() : x.finalScores()), baseTotal: x.baseTotal() })); });
           let base = {}; Object.keys(A.scoreNames).forEach(s => { base[s] = out.get(ScoreType[s]); });
-          let result = A.evaluate(r, A.payloadFromTag(data).payload, environment(ctx), input, base, N, A.parameters(r));
+          let result = A.evaluate(r, own, environment(ctx, false), input, base, N, parameters);
           Object.keys(result).forEach(s => out.set(ScoreType[s], result[s]));
         }).build();
     }).build());
-  AstralFillers.register(A.badgeId, FillerDefinition.builder().activation(FillerActivation.STACKABLE)
+  AstralFillers.register(A.badgeId, definitionBuilder().activation(FillerActivation.STACKABLE)
     .effectGroup('sdbf:astral_gem_badge', EffectScope.PLAYER)
     .node(ctx => {
       let parsed = A.read(ctx.filler()); if (!parsed.payload) return FillerNode.invalid(parsed.error);

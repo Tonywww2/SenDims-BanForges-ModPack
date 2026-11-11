@@ -5,7 +5,7 @@
 	#Count of buffer sets that holds data for in-flight frame rendering.
 	#Changing this value may affects your FPS. Smaller value means less in-flight frames, while larger values means more in-flight frames. More in-flight frames means more FPS but more VRAM.
 	#Range: > 1
-	pooled_ring_buffer_size = 8
+	pooled_ring_buffer_size = 32
 	#Count of batches of RenderTypes that is allowed in a draw call.
 	#Changing this value may affects your FPS. Smaller value means less batches allowed in a draw call, while larger values means more batches. More batches means more FPS but more VRAM and more CPU pressure on handling RenderTypes.
 	#Range: > 1
@@ -17,7 +17,7 @@
 	#- DISABLED: Debug context will be disabled, which may cause significant rendering glitches on some NVIDIA cards because of the "theaded optimization".
 	#- ENABLED: Debug context will be enabled, which can prevent NVIDIA driver from applying the "threaded optimization" that causes the glitches.
 	#Allowed Values: DISABLED, ENABLED
-	debug_context = "ENABLED"
+	debug_context = "DISABLED"
 	#- DISABLED: Translucent RenderType will fallback to vanilla rendering pipeline if the accelerated pipeline does not support translucent sorting unless mods explicitly enable force translucent acceleration temporarily when rendering their own geometries.
 	#- ENABLED: Translucent RenderType will still be rendered in accelerated pipeline even if the pipeline does not support translucent sorting unless mods explicitly disable force translucent acceleration temporarily when rendering their own geometries.
 	#Allowed Values: DISABLED, ENABLED

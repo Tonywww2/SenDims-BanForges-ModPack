@@ -9,10 +9,10 @@
 	"start_height": {
 		"type": "minecraft:uniform",
 		"min_inclusive": {
-			"above_bottom": 180
+			"absolute": 180
 		},
 		"max_inclusive": {
-			"absolute": 250
+			"absolute": 300
 		}
 	},
 	"start_jigsaw_name": "cavernous:dungeon_anchor",

@@ -1,0 +1,15 @@
+{
+  "commonFull": 16363,
+  "differentChunks": 14386,
+  "categories": {
+    "sections": 11418,
+    "light": 9599,
+    "block_entities": 742,
+    "fluid_ticks": 164,
+    "block_ticks": 58,
+    "heightmaps": 165,
+    "structures": 237
+  },
+  "leftOnly": 18,
+  "rightOnly": 0
+}

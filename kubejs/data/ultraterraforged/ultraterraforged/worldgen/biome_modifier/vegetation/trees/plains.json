@@ -1,0 +1,9 @@
+{
+  "type": "ultraterraforged:replace",
+  "biomes": "#ultraterraforged:features/has_plains_trees",
+  "replacements": {
+    "minecraft:trees_plains": "ultraterraforged:plains_trees",
+    "minecraft:trees_water": "ultraterraforged:plains_trees"
+  },
+  "step": "vegetal_decoration"
+}

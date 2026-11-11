@@ -69,8 +69,8 @@ ServerEvents.recipes(event => {
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade:nameless_lone')
                     .killCount(2500)
-                    .proudSoul(8000)
-                    .refineCount(50)
+                    .proudSoul(4000)
+                    .refineCount(25)
                     .build()
             ),
             'F': 'kubejs:yakuman_forging_soul',
@@ -95,8 +95,8 @@ ServerEvents.recipes(event => {
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade:nameless_lone')
                     .killCount(2500)
-                    .proudSoul(8000)
-                    .refineCount(25)
+                    .proudSoul(4000)
+                    .refineCount(15)
                     .build()
             ),
             'F': 'kubejs:yakuman_forging_soul',
@@ -121,8 +121,8 @@ ServerEvents.recipes(event => {
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade:nameless_lone')
                     .killCount(2500)
-                    .proudSoul(8000)
-                    .refineCount(50)
+                    .proudSoul(4000)
+                    .refineCount(25)
                     .build()
             ),
             'F': 'kubejs:yakuman_forging_soul',
@@ -148,8 +148,8 @@ ServerEvents.recipes(event => {
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade:nameless_lone')
                     .killCount(2500)
-                    .proudSoul(8000)
-                    .refineCount(25)
+                    .proudSoul(4000)
+                    .refineCount(15)
                     .build()
             ),
             'F': 'kubejs:yakuman_forging_soul',
@@ -175,8 +175,8 @@ ServerEvents.recipes(event => {
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade:nameless_lone')
                     .killCount(2500)
-                    .proudSoul(8000)
-                    .refineCount(50)
+                    .proudSoul(4000)
+                    .refineCount(25)
                     .build()
             ),
             'F': 'kubejs:yakuman_forging_soul',
@@ -202,8 +202,8 @@ ServerEvents.recipes(event => {
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade:nameless_lone')
                     .killCount(2500)
-                    .proudSoul(8000)
-                    .refineCount(25)
+                    .proudSoul(4000)
+                    .refineCount(15)
                     .build()
             ),
             'F': 'kubejs:yakuman_forging_soul',
@@ -229,8 +229,8 @@ ServerEvents.recipes(event => {
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade:nameless_lone')
                     .killCount(2500)
-                    .proudSoul(8000)
-                    .refineCount(50)
+                    .proudSoul(4000)
+                    .refineCount(25)
                     .build()
             ),
             'F': 'kubejs:yakuman_forging_soul',
@@ -257,8 +257,8 @@ ServerEvents.recipes(event => {
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade:nameless_lone')
                     .killCount(2500)
-                    .proudSoul(8000)
-                    .refineCount(25)
+                    .proudSoul(4000)
+                    .refineCount(15)
                     .build()
             ),
             'F': 'kubejs:yakuman_forging_soul',
@@ -285,8 +285,8 @@ ServerEvents.recipes(event => {
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade:nameless_lone')
                     .killCount(2500)
-                    .proudSoul(8000)
-                    .refineCount(50)
+                    .proudSoul(4000)
+                    .refineCount(25)
                     .build()
             ),
             'F': 'kubejs:yakuman_forging_soul',
@@ -312,8 +312,8 @@ ServerEvents.recipes(event => {
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade:nameless_lone')
                     .killCount(2500)
-                    .proudSoul(8000)
-                    .refineCount(25)
+                    .proudSoul(4000)
+                    .refineCount(15)
                     .build()
             ),
             'F': 'kubejs:yakuman_forging_soul',
@@ -339,8 +339,8 @@ ServerEvents.recipes(event => {
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade:nameless_lone')
                     .killCount(2500)
-                    .proudSoul(8000)
-                    .refineCount(50)
+                    .proudSoul(4000)
+                    .refineCount(25)
                     .build()
             ),
             'F': 'kubejs:yakuman_forging_soul',
@@ -366,8 +366,8 @@ ServerEvents.recipes(event => {
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade:nameless_lone')
                     .killCount(2500)
-                    .proudSoul(8000)
-                    .refineCount(25)
+                    .proudSoul(4000)
+                    .refineCount(15)
                     .build()
             ),
             'F': 'kubejs:yakuman_forging_soul',
@@ -393,8 +393,8 @@ ServerEvents.recipes(event => {
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade:nameless_lone')
                     .killCount(2500)
-                    .proudSoul(8000)
-                    .refineCount(50)
+                    .proudSoul(4000)
+                    .refineCount(25)
                     .build()
             ),
             'F': 'kubejs:yakuman_forging_soul',
@@ -419,8 +419,8 @@ ServerEvents.recipes(event => {
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade:nameless_lone')
                     .killCount(2500)
-                    .proudSoul(8000)
-                    .refineCount(25)
+                    .proudSoul(4000)
+                    .refineCount(15)
                     .build()
             ),
             'F': 'kubejs:yakuman_forging_soul',
@@ -445,8 +445,8 @@ ServerEvents.recipes(event => {
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade:nameless_lone')
                     .killCount(2500)
-                    .proudSoul(8000)
-                    .refineCount(50)
+                    .proudSoul(4000)
+                    .refineCount(25)
                     .build()
             ),
             'F': 'kubejs:yakuman_forging_soul',
@@ -472,8 +472,8 @@ ServerEvents.recipes(event => {
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade:nameless_lone')
                     .killCount(2500)
-                    .proudSoul(8000)
-                    .refineCount(25)
+                    .proudSoul(4000)
+                    .refineCount(15)
                     .build()
             ),
             'F': 'kubejs:yakuman_forging_soul',
@@ -499,8 +499,8 @@ ServerEvents.recipes(event => {
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade:nameless_lone')
                     .killCount(2500)
-                    .proudSoul(8000)
-                    .refineCount(50)
+                    .proudSoul(4000)
+                    .refineCount(25)
                     .build()
             ),
             'F': 'kubejs:yakuman_forging_soul',
@@ -527,8 +527,8 @@ ServerEvents.recipes(event => {
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade:nameless_lone')
                     .killCount(2500)
-                    .proudSoul(8000)
-                    .refineCount(25)
+                    .proudSoul(4000)
+                    .refineCount(15)
                     .build()
             ),
             'F': 'kubejs:yakuman_forging_soul',
@@ -555,8 +555,8 @@ ServerEvents.recipes(event => {
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade:nameless_lone')
                     .killCount(2500)
-                    .proudSoul(8000)
-                    .refineCount(50)
+                    .proudSoul(4000)
+                    .refineCount(25)
                     .build()
             ),
             'F': 'kubejs:yakuman_forging_soul',
@@ -581,8 +581,8 @@ ServerEvents.recipes(event => {
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade:nameless_lone')
                     .killCount(2500)
-                    .proudSoul(8000)
-                    .refineCount(25)
+                    .proudSoul(4000)
+                    .refineCount(15)
                     .build()
             ),
             'F': 'kubejs:yakuman_forging_soul',
@@ -607,8 +607,8 @@ ServerEvents.recipes(event => {
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade:nameless_lone')
                     .killCount(2500)
-                    .proudSoul(8000)
-                    .refineCount(50)
+                    .proudSoul(4000)
+                    .refineCount(25)
                     .build()
             ),
             'F': 'kubejs:yakuman_forging_soul',
@@ -633,8 +633,8 @@ ServerEvents.recipes(event => {
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade:nameless_lone')
                     .killCount(2500)
-                    .proudSoul(8000)
-                    .refineCount(25)
+                    .proudSoul(4000)
+                    .refineCount(15)
                     .build()
             ),
             'F': 'kubejs:yakuman_forging_soul',
@@ -659,8 +659,8 @@ ServerEvents.recipes(event => {
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_shousuushii')
                     .killCount(8000)
-                    .proudSoul(15000)
-                    .refineCount(100)
+                    .proudSoul(10000)
+                    .refineCount(60)
                     .build()
             ),
             'F': 'kubejs:yakuman_forging_soul',
@@ -683,8 +683,8 @@ ServerEvents.recipes(event => {
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_shousuushii')
                     .killCount(8000)
-                    .proudSoul(15000)
-                    .refineCount(50)
+                    .proudSoul(10000)
+                    .refineCount(35)
                     .build()
             ),
             'F': 'kubejs:yakuman_forging_soul',
@@ -707,16 +707,16 @@ ServerEvents.recipes(event => {
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_daisangen')
                     .killCount(8000)
-                    .proudSoul(15000)
-                    .refineCount(100)
+                    .proudSoul(10000)
+                    .refineCount(60)
                     .build()
             ),
             'C': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_tsuuiisou')
                     .killCount(2500)
-                    .proudSoul(8000)
-                    .refineCount(100)
+                    .proudSoul(3000)
+                    .refineCount(30)
                     .build()
             ),
             'F': 'kubejs:yakuman_forging_soul',
@@ -739,16 +739,16 @@ ServerEvents.recipes(event => {
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_daisangen')
                     .killCount(8000)
-                    .proudSoul(15000)
-                    .refineCount(50)
+                    .proudSoul(10000)
+                    .refineCount(35)
                     .build()
             ),
             'C': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_tsuuiisou')
                     .killCount(2500)
-                    .proudSoul(8000)
-                    .refineCount(50)
+                    .proudSoul(3000)
+                    .refineCount(20)
                     .build()
             ),
             'F': 'kubejs:yakuman_forging_soul',
@@ -771,16 +771,16 @@ ServerEvents.recipes(event => {
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_chinroutou')
                     .killCount(8000)
-                    .proudSoul(15000)
-                    .refineCount(100)
+                    .proudSoul(10000)
+                    .refineCount(60)
                     .build()
             ),
             'C': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_suuankou')
                     .killCount(2500)
-                    .proudSoul(8000)
-                    .refineCount(100)
+                    .proudSoul(3000)
+                    .refineCount(30)
                     .build()
             ),
             'F': 'kubejs:yakuman_forging_soul',
@@ -803,16 +803,16 @@ ServerEvents.recipes(event => {
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_chinroutou')
                     .killCount(8000)
-                    .proudSoul(15000)
-                    .refineCount(50)
+                    .proudSoul(10000)
+                    .refineCount(35)
                     .build()
             ),
             'C': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_suuankou')
                     .killCount(2500)
-                    .proudSoul(8000)
-                    .refineCount(50)
+                    .proudSoul(3000)
+                    .refineCount(20)
                     .build()
             ),
             'F': 'kubejs:yakuman_forging_soul',
@@ -835,16 +835,16 @@ ServerEvents.recipes(event => {
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_ryuuiisou')
                     .killCount(8000)
-                    .proudSoul(15000)
-                    .refineCount(100)
+                    .proudSoul(10000)
+                    .refineCount(60)
                     .build()
             ),
             'C': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_suukantsu')
                     .killCount(2500)
-                    .proudSoul(8000)
-                    .refineCount(100)
+                    .proudSoul(3000)
+                    .refineCount(30)
                     .build()
             ),
             'F': 'kubejs:yakuman_forging_soul',
@@ -867,16 +867,16 @@ ServerEvents.recipes(event => {
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_ryuuiisou')
                     .killCount(8000)
-                    .proudSoul(15000)
-                    .refineCount(50)
+                    .proudSoul(10000)
+                    .refineCount(35)
                     .build()
             ),
             'C': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_suukantsu')
                     .killCount(2500)
-                    .proudSoul(8000)
-                    .refineCount(50)
+                    .proudSoul(3000)
+                    .refineCount(20)
                     .build()
             ),
             'F': 'kubejs:yakuman_forging_soul',
@@ -899,16 +899,16 @@ ServerEvents.recipes(event => {
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_kokushi')
                     .killCount(10000)
-                    .proudSoul(20000)
-                    .refineCount(100)
+                    .proudSoul(12000)
+                    .refineCount(75)
                     .build()
             ),
             'C': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_tenhou')
                     .killCount(2500)
-                    .proudSoul(8000)
-                    .refineCount(100)
+                    .proudSoul(3000)
+                    .refineCount(40)
                     .build()
             ),
             'F': 'kubejs:yakuman_forging_soul',
@@ -931,16 +931,16 @@ ServerEvents.recipes(event => {
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_kokushi')
                     .killCount(10000)
-                    .proudSoul(20000)
-                    .refineCount(50)
+                    .proudSoul(12000)
+                    .refineCount(40)
                     .build()
             ),
             'C': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_tenhou')
                     .killCount(2500)
-                    .proudSoul(8000)
-                    .refineCount(50)
+                    .proudSoul(3000)
+                    .refineCount(25)
                     .build()
             ),
             'F': 'kubejs:yakuman_forging_soul',
@@ -963,16 +963,16 @@ ServerEvents.recipes(event => {
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_chuuren')
                     .killCount(10000)
-                    .proudSoul(20000)
-                    .refineCount(100)
+                    .proudSoul(12000)
+                    .refineCount(75)
                     .build()
             ),
             'C': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_chiihou')
                     .killCount(2500)
-                    .proudSoul(8000)
-                    .refineCount(100)
+                    .proudSoul(3000)
+                    .refineCount(40)
                     .build()
             ),
             'F': 'kubejs:yakuman_forging_soul',
@@ -995,16 +995,16 @@ ServerEvents.recipes(event => {
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_chuuren')
                     .killCount(10000)
-                    .proudSoul(20000)
-                    .refineCount(50)
+                    .proudSoul(12000)
+                    .refineCount(40)
                     .build()
             ),
             'C': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_chiihou')
                     .killCount(2500)
-                    .proudSoul(8000)
-                    .refineCount(50)
+                    .proudSoul(3000)
+                    .refineCount(25)
                     .build()
             ),
             'F': 'kubejs:yakuman_forging_soul',
@@ -1027,24 +1027,24 @@ ServerEvents.recipes(event => {
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_daisuushii')
                     .killCount(15000)
-                    .proudSoul(70000)
-                    .refineCount(200)
+                    .proudSoul(35000)
+                    .refineCount(100)
                     .build()
             ),
             'C': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_tsuuiisou')
                     .killCount(2500)
-                    .proudSoul(8000)
-                    .refineCount(200)
+                    .proudSoul(3000)
+                    .refineCount(50)
                     .build()
             ),
             'D': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_suuankou')
                     .killCount(2500)
-                    .proudSoul(8000)
-                    .refineCount(200)
+                    .proudSoul(3000)
+                    .refineCount(50)
                     .build()
             ),
             'F': 'kubejs:yakuman_forging_soul',
@@ -1067,24 +1067,24 @@ ServerEvents.recipes(event => {
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_daisuushii')
                     .killCount(15000)
-                    .proudSoul(70000)
-                    .refineCount(100)
+                    .proudSoul(35000)
+                    .refineCount(60)
                     .build()
             ),
             'C': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_tsuuiisou')
                     .killCount(2500)
-                    .proudSoul(8000)
-                    .refineCount(100)
+                    .proudSoul(3000)
+                    .refineCount(35)
                     .build()
             ),
             'D': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_suuankou')
                     .killCount(2500)
-                    .proudSoul(8000)
-                    .refineCount(100)
+                    .proudSoul(3000)
+                    .refineCount(35)
                     .build()
             ),
             'F': 'kubejs:yakuman_forging_soul',
@@ -1107,16 +1107,16 @@ ServerEvents.recipes(event => {
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_suushi_jikoku')
                     .killCount(40000)
-                    .proudSoul(400000)
-                    .refineCount(200)
+                    .proudSoul(150000)
+                    .refineCount(150)
                     .build()
             ),
             'C': SlashBladeIngredient.of(
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_suukantsu')
                     .killCount(2500)
-                    .proudSoul(8000)
-                    .refineCount(200)
+                    .proudSoul(3000)
+                    .refineCount(100)
                     .build()
             ),
             'F': 'kubejs:yakuman_forging_soul',
@@ -1139,7 +1139,7 @@ ServerEvents.recipes(event => {
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_suushi_jikoku')
                     .killCount(40000)
-                    .proudSoul(400000)
+                    .proudSoul(150000)
                     .refineCount(100)
                     .build()
             ),
@@ -1147,8 +1147,8 @@ ServerEvents.recipes(event => {
                 SlashBladeRequestDefinition.newInstance()
                     .name('slashblade_sendims:yakuman_suukantsu')
                     .killCount(2500)
-                    .proudSoul(8000)
-                    .refineCount(100)
+                    .proudSoul(3000)
+                    .refineCount(75)
                     .build()
             ),
             'F': 'kubejs:yakuman_forging_soul',

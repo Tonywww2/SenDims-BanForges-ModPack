@@ -33,7 +33,8 @@
             "last_smith:extra_sharpness",
             "last_smith:smite_se",
             "last_smith:extra_power",
-            "slashblade:wither_edge"
+            "slashblade:wither_edge",
+            "slashblade:bleeding_cutting"
         ],
         "sword_type":
         [

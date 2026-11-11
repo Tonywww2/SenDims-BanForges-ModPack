@@ -1,3 +1,9 @@
+// 硼砂湿法提硼用到的两个自定义流体标签（流体本体在 startup_scripts/reg.js 注册）
+ServerEvents.tags('fluid', event => {
+    event.add('forge:molten_borax', 'kubejs:molten_borax')
+    event.add('forge:molten_nickel', 'kubejs:molten_nickel')
+})
+
 ServerEvents.recipes(event => {
 
     event.shapeless("tofucraft:salt_block", [
@@ -162,5 +168,63 @@ ServerEvents.recipes(event => {
         ],
         "powerModifier": 1.0, "radiation": 1.0, "timeModifier": 1.0
     }).id("sdbf:nuclearcraft_rock_crusher/violet_castle_rune_brick")
+
+    // ==========================================================================
+    // 硼砂湿法提硼（可选获取方式，不改动原硼矿主线）
+    //
+    //   末地石 --(岩石粉碎机 3:1，原有)--> 硼砂
+    //   硼砂 --(熔化机)--> 熔融硼砂（kubejs:molten_borax）
+    //   镍锭/镍粉 --(熔化机)--> 熔融镍（kubejs:molten_nickel）
+    //   熔融硼砂 + 熔融镍 --(化工反应堆)--> 熔融硼（forge:molten_boron）
+    //   熔融硼 --(铸锭机 90mB)--> 硼锭                                  [原有配方]
+    //   熔融硼 --(结晶器 180mB)--> 粗硼（硼碎块） --(制造机)--> 2 硼粉   [旁支]
+    //
+    //   产率：2 硼砂 + 1 镍锭 --> 2 硼锭
+    //         即 1 硼锭 ≈ 3 末地石 + 半块镍矿，另付熔化/化工的电力与时间成本。
+    // ==========================================================================
+
+    // 硼砂 --熔化机--> 熔融硼砂
+    event.custom({
+        "type": "nuclearcraft:melter",
+        "input": [{ "tag": "forge:dusts/borax" }],
+        "outputFluids": [{ "amount": 180, "tag": "forge:molten_borax" }],
+        "powerModifier": 2.0, "radiation": 1.0, "timeModifier": 1.5
+    }).id('sdbf:nuclearcraft_melter/molten_borax_from_borax')
+
+    // 镍锭 --熔化机--> 熔融镍
+    event.custom({
+        "type": "nuclearcraft:melter",
+        "input": [{ "tag": "forge:ingots/nickel" }],
+        "outputFluids": [{ "amount": 90, "tag": "forge:molten_nickel" }],
+        "powerModifier": 1.5, "radiation": 1.0, "timeModifier": 1.0
+    }).id('sdbf:nuclearcraft_melter/molten_nickel_from_ingot')
+
+    // 镍粉 --熔化机--> 熔融镍（给直接用粉的玩家）
+    event.custom({
+        "type": "nuclearcraft:melter",
+        "input": [{ "tag": "forge:dusts/nickel" }],
+        "outputFluids": [{ "amount": 90, "tag": "forge:molten_nickel" }],
+        "powerModifier": 1.5, "radiation": 1.0, "timeModifier": 1.0
+    }).id('sdbf:nuclearcraft_melter/molten_nickel_from_dust')
+
+    // 熔融硼砂 + 熔融镍 --化工反应堆--> 熔融硼
+    // 镍在硼砂熔体里作助熔/捕集剂，把硼还原出来后镍留渣（游戏内只保留硼产出）
+    event.custom({
+        "type": "nuclearcraft:chemical_reactor",
+        "inputFluids": [
+            { "amount": 360, "tag": "forge:molten_borax" },
+            { "amount": 90, "tag": "forge:molten_nickel" }
+        ],
+        "outputFluids": [{ "amount": 180, "tag": "forge:molten_boron" }],
+        "powerModifier": 4.0, "radiation": 1.0, "timeModifier": 3.0
+    }).id('sdbf:nuclearcraft_chemical_reactor/molten_boron_from_molten_borax')
+
+    // 熔融硼 --结晶器--> 粗硼（给不想走铸锭机、想直接做粉的玩家）
+    event.custom({
+        "type": "nuclearcraft:crystallizer",
+        "inputFluids": [{ "amount": 180, "tag": "forge:molten_boron" }],
+        "output": [{ "item": "nuclearcraft:boron_chunk" }],
+        "powerModifier": 2.0, "radiation": 1.0, "timeModifier": 2.0
+    }).id('sdbf:nuclearcraft_crystallizer/boron_chunk_from_molten_boron')
 
 })

@@ -1,0 +1,8 @@
+{
+  "type": "ultraterraforged:replace",
+  "biomes": "#ultraterraforged:features/has_windswept_hills_trees",
+  "replacements": {
+    "minecraft:trees_windswept_hills": "ultraterraforged:windswept_hills_fir_trees"
+  },
+  "step": "vegetal_decoration"
+}

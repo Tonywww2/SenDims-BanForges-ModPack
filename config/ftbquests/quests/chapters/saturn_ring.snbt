@@ -153,6 +153,7 @@
 				"1FC1A62930B9D276"
 				"64AC14BEB874BD8E"
 			]
+			dependency_requirement: "one_completed"
 			id: "245C93D5DC91D776"
 			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
@@ -484,6 +485,120 @@
 			}]
 			x: 24.0d
 			y: 12.0d
+		}
+		{
+			dependencies: [
+				"53F747AC5A1FA677"
+				"245C93D5DC91D776"
+				"63BCA9C495EBC8D8"
+				"5A155C23C2AB2163"
+			]
+			dependency_requirement: "one_completed"
+			id: "48DA68B946B84166"
+			quest_enhance_disable_scroll_paging: false
+			shape: "diamond"
+			tasks: [{
+				id: "26A888C20C4AB70E"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"translate\":\"item.slashblade_sendims.mizushi\"}"
+						}
+						"ftbfiltersystem:filter": "nbt(fuzzy:{bladeState:{translationKey:\"item.slashblade_sendims.mizushi\"}})"
+					}
+				}
+				type: "item"
+			}]
+			x: 18.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6035D1A1774B2FAF"]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "55B33A9A41534593"
+			quest_enhance_disable_scroll_paging: false
+			shape: "none"
+			tasks: [{
+				id: "5C96809A469C7533"
+				type: "checkmark"
+			}]
+			title: "Tetra材料/可获得的实用物品"
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6035D1A1774B2FAF"]
+			id: "0FD209C0A2124A14"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3CE85456E104B53F"
+				item: "pneumaticcraft:ingot_iron_compressed"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6035D1A1774B2FAF"]
+			id: "150AA888AD81B1DF"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3BC319E8AEBD00A3"
+				item: "kubejs:saturn_ring_alloy_ingot"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6035D1A1774B2FAF"]
+			id: "7B7E6CE215698EA0"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0A5E97C98D32712F"
+				item: "kubejs:ancient_soul"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6035D1A1774B2FAF"]
+			id: "78B313FCA4F670B0"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0CBFBA748C8EE595"
+				item: "pneumaticcraft:plastic"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6035D1A1774B2FAF"]
+			id: "26224FED2B0F4494"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "31B8DC41106C1D8B"
+				item: "kubejs:compressed_proudsoul_cake"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6035D1A1774B2FAF"]
+			id: "0C460266D1D9D5E8"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "01755B4C2BC35189"
+				item: "kubejs:celestial_filling_alloy_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 6.0d
 		}
 	]
 	title: "[XI] 土星环"

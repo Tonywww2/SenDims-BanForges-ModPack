@@ -1,0 +1,8 @@
+{
+  "type": "ultraterraforged:shift",
+  "input": {
+    "type": "ultraterraforged:white",
+    "frequency": 1.0
+  },
+  "shift": 0
+}

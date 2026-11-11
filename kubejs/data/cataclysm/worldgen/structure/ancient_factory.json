@@ -7,9 +7,14 @@
   "step": "underground_decoration",
   "terrain_adaptation": "beard_thin",
   "start_height": {
-    "absolute": 250
+    "type": "minecraft:uniform",
+    "min_inclusive": {
+      "absolute": 250
+    },
+    "max_inclusive": {
+      "absolute": 300
+    }
   },
   "use_expansion_hack": false,
-  "spawn_overrides": {
-  }
+  "spawn_overrides": {}
 }

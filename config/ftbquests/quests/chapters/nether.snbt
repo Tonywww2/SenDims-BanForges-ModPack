@@ -152,8 +152,8 @@
 				id: "01FA29D215FC0CF7"
 				type: "advancement"
 			}]
-			x: 0.0d
-			y: 3.0d
+			x: 3.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["5251AFEDB9C97974"]
@@ -696,6 +696,56 @@
 			}]
 			x: 12.0d
 			y: 6.0d
+		}
+		{
+			dependencies: ["5251AFEDB9C97974"]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "79227175B1223E46"
+			quest_enhance_disable_scroll_paging: false
+			shape: "none"
+			tasks: [{
+				id: "4981BBBB9AD2FC27"
+				type: "checkmark"
+			}]
+			title: "Tetra材料/可获得的实用物品"
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5251AFEDB9C97974"]
+			id: "13E2CD4104E17D55"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6069C0F967A2A5E4"
+				item: "regions_unexplored:hanging_earlight_fruit"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5251AFEDB9C97974"]
+			id: "6E48BFB52B9A0816"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "31165D45D652F4FC"
+				item: "minecraft:netherite_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5251AFEDB9C97974"]
+			id: "3B3ABEC486C6BD38"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "03769B0208449EDF"
+				item: "thermal:basalz_rod"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 4.0d
 		}
 	]
 	title: "[IV] &e下界"

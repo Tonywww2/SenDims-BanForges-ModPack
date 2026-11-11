@@ -1,0 +1,1173 @@
+{
+  "date": "2026-11-10",
+  "customBiomeFeatures": true,
+  "minY": -64,
+  "maxYExclusive": 320,
+  "presets": [
+    "config/ultraterraforged/server-preset.json",
+    "config/ultraterraforged/modpack-presets/SDBF_Continental.json",
+    "kubejs/data/ultraterraforged/ultraterraforged/worldgen/preset/preset.json"
+  ],
+  "addedResources": 179,
+  "resourceCategories": {
+    "kubejs/data/minecraft/worldgen/configured_feature": 17,
+    "kubejs/data/ultraterraforged/tags/worldgen": 28,
+    "kubejs/data/ultraterraforged/ultraterraforged/worldgen": 28,
+    "kubejs/data/ultraterraforged/worldgen/configured_feature": 51,
+    "kubejs/data/ultraterraforged/worldgen/placed_feature": 55
+  },
+  "nativeTemplateReferencesVerified": 105,
+  "nativeTemplatePathCorrections": [
+    {
+      "file": "kubejs/data/ultraterraforged/worldgen/configured_feature/spruce/large.json",
+      "before": "ultraterraforged:structures/trees/spruce/large/spruce_large_1.nbt",
+      "after": "ultraterraforged:structures/trees/spruce/large/spruce_1.nbt"
+    },
+    {
+      "file": "kubejs/data/ultraterraforged/worldgen/configured_feature/spruce/large.json",
+      "before": "ultraterraforged:structures/trees/spruce/large/spruce_large_2.nbt",
+      "after": "ultraterraforged:structures/trees/spruce/large/spruce_2.nbt"
+    },
+    {
+      "file": "kubejs/data/ultraterraforged/worldgen/configured_feature/spruce/large.json",
+      "before": "ultraterraforged:structures/trees/spruce/large/spruce_large_3.nbt",
+      "after": "ultraterraforged:structures/trees/spruce/large/spruce_3.nbt"
+    },
+    {
+      "file": "kubejs/data/ultraterraforged/worldgen/configured_feature/spruce/large.json",
+      "before": "ultraterraforged:structures/trees/spruce/large/spruce_large_4.nbt",
+      "after": "ultraterraforged:structures/trees/spruce/large/spruce_4.nbt"
+    },
+    {
+      "file": "kubejs/data/ultraterraforged/worldgen/configured_feature/spruce/large.json",
+      "before": "ultraterraforged:structures/trees/spruce/large/spruce_large_5.nbt",
+      "after": "ultraterraforged:structures/trees/spruce/large/spruce_5.nbt"
+    },
+    {
+      "file": "kubejs/data/ultraterraforged/worldgen/configured_feature/spruce/large_on_snow.json",
+      "before": "ultraterraforged:structures/trees/spruce/large/spruce_large_1.nbt",
+      "after": "ultraterraforged:structures/trees/spruce/large/spruce_1.nbt"
+    },
+    {
+      "file": "kubejs/data/ultraterraforged/worldgen/configured_feature/spruce/large_on_snow.json",
+      "before": "ultraterraforged:structures/trees/spruce/large/spruce_large_2.nbt",
+      "after": "ultraterraforged:structures/trees/spruce/large/spruce_2.nbt"
+    },
+    {
+      "file": "kubejs/data/ultraterraforged/worldgen/configured_feature/spruce/large_on_snow.json",
+      "before": "ultraterraforged:structures/trees/spruce/large/spruce_large_3.nbt",
+      "after": "ultraterraforged:structures/trees/spruce/large/spruce_3.nbt"
+    },
+    {
+      "file": "kubejs/data/ultraterraforged/worldgen/configured_feature/spruce/large_on_snow.json",
+      "before": "ultraterraforged:structures/trees/spruce/large/spruce_large_4.nbt",
+      "after": "ultraterraforged:structures/trees/spruce/large/spruce_4.nbt"
+    },
+    {
+      "file": "kubejs/data/ultraterraforged/worldgen/configured_feature/spruce/large_on_snow.json",
+      "before": "ultraterraforged:structures/trees/spruce/large/spruce_large_5.nbt",
+      "after": "ultraterraforged:structures/trees/spruce/large/spruce_5.nbt"
+    }
+  ],
+  "generation": "Native UTF 1.0.3 UTFDataGen.makePreset with TerraBlender present. Offline Forge data generation only.",
+  "validation": "Preset equality, native template references, package file set, manifest hashes and installer parse. No gameplay or performance tests.",
+  "previousPackageSha256": "9183ec87f2178d5127c678cb1a4ab1971a00b83894ddb9a5fcd580137389a231",
+  "package": "C:\\Users\\Tony\\AppData\\Roaming\\PrismLauncher\\instances\\SenDimsBanForges\\minecraft\\docs\\releases\\SDBF-Update-2026-11-08.zip",
+  "packageSha256": "9bbc18985f79a26bbcb57221966269b878a3671f8d10d2d35225a31b5c9aa5de",
+  "packageRuntimeFileCount": 264,
+  "backup": "C:\\Users\\Tony\\AppData\\Roaming\\PrismLauncher\\instances\\SenDimsBanForges\\minecraft\\.sdbf-backups\\utf-features-2026-11-10",
+  "files": [
+    {
+      "path": "config/ultraterraforged/server-preset.json",
+      "sha256": "4dd6e55e1c6d0235ec22527c0374c85d342bf82fbf4c7abc5504f664c4217fa9",
+      "size": 8227,
+      "new": false
+    },
+    {
+      "path": "config/ultraterraforged/modpack-presets/SDBF_Continental.json",
+      "sha256": "4dd6e55e1c6d0235ec22527c0374c85d342bf82fbf4c7abc5504f664c4217fa9",
+      "size": 8227,
+      "new": false
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/ultraterraforged/worldgen/preset/preset.json",
+      "sha256": "4dd6e55e1c6d0235ec22527c0374c85d342bf82fbf4c7abc5504f664c4217fa9",
+      "size": 8227,
+      "new": false
+    },
+    {
+      "path": "kubejs/data/minecraft/worldgen/configured_feature/acacia.json",
+      "sha256": "86df2b3e48f57a5201cc4ac9778e79d5ee1d059ec0d9c546049137141e93425a",
+      "size": 314,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/minecraft/worldgen/configured_feature/birch.json",
+      "sha256": "ac7cf719616ce33cfc4e274467600986c9f39930bc13dc09a7d5e8c8f7dc6c0f",
+      "size": 311,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/minecraft/worldgen/configured_feature/birch_bees_005.json",
+      "sha256": "ac7cf719616ce33cfc4e274467600986c9f39930bc13dc09a7d5e8c8f7dc6c0f",
+      "size": 311,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/minecraft/worldgen/configured_feature/dark_oak.json",
+      "sha256": "3d49d1b3e1c40b882d3077a16d0dd230bb00b033482b0ddcad0b421d19050cbb",
+      "size": 320,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/minecraft/worldgen/configured_feature/disk_clay.json",
+      "sha256": "ca5c6201f2a625ade9cebbf6dca451d25ec7e61d9f9d5eae836aeac991168e40",
+      "size": 552,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/minecraft/worldgen/configured_feature/disk_gravel.json",
+      "sha256": "0e793dbd06bd0fb6ed5cdf293b527889608ad120de1bfb11b85ee4cfeb1c3ed0",
+      "size": 561,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/minecraft/worldgen/configured_feature/disk_sand.json",
+      "sha256": "bcdab98d84d205cb370d4bdf976d3a78e14bc5dd5b84d95fe9d985b1dacf2775",
+      "size": 967,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/minecraft/worldgen/configured_feature/fancy_oak.json",
+      "sha256": "521e7845fb6430fdfad7451aeac5eff4a1a99564e6f4bda21612e58359227efc",
+      "size": 305,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/minecraft/worldgen/configured_feature/fancy_oak_bees_005.json",
+      "sha256": "521e7845fb6430fdfad7451aeac5eff4a1a99564e6f4bda21612e58359227efc",
+      "size": 305,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/minecraft/worldgen/configured_feature/jungle_tree_no_vine.json",
+      "sha256": "b6fcf8d8913155e0dad6600c27910c121951298e1e5be81fc386859ac8926886",
+      "size": 533,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/minecraft/worldgen/configured_feature/mega_jungle_tree.json",
+      "sha256": "e29f4b93a6f5b293d7638f4dffcde47cfbb0b9bda66106567902bb16c7708a60",
+      "size": 313,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/minecraft/worldgen/configured_feature/mega_pine.json",
+      "sha256": "e030aee1beaa34d8b6a7ad1124dabfda8b834cd9727c45d4f3c617911c1bd3a4",
+      "size": 1556,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/minecraft/worldgen/configured_feature/mega_spruce.json",
+      "sha256": "e030aee1beaa34d8b6a7ad1124dabfda8b834cd9727c45d4f3c617911c1bd3a4",
+      "size": 1556,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/minecraft/worldgen/configured_feature/oak.json",
+      "sha256": "521e7845fb6430fdfad7451aeac5eff4a1a99564e6f4bda21612e58359227efc",
+      "size": 305,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/minecraft/worldgen/configured_feature/oak_bees_005.json",
+      "sha256": "521e7845fb6430fdfad7451aeac5eff4a1a99564e6f4bda21612e58359227efc",
+      "size": 305,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/minecraft/worldgen/configured_feature/pine.json",
+      "sha256": "c822c1467bc42a76601633773b36e8b9b92d0edd2be87748c75e289eb8c8d81c",
+      "size": 917,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/minecraft/worldgen/configured_feature/spruce.json",
+      "sha256": "319459ae0ef27a4f2990377eddb9b10a60ae553c7d1636af139ca92a9f80b4ae",
+      "size": 314,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/tags/worldgen/biome/features/has_badlands_trees.json",
+      "sha256": "fd3151692e74cd27ac3afb0c2b14f39144c6b8670fd307d7e6c2638fbddb35f5",
+      "size": 56,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/tags/worldgen/biome/features/has_birch_forest_trees.json",
+      "sha256": "f8f3c572ef1e191fcc40f380ad6bd5d29dd862b0999aeee8e1e4f137269c3543",
+      "size": 92,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/tags/worldgen/biome/features/has_birch_grass.json",
+      "sha256": "f8f3c572ef1e191fcc40f380ad6bd5d29dd862b0999aeee8e1e4f137269c3543",
+      "size": 92,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/tags/worldgen/biome/features/has_cold_steppe_bushes.json",
+      "sha256": "f74498097708215ee46031db7467ce3abed880ed8188eff156e81993d9787e31",
+      "size": 19,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/tags/worldgen/biome/features/has_cold_taiga_scrub_bushes.json",
+      "sha256": "719911d31bc9bf4b2f676b21942ace3f0f1007cbda938fe911671e2b7c53a32e",
+      "size": 150,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/tags/worldgen/biome/features/has_dark_forest_trees.json",
+      "sha256": "d12e16328525f548e52acd28146112eace7c68520248206e10efd81091dca4db",
+      "size": 50,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/tags/worldgen/biome/features/has_fern_grass.json",
+      "sha256": "da5fe7fca079d4a69c52812bd50f5e160ae96d3c9a143e8378167cb9ce8b0a29",
+      "size": 153,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/tags/worldgen/biome/features/has_fir_forest_trees.json",
+      "sha256": "4b7afcc513f4052cd1a5338c5cb447c1959f62091f3908460b10b5d60b155485",
+      "size": 55,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/tags/worldgen/biome/features/has_flower_forest_trees.json",
+      "sha256": "29ef8fe47e4615b26a6f7b78694b940b0598627bf7f2fedc5a992b461259c843",
+      "size": 52,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/tags/worldgen/biome/features/has_forest_grass.json",
+      "sha256": "322f5101fd9dd5a2f0c04fc9b24437d4e2eb70364b9429ad59bdd310997579ea",
+      "size": 74,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/tags/worldgen/biome/features/has_forest_trees.json",
+      "sha256": "e7ba0db683a979abdff436384f12f1bc5cb5a6950fa6bca59a714724b905ae1d",
+      "size": 45,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/tags/worldgen/biome/features/has_grove_trees.json",
+      "sha256": "ab2105ddf298eb511fad84b259ae7d17c66fd87882eec2cc7f4e217eaaea8486",
+      "size": 44,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/tags/worldgen/biome/features/has_jungle_edge_trees.json",
+      "sha256": "dc2e2160421bd46beb1b52e7921958d9a6a624604e42e1657a6d3ca930f6e5b6",
+      "size": 52,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/tags/worldgen/biome/features/has_jungle_trees.json",
+      "sha256": "173ea3ab2ba0f64b61b7b6692587ec35a1e1189bc66eeb9565905ef8d561b415",
+      "size": 76,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/tags/worldgen/biome/features/has_marsh_bushes.json",
+      "sha256": "f74498097708215ee46031db7467ce3abed880ed8188eff156e81993d9787e31",
+      "size": 19,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/tags/worldgen/biome/features/has_meadow_grass.json",
+      "sha256": "025137111fb2ece40c9aaae220c014664359366936f3708c9848c4e6a2abdec1",
+      "size": 76,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/tags/worldgen/biome/features/has_meadow_trees.json",
+      "sha256": "0bbba281223f7e4f2bbeb6be9d085e484e55df4935de5e5b7a2db092a75d7ffc",
+      "size": 45,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/tags/worldgen/biome/features/has_pine_forest_trees.json",
+      "sha256": "4022be71349456219cfa89ef5078cdf0f1854fc6c1f46a30bb528f2e7694c0d6",
+      "size": 85,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/tags/worldgen/biome/features/has_plains_bushes.json",
+      "sha256": "90ef5eda8f14620c560d4407c79bb6d7755e4213c0d25613517e08aa4421acb7",
+      "size": 207,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/tags/worldgen/biome/features/has_plains_trees.json",
+      "sha256": "c2d8926a96fac12a4238477700c4e7fd166199c45f7e3655ad07770d1906d650",
+      "size": 376,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/tags/worldgen/biome/features/has_redwood_forest_trees.json",
+      "sha256": "039200f36fef5c73ca568f453e7549dfd796d68f828a53118943226910a43395",
+      "size": 60,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/tags/worldgen/biome/features/has_savanna_trees.json",
+      "sha256": "5750d75d9ecedaa2de1c8eb7ea9d40d022957f6f64544e61d4aa9ed77d0a780f",
+      "size": 79,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/tags/worldgen/biome/features/has_spruce_forest_trees.json",
+      "sha256": "66b6e401da9f47e8d7f3a302bf7ae0c7302ebf01d976ee78bfc35653cdb5b71b",
+      "size": 50,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/tags/worldgen/biome/features/has_spruce_tundra_trees.json",
+      "sha256": "06b68aef5319b8f9f9775a4af13e1f9cd63cf7a53ed3d6a8cf092d31f5d1161d",
+      "size": 81,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/tags/worldgen/biome/features/has_steppe_bushes.json",
+      "sha256": "98f12fb2aba547d8da27702af67d9ffa25f926a1b720cab809cedd9d5bdb2ccb",
+      "size": 114,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/tags/worldgen/biome/features/has_swamp_trees.json",
+      "sha256": "1221b177360b795729187f6d823a1e2a2f3e261c8ee17d43ff30ab9ad0c35616",
+      "size": 44,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/tags/worldgen/biome/features/has_windswept_hills_trees.json",
+      "sha256": "409464fe4fac2665a9bab067e81979a1e75d144556ff75468416676ebfcb3d1d",
+      "size": 96,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/tags/worldgen/biome/features/has_wooded_badlands_trees.json",
+      "sha256": "e119394dccb609c9e5f25ea07c1db70633b478c65f251e27ffb512f00c313cbc",
+      "size": 54,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/ultraterraforged/worldgen/biome_modifier/vegetation/bushes/cold_steppe.json",
+      "sha256": "8d94670c6382b54838f8f9a4ee9fed49bccc5b2f31aa05c0f78264ab8b727bd6",
+      "size": 263,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/ultraterraforged/worldgen/biome_modifier/vegetation/bushes/marsh.json",
+      "sha256": "d3ee00e5815908379cb3606c2ebddd9b55691a7c29a24ceb4c041a6fda265811",
+      "size": 251,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/ultraterraforged/worldgen/biome_modifier/vegetation/bushes/plains.json",
+      "sha256": "12d3662fe10a60f17c63632524a64d0732097020367960fe9a14a7e8807f17fe",
+      "size": 253,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/ultraterraforged/worldgen/biome_modifier/vegetation/bushes/steppe.json",
+      "sha256": "0cfb081f8423b22f3d70dee28cb24b80e0ee2819cb5b8a95dbc3c812b80b8f90",
+      "size": 253,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/ultraterraforged/worldgen/biome_modifier/vegetation/bushes/taiga_scrub.json",
+      "sha256": "be77b58a50845c293923ecf2333a9174117e6797bd7e5fa76445f79caa1b4bfd",
+      "size": 268,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/ultraterraforged/worldgen/biome_modifier/vegetation/grass/birch.json",
+      "sha256": "b3f0b3546d2643163a7d109b982e8574b86a423a3b320d63f385b372e686d3e0",
+      "size": 244,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/ultraterraforged/worldgen/biome_modifier/vegetation/grass/fern.json",
+      "sha256": "9fbad438c1a42550b2ef191381ed07425ab9ba2216653384b79488dd274c9df5",
+      "size": 242,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/ultraterraforged/worldgen/biome_modifier/vegetation/grass/forest.json",
+      "sha256": "5bd176c65ec7eaac19ec7848b10f7619aa8cd833bf62caac2d9cb22e594a823e",
+      "size": 246,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/ultraterraforged/worldgen/biome_modifier/vegetation/grass/meadow.json",
+      "sha256": "7b82e215645d0f97b385dfccff25b1882ec328ea87e3a1597f7272acd170b8b9",
+      "size": 246,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/ultraterraforged/worldgen/biome_modifier/vegetation/trees/badlands.json",
+      "sha256": "c7238119852f438ac00b7b1b8e4dcc2499ea2b838a4741db226979b9ad05f437",
+      "size": 301,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/ultraterraforged/worldgen/biome_modifier/vegetation/trees/birch.json",
+      "sha256": "744c9288a52bedfb6657a3d6bb5f1c6332a3ac791594318881e3f603c8bf004e",
+      "size": 283,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/ultraterraforged/worldgen/biome_modifier/vegetation/trees/dark_forest.json",
+      "sha256": "d66a5fd72b0f0a163b9e692d3f608d1b07371a2279f8b8db98ae39e77d479c01",
+      "size": 239,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/ultraterraforged/worldgen/biome_modifier/vegetation/trees/fir.json",
+      "sha256": "ac68aaacfc97ff80ec3367ec8437340d148e5d832b6f9baa4a80d4f595e47546",
+      "size": 230,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/ultraterraforged/worldgen/biome_modifier/vegetation/trees/fir_windswept_hills.json",
+      "sha256": "35d139c4bdfe5e256342f9cb78c8be8e7b032d7538c8bb144cf4cf7d0630ec5d",
+      "size": 250,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/ultraterraforged/worldgen/biome_modifier/vegetation/trees/flower_forest.json",
+      "sha256": "52babd2b3bc9033332502f9a4941026c89259d866b76e99e1dae7359d85f1935",
+      "size": 240,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/ultraterraforged/worldgen/biome_modifier/vegetation/trees/forest.json",
+      "sha256": "1712fc8a86a5a887ad2c58ee7ff47d98028bcf1f4457570095ac690f91298a9a",
+      "size": 226,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/ultraterraforged/worldgen/biome_modifier/vegetation/trees/grove.json",
+      "sha256": "227d3f55136bd01c2809bac3da64b9deea690caa75ab11d6fe08010460f3d558",
+      "size": 216,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/ultraterraforged/worldgen/biome_modifier/vegetation/trees/jungle.json",
+      "sha256": "9f2d5354a69fff3ace535073b9728f1bc420f38b9caad6bc0965a8dfc7ea8032",
+      "size": 287,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/ultraterraforged/worldgen/biome_modifier/vegetation/trees/jungle_edge.json",
+      "sha256": "28f0957c843d7f0d7f3325d81ddf1cd1095a22e353ff94febd3f8c175d5e2b3a",
+      "size": 236,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/ultraterraforged/worldgen/biome_modifier/vegetation/trees/meadow.json",
+      "sha256": "6fab3c9b293085d351897f70be8b9f67a3434839bd504892e59f8491bb8bb184",
+      "size": 219,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/ultraterraforged/worldgen/biome_modifier/vegetation/trees/pine.json",
+      "sha256": "f0c3d2fa138e09d3b31d8aa69ec8f0b1590dacf4c6bf79a0fc95e9fd08bb00d3",
+      "size": 299,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/ultraterraforged/worldgen/biome_modifier/vegetation/trees/plains.json",
+      "sha256": "816af2b55325ca41a35cb7acfcecd8f15cb91480f364944789f511d7a2ab7c0d",
+      "size": 281,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/ultraterraforged/worldgen/biome_modifier/vegetation/trees/redwood.json",
+      "sha256": "3a56955b8815a35812aae19856f738b3fff310c65039330fedbc8a68b2c00216",
+      "size": 243,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/ultraterraforged/worldgen/biome_modifier/vegetation/trees/savanna.json",
+      "sha256": "3631aed6018f05ff99095dfb09afe05c7d8753b8e78f79429dc94662b9afbf52",
+      "size": 222,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/ultraterraforged/worldgen/biome_modifier/vegetation/trees/spruce.json",
+      "sha256": "5681169a234507a556990ab393bb3aebc6cbd1a7fcec86141e58c0ef67134672",
+      "size": 225,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/ultraterraforged/worldgen/biome_modifier/vegetation/trees/spruce_tundra.json",
+      "sha256": "c57aa0102be3823e0f849babc706719e4dcba9f483a2de6e10e107fc4ba49d02",
+      "size": 301,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/ultraterraforged/worldgen/biome_modifier/vegetation/trees/swamp.json",
+      "sha256": "1bb32d6ffa555203d4c083d2f6745486499449808ff8ed6cb870fe82b56a7510",
+      "size": 216,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/ultraterraforged/worldgen/biome_modifier/vegetation/trees/wooded_badlands.json",
+      "sha256": "776d0d6a2a4bcd9245b5b36d893e4d880298868806bece65bbbaaabf29db651b",
+      "size": 239,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/acacia/bush.json",
+      "sha256": "87da1b23d121b424adcc92fc55a505172d4bcfacde804ea7953f090175e64172",
+      "size": 454,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/acacia/large.json",
+      "sha256": "88b0a2e1b518f59ff747cb97b45e09080aee4ed407f7beb1d83ad907db6f838b",
+      "size": 446,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/acacia/small.json",
+      "sha256": "f696f9740e245409ecbf51b98b715a0e8a48e922f40283692b1812e98224bc41",
+      "size": 604,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/badlands_trees.json",
+      "sha256": "9402ba66571facb2b2e4b5ade3c151d3d35904f6c6f2c5fcfcf91e46347b4c68",
+      "size": 307,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/birch/forest.json",
+      "sha256": "c88e78c207dd8f941cabd910ee652809252c3a3c85318bf414ebf6740034650a",
+      "size": 2000,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/birch/large.json",
+      "sha256": "b760d1a4c4f261dcc829496191fb136e77260225b53d7a6105b2368b6e832b75",
+      "size": 1901,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/birch/small.json",
+      "sha256": "f9d25cdaaa46ceed11b869bba7f6ddbcbdeffe6e4ffdbeb1f4ee7f91c5f0fcaf",
+      "size": 598,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/birch_grass.json",
+      "sha256": "8cb43822c06cc410e9c8ae65c1e7e749c8491419a9b8103b08ba1471478fa06b",
+      "size": 6706,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/birch_trees.json",
+      "sha256": "94a1aa81a73856029132a9311f5910478ae9943d28249bb923a4203ade3e2401",
+      "size": 1506,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/dark_forest_trees.json",
+      "sha256": "c0e6565c5873a6400f45eafb30ab70cacb35b12b20d2d2e8e06ba47e72dcbf79",
+      "size": 720,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/dark_oak/large.json",
+      "sha256": "0bbaa02e5862a4ac8ae7cd9e61021ad0d2321e62fbd5ee3dc5193eda162edd34",
+      "size": 698,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/dark_oak/small.json",
+      "sha256": "8878ddbf82392ede29c182f3341c682810a0053a491dd2dae36d750f05d1c8c2",
+      "size": 683,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/fern_grass.json",
+      "sha256": "73a785820d0a885a730feade9f419b5049906a1ae3e909dc79a5e9f43160cd8c",
+      "size": 5346,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/fir_trees.json",
+      "sha256": "32fb6b3846a6d6dfdcb9f2c61c8533d2c3f1ff32b71882ff50913af012ec5963",
+      "size": 639,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/flower_forest_trees.json",
+      "sha256": "ca4321705263e181a774f0f5d9b9a1a422a14bfe7c86660798be2ecdc2e64bfc",
+      "size": 490,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/forest_grass.json",
+      "sha256": "7a6546e4367afb64988a0a86717a620c837f37ab950d985074d81502f26e8292",
+      "size": 5345,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/forest_trees.json",
+      "sha256": "1a78c3a2ee9cd326eb06a0f2f2031249ad105dd9d7f42addd8608b9cce0e6ae8",
+      "size": 307,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/grove_trees.json",
+      "sha256": "85e72a9c1589b24a3cafe200d26b4e845b9b2f5ac17f2ccbf49669c4a5d2d2a1",
+      "size": 654,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/jungle/huge.json",
+      "sha256": "420adaef69e7e5509b94502b4e6bbee9237a3b3d3ac587ac862f0e0cf433f3c6",
+      "size": 764,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/jungle/large.json",
+      "sha256": "764e256099ef5d1ad0e2fc30ad0d33bef5e83ca7eacfcb77d80b59b34dcdfdb9",
+      "size": 604,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/jungle/small.json",
+      "sha256": "b6fcf8d8913155e0dad6600c27910c121951298e1e5be81fc386859ac8926886",
+      "size": 533,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/jungle_edge_trees.json",
+      "sha256": "361c56d0ff3af2d5e3561473cec21c4ddf0741c8dbbfb601b7d1079b6de624fd",
+      "size": 397,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/jungle_trees.json",
+      "sha256": "89200d1b8b69772b90b3fff83619718063ba1bee621f9a1c0b5459a135070dad",
+      "size": 487,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/meadow/normal.json",
+      "sha256": "61945c8a907833ab6b3a317be163f433a02790f2b2739a967ba4e953a2b74580",
+      "size": 1072,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/meadow/variant.json",
+      "sha256": "98cf8006a784d33e28ab11802e784dc241ddce92cdffca95cf1d709a548fa860",
+      "size": 768,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/meadow_grass.json",
+      "sha256": "6f5d93be9d3ad00115141128cf6e6a670b5261f37f27766cabf910fecdabd925",
+      "size": 5344,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/meadow_trees.json",
+      "sha256": "23f7895368de16a2744c4160effa3b0aea63c88bb85f07e206842d795fb70dd1",
+      "size": 319,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/mushrooms/huge_brown_mushroom.json",
+      "sha256": "ed4c53ad2f4af62e2095042e5ecb96fcc8bc81df7075777ca2791b8e5239d898",
+      "size": 803,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/mushrooms/huge_red_mushroom.json",
+      "sha256": "ad4c087e78f1cccd763079d6387f2be1a3f55a638acb3bc0c2912217041685a0",
+      "size": 658,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/oak/forest.json",
+      "sha256": "d3067eaeb00b064ab24f9f5348e9eceae2be29d3711298febfb9e9db34ebe91c",
+      "size": 1841,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/oak/large.json",
+      "sha256": "24b4cdb388feaa63033067c378173e01284d445ad71dc6b9778764ddfec9175e",
+      "size": 2015,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/oak/small.json",
+      "sha256": "126ff335bc731c704debd3d505af9b46f7a88db8e657313166432ec85c3a12ad",
+      "size": 720,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/pine/pine.json",
+      "sha256": "c822c1467bc42a76601633773b36e8b9b92d0edd2be87748c75e289eb8c8d81c",
+      "size": 917,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/plains_trees.json",
+      "sha256": "1a78c3a2ee9cd326eb06a0f2f2031249ad105dd9d7f42addd8608b9cce0e6ae8",
+      "size": 307,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/redwood/huge.json",
+      "sha256": "e030aee1beaa34d8b6a7ad1124dabfda8b834cd9727c45d4f3c617911c1bd3a4",
+      "size": 1556,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/redwood/large.json",
+      "sha256": "6868eedcde3fe1102f3acd0acd8f5e00fb4812cc20b2a51617eaede55b4f7217",
+      "size": 612,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/redwood_trees.json",
+      "sha256": "09022fece75be636965effdcea9964ab44d48090f0de30a12abff505f4a6bf74",
+      "size": 1510,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/savanna_trees.json",
+      "sha256": "bd8775a683985c840f321c51c8553dfc9c35a902f9550f4bb3fda713e7f28410",
+      "size": 315,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/shrubs/cold_steppe_bush.json",
+      "sha256": "04e0e34667ef827ff26187a4e1bf242c4cb76adae1a921fe0819fe0962cd14f5",
+      "size": 392,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/shrubs/marsh_bush.json",
+      "sha256": "2fc580cf3bde984e040c3b018e38e831ac14e4a55372b67ec859b69931924333",
+      "size": 417,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/shrubs/plains_bush.json",
+      "sha256": "2fc580cf3bde984e040c3b018e38e831ac14e4a55372b67ec859b69931924333",
+      "size": 417,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/shrubs/steppe_bush.json",
+      "sha256": "1c384bec26a73e695fde9826743a7e7a5e9420f2091af0333cc3a3f84aeb1420",
+      "size": 420,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/shrubs/taiga_scrub_bush.json",
+      "sha256": "215b9907fc89b8722d2d88fc41a4da7bc98fa624f0d0cd0a2f5e664c0110d6a5",
+      "size": 395,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/spruce/large.json",
+      "sha256": "c90fd701a86cd7c638bc59f6e45e9ee83b69167d6cd658d4ee857e1ff7522a68",
+      "size": 653,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/spruce/large_on_snow.json",
+      "sha256": "c93237b0e82db3b16776689deb97be923f7b8c5bf898ffa172692a76044ff2d0",
+      "size": 652,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/spruce/small.json",
+      "sha256": "46dc35e18870e0ffc142b712671be861cb40afd86151996053ed9811461abef2",
+      "size": 754,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/spruce/small_on_snow.json",
+      "sha256": "d08fa26128b0443575eb4a71ea3e166126aa12b1b786eb826c8011adfb4306d3",
+      "size": 753,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/swamp_trees.json",
+      "sha256": "5e780c09643449e360db72f5ea2c3743c81083879b12fae8a2f109aa49496112",
+      "size": 315,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/willow/large.json",
+      "sha256": "3aee27f216ab63b241162a4c1f6f0d5bbc2ae7160cd275db20d0c044a06b122a",
+      "size": 470,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/willow/small.json",
+      "sha256": "500e7dd9a7f33c687b795017c383ffe856a9edf43b484860820d8973cc4fc94f",
+      "size": 474,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/configured_feature/wooded_badlands_trees.json",
+      "sha256": "3c2d0c06052e45184a0e06351113adcab8038b092fa85470053e06b75f6229e9",
+      "size": 307,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/acacia/bush.json",
+      "sha256": "d498a57932b95b2725c2d5966474663321cbdc76c7ce4e04f9d779ed216c464c",
+      "size": 342,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/acacia/large.json",
+      "sha256": "7d6598d7d83e4201423fa1d42dd6f9ee5e5211d10d9b07757fe7a6ee73884a7d",
+      "size": 343,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/acacia/small.json",
+      "sha256": "a88cbb95201673c2fa46aa1973bda9c5b859b845d6a6138cd405669ac6da4316",
+      "size": 343,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/badlands_trees.json",
+      "sha256": "b5e2757ceae2f7edf94c527f81788903a6a66ad7fcd437ba0a37495dec514486",
+      "size": 339,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/birch/forest.json",
+      "sha256": "b384ee8faefab5c687d456539d4d9b8924c0e95f21cf258fcaea16397a82505f",
+      "size": 342,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/birch/large.json",
+      "sha256": "ed1e6d98dbf9af829b6d3cb5d79ad17056ca18a1fbed7153afded7a527c8cde4",
+      "size": 341,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/birch/small.json",
+      "sha256": "0eca88c5da2bcfce7f2f8651499f4ec604a7cc3de8ffde304fd87d5596e2d87c",
+      "size": 341,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/birch_grass.json",
+      "sha256": "c7c201d34b6daa73f8efc7c56ecc4ef847b29eef62d0aac19b4e86cc4c87f6a8",
+      "size": 314,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/birch_trees.json",
+      "sha256": "80f7f88f92c5171f7df2f8c2218695318de6b3126b1b512532a633adaf11f1e9",
+      "size": 415,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/dark_forest_trees.json",
+      "sha256": "8b9cd8368d456aa580a5c05756d89440ba6838232653971b4ec2e09ecd8ac445",
+      "size": 420,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/dark_oak/large.json",
+      "sha256": "e9f2681c671311d30dbbd9609121d859931759ea25219bd90961bdac3a2eba91",
+      "size": 347,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/dark_oak/small.json",
+      "sha256": "9b7dc34af983213f117737645be37e38ada63a311145482c3e5f01f2a9e913d7",
+      "size": 347,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/fern_grass.json",
+      "sha256": "8ce09d5a885c22a0f38a9d3925e5a7309cf5a7227ef847c3ac11da12a83243f0",
+      "size": 313,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/fir_trees.json",
+      "sha256": "7b1c8c91b836523cd89075f7cba32409bc3cf8548d922622a7ff307d6fb45c1b",
+      "size": 412,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/flower_forest_trees.json",
+      "sha256": "bb0cc85aefb8315383858036f111ba4b159a862ce09e7d38668654c4cf4312c0",
+      "size": 422,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/forest_grass.json",
+      "sha256": "94c592df60bf707a8ca03862860f2201e29e0cbd3273cd0af16bdc131ad8086c",
+      "size": 315,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/forest_trees.json",
+      "sha256": "55a52b447189ad0282811bd40cdfdf72a572399cdeec4621da364ae370011f56",
+      "size": 416,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/grove_trees.json",
+      "sha256": "a4300b03d254a7396a59e71830932a1277c3392ece7c77c36760c57af2f41018",
+      "size": 414,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/jungle/huge.json",
+      "sha256": "91502b90ab6c14424cb750e97f98826b6be9adb00adc683b564e78f774d8e1d1",
+      "size": 342,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/jungle/large.json",
+      "sha256": "8a499c8206603bd4eb2063f9b40f31fdd94b0b3f06b4984bba5720b6020c425f",
+      "size": 343,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/jungle/small.json",
+      "sha256": "f73f75ce5f04a6f6f8b87b08f1e17979b51d555b1110ad2e434f700af69be914",
+      "size": 343,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/jungle_edge_trees.json",
+      "sha256": "0c719617bd09a7b9dfcbb5f62b9b24bb09b6c1d38cc70bd70aeae3f0810c6aef",
+      "size": 422,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/jungle_trees.json",
+      "sha256": "6583f68a3bec701d83806f41d862ddd96c730180547a505e7f7725eff788aee9",
+      "size": 415,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/meadow/normal.json",
+      "sha256": "a2c2ef525ccdb4dd7bc93bde23807c14604aa66cd654d41f0537f8d089c43a6e",
+      "size": 341,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/meadow/variant.json",
+      "sha256": "ec0b1613a1396e3cbcb86c0265275718f4395c84642382fe8d68490e0fe21cbc",
+      "size": 344,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/meadow_grass.json",
+      "sha256": "9859f3e0f379f9889658c79db73d3de50a06bc7a80a9663e740a539a674b0fba",
+      "size": 315,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/meadow_trees.json",
+      "sha256": "ed858215afad120826a27a6eccec2e96569f64245017707a93345f8150155e88",
+      "size": 812,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/mushrooms/huge_brown_mushroom.json",
+      "sha256": "ce4a46d15e20bb0055193d7b059a90b1d3ed8205faf0dfb6a0ffc9ea1b8442ce",
+      "size": 85,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/mushrooms/huge_red_mushroom.json",
+      "sha256": "63a6f381eea69641dc13a4a2e7ded5ce05b07b84bd00d62c347cb86e441ea26a",
+      "size": 83,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/oak/forest.json",
+      "sha256": "6cbde9c59b4cc28b4fcac9ec3da5ed47836bf982bc4ade1b705ca76924b37f2e",
+      "size": 338,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/oak/large.json",
+      "sha256": "f526c1f6e236c6121d982c6db0802d1180b1dcf487f2c8f897050837168cb9b7",
+      "size": 337,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/oak/small.json",
+      "sha256": "a4c94a6ee085f4bfc13b255907423eb3ba06b94d0aa2a90e644ed7affc1eaf01",
+      "size": 337,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/pine/pine.json",
+      "sha256": "6bde6ea94eb2a2ca49aea7149efc31d429e234bd7dc1dcefa70520d4d9ddbbcc",
+      "size": 340,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/pine_trees.json",
+      "sha256": "0365061055fffee28ece43748b0b21e2f42f6312c1ffb160f41a27da088a10fd",
+      "size": 413,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/plains_trees.json",
+      "sha256": "9b9a7a87db3c72895d300ef92c66a6954f321a22c0770e307c07e97008b99777",
+      "size": 337,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/redwood/huge.json",
+      "sha256": "a05b46d2b1ec725c17e1d1df812e0d3e3d8f5ef90f301ddc1887db64bf25eaf1",
+      "size": 343,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/redwood/large.json",
+      "sha256": "71505566437184f2aaf5924039e22d67cd2612d4aaecbb7ca71dfffec8d9d6c1",
+      "size": 344,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/redwood_trees.json",
+      "sha256": "91076ff02906ca227313ff69f8cff718beeb009dca966ec6650627cd00687230",
+      "size": 417,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/savanna_trees.json",
+      "sha256": "374c9599ce3d5ca060eba925525be7ad8b080511beb8dad02b3af7fe87a5d51d",
+      "size": 337,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/shrubs/cold_steppe_bush.json",
+      "sha256": "4eee73fdb4507c0faadb134e55eef2f0d47b1d134fcfc73eeb142823814c68a1",
+      "size": 620,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/shrubs/marsh_bush.json",
+      "sha256": "6f52f2e6726286bd0b42b0f4df5041145f5c9305ffad9de75ed3f13e851285c8",
+      "size": 609,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/shrubs/plains_bush.json",
+      "sha256": "3bc59b2b9586cbebeeae3cfbd31ed7e8b2daf49e6bc7bafbc761925ff8c7104c",
+      "size": 613,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/shrubs/steppe_bush.json",
+      "sha256": "c9c56702d9dbdd3be3d92366443ba6cea7beb3bd4698d0de8bd0470f044de745",
+      "size": 615,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/shrubs/taiga_scrub_bush.json",
+      "sha256": "f451c057ea971486d185f426ead294d999d16dd9faa354bc59c0ce419cbd3b96",
+      "size": 618,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/spruce/large.json",
+      "sha256": "2708b4e528dda2bf16cfd1a2bc648944e9015cabf6903a739b3f3cc79c37cc70",
+      "size": 343,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/spruce/large_on_snow.json",
+      "sha256": "ef164c2c84ca44cc146945c05e8188e41cd00aa12ecd19961af1cf0da83f7937",
+      "size": 690,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/spruce/small.json",
+      "sha256": "c8c7150384f696f30916e891ada882d3f75611655f9b412a51a7306f3fb169ab",
+      "size": 343,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/spruce/small_on_snow.json",
+      "sha256": "cb6f5931d37b432aa85c60e75e642db3ca2182220030b43ebc73f6a02b03256d",
+      "size": 690,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/spruce_trees.json",
+      "sha256": "41008e7957ea0773ddaee7659b47dabcdaac3699cccbaa6ecc3ab1c46d2921d9",
+      "size": 413,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/spruce_tundra_trees.json",
+      "sha256": "4d3e7dc0ddc52150181a7dae20d2312a6fbd06c51472080634d20de69bb31b70",
+      "size": 270,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/swamp_trees.json",
+      "sha256": "adc4ae39371d085e89853b6e498e84fa52618f0aebb4e1fd10c8609804e6681d",
+      "size": 416,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/willow/large.json",
+      "sha256": "e3de1ae6eb45f6503601b9a36ce58c13a91e996c5a7ca66ee190d251b1796f99",
+      "size": 340,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/willow/small.json",
+      "sha256": "86280a0e3e6e7ec365a2dfbf3f8a7102bd596d849dcae286029ffd2f76da8ad5",
+      "size": 340,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/windswept_hills_fir_trees.json",
+      "sha256": "9bf89cb137965184f1f0b2a2ff8768b1b5ce0cf2e7ab3d648fca32c339d9108d",
+      "size": 270,
+      "new": true
+    },
+    {
+      "path": "kubejs/data/ultraterraforged/worldgen/placed_feature/wooded_badlands_trees.json",
+      "sha256": "f09d65e86b8f52c7a196b8b2749be9b9ace210cb3c2ecc78491c4a0681e794f2",
+      "size": 425,
+      "new": true
+    }
+  ]
+}

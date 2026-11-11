@@ -20,6 +20,7 @@
     "name": "slashblade_sendims:caliburn",
     "properties": {
         "attack_base": 70.0,
+        "max_damage": 160,
         "slash_art": "slashblade_sendims:caliburn",
         "special_effects": [
             "slashblade_sendims:mana_burst",

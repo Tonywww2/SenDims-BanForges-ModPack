@@ -1,0 +1,357 @@
+{
+  "clients": {
+    "A": {
+      "routeSeconds": 103.099,
+      "steps": 90,
+      "distanceBlocks": 1424,
+      "teleportFailures": 0,
+      "frameCount": 11776,
+      "frameWindows": 99,
+      "windowActiveFraction": 1,
+      "weightedFps": 114.7115355512825,
+      "frameMs": {
+        "50": 8.3334,
+        "95": 8.7636,
+        "99": 9.4877,
+        "100": 4146.7643
+      },
+      "framesAbove50ms": 3,
+      "framesAbove100ms": 2,
+      "peakRss": 16709636096,
+      "peakPrivate": 8112959488
+    },
+    "B": {
+      "routeSeconds": 98.647,
+      "steps": 90,
+      "distanceBlocks": 1424,
+      "teleportFailures": 0,
+      "frameCount": 5625,
+      "frameWindows": 94,
+      "windowActiveFraction": 0.3404255319148936,
+      "weightedFps": 57.4404658317416,
+      "frameMs": {
+        "50": 8.4242,
+        "95": 33.535759999999996,
+        "99": 33.7759,
+        "100": 4419.2404
+      },
+      "framesAbove50ms": 6,
+      "framesAbove100ms": 4,
+      "peakRss": 17219006464,
+      "peakPrivate": 9197752320
+    },
+    "C": {
+      "routeSeconds": 91.05,
+      "steps": 90,
+      "distanceBlocks": 1424,
+      "teleportFailures": 0,
+      "frameCount": 10010,
+      "frameWindows": 86,
+      "windowActiveFraction": 1,
+      "weightedFps": 110.7929257328964,
+      "frameMs": {
+        "50": 8.3333,
+        "95": 9.881895,
+        "99": 14.941004999999997,
+        "100": 2978.2157
+      },
+      "framesAbove50ms": 8,
+      "framesAbove100ms": 7,
+      "peakRss": 17387147264,
+      "peakPrivate": 9574666240
+    }
+  },
+  "memory": {
+    "A": {
+      "run": "A-memory-20261107-20261109-225834",
+      "wallMinutes": 6.781668011347453,
+      "samples": [
+        {
+          "round": 0,
+          "phase": "idle-after-gc",
+          "elapsedMs": 263397,
+          "loaded": 0,
+          "heapUsed": 2749366272,
+          "nativeMemory": {
+            "Java Heap": {
+              "reserved": 206158430208,
+              "committed": 12884901888
+            },
+            "Class": {
+              "reserved": 1082209280,
+              "committed": 97465344
+            },
+            "Thread": {
+              "reserved": 254381056,
+              "committed": 18975744
+            },
+            "Code": {
+              "reserved": 260755456,
+              "committed": 112152576
+            },
+            "GC": {
+              "reserved": 17752097792,
+              "committed": 639337472
+            },
+            "Compiler": {
+              "reserved": 1733632,
+              "committed": 1733632
+            },
+            "Internal": {
+              "reserved": 3103744,
+              "committed": 3103744
+            },
+            "Other": {
+              "reserved": 4722688,
+              "committed": 4722688
+            },
+            "Symbol": {
+              "reserved": 119561216,
+              "committed": 119561216
+            },
+            "Native Memory Tracking": {
+              "reserved": 26138624,
+              "committed": 26138624
+            },
+            "Arena Chunk": {
+              "reserved": 2844672,
+              "committed": 2844672
+            },
+            "Tracing": {
+              "reserved": 218184704,
+              "committed": 218184704
+            },
+            "Module": {
+              "reserved": 4764672,
+              "committed": 4764672
+            },
+            "Safepoint": {
+              "reserved": 8192,
+              "committed": 8192
+            },
+            "Synchronization": {
+              "reserved": 246784,
+              "committed": 246784
+            },
+            "Serviceability": {
+              "reserved": 20480,
+              "committed": 20480
+            },
+            "Metaspace": {
+              "reserved": 404657152,
+              "committed": 357012480
+            },
+            "String Deduplication": {
+              "reserved": 1024,
+              "committed": 1024
+            },
+            "Object Monitors": {
+              "reserved": 1024,
+              "committed": 1024
+            }
+          }
+        }
+      ],
+      "postGcHeapBytes": 2749366272,
+      "peakRss": 14826033152,
+      "peakPrivate": 2246139904,
+      "minimumAvailableMemory": 3601645568
+    },
+    "B": {
+      "run": "B-memory-20261107-20261109-230600",
+      "wallMinutes": 6.416927893956502,
+      "samples": [
+        {
+          "round": 0,
+          "phase": "idle-after-gc",
+          "elapsedMs": 256896,
+          "loaded": 0,
+          "heapUsed": 2866806784,
+          "nativeMemory": {
+            "Java Heap": {
+              "reserved": 206158430208,
+              "committed": 11725176832
+            },
+            "Class": {
+              "reserved": 1082306560,
+              "committed": 98611200
+            },
+            "Thread": {
+              "reserved": 282914816,
+              "committed": 21090304
+            },
+            "Code": {
+              "reserved": 260832256,
+              "committed": 119299072
+            },
+            "GC": {
+              "reserved": 17771483136,
+              "committed": 658722816
+            },
+            "Compiler": {
+              "reserved": 2154496,
+              "committed": 2154496
+            },
+            "Internal": {
+              "reserved": 3162112,
+              "committed": 3162112
+            },
+            "Other": {
+              "reserved": 4660224,
+              "committed": 4660224
+            },
+            "Symbol": {
+              "reserved": 121320448,
+              "committed": 121320448
+            },
+            "Native Memory Tracking": {
+              "reserved": 25143296,
+              "committed": 25143296
+            },
+            "Arena Chunk": {
+              "reserved": 110592,
+              "committed": 110592
+            },
+            "Tracing": {
+              "reserved": 22775808,
+              "committed": 22775808
+            },
+            "Module": {
+              "reserved": 4771840,
+              "committed": 4771840
+            },
+            "Safepoint": {
+              "reserved": 8192,
+              "committed": 8192
+            },
+            "Synchronization": {
+              "reserved": 247808,
+              "committed": 247808
+            },
+            "Serviceability": {
+              "reserved": 20480,
+              "committed": 20480
+            },
+            "Metaspace": {
+              "reserved": 404704256,
+              "committed": 362171392
+            },
+            "String Deduplication": {
+              "reserved": 1024,
+              "committed": 1024
+            },
+            "Object Monitors": {
+              "reserved": 1024,
+              "committed": 1024
+            }
+          }
+        }
+      ],
+      "postGcHeapBytes": 2866806784,
+      "peakRss": 13607202816,
+      "peakPrivate": 2176151552,
+      "minimumAvailableMemory": 4469366784
+    },
+    "C": {
+      "run": "C-memory-20261107-20261109-231304",
+      "wallMinutes": 6.42211373647054,
+      "samples": [
+        {
+          "round": 0,
+          "phase": "idle-after-gc",
+          "elapsedMs": 257196,
+          "loaded": 0,
+          "heapUsed": 2919235584,
+          "nativeMemory": {
+            "Java Heap": {
+              "reserved": 206158430208,
+              "committed": 12884901888
+            },
+            "Class": {
+              "reserved": 1082235904,
+              "committed": 99195904
+            },
+            "Thread": {
+              "reserved": 429804544,
+              "committed": 31607808
+            },
+            "Code": {
+              "reserved": 256681984,
+              "committed": 124463104
+            },
+            "GC": {
+              "reserved": 17812890624,
+              "committed": 700130304
+            },
+            "Compiler": {
+              "reserved": 3401728,
+              "committed": 3401728
+            },
+            "Internal": {
+              "reserved": 3410944,
+              "committed": 3410944
+            },
+            "Other": {
+              "reserved": 4835328,
+              "committed": 4835328
+            },
+            "Symbol": {
+              "reserved": 122114048,
+              "committed": 122114048
+            },
+            "Native Memory Tracking": {
+              "reserved": 24597504,
+              "committed": 24597504
+            },
+            "Arena Chunk": {
+              "reserved": 3046400,
+              "committed": 3046400
+            },
+            "Tracing": {
+              "reserved": 23396352,
+              "committed": 23396352
+            },
+            "Module": {
+              "reserved": 4816896,
+              "committed": 4816896
+            },
+            "Safepoint": {
+              "reserved": 8192,
+              "committed": 8192
+            },
+            "Synchronization": {
+              "reserved": 268288,
+              "committed": 268288
+            },
+            "Serviceability": {
+              "reserved": 20480,
+              "committed": 20480
+            },
+            "Metaspace": {
+              "reserved": 404791296,
+              "committed": 365142016
+            },
+            "String Deduplication": {
+              "reserved": 1024,
+              "committed": 1024
+            },
+            "Object Monitors": {
+              "reserved": 27648,
+              "committed": 27648
+            }
+          }
+        }
+      ],
+      "postGcHeapBytes": 2919235584,
+      "peakRss": 14987137024,
+      "peakPrivate": 2356297728,
+      "minimumAvailableMemory": 3201921024
+    }
+  },
+  "frameDefinition": "Native FrameTimer samples from unique complete one-second windows inside the exploration route",
+  "memoryDefinition": "One explicit GC checkpoint after a four-minute idle period. This measures a single retention snapshot.",
+  "fpsComparisonExcluded": [
+    "B"
+  ],
+  "fpsExclusionReason": "ModernUI inactive 30FPS cap. Original B route only34% focused. Retake cancelled by user."
+}

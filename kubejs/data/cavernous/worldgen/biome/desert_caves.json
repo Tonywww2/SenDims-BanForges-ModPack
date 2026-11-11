@@ -115,7 +115,8 @@
 		],
 		[
 			"minecraft:amethyst_geode",
-			"cavernous:generic/big_geode"
+			"cavernous:generic/big_geode",
+			"sdbf:deep_realm_1/upper/amethyst_geode"
 		],
 		[],
 		[],
@@ -149,7 +150,9 @@
 			"cavernous:biomes/desert/ground_patch",
 			"minecraft:glow_lichen",
 			"yungscavebiomes:lost_caves/cactus_patch",
-			"biomemakeover:badlands/saguaro_cactus"
+			"biomemakeover:badlands/saguaro_cactus",
+			"sdbf:deep_realm_1/upper/glow_lichen",
+			"sdbf:deep_realm_1/upper/lost_caves_cactus_patch"
 		],
 		[
 			"minecraft:freeze_top_layer",

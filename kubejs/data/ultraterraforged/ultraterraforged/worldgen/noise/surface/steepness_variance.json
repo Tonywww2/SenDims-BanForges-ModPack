@@ -1,0 +1,5 @@
+{
+  "type": "ultraterraforged:multiply",
+  "input1": "ultraterraforged:surface/random",
+  "input2": 0.011764706
+}

@@ -859,6 +859,119 @@
 			x: 9.0d
 			y: 9.0d
 		}
+		{
+			dependencies: ["3C1CB82ADF4FBBC1"]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "7A7BBCE6BD45FE1E"
+			quest_enhance_disable_scroll_paging: false
+			shape: "none"
+			tasks: [{
+				id: "5FBC0CE5381C7035"
+				type: "checkmark"
+			}]
+			title: "Tetra材料/可获得的实用物品"
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			id: "42573797E5F05BA5"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "595EC64DE8CE2B80"
+				item: "twilightforest:ironwood_ingot"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 3.0d
+		}
+		{
+			id: "71A840413F746F9F"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4C2D3BE6837A5B56"
+				item: "twilightforest:steeleaf_ingot"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 3.0d
+		}
+		{
+			id: "0E081170899CF5A1"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "2226A6A389B0B9E2"
+				item: "twilightforest:raven_feather"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 3.0d
+		}
+		{
+			id: "01BB1E54B0625FA1"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "67170078B0628EB0"
+				item: "twilightforest:arctic_fur"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 4.0d
+		}
+		{
+			id: "360177DD774AC85F"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0D4F8C3C12D8286B"
+				item: "twilightforest:naga_scale"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 5.0d
+		}
+		{
+			id: "1F169D1A179F8123"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "644F42F6E21348EA"
+				item: "twilightforest:carminite"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 5.0d
+		}
+		{
+			id: "42D75638781818B7"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "31F3408315B4754A"
+				item: "twilightforest:knightmetal_ingot"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 6.0d
+		}
+		{
+			id: "66A007F959CB4D39"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "34053C885F68669B"
+				item: "twilightforest:alpha_yeti_fur"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 6.0d
+		}
+		{
+			id: "46F40387760C8804"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0C32DE1512C8DF53"
+				item: "twilightforest:fiery_ingot"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 6.0d
+		}
 	]
 	title: "[III] &e暮色秘境"
 }

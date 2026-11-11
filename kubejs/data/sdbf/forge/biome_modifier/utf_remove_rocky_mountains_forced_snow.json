@@ -1,0 +1,12 @@
+{
+  "type": "forge:remove_features",
+  "biomes": "terralith:rocky_mountains",
+  "features": [
+    "terralith:mountains/rocky/snow",
+    "terralith:mountains/rocky/funny_snow",
+    "terralith:mountains/rocky/funny_snow_segwit_2x"
+  ],
+  "steps": [
+    "raw_generation"
+  ]
+}

@@ -113,5 +113,36 @@ LootJS.modifiers(event => {
 
     chestModifier.replaceLoot("#forge:seeds", 'slashblade:proudsoul_tiny', true);
 
+    // 基础信息饰品、魔镜、幸运围巾及两件豆腐饰品按各箱子的概率独立判定，时运 II 附魔书使用三倍概率。
+    let infoCurioLoot = [
+        'terra_curio:compass', 'terra_curio:depth_meter', 'terra_curio:radar', 'terra_curio:dps_meter',
+        'terra_curio:tally_counter', 'terra_curio:life_form_analyzer', 'terra_curio:metal_detector',
+        'terra_curio:sextant', 'terra_curio:weather_radio', 'terra_curio:fishermans_pocket_guide',
+        'terra_curio:stopwatch', 'terra_curio:magic_mirror', 'artifacts:lucky_scarf',
+        'slashblade_sendims:tofu_miner_lantern', 'slashblade_sendims:tofu_hunter_knife'
+    ];
+    let tofuChestChances = [
+        ['tofucraft:chests/tofu_village/tofu_village_chest', 0.030],
+        ['tofucraft:chests/tofu_village/soyworker_chest', 0.030],
+        ['tofucraft:chests/tofu_village/tofusmith_chest', 0.030],
+        ['tofucraft:chests/tofu_ruins_chest', 0.045],
+        ['tofucraft:chests/tofu_castle/tofu_castle_hidden_bridge', 0.060],
+        ['tofucraft:chests/tofu_castle/tofu_castle_chest', 0.075]
+    ];
+    let fortuneBook = () => LootEntry.of(Item.of('minecraft:enchanted_book', '{StoredEnchantments:[{id:"minecraft:fortune",lvl:2s}]}'));
+    tofuChestChances.forEach(entry => {
+        let modifier = event.addLootTableModifier(entry[0]);
+        infoCurioLoot.forEach(id => {
+            modifier = modifier.pool(p => {
+                p.randomChance(entry[1]);
+                p.addLoot(id);
+            });
+        });
+        modifier = modifier.pool(p => {
+            p.randomChance(entry[1] * 3);
+            p.addLoot(fortuneBook());
+        });
+    });
+
 });
 

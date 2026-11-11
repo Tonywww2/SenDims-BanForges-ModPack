@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-10",
+  "defaultSource": "docs/archive/chunk-performance-2026-11-07/terrain-replacements/height-survey-original-server-preset.json",
+  "files": [
+    "config/ultraterraforged/server-preset.json",
+    "config/ultraterraforged/modpack-presets/SDBF_Continental.json",
+    "kubejs/data/ultraterraforged/ultraterraforged/worldgen/preset/preset.json"
+  ],
+  "restoredTerrainParameters": [
+    "caveFeatures.giantCaverns.frequency",
+    "caveFeatures.karstCaves.size",
+    "caveFeatures.layerCaves.frequency",
+    "caveFeatures.undergroundRivers.frequency",
+    "climate.biomeShape.biomeSize",
+    "climate.biomeShape.biomeWarpStrength",
+    "coasts.coastalIslands.frequency",
+    "coasts.islandArcs.frequency",
+    "coasts.peninsulas.frequency",
+    "coasts.peninsulas.size",
+    "coasts.skerries.density",
+    "landforms.atolls.frequency",
+    "oceans.shelves.width",
+    "rivers.branchRivers.bankWidth",
+    "rivers.branchRivers.bedWidth",
+    "rivers.gorgeDepth",
+    "rivers.lakes.chance",
+    "rivers.lakes.sizeMax",
+    "rivers.lakes.sizeMin",
+    "rivers.mainRivers.bankWidth",
+    "rivers.mainRivers.bedWidth",
+    "rivers.riverCount",
+    "terrain.general.globalHorizontalScale",
+    "terrain.general.terrainRegionSize",
+    "terrain.hills.horizontalScale",
+    "terrain.mountains.horizontalScale",
+    "world.continent.continentScale",
+    "world.continent.continentSizeVariance",
+    "world.continent.continentSkipping"
+  ],
+  "retainedCompatibility": {
+    "world.properties.worldHeight": 320,
+    "world.properties.worldDepth": 64,
+    "miscellaneous.customBiomeFeatures": false
+  },
+  "backup": "C:\\Users\\Tony\\AppData\\Roaming\\PrismLauncher\\instances\\SenDimsBanForges\\minecraft\\.sdbf-backups\\utf-default-2026-11-10",
+  "validation": "JSON equality and source-default comparison. No gameplay or performance tests.",
+  "package": "C:\\Users\\Tony\\AppData\\Roaming\\PrismLauncher\\instances\\SenDimsBanForges\\minecraft\\docs\\releases\\SDBF-Update-2026-11-08.zip",
+  "packageSha256": "9183ec87f2178d5127c678cb1a4ab1971a00b83894ddb9a5fcd580137389a231",
+  "updatedPackageFiles": [
+    "config/ultraterraforged/server-preset.json",
+    "config/ultraterraforged/modpack-presets/SDBF_Continental.json",
+    "kubejs/data/ultraterraforged/ultraterraforged/worldgen/preset/preset.json"
+  ]
+}

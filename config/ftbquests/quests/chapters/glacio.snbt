@@ -307,7 +307,7 @@
 				item: "cataclysm:black_steel_ingot"
 				type: "item"
 			}]
-			x: 0.0d
+			x: 3.0d
 			y: 3.0d
 		}
 		{
@@ -319,7 +319,7 @@
 				item: "cataclysm:cursed_eye"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 6.0d
 			y: 3.0d
 		}
 		{
@@ -338,7 +338,33 @@
 				type: "structure"
 			}]
 			title: "苦寒监牢"
-			x: 6.0d
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2E150AF7AD2E748B"]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "7675EFBFFA471AEE"
+			quest_enhance_disable_scroll_paging: false
+			shape: "none"
+			tasks: [{
+				id: "2557FE0EC8D57758"
+				type: "checkmark"
+			}]
+			title: "Tetra材料/可获得的实用物品"
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2E150AF7AD2E748B"]
+			id: "70D859AE8F0CEF5A"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "60617A67815A54DC"
+				item: "kubejs:unmelting_ice"
+				type: "item"
+			}]
+			x: -4.0d
 			y: 3.0d
 		}
 	]

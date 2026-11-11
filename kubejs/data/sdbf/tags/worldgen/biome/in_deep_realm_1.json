@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "cavernous:crystal_caves",
+    "cavernous:desert_caves",
+    "cavernous:icy_caves",
+    "cavernous:marble_caves",
+    "cavernous:marshy_caves",
+    "cavernous:painted_caves",
+    "cavernous:tropical_caves",
+    "cavernous:volcanic_caves",
+    "darkerdepths:sandy_catacombs",
+    "sdbf:deep_realm_1/deep_dark",
+    "minecraft:lush_caves",
+    "regions_unexplored:ancient_delta",
+    "sdbf:deep_realm_1/amethyst_caves",
+    "sdbf:deep_realm_1/deeprock_caverns",
+    "sdbf:deep_realm_1/molten_caves",
+    "sdbf:deep_realm_1/sulfide_caves",
+    "yungscavebiomes:frosted_caves"
+  ]
+}

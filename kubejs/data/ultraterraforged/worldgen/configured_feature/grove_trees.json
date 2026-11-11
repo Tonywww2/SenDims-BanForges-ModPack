@@ -1,0 +1,31 @@
+{
+  "type": "ultraterraforged:chance",
+  "config": {
+    "entries": [
+      {
+        "chance": 0.1,
+        "feature": "ultraterraforged:spruce/small_on_snow",
+        "modifiers": [
+          {
+            "type": "ultraterraforged:elevation",
+            "exclusive": false,
+            "from": 1.0,
+            "to": 0.2
+          }
+        ]
+      },
+      {
+        "chance": 0.25,
+        "feature": "ultraterraforged:spruce/large_on_snow",
+        "modifiers": [
+          {
+            "type": "ultraterraforged:elevation",
+            "exclusive": false,
+            "from": 0.3,
+            "to": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

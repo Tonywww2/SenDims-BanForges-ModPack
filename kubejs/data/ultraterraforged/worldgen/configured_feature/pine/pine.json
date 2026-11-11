@@ -1,0 +1,27 @@
+{
+  "type": "ultraterraforged:template",
+  "config": {
+    "decorator": {
+      "biome_decorators": {},
+      "default_decorators": []
+    },
+    "paste": {
+      "base_depth": 3,
+      "check_bounds": true
+    },
+    "placement": {
+      "type": "ultraterraforged:tree"
+    },
+    "templates": [
+      "ultraterraforged:structures/trees/pine/huangshan_pine_1.nbt",
+      "ultraterraforged:structures/trees/pine/huangshan_pine_2.nbt",
+      "ultraterraforged:structures/trees/pine/huangshan_pine_3.nbt",
+      "ultraterraforged:structures/trees/pine/scots_pine_1.nbt",
+      "ultraterraforged:structures/trees/pine/scots_pine_2.nbt",
+      "ultraterraforged:structures/trees/pine/scots_pine_small_1.nbt",
+      "ultraterraforged:structures/trees/pine/scots_pine_small_2.nbt",
+      "ultraterraforged:structures/trees/pine/scots_pine_1.nbt",
+      "ultraterraforged:structures/trees/pine/scots_pine_2.nbt"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "ultraterraforged:add",
+  "biomes": {
+    "behavior": "whitelist",
+    "biomes": "#ultraterraforged:features/has_forest_grass"
+  },
+  "features": "ultraterraforged:forest_grass",
+  "order": "prepend",
+  "step": "vegetal_decoration"
+}

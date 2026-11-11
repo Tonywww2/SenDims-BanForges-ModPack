@@ -511,6 +511,116 @@
 			x: 15.0d
 			y: 12.0d
 		}
+		{
+			dependencies: ["35A8F36675442F8B"]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "3469DA0BEE6369DF"
+			quest_enhance_disable_scroll_paging: false
+			shape: "none"
+			tasks: [{
+				id: "205BC1857688E976"
+				type: "checkmark"
+			}]
+			title: "Tetra材料/可获得的实用物品"
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["35A8F36675442F8B"]
+			id: "357885D1E3D95F71"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3888E4FE1B836D99"
+				item: "undergarden:cloggrum_ingot"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["35A8F36675442F8B"]
+			id: "58AEBD56F12A8BE7"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6A08BB35ED3AED1F"
+				item: "undergarden:utherium_crystal"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["35A8F36675442F8B"]
+			id: "7F0043C9D7D69CA5"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "60D8F816391A4E3F"
+				item: "undergarden:froststeel_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["35A8F36675442F8B"]
+			id: "5EA22C0669156E22"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5B362426D7209417"
+				item: "nuclearcraft:neutronium_ingot"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["35A8F36675442F8B"]
+			id: "48235D177C24439C"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7C9274DBB317F2B3"
+				item: "nuclearcraft:xenorium_298"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["35A8F36675442F8B"]
+			id: "6DF2DA5A83EA7232"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "76BD689602FFFE01"
+				item: "undergarden:regalium_crystal"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["35A8F36675442F8B"]
+			id: "372D7D0237ED6FF0"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0EBF886E9378F851"
+				item: "undergarden:forgotten_ingot"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["35A8F36675442F8B"]
+			id: "71D4870BB8EFB5E9"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "656DAEAE9171F484"
+				item: "kubejs:coil_of_sorrow"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 5.0d
+		}
 	]
 	title: "[VII] &e深园与废土"
 }

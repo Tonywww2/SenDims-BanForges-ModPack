@@ -110,9 +110,39 @@ ServerEvents.recipes(event => {
         })
         .id("sdbf:principle_of_sword_arts_copy_sas")
 
+    // SA 宝珠：原版 SA 与对应的弹药 SA 可通过合成互相转换，宝珠上的其他 NBT 保留
+    let saAmmoPairs = [
+        ['slashblade:void_slash', 'slashblade_sendims:void_slash_ammo'],
+        ['slashblade:wave_edge', 'slashblade_sendims:wave_edge_ammo'],
+        ['slashblade:sakura_end', 'slashblade_sendims:sakura_end_ammo']
+    ]
+    let saSphere = sa => Item.of('slashblade:proudsoul_sphere', `{SpecialAttackType:"${sa}"}`)
+    let addSaSphereConversion = (from, to, recipeId) => {
+        event.shapeless(saSphere(to), [saSphere(from).weakNBT()])
+            .modifyResult((grid, result) => {
+                let sphere = grid.find('slashblade:proudsoul_sphere')
+                if (!sphere || !sphere.nbt) return result
+                let converted = sphere.copy()
+                converted.setCount(1)
+                converted.getOrCreateTag().putString('SpecialAttackType', to)
+                return converted
+            })
+            .id(recipeId)
+    }
+    saAmmoPairs.forEach(pair => {
+        let name = pair[0].split(':')[1]
+        addSaSphereConversion(pair[0], pair[1], `sdbf:sa_sphere/${name}_to_ammo`)
+        addSaSphereConversion(pair[1], pair[0], `sdbf:sa_sphere/${name}_from_ammo`)
+    })
+
     event.shapeless('slashbladeskin:sheath_design_drawing',
         ['last_smith:scroll_basic', 'minecraft:writable_book', 'slashblade:proudsoul'])
         .id("sdbf:sheath_design_drawing")
+
+    // 地图传送粉：地图传送仪式（结构羽毛笔地图 3000 格以上传送）的消耗品
+    event.shapeless('kubejs:map_teleport_powder',
+        ['minecraft:ender_pearl', 'slashblade:proudsoul', 'minecraft:glowstone_dust', 'minecraft:redstone'])
+        .id('sdbf:map_teleport_powder')
 
     event.shaped('2x integrateddynamics:logic_director', [
         'ACA',

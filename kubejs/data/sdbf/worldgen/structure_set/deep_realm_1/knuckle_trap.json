@@ -1,0 +1,14 @@
+{
+	"structures": [
+		{
+			"structure": "sdbf:deep_realm_1/knuckle_trap",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"type": "minecraft:random_spread",
+		"salt": 142624494,
+		"spacing": 18,
+		"separation": 6
+	}
+}

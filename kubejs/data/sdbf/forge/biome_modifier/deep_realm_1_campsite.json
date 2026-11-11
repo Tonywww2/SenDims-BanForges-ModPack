@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#sdbf:in_deep_realm_1",
+  "features": "sdbf:deep_realm_1/campsite",
+  "step": "underground_structures"
+}
