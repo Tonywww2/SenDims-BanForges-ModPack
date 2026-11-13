@@ -102,4 +102,18 @@ ServerEvents.recipes(event => {
         result: [{ item: 'ad_astra:etrium_plate' }]
     }).id('sdbf:thermal_press/etrium_plate')
 
+    // 磨粉机：赛特斯石英水晶 / 福鲁伊克斯水晶 → 对应粉，参数同 thermal:machines/pulverizer/pulverizer_quartz
+    let thermalAeDustRecipes = [
+        ['certus_quartz', 'forge:gems/certus_quartz', 'ae2:certus_quartz_dust'],
+        ['fluix', 'forge:gems/fluix', 'ae2:fluix_dust']
+    ]
+
+    thermalAeDustRecipes.forEach(([material, input, output]) => {
+        event.custom({
+            type: 'thermal:pulverizer',
+            ingredient: { tag: input },
+            result: [{ item: output, count: 1 }]
+        }).id(`sdbf:thermal_pulverizer/${material}_dust`)
+    })
+
 })

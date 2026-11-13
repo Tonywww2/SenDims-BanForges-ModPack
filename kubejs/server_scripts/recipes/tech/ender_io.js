@@ -65,4 +65,23 @@ ServerEvents.recipes(event => {
         '#forge:ingots/energetic_alloy'
     )
 
+    // SAG磨粉机：赛特斯石英水晶 / 福鲁伊克斯水晶 → 对应粉，参数同 enderio:sag_milling/quartz
+    let sagAeDustRecipes = [
+        ['certus_quartz', 'forge:gems/certus_quartz', 'ae2:certus_quartz_dust'],
+        ['fluix', 'forge:gems/fluix', 'ae2:fluix_dust']
+    ]
+
+    sagAeDustRecipes.forEach(([material, input, output]) => {
+        event.custom({
+            type: 'enderio:sag_milling',
+            bonus: 'chance_only',
+            energy: 2400,
+            input: { tag: input },
+            outputs: [
+                { chance: 1.0, item: { item: output }, optional: false },
+                { chance: 0.1, item: { item: output }, optional: false }
+            ]
+        }).id(`sdbf:sag_milling/${material}_dust`)
+    })
+
 })

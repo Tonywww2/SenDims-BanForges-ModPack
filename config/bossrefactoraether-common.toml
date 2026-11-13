@@ -62,7 +62,7 @@
 		barrier_reduction_per_layer = 0.05
 		#Recovery duration after a successful parry, in ticks.
 		#成功招架后的恢复时间，单位为 tick。
-		#Range: 1 ~ 72000
+		#Range: 30 ~ 100
 		parry_recovery_ticks = 60
 		#Stun duration after barrier break, in ticks.
 		#屏障全部破碎后的眩晕时间，单位为 tick。
@@ -183,7 +183,7 @@
 	[slider.timing]
 		#Continuous Glide windup.
 		#连续滑行前摇。
-		#Range: 0 ~ 72000
+		#Range: 20 ~ 72000
 		continuous_glide_windup_ticks = 30
 		#Maximum duration of each dash.
 		#每次连续冲刺的最大持续时间。
@@ -501,11 +501,11 @@
 		skill_recovery_ticks = 28
 		#Martial Skill I windup.
 		#武神技一前摇。
-		#Range: 0 ~ 72000
+		#Range: 20 ~ 72000
 		skill_one_windup_ticks = 36
 		#Martial Skill II windup.
 		#武神技二前摇。
-		#Range: 0 ~ 72000
+		#Range: 20 ~ 72000
 		skill_two_windup_ticks = 34
 		#Spear Throw windup.
 		#武神技·投掷前摇。
@@ -545,7 +545,7 @@
 		thunder_cloud_damage_interval_ticks = 20
 		#Recovery after being parried.
 		#被招架后的恢复时间。
-		#Range: 1 ~ 72000
+		#Range: 30 ~ 100
 		parry_recovery_ticks = 40
 
 	#Valkyrie Queen range and movement geometry.
@@ -761,11 +761,11 @@
 		projectile_windup_ticks = 24
 		#Rising Flame windup.
 		#烈焰升腾前摇。
-		#Range: 0 ~ 72000
+		#Range: 20 ~ 72000
 		rising_flame_windup_ticks = 36
 		#Titan Fist windup.
 		#巨神之拳前摇。
-		#Range: 0 ~ 72000
+		#Range: 20 ~ 72000
 		titan_fist_windup_ticks = 32
 		#Distinct dedicated-summon windup.
 		#具有明显区别的专用召唤前摇。
@@ -801,7 +801,7 @@
 		shield_cooldown_ticks = 100
 		#Recovery after a SlashBlade parry.
 		#被拔刀剑招架后的恢复时间。
-		#Range: 1 ~ 72000
+		#Range: 30 ~ 100
 		parry_recovery_ticks = 40
 		#Interval between automatic phase-two flame sigils.
 		#二阶段自动烈焰法阵间隔。

@@ -1,0 +1,15 @@
+﻿WinSCP 主世界区域文件清理
+
+保留：文件名 r.X.Z.mca 中 X、Z 都在 -11 到 10 之间（方块坐标 -5632 到 5631）。
+处理：主世界存档 region、entities、poi 三个文件夹里其余的 r.X.Z.mca。其他维度不受影响。
+
+使用步骤：
+1. 用记事本打开 settings.bat，确认 WORLD 是服务端主世界存档文件夹（server.properties 里的 level-name，默认 world）。
+   站点名已填为 WinSCP 里保存的站点，WinSCP 里需已保存密码。
+2. 双击 1-preview.bat：只列出将被处理的文件和数量，不改动服务端。
+3. 关闭服务端。
+4. 双击 2-move-to-holding.bat（推荐）：把这些文件移到服务端的 /world_removed_regions 文件夹。
+   开服确认没问题后，在 WinSCP 里删除 /world_removed_regions 文件夹即可；有问题就把文件移回原处。
+   或者双击 3-delete-directly.bat：直接删除，无法撤销。
+
+每一步的详细日志写在同目录的 *.log 里。

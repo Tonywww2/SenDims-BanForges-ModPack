@@ -301,6 +301,7 @@ let mobTypes = new Map([
     ["terra_entity:leech", typeC],
     ["quark:wraith", typeA],
     ["twilightforest:mosquito_swarm", typeB],
+    ["species:cruncher", typeA],
 
     ["cataclysm:netherite_monstrosity", bossType2],
 
@@ -517,6 +518,8 @@ let mobTypes = new Map([
     ["elder_bosses:malenia", bossType3],
     ["elder_bosses:promised_consort", bossType4],
     ["elder_bosses:promised_consort_clone", bossType4],
+
+    ["slashblade_sendims:twilight_blade_warden", bossType1],
 
 ]);
 

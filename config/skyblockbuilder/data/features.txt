@@ -1292,7 +1292,6 @@ sdbf:deep_realm_1/deep_dark/patch_floor
 sdbf:deep_realm_1/deeprock_caverns/cobwebs
 sdbf:deep_realm_1/deeprock_caverns/patch_ceiling
 sdbf:deep_realm_1/deeprock_caverns/patch_floor
-sdbf:deep_realm_1/deeprock_caverns/replace
 sdbf:deep_realm_1/depths
 sdbf:deep_realm_1/generic/big_pillar
 sdbf:deep_realm_1/generic/ceiling
@@ -1304,7 +1303,6 @@ sdbf:deep_realm_1/generic/ores/iron
 sdbf:deep_realm_1/generic/ores/redstone
 sdbf:deep_realm_1/generic/pile
 sdbf:deep_realm_1/generic/pillar
-sdbf:deep_realm_1/generic/replace
 sdbf:deep_realm_1/generic/rock
 sdbf:deep_realm_1/generic/small_pillar
 sdbf:deep_realm_1/molten_caves/delta

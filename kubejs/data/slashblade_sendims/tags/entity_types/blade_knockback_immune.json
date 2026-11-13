@@ -1,0 +1,61 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "twilightforest:king_spider",
+      "required": false
+    },
+    {
+      "id": "ancient_aether:fluffalo",
+      "required": false
+    },
+    {
+      "id": "terra_entity:dungeon_guardian",
+      "required": false
+    },
+    {
+      "id": "terra_entity:deerclops",
+      "required": false
+    },
+    {
+      "id": "final_samurai:samurai",
+      "required": false
+    },
+    {
+      "id": "the_bumblezone:bee_queen",
+      "required": false
+    },
+    {
+      "id": "minecraft:elder_guardian",
+      "required": false
+    },
+    {
+      "id": "draconicevolution:draconic_guardian",
+      "required": false
+    },
+    {
+      "id": "titan_moon:native_ice_worm",
+      "required": false
+    },
+    {
+      "id": "netherman:azazel_human",
+      "required": false
+    },
+    {
+      "id": "netherman:azazel",
+      "required": false
+    },
+    {
+      "id": "elder_bosses:malenia",
+      "required": false
+    },
+    {
+      "id": "elder_bosses:promised_consort",
+      "required": false
+    },
+    {
+      "id": "elder_bosses:promised_consort_clone",
+      "required": false
+    }
+  ]
+}

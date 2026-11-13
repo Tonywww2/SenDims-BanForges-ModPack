@@ -143,12 +143,13 @@ ServerEvents.recipes(event => {
         "timeModifier": 0.5
     }).id("sdbf:lava_collect")
 
+    // 球状闪电室：量子升级 → 神铸珍珠，参数同 nuclearcraft:kugelblitz_chamber/upgrade_stack
     event.custom({
         "type": "nuclearcraft:kugelblitz_chamber",
         "input": [{ "item": 'nuclearcraft:upgrade_quantum' }],
-        "output": [{ "item": 'nuclearcraft:upgrade_quantum' }],
-        "powerModifier": 1.0, "radiation": 1.0, "timeModifier": 1.0
-    }).id("sdbf:upgrade_quantum")
+        "output": [{ "item": 'apotheosis:mythic_material' }],
+        "powerModifier": 1.0, "radiation": 1.0, "timeModifier": 2.0
+    }).id("sdbf:kugelblitz_chamber/mythic_material")
 
     event.custom({
         "type": "nuclearcraft:kugelblitz_chamber",
@@ -226,5 +227,20 @@ ServerEvents.recipes(event => {
         "output": [{ "item": "nuclearcraft:boron_chunk" }],
         "powerModifier": 2.0, "radiation": 1.0, "timeModifier": 2.0
     }).id('sdbf:nuclearcraft_crystallizer/boron_chunk_from_molten_boron')
+
+    // 小制造机：赛特斯石英水晶 / 福鲁伊克斯水晶 → 对应粉，参数同 nuclearcraft:manufactory/quartz
+    let manufactoryAeDustRecipes = [
+        ['certus_quartz', 'forge:gems/certus_quartz', 'ae2:certus_quartz_dust'],
+        ['fluix', 'forge:gems/fluix', 'ae2:fluix_dust']
+    ]
+
+    manufactoryAeDustRecipes.forEach(([material, input, output]) => {
+        event.custom({
+            "type": "nuclearcraft:manufactory",
+            "input": [{ "tag": input }],
+            "output": [{ "item": output }],
+            "powerModifier": 1.0, "radiation": 1.0, "timeModifier": 1.0
+        }).id(`sdbf:nuclearcraft_manufactory/${material}_dust`)
+    })
 
 })

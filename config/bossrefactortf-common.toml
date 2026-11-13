@@ -61,13 +61,17 @@
 		#Minimum horizontal player distance for non-possessed knights.
 		#Range: 0.0 ~ 64.0
 		player_avoidance_distance = 10.0
+		#Highest point Knight Phantoms fly to, measured from the ground under their target
+		#(or from their home point when they have no target).
+		#Range: 0.0 ~ 64.0
+		maximum_height_above_ground = 3.0
 
 	#Sequential Knight Charge.
 	[knight_phantom.charge]
 		#Enable sequential Knight Charges.
 		enabled = true
 		#Windup before each knight's first charge, in ticks.
-		#Range: 0 ~ 1200
+		#Range: 20 ~ 1200
 		windup_ticks = 30
 		#Maximum duration of one charge, in ticks.
 		#Range: 1 ~ 1200
@@ -102,7 +106,7 @@
 		#Range: 0.0 ~ 128.0
 		maximum_distance = 30.0
 		#Parry feedback and stationary vulnerability duration, in ticks.
-		#Range: 1 ~ 1200
+		#Range: 30 ~ 100
 		parry_stun_ticks = 40
 
 	#Last Knight phase.
@@ -122,8 +126,8 @@
 		#Range: 1 ~ 100
 		charge_count = 3
 		#Windup before each final-knight charge segment, in ticks.
-		#Range: 0 ~ 1200
-		windup_ticks = 15
+		#Range: 20 ~ 1200
+		windup_ticks = 20
 
 #Alpha Yeti combat refactor settings.
 [alpha_yeti]
@@ -131,10 +135,10 @@
 	enabled = true
 	#Minimum cruise duration after a skill, in ticks.
 	#Range: 1 ~ 1200
-	cruise_minimum_ticks = 20
+	cruise_minimum_ticks = 15
 	#Maximum cruise duration after a skill, in ticks.
 	#Range: 1 ~ 1200
-	cruise_maximum_ticks = 50
+	cruise_maximum_ticks = 35
 	#Rest duration after reaching three fatigue, in ticks.
 	#Range: 1 ~ 2400
 	rest_duration_ticks = 200
@@ -154,7 +158,7 @@
 		#Range: 1 ~ 1200
 		roar_ticks = 20
 		#Pursuit duration, in ticks.
-		#Range: 1 ~ 2400
+		#Range: 20 ~ 2400
 		duration_ticks = 120
 		#Ticks between 100% attack-damage pulses.
 		#Range: 1 ~ 1200
@@ -219,8 +223,8 @@
 		#Allow SlashBlade parries to add pursuit imbalance.
 		slashblade_enabled = true
 		#Feedback duration returned to the parry integration, in ticks.
-		#Range: 1 ~ 1200
-		feedback_ticks = 10
+		#Range: 30 ~ 100
+		feedback_ticks = 30
 
 #Ur-Ghast combat takeover settings.
 [ur_ghast]
@@ -316,4 +320,803 @@
 		#Particles in each red energy ring.
 		#Range: 4 ~ 256
 		energy_ring_particles = 24
+
+#Minoshroom combat takeover settings.
+[minoshroom]
+	#Enable the complete Minoshroom combat takeover.
+	enabled = true
+
+	#Base traits.
+	[minoshroom.base_traits]
+		#Ticks between close-range block destruction scans.
+		#Range: 1 ~ 1200
+		block_destruction_interval_ticks = 5
+		#Horizontal inflation of the block destruction bounds.
+		#Range: 0.0 ~ 8.0
+		block_destruction_horizontal_range = 0.5
+		#Vertical inflation of the block destruction bounds.
+		#Range: 0.0 ~ 8.0
+		block_destruction_vertical_range = 0.5
+		#Damage sources beyond this three-dimensional distance are reduced.
+		#Range: 0.0 ~ 128.0
+		ranged_damage_reduction_radius = 4.0
+		#Fraction of distant source-position damage prevented.
+		#Range: 0.0 ~ 1.0
+		ranged_damage_reduction = 0.2
+
+	#Cruise scheduling.
+	[minoshroom.cruise]
+		#Range: 1 ~ 1200
+		minimum_ticks = 20
+		#Range: 1 ~ 1200
+		maximum_ticks = 40
+		#Range: 0.0 ~ 20.0
+		navigation_speed = 1.0
+
+	#Repeated dash and sweep rounds.
+	[minoshroom.sweep]
+		#Range: 20 ~ 1200
+		initial_windup_ticks = 20
+		#Range: 0.0 ~ 128.0
+		dash_maximum_distance = 6.0
+		#Range: 1 ~ 1200
+		dash_duration_ticks = 8
+		#Range: 0.0 ~ 20.0
+		dash_navigation_speed = 1.5
+		#Range: 0.0 ~ 16.0
+		dash_hitbox_inflation = 0.5
+		#Range: 0.0 ~ 100.0
+		dash_damage_multiplier = 1.0
+		#Range: 1 ~ 1200
+		strike_windup_ticks = 5
+		#Range: 0.1 ~ 64.0
+		strike_radius = 4.0
+		#Range: 1.0 ~ 360.0
+		strike_arc_degrees = 180.0
+		#Range: 0.0 ~ 100.0
+		strike_damage_multiplier = 1.5
+		#Range: 30 ~ 100
+		parry_stun_ticks = 40
+		#Range: 0.0 ~ 1.0
+		repeat_probability = 0.5
+		#Maximum full rounds after the initial round.
+		#Range: 0 ~ 100
+		maximum_repeats = 4
+		#Minimum total sweep rounds in phase two.
+		#Range: 1 ~ 101
+		second_phase_minimum_rounds = 2
+
+	#Ground stomp.
+	[minoshroom.stomp]
+		#Range: 1 ~ 1200
+		windup_ticks = 30
+		#Range: 0.1 ~ 64.0
+		radius = 5.0
+		#Chance to select stomp when the target is within range.
+		#Range: 0.0 ~ 1.0
+		selection_probability = 0.25
+		#Range: 0.0 ~ 100.0
+		damage_multiplier = 1.0
+		#Range: 0.0 ~ 16.0
+		horizontal_knockback = 1.0
+		#Range: 0.0 ~ 16.0
+		minimum_vertical_velocity = 0.6
+		#Range: 1 ~ 100
+		second_phase_count = 2
+		#Range: 1 ~ 1200
+		second_phase_interval_ticks = 10
+
+	#Second phase.
+	[minoshroom.second_phase]
+		#Phase two starts strictly below this health fraction.
+		#Range: 0.0 ~ 1.0
+		health_fraction = 0.5
+		#Range: 0.0 ~ 20.0
+		windup_multiplier = 0.5
+		#Range: 0.0 ~ 20.0
+		damage_multiplier = 1.2
+		#Range: 0.0 ~ 20.0
+		speed_multiplier = 1.2
+		#Red multiplier for the phase-two full-model tint.
+		#Range: 0.0 ~ 1.0
+		red_tint = 1.0
+		#Green multiplier for the phase-two full-model tint.
+		#Range: 0.0 ~ 1.0
+		green_tint = 0.35
+		#Blue multiplier for the phase-two full-model tint.
+		#Range: 0.0 ~ 1.0
+		blue_tint = 0.35
+
+#Naga combat takeover settings.
+[naga]
+	#Enable the complete Naga combat takeover.
+	enabled = true
+	#Minimum cruise duration between skills.
+	#Range: 1 ~ 1200
+	cruise_minimum_ticks = 20
+	#Maximum cruise duration between skills.
+	#Range: 1 ~ 1200
+	cruise_maximum_ticks = 40
+	#Navigation speed during ordinary cruise.
+	#Range: 0.0 ~ 20.0
+	cruise_speed = 1.0
+	#Shield cooldown after blocking pounce or charge.
+	#Range: 0 ~ 12000
+	shield_cooldown_ticks = 100
+	#Stun duration after a successful defensive reaction.
+	#Range: 1 ~ 12000
+	stun_duration_ticks = 60
+	#Feedback duration returned to SenDimS.
+	#Range: 30 ~ 100
+	parry_feedback_ticks = 60
+	#Warning particles emitted per windup tick.
+	#Range: 0 ~ 128
+	windup_particles_per_tick = 4
+
+	#Vanilla charge.
+	[naga.charge]
+		#Range: 1 ~ 12000
+		cooldown_ticks = 100
+		#Stationary warning before a charge, in game ticks. The parry window covers the warning and the charge.
+		#Range: 20 ~ 200
+		windup_ticks = 20
+
+	#Pounce.
+	[naga.pounce]
+		#Range: 20 ~ 1200
+		windup_ticks = 30
+		#Range: 1 ~ 1200
+		flight_ticks = 20
+		#Range: 0.1 ~ 64.0
+		impact_radius = 4.0
+		#Vertical range of the pounce impact.
+		#Range: 0.0 ~ 64.0
+		vertical_range = 4.0
+		#Range: 0.0 ~ 100.0
+		damage_multiplier = 1.5
+		#Range: 0.0 ~ 20.0
+		horizontal_speed = 1.2
+		#Range: 0.0 ~ 20.0
+		vertical_speed = 0.55
+		#Range: 1 ~ 12000
+		cooldown_ticks = 120
+
+	#Body trail and frozen pose.
+	[naga.body_control]
+		#Range: 0.1 ~ 16.0
+		segment_spacing = 2.0
+		#Range: 0.01 ~ 4.0
+		trail_sample_spacing = 0.25
+		#Range: 1.0 ~ 1024.0
+		teleport_reset_distance = 32.0
+		#Ticks used to blend combat poses back into the head trail.
+		#Range: 0 ~ 1200
+		pose_blend_ticks = 6
+
+	#Venom breath.
+	[naga.venom_breath]
+		#Range: 20 ~ 1200
+		windup_ticks = 30
+		#Range: 0.1 ~ 128.0
+		length = 16.0
+		#Range: 0.1 ~ 64.0
+		width = 4.0
+		#Range: 0.05 ~ 20.0
+		projectile_speed = 1.0
+		#Collision radius; 2.0 matches the default four-block corridor width.
+		#Range: 0.1 ~ 16.0
+		projectile_radius = 2.0
+		#Range: 0.0 ~ 100.0
+		initial_damage_multiplier = 1.0
+		#Range: 1 ~ 12000
+		cooldown_ticks = 160
+		#Range: 1 ~ 12000
+		cloud_duration_ticks = 140
+		#Range: 0.1 ~ 64.0
+		cloud_radius = 3.0
+		#Vertical range of venom cloud damage.
+		#Range: 0.0 ~ 64.0
+		cloud_vertical_range = 3.0
+		#Range: 1 ~ 1200
+		damage_interval_ticks = 20
+		#Range: 0.0 ~ 100.0
+		damage_multiplier = 0.2
+		#Range: 1 ~ 12000
+		poison_duration_ticks = 100
+		#Zero-based effect amplifier; 1 is Poison II.
+		#Range: 0 ~ 255
+		poison_amplifier = 1
+		#Distance that a shield-blocked venom cloud is moved back along the incoming horizontal path.
+		#Range: 0.0 ~ 16.0
+		blocked_cloud_offset = 0.75
+
+		#Fluorescent venom colors, expressed as RGB channels from 0 to 255.
+		[naga.venom_breath.particles]
+			#Range: 0 ~ 255
+			primary_red = 190
+			#Range: 0 ~ 255
+			primary_green = 255
+			#Range: 0 ~ 255
+			primary_blue = 35
+			#Range: 0 ~ 255
+			secondary_red = 18
+			#Range: 0 ~ 255
+			secondary_green = 105
+			#Range: 0 ~ 255
+			secondary_blue = 18
+			#Range: 0.01 ~ 16.0
+			primary_scale = 1.4
+			#Range: 0.01 ~ 16.0
+			secondary_scale = 2.2
+
+			#Moving venom projectile particles.
+			[naga.venom_breath.particles.projectile]
+				#Bright color-transition core particles per tick.
+				#Range: 0 ~ 256
+				core_particles = 12
+				#Dark green outer dust particles per tick.
+				#Range: 0 ~ 256
+				mist_particles = 8
+				#Slime splash particles per tick.
+				#Range: 0 ~ 256
+				splash_particles = 3
+				#Fluorescent entity-effect particles per tick.
+				#Range: 0 ~ 256
+				glow_particles = 2
+				#Range: 0.0 ~ 16.0
+				core_spread = 0.2
+				#Range: 0.0 ~ 16.0
+				mist_spread = 0.6
+				#Range: 0.0 ~ 4.0
+				particle_speed = 0.025
+
+			#Low venom cloud particles.
+			[naga.venom_breath.particles.cloud]
+				#Bright color-transition core particles per tick.
+				#Range: 0 ~ 256
+				core_particles = 8
+				#Dark green outer dust particles per tick.
+				#Range: 0 ~ 256
+				mist_particles = 12
+				#Bubble pop particles per tick.
+				#Range: 0 ~ 256
+				bubble_particles = 3
+				#Slime splash particles per tick.
+				#Range: 0 ~ 256
+				splash_particles = 3
+				#Fluorescent entity-effect particles per tick.
+				#Range: 0 ~ 256
+				glow_particles = 4
+				#Range: 0.0 ~ 32.0
+				core_spread = 1.2
+				#Range: 0.0 ~ 32.0
+				mist_spread = 2.2
+				#Height above the cloud center used for all cloud particles.
+				#Range: -4.0 ~ 8.0
+				particle_height = 0.15
+				#Range: 0.0 ~ 4.0
+				particle_speed = 0.015
+
+	#Second phase and fire snake.
+	[naga.second_phase]
+		#Phase two starts strictly below this health fraction.
+		#Range: 0.0 ~ 1.0
+		health_fraction = 0.5
+		#Range: 0.0 ~ 20.0
+		attack_multiplier = 1.2
+		#Range: 0.0 ~ 20.0
+		speed_multiplier = 1.2
+		#Range: 1 ~ 12000
+		stun_immunity_recovery_ticks = 300
+		#Range: 1 ~ 12000
+		fire_snake_duration_ticks = 300
+		#Range: 0 ~ 12000
+		fire_snake_cooldown_ticks = 600
+		#Range: 1 ~ 12000
+		fire_point_duration_ticks = 200
+		#Range: 0.1 ~ 32.0
+		fire_point_spacing = 1.5
+		#Range: 0.1 ~ 32.0
+		fire_damage_radius = 1.5
+		#Vertical range of fire point damage.
+		#Range: 0.0 ~ 64.0
+		fire_vertical_range = 3.0
+		#Range: 0.1 ~ 128.0
+		fire_start_orbit_radius = 12.0
+		#Range: 0.1 ~ 128.0
+		fire_end_orbit_radius = 4.0
+		#Orbit angle advanced each tick, in radians.
+		#Range: 0.001 ~ 3.141592653589793
+		fire_orbit_angular_speed = 0.08
+		#Range: 0.0 ~ 20.0
+		fire_snake_speed_multiplier = 1.2
+		#Red model-color multiplier while the fire snake is active.
+		#Range: 0.0 ~ 4.0
+		fire_snake_red_multiplier = 1.0
+		#Green model-color multiplier while the fire snake is active.
+		#Range: 0.0 ~ 4.0
+		fire_snake_green_multiplier = 0.25
+		#Blue model-color multiplier while the fire snake is active.
+		#Range: 0.0 ~ 4.0
+		fire_snake_blue_multiplier = 0.2
+		#Range: 1 ~ 1200
+		fire_damage_interval_ticks = 20
+		#Range: 0.0 ~ 100.0
+		fire_damage_multiplier = 0.3
+		#Range: 0 ~ 12000
+		fire_ignite_ticks = 100
+		#Range: 0 ~ 128
+		fire_particles_per_point = 3
+
+#Lich combat takeover settings.
+[lich]
+	#Enable the complete Lich combat takeover.
+	enabled = true
+
+	#Second phase shields.
+	[lich.second_phase]
+		#Shield layers granted when the Lich first enters phase two.
+		#Range: 0 ~ 100
+		shield_layers = 5
+		#Incoming damage fraction prevented by each active shield layer. 0.1 is 10%.
+		#Range: 0.0 ~ 1.0
+		shield_damage_reduction_per_layer = 0.1
+		#Attack-damage multiplier for second-phase melee magic. 0.2 is 20% damage.
+		#Range: 0.0 ~ 100.0
+		melee_magic_damage_multiplier = 0.2
+		#Delay between ordinary second-phase melee attacks, in ticks.
+		#Range: 0 ~ 1200
+		melee_cooldown_ticks = 20
+
+	#Shield bash.
+	[lich.shield_bash]
+		#Shield bash warning duration, in ticks.
+		#Range: 20 ~ 1200
+		windup_ticks = 30
+		#Delay between shield bashes, in ticks.
+		#Range: 1 ~ 12000
+		cooldown_ticks = 120
+		#Forward length of the shield bash hit rectangle.
+		#Range: 0.1 ~ 128.0
+		length = 8.0
+		#Half-width of the shield bash hit rectangle.
+		#Range: 0.1 ~ 64.0
+		half_width = 3.0
+		#Vertical height of the shield bash hit rectangle.
+		#Range: 0.1 ~ 64.0
+		height = 4.0
+		#Attack-damage multiplier for a shield bash. 1.5 is 150% damage.
+		#Range: 0.0 ~ 100.0
+		damage_multiplier = 1.5
+		#Additional shield bash multiplier after shield consumption. 1.5 makes 225% total damage.
+		#Range: 0.0 ~ 100.0
+		shield_multiplier = 1.5
+		#Horizontal knockback applied by a shield bash.
+		#Range: 0.0 ~ 16.0
+		horizontal_knockback = 1.5
+		#Minimum upward velocity applied by a shield bash.
+		#Range: 0.0 ~ 16.0
+		vertical_velocity = 0.5
+		#Lich stun duration after a shield bash is blocked or parried, in ticks.
+		#Range: 1 ~ 1200
+		stun_ticks = 40
+		#Feedback duration returned after parrying a shield bash, in ticks.
+		#Range: 30 ~ 100
+		parry_feedback_ticks = 60
+
+	#Summoning and melee cruise.
+	[lich.summoning]
+		#Clone summon warning duration, in ticks.
+		#Range: 1 ~ 1200
+		windup_ticks = 40
+		#Delay between clone summons, in ticks.
+		#Range: 1 ~ 12000
+		cooldown_ticks = 400
+		#Maximum clone lifetime, in ticks.
+		#Range: 1 ~ 12000
+		clone_lifetime_ticks = 300
+		#Minimum melee cruise duration between skills, in ticks.
+		#Range: 1 ~ 1200
+		cruise_minimum_ticks = 40
+		#Maximum melee cruise duration between skills, in ticks.
+		#Range: 1 ~ 1200
+		cruise_maximum_ticks = 80
+		#Navigation speed during ordinary melee cruise.
+		#Range: 0.0 ~ 20.0
+		melee_speed = 0.75
+
+#Hydra combat takeover settings.
+[hydra]
+	#Enable the complete Hydra combat takeover.
+	enabled = true
+	#Base attack damage used by all custom Hydra attacks.
+	#Range: 0.0 ~ 1000.0
+	base_attack_damage = 16.0
+	#Damage multiplier for all custom attacks below half health.
+	#Range: 0.0 ~ 100.0
+	second_phase_damage_multiplier = 1.2
+	#Physical fraction of Hydra fire-skill damage; the remainder is fire damage.
+	#Range: 0.0 ~ 1.0
+	fire_physical_damage_fraction = 0.3
+	#Delay before the next primary ordinary attack.
+	#Range: 0 ~ 12000
+	ordinary_attack_interval_ticks = 40
+	#Recovery after an attack chain.
+	#Range: 0 ~ 12000
+	recovery_ticks = 20
+	#Shield cooldown after blocking an ordinary melee attack.
+	#Range: 0 ~ 12000
+	shield_cooldown_ticks = 100
+	#Feedback duration returned to SenDimS after a valid parry; the parried head also recovers for this long.
+	#Range: 30 ~ 100
+	parry_feedback_ticks = 40
+	#Vertical range of ordinary melee damage checks.
+	#Range: 0.0 ~ 64.0
+	melee_vertical_range = 4.0
+
+	#Evil fireball.
+	[hydra.evil_fireball]
+		#Range: 1 ~ 1200
+		windup_ticks = 40
+		#Range: 1 ~ 12000
+		cooldown_ticks = 200
+		#Range: 0.01 ~ 8.0
+		speed = 0.25
+		#Maximum homing turn per tick, in degrees.
+		#Range: 0.0 ~ 180.0
+		tracking_turn_degrees_per_tick = 6.0
+		#Range: 0.1 ~ 32.0
+		visual_scale = 4.0
+		#Range: 1 ~ 12000
+		lifetime_ticks = 200
+		#Range: 20 ~ 1200
+		aura_interval_ticks = 20
+		#Range: 0.1 ~ 64.0
+		aura_radius = 3.0
+		#Range: 0.0 ~ 100.0
+		aura_damage_multiplier = 1.0
+		#Range: 0.1 ~ 128.0
+		explosion_radius = 5.0
+		#Range: 0.0 ~ 100.0
+		explosion_damage_multiplier = 1.5
+		#Range: 0 ~ 12000
+		ignite_ticks = 100
+		#Range: 0 ~ 128
+		phase_two_beam_count = 3
+		#Range: 0.0 ~ 128.0
+		phase_two_beam_scatter = 6.0
+		#Range: 0.1 ~ 64.0
+		phase_two_beam_radius = 2.0
+		#Range: 1 ~ 1200
+		phase_two_beam_windup_ticks = 20
+
+	#Bite.
+	[hydra.bite]
+		#Range: 20 ~ 1200
+		windup_ticks = 20
+		#Range: 0.1 ~ 64.0
+		range = 6.0
+		#Half-angle of the bite arc.
+		#Range: 1.0 ~ 180.0
+		half_angle_degrees = 35.0
+		#Range: 0.0 ~ 100.0
+		damage_multiplier = 1.0
+
+	#Head sweep.
+	[hydra.sweep]
+		#Range: 20 ~ 1200
+		windup_ticks = 30
+		#Range: 0.1 ~ 64.0
+		radius = 8.0
+		#Range: 1.0 ~ 180.0
+		half_angle_degrees = 90.0
+		#Range: 0.0 ~ 100.0
+		damage_multiplier = 1.0
+
+	#Head slam.
+	[hydra.slam]
+		#Range: 20 ~ 1200
+		windup_ticks = 40
+		#Range: 0.1 ~ 64.0
+		radius = 5.0
+		#Range: 0.0 ~ 100.0
+		damage_multiplier = 1.5
+		#Range: 0 ~ 256
+		impact_particles = 12
+
+	#Fire Lord.
+	[hydra.fire_lord]
+		#Range: 0 ~ 12000
+		initial_delay_ticks = 200
+		#Range: 1 ~ 12000
+		cooldown_ticks = 600
+		#Range: 1 ~ 12000
+		duration_ticks = 200
+		#Range: 0.1 ~ 128.0
+		maximum_radius = 20.0
+		#Preferred distance of the locked ground center in front of the Hydra.
+		#Range: 0.0 ~ 128.0
+		ground_distance = 10.0
+		#Range: 1 ~ 1200
+		damage_interval_ticks = 20
+		#Range: 0.0 ~ 100.0
+		damage_multiplier = 0.5
+		#Additional damage multiplier for each active head.
+		#Range: 0.0 ~ 100.0
+		damage_per_active_head = 0.2
+		#Range: 0 ~ 12000
+		ignite_ticks = 100
+		#Golden-red flame particles emitted by each active head per tick.
+		#Range: 0 ~ 128
+		particles_per_head = 4
+
+	#Fire Lord flame beams.
+	[hydra.fire_lord_beams]
+		#Range: 1 ~ 1200
+		interval_ticks = 20
+		#Range: 0 ~ 128
+		count = 2
+		#Range: 0.0 ~ 128.0
+		scatter = 14.0
+		#Range: 0.1 ~ 64.0
+		radius = 2.0
+		#Range: 1 ~ 1200
+		windup_ticks = 20
+
+	#Phase-two flame beams.
+	[hydra.second_phase_beams]
+		#Range: 1 ~ 12000
+		interval_ticks = 160
+		#Range: 0 ~ 128
+		count = 3
+		#Range: 0.0 ~ 128.0
+		scatter = 16.0
+		#Range: 0.1 ~ 64.0
+		radius = 2.0
+		#Range: 1 ~ 1200
+		windup_ticks = 20
+
+	#Shared flame-beam effects.
+	[hydra.beams]
+		#Range: 0.0 ~ 100.0
+		damage_multiplier = 1.0
+		#Vertical range of Fire Lord and flame-beam damage checks.
+		#Range: 0.0 ~ 64.0
+		vertical_range = 6.0
+		#Full-bright golden-red particles emitted per pending beam tick.
+		#Range: 0 ~ 256
+		particles_per_tick = 8
+		#Range: 0 ~ 1024
+		impact_particles = 48
+		#Range: 0 ~ 256
+		lava_particles = 2
+		#Visible height of each pending flame beam.
+		#Range: 0.0 ~ 128.0
+		visual_height = 8.0
+
+#Snow Queen combat sidecar settings.
+[snow_queen]
+	#Enable Snow Queen combat sidecar changes.
+	#Changing this setting requires recreating existing Snow Queens or restarting the world/session.
+	enabled = true
+
+	#Orbiting ice shields.
+	[snow_queen.ice_shields]
+		#Ice shield count during the first phase.
+		#Range: 0 ~ 8
+		first_phase_count = 6
+		#Ice shield count during the second phase.
+		#Range: 0 ~ 8
+		second_phase_count = 6
+		#Horizontal orbit radius of ice shields.
+		#Range: 0.0 ~ 128.0
+		orbit_radius = 1.5
+		#Ice shield orbit angle advanced each tick, in degrees.
+		#Range: 0.0 ~ 360.0
+		angular_speed_degrees_per_tick = 5.0
+		#Vertical wave amplitude of orbiting ice shields.
+		#Range: 0.0 ~ 8.0
+		wave_amplitude = 0.4
+		#Ice shield vertical wave angle advanced each tick, in degrees.
+		#Range: 0.0 ~ 360.0
+		wave_speed_degrees_per_tick = 6.0
+		#Vertical offset of orbiting ice shields.
+		#Range: -64.0 ~ 64.0
+		vertical_offset = 0.0
+		#Attack-damage multiplier for ice shield collisions in all phases.
+		#Range: 0.0 ~ 20.0
+		collision_damage_multiplier = 1.0
+		#Extra collision reach around each ice shield.
+		#Range: 0.0 ~ 64.0
+		collision_hitbox_inflation = 0.0
+		#Ticks between ice shield collision damage pulses.
+		#Range: 0 ~ 1200
+		collision_damage_cooldown_ticks = 10
+		#Allow ice shield collisions to hit non-player living entities.
+		collision_hits_non_players = true
+		#Put a used ice shield on cooldown after blocking an attack.
+		shield_cooldown_enabled = true
+		#Ice shield cooldown after blocking an attack, in ticks.
+		#Range: 0 ~ 1200
+		shield_cooldown_ticks = 60
+		#Allow optional SlashBlade parries against ice shields.
+		slashblade_parry_enabled = true
+		#Feedback duration returned after parrying an ice shield, in ticks.
+		#Range: 30 ~ 100
+		parry_feedback_ticks = 40
+		#Distance around the orbiting ice shields at which the parry window opens.
+		#Range: 0.0 ~ 16.0
+		parry_approach_distance = 2.0
+		#Minimum ice shield parry window, in ticks.
+		#Range: 20 ~ 200
+		parry_minimum_window_ticks = 20
+
+	#Original hover movement.
+	[snow_queen.chase]
+		#Original hover movement-speed multiplier.
+		#Range: 0.0 ~ 20.0
+		speed_multiplier = 1.3
+
+	#Original drop warning and impact.
+	[snow_queen.drop]
+		#Radius of the locked drop warning and impact.
+		#Range: 0.5 ~ 32.0
+		telegraph_radius = 3.0
+		#Attack-damage multiplier for the drop impact.
+		#Range: 0.0 ~ 20.0
+		damage_multiplier = 1.0
+		#Maximum successful drops in each original DROP phase.
+		#Range: 2 ~ 4
+		maximum_successful_drops = 2
+		#Allow drop impacts to hit non-player living entities.
+		hits_non_players = true
+		#Play the Snow Queen casting sound when a drop locks its position.
+		warning_sound_enabled = true
+		#Volume of the drop warning sound.
+		#Range: 0.0 ~ 16.0
+		warning_sound_volume = 2.0
+		#Snowflake particles emitted around the drop warning each tick.
+		#Range: 0 ~ 128
+		snowflake_particles_per_tick = 8
+
+	#Shattered ice rain.
+	[snow_queen.shattered_ice_rain]
+		#Queen windup before summoning shattered ice, in ticks.
+		#Range: 0 ~ 1200
+		queen_windup_ticks = 30
+		#Cooldown after a shattered ice volley finishes, in ticks.
+		#Range: 1 ~ 12000
+		cooldown_ticks = 240
+		#Minimum shattered ice count during the first phase.
+		#Range: 0 ~ 32
+		first_phase_minimum_count = 2
+		#Maximum shattered ice count during the first phase.
+		#Range: 0 ~ 32
+		first_phase_maximum_count = 4
+		#Minimum shattered ice count during the second phase.
+		#Range: 3 ~ 32
+		second_phase_minimum_count = 3
+		#Maximum shattered ice count during the second phase.
+		#Range: 3 ~ 32
+		second_phase_maximum_count = 4
+		#Distance behind the target where shattered ice starts spawning.
+		#Range: 0.0 ~ 128.0
+		spawn_distance_behind = 3.0
+		#Spacing between shattered ice spawn positions.
+		#Range: 0.0 ~ 128.0
+		spawn_spacing = 1.5
+		#Vertical offset of shattered ice spawn positions.
+		#Range: -64.0 ~ 64.0
+		spawn_vertical_offset = 1.0
+		#Windup before each shattered ice crystal launches, in ticks.
+		#Range: 0 ~ 1200
+		crystal_windup_ticks = 20
+		#Delay between shattered ice launches, in ticks.
+		#Range: 0 ~ 1200
+		launch_interval_ticks = 10
+		#Dash speed of each shattered ice crystal.
+		#Range: 0.0 ~ 20.0
+		dash_speed = 1.5
+		#Maximum shattered ice dash duration, in ticks.
+		#Range: 1 ~ 1200
+		maximum_dash_ticks = 30
+		#Extra collision reach around each dashing ice crystal.
+		#Range: 0.0 ~ 64.0
+		dash_hitbox_inflation = 0.25
+		#Attack-damage multiplier for a shattered ice dash hit.
+		#Range: 0.0 ~ 20.0
+		dash_damage_multiplier = 1.0
+		#Allow shattered ice dashes to hit non-player living entities.
+		dash_hits_non_players = true
+		#Frosted effect duration after a shattered ice hit, in ticks.
+		#Range: 0 ~ 12000
+		frosted_duration_ticks = 140
+		#Zero-based amplifier of the frosted effect.
+		#Range: 0 ~ 255
+		frosted_amplifier = 0
+		#Delay before a stopped shattered ice crystal explodes, in ticks.
+		#Range: 1 ~ 12000
+		explosion_delay_ticks = 60
+		#Explosion radius of a shattered ice crystal.
+		#Range: 0.0 ~ 128.0
+		explosion_radius = 1.0
+
+	#Summoned links.
+	[snow_queen.links]
+		#Maximum number of active summoned links.
+		#Range: 0 ~ 2
+		maximum_links = 2
+		#Additional damage fraction granted by each summoned link.
+		#Range: 0.0 ~ 20.0
+		summon_damage_bonus = 0.3
+		#Incoming damage fraction prevented while links are active.
+		#Range: 0.0 ~ 1.0
+		queen_damage_reduction = 0.3
+		#Windup before a summoned link is established, in ticks.
+		#Range: 0 ~ 1200
+		establish_windup_ticks = 20
+		#Delay before a link teleports, in ticks.
+		#Range: 0 ~ 1200
+		teleport_delay_ticks = 20
+		#Radius of a link burst.
+		#Range: 0.0 ~ 128.0
+		burst_radius = 5.0
+		#Attack-damage multiplier for a link burst.
+		#Range: 0.0 ~ 20.0
+		burst_damage_multiplier = 1.5
+		#Allow link bursts to hit non-player living entities.
+		burst_hits_non_players = true
+
+	#Second phase.
+	[snow_queen.phase_two]
+		#Phase two starts at or below this health fraction.
+		#Range: 0.0 ~ 1.0
+		health_threshold = 0.5
+		#Attack-damage multiplier during phase two.
+		#Range: 0.0 ~ 20.0
+		damage_multiplier = 1.2
+		#Movement-speed multiplier during phase two.
+		#Range: 0.0 ~ 20.0
+		speed_multiplier = 1.2
+		#Ticks between phase-two falling ice attacks.
+		#Range: 1 ~ 12000
+		falling_ice_interval_ticks = 160
+		#Phase-two falling ice warning duration, in ticks.
+		#Range: 1 ~ 1200
+		falling_ice_windup_ticks = 20
+		#Impact radius of phase-two falling ice.
+		#Range: 0.5 ~ 32.0
+		falling_ice_radius = 2.5
+		#Visible falling-ice blocks per phase-two impact.
+		#Range: 1 ~ 64
+		falling_ice_count = 6
+		#Preferred height above phase-two impact points for falling ice.
+		#Range: 2.0 ~ 64.0
+		falling_ice_spawn_height = 10.0
+		#Attack-damage multiplier for phase-two falling ice.
+		#Range: 0.0 ~ 20.0
+		falling_ice_damage_multiplier = 1.0
+		#Allow phase-two falling ice to hit non-player living entities.
+		falling_ice_hits_non_players = true
+
+	#Link visual effects.
+	[snow_queen.visuals]
+		#Red channel of rendered links.
+		#Range: 0 ~ 255
+		link_red = 80
+		#Green channel of rendered links.
+		#Range: 0 ~ 255
+		link_green = 180
+		#Blue channel of rendered links.
+		#Range: 0 ~ 255
+		link_blue = 255
+		#Alpha channel of rendered links.
+		#Range: 0 ~ 255
+		link_alpha = 220
+		#Requested line width for rendered links.
+		#Range: 0.0 ~ 20.0
+		link_line_width = 3.0
+		#Maximum render distance for links.
+		#Range: 0.0 ~ 128.0
+		link_maximum_render_distance = 96.0
 

@@ -24,8 +24,8 @@
 [XP] Disable Teleportation:false
 [XP] Disable Waypoint Set Change Tooltip:false
 [XP] Disable Waypoint Sharing:false
-[XP] Disable Xaero Internet Access:false
-[XP] Draw Order:Drawing-ellipses-in-progress|Drawing-ellipses-saved|Drawing-highlights|Drawing-lines-in-progress|Drawing-lines-saved|Drawing-text
+[XP] Disable Xaero Internet Access:true
+[XP] Draw Order:Beacons|Drawing-ellipses-in-progress|Drawing-ellipses-saved|Drawing-highlights|Drawing-lines-in-progress|Drawing-lines-saved|Drawing-text|MapArtGrid|Portals|RegionGrid|RegionGridText|RenderDistance|SpawnChunksPlayer-EntityProcessing|SpawnChunksPlayer-LazyChunk|SpawnChunksPlayer-OuterChunks|SpawnChunksPlayer-RedstoneProcessing
 [XP] Expanded Setting Entries:false
 [XP] Fast Zip Writes:true
 [XP] Lava Columns:false
@@ -80,8 +80,8 @@
 [XP] PortalSkip Search Delay:10.0
 [XP] Prefer Overworld Waypoints:false
 [XP] Radar While Dim Switched:true
-[XP] Region Grid:false
-[XP] Region Grid Color:0
+[XP] Region Grid:true
+[XP] Region Grid Color:6
 [XP] Region Grid Text:false
 [XP] Region Writes While Dim Switched:false
 [XP] Roof Obsidian Opacity:150.0
