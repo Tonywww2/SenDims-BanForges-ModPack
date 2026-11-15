@@ -40,7 +40,7 @@
   ],
   "properties": {
     "attack_base": 107.0,
-    "max_damage": 120,
+    "max_damage": 160,
     "slash_art": "slashblade_sendims:nameless_threefold",
     "special_effects": [
       "slashblade_sendims:nameless_se_crownless",
@@ -50,11 +50,14 @@
       "slashblade_sendims:mana_burst",
       "slashblade_sendims:kings_selection",
       "slashblade_sendims:invisible_air",
+      "slashblade_sendims:avalon",
       "last_smith:extreme_sharpness",
       "last_smith:bewitched_power",
       "last_smith:extra_smite",
       "blades_derby:uma_special",
       "slashblade:wither_edge",
+      "slashblade_sendims:amagumo_crow",
+      "slashblade_sendims:amagumo_wind",
       "slashblade_sendims:yakuman_four_seals",
       "slashblade_sendims:yakuman_seven_edict",
       "slashblade_sendims:yakuman_wind_veil",

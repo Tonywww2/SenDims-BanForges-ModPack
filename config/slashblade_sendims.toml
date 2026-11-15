@@ -89,3 +89,32 @@
 	#Changing this value requires a server restart.
 	targetDimension = "sdbf:inside_the_end"
 
+[ritualVisuals]
+	#Shader visuals for summoning, portal, map teleport and bedrock breaker rituals. Client visuals only.
+	enabled = true
+	#Screen effects: teleport vortex, arrival flash and summon ripple.
+	screenEffects = true
+	#Overall brightness of ritual visuals.
+	#Range: 0.25 ~ 1.5
+	intensity = 1.0
+	#Baked halo strength while an Oculus shader pack is active; lower it if a shader pack's bloom overexposes the effects.
+	#Range: 0.0 ~ 1.0
+	shaderPackGlow = 1.0
+	#Maximum distance for ritual visuals. Summon sky beams are visible up to 160 blocks.
+	#Range: 32 ~ 256
+	maxDistance = 128
+	#Edge length of the magic circle canvas: 512, 1024 or 2048.
+	#Range: 512 ~ 2048
+	canvasResolution = 1024
+
+[zenithVisuals]
+	#Visuals for the True Judgement Cut Slash Art (world slashes and screen effects). Client visuals only; damage is unaffected.
+	enabled = true
+	#Screen layer: cut lines, frozen frame and shattering. Shown to every player within 64 blocks of the cast.
+	screenEffects = true
+	#Strength of the white flashes. Lower it, or set 0, if bright flashes are uncomfortable.
+	#Range: 0.0 ~ 1.0
+	flashIntensity = 1.0
+	#Animate the shader-drawn rift on the Zenith Rift blade, guard and sheath. When off, one still frame is drawn.
+	bladeAnimation = true
+

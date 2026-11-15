@@ -6,6 +6,10 @@
       "lvl": 10
     },
     {
+      "id": "minecraft:fortune",
+      "lvl": 7
+    },
+    {
       "id": "minecraft:looting",
       "lvl": 10
     },
@@ -44,6 +48,7 @@
     "slash_art": "slashblade_sendims:explosive_dawn_ammo",
     "special_effects": [
       "slashblade_sendims:mahakala",
+      "slashblade_sendims:blessing_and_bane",
       "sjap_adder:shadow_of_revenant",
       "slashblade_sendims:aftershock",
       "last_smith:extreme_sharpness",

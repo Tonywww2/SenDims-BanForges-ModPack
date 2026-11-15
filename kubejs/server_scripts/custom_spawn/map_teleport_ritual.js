@@ -17,6 +17,12 @@ registerStructure({
     isPortal: true,
     structureName: 'map_teleport',
     theme: 'map_teleport',
+    // 罗盘法阵指向地图记录的目标（世界 XZ 平面上的方位角，度）
+    heading: (level, centerPos, player) => {
+        let target = $QuillMapTeleport.readTarget(player.mainHandItem);
+        if (!target) return null;
+        return Math.atan2(Number(target.z()) - centerPos.z, Number(target.x()) - centerPos.x) * 180 / Math.PI;
+    },
     precheck: (level, centerPos, player) => {
         let refusal = $QuillMapTeleport.checkRitual(player, player.mainHandItem);
         if (refusal) return Text.translatable(String(refusal)).red();
@@ -31,6 +37,6 @@ registerStructure({
         if (!$QuillMapTeleport.ritualTeleport(player, player.mainHandItem)) return;
         if (!player.isCreative()) powder.shrink(1);
         let theme = RitualFx.theme('map_teleport');
-        level.server.scheduleInTicks(1, callback => ritualArrival(player.level, player.x, player.y, player.z, theme));
+        level.server.scheduleInTicks(1, callback => ritualArrival(player.level, player.x, player.y, player.z, theme, player));
     }
 });

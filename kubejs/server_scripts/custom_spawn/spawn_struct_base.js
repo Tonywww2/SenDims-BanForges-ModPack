@@ -36,7 +36,7 @@ let RETURN_PORTAL_PATTERN = [
     ]
 ];
 
-// 仪式流程（设计见 docs/development/仪式与基岩破坏者特效设计-2026-11-03.md）：
+// 仪式流程（设计见 docs/development/仪式与基岩破坏者特效设计-2026-11-03.md，着色器层见 仪式着色器特效设计-2026-11-13.md）：
 // 右键 B → 校验 → 失败时标出问题方块；成功时蓄能 40 tick（每 10 tick 复查）→ 释放（此时才扣激活物）→ 余韵。
 // 潜行 + 空手或手持激活物右键 B 只做预览。其他手持物不触发任何预览。
 let RITUAL_CHARGE_TICKS = 40;
@@ -73,6 +73,7 @@ let ritualDistanceSqr = (player, x, y, z) => {
  * @param {boolean} config.weakMatch - 是否忽略 pattern 中的空格坐标
  * @param {string} config.from - 只能在该维度进行（传送门）
  * @param {Function} config.precheck - 可选，(level, centerPos, player) => 提示文本或 null；激活前和蓄能复查时调用，返回文本即不能进行
+ * @param {Function} config.heading - 可选，(level, centerPos, player) => 罗盘方位（度，世界 XZ 平面上 atan2(dz, dx)）或 null；地图传送的法阵指向目标
  */
 let createBossStructure = (config) => {
     let activateItem = String(config.activateItem);
@@ -206,7 +207,8 @@ let createBossStructure = (config) => {
     };
 
     // 蓄能期间每 tick 的表现
-    let chargeTick = (level, centerPos, t) => {
+    // shaderLayer：着色器层已接管法阵和光柱时，光柱与汇聚粒子减半、去掉蓄能末段的尘埃光环
+    let chargeTick = (level, centerPos, t, shaderLayer) => {
         let cx = centerPos.x + 0.5, cy = centerPos.y + 1.1, cz = centerPos.z + 0.5;
         if (t === 0) RitualFx.sound(level, 'minecraft:block.beacon.activate', cx, cy, cz, 1, 1.1, null);
         if (t === 0 || t === 13 || t === 26) {
@@ -217,23 +219,25 @@ let createBossStructure = (config) => {
         }
         if (t % 2 === 0) {
             let height = t < 13 ? 1 : t < 26 ? 2 : 3;
-            RitualFx.column(level, theme.accent, cx, cy, cz, height, 3);
-            // 每次轮流从 4 个外围方块各飞出一缕汇聚粒子
+            RitualFx.column(level, theme.accent, cx, cy, cz, height, shaderLayer ? 1.5 : 3);
+            // 每次轮流从外围方块各飞出一缕汇聚粒子（着色器层可用时 2 缕，否则 4 缕）
             let count = shellPositions.length;
-            for (let k = 0; k < 4 && count > 0; k++) {
-                let p = shellPositions[(t / 2 * 4 + k) % count];
+            let streams = shaderLayer ? 2 : 4;
+            for (let k = 0; k < streams && count > 0; k++) {
+                let p = shellPositions[(t / 2 * streams + k) % count];
                 RitualFx.fly(level, theme.converge, centerPos.x + p[0] + 0.5, centerPos.y + p[1] + 0.7, centerPos.z + p[2] + 0.5, cx, cy + 0.4, cz, null);
                 RitualFx.particle(level, RitualFx.dust(theme), centerPos.x + p[0] + 0.5, centerPos.y + p[1] + 1.05, centerPos.z + p[2] + 0.5, 0.15, 0.05, 0.15, 0, 1, null);
             }
         }
-        if (t >= 30 && t % 2 === 0) {
+        if (t >= 30 && t % 2 === 0 && !shaderLayer) {
             RitualFx.ring(level, RitualFx.dust(theme), cx, cy, cz, 1.3, 10, t * 0.15, null);
-            if (t === 30) RitualFx.sound(level, 'minecraft:block.amethyst_block.resonate', cx, cy, cz, 1, 0.9, null);
         }
+        if (t === 30) RitualFx.sound(level, 'minecraft:block.amethyst_block.resonate', cx, cy, cz, 1, 0.9, null);
     };
 
     let interrupt = (level, centerPos, player, messageKey) => {
         let cx = centerPos.x + 0.5, cy = centerPos.y + 1.1, cz = centerPos.z + 0.5;
+        RitualFx.visual.interrupt(level, centerPos);
         RitualFx.particle(level, 'minecraft:smoke', cx, cy + 1, cz, 0.15, 0.8, 0.15, 0.01, 20, null);
         RitualFx.particle(level, 'minecraft:electric_spark', cx, cy + 1, cz, 0.3, 0.8, 0.3, 0.05, 12, null);
         RitualFx.sound(level, 'minecraft:block.beacon.deactivate', cx, cy, cz, 1, 1, null);
@@ -246,12 +250,14 @@ let createBossStructure = (config) => {
         if (consumeActivateItem) player.mainHandItem.shrink(1);
         player.cooldowns.addCooldown(item, RITUAL_RELEASE_COOLDOWN);
         if (isPortal) {
+            RitualFx.visual.release(level, centerPos, 'portal', theme, player);
             RitualFx.shockwave(level, 'minecraft:reverse_portal', player.x, player.y + 0.2, player.z, 20, 0.25);
             RitualFx.sound(level, 'minecraft:entity.enderman.teleport', player.x, player.y, player.z, 1, 0.8, null);
             RitualFx.sound(level, 'minecraft:block.portal.travel', player.x, player.y, player.z, 0.25, 1.2, player);
             config.executeCommands(level, centerPos, player);
             return;
         }
+        RitualFx.visual.release(level, centerPos, 'summon', theme, player);
         RitualFx.shockwave(level, theme.accent, cx, cy - 0.5, cz, 24, 0.35);
         RitualFx.shockwave(level, 'minecraft:cloud', cx, cy - 0.8, cz, 16, 0.25);
         RitualFx.lightning(level, cx, centerPos.y + 1, cz);
@@ -313,10 +319,14 @@ let createBossStructure = (config) => {
         let chargeTicks = RitualFx.cfg().charge ? RITUAL_CHARGE_TICKS : 0;
         ritualLocks[key] = true;
         player.swing();
+        let shaderLayer = false;
+        let warped = false;
         if (chargeTicks > 0) {
             // 蓄能期间激活物进入冷却：快捷栏上的冷却动画就是进度条，也避免重复触发。
             player.cooldowns.addCooldown(item, chargeTicks + 2);
             RitualFx.actionbar(player, Text.translatable('info.kubejs.ritual.charging').aqua());
+            let heading = config.heading ? config.heading(level, centerPos, player) : null;
+            shaderLayer = RitualFx.visual.charge(level, centerPos, isPortal ? 'portal' : 'summon', theme, chargeTicks, heading);
         }
         let dimension = RitualFx.dimOf(level);
         let stillValid = () => {
@@ -339,8 +349,10 @@ let createBossStructure = (config) => {
                 }
             }
             if (t < chargeTicks) {
-                chargeTick(level, centerPos, t);
-                if (isPortal && t === chargeTicks - 10) RitualFx.darkness(player, 30);
+                chargeTick(level, centerPos, t, shaderLayer);
+                // 传送前：发起者屏幕旋涡（着色器层）；不可用时退回原来的 1.5 秒黑暗
+                if (isPortal && t === chargeTicks - 15) warped = RitualFx.visual.warp(player, 'portal', theme, 15);
+                if (isPortal && t === chargeTicks - 10 && !warped) RitualFx.darkness(player, 30);
                 return true;
             }
             delete ritualLocks[key];
@@ -400,8 +412,9 @@ let buildReturnPlatform = (targetLevel, destPos, theme) => {
     });
 };
 
-// 抵达特效：脚下主题粒子涌起，配重生锚设定音效。
-let ritualArrival = (targetLevel, x, y, z, theme) => {
+// 抵达特效：脚下主题粒子涌起，配重生锚设定音效；着色器层画抵达符印，传送者本人看到闪光淡出。
+let ritualArrival = (targetLevel, x, y, z, theme, player) => {
+    RitualFx.visual.arrival(targetLevel, x, y, z, 'portal', theme, player || null);
     RitualFx.column(targetLevel, theme.accent, x, y, z, 2.5, 6);
     RitualFx.shockwave(targetLevel, theme.extra, x, y + 0.2, z, 16, 0.2);
     RitualFx.particle(targetLevel, RitualFx.dust(theme), x, y + 1, z, 0.6, 0.8, 0.6, 0, 20, null);
@@ -437,7 +450,7 @@ let registerPortal = (config) => {
         }
         server.runCommandSilent(`/execute in ${toDim} run tp ${player.name.string} ${targetX + 0.5} ${targetY + 1} ${targetZ + 0.5}`);
         if (targetLevel) {
-            server.scheduleInTicks(1, callback => ritualArrival(targetLevel, targetX + 0.5, targetY + 1, targetZ + 0.5, theme));
+            server.scheduleInTicks(1, callback => ritualArrival(targetLevel, targetX + 0.5, targetY + 1, targetZ + 0.5, theme, player));
         }
     };
 

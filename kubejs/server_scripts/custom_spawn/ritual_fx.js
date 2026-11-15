@@ -1,6 +1,7 @@
 // priority: 110
 // 结构召唤仪式、传送门仪式和基岩破坏者共用的特效工具：主题、粒子、音效、标题、逐 tick 时间线。
-// 全部在服务端执行，通过原版命令和数据包发给客户端，客户端无需额外模组。开关见 configs.js 的 global.ritualFx。
+// 全部在服务端执行：原版粒子、音效等通过原版命令发给客户端；着色器层（RitualFx.visual）由特供模组发阶段包、客户端生成画面。
+// 开关见 configs.js 的 global.ritualFx。
 
 let RITUAL_THEMES = {
     // dust: [起始色 RGB, 结束色 RGB]；converge: 汇聚粒子；accent: 点缀粒子；extra: 余韵粒子；chime: 主题音效
@@ -14,6 +15,8 @@ let RITUAL_THEMES = {
     map_teleport: { dust: ['0.35 0.9 0.85', '0.93 0.88 0.73'], converge: 'minecraft:portal', accent: 'minecraft:end_rod', extra: 'minecraft:enchant', chime: 'minecraft:ui.cartography_table.take_result' },
     bedrock: { dust: ['0.45 0.45 0.45', '1 0.4 0.1'], converge: 'minecraft:portal', accent: 'minecraft:lava', extra: 'minecraft:crimson_spore', chime: 'minecraft:block.deepslate.hit' }
 };
+// 主题名同时是着色器法阵的样式名（特供模组 RitualVisualClient 按名字选样式，不认识的用默认样式）。
+Object.keys(RITUAL_THEMES).forEach(key => { RITUAL_THEMES[key].name = key; });
 
 let RitualFx = (() => {
     let cfg = () => {
@@ -22,7 +25,8 @@ let RitualFx = (() => {
             charge: c.charge !== false,
             darkness: c.darkness !== false,
             screenShake: c.screenShake !== false,
-            particles: c.particles !== false
+            particles: c.particles !== false,
+            shaders: c.shaders !== false
         };
     };
     let num = n => String(Math.round(n * 1000) / 1000);
@@ -121,8 +125,48 @@ let RitualFx = (() => {
         step(0);
     };
 
+    // 着色器层：调用特供模组 RitualVisuals，每个阶段发一个包，画面全在客户端生成（光影兼容方案见
+    // docs/development/仪式着色器特效设计-2026-11-13.md）。类不存在、开关关闭或调用出错时返回 false，
+    // 调用方据此退回原版表现；出错只警告一次，不影响仪式本身。
+    let $Visuals = null;
+    let visualsLoaded = false;
+    let visualsApi = () => {
+        if (!visualsLoaded) {
+            visualsLoaded = true;
+            try {
+                $Visuals = Java.loadClass('com.tonywww.slashblade_sendims.ritual.RitualVisuals');
+            } catch (error) {
+                warnOnce('ritual shader visuals', error);
+            }
+        }
+        return cfg().shaders ? $Visuals : null;
+    };
+    let callVisual = (name, send) => {
+        let api = visualsApi();
+        if (!api) return false;
+        try {
+            return String(send(api)) === 'true';
+        } catch (error) {
+            warnOnce(`ritual visual ${name}`, error);
+            return false;
+        }
+    };
+    let entityId = entity => entity ? Number(entity.getId()) : -1;
+    let visual = {
+        available: () => visualsApi() !== null,
+        // kind：'summon'、'portal'、'breach'；param：地图传送为罗盘方位（度），基岩破坏者为第几下
+        charge: (level, pos, kind, th, ticks, param) => callVisual('charge', api => api.charge(level, pos.x, pos.y, pos.z,
+            kind, th.name, th.dust[0], th.dust[1], ticks, param === undefined || param === null ? NaN : Number(param))),
+        interrupt: (level, pos) => callVisual('interrupt', api => api.interrupt(level, pos.x, pos.y, pos.z)),
+        release: (level, pos, kind, th, traveler) => callVisual('release', api => api.release(level, pos.x, pos.y, pos.z,
+            kind, th.name, th.dust[0], th.dust[1], entityId(traveler))),
+        warp: (player, kind, th, ticks) => callVisual('warp', api => api.warp(player, kind, th.name, th.dust[0], th.dust[1], ticks)),
+        arrival: (level, x, y, z, kind, th, traveler) => callVisual('arrival', api => api.arrival(level, x, y, z,
+            kind, th.name, th.dust[0], th.dust[1], entityId(traveler)))
+    };
+
     return {
-        cfg: cfg, dimOf: dimOf, theme: theme, dust: dust,
+        cfg: cfg, dimOf: dimOf, theme: theme, dust: dust, visual: visual,
         particle: particle, fly: fly, shoot: shoot, sound: sound, ring: ring, shockwave: shockwave, column: column,
         ghost: ghost, actionbar: actionbar, subtitle: subtitle, darkness: darkness,
         lightning: lightning, shake: shake, timeline: timeline

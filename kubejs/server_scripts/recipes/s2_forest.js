@@ -110,4 +110,30 @@ ServerEvents.recipes(event => {
     }, "slashblade:orotiagito")
         .id("sdbf:orotiagito_s2")
 
+    // Boss 掉落刀的保底配方：Boss 奖杯 + 无铭「无名」（精炼 10 以上）+ 铁木锭、钢叶 + Boss 特色材料
+    let twilightBossBlade = (blade, trophy, material, id) => {
+        event.recipes.slashblade.slashblade_shaped_recipe("slashblade:slashblade", [
+            "ITS",
+            "MBM",
+            "SMI"
+        ], {
+            "T": trophy,
+            "B": SlashBladeIngredient.of(
+                SlashBladeRequestDefinition.newInstance()
+                    .refineCount(10)
+                    .build()
+            ),
+            "I": "twilightforest:ironwood_ingot",
+            "S": "twilightforest:steeleaf_ingot",
+            "M": material
+        }, blade)
+            .id(id)
+    }
+
+    twilightBossBlade("slashblade:agito_rust", "twilightforest:naga_trophy", "twilightforest:naga_scale", "sdbf:agito_rust_s2")
+    twilightBossBlade("slashblade:yasha_true", "twilightforest:minoshroom_trophy", "minecraft:mushroom_stew", "sdbf:yasha_true_s2")
+    twilightBossBlade("slashblade:orotiagito_rust", "twilightforest:hydra_trophy", "twilightforest:fiery_ingot", "sdbf:orotiagito_rust_s2")
+    twilightBossBlade("slashblade_addon:murakumo", "twilightforest:ur_ghast_trophy", "twilightforest:fiery_ingot", "sdbf:murakumo_s2")
+    twilightBossBlade("sjap_adder:frostbane_moonveil", "twilightforest:snow_queen_trophy", "twilightforest:aurora_block", "sdbf:frostbane_moonveil_s2")
+
 })

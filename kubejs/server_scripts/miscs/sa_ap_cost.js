@@ -52,6 +52,8 @@ SACostMap.put("slashblade_sendims:nameless_threefold", [300, 0.15]);
 SACostMap.put("slashblade_sendims:caliburn", [350, 0.15]);
 SACostMap.put("slashblade_sendims:excalibur", [600, 0.25]);
 SACostMap.put("slashblade_sendims:malevolent_shrine", [450, 0.2]);
+// 天顶·裂空「真·次元斩」：固定 400 加 AP 上限的 35%
+SACostMap.put("slashblade_sendims:true_judgement_cut", [400, 0.35]);
 
 SACostMap.put("pseudoedge_break_dawn:black_hole", [300, 0.15]);
 

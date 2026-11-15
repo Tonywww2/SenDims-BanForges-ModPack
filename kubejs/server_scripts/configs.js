@@ -9,7 +9,8 @@ global.ritualFx = {
     charge: true,       // false：跳过 2 秒蓄能，仪式瞬间完成
     darkness: true,     // 传送门与基岩破坏者传送前的 1 秒黑暗
     screenShake: true,  // 召唤与基岩碎裂时借用灾变模组的屏幕震动
-    particles: true     // 旁人可见的公共粒子；关闭后只保留给发起者的预览和诊断虚影
+    particles: true,    // 旁人可见的公共粒子；关闭后只保留给发起者的预览和诊断虚影
+    shaders: true       // 着色器特效（特供模组画法阵、光柱、屏幕效果）；false 时不发包，退回原版表现
 };
 
 // 难度系统 N-6 与 N-7 的全部子修正（创造物品、大量机器等补给）；false 时这些子修正不出现、不能选择。

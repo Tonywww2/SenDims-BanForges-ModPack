@@ -760,7 +760,8 @@ ServerEvents.recipes(event => {
             'kubejs:zenith_research_slashblade_sendims_yakuman_hekigyoku_suukantsu',
             'kubejs:epsilon_dust',
             'kubejs:unmelting_ice',
-            'slashblade:proudsoul_trapezohedron'
+            'slashblade:proudsoul_trapezohedron',
+            'elder_bosses:gate_fragment'
         ]
     ).id('sdbf:zenith/master/black_crown');
 
@@ -770,7 +771,7 @@ ServerEvents.recipes(event => {
         [
             'PSP',
             'ABA',
-            'PMG'
+            'PMP'
         ],
         {
             'P': 'slashblade:proudsoul_trapezohedron',
@@ -784,8 +785,7 @@ ServerEvents.recipes(event => {
                     .refineCount(125)
                     .build()
             ),
-            'M': 'kubejs:epsilon_dust',
-            'G': 'elder_bosses:gate_fragment'
+            'M': 'kubejs:epsilon_dust'
         },
         'slashblade_sendims:zenith_false_black_crown'
     ).id('sdbf:zenith/blade/black_crown');
@@ -801,8 +801,8 @@ ServerEvents.recipes(event => {
             'kubejs:zenith_research_sjap_adder_kamuyex_death',
             'kubejs:zenith_research_slashblade_sendims_yakuman_sangen_jirei',
             'kubejs:epsilon_dust',
-            'kubejs:rainbowshift_entropy',
-            'slashblade:proudsoul_trapezohedron'
+            'slashblade:proudsoul_trapezohedron',
+            'elder_bosses:gate_fragment'
         ]
     ).id('sdbf:zenith/master/divine_might');
 
@@ -812,7 +812,7 @@ ServerEvents.recipes(event => {
         [
             'PSP',
             'ABA',
-            'PMG'
+            'PMP'
         ],
         {
             'P': 'slashblade:proudsoul_trapezohedron',
@@ -826,8 +826,7 @@ ServerEvents.recipes(event => {
                     .refineCount(125)
                     .build()
             ),
-            'M': 'elder_bosses:rune_fragment',
-            'G': 'elder_bosses:gate_fragment'
+            'M': 'elder_bosses:rune_fragment'
         },
         'slashblade_sendims:zenith_false_divine_might'
     ).id('sdbf:zenith/blade/divine_might');
@@ -843,8 +842,8 @@ ServerEvents.recipes(event => {
             'kubejs:zenith_research_slashblade_sendims_yakuman_tenju_kokushi',
             'kubejs:zenith_research_slashblade_sendims_yakuman_chisei_chuuren',
             'deeprealm_4th:star_slurry_crystal',
-            'kubejs:rainbowshift_entropy',
-            'slashblade:proudsoul_trapezohedron'
+            'slashblade:proudsoul_trapezohedron',
+            'elder_bosses:gate_fragment'
         ]
     ).id('sdbf:zenith/master/kingship');
 
@@ -854,7 +853,7 @@ ServerEvents.recipes(event => {
         [
             'PSP',
             'ABA',
-            'PMG'
+            'PMP'
         ],
         {
             'P': 'slashblade:proudsoul_trapezohedron',
@@ -868,8 +867,7 @@ ServerEvents.recipes(event => {
                     .refineCount(125)
                     .build()
             ),
-            'M': 'kubejs:rainbowshift_entropy',
-            'G': 'elder_bosses:gate_fragment'
+            'M': 'kubejs:rainbowshift_entropy'
         },
         'slashblade_sendims:zenith_false_kingship'
     ).id('sdbf:zenith/blade/kingship');
@@ -885,7 +883,8 @@ ServerEvents.recipes(event => {
             'kubejs:zenith_research_slashblade_sendims_yakuman_chinrou_suukou',
             'kubejs:unmelting_ice',
             'kubejs:rainbowshift_entropy',
-            'slashblade:proudsoul_trapezohedron'
+            'slashblade:proudsoul_trapezohedron',
+            'elder_bosses:gate_fragment'
         ]
     ).id('sdbf:zenith/master/dark_curse');
 
@@ -895,7 +894,7 @@ ServerEvents.recipes(event => {
         [
             'PSP',
             'ABA',
-            'PMG'
+            'PMP'
         ],
         {
             'P': 'slashblade:proudsoul_trapezohedron',
@@ -909,9 +908,36 @@ ServerEvents.recipes(event => {
                     .refineCount(125)
                     .build()
             ),
-            'M': 'kubejs:rainbowshift_entropy',
-            'G': 'elder_bosses:gate_fragment'
+            'M': 'kubejs:rainbowshift_entropy'
         },
         'slashblade_sendims:zenith_false_dark_curse'
     ).id('sdbf:zenith/blade/dark_curse');
+
+    // 天顶·裂空：五把天顶合一（设计见 docs/development/最终天顶剑设计-2026-11-14.md）。
+    // 有序合成按拔刀剑原生结算：耀魂与杀敌数合计、锻造次数取最高、附魔逐把合并。
+    let zenithBlade = (name) => SlashBladeIngredient.of(
+        SlashBladeRequestDefinition.newInstance()
+            .name(name)
+            .killCount(30000)
+            .proudSoul(300000)
+            .refineCount(150)
+            .build()
+    );
+    event.recipes.slashblade.slashblade_shaped_recipe(
+        'slashblade:slashblade',
+        [
+            'AOB',
+            'OEO',
+            'COD'
+        ],
+        {
+            'A': zenithBlade('sjap_adder:dragon_steel_ice'),
+            'B': zenithBlade('slashblade_sendims:zenith_false_black_crown'),
+            'C': zenithBlade('slashblade_sendims:zenith_false_divine_might'),
+            'D': zenithBlade('slashblade_sendims:zenith_false_dark_curse'),
+            'E': zenithBlade('slashblade_sendims:zenith_false_kingship'),
+            'O': 'kubejs:omni_alloy_ingot'
+        },
+        'slashblade_sendims:zenith_final'
+    ).id('sdbf:zenith/blade/final');
 });

@@ -58,6 +58,10 @@
     "traditional_age": true,
     "nightstag": true
   },
+  "foodindustrial": {
+    "machine": true,
+    "device": true
+  },
   "jadeaddons.mcjtylib": {
     "jadeaddons": true
   },

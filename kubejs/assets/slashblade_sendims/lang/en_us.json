@@ -52,5 +52,6 @@
   "slash_art.slashblade_sendims.malevolent_shrine.desc": "Create a broad open domain anchored at the release position. Repeatedly slash enemies inside it for a period of time, dealing physical and true damage.\nRecasting replaces the previous domain. Switching the held item, dying or leaving the dimension ends the domain.",
   "slash_art.slashblade_sendims.yakuman_shishou_kiitsu": "四象归一·弹药",
   "item.slashblade_sendims.greatsword_of_damnation_final": "「Damnation」",
-  "slash_art.slashblade_sendims.golden_crux.desc": "Leap into the air, then plunge the blade toward the locked target, or a nearby enemy ahead if no target is locked. Upon landing, erupt a crown of golden, frenzy-wreathed barbs that damages nearby enemies and applies on-hit effects."
+  "slash_art.slashblade_sendims.golden_crux.desc": "Leap into the air, then plunge the blade toward the locked target, or a nearby enemy ahead if no target is locked. Upon landing, erupt a crown of golden, frenzy-wreathed barbs that damages nearby enemies and applies on-hit effects.",
+  "item.slashblade_sendims.zenith_final": "Zenith: Riftsplitter"
 }

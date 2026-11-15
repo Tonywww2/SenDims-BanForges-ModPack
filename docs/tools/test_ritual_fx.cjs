@@ -98,6 +98,7 @@ function makePlayer(world, name, dim, x, y, z) {
         setStatusMessage(c) { this.status.push(String(c)); },
         tell(c) { this.chat.push(String(c)); },
         swing() { this.swings++; },
+        getId() { return Object.keys(world.players).indexOf(name) + 1; },
         potionEffects: { add: (id, d, a) => p.effects.push({ id, d, tick: world.tick }) },
         cooldowns: {
             addCooldown: (item, t) => { cooldowns[item.id] = world.tick + t; },
@@ -118,7 +119,11 @@ function context(world, handlers) {
         Blocks: Object.fromEntries(['AIR', 'OBSIDIAN', 'CRYING_OBSIDIAN', 'COBBLESTONE'].map(n => [n, { defaultBlockState: () => stateOf(n === 'AIR' ? 'minecraft:air' : 'minecraft:' + n.toLowerCase()) }])),
         BlockPos, Text: { of: s => text(s), translatable: (k, ...a) => { const t = text(k); t.args = a; t.toString = () => k + '(' + a.map(String).join('|') + ')'; return t; } },
         Platform: { getMods: () => ({ containsKey: () => false }) },
-        Java: { loadClass: n => n.endsWith('Vec3') ? function (x, y, z) { this.v = [x, y, z]; } : { ScreenShake: (lvl, v, r, m, d, f) => world.records.push({ tick: world.tick, type: 'shake', r, m }) } },
+        Java: { loadClass: n => n.endsWith('Vec3') ? function (x, y, z) { this.v = [x, y, z]; }
+            : n.endsWith('RitualVisuals') ? Object.fromEntries(['charge', 'interrupt', 'release', 'warp', 'arrival']
+                // 着色器层替身：记录调用但返回 false（相当于客户端特效不可用），流程走原版表现
+                .map(stage => [stage, (...args) => { world.records.push({ tick: world.tick, type: 'visual', stage, args }); return false; }]))
+            : { ScreenShake: (lvl, v, r, m, d, f) => world.records.push({ tick: world.tick, type: 'shake', r, m }) } },
         BlockEvents: { rightClicked: (a, b) => handlers.push(b ? { filter: a, fn: b } : { filter: null, fn: a }) },
         PLAYER_Y: 310, getLevelSpawnPoint: level => [0, 64, 0], JSON, Math, Object, String
     };

@@ -49,6 +49,8 @@ let bbTravel = (player, fromDim) => {
     // 抵达下界：绯红孢子与灰烬卷起，平台四角冒出黑曜石碎屑
     let theme = RitualFx.theme('bedrock');
     player.server.scheduleInTicks(1, callback => {
+        // 着色器层：黑曜石平台（y - 3）上落下抵达符印，坠落者本人从橙红闪光中淡出
+        RitualFx.visual.arrival(targetLevel, x, y - 2, z, 'breach', theme, player);
         RitualFx.particle(targetLevel, 'minecraft:crimson_spore', x, y, z, 2, 1.5, 2, 0.02, 60, null);
         RitualFx.particle(targetLevel, 'minecraft:ash', x, y, z, 2, 1.5, 2, 0.02, 40, null);
         RitualFx.particle(targetLevel, 'minecraft:block minecraft:obsidian', x, y - 2.9, z, 1.6, 0.05, 1.6, 0.05, 30, null);
@@ -61,6 +63,8 @@ let bbTravel = (player, fromDim) => {
 let bbHit = (level, pos, player, count) => {
     let cx = pos.x + 0.5, cy = pos.y + 1.0, cz = pos.z + 0.5;
     bbSetCrack(level, pos, BB_STAGES[count - 1]);
+    // 着色器层：基岩顶面的裂隙纹随敲击变长变亮，3 秒不敲随裂纹一起消退
+    RitualFx.visual.charge(level, pos, 'breach', RitualFx.theme('bedrock'), BB_RESET_TICKS, count);
     RitualFx.particle(level, 'minecraft:block minecraft:bedrock', cx, cy, cz, 0.3, 0.1, 0.3, 0.15, 12 + count * 6, null);
     RitualFx.sound(level, 'minecraft:block.deepslate.hit', cx, cy, cz, 1, 0.6, null);
     RitualFx.sound(level, 'minecraft:block.anvil.land', cx, cy, cz, 0.35 + count * 0.1, 0.55 - count * 0.05, null);
@@ -87,7 +91,10 @@ let bbBreakThrough = (level, pos, player, fromDim, item) => {
         RitualFx.sound(level, 'minecraft:block.respawn_anchor.deplete', cx, cy, cz, 1, 0.8, null);
         RitualFx.sound(level, 'minecraft:entity.item.break', player.x, player.y, player.z, 0.8, 0.8, player);
         RitualFx.shake(level, cx, cy, cz, 10, 0.15, 12, 8);
-        RitualFx.darkness(player, 30);
+        // 着色器层：裂隙炸开、光柱冲出；坠落者屏幕下坠旋涡（开启沉浸传送门时不传送，仍用原来的黑暗）
+        let theme = RitualFx.theme('bedrock');
+        RitualFx.visual.release(level, pos, 'breach', theme, player);
+        if (global.immptEnabled || !RitualFx.visual.warp(player, 'breach', theme, 10)) RitualFx.darkness(player, 30);
     });
     server.scheduleInTicks(13, callback => {
         if (player.hasDisconnected() || !player.isAlive()) return;

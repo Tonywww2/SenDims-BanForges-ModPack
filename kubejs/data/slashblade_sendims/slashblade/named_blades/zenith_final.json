@@ -1,0 +1,31 @@
+{
+  "name": "slashblade_sendims:zenith_final",
+  "enchantments": [
+    {
+      "id": "minecraft:sharpness",
+      "lvl": 10
+    },
+    {
+      "id": "minecraft:unbreaking",
+      "lvl": 10
+    }
+  ],
+  "properties": {
+    "attack_base": 150.0,
+    "max_damage": 800,
+    "slash_art": "slashblade_sendims:true_judgement_cut",
+    "special_effects": [
+      "slashblade_sendims:zenith_apex",
+      "slashblade_sendims:sky_rift"
+    ],
+    "sword_type": [
+      "bewitched"
+    ]
+  },
+  "render": {
+    "carry_type": "katana",
+    "model": "slashblade_sendims:model/zenith_final/zenith_final.obj",
+    "texture": "slashblade_sendims:model/zenith_final/zenith_final.png",
+    "summon_sword_color": 5934335
+  }
+}

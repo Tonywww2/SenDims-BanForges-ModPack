@@ -1,0 +1,57 @@
+
+[fallbacks]
+	#Also provide the fallback sulfur when Thermal Foundation is installed
+	force_sulfur = false
+	#Also provide the fallback apatite when Thermal Foundation is installed
+	force_apatite = false
+	#Also provide the fallback tree bark when Farmer's Delight is installed
+	force_tree_bark = false
+
+[metabolism]
+	#Clear caffeine, alcohol, fast sugar and impurity, and refill nutrient reserves, when a player dies
+	clear_on_death = true
+	#Impurity from homemade and poor products and its effects
+	impurity = true
+	#Vitamin C, B1 and D reserves and their deficiency effects
+	nutrients = true
+	#Unconscious players see a black screen
+	unconscious_screen = true
+	#Unconscious players cannot walk or jump
+	unconscious_movement = true
+	#Unconscious players cannot attack
+	unconscious_attack = true
+	#Unconscious players cannot break or place blocks
+	unconscious_blocks = true
+	#Unconscious players cannot use items
+	unconscious_use_items = true
+	#Unconscious players cannot open containers
+	unconscious_containers = true
+	#Unconscious players wake up when they take damage
+	unconscious_wake_on_damage = false
+
+[integration]
+	#Register this mod's physical steps for the machines of Farmer's Delight
+	farmersdelight = true
+	#Device tier the machines of Farmer's Delight count as; it fixes the purity of their products (t1-t4)
+	farmersdelight_tier = "t1"
+	#Register this mod's physical steps for the machines of Create
+	create = true
+	#Device tier the machines of Create count as; it fixes the purity of their products (t1-t4)
+	create_tier = "t1"
+	#Register this mod's physical steps for the machines of Thermal Expansion
+	thermal = true
+	#Device tier the machines of Thermal Expansion count as; it fixes the purity of their products (t1-t4)
+	thermal_tier = "t2"
+	#Register this mod's physical steps for the machines of Mekanism
+	mekanism = true
+	#Device tier the machines of Mekanism count as; it fixes the purity of their products (t1-t4)
+	mekanism_tier = "t2"
+	#Register this mod's physical steps for the machines of PneumaticCraft: Repressurized
+	pneumaticcraft = true
+	#Device tier the machines of PneumaticCraft: Repressurized count as; it fixes the purity of their products (t1-t4)
+	pneumaticcraft_tier = "t2"
+	#Register this mod's physical steps for the machines of NuclearCraft
+	nuclearcraft = true
+	#Device tier the machines of NuclearCraft count as; it fixes the purity of their products (t1-t4)
+	nuclearcraft_tier = "t2"
+

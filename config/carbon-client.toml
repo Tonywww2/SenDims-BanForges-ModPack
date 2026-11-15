@@ -5,4 +5,6 @@ skipVisibilityChecks = true
 #CPU cache update budget per frame in milliseconds. 0 updates immediately; a single item can exceed the budget.
 #Range: 0.0 ~ 20.0
 cacheUpdateBudgetMs = 2.0
+#Optimize GUI items. Disabled by default because gains are usually small. Keep per-item draw boundaries; custom buffers and shader packs retain native GUI rendering.
+optimizeGuiItems = false
 
