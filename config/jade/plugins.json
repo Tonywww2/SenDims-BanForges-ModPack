@@ -58,10 +58,6 @@
     "traditional_age": true,
     "nightstag": true
   },
-  "foodindustrial": {
-    "machine": true,
-    "device": true
-  },
   "jadeaddons.mcjtylib": {
     "jadeaddons": true
   },
@@ -133,6 +129,9 @@
     "villager": true,
     "converter": true,
     "breeder": true
+  },
+  "pipez": {
+    "pipe": true
   },
   "aether_redux": {
     "logicator": true

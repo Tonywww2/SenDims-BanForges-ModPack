@@ -265,6 +265,11 @@ let toRemoveID = new Set([
     "dustandash:crafting/rock_solid",
     "last_smith:hakurouken_inferno",
     "slashblade_addon:nihilul",
+    
+    "pipez_optimizer:atm_upgrade_fallback",
+    "pipez_optimizer:vibranium_upgrade_fallback",
+    "pipez_optimizer:unobtainium_upgrade_fallback",
+    "pipez_optimizer:stellar_upgrade_fallback",
 
     // 临时
     "pseudoedge_break_dawn:dimension",

@@ -23,7 +23,8 @@
                 "tetra:fabric/",
                 "tetra:fibre/",
                 "tetra:skin/",
-                "tetra:scale/"
+                "tetra:scale/",
+                "tetra:misc/"
             ],
             "aspects":
             {

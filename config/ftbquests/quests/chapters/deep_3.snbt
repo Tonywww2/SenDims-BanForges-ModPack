@@ -503,8 +503,10 @@
 		}
 		{
 			dependencies: ["40570CBD9A0E5C38"]
+			description: ["使用腐化晶莲与圣树祈愿石交互。"]
 			id: "2A9D15C315A89924"
 			quest_enhance_disable_scroll_paging: false
+			subtitle: "召唤道具"
 			tasks: [{
 				id: "32AFC5A01E69B359"
 				item: "kubejs:corrupted_crystalotus"
@@ -585,6 +587,69 @@
 				type: "item"
 			}]
 			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2E482B871B147DC6"]
+			id: "0E962A49C27AC0B5"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0A6C1E1E142882FA"
+				item: {
+					Count: 1
+					id: "elder_bosses:consecrated_prosthetic_blade"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2E482B871B147DC6"]
+			id: "2432BF55DFD0BA49"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "67F72599375916FC"
+				item: "terra_curio:workshop"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2E482B871B147DC6"]
+			id: "30850DC5D35A1CBB"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "58A5FFD71849D072"
+				item: "minecraft:enchanting_table"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2E482B871B147DC6"]
+			id: "74B7622BF05A0A09"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1DA3F7FE4B5915F3"
+				item: {
+					Count: 1
+					id: "slashblade_sendims:blessing_petals"
+					tag: {
+						blessing_petals: {
+							item_counts: 0
+							item_list: [ ]
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
 			y: 4.0d
 		}
 	]

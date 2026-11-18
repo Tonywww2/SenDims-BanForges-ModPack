@@ -1,6 +1,6 @@
 {
   "status": "design_reference_implementation_tracked_separately",
-  "revision": 4,
+  "revision": 6,
   "material": "万象合金锭",
   "tier": "阶段五（土卫六、深境四层）入口的后期综合制造",
   "structure": "原生供料设施在前端持续产出普通辅料；各支线每批消耗阶段五材料制坯，逐段加工并入模组辅件，八种部件汇合后投影、聚合、锻造。",
@@ -48,8 +48,7 @@
         "bio_11",
         "bio_13",
         "bio_14",
-        "bio_15",
-        "bio_16"
+        "bio_15"
       ],
       "stages": [
         {
@@ -95,8 +94,7 @@
               "bio_14"
             ],
             [
-              "bio_15",
-              "bio_16"
+              "bio_15"
             ]
           ],
           "primary_chain": null,
@@ -110,7 +108,7 @@
       "id": "aether",
       "name": "苍穹晶格透镜",
       "purpose": "折射并校准来自不同维度的投影。",
-      "raw_materials": "天境石材、极寒载液、光晶、孢子",
+      "raw_materials": "天境石材、极寒载液、光晶、紫水晶碎片",
       "stage5_inputs": [
         {
           "item": "titan_moon:cryo_alloy_ingot",
@@ -144,9 +142,8 @@
         "aether_10",
         "aether_11",
         "aether_08",
-        "aether_09",
+        "aether_09_prepare",
         "aether_12",
-        "aether_13",
         "aether_14"
       ],
       "stages": [
@@ -183,7 +180,7 @@
               "aether_08"
             ],
             [
-              "aether_09"
+              "aether_09_prepare"
             ]
           ],
           "primary_chain": 0,
@@ -196,7 +193,6 @@
           "chains": [
             [
               "aether_12",
-              "aether_13",
               "aether_14"
             ]
           ],
@@ -478,8 +474,6 @@
         "engineering_12",
         "engineering_14",
         "engineering_22",
-        "engineering_20",
-        "engineering_19",
         "engineering_26",
         "engineering_24"
       ],
@@ -532,9 +526,6 @@
           "chains": [
             [
               "engineering_22"
-            ],
-            [
-              "engineering_20"
             ]
           ],
           "primary_chain": 0,
@@ -546,13 +537,12 @@
           "previous": "engineering_assembly_3",
           "chains": [
             [
-              "engineering_19",
               "engineering_26",
               "engineering_24"
             ]
           ],
           "primary_chain": 0,
-          "primary_step": 2
+          "primary_step": 1
         }
       ],
       "component": "engineering_assembly_4",
@@ -1692,53 +1682,6 @@
       "input_contract": "使用本支线相符的模组辅料加工；原生载体保留真实数据，最终消耗其产物并入阶段五在制件。"
     },
     {
-      "id": "bio_16",
-      "branch": "bio",
-      "label": "蜂蜜灌装",
-      "recipe_identifier": "productivebees:bottler",
-      "medium": "item",
-      "constraint": "用实际瓶或容器产物；自定义中间液必须有配套灌装配方。",
-      "dependencies": [
-        "bio_15"
-      ],
-      "consumed_inputs": [
-        {
-          "source_node": "bio_15",
-          "count": 1,
-          "consumed": true
-        }
-      ],
-      "output_contract": {
-        "id": "kubejs:omni_bio_16",
-        "count": 1
-      },
-      "recipe_policy": "优先沿用可衔接的原生配方；仅在需要专用阶段状态或接口桥接时新增。",
-      "evidence": [
-        {
-          "recipe_id": "productivebees:bottler/honey_bottle",
-          "source": "productivebees-1.20.1-12.6.0.jar!/data/productivebees/recipes/bottler/honey_bottle.json",
-          "conditions": "true",
-          "json": {
-            "type": "productivebees:bottler",
-            "fluid": {
-              "tag": "forge:honey",
-              "amount": 250
-            },
-            "input": {
-              "item": "minecraft:glass_bottle"
-            },
-            "output": {
-              "item": "minecraft:honey_bottle"
-            }
-          }
-        }
-      ],
-      "origin_rule": "新增增值中间件要求唯一来源；原生产物允许既有来源，未排除替代途径的工艺只计推荐覆盖。",
-      "phase": "processing",
-      "segment": 3,
-      "input_contract": "各前驱整份进入原生 input/ingredient/fluid 字段；流体份量 1000 mB，方块以实物放置或 BlockItem 投料。额外模组辅料按本机槽位加入。"
-    },
-    {
       "id": "bio_assembly_3",
       "branch": "bio",
       "label": "星浆仿生隔膜",
@@ -1747,7 +1690,7 @@
       "dependencies": [
         "bio_assembly_2",
         "bio_14",
-        "bio_16"
+        "bio_15"
       ],
       "consumed_inputs": [
         {
@@ -1761,7 +1704,7 @@
           "consumed": true
         },
         {
-          "source_node": "bio_16",
+          "source_node": "bio_15",
           "count": 1,
           "consumed": true
         }
@@ -2304,33 +2247,39 @@
       "input_contract": "使用本支线相符的模组辅料加工；原生载体保留真实数据，最终消耗其产物并入阶段五在制件。"
     },
     {
-      "id": "aether_09",
+      "id": "aether_09_prepare",
       "branch": "aether",
-      "label": "枯萎孢子转化",
-      "recipe_identifier": "aether_redux:spore_blighting",
+      "label": "枯萎孢子转化前驱块制备",
+      "recipe_identifier": "minecraft:crafting_shapeless",
       "medium": "block",
-      "constraint": "以孢子右键专用方块；不与发光孢子共用源块。",
+      "constraint": "圣石与紫水晶碎片合成前驱块，前驱块直接参与孢光镀层镜片装配。",
       "dependencies": [],
       "consumed_inputs": [],
       "output_contract": {
-        "id": "kubejs:omni_aether_09_block",
+        "id": "kubejs:omni_aether_09_precursor",
         "count": 1,
-        "block": "kubejs:omni_aether_09_block",
-        "collection": "放置并转化后采集；对应 BlockItem 与单件掉落表必须存在。"
+        "block": "kubejs:omni_aether_09_precursor",
+        "collection": "合成后直接用于镜片装配。",
+        "label": "枯萎孢子转化前驱块"
       },
       "recipe_policy": "优先沿用可衔接的原生配方；仅在需要专用阶段状态或接口桥接时新增。",
       "evidence": [
         {
-          "recipe_id": "aether_redux:blighted_spores_convert_aether_grass_block_to_blighted_aether_grass_block",
-          "source": "aether-redux-2.0.19-1.20.1-neoforge.jar!/data/aether_redux/recipes/blighted_spores_convert_aether_grass_block_to_blighted_aether_grass_block.json",
-          "conditions": "true",
+          "recipe_id": "sdbf:omni_alloy/aether_09_prepare",
+          "source": "kubejs/server_scripts/recipes/s5_omni_alloy.js",
           "json": {
-            "type": "aether_redux:spore_blighting",
-            "ingredient": {
-              "block": "aether:aether_grass_block"
-            },
+            "type": "minecraft:crafting_shapeless",
+            "ingredients": [
+              {
+                "item": "aether:holystone"
+              },
+              {
+                "item": "minecraft:amethyst_shard"
+              }
+            ],
             "result": {
-              "block": "aether_redux:blighted_aether_grass_block"
+              "item": "kubejs:omni_aether_09_precursor",
+              "count": 1
             }
           }
         }
@@ -2338,7 +2287,7 @@
       "origin_rule": "新增增值中间件要求唯一来源；原生产物允许既有来源，未排除替代途径的工艺只计推荐覆盖。",
       "phase": "processing",
       "segment": 2,
-      "input_contract": "使用本支线相符的模组辅料加工；原生载体保留真实数据，最终消耗其产物并入阶段五在制件。"
+      "input_contract": "消耗圣石与紫水晶碎片各一份，得到一份镜片装配前驱块。"
     },
     {
       "id": "aether_assembly_2",
@@ -2349,7 +2298,7 @@
       "dependencies": [
         "aether_11",
         "aether_08",
-        "aether_09"
+        "aether_09_prepare"
       ],
       "consumed_inputs": [
         {
@@ -2363,7 +2312,7 @@
           "consumed": true
         },
         {
-          "source_node": "aether_09",
+          "source_node": "aether_09_prepare",
           "count": 1,
           "consumed": true
         }
@@ -2412,51 +2361,6 @@
       "input_contract": "使用本支线相符的模组辅料加工；原生载体保留真实数据，最终消耗其产物并入阶段五在制件。"
     },
     {
-      "id": "aether_13",
-      "branch": "aether",
-      "label": "发光孢子转化",
-      "recipe_identifier": "deep_aether:glowing_spores_recipe",
-      "medium": "block",
-      "constraint": "右键放置后的专用块；若使用双格草类，须同时处理上下半块。",
-      "dependencies": [
-        "aether_12"
-      ],
-      "consumed_inputs": [
-        {
-          "source_node": "aether_12",
-          "count": 1,
-          "consumed": true
-        }
-      ],
-      "output_contract": {
-        "id": "kubejs:omni_aether_13_block",
-        "count": 1,
-        "block": "kubejs:omni_aether_13_block",
-        "collection": "放置并转化后采集；对应 BlockItem 与单件掉落表必须存在。"
-      },
-      "recipe_policy": "优先沿用可衔接的原生配方；仅在需要专用阶段状态或接口桥接时新增。",
-      "evidence": [
-        {
-          "recipe_id": "minecraft:glowing_tall_grass_from_grass",
-          "source": "aether-redux-2.0.19-1.20.1-neoforge.jar!/packs/data/deep_aether_data/data/minecraft/recipes/glowing_tall_grass_from_grass.json",
-          "conditions": "true",
-          "json": {
-            "type": "deep_aether:glowing_spores_recipe",
-            "ingredient": {
-              "block": "aether_redux:short_aether_grass"
-            },
-            "result": {
-              "block": "deep_aether:tall_glowing_grass"
-            }
-          }
-        }
-      ],
-      "origin_rule": "新增增值中间件要求唯一来源；原生产物允许既有来源，未排除替代途径的工艺只计推荐覆盖。",
-      "phase": "processing",
-      "segment": 3,
-      "input_contract": "各前驱整份进入原生 input/ingredient/fluid 字段；流体份量 1000 mB，方块以实物放置或 BlockItem 投料。额外模组辅料按本机槽位加入。"
-    },
-    {
       "id": "aether_14",
       "branch": "aether",
       "label": "瓦解号角",
@@ -2464,11 +2368,11 @@
       "medium": "block",
       "constraint": "from、to 均为方块 ID；要求完整方块产物，避免设为掉落而丢失唯一前驱。",
       "dependencies": [
-        "aether_13"
+        "aether_12"
       ],
       "consumed_inputs": [
         {
-          "source_node": "aether_13",
+          "source_node": "aether_12",
           "count": 1,
           "consumed": true
         }
@@ -5212,7 +5116,7 @@
       "label": "万用电解",
       "recipe_identifier": "dustandash:ionizer",
       "medium": "block",
-      "constraint": "机器下方必须放源块或流体源；记录 inputBlock、outputBlock、电子与电极的成本。",
+      "constraint": "机器下方放万用电解前驱块。第四物品输入使用工艺衬片，消耗电子与电极。",
       "dependencies": [],
       "consumed_inputs": [],
       "output_contract": {
@@ -5271,7 +5175,7 @@
       "origin_rule": "新增增值中间件要求唯一来源；原生产物允许既有来源，未排除替代途径的工艺只计推荐覆盖。",
       "phase": "processing",
       "segment": 1,
-      "input_contract": "使用本支线相符的模组辅料加工；原生载体保留真实数据，最终消耗其产物并入阶段五在制件。"
+      "input_contract": "第四物品输入使用工艺衬片 ×1。机器下方放万用电解前驱块，完成后转换为万用电解构件。"
     },
     {
       "id": "engineering_assembly_1",
@@ -5695,64 +5599,17 @@
       "input_contract": "各前驱整份进入原生 input/ingredient/fluid 字段；流体份量 1000 mB，方块以实物放置或 BlockItem 投料。额外模组辅料按本机槽位加入。"
     },
     {
-      "id": "engineering_20",
-      "branch": "engineering",
-      "label": "低温燃料制备",
-      "recipe_identifier": "ad_astra:cryo_freezing",
-      "medium": "fluid",
-      "constraint": "遵守物品原料和流体结果的原生格式。",
-      "dependencies": [],
-      "consumed_inputs": [],
-      "output_contract": {
-        "id": "kubejs:omni_engineering_20_fluid_bucket",
-        "count": 1,
-        "fluid": "kubejs:omni_engineering_20_fluid",
-        "amount_mB": 1000,
-        "collection": "串接时直接输送 1000 mB；汇合时使用满桶并返还空桶。"
-      },
-      "recipe_policy": "优先沿用可衔接的原生配方；仅在需要专用阶段状态或接口桥接时新增。",
-      "evidence": [
-        {
-          "recipe_id": "ad_astra:cryo_freezing/cryo_fuel_from_cryo_freezing_blue_ice",
-          "source": "ad_astra-forge-1.20.1-1.15.20.jar!/data/ad_astra/recipes/cryo_freezing/cryo_fuel_from_cryo_freezing_blue_ice.json",
-          "conditions": "true",
-          "json": {
-            "type": "ad_astra:cryo_freezing",
-            "cookingtime": 120,
-            "energy": 40,
-            "ingredient": {
-              "item": "minecraft:blue_ice"
-            },
-            "result": {
-              "fluid": "ad_astra:cryo_fuel",
-              "millibuckets": 10
-            }
-          }
-        }
-      ],
-      "origin_rule": "新增增值中间件要求唯一来源；原生产物允许既有来源，未排除替代途径的工艺只计推荐覆盖。",
-      "phase": "processing",
-      "segment": 3,
-      "input_contract": "使用本支线相符的模组辅料加工；原生载体保留真实数据，最终消耗其产物并入阶段五在制件。"
-    },
-    {
       "id": "engineering_assembly_3",
       "branch": "engineering",
       "label": "航天供能线组",
       "phase": "assembly",
       "recipe_identifier": "minecraft:crafting_shaped",
       "dependencies": [
-        "engineering_22",
-        "engineering_20"
+        "engineering_22"
       ],
       "consumed_inputs": [
         {
           "source_node": "engineering_22",
-          "count": 1,
-          "consumed": true
-        },
-        {
-          "source_node": "engineering_20",
           "count": 1,
           "consumed": true
         }
@@ -5761,51 +5618,13 @@
         "id": "kubejs:omni_engineering_assembly_3",
         "count": 1
       },
-      "constraint": "消耗前段在制件及本段全部末端辅件各一份；串联上游已被消耗，不能再拿同一份参与装配。满桶返还空桶。"
-    },
-    {
-      "id": "engineering_19",
-      "branch": "engineering",
-      "label": "燃油精炼",
-      "recipe_identifier": "ad_astra:refining",
-      "medium": "fluid",
-      "constraint": "使用原生 ad_astra:oil 流体标签对应原油 1000 mB，精炼为专用载液 1000 mB，输送到 Naquadah 重液制备。",
-      "dependencies": [],
-      "consumed_inputs": [],
-      "output_contract": {
-        "id": "kubejs:omni_engineering_19_fluid_bucket",
-        "count": 1,
-        "fluid": "kubejs:omni_engineering_19_fluid",
-        "amount_mB": 1000,
-        "collection": "串接时直接输送 1000 mB；汇合时使用满桶并返还空桶。"
-      },
-      "recipe_policy": "优先沿用可衔接的原生配方；仅在需要专用阶段状态或接口桥接时新增。",
-      "evidence": [
+      "constraint": "消耗 NASA 工作台构件与蓝冰各一份，得到航天供能线组。",
+      "ingredients": [
         {
-          "recipe_id": "ad_astra:refining/fuel_from_refining_oil",
-          "source": "ad_astra-forge-1.20.1-1.15.20.jar!/data/ad_astra/recipes/refining/fuel_from_refining_oil.json",
-          "conditions": "true",
-          "json": {
-            "type": "ad_astra:refining",
-            "cookingtime": 1,
-            "energy": 30,
-            "input": {
-              "ingredient": {
-                "tag": "ad_astra:oil"
-              },
-              "millibuckets": 5
-            },
-            "result": {
-              "fluid": "ad_astra:fuel",
-              "millibuckets": 5
-            }
-          }
+          "item": "minecraft:blue_ice",
+          "count": 1
         }
-      ],
-      "origin_rule": "新增增值中间件要求唯一来源；原生产物允许既有来源，未排除替代途径的工艺只计推荐覆盖。",
-      "phase": "processing",
-      "segment": 4,
-      "input_contract": "使用本支线相符的模组辅料加工；原生载体保留真实数据，最终消耗其产物并入阶段五在制件。"
+      ]
     },
     {
       "id": "engineering_26",
@@ -5813,17 +5632,9 @@
       "label": "Naquadah 重液制备",
       "recipe_identifier": "sgjourney:naquadah_heavy_liquidizing",
       "medium": "fluid",
-      "constraint": "精炼载液 1000 mB 加 sgjourney:pure_naquadah ×1，得到专用重液 1000 mB，全部供高级结晶；机器按配方 input_fluid 接受流体，不要求先经过普通 Naquadah 液化。",
-      "dependencies": [
-        "engineering_19"
-      ],
-      "consumed_inputs": [
-        {
-          "source_node": "engineering_19",
-          "count": 1,
-          "consumed": true
-        }
-      ],
+      "constraint": "原油 1000 mB 加纯 Naquadah ×1，得到专用重液 1000 mB。支持 Ad Astra 和气动工艺原油，重液全部用于高级结晶。",
+      "dependencies": [],
+      "consumed_inputs": [],
       "output_contract": {
         "id": "kubejs:omni_engineering_26_fluid_bucket",
         "count": 1,
@@ -5857,7 +5668,16 @@
       "origin_rule": "新增增值中间件要求唯一来源；原生产物允许既有来源，未排除替代途径的工艺只计推荐覆盖。",
       "phase": "processing",
       "segment": 4,
-      "input_contract": "各前驱整份进入原生 input/ingredient/fluid 字段；流体份量 1000 mB，方块以实物放置或 BlockItem 投料。额外模组辅料按本机槽位加入。"
+      "input_contract": "原油 1000 mB 加纯 Naquadah ×1，得到专用重液 1000 mB。支持 Ad Astra 和气动工艺原油，重液全部用于高级结晶。",
+      "input_fluids": [
+        {
+          "alternatives": [
+            "ad_astra:oil",
+            "pneumaticcraft:oil"
+          ],
+          "amount_mB": 1000
+        }
+      ]
     },
     {
       "id": "engineering_24",
@@ -9487,6 +9307,31 @@
       "recipe_identifier": "framedblocks:frame",
       "step": "precision_18",
       "label": "框架锯切"
+    },
+    {
+      "recipe_identifier": "aether_redux:spore_blighting",
+      "step": "aether_09",
+      "label": "枯萎孢子转化"
+    },
+    {
+      "recipe_identifier": "deep_aether:glowing_spores_recipe",
+      "step": "aether_13",
+      "label": "发光孢子转化"
+    },
+    {
+      "recipe_identifier": "productivebees:bottler",
+      "step": "bio_16",
+      "label": "蜂蜜灌装"
+    },
+    {
+      "recipe_identifier": "ad_astra:cryo_freezing",
+      "step": "engineering_20",
+      "label": "低温燃料制备"
+    },
+    {
+      "recipe_identifier": "ad_astra:refining",
+      "step": "engineering_19",
+      "label": "燃油精炼"
     }
   ],
   "stage5_entry_totals_per_ingot": {
@@ -9554,13 +9399,13 @@
     }
   ],
   "coverage": {
-    "planned_workflow_steps": 141,
+    "planned_workflow_steps": 137,
     "recommended_native_supply_steps": 7,
-    "processing_and_final_steps": 134,
-    "unique_recipe_identifiers": 140,
-    "registered_or_json_identifiers": 133,
+    "processing_and_final_steps": 130,
+    "unique_recipe_identifiers": 135,
+    "registered_or_json_identifiers": 128,
     "code_mechanics": 7,
-    "graph_nodes_including_subassemblies": 179,
+    "graph_nodes_including_subassemblies": 175,
     "note": "总步骤包含推荐的原生供料工艺；同一种原料可能有其他来源，不能把这些供料设备声称为独占必经。其余也须通过载体、接口和来源验收，才可称运行时强制覆盖。"
   },
   "mandatory_source_audits": [

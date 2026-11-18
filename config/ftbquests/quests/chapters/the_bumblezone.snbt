@@ -36,7 +36,7 @@
 		{
 			id: "4925CD729E9A5550"
 			linked_quest: "4D0F49CE2720FBCD"
-			x: 9.0d
+			x: 12.0d
 			y: 3.0d
 		}
 		{
@@ -64,20 +64,20 @@
 		{
 			id: "4CDA3DAA711A9C8B"
 			linked_quest: "6477045E03EE3F9E"
-			x: 3.0d
+			x: 6.0d
 			y: 9.0d
 		}
 		{
 			id: "4E6D3E10F4BA3A7E"
 			linked_quest: "63D9F90A01E19D8A"
-			x: 3.0d
-			y: 12.0d
+			x: 12.0d
+			y: 9.0d
 		}
 		{
 			id: "017D38E9416440B1"
 			linked_quest: "319D8C539D81926B"
 			shape: "hexagon"
-			x: 9.0d
+			x: 12.0d
 			y: 6.0d
 		}
 	]
@@ -116,7 +116,7 @@
 				item: "the_bumblezone:honey_crystal_shards"
 				type: "item"
 			}]
-			x: 0.0d
+			x: 3.0d
 			y: 3.0d
 		}
 		{
@@ -128,7 +128,7 @@
 				item: "the_bumblezone:pollen_puff"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 6.0d
 			y: 3.0d
 		}
 		{
@@ -141,7 +141,7 @@
 				item: "the_bumblezone:crystalline_flower"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 6.0d
 			y: 6.0d
 		}
 		{
@@ -153,7 +153,7 @@
 				item: "the_bumblezone:glistering_honey_crystal"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 9.0d
 			y: 3.0d
 		}
 		{
@@ -429,7 +429,7 @@
 				}
 				type: "item"
 			}]
-			x: 6.0d
+			x: 9.0d
 			y: 12.0d
 		}
 		{
@@ -506,7 +506,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 9.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -618,7 +618,7 @@
 				item: "the_bumblezone:ancient_wax_compound_eyes"
 				type: "item"
 			}]
-			x: 0.0d
+			x: 3.0d
 			y: 6.0d
 		}
 		{
@@ -694,6 +694,18 @@
 			}]
 			x: -4.0d
 			y: 4.0d
+		}
+		{
+			dependencies: ["220AEBF0A8A46F7C"]
+			id: "6FC0771540F630D2"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "37CD46B36CF94A31"
+				item: "kubejs:anchor_shard"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
 		}
 	]
 	title: "[X] &e黄蜂领域"

@@ -21,7 +21,8 @@
                 "tetra:fabric/",
                 "tetra:metal/",
                 "tetra:wood/",
-                "tetra:scale/"
+                "tetra:scale/",
+                "tetra:misc/"
             ],
             "aspects":
             {

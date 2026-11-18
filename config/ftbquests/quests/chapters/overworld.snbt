@@ -807,6 +807,48 @@
 			x: -5.0d
 			y: 7.0d
 		}
+		{
+			dependencies: ["713CA11C25A8A2E2"]
+			id: "30B0751DDC18E726"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "14D60312083FB2D5"
+				item: {
+					Count: 1
+					id: "botania:flight_tiara"
+					tag: {
+						variant: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["713CA11C25A8A2E2"]
+			id: "5866EEBB1355C9FE"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1C4377C402F5A83E"
+				item: "botania:holy_cloak"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["713CA11C25A8A2E2"]
+			id: "6EA5A31B40D54709"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7522AB6693B85560"
+				item: "botania:alfheim_portal"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
 	]
 	title: "[XI] &e空岛之下"
 }

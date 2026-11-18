@@ -12,8 +12,6 @@ FLUIDS={
  'omni_thermal_18_fluid':('分馏精炼机构件液','d8a23a','clear'),
  'omni_thermal_20_brew':('相变抑制酿液','5ac8c0','potion'),
  'omni_engineering_03_fluid':('机械挤压构件液','8fc4e8','viscous'),
- 'omni_engineering_20_fluid':('低温燃料制备构件液','aee8f8','cryo'),
- 'omni_engineering_19_fluid':('燃油精炼构件液','f0b030','clear'),
  'omni_engineering_26_fluid':('Naquadah 重液制备构件液','3ac87a','glow'),
  'omni_pneumatic_05_fluid':('气动炼油构件液','e0c060','clear'),
  'omni_pneumatic_06_fluid':('热气动处理构件液','dfeaf0','viscous'),

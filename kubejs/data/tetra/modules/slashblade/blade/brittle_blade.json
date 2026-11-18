@@ -17,7 +17,12 @@
             [
                 "tetra:gem/",
                 "tetra:bone/",
-                "tetra:stone/"
+                "tetra:stone/",
+                "tetra:fibre/",
+                "tetra:skin/",
+                "tetra:fabric/",
+                "tetra:scale/",
+                "tetra:misc/"
             ],
             "aspects":
             {
@@ -37,7 +42,7 @@
             {
                 "primaryAttributes":
                 {
-                    "generic.attack_damage": 1.35
+                    "generic.attack_damage": 1.7
                 },
                 "secondaryEffects":
                 {

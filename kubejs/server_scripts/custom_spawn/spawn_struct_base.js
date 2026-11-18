@@ -448,7 +448,10 @@ let registerPortal = (config) => {
         if (clearDestinationBlocks && targetLevel) {
             buildReturnPlatform(targetLevel, new BlockPos(targetX, targetY, targetZ), theme);
         }
-        server.runCommandSilent(`/execute in ${toDim} run tp ${player.name.string} ${targetX + 0.5} ${targetY + 1} ${targetZ + 0.5}`);
+        let teleportResult = server.runCommandSilent(`/execute in ${toDim} run tp ${player.uuid} ${targetX + 0.5} ${targetY + 1} ${targetZ + 0.5}`);
+        if (teleportResult < 1) {
+            throw new Error(`无法将玩家 ${player.uuid} 传送到 ${toDim}`);
+        }
         if (targetLevel) {
             server.scheduleInTicks(1, callback => ritualArrival(targetLevel, targetX + 0.5, targetY + 1, targetZ + 0.5, theme, player));
         }

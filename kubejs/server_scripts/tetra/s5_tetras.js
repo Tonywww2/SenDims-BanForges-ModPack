@@ -6,7 +6,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(5, () => {
 
     // 4.1.1 托林纤维
     tetraMaterialBuilder(event, "tholin_fibre").setCategory("fibre")
-        .setPrimary(65).setSecondary(70).setTertiary(32)
+        .setPrimary(67).setSecondary(72).setTertiary(32)
         .setDurability(480).setIntegrityCost(5).setIntegrityGain(15)
         .setMagicCapacity(115).setToolLevel(4).setToolEfficiency(4.5)
         .addAttributes("attributeslib:dodge_chance", 0.015)
@@ -20,7 +20,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(5, () => {
 
     // 4.1.1 强韧神经腺
     tetraMaterialBuilder(event, "tough_neural_gland").setCategory("skin")
-        .setPrimary(67).setSecondary(65).setTertiary(32)
+        .setPrimary(69).setSecondary(67).setTertiary(32)
         .setDurability(480).setIntegrityCost(7).setIntegrityGain(11)
         .setMagicCapacity(180).setToolLevel(4).setToolEfficiency(5.5)
         .addAttributes("slashblade_sendims:sprint_cd", 0.02)
@@ -34,7 +34,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(5, () => {
 
     // 4.1.1 陨铁锭
     tetraMaterialBuilder(event, "meteoric_iron_ingot").setCategory("metal")
-        .setPrimary(70).setSecondary(58).setTertiary(32)
+        .setPrimary(72).setSecondary(59).setTertiary(32)
         .setDurability(740).setIntegrityCost(9).setIntegrityGain(17)
         .setMagicCapacity(100).setToolLevel(4).setToolEfficiency(8.5)
         .addAttributes("attributeslib:armor_pierce", 2)
@@ -48,7 +48,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(5, () => {
 
     // 4.1.2 氮质体膜片
     tetraMaterialBuilder(event, "azotosome_sheet").setCategory("fabric")
-        .setPrimary(69).setSecondary(65).setTertiary(33.5)
+        .setPrimary(71).setSecondary(67).setTertiary(33.5)
         .setDurability(500).setIntegrityCost(6).setIntegrityGain(14)
         .setMagicCapacity(190).setToolLevel(4).setToolEfficiency(4.5)
         .addAttributes("slashblade_sendims:magic_resistance", 2)
@@ -62,10 +62,10 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(5, () => {
 
     // 4.1.2 星浆晶体
     tetraMaterialBuilder(event, "star_slurry_crystal").setCategory("gem")
-        .setPrimary(69).setSecondary(65).setTertiary(33.5)
+        .setPrimary(71).setSecondary(67).setTertiary(33.5)
         .setDurability(560).setIntegrityCost(9).setIntegrityGain(12)
         .setMagicCapacity(215).setToolLevel(4).setToolEfficiency(8)
-        .addAttributes("attributeslib:cold_damage", 18)
+        .addAttributes("attributeslib:cold_damage", 35)
         .addAttributes("slashblade_sendims:magic_penetration", 2)
         .addAttributes("slashblade_sendims:ap_reduce_amount", 4)
         .setTints("895cc3", "b282d9")
@@ -76,10 +76,10 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(5, () => {
 
     // 4.1.3 冰晶合金锭
     tetraMaterialBuilder(event, "cryo_alloy_ingot").setCategory("metal")
-        .setPrimary(68).setSecondary(70).setTertiary(33)
+        .setPrimary(70).setSecondary(72).setTertiary(33)
         .setDurability(780).setIntegrityCost(8).setIntegrityGain(16)
         .setMagicCapacity(170).setToolLevel(4).setToolEfficiency(8)
-        .addAttributes("attributeslib:cold_damage", 18)
+        .addAttributes("attributeslib:cold_damage", 35)
         .addAttributes("minecraft:generic.armor_toughness", 1)
         .addAttributes("slashblade_sendims:parry_heal_amount", 70)
         .setTints("8bacac", "acf3f3")
@@ -90,7 +90,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(5, () => {
 
     // 4.1.3 泰坦二型复合锭
     tetraMaterialBuilder(event, "titan-ii_composite_ingot").setCategory("metal")
-        .setPrimary(82).setSecondary(40).setTertiary(34)
+        .setPrimary(84).setSecondary(41).setTertiary(34)
         .setDurability(920).setIntegrityCost(11).setIntegrityGain(20)
         .setMagicCapacity(125).setToolLevel(4).setToolEfficiency(9)
         .addAttributes("minecraft:generic.armor", 2)
@@ -104,7 +104,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(5, () => {
 
     // 4.1.3 ε尘
     tetraMaterialBuilder(event, "epsilon_dust").setCategory("scale")
-        .setPrimary(77).setSecondary(53).setTertiary(34.5)
+        .setPrimary(79).setSecondary(54).setTertiary(34.5)
         .setDurability(460).setIntegrityCost(8).setIntegrityGain(10)
         .setMagicCapacity(225).setToolLevel(4).setToolEfficiency(9)
         .addAttributes("attributeslib:crit_chance", 0.01)
@@ -118,11 +118,11 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(5, () => {
 
     // 4.1.3 虹移之熵
     tetraMaterialBuilder(event, "rainbowshift_entropy").setCategory("fabric")
-        .setPrimary(75).setSecondary(58).setTertiary(34.5)
+        .setPrimary(77).setSecondary(59).setTertiary(34.5)
         .setDurability(520).setIntegrityCost(10).setIntegrityGain(12)
         .setMagicCapacity(240).setToolLevel(4).setToolEfficiency(7)
-        .addAttributes("attributeslib:fire_damage", 12)
-        .addAttributes("attributeslib:cold_damage", 12)
+        .addAttributes("attributeslib:fire_damage", 23)
+        .addAttributes("attributeslib:cold_damage", 23)
         .addAttributes("slashblade_sendims:magic_penetration", 2)
         .setTints("3cbc8a", "9dddc1")
         .addTexture("shiny").addTexture("default")
@@ -132,10 +132,10 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(5, () => {
 
     // 4.1.4 不融冰
     tetraMaterialBuilder(event, "unmelting_ice").setCategory("gem")
-        .setPrimary(62).setSecondary(100).setTertiary(36)
+        .setPrimary(64).setSecondary(103).setTertiary(36)
         .setDurability(720).setIntegrityCost(10).setIntegrityGain(18)
         .setMagicCapacity(185).setToolLevel(4).setToolEfficiency(7.5)
-        .addAttributes("attributeslib:cold_damage", 30)
+        .addAttributes("attributeslib:cold_damage", 58)
         .addAttributes("minecraft:generic.knockback_resistance", 0.025)
         .addAttributes("slashblade_sendims:sprint_cd", -0.015)
         .setTints("85cdda", "b6e6e9")
@@ -146,7 +146,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(5, () => {
 
     // 4.1.4 风暴氢晶
     tetraMaterialBuilder(event, "storm_hydrogen_crystal").setCategory("gem")
-        .setPrimary(77).setSecondary(62).setTertiary(36)
+        .setPrimary(79).setSecondary(64).setTertiary(36)
         .setDurability(580).setIntegrityCost(9).setIntegrityGain(13)
         .setMagicCapacity(220).setToolLevel(4).setToolEfficiency(9.5)
         .addAttributes("slashblade_sendims:sprint_cd", 0.015)
@@ -160,7 +160,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(5, () => {
 
     // 4.1.4 神门残片
     tetraMaterialBuilder(event, "gate_fragment").setCategory("gem")
-        .setPrimary(95).setSecondary(18).setTertiary(36)
+        .setPrimary(97).setSecondary(18).setTertiary(36)
         .setDurability(860).setIntegrityCost(12).setIntegrityGain(16)
         .setMagicCapacity(230).setToolLevel(4).setToolEfficiency(10)
         .addAttributes("slashblade_sendims:frenzy_resistance", 0.03)

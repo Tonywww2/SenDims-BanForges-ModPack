@@ -600,6 +600,48 @@
 			x: -4.0d
 			y: 6.0d
 		}
+		{
+			dependencies: ["6035D1A1774B2FAF"]
+			id: "0EF1EAFDABD07E38"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "38684BB6768C96EC"
+				item: "slashblade_sendims:integral_component_5"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6035D1A1774B2FAF"]
+			id: "6F5A420F2B0D6F32"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3A037D00E8CE65BF"
+				item: "pneumaticcraft:pressure_chamber_wall"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6035D1A1774B2FAF"]
+			id: "0DEF61E45DFABFCA"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "277DCA00169DAE78"
+				item: {
+					Count: 1
+					id: "pneumaticcraft:pneumatic_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
 	]
 	title: "[XI] 土星环"
 }

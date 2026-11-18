@@ -24,7 +24,8 @@
                 "tetra:fabric/",
                 "tetra:fibre/",
                 "tetra:skin/",
-                "tetra:scale/"
+                "tetra:scale/",
+                "tetra:misc/"
             ],
             "countOffset": 0,
             "countFactor": 2,

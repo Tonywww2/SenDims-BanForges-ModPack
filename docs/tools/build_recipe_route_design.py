@@ -33,7 +33,7 @@ TF 无序合成|tofucraft:tf_craft_shapeless|item|使用 tf 能量字段，输�
 蜂蜜灌装|productivebees:bottler|item|用实际瓶或容器产物；自定义中间液必须有配套灌装配方。
 盆景培养|native:bonsaitrees3_growing|item|soil 与 sapling 是生长定义；使用生长、收获所得的专用树产物，不写假的加工 serializer。
 """),
-"aether": ("苍穹晶格透镜", "天境石材、极寒载液、光晶、孢子", """
+"aether": ("苍穹晶格透镜", "天境石材、极寒载液、光晶、紫水晶碎片", """
 祭坛附魔加工|aether:enchanting|item|核对燃料、烹饪时间与原料数量。
 冰冻器加工|aether:freezing|item|这一步使用机器，另有下列世界内冻结方式。
 圣石碎片转化|aether:ambrosium_enchanting|block|右键世界内专用块；ingredient 与 result 用 block 键。
@@ -102,7 +102,7 @@ TF 无序合成|tofucraft:tf_craft_shapeless|item|使用 tf 能量字段，输�
 尘烬整合|dustandash:integrate|item|使用模组 level 与输入槽，不与普通工作台混合。
 铣床装配|dustandash:milling|item|5×5 格和 catalyst；step1 铺板、step2 装配是同一 serializer 的两个操作阶段。
 尘烬离心|dustandash:centrifuge|item|实际 outputs 为最多八组物品，并使用 tick 字段。
-万用电解|dustandash:ionizer|block|机器下方必须放源块或流体源；记录 inputBlock、outputBlock、电子与电极的成本。
+万用电解|dustandash:ionizer|block|机器下方放万用电解前驱块。第四物品输入使用工艺衬片，消耗电子与电极。
 合金炉|enderio:alloy_smelting|item|用 Ender IO 专用合金类型，避免机器自动采用原版烧炼产生替代结果。
 SAG 磨粉|enderio:sag_milling|item|必需主产物 chance 为 1；研磨球加成不能复制唯一阶段材料。
 切片加工|enderio:slicing|item|输入槽和斧、剪刀耐久分别核算。
@@ -199,10 +199,10 @@ Tetra 模组工作台|native:tetra_workbench|native_item|从 data/tetra/schemati
 }
 
 REMOVED_STEPS = {
-    "bio": {2, 4, 5, 6},
-    "aether": {15},
+    "bio": {2, 4, 5, 6, 16},
+    "aether": {13, 15},
     "mana": {13},
-    "engineering": {1, 2, 13, 16, 17, 18, 21, 23, 25},
+    "engineering": {1, 2, 13, 16, 17, 18, 19, 20, 21, 23, 25},
     "pneumatic": {1, 9, 10},
     "nuclear": {33},
     "precision": {2, 3, 6, 7, 9, 11, 13, 14, 18},
@@ -213,6 +213,7 @@ REMOVED_RECIPES = {
     for number, row in enumerate(rows.strip().splitlines(), 1)
     if number in REMOVED_STEPS.get(branch, set())
 }
+REMOVED_RECIPES["aether_redux:spore_blighting"] = {"step": "aether_09", "label": "枯萎孢子转化"}
 
 EXCLUSIONS = {
     "nuclearcraft:collision_chamber": "粒子专用输出；接入原生束流上游，不能添加普通物品结果。独立强制关卡需要能区、粒子来源和专用粒子注册设计。",
@@ -300,11 +301,11 @@ SEGMENTS = {
     "bio": [
         ("陶瓷承压膜", [[1], [3]], 0),
         ("代谢催化膜", [[7, 8, 9], [10, 11]], 0),
-        ("蜂蜡复合膜", [[13, 14], [15, 16]], None)],
+        ("蜂蜡复合膜", [[13, 14], [15]], None)],
     "aether": [
         ("极寒折射镜坯", [[1, 2], [3, 4, 5, 6, 7]], 0),
         ("孢光镀层镜片", [[10, 11], [8], [9]], 0),
-        ("天境晶格镜组", [[12, 13, 14]], None)],
+        ("天境晶格镜组", [[12, 14]], None)],
     "mana": [
         ("四相活石腔壁", [[1, 2, 3, 4]], 0),
         ("符文谐振内衬", [[5, 6, 7, 8, 9]], 0),
@@ -317,8 +318,8 @@ SEGMENTS = {
     "engineering": [
         ("门瑞欧导电骨架", [[3, 4], [5, 6, 7], [8]], 0),
         ("灵魂绝缘绕组", [[9, 10, 11], [12], [14]], 0),
-        ("航天供能线组", [[22], [20]], 0),
-        ("Naquadah 耦合绕组", [[19, 26, 24]], (0, 2))],
+        ("航天供能线组", [[22]], 0),
+        ("Naquadah 耦合绕组", [[26, 24]], (0, 1))],
     "pneumatic": [
         ("钻刻耐压阀体", [[2, 3, 4]], 0),
         ("热控密封阀座", [[5, 6, 7, 8]], None),
@@ -351,6 +352,13 @@ def build():
             label, kind, medium, constraint = line.split("|", 3)
             assert kind.startswith("native:") or kind in records, kind
             ident = f"{key}_{number:02d}"
+            if ident == "aether_09":
+                ident = "aether_09_prepare"
+                label = "枯萎孢子转化前驱块制备"
+                kind = "minecraft:crafting_shapeless"
+                constraint = "圣石与紫水晶碎片合成前驱块，前驱块直接参与孢光镀层镜片装配。"
+            if ident == "engineering_26":
+                constraint = "原油 1000 mB 加纯 Naquadah ×1，得到专用重液 1000 mB。支持 Ad Astra 和气动工艺原油，重液全部用于高级结晶。"
             output = {"id": f"kubejs:omni_{ident}", "count": 1}
             if medium == "fluid":
                 output.update(id=f"kubejs:omni_{ident}_fluid_bucket",
@@ -361,6 +369,9 @@ def build():
                     collection="放置并转化后采集；对应 BlockItem 与单件掉落表必须存在。")
             if medium == "native_item":
                 output["collection"] = "沿用原生载体，验收真实状态后消耗载体和一片工艺衬片封装；封装只用于后续装配，不冒充原生机器的输出。"
+            if ident == "aether_09_prepare":
+                output.update(id="kubejs:omni_aether_09_precursor", block="kubejs:omni_aether_09_precursor",
+                    label="枯萎孢子转化前驱块", collection="合成后直接用于镜片装配。")
             source = records.get(kind)
             node = {"id": ident, "branch": key, "label": label, "recipe_identifier": kind,
                 "medium": medium, "constraint": constraint, "dependencies": [],
@@ -445,6 +456,9 @@ def build():
                 "consumed_inputs": [{"source_node": dep, "count": 1, "consumed": True} for dep in terminals],
                 "output_contract": {"id": f"kubejs:omni_{ident}", "count": 1},
                 "constraint": "消耗前段在制件及本段全部末端辅件各一份；串联上游已被消耗，不能再拿同一份参与装配。满桶返还空桶。"})
+            if ident == "engineering_assembly_3":
+                nodes[-1]["ingredients"] = [{"item": "minecraft:blue_ice", "count": 1}]
+                nodes[-1]["constraint"] = "消耗航天工作台构件与蓝冰各一份，得到航天供能线组。"
             stage_descriptions.append({"id": ident, "name": label, "previous": previous,
                 "chains": [[by_number[i]["id"] for i in chain] for chain in chains],
                 "primary_chain": primary_chain, "primary_step": primary_step})
@@ -531,7 +545,7 @@ def build():
     for branch in branches:
         for ingredient in branch["stage5_inputs"]:
             stage5_totals[ingredient["item"]] += ingredient["count"]
-    plan = {"status": "design_reference_implementation_tracked_separately", "revision": 4,
+    plan = {"status": "design_reference_implementation_tracked_separately", "revision": 6,
         "material": "万象合金锭", "tier": "阶段五（土卫六、深境四层）入口的后期综合制造",
         "structure": "原生供料设施在前端持续产出普通辅料；各支线每批消耗阶段五材料制坯，逐段加工并入模组辅件，八种部件汇合后投影、聚合、锻造。",
         "recipe_policy": "保留可用原生配方；按用途复用既有材料，只为阶段连接、复合在制件和最终部件新增必要配方。",
@@ -638,7 +652,7 @@ def write_route(plan, used):
     def desc(ident):
         return by_id[ident]["label"]
     lines = ["# 万象合金合成路线设计", "",
-        f"第四版：按要求累计取消 {len(plan['removed_workflow_steps'])} 个流程，保留其余步骤编号便于对照。以阶段五的土卫六和深境四层材料起步，制造八种具有不同用途的部件。原生供料设施先准备普通辅料；每批消耗新的阶段五材料制坯，逐段加工并加入模组材料，八种部件最终通过投影、聚合和组合锻造制成一锭万象合金。", "",
+        f"第六版按要求累计取消 {len(plan['removed_workflow_steps'])} 个流程。以阶段五的土卫六和深境四层材料起步，制造八种具有不同用途的部件。原生供料设施先准备普通辅料。每批消耗新的阶段五材料制坯，逐段加工并加入模组材料，八种部件最终通过投影、聚合和组合锻造制成一锭万象合金。", "",
         "优先复用合适的原生配方。无尽之尘、盆景原木、蜂蜡、玄武岩、胶乳和氦气均可直接使用既有产物；新的配方主要负责复合坯料、工艺衔接和部件装配。原生设备不会免费产出已经含有阶段五材料的高级中间件。", "",
         f"共规划 {c['planned_workflow_steps']} 个工艺位置：{c['recommended_native_supply_steps']} 个前端原生供料位置，{c['processing_and_final_steps']} 个加工与最终合成位置。涉及 {c['registered_or_json_identifiers']} 个配方标识和 {c['code_mechanics']} 类代码驱动操作，加入制坯与装配后共 {c['graph_nodes_including_subassemblies']} 个节点。供料原料有替代来源时，相应设备属于推荐路径；其余工艺也需完成接口与来源验收后才能宣称运行时强制覆盖。", "",
         "本文是路线设计依据；实装与验证状态另见 [omni-alloy-implementation.json](omni-alloy-implementation.json)。以下物耗以一锭为单位；流体、原生载体和世界内操作保留各自的实际接口。", "",
@@ -692,8 +706,8 @@ def write_route(plan, used):
                 if primary is not None else f"保留{desc(st['previous'])}直到本段装配，与所有合格辅件一并消耗。")
             lines.append(f"| {desc(st['id'])} | {chains} | {incorporation} |")
         if b["id"] == "engineering":
-            lines.extend(["", "液体连接改为：原油 1000 mB → 燃油精炼所得专用载液 1000 mB → 加纯 Naquadah 一份制成专用重液 1000 mB → 全部注入高级结晶。高级结晶同时消耗上段航天供能线组作为晶体基座，以及石英、紫水晶碎片各一份；不要求基础结晶或普通 Naquadah 液化提供前驱。", "",
-                "已检查当前 HeavyNaquadahLiquidizerEntity.isDesiredInputFluid：按可用配方的 input_fluid 建立接受列表，可以接收这条精炼支线定义的载液。实际注册、容量与缓存刷新仍需落地验证。"])
+            lines.extend(["", "原油 1000 mB 与纯 Naquadah 一份直接制成专用重液 1000 mB，支持 Ad Astra 和气动工艺原油，重液全部注入高级结晶。高级结晶同时消耗上段航天供能线组作为晶体基座，以及石英、紫水晶碎片各一份。蓝冰一份直接参与航天供能线组装配。", "",
+                "HeavyNaquadahLiquidizerEntity.isDesiredInputFluid 按可用配方的 input_fluid 建立接受列表，两种原油分别提供一条配方。游戏内运行效果待验证。"])
         lines.extend(["", "| 步骤 | 配方标识或操作 | 产物介质 | 实现要求 |", "|---|---|---|---|"])
         for ident in b["methods"]:
             n = by_id[ident]

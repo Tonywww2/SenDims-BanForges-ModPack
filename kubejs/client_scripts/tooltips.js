@@ -71,7 +71,7 @@ ItemEvents.tooltip(event => {
     event.add([
         'dustandash:hand_vacuum',
         'dustandash:iron_vacuum'
-    ], Text.translatable('info.kubejs.vacuum_resource_source').color(Color.GRAY));
+    ], Text.translatable('info.kubejs.vacuum_resource_source').color(Color.RED));
     event.add('terra_entity:king_slime_spawn_egg', Text.translatable('info.kubejs.king_slime_spawn_egg').color(Color.AQUA));
 
     event.add('slashblade_sendims:deeprealm_certificate', Text.translatable('info.kubejs.deeprealm_certificate'));

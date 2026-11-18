@@ -1,23 +1,28 @@
 {
-	"ftbteams": {
-		"my_team": true
-	},
-	"ftbquests": {
-		"quests": true
-	},
-	"ftblibrary": {
-		"toggle.gamemode": true,
-		"toggle.rain": true,
-		"toggle.day": true,
-		"toggle.night": true,
-		"home": true,
-		"back": true
-	},
-	"ftbessentials": {
-		"trash_can": true
-	},
-	"ftbchunks": {
-		"chunks": true,
-		"claim_chunks": true
-	}
+    "ftbteams":
+    {
+        "my_team": true
+    },
+    "ftbquests":
+    {
+        "quests": true
+    },
+    "ftblibrary":
+    {
+        "toggle.gamemode": false,
+        "toggle.rain": false,
+        "toggle.day": false,
+        "toggle.night": false,
+        "home": true,
+        "back": true
+    },
+    "ftbessentials":
+    {
+        "trash_can": true
+    },
+    "ftbchunks":
+    {
+        "chunks": false,
+        "claim_chunks": false
+    }
 }

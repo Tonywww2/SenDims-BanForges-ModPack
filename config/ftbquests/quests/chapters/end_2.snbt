@@ -776,6 +776,54 @@
 			x: -4.0d
 			y: 6.0d
 		}
+		{
+			dependencies: ["0A68F5EE8F25F036"]
+			id: "4C86D2F471821097"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1686B2BD93ADE353"
+				item: "integrateddynamics:logic_director"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0A68F5EE8F25F036"]
+			id: "392243FA70630D9E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6C441D40220651E5"
+				item: "integrateddynamics:part_connector_omni_directional"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0A68F5EE8F25F036"]
+			id: "6133EA63571BB645"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3B4B4D7C79F65684"
+				item: "integratedterminals:terminal_storage_portable"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0A68F5EE8F25F036"]
+			id: "5C6D27B1C9B98396"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "55041215FA4D795A"
+				item: "apotheosis:ender_library"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
 	]
 	title: "[VIII] &e末地"
 }

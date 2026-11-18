@@ -44,11 +44,6 @@ global.sdbfOmniAlloy = {
                 "branch": "bio",
                 "texture": "kubejs:item/omni_bio_15"
             },
-            "kubejs:omni_bio_16": {
-                "name": "蜂蜜灌装构件",
-                "branch": "bio",
-                "texture": "kubejs:item/omni_bio_16"
-            },
             "kubejs:astral_biomembrane": {
                 "name": "星浆仿生隔膜",
                 "branch": "bio",
@@ -721,20 +716,10 @@ global.sdbfOmniAlloy = {
                 "branch": "aether",
                 "texture": "kubejs:block/omni_aether_07_block"
             },
-            "kubejs:omni_aether_09_block": {
-                "name": "枯萎孢子转化构件",
-                "branch": "aether",
-                "texture": "kubejs:block/omni_aether_09_block"
-            },
             "kubejs:omni_aether_12_block": {
                 "name": "金色史维特球转化构件",
                 "branch": "aether",
                 "texture": "kubejs:block/omni_aether_12_block"
-            },
-            "kubejs:omni_aether_13_block": {
-                "name": "发光孢子转化构件",
-                "branch": "aether",
-                "texture": "kubejs:block/omni_aether_13_block"
             },
             "kubejs:omni_aether_14_block": {
                 "name": "瓦解号角构件",
@@ -856,20 +841,6 @@ global.sdbfOmniAlloy = {
                 "color": "edb85d",
                 "still_texture": "kubejs:block/omni_engineering_03_fluid_still",
                 "flowing_texture": "kubejs:block/omni_engineering_03_fluid_flow"
-            },
-            "kubejs:omni_engineering_20_fluid": {
-                "name": "低温燃料制备构件液",
-                "branch": "engineering",
-                "color": "edb85d",
-                "still_texture": "kubejs:block/omni_engineering_20_fluid_still",
-                "flowing_texture": "kubejs:block/omni_engineering_20_fluid_flow"
-            },
-            "kubejs:omni_engineering_19_fluid": {
-                "name": "燃油精炼构件液",
-                "branch": "engineering",
-                "color": "edb85d",
-                "still_texture": "kubejs:block/omni_engineering_19_fluid_still",
-                "flowing_texture": "kubejs:block/omni_engineering_19_fluid_flow"
             },
             "kubejs:omni_engineering_26_fluid": {
                 "name": "Naquadah 重液制备构件液",
@@ -1192,7 +1163,6 @@ global.sdbfOmniAlloy = {
         "sdbf:omni_alloy/bio_14",
         "sdbf:omni_alloy/bio_15_prepare",
         "sdbf:omni_alloy/bio_15",
-        "sdbf:omni_alloy/bio_16",
         "sdbf:omni_alloy/aether_01",
         "sdbf:omni_alloy/aether_02",
         "sdbf:omni_alloy/aether_03_prepare",
@@ -1204,10 +1174,8 @@ global.sdbfOmniAlloy = {
         "sdbf:omni_alloy/aether_10",
         "sdbf:omni_alloy/aether_11",
         "sdbf:omni_alloy/aether_09_prepare",
-        "sdbf:omni_alloy/aether_09",
         "sdbf:omni_alloy/aether_12_prepare",
         "sdbf:omni_alloy/aether_12",
-        "sdbf:omni_alloy/aether_13",
         "sdbf:omni_alloy/aether_14",
         "sdbf:omni_alloy/mana_01",
         "sdbf:omni_alloy/mana_02",
@@ -1263,9 +1231,8 @@ global.sdbfOmniAlloy = {
         "sdbf:omni_alloy/engineering_14_prepare",
         "sdbf:omni_alloy/engineering_14",
         "sdbf:omni_alloy/engineering_22",
-        "sdbf:omni_alloy/engineering_20",
-        "sdbf:omni_alloy/engineering_19",
         "sdbf:omni_alloy/engineering_26",
+        "sdbf:omni_alloy/engineering_26_pneumatic_oil",
         "sdbf:omni_alloy/engineering_24",
         "sdbf:omni_alloy/pneumatic_02",
         "sdbf:omni_alloy/pneumatic_03",
@@ -1425,12 +1392,6 @@ global.sdbfOmniAlloy = {
             "mode": "native_recipe",
             "preparation": "sdbf:omni_alloy/bio_15_prepare"
         },
-        "bio_16": {
-            "recipes": [
-                "sdbf:omni_alloy/bio_16"
-            ],
-            "mode": "native_recipe"
-        },
         "aether_01": {
             "recipes": [
                 "sdbf:omni_alloy/aether_01"
@@ -1495,25 +1456,12 @@ global.sdbfOmniAlloy = {
             "check": "none",
             "note": "消耗原生注入后的维瑞迪姆斧；沿用 Redux 注入配方。"
         },
-        "aether_09": {
-            "recipes": [
-                "sdbf:omni_alloy/aether_09"
-            ],
-            "mode": "native_recipe",
-            "preparation": "sdbf:omni_alloy/aether_09_prepare"
-        },
         "aether_12": {
             "recipes": [
                 "sdbf:omni_alloy/aether_12"
             ],
             "mode": "native_recipe",
             "preparation": "sdbf:omni_alloy/aether_12_prepare"
-        },
-        "aether_13": {
-            "recipes": [
-                "sdbf:omni_alloy/aether_13"
-            ],
-            "mode": "native_recipe"
         },
         "aether_14": {
             "recipes": [
@@ -1824,21 +1772,10 @@ global.sdbfOmniAlloy = {
             ],
             "mode": "native_recipe"
         },
-        "engineering_20": {
-            "recipes": [
-                "sdbf:omni_alloy/engineering_20"
-            ],
-            "mode": "native_recipe"
-        },
-        "engineering_19": {
-            "recipes": [
-                "sdbf:omni_alloy/engineering_19"
-            ],
-            "mode": "native_recipe"
-        },
         "engineering_26": {
             "recipes": [
-                "sdbf:omni_alloy/engineering_26"
+                "sdbf:omni_alloy/engineering_26",
+                "sdbf:omni_alloy/engineering_26_pneumatic_oil"
             ],
             "mode": "native_recipe"
         },
@@ -2226,9 +2163,15 @@ global.sdbfOmniAlloy = {
                 "sdbf:omni_alloy/omni_alloy_ingot"
             ],
             "mode": "native_recipe"
+        },
+        "aether_09_prepare": {
+            "recipes": [
+                "sdbf:omni_alloy/aether_09_prepare"
+            ],
+            "mode": "native_recipe"
         }
     },
-    "design_revision": 4
+    "design_revision": 6
 };
 // END OMNI ALLOY CATALOG
 

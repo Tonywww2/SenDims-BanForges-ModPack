@@ -19,7 +19,12 @@
             [
                 "tetra:gem/",
                 "tetra:bone/",
-                "tetra:stone/"
+                "tetra:stone/",
+                "tetra:fibre/",
+                "tetra:skin/",
+                "tetra:fabric/",
+                "tetra:scale/",
+                "tetra:misc/"
             ],
             "countOffset": 0,
             "countFactor": 5,

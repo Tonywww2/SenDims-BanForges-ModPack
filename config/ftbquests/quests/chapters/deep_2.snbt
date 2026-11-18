@@ -601,6 +601,30 @@
 			x: -5.0d
 			y: 4.0d
 		}
+		{
+			dependencies: ["3DA6E818573A9A69"]
+			id: "521CE31A064A765A"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "435DEBFAF2C35646"
+				item: "enderio:void_chassis"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3DA6E818573A9A69"]
+			id: "6A08C113373CE8DE"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5323B4F32A6C95E5"
+				item: "nuclearcraft:manufactory"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
 	]
 	title: "[VI] &e深境：巨树之海"
 }

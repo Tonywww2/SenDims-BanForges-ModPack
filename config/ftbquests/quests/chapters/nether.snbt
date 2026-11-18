@@ -747,6 +747,42 @@
 			x: -5.0d
 			y: 4.0d
 		}
+		{
+			dependencies: ["5251AFEDB9C97974"]
+			id: "53F0EEE265106592"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "383B217DB9B95B17"
+				item: "apotheosis:library"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5251AFEDB9C97974"]
+			id: "50897B1B28885B1D"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "118A7D50D3655DFB"
+				item: "minecraft:enchanting_table"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5251AFEDB9C97974"]
+			id: "3B3E6630BDF2B645"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "61BF07F0E456F262"
+				item: "minecraft:nether_star"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 4.0d
+		}
 	]
 	title: "[IV] &e下界"
 }

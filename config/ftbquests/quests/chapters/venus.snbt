@@ -31,21 +31,6 @@
 			y: 0.0d
 		}
 		{
-			id: "65F8324FC1CFB518"
-			linked_quest: "0351BC9DA1C5B4F7"
-			shape: "hexagon"
-			x: 24.0d
-			y: -3.0d
-		}
-		{
-			id: "18BF783C925FDE3C"
-			linked_quest: "220AEBF0A8A46F7C"
-			shape: "hexagon"
-			size: 2.0d
-			x: 30.0d
-			y: -3.0d
-		}
-		{
 			id: "50C2BCFDE2B389EE"
 			linked_quest: "0A68F5EE8F25F036"
 			shape: "hexagon"
@@ -650,6 +635,63 @@
 				type: "item"
 			}]
 			x: -6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["51A9FF63F9F3E125"]
+			id: "31BB03A6A8627AFC"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4090577082617E50"
+				item: "terra_curio:workshop"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["51A9FF63F9F3E125"]
+			id: "7D51CDDDD32F6079"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1354154A61236916"
+				item: {
+					Count: 1
+					id: "slashblade_sendims:blessing_petals"
+					tag: {
+						blessing_petals: {
+							item_counts: 0
+							item_list: [ ]
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["51A9FF63F9F3E125"]
+			id: "3F2BCD7B44E52620"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5BD58968121275DE"
+				item: "cataclysm:koboleton_bone"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["51A9FF63F9F3E125"]
+			id: "59D089E2B7022FCD"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4AA260F4430C9060"
+				item: "botania:apothecary_default"
+				type: "item"
+			}]
+			x: -2.0d
 			y: 4.0d
 		}
 	]

@@ -22,7 +22,7 @@
 2. 将该分支全部研究卷轴与阶段材料无序合成为总卷。
 3. 在工作台以总卷、指定刀本体与材料制作伪天顶；只消耗这一把刀本体。
 
-配方逐项写在 `kubejs/server_scripts/recipes/zenith.js` 中。卷轴注册直接定义于 `kubejs/startup_scripts/zenith_scrolls.js`，卷轴不带物品描述（2026-11-11 移除），模型映射直接定义于 `kubejs/client_scripts/zenith_models.js`；这些脚本均不依赖外部目录 JSON。
+配方逐项写在 `kubejs/server_scripts/recipes/zenith.js` 中。卷轴注册直接定义于 `kubejs/startup_scripts/zenith_scrolls.js`，卷轴不带物品描述（2026-11-11 移除），模型映射在特供模组的 `client/BladeModelOverrides.java`（2026-11-17 由 `kubejs/client_scripts/zenith_models.js` 迁移，同时迁入「永罚」系列的映射，原 `damnation_models.js`）；这些脚本均不依赖外部目录 JSON。
 
 五把成品布局相同：
 

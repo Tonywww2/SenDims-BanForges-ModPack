@@ -532,6 +532,39 @@
 			x: -4.0d
 			y: 5.0d
 		}
+		{
+			dependencies: ["17E4F11F431B104E"]
+			id: "2E0F44CCBB5ABA33"
+			quest_enhance_disable_scroll_paging: false
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "5045E9AB37F5BBDA"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:zenith_master_scrolls)"
+					}
+				}
+				title: "任意天顶总卷"
+				type: "item"
+			}]
+			x: 30.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2E0F44CCBB5ABA33"]
+			id: "4C160B7F78EA231F"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "52E1F7751CC4D8DF"
+				type: "checkmark"
+			}]
+			title: "天顶剑"
+			x: 36.0d
+			y: 0.0d
+		}
 	]
 	title: "[XIII] &e深境：第四层"
 }

@@ -52,6 +52,15 @@
 		grinderCacheMiB = 2
 		#Reuse OBJ face math scratch data. Live vertices, UV, light and render override events are preserved.
 		slashbladeObjSubmission = true
+		#Campfires farther than this many blocks from the camera spawn no smoke. Vanilla campfire smoke ignores particle distance. Zero keeps vanilla.
+		#Range: 0 ~ 512
+		campfireSmokeDistance = 64
+		#Spawners farther than this many blocks from the camera skip their client tick (mob spin and flame particles). Vanilla draws spawners within 64 blocks and spawns their particles within 32. Zero keeps vanilla.
+		#Range: 0 ~ 512
+		spawnerClientTickDistance = 64
+		#Xaero's World Map write speed and per-frame write budget multiplier. The minimap is unaffected. 1.0 keeps upstream behaviour.
+		#Range: 0.1 ~ 1.0
+		xaeroWorldMapWriteRate = 1.0
 
 	[performance.hud]
 		#Batch UIQuest background slices; preserve the original stepped gradient and text/item ordering.

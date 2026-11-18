@@ -1,7 +1,7 @@
 ServerEvents.highPriorityData(event => withTetraMaterialStage(2, () => {
 
     tetraMaterialBuilder(event, "ironwood").setCategory("metal")
-        .setPrimary(2.3).setSecondary(2.2).setTertiary(1.3)
+        .setPrimary(2.7).setSecondary(2.6).setTertiary(1.3)
         .setDurability(290).setIntegrityCost(3).setIntegrityGain(4)
         .setMagicCapacity(80).setToolLevel(4).setToolEfficiency(4)
         .addAttributes("attributeslib:armor_pierce", 1)
@@ -11,7 +11,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(2, () => {
         .build();
 
     tetraMaterialBuilder(event, "ambrosium_shard").setCategory("gem")
-        .setPrimary(2.2).setSecondary(2.2).setTertiary(1.9)
+        .setPrimary(2.6).setSecondary(2.6).setTertiary(1.9)
         .setDurability(260).setIntegrityCost(2).setIntegrityGain(4)
         .setMagicCapacity(130).setToolLevel(4).setToolEfficiency(4)
         .addAttributes("**attributeslib:armor_shred", 0.02)
@@ -21,7 +21,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(2, () => {
         .build();
 
     tetraMaterialBuilder(event, "bio_crystal").setCategory("gem")
-        .setPrimary(2.2).setSecondary(2.3).setTertiary(1.8)
+        .setPrimary(2.6).setSecondary(2.7).setTertiary(1.8)
         .setDurability(270).setIntegrityCost(2).setIntegrityGain(5)
         .setMagicCapacity(140).setToolLevel(4).setToolEfficiency(4)
         .setTints("c2d1db", "9eb0bb").addTexture("shiny").addTexture("crude")
@@ -31,7 +31,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(2, () => {
         .build();
 
     tetraMaterialBuilder(event, "steeleaf").setCategory("metal")
-        .setPrimary(2.3).setSecondary(2.3).setTertiary(1.8)
+        .setPrimary(2.7).setSecondary(2.7).setTertiary(1.8)
         .setDurability(290).setIntegrityCost(3).setIntegrityGain(5)
         .setMagicCapacity(80).setToolLevel(4).setToolEfficiency(4)
         .addAttributes("minecraft:generic.max_health", 2)
@@ -42,7 +42,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(2, () => {
         .build();
 
     tetraMaterialBuilder(event, "raven_feather").setCategory("fibre")
-        .setPrimary(2.4).setSecondary(2.4).setTertiary(1.9)
+        .setPrimary(2.8).setSecondary(2.8).setTertiary(1.9)
         .setDurability(140).setIntegrityCost(2).setIntegrityGain(5)
         .setMagicCapacity(90).setToolLevel(4).setToolEfficiency(4)
         .addAttributes("slashblade_sendims:parry_heal_amount", 2)
@@ -52,7 +52,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(2, () => {
         .build();
 
     tetraMaterialBuilder(event, "zanite_gemstone").setCategory("gem")
-        .setPrimary(2.5).setSecondary(2.5).setTertiary(2.0)
+        .setPrimary(2.9).setSecondary(2.9).setTertiary(2.0)
         .setDurability(270).setIntegrityCost(2).setIntegrityGain(5)
         .setMagicCapacity(130).setToolLevel(4).setToolEfficiency(4)
         .setTints("bd94f9", "5b1cb7").addTexture("heavy").addTexture("metal")
@@ -61,7 +61,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(2, () => {
         .build();
 
     tetraMaterialBuilder(event, "arctic_fur").setCategory("fibre")
-        .setPrimary(2.8).setSecondary(2.8).setTertiary(2.0)
+        .setPrimary(3.3).setSecondary(3.3).setTertiary(2.0)
         .setDurability(170).setIntegrityCost(3).setIntegrityGain(4)
         .setMagicCapacity(90).setToolLevel(4).setToolEfficiency(4)
         .addAttributes("minecraft:generic.armor_toughness", 0.25)
@@ -71,7 +71,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(2, () => {
         .build();
 
     tetraMaterialBuilder(event, "blightbunny_fang").setCategory("metal")
-        .setPrimary(2.8).setSecondary(2.9).setTertiary(2.0)
+        .setPrimary(3.3).setSecondary(3.4).setTertiary(2.0)
         .setDurability(240).setIntegrityCost(2).setIntegrityGain(4)
         .setMagicCapacity(50).setToolLevel(4).setToolEfficiency(4)
         .addAttributes("attributeslib:armor_pierce", 1.5)
@@ -81,7 +81,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(2, () => {
         .build();
 
     tetraMaterialBuilder(event, "sentry_chip").setCategory("metal")
-        .setPrimary(3.0).setSecondary(2.5).setTertiary(2.1)
+        .setPrimary(3.5).setSecondary(2.9).setTertiary(2.1)
         .setDurability(290).setIntegrityCost(3).setIntegrityGain(3)
         .setMagicCapacity(50).setToolLevel(4).setToolEfficiency(4)
         .setTints("f7f7f7", "a8a8a8").addTexture("heavy").addTexture("metal")
@@ -91,7 +91,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(2, () => {
         .build();
 
     tetraMaterialBuilder(event, "lightroot_clump").setCategory("metal")
-        .setPrimary(3.0).setSecondary(3.0).setTertiary(2.0)
+        .setPrimary(3.5).setSecondary(3.5).setTertiary(2.0)
         .setDurability(230).setIntegrityCost(3).setIntegrityGain(3)
         .setMagicCapacity(100).setToolLevel(4).setToolEfficiency(4)
         .addAttributes("attributeslib:mining_speed", 0.075)
@@ -101,7 +101,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(2, () => {
         .build();
 
     tetraMaterialBuilder(event, "refined_sentrite").setCategory("stone")
-        .setPrimary(3.2).setSecondary(2.9).setTertiary(2.0)
+        .setPrimary(3.7).setSecondary(3.4).setTertiary(2.0)
         .setDurability(240).setIntegrityCost(4).setIntegrityGain(6)
         .setMagicCapacity(160).setToolLevel(4).setToolEfficiency(5)
         .addAttributes("minecraft:generic.max_health", 2)
@@ -112,7 +112,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(2, () => {
         .build();
 
     tetraMaterialBuilder(event, "naga_scale").setCategory("metal")
-        .setPrimary(3.3).setSecondary(3.3).setTertiary(2.2)
+        .setPrimary(3.9).setSecondary(3.9).setTertiary(2.2)
         .setDurability(280).setIntegrityCost(3).setIntegrityGain(3)
         .setMagicCapacity(110).setToolLevel(5).setToolEfficiency(5)
         .addAttributes("attributeslib:crit_damage", 0.025)
@@ -122,7 +122,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(2, () => {
         .build();
 
     tetraMaterialBuilder(event, "veridium").setCategory("metal")
-        .setPrimary(3.4).setSecondary(3.4).setTertiary(2.2)
+        .setPrimary(4).setSecondary(4).setTertiary(2.2)
         .setDurability(290).setIntegrityCost(4).setIntegrityGain(4)
         .setMagicCapacity(110).setToolLevel(5).setToolEfficiency(5)
         .setTints("49c2f2", "49b4f2").addTexture("heavy").addTexture("metal")
@@ -132,7 +132,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(2, () => {
         .build();
 
     tetraMaterialBuilder(event, "mykapod_shell").setCategory("metal")
-        .setPrimary(3.6).setSecondary(3.3).setTertiary(2.2)
+        .setPrimary(4.2).setSecondary(3.8).setTertiary(2.2)
         .setDurability(270).setIntegrityCost(4).setIntegrityGain(4)
         .setMagicCapacity(120).setToolLevel(4).setToolEfficiency(5)
         .addAttributes("minecraft:generic.armor", 0.25)
@@ -142,7 +142,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(2, () => {
         .build();
 
     tetraMaterialBuilder(event, "desh").setCategory("metal")
-        .setPrimary(2).setSecondary(9).setTertiary(2.3)
+        .setPrimary(2.5).setSecondary(11).setTertiary(2.3)
         .setDurability(300).setIntegrityCost(4).setIntegrityGain(4)
         .setMagicCapacity(160).setToolLevel(4).setToolEfficiency(8)
         .addAttributes("attributeslib:cold_damage", 0.5)
@@ -153,7 +153,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(2, () => {
         .build();
 
     tetraMaterialBuilder(event, "metal_mixture").setCategory("metal")
-        .setPrimary(3.5).setSecondary(3.5).setTertiary(2.3)
+        .setPrimary(4.1).setSecondary(4.1).setTertiary(2.3)
         .setDurability(270).setIntegrityCost(3).setIntegrityGain(3)
         .setMagicCapacity(130).setToolLevel(4).setToolEfficiency(5)
         .addAttributes("attributeslib:experience_gained", 0.1)
@@ -163,7 +163,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(2, () => {
         .build();
 
     tetraMaterialBuilder(event, "skyjade").setCategory("metal")
-        .setPrimary(4.0).setSecondary(3.7).setTertiary(2.4)
+        .setPrimary(4.7).setSecondary(4.3).setTertiary(2.4)
         .setDurability(280).setIntegrityCost(2).setIntegrityGain(4)
         .setMagicCapacity(160).setToolLevel(5).setToolEfficiency(5)
         .setTints("b0e564", "759a51").addTexture("heavy").addTexture("metal")
@@ -173,7 +173,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(2, () => {
         .build();
 
     tetraMaterialBuilder(event, "gravitite").setCategory("metal")
-        .setPrimary(4.1).setSecondary(4.3).setTertiary(2.5)
+        .setPrimary(4.8).setSecondary(5).setTertiary(2.5)
         .setDurability(340).setIntegrityCost(4).setIntegrityGain(4)
         .setMagicCapacity(150).setToolLevel(5).setToolEfficiency(6)
         .addAttributes("**minecraft:generic.movement_speed", 0.05)
@@ -183,7 +183,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(2, () => {
         .build();
 
     tetraMaterialBuilder(event, "carminite").setCategory("metal")
-        .setPrimary(4.2).setSecondary(4.5).setTertiary(2.5)
+        .setPrimary(4.9).setSecondary(5.3).setTertiary(2.5)
         .setDurability(290).setIntegrityCost(3).setIntegrityGain(5)
         .setMagicCapacity(155).setToolLevel(5).setToolEfficiency(6)
         .addAttributes("**slashblade_sendims:ap_gain_percentage", 0.1)
@@ -194,7 +194,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(2, () => {
         .build();
 
     tetraMaterialBuilder(event, "knightmetal").setCategory("metal")
-        .setPrimary(4.6).setSecondary(4.5).setTertiary(2.5)
+        .setPrimary(5.4).setSecondary(5.2).setTertiary(2.5)
         .setDurability(320).setIntegrityCost(4).setIntegrityGain(4)
         .setMagicCapacity(160).setToolLevel(5).setToolEfficiency(6)
         .addAttributes("minecraft:generic.armor", 0.5)
@@ -204,7 +204,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(2, () => {
         .build();
 
     tetraMaterialBuilder(event, "squall_plate").setCategory("metal")
-        .setPrimary(4.6).setSecondary(4.5).setTertiary(2.5)
+        .setPrimary(5.4).setSecondary(5.2).setTertiary(2.5)
         .setDurability(300).setIntegrityCost(4).setIntegrityGain(5)
         .setMagicCapacity(170).setToolLevel(5).setToolEfficiency(6)
         .addAttributes("minecraft:generic.armor_toughness", 0.4)
@@ -215,10 +215,10 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(2, () => {
 
     // 海皇锭材料
     tetraMaterialBuilder(event, "neptune").setCategory("metal")
-        .setPrimary(4.2).setSecondary(3.0).setTertiary(2.2)
+        .setPrimary(4.8).setSecondary(3.5).setTertiary(2.2)
         .setDurability(500).setIntegrityCost(4).setIntegrityGain(5)
         .setMagicCapacity(150).setToolLevel(5).setToolEfficiency(7)
-        .addAttributes("attributeslib:cold_damage", 2.0)
+        .addAttributes("attributeslib:cold_damage", 2.2)
         .setTints("4a8bb3", "5a9bc3")
         .addTexture("metal").addTexture("heavy")
         .addItemMaterial('aether_treasure_reforging:neptune_mesh')
@@ -227,7 +227,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(2, () => {
 
     // 武神锭材料
     tetraMaterialBuilder(event, "valkyrie").setCategory("metal")
-        .setPrimary(6.0).setSecondary(3.0).setTertiary(2.6)
+        .setPrimary(6.9).setSecondary(3.4).setTertiary(2.6)
         .setDurability(600).setIntegrityCost(4).setIntegrityGain(5)
         .setMagicCapacity(140).setToolLevel(6).setToolEfficiency(9)
         .setTints("f0f0f0", "ffffff")
@@ -239,10 +239,10 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(2, () => {
 
     // 凤凰锭材料
     tetraMaterialBuilder(event, "phoenix").setCategory("metal")
-        .setPrimary(4.2).setSecondary(3.0).setTertiary(2.2)
+        .setPrimary(4.8).setSecondary(3.5).setTertiary(2.2)
         .setDurability(500).setIntegrityCost(4).setIntegrityGain(5)
         .setMagicCapacity(160).setToolLevel(5).setToolEfficiency(7)
-        .addAttributes("attributeslib:fire_damage", 2.0)
+        .addAttributes("attributeslib:fire_damage", 2.2)
         .addAttributes("slashblade_sendims:frenzy_damage", 0.05)
         .setTints("d84315", "ff5722")
         .addTexture("shiny").addTexture("metal")
@@ -252,7 +252,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(2, () => {
 
     // 雪怪首领毛皮材料
     tetraMaterialBuilder(event, "alpha_yeti_fur").setCategory("skin")
-        .setPrimary(5.4).setSecondary(5.4).setTertiary(2.8)
+        .setPrimary(6.3).setSecondary(6.3).setTertiary(2.8)
         .setDurability(350).setIntegrityCost(3).setIntegrityGain(4)
         .setMagicCapacity(120).setToolLevel(5).setToolEfficiency(5)
         .addAttributes("attributeslib:cold_damage", 0.5)
@@ -264,7 +264,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(2, () => {
 
     // 炽铁锭材料
     tetraMaterialBuilder(event, "fiery_ingot").setCategory("metal")
-        .setPrimary(5.4).setSecondary(5.5).setTertiary(2.9)
+        .setPrimary(6.3).setSecondary(6.4).setTertiary(2.9)
         .setDurability(450).setIntegrityCost(3).setIntegrityGain(4)
         .setMagicCapacity(130).setToolLevel(5).setToolEfficiency(7)
         .addAttributes("attributeslib:fire_damage", 1.0)
@@ -277,7 +277,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(2, () => {
 
     // 云母钢锭材料
     tetraMaterialBuilder(event, "stratus_ingot").setCategory("metal")
-        .setPrimary(6.3).setSecondary(6.0).setTertiary(3.2)
+        .setPrimary(7.3).setSecondary(7).setTertiary(3.2)
         .setDurability(550).setIntegrityCost(4).setIntegrityGain(6)
         .setMagicCapacity(150).setToolLevel(5).setToolEfficiency(8)
         .addAttributes("attributeslib:armor_pierce", 1)
@@ -292,7 +292,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(2, () => {
 
     // 岩石裂骸材料
     tetraMaterialBuilder(event, "basalz_rod").setCategory("stone")
-        .setPrimary(5.5).setSecondary(1.0).setTertiary(2.4)
+        .setPrimary(5.9).setSecondary(1.1).setTertiary(2.4)
         .setDurability(300).setIntegrityCost(2).setIntegrityGain(2)
         .setMagicCapacity(100).setToolLevel(4).setToolEfficiency(6)
         .addAttributes("minecraft:generic.armor", 0.5)
@@ -304,7 +304,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(2, () => {
 
     // 垂悬耳灯果材料
     tetraMaterialBuilder(event, "hanging_earlight_fruit").setCategory("fibre")
-        .setPrimary(3.0).setSecondary(6.0).setTertiary(3.0)
+        .setPrimary(3.3).setSecondary(6.6).setTertiary(3.0)
         .setDurability(180).setIntegrityCost(1).setIntegrityGain(1)
         .setMagicCapacity(120).setToolLevel(3).setToolEfficiency(5)
         .addAttributes("minecraft:generic.armor_toughness", 0.25)
@@ -317,7 +317,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(2, () => {
 
     // 下界合金材料
     tetraMaterialBuilder(event, "netherite").setCategory("metal")
-        .setPrimary(7.5).setSecondary(5.5).setTertiary(3.3)
+        .setPrimary(8.1).setSecondary(6).setTertiary(3.3)
         .setDurability(500).setIntegrityCost(2).setIntegrityGain(8)
         .setMagicCapacity(90).setToolLevel(5).setToolEfficiency(9)
         .addAttributes("**minecraft:generic.knockback_resistance", 0.1)
@@ -329,7 +329,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(2, () => {
 
     // 紫金材料
     tetraMaterialBuilder(event, "ostrum").setCategory("metal")
-        .setPrimary(7.0).setSecondary(6.0).setTertiary(3.2)
+        .setPrimary(7.6).setSecondary(6.5).setTertiary(3.2)
         .setDurability(600).setIntegrityCost(3).setIntegrityGain(3)
         .setMagicCapacity(140).setToolLevel(5).setToolEfficiency(8)
         .addAttributes("attributeslib:cold_damage", 0.5)
@@ -342,7 +342,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(2, () => {
         .build();
 
     tetraMaterialBuilder(event, "ignitium_ingot").setCategory("metal")
-        .setPrimary(21).setSecondary(20).setTertiary(10)
+        .setPrimary(23).setSecondary(22).setTertiary(10)
         .setDurability(1000).setIntegrityCost(6).setIntegrityGain(8)
         .setMagicCapacity(160).setToolLevel(6).setToolEfficiency(12)
         .addAttributes("slashblade_sendims:magic_penetration", 1.5)

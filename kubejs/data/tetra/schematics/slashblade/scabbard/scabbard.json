@@ -22,7 +22,8 @@
                 "tetra:fabric/",
                 "tetra:metal/",
                 "tetra:wood/",
-                "tetra:scale/"
+                "tetra:scale/",
+                "tetra:misc/"
             ],
             "countOffset": 1,
             "countFactor": 2,

@@ -139,17 +139,6 @@ ServerEvents.recipes(event => {
         "biome": "#aether:ultracold"
     }).id('sdbf:omni_alloy/aether_07');
 
-    // 枯萎孢子转化 (aether_09)
-    event.custom({
-        "type": "aether_redux:spore_blighting",
-        "ingredient": {
-            "block": "kubejs:omni_aether_09_precursor"
-        },
-        "result": {
-            "block": "kubejs:omni_aether_09_block"
-        }
-    }).id('sdbf:omni_alloy/aether_09');
-
     // aether_09_prepare (aether_09_prepare)
     event.custom({
         "type": "minecraft:crafting_shapeless",
@@ -230,21 +219,10 @@ ServerEvents.recipes(event => {
         }
     }).id('sdbf:omni_alloy/aether_12_prepare');
 
-    // 发光孢子转化 (aether_13)
-    event.custom({
-        "type": "deep_aether:glowing_spores_recipe",
-        "ingredient": {
-            "block": "kubejs:omni_aether_12_block"
-        },
-        "result": {
-            "block": "kubejs:omni_aether_13_block"
-        }
-    }).id('sdbf:omni_alloy/aether_13');
-
     // 瓦解号角 (aether_14)
     event.custom({
         "type": "twilightforest:crumble_horn",
-        "from": "kubejs:omni_aether_13_block",
+        "from": "kubejs:omni_aether_12_block",
         "to": "kubejs:omni_aether_14_block"
     }).id('sdbf:omni_alloy/aether_14');
 
@@ -286,7 +264,7 @@ ServerEvents.recipes(event => {
                 "item": "kubejs:omni_aether_08"
             },
             "C": {
-                "item": "kubejs:omni_aether_09_block"
+                "item": "kubejs:omni_aether_09_precursor"
             }
         },
         "result": {
@@ -559,22 +537,6 @@ ServerEvents.recipes(event => {
         }
     }).id('sdbf:omni_alloy/bio_15_prepare');
 
-    // 蜂蜜灌装 (bio_16)
-    event.custom({
-        "type": "productivebees:bottler",
-        "fluid": {
-            "tag": "forge:honey",
-            "amount": 250
-        },
-        "input": {
-            "item": "kubejs:omni_bio_15"
-        },
-        "output": {
-            "item": "kubejs:omni_bio_16",
-            "count": 1
-        }
-    }).id('sdbf:omni_alloy/bio_16');
-
     // 陶瓷承压膜 (bio_assembly_1)
     event.custom({
         "type": "minecraft:crafting_shaped",
@@ -635,7 +597,7 @@ ServerEvents.recipes(event => {
                 "item": "kubejs:omni_bio_14"
             },
             "C": {
-                "item": "kubejs:omni_bio_16"
+                "item": "kubejs:omni_bio_15"
             }
         },
         "result": {
@@ -824,7 +786,7 @@ ServerEvents.recipes(event => {
                 "item": "dustandash:earth_dust"
             },
             {
-                "item": "minecraft:copper_ingot"
+                "item": "kubejs:omni_process_liner"
             },
             {
                 "item": "dustandash:graphite_electrode"
@@ -974,37 +936,6 @@ ServerEvents.recipes(event => {
         }
     }).id('sdbf:omni_alloy/engineering_14_prepare');
 
-    // 燃油精炼 (engineering_19)
-    event.custom({
-        "type": "ad_astra:refining",
-        "input": {
-            "ingredient": {
-                "tag": "ad_astra:oil"
-            },
-            "millibuckets": 1000
-        },
-        "result": {
-            "fluid": "kubejs:omni_engineering_19_fluid",
-            "millibuckets": 1000
-        },
-        "cookingtime": 100,
-        "energy": 80
-    }).id('sdbf:omni_alloy/engineering_19');
-
-    // 低温燃料制备 (engineering_20)
-    event.custom({
-        "type": "ad_astra:cryo_freezing",
-        "ingredient": {
-            "item": "minecraft:blue_ice"
-        },
-        "result": {
-            "fluid": "kubejs:omni_engineering_20_fluid",
-            "millibuckets": 1000
-        },
-        "cookingtime": 200,
-        "energy": 80
-    }).id('sdbf:omni_alloy/engineering_20');
-
     // NASA 工作台 (engineering_22)
     event.custom({
         "type": "ad_astra:nasa_workbench",
@@ -1093,7 +1024,7 @@ ServerEvents.recipes(event => {
             "item": "sgjourney:pure_naquadah"
         },
         "input_fluid": {
-            "id": "kubejs:omni_engineering_19_fluid",
+            "id": "ad_astra:oil",
             "amount": 1000
         },
         "output_fluid": {
@@ -1102,6 +1033,23 @@ ServerEvents.recipes(event => {
         },
         "progress": 200
     }).id('sdbf:omni_alloy/engineering_26');
+
+    // Naquadah 重液制备（气动工艺原油）
+    event.custom({
+        "type": "sgjourney:naquadah_heavy_liquidizing",
+        "ingredient": {
+            "item": "sgjourney:pure_naquadah"
+        },
+        "input_fluid": {
+            "id": "pneumaticcraft:oil",
+            "amount": 1000
+        },
+        "output_fluid": {
+            "id": "kubejs:omni_engineering_26_fluid",
+            "amount": 1000
+        },
+        "progress": 200
+    }).id('sdbf:omni_alloy/engineering_26_pneumatic_oil');
 
     // 门瑞欧导电骨架 (engineering_assembly_1)
     event.custom({
@@ -1166,7 +1114,7 @@ ServerEvents.recipes(event => {
                 "item": "kubejs:omni_engineering_22"
             },
             "B": {
-                "item": "kubejs:omni_engineering_20_fluid_bucket"
+                "item": "minecraft:blue_ice"
             }
         },
         "result": {

@@ -301,18 +301,6 @@
 		}
 		{
 			dependencies: ["0F8DC1AEBBC762C1"]
-			id: "71E1799970320B07"
-			quest_enhance_disable_scroll_paging: false
-			tasks: [{
-				id: "16950F449470A982"
-				item: "aether_redux:blightbunny_fang"
-				type: "item"
-			}]
-			x: 9.0d
-			y: 9.0d
-		}
-		{
-			dependencies: ["0F8DC1AEBBC762C1"]
 			id: "4678FBC8BCAFCA82"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -1015,6 +1003,156 @@
 			}]
 			x: -4.0d
 			y: 8.0d
+		}
+		{
+			dependencies: ["0F8DC1AEBBC762C1"]
+			icon: {
+				Count: 1
+				id: "ancient_aether:valkyrum_gloves"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6D96FF5C5DBD3C92"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7C3936B3DA06A02E"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(aether:accessories_gloves)"
+					}
+				}
+				title: "天境手套"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0F8DC1AEBBC762C1"]
+			id: "783C085DB4EC4474"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3E7AA5AD2B7B9110"
+				item: "ancient_aether:valkyrum_pendant"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0F8DC1AEBBC762C1"]
+			id: "61AC6DF6379661BA"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "44ED5F88B5CD4E5C"
+				item: "ancient_aether:warrior_pendant"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0F8DC1AEBBC762C1"]
+			id: "09162C7C623A03FD"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3411FC18C21D11B0"
+				item: "aether:valkyrie_cape"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0F8DC1AEBBC762C1"]
+			id: "2B25C713A50AAAA7"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "27EA58B573D9D91D"
+				item: "aether_redux:grand_victory_medal"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0F8DC1AEBBC762C1"]
+			id: "121324593BDB05C1"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7BE86D285B83BC6E"
+				item: "aether_redux:ring_of_construction"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0F8DC1AEBBC762C1"]
+			id: "1CC7BDB44361E843"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7CA79078485C4809"
+				item: "aether:regeneration_stone"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0F8DC1AEBBC762C1"]
+			id: "2CB69CFBD3CE72EF"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5ADACDD8A0944C8D"
+				item: "ancient_aether:strength_stone"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0F8DC1AEBBC762C1"]
+			id: "629B84FD521CF0A1"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "14140AEB7EE31964"
+				item: {
+					Count: 1
+					id: "aether_redux:vampire_amulet"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0F8DC1AEBBC762C1"]
+			id: "7834A81479243CF3"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1257909CC2A265A1"
+				item: "integrateddynamics:cable"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0F8DC1AEBBC762C1"]
+			id: "37770BA213FB8FA4"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "59DC90BF5C5C1C69"
+				item: "integratedtunnels:part_interface_item"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 6.0d
 		}
 	]
 	title: "[III] &e天境"

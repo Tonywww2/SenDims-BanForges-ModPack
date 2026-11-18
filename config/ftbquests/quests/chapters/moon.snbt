@@ -418,6 +418,97 @@
 			x: -4.0d
 			y: 3.0d
 		}
+		{
+			dependencies: ["5D5BA71C5348297D"]
+			id: "0A39EECB6124B956"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7ACDC6228B625C82"
+				item: "tetra:hammer_base"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5D5BA71C5348297D"]
+			id: "58532F823CF05CAD"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "05973E7BF3451462"
+				item: "tetra:forged_workbench"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5D5BA71C5348297D"]
+			id: "556E05DDEC1F38D0"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "63FC78EE34E4CCC9"
+				item: "tetra:planar_stabilizer"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5D5BA71C5348297D"]
+			id: "4818376F10AD366C"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6A177293D909D6D5"
+				item: "tetra:combustion_chamber"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5D5BA71C5348297D"]
+			id: "689D248ABE72F0BF"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "421B8B156DC42F28"
+				item: {
+					Count: 1
+					id: "tetra:thermal_cell"
+					tag: {
+						Damage: 0
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5D5BA71C5348297D"]
+			id: "3B9B530CF47653B0"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "130C1F368B9389AF"
+				item: "terra_curio:obsidian_rose"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5D5BA71C5348297D"]
+			id: "07FA2B8006541E21"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "73C6DEA584307A7F"
+				item: "thermal:machine_frame"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 5.0d
+		}
 	]
 	title: "[III] 月球"
 }

@@ -484,7 +484,7 @@
 			description: [
 				"飞向万里之外"
 				""
-				"&7在此维度，当x轴坐标和z轴坐标都为10000的倍数时，可以找到混沌岛。&r"
+				"&7在此维度，当x轴坐标和z轴坐标都为5000的倍数时，可以找到混沌岛。&r"
 			]
 			id: "10FB1898FA8701EE"
 			quest_enhance_disable_scroll_paging: false
@@ -852,6 +852,62 @@
 			}]
 			x: -4.0d
 			y: 7.0d
+		}
+		{
+			dependencies: ["1BF032EC08E31ABB"]
+			id: "48628410A7A826B3"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5C93A8826011B478"
+				item: "draconicevolution:crafting_core"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1BF032EC08E31ABB"]
+			id: "22C3C124143B8AE2"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "333C32C7298C89B4"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							energy: {
+								energy: 0
+							}
+							module_host: {
+								modules: [ ]
+								properties: { }
+								provider_id: [I;
+									-1040132014
+									-2086649015
+									-1838265178
+									867081123
+								]
+							}
+						}
+					}
+					id: "draconicevolution:wyvern_chestpiece"
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1BF032EC08E31ABB"]
+			id: "4FF42435BFBF9B85"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "2548004E8E84CEAA"
+				item: "nuclearcraft:chamber_terminal"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
 		}
 	]
 	title: "[XI] 里末地"

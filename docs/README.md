@@ -66,6 +66,9 @@
 - [仪式与基岩破坏者特效设计](development/仪式与基岩破坏者特效设计-2026-11-03.md)
 - [星界宝石设计表](development/宝石设计表.md)
 - [星界宝石实装与测试说明](development/星界宝石系统-实装与测试说明.md)
+- [阶段数值与 Tetra 拔刀剑材料设计](development/数值设计-阶段数值与Tetra拔刀剑-2026-11-17.md)
+- [马娘村民交易与 JEI 交易显示](development/马娘村民交易与JEI显示-2026-11-17.md)
+- [异格材料设计草案](development/异格材料设计草案-2026-11-17.md)
 - [世界树之海实现说明](world_tree_sea_implementation.md)
 
 ## 工具入口

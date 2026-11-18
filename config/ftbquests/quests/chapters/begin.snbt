@@ -1350,12 +1350,13 @@
 				""
 				"目前整合包还处于测试阶段阶段，虽然已经经过了数轮内部测试，但是仍然可能有许多的BUG或平衡性问题。"
 				"如果你遇到了问题，请通过QQ群/MCMOD/CurseForge/Github反馈！"
-				"如果你有任何的改进建议，请通过Github反馈！"
+				"如果你有任何的改进建议，请通过Github或QQ群反馈！"
 				""
 				"&e目前内容完成度（99%）：&r"
 				"·最终的天顶剑（完全毕业）还在制作中"
 				"·一些细节内容待调整"
-				"·新BOSS的平衡调整"
+				"·暮色流程即将重做"
+				"·部分后期刀的合成材料需要调整，5把伪天顶中至少会有2把完全不需要发展任何的科技就可以制作。"
 			]
 			id: "0CD325E67D4FB42C"
 			quest_enhance_disable_scroll_paging: false
@@ -1364,6 +1365,7 @@
 				type: "xp"
 				xp: 77
 			}]
+			size: 2.0d
 			tasks: [{
 				id: "0634B66B3AE0B5BC"
 				type: "checkmark"
@@ -1402,6 +1404,22 @@
 			}]
 			title: "跳过豆腐世界"
 			x: 12.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5748351A76910019"]
+			id: "06E71D8F3A69C33A"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				icon: "tetra:basic_workbench"
+				id: "5C1E806E7D2E35B7"
+				observe_type: 0
+				timer: 0L
+				title: "加工台"
+				to_observe: "tetra:basic_workbench"
+				type: "observation"
+			}]
+			x: 6.0d
 			y: -2.0d
 		}
 	]

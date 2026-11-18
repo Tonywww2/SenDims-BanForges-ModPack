@@ -33,8 +33,6 @@ FLUIDS = {
     "omni_thermal_18_fluid": Fluid("795021", "b4843d", "dbb65e", "f4dda2", "94652b", "oil", "热解焦油精馏后的透亮琥珀组分"),
     "omni_thermal_20_brew": Fluid("487c90", "85bbc6", "b9e0db", "edf3df", "dfba6c", "brew", "烈焰粉与恶魂泪形成的相变抑制酿液，冷色液面夹金色活性滴"),
     "omni_engineering_03_fluid": Fluid("173f4c", "286e7b", "59a4ac", "b5e9de", "9a84c2", "slurry", "星浆导电基材压榨液，深青导电颗粒与紫色星浆残留"),
-    "omni_engineering_20_fluid": Fluid("397396", "73aec8", "a6d6e1", "e6f6f2", "588aa8", "cryo", "蓝冰制得的低温载液，淡蓝冰冷折光"),
-    "omni_engineering_19_fluid": Fluid("765027", "b78946", "d8b76d", "f1e0ac", "956533", "oil", "太空原油精炼后的金棕燃料"),
     "omni_engineering_26_fluid": Fluid("1c3430", "34534a", "5e8070", "a8c4a2", "847292", "heavy", "纯Naquadah形成的暗绿高密度悬浊重液"),
     "omni_pneumatic_05_fluid": Fluid("82703a", "c2b472", "dfd39e", "f8efca", "a08b4a", "oil", "原油气动精炼后的浅金色原料"),
     "omni_pneumatic_06_fluid": Fluid("65794c", "a1b17b", "cbd2a2", "eef0cc", "d4b96e", "gel", "加入史莱姆后热处理的黏稠聚合物"),

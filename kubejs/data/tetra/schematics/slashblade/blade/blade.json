@@ -19,7 +19,9 @@
             [
                 "tetra:metal/",
                 "tetra:wood/",
-                "tetra:bone/"
+                "tetra:bone/",
+                "tetra:gem/",
+                "tetra:stone/"
             ],
             "countOffset": 0,
             "countFactor": 5,

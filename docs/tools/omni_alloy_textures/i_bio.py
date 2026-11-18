@@ -86,8 +86,3 @@ def _():
             elif y<=8: c.set(x,y,'wax',max(1,cell[1]-1))
     S(c,[(7,4),(8,4)],'honey',2)
     return fin(c)
-
-@reg('item/omni_bio_16','蜂蜜灌装构件')
-def _():
-    c=I('VIAL',['glass','seal'],extra={'x':('honey',4),'y':('honey',5),'z':('honey',2)})
-    return fin(c)

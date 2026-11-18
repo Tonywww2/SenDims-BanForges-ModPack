@@ -621,6 +621,51 @@
 			x: -4.0d
 			y: 5.0d
 		}
+		{
+			dependencies: ["35A8F36675442F8B"]
+			id: "0BA8603A07AAA376"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "2CC70B4514353415"
+				item: "slashblade_useful_addon:proud_soul_sampling"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["35A8F36675442F8B"]
+			id: "00D412CBD11E29A2"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "526A87A1C43775F0"
+				item: {
+					Count: 1
+					id: "slashblade_sendims:the_nectar_quest"
+					tag: {
+						the_nectar_quest: {
+							item_counts: 0
+							item_list: [ ]
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["35A8F36675442F8B"]
+			id: "2D915B3E52B5336B"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "75539352A14A74F0"
+				item: "nuclearcraft:radaway"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
 	]
 	title: "[VII] &e深园与废土"
 }

@@ -177,124 +177,256 @@
 			y: -1.0d
 		}
 		{
-			id: "35ED110B4C7A5457"
-			linked_quest: "15D102DE2394A495"
-			size: 2.0d
-			x: -10.0d
+			id: "08573D67A836577F"
+			linked_quest: "52726CE2A2740BF7"
+			x: -16.5d
+			y: 8.0d
+		}
+		{
+			id: "1EE45D51AE65EC56"
+			linked_quest: "06E71D8F3A69C33A"
+			x: -21.5d
+			y: 8.0d
+		}
+		{
+			id: "17F3A1B3EB2FAE3C"
+			linked_quest: "3B7438B6B2554EB9"
+			x: -10.5d
+			y: 8.0d
+		}
+		{
+			id: "5A952C3165063789"
+			linked_quest: "3181ADA5FB31A7DA"
+			x: -9.5d
+			y: 8.0d
+		}
+		{
+			id: "39AEECE44BFA842D"
+			linked_quest: "3A99ECAE0E68AC9F"
+			x: -9.5d
+			y: 11.0d
+		}
+		{
+			id: "648B02EFB47D1217"
+			linked_quest: "4A0A9FD37C6F3559"
+			x: -10.5d
+			y: 11.0d
+		}
+		{
+			id: "09514AB04A3A4D2E"
+			linked_quest: "42D75638781818B7"
+			x: -7.5d
+			y: 8.0d
+		}
+		{
+			id: "6A888CA4E2800729"
+			linked_quest: "66A007F959CB4D39"
+			x: -7.5d
 			y: 9.0d
 		}
 		{
-			id: "3AC37E174511CDC8"
-			linked_quest: "6130B752208314B7"
-			size: 2.0d
-			x: -10.0d
+			id: "280A76B1D1D6EDFC"
+			linked_quest: "0A39EECB6124B956"
+			x: -7.5d
+			y: 11.0d
+		}
+		{
+			id: "4222CBC1B6B46210"
+			linked_quest: "07FA2B8006541E21"
+			x: -6.5d
+			y: 11.0d
+		}
+		{
+			id: "364672758F3701DB"
+			linked_quest: "556E05DDEC1F38D0"
+			x: -7.5d
 			y: 12.0d
 		}
 		{
-			id: "239829C80DB6329A"
-			linked_quest: "03405BC60C3EFA99"
-			size: 2.0d
-			x: -7.0d
-			y: 12.0d
+			id: "49816B4BC261B78D"
+			linked_quest: "53F0EEE265106592"
+			x: -4.5d
+			y: 8.0d
 		}
 		{
-			id: "40E1D781D2682768"
-			linked_quest: "0516786C011E5581"
-			size: 2.0d
-			x: 2.0d
-			y: 12.0d
+			id: "5A0AEF2E1431D632"
+			linked_quest: "50897B1B28885B1D"
+			x: -3.5d
+			y: 8.0d
 		}
 		{
-			id: "66CA3E3122FBCB05"
-			linked_quest: "6EA0FF1CC5982E8F"
-			size: 2.0d
-			x: 2.0d
+			id: "47B3F29BA85DD590"
+			linked_quest: "27FEFCB730786A9B"
+			x: -6.5d
+			y: 8.0d
+		}
+		{
+			id: "54F572D1B1C3633E"
+			linked_quest: "65C246346C2C237E"
+			x: -6.5d
 			y: 9.0d
 		}
 		{
-			id: "0149070C9EA25467"
-			linked_quest: "2B520DD47D46DDEB"
-			size: 2.0d
-			x: 14.0d
-			y: 9.0d
-		}
-		{
-			id: "6876A7C0D1EE58C6"
-			linked_quest: "16583AEF17DC8460"
-			shape: "gear"
-			size: 2.0d
-			x: -22.0d
+			id: "11546BDE186E7FF4"
+			linked_quest: "6A08C113373CE8DE"
+			x: 2.5d
 			y: 12.0d
 		}
 		{
-			id: "168E0929112AD60F"
-			linked_quest: "6FD736B74327F2AF"
-			size: 2.0d
-			x: -22.0d
-			y: 9.0d
+			id: "5A7C3717E5F70588"
+			linked_quest: "58F48888F1039B24"
+			x: 1.5d
+			y: 8.0d
 		}
 		{
-			id: "28A3CADE3E64B9A1"
-			linked_quest: "2EA1B384A87A94DA"
-			shape: "gear"
-			size: 2.0d
-			x: -19.0d
+			id: "590FF8906A9EA637"
+			linked_quest: "1EDCA4A245137661"
+			x: 2.5d
+			y: 8.0d
+		}
+		{
+			id: "430AC70490A21755"
+			linked_quest: "31BB03A6A8627AFC"
+			x: 1.5d
+			y: 11.0d
+		}
+		{
+			id: "2A0D2E081CE5B13F"
+			linked_quest: "59D089E2B7022FCD"
+			x: 2.5d
+			y: 11.0d
+		}
+		{
+			id: "6481B9B8A02CBEDF"
+			linked_quest: "0BA8603A07AAA376"
+			x: 7.5d
+			y: 8.0d
+		}
+		{
+			id: "5730C2359DA167A0"
+			linked_quest: "74B7622BF05A0A09"
+			x: 5.5d
+			y: 8.0d
+		}
+		{
+			id: "50DC5320A8E68CCF"
+			linked_quest: "00D412CBD11E29A2"
+			x: 8.5d
+			y: 8.0d
+		}
+		{
+			id: "1000AEE253C7D874"
+			linked_quest: "392243FA70630D9E"
+			x: 7.5d
+			y: 11.0d
+		}
+		{
+			id: "09D919137BC4A2AF"
+			linked_quest: "5C6D27B1C9B98396"
+			x: 8.5d
+			y: 11.0d
+		}
+		{
+			id: "25EE6732A6479C74"
+			linked_quest: "11E6636FF45AEEC2"
+			x: 13.5d
+			y: 11.0d
+		}
+		{
+			id: "4D63EDC75C65A156"
+			linked_quest: "03F6FFD1156D95BB"
+			x: 14.5d
+			y: 11.0d
+		}
+		{
+			id: "3799C7E484ABDDD0"
+			linked_quest: "6FC0771540F630D2"
+			x: 17.5d
+			y: 8.0d
+		}
+		{
+			id: "626C71ECB815C34D"
+			linked_quest: "6EA5A31B40D54709"
+			x: 19.5d
+			y: 11.0d
+		}
+		{
+			id: "0233B9EFA222C466"
+			linked_quest: "30B0751DDC18E726"
+			x: 20.5d
+			y: 11.0d
+		}
+		{
+			id: "3CFB63D6960F337C"
+			linked_quest: "5866EEBB1355C9FE"
+			x: 19.5d
 			y: 12.0d
 		}
 		{
-			id: "6BBAFBDA4043244F"
-			linked_quest: "514CF1593551F00F"
-			shape: "gear"
-			size: 2.0d
-			x: -19.0d
-			y: 9.0d
-		}
-		{
-			id: "662759AFEBDD0AA3"
-			linked_quest: "51E136B4E1C27308"
-			shape: "gear"
-			size: 2.0d
-			x: -16.0d
+			id: "350BFCE189ED7358"
+			linked_quest: "22C3C124143B8AE2"
+			x: 20.5d
 			y: 12.0d
 		}
 		{
-			id: "3D797BDA8AEB9E1D"
-			linked_quest: "034D47E905861E48"
-			shape: "hexagon"
-			size: 2.0d
-			x: -16.0d
-			y: 9.0d
+			id: "29D07FD31E153C54"
+			linked_quest: "4FF42435BFBF9B85"
+			x: 19.5d
+			y: 13.0d
 		}
 		{
-			id: "2EB422427B4B56AB"
-			linked_quest: "57C686A75E491E21"
-			shape: "gear"
-			size: 2.0d
-			x: -19.0d
-			y: 15.0d
-		}
-		{
-			id: "5EF594FE06D042C8"
-			linked_quest: "52998D003D502A8A"
-			shape: "gear"
-			size: 2.0d
-			x: -19.0d
-			y: 18.0d
-		}
-		{
-			id: "03DECAF1BD871777"
-			linked_quest: "0A6BF4C8A75EF242"
-			size: 2.0d
-			x: -13.0d
-			y: 9.0d
-		}
-		{
-			id: "0BBD22C3616A16A6"
-			linked_quest: "4A6CCBA361F14167"
-			shape: "gear"
-			size: 2.0d
-			x: -13.0d
+			id: "4D6B991F223196CC"
+			linked_quest: "7EEE08CB9B8DE8A1"
+			x: 14.5d
 			y: 12.0d
+		}
+		{
+			id: "1DF08A4BAED3BDBF"
+			linked_quest: "0DEF61E45DFABFCA"
+			x: 20.5d
+			y: 13.0d
+		}
+		{
+			id: "38882222664C15BA"
+			linked_quest: "27549ECB240A9FF9"
+			x: 25.5d
+			y: 8.0d
+		}
+		{
+			id: "75A45F9EBF8895C9"
+			linked_quest: "537BA7F0C89F76EC"
+			x: 26.5d
+			y: 8.0d
+		}
+		{
+			id: "4FA7C6256FC3806B"
+			linked_quest: "0DCACD0AACE10A1E"
+			x: 28.5d
+			y: 8.0d
+		}
+		{
+			id: "481BA5BDABAB680B"
+			linked_quest: "6B7EE4B04E055DD7"
+			x: -10.5d
+			y: 9.0d
+		}
+		{
+			id: "3EE448B098834BD6"
+			linked_quest: "729C0FD1DC2BB694"
+			x: 4.5d
+			y: 8.0d
+		}
+		{
+			id: "50097D6C941FDE5F"
+			linked_quest: "59EA3F4FC187BEC4"
+			x: 16.5d
+			y: 8.0d
+		}
+		{
+			id: "60F4BE1E582236CB"
+			linked_quest: "45F157BA898A2EB5"
+			x: 19.5d
+			y: 8.0d
 		}
 	]
 	quests: [
@@ -317,14 +449,14 @@
 				type: "choice"
 			}]
 			shape: "gear"
-			size: 4.0d
+			size: 2.0d
 			subtitle: "重要"
 			tasks: [{
 				id: "683003D90E47A802"
 				type: "checkmark"
 			}]
 			title: "任务信息"
-			x: -30.0d
+			x: -25.0d
 			y: 5.0d
 		}
 		{
@@ -349,15 +481,29 @@
 				xp: 100
 			}]
 			shape: "gear"
-			size: 4.0d
+			size: 2.0d
 			tasks: [{
 				id: "0359F2FE62FF49C4"
 				type: "checkmark"
 			}]
 			title: "命令和作弊"
-			x: -30.0d
-			y: 9.0d
+			x: -25.0d
+			y: 8.0d
+		}
+		{
+			description: ["右边这条任务线会展示每个阶段的关键道具。"]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "5092958EFFE03C21"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.0d
+			tasks: [{
+				id: "0E0BF76A458BEAC4"
+				type: "checkmark"
+			}]
+			title: "关键节点"
+			x: -22.5d
+			y: 8.0d
 		}
 	]
-	title: "世界索引"
+	title: "索引"
 }

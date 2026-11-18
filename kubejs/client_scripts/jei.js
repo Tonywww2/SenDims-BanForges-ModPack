@@ -5,6 +5,7 @@ JEIEvents.hideItems(event => {
     event.hide('ad_astra:etrionic_capacitor');
     event.hide('dustandash:indestructible');
     event.hide('dustandash:rock_solid');
+    event.hide('sgjourney:nether_naquadah_ore');
 
     // event.hide("apotheosis:hellshelf");
     // event.hide("apotheosis:infused_hellshelf");

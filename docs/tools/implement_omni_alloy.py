@@ -155,6 +155,8 @@ def entries_and_assemblies():
             shapeless(n["id"], output(n), inputs)
         elif n.get("phase") == "assembly":
             inputs = [output(NODES[d]) for d in n["dependencies"]]
+            if n["id"] == "engineering_assembly_3":
+                inputs.append("minecraft:blue_ice")
             assert len(inputs) <= 9
             alphabet = "ABCDEFGHI"
             cells = "".join(alphabet[:len(inputs)]).ljust(9)
@@ -189,8 +191,6 @@ def bio(n):
     elif ident == "bio_15":
         src=raw(n,["minecraft:honeycomb","minecraft:slime_ball"])
         data={"ingredient":ingredient(src),"outputs":[{"item":stack(out),"chance":1.0}]}
-    elif ident == "bio_16":
-        data={"fluid":{"tag":"forge:honey","amount":250},"input":items[0],"output":stack(out)}
     else:
         raise ValueError(ident)
     add(ident,{"type":kind,**data},ident)
@@ -203,6 +203,9 @@ def aether(n):
               "ingredient":items[0],"result":out,"cookingtime":400,"experience":0.1}
     elif ident == "aether_08":
         pack(n,"aether_redux:infused_veridium_axe",note="消耗原生注入后的维瑞迪姆斧；沿用 Redux 注入配方。")
+        return
+    elif ident == "aether_09_prepare":
+        shapeless(ident, out, ["aether:holystone", "minecraft:amethyst_shard"], workflow=ident)
         return
     elif ident == "aether_10":
         data={"category":"combinable_misc","experience":0.1,"ingredients":items+[
@@ -299,7 +302,7 @@ def engineering(n):
     elif ident=="engineering_08":
         src=raw(n,["minecraft:copper_ingot","minecraft:quartz"],True)
         data={"cost":1,"costElectrodes":True,"ingredients":[ingredient("dustandash:mantle_mixture"),ingredient("dustandash:oxygen"),
-            ingredient("dustandash:earth_dust"),ingredient("minecraft:copper_ingot"),ingredient("dustandash:graphite_electrode")],
+            ingredient("dustandash:earth_dust"),ingredient(SHIM),ingredient("dustandash:graphite_electrode")],
             "inputBlock":src,"outputBlock":out,"outputs":[ingredient("dustandash:empty")]*4,"tick":200}
     elif ident=="engineering_09":data={"inputs":[{"ingredient":x,"count":1} for x in items+[ingredient("enderio:conductive_alloy_ingot")]],"result":stack(out),"energy":16000,"experience":0.1}
     elif ident=="engineering_10":data={"input":items[0],"outputs":[{"item":stack(out),"chance":1.0,"optional":False}],"energy":8000}
@@ -311,13 +314,18 @@ def engineering(n):
     elif ident=="engineering_14":
         src=raw(n,["minecraft:glass_bottle","minecraft:redstone"])
         data={"fluid":{"fluid":"enderio:xp_juice","amount":250},"input":ingredient(src),"output":stack(out),"is_emptying":False}
-    elif ident=="engineering_19":data={"input":{"ingredient":{"tag":"ad_astra:oil"},"millibuckets":1000},"result":{"fluid":n["output_contract"]["fluid"],"millibuckets":1000},"cookingtime":100,"energy":80}
-    elif ident=="engineering_20":data={"ingredient":ingredient("minecraft:blue_ice"),"result":{"fluid":n["output_contract"]["fluid"],"millibuckets":1000},"cookingtime":200,"energy":80}
     elif ident=="engineering_22":
         materials=["minecraft:copper_ingot"]*14
         materials[0]=items[0]["item"];materials[8]="ad_astra:steel_tank";materials[9]="ad_astra:steel_tank";materials[12]="titan_moon:precision_components"
         data={"ingredients":[ingredient(x) for x in materials],"result":{"id":out,"count":1}}
-    elif ident=="engineering_26":data={"ingredient":ingredient("sgjourney:pure_naquadah"),"input_fluid":{"id":fluids[0],"amount":1000},"output_fluid":{"id":n["output_contract"]["fluid"],"amount":1000},"progress":200}
+    elif ident == "engineering_26":
+        data = {"type": kind, "ingredient": ingredient("sgjourney:pure_naquadah"),
+                "input_fluid": {"id": "ad_astra:oil", "amount": 1000},
+                "output_fluid": {"id": n["output_contract"]["fluid"], "amount": 1000}, "progress": 200}
+        add(ident, data, ident)
+        add(ident + "_pneumatic_oil", {**data,
+            "input_fluid": {"id": "pneumaticcraft:oil", "amount": 1000}}, ident)
+        return
     elif ident=="engineering_24":data={"crystal_base":{**items[0],"amount":1},"primary_ingredient":{"item":"minecraft:quartz","amount":1},
         "secondary_ingredient":{"item":"minecraft:amethyst_shard","amount":1},"deplete_primary":True,"deplete_secondary":True,
         "input_fluid":{"id":fluids[0],"amount":1000},"output":stack(out),"progress":200}

@@ -2,7 +2,7 @@
 ServerEvents.highPriorityData(event => withTetraMaterialStage(1, () => {
     // 石豆腐
     tetraMaterialBuilder(event, "tofuishi").setCategory("stone")
-        .setPrimary(1.3).setSecondary(1.3).setTertiary(0.8)
+        .setPrimary(1.5).setSecondary(1.5).setTertiary(0.8)
         .setDurability(130).setIntegrityCost(1).setIntegrityGain(1)
         .setMagicCapacity(60).setToolLevel(3).setToolEfficiency(4)
         .addAttributes("minecraft:generic.attack_damage", 0.15)
@@ -14,7 +14,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(1, () => {
 
     // 深层豆腐岩
     tetraMaterialBuilder(event, "tofuslate").setCategory("stone")
-        .setPrimary(1.4).setSecondary(1.3).setTertiary(0.9)
+        .setPrimary(1.6).setSecondary(1.5).setTertiary(0.9)
         .setDurability(180).setIntegrityCost(1).setIntegrityGain(3)
         .setMagicCapacity(70).setToolLevel(5).setToolEfficiency(5)
         .setTints("2f4f4f", "708090")  // 深灰色
@@ -25,7 +25,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(1, () => {
 
     // 钢豆腐
     tetraMaterialBuilder(event, "tofumetal").setCategory("metal")
-        .setPrimary(1.4).setSecondary(1.4).setTertiary(1.1)
+        .setPrimary(1.6).setSecondary(1.6).setTertiary(1.1)
         .setDurability(200).setIntegrityCost(1).setIntegrityGain(2)
         .setMagicCapacity(65).setToolLevel(5).setToolEfficiency(5)
         .setTints("c0c0c0", "d3d3d3")  // 银白金属色
@@ -36,7 +36,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(1, () => {
 
     // 毛豆豆腐
     tetraMaterialBuilder(event, "tofuzunda").setCategory("skin")
-        .setPrimary(1.4).setSecondary(1.5).setTertiary(1.2)
+        .setPrimary(1.6).setSecondary(1.8).setTertiary(1.2)
         .setDurability(220).setIntegrityCost(1).setIntegrityGain(2)
         .setMagicCapacity(75).setToolLevel(5).setToolEfficiency(6)
         .setTints("9acd32", "adff2f")  // 淡绿色
@@ -47,7 +47,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(1, () => {
 
     // 豆腐宝石
     tetraMaterialBuilder(event, "tofugem").setCategory("gem")
-        .setPrimary(1.8).setSecondary(1.5).setTertiary(1.2)
+        .setPrimary(2.1).setSecondary(1.7).setTertiary(1.2)
         .setDurability(250).setIntegrityCost(1).setIntegrityGain(2)
         .setMagicCapacity(90).setToolLevel(3).setToolEfficiency(5)
         .addAttributes("minecraft:generic.max_health", 1.0)
@@ -59,7 +59,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(1, () => {
 
     // 钻石豆腐
     tetraMaterialBuilder(event, "tofudiamond").setCategory("gem")
-        .setPrimary(2.6).setSecondary(2.2).setTertiary(1.5)
+        .setPrimary(3).setSecondary(2.6).setTertiary(1.5)
         .setDurability(300).setIntegrityCost(1).setIntegrityGain(3)
         .setMagicCapacity(100).setToolLevel(5).setToolEfficiency(6)
         .addAttributes("attributeslib:cold_damage", 0.15)
@@ -71,7 +71,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(1, () => {
 
     // 豆腐电路板
     tetraMaterialBuilder(event, "tf_circuit").setCategory("metal")
-        .setPrimary(2.3).setSecondary(2.2).setTertiary(1.4)
+        .setPrimary(2.7).setSecondary(2.6).setTertiary(1.4)
         .setDurability(350).setIntegrityCost(1).setIntegrityGain(3)
         .setMagicCapacity(110).setToolLevel(4).setToolEfficiency(7)
         .setTints("fffede", "fffeeb")
@@ -83,7 +83,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(1, () => {
 
     // 豆腐核心
     tetraMaterialBuilder(event, "tofu_core").setCategory("gem")
-        .setPrimary(2.6).setSecondary(2.5).setTertiary(1.6)
+        .setPrimary(3).setSecondary(2.9).setTertiary(1.6)
         .setDurability(400).setIntegrityCost(1).setIntegrityGain(3)
         .setMagicCapacity(130).setToolLevel(5).setToolEfficiency(8)
         .addAttributes("attributeslib:cold_damage", 0.25)
@@ -95,7 +95,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(1, () => {
 
     // 铜材料
     tetraMaterialBuilder(event, "copper").setCategory("metal")
-        .setPrimary(0.8).setSecondary(0.9).setTertiary(0.8)
+        .setPrimary(0.9).setSecondary(1.1).setTertiary(0.8)
         .setDurability(200).setIntegrityCost(1).setIntegrityGain(3)
         .setMagicCapacity(60).setToolLevel(3).setToolEfficiency(4)
         .addAttributes("minecraft:generic.armor", 0.25)
@@ -108,7 +108,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(1, () => {
 
     // bone
     tetraMaterialBuilder(event, "bone").setCategory("bone")
-        .setPrimary(0.8).setSecondary(1.1).setTertiary(0.85)
+        .setPrimary(0.9).setSecondary(1.3).setTertiary(0.85)
         .setDurability(140).setIntegrityCost(1).setIntegrityGain(5)
         .setMagicCapacity(108).setToolLevel(2).setToolEfficiency(5)
         .setTints("bone_glyph", "bone")
@@ -118,7 +118,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(1, () => {
         .build();
 
     tetraMaterialBuilder(event, "leather").setCategory("skin")
-        .setPrimary(2.5).setSecondary(1.5).setTertiary(0.85)
+        .setPrimary(2.9).setSecondary(1.7).setTertiary(0.85)
         .setDurability(200).setIntegrityCost(1).setIntegrityGain(5)
         .setMagicCapacity(90).setToolLevel(0).setToolEfficiency(0)
         .setTints("leather_glyph", "leather")
@@ -128,7 +128,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(1, () => {
         .build();
     // obsidian
     tetraMaterialBuilder(event, "obsidian").setCategory("stone")
-        .setPrimary(1.7).setSecondary(0.5).setTertiary(0.95)
+        .setPrimary(1.9).setSecondary(0.6).setTertiary(0.95)
         .setDurability(350).setIntegrityCost(3).setIntegrityGain(1)
         .setMagicCapacity(90).setToolLevel(4).setToolEfficiency(9)
         .setTints("obsidian_glyph", "obsidian")
@@ -141,7 +141,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(1, () => {
 
     // 锡材料
     tetraMaterialBuilder(event, "tin").setCategory("metal")
-        .setPrimary(1.1).setSecondary(1.1).setTertiary(0.9)
+        .setPrimary(1.3).setSecondary(1.3).setTertiary(0.9)
         .setDurability(180).setIntegrityCost(1).setIntegrityGain(3)
         .setMagicCapacity(55).setToolLevel(3).setToolEfficiency(4)
         .addAttributes("minecraft:generic.armor_toughness", 0.25)
@@ -153,7 +153,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(1, () => {
 
     // 铁材料
     tetraMaterialBuilder(event, "iron").setCategory("metal")
-        .setPrimary(1.6).setSecondary(1.4).setTertiary(1.2)
+        .setPrimary(1.9).setSecondary(1.6).setTertiary(1.2)
         .setDurability(250).setIntegrityCost(1).setIntegrityGain(2)
         .setMagicCapacity(70).setToolLevel(4).setToolEfficiency(6)
         .setTints("a8a8a8", "c8c8c8")
@@ -165,7 +165,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(1, () => {
 
     // 银材料
     tetraMaterialBuilder(event, "silver").setCategory("metal")
-        .setPrimary(1.3).setSecondary(1.2).setTertiary(0.9)
+        .setPrimary(1.5).setSecondary(1.4).setTertiary(0.9)
         .setDurability(220).setIntegrityCost(1).setIntegrityGain(2)
         .setMagicCapacity(90).setToolLevel(4).setToolEfficiency(5)
         .addAttributes("attributeslib:crit_chance", 0.025)
@@ -177,7 +177,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(1, () => {
 
     // 金材料
     tetraMaterialBuilder(event, "gold").setCategory("metal")
-        .setPrimary(1.2).setSecondary(1.3).setTertiary(0.8)
+        .setPrimary(1.4).setSecondary(1.5).setTertiary(0.8)
         .setDurability(100).setIntegrityCost(1).setIntegrityGain(2)
         .setMagicCapacity(120).setToolLevel(3).setToolEfficiency(8)
         .addAttributes("attributeslib:crit_damage", 0.025)
@@ -189,7 +189,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(1, () => {
 
     // 铅材料
     tetraMaterialBuilder(event, "lead").setCategory("metal")
-        .setPrimary(1.5).setSecondary(1.5).setTertiary(1.0)
+        .setPrimary(1.8).setSecondary(1.8).setTertiary(1.0)
         .setDurability(280).setIntegrityCost(0).setIntegrityGain(2)
         .setMagicCapacity(50).setToolLevel(3).setToolEfficiency(3)
         .addAttributes("minecraft:generic.attack_damage", 0.25)
@@ -202,7 +202,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(1, () => {
 
     // 镍材料
     tetraMaterialBuilder(event, "nickel").setCategory("metal")
-        .setPrimary(1.6).setSecondary(1.6).setTertiary(1.1)
+        .setPrimary(1.9).setSecondary(1.9).setTertiary(1.1)
         .setDurability(240).setIntegrityCost(1).setIntegrityGain(2)
         .setMagicCapacity(75).setToolLevel(3).setToolEfficiency(6)
         .addAttributes("attributeslib:mining_speed", 0.05)
@@ -214,7 +214,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(1, () => {
 
     // 赛特斯石英材料
     tetraMaterialBuilder(event, "certus_quartz").setCategory("gem")
-        .setPrimary(1.8).setSecondary(1.5).setTertiary(1.2)
+        .setPrimary(2.1).setSecondary(1.7).setTertiary(1.2)
         .setDurability(350).setIntegrityCost(1).setIntegrityGain(3)
         .setMagicCapacity(140).setToolLevel(3).setToolEfficiency(5)
         .addAttributes("minecraft:generic.max_health", 1.5)
@@ -227,7 +227,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(1, () => {
 
     // 紫水晶材料
     tetraMaterialBuilder(event, "amethyst").setCategory("gem")
-        .setPrimary(2.0).setSecondary(2.0).setTertiary(1.2)
+        .setPrimary(2.3).setSecondary(2.3).setTertiary(1.2)
         .setDurability(400).setIntegrityCost(1).setIntegrityGain(3)
         .setMagicCapacity(160).setToolLevel(3).setToolEfficiency(5)
         .addAttributes("minecraft:generic.max_health", 1.5)
@@ -239,7 +239,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(1, () => {
 
     // 青铜材料
     tetraMaterialBuilder(event, "bronze").setCategory("metal")
-        .setPrimary(2.1).setSecondary(2.1).setTertiary(1.3)
+        .setPrimary(2.5).setSecondary(2.5).setTertiary(1.3)
         .setDurability(300).setIntegrityCost(1).setIntegrityGain(4)
         .setMagicCapacity(80).setToolLevel(3).setToolEfficiency(7)
         .addAttributes("attributeslib:mining_speed", 0.05)
@@ -251,7 +251,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(1, () => {
 
     // 钢材料
     tetraMaterialBuilder(event, "steel").setCategory("metal")
-        .setPrimary(2.3).setSecondary(2.2).setTertiary(1.4)
+        .setPrimary(2.7).setSecondary(2.6).setTertiary(1.4)
         .setDurability(450).setIntegrityCost(2).setIntegrityGain(4)
         .setMagicCapacity(70).setToolLevel(4).setToolEfficiency(7)
         .addAttributes("minecraft:generic.armor", 0.3)
@@ -263,7 +263,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(1, () => {
 
     // 钻石材料
     tetraMaterialBuilder(event, "diamond").setCategory("gem")
-        .setPrimary(2.5).setSecondary(2.5).setTertiary(1.5)
+        .setPrimary(2.9).setSecondary(2.9).setTertiary(1.5)
         .setDurability(500).setIntegrityCost(2).setIntegrityGain(4)
         .setMagicCapacity(100).setToolLevel(5).setToolEfficiency(8)
         .addAttributes("slashblade:slashblade_damage", 0.015)
@@ -276,7 +276,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(1, () => {
 
     // 绿宝石材料
     tetraMaterialBuilder(event, "emerald").setCategory("gem")
-        .setPrimary(2.6).setSecondary(2.4).setTertiary(1.6)
+        .setPrimary(3).setSecondary(2.8).setTertiary(1.6)
         .setDurability(500).setIntegrityCost(2).setIntegrityGain(4)
         .setMagicCapacity(130).setToolLevel(5).setToolEfficiency(7)
         .addAttributes("minecraft:generic.attack_damage", 0.25)
@@ -287,8 +287,9 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(1, () => {
         .addEnchantment("minecraft:fortune", 1)
         .build();
 
+    // 凋零合金锭：1.1 的 Boss 掉落，数值按 1.2 中期～1.3 初期取（实得约 15，见数值文档 7.8）
     tetraMaterialBuilder(event, "witherite_ingot").setCategory("metal")
-        .setPrimary(7).setSecondary(8).setTertiary(2.9)
+        .setPrimary(4.8).setSecondary(5.5).setTertiary(2.9)
         .setDurability(600).setIntegrityCost(2).setIntegrityGain(4)
         .setMagicCapacity(100).setToolLevel(5).setToolEfficiency(9)
         .addAttributes("minecraft:generic.knockback_resistance", 0.05)
@@ -300,7 +301,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(1, () => {
         .build();
 
     tetraMaterialBuilder(event, "bamboo").setCategory("misc")
-        .setPrimary(1).setSecondary(0.6).setTertiary(1)
+        .setPrimary(1.1).setSecondary(0.7).setTertiary(1)
         .setDurability(80).setIntegrityCost(1).setIntegrityGain(3)
         .setMagicCapacity(104).setToolLevel(0).setToolEfficiency(9)
         .setTints("699022", "5e8a24")
@@ -310,7 +311,7 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(1, () => {
         .build();
 
     tetraMaterialBuilder(event, "hide").setCategory("skin")
-        .setPrimary(1.2).setSecondary(1.2).setTertiary(1.2)
+        .setPrimary(1.4).setSecondary(1.4).setTertiary(1.2)
         .setDurability(200).setIntegrityCost(1).setIntegrityGain(5)
         .setMagicCapacity(90).setToolLevel(0).setToolEfficiency(0)
         .addAttributes("minecraft:generic.knockback_resistance", 0.05)

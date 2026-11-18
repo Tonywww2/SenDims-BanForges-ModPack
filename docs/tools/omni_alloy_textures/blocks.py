@@ -221,26 +221,11 @@ def _():
     for (x,y) in [(4,4),(12,12),(4,12),(12,4)]: t.set(x,y,'ffffff')
     return t
 
-@reg('block/omni_aether_09_block','枯萎孢子转化构件','block')
-def _():
-    m=RP('7a6e86'); t=base(m,101,cell=4,levels=(0.3,0.45,0.6,0.8),lo=1)
-    for s in (102,103,104):
-        for (x,y) in walk(s,(s*7%16,s*11%16),8): t.set(x,y,m[4])
-    for (x,y) in rpts(105,8,3): t.set(x,y,'c8b8d8')
-    return t
-
 @reg('block/omni_aether_12_block','金色史维特球转化构件','block')
 def _():
     j=RP('e8b040'); t=base(j,111,cell=8,levels=(0.3,0.42,0.58,0.75),lo=2)
     for (x,y) in rpts(112,5,5): t.set(x,y,j[5]); t.set(x+1,y+1,j[1])
     for (x,y) in rpts(113,6,4): t.set(x,y,'fff0b0')
-    return t
-
-@reg('block/omni_aether_13_block','发光孢子转化构件','block')
-def _():
-    d=RP('3a4a52'); t=base(d,121,cell=4,levels=(0.35,0.5,0.65,0.85),lo=1)
-    for (x,y) in rpts(122,10,3): t.set(x,y,'7af0d8')
-    for (x,y) in rpts(123,5,4): t.set(x,y,'d0fff4')
     return t
 
 @reg('block/omni_aether_14_block','瓦解号角构件','block')

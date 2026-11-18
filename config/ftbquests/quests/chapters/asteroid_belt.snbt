@@ -446,6 +446,54 @@
 			x: -4.0d
 			y: 4.0d
 		}
+		{
+			dependencies: ["77DC6770CC08AEF6"]
+			id: "11E6636FF45AEEC2"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "737025D028F72F38"
+				item: "botania:terra_plate"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["77DC6770CC08AEF6"]
+			id: "03F6FFD1156D95BB"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "64E59C3845AB8177"
+				item: "nuclearcraft:fission_reactor_controller"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["77DC6770CC08AEF6"]
+			id: "13AE23E0F674B64D"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "625DD620B82A73FC"
+				item: "botania:mana_ring_greater"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["77DC6770CC08AEF6"]
+			id: "37668892EA4A7230"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "79CFFCC0AC86F8B5"
+				item: "botania:entropinnyum"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
 	]
 	title: "[IX] 小行星带"
 }

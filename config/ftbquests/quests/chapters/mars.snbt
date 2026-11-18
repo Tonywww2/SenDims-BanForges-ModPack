@@ -468,6 +468,18 @@
 			x: -4.0d
 			y: 3.0d
 		}
+		{
+			dependencies: ["3F43656AE6F116CB"]
+			id: "7B146DA38E1D8AA1"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3FAFA2293359D813"
+				item: "dustandash:milling_machine"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
 	]
 	title: "[V] 火星"
 }
