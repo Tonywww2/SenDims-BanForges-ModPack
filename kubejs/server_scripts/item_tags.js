@@ -95,6 +95,7 @@ ServerEvents.tags("item", event => {
         '#forge:rods/blaze',                // 烈焰棒
         'ae2:calculation_processor',        // 运算处理器
         'deep_aether:metal_mixture',                   // 天晶混合
+        "slashblade_sendims:blood_jade"
     ])
     event.add("slashblade_sendims:drc_damage_material_0", [
         '#forge:gems/ambrosium',          // 神能晶
@@ -102,6 +103,7 @@ ServerEvents.tags("item", event => {
         '#forge:ingots/ironwood',         // 铁木锭
         'minecraft:ghast_tear',           // 恶魂泪
         "minecraft:wither_skeleton_skull",          // 凋零头
+        "slashblade_sendims:blood_marrow"
     ])
 
     // 阶段1
@@ -193,6 +195,14 @@ ServerEvents.tags("item", event => {
         "draconicevolution:small_chaos_frag",
         "slashblade_sendims:soul_crystal_cluster",
         "elder_bosses:gate_fragment"
+    ])
+
+    // 终焉城堡的四色符文碎片，转色配方用（docs/development/终焉城堡内容设计-2026-11-18.md 5.2）
+    event.add('kubejs:castle_rune_shards', [
+        'kubejs:castle_rune_shard_yellow',
+        'kubejs:castle_rune_shard_blue',
+        'kubejs:castle_rune_shard_pink',
+        'kubejs:castle_rune_shard_violet'
     ])
 
 

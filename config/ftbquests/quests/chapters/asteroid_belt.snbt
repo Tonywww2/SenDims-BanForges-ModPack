@@ -494,6 +494,32 @@
 			x: -2.0d
 			y: 4.0d
 		}
+		{
+			dependencies: ["77DC6770CC08AEF6"]
+			id: "79693498D838A840"
+			quest_enhance_disable_scroll_paging: false
+			subtitle: "异格材料"
+			tasks: [{
+				id: "6C1D5D7C7973047B"
+				item: "kubejs:alter_neptune"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["77DC6770CC08AEF6"]
+			id: "31D17EEDC0C0CE2B"
+			quest_enhance_disable_scroll_paging: false
+			subtitle: "异格材料"
+			tasks: [{
+				id: "25997239ACD35BE9"
+				item: "kubejs:alter_ironwood"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 6.0d
+		}
 	]
 	title: "[IX] 小行星带"
 }

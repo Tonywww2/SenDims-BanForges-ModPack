@@ -27,9 +27,9 @@ ServerEvents.highPriorityData(event => {
         .setRequiredTool("hammer_dig", 1)
         .build();
 
-    // 3.2.2 世界树铁木：铁木锭 + 泰拉钢（融合）
+    // 3.2.2 世界树铁木：铁木锭 + 泰拉钢（融合）。2026-11-18 由 50/48 下调，压回小行星带的材料区间（最高 164.5）
     tetraMaterialBuilder(event, "alter_ironwood", 4).setCategory("metal")
-        .setPrimary(50).setSecondary(48).setTertiary(29)
+        .setPrimary(46).setSecondary(44).setTertiary(29)
         .setDurability(760).setIntegrityCost(7).setIntegrityGain(13)
         .setMagicCapacity(160).setToolLevel(4).setToolEfficiency(8)
         .addAttributes("attributeslib:armor_pierce", 3)
@@ -96,9 +96,9 @@ ServerEvents.highPriorityData(event => {
         .setRequiredTool("hammer_dig", 1)
         .build();
 
-    // 4.1.1 陨星合金：下界合金 + 陨铁锭（突变）
+    // 4.1.3 陨星合金：下界合金 + 陨铁锭 + 生物电池（突变）。2026-11-18 由 4.1.1 上调（原与陨铁锭同值，贴着土卫六最低）
     tetraMaterialBuilder(event, "alter_netherite", 5).setCategory("metal")
-        .setPrimary(74).setSecondary(55).setTertiary(32)
+        .setPrimary(79).setSecondary(59).setTertiary(34)
         .setDurability(740).setIntegrityCost(9).setIntegrityGain(17)
         .setMagicCapacity(100).setToolLevel(4).setToolEfficiency(9)
         .addAttributes("attributeslib:armor_shred", 0.03)
@@ -174,6 +174,158 @@ ServerEvents.highPriorityData(event => {
         .addEffects("RefineStrengthening", 4)
         .setTints("ffcf6b", "6f84b8").addTexture("heavy").addTexture("metal")
         .addItemMaterial('kubejs:alter_steel')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
+    // ======== 2.x 扩充（设计草案第 8 节）。数值规则同上；韧性、耐久、魔力容量、完整度、工具等级取催化材料 ========
+
+    // 2.2.1 蕴魔钢叶：钢叶 + 门瑞欧结晶 + 神秘碱晶（融合，深境二层）。2026-11-18 由 2.1.0 上调；韧性等取 2.2.1 的霜钢
+    tetraMaterialBuilder(event, "alter_steeleaf", 3).setCategory("metal")
+        .setPrimary(16).setSecondary(17).setTertiary(9)
+        .setDurability(480).setIntegrityCost(7).setIntegrityGain(7)
+        .setMagicCapacity(140).setToolLevel(4).setToolEfficiency(7.5)
+        .addAttributes("minecraft:generic.max_health", 3)
+        .addAttributes("minecraft:generic.armor_toughness", 0.4)
+        .addEnchantment("minecraft:looting", 1)
+        .setTints("25faf3", "416230").addTexture("heavy").addTexture("metal")
+        .addItemMaterial('kubejs:alter_steeleaf')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
+    // 2.2.2 豆腐逻辑电路板：豆腐能电路板 + 门瑞欧结晶 + 神秘碱晶（融合，深境二层）。2026-11-18 去掉逻辑导向零件，由 2.1.2 上调；韧性等取 2.2.2 的遗忆
+    tetraMaterialBuilder(event, "alter_tf_circuit", 3).setCategory("metal")
+        .setPrimary(20).setSecondary(19).setTertiary(11)
+        .setDurability(720).setIntegrityCost(8).setIntegrityGain(8)
+        .setMagicCapacity(140).setToolLevel(4).setToolEfficiency(8)
+        .addAttributes("slashblade_sendims:ap_gain_percentage", 0.05)
+        .addAttributes("attributeslib:experience_gained", 0.05)
+        .setTints("8e44ad", "fffede").addTexture("shiny").addTexture("metal")
+        .addItemMaterial('kubejs:alter_tf_circuit')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
+    // 2.1.2 熔核炽铁：炽铁锭 + 耐热金属（突变「熔核」，金星）
+    tetraMaterialBuilder(event, "alter_fiery", 3).setCategory("metal")
+        .setPrimary(11).setSecondary(10).setTertiary(7.5)
+        .setDurability(660).setIntegrityCost(4).setIntegrityGain(5)
+        .setMagicCapacity(120).setToolLevel(4).setToolEfficiency(7)
+        .addAttributes("attributeslib:fire_damage", 3.2)
+        .addAttributes("slashblade_sendims:frenzy_resistance", 0.05)
+        .addAttributes("minecraft:generic.max_health", 2)
+        .addAttributes("slashblade_sendims:frenzy_damage", 0.03)
+        .setTints("e74c3c", "ff4500").addTexture("metal").addTexture("heavy")
+        .addItemMaterial('kubejs:alter_fiery')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
+    // 2.2.1 炎狱玄武岩：岩石裂骸 + 炎狱尖塔块 + 骸龙之骨（融合，金星）。2026-11-18 由 2.1.0 上调，元素占比不变
+    tetraMaterialBuilder(event, "alter_basalz", 3).setCategory("stone")
+        .setPrimary(19).setSecondary(3.6).setTertiary(9)
+        .setDurability(300).setIntegrityCost(6).setIntegrityGain(6)
+        .setMagicCapacity(120).setToolLevel(5).setToolEfficiency(8)
+        .addAttributes("attributeslib:fire_damage", 1.8)
+        .addAttributes("minecraft:generic.armor", 1)
+        .setTints("b03a2e", "7f7f7f").addTexture("grainy").addTexture("crude")
+        .addItemMaterial('kubejs:alter_basalz')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
+    // 2.1.1 汞霜钻石豆腐：钻石豆腐 + 水星石（融合，水星）
+    tetraMaterialBuilder(event, "alter_tofu_diamond", 3).setCategory("gem")
+        .setPrimary(11).setSecondary(9).setTertiary(6)
+        .setDurability(230).setIntegrityCost(4).setIntegrityGain(4)
+        .setMagicCapacity(80).setToolLevel(2).setToolEfficiency(5)
+        .addAttributes("attributeslib:cold_damage", 1.3)
+        .addAttributes("**attributeslib:cold_damage", 0.05)
+        .setTints("85929e", "e0ffff").addTexture("shiny").addTexture("heavy")
+        .addItemMaterial('kubejs:alter_tofu_diamond')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
+    // 2.2.0 夜冥骑士金属：骑士金属 + 夜冥（融合，深境三层·午夜）
+    tetraMaterialBuilder(event, "alter_knightmetal", 3).setCategory("metal")
+        .setPrimary(13).setSecondary(13).setTertiary(8)
+        .setDurability(360).setIntegrityCost(3).setIntegrityGain(5)
+        .setMagicCapacity(100).setToolLevel(3).setToolEfficiency(6)
+        .addAttributes("minecraft:generic.armor", 1)
+        .addEnchantment("last_smith:spirit_absorption", 0.75)
+        .setTints("5b2c6f", "7b8771").addTexture("heavy").addTexture("metal")
+        .addItemMaterial('kubejs:alter_knightmetal')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
+    // 2.2.1 幽光紫水晶：紫水晶 + 幽光（融合，深境三层·午夜）
+    tetraMaterialBuilder(event, "alter_amethyst", 3).setCategory("gem")
+        .setPrimary(15).setSecondary(15).setTertiary(10)
+        .setDurability(400).setIntegrityCost(3).setIntegrityGain(6)
+        .setMagicCapacity(140).setToolLevel(4).setToolEfficiency(7.5)
+        .addAttributes("attributeslib:armor_pierce", 1.5)
+        .addAttributes("minecraft:generic.max_health", 3)
+        .setTints("d4a5ff", "9966cc").addTexture("shiny").addTexture("crude")
+        .addItemMaterial('kubejs:alter_amethyst')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
+    // 2.2.2 铼霜雪鬃：雪怪首领毛皮 + 铼碎片（融合，深境三层·午夜）
+    tetraMaterialBuilder(event, "alter_yeti_fur", 3).setCategory("skin")
+        .setPrimary(14).setSecondary(13).setTertiary(9)
+        .setDurability(340).setIntegrityCost(4).setIntegrityGain(6)
+        .setMagicCapacity(130).setToolLevel(3).setToolEfficiency(6)
+        .addAttributes("attributeslib:cold_damage", 7.7)
+        .addEnchantment("apotheosis:miners_fervor", 1)
+        .setTints("5dade2", "f0f0f0").addTexture("crude").addTexture("default")
+        .addItemMaterial('kubejs:alter_yeti_fur')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
+    // 2.2.2 王权神能晶：神能晶片 + 贵豪（融合，深园）
+    tetraMaterialBuilder(event, "alter_ambrosium", 3).setCategory("gem")
+        .setPrimary(19).setSecondary(20).setTertiary(10)
+        .setDurability(640).setIntegrityCost(8).setIntegrityGain(8)
+        .setMagicCapacity(160).setToolLevel(4).setToolEfficiency(7.5)
+        .addAttributes("**attributeslib:armor_shred", 0.02)
+        .addAttributes("attributeslib:crit_damage", 0.025)
+        .addAttributes("attributeslib:experience_gained", 0.075)
+        .setTints("f39c12", "f9f882").addTexture("shiny").addTexture("crude")
+        .addItemMaterial('kubejs:alter_ambrosium')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
+    // 2.2.1 霜钢娜迦鳞：娜迦鳞片 + 霜钢（融合，深园）
+    tetraMaterialBuilder(event, "alter_naga_scale", 3).setCategory("metal")
+        .setPrimary(15).setSecondary(14).setTertiary(9)
+        .setDurability(480).setIntegrityCost(7).setIntegrityGain(7)
+        .setMagicCapacity(140).setToolLevel(4).setToolEfficiency(7.5)
+        .addAttributes("attributeslib:cold_damage", 2)
+        .addAttributes("attributeslib:crit_damage", 0.04)
+        .setTints("85c1e9", "426737").addTexture("heavy").addTexture("metal")
+        .addItemMaterial('kubejs:alter_naga_scale')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
+    // 2.2.2 遗忆骸骨：骨块 + 遗忆锭（突变「守望」，深园）
+    tetraMaterialBuilder(event, "alter_bone", 3).setCategory("bone")
+        .setPrimary(17).setSecondary(22).setTertiary(11)
+        .setDurability(720).setIntegrityCost(8).setIntegrityGain(8)
+        .setMagicCapacity(140).setToolLevel(4).setToolEfficiency(8)
+        .addAttributes("minecraft:generic.armor", 0.5)
+        .addAttributes("attributeslib:armor_pierce", 0.5)
+        .addAttributes("attributeslib:armor_shred", 0.02)
+        .setTints("d5dbdb", "e8e4d0").addTexture("bone").addTexture("crude")
+        .addItemMaterial('kubejs:alter_bone')
+        .setRequiredTool("hammer_dig", 1)
+        .build();
+
+    // 2.3.1 末影紫晶石：紫晶石 + 末地钢（融合，末地）
+    tetraMaterialBuilder(event, "alter_zanite", 3).setCategory("gem")
+        .setPrimary(23).setSecondary(23).setTertiary(12)
+        .setDurability(700).setIntegrityCost(9).setIntegrityGain(10)
+        .setMagicCapacity(160).setToolLevel(4).setToolEfficiency(8)
+        .addAttributes("minecraft:generic.attack_damage", 0.5)
+        .addAttributes("slashblade_sendims:sprint_cd", 0.025)
+        .addAttributes("slashblade_sendims:ap_reduce_amount", 7.5)
+        .setTints("1d8348", "bd94f9").addTexture("heavy").addTexture("metal")
+        .addItemMaterial('kubejs:alter_zanite')
         .setRequiredTool("hammer_dig", 1)
         .build();
 

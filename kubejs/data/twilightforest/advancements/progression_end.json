@@ -1,0 +1,13 @@
+{
+  "parent": "twilightforest:progress_troll",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "impossible"
+    ]
+  ]
+}

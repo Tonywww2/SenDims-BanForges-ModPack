@@ -35,9 +35,9 @@
     {
       "material": {
         "items": [
-          "slashblade:proudsoul_crystal"
+          "slashblade:proudsoul_ingot"
         ],
-        "count": 7
+        "count": 3
       },
       "requiredTools": {
         "hammer_dig": 5

@@ -1,0 +1,146 @@
+{
+  "type": "twilightforest:final_castle",
+  "adjust_structure_elevation": false,
+  "advancements_required": [
+    "twilightforest:root"
+  ],
+  "allow_biome_surface_decorations": false,
+  "allow_biome_underground_decorations": true,
+  "ambient_spawns": [],
+  "biomes": "#twilightforest:valid_final_castle_biomes",
+  "chunk_clearance_radius": 4,
+  "hint_item": {
+    "Count": 1,
+    "id": "minecraft:written_book",
+    "tag": {
+      "author": "twilightforest.book.author",
+      "generation": 3,
+      "pages": [
+        "{\"translate\":\"twilightforest.book.unknown.1\"}",
+        "{\"translate\":\"twilightforest.book.unknown.2\"}"
+      ],
+      "title": "twilightforest.book.unknown",
+      "twilightforest:book": 1
+    }
+  },
+  "hint_mob": "twilightforest:kobold",
+  "labelled_monster_spawns": {
+    "0": [
+      {
+        "type": "twilightforest:death_tome",
+        "weight": 8,
+        "minCount": 1,
+        "maxCount": 2
+      },
+      {
+        "type": "twilightforest:wraith",
+        "weight": 5,
+        "minCount": 1,
+        "maxCount": 1
+      },
+      {
+        "type": "twilightforest:kobold",
+        "weight": 6,
+        "minCount": 2,
+        "maxCount": 3
+      }
+    ],
+    "1": [
+      {
+        "type": "twilightforest:adherent",
+        "weight": 10,
+        "minCount": 1,
+        "maxCount": 2
+      },
+      {
+        "type": "twilightforest:kobold",
+        "weight": 8,
+        "minCount": 2,
+        "maxCount": 4
+      },
+      {
+        "type": "twilightforest:redcap",
+        "weight": 6,
+        "minCount": 1,
+        "maxCount": 2
+      }
+    ],
+    "2": [
+      {
+        "type": "twilightforest:skeleton_druid",
+        "weight": 8,
+        "minCount": 1,
+        "maxCount": 2
+      },
+      {
+        "type": "twilightforest:redcap_sapper",
+        "weight": 5,
+        "minCount": 1,
+        "maxCount": 2
+      },
+      {
+        "type": "twilightforest:adherent",
+        "weight": 5,
+        "minCount": 1,
+        "maxCount": 1
+      }
+    ],
+    "3": [
+      {
+        "type": "twilightforest:fire_beetle",
+        "weight": 8,
+        "minCount": 1,
+        "maxCount": 2
+      },
+      {
+        "type": "twilightforest:redcap_sapper",
+        "weight": 5,
+        "minCount": 1,
+        "maxCount": 2
+      },
+      {
+        "type": "twilightforest:skeleton_druid",
+        "weight": 4,
+        "minCount": 1,
+        "maxCount": 1
+      }
+    ]
+  },
+  "spawn_overrides": {
+    "ambient": {
+      "bounding_box": "full",
+      "spawns": []
+    },
+    "axolotls": {
+      "bounding_box": "full",
+      "spawns": []
+    },
+    "creature": {
+      "bounding_box": "full",
+      "spawns": []
+    },
+    "misc": {
+      "bounding_box": "full",
+      "spawns": []
+    },
+    "monster": {
+      "bounding_box": "full",
+      "spawns": []
+    },
+    "underground_water_creature": {
+      "bounding_box": "full",
+      "spawns": []
+    },
+    "water_ambient": {
+      "bounding_box": "full",
+      "spawns": []
+    },
+    "water_creature": {
+      "bounding_box": "full",
+      "spawns": []
+    }
+  },
+  "step": "surface_structures",
+  "terrain_adaptation": "beard_thin",
+  "water_spawns": []
+}

@@ -367,6 +367,19 @@
 			x: -4.0d
 			y: 3.0d
 		}
+		{
+			dependencies: ["2E150AF7AD2E748B"]
+			id: "3D4960F050527EEE"
+			quest_enhance_disable_scroll_paging: false
+			subtitle: "异格材料"
+			tasks: [{
+				id: "761DA172C8171A04"
+				item: "kubejs:alter_tofu_core"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.0d
+		}
 	]
 	title: "[XII] 霜原星"
 }

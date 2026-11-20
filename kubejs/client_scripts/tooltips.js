@@ -54,6 +54,7 @@ ItemEvents.tooltip(event => {
     });
 
     event.add("powerful_dummy:dummy_stand", Text.translatable('info.kubejs.dummy_stand').color(Color.AQUA))
+    event.add('deeprealm_4th:forging_pad', Text.translatable('info.kubejs.forging_pad').color(Color.AQUA));
 
     event.add('kubejs:anchor_shard', Text.translatable('info.kubejs.anchor_shard').color(Color.AQUA));
     event.add('kubejs:chaotic_truth', Text.translatable('info.kubejs.chaotic_truth').color(Color.AQUA));

@@ -716,11 +716,6 @@ global.sdbfOmniAlloy = {
                 "branch": "aether",
                 "texture": "kubejs:block/omni_aether_07_block"
             },
-            "kubejs:omni_aether_12_block": {
-                "name": "金色史维特球转化构件",
-                "branch": "aether",
-                "texture": "kubejs:block/omni_aether_12_block"
-            },
             "kubejs:omni_aether_14_block": {
                 "name": "瓦解号角构件",
                 "branch": "aether",
@@ -1175,7 +1170,6 @@ global.sdbfOmniAlloy = {
         "sdbf:omni_alloy/aether_11",
         "sdbf:omni_alloy/aether_09_prepare",
         "sdbf:omni_alloy/aether_12_prepare",
-        "sdbf:omni_alloy/aether_12",
         "sdbf:omni_alloy/aether_14",
         "sdbf:omni_alloy/mana_01",
         "sdbf:omni_alloy/mana_02",
@@ -1456,18 +1450,12 @@ global.sdbfOmniAlloy = {
             "check": "none",
             "note": "消耗原生注入后的维瑞迪姆斧；沿用 Redux 注入配方。"
         },
-        "aether_12": {
-            "recipes": [
-                "sdbf:omni_alloy/aether_12"
-            ],
-            "mode": "native_recipe",
-            "preparation": "sdbf:omni_alloy/aether_12_prepare"
-        },
         "aether_14": {
             "recipes": [
                 "sdbf:omni_alloy/aether_14"
             ],
-            "mode": "native_recipe"
+            "mode": "native_recipe",
+            "preparation": "sdbf:omni_alloy/aether_12_prepare"
         },
         "mana_01": {
             "recipes": [
@@ -2171,7 +2159,7 @@ global.sdbfOmniAlloy = {
             "mode": "native_recipe"
         }
     },
-    "design_revision": 6
+    "design_revision": 7
 };
 // END OMNI ALLOY CATALOG
 

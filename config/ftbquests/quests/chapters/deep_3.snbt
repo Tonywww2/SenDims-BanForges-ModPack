@@ -652,6 +652,45 @@
 			x: -2.0d
 			y: 4.0d
 		}
+		{
+			dependencies: ["2E482B871B147DC6"]
+			id: "639D9E31F479A4F1"
+			quest_enhance_disable_scroll_paging: false
+			subtitle: "异格材料"
+			tasks: [{
+				id: "774737B5AB728AD8"
+				item: "kubejs:alter_knightmetal"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["2E482B871B147DC6"]
+			id: "6461B56E26863199"
+			quest_enhance_disable_scroll_paging: false
+			subtitle: "异格材料"
+			tasks: [{
+				id: "559EE624C084D7FB"
+				item: "kubejs:alter_amethyst"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["2E482B871B147DC6"]
+			id: "33A47857F0D9438D"
+			quest_enhance_disable_scroll_paging: false
+			subtitle: "异格材料"
+			tasks: [{
+				id: "68B05BA7DD1DC508"
+				item: "kubejs:alter_yeti_fur"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 5.0d
+		}
 	]
 	title: "[VII] &e深境：午夜"
 }

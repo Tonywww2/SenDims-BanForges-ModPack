@@ -824,6 +824,32 @@
 			x: -2.0d
 			y: 4.0d
 		}
+		{
+			dependencies: ["0A68F5EE8F25F036"]
+			id: "0181475F61663A4F"
+			quest_enhance_disable_scroll_paging: false
+			subtitle: "异格材料"
+			tasks: [{
+				id: "3D0EDCDABDDC5BD2"
+				item: "kubejs:alter_gold"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["0A68F5EE8F25F036"]
+			id: "6A716C72B51A14F9"
+			quest_enhance_disable_scroll_paging: false
+			subtitle: "异格材料"
+			tasks: [{
+				id: "3B45535423DEBF64"
+				item: "kubejs:alter_zanite"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 7.0d
+		}
 	]
 	title: "[VIII] &e末地"
 }

@@ -1,0 +1,11 @@
+{
+  "advancements": [
+    "twilightforest:mazebreaker"
+  ],
+  "enforcement": "twilightforest:darkness",
+  "locked_biome_toast": {
+    "Count": 1,
+    "id": "twilightforest:mazebreaker_pickaxe"
+  },
+  "multiplier": 0.0
+}

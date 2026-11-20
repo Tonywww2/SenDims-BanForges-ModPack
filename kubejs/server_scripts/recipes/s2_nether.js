@@ -8,7 +8,8 @@ ServerEvents.recipes(event => {
         'BCB',
         'AB '
     ], {
-        A: ['tetra:metal_scrap', 'twilightforest:giant_pickaxe'],
+        // 暮色一侧用巫妖掉落的任意一种权杖（暮色新流程里巨人是第二个首领，巨人镐来得太早）
+        A: ['tetra:metal_scrap', 'twilightforest:twilight_scepter', 'twilightforest:lifedrain_scepter', 'twilightforest:zombie_scepter', 'twilightforest:fortification_scepter'],
         B: ['ad_astra:ice_shard', 'twilightforest:giant_cobblestone'],
         C: 'confluence:obsidian_rose'
     }).id('sdbf:bedrock_breaker_s2')

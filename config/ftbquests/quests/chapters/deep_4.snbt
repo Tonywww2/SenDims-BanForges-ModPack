@@ -565,6 +565,32 @@
 			x: 36.0d
 			y: 0.0d
 		}
+		{
+			dependencies: ["4239AD35803375DB"]
+			id: "6F1ED73BAADC9331"
+			quest_enhance_disable_scroll_paging: false
+			subtitle: "异格材料"
+			tasks: [{
+				id: "7AAA1670643600A9"
+				item: "kubejs:alter_rendium"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["4239AD35803375DB"]
+			id: "368E4D41B1BCFB96"
+			quest_enhance_disable_scroll_paging: false
+			subtitle: "异格材料"
+			tasks: [{
+				id: "24C92F2BF9BD02C1"
+				item: "kubejs:alter_twin_star_stone"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 6.0d
+		}
 	]
 	title: "[XIII] &e深境：第四层"
 }

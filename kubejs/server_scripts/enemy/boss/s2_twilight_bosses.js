@@ -55,7 +55,7 @@ ServerEvents.highPriorityData(event => {
     twilightBoss("twilightforest:armored_giant", "#twilight_2");
     twilightBoss("twilightforest:winter_wolf", "#twilight_2");
     twilightBoss("twilightforest:troll", "#twilight_2");
-    twilightBoss("twilightforest:adherent", "#twilight_2");
+    twilightBoss("twilightforest:adherent", "#twilight");
     twilightBoss("twilightforest:harbinger_cube", "#twilight_2");
 
     twilightBoss("twilightforest:ice_crystal", "#twilight_2");

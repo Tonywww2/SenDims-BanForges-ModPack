@@ -35,9 +35,9 @@
     {
       "material": {
         "items": [
-          "slashblade:proudsoul_trapezohedron"
+          "slashblade:proudsoul_sphere"
         ],
-        "count": 8
+        "count": 1
       },
       "requiredTools": {
         "hammer_dig": 6

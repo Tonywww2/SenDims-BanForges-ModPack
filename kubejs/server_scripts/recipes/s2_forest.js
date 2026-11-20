@@ -136,4 +136,53 @@ ServerEvents.recipes(event => {
     twilightBossBlade("slashblade_addon:murakumo", "twilightforest:ur_ghast_trophy", "twilightforest:fiery_ingot", "sdbf:murakumo_s2")
     twilightBossBlade("sjap_adder:frostbane_moonveil", "twilightforest:snow_queen_trophy", "twilightforest:aurora_block", "sdbf:frostbane_moonveil_s2")
 
+    // 暮色流程重做（docs/development/暮色森林流程重做-调查与设计-2026-11-18.md）：
+    // 迷宫破坏者由巨人镐合成，材料只用高地、巨魔洞穴与云上城堡里拿得到的东西（此时普通群系还没开放）。
+    event.shaped('twilightforest:mazebreaker_pickaxe', [
+        'OTO',
+        'TGT',
+        'OTO'
+    ], {
+        O: 'twilightforest:giant_obsidian',
+        T: 'twilightforest:trollsteinn',
+        G: 'twilightforest:giant_pickaxe'
+    }).id('sdbf:mazebreaker_pickaxe_s2')
+
+    // 终焉城堡的召唤材料（docs/development/终焉城堡内容设计-2026-11-18.md 第 5 节）
+    event.shaped('kubejs:finale_rune_core', [
+        ' Y ',
+        'BCP',
+        ' V '
+    ], {
+        Y: 'kubejs:castle_rune_shard_yellow',
+        B: 'kubejs:castle_rune_shard_blue',
+        P: 'kubejs:castle_rune_shard_pink',
+        V: 'kubejs:castle_rune_shard_violet',
+        C: 'twilightforest:violet_castle_rune_brick'
+    }).id('sdbf:finale_rune_core_s2')
+
+    event.shaped('kubejs:finale_sigil', [
+        'EEE',
+        'ESE',
+        'EEE'
+    ], {
+        E: 'kubejs:castle_echo',
+        S: 'slashblade:proudsoul'
+    }).id('sdbf:finale_sigil_s2')
+
+    // 转色：任意 2 块碎片 + 1 块该颜色的城堡符文砖 -> 1 块该颜色的碎片
+    let castleShardBricks = [
+        ['yellow', 'twilightforest:yellow_castle_rune_brick'],
+        ['blue', 'twilightforest:blue_castle_rune_brick'],
+        ['pink', 'twilightforest:pink_castle_rune_brick'],
+        ['violet', 'twilightforest:violet_castle_rune_brick']
+    ]
+    castleShardBricks.forEach(pair => {
+        event.shapeless(`kubejs:castle_rune_shard_${pair[0]}`, [
+            '#kubejs:castle_rune_shards',
+            '#kubejs:castle_rune_shards',
+            pair[1]
+        ]).id(`sdbf:castle_rune_shard_${pair[0]}_s2`)
+    })
+
 })

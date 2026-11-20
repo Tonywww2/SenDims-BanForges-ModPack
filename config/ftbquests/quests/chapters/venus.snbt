@@ -694,6 +694,45 @@
 			x: -2.0d
 			y: 4.0d
 		}
+		{
+			dependencies: ["51A9FF63F9F3E125"]
+			id: "3902FA85C22C53EC"
+			quest_enhance_disable_scroll_paging: false
+			subtitle: "异格材料"
+			tasks: [{
+				id: "0DE71E04C53EC49A"
+				item: "kubejs:alter_basalz"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["51A9FF63F9F3E125"]
+			id: "21701A2E1A83B889"
+			quest_enhance_disable_scroll_paging: false
+			subtitle: "异格材料"
+			tasks: [{
+				id: "30269A16C9794BF7"
+				item: "kubejs:alter_tofu_diamond"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["51A9FF63F9F3E125"]
+			id: "5652DC7707289A23"
+			quest_enhance_disable_scroll_paging: false
+			subtitle: "异格材料"
+			tasks: [{
+				id: "5D805C4B5D596FFB"
+				item: "kubejs:alter_fiery"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 6.0d
+		}
 	]
 	title: "[VI] 金星与水星"
 }

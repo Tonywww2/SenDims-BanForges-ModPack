@@ -227,6 +227,15 @@ let bossTypeHydra = deriveTemplate(typeAEX2,
     [0, 0, 0, 5]
 );
 /**
+ * BOSS 九头蛇（均衡基准）：暮色分区表用，形状同 bossTypeHydra。九头蛇只有张开的嘴吃全额伤害，其余部位只吃 1/8，
+ * 所以生命只取 3 倍。基准改为均衡模板，强度由档位偏移决定。
+ */
+let bossTypeHydraA = deriveTemplate(typeA,
+    true,
+    [1.1, 3, 0, 1],
+    [0, 0, 0, 10]
+);
+/**
  * BOSS 雪怪王
  */
 let bossTypeAlphaYeti = deriveTemplate(typeAEX2,
@@ -354,6 +363,33 @@ let dimensionStages = new Map([
     ["deeprealm_4th:fourth_layer", "4_2"]
 
 ]);
+
+/**
+ * 阶段顺序：档位偏移按这个顺序插值
+ */
+let stageOrder = ["0_1", "1_1", "1_2", "1_3", "1_4", "2_1", "2_2", "2_3", "3_1", "3_2", "3_3", "4_1", "4_2"];
+
+/**
+ * 模板在 stage 上再偏移 offset 档的数值。整数档直接取该档；非整数档在相邻两档之间插值：
+ * 攻击、生命按倍数，护甲、魔抗按差值。超出范围或缺档时退回最近的已有档。
+ */
+let templateValuesAt = (template, stage, offset) => {
+    let values = template[stage];
+    if (!offset) return values;
+    let index = stageOrder.indexOf(stage);
+    if (index < 0) return values;
+    let position = index + offset;
+    let low = Math.floor(position + 1e-9);
+    let fraction = Math.max(0, position - low);
+    if (low < 0 || low >= stageOrder.length) return values;
+    let lower = template[stageOrder[low]];
+    if (!lower) return values;
+    let upper = low + 1 < stageOrder.length ? template[stageOrder[low + 1]] : null;
+    if (fraction < 1e-6 || !upper) return lower;
+    let ratio = (a, b) => a > 0 && b > 0 ? a * Math.pow(b / a, fraction) : a + (b - a) * fraction;
+    let linear = (a, b) => a + (b - a) * fraction;
+    return [ratio(lower[0], upper[0]), ratio(lower[1], upper[1]), linear(lower[2], upper[2]), linear(lower[3], upper[3])];
+};
 
 let dimensionSpecialRule = new Map([
     ["minecraft:overworld", {

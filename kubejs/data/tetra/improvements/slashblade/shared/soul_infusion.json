@@ -45,5 +45,13 @@
       "RefineStrengthening": 3
     },
     "integrity": 3
+  },
+  {
+    "key": "soul_infusion",
+    "level": 7,
+    "effects": {
+      "RefineStrengthening": 3.5
+    },
+    "integrity": 3
   }
 ]

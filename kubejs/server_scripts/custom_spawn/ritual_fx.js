@@ -13,7 +13,8 @@ let RITUAL_THEMES = {
     deep_realm_2: { dust: ['0.3 0.85 0.85', '0.35 0.9 0.45'], converge: 'minecraft:portal', accent: 'minecraft:glow', extra: 'minecraft:spore_blossom_air', chime: 'minecraft:block.amethyst_block.resonate' },
     return: { dust: ['0.6 0.3 0.9', '0.1 0.05 0.15'], converge: 'minecraft:portal', accent: 'minecraft:reverse_portal', extra: 'minecraft:falling_obsidian_tear', chime: 'minecraft:block.respawn_anchor.ambient' },
     map_teleport: { dust: ['0.35 0.9 0.85', '0.93 0.88 0.73'], converge: 'minecraft:portal', accent: 'minecraft:end_rod', extra: 'minecraft:enchant', chime: 'minecraft:ui.cartography_table.take_result' },
-    bedrock: { dust: ['0.45 0.45 0.45', '1 0.4 0.1'], converge: 'minecraft:portal', accent: 'minecraft:lava', extra: 'minecraft:crimson_spore', chime: 'minecraft:block.deepslate.hit' }
+    bedrock: { dust: ['0.45 0.45 0.45', '1 0.4 0.1'], converge: 'minecraft:portal', accent: 'minecraft:lava', extra: 'minecraft:crimson_spore', chime: 'minecraft:block.deepslate.hit' },
+    twilight: { dust: ['0.68 0.42 1', '0.22 0.1 0.4'], converge: 'minecraft:enchant', accent: 'minecraft:witch', extra: 'minecraft:reverse_portal', chime: 'minecraft:block.bell.resonate' }
 };
 // 主题名同时是着色器法阵的样式名（特供模组 RitualVisualClient 按名字选样式，不认识的用默认样式）。
 Object.keys(RITUAL_THEMES).forEach(key => { RITUAL_THEMES[key].name = key; });

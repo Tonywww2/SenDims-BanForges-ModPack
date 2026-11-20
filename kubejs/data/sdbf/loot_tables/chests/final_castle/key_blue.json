@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:castle_rune_shard_blue"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "sdbf:chests/final_castle/dungeon"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "sdbf:chests/final_castle/key_blue"
+}

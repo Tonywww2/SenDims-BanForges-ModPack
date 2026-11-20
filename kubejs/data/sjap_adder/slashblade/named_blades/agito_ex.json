@@ -15,7 +15,7 @@
   ],
   "name": "sjap_adder:agito_ex",
   "properties": {
-    "attack_base": 6.0,
+    "attack_base": 7.5,
     "max_damage": 100,
     "slash_art": "sjap_adder:illusion_drive",
     "special_effects": [

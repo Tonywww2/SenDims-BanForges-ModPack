@@ -1,0 +1,18 @@
+{
+  "advancement.twilightforest.progress_troll.desc": "Defeat the Twilight Blade Warden atop the Final Castle to claim the %s, then burn your way out through the thorns",
+  "advancement.twilightforest.mazebreaker.desc": "Craft a %s from the Giant's Pickaxe to open the way to the forests and the Labyrinth",
+  "advancement.twilightforest.kill_naga.desc": "Slay the %s in its forest courtyard and obtain a %s to lift the curse of the Dark Forest",
+  "advancement.twilightforest.kill_lich.desc": "Slay the %s at top of his tower and retrieve a scepter to resist the Snowy Forest's chill",
+  "advancement.twilightforest.progress_merge": "Twilight's End",
+  "advancement.twilightforest.progress_merge.desc": "Defeat the %s, %s and %s to complete your journey through the Twilight Forest",
+  "advancement.twilightforest.kill_hydra.desc": "Defeat the mighty %s and wake the Naga in its forest courtyard",
+  "advancement.twilightforest.progress_ur_ghast.desc": "Touch the fiery red tears of the %s and lift the barrier around the Lich's tower",
+  "twilightforest.book.trollcave.2": "witnessed. The spell must be connected to the toxic storm in some way.\n\n§8[[Next entry]]§0\n\nThe castle holds tales of a lamp that burns away thorns. Perhaps its cinders could clear this rain,",
+  "twilightforest.book.trollcave.3": "but the lamp is guarded atop the castle. To call the guardian out, I must gather the rune shards from all four parts of the castle and perform a ritual on the central platform of the roof.",
+  "twilightforest.book.labyrinth.3": "curse. The walls of this labyrinth are unnaturally hard; an ordinary pickaxe barely scratches them.\n\n§8[[Next entry]]§0\n\nPerhaps I need a bigger tool.",
+  "twilightforest.book.labyrinth.4": "Giants are said to live above the clouds of the highlands, wielding pickaxes taller than a man. If one of those pickaxes could be reforged,",
+  "twilightforest.book.labyrinth.5": "it might break through this maze. They say the troll caves hold a path up to the clouds...",
+  "twilightforest.book.lichtower.3": "§8[[Many entries later]]§0\n\nA breakthrough! The curse is fed by a tower at the heart of the dark forest. I saw a huge ghast circling its top, and its cries carry the same magic.",
+  "twilightforest.book.lichtower.4": "As long as that ghast lives, the barrier around this tower will hold. I must deal with it first.",
+  "twilightforest.book.tfstronghold.4": "Slaying the great serpent in the forest courtyard should weaken the curse on the dark forest, and placing a trophy of a powerful creature on the pedestal would likely grant access into the main part of the stronghold."
+}

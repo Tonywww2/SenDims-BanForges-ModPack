@@ -909,6 +909,58 @@
 			x: 0.0d
 			y: 3.0d
 		}
+		{
+			dependencies: ["1BF032EC08E31ABB"]
+			id: "04A670142FDB7556"
+			quest_enhance_disable_scroll_paging: false
+			subtitle: "异格材料"
+			tasks: [{
+				id: "15DC197C4A4B3A51"
+				item: "kubejs:alter_phoenix"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["1BF032EC08E31ABB"]
+			id: "02B1E83258A8FAE1"
+			quest_enhance_disable_scroll_paging: false
+			subtitle: "异格材料"
+			tasks: [{
+				id: "2FC782C44F0E0E9C"
+				item: "kubejs:alter_blightbunny_fang"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["1BF032EC08E31ABB"]
+			id: "0BF8D65854CAE5B0"
+			quest_enhance_disable_scroll_paging: false
+			subtitle: "异格材料"
+			tasks: [{
+				id: "132CBC74A1EDFDDD"
+				item: "kubejs:alter_diamond"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["1BF032EC08E31ABB"]
+			id: "124669BBA1C5728B"
+			quest_enhance_disable_scroll_paging: false
+			subtitle: "异格材料"
+			tasks: [{
+				id: "0B49D40C1C6AA3FE"
+				item: "kubejs:alter_chorus"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 9.0d
+		}
 	]
 	title: "[XI] 里末地"
 }

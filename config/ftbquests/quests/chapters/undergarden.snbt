@@ -666,6 +666,45 @@
 			x: 0.0d
 			y: 3.0d
 		}
+		{
+			dependencies: ["35A8F36675442F8B"]
+			id: "0974F60751118C6B"
+			quest_enhance_disable_scroll_paging: false
+			subtitle: "异格材料"
+			tasks: [{
+				id: "27193048401493BA"
+				item: "kubejs:alter_naga_scale"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["35A8F36675442F8B"]
+			id: "6F396B08EDC55025"
+			quest_enhance_disable_scroll_paging: false
+			subtitle: "异格材料"
+			tasks: [{
+				id: "65F85A40E06D5DBD"
+				item: "kubejs:alter_ambrosium"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["35A8F36675442F8B"]
+			id: "70F57BAF90AE6F69"
+			quest_enhance_disable_scroll_paging: false
+			subtitle: "异格材料"
+			tasks: [{
+				id: "5C3290BF56959FFA"
+				item: "kubejs:alter_bone"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 6.0d
+		}
 	]
 	title: "[VII] &e深园与废土"
 }

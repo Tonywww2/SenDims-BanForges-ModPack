@@ -13,7 +13,7 @@
     "name": "sjap_adder:frostbane_moonveil",
     "properties":
     {
-        "attack_base": 5.5,
+        "attack_base": 8.5,
         "max_damage": 100,
         "slash_art": "sjap_adder:cold_drive",
         "special_effects":

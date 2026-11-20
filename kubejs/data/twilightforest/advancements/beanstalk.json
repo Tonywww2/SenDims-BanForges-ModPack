@@ -1,0 +1,93 @@
+{
+  "parent": "twilightforest:progress_troll",
+  "criteria": {
+    "beans": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twilightforest:magic_beans"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "use_beans": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "twilightforest:uberous_soil"
+                ]
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "twilightforest:magic_beans"
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    },
+    "previous_progression": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type_specific": {
+                "type": "player",
+                "advancements": {
+                  "twilightforest:progress_troll": true
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.twilightforest.beanstalk.desc",
+      "with": [
+        {
+          "translate": "item.twilightforest.magic_beans"
+        }
+      ]
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "twilightforest:huge_stalk"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.twilightforest.beanstalk"
+    }
+  },
+  "requirements": [
+    [
+      "beans"
+    ],
+    [
+      "use_beans"
+    ],
+    [
+      "previous_progression"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

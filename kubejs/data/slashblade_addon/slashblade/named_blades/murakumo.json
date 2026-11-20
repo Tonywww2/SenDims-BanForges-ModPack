@@ -8,7 +8,7 @@
     "name": "slashblade_addon:murakumo",
     "properties":
     {
-        "attack_base": 8.0,
+        "attack_base": 8.5,
         "max_damage": 80,
         "slash_art": "slashblade:sakura_end",
         "sword_type":

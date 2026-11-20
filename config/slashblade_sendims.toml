@@ -61,16 +61,24 @@
 		#Xaero's World Map write speed and per-frame write budget multiplier. The minimap is unaffected. 1.0 keeps upstream behaviour.
 		#Range: 0.1 ~ 1.0
 		xaeroWorldMapWriteRate = 1.0
+		#Give active energy cores a finite render box covering the core, stabilizers and beams, so cores outside the view are culled. The build guide keeps the infinite box.
+		draconicEnergyCoreBounds = true
+		#Brandon's Core transparent pass checks the block entity renderer type before computing render bounds; block entities without a transparent renderer skip the bounds.
+		draconicTransparentPass = true
+		#Write energy core, stabilizer and pylon meshes with CCL's own per-vertex math and format order, without the generic per-vertex pipeline, and reuse the pylon shell render type. False restores CCL rendering.
+		draconicModelGeometry = true
+		#Integrated Dynamics cable light emission reads the cable's light levels once instead of six capability lookups. Applies to the client and its integrated server.
+		integratedDynamicsCableLight = true
+		#Skip the Integrated Dynamics cable block entity renderer when no part on the cable has an overlay renderer (display panels, omni-directional connectors).
+		integratedDynamicsCableOverlay = true
+		#Render players in the shader shadow pass while Yes Steve Model is installed. False skips them there; without YSM or a shader pack nothing changes.
+		ysmPlayerShadows = false
 
 	[performance.hud]
 		#Batch UIQuest background slices; preserve the original stepped gradient and text/item ordering.
 		questBackgroundBatching = true
 		#Cache immutable trimmed quest text by font, resource generation and width. Quest progress is never cached.
 		questTrimmedTextCache = true
-
-	[performance.buffers]
-		#Reuse bounded immutable views of ImmediatelyFast fixed buffers. No buffer pooling or flush reordering.
-		immediatelyFastFixedBufferViews = true
 
 [holySwordVisuals]
 	#Enable Caliburn/Excalibur visual effects. Client visuals only.
@@ -126,4 +134,23 @@
 	flashIntensity = 1.0
 	#Animate the shader-drawn rift on the Zenith Rift blade, guard and sheath. When off, one still frame is drawn.
 	bladeAnimation = true
+
+[twilightProgression]
+	#Send players entering the Twilight Forest to the portal in the nearest Final Castle, and send them back to the portal they came from.
+	finalCastlePortal = true
+	#Advancement a nearby player needs before a trophy pedestal removes the stronghold shields. Twilight Forest default: twilightforest:progress_lich.
+	trophyPedestalAdvancement = "twilightforest:progress_naga"
+	#Boss spawners only count nearby players who have the advancement. Format: <entity id>=<advancement id>.
+	bossSpawnerGates = ["twilightforest:minoshroom=twilightforest:mazebreaker", "twilightforest:hydra=twilightforest:progress_labyrinth", "twilightforest:naga=twilightforest:progress_hydra", "twilightforest:knight_phantom=twilightforest:progress_trophy_pedestal", "twilightforest:ur_ghast=twilightforest:progress_knights", "twilightforest:lich=twilightforest:progress_ur_ghast", "twilightforest:alpha_yeti=twilightforest:progress_lich", "twilightforest:snow_queen=twilightforest:progress_yeti"]
+	#Slowness amplifier added by the acid rain biome penalty. -1 disables it.
+	#Range: -1 ~ 9
+	acidRainSlowness = 1
+	#Mining Fatigue amplifier added by the acid rain biome penalty. -1 disables it.
+	#Range: -1 ~ 9
+	acidRainMiningFatigue = 1
+	#Duration of those effects in ticks. The penalty is refreshed every second.
+	#Range: 20 ~ 1200
+	acidRainEffectTicks = 100
+	#Players can break Twilight Forest thorns instead of making them grow more thorns. Hardness is set by the modpack.
+	thornsBreakable = true
 

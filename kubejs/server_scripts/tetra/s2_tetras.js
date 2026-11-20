@@ -1,9 +1,9 @@
 ServerEvents.highPriorityData(event => withTetraMaterialStage(2, () => {
 
     tetraMaterialBuilder(event, "ironwood").setCategory("metal")
-        .setPrimary(2.7).setSecondary(2.6).setTertiary(1.3)
+        .setPrimary(3.7).setSecondary(3.6).setTertiary(2.0)
         .setDurability(290).setIntegrityCost(3).setIntegrityGain(4)
-        .setMagicCapacity(80).setToolLevel(4).setToolEfficiency(4)
+        .setMagicCapacity(100).setToolLevel(4).setToolEfficiency(4)
         .addAttributes("attributeslib:armor_pierce", 1)
         .setTints("4d4139", "7e8b72").addTexture("heavy").addTexture("metal")
         .addItemMaterial('twilightforest:ironwood_ingot')
@@ -31,9 +31,9 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(2, () => {
         .build();
 
     tetraMaterialBuilder(event, "steeleaf").setCategory("metal")
-        .setPrimary(2.7).setSecondary(2.7).setTertiary(1.8)
+        .setPrimary(3.7).setSecondary(3.7).setTertiary(2.1)
         .setDurability(290).setIntegrityCost(3).setIntegrityGain(5)
-        .setMagicCapacity(80).setToolLevel(4).setToolEfficiency(4)
+        .setMagicCapacity(100).setToolLevel(4).setToolEfficiency(4)
         .addAttributes("minecraft:generic.max_health", 2)
         .setTints("27401d", "416230").addTexture("heavy").addTexture("metal")
         .addItemMaterial('twilightforest:steeleaf_ingot')
@@ -60,10 +60,11 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(2, () => {
         .setRequiredTool("hammer_dig", 1)
         .build();
 
+    // 极地毛皮：1.2.7（雪怪，暮色段 9），按暮色新流程 2026-11-18 由 1.2.2 改档
     tetraMaterialBuilder(event, "arctic_fur").setCategory("fibre")
-        .setPrimary(3.3).setSecondary(3.3).setTertiary(2.0)
-        .setDurability(170).setIntegrityCost(3).setIntegrityGain(4)
-        .setMagicCapacity(90).setToolLevel(4).setToolEfficiency(4)
+        .setPrimary(6.3).setSecondary(6.3).setTertiary(2.7)
+        .setDurability(300).setIntegrityCost(3).setIntegrityGain(4)
+        .setMagicCapacity(120).setToolLevel(5).setToolEfficiency(5)
         .addAttributes("minecraft:generic.armor_toughness", 0.25)
         .setTints("919ca1", "cbcfd2").addTexture("vent").addTexture("metal")
         .addItemMaterial('twilightforest:arctic_fur')
@@ -193,10 +194,11 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(2, () => {
         .setRequiredTool("hammer_dig", 1)
         .build();
 
+    // 骑士金属：1.2.5（骑士要塞，暮色段 6），按暮色新流程 2026-11-18 由 1.2.6 改档
     tetraMaterialBuilder(event, "knightmetal").setCategory("metal")
-        .setPrimary(5.4).setSecondary(5.2).setTertiary(2.5)
-        .setDurability(320).setIntegrityCost(4).setIntegrityGain(4)
-        .setMagicCapacity(160).setToolLevel(5).setToolEfficiency(6)
+        .setPrimary(4.7).setSecondary(4.5).setTertiary(2.4)
+        .setDurability(280).setIntegrityCost(4).setIntegrityGain(4)
+        .setMagicCapacity(160).setToolLevel(5).setToolEfficiency(5)
         .addAttributes("minecraft:generic.armor", 0.5)
         .setTints("7b8771", "7b8677").addTexture("heavy").addTexture("metal")
         .addItemMaterial('twilightforest:knightmetal_ingot')
@@ -262,11 +264,11 @@ ServerEvents.highPriorityData(event => withTetraMaterialStage(2, () => {
         .setRequiredTool("hammer_dig", 1)
         .build();
 
-    // 炽铁锭材料
+    // 炽铁锭材料：1.2.4（九头蛇，暮色段 4），按暮色新流程 2026-11-18 由 1.2.8 改档；基础 10.5 + 火焰伤害 1（按 2.5 计）= 攻击参考 13
     tetraMaterialBuilder(event, "fiery_ingot").setCategory("metal")
-        .setPrimary(6.3).setSecondary(6.4).setTertiary(2.9)
-        .setDurability(450).setIntegrityCost(3).setIntegrityGain(4)
-        .setMagicCapacity(130).setToolLevel(5).setToolEfficiency(7)
+        .setPrimary(3.5).setSecondary(3.5).setTertiary(2.2)
+        .setDurability(290).setIntegrityCost(3).setIntegrityGain(4)
+        .setMagicCapacity(130).setToolLevel(5).setToolEfficiency(5)
         .addAttributes("attributeslib:fire_damage", 1.0)
         .addAttributes("**slashblade_sendims:frenzy_resistance", 0.05)
         .setTints("ff4500", "ff6347")

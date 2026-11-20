@@ -38,9 +38,9 @@
     {
       "material": {
         "items": [
-          "slashblade:proudsoul_tiny"
+          "slashblade:proudsoul"
         ],
-        "count": 35
+        "count": 2
       },
       "requiredTools": {
         "hammer_dig": 1

@@ -9,7 +9,8 @@ global.sdbfRitualTriggers = {
         ['tofucraft:tofustick', 'minecraft:moss_block'],
         ['slashblade_sendims:deeprealm_certificate', 'minecraft:bricks'],
         ['integrateddynamics:variable', 'aether_redux:sentry_base'],
-        ['minecraft:filled_map', 'minecraft:chiseled_stone_bricks']
+        ['minecraft:filled_map', 'minecraft:chiseled_stone_bricks'],
+        ['kubejs:finale_sigil', 'kubejs:finale_rune_core']
     ],
     bedrockBreaker: ['kubejs:bedrock_breaker', 'minecraft:bedrock']
 };

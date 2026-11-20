@@ -27,4 +27,10 @@ ServerEvents.tags("block", event => {
         'ancient_aether:valkyrum_ore'
     )
 
+    // 暮色荆棘可以手动破坏，斧子挖得快（docs/development/暮色森林流程重做-调查与设计-2026-11-18.md 6.7）
+    event.add('minecraft:mineable/axe', [
+        'twilightforest:brown_thorns',
+        'twilightforest:green_thorns'
+    ])
+
 })

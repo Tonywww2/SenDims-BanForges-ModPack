@@ -144,7 +144,7 @@ ServerEvents.recipes(event => {
         "type": "minecraft:crafting_shapeless",
         "ingredients": [
             {
-                "item": "aether:holystone"
+                "item": "aether:mossy_holystone"
             },
             {
                 "item": "minecraft:amethyst_shard"
@@ -191,17 +191,6 @@ ServerEvents.recipes(event => {
         }
     }).id('sdbf:omni_alloy/aether_11');
 
-    // 金色史维特球转化 (aether_12)
-    event.custom({
-        "type": "deep_aether:golden_swet_ball_recipe",
-        "ingredient": {
-            "block": "kubejs:omni_aether_12_precursor"
-        },
-        "result": {
-            "block": "kubejs:omni_aether_12_block"
-        }
-    }).id('sdbf:omni_alloy/aether_12');
-
     // aether_12_prepare (aether_12_prepare)
     event.custom({
         "type": "minecraft:crafting_shapeless",
@@ -211,6 +200,9 @@ ServerEvents.recipes(event => {
             },
             {
                 "item": "minecraft:amethyst_shard"
+            },
+            {
+                "item": "aether:golden_amber"
             }
         ],
         "result": {
@@ -219,10 +211,10 @@ ServerEvents.recipes(event => {
         }
     }).id('sdbf:omni_alloy/aether_12_prepare');
 
-    // 瓦解号角 (aether_14)
+    // 瓦解号角 (aether_14)：前驱块直接用瓦解号角转化
     event.custom({
         "type": "twilightforest:crumble_horn",
-        "from": "kubejs:omni_aether_12_block",
+        "from": "kubejs:omni_aether_12_precursor",
         "to": "kubejs:omni_aether_14_block"
     }).id('sdbf:omni_alloy/aether_14');
 
@@ -1886,7 +1878,7 @@ ServerEvents.recipes(event => {
         "radiation": 0.0,
         "inputFluids": [
             {
-                "tag": "kubejs:omni_external/nuclearcraft/borax_solution",
+                "tag": "kubejs:omni_external/nuclearcraft/irradiated_borax_solution",
                 "amount": 1000
             }
         ],
@@ -2861,7 +2853,7 @@ ServerEvents.recipes(event => {
             "item": "slashblade:slashblade_wood"
         },
         "ink": {
-            "item": "minecraft:ink_sac"
+            "item": "minecraft:glow_ink_sac"
         },
         "paper": {
             "item": "minecraft:paper"

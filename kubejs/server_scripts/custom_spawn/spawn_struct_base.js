@@ -68,6 +68,7 @@ let ritualDistanceSqr = (player, x, y, z) => {
  * @param {string} config.structureName - 结构名
  * @param {string} config.theme - 特效主题，见 ritual_fx.js 的 RITUAL_THEMES
  * @param {string} config.displayName - 召唤成功标题中显示的名称（语言键），传送门不需要
+ * @param {string} config.summonKind - 召唤成功提示的类型：'boss'（默认，「XXX已苏醒」）或 'structure'（「XXX已出现」）
  * @param {boolean} config.destroyAfterSpawn - 召唤后是否拆除结构
  * @param {boolean} config.consumeActivateItem - 释放时是否消耗 1 个激活物
  * @param {boolean} config.weakMatch - 是否忽略 pattern 中的空格坐标
@@ -276,7 +277,8 @@ let createBossStructure = (config) => {
             RitualFx.sound(level, 'minecraft:block.end_portal.spawn', cx, cy, cz, 0.6, 1.2, null);
             config.executeCommands(level, centerPos, player);
             if (config.displayName && !player.hasDisconnected()) {
-                RitualFx.subtitle(player, JSON.stringify({ translate: 'info.kubejs.ritual.summoned', with: [{ translate: config.displayName }], color: 'gold' }));
+                let summonedKey = config.summonKind === 'structure' ? 'info.kubejs.ritual.appeared' : 'info.kubejs.ritual.awakened';
+                RitualFx.subtitle(player, JSON.stringify({ translate: summonedKey, with: [{ translate: config.displayName }], color: 'gold' }));
             }
         });
         // 余韵：3 秒主题微光

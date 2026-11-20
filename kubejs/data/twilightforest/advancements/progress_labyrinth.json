@@ -1,0 +1,58 @@
+{
+  "parent": "twilightforest:mazebreaker",
+  "criteria": {
+    "meef": {
+      "conditions": {
+        "item": {
+          "items": [
+            "twilightforest:meef_stroganoff"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "previous_progression": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type_specific": {
+                "type": "player",
+                "advancements": {
+                  "twilightforest:mazebreaker": true
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.twilightforest.progress_labyrinth.desc"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "twilightforest:meef_stroganoff"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.twilightforest.progress_labyrinth"
+    }
+  },
+  "requirements": [
+    [
+      "meef"
+    ],
+    [
+      "previous_progression"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

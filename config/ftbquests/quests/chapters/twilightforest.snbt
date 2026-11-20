@@ -20,7 +20,7 @@
 			id: "7B2B26C5693D25E5"
 			linked_quest: "0C568583CC58DAA6"
 			shape: "hexagon"
-			x: 27.0d
+			x: 48.0d
 			y: 0.0d
 		}
 		{
@@ -34,14 +34,14 @@
 			linked_quest: "3DA6E818573A9A69"
 			shape: "hexagon"
 			size: 2.0d
-			x: 30.0d
+			x: 51.0d
 			y: 0.0d
 		}
 		{
 			id: "0DC715732D0FCBC1"
 			linked_quest: "0936AB2DCC0172A8"
 			shape: "hexagon"
-			x: 21.0d
+			x: 36.0d
 			y: -3.0d
 		}
 		{
@@ -49,7 +49,7 @@
 			linked_quest: "5251AFEDB9C97974"
 			shape: "hexagon"
 			size: 2.0d
-			x: 24.0d
+			x: 39.0d
 			y: -3.0d
 		}
 	]
@@ -58,6 +58,8 @@
 			dependencies: ["6AE2EFEC0F3BE4BE"]
 			description: [
 				"建造一个&b2x2的正方形池塘&r，在边缘&b种满花朵&r（最常见的花朵是......），填充清水，最后&b投入钻石&r......"
+				""
+				"穿过传送门后，你会出现在离你最近的&b终焉城堡&r里。城堡外围是荆棘，荆棘外是酸雨，拿到&6余烬之灯&r之前很难离开。"
 				""
 				"相比于深境一层，暮色森林的矿山之中拥有更多的矿物与敌人。"
 				""
@@ -83,6 +85,12 @@
 					item: "minecraft:diamond"
 					type: "item"
 				}
+				{
+					count: 2
+					id: "43F2143ABCA5F8EF"
+					item: "slashblade:proudsoul_tiny"
+					type: "item"
+				}
 			]
 			size: 2.0d
 			tasks: [{
@@ -96,63 +104,86 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"3C1CB82ADF4FBBC1"
-				"222D394D6FDDC479"
-			]
+			dependencies: ["222D394D6FDDC479"]
 			hide_until_deps_complete: true
 			id: "14E282F8699E935B"
 			quest_enhance_disable_scroll_paging: false
-			rewards: [{
-				count: 2
-				id: "5809CF9BC3836D43"
-				item: "minecraft:diamond"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 2
+					id: "5809CF9BC3836D43"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "353921F5EE76F009"
+					item: "slashblade:proudsoul_tiny"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "23FC31CDC20AE7E5"
 				item: "twilightforest:magic_map"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -3.0d
+			x: 18.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["3C1CB82ADF4FBBC1"]
 			hide_until_deps_complete: true
 			id: "222D394D6FDDC479"
 			quest_enhance_disable_scroll_paging: false
-			rewards: [{
-				count: 2
-				id: "5E4C3628F995DABA"
-				item: "minecraft:diamond"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 2
+					id: "5E4C3628F995DABA"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "638A61A1AE08BF3B"
+					item: "slashblade:proudsoul_tiny"
+					type: "item"
+				}
+			]
 			tasks: [{
 				advancement: "twilightforest:twilight_hunter"
 				criterion: ""
 				id: "47E44D45FB41E26E"
 				type: "advancement"
 			}]
-			x: 3.0d
-			y: 0.0d
+			x: 18.0d
+			y: -3.0d
 		}
 		{
-			dependencies: ["222D394D6FDDC479"]
+			dependencies: ["1228411DE12CCDA4"]
 			description: [
 				"娜迦在蓄力时可以被招架。如果你不知道招架是是什么，请仔细阅读拔刀剑章节！"
 				""
 				"娜迦在蓄力后会释放两道幻影刃。"
+				""
+				"娜迦的刷怪笼要在击败九头蛇之后才会生效。击败娜迦后，可以进入&b黑暗森林&r。"
 			]
 			hide_until_deps_complete: true
 			id: "20FDE881446DF8AF"
 			quest_enhance_disable_scroll_paging: false
-			rewards: [{
-				count: 4
-				id: "4DFDB862A4032AC5"
-				item: "minecraft:diamond"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "4DFDB862A4032AC5"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3EC4E44F207C57F1"
+					item: "slashblade:proudsoul_tiny"
+					type: "item"
+				}
+			]
 			subtitle: "娜迦"
 			tasks: [{
 				advancement: "twilightforest:progress_naga"
@@ -160,11 +191,11 @@
 				id: "0E52B292979BE956"
 				type: "advancement"
 			}]
-			x: 6.0d
+			x: 27.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["20FDE881446DF8AF"]
+			dependencies: ["4B5C544E097417A0"]
 			description: [
 				"巫妖掌握了耀魂之力！现在它拥有更多的魔法护盾了！"
 				""
@@ -173,16 +204,26 @@
 				"在破除护盾后的等待时间内对巫妖造成魔法伤害，会不断的缩短这个时间。"
 				""
 				"&c警告：在巫妖之后的敌人将会拥有更强大的数值。&r"
+				""
+				"击败巫妖后，可以进入&b积雪森林&r。"
 			]
 			hide_until_deps_complete: true
 			id: "3AA758300110DA33"
 			quest_enhance_disable_scroll_paging: false
-			rewards: [{
-				count: 5
-				id: "1939E05CA9D8DFFF"
-				item: "minecraft:diamond"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 5
+					id: "1939E05CA9D8DFFF"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "1933498E97030A51"
+					item: "slashblade:proudsoul_tiny"
+					type: "item"
+				}
+			]
 			subtitle: "巫妖"
 			tasks: [{
 				advancement: "twilightforest:progress_lich"
@@ -190,64 +231,61 @@
 				id: "5D17AD0A33BFFB4F"
 				type: "advancement"
 			}]
-			x: 9.0d
+			x: 36.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["3AA758300110DA33"]
-			description: ["每一个幻影骑士都会被视作首领！但是他们的攻击力和生命值远不如普通的野生首领。"]
+			dependencies: ["20FDE881446DF8AF"]
+			description: [
+				"每一个幻影骑士都会被视作首领！但是他们的攻击力和生命值远不如普通的野生首领。"
+				""
+				"黑暗森林的骑士要塞深处有一个&b奖杯基座&r，在上面放一个首领奖杯，就能打开要塞的主体。"
+			]
 			id: "6FC69F6C86DA91E0"
 			quest_enhance_disable_scroll_paging: false
-			rewards: [{
-				count: 10
-				id: "54356B58C4AFBC9A"
-				item: "minecraft:diamond"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 10
+					id: "54356B58C4AFBC9A"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "2865759082255C7D"
+					item: "slashblade:proudsoul_tiny"
+					type: "item"
+				}
+			]
 			tasks: [{
 				advancement: "twilightforest:progress_knights"
 				criterion: ""
 				id: "47531649AEE8B3D9"
 				type: "advancement"
 			}]
-			x: 12.0d
+			x: 30.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["3AA758300110DA33"]
-			description: ["米诺菇会被视作首领！"]
+			dependencies: ["1AC43C7A226EA9E4"]
+			description: [
+				"米诺菇会被视作首领！"
+				""
+				"沼泽地下的迷宫深处住着米诺菇。击败它，吃下&6牛头人沙拉酱肉&r，身体就能适应火焰沼泽的高温。"
+			]
 			id: "2EDA6C0823CAF5BE"
 			quest_enhance_disable_scroll_paging: false
 			rewards: [
 				{
-					id: "25D8AAEEF9178DA7"
-					item: {
-						Count: 1
-						id: "twilightforest:mazebreaker_pickaxe"
-						tag: {
-							Damage: 0
-							Enchantments: [
-								{
-									id: "minecraft:efficiency"
-									lvl: 4s
-								}
-								{
-									id: "minecraft:unbreaking"
-									lvl: 3s
-								}
-								{
-									id: "minecraft:fortune"
-									lvl: 2s
-								}
-							]
-						}
-					}
+					count: 10
+					id: "25F28BDD0682CF13"
+					item: "minecraft:diamond"
 					type: "item"
 				}
 				{
 					count: 10
-					id: "25F28BDD0682CF13"
-					item: "minecraft:diamond"
+					id: "17E9B7BA3C473F3E"
+					item: "slashblade:proudsoul_tiny"
 					type: "item"
 				}
 			]
@@ -257,96 +295,151 @@
 				id: "15EA1C2B0855EF75"
 				type: "advancement"
 			}]
-			x: 12.0d
-			y: -6.0d
+			x: 21.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["3AA758300110DA33"]
-			description: ["雪怪王会被视作首领！但是它的护甲值比一般的野生首领低。"]
+			description: [
+				"雪怪王会被视作首领！但是它的护甲值比一般的野生首领低。"
+				""
+				"击败雪怪王后，可以进入&b冰川&r。"
+			]
 			id: "46D7551ADB56C59D"
 			quest_enhance_disable_scroll_paging: false
-			rewards: [{
-				count: 10
-				id: "55DA23127677B3C7"
-				item: "minecraft:diamond"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 10
+					id: "55DA23127677B3C7"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "7A5D71DB024EEF7C"
+					item: "slashblade:proudsoul_tiny"
+					type: "item"
+				}
+			]
 			tasks: [{
 				advancement: "twilightforest:progress_yeti"
 				criterion: ""
 				id: "1B7A740A09BBC79E"
 				type: "advancement"
 			}]
-			x: 12.0d
-			y: -3.0d
+			x: 39.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6FC69F6C86DA91E0"]
+			description: [
+				"黑暗森林中心的幽冥高塔顶端住着暮初恶魂。"
+				""
+				"击败它之后，&b巫妖塔&r的屏障才会消失。"
+			]
 			id: "4B5C544E097417A0"
 			quest_enhance_disable_scroll_paging: false
-			rewards: [{
-				count: 5
-				id: "06E37BFE7DA628B4"
-				item: "minecraft:diamond"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 5
+					id: "06E37BFE7DA628B4"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "44C3D575F95C4E23"
+					item: "slashblade:proudsoul_tiny"
+					type: "item"
+				}
+			]
 			tasks: [{
 				advancement: "twilightforest:progress_ur_ghast"
 				criterion: ""
 				id: "13695AD53F7708EA"
 				type: "advancement"
 			}]
-			x: 15.0d
+			x: 33.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["2EDA6C0823CAF5BE"]
+			description: [
+				"火焰沼泽中央是九头蛇的巢穴。"
+				""
+				"完成「铲除祸害」之后，森林庭院里的&b娜迦&r才会出现。"
+			]
 			id: "1228411DE12CCDA4"
 			quest_enhance_disable_scroll_paging: false
-			rewards: [{
-				count: 5
-				id: "53D752D6DEC62519"
-				item: "minecraft:diamond"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 5
+					id: "53D752D6DEC62519"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "1413F9729E4C2B47"
+					item: "slashblade:proudsoul_tiny"
+					type: "item"
+				}
+			]
 			tasks: [{
 				advancement: "twilightforest:progress_hydra"
 				criterion: ""
 				id: "0B0B2970B56803A0"
 				type: "advancement"
 			}]
-			x: 15.0d
-			y: -6.0d
+			x: 24.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["46D7551ADB56C59D"]
+			description: ["冰川上的极光宫殿顶端，是暮色森林的最终首领：&b冰雪女王&r。"]
 			id: "3AA48697057EBF80"
 			quest_enhance_disable_scroll_paging: false
-			rewards: [{
-				count: 5
-				id: "500832C9B88B2D94"
-				item: "minecraft:diamond"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 5
+					id: "500832C9B88B2D94"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "1E89D8F27442C622"
+					item: "slashblade:proudsoul_tiny"
+					type: "item"
+				}
+			]
 			tasks: [{
 				advancement: "twilightforest:progress_glacier"
 				criterion: ""
 				id: "74A7EF3FED4DF68D"
 				type: "advancement"
 			}]
-			x: 15.0d
-			y: -3.0d
+			x: 42.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["20FDE881446DF8AF"]
 			id: "6E604BAD9F8D769C"
 			quest_enhance_disable_scroll_paging: false
-			rewards: [{
-				count: 4
-				id: "33E77CF2663B5948"
-				item: "minecraft:diamond"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "33E77CF2663B5948"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "37472B081E84BE2B"
+					item: "slashblade:proudsoul_tiny"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "7D51326A9C211610"
 				item: {
@@ -361,19 +454,27 @@
 				}
 				type: "item"
 			}]
-			x: 6.0d
+			x: 27.0d
 			y: 3.0d
 		}
 		{
 			dependencies: ["6E604BAD9F8D769C"]
 			id: "44EB434977E45FFC"
 			quest_enhance_disable_scroll_paging: false
-			rewards: [{
-				count: 3
-				id: "57F359482C9F210F"
-				item: "minecraft:diamond"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 3
+					id: "57F359482C9F210F"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "3A21954B24E33C5B"
+					item: "slashblade:proudsoul_tiny"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "58E3FA612362DF04"
 				item: {
@@ -388,19 +489,30 @@
 				}
 				type: "item"
 			}]
-			x: 9.0d
-			y: 3.0d
+			x: 27.0d
+			y: 6.0d
 		}
 		{
-			dependencies: ["44EB434977E45FFC"]
+			dependencies: [
+				"44EB434977E45FFC"
+				"3AA758300110DA33"
+			]
 			id: "5CC520193AD1DFC2"
 			quest_enhance_disable_scroll_paging: false
-			rewards: [{
-				count: 2
-				id: "76D1626EFBBEFF37"
-				item: "minecraft:diamond"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 2
+					id: "76D1626EFBBEFF37"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "561835ECFC64578F"
+					item: "slashblade:proudsoul_tiny"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "158E51512D530CEB"
 				item: {
@@ -415,19 +527,27 @@
 				}
 				type: "item"
 			}]
-			x: 12.0d
-			y: 3.0d
+			x: 36.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["3AA48697057EBF80"]
 			id: "3E497DA5DACC3B62"
 			quest_enhance_disable_scroll_paging: false
-			rewards: [{
-				count: 2
-				id: "10629826689E2AB7"
-				item: "minecraft:diamond"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 2
+					id: "10629826689E2AB7"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "09862E3DEBD3BCBE"
+					item: "slashblade:proudsoul_tiny"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "2CB5F6B84039B548"
 				item: {
@@ -442,7 +562,7 @@
 				}
 				type: "item"
 			}]
-			x: 15.0d
+			x: 42.0d
 			y: 3.0d
 		}
 		{
@@ -472,77 +592,114 @@
 			y: 3.0d
 		}
 		{
-			dependencies: [
-				"4B5C544E097417A0"
-				"1228411DE12CCDA4"
-				"3AA48697057EBF80"
-			]
+			dependencies: ["3AA48697057EBF80"]
+			description: ["你已经走完了暮色森林的全部旅程。"]
 			id: "0631080913A35DC4"
 			quest_enhance_disable_scroll_paging: false
-			rewards: [{
-				count: 5
-				id: "1D917D9D00172E56"
-				item: "minecraft:diamond"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 5
+					id: "1D917D9D00172E56"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "1681EC33E8C38F2D"
+					item: "slashblade:proudsoul_tiny"
+					type: "item"
+				}
+			]
 			tasks: [{
 				advancement: "twilightforest:progress_merge"
 				criterion: ""
 				id: "35CB460B37C7E0C8"
 				type: "advancement"
 			}]
-			x: 18.0d
+			x: 45.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["0631080913A35DC4"]
+			dependencies: ["130E888E57C723AC"]
+			description: ["在云上楼阁击败&b巨人矿工&r，拿到&6巨人镐&r。"]
 			id: "2B54682ADC820C2A"
 			quest_enhance_disable_scroll_paging: false
-			rewards: [{
-				count: 5
-				id: "579A8AC196F58A55"
-				item: "minecraft:diamond"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 5
+					id: "579A8AC196F58A55"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "7C2E9864B17A9500"
+					item: "slashblade:proudsoul_tiny"
+					type: "item"
+				}
+			]
 			tasks: [{
 				advancement: "twilightforest:giants"
 				criterion: ""
 				id: "062614A380FD9033"
 				type: "advancement"
 			}]
-			x: 21.0d
+			x: 15.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["2B54682ADC820C2A"]
+			dependencies: ["34296A83D4A8142A"]
+			description: [
+				"在城堡顶端举行仪式，召唤并击败&b暮刃守卫&r，它会掉落&6余烬之灯&r。"
+				""
+				"手持余烬之灯右键荆棘，可以烧掉一大片荆棘，打开离开城堡的路。"
+				""
+				"拿到灯之后，荆棘高地的酸雨也不再伤害你。"
+			]
 			id: "6442E0C760FAF02B"
 			quest_enhance_disable_scroll_paging: false
-			rewards: [{
-				count: 5
-				id: "0F46E67DBB94CAE8"
-				item: "minecraft:diamond"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 5
+					id: "0F46E67DBB94CAE8"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "2E04CA6A0EEA3B8A"
+					item: "slashblade:proudsoul_tiny"
+					type: "item"
+				}
+			]
 			tasks: [{
 				advancement: "twilightforest:progress_troll"
 				criterion: ""
 				id: "533B2858172590D0"
 				type: "advancement"
 			}]
-			x: 24.0d
+			x: 9.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["3AA758300110DA33"]
+			dependencies: ["2EDA6C0823CAF5BE"]
 			hide_dependent_lines: true
 			id: "4E3BAFCCEB91837F"
 			quest_enhance_disable_scroll_paging: false
-			rewards: [{
-				count: 2
-				id: "2DB842366AC76791"
-				item: "minecraft:diamond"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 2
+					id: "2DB842366AC76791"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "4FE82759090C9769"
+					item: "slashblade:proudsoul_tiny"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "1F2EA1B3DDABEBE5"
 				item: {
@@ -557,19 +714,27 @@
 				}
 				type: "item"
 			}]
-			x: 9.0d
+			x: 21.0d
 			y: 6.0d
 		}
 		{
 			dependencies: ["222D394D6FDDC479"]
 			id: "67E435039C0EB3FA"
 			quest_enhance_disable_scroll_paging: false
-			rewards: [{
-				count: 3
-				id: "3D57AA64D5503831"
-				item: "minecraft:diamond"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 3
+					id: "3D57AA64D5503831"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "62993F39E854C5A3"
+					item: "slashblade:proudsoul_tiny"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "49B7701860E69ABF"
 				item: {
@@ -584,20 +749,28 @@
 				}
 				type: "item"
 			}]
-			x: 3.0d
-			y: 3.0d
+			x: 21.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["3C1CB82ADF4FBBC1"]
 			hide_until_deps_complete: true
 			id: "5B48DD82CE048231"
 			quest_enhance_disable_scroll_paging: false
-			rewards: [{
-				count: 4
-				id: "25BD7573FD39A891"
-				item: "minecraft:diamond"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "25BD7573FD39A891"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5DCF9C68BBBD6781"
+					item: "slashblade:proudsoul_tiny"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "0E013267F59847D9"
 				item: "twilightforest:raw_ironwood"
@@ -615,12 +788,20 @@
 			hide_until_deps_complete: true
 			id: "1E82AFA5EC50F0AC"
 			quest_enhance_disable_scroll_paging: false
-			rewards: [{
-				count: 4
-				id: "7738CEC903C11754"
-				item: "minecraft:diamond"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "7738CEC903C11754"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0E0884B2CDCEB4AF"
+					item: "slashblade:proudsoul_tiny"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "3DA0B365DC61112D"
 				item: "twilightforest:ironwood_ingot"
@@ -634,12 +815,20 @@
 			hide_until_deps_complete: true
 			id: "064234E17AB63222"
 			quest_enhance_disable_scroll_paging: false
-			rewards: [{
-				count: 2
-				id: "3D563DF9FC700D59"
-				item: "minecraft:diamond"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 2
+					id: "3D563DF9FC700D59"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "151D5C87CB2E1FDA"
+					item: "slashblade:proudsoul_tiny"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "6FA07963B61D3892"
 				item: "twilightforest:steeleaf_ingot"
@@ -653,12 +842,20 @@
 			hide_until_deps_complete: true
 			id: "2D5F554083B41C4E"
 			quest_enhance_disable_scroll_paging: false
-			rewards: [{
-				count: 2
-				id: "1C837A778878ED98"
-				item: "minecraft:diamond"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 2
+					id: "1C837A778878ED98"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "20DD9BEF60407006"
+					item: "slashblade:proudsoul_tiny"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "24634126873F413C"
 				item: {
@@ -680,12 +877,20 @@
 			dependencies: ["2D5F554083B41C4E"]
 			id: "5D3B1F040BBB2AF2"
 			quest_enhance_disable_scroll_paging: false
-			rewards: [{
-				count: 2
-				id: "72DA0888F944E22F"
-				item: "minecraft:diamond"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 2
+					id: "72DA0888F944E22F"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "0516D81CD91A58D9"
+					item: "slashblade:proudsoul_tiny"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "19AA987128FF3389"
 				item: {
@@ -707,12 +912,20 @@
 			dependencies: ["5D3B1F040BBB2AF2"]
 			id: "572B2824EF41A64D"
 			quest_enhance_disable_scroll_paging: false
-			rewards: [{
-				count: 2
-				id: "50D5407C2BC1FC3C"
-				item: "minecraft:diamond"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 2
+					id: "50D5407C2BC1FC3C"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "4E31F214AD59505B"
+					item: "slashblade:proudsoul_tiny"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "1DAECC240584B1D7"
 				item: {
@@ -731,15 +944,23 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["2EDA6C0823CAF5BE"]
+			dependencies: ["1228411DE12CCDA4"]
 			id: "02533C5844FD4D67"
 			quest_enhance_disable_scroll_paging: false
-			rewards: [{
-				count: 2
-				id: "0C5164C3D4ACEB79"
-				item: "minecraft:diamond"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 2
+					id: "0C5164C3D4ACEB79"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "34F8DED439740D16"
+					item: "slashblade:proudsoul_tiny"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "0F23BE952EDE0212"
 				item: {
@@ -754,19 +975,27 @@
 				}
 				type: "item"
 			}]
-			x: 12.0d
-			y: 6.0d
+			x: 24.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["4B5C544E097417A0"]
 			id: "2E2F1882E71FE497"
 			quest_enhance_disable_scroll_paging: false
-			rewards: [{
-				count: 2
-				id: "4804286F09BDC4FC"
-				item: "minecraft:diamond"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 2
+					id: "4804286F09BDC4FC"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "1CFE375AD88BA9AB"
+					item: "slashblade:proudsoul_tiny"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "0F385CEE3E3E938F"
 				item: {
@@ -781,19 +1010,27 @@
 				}
 				type: "item"
 			}]
-			x: 15.0d
-			y: 6.0d
+			x: 33.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["2EDA6C0823CAF5BE"]
 			id: "32A264F98A0C9140"
 			quest_enhance_disable_scroll_paging: false
-			rewards: [{
-				count: 2
-				id: "56D40732D884B9F1"
-				item: "minecraft:diamond"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 2
+					id: "56D40732D884B9F1"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "1FE224CE669EE480"
+					item: "slashblade:proudsoul_tiny"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "541550596104D980"
 				item: {
@@ -808,8 +1045,8 @@
 				}
 				type: "item"
 			}]
-			x: 12.0d
-			y: 9.0d
+			x: 21.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -818,12 +1055,20 @@
 			]
 			id: "5FFEB598BE2CB116"
 			quest_enhance_disable_scroll_paging: false
-			rewards: [{
-				count: 2
-				id: "5DD133918CCE583B"
-				item: "minecraft:diamond"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 2
+					id: "5DD133918CCE583B"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "1C5C882C7FC6529D"
+					item: "slashblade:proudsoul_tiny"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "372840A63504F3CC"
 				item: {
@@ -845,19 +1090,27 @@
 			dependencies: ["3AA758300110DA33"]
 			id: "2A77F71A98B01A27"
 			quest_enhance_disable_scroll_paging: false
-			rewards: [{
-				count: 2
-				id: "69F85D5D994D4405"
-				item: "minecraft:diamond"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 2
+					id: "69F85D5D994D4405"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "1FD80D0AD007B4EF"
+					item: "slashblade:proudsoul_tiny"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "3ED57AFE7A23E680"
 				item: "minecraft:cherry_sapling"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 9.0d
+			x: 36.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["3C1CB82ADF4FBBC1"]
@@ -915,7 +1168,7 @@
 				type: "item"
 			}]
 			x: -7.0d
-			y: 4.0d
+			y: 6.0d
 		}
 		{
 			id: "360177DD774AC85F"
@@ -925,8 +1178,8 @@
 				item: "twilightforest:naga_scale"
 				type: "item"
 			}]
-			x: -7.0d
-			y: 5.0d
+			x: -8.0d
+			y: 4.0d
 		}
 		{
 			id: "1F169D1A179F8123"
@@ -947,8 +1200,8 @@
 				item: "twilightforest:knightmetal_ingot"
 				type: "item"
 			}]
-			x: -9.0d
-			y: 6.0d
+			x: -7.0d
+			y: 5.0d
 		}
 		{
 			id: "66A007F959CB4D39"
@@ -970,7 +1223,194 @@
 				type: "item"
 			}]
 			x: -7.0d
-			y: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3C1CB82ADF4FBBC1"]
+			description: [
+				"终焉城堡分成四个颜色的区域。每个区域的尽头有一个&b钥匙箱&r，必出对应颜色的&6符文碎片&r，箱子旁有一名钥匙守卫："
+				"·&e黄&r：主厅一层东墙的黄门 → 迷宫塔 "
+				"·&9蓝&r：主厅二层西墙的蓝门 → 迷宫塔 "
+				"·&d品红&r：主厅一层中央的品红色门 → 地牢 → 锻造间"
+				"·&5紫&r：角楼顶部的紫门 → 主厅屋顶"
+				""
+				"城堡里的怪物会掉落&6城堡残响&r，也有小概率掉落随机颜色的碎片。"
+				"两块任意碎片加一块对应颜色的城堡符文砖，可以换成该颜色的碎片。"
+				""
+				"四色碎片 + 紫色城堡符文砖 → &6终焉符文核心&r"
+				"8个城堡残响 + 耀魂 → &6终焉符印&r"
+			]
+			icon: "kubejs:castle_rune_shard_violet"
+			id: "0744B470A3294C51"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 3
+					id: "1C1CB56FBD44A2FF"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "4D558881CB6DABA0"
+					item: "slashblade:proudsoul_tiny"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "39A03DE804A199EB"
+					item: "kubejs:castle_rune_shard_yellow"
+					type: "item"
+				}
+				{
+					id: "50EB3506619CD31D"
+					item: "kubejs:castle_rune_shard_blue"
+					type: "item"
+				}
+				{
+					id: "100BCA66143C28AD"
+					item: "kubejs:castle_rune_shard_pink"
+					type: "item"
+				}
+				{
+					id: "6025E2203E51BB6B"
+					item: "kubejs:castle_rune_shard_violet"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "37A2C26A2A48979D"
+					item: "kubejs:castle_echo"
+					type: "item"
+				}
+			]
+			title: "终焉城堡"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"034D47E905861E48"
+				"3C1CB82ADF4FBBC1"
+			]
+			description: [
+				"A：城堡砖"
+				"B：终焉符文核心"
+				"C：厚重城堡砖"
+				"{\"text\":\"激活物品 : \",\"extra\":[{\"type\":\"translatable\",\"translate\":\"item.kubejs.finale_sigil\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_item\",\"contents\":\"kubejs:finale_sigil\"}}]} "
+				""
+				"仪式只能在&b终焉城堡顶端的中央平台&r上举行；平台附近已经有暮刃守卫时，无法再次召唤。"
+				""
+				"[ \"提示：如果你不知道这是什么意思，请查看\", { \"text\": \"前置任务\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"034D47E905861E48\" } }, \"。\" ]"
+			]
+			icon: "kubejs:finale_sigil"
+			id: "34296A83D4A8142A"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 3
+					id: "5B066D68468070B7"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "2BD73213B63FF990"
+					item: "slashblade:proudsoul_tiny"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "3AAE19F800E0004A"
+					item: "twilightforest:castle_brick"
+					type: "item"
+				}
+				{
+					id: "3D8472778A6E491B"
+					item: "kubejs:finale_rune_core"
+					type: "item"
+				}
+				{
+					id: "5EBB54AD0DB2C520"
+					item: "twilightforest:thick_castle_brick"
+					type: "item"
+				}
+				{
+					id: "355034C9019D8595"
+					item: "kubejs:finale_sigil"
+					type: "item"
+				}
+			]
+			title: "结构召唤仪式：暮刃守卫"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6442E0C760FAF02B"]
+			description: [
+				"在荆棘高地找到&b巨魔洞穴&r，击败巨魔或搜刮洞穴里的箱子，拿到&6魔豆&r。"
+				""
+				"在云层下方的&b肥沃泥土&r上使用魔豆，顺着长出的豆茎爬上云端。"
+			]
+			id: "130E888E57C723AC"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 3
+					id: "034859741DCEDD02"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "4F4577F47F12E695"
+					item: "slashblade:proudsoul_tiny"
+					type: "item"
+				}
+			]
+			tasks: [{
+				advancement: "twilightforest:beanstalk"
+				criterion: ""
+				id: "18B291C1BE526D5F"
+				type: "advancement"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2B54682ADC820C2A"]
+			description: [
+				"用&6巨人镐&r、&6巨型黑曜石&r和&6巨魔岩石&r合成&b迷宫破坏者&r。"
+				""
+				"合成后，暮色森林的普通群系和沼泽迷宫就解锁了。解锁之前，普通森林里会被黑暗笼罩，沼泽会让你迅速饥饿。"
+			]
+			id: "1AC43C7A226EA9E4"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 3
+					id: "63E75AE1355AB402"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "3451E1F1AE7693A3"
+					item: "slashblade:proudsoul_tiny"
+					type: "item"
+				}
+			]
+			tasks: [{
+				advancement: "twilightforest:mazebreaker"
+				criterion: ""
+				id: "30AA876A5025A39F"
+				type: "advancement"
+			}]
+			x: 18.0d
+			y: 0.0d
 		}
 	]
 	title: "[III] &e暮色秘境"

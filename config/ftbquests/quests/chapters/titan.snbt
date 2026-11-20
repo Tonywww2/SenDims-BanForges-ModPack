@@ -627,6 +627,45 @@
 			x: -4.0d
 			y: 6.0d
 		}
+		{
+			dependencies: ["37CF7606A44B5357"]
+			id: "4624B5015BB1539A"
+			quest_enhance_disable_scroll_paging: false
+			subtitle: "异格材料"
+			tasks: [{
+				id: "75C8D46E71DEE3F0"
+				item: "kubejs:alter_netherite"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["37CF7606A44B5357"]
+			id: "370B3545F4135F82"
+			quest_enhance_disable_scroll_paging: false
+			subtitle: "异格材料"
+			tasks: [{
+				id: "54C9F57044E5B715"
+				item: "kubejs:alter_raven_feather"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["37CF7606A44B5357"]
+			id: "14AF34398043BCA5"
+			quest_enhance_disable_scroll_paging: false
+			subtitle: "异格材料"
+			tasks: [{
+				id: "5949279B42899493"
+				item: "kubejs:alter_steel"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 7.0d
+		}
 	]
 	title: "[XII] &e土卫六"
 }

@@ -1,0 +1,19 @@
+{
+  "advancement.twilightforest.progress_troll.desc": "击败终焉城堡顶端的暮刃守卫，取得%s，用它烧开荆棘离开城堡",
+  "advancement.twilightforest.mazebreaker.desc": "用巨人镐合成%s，打开通往普通森林与迷宫的道路",
+  "advancement.twilightforest.kill_naga.desc": "猎杀森林庭院里的%s并取得%s，驱散黑暗森林的诅咒",
+  "advancement.twilightforest.kill_lich.desc": "击杀塔顶的%s并取得他的权杖，抵御积雪森林的严寒",
+  "advancement.twilightforest.progress_merge": "暮色终章",
+  "advancement.twilightforest.progress_merge.desc": "击败%s、%s与%s，完成暮色森林的旅程",
+  "advancement.twilightforest.kill_hydra.desc": "杀死强大的%s，森林庭院里的娜迦随之苏醒",
+  "advancement.twilightforest.progress_ur_ghast.desc": "触碰%s那炽红的眼泪，巫妖塔的屏障随之消散",
+  "twilightforest.book.trollcave.1": "§8[[被酸腐蚀过的探险家笔记]]§0\n\n我觉得我不可能在这样的剧毒暴风雨中生还。在短暂的几次外出中，我还遇到了另一道保护符咒，和我在别处见过的",
+  "twilightforest.book.trollcave.2": "那些很像。这符咒一定和剧毒风暴有什么关系。\n\n§8[[下一篇]]§0\n\n城堡里流传着一盏能烧尽荆棘的灯。灯里的余烬或许能驱散这场酸雨，",
+  "twilightforest.book.trollcave.3": "可那盏灯被城堡顶端的守卫看守着。要唤出它，得先集齐城堡四个区域的符文碎片，再到城堡顶端的中央平台举行仪式。",
+  "twilightforest.book.labyrinth.3": "魔咒。迷宫的墙硬得出奇，普通的镐子在上面连一道痕迹都留不下。\n\n§8[[下一篇]]§0\n\n也许我需要一件更大的工具。",
+  "twilightforest.book.labyrinth.4": "传说高地的云层之上住着巨人，他们的镐子比人还高。若能把巨人的镐子重新锻造一番，",
+  "twilightforest.book.labyrinth.5": "或许就能凿穿这座迷宫。巨魔的洞穴里，据说有一条通往云端的路……",
+  "twilightforest.book.lichtower.3": "§8[[若干篇后]]§0\n\n重大进展！这道魔咒的源头在黑暗森林中心的一座高塔上。我远远看见一只巨大的恶魂盘旋在塔顶，它的哭声里有同样的魔力。",
+  "twilightforest.book.lichtower.4": "只要那只恶魂还在，这座尖塔的屏障就不会消失。我得先去对付它。",
+  "twilightforest.book.tfstronghold.4": "在森林庭院里击败那条蛇形巨兽，或许就能削弱黑暗森林的魔咒；而把强大生物的奖杯放在基座上，大概就能进入要塞的主体。"
+}

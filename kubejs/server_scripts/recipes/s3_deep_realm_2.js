@@ -83,8 +83,8 @@ ServerEvents.recipes(event => {
         D: '#forge:paper',
         E: ['aether_treasure_reforging:neptune_mesh', 'aether_treasure_reforging:valkyrum_ingot', 'aether_treasure_reforging:pyral_ingot'],
         F: 'deep_aether:stratus_ingot',
-        M: 'twilightforest:lamp_of_cinders'
-    }).keepIngredient('twilightforest:lamp_of_cinders')
+        M: 'twilightforest:aurora_block'
+    })
         .id('sdbf:variable_s3')
 
     event.custom({
